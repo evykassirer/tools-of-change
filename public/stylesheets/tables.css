@@ -1,0 +1,433 @@
+ï»¿/* Forms */
+fieldset { border: 1px solid #ccc; padding: 0 1em 1em 1em; margin: 1.6em 0; } /* padding-top is margin-top for fieldsets in Opera */
+legend { background:none; padding-left: .8em; padding-right: .8em; font-family: Arial, Helvetica, sans-serif; color:#216574; font-weight: normal; font-size: 1.4em; }
+legend+* { margin-top: 1em; } /* compensates for the opera margin bug */
+textarea, input { padding: .3em .4em .15em .4em; }
+textarea, input[type='text'], select { border: 1px solid #ccc; background: #fff; }
+textarea:hover, input[type='text']:hover, input[type='password']:hover, select:hover { border-color: #77a4ac; }
+textarea:focus, input[type='text']:focus, input[type='password']:focus, select:focus { border-color: #f5d320; outline: 2px solid #fcf0b1; }
+input[type='button'], input[type='submit'], input[type='checkbox'], input[type='image'], input[type='radio'], input[type='reset'], select, button { cursor: pointer; }
+input[type='hidden'] { display:none; }
+
+/* Tables
+------------------------------------------------------------------------------- */
+table.form_styles {
+	width: 304px;
+	border: none;
+	margin:0;
+	padding:0;
+}
+table.form_styles td.checkbox {
+	vertical-align:middle;
+	width:24px;
+	height:30px;
+}
+table.form_styles td.textarea {
+	vertical-align:middle;
+	width:268px;
+	height:30px;
+}
+
+table.case_admin_styles {
+	width: 375px;
+	border: none;
+	margin:0;
+	padding:0;
+}
+
+table.case_styles {
+	width: 500px;
+	border: none;
+	margin:0;
+	padding:0;
+}
+
+table.case_styles td.left_text {
+	width:100px;
+	vertical-align:middle;
+	text-align:left;
+	padding:0 10px 0 0;
+	margin:0;
+}
+
+table.case_styles td.rt_text {
+	width:60px;
+	vertical-align:middle;
+	text-align:right;
+	padding:0 15px 0 0;
+	margin:0;
+}
+
+table.generic_styles {
+	width: 600px;
+	border: none;
+	margin:0;
+	padding:0;
+}
+
+table.generic_styles td.key {
+	vertical-align:top;
+	width:60px;
+	text-align:right;
+	padding:0 12px 0 0;
+	margin:0;
+}
+
+table.topics {
+	width: 660px;
+/* 	border:2px solid #ccc; */
+	margin:12px 0 0 0;
+	padding:3px;
+}
+
+table.topics h2 {
+	padding: 0;
+	line-height: 1em;
+}
+
+table.topics p {
+	padding: 0;
+}
+
+table.topics td.highlight_box{
+	width: 108px;
+	border: none;
+	background-color:transparent/* #e5e5d2 */;
+	font-weight:bold;
+	margin:0;
+	padding:9px 12px;
+	vertical-align:top;
+	text-align: right;
+}
+
+table.topics td.rt_text_box{
+	width: 475px;
+	border-bottom:1px solid #ccc;
+	background:none;
+	margin:0;
+	padding:6px 12px;
+	vertical-align:top;
+}
+
+table.topics td.rt_text_bottom{
+	width: 475px;
+	border-bottom:none;
+	background:none;
+	margin:0;
+	padding:6px 12px;
+	vertical-align:top;
+}
+
+/* Tables for nav
+------------------------------------------------------------------------------- */
+table.nav_styles {
+	width: 683px;
+	height:68px;
+	border: none;
+	margin:0;
+	padding:5px 0 5px 0;
+	text-align:center;
+}
+table.nav_styles td.border_rt {
+	border-right:1px solid #fedb00;
+}
+table.nav_styles td.border_left {
+	border-left:1px solid #e2ad00;
+}
+table.nav_styles td.border_middle {
+	border-left:1px solid #e2ad00;
+	border-right:1px solid #fedb00;
+}
+.nav_styles a:link, .nav_styles a:visited {
+	font-weight:bold;
+	color: #595851;
+}
+.nav_styles a:hover, .nav_styles a.selected {
+	font-weight:bold;
+	color: #8d8c89;
+}
+
+/* Tables for search box on the right sidebar
+------------------------------------------------------------------------------- */
+table.search_sidebar_styles {
+	width: 200px;
+	border: none;
+	margin:0;
+	padding:0;
+}
+
+table.search_sidebar_styles td.text_area {
+	width:148px;
+	margin:0;
+	padding:0;
+}
+
+table.search_sidebar_styles td.go_area {
+	width:40px;
+	margin:0;
+	padding:0;
+}
+
+/* Tables for Planning Guide Project Name
+------------------------------------------------------------------------------- */
+table.project_name_styles {
+	width: 676px;
+	border: none;
+	margin:0 0 2px 0;
+	padding:0;
+}
+
+table.project_name_styles td.project_description_area {
+	width:268px;
+	margin:0;
+	padding:0 0 0 5px;
+}
+
+table.project_name_styles td.project_text_area {
+	width:276px;
+	margin:0;
+	padding:0;
+}
+
+table.project_name_styles td.project_save_area {
+	width:60px;
+	margin:0;
+	padding:0;
+}
+
+/* Tables for My Account
+------------------------------------------------------------------------------- */
+table.account_styles {
+	width: 620px;
+	border: none;
+	margin:0;
+	padding:0;
+}
+table.account_styles td.checkbox {
+	vertical-align:middle;
+	width:24px;
+	height:30px;
+}
+table.account_styles td.textarea {
+	vertical-align:middle;
+	width:268px;
+	height:30px;
+}
+
+table.account_styles td.lt_textarea {
+	vertical-align:top;
+	text-align:right;
+	padding:0 15px 0 0;
+	margin:0;
+}
+
+table.account_styles td.lt_textarea2 {
+	vertical-align:top;
+	text-align:left;
+	padding:9px;
+	margin:0;
+}
+
+.form_styles{
+	margin:0;
+	padding:0;
+	width:640px;
+}
+
+form {
+	padding:0;
+	margin:0;
+}
+
+/* Tables for Submit Your Case Study - English
+------------------------------------------------------------------------------- */
+table.submit_styles {
+	width: 191px;
+	border: none;
+	margin:0;
+	padding:0;
+}
+table.submit_styles td.checkbox_submit {
+	vertical-align:top;
+	width:24px;
+}
+
+table.submit_styles td.text_area_submit {
+	vertical-align:top;
+	width:159px;
+	color:#434343;
+}
+
+/* Tables for Measuring Achievements
+------------------------------------------------------------------------------- */
+table.measure_styles {
+	width: 306px;
+	border: none;
+	color:#434343;
+	margin:10px 0 0 0;
+	padding:0;
+}
+
+/* Tables for Choosing Tools
+------------------------------------------------------------------------------- */
+table.choosing_styles {
+	width: 306px;
+	border: none;
+	color:#434343;
+	margin:10px 0 0 0;
+	padding:0;
+}
+
+table.choosing_styles td.checkbox_choosing {
+	vertical-align:top;
+	width:24px;
+}
+
+table.choosing_styles td.text_area_choosing {
+	vertical-align:top;
+	width:272px;
+	height:50px;border-bottom: dotted 1px grey;
+}
+
+/* Tables for Developing Partners
+------------------------------------------------------------------------------- */
+table.developing_styles {
+	width: 306px;
+	border: none;
+	color:#434343;
+	margin:10px 0 0 0;
+	padding:0;
+}
+
+table.developing_styles td.checkbox_develop {
+	vertical-align:top;
+	width:24px;
+}
+
+table.developing_styles td.text_area_develop {
+	vertical-align:top;
+	width:159px;
+}
+
+/* Tables for Setting Objectives
+------------------------------------------------------------------------------- */
+table.setting_styles {
+	width: 301px;
+	border: none;
+	color:#434343;
+	margin:10px 0 0 0;
+	padding:0;
+}
+
+/* Tables for Getting Informed
+------------------------------------------------------------------------------- */
+table.getting_styles {
+	width: 306px;
+	border: none;
+	color:#434343;
+	margin:10px 0 0 0;
+	padding:0;
+}
+
+table.getting_styles td.text_area_getting {
+	vertical-align:top;
+	width:100px;
+}
+
+/* This is the Admin Nav
+------------------------------------------------------------------------------- */
+#admin_container {
+height:50px;
+padding:0;
+margin:0 0 20px 0;
+}
+
+#admin_menu {
+	background: #2b6a72;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+#admin_menu li {
+	list-style: none;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+}
+#admin_menu a {
+	background: #2b6a72;
+	color:#e5e5d2;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 8px 12px;
+	text-decoration: none;
+}
+#admin_menu a:hover, #admin_menu .selected {
+	background: #77a4ac;
+	color: #e5e5d2;
+	padding-bottom: 8px;
+	}
+	
+	/* Tables for My Plan
+------------------------------------------------------------------------------- */
+table.my_plan_styles {
+	width: 660px;
+	border: none;
+	margin:0;
+	padding:0;
+}
+table.my_plan_styles td.checkmark {
+	vertical-align:middle;
+	text-align: center;
+	width:88px;
+}
+/* 
+----Ya I added this //:	 --modified 8-06-2008 Brian Loomis ---------------------------- */
+.left_wrap td, .left_wrap {
+	color: #666666;
+}
+
+	/* Tables for Case Studies
+------------------------------------------------------------------------------- */
+.case_studies_content table {
+	border: 2px solid #ccc;
+	margin: 6px 0 6px 0;
+	padding: 3px;
+}
+
+.case_studies_content tr {
+	background-color:#E5E5D2;
+	margin:0;
+	padding:9px 12px;
+	vertical-align:top;
+}
+
+.case_studies_content td {
+	padding: 4px;
+}
+
+	/* Tables for Intro
+------------------------------------------------------------------------------- */
+
+.left_content table {
+/* 	border: 2px solid #ccc; */
+	margin: 6px 0 6px 0;
+	padding: 3px;
+}
+
+.left_content tr {
+/* 	background-color:#e2f1f8; */
+	margin:0;
+	padding:9px 12px;
+	vertical-align:top;
+}
+
+.left_content td {
+	padding: 4px;
+}

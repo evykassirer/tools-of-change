@@ -12,6 +12,17 @@ def generate_case_study_page(f, url):
   f.write(page.text)
 
 
+def generate_stylesheets():
+  stylesheet_path = "public/stylesheets/"
+  if not os.path.exists(stylesheet_path):
+      os.makedirs(stylesheet_path)
+  for sheet in ["default", "tables", "print", "thickbox", "sortmenu"]:
+    page = requests.get(f"https://toolsofchange.com/public/stylesheets/{sheet}.css")
+    with open(f"public/stylesheets/{sheet}.css", "x") as f:
+      f.write(page.text)
+
+
+
 def main():
   URL = "https://toolsofchange.com/en/case-studies/?max=1000"
   page = requests.get(URL)
@@ -34,3 +45,4 @@ def main():
       generate_case_study_page(f, url)
 
 main()
+generate_stylesheets()

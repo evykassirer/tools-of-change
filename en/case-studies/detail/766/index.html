@@ -1,0 +1,754 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+	<script src="/public/javascripts/jquery.1.4.4.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/public/javascripts/thickbox.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="/public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="/public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com/public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+
+  <meta name="description" content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " />
+  <meta name="keywords" content="community-based social marketing, fostering sustainable behavior, " />
+<meta name="verify-v1" content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" />
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+<script src="/public/javascripts/jquery-latest.pack.js" type="text/javascript" charset="utf-8"></script>
+<script src="/public/javascripts/jquery.jeditable.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="../../../../public/stylesheets/default.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../../../public/stylesheets/tables.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../../../public/stylesheets/print.css" media="print" />
+<link rel="stylesheet" type="text/css" href="../../../../public/stylesheets/thickbox.css" />
+<link rel="stylesheet" type="text/css" href="../../../../public/stylesheets/sortmenu.css" />
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css" />
+
+
+<script language="JavaScript"  type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+
+
+</head>
+<body>
+<div id="wrapper">
+
+	<div id="headwrap">
+					<div id="header">
+					<h1 id="logo" style="	background:transparent url(/public/images/logo_en.gif) no-repeat 0 0;">
+
+					<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+
+					</h1>
+
+						<div id="qnav">
+					<ul id="quicknav">
+					<li><a href="#">Welcome, Guest</a></li>
+					<li><a href="/app/views/login/form_thick_reg.lasso?height=270&amp;width=340&amp;modal=true" class="thickbox" title="Please Log In">Login</a></li>
+					<li><a href="http://toolsofchange.com/en/user/create">Register</a></li>
+					<li class="last_nav"><a href="/fr/accueil/" class="" title="left=-rgt=">Fran&ccedil;ais</a></li>
+					</ul></div><!--/qnav-->
+
+
+					</div><!--/header-->
+	</div><!--/headwrap-->
+
+
+		<div id="nav_container">
+			<div id="nav">
+				<ul>
+	<li><a href="/en/planning-guide/" id="hb_2" class="menu_class">Planning Guide</a>
+	</li>
+<li><a href="/en/tools-of-change/" id="hb_3" class="menu_class">Tools of Change</a>
+	</li>
+<li><a href="/en/case-studies/" id="hb_4" class="menu_class_current">Case Studies</a>
+	</li>
+<li><a href="/en/topic-resources/" id="hb_5" class="menu_class">Topic Resources</a>
+	</li>
+<li><a href="/en/workshops/" id="hb_6" class="menu_class">Webinars &amp; Workshops</a>
+	</li>
+<li><a href="/en/about-us/" id="hb_7" class="menu_class">About Us</a>
+	</li>
+</ul>
+
+
+
+
+			</div> <!-- end #nav -->
+		</div> <!-- end #nav_container -->
+
+
+   <div id="content_cap"></div>
+			<div id="content_wrap">
+				<div class="left_wrap">
+
+
+<form id="update_plan" method="post" action="/en/case-studies/detail/?id=&do=update_plan">
+
+
+
+<div class="case_study_sidebar_wrap">
+        <div class="case_study_sidebar_cap"></div>
+
+        <div class="case_study_sidebar_body">
+          <p><a href="/en/topic-resources/"><img src="/public/images/topic_ad.gif" alt="Topic Resources" width="182" height="107" class="topic_ad" /> </a> </p>
+          <h5>Tools Used</h5>
+          <ul>
+
+					<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+
+
+
+					<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+
+
+
+
+					</ul>
+
+          <h5>Initiated By</h5>
+            <ul>
+    <li>Fairfax County</li>
+</ul><!-- Initiated already contains li tags.-->
+
+
+          <h5>Partners</h5>
+            <ul>
+    <li>Wells + Associates</li>
+</ul><!-- Partners already contains li tags.-->
+
+
+          <h5>Results</h5>
+          <ul>
+    <li>Over seven years, 13 developments generated 63% fewer car trips</li>
+</ul><!-- Results_A already contains p tags.-->
+
+
+       </div>
+        <!--/case_study_sidebar_body-->
+        <div class="tan_cap_bottom"></div>
+      </div>
+      <!--/case_study_sidebar_wrap-->
+      <div class="case_studies_content">
+
+        <h1>Proffers for New Development in Fairfax County, Virginia</h1>
+        <p>Fairfax County established Transportation Demand Management (TDM) requirements (&#8220;proffers&#8221;) for new development that would have significant traffic impacts. For buildings within the urban centre of Tysons, trips had to be reduced between 25% and 65% during peak hours, depending on the size of the building and its proximity to the Metrorail stations.&#160;The county proffers required large new properties to annually monitor trips, conduct tenant commuting surveys, and show that they were meeting their trip reduction goals. They also had to conduct surveys every three years. Over seven years, 13 such developments generated 63% fewer trips, which was 34% beyond their goals. For the office buildings, this was likely at least partly a result of more people working from home during the COVID pandemic.</p><!-- Header already contains P tags.-->
+
+        <h2>Background</h2>
+        <p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>Fairfax County established its proffers in response to concerns from its suburban residents. Starting in 2007, the county included TDM measures and trip reduction requirements in its negotiations with developers. However, the response was inconsistent. Therefore in 2013 Fairfax set county-wide standards based on land use and distance from transit connections. These included maximum rates of peak hour auto trips that new developments would be allowed to generate. The rates were scaled; properties closer to Metro rail stations had a lower maximum than comparable properties farther from Metro stations.</p><!-- Background already contains P tags.-->
+
+
+        <h2>Setting Objectives</h2>
+				<p>Fairfax set objectives for the number of car trips to be reduced by TDM at large, new buildings. For buildings within the urban centre of Tysons, trips had to be reduced between 25% and 65% during peak hours, depending on the size of the building and its proximity to the Metrorail stations. Given that the developments were new, the reductions were measured relative to estimates. These estimates were based on published values provided by the Institute of Transportation Engineers, which in turn were based on case studies of existing properties across the U.S.A. and Canada. County planners then adjusted these based on the local situation (e.g. pedestrian infrastructure, the degree of transit-oriented development.)</p><!-- Objectives already contains P tags.-->
+
+
+
+        <h2>Getting Informed</h2>
+        <p>Wells + Associates (W+A) reviewed long-term data from its portfolio of Fairfax County TDM residential and office properties.</p><!-- Informed already contains P tags.-->
+
+
+
+        <h2>Delivering the Program</h2>
+        <p>While each developer created its own TDM approach, the following are common elements offered by them.</p>
+<p>The county set TDM requirements for different levels of participation. The following table lists only some of these.<em>(Financial Incentives; Overcoming Specific Barriers; Vivid Personalized, Credible, Empowering Communications)</em><span lang="EN-CA" style="font-size:12.0pt;font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA"><o:p>&#160;</o:p></span>&#160;&#160;</p>
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="99%" style="border-collapse:collapse;mso-table-layout-alt:fixed;border:none;&#10; mso-border-alt:outset #091F2F .75pt;mso-yfti-tbllook:1184;mso-padding-alt:&#10; 3.0pt 3.0pt 3.0pt 3.0pt">
+    <tbody>
+        <tr>
+            <td width="36%" style="width:36.78%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" style="page-break-after:avoid"><b><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">General TDM Elements</span></b><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" style="page-break-after:avoid"><b><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">Full</span></b><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" style="page-break-after:avoid"><b><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">Moderate</span></b><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" style="page-break-after:avoid"><b><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">Light</span></b><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="36%" style="width:36.78%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">Bus Benches</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="36%" style="width:36.78%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA">Provide Transportation Kiosk or Information Display<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="36%" style="width:36.78%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">Onsite Transportation   Fairs</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="36%" style="width:36.78%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA">Website/Online Commuter Store<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="36%" style="width:36.78%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">Participation   in FCDOT Rideshare Program</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="36%" style="width:36.78%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA">Vanpool Accessible Parking and Drop Off<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="36%" style="width:36.78%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">NonSOV   Preferred Parking (Office Only)</span><span lang="EN-CA" style="font-family:&#10;  &quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="36%" style="width:36.78%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA">Pedestrian Facilities<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="36%" style="width:36.78%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">Designate   Program Manager</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="36%" style="width:36.78%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA">Join area Transportation Management Association<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-size:8.0pt;font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">If   Available<o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-size:8.0pt;font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">If   Available<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-size:8.0pt;font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">If   Available<o:p></o:p></span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="99%" style="border-collapse:collapse;mso-table-layout-alt:fixed;border:none;&#10; mso-border-alt:outset #091F2F .75pt;mso-yfti-tbllook:1184;mso-padding-alt:&#10; 3.0pt 3.0pt 3.0pt 3.0pt">
+    <tbody>
+        <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+            <td width="100%" colspan="4" style="width:100.0%;background:#EAEFF1;padding:&#10;  4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><b><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  color:black;mso-color-alt:windowtext;mso-ansi-language:EN-CA">Bicycle   Programs</span></b><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:1">
+            <td width="36%" style="width:36.78%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA">Bicycle Racks<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:2">
+            <td width="36%" style="width:36.78%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  color:black;mso-color-alt:windowtext;mso-ansi-language:EN-CA">Protected   Bicycle Storage or Lockers</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;color:black;mso-color-alt:windowtext;&#10;  mso-ansi-language:EN-CA">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;color:black;mso-color-alt:windowtext;&#10;  mso-ansi-language:EN-CA">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;color:black;mso-color-alt:windowtext;&#10;  mso-ansi-language:EN-CA">----</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:3">
+            <td width="36%" style="width:36.78%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA">Shower Facilities (Office Only)<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">----<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:4">
+            <td width="36%" style="width:36.78%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  color:black;mso-color-alt:windowtext;mso-ansi-language:EN-CA">Bicycle Routes,   Lanes and/or Paths</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;color:black;mso-color-alt:windowtext;&#10;  mso-ansi-language:EN-CA">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;color:black;mso-color-alt:windowtext;&#10;  mso-ansi-language:EN-CA">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;color:black;mso-color-alt:windowtext;&#10;  mso-ansi-language:EN-CA">----</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:5;mso-yfti-lastrow:yes">
+            <td width="36%" style="width:36.78%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA">Bikeshare Participation<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-size:8.0pt;font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">If   Available<o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-size:8.0pt;font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">If   Available<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">----<o:p></o:p></span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="99%" style="border-collapse:collapse;mso-table-layout-alt:fixed;border:none;&#10; mso-border-alt:outset #091F2F .75pt;mso-yfti-tbllook:1184;mso-padding-alt:&#10; 3.0pt 3.0pt 3.0pt 3.0pt">
+    <tbody>
+        <tr>
+            <td width="100%" colspan="4" style="width:100.0%;background:#EAEFF1;padding:&#10;  4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><b><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">Transit   Programs</span></b><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="36%" style="width:36.78%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA">Bus Shelter or Bus Stop Improvements<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">X<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-size:8.0pt;font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">When   Requested</span><span lang="EN-CA" style="font-size:12.0pt;font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="36%" style="width:36.78%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">Free or Reduced   Cost Transit Passes</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">----</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="36%" style="width:36.78%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA">Real Time Transit Information<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-size:8.0pt;font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">If   Available<o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-size:8.0pt;font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">If   Available<o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA">----<o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="36%" style="width:36.78%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">Shuttle</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.14%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-size: 8pt; font-family: &quot;Minion Pro&quot;, serif;">When Requested</span><span lang="EN-CA" style="font-size:12.0pt;font-family:&quot;Minion Pro&quot;,serif;mso-ansi-language:&#10;  EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="18%" style="width:18.98%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">X</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+            <td width="22%" style="width:22.1%;background:#EAEFF1;padding:4.5pt 4.5pt 4.5pt 4.5pt">
+            <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-CA" style="font-family: &quot;Minion Pro&quot;, serif;">----</span><span lang="EN-CA" style="font-family:&quot;Minion Pro&quot;,serif;&#10;  mso-ansi-language:EN-CA"><o:p></o:p></span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><span lang="EN-CA" style="font-size:8.0pt;font-family:&quot;Minion Pro&quot;,serif;&#10;mso-ansi-language:EN-CA">* Or per proffered agreement<span style="mso-spacerun:yes">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span><span style="mso-spacerun:yes">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<br />
+</span>Table credit:&#160;<a href="http://www.fairfaxcounty.gov/transportation/tdm-toolkit">http://www.fairfaxcounty.gov/transportation/tdm-toolkit</a></span><span style="font-family: &quot;Minion Pro&quot;, serif; font-size: 8pt;">&#160;</span></p>
+<p>The following table summarizes the key barriers to action and how each was addressed. (Overcoming Specific Barriers)&#160;<span style="font-family: &quot;Minion Pro&quot;, serif; font-size: 11pt;">&#160;</span></p>
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:solid #A8D08D .5pt;&#10; mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:&#10; .5pt solid #A8D08D;mso-border-insidev:.5pt solid #A8D08D">
+    <tbody>
+        <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+            <td width="108" valign="top" style="width:80.7pt;border:solid #70AD47 1.0pt;&#10;  border-right:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-left-alt:&#10;  solid #70AD47 .5pt;mso-border-bottom-alt:solid #70AD47 .5pt;background:#70AD47;&#10;  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt">
+            <p class="MsoNormal"><b><span style="font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color:white;mso-bidi-language:&#10;  #0400">Barrier<o:p></o:p></span></b></p>
+            </td>
+            <td width="188" valign="top" style="width:140.7pt;border:solid #70AD47 1.0pt;&#10;  border-left:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-bottom-alt:&#10;  solid #70AD47 .5pt;mso-border-right-alt:solid #70AD47 .5pt;background:#70AD47;&#10;  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt">
+            <p class="MsoNormal"><b><span style="font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color:white;mso-bidi-language:&#10;  #0400">How it was addressed<o:p></o:p></span></b></p>
+            <p class="MsoNormal"><b><span style="font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color:white;mso-bidi-language:&#10;  #0400">&#160;</span></b></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:1;height:19.75pt">
+            <td width="108" valign="top" style="width:80.7pt;border:solid #A8D08D 1.0pt;&#10;  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;&#10;  background:white;mso-background-themecolor:background1;padding:0cm 5.4pt 0cm 5.4pt;&#10;  height:19.75pt">
+            <p class="MsoNormal">Lack of information / low   priority to change habits<b><span style="font-size:9.0pt;font-family:&#10;  &quot;Arial&quot;,sans-serif;mso-bidi-language:#0400"><o:p></o:p></span></b></p>
+            </td>
+            <td width="188" valign="top" style="width:140.7pt;border-top:none;border-left:&#10;  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;&#10;  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;&#10;  mso-border-alt:solid #A8D08D .5pt;background:white;mso-background-themecolor:&#10;  background1;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt">
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l0 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Transportation   kiosks and information displays<o:p></o:p></p>
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l2 level1 lfo3"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Onsite   transportation fairs<o:p></o:p></p>
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l2 level1 lfo3"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Individualized   Marketing Programs<o:p></o:p></p>
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l2 level1 lfo3"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Off-Peak   Travel Programs (Residential Only)<o:p></o:p></p>
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l2 level1 lfo3"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Shop   Near Home Marketing (Residential Only)<o:p></o:p></p>
+            <p class="MsoNormal" style="margin-left:18.7pt;text-indent:-18.7pt;mso-list:&#10;  l1 level1 lfo1;tab-stops:0cm 20.15pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;&#10;  mso-bidi-font-family:Symbol;mso-bidi-language:#0400">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Live   or Shop Near Work Marketing<span style="font-size:9.0pt;font-family:&#10;  &quot;Arial&quot;,sans-serif;mso-bidi-language:#0400"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:2;height:19.75pt">
+            <td width="108" valign="top" style="width:80.7pt;border:solid #A8D08D 1.0pt;&#10;  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;&#10;  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt">
+            <p class="MsoNormal">Onsite transportation fairs<b><span style="font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-language:#0400"><o:p></o:p></span></b></p>
+            </td>
+            <td width="188" valign="top" style="width:140.7pt;border-top:none;border-left:&#10;  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;&#10;  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;&#10;  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;&#10;  height:19.75pt">
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l2 level1 lfo3"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Promoted   compressed work weeks (offices only)<o:p></o:p></p>
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l2 level1 lfo3"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Promoted   flexible work schedules (offices only)<o:p></o:p></p>
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l2 level1 lfo3"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Promoted   telework programs (offices only)<o:p></o:p></p>
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l2 level1 lfo3"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:&#10;  Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-bidi-language:&#10;  #0400">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Promoted   onsite business center in residential buildings<span style="font-size:&#10;  9.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-bidi-language:#0400"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:3;height:19.75pt">
+            <td width="108" valign="top" style="width:80.7pt;border:solid #A8D08D 1.0pt;&#10;  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;&#10;  background:white;mso-background-themecolor:background1;padding:0cm 5.4pt 0cm 5.4pt;&#10;  height:19.75pt">
+            <p class="MsoNormal">Individualized Marketing   Programs<b><span style="font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;&#10;  mso-bidi-language:#0400"><o:p></o:p></span></b></p>
+            </td>
+            <td width="188" valign="top" style="width:140.7pt;border-top:none;border-left:&#10;  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;&#10;  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;&#10;  mso-border-alt:solid #A8D08D .5pt;background:white;mso-background-themecolor:&#10;  background1;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt">
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l2 level1 lfo3"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Promoted   paid parking<o:p></o:p></p>
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l2 level1 lfo3"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Promoted   parking cashout<o:p></o:p></p>
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l2 level1 lfo3"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:&#10;  Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-bidi-language:&#10;  #0400">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Promoted   unbundled parking<span style="font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;&#10;  mso-bidi-language:#0400"><o:p></o:p></span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:4;height:19.75pt">
+            <td width="108" valign="top" style="width:80.7pt;border:solid #A8D08D 1.0pt;&#10;  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;&#10;  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt">
+            <p class="MsoNormal">Off-Peak Travel Programs   (Residential Only)<b><span style="font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;&#10;  mso-bidi-language:#0400"><o:p></o:p></span></b></p>
+            </td>
+            <td width="188" valign="top" style="width:140.7pt;border-top:none;border-left:&#10;  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;&#10;  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;&#10;  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;&#10;  height:19.75pt">
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l2 level1 lfo3"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Preferred   parking for non-SOV vehicles (offices only)<o:p></o:p></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:5;height:19.75pt">
+            <td width="108" valign="top" style="width:80.7pt;border:solid #A8D08D 1.0pt;&#10;  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;&#10;  background:white;mso-background-themecolor:background1;padding:0cm 5.4pt 0cm 5.4pt;&#10;  height:19.75pt">
+            <p class="MsoNormal">Shop Near Home Marketing   (Residential Only)<b><span style="font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;&#10;  mso-bidi-language:#0400"><o:p></o:p></span></b></p>
+            </td>
+            <td width="188" valign="top" style="width:140.7pt;border-top:none;border-left:&#10;  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;&#10;  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;&#10;  mso-border-alt:solid #A8D08D .5pt;background:white;mso-background-themecolor:&#10;  background1;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt">
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l2 level1 lfo3"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Guaranteed   Ride Home program (offices only)<o:p></o:p></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:6;height:19.75pt">
+            <td width="108" valign="top" style="width:80.7pt;border:solid #A8D08D 1.0pt;&#10;  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;&#10;  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt">
+            <p class="MsoNormal">Inconvenience of <i>vanpooling</i><o:p></o:p></p>
+            </td>
+            <td width="188" valign="top" style="width:140.7pt;border-top:none;border-left:&#10;  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;&#10;  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;&#10;  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;&#10;  height:19.75pt">
+            <p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:&#10;  3.0pt;margin-left:18.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo3"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:&#10;  Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Vanpool   program with accessible parking and drop off<o:p></o:p></p>
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l2 level1 lfo3"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Guaranteed   Ride Home program (office only)<o:p></o:p></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:7;height:19.75pt">
+            <td width="108" valign="top" style="width:80.7pt;border:solid #A8D08D 1.0pt;&#10;  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;&#10;  background:white;mso-background-themecolor:background1;padding:0cm 5.4pt 0cm 5.4pt;&#10;  height:19.75pt">
+            <p class="MsoNormal">Inconvenience of taking <i>transit</i><o:p></o:p></p>
+            </td>
+            <td width="188" valign="top" style="width:140.7pt;border-top:none;border-left:&#10;  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;&#10;  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;&#10;  mso-border-alt:solid #A8D08D .5pt;background:white;mso-background-themecolor:&#10;  background1;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt">
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l0 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Bus   benches<o:p></o:p></p>
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l0 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Bus   shelter or bus stop improvements<o:p></o:p></p>
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l0 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Free   or reduced cost transit passes<o:p></o:p></p>
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l0 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Real   time transit information<o:p></o:p></p>
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l2 level1 lfo3"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Guaranteed   Ride Home program (offices only)<o:p></o:p></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:8;mso-yfti-lastrow:yes;height:19.75pt">
+            <td width="108" valign="top" style="width:80.7pt;border:solid #A8D08D 1.0pt;&#10;  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;&#10;  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt">
+            <p class="MsoNormal">Inconvenience of <i>cycling</i><o:p></o:p></p>
+            </td>
+            <td width="188" valign="top" style="width:140.7pt;border-top:none;border-left:&#10;  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;&#10;  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;&#10;  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;&#10;  height:19.75pt">
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l0 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Bicycle   racks<o:p></o:p></p>
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l0 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Protected   bicycle storage or lockers<o:p></o:p></p>
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l0 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Shower   facilities (offices only)<o:p></o:p></p>
+            <p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:&#10;  l2 level1 lfo3"><!--[if !supportLists]--><span style="font-family:Symbol;&#10;  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">&#183;<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;   </span></span><!--[endif]-->Guaranteed   Ride Home program (offices only)<o:p></o:p></p>
+            </td>
+        </tr>
+    </tbody>
+</table><!-- Delivering already contains P tags.-->
+
+
+
+
+
+         <h2>Measuring Achievements</h2>
+         <p>The county proffers required large new properties to annually monitor trips, conduct tenant commuting surveys, and show that they were meeting their trip reduction goals. They also had to conduct surveys every three years. Wells + Associates had helped the county to implement TDM programs and monitor trips performance metrics over seven-years (2013-2019) among 13 of the longest-standing programs.</p><!-- Results_B already contains P tags.-->
+
+
+
+
+
+         <h2>Results</h2>
+         <p>On average over seven years, the 13 residential and commercial developments generated 63% fewer trips, which was 34% beyond their goals. For the office buildings, this was likely at least partly a result of more people working from home during the COVID pandemic.</p><!-- Results_B already contains P tags.-->
+
+
+
+
+
+         <h2>Notes</h2>
+        <p>Setting requirements for new developments proved to be a cost-effective approach to reducing the number of trips. This approach could also be used with energy, water, and waste efficiency &#8211; requiring new developments to meet certain standards, including running behavior change programs to help control energy / water use and waste production.</p>
+<p><strong>For More Information</strong><strong><br />
+<br />
+</strong><a href="http://www.wellsandassociates.com/research/property-trip-forecasting-fairfax-county/" target="_blank">http://www.wellsandassociates.com/research/property-trip-forecasting-fairfax-county/</a><br />
+<strong><br />
+</strong><a href="http://www.fairfaxcounty.gov/transportation/tdm" target="_blank">http://www.fairfaxcounty.gov/transportation/tdm</a><strong> </strong></p>
+<p><a href="http://www.fairfaxcounty.gov/transportation/tdm-toolkit" target="_blank">http://www.fairfaxcounty.gov/transportation/tdm-toolkit</a></p><!-- Footer already contains P tags.-->
+
+      </div>
+
+
+      <!--/case_studies_content-->
+ </form>
+
+
+
+
+
+				</div><!--/left_main-->
+							<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+      <div class="advanced_side_body">
+      <p><strong>Search the Case Studies</strong></p>
+			<form method="post" action="/en/case-studies/case-studies-search/advanced-search-results/">
+        <input type="hidden" value="mood" name="special" />
+        <input type="hidden" name="do" value="case_studies" />
+          <table class="search_sidebar_styles">
+            <tr>
+              <td class="text_area"><input name="search_phrase" type="text" value= "Search"  size="16" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Search':this.value;" /></td>
+              <td class="go_area"><input src="/public/images/go_button_yellow.gif" value="Search" type="image" /></td>
+            </tr>
+          </table>
+        </form>
+        <p>
+        <a href="/en/case-studies/case-studies-search/"> Click for Advanced Search &raquo;</a></p>
+      </div>
+      <!--/news_body-->
+      <div class="advanced_side_cap_bottom"></div>
+
+					 <div class="intro_cap_top"></div>
+
+       <div class="sidebar_body">
+      <ul>
+									<li id="my_account_sidebar"><a href="/app/views/login/form_thick_reg.lasso?height=270&amp;width=340&amp;modal=true" class="thickbox" title="Please Log In">Please Log In</a></li>
+									<li id="help_sidebar"><a href="/en/help/">Help</a></li>
+									<li id="tou_sidebar"  class="last_nav"><a href="/en/terms/">Terms of Use</a></li></ul>
+
+
+
+       </div>
+
+
+					 <div class="intro_cap_bottom"></div>	<!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="/public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+
+								  		      <div class="sponsor_box">
+								   <p class="sponsor_text">This site is brought to you through <br />
+								     the vision and generosity of:</p>
+
+								   <p class="sponsor_header">Primary Sponsors</p>
+								   <a href="/en/case-studies"><img src="/public/images/sponsors_primary.gif" alt="Primary sponsors" width="199" height="50" class="sponsor_ads" /></a>
+								   <p class="sponsor_header">Supporting Sponsors</p>
+								   <a href="/en/case-studies"><img src="/public/images/supporting_sponsors.gif" alt="Supporting sponsors" width="199" height="53" class="sponsor_ads2" /></a>
+							      </div>
+
+
+
+								</div><!--/right_column-->
+
+
+
+						</div><!--/wrap-->
+ <div id="content_btm_cap"></div>
+
+  <div id="footer">
+    <div class="footer_left">
+
+      <p>&copy; 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a style="text_decoration:underline" href="mailto:tools@cullbridge.com">contact me</a>. I will usually give permission for credited uses with links</p>
+
+    </div>
+    <!--/footer_left-->
+    <div class="footer_right">
+      <ul>
+
+        <li><a href="/en/planning-guide/advanced-search/">Search</a></li>
+        <li><a href="/en/help/">Help</a></li>
+        <li><a href="/en/terms/">Terms of Use</a></li>
+
+        <li><a href="/app/views/login/form_thick_reg.lasso?height=270&width=340&modal=true" class="thickbox">My Account</a></li>
+
+        <li class="lastnav"><a href="/en/contact-us/">Contact Us</a></li>
+
+      </ul>
+    </div>
+    <!--/footer_right-->
+  </div>
+  <!--/footer-->
+</div>
+<!--/wrapper-->
+
+<div class="messages" style="font-size:1.5em;" >
+
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+
+
+
