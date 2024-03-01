@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 
 # TODO
 # - styling for case study pages
+# remove: #qnav, #nav_container, .sponsor_box, .intro_cap_top, topic_ad box, .footer_right, also remove footer_left wrapper
 # - homepage
 
 
