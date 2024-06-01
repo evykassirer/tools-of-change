@@ -84,7 +84,9 @@ def main():
   case_studies_home_url = "en/case-studies/"
   os.makedirs(case_studies_home_url)
   with open(case_studies_home_url + "index.html", "x") as f:
-    generate_page(f, case_studies_home_url, page.text, "../..")
+    page_text = page.text
+    page_text = page_text.replace("/en/case-studies/", "./")
+    generate_page(f, case_studies_home_url, page_text, "../..")
 
   soup = BeautifulSoup(page.content, "html.parser")
 
