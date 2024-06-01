@@ -1,0 +1,320 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Chesapeake Bay Program</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Virginia Department of Environmental</li>
+<li>Conservation and Recreation District of Columbia</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Only 40% of those who were exposed to the campaign planned to fertilize their lawn in the spring, compared to 46% of those not exposed to the campaign.</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Save The Crabs - Then Eat 'Em</h1>
+<p>To reduce nutrient pollution flowing into the Chesapeake Bay, this media-based campaign convinced area residents to fertilize their lawns in the fall rather than spring. For those hiring lawn services, it promoted partner lawn services that were Bay-friendly. The 2004 campaign was framed not as an environmental appeal, but as a way to ensure the continued availability of Chesapeake Bay seafood. It was followed in May 2011 with legislation that limits both the content and the application of fertilizer for urban and suburban lawns.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The Chesapeake Bay is the largest estuary in the United States. Surrounded by a human population growing by more than 100,000 people each year, multiple sources of pollution threaten the Bay, its sea life, and the livelihood of tens of thousands of people who depend on it for employment.</p>
+<p>Nutrients from agricultural waste, sewage treatment plants, lawn fertilizer and other sources are either deposited into the Bay directly, or washed into the Bay via storm sewers and the region's many rivers. Once in the Bay, nutrients (particularly nitrogen and phosphorous) upset the ecological balance by promoting the growth of algae.</p>
+<p>These algae are a double-edged sword. They block out sunlight necessary for the growth of sea grasses, which are the primary breeding ground for many sea creatures. When these algae die and decompose, they deplete oxygen from the water, again depriving sea life of a necessary element for survival.</p>
+<p>At the time of this case study, the greater D.C. area had about two million households with roughly 530,000 acres of lawn. Every year, excess lawn fertilizers in the D.C. primary metropolitan statistical area (PMSA) contributed about 4.7 million pounds of nitrogen and 560,000 pounds of phosphorous to local streams and rivers leading to the Bay. An estimated 11% of the total amount of nitrogen loading from this area came from lawn fertilizer.</p>
+<p>The Chesapeake Bay Program (the major entity charged with Bay cleanup and restoration), state and local governments, and advocacy organizations had worked for decades to reduce nutrient pollution from the largest sources, namely agriculture, sewage treatment, and urban runoff. Both regulatory and voluntary programs implemented in these sectors had significantly reduced nutrient contributions to the Bay. The time had come for a program focused on the general public.</p>
+<p>In 2004, the Chesapeake Bay Program funded the non-profit Academy for Educational Development (AED) to design and implement a communications campaign targeting the residents of the greater D.C. area. This campaign would strive to change personal behaviors that impacted Bay water quality, and heighten awareness of Bay pollution among this audience of busy, yet socially aware and often influential, individuals.</p>
+<p>Hundreds of campaigns, political issues, partnerships, agendas, and proposals had been launched to save the Bay since the first comprehensive survey began in 1967. The concept of yet another campaign to save the Bay would have to fight message fatigue and scepticism about its messages and motives.</p>
+<p>Social marketing campaigns require an "exchange" giving up an ingrained behavior in exchange for a valued benefit. The campaign would need to find such a benefit that was valued by this urban and suburban audience.</p>
+<p><strong>The Blue Crab</strong></p>
+<p>The Blue Crab, a regional icon, was a logical choice. While people in the D.C. area had only limited concern for the Bay, many were passionate about their seafood - as evidenced by the many thriving seafood restaurants throughout D.C. and its Maryland and Virginia suburbs.</p>
+<p>For centuries, Chesapeake Bay blue crabs were considered the best blue crabs in the world. They once provided an indispensable food source to early Native Americans and later to colonial America. In addition, they provided a critical employment base for the fishing and restaurant industries across the region. Of all the species under threat, the Chesapeake Bay blue crab was the best known and best loved.</p>
+<p>Chesapeake blue crab harvests had declined to near record lows at the end of the 20th century. The three-year (2001-2003) commercial harvest average of 50 million pounds was 32% below the long-term average (from 1968 to 2003) of about 73 million pounds per year. In 2003, the Chesapeake blue crab harvest hit a nearly historic low.</p>
+<p><strong>A Focus on Lawn Fertilization</strong></p>
+<p>Fertilizers contain high levels of algae-promoting nutrients that lead to a reduction in underwater grasses, the most critical habitat for blue crabs and other Bay creatures. Areas of the Bay covered in grasses were home to about 30 times more underwater life than barren areas. Without this habitat, there were fewer areas for juvenile sea creatures to live and grow.</p>
+<p>Waiting until fall to fertilize lawns had a triple benefit: 1) keeping more fertilizer on the lawn where it could do its job, due to less rain, 2) promoting grass root growth instead of blade growth, making the lawn stronger and healthier than with spring fertilization, and 3) being less harmful to the Bay, as less fertilizer would be washed into it, and fertilizer that did reach the Bay would does so outside of peak algae bloom season.</p>
+<p>Choosing fall lawn fertilization as a target behavior made sense for a number of reasons, including:</p>
+<p>1. Lawn care was probably the single individual action individuals had control over that most affected Bay water quality. <br/>
+2. Changing lawn care behavior by waiting until fall to fertilize was not hard to do. <br/>
+3. Lawn fertilization was a public behavior that was subject to social reinforcement.</p>
+<p>AED convened a one-day retreat with local watershed managers, academics, and other stakeholders to review the behaviors to be targeted and other behavioral options for the campaign. A consensus was reached that changing lawn care would have the greatest potential to impact Bay water.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The Chesapeake Bay Program could allocate only limited funds to the campaign ($550,000, over half of which was to be allocated for paid advertising) for a one-year period of time, and naturally wanted to accomplish something meaningful. The decision was made to focus on three practical goals that, if accomplished, would contribute to a much wider and sustained effort.</p>
+<p>1. To refresh attention to the Bay's problems in a large-scale population suffering from message fatigue.</p>
+<p>2. To bring a new group of stakeholders to the table.</p>
+<p>3. To popularize a new target behaviour with significant potential to improve water quality if implemented on a large scale.</p>
+<p>The objectives that were selected for the campaign, or the products being marketed, involved two simple behaviors that required a lot of structural support and attitude change, but not much effort, to accomplish:</p>
+<ol>
+<li>To get homeowners with lawns to fertilize their lawns in the fall rather than in the spring; and</li>
+<li>To get those who hired a lawn service to use Bay-friendly lawn services.</li>
+</ol>
+<p>Objectives for the percent of population reached, and percent who changed behavior, were not set prior to the campaign.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>AED conducted a random-digit-dial telephone survey of approximately 600 area homeowners. The survey corroborated the finding of previous Bay watershed surveys that, although a large portion of the target audience expresses concern for the environment and the Bay, this concern rarely translated into environmental action. The survey also confirmed that most people in the area had no strong personal connection to the Bay.</p>
+<p>Other findings were that:</p>
+<ul>
+<li>An attractive lawn was important to homeowners;</li>
+<li>Approximately 84% of homeowners did their own yard work and 16% hired a lawn service; and that</li>
+<li>Those who cared for their own lawns were most likely to fertilize in the spring only, or to fertilize in both spring and fall.</li>
+</ul>
+<p><strong>Targeting the Audience</strong></p>
+<p>The campaign targeted a wide audience: homeowners with lawns in the greater D.C. area.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Reframing the problem of a polluted Bay as a culinary, not an environmental, problem was the cornerstone of the campaign. The exchange for adopting the desired behavior was helping to ensure that delicious Bay blue crabs and other seafood would continue to grace the plates of people in greater D.C. Preachy, and therefore likely ineffective, messaging were avoided by introducing an element of humour. <a href="/en/tools-of-change/communication/">(Vivid, Personalized Communication)</a></p>
+<p>The campaign was branded the Chesapeake Club, in order to create a sense of membership, participation, and practicing a behavior that was the accepted social norm a sense that this is what people like me do. <a href="/en/tools-of-change/norm-appeals/">(Norm Appeals)</a></p>
+<p>Messaging focused on waiting until fall to fertilize, as this was the desired behavior for 84% of the target audience. The other 16% were also be targeted, but with a message of hiring an environmentally responsible lawn service. Messages emphasized creating a healthy lawn, as opposed to a green lawn.</p>
+<p>Lawn care partners were recruited to co-develop and offer customers a Bay-friendly service option. Early discussions with local university researchers and extension agents, and lawn companies themselves, had indicated that by limiting the timing and quantity of fertilizer applied, lawn services with the proper technology and training could apply fertilizer throughout the growing season in a Bay-friendly way that the general public could not. In return for offering such a service option, the campaign promote these participating businesses to the target audience.</p>
+<p>The campaign recognized that lawn fertilizing was a spring ritual for many homeowners. Therefore, it also tried (unsuccessfully) to develop and promote an alternative spring lawn care behavior to take the place of spring fertilizing.</p>
+<p><strong>Advertising and Website</strong></p>
+<p>Paid TV and print ads ran at the time of year when most homeowners were contemplating lawn care. This helped ensure that a significant number of people would see them often enough to absorb the message. <a href="/en/tools-of-change/mass-media/">(Mass Media)</a></p>
+<p>The campaign website reinforced the fall fertilization message and offered additional information about how to create a healthy lawn using Bay-friendly techniques. Ads drove viewers to the website, where they would find, not only lawn-related information, but also suggestions for fun day trips to the Bay area, and seafood recipes. The site also listed Bay-friendly lawn care partners.</p>
+<p>Three television ads (two 15-second spots and one 30-second spot) were developed under the direction of Marketing for Change creative director David Clemans, each encouraging viewers to wait until fall to fertilize their lawns and each using humor to lighten the message.</p>
+<p>One ad explained (with mock seriousness) that fertilizer was carried by spring rains into the Bay, where blue crab harvests were at an all-time low. The narrator proclaimed No crab should die like this ... and as he bit into a lump of crabmeat, opined that they should perish in some hot, tasty butter. Each ad ended with the tagline Save the crabs, then eat em and the website address.</p>
+<p>An additional 30-second PSA was also developed and offered to Washington television stations; it was unclear how often it ran, if at all.</p>
+<p>These television ads were pre-tested using a virtual focus group of 24 individuals (acquaintances of the campaign staff) who were not connected to the campaign, and who were members of the target demographic (homeowners with yards). The ad clips were emailed to focus group participants, each of whom provided feedback. All respondents were able to correctly describe the intent of the ads, and most liked them and found them persuasive (two respondents mildly objected to saving the crabs merely to be eaten).</p>
+<p>A total of 1,312 rating points of airtime were purchased on Washington's four major broadcast television networks over the seven weeks of the campaign, beginning with a two-week launch at 250 rating points a week. This reached 83% of the intended television audience an average of 14 times over the campaign period, or about twice a week.</p>
+<p>Print ads ran once a week in the Sunday Washington Post, and in a free tabloid handed out at Metro stops called Express (also owned by The Washington Post Company). Six of the 14 ads urged readers to consider asking for a Chesapeake Club lawn service, and one listed the names and phone numbers of participating lawn services. These ads were also made into flyers and handed out, along with drink coasters, at major subway stops.</p>
+<p>To focus maximum attention on the ads, the campaign was launched with a press event in early March, at which local chefs convened and signed a petition asking D.C. area residents to wait until fall to fertilize, or to hire a Chesapeake Club lawn care partner so that they could more reliably serve delicious local Chesapeake seafood. Two local network affiliates covered the story.</p>
+<p><strong>Media Stories</strong></p>
+<p>Media opportunities were pitched to local news outlets and national newswires throughout the seven-week ad run, and a number of stories ran as a result. Several media outlets were interested in the angle of a non-environmental theme for an environmental campaign, and others focused on the partnership with lawn care companies, which they deemed an unlikely but beneficial partnership. A number of news outlets outside of the target area, including the Los Angeles Times and an English-language radio program in Germany, picked up on the story of this unusual approach to environmental advocacy.</p>
+<p><strong>Posters</strong></p>
+<p>The campaign also included five similarly themed posters. The posters were displayed inside the cars on two Washington metro lines reaching suburban Virginia, as well as on the kiosks and bannerspace in Union Station - the final stop for the Maryland and Virginia commuter trains.</p>
+<p>One ad depicted an empty sandwich bun, the type that might ensconce one of the area's locally-revered crab cakes, with the message The lunch you save may be your own, and a plea to wait until fall to fertilize to keep the blue crabs coming. Another billboard depicted a suburban house with a sprawling yard, and the claim that No appetizers were harmed in the making of this lawn.</p>
+<p><strong>Brochures, Decals, Door Hangers and Lawn Signs</strong></p>
+<p>A color brochure promoting the Chesapeake Club lawn care option was provided to all participating lawn care partners for distribution to existing and potential customers. To increase visibility of participation, lawn care partners were also given free Chesapeake Club promotional items to provide to their clients. These included window stickers, door hangers and lawn signs. The message on the door hangers, for example, was No appetizers were harmed in the making of this lawn. <a href="/en/tools-of-change/norm-appeals/">(Norm Appeals)</a></p>
+<p><strong>Restaurant Coasters</strong></p>
+<p>Branded Save the crabs, then eat em drink coasters were printed and distributed without charge to local seafood restaurants, to use and hand out to patrons. The coasters sported the fertilize in the fall message on the back, and restaurant wait-staff were informed regarding the purpose of the campaign and why fall fertilizing was more environmentally sound. In this way, restaurants also became partners in disseminating the campaign message, and as an extra incentive, were also promoted on the campaign website.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The Chesapeake Bay Program allocated $550,000 for a one-year period of time, over half of which was allocated for paid advertising.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>A pre- and post-intervention random-digit dial telephone survey was administered over two-and-a-half weeks, beginning the last week of the television buy, reaching 599 area residents who reported they cared for their lawn or hired someone to do it. Respondents were asked the same questions regarding environmental concern and practices as in the pre-intervention survey, with the addition of several others to determine whether they had seen, remembered, and liked the ads. Homeowners were also asked whether they planned to fertilize this year, and if so, when.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Behavior Change</strong></p>
+<p>While respondents were asked in both the 2004 and 2005 surveys when they planned to fertilize their lawns that year, close analysis of the data showed that their answers had been recorded differently for the two surveys. The data for this response were not considered valid for comparative / evaluation purposes. However, inferences were drawn from comparing those respondents who were exposed to the campaign (i.e. recalled a major theme) with those who were not.</p>
+<p>After the campaign in spring 2005, 42% of those surveyed reported that they were planning to fertilize their lawn in the spring (the behavior that the campaign tried to discourage). Although not statistically significant, 46% of those not exposed to the campaign planned to fertilize their lawn in the spring, compared to only 40% of those who were exposed to the campaign (P 0.12, Fishers exact test).</p>
+<p>Post-campaign survey data suggest that an unintended consequence of the compaign may be that it influenced some people to stop fertilizing their lawns at all. In the 2004 pre-campaign survey, 23% of respondents reported that they were not planning to fertilize their lawn at all that year; 28% of those in the 2005 post-campaign survey reported that they were not planning to fertilize their lawn.</p>
+<p>A statistically significant difference also emerged post-campaign, such that 30% of those who were exposed to the campaign reported they were not planning to fertilize their lawn at all in 2005, compared to only 22% of those not exposed to the campaign (P &lt; 0.05, Fishers exact test).</p>
+<p><strong>Reach and Recall</strong></p>
+<p>Despite the campaign's limited advertising budget, the post-campaign survey indicated that many people had heard and retained the Chesapeake Club brand name and tagline. Of those surveyed, 72% were able to recall a major theme of the campaign (brand name, tagline, or what they were being asked to do) without any prompt other than asking if theyd heard anything this year about fertilizer use and the Chesapeake Bay. Of those surveyed, 37% were able to recall specifically the Chesapeake Club brand, and/or the Save the crabs, then eat em tagline, again without any prompts.</p>
+<p>Despite a campaign budget that was small in comparison to that of the Scotts lawn product company, the Chesapeake Club brand gained a respectable level of brand recognition. When the campaign name and tagline were included in a list of brand names read to respondents in the post-campaign survey, 76% of respondents recognized the Scotts brand, while 43% recognized the Chesapeake Club brand, and/or the campaign tagline of Save the crabs, then eat em. Other choices received lower recognition scores (e.g., the website SaferCar.gov at 11%), suggesting that falsely reported recognition of the brand name and tagline were low.</p>
+<p>Post-campaign survey data suggested that some people had heard and retained the basic message of the campaign. When those who reported hearing something about fertilizer use and the Bay were asked what they heard, 38% said theyd heard that they should not fertilize in the spring, and/or that they should put off fertilizing until the fall. These respondents recalled the messages without being given any prompts.</p>
+<p>A similar survey question had similar results. The second question asked what the ads wanted people to do, again without any prompted responses from which to choose. In all, 39% of respondents said that the ads asked people not to fertilize in the spring, and/or to put off fertilizing until the fall.</p>
+<p>Another indication that the campaign met or surpassed its intended reach, was that respondents to the post-campaign survey remembered seeing the ads on television (29%), in the newspaper (18%), on billboards (17%), on subway cars (10%), and/or on a flyer or drink coaster (4%). Again, these responses were unprompted. (It is worth noting, however, that 26% also recalled hearing messages on the radio, when no radio ads were produced.)</p>
+<p><strong>Brand and Tagline Acceptance</strong></p>
+<p>Few people seemed to dislike the brand or tagline. Of those surveyed who recognized the phrase Save the crabs, then eat em, 50% liked the tagline, and 43% had no opinion, while only 7% disliked it. Of those who recalled the Chesapeake Club brand, 34% reported liking the name, 64% had no opinion and only 1% disliked it.</p>
+<p>A surprising number of people (approximately 100) took time to email via the website to express their appreciation of the campaign messages and use of humor. The most frequently made comment was that the campaign should print and sell Save the crabs, then eat em T-shirts. Surprisingly few people (four) wrote to express displeasure with the suggestion that one should save the crabs solely so they can be eaten.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Judy Landers <br/>
+Chesapeake Club Project Director <br/>
+Center for Social Marketing and Behavior Change <br/>
+Academy for Educational Development <br/>
+1825 Connecticut Avenue NW <br/>
+Washington, DC, 20009-5721 <br/>
+Phone 202-884-8975</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Update - May 19, 2011</strong> from the Baltimore Sun <a href="http://weblogs.baltimoresun.com/features/green/2011/05/lawn_fertilizer_limits_become.html">http://weblogs.baltimoresun.com/features/green/2011/05/lawn_fertilizer_limits_become.html</a></p>
+<p> </p>
+<p><em>Lawn fertilizer limits become law</em></p>
+<p>Gov. Martin O'Malley signed into law today legislation that limits both the content and the application of fertilizer for urban and suburban lawns, a measure supporters say should help rescue the Chesapeake Bay from the nutrient pollution fouling its water.</p>
+<p>Touted by proponents as the most comprehensive regulation of lawn care in the Bay region, if not the nation, the law bars phosphorus in any fertilizer except those meant to boost growth of new or repaired lawns. It also limits nitrogen content.</p>
+<p>The measure further restricts when and where homeowners and lawn-care outfits can apply fertilizer - specifying, for instance, that none is to be sprayed or spread within 10 to 15 feet of water, depending on how it's applied.</p>
+<p>The law bars any local fertilizer bans or regulations, and would appear to invalidate the restrictions in force since 2009 in Annapolis, the only municipality or county to enact any. But proponents say the application limits in the statewide law essentially mirror the Annapolis ones, except for that city's requirement that merchants selling fertilizer post a sign urging customers not to overapply it.</p>
+<p>Under the state law, lawns are not to be fertilized before March 1 or after Nov. 15, though lawn-care outfits get a couple more weeks in the fall than do-it-yourselfers. The paid applicators can keep working to Dec. 1, as long as they're spraying liquid plant food.</p>
+<p>Lawn-care professionals also get latitude to continue applying "natural organic" or "organic" fertilizer containing phosphorus, though beginning in 2013 the amount of that plant nutrient would also be limited and couldn't be applied at all to lawns where tests show the soil already has plenty of phosphorus.</p>
+<p>But people paid to apply fertilizer would be required to undergo training and obtain certification from the Maryland Department of Agriculture, much as pest-control workers are now.</p>
+<p>State officials predict that the law should reduce the overall amount of phosphorus getting into Maryland's portion of the bay by 3 percent. They say they don't have a handle yet on how much nitrogen might be kept out of the water. But it's estimated that 14 percent of the nitrogen and 8 percent of the phosphorus polluting the bay comes from urban and suburban land, much of it fertilizer washed off by rain.</p>
+<p>Though the law would make a relatively small dent in the bay's overall pollution problem, it's an important one, if only politically. Agriculture Secretary Earl F. "Buddy" Hance noted that Maryland's farmers have been under increasing regulation over the years, and this measure addresses a source of water problems largely ignored until now. The state has 1.1 million acres in turfgrass, he pointed out, nearly as much land as farmers use for growing crops.</p>
+<p>"This is an opportunity for homeowners to do their share," said Del. James Hubbard, a Prince George's County Democrat who introduced HB573 on behalf of the Chesapeake Bay Commission. The commission, representing lawmakers from Maryland, Pennsylvania and Virginia, pushed the states to adopt lawn fertilizer limits this year. Virginia enacted curbs on phosphorus, and legislation is now being drafted in Pennsylvania.</p>
+<p>Any person who violates the law's restrictions on fertilizing lawns can be fined up to $1,000 for a first offense, and up to $2,000 for each repeat infraction. But Ann P. Swanson, the bay commission's executive director, said she believes the law's main impact will come from fertilizer manufacturers reducing the nutrient content of their products.</p>
+<p>Chris J. Wible, director of environmental stewardship for Scotts Miracle-Gro Company, a leading lawn products seller, noted that his firm and another had voluntarily agreed to reduce the phosphorus content of their lawn fertilizer years ago. With this legislation in the works and similar curbs being discussed up and down the East Coast, Scotts announced earlier this year it would make all its lawn fertilizer products sold nationally phosphorus-free by 2012.</p>
+<p>As for ensuring that homeowners heed the application limits, the bay commisson's Swanson said that would come from people learning about the need to change their lawn-care habits, rather than from any enforcement crackdown. There was no additional money budgeted to enforce this law, nor were any extra funds provided for carrying out the public education campaign the law calls for, according to Hance, the state agriculture secretary.</p>
+<p>Swanson said people themselves would have to make sure the law is followed, much as public pressure discourages littering. "We're really going to have to rely on one neighbor helping another," she said. </p>
+<p><strong>Acknowledgement</strong></p>
+<p>This case study has been adapted from the article Save The Crabs, Then Eat Em: A Culinary Approach To Saving The Chesapeake Bay, which was published in Social Marketing Quarterly, Volume 12, Number 1, Spring 2006. We thank the authors and publisher for allowing us to do so.</p>
+<p><strong>Lessons Learned</strong></p>
+<ul>
+<li>The campaign's use of partnerships significantly enhanced its penetration and overall success.</li>
+<li>By recruiting a potentially adversarial group of stakeholders (lawn care companies) and making them campaign spokespeople, the campaign gained reach and legitimacy.</li>
+<li>Seafood restaurants and their chefs were natural but untapped allies; a vested interest in preserving Chesapeake seafood, plus free coasters and free publicity, made partnering with them nearly effortless.</li>
+<li>An effort to partner with Scotts, a major manufacturer of lawn chemicals, to develop a product for use in the springtime in place of lawn fertilization did not result in a plan to come up with a replacement product.</li>
+<li>Scotts, which sells most of its lawn care products in the spring, did indicate that the company would consider changing fertilizer packaging in the future to promote more responsible fertilizing.</li>
+<li>The campaign approach of reframing the issue to appeal to the target audiences' stomachs rather than their environmental consciousness was sufficiently newsworthy to gain significant media coverage, also enhancing the campaign's reach and legitimacy.</li>
+<li>Reframing an environmental problem as an issue with a stronger connection to a target audience can help to refresh the environmental message and tune in audiences that may have tuned out.</li>
+<li>Reframing an environmental issue can also help bring new and unexpected partners to the table.</li>
+<li>A new twist on an environmental issue can also attract the attention of the news media, thus enhancing the campaigns potential for tapping earned media to improve reach.</li>
+<li>"Hits" to the campaign website were much lower than expected, possibly due to the web address being insufficiently prominent in the advertising.</li>
+<li>Some lawn care partners were unhappy that most of the ads featured the message of fall fertilization, without pairing it with the option to hire a Chesapeake Club partner lawn service.</li>
+<li>Insufficient time was allotted for development and distribution of print collateral to support the lawn care partners, who each year begin customer outreach as early as January. As a result, they were unable to promote the Chesapeake Club service option along with their first customer contacts of the year.</li>
+<li>A campaign media buy need not be exorbitantly expensive to have measurable impact. Again, messaging that is unconventional and contains an element of humor can help compensate for minimal media buy dollars.</li>
+<li>While a worthwhile pursuit, tackling an environmental problem upstream (e.g., partnering with a manufacturer to develop an alternative product to replace spring fertilization), likely requires more time and effort than a one-year campaign can support.</li>
+</ul>
+<p>This case study was written in 2006 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

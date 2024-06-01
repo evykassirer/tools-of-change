@@ -1,0 +1,346 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li> Swedish celebrities</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>23% of Swedes reduced their air travel due to its climate impact</li>
+<li>Demand for domestic air travel fell by 8% over four months</li>
+<li>Train trips increased correspondingly</li>
+</ul>
+<p> </p>
+<p><strong>Case Study <a href="/userfiles/Stay on the Ground-2020.01.16.pdf" target="_blank">PDF</a></strong></p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Stay on the Ground</h1>
+<p>The most effective approach to-date at shifting air travel to train travel, and also at promoting the sale of carbon offsets for airplane travel, this approach could also work well for other behaviors that are perceived by the audience as clearly important to do, yet are not being adopted by many people.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong><u>Note 1: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</u></strong></p>
+<p><strong>Note 2</strong>:  This case study illustrates a social movement approach rather than a social marketing one, but has nonetheless been included on the Tools of Change website for three reasons. (1) It is an interesting norms case study – and norms are a standard tool used within the social marketing framework. (2) Social marketers may need to integrate more social movement approaches within our toolkit in order to tackle the wicked challenges we face. (3) At the time of publishing in January 2020, this case study addressed an important and timely issue that needed to gain traction.</p>
+<p>Avoiding air travel had been identified as the third most effective way for individuals to reduce their greenhouse gas emissions, after having fewer children and living car-free. While aviation accounted for only three per cent of global CO2 emissions in 2018, the industry’s carbon footprint was predicted to rise by as much as 700 per cent over the next three decades in a business-as-usual scenario. Between 2007 and 2017, the number of people flying worldwide had almost doubled, from 2.2 billion to 4 billion a year.  There had been growing global alarm about the environmental impacts of flying, as more and more people travel by air. In 2017, a movement to “stay on the ground” began in Sweden, where air travel subsequently dropped while train travel had risen. The movement then spread to other countries around the world.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>There had been growing global alarm about the environmental impacts of flying, as more and more people traveled by air. Aside from this, the “Stay on the Ground” movement was started without the benefit of any formative research.</p>
+<p><strong>Priority Audience</strong></p>
+<p>This program focused on people who bought airplane tickets.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The “stay on the ground” movement began in Sweden in 2017, at a time when that country produced five times more greenhouse gasses from flying per capita than the global average. However, Sweden planned to be carbon neutral by 2045 and had a reputation to live up to, as one of the world’s most eco-friendly countries. The previous year, in 2016, it had experienced a record heat wave and wildfires in the arctic.</p>
+<p>Concerned about the impact of flying on climate change, Swedish singer Staffan Lindberg declared that he had given up flying and inspired other celebrities including biathelete Bjorn Ferry and opera-singer Malena Ernman, to join him. They co-authored an article about their decisions not to fly. More celebrities and more articles followed. (<em>Norm Appeals</em>)</p>
+<p>Youth climate activist Greta Thunberg is the daughter of Malena Ernman, mentioned above. In August, 2018, Greta gained recognition when she went on strike from school on Fridays to protest her government’s inaction on climate change, sparking a series of worldwide demonstrations by young people. Thunberg traveled mainly by train on a European tour to raise awareness about climate change. When she used a sailboat to get to a United Nations Climate Action Summit in New York, she gained additional attention worldwide.</p>
+<p>Soon there was considerable discussion on Twitter using the following hashtags. (<em>Mass Media</em>)</p>
+<ul>
+<li>Jagstannarpåmarken (which translates as #istayontheground)</li>
+<li>Flygfritt (flight free)</li>
+<li>Flygskam (flight shame)</li>
+<li>Tagskryt (train bragging)</li>
+</ul>
+<p>A guerrilla campaign began using Instagram to tally the planet-busting travels of top Swedish celebrities. The account “aningslosainfluencers” (clueless influencers) gained 60,000 followers.</p>
+<p>250 people working in the Swedish film industry signed an article in the country's biggest daily (Dagens Nyheter) calling for film producers to limit shoots abroad.</p>
+<p>A website Tagsemester.nu (Train Vacation) helped spur the growth in train travel. First started as a Facebook group in 2014, this Swedish-language group helped users exchange practical tips and cheer on each other’s journeys. It had 99,000 members by 2019 — which means that 1 percent of Sweden’s 10 million people could have been using it.</p>
+<p>                                    <img alt="" height="350" src="/userfiles/Image/We Stay on the Ground logo.jpg" width="350"/></p>
+<p>In 2018, Maja Rosén gave up her spot in medical school to found the Swedish organization,“Vi håller oss på jorden” (We Stay on the Ground; <a href="https://westayontheground.blogspot.com" target="_blank">https://westayontheground.blogspot.com</a>/) that spreads awareness about the climate impact from flying and work for reduced air travel. It ‘s campaign “Flight Free 2020”, asked people to pledged to stay on the ground in 2020 – provided that 100,000 people from their country promised to do the same thing. The campaign then expanded to other countries.  The next country to have a full-time campaign coordinator (Anna Hughes) was the United Kingdom.</p>
+<p><strong>Overcoming Barriers</strong></p>
+<p>The following table lists the key barriers to action and how they were addressed. </p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:9.9pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid #1F497D .5pt;mso-border-themecolor:text2;mso-yfti-tbllook:1184;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:.5pt solid #1F497D;
+ mso-border-insideh-themecolor:text2;mso-border-insidev:.5pt solid #1F497D;
+ mso-border-insidev-themecolor:text2">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.25pt">
+<td style="width:1.5in;border:solid #1F497D 1.0pt;
+  mso-border-themecolor:text2;mso-border-alt:solid #1F497D .5pt;mso-border-themecolor:
+  text2;padding:0in 5.4pt 0in 5.4pt;height:15.25pt" valign="top" width="144">
+<p class="MsoNormal"><b><span style='font-family:"Arial","sans-serif"'>Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="width:184.5pt;border:solid #1F497D 1.0pt;
+  mso-border-themecolor:text2;border-left:none;mso-border-left-alt:solid #1F497D .5pt;
+  mso-border-left-themecolor:text2;mso-border-alt:solid #1F497D .5pt;
+  mso-border-themecolor:text2;padding:0in 5.4pt 0in 5.4pt;height:15.25pt" valign="top" width="246">
+<p class="MsoNormal"><b><span style='font-family:"Arial","sans-serif"'>How   it was addressed</span></b><b><span style='font-family:"Arial","sans-serif"'> </span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:41.85pt">
+<td style="width:1.5in;border:solid #1F497D 1.0pt;
+  mso-border-themecolor:text2;border-top:none;mso-border-top-alt:solid #1F497D .5pt;
+  mso-border-top-themecolor:text2;mso-border-alt:solid #1F497D .5pt;mso-border-themecolor:
+  text2;padding:0in 5.4pt 0in 5.4pt;height:41.85pt" valign="top" width="144">
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>Belief that more sustainable means   of travel took longer<o:p></o:p></span></p>
+</td>
+<td style="width:184.5pt;border-top:none;border-left:
+  none;border-bottom:solid #1F497D 1.0pt;mso-border-bottom-themecolor:text2;
+  border-right:solid #1F497D 1.0pt;mso-border-right-themecolor:text2;
+  mso-border-top-alt:solid #1F497D .5pt;mso-border-top-themecolor:text2;
+  mso-border-left-alt:solid #1F497D .5pt;mso-border-left-themecolor:text2;
+  mso-border-alt:solid #1F497D .5pt;mso-border-themecolor:text2;padding:0in 5.4pt 0in 5.4pt;
+  height:41.85pt" valign="top" width="246">
+<p class="MsoNormal" style="margin-left:12.6pt;text-indent:-12.6pt;mso-list:
+  l0 level1 lfo1;tab-stops:0in 12.6pt 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]--><span style='font-family:"Arial","sans-serif"'>Communications   pointed out that many trips actually took more time by air than by train<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:41.85pt">
+<td style="width:1.5in;border:solid #1F497D 1.0pt;
+  mso-border-themecolor:text2;border-top:none;mso-border-top-alt:solid #1F497D .5pt;
+  mso-border-top-themecolor:text2;mso-border-alt:solid #1F497D .5pt;mso-border-themecolor:
+  text2;padding:0in 5.4pt 0in 5.4pt;height:41.85pt" valign="top" width="144">
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>Lack of agency (my actions won’t   make a difference)<o:p></o:p></span></p>
+</td>
+<td style="width:184.5pt;border-top:none;border-left:
+  none;border-bottom:solid #1F497D 1.0pt;mso-border-bottom-themecolor:text2;
+  border-right:solid #1F497D 1.0pt;mso-border-right-themecolor:text2;
+  mso-border-top-alt:solid #1F497D .5pt;mso-border-top-themecolor:text2;
+  mso-border-left-alt:solid #1F497D .5pt;mso-border-left-themecolor:text2;
+  mso-border-alt:solid #1F497D .5pt;mso-border-themecolor:text2;padding:0in 5.4pt 0in 5.4pt;
+  height:41.85pt" valign="top" width="246">
+<p class="MsoNormal" style="margin-left:12.6pt;text-indent:-12.6pt;mso-list:
+  l0 level1 lfo1;tab-stops:0in 12.6pt 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]--><span style='font-family:"Arial","sans-serif"'>Some   communications framed personal emissions as a portion of a personal   greenhouse gas emissions budget, to show how large the impact was of not   flying <o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:12.6pt;text-indent:-12.6pt;mso-list:
+  l0 level1 lfo1;tab-stops:0in 12.6pt 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]--><span style='font-family:"Arial","sans-serif"'>Highlighted   people choosing not to fly<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;mso-yfti-lastrow:yes;height:34.15pt">
+<td style="width:1.5in;border:solid #1F497D 1.0pt;
+  mso-border-themecolor:text2;border-top:none;mso-border-top-alt:solid #1F497D .5pt;
+  mso-border-top-themecolor:text2;mso-border-alt:solid #1F497D .5pt;mso-border-themecolor:
+  text2;padding:0in 5.4pt 0in 5.4pt;height:34.15pt" valign="top" width="144">
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>Established travel habits.   inconvenience<o:p></o:p></span></p>
+</td>
+<td style="width:184.5pt;border-top:none;border-left:
+  none;border-bottom:solid #1F497D 1.0pt;mso-border-bottom-themecolor:text2;
+  border-right:solid #1F497D 1.0pt;mso-border-right-themecolor:text2;
+  mso-border-top-alt:solid #1F497D .5pt;mso-border-top-themecolor:text2;
+  mso-border-left-alt:solid #1F497D .5pt;mso-border-left-themecolor:text2;
+  mso-border-alt:solid #1F497D .5pt;mso-border-themecolor:text2;padding:0in 5.4pt 0in 5.4pt;
+  height:34.15pt" valign="top" width="246">
+<p class="MsoNormal" style="margin-left:12.6pt;text-indent:-12.6pt;mso-list:
+  l0 level1 lfo1;tab-stops:0in 12.6pt 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]--><span style='font-family:"Arial","sans-serif"'>Appealed   to group norms and shared values<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<ul>
+<li>Actual travel data were reported by Swedish Railways and Airport operator Swedavia AB and were corroborated by a Swedish Railways survey.</li>
+<li>Reasons for the change were tracked through surveys by Vagabond, the World Wildlife  Federation, Swedish Railways and Swedavia.</li>
+<li>Impact on the purchase of carbon offset credits was reported by Myclimate. The growth in carbon off-sets may be a further indicator of the dissonance that air travelers were experiencing.</li>
+</ul>
+<p><strong>Possible Confounding Influences</strong></p>
+<ul>
+<li>The previous year (2017) Sweden had experienced a record heat wave and wildfires in the arctic.</li>
+<li>A new flight tax was introduced in April 2018. All flights departing from Swedish airports were charged 60 to 400 krona ($7 to $49, six to 39 euros), depending on the destination.</li>
+<li>The bankruptcy of regional airline NextJet grounded a number of domestic flight routes for a few months.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Impacts – Individual participants</strong></p>
+<ul>
+<li>Many people reduced their air travel and took the train more, as reflected by the overall impact results (below)</li>
+<li>In addition, some organisations got behind the movement. For example, the Danish broadsheet newspaper Politiken developed plans to stop domestic flying by its journalists, offset the flights which were taken, and refocus its travel section to trips accessible by train.</li>
+</ul>
+<p><strong>Impacts – Overall</strong></p>
+<p><em>Impact on Trips by Airplane</em></p>
+<ul>
+<li>Domestic passenger numbers in Sweden fell by 8% from January to April, 2019, after falling 3% over the whole of 2018, according to Swedavia AB which operates Sweden’s 10 busiest airports. The climate debate was one reason behind the change.</li>
+<li>23% of Swedes reduced their air travel in 2018 due to its climate impact, according to a World Wildlife Federation survey. The trend was most noticeable among women and young people. In contrast, air passenger numbers rose by 4.4% in Europe during the same period.</li>
+<li>Of those Swedes who travelled abroad less in 2018, 64% did so because of concerns about climate impacts, according to a survey by Sweden's leading travel magazine, Vagabond.</li>
+<li>The growth in carbon off-sets (see below) may be a further indicator of the dissonance that air travelers were experiencing.</li>
+<li>In the United Kingdom, a 2019 poll found that two out of three people thought air travel needed to be curbed.</li>
+</ul>
+<p><em>Impact on Trips by Train</em></p>
+<ul>
+<li>In early 2019, 37% of Swedes traveled by rail instead of air, compared with 26% in the autumn of 2018, according to surveys administered by Swedish Railways. That shift matched changes in its actual passenger numbers: the number of trips increased by 5% in 2018 to 31.8 million, and by a further 8% in the first quarter of 2019 alone. Business trips grew the most – rising by 12% in the first quarter of 2019 alone.</li>
+<li>For the first time, climate impact topped travelers’ reasons for choosing the train</li>
+</ul>
+<p><em>Impact on Purchase of Carbon-Offsets</em></p>
+<ul>
+<li>Myclimate, a Swiss travel offset nonprofit saw a five-fold jump in purchases in a year.</li>
+<li>At Ryanair Holdings Plc., Europe’s largest discount carrier, the number of customers making voluntary offset payments almost doubled in 18 months.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Maja Rosén<br/>
+We Stay on the Ground<br/>
+<a href="http://vihallerosspajorden@gmail.com" target="_blank">vihallerosspajorden@gmail.com</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Further Reading</strong></p>
+<p><a href="https://westayontheground.blogspot.com/p/in-media.html" target="_blank">   https://westayontheground.blogspot.com/p/in-media.html</a></p>
+<p><a href="https://climateoutreach.org/we-analysed-the-polls-this-is-what-the-uk-thinks-of-the-climate-crisis/" target="_blank">https://climateoutreach.org/we-analysed-the-polls-this-is-what-the-uk-thinks-of-the-climate-crisis/</a></p>
+<p><a href="http://www.bbc.com/future/story/20190909-why-flight-shame-is-making-people-swap-planes-for-trains" target="_blank">http://www.bbc.com/future/story/20190909-why-flight-shame-is-making-people-swap-planes-for-trains</a></p>
+<p><a href="https://www.vox.com/the-highlight/2019/7/25/8881364/flying-shame-climate-change-airline-greta-thunberg" target="_blank">https://www.vox.com/the-highlight/2019/7/25/8881364/flying-shame-climate-change-airline-greta-thunberg</a></p>
+<p><a href="https://fores.se/grounded-beyond-flygskam/" target="_blank">https://fores.se/grounded-beyond-flygskam/</a> </p>
+<p><a href="http://weneedtotalkaboutaviation.org" target="_blank">http://weneedtotalkaboutaviation.org</a> </p>
+<p>This case study was written in 2020 by Jay Kassirer.</p>
+<p> </p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

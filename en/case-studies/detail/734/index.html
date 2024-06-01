@@ -1,0 +1,247 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Steer Davies Gleave</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>reduced kilometres driven by 9%</li>
+<li>reduced driving time by 6%</li>
+<li>increased walking trips by 6%</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Travel Blending</h1>
+<p>Travel Blending(R) is a bottom up Travel Demand Management tool developed by Steer Davies Gleave, an international transport management consultancy group. It enables individuals and households to record then consciously change their current travel behaviour. For a one-week period participants track their travel habits in specially prepared diaries. These are then analysed and a personalised assessment with recommendations is provided. After a month, participants complete another series of diaries and then receive more personalized feedback.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The idea for Travel Blending developed from discussions between Liz Ampt (Steer Davies Gleave) and Geoff Rose (Monash University). They saw the potential for collaborative approaches for changing travel behaviour change in households (in contrast to the more common regulatory or coercive approaches.)</p>
+<p>Travel Blending was initially implemented as part of Clean Air 2000, a campaign to clean Sydney’s air before the 2000 Olympic Games. The campaign was run for and in conjunction with Australia’s National Roads and Motoring Association (NRMA).</p>
+<p>Following the success of the Travel Blending project in Sydney, the South Australian Department of Transport (Transport SA) approached Steer Davies Gleave to gauge acceptance of such a scheme in Adelaide (see Getting Informed.)  Given the receptiveness identified in the study, Transport SA funded a number of Travel Blending projects. The first two of these projects, conducted in 1999, focussed on all people who lived, worked or went to school in the in Adelaide suburbs of Dulwich and Rose Park. Participants were recruited through workplaces, schools and through intensive doorknocking campaigns.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The project team conducted focus groups in Adelaide to determine whether local residents were receptive to the idea of reducing their car usage. Four groups were randomly selected from different parts of the metropolitan area. The study demonstrated that the people in Adelaide would welcome such a scheme for many reasons, especially in order to retain Adelaide’s ‘quality of life’.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing – as is the case with this particular program.</em></p>
+<p>Early on in their planning, the project team decided to promote a range of achievable goals in order to achieve behavioural changes in both the short and long term (<em>Building Motivation over Time</em>).</p>
+<p>Their principles were:</p>
+<ul>
+<li>that some change is possible for everyone in the short term;</li>
+<li>that these changes can be built into a person’s life-style, i.e. without negative changes to their lives;</li>
+<li>that all people can see possibilities for other changes over the long to medium term – again without negative life-style impacts; and</li>
+<li>that all of these changes are sustainable over the long term.</li>
+</ul>
+<p>They developed the Travel Blending method to provide participants with four key things:</p>
+<ol>
+<li>knowledge of their current travel behaviour in terms of time spent travelling by all modes, distance travelled as a car driver and levels of pollution generated as a car driver</li>
+<li>customised tips on ways in which they might make both short and long term changes to their travel</li>
+<li>a short term yardstick to see the ways in which their initial efforts to change are acting, and</li>
+<li>an ongoing measuring tool to help reinforce and maintain the behaviour.</li>
+</ol>
+<p><strong>Gathering Basic Information</strong></p>
+<p>At the outset, basic information was gained from the participating households, including the names and ages of all household members, the licence holding and mobility levels of each person, and bicycle / car ownership. These details were used to provide customised feedback. This data seemed to be most successfully collected by a ‘co-ordinator’ from each of the working groups, (<em>Neighbourhood Coaches and Block Leaders</em>). This co-ordinator distributed and collected kits, and was a key motivational factor for the group.</p>
+<p><strong>Getting Started</strong></p>
+<p>The program provided participants with four kits.  The first included a letter of introduction from a prominent, credible champion - the Head of the Department of Transport (<em>Vivid, Credible, Personalized Communication</em>). This kit also included two information booklets. One explained the link between vehicle use and local concerns such as air pollution, congestion, and quality of life (<em>Building Motivation Over Time</em>).</p>
+<p>The other booklet outlined a range of potential solutions. It introduced the concept of travel blending and suggested that the first step towards change was to have an understanding of current travel patterns.</p>
+<p><strong>Completion of Diaries</strong></p>
+<p>The central core of the program involved travel diaries provided to each member of the household to complete over a seven-day period. The diaries were designed to collect enough detail to enable the preparation of customised feedback for each participant. At the same time, they were made easy-to-use. The diaries recorded information such as: mode of transportation used, destination /purpose of the trip  start and stop times, and odometer readings (where the person was driving a car).</p>
+<p>While traditional travel surveys collect data for a single day, a seven day period was used.  One reason is that Travel Blending relies on modifying travel activity across an extended time period, such as a week (for example a participant may use public transport one day a week.)  Another reason is that weekday travel patterns tend to be different from weekend ones- so one’s ability to practice travel blending could be markedly different.</p>
+<p>One problem with obtaining travel data over a seven-day period was the higher likelihood of under-reporting. This problem was addressed in the following manner.</p>
+<p>Participants kept their diaries in a ‘diary holder’ which could be mounted on a fridge with magnets or stood on a desktop/counter. The diaries were designed to display the names of all participating household members, and the day being recorded. This served as an inbuilt reminder system, with peer pressure within the household encouraging everyone to participate and to complete their diaries (<em>Prompts, Norm Appeals</em>).</p>
+<p><strong>Customized Reports</strong></p>
+<p>Once participants returned their travel diaries, the data were entered into a database. An automatic feedback generation system then prepared customised a feedback sheet for each householder titled “Your Travel and Some Tips – Did you know this about your household?” (<em>Vivid Personalised Communication</em>). Each sheet included a description of the facts – total number of trips, mode of transport and total travelling time and, for each vehicle, total kilometres travelled and the corresponding emissions produced.</p>
+<p>Staff also suggested ways to reduce vehicle usage by trip chaining, shopping locally, sharing rides, walking, cycling or using public transport. The suggestions were phrased in the context of personal benefits such as saving time, money and stress, as well as reducing vehicle emissions.  They ranged from general suggestions to specific ones tailored to each household.  For example, a typical message might have read: ‘We noticed on that on Saturday you made 5 short car driver trips to and from home. Could you have done some of the activities on the same trip or got someone else to do some of them while they were out?’ Or ‘Craig, would it be possible for you to travel by public transport one day a week or one day a fortnight? You could catch the train from Blaxland Station and change to the 301 bus at Central Station. We have enclosed copies of the relevant timetables’. This level of customisation was considered vital to making the suggestions relevant to participants.<em>(Overcoming Specific Barriers)</em></p>
+<p>Participants were sent a second kit with these customized sheets, and a booklet entitled “Thinking about your travel”. This booklet encouraged householders to think about their travel using the details provided on the travel feedback sheets and included additional tips to help people practice travel blending. This kit also included a goal card that enabled individuals or households to record their travel blending goals (<em>Obtaining a Commitment</em>).</p>
+<p><strong>Measuring Behaviour</strong></p>
+<p>Participating households were given about four weeks to practice Travel Blending before receiving a third kit. The purpose of this kit was to measure the impact of Travel Blending on the household’s travel activity. This kit included another set of travel diaries to be completed over a seven day period. To encourage a higher response rate a booklet entitled “Track your travel 2” was included, which explained the importance of completing the second set of diaries.</p>
+<p><strong>Analyses and Feedback</strong></p>
+<p>Once the second set of diaries had been returned and analysed, a final report was sent to participants. This fourth and final kit summarised the changes in travel between the first and the second set of travel diaries. It focused on the total time spent travelling and number of trips by mode – both for the household as a whole and for each participating household member.</p>
+<p>Ongoing monitoring</p>
+<p>About a week after the second round of feedback, participants received another logbook for each household car so that they could continue to monitor their car usage. </p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The project asked participants twice to complete travel diaries – once at the beginning of the program and then again after four weeks of practicing travel blending.  (See the section on “Delivering the Program”.)</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>The Travel Blending project provided participants with personalized feedback twice.   Once participants returned their first travel diaries, the data were entered into a database. An automatic system then prepared a customised feedback sheet for each participant, summarizing travel habits and suggesting promising alternatives. Once the second set of diaries had been returned and analysed, a final report was sent to participants that summarised the changes in travel between the first and the second set of travel diaries– both for the household as a whole and for each participating household member. (See the section on “Delivering the Program”.)</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>According to their travel diaries, participants in the Dulwich and Rose Park projects reduced their car use by an average of 9% in terms of kilometres driven, and by 6% in terms of driving time. School households reduced their kilometres by 30% and time spent driving by 23%. Overall, participants reported an average increase of 6% in the number of walking trips.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Liz Ampt <br/>
+Steer Davies Gleave<br/>
+22-26 Vardon Avenue<br/>
+ADELAIDE SOUTH AUSTRALIA 5000<br/>
++61 (0)8 8223 1677<br/>
+australiainfo@sdgworld.net.au</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study was originally written in written by Jay Kassirer in 2001, based on the 1997 article, “Reducing Car Travel Through Travel Blending” by Liz Ampt. However, this case study was not published until it was re-discovered in 2020.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

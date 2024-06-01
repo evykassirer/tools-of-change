@@ -1,0 +1,268 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>The Australian Federation of AIDS Organisations</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>ACON, Australia's largest gay, lesbian, bisexual and transgender health and HIV/AIDS network</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Of men aware of the campaign, 62% reported an STI test in the past six months, compared with 44% of men unaware.</li>
+<li>More than 20% of men who took part in an evaluation survey reported that the campaign had directly prompted them to search for sexual health information or to visit the campaign website.</li>
+<li>Over a 36-month analysis period, there was a significant (between 27% and 30%) increase in the average number of monthly HIV, syphilis and chlamydia tests.</li>
+</ul>
+<p><a href="/userfiles/Drama Downunder case studyV2.pdf" target="_blank">PDF of this case study</a></p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Drama Downunder</h1>
+<p>The light-hearted Drama Downunder campaign increased access to diagnosis, treatment and care of sexually transmitted infections (STIs), improved HIV/STI awareness and knowledge, and minimized the transmission and morbidity of STIs in gay and other homosexually active men.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong><em>Note: </em></strong><em>To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing <u><strong>as is the case with this particular program.</strong></u> </em></p>
+<p>Between 2000 and 2008, notifications of HIV and other STIs had increased significantly in Australian gay men. The state of Victoria, with the second largest gay population in Australia, saw the most rapid increase in HIV diagnoses as well as a rapid re-emergence of syphilis.  Although HIV testing rates were high in gay men, STI testing rates were lower and, despite guidelines recommending highly sexually active men to undergo HIV/STI testing every three to six months, only a small proportion did so.</p>
+<p><img alt="Location of Drama Downunder STI / HIV / AIDS campaign" height="492" src="/userfiles/Image/map.JPG" width="450"/></p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The campaign sought to increase health-seeking behaviors, STI testing and HIV/STI knowledge among gay men in Victoria.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Formative research indicated that campaign messages delivered through "traditional" gay media (e.g., gay press, posters in gay venues) were increasingly discounted as "old" information. Research also found that, although gay men were well informed about HIV prevention, they were less knowledgeable about STIs more generally.</p>
+<p><em>Targeting the Audience</em></p>
+<p>The campaign targeted gay men in the inner Melbourne region.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The Drama Downunder campaign was launched in February 2008. This was primarily an advertising campaign using both mainstream and gay media. (Mass media) </p>
+<p>Campaign materials featured a model wearing only his underpants, which were in various states of distress. In some images they were on fire; in others, they were smouldering; and in others they appeared normal. The images represented the range of STI symptoms—from being extremely painful and/or irritating to no symptoms at all—and were meant to be light-hearted to capture the attention of the target audience. (Vivid, credible communications)</p>
+<p>Campaign organizers used multiple advertising channels including print and radio ads, outdoor advertising and ads on gay dating sites. They also held a few campaign-specific events, such as the Drama Down Under-wear Show (a fashion show featuring underwear and swimwear) to encourage community engagement with the campaign. The event was hosted by two well-known comedians.</p>
+<p>During the campaign, resources were also given away, including underwear, fridge magnets and drink holders. These materials referred people to the Drama Downunder website where they could get more detailed information on a variety of topics.</p>
+<p>The website included information about sexually-transmitted infections, where to go for treatment, an online reminder system (Prompts), and an anonymous notification system that allowed those who had tested positive to alert their partners. (Overcoming specific barriers)</p>
+<p><img alt="Downunder AIDS / HIV / STI / STBBI promotion" height="243" src="/userfiles/Image/Drama_Downunder.png" width="450"/></p>
+<p><em>Campaign materials featured a model wearing only his underpants, which were in various states of distress.</em></p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The development and implementation budget for Phase I of the campaign was estimated at $411,755 AUD (~$420,811 CAD ) with the majority spent on advertising ($339,145).  A similar amount of funding was spent on Phases II and III.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The campaign was evaluated using four key indicators:</p>
+<ul>
+<li>Campaign awareness</li>
+<li>HIV/STI knowledge</li>
+<li>Health seeking behavior, and</li>
+<li>HIV/STI testing.</li>
+</ul>
+<p>Data for these indicators came from online surveys, tracking of online usage, and the routine tracking of testing rates at three high-caseload clinics. </p>
+<p><em>Surveys</em></p>
+<p>At the beginning of the campaign, an online cohort of gay men was established to help monitor and evaluate the impact of all campaigns funded that year. This survey panel continued well beyond the end of the Drama Downunder campaign.</p>
+<p>The panel included men aged 18 years or more who self-identified as gay or homosexually active in the past five years and who provided informed consent. Panel members were surveyed every three to six months beginning in September 2008, and were recruited through gay community venues, gay events and snowballing (existing participants could refer their gay community peers for inclusion in the panel). 295 gay men (18–66 years of age) completed the online surveys between September 2008 and April 2009.</p>
+<p>Surveys included questions about:</p>
+<ul>
+<li>Demographics</li>
+<li>Exposure to gay media</li>
+<li>Gay community attachment</li>
+<li>Campaign awareness and knowledge of various prevention initiatives, including Drama Downunder. Campaign awareness was assessed both unaided (participants were able to correctly recall specific messages without prompts) and aided (prompted by a campaign image)</li>
+<li>Sexual health knowledge</li>
+<li>Health-seeking behaviours</li>
+<li>HIV/STI testing patterns</li>
+<li>Extent to which panelists believed prevention activities had impacted their behaviours and/or testing patterns.</li>
+</ul>
+<p>Surveys were linked to a unique code to allow individuals in the cohort to be identified and matched over time, enabling cross-sectional and/or longitudinal analyses of the data. Survey completion took 15-20 minutes and participants were reimbursed $30 AUD for completing each survey round.</p>
+<p><em>Testing and Online Usage Data</em></p>
+<p>Campaign evaluation also relied on online usage statistics (campaign website and Facebook), as well as clinic testing data (HIV, syphilis and chlamydia testing data) that were collected between January 2007 and March 2010. These data were collected from the Victorian Primary Care Network for Sentinel Surveillance using data from three metropolitan clinics that had high case loads of gay men and had diagnosed about half of all HIV cases Victoria between 2007 an 2010.</p>
+<p>Linear regression was used to assess trends in monthly HIV, syphilis and chlamydia testing in HIV-negative men between January 2007 and March 2010. Poisson regression was used to determine differences in the rates of change. </p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>The majority (86%) of the survey sample were aware of the campaign, with 43% spontaneously recalling the campaign when asked to list any five sexual health campaigns (unaided awareness); an additional 45% recognized the campaign when shown a campaign image (aided awareness). Images were mostly commonly seen in print media (79%), outdoor advertisements at bus shelters and train stations (58%), and on billboards (51%).</p>
+<p>Campaign awareness was significantly linked with reading gay press on a regular basis (at least monthly) and having had an STI test in the past six months.</p>
+<p>Men aware of the campaign were significantly more likely to correctly answer questions relating to increasing rates of syphilis over the past six years (56% v. 43%).</p>
+<p><img alt="AIDS / HIV / STI / STBBI social marketing case study" height="453" src="/userfiles/Image/Drama_Downunder2.png" width="250"/></p>
+<p>Among men aware of the campaign, 16% reported that it had directly prompted them to discuss HIV/STI testing and transmission with their doctor and 25% with their peers; 15% reported that the campaign influenced them to visit a GP clinic and 17% to a sexual health clinic. Approximately 22% reported that the campaign led them to search for sexual health information.</p>
+<p>Key testing results:</p>
+<ul>
+<li>Of those aware of the campaign, 62% reported an STI test in the past six months, compared with 44% of men unaware of the campaign</li>
+<li>Over the entire 36-month analysis period, there was a significant increase in the average monthly number of HIV, syphilis and chlamydia tests. On average, there was an increase of 110 HIV, 122 syphilis and 119 chlamydia monthly tests among HIV-negative gay men at the three high case load clinics (an increase of 27%, 30% and 29%, respectively.)</li>
+<li>Although STI testing rates had increased prior to the campaign, Poisson regression demonstrated accelerated rates of increased testing during the campaign period.</li>
+<li>However, continued monitoring showed that these benefits fizzled out over time, apparently due to over-exposure and potential message fatigue.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Adam Hynes <br/>
+Victorian AIDS Council/Gay Men's Health Centre<br/>
+Phone: (03) 9863 0444<br/>
+Email: <a href="mailto:adam_hynes@vicaids.asn.au?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">adam_hynes@vicaids.asn.au<br/>
+</a> <a href="http://www.thedramadownunder.info/introduction" target="_blank">www.thedramadownunder.info/introduction</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned</strong></p>
+<p><em>Evaluation limitations</em> </p>
+<p>The timing of the evaluation (funded in April 2008) meant that it was not possible to collect baseline survey data from the cohort before campaign implementation, which limited the campaign organizers' ability to assess causality between the campaign and the measured outcomes. The short evaluation period (9 months), the short intervals between surveys (4–5 months), and sample size in early survey waves also limited their ability to conduct a true longitudinal analysis of campaign awareness and its impact on knowledge, health-seeking behaviours, and STI testing.</p>
+<p>Venue-based and snowballing approaches to surveys meant that observations were not truly independent and may have introduced biases affecting campaign recognition.</p>
+<p><em>Multiple communication channels</em></p>
+<p>The use of several different communication channels—print, radio and transit advertising, websites and events—using both mainstream and gay media contributed to high levels of campaign reach.</p>
+<p><em>Importance of formative research</em></p>
+<p>Conducting formative research before the campaign was launched was an important factor in designing materials and messages that would appeal to and resonate with the target audience.</p>
+<p><strong>Note</strong></p>
+<p>This case study was written in 2014 by Jay Kassirer and Heather Bowen Ray, with funding from the Public Health Agency of Canada. </p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

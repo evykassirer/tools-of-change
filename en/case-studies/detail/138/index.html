@@ -1,0 +1,292 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Environment Canada, Ontario Region</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>City of Toronto (Works and Emergency Services; Health Department)</li>
+<li>Environment Canada, Ontario Region</li>
+<li>LURA Consulting</li>
+<li>McKenzie-Mohr Associates</li>
+<li>Ministry of the Environment, Ontario</li>
+<li>Toronto Catholic District School Board</li>
+<li>Toronto District School Board</li>
+<li>Toronto Transit Commission</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Reduced engine idling incidence by 27% and idling duration by 78%.</li>
+</ul>
+<p><a name="Images"></a></p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Turn it Off</h1>
+<p>Turn it Off is a community-based initiative to encourage individuals to avoid idling their vehicles while waiting at such places as school pick-up areas and transit Kiss and Ride parking lots. Replicability: high.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>The Ontario Region of Environment Canada initiated Turn it Off in collaboration with McKenzie-Mohr Associates, LURA Consulting and the Ontario Ministry of Environment. They focused on vehicle idling for three main reasons. First, idling was prevalent throughout Canada. Second, turning off the motor when a vehicle is stopped was a relatively easy thing for people to do. Finally, reducing idling immediately addressed both environmental and human health issues. In addition, the instigators of Turn it Off thought that a successful anti-idling campaign could both encourage individual participation in reducing greenhouse gas emissions and increase public participation in other environmentally friendly activities. The program was planned for Toronto Canada, as the head offices of the Ontario Ministry of Environment and other partners were located there.</p>
+<p>The City of Toronto is a sprawling metropolis centred in southern Ontario. The climate in the area includes warm, muggy summers and cold, snowy winters. Vehicle use is considered a necessity by many, if not to get to and from work or school, then to access the transit system for delivery to the downtown core. Kiss and Ride parking lots at transit terminus points and school pick-up/drop-off sites are areas where vehicle idling is ubiquitous. To combat vehicle idling, Toronto has instated an Anti-Idling Bylaw, which limits vehicle idling to three minutes. Unfortunately, lack of enforcement has limited the effectiveness of this Bylaw in preventing vehicle idling.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Prior to the Turn it Off program, two previous studies of vehicle idling had been conducted in Canada. These studies, funded by the Climate Change Public Outreach program and Natural Resources Canada, determined the barriers and motivations for turning off vehicle engines while waiting in a vehicle.</p>
+<p>Key motivators identified for the success of the Turn it Off program included:</p>
+<ul>
+<li>Believing that turning off your vehicle engine while parked was the right thing to do;</li>
+<li>Having friends and family who turn off their vehicle engines while parked;</li>
+<li>Believing that turning off an idling engine whenever possible saves significantly on gasoline costs;</li>
+<li>Believing that one should turn off a vehicle engine even for very short stops.</li>
+</ul>
+<p>The studies indicated that drivers were most likely to idle their engines when warming up their vehicles, waiting to pick someone up, or doing an errand. For simplicity in delivering the program, Turn it Off strictly targeted those drivers who idled their vehicles while waiting to pick someone up.</p>
+<p>The studies also detailed peoples main rationales for idling their vehicles. These include: (1) staying warm in the winter and/or cool in the summer, (2) believing that it is easier on the engine/starter to idle than turning the vehicle off, (3) believing that idling uses less gas than re-starting, (4) convenience/laziness and (5) stopping in an illegal place. In addition, the studies reported that individuals who idled their vehicles were more likely to be young, and/or to not believe that turning off an engine while a vehicle is stopped was the right thing to do.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The five stages involved in delivering the Turn it Off program are outlined below.</p>
+<p><strong>1. Determining Locations for the Program</strong></p>
+<p>Turn it Off determined locations for the program in consultation with its project partners. It developed a list of potential sites based on selection criteria such as physical layout of the site, willingness of site management, ethnic and demographic cross section of population, and areas where program developers knew that engine idling was prevalent. Initially, 18 sites were considered - six community centres, six schools and six Kiss and Ride lots. Of these, the six Kiss and Ride lots were discounted, since engine idling was not as prevalent there.</p>
+<p><strong>2. Identifying Barriers and Selecting Community Based Social Marketing (CBSM) Strategies to Address Them</strong></p>
+<p>The strategies selected for use in the program reflected the barriers initially determined during the collection of background information on engine idling. These strategies included <a href="/en/tools-of-change/prompts/">Prompts</a> (signs and vehicle stickers) to remind people to do something that they might otherwise forget, and <a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a> (personally asked by monitors, then given stickers for vehicles).</p>
+<p>Barriers to the successful integration of the project and how Turn it Off addressed these barriers are outlined in the table below.</p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td>Barrier</td>
+<td>How Turn it Off Addressed The Barrier</td>
+</tr>
+<tr>
+<td>Convenience/laziness</td>
+<td>Reminded drivers to turn off their engines (through signage and vehicle stickers).</td>
+</tr>
+<tr>
+<td>Believing that it is easier on the engine/starter than turning the vehicle off; 			<br/>
+            Believing that idling uses less gas than re-starting</td>
+<td>Clarified the length of time that a vehicle should be idled (10 seconds) before it was turned off (information card). 			<br/>
+            Educated individuals regarding the cost savings of turning off a parked vehicle (information card).</td>
+</tr>
+<tr>
+<td>Not believing that turning off an engine while a vehicle is parked is the right thing to do</td>
+<td>Developed community norms that insinuated that turning the engine off was the right thing to do.</td>
+</tr>
+<tr>
+<td>Comfort</td>
+<td>Emphasized the idea (of turning off the engine while waiting), during warmer months of the year (program was implemented between May and July).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3. Focus Groups</strong></p>
+<p>Turn it Off held three focus groups to explore awareness and knowledge levels and to obtain feedback on the proposed strategies and communications materials for the program.</p>
+<ul>
+<li>Most participants drove their vehicles everyday, and at some point waited in their vehicles with their engines idling (for periods of time lasting from a couple of minutes to 40 minutes).</li>
+<li>Most were unaware of the City of Toronto Anti-idling Bylaw. Those that were aware of the Bylaw felt that the City was likely concerned about air quality and human health. Only a minority were aware of the connection between idling, greenhouse gases and climate change.</li>
+<li>Participants suggested changes to proposed signs and leaflets (e.g. wording, posting locations, and information to be included.) They were not comfortable with the thought of being asked to sign a pledge card, due to privacy issues. Therefore, Turn It Off decided to use commitment stickers (no signature involved) and an information card.</li>
+</ul>
+<p><strong>Communications</strong></p>
+<p>Based on focus group feedback, three communication methods were developed. These included (1) temporary no idling signs mounted on concrete bases, (2) no idling window stickers which pledged For our air: I turn my engine off when parked, and (3) an information card to be given out to motorists who were asked to make a commitment to turn off their vehicles when stopped. Information provided on the card suggested that turning off an engine while stopped would save money, reduce air pollution and greenhouse gas emissions and care for the air we breathe (See <a href="#Images">illustrations</a> in the middle (green) column).</p>
+<p>Project monitors placed the signs at previously determined locations (driver eye-level where drivers most often idled). Prior to sign placement, permission and support was sought from the City of Toronto and the site managers.</p>
+<p>During the program, the monitors then approached drivers for commitments (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>). They would note stopped vehicles that were idling and approach the drivers, speaking with them through their window (the script used by the monitors is contained in the <a href="#Notes">Notes</a> section, below). After discussing the effects of vehicle idling, a commitment would be requested from the drivers to turn off their vehicles while stopped. Drivers who committed to turning off their engines when idling, were given a see-through commitment sticker for their vehicle window and an information card.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The estimated total cost of Turn it Off was $80,000. The following institutions generously financed the program:</p>
+<ul>
+<li>Environment Canada - Climate Change Action Fund</li>
+<li>City of Toronto - Toronto Atmospheric Fund</li>
+<li>The Ministry of Environment, Ontario - Drive Clean Office</li>
+<li>Environment Canada, Ontario Region</li>
+</ul><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The 12 school and transit lot locations were randomly divided into three groups. (1) Signs were located at one group of sites (two school sites and two transit lots); (2) signs were placed, information leaflets given out and commitments sought from motorists at another group of sites (also two school sites and two transit lots); (3) the third group of sites received no signs/information and commitments were not sought (two school sites and two transit lots - the control group).</p>
+<p>Success was measured by comparing baseline with follow-up data. Baseline data were collected for ten days at twelve locations using random time sampling, to determine the frequency and duration of idling. After the collection of baseline data, approximately two weeks was spent obtaining commitments from drivers to turn of their engines while stopped. Collection of data was completed by project monitors, who were carefully trained to collect and record data such as whether vehicles were idling or not.</p>
+<p>After the strategies were implemented, the monitors collected follow-up data for another 10 days, at the same locations. The baseline and follow-up data were then compared and graphed.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<ul>
+<li>During the course of the Turn it Off program, a combination of signs and commitment reduced engine idling incidence by 27% and idling duration by 78% overall, compared to the control sites. The program demonstrated that the prevalence of engine idling can be altered through simple, cost effective approaches.</li>
+<li>At school sites the combination of signs and commitment reduced vehicle idling by 51% and duration by 72%, relative to the control sites.</li>
+<li>At transit sites the combination of signs and commitment reduced vehicle idling by 27% and duration by 38%, relative to the control sites.</li>
+<li>The use of prompts only (no commitment) was less effective.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Doug McKenzie-Mohr, Ph.D. 	<br/>
+McKenzie-Mohr Associates 	<br/>
+35 Castleton Court 	<br/>
+Fredericton, NB 	<br/>
+E3B 6H3 	<br/>
+(506) 455 5061 voice/pager 	<br/>
+(506) 455 0550 fax 	<br/>
+<a href="mailto:dmm@cbsm.com">dmm@cbsm.com</a> <br/>
+<a href="http://www.cbsm.com">http://www.cbsm.com</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>NOTES</strong></p>
+<p>Toronto Works and Emergency Services and Toronto Public Health developed plans to use program findings to further promote the Idling Control Bylaw already in place. Additionally, in fall 2000, the manager of the Toronto Works and Emergency Services enforcement office was considering supplying schools, shopping centres, transit lots and others with signs based on those used during the Turn it Off program.</p>
+<p><em>The following script was used when approaching drivers to participate:</em></p>
+<p>Good afternoon/evening. My name is ____________ and I am working with the City of Toronto on a project aimed at reducing vehicle engine idling. We want to decrease the harmful emissions that occur when vehicle engines are left running. These emissions, as you may know, decrease air quality and contribute to climate change. We are asking motorists to make a commitment to turn off their engine when they are parked and are waiting in their vehicle. Would you be willing to join the growing number of people who have made a similar pledge and agree to turn of your vehicles engine when you are parked and waiting in your vehicle? We are asking people who make such a pledge to turn off their vehicle engine to place this sticker on their window. By doing so the sticker will both serve as a reminder to you to turn your engine off, and as a display of your commitment to reduce engine idling. The sticker has been designed so that it can be easily removed from your window at a later time. Would you be willing to attach this sticker to your window? We are also giving out these information cards that explain how turning off your engine can save you money, help you breathe easier and spare the air. Would you like to have one?</p>
+<p>Last updated: July 2004. This case study was written in 2001 by Tania Millen.</p>
+<p>Funding for the addition of this case study was generously provided by the Government of Canadas Climate Change Action Fund, Suncor, Syncrude, Enbridge Consumers Gas and TetraPak Canada.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

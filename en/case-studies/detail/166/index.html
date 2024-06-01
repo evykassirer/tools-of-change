@@ -1,0 +1,299 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/peer-support-groups/">Peer Support Groups</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Metro Portland Solid Waste &amp; Recycling Department</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Chef's Collaborative</li>
+<li>Chef de Cuisine Society</li>
+<li>Food Alliance</li>
+<li>Oregon Restaurant Association</li>
+<li>Oregon Food Bank</li>
+<li>POVA</li>
+<li>SYSCO Portland</li>
+<li>Taste of the Nation</li>
+<li>Tri-County Lodging Association</li>
+<li>The region's local governments (3 counties, 25 cities)</li>
+<li>Amy Stork Marketing (marketing and program design consultant)</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>9,000 tons of additional food diverted / recovered annually</li>
+<li>Participation expanded by 500%</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Fork It Over!</h1>
+<p><em>Fork it Over!</em> is a peer-to-peer initiative that helps food businesses in Portland Oregon to donate surplus prepared, perishable foods that have not been served, by showing that it is safe, simple and the right thing to do. It recruits food businesses to make written, public commitments to donate food regularly, reinforces and publicizes those commitments, and prompts action at the moment when donations are available. It also leverages partnership support from key industry leaders and associations to reinforce the social and cultural value of food donation, and provides regular reinforcement for participating through free advertising.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing, as is the case with Fork it Over!</em></p>
+<p>Metro is the directly-elected regional government serving the 1.4 million people in a three county, 25 city metropolitan area that includes Portland Oregon. In 1996, Metro partnered with the Oregon Food Bank to develop a program to rescue edible fresh produce from the waste stream and get it to those in need. The program, dubbed Harvest Share, collected fresh produce from wholesalers that would have otherwise been landfilled and redistributed it to the hungry in the region.</p>
+<p>Oregon Food Bank was struggling to provide new sources of fresh, nutritious food to Oregonians, and Metro was looking for ways to reduce the 180,000 tons food being disposed annually in the region's solid waste system. The state of Oregon had the dubious distinction of being rated one of the highest in the nation for the incidence of hunger and food insecurity. Most of those who were hungry were employed full time, but did not make enough money to have a secure source of food from month to month.</p>
+<p>The pairing of a food bank and a solid waste agency was not necessarily intuitive, but it proved to be very fruitful. The sharing of resources and contacts led to the growth of coordinated programs that remain in operation today, and program models expanded throughout the state.</p>
+<p>Metro region boasted an overall solid waste recovery level of 57%. However, recovery was lower than expected in three key areas: business recycling; construction and demolition debris; and organic waste. In response, Metro and its local government partners got together in 1999 and developed three waste reduction plans to aggressively address these shortfalls. Each plan focused on prevention and reuse as a priority and then recycling or recovery. The Commercial Organics Work Plan focused primarily on waste prevention and donation of edible food to food rescue agencies, as well as composting of residual food waste and soiled paper.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The goals of the program were to:</p>
+<ul>
+<li>Decrease the amount of food disposed in the Metro region;</li>
+<li>Maximize the amount of nutritious, edible, perishable foods diverted to food banks and, ultimately, the hungry;</li>
+<li>Increase awareness of both hunger and waste; and</li>
+<li>Provide the tools necessary for businesses to make positive change.</li>
+</ul>
+<p>No quantified targets were set.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The first few years of implementation (2000-2003) were focused on information gathering. Two studies conducted in the summer 2000 a) examined the communication channels used by the various food industries, and b) documented the movement of food through the variety of targeted businesses to assess the appropriate point for intervention. At the same time, food rescue agencies were interviewed in order to understand what they would need to be able to increase recovery of perishable foods.</p>
+<p>The food rescue agencies indicated that one of the key barriers to accepting more food was their limited amount of equipment for recovering, transporting, storing and distributing perishable foods safely.</p>
+<p>In November 2003, Metro also conducted a comprehensive Barrier and Benefit Identification Study to understand what the food industry perceived as the biggest barriers and benefits to donating surplus food. Seventy-two businesses were interviewed and a comprehensive literature search was conducted. This study gave Metro a relatively solid picture of the target audiences needs and concerns, how the industry communicates internally, what sources of information they trusted, and how food moved through their businesses.</p>
+<p>Safety and liability were of top concern and second was ease of implementation in a busy industry. Surprisingly the biggest benefit to food donation was not tax write-offs, savings on garbage fees or other financial benefit as assumed by both Metro and food banks; it was simply the right thing to do.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>To assist the food rescue agencies with their capacity limits, grants were given to assist them with the purchase of refrigerated trucks, coolers and freezers and other equipment needed to recover, transport, store and distribute perishable foods safely (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>With the help of Oregon Food Bank, Metro identified all food rescue agencies in the region capable of and willing to accept donations of perishable foods. This list of over 150 agencies was compiled and printed into three guidebooks, organized by county and further by city. Along with the guidebooks, a Food Service Guide to Food Donation brochure was developed with a removable magnet as a prompt. Local government recycling outreach staff, Metro staff, food rescue agencies, some county health inspectors, and food industry organizations distributed the brochures and guidebooks.</p>
+<p>Simultaneously, an interactive web page on the Metro web site was developed. All of the published studies and brochures were available online.</p>
+<p>To increase the convenience of donation, Metro also developed an interactive on-line tool for donors. The system asked donors to simply enter their location and the food they wished to donate, then it displayed the contact information for the closest food rescue agencies along with information about the agencies, who they served and if they would come to pick up the donation.</p>
+<p>Advertisements were also placed in some industry publications, as well as the daily newspaper.</p>
+<p>While this program met with some degree of success, it did not have the panache required to grab attention or really address the concerns of the target audience.</p>
+<p>In November 2003, armed with the results of the comprehensive Food Donation Barrier and Benefit Identification Study, Metro hired Amy Stork Marketing through a Request for Proposals process, and the <em>Fork it Over!</em> program was developed.</p>
+<p>The project team included the former marketing director from Oregon Food Bank, a public relations firm specializing in the food industry, a media outlet willing to provide public service TV spots, and well-known food industry personalities willing to provide feedback and guidance.</p>
+<p>After researching other food rescue program logos and taglines, <em>Fork it Over!</em> was chosen as the program name and a logo was designed. Most food rescue programs use the same tried, true (and tired) motifs such as cornucopias, sheaves of wheat, hearts, and hands. Metro wanted something different and catchy that would stand out and be more forceful.</p>
+<p>The new campaign was launched in June 2004. Its central element was an effort to recruit targeted food businesses to make written, public commitments to donate food regularly (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>). These commitments were then reinforced and publicized using techniques including print advertising, web postings and earned media. Brochures and posters provide detailed program information and serve as reminders (<a href="http://www.tools-of-change.com/en/tools-of-change/prompts/">Prompts</a>) to spur action at the moment when donations were available.</p>
+<p>Pioneer donors were recruited as spokespeople, demonstrating that donation was safe, simple and the right thing to do. These pioneers were asked to provide testimonials and sign letters to their peers encouraging participation (<a href="http://www.tools-of-change.com/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>, <a href="http://www.tools-of-change.com/en/tools-of-change/norm-appeals/">Norm Appeals</a>).</p>
+<p>Industry professional organizations were recruited as non-monetary sponsors. They provided legitimacy and helped get the word out through presentations at meetings and articles in their publications. Presentations were made to the Chef de Cuisine Society, Chefs Collaborative, Oregon Restaurant Association, and Oregon Lodging Association. Every six weeks, presentations were given to classes at the Western Culinary Institutes Cordon Bleu program. Individual meetings were also held with the County Health Department restaurant inspectors as they had agreed to distribute <em>Fork it Over!</em> brochures during their regular annual inspections (<a href="http://www.tools-of-change.com/en/tools-of-change/norm-appeals/">Norm Appeals</a>; <a href="http://www.tools-of-change.com/en/tools-of-change/communication/">Vivid, Personalized, Credible Communication</a>).</p>
+<p>A new web page, <a href="http://www.forkitover.org">www.forkitover.org</a>, was developed to help make sign-up and information gathering easy, as well as to provide a venue for participants to be featured (<a href="http://www.tools-of-change.com/en/tools-of-change/norm-appeals/">Norm Appeals</a>; <a href="http://www.tools-of-change.com/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). Businesses could also call the Metro Recycling Information hotline (503) 234-3000 to sign up.</p>
+<p>Businesses that signed up were provided with free personalized services from local government technical assistance staff. These services included on-site assistance with waste evaluations/audits, introductions to appropriate food rescue agencies, and help with program set up. Free promotional materials were also provided, including brochures, catchy instructional posters (made of laminated plastic to withstand the kitchen environment) and static cling decals to advertise participation. Participating businesses were also featured in print advertisements, on television spots and on the web site (<a href="http://www.tools-of-change.com/en/tools-of-change/norm-appeals/">Norm Appeals</a>, <a href="http://www.tools-of-change.com/en/tools-of-change/prompts/">Prompts</a>, <a href="http://www.tools-of-change.com/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>; <a href="http://www.tools-of-change.com/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p>To promote the program, advertisements were placed in the food section of the daily paper, articles and ads were placed in industry publications, press events were scheduled and targeted mailings to industry groups were initiated. An editorial article in the local newspaper, as well as a feature story, lent an additional level of legitimacy to the program (<a href="http://www.tools-of-change.com/en/tools-of-change/mass-media/">Mass Media</a>). Ads were also placed in telephone directories under restaurants and caterers to remind patrons to ask businesses to <em>Fork it Over!</em> (<a href="http://www.tools-of-change.com/en/tools-of-change/prompts/">Prompts</a>).</p>
+<p>Ads in industry publications were secured for the entire fiscal year and staggered mailings were sent to targeted industry groups. New partnerships were investigated, for example, restaurant inspectors provided <em>Fork it Over!</em> brochures during on-site restaurant inspections.</p>
+<p>Further, as Metro's food waste composting program rolled out, all literature stressed donation before composting and all site visits to businesses included questions about donation practices.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Metro formally adopted and budgeted for the food donation outreach program beginning in 2000 (some grant funds were provided to food rescue agencies in prior years).</p>
+<p><em>Fork it Over!</em> was primarily financed in the 2003-04 fiscal year. The specific costs of launching and promoting were as follows:</p>
+<ul>
+<li>Contract with Amy Stork Marketing: $20,000</li>
+<li>Outreach/media buys: $10,000</li>
+<li>Printing: $7,150</li>
+</ul>
+<p>In-kind support was provided by local government technical assistance staff, as well as from all associated program sponsors via public service announcements, articles in newsletters, invitations to present at meetings, distribution of brochures to members and the provision of testimonials and use of their business names and images. Food rescue agencies also provided tours, information and photo/media opportunities.</p>
+<p>The cost of other programs or studies that supported or informed the <em>Fork it Over!</em> Program development included:</p>
+<p>Food Donation Barrier/Benefit Study:</p>
+<ul>
+<li>Contract with Applied Compost Consulting: $40,000</li>
+<li>Organic Waste Observation Study, Food Industry Communication Study: Performed by interns: $9,000 (600 hours)</li>
+<li>Food Donation Infrastructure Development Grants: $500,000 over 5 years (A study of this grant program demonstrated there was a $31 benefit for every $1 spent by Metro)</li>
+</ul>
+<p>A small amount of money continued to be budgeted annually for printing and advertising.</p>
+<p>Between 1999 and 2003, nearly $580,000 in grants were disbursed to expand food recovery capacity through the purchase of:</p>
+<ul>
+<li>4 walk-in coolers;</li>
+<li>18 reach-in refrigerators;</li>
+<li>19 reach-in freezers;</li>
+<li>10 outdoor shelter canopies; and</li>
+<li>2 collection trucks, and 9 months driver salary and volunteer driver gasoline allowances.</li>
+</ul><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Metro used several indicators to measure success.</p>
+<ul>
+<li>A key measure was the amount of food recovered by food rescue agencies (determined through an annual phone poll to a selected group of agencies).</li>
+<li>Output measures included: hits to their web page; the number of phone calls to the Metro Recycling Information Hotline; the number of presentations to industry groups; and the number of businesses signing up for the program.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Between 1999 and 2005, a total of over $700,000 in grant funds had been allocated, resulting in an estimated total of 9,000 tons of additional food recovered annually.</p>
+<p>The 2005 campaign expanded participation 500% by signing on fifty-nine new businesses as members within its first six months. Calls for assistance for one-time donations from special events occurred regularly. Additional businesses that had not signed up with <em>Fork it Over!</em> utilized the programs interactive website to donate on their own.</p>
+<p>Visits to the program website increased from 34 in May 2004, a month before the campaign began, to 948 for the month of July 2004 (nearly a 2700% increase).</p>
+<p>In April 2002, an assessment of the food recovery infrastructure development initiatives estimated that an additional 5,181 tons of food was recovered. The avoided disposal cost of this food was $647,650 and the dollar value to food banks of the additional recovered food was $17,305,208. The average benefit per dollar of grant funds disbursed was 31 (a relatively high rate of return).</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Jennifer Erickson, Senior PlannerWaste Reduction &amp; Outreach DivisionSolid Waste &amp; Recycling Department <br/>
+Metro <br/>
+600 NE Grand Avenue <br/>
+Portland, OR 97232 <br/>
+(503) 797-1647 <br/>
+(503) 797-1795 FAX <br/>
+<a href="mailto:ericksonj@metro.dst.or.us">ericksonj@metro.dst.or.us</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Key lessons learned:</p>
+<ul>
+<li>Spend the necessary time to understand your audience inside and out. The observation study, communication study and especially the barrier/benefit study proved invaluable for informing the program and debunking several assumptions held by the programs planners.</li>
+<li>Craft your outreach materials to match the terminology or jargon of your audience, not your industry. For example, to the solid waste industry it was waste to the food industry it was surplus.</li>
+<li>Utilize your local university to assist with some studies/projects to save money and provide real-world experience for students. Graduate student interns are looking for practical experience and they can be hired at a much more reasonable rate than professional contractors.</li>
+<li>Develop close partnerships within the target community people who will review drafts, provide feedback and serve as spokespeople, provide testimonials and open doors.</li>
+<li>Look for unusual links who would have thought that food banks, solid waste managers, restaurant inspectors and meeting planners had anything in common and could benefit from each others resources?</li>
+<li>Research others promotional materials and make yours stand out from the crowd. If every other food donation program uses muted colors, sheaves of wheat, hearts and cornucopias, don't use them. You have to compete for attention; make it memorable. This was learned the hard way with the programs original outreach materials, wasting both time and resources.</li>
+<li>Find the missing link and fill the gap. Organizers knew food rescue agencies had the ability to accept the food and distribute it to people who needed it. They knew that businesses were throwing away good food and paying not only to bring it in but also to throw it away. They just needed to bridge the gap between donor and recipient.</li>
+</ul>
+<p>This case study was writtenin 2005 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Results</h5>
+<p><strong>Cool Biz</strong></p>
+<p>In 2006, 43.2% of office workers reported that their offices had set the air conditioner temperature higher than in previous years</p>
+<p>600 million kWh saved in 1995 and 1996</p>
+<p><strong>Super Cool Biz</strong></p>
+<p>A further 11.8% reduction in household electric power usage in July and August 2011, compared with the preceding year.</p>
+<p> </p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Cool Biz, Japan</h1>
+<p>In the context of Japan's urgent need for energy conservation, <em>Cool Biz</em> and <em>Super Cool Biz </em>have used strong norm appeals to bring about marked reduction in energy use. These programs were designated a <em>Landmark</em> case study in 2012.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>In the summer of 2005, the Japanese Ministry of Environment (MOE) launched the Cool Biz program to reduce electricity consumption. All Japanese government departments, businesses and the general public were asked to pre-set their office and home air conditioners to 28°C (82°F) throughout the cooling season until September. On its face, the request seemed simple, but in Japanese culture it is socially unacceptable to show up for work in anything but business attire. Encouraging people to “dress down” and wear cool and comfortable clothes to work, therefore, was a main focus of the campaign.</p>
+<p>Then in 2011, the destruction of the Fukushima Daiichi plant led Japan to shut down all but 15 of its 54 nuclear reactors. As summer approached, the only way to avoid a national energy emergency was through drastic conservation. </p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p><strong>Super Cool Biz (2005)</strong></p>
+<p>To prevent blackouts, Tokyo Electric Power Company (TEPCO) set a goal of reducing household power use by 15% between 9 a.m. and 8 p.m. on weekdays in the summer of 2011.</p><!-- Objectives already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Cool Biz (2005)</strong></p>
+<p>The key to this campaign’s success was the change in cultural norms. As mentioned above, it was not acceptable to go to work in anything but a suit and tie, even at the height of the summer’s heat, so the heads of all of Japan’s government ministries “walked the talk” by showing up to work wearing less formal attire. Prime Minister Koizumi was also interviewed several times wearing casual clothing, which helped advertise the campaign and make the change more acceptable to the general public. (<em>Norm Appeals</em>)</p>
+<p>Although this was a nation-wide program, most efforts were based in Tokyo, the largest city. As the lead organization, the MOE set the tone for the campaign by turning all government building air conditioners to the lower temperature and encouraging all government employees to sport summer clothing to work. Department heads, Cabinet ministers and even the Prime Minister adopted less formal attire to make the program more acceptable to the general public. The MOE also developed the Cool Biz website (where other businesses and organizations could sign up and pledge their commitment), a Facebook page, and a media campaign to support the program and to encourage everyone to take part.</p>
+<p>The chief environmental scientist of Hillsborough County, Florida was working in Japan when the campaign was launched. He noted that, “The social aspect [was] critical. To overcome the barriers, the Prime Minister and his cabinet modeled the behaviour publicly. There were TV news magazine spots and men's wear stores that covered ‘how to do Cool Biz’ so people would feel more comfortable adopting it.”</p>
+<p>Since the campaign was launched, many organizations have logged onto the Cool Biz website to pledge their commitment. For example, all of the 272 stores that belong to the Japan Department Store Association raised air conditioner temperatures and many of the Association’s members also used local celebrities to promote the campaign in stores.</p>
+<p>The Cool Biz web site continued to support the campaign, providing tips and ideas on further energy reductions that people can take.</p>
+<p><strong>Super Cool Biz (2011)</strong></p>
+<p>Following the March 2011 earthquake and tsunami, the majority of Japan’s nuclear power plants had to be shut down for safety reasons, which led to energy shortages. The MOE, therefore, adapted the Cool Biz campaign, renaming it Super Cool Biz to encourage even more conservation. In June, the MOE launched Super Cool Biz with full-page newspaper ads, once again showing government ministry workers in casual clothing.</p>
+<p>Specifically, Super Cool Biz:</p>
+<ul>
+<li>Encouraged salarymen to dress down even further by wearing polo shirts or the traditional aloha-style shirts worn on the Japanese tropical islands of Okinawa.</li>
+<li>Advocated switching off computers or other office equipment when not in use, using blinds and shades to cut summer sun, and using more energy-efficient lighting.</li>
+<li>Called for shifting work hours to the morning, taking more summer vacation than usual, banning overtime, where possible, and considering the introduction of telecommuting.</li>
+<li>Extended the recommended timeline for setting air conditioner temperatures higher until the end of October.</li>
+</ul>
+<p>To support energy conservation as well as the Super Cool Biz program, Japan’s electricity providers published electricity reports that forecasted the day’s power supply and tracked demand in real time. The reports were delivered on the morning news and announced aboard some trains. Government alerts were also sent to subscribers’ cell phones if overall demand neared capacity; these alerts reminded people to turn up their air conditioner temperature or turn it off altogether. (<em>Feedback, Prompts)</em></p>
+<p>In addition, the MOE launched a Warm Biz campaign for winter, where the government encourages workers to dress more warmly in winter so that thermostats can be turned down to save energy.</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p><strong>Cool Biz (2005)</strong></p>
+<p>In September 2005 and September 2006, the MOE conducted web-based surveys of 1,200 office workers, randomly chosen from an Internet panel.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p><strong>Super Cool Biz (2011)</strong></p>
+<p>To support energy conservation as well as the Super Cool Biz program, Japan’s electricity providers published electricity reports that tracked demand in real time. The reports were delivered on the morning news and announced aboard some trains.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Cool Biz</strong> <strong>(2005)</strong></p>
+<p>In September 2005 and September 2006, the MOE conducted web-based surveys of 1,200 office workers, randomly chosen from an Internet panel. Almost all of those surveyed (95.8% in 2005; 96.1% in 2006) recognized the Cool Biz name and campaign. In 2005, about one-third (32.7%) reported that their office had set the air conditioner temperature higher than in previous years; this figure jumped to 43.2% in 2006. Japan’s largest business association, which represents about 1,300 major companies, reported that 70% of its companies now keep their air conditioners set at 28°C. In a 2009 nationwide poll conducted by the Japanese Cabinet Office, 57% of 2,000 survey respondents reported that Cool Biz had been implemented in their workplaces.</p>
+<p>In the fall of 2005, the Federation of Electric Power Companies in Japan estimated that, between June and August of that year, about 210 million kWh (210,000,000 kWh) was saved, which represents emission reductions of about 79,000 tonnes. By the second year of the campaign, 2006, the MOE reported that the CO2 reductions associated with the campaign had tripled (an estimated 1.4 million tonnes).</p>
+<p>The campaign also reached into some surprising areas of Japanese life. Some retailers saw Cool Biz as a business opportunity. For example, the barber’s association in Japan promoted a Cool Biz hair cut (styled in the shape of a Mohawk) and a clothing company even developed a light-weight business suit (it weighs about one pound), called the “Su su suit,” to support the campaign. By 2011 about 400,000 of the suits have been sold.</p>
+<p>In addition, according to an August 2011 article in The Wall Street Journal, sales of men’s clothing surged in June 2005, compared with the previous June, and were 4.3% higher in July compared to the same month the previous year. The article goes on to say that Cool Biz caused a “ripple in Japan’s quarterly GDP report,” with the semi-durable goods category (includes clothing) showing growth over the last quarter, in part because of higher sales of casual business clothing. In May 2011, Japanese carmakers also announced that they would rearrange their production schedule to reduce electricity demand (shifting Thursday and Friday shifts to weekends).</p>
+<p><strong>Super Cool Biz (2011)</strong></p>
+<p>In the region served by Tokyo Electric Power Company (TEPCO), there was an approx. 11.8% reduction (temperature adjusted) in electric power usage in households during summer 2011 (July and August) compared with the preceding year, avoiding any blackouts and brownouts</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>We are currently looking for someone willing to act in this capacity.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<ul>
+<li>Since Cool Biz relied heavily on changing social norms, similar approaches could likely be adapted to other desired behaviour changes.</li>
+<li>To encourage more energy conservation among a broad range of age groups it is important to recommend the most effective methods suited to such households.</li>
+</ul>
+<p><strong>Landmark Designation (2012)</strong></p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Devin Causely, Federation of Canadian Municipalities</li>
+<li>Melissa Klein, US EPA’s ENERGY STAR® Program</li>
+<li>Arien Kortland, BC Hydro</li>
+<li>Doug Mckenzie-Mohr, McKenzie-Mohr Associates</li>
+<li>Edward Vine, Lawrence Berkeley National Laboratory</li>
+<li>Dan York, ACEEE</li>
+</ul>
+<p>This case study was written by Sharon Boddy and Jay Kassirer in 2012.</p>
+<p> </p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

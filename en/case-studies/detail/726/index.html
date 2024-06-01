@@ -1,0 +1,459 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>The European Union’s Intelligent Energy Europe Programme</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Local organizations in each country</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>9% reduction in energy use</li>
+</ul>
+<p> </p>
+<p><strong>Downloadable Documents</strong></p>
+<ul>
+<li>Case Study <a href="/userfiles/Europe's Energy Neighbourhoods V3.pdf">PDF</a></li>
+</ul>
+<p> </p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Europe’s Energy Neighborhoods</h1>
+<p>Europe’s Energy Neighbourhoods program engaged neighbourhoods to ‘bet’ with their municipalities that they could reduce energy use by at least 9% over a four-month time period, with no investments in technology allowed. Each neighbourhood was supported by an “Energy Master”, an enthusiastic individual who acted as coordinator for the group and who received specific training to help their group make its energy savings. Those groups that made savings of 9% or more were rewarded with certificates and prizes, and received local media attention for their efforts. Designated a Landmark Case Study in 2019.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><img alt="" height="254" src="/userfiles/Image/Logo(2).JPG" width="450"/></p>
+<p>Energy Neighbourhoods is based on a campaign run in Belgium in 2003. With funding from the European Union’s Intelligent Energy Europe Programme, the approach was replicated in 2007-2010 (Energy Neighbourhoods) with eleven partners from nine countries. Participants achieved an average energy saving of 10% against their energy consumption the previous year.</p>
+<p>The approach was further replicated from 2011 to 2013, in Energy Neighbourhoods2, which engaged 16 partners and 8,626 households (22,420 people) in 16 European Union Member countries: Austria, Belgium, Bulgaria, France, Germany, Great Britain, Greece, Hungary, Ireland, Italy, Latvia, Poland, Romania, Slovenia, Spain and Sweden.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>Participants “bet” that they would reduce their energy use by at least 9%.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The program was based on the experiences gained by the project “Klimaatwijken”, set up in Flanders, Belgium during 2003 with support from the Flemish Government.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Energy Neighbourhoods (2007-2010)</strong></p>
+<p>The European Union’s Energy Neighbourhoods project began in 2007. There were eleven partners from nine European Union member countries. In general, the partner in that country selected the Energy Experts, who then gathered their teams.</p>
+<p>The rule was that people had to compete collectively – teams of friends, colleagues and neighbours gathered into Energy Neighbourhoods.  <em>(Norm Appeals; Obtaining a Commitment)</em></p>
+<p>The challenge was for participants to save at least 9% energy over four winter months over two years.  Aside from losing face, the communities didn’t risk anything if they lost their bets. However, if they won, they were rewarded with certificates and prizes, and received local media attention for their efforts. <em>(Incentives)</em></p>
+<p>To achieve such results the project developed and provided the following.</p>
+<ul>
+<li>Regional campaigns to find interested groups of people and identify potential Energy Masters. Energy Masters were specially trained volunteers from the neighborhood that motivated, supervised monitoring, and provided program materials. (<em>Neighbourhood Coaches and Block Leaders</em>)</li>
+<li>Regular events to give the participants an opportunity to get together and share ideas and experiences (<em>Norm Appeals; Word of Mouth</em>)</li>
+<li>Close cooperation with the participating municipalities</li>
+<li>Regular feedback for the participants and support from the Energy Masters (<em>Feedback</em>)</li>
+<li>Campaign materials to help participants identify their energy wasteful practices (see below; <em>Building Motivation Over Time</em>)</li>
+<li>Energy saving top tips with relevant, targeted advice (<em>Overcoming Specific Barriers; <em>Prompts</em>)</em>.</li>
+<li>An online calculation tool to help those taking part to visualise their current energy usage and the effects of their new energy saving behaviours (<em>Vivid, Personalized, Credible, Empowering Communication</em>)</li>
+<li>Climate challenges to provide participants with information on how to lead a wider, more environmentally sensitive lifestyle</li>
+<li>Comprehensive press campaigns <em>(Mass Media</em>)</li>
+<li>Ongoing support from the coordinating organisations.</li>
+</ul>
+<p><em>Online Tool </em></p>
+<p>An online tool was set up to do three things.</p>
+<ol>
+<li>Provide a communication channel that each partner could use with its participants. This was the home for their national campaigns, through which they could present the challenges, news and results, and gather their national savings</li>
+<li>Enable all participants to monitor their energy use in an easy to understand way and to visualize their energy savings. Via this site, households could also track their energy savings.</li>
+<li>Enable Energy Masters and municipalities to track savings and results. Municipalities could manage the households and groups within their jurisdiction. They could also see and download aggregate local savings.</li>
+</ol>
+<p>The project partners were all given training sessions and a manual on how to use the online tool, which they then translated into their own languages. This enabled each partner organisation to train and support their Energy Masters and their participants.</p>
+<p><em>Support Materials</em></p>
+<p>A whole host of materials were provided to help participants walk the path of energy saving greatness:</p>
+<ul>
+<li>Energy Neighbourhood handbook – a step by step guide through the competition with detailed instructions on how to use the energy saving calculator on the website.</li>
+<li>Do-it-yourself Home Energy Check – checklist to help identify energy hungry appliances and practices in their home.</li>
+<li>Readings Record Card – An aide memoir for all the meter readings taken during the competition.</li>
+<li>Top Tips – Every 2 weeks a set of top tips were sent out with yet more ideas on how to save energy around the home often focusing on seasonal topics such as ‘a low carbon Christmas’ or ‘energy saving kids’ and on particular rooms in the home i.e.. ‘energy saving in the kitchen.</li>
+</ul>
+<p>Those groups that made savings of 9% or more were rewarded with certificates and prizes, receiving local media attention for their efforts.</p>
+<p><strong>Energy Neighbourhoods2 (2011-2013)</strong></p>
+<p>Energy Neighbourhoods2 (EN2) had 16 partners in 16 countries. During the winters of 2011/12 and 2012/13, the Energy Neighbourhood2 project totaled 830 neighbourhoods, comprised of 8,626 households with 22,420 people, all working towards their energy saving goal.</p>
+<p>The winning teams of round 1 had scores that ranged between 15% and 47%, whilst in the second-round energy savings were between 9% and just over 60%!</p>
+<p>The following behaviours were promoted.</p>
+<ul>
+<li>Turn off the lights when you leave the room</li>
+<li>Only use the washing machine/dishwasher when full</li>
+<li>Hang up clothes to dry instead of using a tumble dryer</li>
+<li>Turn TV off at the wall</li>
+<li>Unplug all appliances such as phone chargers and turn off all standby</li>
+<li>Boil just the correct amount of water for hot drinks or meals</li>
+<li>Reduce the heating thermostat</li>
+</ul>
+<p>For the majority of the participating countries, killing standby was the most popular energy saving behaviour, as was adjusting the heating thermostat downwards. Boiling only as much water as required was also popular, as was ensuring the dishwasher and washing machines were full before turning them on.</p>
+<p>During each monitoring period, participants went through four challenge cycles, to expand their understanding of how everyday life can affect the climate. Participants received information and encouragement from experts who helped them to understand what choices made the most difference, and that seemingly small choices still made a difference. These challenges included:</p>
+<ul>
+<li>Low Carbon Christmas – cutting back on the lights, paper and waste. Think about what you are buying.</li>
+<li>How to travel? Do you really need to go by car, maybe swap just one car journey for one on foot or by bike?</li>
+<li>What to eat? Try to ensure the weekly menu is more seasonal, contains more vegetables and less cheese and of course the golden rule – reduce your food waste. + Energy efficient appliances, how to find the right ones? Get to know the energy labels and how to use them!</li>
+<li>Can you make “green” purchases? Of course! Buy, sell or trade your clothes and accessories on internet, use second-hand shops, hold an exchange day.</li>
+</ul>
+<p>To ensure participants weren’t overwhelmed by receiving all the challenges at the same time, they were sent out on a monthly basis, with experts giving advice at the starting and interim events. The challenges and tips on how to achieve them were also posted on partner websites, so that even those who were unable to attend the events were able to take part. To help inspire households to take part, prizes were awarded for engagement and innovative solutions.</p>
+<p>Winners were chosen first at national level, with the top EU prize (a trip to Brussels for a small gala) going to a town near Athens that reduced its energy consumption by 64%.</p>
+<p><strong>Addressing Barriers to Acting  </strong></p>
+<p>The following chart summarizes the main barriers faced, and how each was addressed.</p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:12.0pt;tab-stops:0cm 12.0pt 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style="font-size:11.0pt;mso-bidi-language:#0400"> </span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid #9CC2E5 .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #9CC2E5;mso-border-insidev:.5pt solid #9CC2E5">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="width:76.2pt;border:solid #5B9BD5 1.0pt;
+  border-right:none;mso-border-top-alt:solid #5B9BD5 .5pt;mso-border-left-alt:
+  solid #5B9BD5 .5pt;mso-border-bottom-alt:solid #5B9BD5 .5pt;background:#5B9BD5;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="102">
+<p class="MsoNormal"><b><span style='font-size:11.0pt;font-family:"Arial",sans-serif;color:white;
+  mso-bidi-language:#0400'>Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="width:145.2pt;border:solid #5B9BD5 1.0pt;
+  border-left:none;mso-border-top-alt:solid #5B9BD5 .5pt;mso-border-bottom-alt:
+  solid #5B9BD5 .5pt;mso-border-right-alt:solid #5B9BD5 .5pt;background:#5B9BD5;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="194">
+<p class="MsoNormal"><b><span style='font-size:11.0pt;font-family:"Arial",sans-serif;color:white;
+  mso-bidi-language:#0400'>How it was addressed<o:p></o:p></span></b></p>
+<p class="MsoNormal"><b><span style='font-size:11.0pt;font-family:"Arial",sans-serif;color:white;
+  mso-bidi-language:#0400'> </span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:19.75pt">
+<td style="width:76.2pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="102">
+<p class="MsoNormal"><b><span style="font-family: Arial, sans-serif;">Competing   priorities, changing established habits </span></b><b><span style='font-family:
+  "Arial",sans-serif'><o:p></o:p></span></b></p>
+</td>
+<td style="width:145.2pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="194">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 17.1pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Group action and competitions - being   part of a team and contributing to the overall performance; group commitment;   prize galas on the national and European levels</span><span style='font-family:
+  "Arial",sans-serif'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 17.1pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Realistic chance to win the competition</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 17.1pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span style="font-family: Arial, sans-serif;">Because the competitions were each   fourth months long and because they were spaced over several years,   participants were encouraged to develop new habits </span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:19.75pt">
+<td style="width:76.2pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="102">
+<p class="MsoNormal"><b><span style='font-family:"Arial",sans-serif'>Lack of knowledge and time <o:p></o:p></span></b></p>
+</td>
+<td style="width:145.2pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="194">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 17.1pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Support   from the Energy Masters, Municipalities and National Coordinators<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 17.1pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Direct   monitoring (and therefore control) of energy consumption via the online tool<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;height:19.75pt">
+<td style="width:76.2pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="102">
+<p class="MsoNormal"><b><span style="font-family: Arial, sans-serif;">Energy   saving is often associated with giving up the things you like</span></b><b><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></b></p>
+</td>
+<td style="width:145.2pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="194">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 17.1pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Positive and fresh campaign image</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 17.1pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">The campaigns stressed that reductions   in energy consumption could be achieved without a reduction in comfort   levels </span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4;height:19.75pt">
+<td style="width:76.2pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="102">
+<p class="MsoNormal"><b><span style='font-family:"Arial",sans-serif'>Energy saving is frequently seen as an   investment issue<o:p></o:p></span></b></p>
+</td>
+<td style="width:145.2pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="194">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 17.1pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>As a behavioural-change-only   project, there was no investment involved<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:5;mso-yfti-lastrow:yes;height:19.75pt">
+<td style="width:76.2pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="102">
+<p class="MsoNormal"><b><span style="font-family: Arial, sans-serif;">Energy   savings are noticeable only when the energy bill comes</span></b><b><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></b></p>
+</td>
+<td style="width:145.2pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="194">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 17.1pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Each household could enter its meter   data at any time and immediately see the amount of energy saved</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal"><span lang="EN-CA"> </span><b><span lang="EN-CA" style='font-size:14.0pt;
+font-family:"Frutiger Linotype",sans-serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:#0074A5;mso-ansi-language:EN-CA;
+mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br clear="all" style="mso-special-character:line-break;page-break-before:always"/>
+</span></b></p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The budget for EN2 was 2,124,286 Euros, of which 1,593,215 was provided by the European Union. At a conversion rate of 1.1 that is US$ 2,336,715</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<ul>
+<li><em>Energy Neighbourhoods</em> ran for four winter months in 2007/2008 and 2008/2009</li>
+<li><em>Energy Neighbourhoods2 </em>ran for four winter months in 2010/2011 and in 2012/2013.</li>
+</ul>
+<p>Participants were asked to enter their own meter data into the online tool. They could see their energy savings immediately.</p>
+<p>In addition, each program partner (country) conducted a survey with their participants both before and after the energy saving campaigns. The first survey form used for <em>Energy Neighbourhoods 2</em> contained 46 questions about information, awareness, understanding, attitude, intention and motivation, as well as both habit and purchase type behaviours. Due to a low response rate in the first campaign of <em>Energy Neighbourhoods 2</em>, the survey length was cut in half, some partners provided incentives, face-to-face interactions were increased, participants were assured of confidentiality and anonymity, and the importance of the survey was explained to the participants.  In return for these efforts, 22 of the 32 partner surveys in second campaign had a response rate over 50%.</p>
+<p>Each participant was asked for information on how they cooked (whether it is electric or gas, etc,); how they heated their home (oil, gas, electric, wood, …) and how they heated their household water. A computer programme calculated the percentage of how much gas and electricity went into the different types of applications, using historical data and statistics. For each type of application, a correction was made based on the outside temperature. Finally, as each new meter reading was input into the online tool, a calculation was made as to whether the household was using more or less energy than they did the previous year.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Impacts – Individual participants</strong></p>
+<p><em>Energy Neighbourhoods - 2008-2009: </em>Participating neighbourhoods from nine European countries achieved an average household energy saving of 10% against their energy consumption the year before the challenge (baseline year).  The program received the European Commissions’ Local Energy Action Award for best local energy initiative in 2010.</p>
+<p><em>ENeighbourhoods2</em> – 2010-2013: Participating neighbourhoods achieved an average household energy saving of 10%, a reduction of 5,735,000 kWh and savings of nearly 2,425,18 tons of CO2 over the two campaign years. The greatest team savings were reported from teams in Greece (65% reduction in energy use), Latvia (51%) and Bulgaria (48%).</p>
+<p>Killing standby was the most popular energy saving behaviour in 7 partner countries during the campaign while boiling just what one needs in the kettle was most popular in Ireland and Italy. Adjusting the thermostat downwards was the most popular energy saving behaviour in the UK, Germany, Spain and Hungary. This latter behaviour was popular in 12 of the partner countries. Using full loads in the washing machine and dishwasher also scored as a popular behaviour amongst participants across Europe. </p>
+<p><strong>Impacts – Overall  </strong></p>
+<ul>
+<li>Over 13,000 households started the bet and were provided with lots of energy saving information. On average those Neighbourhoods that completed the bet made an energy saving of 9%.</li>
+<li>From 2010 to 2013 alone, 830 Energy Neighbourhoods representing 8,626 households and 22,420 household members took part. On average, they achieved energy savings of 8.94% in the first year and 12.94% in the second year, saving 5,661,872 kWh in total.</li>
+<li>More widely, however, this project helped to stimulate the debate on energy saving within households and also between households and their municipalities, helping to improve their understanding of municipality level local climate action plans and activities.</li>
+<li>A comprehensive communication strategy ensured that participants themselves became multipliers of the project idea when being interviewed and presented in local media channels. In all, as of 2019, 32 patrons underlined the importance of the idea with their commitment; 41 short films had been produced to promote household energy saving and 800 energy masters had been trained to support people in their ambition to live a more efficient lifestyle. In addition, over 700 articles had been published spanning 16 countries; a huge boost in visibility for the municipalities that wanted to support their citizens in saving energy by making a bet.</li>
+<li>The budget for EN2 was 2,124,286 Euros, of which 1,593,215 was provided by the European Union. At a conversion rate of 1.1 that is US$ 2,336,715.</li>
+</ul>
+<p><strong>Cost-Effectiveness</strong></p>
+<ul>
+<li>Cost-effectiveness is 1.2 kWh saved annually per US$ spent (2,867,500 / 2,336,715).</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned</strong></p>
+<ul>
+<li>The main reason for success was the innovative combination of the following otherwise standard elements.
+    <ul>
+<li>Group action - being part of a team and contributing to the overall performance</li>
+<li>Support from the Energy Masters</li>
+<li>Competition between different groups with prize galas at the national and European levels</li>
+<li>The positive and fresh image of the competition</li>
+<li>Realistic chance to win the competition</li>
+<li>Direct monitoring (and therefore control) of energy consumption via the online tool.</li>
+</ul>
+</li>
+<li>The saving results are an important factor of the project but changing behaviour in a sustainable way was also an important project goal. It was therefore necessary to provide tailor-made energy saving tips and to accompany and support the participants throughout the competition. After having established certain behavioural patterns throughout the campaign, the participants established energy efficient behaviour routines in their lives over the long term as well.</li>
+<li>“It’s never too late to do as much as possible!” these words were sent to the Swedish participants from their national ambassador Pär Holmgren, at the start of Energy Neighbourhood campaign and it really is true! During the competition this has been proven by all team members regardless of age - their involvement and engagement has been fantastic.</li>
+<li>The social aspect of the project and the commitment of the Energy Masters have been identified as key factors for the success of the project. Saving energy together, motivating each other to keep going and being supported by an energy master who knows the participants well, are elements that really keep the team together and are vital to the neighbourhood’s success and the success of the project overall.</li>
+<li>The term neighbourhood does not necessarily mean that this competition is just for neighbours, natural groups that already exist such as a circle of friends, colleagues at work or an existing group tend to work better than groups that come together just for the project.</li>
+<li>The Energy Neighbourhood project has shown that small changes in behaviour can contribute to significant home energy savings. For this project to work, however, and bridge the gap between knowledge on how to save energy and making actual changes to attitudes and practices, there are other key elements that need to come together:
+    <ul>
+<li>the provision of relevant energy advice</li>
+<li>ensuring that the project is fun and motivational – the use of competition and the social aspect of working as part of a team scored highly in this respect</li>
+<li>a working calculation tool and continuous support from the organiser of the project.</li>
+</ul>
+</li>
+<li>A positive spin-off effect came with the implementation of CO2-challenges, conversations and exchange of experiences between the EN2 participants. Various further ambitions, such as travelling by electric cars to EN2 events, providing a CO2-friendly catering or organising a seasonal cooking class allows fun, demonstration, chat and wider thinking.</li>
+</ul>
+<p><strong>Landmark Designation</strong></p>
+<p>The program described in this case study was designated in 2019.</p>
+<p>Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Arien Korteland, BC Hydro</li>
+<li>Kathy Kuntz, Kanndo Consulting</li>
+<li>Doug McKenzie-Mohr, McKenzie-Mohr Associates</li>
+<li>Sea Rotmann, Sustainable Energy Advice Ltd.</li>
+<li>Brian Smith, Pacific Gas and Electric Company</li>
+<li>Reuven Sussman, American Council for an Energy-Efficient Economy</li>
+<li>Marsha Walton, New York Energy Research and Development Authority </li>
+</ul>
+<p>The case study was written in 2020 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

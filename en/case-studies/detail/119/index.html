@@ -1,0 +1,323 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Hampshire County Council</li>
+<li>County Surveyor's Society</li>
+<li>Transport Research Laboratory</li>
+<li>The European Union</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>University of Westminister Transport Studies Group</li>
+<li>Publicis Dialogue Communications Consultants</li>
+<li>Wootton Jeffreys Consultants</li>
+<li>Transport Research Laboratory</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Hampshire County was able to pass and implement policy changes that had not been implemented elsewhere in the U.K. at that time (e.g. restrictions and/or higher pricing on downtown parking).</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>HEADSTART</h1>
+<p>Hampshire County's Transport Awareness Initiative (HEADSTART) encourages more sensible use of cars in order to reduce road traffic and environmental pollution, protect human health and minimize future infrastructure cost. Based on the notion of public participation and community mobilization, the program developed and implemented a discussion workshop to help explore various transport issues, directly involve the community in the policy-making process, and engage the citizens in supporting the resulting policies. Volunteers were trained to lead the workshop, supported by a CD-ROM technology and a how-to manual that is available for use by other interested groups or organizations.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>Hampshire County relied heavily on its HEADSTART community involvement program in preparing its Local Transport Plan. That Plan aimed to improve travel choices and road safety, and make the best use of the existing transport network.</p>
+<p>While car ownership had grown faster in Hampshire County than it had nationally, use of public transport had continued to decline steadily since the early 1980s. Providing more road capacity to carry more cars would not be a lasting or environmentally and economically acceptable solution. Therefore, a study, commissioned by the County Council in 1993, recommended a three-year initiative that would first raise public awareness of transport issues, then encourage the public's ownership and acceptance of the problem, before implementing programs toward attitudinal change.</p>
+<p>The Hampshire County Council embarked on this transport awareness initiative in 1994 under the overall banner of TRAVELWISE (a transport awareness initiative launched in 11 other counties in UK). The County decided to first run the HEADSTART program locally and if successful, it would be replicated nationwide. HEADSTART worked alongside physical schemes that were introduced to encourage people to walk, cycle and use public transport. In this way HEADSTART helped people to understand how car dependency could be reduced while complementing improvements to the transport networks.</p>
+<p>HEADSTART incorporated many individual tools and approaches. This particular case study focuses on their public participation workshops.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>HEADSTART wanted to achieve:</p>
+<ul>
+<li>a 3% cut in car usage in Hampshire</li>
+<li>corresponding savings of 42 million over three years in road building and maintenance, environmental measures and energy use</li>
+<li>a better environment to live and work in.</li>
+</ul>
+<p>Accordingly, the HEADSTART project aimed to (i) raise people's awareness of the problem, (ii) develop an acceptance that everyone has a role to play, (iii) build an attitude of minimizing car use, and (iv) promote action to adopt a more sustainable transport system. A key element was to persuade car drivers to reduce unessential car use, for example, by selecting a different mode of transport such as walking, cycling, sharing lifts and public transport wherever possible.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>A national attitudinal survey was conducted among a random sample of 2,260 adults in Britain. The survey revealed that key public concerns included traffic congestion, air pollution and road safety, followed by traffic noise and land loss. However, these issues were perceived as national rather than local or individual problems.</p>
+<p>Survey participants said they were willing to use their cars less. On average they said that 10% of their car use was 'not at all important' and another 20% was 'not very important'. Nearly 60% agreed that they could walk during the short journeys they usually make by car. Many agreed that despite the convenience of using a car, they would use public transport if the services were more reliable, cheaper and cleaner.</p>
+<p>Nearly half of the respondents said that the car industry could contribute through greater fuel efficiency, cleaner exhausts and quieter engines. The central government, the respondents believed, could contribute through regulation and taxes; the local government through local schemes and public transport support; the major businesses through car pooling and fewer company cars; and the public through reducing private car use.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The First year of the HEADSTART project (1995-1996) was broken up into four phases. The first phase developed the workshop methodology and materials, recruited representative community groups and undertook pilot workshops. The second phase delivered 38 workshops across Hampshire, based on lessons from the pilot phase. The third phase analysed results from these workshops, and developed fact sheets for the CD-ROM and action packs for the community. The last phase involved a further 50 workshops, year one analysis and year two development.</p>
+<p>During the first phase, an image for the project was developed and branded, and core materials and resources were produced. Under the title HEADSTART, a slogan was created to encourage safer driving: "Use your head, not your car". A basic leaflet was also produced to introduce HEADSTART and to explain how people could get involved. This was extensively used in marketing the program throughout Hampshire.</p>
+<p>To work in conjunction with the County Staff, an external support team was identified. The team included process consultants, graphic designers, technical support team, public relation agencies, market research bodies, external facilitators and other freelance specialists.</p>
+<p>HEADSTART used a stakeholder analysis to identify members for its Community Advisory Panel, which met regularly throughout the project. This Panel consisted of 14 individuals who represented a broad cross section of the community interests, including a Rotary Club, a national motor organization, a Parent-Teacher Organization and Dial-a-ride organization. In addition, a few County Council members attended workshops as observers.</p>
+<p>This method proved extremely effective. It reached a wide audience. Participants did not feel that they were being 'sold' local authority solutions or that their time was being wasted. Further, it removed the gap of 'us vs them' present in traditional public meetings.</p>
+<p><em>The HEADSTART Workshop</em></p>
+<p>Hampshire was the first County in Great Britain to use a CD-ROM technology to raise transport awareness. The CD provided users with a variety of resources to choose from in organizing and presenting the workshop. It included relevant video footage, illustrative charts, graphs, written material and dynamic graphics.</p>
+<p>The first twelve workshop groups were recruited by phone, then were sent letters and leaflets. Groups were selected from existing County contacts and from the 'Clubs and Societies in Hampshire' population. Media relations (local TV, radio and press) was subsequently used to attract more participants <a href="/en/tools-of-change/mass-media/">Mass Media</a>, and many workshops were held in conjunction with existing meetings.</p>
+<p>After piloting the workshop, HEADSTART sent a brief letter about it to the coordinators or secretaries of the community groups in the area, requesting that they publicize the project through local newsletters and at their regular meetings. Lists of these community groups were accessed through local libraries and directories.</p>
+<p>This mailing resulted in so many requests for further information and individual workshops that almost all second phase workshops were directly or indirectly generated by this mailing.</p>
+<p>The workshops began by asking participants to identify the transport issues most important to them (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>). This information was tracked in two ways: (1) by total number of participants mentioning each issue (across all workshops), and (2) by the number of workshops at which each issue had been mentioned.</p>
+<p>Overall, the top five issues raised, in priority order, were:</p>
+<ol>
+<li>public transport fares too high</li>
+<li>air pollution caused by traffic</li>
+<li>inadequate, infrequent and inconsistent public transport services</li>
+<li>too few cycle paths or lanes, poor linkage and lack of safety</li>
+<li>time loss due to congestion</li>
+</ol>
+<p>Next, the workshop facilitator used the CD-ROM to highlight and discuss those issues of greatest concern (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>). The facilitator then asked participants to recommend potential solutions that individuals and the community-at-large could take (including decision-makers like the County Council). Priority ideas were developed further (after the workshops) with the help of a panel of Hampshire residents from a range of backgrounds.</p>
+<p>Workshop materials included: simple fact sheets, detailed briefing papers, flip charts, stickers, program videos and an interactive CD-ROM.</p>
+<p>In a community awareness initiative like HEADSTART, participation in the workshop was a success in itself. After one year since its inception, over 60 workshops were completed and further 25 were planned. Over 600 groups had been reached through a process of networking through community group contacts at a grass roots level.</p>
+<p>The workshop methodology was so well received by its participants that it has since been applied to other area transportation planning applications (please see the <a href="#Notes">Notes</a> section, below).</p>
+<p>Citizen participation was further encouraged and supported though grants. More than 4 million was awarded to voluntary groups to support sustainable transport projects (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>).</p>
+<p>Other promotional activities included:</p>
+<ul>
+<li>Advertising - a slogan: 'Are You Doing Your Bit?'; an eye-catching TV advertisement was launched featuring celebrities</li>
+<li>Program Bulletin - information on the transport problem, the HEADSTART initiative, and practical ways people could take an active role</li>
+<li>Theme Booklets - public consultation documents covering Hampshire County's role and vision toward solving transport problem</li>
+<li>Road Show: a multimedia, interactive show and specially equipped bus toured with relevant information</li>
+<li>Road Show Consultation Project: visits were made to community centres to consult local people first hand about transport issues</li>
+<li>Many community-based social marketing approaches were also implemented by individual schools and communities (see <a href="#Notes">Notes</a> section, below).</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Over the three year life of the original travel awareness initiative, the total cost was around $60,000 per year. The break down of the total cost was as follows:</p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td width="80%">Attitude, acceptance and awareness surveys</td>
+<td>$30,000</td>
+</tr>
+<tr>
+<td>Retrospective travel behaviour survey</td>
+<td>$70,000</td>
+</tr>
+<tr>
+<td>Bias check (telephone survey)</td>
+<td>$2,000</td>
+</tr>
+<tr>
+<td>Reserved for specific local initiatives</td>
+<td>$50,000</td>
+</tr>
+<tr>
+<td>Monitoring effectiveness of program elements</td>
+<td>$12,000</td>
+</tr>
+<tr>
+<td>Production of Best Practice guides</td>
+<td>$16,000</td>
+</tr>
+</tbody>
+</table>
+<p>Costs were approximately $35,000 in year 1, $45,000 in year 2 and $100,000 in the final year.</p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td width="80%">Total:</td>
+<td>$180,000</td>
+</tr>
+</tbody>
+</table><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The impact of the workshops has been evaluated by the level of support for related policy changes, relative to other parts of the UK.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>In mid-1996, all project participants received the first edition of a HEADSTART newsletter, giving up-dates on the project as it developed, feedback on other community projects that had started as a result of the HEADSTART workshops, and transport related news, views and information from around the country. A second newsletter, which was published in 1998, also invited articles and success stories.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Hampshire County was able to pass and implement policy changes that had not been implemented elsewhere in the U.K. at that time (e.g. restrictions and/or higher pricing on downtown parking). They attribued this largely to the success of their workshops.</p>
+<p>In addition, they found that their public meetings on transportation issues ran more smoothly if they began them with a short workshop session.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Tony Ciaburro <br/>
+Head of Transportation Planning <br/>
+The County Surveyors Department <br/>
+Hampshire County Council <br/>
+The Castle, Winchester SO23 8UD <br/>
+UK <br/>
+Tel: 01962 846891 <br/>
+Fax: 01962 847055 <br/>
+E-mail: <a href="mailto:sur8ac@hants.gov.uk">sur8ac@hants.gov.uk</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Notes</strong></p>
+<p>The community workshops led to the development of a wealth of activities and projects designed to reduce car journeys in Hampshire. These were compiled in the CD-ROM manual to help groups wishing to undertake their own transport projects.</p>
+<p>The subjects covered were:</p>
+<ul>
+<li>Better driving and speed pledge - a simple commitment to keep to the legal speed limit and drive safely</li>
+<li>Community Bus Scheme - a community-run, non-profit bus service for areas where demand exists but is poorly served by commercial services</li>
+<li>Shop delivery scheme - a home-delivery service by retailers (particularly supermarket chains) or community groups/organizations</li>
+<li>Car share scheme - two or more persons could use a car for the same individual trip such as school drop-off, regular shopping or leisure activities or regular meetings</li>
+<li>Personal travel diaries - a method to evaluate personal travel habits by using a dairy and recording transport patterns</li>
+<li>Supermarket bus initiative - a free/cheap bus service by out-of-town retailers</li>
+<li>Reducing vehicle pollution - ways to reduce pollution include, but not limited to, cut down on personal car use, maintaining vehicle to a high standard, car-share, caution at the filling stations and a economical driving technique</li>
+<li>Organizing the school run - ways to improve school transport plans, including car-share schemes, using public transport, no car days, secure cycle days and organizing walking groups</li>
+</ul>
+<p>With feedback, the Hampshire Local Transport Plan (LTP) was revised in July, 2000, as a core part of government's approach to provide longer term transport options (2001-2006) and more secured funding arrangements. This allowed local authorities like HCC to plan future activities with confidence. Hampshire County Council was awarded 'Centre of Excellence in Transport Planning' status by the UK Government as a result of its LTP.</p>
+<p>Being inspired by the workshops, a number of different community initiatives took place in the Hampshire County to solve transport problems; a few are included below.</p>
+<p>HEADSTART was selected by the UK National Council for United Nations' City Summit as one of the top six LOCAL AGENDA 21 Initiatives, and the only transport initiative in the UK. It was also included in the Habitat II programme as best practice in 1996. As a part of that, a report was published on HEADSTART in a book "Living for the Future" funded by the Joseph Rowntree Foundation.</p>
+<p>The delivery of the LTP created a hiatus, during which little time was available to further develop the HEADSTART programme, although it continued to be featured in their approach to the delivery of transport schemes and improvements. HEADSTART has now moved on from being a project. The involvement of the members of the community in understanding their part in reducing the transport problem is now part of their culture.</p>
+<p>HEADSTART has been used as part of the consultation process on the South East Hampshire Transportation Strategy and is also an integral part of the innovative school transport plan under development of a community school. It became also a feature of transport strategies for Bakingstoke and North East Hampshire as well as the "Safe Routes to School" national demonstration project with Sustrans.</p>
+<p>It also helped Horndean Community School to come up with a school transport plan (<a href="/en/tools-of-change/school-programs/">School Programs that Involve the Family</a>) and because of this, the HCC was selected to be part of the national Streets Ahead Initiative.</p>
+<p><br/>
+This case study was written in 2002 by Naila Hussain.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

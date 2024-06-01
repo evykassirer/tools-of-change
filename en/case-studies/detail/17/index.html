@@ -1,0 +1,208 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Pacific Gas and Electric Company</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<p>After being served by trained auditors, customers were three to four times more likely to retrofit their homes and a third more likely to apply for retrofit financing.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Pacific Gas and Electric</h1>
+<p>Pacific Gas and Electric was using home audits to encourage residents to improve the energy efficiency of their customers' homes. In order to improve the effectiveness of home visits, the utility trained some of its auditors to obtain commitment from the resident, to frame recommendations in terms of "loss" rather than "gain" and to convey recommendations in a personalized, vivid manner.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>In 1978, with the Arab oil embargo still fresh in the minds of most North Americans, the United States Residential Conservation Service (RCS) Program was established to promote residential energy efficiency. The RCS Home Audit Program encouraged residents to invest in their homes in order to conserve energy. Pacific Gas and Electric participated in this program by hiring auditors to conduct energy audits of homes.</p>
+<p>The success of the RCS program was marginal, with less than six percent of American residents requesting home audits, and fewer acting upon the recommendations of the auditors. This lack of success was surprising, as improvement of home energy efficiency could have saved residents money. Clearly, new methods of communicating recommendations to residents needed to be investigated.</p><!-- Background already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>In a typical home audit, the auditor spent up to an hour with the resident inspecting the home and recommending ways of improving its energy efficiency by such means as improving attic insulation, caulking windows, and installing weather-stripping around the doors. Two retrofit finance programs, a zero-interest loan (ZIPLOAN) and a cash rebate program (CASHBACK), were made available to residents to encourage them to act upon the recommendations of the auditor. (<em>Overcoming Specific Barriers)</em></p>
+<p><strong>Auditor Training</strong></p>
+<p>During the auditor training, four basic communication principles were presented, discussed and role-played:</p>
+<p><strong>1. Vivid information</strong></p>
+<p>Auditors were taught to vividly illustrate heat loss, rather than rely on dry statistical information (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>). For example, auditors were encouraged to use expressions like the following: "If you were to add up all the cracks around and under the doors of your home, you'd have the equivalent of a hole the size of a football in your living room wall. Think for a moment about all the heat that would escape from a hole that size. That's precisely why I'm recommending that you install weather-stripping. And your attic totally lacks insulation. We call that a 'naked' attic. It's as if your home is facing winter not just without an overcoat, but without any clothing at all."</p>
+<p>In addition, they were encouraged to use vivid portraits of community members who had successfully taken conservation measures to an extreme, and saved more energy and money than average. These "superconservers," it was thought, would have a disproportionately large motivating impact on the residents (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>).</p>
+<p><strong>2. Personalized information</strong></p>
+<p>Auditors were discouraged from simply leaving computerized summaries of recommendations for the residents. Instead, they were encouraged to make the recommendations more personally relevant by using the utility bills of the resident to illustrate current losses or potential gains (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>).</p>
+<p><strong>3. Building motivation</strong></p>
+<p>Auditors were taught that enlisting the resident to participate in the audit increased the motivation of the resident and therefore increased the probability that the resident would take retrofit action. Auditors were asked to encourage the resident to measure the cracks under doors, help with meter readings, climb up the ladder to see the level of attic insulation, and so on. As well, auditors were encouraged to seek verbal commitment from residents confirming that they would make the recommended changes. For example, the householder might be asked: "When do you think you'll have the weather-stripping completed?... I'll give you a call around then, just to see how it's coming along, and to see if you're having any problems"(<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>).</p>
+<p><strong>4. Framing</strong></p>
+<p>The auditors were also instructed to "frame" recommendations offered during the audit in terms of potential money lost through inaction, rather than money saved through action.</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Eighteen auditors employed by Pacific Gas and Electric Company participated in the program. Nine were randomly selected to be trained and the remaining nine served as a control group. The training was held during two five-hour workshops four months apart.</p>
+<p>The ZIPLOAN and CASHBACK finance programs were only available to residents after they had completed recommended retrofits. The number of applications for the finance programs were, therefore, a good indicator of the changes in behaviour following the audits, and the overall success of the training.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Customers served by trained auditors were three to four times more likely to retrofit their homes and 36 percent more likely to apply for retrofit financing. Surprisingly, there was no difference in gas and electricity consumption between experimental and control conditions. This may be attributed to the possibility that related retrofit activity had not yet taken place.</p>
+<p>Adapted from: Gonzales, M., E. Aronson and M. Costanzo (1988). "Using Social Cognition and Persuasion to Promote Energy Conservation: A QuasiExperiment." Journal of Applied Social Psychology, 18, 12, 1049-1066.</p><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study was originally published in 1998 in "Tools of Change: Proven Methods for Promoting Environmental Citizenship" by Jay Kassirer and Doug McKenzie-Mohr (Published by Canada's National Round Table on the Environment and the Economy)</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

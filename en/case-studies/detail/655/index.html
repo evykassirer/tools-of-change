@@ -1,0 +1,203 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>Government of France</p><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<p>Practical lessons in vehicle efficiency policy: The <a href="https://theicct.org/blog/staff/practical-lessons-vehicle-efficiency-policy-10-year-evolution-frances-co2-based-bonus" target="_blank">10-year evolution</a> of France's CO2-based bonus-malus (feebate) system (March, 2018)</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>France’s Feebate for Fuel Efficient Vehicles </h1>
+<p>The “Bonus/Malus écologique,” or Feebate program, is a nation-wide initiative of the French government. It is intended to shift the car market by encouraging consumers and manufacturers to purchase and make vehicles that are more energy efficient. Bonuses, or rebates, are awarded for purchases of low-emission vehicles, and fees are charged for purchases of high-emission vehicles.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.  </em></p>
+<p>As of 2018, France remains one of a few countries that have used CO2-based fees and rebates together. This feebate system is one of the key tools that the French government is using to bring down carbon emissions from vehicles. This program was started in December 2007. For context, in 2010 France produced 2,723,196 vehicles. </p><!-- Background already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>France's rebates and fees were assessed on a sliding scale. Vehicles were placed into nine categories depending on their energy efficiency. In 2008, the size of the rebates was up to 8.8% of the list price of the corresponding cars, and penalties could be as large as 14.1% of this price. An additional bonus was awarded for replacing an older vehicle (more than 15 years old) with a new one. (<em>Financial Incentives and Disincentives</em>)</p>
+<p>In order to continue pressure on manufacturers to produce ever more efficient vehicles, the thresholds for rebate eligibility were made stricter over time. Such adjustments were made every two years at first, then every year. Manufacturers soon learned to increase the rebates / reduce the penalties applicable to their vehicles by designing vehicles that emitted CO2 at levels just below what was required for a given category. This greatly reduced the impact of the program on CO2 levels for each dollar spent on rebates.</p>
+<p>This issue was addressed by adjusting fees and rebates annually so that they balanced, by increasing the number of categories, and by descreasing the rebate/penalty difference between each category. In 2017, this approach was further refined by increasing the penalties smoothly (or continuously, rather than step-wise) with every increase in emissions. </p>
+<p>Dealers deducted the rebates from the purchase price of vehicles sold, or purchasers submitted their receipts directly to the government for reimbursement. Financial disincentives were charged as additional taxes at the time of registration.</p>
+<p>Feebate programs are regarded as potential complements to or even substitutes for efficiency regulation. France’s Feebate program employed several social marketing strategies that likely contribute to its effectiveness.</p>
+<p>Consumers typically underestimate long-term cost benefits from greater efficiency. Consequently, their assessment of lower initial cost for a less efficient vehicle versus long-term savings from purchase of a more efficient car is skewed. Use of feebates increases the salience of those benefits by demonstrating an immediate and significant gain. France’s Feebate program made incentives more visible to consumers by making them large and short-term.</p>
+<p>An important goal of France’s Feebate program was to encourage innovation on the part of manufacturers, resulting in production of increasingly efficient vehicles. Manufacturers received no direct incentives from the program. But they strove to keep their product competitive. This competition influenced manufacturer behavior.</p>
+<p>The use of prompts and graphic presentation of information, in the form of labels, likely also contributed to the effectiveness of the program. France used the European Commission label that graphically showed the CO2 emissions of a vehicle. (Prompts)</p>
+<p>Tying the information on the label to a monetary incentive probably produced a greater effect than either the label or the incentive alone would have achieved.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>France’s Feebate program was calibrated for cost neutrality. However, in 2008, it cost around 250 million euros. In 2010, the program made adjustments calculated to achieve the goal of cost neutrality.</p>
+<p>Feebate programs can be engineered to operate at a net gain, a net cost or to be revenue neutral. Design factors that can be manipulated to achieve this are the size of the incentives and disincentives and the placement of the pivot point, that point dividing cars that receive rebates from ones charged additional fees.</p><!-- Financing already contains P tags.-->
+<h2>Results</h2>
+<p>Change in consumer purchasing behavior was significant and began immediately after initiation of the program. The market share of cars with emissions below 120g of CO2 per kilometer doubled within a few months, from 20% of sales before the program to nearly 50% at the beginning of 2009. During the same period, the market share of higher-emission vehicles fell from nearly 15% to 5%. The average efficiency of vehicles sold increased by five percent. However, determining exactly how much of the change can be attributed to the program is complex, as many factors influence behavior.</p>
+<p>Larger impacts resulting from changes in manufacturers’ designs can be expected. These changes will take longer but may be quite substantial.</p>
+<p>A rebound effect in driving behavior was anticipated; consumers finding themselves with more efficient cars tend to drive more. Taking these additional factors plus the CO2 emissions resulting from automobile manufacture into account leads some researchers to estimate a net increase in CO2 emissions. Adjustments in program design, especially to decrease or keep constant total sales, could turn this around.</p>
+<p>Between 2008 and 2016, there was a clear transition toward lower CO2 emission vehicles.</p>
+<!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study was writtern in 2011 and updated in December, 2020 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

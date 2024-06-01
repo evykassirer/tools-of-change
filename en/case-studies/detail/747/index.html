@@ -1,0 +1,866 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/school-programs-that-involve-the-family/">School Programs that Involve the Family</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>U.S. Environmental Protection Agency (EPA)</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>A wide range of commercial and NGO partners</li>
+<li>Utilities / water districts / regional and local government agencies</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Savings by 2020</p>
+<ul>
+<li>5.3 trillion gallons of water</li>
+<li>603 billion kWh of electricity</li>
+<li>Over $108 billion in water and energy costs</li>
+</ul>
+<p> </p>
+<p><strong>Download the Case Study (</strong><a href="/userfiles/WaterSense-2021-12-14.pdf" target="_blank"><strong>PDF</strong></a><strong>) </strong></p>
+<p><strong>For More Information<br/>
+</strong></p>
+<ul>
+<li><a href="https://www.epa.gov/watersense" target="_blank"> https://www.epa.gov/watersense </a></li>
+<li>@EPAwatersense (Facebook and Twitter)</li>
+<li>2017 program evaluation: <a href="https://www.epa.gov/sites/production/files/2017-08/documents/_epaoig_20170801-17-p-0352.pdf" target="_blank">https://www.epa.gov/sites/production/files/2017-08/documents/_epaoig_20170801-17-p-0352.pdf </a></li>
+</ul><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>WaterSense Adds Up to Big Water and Energy Savings</h1>
+<p><iframe height="auto" src="https://www.youtube.com/embed/_m_A32mqVbI" width="97%"></iframe></p>
+<p>WaterSense, a partnership program sponsored by the U.S. Environmental Protection Agency (EPA), seeks to protect the future of the nation’s water supply by offering Americans a simple way to use less water with water-efficient products, homes, and services. WaterSense labeled products, which are independently certified to use at least 20% less water and perform as well or better than standard models, have been on the market since 2007. As of 2021 there are more than 30,000 labeled models, including products used in residential and commercial bathrooms, and outdoor irrigation. EPA’s WaterSense program has also certified over 3,000 homes with WaterSense labeled fixtures and water-efficient features. By 2020 it had saved 5.3 trillion gallons of water and 603 billion kWh of electricity. Designated a<em> Landmark</em> case study by our Building Energy peer review panel in 2021.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><i>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</i></p>
+<p>The U.S. Congress first enacted statutory water-use conservation measures in 1992 by amending the Energy Policy and Conservation Act (42 U.S.C. §6295(j)-(k)) to address toilets, showerheads, faucets, and urinals.</p>
+<p>Subsequent actions have added dishwashers, clothes washers, and prerinse spray valves to the act. Clothes washers and dishwashers were labelled by the U.S. ENERGY STAR® program for energy efficiency, which included a water-efficiency factor for these products.</p>
+<p>In 2003, the U.S. Government Accountability Office forecast water shortages in 36 states, and consumers were being challenged by rising utility bills. There were requests from stakeholders for a water conservation program like ENERGY STAR®, which used public-private partnerships intended to educate consumers and simplify the identification of high efficiency products.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>In 2004, the EPA held stakeholder meetings across the country to get input on designing a national, voluntary market-based program for promoting water-efficient products. </p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p class="MsoNormal"><img alt="EPA WaterSense logo" height="433" src="/userfiles/Image/blue promo label english.jpg" width="350"/></p>
+<p> <span lang="EN-CA" style='font-size: 9pt; font-family: "Minion Pro", serif;'>WaterSense label<o:p></o:p></span></p>
+<p>WaterSense officially launched June 12, 2006, in San Antonio, TX, at the American Water Works Association’s Annual Conference &amp; Exposition. It started with a few priority behaviors, products, partners, and communication campaigns. Each year, it expanded from there.</p>
+<p><strong>Categories Introduced</strong><b><span lang="EN-CA" style='font-size:11.0pt;font-family:"Minion Pro",serif;color:black;mso-ansi-language:
+EN-CA;mso-bidi-language:#0400'><o:p> </o:p></span></b><b><span lang="EN-CA" style='font-size: 11pt; font-family: "Minion Pro", serif;'> </span></b></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid #A8D08D .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #A8D08D;mso-border-insidev:.5pt solid #A8D08D">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="border:solid #70AD47 1.0pt;border-right:none;
+  mso-border-top-alt:solid #70AD47 .5pt;mso-border-left-alt:solid #70AD47 .5pt;
+  mso-border-bottom-alt:solid #70AD47 .5pt;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top">
+<p class="MsoNormal"><b><span style='font-family:"Arial",sans-serif;color:white;mso-bidi-language:#0400'>Year<o:p></o:p></span></b></p>
+</td>
+<td style="border:solid #70AD47 1.0pt;border-left:none;mso-border-top-alt:
+  solid #70AD47 .5pt;mso-border-bottom-alt:solid #70AD47 .5pt;mso-border-right-alt:
+  solid #70AD47 .5pt;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:
+  19.75pt" valign="top">
+<p class="MsoNormal"><b><span style='font-family:"Arial",sans-serif;color:white;mso-bidi-language:#0400'>Categories   Introduced</span></b><b><span style='font-family:"Arial",sans-serif;color:white;mso-bidi-language:#0400'> </span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:19.75pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">2007</span><b><span style="font-size: 9pt; font-family: Arial, sans-serif;"><o:p></o:p></span></b></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-left:15.7pt;text-indent:-14.15pt;mso-list:
+  l2 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Labeled toilets (residential and   commercial)</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:15.7pt;text-indent:-14.15pt;mso-list:
+  l2 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Sink faucets (bathroom)</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:19.75pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">2008</span><b><span style="font-size: 9pt; font-family: Arial, sans-serif;"><o:p></o:p></span></b></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-left:15.7pt;text-indent:-14.15pt;mso-list:
+  l2 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">New homes (pilot)</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;height:19.75pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">2009</span><b><span style="font-size: 9pt; font-family: Arial, sans-serif;"><o:p></o:p></span></b></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-left:15.7pt;text-indent:-14.15pt;mso-list:
+  l2 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Flushing urinals</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:15.7pt;text-indent:-14.15pt;mso-list:
+  l2 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Pre-Rinse Spray Valves (often used in   commercial and institutional kitchens— designed to remove food waste from   dishes prior to dishwashing.) After several years, WaterSense had   successfully transformed the marketplace and the U.S. Department of Energy   (DOE) adopted the WaterSense efficiency threshold and performance test for the   national energy regulation covering these devices. Therefore, WaterSense   sunset its specification for pre-rinse spray valves, in 2019.</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4;height:19.75pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">2010</span><b><span style="font-size: 9pt; font-family: Arial, sans-serif;"><o:p></o:p></span></b></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-left:15.7pt;text-indent:-14.15pt;mso-list:
+  l2 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Showerheads</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:15.7pt;text-indent:-14.15pt;mso-list:
+  l2 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">New homes. Certified homes that re at   least 20% more water-efficient than typical new construction, based on the   following factors.</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:36.45pt;text-indent:-14.2pt;mso-list:
+  l1 level2 lfo3"><!--[if !supportLists]--><span style='font-family:"Courier New";
+  mso-fareast-font-family:"Courier New";mso-bidi-language:#0400'>o<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>     </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Efficiency of plumbing   products</span><span style='font-family:"Arial",sans-serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:36.45pt;text-indent:-14.2pt;mso-list:
+  l1 level2 lfo3"><!--[if !supportLists]--><span style='font-family:"Courier New";
+  mso-fareast-font-family:"Courier New";mso-bidi-language:#0400'>o<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>     </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Efficiency of   water-using appliances</span><span style='font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:36.45pt;text-indent:-14.2pt;mso-list:
+  l1 level2 lfo3"><!--[if !supportLists]--><span style='font-family:"Courier New";
+  mso-fareast-font-family:"Courier New";mso-bidi-language:#0400'>o<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>     </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Water waste   from hot water delivery</span><span style='font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:36.45pt;text-indent:-14.2pt;mso-list:
+  l1 level2 lfo3"><!--[if !supportLists]--><span style='font-family:"Courier New";
+  mso-fareast-font-family:"Courier New";mso-bidi-language:#0400'>o<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>     </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Housing design   and layout</span><span style='font-family:"Arial",sans-serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:36.45pt;text-indent:-14.2pt;mso-list:
+  l1 level2 lfo3"><!--[if !supportLists]--><span style='font-family:"Courier New";
+  mso-fareast-font-family:"Courier New";mso-bidi-language:#0400'>o<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>     </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Influence of   landscape size, design, and plant choices on theoretical irrigation   requirements</span><span style='font-family:"Arial",sans-serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:15.7pt;text-indent:-14.15pt;mso-list:
+  l2 level1 lfo2"><!--[if !supportLists]--><span style="font-size: 9pt; font-family: Symbol;">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Irrigation</span><span style="font-family: Arial, sans-serif;"> design and technology</span><span style="font-size: 9pt; font-family: Arial, sans-serif;"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:5;height:19.75pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">2012</span><b><span style="font-size: 9pt; font-family: Arial, sans-serif;"><o:p></o:p></span></b></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-left:15.7pt;text-indent:-14.15pt;mso-list:
+  l2 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Irrigation controllers (weather-based)</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:6;height:19.75pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">2013</span><b><span style="font-size: 9pt; font-family: Arial, sans-serif;"><o:p></o:p></span></b></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-left:15.7pt;text-indent:-14.15pt;mso-list:
+  l2 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Multi-family buildings</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:7;height:19.75pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">2015</span><b><span style="font-size: 9pt; font-family: Arial, sans-serif;"><o:p></o:p></span></b></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-left:15.7pt;text-indent:-14.15pt;mso-list:
+  l2 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Commercial toilets - Flushometer–Valve   Water Closets.</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Federal agencies directed to give   purchase preference to WaterSense-certified products and services (Executive   Order 13693, Planning for Federal Sustainability in the Next Decade).</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:8;height:19.75pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">2017</span><b><span style="font-size: 9pt; font-family: Arial, sans-serif;"><o:p></o:p></span></b></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-left:15.7pt;text-indent:-14.15pt;mso-list:
+  l2 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Spray sprinkler bodies (for landscape irrigation   )</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:9;mso-yfti-lastrow:yes;height:19.75pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">2021</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-left:15.7pt;text-indent:-14.15pt;mso-list:
+  l2 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Irrigation controllers (soil moisture-based)</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:15.7pt;text-indent:-14.15pt;mso-list:
+  l2 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Homes Version 2 (updated to better leverage   the green building market.) Builders could seek the WaterSense label from EPA   licensed Home Certification Organizations with WaterSense approved certification   methods that ensured homes achieved a minimum of 30% water savings over   typical construction and met performance expectations. </span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>As of May, 2021, over 32,000 different product models had been labeled, and WaterSense was considering the following additional water-saving product categories and service programs for specification development:</p>
+<ul>
+<li>Cation exchange water softeners</li>
+<li>Bath and shower diverters</li>
+<li>Pool covers</li>
+</ul>
+<p><strong>Benefits</strong></p>
+<p>The program emphasized the following benefits from WaterSense products and services (<em>Credible, Empowering Communications; Financial Incentives</em>.)</p>
+<ul>
+<li>Verified cost savings and performance improvements: independently certified to use less water and perform as well or better than standard models</li>
+<li>Energy savings when less hot water is used</li>
+<li>Low-maintenance and water-efficient landscapes without sacrificing curb appeal</li>
+</ul>
+<p class="MsoNormal"><strong>Programs for Residential Consumers</strong></p>
+<p>Installation of WaterSense labeled products helped consumers save water, energy, and money directly. In addition, WaterSense influenced consumer behavior to achieve further water savings. Many of the program campaigns and communications focused on fostering an ethic of water efficiency.</p>
+<p>Selected Residential Campaigns</p>
+<ul>
+<li><em>Launch </em>(2006)</li>
+<li><em>Fix a Leak Week</em> (annual campaign starting in 2009), often with featured races, giveaways (leak detection / repair kits), demonstrations, workshops, exhibits and festivals. In addition, WaterSense partners from different areas of the country took turns posting and sharing tips, facts, and images on finding and fixing leaks and events in their areas. Each leak detection kit contained toilet dye tablets, faucet aerator, shower bag to measure flows, drip gauge, and a household water efficiency guide.) Each leak repair kit included toilet dye tablets, assorted faucet washers, Teflon tape, a drip gauge, and a faucet aerator. (<em>Norm Appeals; Overcoming Specific Barriers; Vivid. Personalized, Credible, Empowering Communication</em>)</li>
+</ul>
+<p> <img alt="Fix a Leak promotion" height="300" src="/userfiles/Image/46528005285_727e343f58_c(1).jpg" width="450"/></p>
+<p><span lang="EN-CA" style='font-size:9.0pt;font-family:
+"Minion Pro",serif;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-ansi-language:EN-CA;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>Fix a Leak promotion</span></p>
+<ul>
+<li><em>Twitter campaigns </em>(started in 2010)</li>
+<li><em>We're for Water</em>, a national outreach campaign to help consumers save water. The campaign kicked off with a cross-country road trip from Los Angeles to New York City. (2010)</li>
+<li><em>Shower Better</em> (2014)</li>
+<li><em>Annual Sprinkler Spruce-Up</em> helps homeowners make sure their watering systems are working properly before they ramp up their watering during the warmer months (launched in 2014)</li>
+</ul>
+<p>By 2019, there were several primary residential campaigns a year. (<em>Building Motivation, Engagement and Habits Over Time</em>)</p>
+<ul>
+<li>January: Resolve to Save Water (Resolution Pledge)</li>
+<li>March: Fix a Leak Week</li>
+<li>May: Sprinkler Spruce-up</li>
+<li>July: Outdoor water use and drought</li>
+<li>September / October: Shower Better (showerheads)</li>
+<li>Other Campaigns:  Mulch Madness, Your Better Yard, Your Better Bathroom, When in Drought; Save Water at Home</li>
+</ul>
+<p>Challenges, Contests, Scorecards (<em>Norm Appeals</em>)</p>
+<ul>
+<li>State challenges (in 2008)</li>
+<li>Water-Smart Landscape Photo Contest (2013)</li>
+<li>#watersaving yard photo challenge (2015)</li>
+<li>EPA Water Score for Multifamily Housing (launched in 2017)</li>
+</ul>
+<p>Communication Vehicles</p>
+<ul>
+<li>Animated YouTube videos, all under one minute, on how to find and fix leaks, spruce-up a sprinkler, face a drought or hot summer months, shower better, and bath hacks</li>
+</ul>
+<p><img alt="YouTube Playlist" border="25" height="346" src="/userfiles/Image/YouTube playlist.jpg" width="450"/></p>
+<p class="MsoNormal" style="margin-left:7.05pt"><span lang="EN-CA" style='font-size:9.0pt;font-family:"Minion Pro",serif;mso-ansi-language:EN-CA'>YouTube playlist<o:p></o:p></span></p>
+<ul>
+<li>Bill stuffers</li>
+<li>Brochures</li>
+<li>Facebook Fan Page, Twitter campaigns e.g. relays (launched in 2010)</li>
+<li>Media outreach templates</li>
+<li>Radio PSAs</li>
+<li>Spanish language website (launched in 2019)</li>
+<li>Website (launched in 2006; website for children launched in 2008)</li>
+</ul>
+<p><strong>Program for Children and Schools </strong></p>
+<ul>
+<li>Website for children (launched in 2008)</li>
+<li>Lessons for grades 3-5 focused on saving water through finding leaks. The free resources offer step-by-step instructions for teachers and include ready-made worksheets for students (launched in 2009)</li>
+<li>Flo, the WaterSense spokesperson was available to come to events to supports local efforts. (<em>Schools Programs that Influence the Home</em>)</li>
+</ul>
+<p><strong>Program for Commercial and Institutional Customers</strong></p>
+<p>This program developed tailored approaches, introductions, fact sheets, guides, worksheets, case studies, and webinars for each of the following priority audiences.</p>
+<ul>
+<li>Commercial and Institutional Sector</li>
+<li>Office Buildings</li>
+<li>Hospitals</li>
+<li>Hotels: The ongoing WaterSense H2Otel Challenge encourages hotels to evaluate their water use and adopt water-saving products and best management practices. (began in 2014)</li>
+<li>Multi-family housing</li>
+<li>Restaurants</li>
+<li>Educational Facilities</li>
+<li>Industrial</li>
+</ul>
+<p>Communication Tools: Case Studies, Monthly Tips, Assessment Tools, Worksheets and Checklists</p>
+<ul>
+<li>Assessment Tools and worksheets helped commercial and institutional customers calculate associated implementation savings</li>
+<li>Case studies of successful implementations helped decision-makers visualize and have more confidence in proposed projects</li>
+<li>Checklists and monthly tips provided guidance and helped keep the program top-of-mind</li>
+</ul>
+<p>Newsletters</p>
+<ul>
+<li>A quarterly public/consumer newsletter, the "WaterSense Current”, provided program news and highlighted partner efforts (began in 2009)</li>
+<li>A quarterly newsletter called “Blueprint” was dedicated to news and events related to WaterSense labeled homes (2014-2016)</li>
+</ul>
+<p><strong>Partnerships </strong></p>
+<p>The first partners eligible to join WaterSense were certified landscape irrigation professionals, professional certifying organizations, and promotional partners. By 2019 the program was working with the following different types of organizations.<span lang="EN-CA" style='font-family: "Minion Pro", serif;'> </span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:347.05pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid #A8D08D .5pt;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-border-insideh:.5pt solid #A8D08D;mso-border-insidev:.5pt solid #A8D08D" width="463">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="width:81.15pt;border:solid #70AD47 1.0pt;
+  border-right:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-left-alt:
+  solid #70AD47 .5pt;mso-border-bottom-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal"><b><span style='font-family:"Arial",sans-serif;color:white;mso-bidi-language:#0400'>Organization   Type<o:p></o:p></span></b></p>
+</td>
+<td style="width:78.7pt;border:solid #70AD47 1.0pt;
+  border-left:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-bottom-alt:
+  solid #70AD47 .5pt;mso-border-right-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="105">
+<p class="MsoNormal"><b><span style='font-family:"Arial",sans-serif;color:white;mso-bidi-language:#0400'>Partner   Type <o:p></o:p></span></b></p>
+</td>
+<td style="width:187.2pt;border:solid #70AD47 1.0pt;
+  border-left:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-bottom-alt:
+  solid #70AD47 .5pt;mso-border-right-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="250">
+<p class="MsoNormal"><b><span style='font-family:"Arial",sans-serif;color:white;mso-bidi-language:#0400'>Partner   Role<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:19.75pt">
+<td style="width:81.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Builders</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:78.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="105">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Builder</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:187.2pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="250">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Build new homes in accordance with the WaterSense   New Home Specification.</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:19.75pt">
+<td style="width:81.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Distributors</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:78.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="105">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Retailers &amp; Distributors</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:187.2pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="250">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Distribute WaterSense labeled products.</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;height:19.75pt">
+<td style="width:81.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Home Certification Organizations</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:78.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="105">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Home Certification Organizations</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:187.2pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="250">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Meet the requirements of the WaterSense Home   Certification System to oversee certification decisions for homes to earn the   WaterSense label.</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4;height:19.75pt">
+<td style="width:81.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Manufacturers</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:78.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="105">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Manufacturer</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:187.2pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="250">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Manufacture products eligible to earn the   WaterSense label.</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:5;height:19.75pt">
+<td style="width:81.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Nonprofit Organizations</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:78.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="105">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Promotional</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:187.2pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="250">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Promote WaterSense and water efficiency.</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:6;height:19.75pt">
+<td style="width:81.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Professional Certifying Organizations</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:78.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="105">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Professional Certifying Organizations</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:187.2pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="250">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Meet the requirements of the WaterSense   Professional Certification Program Labeling System and sponsor or adopts a   professional program that meets WaterSense specifications for certification   programs.</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:7;height:19.75pt">
+<td style="width:81.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Retailers</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:78.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="105">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Retailers &amp; Distributors</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:187.2pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="250">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Sell WaterSense labeled products.</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:8;height:19.75pt">
+<td style="width:81.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Trade Associations</span><span style='font-family:
+  "Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:78.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="105">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Promotional</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:187.2pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="250">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Support members that are eligible to join as a   WaterSense partner.</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:9;mso-yfti-lastrow:yes;height:19.75pt">
+<td style="width:81.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Utilities / Water Districts / Government Agencies   (state, federal, and local agencies)</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:78.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="105">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Promotional</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:187.2pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="250">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Promote WaterSense and water efficiency. Include   environmental departments, municipal programs, local governments, water   agencies, water districts, wholesalers, public utilities, private utilities,   wastewater treatment facilities, water boards, and public utility   commissions.</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Partner Communications
+    <ul>
+<li>Quarterly “Partner Pipeline”  newsletters for partners</li>
+<li>“WaterSense for Partners” website</li>
+<li>Quarterly  webinars</li>
+</ul>
+</li>
+<li>Partner Support: WaterSense helped partners carry out their water conservation and efficiency programming by providing them with a wide range of resources.</li>
+<li>Partner Recognition: Each year WaterSense recognized leading utilities, manufacturers and builders that reduce water waste. The winners were announced at a Partner of the Year awards event at the annual WaterSmart Innovations Conference and Exposition in Las Vegas, Nevada. The award categories include the following.
+    <ul>
+<li>Sustained Excellence Award Winners</li>
+<li>Promotional Partners of the Year</li>
+<li>Excellence Awards (Strategic collaboration; Program growth; Education and outreach; Education and public relations; Labeled products in the marketplace)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Barriers</strong></p>
+<p>The following table summarizes the key barriers to action and how each was addressed.</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid #A8D08D .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #A8D08D;mso-border-insidev:.5pt solid #A8D08D">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="border:solid #70AD47 1.0pt;border-right:none;
+  mso-border-top-alt:solid #70AD47 .5pt;mso-border-left-alt:solid #70AD47 .5pt;
+  mso-border-bottom-alt:solid #70AD47 .5pt;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top">
+<p class="MsoNormal"><b><span style='font-family:"Arial",sans-serif;color:white;mso-bidi-language:#0400'>Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="border:solid #70AD47 1.0pt;border-left:none;mso-border-top-alt:
+  solid #70AD47 .5pt;mso-border-bottom-alt:solid #70AD47 .5pt;mso-border-right-alt:
+  solid #70AD47 .5pt;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:
+  19.75pt" valign="top">
+<p class="MsoNormal"><b><span style='font-family:"Arial",sans-serif;color:white;mso-bidi-language:#0400'>How   it was addressed<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:19.75pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Water conserving products were hard to find / not conveniently   available</span><b><span style='font-family:"Arial",sans-serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></b></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:18.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Rewarded those   who offered these products</span><span style='font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:18.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Made the   products and their suppliers more visible</span><span style='font-family:
+  "Arial",sans-serif;mso-bidi-language:#0400'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:18.7pt;text-indent:-18.7pt;line-height:normal;mso-list:l1 level1 lfo1;
+  tab-stops:0cm 20.15pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Over time,   developed water conservation standards</span><span style='font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:19.75pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Lack of trust in manufacturer / builder claims</span><b><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'><o:p></o:p></span></b></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:18.7pt;text-indent:-18.7pt;line-height:normal;mso-list:l1 level1 lfo1;
+  tab-stops:0cm 20.15pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Third party verification</span><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;mso-yfti-lastrow:yes;height:19.75pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Didn’t think of it (e.g. for leaks)</span><b><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'><o:p></o:p></span></b></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:18.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Annual reminders   like Fix a Leak Week, Sprinkler Spruce-up, and Switch and Save (for showerheads)</span><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+  margin-left:18.7pt;text-indent:-18.7pt;line-height:normal;mso-list:l1 level1 lfo1;
+  tab-stops:0cm 20.15pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Animated videos,   school programs and a wide range of other communication vehicles, selected   for priority audience segments</span><span style='font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Until 2018, the EPA funded the WaterSense program through discretionary appropriations, which peaked in FY2011 at $3.6 million after being $3.1 million in FY2017. The budget was split into three roughly equal parts. Roughly 1/3 went to developing the technical specifications, approving and auditing certifying bodies, and consumer marketing. Another third went to developing partnerships, label use surveillance, and administration (e.g., website, helpline). The final third covered the salaries of eight full-time employees.</p>
+<p>During this time, the program was adopted more formally in several contexts.</p>
+<ul>
+<li>Some states (e.g., California, Colorado, Georgia, New York, and Texas) incorporated WaterSense into aspects of their minimum product standards.</li>
+<li>Some states (e.g., Georgia, Pennsylvania, Texas, and Virginia) provided tax holidays or other incentives for purchasing WaterSense products.</li>
+</ul>
+<p>In 2018, America’s Water Infrastructure Act was signed into law, transitioning the WaterSense from a “discretionary” program to a formally authorized federal program.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The purchase and installation of WaterSense labeled products have provided sustained annual savings of water and energy. This has benefitted both consumers (who saved on utility bills) and water providers (which were better meet water demand.) Program achievements were estimated with controls in place.</p>
+<p><strong>Water Savings </strong></p>
+<p>Achievements were estimated based on sales and shipping data for certified products. Supporting documentation was NOT received for 10% of the product shipments each year and the program did not report those sales. The savings for each product was based on models developed for various end-use sectors, including residential, commercial, institutional, and outdoor uses, that compared the water used in the absence of the WaterSense program with the water used with the program in place. Several factors were considered in assessing water use for each product type. For example, the residential model incorporated the marginal price of water, household size, household income, and product efficiency to determine the amount of water used by toilets.</p>
+<p><strong>Energy and Cost Savings</strong></p>
+<p>Municipal energy savings were calculated for pumping, treating, and heating water for use, as well as treating wastewater for disposal. However, only the water heating costs were used to determine the program’s monetary savings. In addition, consumers saved money on their water, sewer, and energy bills.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Per Household </strong></p>
+<p>In 2020 alone, the program saved 80,000,000,000 kWh of electricity per year and the USA had 128,450,000 households. That would equate to 622 kWh per household if all of the reductions were from households, but the program also reduced non-residential water use so the actual reduction per household would be under 622 kWh.  A 2017 report on an evaluation of the program by the EPA Office of Inspector General (OIG) estimated that consumers saved $1,100, 51,000 gallons of water and 6,600 kWh of electricity for every federal dollar spent on the program.</p>
+<p><strong>Overall Impact</strong></p>
+<p>Through to the end of 2020, WaterSense helped Americans save a cumulative 5.3 trillion gallons of water and more than $108 billion in water and energy bills. Additionally, the use of WaterSense labeled products saved 603 billion kWh of electricity.  In 2020 alone, the program saved 80,000,000,000 kWh of electricity per year.</p>
+<p><strong>Additional Benefits</strong></p>
+<p>In addition, the program engaged over 2,000 organizational partners and over 3,000 individual certified landscape irrigation professionals. It also contributed value to the plumbing industry by providing a unified labeling system that consumers could understand, and by providing product specifications that focused not only on water efficiency but also on product performance. After offering a WaterSense label for efficient, high-performing pre-rinse spray valves for several years, WaterSense had successfully transformed the marketplace for commercial kitchen pre-rinse spray valves. The U.S. Department of Energy (DOE) now requires all pre-rinse spray valves to meet or exceed the efficiency criteria established by WaterSense.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Veronica Blette<br/>
+WaterSense Program Manager<br/>
+EPA Office of Water<br/>
+<a href="mailto:blette.veronica@epa.gov?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> blette.veronica@epa.gov</a></p>
+<p>WaterSense Helpline <br/>
+(866) WTR-SENS (987-7367)<br/>
+<a href="mailto:ense@epagov?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> ense@epagov</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<ul>
+<li>The program successfully drove new product and service innovations that reduce energy and associated greenhouse gas emissions, which is critical for climate change mitigation. These innovations also reduce water use, which is critical for climate change adaptation.</li>
+<li>The approach has enabled the EPA to transform markets through voluntary mechanisms, then make those changes permanent by setting requirements (e.g. pre-rinse spray valves) and/or shift to even more efficient products.</li>
+</ul>
+<p><strong>Landmark Designation </strong></p>
+<p>The program described in this case study was designated in 2021.</p>
+<p>Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Arien Korteland, BC Hydro</li>
+<li>Kathy Kuntz, Dane County Office of Energy &amp; Climate Change, Wisconsin</li>
+<li>Doug McKenzie-Mohr, McKenzie-Mohr Associates</li>
+<li>Sea Rotmann, Sustainable Energy Advice Ltd.</li>
+<li>Lester Sapitula, Pacific Gas and Electric Company</li>
+<li>Marsha Walton, New York Energy Research and Development Authority</li>
+</ul><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

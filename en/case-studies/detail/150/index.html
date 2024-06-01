@@ -1,0 +1,233 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+<li><a href="/en/tools-of-change/work-programs-that-influence-the-home/">Work Programs that Influence the Home</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Sarah Rosolen - Project Leader</li>
+<li>AFS Interculture Canada - Program Facilitator</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>ANAM (Panama's Ministry of the Environment)</li>
+<li>MIDA (Panama's Ministry of Agriculture and Development)</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Composts implemented at two farms and 8 households</li>
+<li>Developed a demonstration site for a planted barrier to control erosion</li>
+<li>Farmers increased knowledge of importance of sustainable agriculture and empowerment to make own decisions with respect to farm</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Promoting Sustainable Agriculture in Panama</h1>
+<p>This case study describes the experiences of a Canadian woman working as a project leader promoting sustainable agriculture in a rural village in Panama. It provides some tips on improving the success of programs aimed at promoting sustainable agriculture, with a focus on building partnerships and achieving buy-in.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>This program took place from September 2000- March 2001, in El Cacao-Capira, a rural village in a mountainous area within the watershed of the Panama Canal in Panama. Approximately 500 people lived in the village (and surrounding area), with the majority of the population relying on farming for their livelihood. Until recently, the traditional mode of farming here, as in many rural areas in Central/South America, was shifting, or slash and burn, agriculture.</p>
+<p>Farmers would clear the trees from a plot of land and burn the underbrush, exposing a fertile soil in which they planted their crops. The fertility would be short-lived, however, because the natural cycle of growth and decomposition, which sustained the lushness of the rainforest, was broken when the land was deforested. The organic matter and nutrients (products of this cycle and key for plant growth), were used up by the crops, degraded by sunlight or washed away by the rain; and not replenished. With no roots to hold the topsoil in place, soil erosion compounded the problem, especially in hilly areas. After a few growing seasons the productivity of the land would decline to such a point that the farmers would move on to slash and burn a new plot.</p>
+<p>While rainforest would rebound quickly after slash and burn, other pressures such as large-scale ranching and logging prevented regeneration. By 2001, it was apparent that deforestation within the watershed was leading to accelerated silting of the Canal, a true economic cost of deforestation. Restrictions on tree cutting were put in place to protect the remaining forest and ANAM (Ministry of the Environment) was mandated to help protect the remaining trees and to encourage/foster reforestation.</p>
+<p>To help the farming population adjust to the tree-cutting ban, MIDA (Ministry of Agriculture and Development) was sent to help develop community farming projects. The organization was knowledgeable about sustainable agriculture, and provided seminars to the farmers. However, long-term objectives for sustainable operation were not part of the design or set-up of these farms. In practice, MIDA reinforced the farmers reliance on their assistance by advocating the use of (and supplying) chemical fertilizers and pesticides and directing the clearing of severely sloping plots. Furthermore, the composting of manure and crop cuttings (which replaces lost organic matter and fertility in the soil) was not incorporated into the farming routine.</p>
+<p>The program described here was created to teach sustainable techniques to the farmers involved in these community farm projects with an aim of increasing the long-term productivity of their land. The project leader was a participant in a cultural exchange/work experience program through AFS Interculture Canada. Her job placement was with ANAM. which provided a good starting point for making contacts.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Before leaving Canada, the project leader researched tropical crops, problems facing farmers in Central America, and sustainable farming practices. Information was obtained from the Internet, books, magazines and also organizations and people that had worked on sustainable farming projects.</p>
+<p>Once in Panama, the governmental agencies ANAM and MIDA were consulted to learn about the farming programs already in place. The project leader also networked with an American Peace Corps volunteer who had been working in the area for over a year. This proved invaluable for learning effective sustainable farming techniques and barriers facing their implementation. The main obstacles identified (after learning the language) were:</p>
+<ul>
+<li>short-term government subsidy of chemical fertilizers and pesticides</li>
+<li>the farmers limited knowledge of soil erosion and of the consequences of chemical pesticide/fertilizer use</li>
+<li>limited practical experience with sustainable farming practices, and</li>
+<li>a lack of continuity with the learned techniques after completion of a program.</li>
+</ul>
+<p>The project leader therefore addressed each of these barriers in designing the program.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Limited time and resources steered the program towards promoting two simple and effective techniques for improving sustainability: pit or box composts (using vegetation and/or animal manure) and planting Vetvier grass along the contour as a live barrier to soil erosion. With the help of the governmental agencies ANAM and MIDA, the project leader identified two client farms. She visited (<a href="/en/tools-of-change/home-visits/">Home Visits</a>) the farms weekly, but did not start implementing the program right away. She realized that changes should not be suggested to a system she did not understand, and that an element of trust had to be earned before the clients (farmers working at the client farms) would listen to her. The fact that she was associated with MIDA and ANAM was to her advantage, as she felt she was more readily accepted than if she came in as a complete outsider. She spent approximately one month gaining hands-on farming experience and learning about the growing practices being used at the farms, and at the same time developed a rapport with the clients.</p>
+<p>The idea of sustainable techniques was gradually introduced to the president (leader) of each of the farms. While working in the fields, or at lunch break, she explained the concepts, the benefits of various techniques and the concerns of pesticide/chemical fertilizer use (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a> ). She asked about their experiences with sustainable techniques and encouraged them to discuss their predispositions, concerns and interests (<a href="/en/tools-of-change/communication/">Vivid, Credible, Personalized, Empowering Communication</a>). After gaining a better understanding of their needs, she helped them choose which methods might work best for them (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>). She did not push them to commit right away, because she felt that acceptance of a technique would be low if it was not something that they felt they needed or wanted (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>).</p>
+<p>After achieving buy-in from the top she presented the potential projects to the rest of the farmers, (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>) again encouraging discussion and fielding questions. While there were no provisions available for direct financial incentives, the farmers were happy to learn about alternatives to chemical fertilizers and pesticides (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>), and realized that reducing fertilizer use would save them money (financial incentives). Discussions eventually turned to collaboration. For example, when planning the compost, she encouraged everyone to name something that would be a suitable ingredient (<a href="/en/tools-of-change/communication/">Vivid, Credible, Personalized, Empowering Communication</a>; <a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p>When it came time to implement the chosen techniques, group workdays were organized. MIDA sent a technician to participate and learn about the techniques. This further helped boost credibility and buy-in for the program, and also suggested there would be some continuity (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). All the farm members became involved in the implementations women, men, and children. The enthusiasm of the children was most rewarding, as it gave more hope for continuity.</p>
+<p>At both client farms, most members adopted the compost enthusiastically, and brought compost materials from home or even began making them at their own homes (<a href="/en/tools-of-change/work-programs/">Work Programs that Influence the Home</a>). The project leader encouraged the clients to share information with their colleagues (<a herf="/en/tools-of-change/word-of-mouth/" href="/en/tools-of-change/word-of-mouth/">Word of Mouth</a>) and word of the program spread quickly through the community. The project leader was solicited for help in starting composts at the farms and houses of several individuals. By the end of the program, eight composts (additional to the farms) had been started. Interest in composts was so great that discussions were started for introducing a prize for the best organic produce at their agricultural fair.</p>
+<p>Motivation continued to grow as the farmers realized more potential with their land, and longer-term projects were visualized. While enthusiasm was high when the program was being implemented, it was difficult to ensure that the practices would be adopted for the long term. The project leader asked the MIDA technicians to continue promoting the sustainable techniques, and also asked the Peace Corps volunteer to check in on the projects periodically and provide continued encouragement and help with the learned techniques (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>, <a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Achievements, such as adoption of composting, were observed first hand.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Feedback was provided on several return visits to the farms. This provided an opportunity for the clients to discuss their experiences with the new techniques and to provide suggestions for future modifications.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>The six-month program helped the participating farmers take the beginning steps towards sustainability and self-reliance. They learned that alternatives to chemical fertilizers were abundant around them and that they could take measures to prevent soil erosion. While a demonstration planted barrier for erosion control was established at one client farm, the concept of soil loss and consequent loss of productivity was harder to convey. The composts, on the other hand, were readily accepted, as the immediate benefits were more apparent. By the end of the program, eight 'home' composts (additional to the ones created at the farms) were in use.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Sarah Rosolen <a href="mailto:sarahrosolen@hotmail.com">sarahrosolen@hotmail.com</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned</strong></p>
+<p>The farmers were more receptive to learning the new techniques than had been anticipated. They cared about their land and their future, and saw this program as a way to empower themselves to be more productive with their land. However, to gain the respect of the farmers and the feel of the culture, took time. The benefit of working with the governmental organizations should not be overlooked it provided contacts, transportation, and translated into quicker acceptance from the farmers.</p>
+<p>Last updated: July 2004</p>
+<p>Written in 2002 by Sarah Rosolen. </p>
+<p>Additional key words: pollution prevention</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

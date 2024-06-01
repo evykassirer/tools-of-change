@@ -1,0 +1,306 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+<li><a href="/en/tools-of-change/work-programs-that-influence-the-home/">Work Programs that Influence the Home</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Auto Free Ottawa</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Environment Canada</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Participating employees travelled more than one million kilometres using alternatives to single-occupant vehicles. If compared to an equal amount of kilometers travelled in single-occupant vehicles, this represents a potential reduction in emissions of approximately 258.9 metric tons.</p>
+<p>42% of staff participated.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Commuter Challenge: Environment Canada's Participation</h1>
+<p>This case study illustrates the successful engagement of a large organization (Environment Canada) in a broad-scale staff participation program. That program, the Commuter Challenge, is a Canada-wide NGO-led event that challenges commuters to reduce the use of single-occupant vehicles during a specific time frame. It is used as an awareness raising initiative and to promote trial of an activity, not as a scientific auditing or survey tool.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>Emissions from the transportation sector are a major contributor to air pollution and climate change. In fact, transportation is one of the single largest sources of air pollution in Canada and in some urban areas it accounts for up to two thirds of all smog forming pollutants. Overall, based on 1998 data, the sector is responsible for 27% of Canada's greenhouse gas emissions. A typical automobile emits more than 40% of its own weight in common air pollutants in one year, and four times its weight in greenhouse gases. Studies have shown that commuter traffic is responsible for a significant portion of these figures.</p>
+<p>Since 1999, various cities across Canada have used data collection software to organize nation-wide intercity commuter challenges. The NCR (National Capital Region) <a href="/en/case-studies/detail/98">Commuter Challenge 2000</a>, organized by Auto Free Ottawa (AFO), was a multi-sector event that encompassed all the NCR communities in both Ontario and Quebec. Originally started in 1991 as a one-day "cycle to work" challenge, over the years it expanded into a week-long event that coincided with Environment Week and since 1999, Clean Air Day. Federal Government employees (about 90,000) accounted for a significant portion of the NCR commuter traffic. AFO actively assisted all interested departments and agencies in coordinating their participation.</p>
+<p>Environment Canada (EC), identified the Commuter Challenge as a useful event to raise awareness on two of its priorities, clean air and climate change. As a result, it actively promoted employee participation in the National Capital Region (NCR) Commuter Challenge. EC-NCR was entered in the over 1,000 employees category. EC emphasized participation on Clean Air Day, the Wednesday of Environment Week, to make use of strong ties with other public outreach initiatives. Clean Air Day 2000 was also the culmination date of a nation-wide sustainable transportation campaign delivered through a partnership between the Canadian Urban Transit Association, the federal government and the private sector.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>EC's implementation of the Commuter Challenge in the NCR in 2000 was based on nine years of experience with one-day "cycle to work" challenges that evolved into a week-long "Commuter Challenge." </p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Organizing EC's Participation</strong></p>
+<p>Participation by all organizations, including EC, was voluntary (<a href="/English/ToolsofChange/default.asp?Section=WorkPrograms">Work Programs that Influence the Home</a>). In all aspects of planning, every effort was made to minimize resource needs and to create a friendly atmosphere.</p>
+<p>EC developed a three-pronged program to encourage participation:</p>
+<p><strong><em>1. The key EC coordinator:</em></strong></p>
+<ul>
+<li>Identified a contact person (team captain)/champion in each of the six separate EC NCR buildings</li>
+<li>Ensured that EC and its buildings were registered as participants with AFO</li>
+<li>Acted as a contact person between EC and AFO</li>
+<li>Organized/supervised data collection and special events</li>
+<li>Provided information to upper management</li>
+<li>Developed messages (for e-mails, memos, banners, etc.)</li>
+<li>Organized volunteers (people known for being committed to 'green commuting', e.g., members of cycling groups or people involved in the environmental management system, were targeted as potential volunteers)</li>
+</ul>
+<p><br/>
+<strong><em>2. Developed a strategy for data collection and created motivation for participation that:</em></strong></p>
+<ul>
+<li>Used active encouragement and one-on-one contact with employees during the data collection stage (e-mail messages alone are not sufficient)</li>
+<li>Used summer student volunteers (where possible) to manually collect and enter data</li>
+<li>Developed incentives (t-shirts were given as prizes, certificates were given as recognition of participation, emphasis was placed on being green rather than winning a major prize)</li>
+<li>Used paper registration cards during the event for people who did not have Internet access or who were involved in internal challenges not recognized by the basic software setup. It was the responsibility of the team captain to ensure that the data was accurately recorded and relayed to AFO</li>
+<li>Created a positive attitude for all employees. This was especially important for people who could only minimally participate and for those who could not participate at all. No one was made to feel guilty about his or her transportation requirements or choices. This positive attitude was crucial during the person-to-person data collection and hopefully will encourage people to respond positively in years to come</li>
+<li>Developed special messages for participants who were already green commuters during the year (i.e., regular transit users, carpoolers), and</li>
+<li>Created an atmosphere of friendly competition. Although internal competitions within EC appear to have had little appeal, the inter-departmental challenge in the NCR did generate good-natured competition.</li>
+</ul>
+<p><br/>
+<strong><em>3. Developed a strategy to encourage participation by other federal departments in the NCR that:</em></strong></p>
+<ul>
+<li>Disseminated information to other department coordinators (approximately 35 federal departments and agencies in the NCR), and</li>
+<li>Took advantage of the existing Environment Week inter-departmental coordination committee thus reducing demands on peoples time and resources.</li>
+</ul>
+<p> </p>
+<p><strong>Communication with Employees</strong></p>
+<p><strong><em>Poster campaign/lobby display</em></strong> <br/>
+Commuter Challenge posters were placed in high traffic areas two weeks before the event. A small display booth was also erected in the lobby of Place Vincent Massey (the main EC building) with clean air and climate change brochures, a registration card drop-off box, Commuter Challenge posters and a computer with Internet access. One branch of EC used banners in their building lobby to promote the Commuter Challenge and Environment Week. The banners were changed every day during the week and contained positive messages like "It is going to be a great week" or "Thanks! Great job!"</p>
+<p><strong><em>E-mail messages</em></strong> <br/>
+E-mails were sent through the internal system to all EC employees. Messages from the Minister as well as the Assistant Deputy Minister level helped lead the way for managers to free up volunteers and encourage participation (<a href="/en/tools-of-change/communication/">Vivid, Personalized, Credible Communication</a>). Messages, in general, contained information about the Commuter Challenge and related events (Clean Air Day and Environment Week), and explained the technical procedures involved in registering data. However, e-mails alone have not proven to be sufficient in motivating employees to participate.</p>
+<p><strong><em>Personal contact/hands-on events</em></strong> <br/>
+Team captains/volunteers tried to visit most people in their building and personally remind them about the event and/or register them in the database (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>).</p>
+<p>Additional personal contact was made through events at the workplace, such as a free workshop on bicycle tune-ups and a running clinic. These events were mostly held on Clean Air Day that, falling on the Wednesday, was a natural mid-point focus.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The NCR Commuter Challenge 2000 was not an expensive event to run in terms of actual dollars spent, but it did require a significant commitment in human resources to achieve good results. Some expenses were easily absorbed by the organization, such as the use of computers, meeting space and other office equipment. A small budget was required for prizes, and other promotional materials and/or events (i.e., banners, paying for a Bike Tune-Up seminar, t-shirts).</p>
+<p>Nevertheless, the high demand on human resources and volunteers was an important aspect that should not be overlooked.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Although a commuter challenge is not an accurate auditing or survey tool, the numbers generated were taken into consideration as part of EC's overall awareness campaign that includes Clean Air Day and Environment Week.</p>
+<p>Following the lead of AFO, Environment Canada used participation percentage rates as the only qualifier for deciding the winners. So, although it was possible to compare kilometres travelled or emissions reduced (kg), this would have tended to give winning results to those people who drove the most during the other 51 weeks of the year. Instead, a simple participation rate was seen as the fairest way to make comparisons.</p>
+<p>As well, it should be noted that not all employees who participated were actually changing their regular commuter habits. Many employees were already using public transit, carpooling, walking or using other sustainable modes of transportation on a yearly basis.</p>
+<p>Because EC encouraged one-on-one contact with employees during the data collection phase, the NCR Commuter Challenge 2000 created a unique opportunity to raise employee awareness about issues and events concerning clean air and climate change. EC also used the event as an opportunity to share information with other federal departments and agencies. In 2000, this resulted in 35 federal government departments registering in the NCR database. Additionally, with 42% of its own NCR employees registered in the database, EC achieved a second place finish in its category (1,000+ employees). With all these factors combined, the NCR Commuter Challenge 2000 was considered a successful general awareness campaign.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Results of the NCR Commuter Challenge 2000 were available to employees through the Internet and were, in some cases, posted on bulletin boards. Post-event celebrations also served as a forum for providing feedback. For instance, Environment Canada had an awards ceremony where results were announced and in-house certificates were handed out.</p>
+<p>One branch of EC used banners in their building lobby to promote the Commuter Challenge and Environment Week. The banners were changed every day during the week and contained positive messages like "It is going to be a great week" or "Thanks! Great job!"</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Participating employees travelled more than one million kilometres using alternatives to single-occupant vehicles. If compared to an equal amount of kilometers travelled in single-occupant vehicles, this represents a potential reduction in emissions of approximately 258.9 metric tons.</p>
+<p>The table below shows the overall reductions of specific air pollutants achieved by the NCR Commuter Challenge 2000 and by the NCR federal government employees. Also shown are the overall kilometers travelled by sustainable transportation modes (i.e., not single-occupant vehicles).</p>
+<p>Air pollution reductions: NCR Commuter Challenge 2000</p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td> </td>
+<th colspan="2">Reduction in pollution in metric tonnes</th>
+</tr>
+<tr>
+<td> </td>
+<td>Total NCR</td>
+<td>Federal Government</td>
+</tr>
+<tr>
+<td>Carbon dioxide</td>
+<td>241.962</td>
+<td>139.563</td>
+</tr>
+<tr>
+<td>Carbon monoxide</td>
+<td>14.257</td>
+<td>8.223</td>
+</tr>
+<tr>
+<td>Hydrocarbons</td>
+<td>1.686</td>
+<td>0.972</td>
+</tr>
+<tr>
+<td>Nitrous oxides</td>
+<td>0.994</td>
+<td>0.573</td>
+</tr>
+<tr>
+<td><strong>Total emission reductions</strong></td>
+<td><strong>258.900</strong></td>
+<td><strong>149.333</strong></td>
+<td> </td>
+</tr>
+<tr>
+<td><strong>Distance travelled SOV-free in kilometres</strong></td>
+<td><strong>1,060,306</strong></td>
+<td><strong>611,583</strong></td>
+</tr>
+</tbody>
+</table>
+<p>A total of 35 federal departments and agencies participated in the NCR Commuter Challenge 2000, more than double the number of the previous year. Health Canada, with a participation rate of 47%, won the contest among federal departments, while Transportation Canada and Environment Canada tied for second place with a participation rate of 42%. A total of 6,250 federal government employees participated in the event.</p>
+<p>Overall more than 10,000 people from all sectors (public, private and education) participated in the NCR Commuter Challenge 2000.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p><a href="http://ottawa.commuterchallenge.net">ottawa.commuterchallenge.net</a> <br/>
+<a href="http://www.commuterchallenge.net">www.commuterchallenge.net</a> <br/>
+<a href="http://www.commuterchallenge.com/english/home.html">www.commuterchallenge.com/english/home.html</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study was written by Bjorn Surborg and Jay Kassirer in 2001.  Funding for the addition of this case study was generously provided by the Government of Canadas Climate Change Action Fund, Suncor, Syncrude, Enbridge Consumers Gas and TetraPak Canada.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

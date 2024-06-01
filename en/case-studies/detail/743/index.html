@@ -1,0 +1,512 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>George Mason University's Center for Climate Change Communication</li>
+<li>Climate Central</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>American Meteorology Society (AMS)</li>
+<li>NASA</li>
+<li>National Oceanic and Atmospheric Administration (NOAA) </li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>The broadcast meteorology community's viewed on climate change became much more closely aligned with those of climate scientists</li>
+<li>As of 31 October 2020, there were 968 participating weathercasters in 483 local TV stations, in 92% of all US media markets and 99 of the top 100 media markets.</li>
+<li>Viewers exposed to their climate education became more likely to understand that climate change is already a 'here, now, us' problem.</li>
+</ul><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Climate Matters Program for TV Weathercasters</h1>
+<p><iframe height="auto" src="https://www.youtube.com/embed/ISLmyNn6iQE" width="97%">
+</iframe></p>
+<p>Climate Matters trains and supports American TV weathercasters to report on the local impacts of climate change while reflecting current scientific knowledge and concerns. The program provides participating newscasters with weekly story packages with local data and broadcast-quality graphics that visualize the data. Because of an overt conflict in the meteorology community about opposing views of climate change, the program engaged a conflict mediator who worked with small groups of opinion-leading weathercasters to surface and work through the entrenched conflicts. As climate reporting became increasingly normative, the program ensured that everyone in the weathercasting community knew the behaviors were gaining in popularity. As of 31 October 2020, there were 968 participating weathercasters in 483 local TV stations, in 92% of all US media markets and 99 of the top 100 media markets. Viewers exposed to their climate education became more likely to understand that climate change is already a 'here, now, us' problem. Designated a Landmark case study in 2021.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></strong></p>
+<p>In 2007, Ed Maibach and Connie Roser-Renouf came to George Mason University to create Mason’s Center for Climate Change Communication. The Center’s mission is to develop and apply social science insights to help society make informed decisions that will stabilize the earth’s life-sustaining climate and prevent further harm from climate change.</p>
+<p>At that time, the petroleum industry had been funding climate change-denying organizations to spread disinformation and the United States had a relatively high number of climate change deniers, relative to other countries. Most Americans perceived the threat as distant—in time, space, and species—and not personally relevant, and only a minority saw climate change as a high-priority concern. This hampered making progress at both the individual and societal levels.</p>
+<p>In 2009, with funding from the National Science Foundation (and eventually other philanthropic foundations), Ed Maibach and his colleagues from George Mason University and Climate Central began exploring and developing the potential of TV weathercasters as a community of practice of local climate educators.</p>
+<p>America’s approximately 2,200 weathercasters are well positioned to increase community understanding of climate change as a locally relevant problem. They are a trusted source of information about climate change, they have considerable and sustained access to the public, and they are highly trained and experienced science communicators who generally see themselves working in the public’s interest (public safety). In addition, they are a cohesive occupational community of practice: they do the same job; share the same tools and practices; have a shared set of stories, linguistic shortcuts and jargon related to their work; are represented by a professional association; and have a strong shared sense of identity.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The planning team conducted a survey in 2010 that revealed that U.S. TV weathercasters held a startlingly wide range of views about climate change and were somewhat less accepting of human-caused climate change than was the American population. Less than half of them accepted current scientific knowledge on climate change. Within that minority, nearly all expressed an interest in educating their viewers about the local implications of climate change, but few of them did.</p>
+<p>The 2010 survey also revealed key barriers to reporting on the local impacts of climate change.</p>
+<ul>
+<li>Lack of time in the newscast</li>
+<li>Lack of time for field reporting</li>
+<li>Uncertainty about climate change</li>
+<li>Lack of news management support</li>
+<li>Lack of access to appropriate visuals/graphics</li>
+<li>Lack of general management or owner support</li>
+<li>Lack of sufficient knowledge in the subject</li>
+<li>Lack of access to trusted scientific information.</li>
+</ul>
+<p>The team focused its subsequent efforts on reducing these barriers to the extent possible, beginning with reducing the time required for field reporting, producing localized visualizations and graphics, and enhancing access to trusted scientific information.</p>
+<p>Through conversations with weathercasters at their professional meetings, the planning team also took steps to understand the related benefits that are important to weathercasters and their managers. They found that peer recognition (e.g. awards), news media attention (e.g. positive news stories), audience praise, and ultimately professional advancement are highly valued benefits. The team used every means possible to deliver these benefits to participants in Climate Matters program.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The Climate Matters team was expanded to ensure representation from climate scientists (who best understood the facts to be shared with weathercasters and their viewers), social scientists (who best understood how people process risk information), and communication professionals (who best understood how to make the information simple and feasible for use, on-air and elsewhere).</p>
+<p><strong>Feasibility and Pilot Testing</strong></p>
+<p>To test the feasibility and impact of supporting interested TV weathercasters, the team partnered with Jim Gandy, the Chief Meteorologist at the CBS news station in Columbia, South Carolina (WLTX). While a number of weathercasters had volunteered, Gandy was selected for several reasons: he was an influential (i.e., opinion-leading) member of the weathercaster community; his news director and general manager were supportive of his involvement in the project; and his station's viewers resided in a politically conservative community—meaning they were a difficult audience to interest in climate change education (as compared to viewers in a politically liberal media market). The team’s goal was to develop an approach that would successfully support weathercasters in any US media market, and it decided to develop and test the approach in a challenging media market. (<em>Norm Appeals</em>)</p>
+<p>In winter/spring 2010, the team worked closely with Gandy to identify 12 story topics that were relevant to his viewers—based on the climate impacts that were already manifest in Columbia—and that were likely to be timely at some point over the next year (based on anticipated weather conditions) so that the stories would have a weather-related 'news hook.' (<em>Building Motivation, Engagement and Habits Over Time</em>; <em>Vivid, Personalized, Credible, Empowering Communication</em>)</p>
+<p><img alt="" height="584" src="/userfiles/Image/Screenshot 2021-05-09 135632.png" width="450"/></p>
+<p><em><font size="-1">A decade later (2021) the program continued to focus on locally-relevant story topics and data. Picture source: Climate Central website 05/09/2021.</font></em> </p>
+<p><br/>
+Each story package included local data showing how weather and related conditions had been changing in Columbia over the past 50–100 years and/or how they were projected to change over the next 50–100 years, one or more broadcast-quality graphics that visualized the data, and a set of facts that Gandy could use in real time to produce a story when the weather conditions were relevant. In summer 2010, and over the next 12 months, Gandy aired 13 Climate Matters stories during his weather segments—each averaging approximately 2 min. The impact evaluation of the year-long pilot-test demonstrated that, compared to viewers of other stations, WLTX viewers became more certain of the reality of climate change, more likely to see it as harmful, and more concerned about it.</p>
+<p> </p>
+<p><img alt="Climate Matters materials for weathercasters" height="307" src="/userfiles/Image/Screenshot 2021-05-09 133535.png" width="450"/></p>
+<p><em><font size="-1">By 2021, site users could generate their own locally-relevant "packages" of graphs and data. Image source: Climate Central website 05/09/2021.<br/>
+<br/>
+<br type="_moz"/>
+</font></em></p>
+<p><img alt="" height="384" src="/userfiles/Image/Screenshot 2021-05-09 135048.png" width="450"/></p>
+<p><font size="-1"><em>Each "package" included tips for local story angles, and a list of relevant local and national experts. Image source: Climate Central website 05/09/2021.</em></font></p>
+<p> </p>
+<p>In addition, the program delivered the key benefits important to weathercasters and their managers (peer recognition, news media attention, audience praise, leading to professional advancement). For example, the team successfully nominated Jim Gandy for the American Meteorological Society’s (AMS) award for excellence in broadcast meteorology, and successfully pitched stories about Jim Gandy to high-profile media outlets including NPR Morning Edition, Columbia Journalism Review, Forbes, and Rolling Stone. (<em>Building Motivation, Engagement and Habits Over Time; Vivid, Personalized, Credible, Empowering Communication) </em></p>
+<p>The next step in the scale-up process was to see if the team could sustain the model while supporting multiple weathercasters in multiple media markets. To that end, in 2012 it invited ten additional opinion-leading weathercasters from a diverse set of media markets nationwide to participate in Climate Matters—with the goal of delivering each of them a story package, localized when possible, every week. Ultimately, it was influencers like these opinion-leading weathercasters who created a new norm in their community of practice.</p>
+<p><strong>Scaling Up and Resolving Conflicts</strong> </p>
+<p>Early in 2013, the team invited all 47 weathercasters in Virginia to participate in the program; 20 accepted the invitation (a 42% participation rate—a strong show of interest. Later that year, the team quietly began enrolling any weathercaster who requested permission to participate, regardless of their location—which necessitated customizing materials for a rapidly expanding set of media markets nationwide. Concurrently, it began offering Climate Matters materials in Spanish as well as English. During this period, the American Meteorology Society (AMS), NASA and NOAA—organizations whose climate information is highly trusted by most TV weathercasters—joined the project to help scale it up nationwide.</p>
+<p>As more and more weathercasters joined the program, it became easier for others to join as well. The early adopters modelled how to implement the new behaviors and fostered a stronger sense of self-efficacy in the later adopters that they too could benefit from adopting these behaviors.  Further, as climate reporting became increasingly normative, the program made every effort to ensure that everyone in the weathercasting community knew the behaviors were gaining in popularity; this information exerted a subtle but powerful influence that encouraged others in the community to consider and try the behavior. (<em>Norm Appeals</em>)</p>
+<p>For example, the team routinely gave presentations at the annual meetings of the AMS and National Weather Association (NWA). Each of these presentations included evidence of positive audience’s reactions to Climate Matters reporting, and featured testimonials by weathercasters who were personally experiencing positive professional o<em>utcomes as a result of their climate reporting.(Group Feedback</em>)</p>
+<p><em><br/>
+<img alt="" height="555" src="/userfiles/Image/Screenshot 2021-05-09 135911(1).png" width="450"/><br/>
+</em></p>
+<p><em><font size="-1"><em>The program also highlighted members' local climate-change-related stories on the Climate Central website. Image source: Climate Central website 05/09/2021.</em></font><br/>
+<br/>
+</em></p>
+<p>Because of the overt conflict in the meteorology community about opposing views of climate change, the team engaged the services of a conflict mediator who worked with several small groups of opinion-leading weathercasters to surface and work through the entrenched conflicts about climate change in the community of practice. Starting with dinner and going well into the evening at AMS and NWA annual meetings in 2012, these professionally moderated 3- to 4-hour dialogues with approximately 18 weathercasters each proved to be transformative. The moderator facilitated the respectful airing of grievances, role playing the positions of “the other”, and other standard conflict analysis and resolution techniques. By the end of both sessions, the understanding of “the other’s” position was visibly heightened, and the sense of grievance on both sides visibly reduced. Because the participants were specifically selected to be opinion-leaders in their professional community, the intent was any rapprochement experienced by participants during the dialogues would eventually be spread to others in the weathercaster community. (<em>Overcoming Specific Barriers</em>)</p>
+<p>By the end of 2013, over 100 weathercasters were participating in the program, and the number of participating weathercasters continued to grow rapidly. As of April 15, 2021, there were 996 participating weathercasters (56 broadcasting in Spanish), working in 476 local TV stations (and five national networks), in 92% of all US media markets and 99 of the top 100 media markets.</p>
+<p>In 2014, participating weathercasters aired 69 Climate Matters stories; in 2019 they aired 3,535 stories (a 50-fold increase over 6 years.)</p>
+<p><strong>Educating and Training Interested Weathercasters</strong></p>
+<p>Each year since 2013, Climate Matters presented conference papers (1–2-hour conference sessions) at the AMS annual broadcast meeting and the National Weather Association (NWA) annual meeting, both to educate weathercasters and raise their awareness of the program. Starting in 2014, it also hosted 22 intensive, mostly daylong climate reporting workshops, often in association with the AMS and NWA annual meetings, and 6–10 hour long webinars each year. Video recordings of these webinars, and all of the Climate Matters program materials produced to date, organized by topic and media market, can be seen and downloaded from the Climate Matters online media library: https://medialibrary.climatecentral.org/. (<em>Building Motivation, Engagement and Habits Over Time; Overcoming Specific Barriers</em>)</p>
+<p><strong>Adding in Newsrooms</strong></p>
+<p>In 2018, With Climate Central, Climate Communication, NOAA and NASA, the Centre launched Climate Matters in the Newsroom.  Climate Matters in the Newsroom provides journalists with climate reporting training and a range of localized climate change reporting resources, “because climate change isn’t just a weather story.”</p>
+<p><strong>Overcoming Specific Barriers</strong></p>
+<p>The following table summarizes the main barriers that discouraged participants from doing the desired behavior(s) and how those barriers were reduced.<span lang="EN-CA" style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-ansi-language:
+EN-CA;mso-bidi-language:#0400'><o:p> </o:p></span> </p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-top-alt:solid #9CC2E5 .5pt;
+ mso-border-bottom-alt:solid #9CC2E5 .5pt;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0cm 5.4pt 0cm 5.4pt;mso-border-insideh:.5pt solid #9CC2E5">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="border-top:solid #9CC2E5 1.0pt;border-left:none;
+  border-bottom:solid #9CC2E5 1.0pt;border-right:none;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-bottom-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top">
+<p class="MsoNormal"><strong><span lang="EN-CA" style='font-family:"Arial",sans-serif;mso-ansi-language:EN-CA;
+  mso-bidi-language:#0400'>Barrier</span></strong><span lang="EN-CA" style='font-family:"Arial",sans-serif;mso-ansi-language:EN-CA;
+  mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+<td style="border-top:solid #9CC2E5 1.0pt;border-left:none;
+  border-bottom:solid #9CC2E5 1.0pt;border-right:none;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-bottom-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top">
+<p class="MsoNormal"><strong><span lang="EN-CA" style='font-family:"Arial",sans-serif;mso-ansi-language:EN-CA;
+  mso-bidi-language:#0400'>How it was addressed</span></strong><span lang="EN-CA" style='font-family:"Arial",sans-serif;mso-ansi-language:EN-CA;
+  mso-bidi-language:#0400'><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-CA" style='font-family:"Arial",sans-serif;mso-ansi-language:EN-CA;
+  mso-bidi-language:#0400'> </span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:40.9pt">
+<td style="border:none;border-bottom:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-bottom-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Lack of time in the newscast</span><span lang="EN-CA" style='font-family:"Arial",sans-serif;mso-ansi-language:EN-CA;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="border:none;border-bottom:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-bottom-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top">
+<p class="MsoNormal" style="margin-left:15.9pt;text-indent:-14.2pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 15.9pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span lang="EN-CA" style="font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-ansi-language:EN-CA;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span lang="EN-CA" style="font-family: Arial, sans-serif;">Demonstrated with participating weathercasters that the stories could   be told in two minutes or less.</span><span lang="EN-CA" style='font-family:
+  "Arial",sans-serif;mso-ansi-language:EN-CA;mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:40.9pt">
+<td style="border:none;border-bottom:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-bottom-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'>Lack of time for   field reporting</span><span lang="EN-CA" style='font-family:"Arial",sans-serif;
+  mso-ansi-language:EN-CA;mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+<td style="border:none;border-bottom:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-bottom-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top">
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:4.0pt;
+  margin-left:15.9pt;text-indent:-14.2pt;mso-list:l0 level1 lfo1;tab-stops:
+  0cm 15.9pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'>Provided newscasters   with story packages for topics that were relevant to </span><span lang="EN-CA" style='font-family:"Arial",sans-serif;mso-ansi-language:EN-CA;mso-bidi-language:
+  #0400'>their</span><span lang="EN-CA" style='font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'> </span><span style='font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'>particular viewers—based on the climate impacts that   were already manifest in their particular regions—and that were likely to be   timely at some point over the next year. Each story package included local   data and one or more broadcast-quality graphics that visualized the data.<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;height:40.9pt">
+<td style="border:none;border-bottom:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-bottom-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Uncertainty about climate change. Overt conflict in   the meteorology community about opposing views of climate change</span><span lang="EN-CA" style='font-family:"Arial",sans-serif;mso-ansi-language:EN-CA;
+  mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+<td style="border:none;border-bottom:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-bottom-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top">
+<p class="MsoNormal" style="margin-left:15.9pt;text-indent:-14.2pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 15.9pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span lang="EN-CA" style="font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-ansi-language:EN-CA;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Used</span><span style="font-family: Arial, sans-serif;"> <span lang="EN-CA">surveys to   demonstrate the increasing consensus about climate change among scientists,   weathercasters and the general public.</span></span><span lang="EN-CA" style='font-family:"Arial",sans-serif;mso-ansi-language:EN-CA;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:4.0pt;
+  margin-left:15.9pt;text-indent:-14.2pt;mso-list:l0 level1 lfo1;tab-stops:
+  0cm 15.9pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Engaged the services of a conflict mediator who   worked with several small groups of opinion-leading weathercasters to surface   and work through the entrenched conflicts about climate change in the   community of practice.</span><span style='font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4;height:33.65pt">
+<td style="border:none;border-bottom:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-bottom-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:33.65pt" valign="top">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'>Lack of access   to appropriate visuals/graphics<o:p></o:p></span></p>
+</td>
+<td style="border:none;border-bottom:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-bottom-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:33.65pt" valign="top">
+<p class="MsoNormal" style="margin-left:15.9pt;text-indent:-14.2pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 15.9pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span lang="EN-CA" style="font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-ansi-language:EN-CA;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'>Each story package included local data and one or   more broadcast-quality graphics that visualized the data.</span><span lang="EN-CA" style='font-family:"Arial",sans-serif;mso-ansi-language:EN-CA;
+  mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:5;height:40.9pt">
+<td style="border:none;border-bottom:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-bottom-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Lack of news management support</span><span lang="EN-CA" style='font-family:"Arial",sans-serif;mso-ansi-language:EN-CA;
+  mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+<td style="border:none;border-bottom:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-bottom-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top">
+<p class="MsoNormal" style="margin-left:15.9pt;text-indent:-14.2pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 15.9pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span lang="EN-CA" style="font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-ansi-language:EN-CA;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span lang="EN-CA" style="font-family: Arial, sans-serif;">The Center’s surveys collected information on weathercaster   engagement. A</span><span style="font-family: Arial, sans-serif;">s climate reporting became   increasingly normative, the program made every effort to ensure that everyone   in the weathercasting community knew the behaviors were gaining in popularity.</span><span style="font-family: Arial, sans-serif;"> </span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:6;height:40.9pt">
+<td style="border:none;border-bottom:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-bottom-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'>Lack of   general management or owner support</span><span lang="EN-CA" style='font-family:
+  "Arial",sans-serif;mso-ansi-language:EN-CA;mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+<td style="border:none;border-bottom:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-bottom-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top">
+<p class="MsoNormal" style="margin-left:15.9pt;text-indent:-14.2pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 15.9pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span lang="EN-CA" style="font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-ansi-language:EN-CA;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span lang="EN-CA" style='font-family:"Arial",sans-serif;
+  mso-ansi-language:EN-CA;mso-bidi-language:#0400'>As above<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:7;height:40.9pt">
+<td style="border:none;border-bottom:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-bottom-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Lack of sufficient knowledge in the subject</span><span lang="EN-CA" style='font-family:"Arial",sans-serif;mso-ansi-language:EN-CA;
+  mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+<td style="border:none;border-bottom:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-bottom-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top">
+<p class="MsoNormal" style="margin-left:15.9pt;text-indent:-14.2pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 15.9pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span lang="EN-CA" style="font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-ansi-language:EN-CA;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Each story   package included a set of facts and local data showing how weather and related   conditions had been changing over the past 50–100 years and/or how they were   projected to change over the next 50–100 years. </span><span lang="EN-CA" style='font-family:"Arial",sans-serif;mso-ansi-language:EN-CA;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:4.0pt;
+  margin-left:15.9pt;text-indent:-14.2pt;mso-list:l0 level1 lfo1;tab-stops:
+  0cm 15.9pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span lang="EN-CA" style="font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-ansi-language:EN-CA;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Educated and trained   interested weathercasters through workshops, conference presentations and   webinars. </span><span lang="EN-CA" style='font-family:"Arial",sans-serif;
+  mso-ansi-language:EN-CA;mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:8;mso-yfti-lastrow:yes;height:40.9pt">
+<td style="border:none;border-bottom:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-bottom-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'>Lack of access   to trusted scientific information </span><span lang="EN-CA" style='font-family:
+  "Arial",sans-serif;mso-ansi-language:EN-CA;mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+<td style="border:none;border-bottom:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-bottom-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top">
+<p class="MsoNormal" style="margin-left:15.9pt;text-indent:-14.2pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 15.9pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span lang="EN-CA" style="font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-ansi-language:EN-CA;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span lang="EN-CA" style='font-family:"Arial",sans-serif;
+  mso-ansi-language:EN-CA;mso-bidi-language:#0400'>As above<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:4.0pt;
+  margin-left:15.9pt;text-indent:-14.2pt;mso-list:l0 level1 lfo1;tab-stops:
+  0cm 15.9pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span lang="EN-CA" style="font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-ansi-language:EN-CA;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>         </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'>Provided</span><span lang="EN-CA" style='font-family:
+  "Arial",sans-serif;mso-ansi-language:EN-CA;mso-bidi-language:#0400'> contact information   and online resources for those wanting more detail.<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>This program was started with funding from the National Science Foundation. Over time, other philanthropic foundations have also contributed to the program.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p><strong>Impacts on the weathercaster community </strong>were measured using the following indicators.</p>
+<ul>
+<li>Number of weather stories about local climate change impact</li>
+<li>Self-reported beliefs about climate change, its causes, the extent of local impacts, weathercasters’ interest in reporting on these issues, and their understanding of their viewers interest. This was gauged using periodic surveys (2010, 2011, 2015, 2016, 2017). The first two surveys were conducted with AMS and National Weather Association (NWA) broadcast members (2010: n = 571; 2011: n = 433; response rate = 33%). Starting in 2016, the Center identified additional American professionals working in broadcast meteorology. The surveys were then sent to over 2,000 weathercasters, with response rates between 22% and 32%.</li>
+</ul>
+<p><strong>Impacts on the general public </strong>were measured through two studies.</p>
+<ul>
+<li>An internet-based randomized controlled experiment asked local TV news viewers (n = 1,200) from two American cities (Chicago and Miami) to watch either three localized climate reports or three standard weather reports featuring a prominent TV weathercaster from their city; each of the videos was between 1 and 2 min in duration. Participants’ understanding of climate change as real, human-caused, and locally relevant was assessed with a battery of questions after watching the set of three videos.</li>
+<li>A second study analyzed three sets of data in a multilevel model.
+    <ol>
+<li>Individual-level (i.e., survey participant-level) factors, including public understanding, were tracked using data from the Climate Change in the American Mind (CCAM) polling project (n= 23,635; 20 waves of the survey.) CCAM has conducted a nationally representative survey of American public opinion about climate change biannually since 2010.</li>
+<li>Time-varying factors (level 2) were tracked using data on when and how frequently Climate Matters stories were aired in each U.S. media market.</li>
+<li>Media market-level factors were tracked using data on the demographic, economic, and climatic conditions in each media market.</li>
+</ol>
+</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>The Center’s surveys collected information on weathercaster engagement. As climate reporting became increasingly normative, the program made every effort to ensure that everyone in the weathercasting community knew the behaviors were gaining in popularity.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Impacts on Individual Weathercasters</strong></p>
+<p>The strongest predictor of a TV weathercaster reporting at least one climate story on air in the prior 12 months was participation in the Climate Matters program.</p>
+<p>In 2010, almost none of the weathercasters aired stories about the local impacts of climate change. In contrast, by 2019 each participating weathercaster aired on average 3.5 Climate Matters stories per year.</p>
+<p>Participating meteorologists incorporated the program materials in the following ways.</p>
+<ul>
+<li>Put them in their on-air weather segments (most typical use)</li>
+<li>Used them in longer-format on-air news stories outside of the weather segment</li>
+<li>Posted them to social media with comments</li>
+<li>Used them in print reporting on their station or personal blog</li>
+<li>Included them in their in-person public presentations at schools and community events</li>
+</ul>
+<p><strong>Impacts on the Weathercaster Community</strong></p>
+<ul>
+<li>As of April 15, 2021, there were 996 participating weathercasters (56 broadcasting in Spanish), working in 476 local TV stations (and five national networks), in 92% of all US media markets and 99 of the top 100 media markets.</li>
+<li>In 2014, participating weathercasters aired 69 Climate Matters stories; in 2019 they aired 3535 stories—more than a 50-fold increase over 6 years.</li>
+<li>One study showed that the program’s conflict mediation process was helpful in moving the community beyond conflict and toward cooperation on the issue of climate communication). Analysis of the transcripts of the sessions, and participant feedback provided after the sessions, strongly suggested increased understanding of the positions of the “the other,” and reduced levels of grievance. Perhaps more importantly, anecdotal reports from many weathercasters indicated greatly reduced levels of conflict about this issue in the weathercaster community over the ensuing few years.</li>
+<li>Concurrent with the growth of the Climate Matters program, there was a dramatic shift in how members of the broadcast meteorology community themselves viewed climate change, such that their views became much more closely aligned with those of climate scientists. The Climate Matters 2010 survey found that only 31% of TV weathercasters were convinced that global warming is caused primarily by human activities and an earlier survey had found that only 22% agreed that “the theory of global warming is accepted by most atmospheric scientists”.  In contrast, the 2016 and 2017 surveys showed that more than 90% of weathercasters agreed that climate change is happening, and 80% attributed it to human causes.</li>
+</ul>
+<p><strong>Impacts on the General Public </strong></p>
+<ul>
+<li>Two recent impact evaluations have shown that both locally and nationally, viewers exposed to Climate Matters stories become more likely to understand that climate change is a 'here, now, us' problem.</li>
+<li>In one study, compared to participants who watched other weather reports, those who watched Climate Matters climate reports became significantly more likely to 1) understand that climate change is happening, is human-caused, and is causing harm in their community; 2) feel that climate change is personally relevant and express greater concern about it; and 3) feel that they understand how climate change works and express greater interest in learning more about it.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Edward Maibach<br/>
+Professor and Director<br/>
+George Mason University Center for Climate Change Communication<br/>
+<a href="mailto:emaibach@gmu.edu?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> emaibach@gmu.edu</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<ul>
+<li>What is most adaptable about this program is its approach of identifying, training and supporting an influential community of practice. This approach could be applied to a wide range of behaviors influenced by this and other communities of practice.</li>
+<li>According to the program team, taking a community of practice approach with TV weathercasters was the essence of the success of the Climate Matters program. This is important because many professional communities need to update their professional practices to deal with the implications of the world’s changing climate —for example doctors, fire fighters, and HVAC installers.  The community of practice approach may be an efficient and effective way to work with a broad range of professional communities to update their practices.</li>
+<li> The replicability of this approach to other locations has been demonstrated by its rapid adoption across United States. In addition, Professor David Holmes, Director of the Climate Change Communication Research Hub at Monash University (Melbourne, Australia) has successfully replicated and extended key elements of Climate Matters in Australia.</li>
+</ul>
+<p><strong>Authors and Landmark Designation</strong></p>
+<p>This case study was written by Jay Kassirer and Ed Maibach in May, 2021.</p>
+<p>The program described in this case study was designated in 2021. Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff, and are then scored by the selection panels based on impact, innovation, replicability and adaptability.  The panel that designated this program consisted of: </p>
+<ul>
+<li>Kathy Kuntz, Dane County Office of Energy &amp; Climate Change</li>
+<li>Doug McKenzie-Mohr, McKenzie-Mohr Associates</li>
+<li>Britta Ng, City of Coquitlam </li>
+<li>Susan Schneider</li>
+<li>Brooke Tully</li>
+</ul><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

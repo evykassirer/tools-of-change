@@ -1,0 +1,261 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/peer-support-groups/">Peer Support Groups</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>University of California at Berkeley</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>California Air Resources Board</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Reduced electricity consumption by 14% among program participants</li>
+<li>Overall savings of between 1,000,000 and 3,8000,000 kWh per year during the first two years</li>
+<li>Cost-effectiveness improved from $0.53 per kWh saved in the first year to $0.16 per kWh in the second year</li>
+</ul>
+<p><em>More Details</em></p>
+<ul>
+<li><a href="http://www.arb.ca.gov/research/apr/past/10-325.pdf" target="_blank">CoolCalifornia Challenge Final Report </a></li>
+<li><a href="https://coolclimate.berkeley.edu/challenge " target="_blank">Website</a> (for first two years)</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Cool California City Challenge </h1>
+<p>The Cool California Challenge is a state-wide competition between California cities engaging their residents in climate action. Participants earn points for tracking and reducing their electricity, natural gas and motor vehicle emissions and for simple one-time actions, like uploading photos and stories, inviting friends or taking a survey. Results from a quasi-experimental design suggest a 14% reduction in electricity use among program participants.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong>Note:</strong> <em>To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program</em></p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The original research proposal submitted by UC Berkeley to the California Air Resources Board in 2010 was to involve three leading California cities in a grassroots, community-based social marketing (CBSM) campaign to reduce household carbon footprints. Participants would be required to complete a research survey that asked about adoption, barriers and benefits of low carbon behaviors, as well as their motivations for participating, attitudes, values and demographic information. This information would be used to iteratively design and test programs in those communities over several years.</p>
+<p>There were several problems with this approach. First, the University of California, Berkeley’s Office of Protection of Human Subjects did not allow the research survey to be used as a requirement for program participation. Second, there was recognition that each household has a different mix of greenhouse gas reduction opportunities from home energy, transportation, food, waste and consumption, so targeting only specific behaviors would limit engagement. Finally, early on in the planning stages the organizers recognized that researching and designing strategies that work well in three highly motivated cities might have limited transferability to other less engaged and economically disadvantaged communities.</p>
+<p>In an attempt to learn from a more diverse range of participants, the program was transformed into a state-wide program, open to any California city. The eight cities that joined the first year represented a broad cross-section of California ranging in size, demographics and political ideology. Given this diversity and the desire to keep the scope of interventions broad, rather than focus on barriers and benefits of specific end-use behaviors for targeted audiences, the program shifted to effectively employing a broad range of CBSM strategies in the software and marketing materials and training local program managers in CBSM theory and practice.</p>
+<p>While organizers initially thought participants would be highly motivated by recognition for their cities and personal rewards, these ranked last on a list of motivations collected through survey responses. The top motivations were improving their communities, protecting the environment and helping organizations they care about. This was true across all demographic characteristics and political orientations. The messaging now focuses on creating more vibrant and sustainable communities rather than personal rewards.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<ul>
+<li>Cities signed up to participate, or designated a local community-based organization</li>
+<li>Participating cities received training on the program</li>
+<li>Cities used existing email lists (most effective), outreach events and tabling to enrol households </li>
+<li>Participants tracked monthly energy bills and odometer readings using online software <em>(Feedback; Goal Setting)</em></li>
+<li>Participants earned Kudo Points for inviting other participants, sharing photos and stories and other small actions (<em>Building Motivation and Engagement Over Time; Competitions; Norm Appeals</em>)</li>
+<li>Participants could create or join teams and a scoreboard ranked households, teams and cities. In addition, participants received weekly progress reports on their household, team and city rank and points (<em>Competitions</em>; comparative <em>Feedback and Recognition; Norm Appeals</em>)</li>
+<li>Participants receive persuasive messaging from local program managers via email, in-person and/or phone</li>
+<li>There were five levels, based on points: Minions, Warriors, Magicians, Champions and Gurus. Different messages were targeted to each level. <em>(Personalized Communications)</em></li>
+<li>Cities received seed money based on the number of participants who signed up by an early program deadline ($30k was distributed between cities in year 1 and $50k in year 2)(<em>Financial Incentives</em> for participating municipalities)</li>
+<li>During the first year, 4 “Finalist” cities received in-person CBSM workshops and follow-up community strategy meetings. During year two, webinars were online for all cities.</li>
+<li>At the end of the program (which lasted 13 months in year 1 and 6 months in year 2) UC Berkeley conducted quality control of data, including contacting participants and correcting any obvious anomalous data.</li>
+<li>The California Air Resources Board conducted awards ceremony with top 3 cities. In Year 2 all cities shared $50,000 in prize money (on top of $50,000 in seed money). It was anticipated that in subsequent years all money would be distributed as prize money at the end, with no seed money at the beginning; however, community-based organizations would still receive seed money for being part of the Energy Upgrade California Ambassadors program. <em>(Feedback and Recognition; Financial Incentives </em>for participating municipal governments<em>)</em></li>
+</ul>
+<p><strong>Overcoming Barriers</strong></p>
+<p>The program targeted two main barriers: low visibility and low self-efficacy.</p>
+<p><em>Visibility:</em> Energy use is usually fairly invisible. Participants’ total energy usage was made visible to other participants, as well as the number of points achieved. Participants were also encouraged to share stories and upload photos of actions they had taken. This feature was extremely popular even though it was hard to find in the software.</p>
+<p><em>Self-efficacy: </em>When faced with the immensity of climate change individuals tend to think that their individual actions do not matter. In other words, they do not believe in their ability to make a meaningful contribution to addressing the problem (low self-efficacy). The CoolCalifornia Challenge turned individual action into collective community action with a focus on improving communities and the state of California as a whole. This can lead to a greater sense of empowerment that individual action does add up to something meaningful. The program also sought to educate participants through regular email communication (addressing information barriers), build capacity and a sense of community around climate change, and enhance pro-environmental social norms in the community. </p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The program used a control group that was not randomly selected (quasi-experimental design), in addition to modeled results. </p>
+<p><em>Quasi-experimental design</em> (year 1 only): the energy usage of participants who joined later was compared with usage of participants who joined earlier over the period for which the control group had not yet joined. Corrections were made based on location of city. Other variables such as income and education were evaluated, but deemed not to impact results. The mean electricity and natural gas usage of participants in both the control and treatment groups were closely aligned for two months prior to the competition, but diverged during the first five months of the program (May through September), after which the control group was not large enough to evaluate results. </p>
+<p><em>Modeled results</em> (years 1 and 2): household energy usage was compared to a monthly benchmark for each household based on the number and age of people in homes and the location of homes (Jones and Kammen 2014). Each household’s energy usage in relationship to the benchmark was used to predict consumption in the subsequent month. If the household used less than their previous energy performance we assumed these were savings attributed to the program. Using this methodology for all months for electricity, natural gas and motor vehicles we calculated 500,000 lbs of CO2 in the first one-year program and 800,000 pounds in the second six-month long program.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<ul>
+<li>Participants tracked their monthly energy bills and odometer readings, which provided them with individualized feedback on usage</li>
+<li>Participants earned Kudo Points for inviting other participants, sharing photos and stories and other small actions </li>
+<li>Participants received weekly progress reports on their household, team and city rank and points </li>
+<li>The California Air Resources Board conducted awards ceremony with top 3 cities. In Year 2 all cities shared $50,000 in prize money (on top of $50,000 in seed money).</li>
+<li>The CoolCalifornia Challenge provided feedback on the impacts of collective community action.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Impacts - Individuals  </strong></p>
+<p>Organizers had little understanding of the degree to which <em>specific</em> behaviors were changed since it did not track this in any rigorous way. In a post-program evaluation survey it did ask survey respondents what actions they had changed and many reported new behaviors or technologies purchased, but there are no data on the persistence of those changes or the extent to which behaviors change as a fraction of total participants.</p>
+<p><em>Quasi-Experimental Design:</em> Those participants who reported their energy use  over the five months for which organizers could measure this effect using an experimental design. Extrapolating these savings over the entire 12 months of data, participants saved an average of about 1,000 kWh per year. It is likely that there were additional savings in natural gas in winter and gasoline from vehicles, but these could not be measured with the program's experimental design. On the other hand, there may have been some slippage after the competition ended, and those who reported their energy use may have reduced their energy use more than those who didn’t report their energy use.</p>
+<p><strong>Impacts - Overall</strong></p>
+<p>In the program's first two years, 17 cities participated in the challenge, eight in the first year and ten in the second, with one city participating both years.</p>
+<p><em>Quasi-Experimental Design:</em> The program had overall savings of between 1,000,000 and 3,8000,000 kWh per year. Participants reduced electricity consumption by 14% over the five months for which this effect could be measured using an experimental design. Extrapolating these savings, participants saved an average of about 1,000 kWh per household per year not including savings from natural gas and gasoline. If all of the participating households saved that much, the total would be about 2,700, 000 kwH in the first year and 3,800,000 kwH in the second year. Acknowledging that those who reported their energy use may have reduced their energy use more than those who didn’t report their energy use, one can estimate a minimum based on only the 1,000 participants who reported their energy use. 1,000 participants x 1,000 kWh / year = 1,000,000 kWh / year, not including savings from natural gas and gasoline.</p>
+<p><em>Modelling:</em> Modeled results (which DO include savings from natural gas and gasoline) indicated total energy savings of about 2,000,000 kWh and total GHG savings of about 1,330,000 lbs of CO2 equivalent, over two years. This included savings of 748,000 kWh and 500,000 lbs of CO2 equivalent during the first year of the program (13 months) and 1,242,000 kWh and 830,000 lbs of CO2 during the second round of the program (which lasted only 6 months.) This corroborates the results found using the Quasi-Experimental design.</p>
+<p><em>Cost Effectiveness:</em> The total cost to deliver the program was over $400,000 during the first year (pilot program) and $200,000 in the second year (including $100,000 in prize money). This did not include considerable volunteer time and in-kind contributions of time by city staff and community-based organizations. In the first year, the cost-effectiveness was therefore $0.53 per kWh saved ($400,000 / 748,000 kWh.) In the second year it was  ($200,000 / 1,242,000.)</p>
+<p><em>Improvement: </em>During year two the program achieved 40% more participants and 60% more energy use reductions / GHG reductions in half the time and less than half the cost. It increased cost effectiveness by 69%, from $0.53 per kWh saved to $0.16 per kWh saved. Based on projections of increased participation in future years the program could easily become cost-effective compared with other utility energy efficiency programs.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p><a href="http://coolclimate.berkeley.edu/chris   " target="_blank">Christopher M. Jones</a>, Ph.D.<br/>
+Program Director, Cool Climate Network - RAEL<br/>
+University of California at Berkeley<br/>
+Tel: 510-643-5048  Email: <a href="mailto:cmjones@berkeley.edu?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">cmjones@berkeley.edu  </a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<ul>
+<li>The California Air Resources Board lent credibility to the awards and the program overall.</li>
+<li>The program ran with roughly 1/10 the budget of several other state-wide programs (e.g., Kansas Take Charge Challenge and Connecticut Neighbour-to-Neighbour Energy Challenge) during the first year and 1/20 the cost during the second year. Costs were kept low since expensive software had already been developed and by reducing the number of staff and volunteers needed to run the program: it is better to have one or two highly trained part-time staff than lots of volunteers and junior staff that need to be managed.</li>
+<li>The program is ongoing and several cities returned for more than one year, providing ongoing capacity building within communities.</li>
+<li>An important goal was to increase the benefits to all communities, not just those at the top of the leaderboard. One way in which the program did this was by providing prize money to all cities based on their performance (number of participants and points).</li>
+<li>Points were earned for being below a benchmark that was specific to households in each location. The benchmarking model provided estimates of electricity, natural gas, vehicle fuel consumption, food, waste, good and services for every zip code in the United States (Jones and Kammen 2014). Households earned five times as many points for reducing emissions over their own personal benchmark based on previous months (compared to the benchmark)</li>
+<li>There was no statistical correlation between size of cities and performance. Medium-sized cities seemed to perform best. It is crucial not to normalize points based on population.</li>
+<li>Although participants were highly altruistic they were also highly motivated by competition. Participation spiked only during intense moments of competition before deadlines; there was one deadline to enrol participants and another at the end of the program.</li>
+<li>Several cities also experienced either staffing changes or reductions during the program, which very much limited their capacity to participate. This is a key barrier to successful implementation of similar programs over multiple years.</li>
+</ul>
+<p>This case study was written in 2016 by Chris Jones and Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

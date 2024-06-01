@@ -1,0 +1,297 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>The pilot program was part of the research project conducted by Dr. Richard Winett and his colleagues, at the Virginia Polytechnic Institute and State University.</p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<p>Services were provided in television production by the Learning Resources Center at Virginia Tech. Roanoke Valley Cablevision provided help in programming and gaining public access.</p><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>One viewing of the 20-minute TV program resulted in the adoption of some simple, no-cost cooling strategies that yielded overall electricity savings of close to 10%, and about a 23% savings on electricity used for cooling. However, the following summer residents returned to their pre-program energy usage.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>TV Program Teaches Energy Conservation</h1>
+<p>A 20 minute television program that suggested simple, no-cost strategies for reducing household energy consumption in summer was delivered over cable television in Roanoke, Virginia, in 1982. Residents who viewed the program once, adopted some of the modeled strategies. Although overall electricity savings were close to 10%, the participants did not feel that their level of comfort was compromised. Though this program focused on energy conservation, the approach can be applied to any area where behaviour modification is desired.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Roanoke, Virginia, population 100,200 (1980), is located midway between New York City and Atlanta, on the East Coast of the United States. The site of the study was one large subdivision (575 homes) of detached homes in Roanoke. About 90% of the homes were subscribers to the local cable TV system.</p>
+<p>The mean gross annual income (1982) of participants was about $30,000. The average family budget share allocated to electricity was 2.8% of gross monthly income. All participants were home owners with about 85% having one or more children living at home. Mean age was about 38 years (range, 25-70). Homes varied in age (new to 20 years old) and in heating sources and appliances.</p>
+<p>Out of 150 households that participated in the study some were all electric, and some used a combination of electric and gas heating and cooling devices.</p>
+<p>The energy conservation program was developed as a part of a research study supported by National Science Foundation Grant, and conducted by Dr. Richard A. Winett and his colleagues, at the Virginia Polytechnic Institute and State University. The purpose of the study was to explore the effects of video modeling on residential energy conservation, and to test how various communication and social learning components of the video program contribute to the programs effectiveness.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p><strong>Energy Conservation Objectives</strong></p>
+<ol>
+<li>to reduce residential energy consumption</li>
+<li>to inform the viewers about energy concerns</li>
+<li>to teach them energy substitution strategies</li>
+</ol>
+<p><strong>Experimental Objectives</strong></p>
+<ol>
+<li>to evaluate the TV program</li>
+<li>to assess the efficacy of the Effective Media Guidelines (see <a href="#informed1">Getting Informed</a>)</li>
+<li>to determine whether a single viewing of the program, not supplemented by personal contact, was enough for substantial behaviour change</li>
+<li>to determine whether household temperature and the reported levels of household comfort change when energy substitution strategies are used</li>
+</ol><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>More than 20 years ago, Albert Bandura established that we learn well through observation. Dr. Richard Winett and his colleagues adopted this premise for the development of TV programs that model responsible environmental behaviours.</p>
+<p>To assure maximum effectiveness of their TV programming, Dr. Richard Winett and his colleagues used the Effective Media Guidelines that were developed by Mendelshohn in 1973:</p>
+<ol>
+<li><em><strong>Social Marketing:</strong> Create a pilot program.</em> Survey and focus group research should be used to design a pilot program for a specific audience. The results of the pilot testing are then used for program refinement.</li>
+<li><em><strong>Social Learning:</strong> Use modeling in message development.</em> Implementation of modeling is based on Bandura's (1977) Social Learning Theory which states that human beings learn through observation.</li>
+<li><em><strong>Communication:</strong> Use auditory and visual variables.</em> Rapid pacing and fade-outs can be used to sustain initial attention, increase comprehension, and enhance retention.</li>
+<li><em><strong>Behaviour Analysis:</strong> Define target behaviours.</em> Target behaviours, positive outcomes, and constraints to performance must be graphically depicted with strategies provided to overcome constraints.</li>
+</ol>
+<p>In their earlier studies, Dr. Winett and his colleagues demonstrated that one viewing of a video program showing alternative heating and cooling strategies was effective in reducing the amount of electricity used for heating and cooling by 25%-35%. Total electricity savings were about 12% per household. These results, however, were obtained in situations that did not resemble real life the TV program was viewed either in a small-group setting or at home with project staff and equipment. In this pilot study Dr. Winett and his colleagues wanted to see whether the same encouraging results would be achieved in a more natural setting.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Once the baseline energy use measurements were completed, a TV program was aired four times - so that participants could watch it at their convenience. The program, called Summer Breeze, showed locations and homes similar to the participants neighbourhood and homes. Actors were the mean age of the viewers, and scenes showed economic and life-style patterns that were similar to those of the participants (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>).</p>
+<p>In order to facilitate communication and learning, the program employed Effective Media Guidelines, such as:</p>
+<ol>
+<li>rapid pacing</li>
+<li>a well-known theme song that was related to specific key practices (e.g., using natural ventilation)</li>
+<li>use of modeling, voice-overs, and captions to emphasise every key point</li>
+<li>repetition of every key practice four times with a summary at the end of the program (<a href="/en/tools-of-change/mass-media/">Mass Media</a>).</li>
+</ol>
+<p>The storyline of the video involved a somewhat younger couple who decided to reduce their energy use after being dismayed at their high electricity bills. An older couple who lived nearby explained and demonstrated specific energy saving strategies, and addressed possible problems. It was suggested to viewers that returning back to higher energy use would be a waste of money and would harm the environment.</p>
+<p>Specific energy saving strategies were modeled in the TV program (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>), such as:</p>
+<ol>
+<li>closing all windows, blinds, shades in the morning to trap cool air;</li>
+<li>not using air conditioning until mid-afternoon, and only if its is very hot outside;</li>
+<li>placing the thermostat at 78F (25.5C) in the evening when it is very warm</li>
+<li>turning off the air conditioning at night or placing it at 80F (26.6C);</li>
+<li>properly using window fans at night;</li>
+<li>changing the water heater thermostat to 130F (54.4C) and insulating water heater.</li>
+</ol>
+<p>During the five weeks following the programs viewing, electricity meters were read once a week at each household, and some of the participants received weekly forms and a 30 minute home visit. The participants had to evaluate the TV program and their level of comfort in the house, as well as complete knowledge and strategies questionnaires (see <a href="#measuring1">Measuring Achievements</a>).</p>
+<p>During the following winter a similar program was shown to the same households, in order to remind the participants about their energy substitution strategies.</p>
+<p>Services were provided in television production by the Learning Resources Center at Virginia Tech. Roanoke Valley Cablevision provided help in programming and in gaining public access.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The budget provided for the research project was approximately $50 000 (US$). The commercial costs of a program similar to Summer Breeze can be as high as $40, 000 (US$). This is because the TV program had about 20 locations and many short scenes that required extensive time to set up and later edit into a coherent program. Over 200 hours of editing time were required.</p>
+<p>It cost about $1 per home to encourage viewing via phone and written prompts.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The 175 households that were recruited using door-to-door recruitment procedure (<a href="/en/tools-of-change/home-visits/">Home Visits</a>) were randomly assigned into five groups.</p>
+<p>The first group was prompted by a letter and phone call to watch the TV program. In addition to these prompts, the second group received a weekly form related to household comfort issues. The third group received the prompts, the weekly form, as well as a home visit, which explained conservation strategies in further details. A fourth group, which received only the weekly form, served as a control condition. Finally, another control group did not receive any forms, but had their electricity meters read.</p>
+<p><strong>Energy Conservation</strong></p>
+<p>The amount of electricity used was measured by readings of electricity meters. Electricity meters were read three times per week during the baseline and five-week intervention phases, and once per week during the first follow-up, booster, and second follow-up phases. Gas meters were read once per week and only during the booster phase because gas use was extremely low in this area outside the heating season.</p>
+<p>To measure how well participants were informed about energy conservation issues before and after viewing the TV program, an information questionnaire was distributed. The questionnaire contained 12 items in a multiple-choice format. Questions were keyed to the summer program (e.g., The most basic aspect of reducing air conditioning involves ?; The best position for cooling with a fan for sleeping is?).</p>
+<p>The strategy questionnaire, administered during the first follow-up phase, was designed to determine what kind of energy substitution strategies were used before and after the TV program. The questionnaire listed the 11 strategies shown in the summer program. Participants checked whether they had used this strategy before the program of only after the program.</p>
+<p><strong>Other Measurements</strong></p>
+<p>The efficacy of particular media guidelines was not assessed in this study, but participants rated their overall program enjoyment on several 7-point scales.</p>
+<p>In order to determine whether personal contact played a role in behavioral modification, the energy savings of the participants who were contacted (phone calls, home visit) were compared to the energy savings of the participants who were not contacted.</p>
+<p>Participants completed forms every week on perceived comfort and a weekly checklist form used to assess clothing worn (Rohles, 1981).</p>
+<p>Finally, the meters were read once a week during the following summer to determine the amount of energy used by each household.</p>
+<p>Home temperature and humidity were derived from the hygrothermographs, and the level of comfort was measured by questionnaires.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>N/A</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>The participants who viewed the TV program showed an immediate and similar response their household electricity use was reduced by approximately 10%. Lower energy use, however, persisted only for the duration of the summer. When electricity use was measured the following summer, there were no differences between residents who viewed the program and those who did not. One explanation is that the participants low-budget share for energy moderated the effectiveness of the media intervention. However, large scale savings are a possibility if millions watch the program, then millions of dollars can be saved.</p>
+<p>Short term increase in knowledge about the energy issues and substitution strategies was observed (they did not test for long term impacts). Participants who viewed the program became more aware of energy issues. While before the program they were correct 44% of the time when answering questions related to energy use, after they were correct about 74% the time.</p>
+<p>New behavioural strategies were adopted after the viewing of the program.</p>
+<ul>
+<li>Opening the house at night: 46%</li>
+<li>Turning the air conditioning off at night or 82F (27.7C) before sleep: 44.6%</li>
+<li>Using natural ventilation: 40.5%</li>
+<li>Using air conditioning in the afternoon only if it is very hot and setting it at 78F (25.5C): 35.1%</li>
+<li>Using fans: 33.8%</li>
+<li>Closing the house down in the mornings: 29.8%</li>
+<li>Turning the air conditioning off to 82F (27.7C) when gone for 2 or more hours: 29.7%</li>
+<li>Setting the air conditioning thermostat at 78F (25.5C) in the evening: 25.7%</li>
+<li>Turning the air conditioning off in the morning: 24.3%</li>
+<li>Setting the water heater at 130F (54.4C): 20.3%</li>
+<li>Insulating the water heater: 8.1%</li>
+</ul>
+<p>The TV program was evaluated positively a mean of 5.7 out of 7, but the functional relationship between program elements and their separate effects on energy conservation were not determined.</p>
+<p>Exposure to the TV program, and not personal contact was the most important element. In fact, contact with participants was not beneficial. During the first follow up the participants who viewed the program, but who were not contacted by the project (no phone call, no home visit) reduced their energy use by 17%, while the participants who were contacted reduced their energy use by only 6%.</p>
+<p>When the participants were employing energy substitution techniques, the temperature, humidity, level of comfort and typical clothing worn inside of the house, did not change.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Richard Winett, Ph. D. 	<br/>
+Heilig-Meyers Professor of Psychology 	<br/>
+Director, Center for Research in Health Behavior 	<br/>
+Director, Clinical Training 	<br/>
+<br/>
+Virginia Polytechnic Institute and State University 	<br/>
+Psychology Department 	<br/>
+Derring Hall 	<br/>
+Blacksburg, VA 24061 	<br/>
+<br/>
+voice: 540.231.8747 (CRHB) or 540.231.6275 (Derring) 	<br/>
+fax: 540.231.5448 	<br/>
+email: <a href="mailto:rswinett@vt.edu">rswinett@vt.edu</a></p>
+<p>This case study was written by Anna Galeta</p>
+<p>Funding for the addition of this case study was generously provided by the Government of Canadas Climate Change Action Fund, Suncor, Syncrude, Enbridge Consumers Gas and TetraPak Canada.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Extensive face-to-face contact seemed to be detrimental.</p>
+<p>It is also important to note that personal reasons, such as saving money, are considered to be more persuasive than environmental protection reasons for energy conservation.</p>
+<p>When trying to implement a similar program please keep in mind that the costs cited are in US dollars, and that the original study was conducted in 1985.</p>
+<p>For more information about this study see Winett, R.A., Leckliter, I. N., Chinn, D.E., Stahl, B., &amp; Love, S.Q.(1985). Effects of television modeling on residential energy conservation. <em>Journal of Applied Behavior Analysis</em>, 18, 33-44.</p>
+<p>To learn more about <em>Effective Media Guidelines</em> see Mendelsohn, H. (1973). Some reasons why information campaigns can succeed. <em>Public Opinion Quarterly</em>, 37, 50-61.</p>
+<p>For more information on checklists to assess clothes worn and to assess a clo-value see Rohles, F. H. (1981). Thermal comfort and strategies for energy conservation. <em>Journal of Social Issues</em>, 37, 132-144.</p>
+<p>To learn more about Social Learning Theory see Bandura, A. (1977). <em>Social Learning Theory.</em> New York: Prentice-Hall.</p>
+<p> </p>
+<p>Last updated: August 2004. This case study was written in 2000 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

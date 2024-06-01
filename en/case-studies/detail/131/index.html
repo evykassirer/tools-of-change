@@ -1,0 +1,332 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Municipality of Århus</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Traffic Research Group, University of Åalborg</li>
+<li>Århus Sporveje</li>
+<li>Danish Heart Association</li>
+<li>Danish Cycling Association</li>
+<li>Cycle Salesmen's Central Association</li>
+<li>Århus Police Force</li>
+<li>Århus Health Council</li>
+<li>Institute for Traffic, Tourism and Regional Economy, Copenhagen</li>
+<li>College of Commerce</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>On average participants cycled more than 30 kilometres a week</li>
+<li>After a one year test period most participants made their change a permanent one and still cycle to work</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Århus Bike Bus'ters</h1>
+<p>Over a one-year period more than 150 people in the City of Århus, Denmark were actively encouraged to use bicycles or public transit for their daily commute. One of the goals of Bike Busters was to assess the extent to which motorists would switch to sustainable means of transportation.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>With a population of 300,000, Århus is Denmark's second largest city. In 1994, the Municipality of Århus adopted a plan to reduce the use of individual motor vehicles and increase the use of sustainable transportation. Part of their plan was the Bike Busters program, which ran from April 1995 to April 1996.</p>
+<p>Bike Busters initially focused on the use of bicycles only. Due to the interest and support of Århus's public transit provider, Århus Sporveje, however, the project included both bicycles and public transit. This increased the choice of transportation for participants, and broadened the focus of the program.</p>
+<p>The prospects for successfully encouraging the use of sustainable transportation were considered very good since Århus already had a well-developed network of bicycle paths and most residents lived within cycling distance of the city centre. Nevertheless, previous campaigns had not been successful in convincing people to cycle to work. The aim of Bike Busters was to change the general perception of cycling and make it more attractive.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Two different approaches to changing behaviour were considered before the program was implemented. One would have been to use disincentives, such as high fuel prices or car tolls, as a method of changing behaviour. The other approach was to encourage sustainable transportation using commitments and financial incentives. The latter method was chosen.</p>
+<p>Survey results showed that, of 100,000 daily round trips, 10,000 were made by bicycle and 20,000 by public transit. The remaining 70,000 were car trips, indicating a great potential for the increased use of bikes and buses.</p>
+<p>Researchers with the Traffic Research Group at Åalborg University selected the participants, and found that, in interviews conducted prior to the start of the program, 93% of participants expected their health to improve as a result of Bike Busters.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>A recruitment campaign was the first step in delivering the program. Information was distributed through the local media, large work places, libraries and other appropriate institutions. The municipality sent out news releases and advertised in newspapers, which helped gain media coverage (<a href="/en/tools-of-change/mass-media/">Mass Media</a>).</p>
+<p>With the help of local police, pamphlets were handed out to motorists for three days on three major roads. The pamphlets described the program and enticed the public with the headline Would you like a brand new bicycle and a free bus pass? Seventeen hundred drivers who received these pamphlets returned the reply coupon indicating their interest in participating in the program.</p>
+<p>Of those 1700 people, Åalborg University's Traffic Research Group selected 175 people to participate. Potential participants were selected based on the following criteria:</p>
+<ul>
+<li>They had to be regular, round trip drivers who worked in central Århus</li>
+<li>They had to live within two to eight kilometres from the city centre (cycling as an alternative to driving was considered suitable within this range).</li>
+</ul>
+<p>The selected participants were between 30 and 50 years of age with a household income of between 400,000 and 600,000 Danish Crowns (approximately $96,000 to $144,000 CAD at the time), although income level was not a selection requirement. Because of considerably fewer applications from women, only 38% of the participants were female.</p>
+<p>Participants signed a contract, which committed them to reducing their car use as much as possible and using cycling or public transit instead (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>). Participants also filled out questionnaires and driving logbooks before, during and after the project.</p>
+<p>Participants were given a bicycle for the one-year test period (worth 4,000 Danish Crowns), with the option to purchase it at a reduced rate (1,000 Danish Crowns) at the end of the year. In addition, participants were given a bus pass worth 5,000 Danish Crowns (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives</a>). All participants received a free health check testing their weight, blood pressure, cholesterol level and general fitness. The health check was sponsored and performed by the Danish Heart Association. Other sponsors included Aage Kroll A/S, which supplied cycle computers, Basts Lasefabrik, which donated cycle lamps, and Viking Rubber Company, which supplied rain clothes. The cycling equipment and bus passes encouraged the participants to try cycling or public transit (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>An opening ceremony at Århus Town Square was held where participants were given their bicycles. They all rode an inaugural lap of the town, making the project a visible public event (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>). A Bike Buster secretariat with two staff members was set up for the period, and every two months they published <em>Cykel &amp; Buster</em>, a magazine that featured encouraging articles, participants observations, and preliminary research findings.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The overall costs of the project were three million Danish Crowns. The Danish Transport Council financed the Traffic Research Group with one million Crowns, while the Municipality of Århus and the Danish Environmental Protection Agency sponsored the actual project with one million Danish Crowns each. A detailed budget is provided in the table below.</p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td><strong>Costs</strong></td>
+<td><strong>DKK</strong></td>
+<td><strong>CAD</strong></td>
+</tr>
+<tr>
+<td>Research</td>
+<td>1,000,000</td>
+<td>240,000</td>
+</tr>
+<tr>
+<td>Bus tickets</td>
+<td>600,000</td>
+<td>144,000</td>
+</tr>
+<tr>
+<td>Bicycles, equipment</td>
+<td>600,000</td>
+<td>144,000</td>
+</tr>
+<tr>
+<td>Secretariat</td>
+<td>300,000</td>
+<td>72,000</td>
+</tr>
+<tr>
+<td>Marketing</td>
+<td>250,000</td>
+<td>60,000</td>
+</tr>
+<tr>
+<td>Social events, etc.</td>
+<td>250,000</td>
+<td>60,000</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>3,000,000</td>
+<td>720,000</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td><strong>Revenues</strong></td>
+<td><strong>DKK</strong></td>
+<td><strong>CAD</strong></td>
+</tr>
+<tr>
+<td>Danish Transport Council</td>
+<td>1,000,000</td>
+<td>240,000</td>
+</tr>
+<tr>
+<td>Danish Environmental Protection Agency</td>
+<td>1,000,000</td>
+<td>240,000</td>
+</tr>
+<tr>
+<td>Municipality of Århus</td>
+<td>1,000,000</td>
+<td>240,000</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td>Total</td>
+<td>3,000,000</td>
+<td>720,000</td>
+</tr>
+</tbody>
+</table><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Evaluation was based on four measures:</p>
+<ol>
+<li>During the year each participant filled in a printed kilometre report that recorded the reading of their cars odometer and the cycle computer, as well as the number of trips used on the bus punch tickets on a fixed day of the week. Reporting of the kilometre measuring was done three times over the course of the project.</li>
+<li>Participants filled in a logbook at the end of April, in mid-February, mid-September and finally in May 1997, after the project had finished. The aim was to show changes in the traveling patterns and the choice of transport during the project period. This applied especially to the extent to which car trips were replaced by cycling and bus trips.</li>
+<li>During interviews, participants were asked to identify and comment on the importance of a number of obstacles to using a bicycle or bus for commuting.</li>
+<li>Health checks were performed at the beginning of the project, at six months, and again at the end of the one-year period.</li>
+</ol><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p><em>Cykel &amp; Buster</em> magazine promoted the program and gave participants the opportunity to give each other feedback. Activities and social events, such as the Bike Buster picnic, organised by the secretariat also provided opportunities to socialise and share experiences.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>On average, participants cycled 30.7 kilometres per week (1,600 kilometres per year), three times the Danish average. The range of kilometres cycled varied among participants. For example, the top cyclist rode over 109 kilometres a week, while the shortest average distance covered by bicycle per week was 2.4 kilometres. The average distance driven by car was 14,000 kilometres a year, still much higher than the average distance covered by bicycle, but lower than the national average. This number is skewed, however, because the car, which had been the participants primary mode of transportation for commuting, was freed up for use by other family members.</p>
+<p>More than 70% of commuter trips, and more than half of all trips combined, were made by bicycle. In the winter this dropped to 35% of commuter trips and less than 30% of all trips combined. After the project ended, 56% of commuter trips and more than 40% of all trips were still made by cycling. Prior to Bike Busters, those numbers were eleven and nine percent respectively. In other words, after the one-year test period most participants made their change a permanent one and still cycled to work.</p>
+<p>Although the free bus passes were not well used during the summer, over the course of the year, participants used the bus for 1.3 trips per year, which corresponded to the national average. The bus gained popularity during the winter, but only 23% of all trips to and from work and 16% of all trips were made by bus. Research showed that bus use had not increased in the long run. After the projects completion, the proportion of bus trips fell back to its original level before the one-year period. One reason that using the bus did not develop in the same way as the bicycle is that once the project was completed, the bus tickets were no longer free of charge.</p>
+<p>The charts below provide further details of the change in behaviour for commuter trips and show traffic habits among participants for trips between home and work before the start of the project in April 1995, in September 1995 (representing the pattern of summer traffic), in March 1996 (indicating winter traffic) and in September 1996 (approximately half a year after the end of the project).</p>
+<table border="0" cellpadding="5">
+<tbody>
+<tr>
+<td><img alt="" height="150" src="/images/documentimages/Aarhus/april95.gif" width="150"/></td>
+<td><img alt="" height="150" src="/images/documentimages/Aarhus/sept95.gif" width="150"/></td>
+</tr>
+<tr>
+<td><img alt="" height="150" src="/images/documentimages/Aarhus/march96.gif" width="150"/></td>
+<td><img alt="" height="150" src="/images/documentimages/Aarhus/sept96.gif" width="150"/></td>
+</tr>
+</tbody>
+</table>
+<p>Participants expressed a greater need for snow clearing in the winter and better luggage racks on the bicycles to reduce barriers to cycling. On the other hand, further investments into bicycle paths were considered unlikely to encourage greater use of bicycles in Århus. Participants considered comfort, cost and time as obstacles to using the bus to a greater extent.</p>
+<p>Upon completion of the project, 65% of participants experienced improved health, while the remaining 35% experienced no change in their health. Most improved their overall fitness, while blood pressure, weight and cholesterol levels remained virtually unchanged. Initially, the proportion of participants with unsatisfactory or poor health sank from 65% to 44% after the summer. After the winter months, when cycling was less frequent, the proportion of participants with poor or unsatisfactory health had risen to 51%.</p>
+<p>All but 16 of the 175 participants fulfilled their contract with the municipality.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>There is no available contact for more information on this program.</p>
+<p>This case study was written by Bjorn Surborg, Sharon Boddy and Jay Kassirer in 2001. Funding for the addition of this case study was generously provided by the Government of Canada's Climate Change Action Fund, Suncor, Syncrude, Enbridge Consumers Gas and TetraPak Canada.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned</strong></p>
+<p>Cycling can be an attractive alternative to the automobile for commuters. On average participants cycled more than 30 kilometres a week.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

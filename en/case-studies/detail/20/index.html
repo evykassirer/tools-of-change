@@ -1,0 +1,292 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>City of Oshawa</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Ontario Ministry of Environment and Energy</li>
+<li>The Regional Municipality of Durham</li>
+<li>Durham Environmental Network</li>
+<li>Ontario Hydro</li>
+<li>Consumers Gas</li>
+<li>Oshawa Public Utilities Corporation</li>
+<li>Friends of the Second Marsh</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Overall, 9,300 conservation actions were undertaken, with $2.5 million spent in related investments.</p>
+<table cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" height="26" src="/images/lightbulb.gif" width="27"/> Tip: Click on an image to enlarge it. Click your back button to return to this page.  			<hr color="#ffcc00"/>
+<p><a href="/images/documentimages/recap/Recap-1.jpg" target=""><img alt="ReCAP image" border="0" height="88" src="/images/documentimages/recap/Recap-1.jpg" width="142"/></a> <br/>
+            Checking the conditions of seals and insulation during a home visit.</p>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>The Residential Conservation Assistance Program (ReCAP)</h1>
+<p>The Residential Conservation Assistance Program ( ReCAP) provided a free home visit service to the residents of Oshawa, Ontario, aimed at helping householders reduce their use of energy and water and improve their 3Rs practices. Trained home advisors provided householders with one-on-one assistance to identify and undertake conservation and cost-saving opportunities. As of 1996 the program had been renamed Green CAP and householders were required to pay a fee for the home visits.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>In the early 1990s, with a growing population of 131,000 people, the City of Oshawa was faced with an increase of nearly 40 percent in the amount of waste going to landfill over a five-year period. During this period, per capita use of water had increased by more than a third and consumption of hydroelectricity was 15 percent higher than the provincial average.</p>
+<p>To address these issues, the city developed a conservation program as part of the Green Communities of ReCAP Initiative. To incorporate the needs and concerns of residents into the program, the city assembled demographic and economic data, and solicited public input. The findings were used to develop objectives and priorities. In order to accomplish these, a not-for-profit organization (ReCAP) was launched in 1993.</p><!-- Background already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>The Home Visit</strong></p>
+<p>ReCAP's central activity was a <a href="/en/tools-of-change/home-visits/">Home Visit</a> service provided by trained home advisors. Advisors helped householders identify and improve performance on such home energy issues as:</p>
+<ul>
+<li>excess energy consumption and water use</li>
+<li>waste generation and disposal</li>
+<li>use of products generating toxic or hazardous waste</li>
+<li>indoor air quality problems</li>
+<li>use of chemically manufactured pesticides and fertilizers</li>
+</ul>
+<p>Home visits took from one to two hours and included three phases. First, an interview was conducted with the householder, which enabled the visit to be personalized to their particular interests to provide a profile of existing conditions and practices in the home. Next, the householder accompanied the advisor on a thorough home energy-use and inspection, during which checks were conducted on the condition of air seals and insulation, humidity levels, the efficiency of appliances, the condition of heating/cooling systems, and the existence of water leaks. On the outside, the advisor checked the condition of the roof, exterior seals on windows, and the overall structure, and looked for drainage problems, proper use of composters, and efficient landscaping practices. The inspection techniques used were explained to the householder so that he or she could carry out future inspections on his/her own. Advisors commended the householder on existing conservation-related efforts. This, along with the fact that each resident was required to take the initiative to book the visit, helped build motivation to taking action (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p>Small modifications and repairs were made on the spot: hot water thermostats were adjusted, toilet leaks repaired, and faucet washers replaced. Free water and energy-saving devices were offered as well. These included faucet aerators and washers, hot water pipe insulation, low energy light bulbs and low-flow shower heads. Some were installed by the advisors to ensure proper use; other devices, such as air sealing gaskets and plugs for electrical outlets, and faucet washers, were left behind for the householder to install.</p>
+<p>A demonstration provided a vivid, personalized communication of water savings achieved with the low-flow shower heads (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>). A graduated bag was filled for a timed period from a householder's conventional shower head, and the water level compared to that for the newly installed low-flow model. A feather or smoke pencil was used to demonstrate faint air leaks. Conservation-related repairs or installations were also demonstrated (e.g., caulking, weather-stripping and vapour barriers).</p>
+<p>In the third and final phase of the home visit, recommendations were discussed with the resident and clearly recorded on a form left at the home. To further build motivation to take action, the householder was involved in developing the written list of repair/retrofit priorities.</p>
+<p>Fact sheets and information on suppliers and contractors were supplied to make it easier for residents to carry out the recommendations. Financial incentives were also provided. Cross-promotional coupon offerings were developed with local retailers for conservation devices, such as compact fluorescent bulbs, insulation, and weather-stripping. The coupons were handed out during home visits and supplied at participating retail outlets (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>).</p>
+<p>To help finance recommendations, participating banks provided home visit participants with low interest loans (1.5 percent over prime) of between $1,000 and $15,000. Recommendations were financed by this means by 4 percent of participating residents.</p>
+<p>The advisors continued to make themselves available after the visits. As Ron Levy, Marketing Coordinator, commented, "Support to the householder did not end with the home visit. To make it as easy as possible for people to follow through with recommendations, we offered ongoing advice and support, and would gladly research any special needs" (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p><strong>Arranging the Visit</strong></p>
+<p>Interest in the home visits was generated through self-promotion (ads, flyers, lawn signs, posters, pamphlets, mall and home show displays), promotion by others in the community (word-of-mouth, media coverage) and promotion by partners (promotional inserts in tax/utility bills and employee paycheques, and articles in employee newsletters). It was found that promotion by others in the community was the most effective, with nearly 60 percent of Oshawa residents first hearing about ReCAP through either media or word-of-mouth (<a href="/en/tools-of-change/word-of-mouth/">Word-of-mouth</a>). Partner promotion accounted for a further 20 percent.</p>
+<p>Word-of-mouth promotion accounted for 28 percent of bookings (<a href="/en/tools-of-change/word-of-mouth/">Word-of-mouth</a>). These referrals were encouraged by advisors during the home visits using the statement, "If you were happy with the service you received, please tell others about it." This statement was repeated on the householder's copy of the recommendation sheet. Advisors would also offer to leave promotional pamphlets for the resident to distribute to others.</p>
+<p>Mass media articles proved to be an effective way of getting the message out to the public that others in their community were getting involved in home conservation efforts through ReCAP (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>).</p>
+<p>Tax/utility bill inserts accounted for 19 percent of bookings. They were found to generate an immediate "bulge" in bookings, lasting about two weeks.</p>
+<p>Overall, the most common motivators for booking a home visit were found to be water, energy, and therefore money savings. These factors accounted for two thirds of all bookings. Purely environmental concerns motivated participation in only 7 percent of the cases.</p>
+<p><strong>Motivators</strong></p>
+<p>Recommendations were directly linked to each householder's motivators. Advisors listened carefully to the householder's remarks, both during the initial interview and throughout the home visit, and identified clues that suggested where his or her interests lay.</p>
+<p>For example, if a householder expressed interest in gardening or a well-maintained garden was noted, advisors would stress garden-related recommendations (e.g., using native plants, planting shade trees, composting). If there were children in the home, safety related issues might be stressed (e.g., safe storage of hazardous products, non-toxic cleaning recipes, alternatives to pesticides).</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>In its first year of operation, approximately $2.25 million was invested in ReCAP. Of this, $1.2 million was provided by the Ontario Government, with the remainder coming from other partners through in-kind donations. The $1.2 million provided by the Ontario Government was used for:</p>
+<table border="0" cellpadding="5" cellspacing="5" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="60%">Office set-up and management</td>
+<td valign="top" width="15%">26%</td>
+<td valign="top" width="25%">$ 312,000</td>
+</tr>
+<tr>
+<td valign="top" width="60%">Assessment costs (advisors, supplies, travel)</td>
+<td valign="top" width="15%">58%</td>
+<td valign="top" width="25%">$ 696,000</td>
+</tr>
+<tr>
+<td valign="top" width="60%">Community outreach (advertising, promotion)</td>
+<td valign="top" width="15%">5%</td>
+<td valign="top" width="25%">$ 60,000</td>
+</tr>
+<tr>
+<td valign="top" width="60%">Other</td>
+<td valign="top" width="15%">11%</td>
+<td valign="top" width="25%">$ 132,000</td>
+</tr>
+</tbody>
+</table><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>To gauge its success, ReCAP undertook a six-month follow-up telephone survey of participating householders, designed to obtain information about the success of various marketing strategies, what motivated a response to the program, the degree of uptake on recommendations made during the home visit, and to collect general feedback.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>The following results were achieved during the first year of operation, based on a six-month follow-up period:</p>
+<ul>
+<li>approximately 2,500 home visits were made</li>
+<li>40 percent of all recommendations were carried out</li>
+<li>9,300 individual conservation-related actions were undertaken</li>
+<li>an average of $1,000 was invested per household which translated into an estimated $2.5 million for all homes visited</li>
+</ul>
+<p>The highest rates of uptake were for recommendations that were demonstrated in the home, or for which the materials needed were provided. For example, 83 percent of householders installed insulation around their hot water pipes within six months of a home visit. The installation technique was demonstrated by the home advisors, and a supply of free foam insulation was provided. Of those householders provided with air sealing gaskets and plugs for electrical outlets, 90 percent went on to install them.</p>
+<p>Low rates of uptake often occurred for recommendations that could not easily be tied to motivators. For example, householders only followed through with upgrading to efficient compact fluorescent light bulbs 11 percent of the time. This recommendation could not be tied to common motivators other than savings, and represented only a long-term return on investment.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Ron Levy 	<br/>
+102 Chiltern Hill 	<br/>
+Toronto, Ontario 	<br/>
+M5C 3C1 	<br/>
+(416) 256-1001 	<br/>
+E-mail: <a href="mailto:ron.levy@cimtegration.com">ron.levy@cimtegration.com</a></p>
+<p>Lorelei Hepburn 	<br/>
+Residential Coordinator 	<br/>
+Green CAP 	<br/>
+14 King Street West 	<br/>
+Oshawa, Ontario 	<br/>
+L1H 1A3 	<br/>
+(905) 571-7227 	<br/>
+Fax: (905) 571-4173 164</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Green Communities</strong></p>
+<p>ReCAP is one of a number of Green Community case studies on this site. The others are The Environment Network, Guelph 2000 and Peterborough Green-Up. For more information on Green Communities <a href="http://www.gca.ca">click here</a>.</p>
+<p> </p>
+<p>This case study was originally published in 1998 in "Tools of Change: Proven Methods for Promoting Environmental Citizenship" by Jay Kassirer and Doug McKenzie-Mohr (Published by Canada's National Round Table on the Environment and the Economy)</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

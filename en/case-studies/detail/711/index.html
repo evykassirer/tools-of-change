@@ -1,0 +1,243 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>NewTown Macon</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Macon-Bibb County (including Macon Urban Development Authority and Main Street Macon)</li>
+<li>8 80 Cities</li>
+<li>Bike Walk Macon</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>The pilot led to development of permanent protected bike lanes. </p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Macon Connects </h1>
+<p>A temporary network of cycling lanes convinced the community of Macon GA to create permanent protected lanes. One-block sections of street that had previously been made more bike-friendly had not been used much and there was concern that not enough people would actually cycle. The pilot created the largest pop-up bike lane network in the world and tested five alternative kinds of bike infrastructure, from sharrows (painted stripes) to more buffered lanes and protected cycle racks with bollards.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Macon Georgia, USA is a community of about 150,000 residents. One key strategy in the municipality’s Action Plan was to “cultivate connectivity.” In June of 2016, it held a three-day Ideas Festival that generated over 3,400 ideas for increasing connectivity. Despite relatively good driving conditions, residents wanted to rely less on the car and have other means of transportation available to them. Cycling seemed to be a suitable alternative mode of transportation. However, in the past, one-block sections of street that had been made more bike-friendly had not been used much and there was concern that not enough people would actually cycle.</p>
+<p>In October 2015, Knight Foundation launched a nationwide competition for the best ideas to improve cities. NewTown Macon in partnership with Macon-Bibb County (including Macon Urban Development Authority and Main Street Macon), and Bike Walk Macon submitted a proposal along with 8 80 Cities and Better Block, who provided community engagement and prototyping services, respectively. </p>
+<p>We submitted an idea to engage the city in a conversation about improving connectivity in Macon, and then to test out those ideas on the streets of Macon. This included building a pop-up (temporary) bike network throughout the urban core, also known as a “minimum grid”. Out of over 4,500 applications, 32 ideas were selected to be funded, including Macon Connects.</p>
+<p>The program targeted citizens who had not previously used great pedestrian and bicycle infrastructure.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The three-day Ideas Festival consisted of 19 events that appealed to a wide range of audiences. With over 1,100 attendees, there were 430 active participants who generated over 3,400 ideas. The project also relied on experience from other similar programs, through its partnership with 8 80 Cities and Better Block.</p>
+<p>The pilot then tested five alternative kinds of bike infrastructure, from sharrows (a painted stripe) to more buffered lanes and protected cycle racks with bollards.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The project involved creation of an eight mile temporary pop-up bike network, believed to be the largest such temporary installation ever. It took four hundred and ninety-eight cans of paint, five days of application, 180 bollards, 80 volunteers, 13 bottles of Gatorade, and two golf carts. Macon is a great city for the approach because it has wide streets that can be converted into areas that have beautiful bike paths, better sidewalks and allow for car accommodations as well. (<em>Vivid, Credible Communication</em>)</p>
+<p><img alt="Spray painting" height="191" src="/userfiles/Image/Spray painting.png" width="450"/></p>
+<p> </p>
+<p><img alt="Temporary Bike lanes" height="194" src="/userfiles/Image/Aerial_view.png" width="450"/></p>
+<p>The network connected existing bike infrastructure with a series of new interventions, including median cycle tracks, bike boxes, buffered bike lanes, two-way cycle tracks, and the Copenhagen Left (where you first cross the perpendicular street, stop, and then wait for green or for traffic to clear to cross the original street to complete the left turn.) </p>
+<p>The bike lanes were temporary – the paint was either washed away by the weather or cleaned off the streets by Macon-Bibb County. The pilot was intended to be a weekend-long test, but when Mayor Robert Reichert cut the ribbon, he declared it would stay up for a week. </p>
+<p>The project also coincided with the launch of Macon’s bike-share program, which enabled adult residents to rent Zagster cruiser bikes at three downtown locations. </p>
+<p><em>Overcoming Barriers</em> </p>
+<p>The main barriers and how they were overcome are outlined below. </p>
+<ul>
+<li>Safety. The dedicated lanes made drivers aware of bikes on the streets, and helped cyclists feel safe.</li>
+<li>Misconceptions about time, inconvenience and safety. These were overcome by having people try out cycling with appropriate infrastructure</li>
+<li>Concerns about wasting tax dollars on facilities that few would use. These concerns were overcome by showing through the pilot how many people would cycle if there were appropriate infrastructure.</li>
+</ul>
+<p>The project tested five alternative kinds of bike infrastructure, from sharrows (a painted stripe) to more buffered lanes and protected cycle racks with bollards. The protected lanes proved to be by far the most popular, accounting for four out of five rides; 95% of respondents preferred bike infrastructure with buffers and/or bollards. Sharrows were the least effective type of bicycle infrastructure, with only 4% of respondents feeling “very safe” riding on them. </p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Total project cost was approximately US$110,000 - for a cost of $72 per rider.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Data were collected with four counters along the lanes as well as three volunteers who recorded the demographics of cyclists using the infrastructure. We also conducted an online survey to capture feedback about the pop up bike network from the general public.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><em>Individual Participants</em> </p>
+<p>Individuals were more likely to cycle during the time the temporary bike lanes were in place. Bike counts along the pop-up network were 9.5 times (854%) higher during Macon Connects as compared to “normal conditions” when there was no bike infrastructure present. Along the four corridors where we placed bike counters, bike counts increased from as little as 5.5 times (456%) to as much as 18.6 times (1758%).</p>
+<p>We also found out that 71% of respondents supported building a protected bike network in Macon. Of those who had the chance to ride the pop-up bike network, 88% agreed that it had inspired them to bike more. </p>
+<p>A positive spillover effect of the bike lanes was that it created new opportunities for residents to enjoy their own city. 68% reported visiting an area that they normally do not go to. 75% reported seeing new shops and/or amenities along the pop-up bike lane network that they had never noticed before. </p>
+<p>“It’s hard to explain to you what a massive shift [this has been]. From ‘Oh, people aren’t going to bike, we put in a block and nobody used it,’ to now they know what good infrastructure looks like, and they’re going to use it” says Josh Rogers, president and CEO of the nonprofit NewTown Macon, which works to revitalize the city’s downtown.</p>
+<p><em>Overall Impacts</em></p>
+<p>1,518 riders experienced the network and the total project cost was approximately $110,000 - for a cost of $72 per rider.  To experience the full diversity of ridable treatments installed during the pop-up, riders would otherwise have needed to travel across the country and world to find and ride examples.</p>
+<p>Since the event, Macon’s traffic engineer volunteered to design bicycle accommodations according to NACTO standards for permanent installation.  The first mile-long section was soon installed as part of a repaving project.  The longest previous section of bicycle infrastructure was one block!  A second multi-neighborhood connection was designed and funded for installation the following summer. </p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Josh Rogers<br/>
+<a href="mailto:josh.m.rogers@gmail.com?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> josh.m.rogers@gmail.com</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<ul>
+<li>Piloting an intervention is a key stage in the social marketing methodology. Piloting tests how well an approach works with a particular audience and how it can be improved. Almost all pilots are done with a small part of a community before rolling out to a wider community. This pilot was one of the few that tested with an entire mid-sized community – but for a limited amount of time. This is a great way to overcome resistance to a new idea.</li>
+<li>To the best of our knowledge, this was the largest pop-up bike lane network in the world. It was created in only five days by 80 volunteers.</li>
+<li>Using an Ideas Festival allowed us to do formative research , test alternative approaches and engage the wider community, particularly targeting those who don’t already bike.</li>
+<li>Macon’s black residents, who make up 53 percent of the population, were underrepresented on the pop-up’s lanes by 21 percent, and the “data reveals that there needs to be more effort dedicated to ensuring that bike infrastructure links to different neighborhoods and connects residents of all racial backgrounds.”</li>
+<li>Few people over age 55 and younger than 17 participated.</li>
+</ul>
+<p><em>Recommendations</em></p>
+<ul>
+<li>Start with a minimum grid that connects people to popular destinations – start with a 1-mile radius grid and then expand to a 3-mile radius grid. The 3-mile radius grid will connect ten times the number of residents to bike infrastructure.</li>
+<li>Prioritize safety and consistency for all road users.</li>
+<li>Continue to educate and engage the public about bicycling.</li>
+<li>Develop metrics and set goals for increasing cycling rates.</li>
+</ul>
+<p><em>Data Sources</em></p>
+<p><a href="http://betterblock.org/blog/2016/09/19/ride-the-worlds-largest-pop-up-bike-lane-grid/" target="_blank">http://betterblock.org/blog/2016/09/19/ride-the-worlds-largest-pop-up-bike-lane-grid/</a><a href="http://www.newtownmacon.com/macon-connects/"> http://www.newtownmacon.com/macon-connects/</a><a href="http://www.41nbc.com/2016/09/14/largest-pop-bike-lane-world-built-macon/" target="_blank"> http://www.41nbc.com/2016/09/14/largest-pop-bike-lane-world-built-macon/</a><a href="http://www.41nbc.com/2016/09/14/largest-pop-bike-lane-world-built-macon/&lt;/a&gt; https://nextcity.org/daily/entry/macon-bike-lane-popup-increased-cycling" target="_blank"> https://nextcity.org/daily/entry/macon-bike-lane-popup-increased-cycling</a></p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

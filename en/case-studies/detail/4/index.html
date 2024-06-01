@@ -1,0 +1,243 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Researchers Shawn Burn and Stuart Oskamp --Scouts study</li>
+<li>Shawn Burn -- Block Leader Study</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>City of Claremont</li>
+<li>Boy Scouts</li>
+<li>Volunteer community members</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Boy Scout visits led to a 40 percent recycling rate and block leader visits led to a 60 percent recycling rate in households that did not previously recycle.</p>
+<p><a href="https://www.researchgate.net/publication/227769305_Social_Psychology_and_the_Stimulation_of_Recycling_Behaviors_The_Block_Leader_Approach" target="_blank">Full article</a></p>
+<table cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" complete="complete" height="26" src="/images/lightbulb.gif" width="27"/> Tip: Click on an image to enlarge it. Click your back button to return to this page. <hr color="#ffcc00"/>
+<p><br/>
+<a href="/images/documentimages/Claremont/claremont-1.jpg" target=""><img alt="Claremont Image" border="0" complete="complete" height="75" src="/images/documentimages/Claremont/claremont-1.jpg" width="203"/></a> <br/>
+<strong>In one approach, Boy Scouts asked householders to sign this pledge card.</strong> <strong><br/>
+</strong><br/>
+<br/>
+<a href="/images/documentimages/Claremont/claremont-2.jpg" target=""><img alt="Claremont Image" border="0" complete="complete" height="117" src="/images/documentimages/Claremont/claremont-2.jpg" width="191"/></a> <br/>
+<font size="1"><strong>The script provided to block leaders and Boy Scouts graphically described the amount of waste generated and linked recycling to accepted beliefs (patriotism) and practices (taking out the trash).</strong> <br/>
+</font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Claremont</h1>
+<p>To find effective ways to increase public participation in recycling, two studies were undertaken in the City of Claremont, California. In each case, trained volunteers went door-to-door contacting members of non-recycling households. Two approaches were tried -one using Boy Scouts, and the other using neighbours as volunteers.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>In the 1980s, less than 30 percent of the residents of Claremont, California, were bringing their recyclables to the curb for collection. A literature review revealed that improvements in participation rates gained through the use of incentives often ended when the incentives were removed. The review suggested that persuasive communication, and obtaining a written or verbal commitment were effective ways to cause lasting changes in behaviour.</p><!-- Background already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Boy Scout Study (1984)</strong></p>
+<p>Boy Scouts were trained as messengers to non-recycling households. Their association with honesty and concern for nature made them a credible choice. After introducing themselves to householders, they cited some advantages of recycling and described how to recycle with the city program.</p>
+<p>They then administered one of three approaches. In one approach householders were asked to read a persuasive communication, essentially the same as that used by the block leaders.</p>
+<p>In a second approach, householders were asked to sign a pledge card (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>). They were also provided with a sticker containing an attractive logo and the words: "I Recycle to Win the War on Waste."</p>
+<p>The third approach combined both the communication, the pledge card, and the sticker. All three approaches ended with householders being offered mesh recycling bags.</p>
+<p><strong>Block Leader Study (1988)</strong></p>
+<p>Residents were recruited from households that consistently recycled, to act as recycling block leaders (<a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a>). The invitation to be a block leader went something like this: "We've noticed your recyclables at the curb on trash day and we wish there were more people like you. Our latest strategy to increase recycling is to have people who are already recycling explain to their neighbours how easy and important it is. I've got a list right here of 10 of your non-recycling neighbours. Would you be willing to be a recycling block leader?" Out of 13 households approached, representatives of 8 agreed to be block leaders.</p>
+<p>The block leaders were trained to visit about 10 previously identified non-recycling neighbours (<a href="/en/tools-of-change/home-visits/">Home Visits</a>). After introducing themselves and explaining their appointment by a city committee, they provided householders with a recycling information sheet.</p>
+<p>A vivid, personalized communication (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>) was then delivered orally, using a graphic description of the amount of waste generated. The statement also linked recycling to accepted beliefs (patriotism) and practices (taking out the trash) (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a> and <a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>).</p>
+<p>The block leaders helped overcome barriers to participation by clearly explaining how convenient recycling really is and how an individual's contribution makes a difference to combating waste problems. They also provided the household with three mesh recycling bags. To further build motivation, the block leaders ended their visit with the statement: "I hope to see your bags out at the curb in a few weeks."</p>
+<p>For the purposes of comparison, a second group of households, an "information at door only" group, simply had the information sheet, recycling bags and a written copy of the speech supporting recycling left at their doors. A third group, used as a control, received neither the information nor the visit.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The block leader approach was slightly more costly to administer than the Boy Scout approach, because of the additional time required to recruit volunteers. It took approximately three to four hours to obtain the eight block leaders in the study. However, block leader recruitment could be done by members of a local community or by environmental groups, students, or other volunteers.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>This randomized field experiment had two treatment conditions and a control group receiving no treatment. One treatment group consisted of neighborhood block leaders who delivered persuasive communications and recycling bags to non-recycling neighbors to increase participation in a citywide, curbside recycling program. The other treatment group consisted of non-recycling households who had persuasive communications and recycling bags left at their doors.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>All three approaches delivered by the Boy Scouts were found to be equally successful in motivating recycling behaviour. Approximately 40 percent of the homes in each group subsequently recycled at least once during a six-week follow-up observation period. In comparison, only 11 percent of the control group recycled at least once. The face-to-face delivery and the public commitment resulted in approximately equal rates of recycling when delivered separately but combining them did not boost their effectiveness.</p>
+<p>In the block leader study, 60 percent of the non-recycling households contacted in person recycled at least once during a 10-week follow-up and 28 percent began to recycle weekly. In the group receiving information at the door only, 38 percent recycled at least once and 12 percent did so on a weekly basis. In the control group, 20 percent recycled at least once and 3 percent recycled on a weekly basis.</p>
+<p>Taken together, the results of both studies suggest that a persuasive message delivered to the door can improve recycling rates significantly, and that a home visit can further increase participation rates.</p>
+<p>In both studies, recycling participation rates remained relatively stable during the observation period, suggesting that the tools of change employed effected long lasting changes in behaviour.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Dr. Shawn Burn <br/>
+California Polytechnic University <br/>
+San Luis Obispo, California <br/>
+93407 <br/>
+U.S.A. <br/>
+(805) 756-2934 <br/>
+E-mail: <a href="mailto:sburn@calpoly.edu">sburn@calpoly.edu</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Last Revised: August 2004</p>
+<p>This case study was originally published in 1998 in "Tools of Change: Proven Methods for Promoting Environmental Citizneship" by Jay Kassirer and Doug McKenzie-Mohr (Published by Canada's National Round Table on the Environment and the Economy)</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

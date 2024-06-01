@@ -1,0 +1,312 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>Queensland Government Department of Environment and Resource Management and delivered by Local Government Infrastructure Services (LGIS)</p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Brisbane City Council</li>
+<li>Energy retailers</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Over 300,000 homes retrofitted over a 39-month period The average household reduced electricity use by 3.96 kWh/day, or 1,445 kWh/yr</li>
+<li>By the end of 2012, 430,000 households were expected to have been retrofitted, saving more than 795 million kWh/yr and reducing GHG emissions by over 4 million tonnes over the life of the products</li>
+</ul>
+<p> </p>
+<p>Downloadable Materials</p>
+<ul>
+<li><a href="/userfiles/File//ClimateSmart%20Case%20Study%20FINAL2.pdf" target="_blank">Case Study PDF</a></li>
+<li>Webinar <a href="/userfiles/Climate_Smart-transcript_FINAL.pdf" target="_blank">Transcript</a></li>
+<li>Webinar Handouts      <a href="/userfiles/File//Handout_TOC_Highlights_2012_03_01_2pp.pdf" target="_blank">2 per page</a></li>
+</ul><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>ClimateSmart Home Service, Queensland, Australia</h1>
+<p>Once a resident signs up for Queensland’s ClimateSmart Home Service, a licensed electrician visits the home, installs a variety of energy-efficiency products, conducts an energy audit, provides recommendations, and leaves behind materials and prompts. The information collected is then used to create a customized plan that is sent to the homeowner approximately six weeks after the visit, with different audience segments receiving different messaging. A voluntary household energy challenge, wireless power monitors and an on-line portal help motivate and empower participants. ClimateSmart was designated a <em>Landmark</em> case study in 2011.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all Tools of Change case studies are written in the past tense, even if they are ongoing.</em></p>
+<p>The ClimateSmart Home Service was launched on January 5, 2009 by Local Government Infrastructure Services (LGIS), an organization that helps local governments in Queensland design and implement infrastructure solutions. LGIS is jointly owned by the Queensland Treasury Corporation and the Local Government Association of Queensland. ClimateSmart originally aimed to provide energy- and water-efficiency products and services to 260,000 households within two years, and was designed to secure long-term behaviour change by focusing on strong customer relations and access to relevant and customized information.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The mix of target behaviours was chosen to maximize both the probability of completion and the environmental impact. Based on a qualitative analysis, 37 target behaviours were identified. </p>
+<p>The initial goal to retrofit 260,000 households was increased when the program was extended. LGIS set a revised goal to retrofit 430,000 households in three years, about one quarter of Queensland’s population, and predicted customer electricity savings of $824 million (Australian dollars) over the life of the products installed as part of the program. Coates noted that these electricity saving assumptions were based on the desktop research available at the time. “We also relied on data and methodologies provided by university researchers, other consultants, and our client [the Queensland government],” said Coates.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>LGIS built on the success of its Home WaterWise Service, a $23 million program that delivered water-efficient devices to more than 250,000 homes in Queensland. Using data and information from that program, LGIS began to shape the ClimateSmart Home Service program, which focused on reducing the electricity required for lighting and water heating. The objectives of ClimateSmart were to enable all customers to achieve a level of savings and to give customers a practical way to quantify their behaviour change.</p>
+<p>LGIS opted to use the home visit model, which had proved successful in the Home WaterWise program. “Through independent research, we discovered that the attention level of the customer for a home visit decreased significantly after one hour,” said Anthony Coates, Director of Operations, LGIS. “To maximize customer engagement we knew that we had to deliver the service within this timeframe.”</p>
+<p>Before designing the marketing messages for the program, in 2008 LGIS conducted testing with 100 participants randomly chosen from customers who had pre-registered for the program. “The testing supported the product choices we made, the time frame of the service [less than 1 hour] and the price point [$50],” said Coates.</p>
+<p><strong>Targeting the Audience </strong></p>
+<p>Identifying the target markets was key to LGIS’s customer acquisition strategy. “There was minimal research available, so we conducted comprehensive qualitative and quantitative analysis to ascertain attitudes in relation to energy reduction programs,” explained Coates. “We subsequently determined four key demographic factors to drive segmentation: age, electricity bill size, household size, and household income.”</p>
+<p>From these factors, two target markets were chosen: “Young Environmentalists” (about 24% of the population) and “Young Cost-Conscious” (about 22% of the population). The other two markets—both aimed at older people—were not specifically targeted.</p>
+<p>“Research confirmed that saving money and wanting to be seen to be doing the right thing for the environment were considered to be key motivators for these target markets,” said Coates.</p>
+<p>Additional research involved the use of Mosaic—a geo-demographic profiling tool that uses aggregate consumer data to provide a predictive analysis of the Australian population—and the Australian Bureau of Statistics.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Once a resident signed up for the program (online or by phone), a licensed electrician visited the home to install a wireless energy monitor, up to 15 compact fluorescent light bulbs (CFLs) and a low-flow showerhead. (Home Visits; Vivid, Personalized, Credible, Empowering Communications.) Prompts such as stickers, fridge magnets and product guides, were also left with the homeowner as physical reminders to reduce energy. (Prompts)</p>
+<p>“A comprehensive booking process allowed us to capture details of all of the major energy using devices in a customer’s home,” said Coates. “The material we gathered during the booking process then enabled us to personalize the content of the savings information homeowners would receive during the service, before we even entered the home. By doing this, we maximized engagement from the beginning and increased the likelihood of long-term changes.” (Building Motivation Over Time; Vivid, Personalized, Credible, Empowering Communication)</p>
+<p>During the visit, the electrician also conducted a home energy audit and provided additional energy- and water-saving recommendations.</p>
+<p>“The electricians used a tablet PC to maximize engagement with the customer from the moment they entered the premises,” said Coates. “The tablet showed a profile of the customer’s energy use, which we based on the questions that the customer answered during the booking process. The tablet also displayed the expected energy use post-intervention.”</p>
+<p>The information collected was then used to create a customized plan that was sent to the homeowner four to six weeks after the visit. (Building Motivation Over Time; Prompts; Vivid, Personalized, Credible, Empowering Communications)</p>
+<p>The report:</p>
+<ul>
+<li>Listed the top five recommended changes based on the household’s actual energy usage data.</li>
+<li>Graphically depicted the dollar savings possible if all recommended behaviours are implemented.</li>
+<li>Provided details about other local, state and federal government initiatives (e.g., rebate programs).</li>
+<li>Provided log-in details to My ClimateSmart Home, a customized web portal. The portal provided more energy- and water-saving tips, and also let customers see what they had achieved so far and how their household compared to others with similar demographics. (Feedback; Norm Appeals)</li>
+</ul>
+<p>Jane Bullock, Manager, Project Delivery with LGIS, said that the timeframe of sending the customized plan was deliberate. “It gave customers another opportunity to keep the desired behaviours ‘top-of-mind’ without overwhelming them with too much information,” said. “The information was tailored to specific households to maintain its relevance and was founded on the principle that people are generally time-poor, so the information was kept brief, but personal and relevant.”</p>
+<p>More than 58,000 customers accessed the web portal between July 2009 and January 2012. “As actions were marked completed by the customer, the data changed within the web portal and associated database, ensuring that the only actions shown were those relevant to the customer,” said Coates. “If a customer’s circumstances changed, for example they bought a second fridge they could change their data within the portal, which then subsequently generated any new applicable actions.”</p>
+<p>The web portal was not available to the general public and LGIS used that as an incentive for homeowners to take part in the program. “We didn’t use it as a key marketing point, but it was a benefit of the program and helped to keep customers engaged.” </p>
+<p>The service’s value was estimated at over $400 (based on market rates for an electrician’s services for one hour, plus the retail costs of products) but with a $120 million subsidy from the Queensland government, customers paid only $50. (Financial Incentives) In Brisbane, the local city council went further by rebating the $50 fee entirely, making the service free for its constituents.</p>
+<p>As noted earlier, LGIS used socio-demographic profiling to divide its potential customer base by income, preferred communication channel, messages, motivators and barriers, household size, age range, and estimated energy usage. That information was then used to segment the audience and tailor the most appropriate messages.</p>
+<p>In addition, LGIS tailored its messaging based on its understanding of each household’s existing energy use habits; each behaviour was put into one of three categories: 1) behaviours that were already being done, 2) behaviours that households were open to adopting and 3) behaviours that households were reluctant to do. Different imagery, customer quotes and motivators were used for each specific demographic that was targeted.</p>
+<p>“As we moved through the early adopters to what we call the ‘laggards,’ the cost per household increased,” said Jane Bullock, LGIS Manager, Project Delivery. “Direct telemarketing, a channel not traditionally used by the Queensland government, emerged as the channel that delivered bookings most cost-effectively.” Bullock said, “these telesales, or cold calls, allowed us to become extremely targeted, both from a geographic and demographic perspective. They also overcame the barriers of apathy and lethargy on the part of the ‘laggard’ consumers. By directly targeting certain households,” she said, “we reached those that were the most likely to take up the service.”</p>
+<p>Customers could also choose to receive regular emails with information specific to their household. As with the printed plan, the assessment data LGIS collected earlier allowed them to tailor email messages to specific customers. (Building Motivation Over Time)</p>
+<p>“If we became aware that a local council area was offering rebates on solar hot water systems for example, we advised the customers residing in that area who had electric hot water systems,” said Bullock. “We could also insert customized fields in the email that let customers see how much they were likely to save for a household of their size if they were to take-up the rebate. We don’t bombard customers with generic information – the communication is restricted to meaningful information and is only sent when there is a newsworthy story to tell.”</p>
+<p>As the program matured, households were asked to take part in a household energy challenge whereby customers were provided with a voluntary daily energy target to motivate them to reduce energy as much as possible. Customers were also provided with comparison data showing households with similar demographics, so that they could compare their progress against others. (Building Motivation Over Time; Challenges; Obtaining a Commitment; Norm Appeals)</p>
+<p>The target was set at 6 kWh per person per day and the electrician set the target on the wireless power monitor according to the number of people in the household. Those who took the challenge received motivational communication materials to encourage them to further reduce energy. “These materials empowered customers to feel that they could always do more and make a real difference,” says Bullock. “In post-service communications, households were reminded of their personal targets and were encouraged to use the monitors to see how they were tracking against the targets.” (Building Motivation Over Time; Feedback)</p>
+<p>Following a review of the potential power saving opportunities, the products offered were changed in July 2011. Up to four stand-by power eliminators were now provided, but the number of CFLs dropped from 15 to five. Bullock explained the rationale behind the changes.</p>
+<p>“Importation of incandescent bulbs was phased out by the Australian government in 2009, so most households already had a high installation of CFLs,” she said.</p>
+<p>Bullock noted that stand-by power accounts for about 10% of a household’s annual power bill. “Our research indicated that consumers didn’t like turning off appliances at the wall due to apathy, laziness or difficulty of access,” she said. “The stand-by power eliminators, which let homeowners turn off all appliances that use stand-by power with a remote control, overcame those barriers and, combined with having the electrician install them, take-up was very high.” (Overcoming Specific Barriers)</p>
+<p>Where suitable, the electrician also adjusted the customer’s hot water thermostat to 60ºC. “Electric hot water systems are among the highest energy using device in a typical home,” she said. “Our data showed that a number of households used electricity to heat their water and had their hot water system thermostat set too high.”</p>
+<p>“After the first few months, we had a customer base that we could talk to and from which we could gain real insights,” said Coates. “That data helped us drill down further into the attitudinal factors that were driving customers to book the service and we changed our messaging to fit.” The ClimateSmart program evolved over time to reflect new financial realities (at the time the program was first launched, the global economy had not yet taken a down turn), to introduce new products, to refresh marketing materials and messages, and to overcome specific barriers. “In some campaigns we focused on renters, those who were time-poor and lower income households,” said Coates. (Overcoming Specific Barriers)</p>
+<p>LGIS also maintained ongoing quality assurance and staff training methods to ensure all aspects of the service were communicated correctly.</p>
+<p><b>Partnerships</b></p>
+<p>LGIS formed partnerships with several organizations to help deliver the program. Aside from its client, the Queensland government, LGIS partnered with local city councils, energy retailers, university researchers, the Institute for Sustainable Futures, and other government agencies. LGIS also worked with Doug McKenzie Mohr, noted community-based social marketing expert, during the early stages of program development to ensure that they were adopting best practices.</p>
+<p>The Brisbane City Council rebate and voucher scheme helped incentivise residents to take up the service within their local community. A partnership with an energy retailer also helped identify households that were located in areas with peak electricity load issues. LGIS’s partnership with the Queensland Department of Communities also helped deliver the program to people living in government-subsidized housing.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>A $120 million subsidy from the Queensland government enabled participants to pay only $50 for the home visit, which was valued at over $400. In Brisbane, this $50 fee was rebated to customers, making the service free.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>LGIS tracked a number of different metrics to monitor and evaluate the success of the program, including:</p>
+<ul>
+<li>The number of home visits booked</li>
+<li>The number of customers who visited the web portal, how much time each customer spent online, and the number of web pages they viewed during each visit</li>
+<li>Data on customers’ electricity savings, and</li>
+<li>Customer satisfaction surveys.</li>
+</ul>
+<p>Coates said that LGIS continued to track people’s energy use behaviour, even up to two years after leaving the program. “We’ve continued to communicate with them through email and we also reissued the printed plan to over 300,000 customers in early 2012 to re-engage them and get them to go to the new web portal,” he said. “As a result, in just one month almost 6,000 people visited the web portal.”</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<ul>
+<li>The customized plan is sent to householders within six weeks of the date of their home visits.</li>
+<li>In post-service communications, households are reminded of their personal targets and are encouraged to use the wireless poswer monitors to see how they are tracking against the targets.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>By August 2011, 300,000 homes had been retrofitted. LGIS estimated that 430,000 households would have taken up the service (about 25% of all Queensland homes) by the end of 2012.</p>
+<p>Households that had received the service had reduced electricity use by an estimated 3.96 kWh/day or 1,445 kWh/year, with total savings estimated at $600 million (Australian dollars). Based on the expected 430,000 households to be retrofitted by 2012, the overall program was expected to reduce electricity usage by more than 795 million kWh/year, and GHG emissions by more than 4 million tonnes over the life of the products.</p>
+<p>Customer surveys revealed a consistent customer service satisfaction rating of higher than 95%.</p>
+<p>Web portal usage statistics recorded more than 58,000 visits over a 3 year period; approximately 20% of those were repeat visitors. “Historically, visitors spent an average of five minutes on the site and visited about five pages per visit,” Coates reported.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Anthony Coates <br/>
+Director of Operations<br/>
+Local Government Infrastructure Services<br/>
+Queensland, Australia<br/>
+acoates@lgis.com.au<br/>
+<a href="http://www.lgis.com.au/" target="_blank">http://www.lgis.com.au/</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><b>Lessons Learned</b></p>
+<p><em>Central coordination is critical</em></p>
+<p>Coates said that, although LGIS used a number of outside services to deliver the program (logistics and product suppliers, researchers, and electricians), having a central coordinating body was vital. “We had a couple of hundred people involved in the program across the state, but in terms of the actual program coordination, there were only 16 LGIS staff members,” he said. Coordinating all of those suppliers, plus training the staff, he noted was challenging and critical to the success of the program. </p>
+<p>Coates reported that LGIS appointed an external logistics provider, and that all participating electricians had to meet Australian regulatory requirements. LGIS also developed a comprehensive training program in-house, which was delivered to all of its client facing suppliers, negating the need to go through a separate registered training organization. “We did in-house training, which was primarily based on customer service.” </p>
+<p><em>Ongoing quality assurance and training</em></p>
+<p>From the initial pilot testing of the products, LGIS learned that ongoing quality assurance and staff training methods would be critical to the success of the program. “The focus on having a positive customer experience was critical to creating word-of-mouth promotion and paving the way to program acceptance. That’s probably obvious at a customer level but it was also important in terms of how we delivered the service. We had a lot of partnerships so it was important that there was credibility in our capacity to deliver the program.”</p>
+<p><em>Strong, tailored messaging</em></p>
+<p>“In order to be heard above the market chatter we needed to develop strong retail messages that highlighted the value of the offer,” he said. “We tapped into the curiousity around the energy monitor and conveyed a strong call to action. We also designed campaigns to overcome specific barriers, for example, those people who were time-poor or who were low-income.” </p>
+<p><em>Tailored messaging was a key element.</em></p>
+<p>“Our research showed that behaviour changes would be more likely to occur if post-service messaging was told to the individual customer,” said Coates. “Otherwise, there was a strong likelihood that customers would tune out the message and this would make it harder to re-engage them later.”</p>
+<p><em>Refresh the campaign regularly</em></p>
+<p>Coates said that a refreshed campaign was required about every six months. “This was due to the high rotation of our marketing in order to reach program targets,” he said. “The adverts wore out quickly so we needed to keep refreshing our messaging to stay on top of barriers and to cut through the clutter of other retailers’ savings messages.” </p>
+<p>Coates strongly recommended that for others considering a similar program, ongoing research is necessary. “Where the budget allows, you should do that research on a continual basis to ascertain what your market looks like at a particular point in time,” he said. “You can then adapt your messaging accordingly.”</p>
+<p><em>Customer engagement</em></p>
+<p>LGIS continually engaged its customers and provided new information and/or products to keep their interest. </p>
+<p>The web portal proved to be one of the most successful ways to keep customers engaged. As noted previously, LGIS re-issued the printed plan to 300,000 households, which resulted in a greater use of the online resources. “The web portal also allowed people to be as engaged with the program as they wanted and to get the level of data they wanted,” said Coates. “If a customer just wanted us to come to their house and install the devices, they could. But if they wanted to go to the next level of engagement, which we wanted, there was the printed plan and web portal.” </p>
+<p><em>Word-of-mouth</em></p>
+<p>Coates said that word-of-mouth testimonials by customers was another critical factor. “There are 1.6 million households in Queensland and people talk,” he said. “In small communities—with maybe 100 to 1,000 residents—if you have a bad experience, word gets around town quickly. But the same thing happens even in large population centres, like Brisbane.” </p>
+<p>Customer satisfaction, which consistently drew ratings of above 96% on post-visit surveys, helped drive word-of-mouth promotion. “When we started talking to someone new about the service, people usually already knew what we were talking about.” </p>
+<p><em>Credibility</em></p>
+<p>Coates says that one of the challenges they faced was overcoming consumer indifference. “When we were establishing the brand for the program we needed to make sure the people were aware of what the program was and who was delivering it,” he said. “ClimateSmart was clearly branded as a government program, so people knew it was a credible scheme.” </p>
+<p>In addition, using licensed electricians to conduct the energy audits, install the energy-saving devices, and provide additional electricity saving tips during the home visit stage, also helped build credibility for the program.</p>
+<p> </p>
+<p>This case study was written by Jay Kassirer in 2012.</p>
+<p><strong>Landmark Designation</strong></p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Devin Causely, Federation of Canadian Municipalities</li>
+<li>Melissa Klein, US EPA’s ENERGY STAR® Program</li>
+<li>Arien Kortland, BC Hydro</li>
+<li>Doug Mckenzie-Mohr, McKenzie-Mohr Associates</li>
+<li>Edward Vine, Lawrence Berkeley National Laboratory</li>
+<li>Dan York, ACEEE</li>
+</ul><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

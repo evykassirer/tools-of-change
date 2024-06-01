@@ -1,0 +1,446 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Health Canada</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Wal-Mart</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Per capita (age 15+) cigarette consumption fell by 7% in 2003. By 2004, prevalence had reached an all time low of 20%. The percentage of Canadians aged 40-54 who smoked had declined from 24% in 2001 to 21% in 2004.*</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Bob and Martin Quit Smoking</h1>
+<p>This effective smoking cessation campaign used eight television ads based on Prochaska's theory of behavioural change, to move smokers along from the pre-contemplation to the maintenance stage of smoking cessation. The ads featured an average male smoker moving through the stages of smoking cessation.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing.</em></p>
+<p>Approaching the new millennium, smoking was the leading cause of preventable death and illness in Canada, and the most pressing public health concern in the country. Many smokers were young adults, blue-collar workers or Canadians living on a low income. A significant number were First Nations or Inuit people.</p>
+<p>In April 2001, the Federal Tobacco Control Strategy (FTCS) launched a five-year strategy to reduce disease and death caused by the use of tobacco through the following approaches:</p>
+<ul>
+<li>Protection: reducing the number of Canadians who are involuntarily exposed to second-hand smoke in enclosed areas;</li>
+<li>cessation: supporting and encouraging smokers to quit;</li>
+<li>Prevention: preventing young people from taking up smoking; and</li>
+<li>Harm Reduction: exploring ways to mandate changes to tobacco products to reduce hazards to health.</li>
+</ul>
+<p>A national cessation campaign for mainstream Canadians was launched in January, 2003.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>Health Canada had established five overarching objectives:</p>
+<ul>
+<li>Reduce the number of people who smoke from 25% to 20%;</li>
+<li>Decrease the number of cigarettes sold in Canada by 30%;</li>
+<li>Increase retailer compliance with youth access laws from 69% to 80%;</li>
+<li>Reduce the number of people involuntarily exposed to environmental second-hand smoke (SHS); and</li>
+<li>Explore ways to mandate harm reduction in products.</li>
+</ul>
+<p>The program's primary three year objectives for the target audience (adults 40-54) were:</p>
+<ol>
+<li>Increase the number of smokers accessing: <br/>
+    - Health Canada's Web-based cessation resources; <br/>
+    - 1 800 O-Canada to obtain copies of "On the Road to Quitting"; <br/>
+    - Provincial smokers' helplines; and <br/>
+    - Health Canada's <a href="http://www.gosmokefree.ca/">www.gosmokefree.ca</a> Web site;</li>
+<li>Increase the number of ex-smokers aged 40-54 by 2%; and</li>
+<li>Increase the number of smokers aged 40-54 actively considering quitting, who attempted to quit at least once.</li>
+</ol>
+<p>The secondary three-year objectives were:</p>
+<ol>
+<li>Increase the number of physicians, public health nurses, dentists and pharmacists that provide cessation assistance to their patients;</li>
+<li>Improve the mindset of 40-54 year olds regarding their ability to quit;</li>
+<li>Increase awareness of the health benefits of quitting smoking; and</li>
+<li>Promote healthy smoke-free lifestyles.</li>
+</ol><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>An Ipsos-Reid survey conducted in December 2003, indicated that:</p>
+<ul>
+<li>61 per cent of smokers would try to kick the habit in 2004;</li>
+<li>43 per cent had tried to quit in 2003; of these, three-quarters (76 per cent) were unsuccessful;</li>
+<li>More females (71 per cent) planned to quit than males (53 per cent) in 2004;</li>
+<li>50 per cent planned on quitting cold turkey;</li>
+<li>Only 2.5 to 5 percent of smokers who quit on their own would likely remain abstinent for one year;</li>
+<li>4 out of 10 smokers intending to quit that year planned to use a smoking cessation aid;</li>
+<li>38 per cent of smokers who were planning to quit that year had been encouraged to stop as a result of a recent tax hike on cigarettes;</li>
+<li>30 per cent of respondents between the ages of 35 and 54 smoked; and</li>
+<li>27 per cent of men and 24 per cent of women surveyed smoked.</li>
+</ul>
+<p>Environics concluded that smokers aged 40 to 54 were the most likely to consider quitting smoking "given their past history of trying to quit, the resonance of this goal with their own needs to stay either healthy or avoid illness, and concerns about the impact of their smoking on loved ones, and others."</p>
+<p>An earlier survey (the 2001 Canadian Tobacco Use Monitoring Survey - CTUMS) had found that:</p>
+<ul>
+<li>50% of smokers wanted to quit within the next 30 days;</li>
+<li>1.7 million Canadians aged 40-54 smoked (24%);</li>
+<li>The highest percentage of smokers, 25.7%, had less than secondary education;</li>
+<li>Those most likely to quit successfully were educated and aged 40-55;</li>
+<li>As a smoker aged, less attempts to quit smoking were made; and</li>
+<li>Smokers aged 40-54 made the fewest attempts to quit smoking, but were the most successful at quitting.</li>
+</ul>
+<p>The 2003 CTUMS had similar findings.</p>
+<p>Qualitative Research of Smokers Aged 40-54 had shown that:</p>
+<ul>
+<li>Many were beginning to feel the effects of their smoking on their health and thought they could benefit from quitting;</li>
+<li>Those interested in quitting wanted positive reinforcement, information on the benefits of quitting, and tactics and assistance in quitting;</li>
+<li>This group did not respond well to campaigns that utilized tactics to shock or frighten them;</li>
+<li>Encouraging and empowering messages would likely be effective at motivating them to take action;</li>
+<li>They wanted to be addressed by a credible source, with respect - they didn't want to be lectured;</li>
+<li>They wanted credible messages - they questioned the validity of smoking related statistics coming from the government;</li>
+<li>They had a high awareness of the health risks associated with smoking, and a high percentage of this group wanted to quit smoking;</li>
+<li>They generally thought that non-smokers didn't understand the strength of nicotine addictions;</li>
+<li>They had a lack of confidence in their ability to quit; most had attempted to quit several times, unsuccessfully;</li>
+<li>There was great fear in not ever being able to quit "for good";</li>
+<li>They did not want to feel inferior because of their addiction; and</li>
+<li>They were heavy consumers of television.</li>
+</ul>
+<p>Health Canada also conducted a best practices review, and found a successful cessation campaign developed by the Arizona Department of Health Services, called the "Chuck" campaign. It had been successful at encouraging smokers to consider quitting and call local quit line services.</p>
+<p>The Chuck campaign featured a series of ads based on the Prochaska model of staged change. Viewers followed an average male smoker from the pre-contemplation stage, through the contemplation, preparation, and action stages, to the maintenance stage. Health Canada tested this campaign, which used a new positive approach, along with several others that used scare tactics with gruesome visuals.</p>
+<p>It was clear the Arizona concept tested well with the target audience. It received positive responses during focus group testing across Canada - equally by men and women, and in rural and urban regions. "Chuck" left focus participants feeling empowered regarding their ability to quit (which as mentioned earlier, was a problem with this group).</p>
+<p>This was largely due to how well they related to the character - they saw themselves, a brother or an uncle in Chuck. He was believable to the smokers and therefore, they listened to him. Secondly, they could also relate to the experiences he faced as he quit smoking, and watching him go through the stages provided them with encouragement. He could sympathize with the difficulties of quitting. This approach also helped them better understand the quitting process and the importance of getting help to assist them in changing their behaviour.</p>
+<p>Thirdly, the concept was positive and motivational in nature, therefore, was empathetic and focused more on helping smokers achieve success rather than scaring or further making them feel like pariahs. It opened their eyes to the idea of focusing on one stage at a time, therefore, making it seem more do-able. This in turn helped them with their confidence in taking the first step. They also appreciated the humour in the "Chuck" ads.</p>
+<p>Health Canada continued its research as it developed a Canadianized version of the Chuck campaign. They consulted with related NGOs and the provinces in order to get input on the approach, and to understand and support their priorities. This helped gain support for the resulting campaign.</p>
+<p>Health Canada held a day-long consultation session with key stakeholders where they helped identify:</p>
+<ul>
+<li>Key periods for quit attempts (to know when to ramp up campaign activity); and</li>
+<li>Themes for the television ads, and how to make them resonate with the target group.</li>
+</ul>
+<p><strong>Targeting the Audience</strong></p>
+<p><em>Primary Audience:</em></p>
+<ul>
+<li>Adults aged 40-54 who were thinking about quitting smoking, urban and rural across Canada, slightly skewed towards those of low socio-economic status (SES)</li>
+</ul>
+<p><em>Secondary Audience:</em></p>
+<ul>
+<li>Mainstream recent quitters aged 40-54 who wanted to remain smoke-free, slightly skewed toward those of low SES</li>
+<li>First Nations and Inuit, off reserve (40-54)</li>
+<li>Adult smokers aged 35-39, reached through the campaign targeted to smokers aged 40-54</li>
+<li>Health professionals, pharmacists /pharmacies, stakeholders, provinces and territories</li>
+<li>Media</li>
+</ul><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The cessation campaign used an engaging, everyday Canadian character, "Bob" (Martin in French). The campaign followed him through the stages involved in the quitting process (<a href="/en/tools-of-change/communication/">Vivid, Credible Communication</a>). The central messages were that, quitting smoking may be difficult but it is possible, and it is worth it. The campaign also focused on the importance of developing a quit plan.</p>
+<p>Eight TV ads were produced, each covering a stage of change (2 contemplation, 2 preparation, 2 action and 2 maintenance ads, one of which focused on the issue of relapse which occurs in the maintenance phase). Ads were aired during key periods for quit attempts as identified through consultations with the NGOs. They were aired sequentially over a 14-month period (<a href="/en/tools-of-change/mass-media/">Mass Media</a>; <a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p>The ads had a call-to-action asking the viewer to call 1 800 O-Canada (the federal government's central 1 800 number for all of its services and resources) or to visit Health Canada's website to get help on how to quit smoking.</p>
+<p>Health Canada worked with the provinces, not only to consult on tactics that would increase reach most effectively in their regions, but also to offer Canadians an additional cessation resource - provincial quitlines. In Atlantic Canada, Manitoba and Saskatchewan, the call to action on the TV ads asked viewers to call the helpline number in their province (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>, <a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p><strong>Key Messages:</strong> <br/>
+Based on the research, Health Canada decided on the following key messages:</p>
+<ul>
+<li>The health benefits of quitting smoking and how it can contribute to the quality of life of the ex-smoker, loved ones, family and friends. Quitting smoking is the best thing to do for one's health.</li>
+<li>It is possible to quit with a plan (promotion of cessation resources) - it may take more than one attempt, but it is possible. Emphasis was on the smoker's ability to quit and the fact they were not alone in facing this addiction ("more people are quitting every day").</li>
+<li>Help to quit smoking is available, and getting help often makes quitting easier and increases the success of the quitting attempt.</li>
+</ul>
+<p>For maximum visibility, the campaign was launched in January 2003, during national non-smoking week. <br/>
+A "Bob" and "Martin" micro-website, residing off Health Canada's <a href="http://www.gosmokefree.ca/">www.gosmokefree.ca</a>, was developed to complement the campaign and provide targeted information to the target audience. It included Bob's journal (Martin in French) (a section that included entries describing what he went through at each stage of quitting), and quit tips (a section where Bob (and Martin in French) listed his most effective quit tips and enabled visitors to share their most helpful tips) (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>The website also enabled users to sign up for a series of e-Quit Messages - daily e-mail messages for one month to support them through the quitting process (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>; <a href="/en/tools-of-change/prompts/">Prompts</a>; See sample in the Notes section, below). In addition, the website enabled users to recognize their friends' successes by registering them to receive e-mailed Certificates of Accomplishment (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>).</p>
+<p>Other communication channels included:</p>
+<ul>
+<li>TV network partnerships;</li>
+<li>A Reader's Digest partnership and print ad, which included a mailing to 40,000 physicians. The partnership also included direct mailing of Health Canada's "On the Road to Quitting" to people in Reader's Digest's database - 64,000 smokers considering quitting. Reader's Digest was selected as it reached a high number of the target audience, and its publications were found in most doctors' offices - where the target audience was particularly open to health-related information. Finally, a program banner ad was posted on Reader's Digest Web site (<a href="/en/tools-of-change/mass-media/">Mass Media</a>);</li>
+<li>Regional activities to complement the national campaign and promote the help-lines provincially, including print advertising in weekly community newspapers, radio advertising and regional cut-ins which replaced the traditional 1 800- O-Canada number with provincial helpline numbers;</li>
+<li>Google keyword buys;</li>
+<li>Localized print advertising; and In 2005, out of home 20' x 10' Billboards were used in major cities across Canada.</li>
+</ul>
+<p>In addition, based on research indicating that the target market perceived pharmacists as a top source of credible information on cessation, Health Canada collaborated with Wal-Mart Canada. This initiative was launched during National Non-Smoking Week (January 16-22, 2005.)At all 242 Wal-Mart stores across Canada, Wal-Mart did the following: (<a href="/en/tools-of-change/prompts/">Prompts</a>)</p>
+<ul>
+<li>Displayed posters with copies of the cessation pamphlet, in strategic locations;</li>
+<li>Provided point of purchase displays with cessation pamphlets, and shelf-signage directing smokers to the pharmacist where they could receive Health Canada's 'On the Road to Quitting' booklet; and</li>
+<li>Ran in-store radio ads - 30 second messages to all in-store patrons encouraging them to visit the pharmacy for more information on cessation.</li>
+</ul>
+<p>This agreement provided Health Canada with a great high-reach, low-cost opportunity to support the Tobacco Control Program cessation objectives, strengthen its brand and credibility, reinforce campaign messages, and promote and distribute its cessation resources.</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Tobacco use was monitored through the Canadian Tobacco Use Monitoring Survey (CTUMS). Health Canada also evaluated program activities, outputs and results following each "burst" of promotion - through tracking of calls to 1 800 O-Canada, calls to the help-lines, visits to the Website and campaign microsite, booklet orders and ad recall testing following the airing of each ad.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Per capita (age 15+) cigarette consumption fell by 7% in 2003. By 2004, prevalence had reached an all time low of 20%. The percentage of Canadians aged 40-54 who smoked had declined from 24% in 2001 to 21% in 2004. *</p>
+<p>The Bob/Martin campaign proved to be one of Health Canada's most successful social marketing campaigns. From the launch in January 2003 to March 2005, the campaign drove over 30,000 calls to the 1 800 O-Canada toll free line. There was a strong correlation between having the TV ads on air and calls to the toll free line and web activity. Since the beginning of the campaign, over 180,000 copies of "On the Road to Quitting" were distributed. There were close to 240,000 visits to the Bob and Martin microsite, where almost 90,000 users created profiles to receive support through an electronic version of "On the Road to Quitting". In addition, there were over 33,000 registrations for e-quit (daily quitting messages).</p>
+<p>When the campaign aired in 2003/4, ad recall for the Bob/Martin ads was extremely high. Aided re-call for the "Plan" ad was highest at 60%. The "Blip" ad was considered by the greatest proportion of those surveyed to be effective (74%) and believable (86%). Thoughts about quitting increased throughout the campaign by almost 10%. The later ads benefited from the audience's exposure to the characters of the earlier ads; recognition of Bob/Martin did not have to be built as it in the earlier ads.</p>
+<p>Five of the ads were re-aired from January to March 2005. While recall for each individual ads was lower than for the previous year, seven out of ten adult smokers still saw one or more of these campaign ads.</p>
+<p>Twenty three percent of those that saw the ads said that they did something as a result of seeing the ads and a further 20% said that they planned on doing something because of the ads. Sixty eight percent of those that saw one or more of the Bob/Martin campaign ads said they were now seriously thinking of quitting smoking, versus 55% who did not see any of the ads.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Janice Keenan <br/>
+Acting Director, Marketing Communications and Corporate Communications Services <br/>
+Health Canada <br/>
+Tunney's Pasture <br/>
+Ottawa, Ontario <br/>
+Canada K1A 0K9 <br/>
+Tel: (613) 954-8839 <br/>
+E-mail: <a href="mailto:janice_keenan@hc-sc.gc.ca">janice_keenan@hc-sc.gc.ca</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study was written by Jay Kassirer in 2006, based on information provided by Health Canada.</p>
+<p><strong>Lessons Learned</strong></p>
+<ul>
+<li>Use of a wide range of appropriate media and communications channels helped repeat and sustain exposure to messages;</li>
+<li>It is important to test fulfilment pieces/cessation resources that will be available as part of a call-to-action.</li>
+<li>The stages model proved an ideal framework because it allowed HC to strategically time key ads at various times of the year. For example, it aired the action ads over the New Year period and the maintenance ads in February - linking to key periods for quit attempts and maintenance.</li>
+<li>Working together with the provinces and NGOs helped increase public support for non-smoking policies, product, behaviour and industry denormalization, and government action in tobacco control. </li>
+</ul>
+<p><strong>Notes</strong></p>
+<p>* It is important to note that these changes cannot be solely attributed solely to the Cessation campaign.</p>
+<p><em>Support e-mail </em></p>
+<p>The following is an example of a support e-mail from e-Quit: "What makes you reach for a cigarette? In addition to physical cravings, many people smoke in response to certain emotions.... We all feel these things, but we can choose how we respond. What else could you do with your emotions instead of smoking? What else could you do to feel pleasure when you quit? Just think about it for now and we'll talk more about this in future messages."</p>
+<p><em>Television ads</em></p>
+<p>The following text was used in the TV ads.</p>
+<ul>
+<li><strong>Bob isn’t interested<br/>
+<br/>
+</strong>In this first ad, in order to build credibility and rapport with those at the pre-contemplation stage, the actor blows smoke into the camera and declares defiantly that he’s a smoker, and he’s not ready to quit.<br/>
+</li>
+<li><strong>Bob thinks about quitting<br/>
+<br/>
+</strong>"I know. It's tough to be a smoker these days...<br/>
+<br/>
+    I'm outside and it's minus 20. No problem -I like winter.<br/>
+<br/>
+    My breath stinks? I've got mouthwash.<br/>
+<br/>
+    Food's got no taste? No problem - I use salt.<br/>
+<br/>
+    I'm getting sick of this. That's the problem."<br/>
+</li>
+<li><strong>Bob gets ready</strong><br/>
+<br/>
+    "Oh ya, I tried to quit. Lasted two hours. Then I got a phone call. I always have a cigarette when I'm talking on the phone... and when I have a coffee... go for a drive...<br/>
+<br/>
+    In fact, the only time I'm not lighting up is when I'm asleep or on the toilet. Can't spend my whole day there..<br/>
+<br/>
+    Can I?"<br/>
+</li>
+<li><strong>Bob is getting tired of this</strong><br/>
+<br/>
+    "This is it... my last cigarette. Cause I'm gonna quit smoking. I mean I can't even laugh anymore without coughing.<br/>
+<br/>
+    I hear a really funny joke and I'm doubled over in two... my sides are aching...<br/>
+<br/>
+    But not in a good way. This time the joke's on you... I quit."<br/>
+</li>
+<li><strong>Bob makes a plan</strong><br/>
+<br/>
+    "I tried to quit cold turkey but... I found out it's better if you have a plan.<br/>
+<br/>
+    Mine?<br/>
+<br/>
+    Any time I have a craving, I drink water, breathe deep, go for a walk...<br/>
+<br/>
+    Anything... but give in to the craving. It only lasts for a couple of minutes and then it's gone.<br/>
+<br/>
+    Just one puff, one little puff. You know you really want it. A puff... puff... puff...<br/>
+<br/>
+    SFX: GULP, GULP, GULP."<br/>
+</li>
+<li><strong>Bob makes the attempt</strong><br/>
+<br/>
+    "You're quitting too? Let me tell ya, the 1st week isn't bad, but the 2nd and 3rd week... man!<br/>
+<br/>
+    Lucky, I have a plan to quit and a wife who reminds me I''m doing the right thing.<br/>
+<br/>
+    She tells me the change is amazing...<br/>
+<br/>
+    I feel like a new man."<br/>
+</li>
+<li><strong>Bob Makes a Life Plan</strong><br/>
+<br/>
+    "I just quit smoking and there are three things that keep me going.<br/>
+<br/>
+    My plan to quit...<br/>
+<br/>
+    And my two kids.<br/>
+<br/>
+    I want to be around to see them graduate...get married, have kids of their own.<br/>
+<br/>
+    So, it started as a quit smoking plan, and now...it's a life plan."<br/>
+</li>
+<li><strong>Bob gets the hang of it</strong><br/>
+<br/>
+    "I quit smoking here and it was supposed to last the rest of my life.<br/>
+<br/>
+    "Turned out I gave in to a craving blip and blip.<br/>
+<br/>
+    "Blip. Blip. Blip."<br/>
+<br/>
+    "Yup I blew it. But I quit again. This time for a day. No blip, and another and another.<br/>
+<br/>
+    "Now I'm getting the hang of it... it's blipping amazing.<br/>
+<br/>
+    "You too can quit for good... especially with a plan.<br/>
+</li>
+<li><strong>Bob, the ex-smoker</strong><br/>
+<br/>
+    "Look at me... Bob the ex-smoker...<br/>
+<br/>
+    "I'm playing more basketball with my kids.<br/>
+<br/>
+    "I feel great, my cough is gone, I hardly ever run out of breath...<br/>
+<br/>
+    "I think I finally won the battle.<br/>
+<br/>
+    "Now if I can just figure out how to win this game.<br/>
+<br/>
+    Ahhhh...</li>
+</ul><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

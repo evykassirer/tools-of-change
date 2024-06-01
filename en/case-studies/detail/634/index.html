@@ -1,0 +1,275 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/school-programs-that-involve-the-family/">School Programs that Involve the Family</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Bear Creek Elementary School, Boulder, Colorado, USA</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li><a href="http://www.bvsd.org/" target="_blank">Boulder Valley School District</a></li>
+<li>City of Boulder/<a href="http://www.bouldercolorado.gov/" target="_blank">GO Boulder</a></li>
+<li>Boulder Police Department</li>
+<li>Local businesses</li>
+<li>Community Cycles, a non-profit advocacy group</li>
+<li>YMCA’s Y-Riders</li>
+<li>Eco-Cycle, local recycling organization</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Over two years, the proportion of students walking or bicycling to school consistently throughout the school year increased from 25% to 70%.</p>
+<p> </p>
+<p><strong>Documents</strong></p>
+<p>Case handout (<a href="/userfiles/Bear Creek Case Study October 2011.pdf">PDF</a>)</p>
+<p><a href="/userfiles/Bear Creek transcript.pdf">Webinar Transcript</a></p>
+<p>Webinar Handouts:    <a href="/userfiles/CrugerK_TOC_TC_EN_2010_02_23_2pp.pdf">2 per page </a>   |    <a href="/userfiles/CrugerK_TOC_TC_EN_2010_02_23_6pp.pdf">6 per page</a></p>
+<p><a href="http://cullbridge.na5.acrobat.com/p48744537/">Video</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Bear Creek Safe Routes to School Program</h1>
+<p>Here's a good illustration of how much and how quickly transportation habits can change through elementary school programs. Bear Creek is the recipient of the James L. Oberstar Safe Routes to School Award for 2008 awarded by the (U.S.) National Centre for Safe Routes to School, and was designated a Landmark case study by Tools of Change in 2009.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program. </em></p>
+<p>Bear Creek pupils could attend the school even if they did not live within the immediate catchment area. These children, however, did not have access to school bus service. In 2011, at the time of writing, of the 360 students at the school, approximately two-thirds lived within two miles (3.2 km) of the school. In 2007, less than half (41%) of students reported walking or cycling to school. In 2006, the year the Walking School Bus began, only about 25% of children were actively travelling to school.</p>
+<p>In 2006, two parents at Bear Creek heard about the Walking School Bus and decided it would be a good idea to implement the program at the school Working with the Safe Routes to School administrator for the Boulder Valley School District, Bear Creek initiated a number of active transportation programs and worked with local officials to improve the cycling and walking infrastructure around the school.</p>
+<p>As part of the Colorado Safe Routes to School program, Bear Creek received funding from the state to implement active transportation initiatives.</p><!-- Background already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>General Implementation </strong></p>
+<p>Parents and the SRTS Administrator collaborated from the start to finish of the grant project.</p>
+<p>Parents were first informed about the program through material sent home with their children at the end of the school year in 2006. The coordinator said “as parents planned their year, they would determine how their children would get to school, walking or cycling or carpooling, and figure out how to fit it into their daily schedule. It became a habit.”<em> (Vivid, Credible Communication; Building Motivation Over Time)</em></p>
+<p>Principal Kent Cruger acted as the primary role model for the students when the program initially began. He issued himself a challenge to get to school without a car and, each month, tried a different form of transportation (carpools, a unicycle, scooter and a skateboard among them). <em>(Vivid, Credible Communication; Building Motivation Over Time) </em> Bear Creek’s general guideline was that students in kindergarten through second grade went to school with their parents or the group, while students in grades three to five could walk with the bus, by themselves or with friends.</p>
+<p><strong>Walking School Bus </strong></p>
+<p>Students were keen to be involved and needed little persuasion to get them to walk or cycle to school. Some parents, however, did express concerns: time and safety being among the top ones. Safety concerns were not limited to traffic issues. Mountain lions in the vicinity are most active at dusk when children were walking home from school. The Walking School Bus, along with certain infrastructure improvements, helped alleviate many of those concerns. <em>(Overcoming Specific Barriers)</em></p>
+<p>Parent volunteers coordinated the Walking School Bus with at least one adult at the front and one at the back of the “bus.” This helped alleviate parental concerns about traffic and other safety issues. Parents wore bright yellow shirts or vests, carried yellow balloons and wore bright yellow cap, announcing each stop as they walked the route. <em>(Vivid Communication; Overcoming Specific Barriers; School Programs that Involve the Family) </em></p>
+<p>Cruger notes that Bear Creek <em>never</em> told parents that the school or the parent volunteers with the “bus” were responsible for the kids. “We told them that those parents are not responsible for your child, but they will be walking that route, which means more parents, more children and greater safety. It was up to the parents to decide if they felt comfortable having their child walk in a large group.”</p>
+<p>As the program matured, parents became more comfortable.  “The route was always the same, it left at the same time and a lot of times, parents could just look out the window, send their child out to greet the group, and see the bus go by.”</p>
+<p>For families that lived very far away, Bear Creek implemented the <em>Ride and Stride</em> program, which encouraged parents to drive part of the way to school then have their children walk the rest. <em>(Overcoming Specific Barriers) </em>Some parents would drive to another parent’s home and their children would pick up the “bus” from there. This not only helped to get more students participating, but helped build community.</p>
+<p><strong>Partnerships </strong></p>
+<p>The Boulder Police were also involved in setting up bicycle safety courses and addressing parental concerns about speeding in the vicinity of the school. (<em>Overcoming Specific Barriers</em>)</p>
+<p>Local businesses were approached to take part. King Soopers grocery store, for example, was located on the Walking School Bus route. The store’s management allowed parents to park in the lot and then walk with their children the rest of the way to school. As a result, one of the walking routes was named for the store (the Sooper Shuttle).</p>
+<p><strong>Reminders, Visibility and Building Over Time  </strong></p>
+<p>Students brought home paper forms to be filled out each day with the mode(s) of transportation used to get to school and back. In addition to documenting changes in travel behaviour, these sheets served as in-home reminders (<em>Prompts</em>.) Each classroom also had a poster that showed how each student got to school. In addition, students participating in the Tour de French (described below) wore colored armbands showing their involvement. (<em>Norm Appeals</em>)</p>
+<p>In large measure, the program’s success was dictated by the sheer number of initiatives that maintained high program visibility, kept students’ interest throughout the year, and provided additional options to consider. (<em>Building Motivation Over Time; Norm Appeals</em>)</p>
+<ul>
+<li>Modelled after the Stanley Cup, the Cruger Cup, named for Bear Creek’s principal, asked each student to walk, bike or carpool every day of the school year. Each student who participated got to take the cup home for a visit, much like the NHL champions.</li>
+<li>The Tour de French was named for teacher, Jay French, who regularly cycled to school (a 34-mile round trip). The trips of each student who participated were counted and awards were given to the class with the most number of cycling trips in a month. Students wore arm bands, modelled after the Tour de France leader jerseys, to show their participation. (<em>Norm Appeals</em>)</li>
+<li>Awards were also given for Rookie Riders (students who had never cycled before), for the Least Deterred (one student scootered to school in 8 inches of snow), Most Inspired, Bear Creek Role Model, and Most Consistent. In some cases, teachers won those awards.</li>
+<li>The “March Madness” event involved students challenging each other to come to school in unique ways (unicycling, skateboarding, walking backwards, leapfrogging to school, even brushing their teeth while walking).</li>
+<li>The Zero Cars in the Parking Lot Day resulted in 99% of parents, teachers and staff not using a car to get to school.</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Students brought home paper forms to be filled out with their mode(s) of transportation each day. The form was then turned in to the school each month. In addition, each classroom had a poster that showed how each student got to school. These methods were an inexpensive way to measure how many students were taking part, took very little time to fill out, and made an enormous difference to the students as they were recognized each day they walked, cycled or carpooled.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<ul>
+<li>70% of students regularly walked, cycled or carpooled to school in 2009, compared to only 25% before the program began.</li>
+<li>In the first full year of the program (2006-2007), the City of Boulder conducted a study and found that there was a 36% reduction in cars and traffic congestion around the school.</li>
+<li>In 2009, 100 of 360 students participated in the Cruger Cup.</li>
+<li>Bear Creek won an award for most student participation in the Bolder Boulder campaign (a 10K running/walking event).</li>
+<li>Bear Creek won the 2008 James L. Oberstar Award that recognizes outstanding achievement by a school or a community in establishing a Safe Routes to School program.</li>
+<li>Bear Creek was able to make the case before their district school board and municipality to improve nearby infrastructure. Changes were made to crosswalks near the school, signage was improved, improvements were made to a bridge that was part of the walking path to school, and new sidewalks were added. </li>
+<li>Cruger also said that the enthusiasm of the students rubbed off on the teachers and staff. “Seeing five- and six-year olds walking to school, up hills, and having no problems, made them realize that if the kids could do it, so can we. The kids made it fun for us.” He also notes that, in the U.S., teachers are “notorious for taking care of everybody, sometimes at the expense of their own health,” so as more teachers and staff began to walk and cycle, their own health improved.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Jim Kornish, parent volunteer<br/>
+<a href="mailto:jkornish2@msn.com?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">jkornish2@msn.com<br/>
+</a></p>
+<p>Kent Cruger Principal, Bear Creek Elementary School<br/>
+<a href="mailto:Kent.cruger@bvsd.org ?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">Kent.cruger@bvsd.org</a></p>
+<p>Landon Hilliard<br/>
+Safe Routes to School Administrator<br/>
+Boulder Valley School District<br/>
+<a href="mailto:Landon.hilliard@bvsd.org?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">Landon.hilliard@bvsd.org<br/>
+</a> 303-245-5931</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study was written by Jay Kassirer and Sharon Boddy in 2011. To access the transcriptand handouts from the 2010 case study webinar, click on the links in the left hand summary column on this page.</p>
+<p>This case study was selected as a Tools of Change Landmark case study in 2009, by a peer selection panel consisting of:</p>
+<ul>
+<li>Danny Albert, University of Ottawa's Parking and Sustainable Transportation Department</li>
+<li>Daniel Coldrey, Transport Canada</li>
+<li>Mark Dessauer, Active Living by Design</li>
+<li>Catherine Habel, Metrolinx</li>
+<li>Jacky Kennedy, Green Communities Canada</li>
+<li>Jessica Mankowski, Federation of Canadian Municipalities</li>
+<li>Gary McFadden, National Center for Biking and Walking</li>
+<li>Lorenzo Mele, Town of Markham</li>
+<li>Chuck Wilsker, U.S. Telework Coalition</li>
+<li>Phil Winters, University of South Florida</li>
+<li>JoAnn Woodhall, Translink</li>
+</ul>
+<p><strong>Lessons Learned </strong></p>
+<p>Cruger said that making walking and cycling into a habit was key to the success of their program. “Once they get into a habit, they don’t need rewards to keep it up because they find it’s a better way to get to school.” Awards, he said, are not really necessary, as the students just want to compete and be recognized. But, he notes, the students were sometimes surprised with unexpected awards, such as winning a bike or an iPod at the end of the school year.  He also says that setting goals and tracking what each student did, and providing alternatives (such as Ride and Stride), made it possible for everyone to participate, even those who lived far away.</p>
+<p>Having a few dedicated parent volunteers to help organize programs, and a passionate champion at the district school level, helped to grow the program and get the entire community involved. Cruger says that as the program matured, more parents got involved because they wanted to be part of the community effort.</p>
+<p>Infrastructure improvements (improving signage, adding crosswalks, moving sidewalks and planning safe routes) also made it safer, easier and, in many instances, faster, for children to walk and cycle to school.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

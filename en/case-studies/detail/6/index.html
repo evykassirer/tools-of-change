@@ -1,0 +1,354 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Compost Management, City of Port Colborne</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Ontario Ministry of Environment and Energy</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Diversion rates of over 50 percent for kitchen waste in the summer, and over 80 percent for yard waste in the fall were achieved.</li>
+<li>Over 60 percent of the city's residents were using composters - and using them effectively.</li>
+<li>The project had a four-year pay-back period and an annual rate of return of about 12 percent over the first ten years.</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Earth-Works</h1>
+<p>The Earth-Works program was created to reduce the amount of organic waste going to landfill in Port Colborne. An intensive promotion program, featuring home visits and the distribution of free composters, encouraged residents to compost organic waste in their own backyards.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>As of 1996, Port Colborne, Ontario, was a city of 20,000. Approximately one quarter of its residents lived in rural, outlying areas of the municipality. In the spring of 1993, the Earth-Works program was introduced to decrease collection and tipping fees.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The goals were to achieve a 100 percent reduction in the flow of organic waste to landfill and to half the overall waste going to landfill, using 1989 as a baseline. The overall 50 percent diversion target had been set by the Ontario Ministry of Environment and Energy.</p><!-- Objectives already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>A pilot study was conducted in Pickering and Newcastle to determine what level of composting participation could be achieved if free composters were made available. Composters were distributed to approximately 300 households without any large promotional or educational program being used. Those who delivered the composters installed them and gave instructions on their use. Seventeen percent of organic waste was diverted by the participating households.</p>
+<p><strong>Home Visits</strong></p>
+<p>In the spring and summer of 1993 Earth-Works sent two staff teams door to door (<a href="/en/tools-of-change/home-visits/">Home Visits</a>). These distribution crews introduced the Earth-Works project and offered residents a free composter. If the resident wished to take the composter, the crew members then assembled and installed it (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). They explained how to compost and left pamphlets with detailed instructions.</p>
+<p>If householders were not home at the time of the visits, the program was explained to them over the telephone and they were told when the distribution crew would next return to their street. If they were not home the second time, a door-hanger was left informing them that they could pick up a free composting unit at the Farmers Market. In addition, advertisements in local newspapers advised householders how to arrange for delivery of their free composter.</p>
+<p><strong>The Compost Doctors</strong></p>
+<p>A Compost Hotline provided residents with a direct number to call if they needed assistance. Two "Compost Doctors" were responsible for responding to these calls and for coordinating promotional activities and manned displays at special events. They also conducted follow-up home visits about two weeks after the free composters were distributed, when they answered questions, solved problems, and determined if the composters were functioning properly.</p>
+<p>As the Compost Doctors visited each neighbourhood, they asked individuals who were composting effectively if they would be willing to help their neighbours with composting problems (<a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a>). Few people were willing to take on this role, and the attempt to develop a network of neighbourhood coaches was abandoned.</p>
+<p>The Compost Doctors also acted as informal links between neighbours. For example, they would point out how neighbours had overcome similar problems with their composters, encouraging discussion among neighbours about composting, and making participation by others more visible (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>).</p>
+<p><strong>School and Camp Programs</strong></p>
+<p>The Compost Doctors visited 35 classrooms in 12 schools to promote the program and teach students about composting. They developed an interactive skit, to teach and reinforce which types of waste were compostable and recyclable. In several schools, children drew posters based on the skit, many of which were later displayed to promote the program. Feedback from the community indicated that the school visits had a great impact. Children came home and discussed their experience with their parents and eagerly approached the Compost Doctors when they saw them on the streets of Port Colborne. During the follow-up visits, many residents stated that their children had assumed some responsibility for composting after they had been involved in the skit.</p>
+<p>The Compost Doctors also visited a day camp in the summer, where they held a scavenger hunt for the children, who were asked to find different kinds of waste products and then sort them into compostable, recyclable and waste piles.</p>
+<p><strong>Overcoming Specific Barriers</strong></p>
+<p>Residents worried about smell and attracting insects or rodents to their composters were reassured that proper composting avoided these problems and were given appropriate instructions. Residents concerned that composting was too much work were encouraged to "start small," perhaps with garden waste. They were also told that they could compost lawn clippings by leaving them on the lawn, saving themselves the trouble of raking (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p><strong>Apartment Composting</strong></p>
+<p>The composting program was also implemented among residents of apartment buildings. In September 1993 letters outlining the details of Earth-Works were sent to apartment building owners. Follow-up calls were then made to obtain permission to contact the tenants and the superintendent of the buildings. Each property was inspected to see if there was enough green space to install a mid-scale composting unit. If so, the superintendent was contacted and the program explained. Once permission was obtained to install a composting unit, the tenants were invited to an information session on using the composter and the Compost Hotline.</p>
+<p><strong>Yard Waste Bans and User Pay</strong></p>
+<p>As of October 1994, residential leaf and yard wastes were banned from landfill. Waste containing 5 percent or more of yard waste was not picked up nor accepted at the landfill site. Residents were allowed to drop off this material at the central compost facility or to store the waste for collection during two special collection weeks. A Christmas tree collection program was set up as well. All material composted at the central facility was made available to residents, free of charge, as organic fertilizer for their gardens.</p>
+<p>At the same time a "user-pay" system was implemented for residential garbage. Single family residences were permitted to set out four bags each, multi-unit dwellings containing two to five units were allowed three bags per unit, and dwellings with six or more units were allowed two bags per unit. To provide an incentive to stay within these limits, each extra bag would not be picked up without a tag, purchased at $1 a piece (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Discentives</a>).</p>
+<p><strong>Other Promotion</strong></p>
+<p>The program's public education and communications strategy included the following:</p>
+<ul>
+<li>A unique logo and mascot designed to create community identity and to make program material immediately recognizable.</li>
+<li>A news conference held at the opening ceremony of the composting facility in May 1994.</li>
+<li>Messages presented to the community using newspapers, radio, cable television, and community signage (<a href="/en/tools-of-change/mass-media/">Mass Media</a>). Humour was an important element of many of the messages.</li>
+<li>Displays set up at market days, malls and public events.</li>
+<li>Welcome-wagon packages for new residents including information about obtaining free composters.</li>
+<li>Signs and banners placed in supermarkets, reminding shoppers that vegetable waste made great compost. Participating business establishments received door stickers which advertised that they were active composters, reminding patrons about composting and reinforcing composting as a community activity (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>).</li>
+</ul>
+<p>Cards were also distributed to florists to be attached to bouquets and floral arrangements, reminding the recipient that flowers were compostable. Boy Scouts handed out composting brochures, Girl Guides received environmental badges for composting, and announcements were placed in church bulletins. It seems this promotion campaign did not miss anyone!</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The total cost to launch the program in 1993 was $269,500, broken down as follows:</p>
+<table border="0" width="75%">
+<tbody>
+<tr>
+<td>Purchase of composters</td>
+<td align="right">  $174,400</td>
+</tr>
+<tr>
+<td>Distribution of composters</td>
+<td align="right">$ 32,700</td>
+</tr>
+<tr>
+<td>Rebate for composters already in use</td>
+<td align="right">$ 4,500</td>
+</tr>
+<tr>
+<td>Promotion for start-up</td>
+<td align="right">$ 39,000</td>
+</tr>
+<tr>
+<td>Administration for start-up</td>
+<td align="right"><u>$ 18,900</u></td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td align="right"><strong>$269,500</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The ongoing annual operational cost for 1994, 1995 and 1996 was $23,000.</p>
+<table border="0" width="75%">
+<tbody>
+<tr>
+<td>Promotion</td>
+<td align="right">$ 6,000</td>
+</tr>
+<tr>
+<td>Administration</td>
+<td align="right">$ 10,000</td>
+</tr>
+<tr>
+<td>Compost Doctors</td>
+<td align="right"><u>$ 7,000</u></td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td align="right"><strong>$ 23,000</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The estimated annual operational costs for future years was lower because of reductions in administration and salary costs.</p>
+<p>Fifty-five percent of the funding was provided by the Ontario Ministry of Environment and Energy, and 45 percent by the City of Port Colborne.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>A residential database was set up to track details of each household's composting activities; whether the householders had accepted a free composter or a rebate; the type of home composter being used; and how and when the composter had been obtained. This information was collected at each point of contact - including home visits, the Compost Hotline and the Farmers Market.</p>
+<p>Residential waste composition studies were conducted over six weeks in September 1994, in the summer of 1995, and in the fall of 1995. Garbage was collected for 43 single-family households and taken to a storage facility where it was sorted and counted. The average diversion per household was determined and then extrapolated for Port Colborne as a whole.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>The residents of Port Colborne were thanked for their composting efforts in a half-page newspaper advertisement. They were also told periodically how much organic waste had been diverted from landfill because of their cooperation.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>An estimated 800 tons of organic waste was diverted each year through backyard composting. The savings to Port Colborne in reduced collection and tipping fees was estimated to be $100 per ton, or $80,000 per year. This represented a return on investment over ten years of approximately 21 percent, with a pay-back period of about four years.</p>
+<p>The diversion rates for kitchen and yard waste were:</p>
+<table border="0" cellpadding="2" width="100%">
+<tbody>
+<tr>
+<td width="25%"> </td>
+<td align="center" width="25%"><strong>Fall 1994 				<br/>
+            (%)</strong></td>
+<td align="center" width="25%"><strong>Summer 1994 				<br/>
+            (%)</strong></td>
+<td align="center" width="25%"><strong>Fall 1995 				<br/>
+            (%)</strong></td>
+</tr>
+<tr>
+<td width="25%">Kitchen waste</td>
+<td align="center" width="25%">35</td>
+<td align="center" width="25%">55</td>
+<td align="center" width="25%">42</td>
+</tr>
+<tr>
+<td width="25%">Yard waste</td>
+<td align="center" width="25%">74</td>
+<td align="center" width="25%">86</td>
+<td align="center" width="25%">104</td>
+</tr>
+</tbody>
+</table>
+<p>The results of composter usage evaluations were:</p>
+<table border="0" cellpadding="2" width="100%">
+<tbody>
+<tr>
+<td width="25%"> </td>
+<td align="center" width="25%"><strong>1993 				<br/>
+            (%)</strong></td>
+<td align="center" width="25%"><strong>1994 				<br/>
+            (%)</strong></td>
+<td align="center" width="25%"><strong>1995 				<br/>
+            (%)</strong></td>
+</tr>
+<tr>
+<td width="25%">Not in use</td>
+<td align="center" width="25%">29</td>
+<td align="center" width="25%">21</td>
+<td align="center" width="25%">23</td>
+</tr>
+<tr>
+<td width="25%">Poor</td>
+<td align="center" width="25%">17</td>
+<td align="center" width="25%">26</td>
+<td align="center" width="25%">14</td>
+</tr>
+<tr>
+<td width="25%">Average</td>
+<td align="center" width="25%">45</td>
+<td align="center" width="25%">40</td>
+<td align="center" width="25%">51</td>
+</tr>
+<tr>
+<td width="25%">Excellent</td>
+<td align="center" width="25%">9</td>
+<td align="center" width="25%">13</td>
+<td align="center" width="25%">12</td>
+</tr>
+</tbody>
+</table>
+<p>By 1995, 80 percent of all single family households had a backyard composter 5,700 composters in all.</p><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p> This case study was originally published in 1998 in "Tools of Change: Proven Methods for Promoting Environmental Citizneship" by Jay Kassirer and Doug McKenzie-Mohr (Published by Canada's National Round Table on the Environment and the Economy)</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

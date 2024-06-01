@@ -1,0 +1,400 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>City of Bologna</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Local businesses</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>895,000 trips by alternative transportation methods over 6 months</li>
+<li>Reduction of 3.7 million kilometres and up to 728 tonnes of CO2 emissions over 6 months  </li>
+</ul>
+<h2>Case Study PDF </h2>
+<ul>
+<li><a href="/userfiles/Bolognas_Bella_Mossa.pdf" target="_blank">www.toolsofchange.com/userfiles/Bolognas_Bella_Mossa.pdf</a></li>
+</ul>
+<h2>Three Minute Video   </h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=gfp-qJFu_6I" target="_blank">www.youtube.com/watch?v=gfp-qJFu_6I</a> </li>
+</ul>
+<h2>Further Details </h2>
+<ul>
+<li><a href="https://www.bellamossa.it/ " target="_blank">https://www.bellamossa.it/</a></li>
+<li><a href="https://www.betterpoints.ltd/ " target="_blank">https://www.betterpoints.ltd/</a></li>
+<li><a href="http://empowerproject.eu/about-empower/concept/ " target="_blank"> http://empowerproject.eu</a> </li>
+</ul><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Bologna’s Bella Mossa</h1>
+<p><iframe height="auto" src="https://www.youtube.com/embed/_xGDS7EEPOk" width="97%">
+</iframe></p>
+<p>Bologna’s Bella Mossa program awarded participants points for walking, cycling or using public transport. Points could be redeemed for discounts or payment towards merchandise and services from 85 retailers, including supermarkets, sports retailers, bike stores, opticians, bookshops, cinemas, restaurants and bars. In 2018, 10,000 people reported taking 995,000 trips by alternative transportation methods, totalling 3.7 million kilometres and saving 711 tonnes of CO2. The program won  CIVITAS’s “Bold Measure" award in 2017 and was designated a <em>Landmark</em> case study in 2019.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The Bella Mossa program (which means, “good job” in English) was launched in 2017 in the metropolitan area of Bologna, Italy, a 3,700 square km area with a population of around 1 million. </p>
+<p>Bologna had tried to reduce CO2 emissions before, by banning the use of polluting vehicles during the day. That approach had been unpopular, so the local transport authority decided to try incentives.</p>
+<p><img alt="Social Marketing Case Study - Bologna's Bella Mossa" height="351" src="/userfiles/Image/Map(1).JPG" width="450"/></p>
+<p><i><span style='font-size:8.0pt;font-family:"Arial","sans-serif";mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>Map courtesy of </span></i><span style='font-size:10.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><a href="http://mapswire.com/"><i><span style='font-size:8.0pt;font-family:"Arial","sans-serif";
+mso-bidi-font-family:"Times New Roman"'>http://mapswire.com</span></i></a></span> </p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The team at SRM, the local transport authority, had prior experience with large scale citizen engagement programmes and had previously secured EU funds to test new ideas around mode shift and behaviour change interventions.</p>
+<p>In 2016 the European Union’s  Horizon 2020 initiative created a funding stream called EMPOWER, which was designed to test rewarding change. The project researched how positive incentives can encourage citizens to reconsider their travel choices and reduce the extent to which they travel using conventionally fuelled vehicles.</p>
+<p>A number of cities were successful in applying for this fund, and Bologna was one of them. Each city could choose the technology they wanted to deploy for the project, and after evaluation, SRM chose the BetterPoints system.</p>
+<p>SRM had run a Europe-wide project for 7 years, called the European Cycling Challenge, so they had a good working knowledge of tracking apps, and gamification tools like leaderboards. They had also engaged an academic to look into other gamification techniques.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The Bella Mossa program was launched as a six month field experiment in April, 2017. By the end 15,000 people had participated. The second iteration ran in 2018, with local funding and enhancements that increased engagement. Participants downloaded a free Smartphone app from BetterPoints that used GPS to automatically record their trips based on location, motion and time.</p>
+<p>The program awarded points for walking, cycling or using public transport. To encourage the use of alternative modes of travel even for short trips, the number of points given was based on the number of trips, rather than the distance traveled (up to a maximum of four trips a day). Additional points were awarded for going to special events or meeting specified goals, such as walking for 150 or more minutes a week or a minimum number of days per week, or meeting recommended weekly physical activity levels by cycling or walking. <em>(Building Motivation and Engagement Over Time; Feedback; Incentives; Vivid, Personalized, Credible, Empowering Communication</em>)</p>
+<p>Points could be redeemed for discounts or payment towards merchandise and services from 85 retailers (100 in 2018), including supermarkets, sports retailers, bike stores, opticians, bookshops, cinemas, restaurants and bars. They also worked with BetterPoints to enhance its Smartphone app so that participants could simply scan points shown on their phones into the retailers’ barcode scanners.  In all, 16,000 rewards were redeemed in 2017.  (<em>Overcoming Specific Barriers</em>)</p>
+<p>Alternatively, users could donate their points to charity; any non-profit organisation could apply to be a recipient.</p>
+<p><img alt="The BetterPoints app used GPS to automatically record trips based on location, motion and time." height="337" src="/userfiles/Image/app.jpg" width="450"/></p>
+<p class="MsoNormal"><i><span lang="EN-CA" style='font-size:8.0pt;
+font-family:"Arial","sans-serif";mso-ansi-language:EN-CA'>The BetterPoints app used GPS to automatically record trips based on location, motion and time.<o:p></o:p></span></i></p>
+<p>To build visibility, norms and word-of-mouth promotion, and to prompt participants to continue participating and become ambassadors for the initiative, it provided branded caps, bags and water bottles. To further increase engagement, the program offered treasure-hunts, leaderboards, achievement medals, and prize-draws. It also sent participants personalized in-app and email messages and questions triggered by user behavior. (<em>Building Motivation and Engagement Over Time; Competitions; Feedback and Recognition; Norm Appeals; Prompts; Vivid, Personalized, Credible, Empowering Communication; Word of Mouth)</em></p>
+<p><strong>Corporate, Team and School Challenges</strong></p>
+<p>A corporate challenge engaged 39 participating company teams, accounting for 12% of the total participants, but they covered 27 per cent of the total km. Each company recruited its employees and encouraged them to earn points at both a personal and company level. Employees could then compare their company’s results and ranking position with other participating companies of a similar size. They could also compete internally against each other.</p>
+<p>Two enhancements extended user engagement over a longer period compared to 2017. One of the requested features for 2018 was a "team-earning" function, which allowed small groups of friends, family, colleagues to form small teams (4-10 people). Challenges were set so that if all members of a team achieved the goal, they would be rewarded, and none would get it if one or more team members failed to achieve the goal. Team participants were encouraged to communicate with each other through their preferred communication  channels, and you could see how your other team members were performing, and could encourage them to achieve the goal. You could manage your team, and "eject" people, or people could choose to leave a team. In 2018, the program also introduced school challenges and added monthly challenges with different themes and goals.</p>
+<p><img alt="Cyclling Challenge" height="597" src="/userfiles/Image/Cycling_Challenge.png" width="450"/></p>
+<p><strong>Overcoming Barriers</strong></p>
+<p>The following table lists the key barriers to action and how they were addressed.<span style="font-size:11.0pt"><o:p> </o:p></span><span style="font-size:11.0pt"> </span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:9.9pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt;
+ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtext">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:20.2pt">
+<td style="width:99.0pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:20.2pt" valign="top" width="132">
+<p class="MsoNormal"><b><span style='font-size:11.0pt;font-family:
+  "Calibri","sans-serif";mso-bidi-font-family:Arial'>Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="width:225.0pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:20.2pt" valign="top" width="300">
+<p class="MsoNormal"><b><span style='font-size:11.0pt;font-family:
+  "Calibri","sans-serif";mso-bidi-font-family:Arial'>How it was addressed<o:p></o:p></span></b></p>
+<p class="MsoNormal"><b><span style='font-size:11.0pt;font-family:
+  "Calibri","sans-serif";mso-bidi-font-family:Arial'> </span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:41.85pt">
+<td style="width:99.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:41.85pt" valign="top" width="132">
+<p class="MsoNormal"><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";mso-bidi-font-family:
+  Arial'>Easier to keep doing existing travel routines <o:p></o:p></span></p>
+</td>
+<td style="width:225.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:41.85pt" valign="top" width="300">
+<p class="MsoNormal" style="margin-left:12.6pt;text-indent:-13.5pt;mso-list:
+  l0 level1 lfo1;tab-stops:0in 12.0pt 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]--><span style='font-size:11.0pt;font-family:
+  "Calibri","sans-serif";mso-bidi-font-family:Arial'>Highly personalized   messaging and rewards<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:12.6pt;text-indent:-13.5pt;mso-list:
+  l0 level1 lfo1;tab-stops:0in 12.0pt 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]--><span style='font-size:11.0pt;font-family:
+  "Calibri","sans-serif";mso-bidi-font-family:Arial'>Incentives for switching <o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:12.6pt;text-indent:-13.5pt;mso-list:
+  l0 level1 lfo1;tab-stops:0in 12.0pt 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]--><span style='font-size:11.0pt;font-family:
+  "Calibri","sans-serif";mso-bidi-font-family:Arial'>Social reinforcement   (group competitions)<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";mso-bidi-font-family:
+  Arial'> </span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:41.85pt">
+<td style="width:99.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:41.85pt" valign="top" width="132">
+<p class="MsoNormal"><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";mso-bidi-font-family:
+  Arial'>Little perceived incentive to change behavior<o:p></o:p></span></p>
+</td>
+<td style="width:225.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:41.85pt" valign="top" width="300">
+<p class="MsoNormal" style="margin-left:12.6pt;text-indent:-13.5pt;mso-list:
+  l0 level1 lfo1;tab-stops:0in 12.6pt 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]--><span style='font-size:11.0pt;font-family:
+  "Calibri","sans-serif";mso-bidi-font-family:Arial'>Points could be redeemed   for a wide range of valuable merchandise and services<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:12.6pt;text-indent:-13.5pt;mso-list:
+  l0 level1 lfo1;tab-stops:0in 12.6pt 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]--><span style='font-size:11.0pt;font-family:
+  "Calibri","sans-serif";mso-bidi-font-family:Arial'>Points could also be used   for charitable giving, as an alternative<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:12.6pt;text-indent:-13.5pt;mso-list:
+  l0 level1 lfo1;tab-stops:0in 12.6pt 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]--><span style='font-size:11.0pt;font-family:
+  "Calibri","sans-serif";mso-bidi-font-family:Arial'>The wide variety of   available rewards satisfied the many needs and preferences of participants<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;mso-yfti-lastrow:yes;height:41.85pt">
+<td style="width:99.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:41.85pt" valign="top" width="132">
+<p class="MsoNormal"><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";mso-bidi-font-family:
+  Arial'>Perceived time, effort and frustration redeeming points<o:p></o:p></span></p>
+</td>
+<td style="width:225.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:41.85pt" valign="top" width="300">
+<p class="MsoNormal" style="margin-left:12.6pt;text-indent:-13.5pt;mso-list:
+  l0 level1 lfo1;tab-stops:0in 12.6pt 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]--><span style='font-size:11.0pt;font-family:
+  "Calibri","sans-serif";mso-bidi-font-family:Arial'>Points could be scanned   into retailers’ scanners<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal"><o:p> </o:p></p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Bella Mossa’s first year was funded by the European Union’s Civitas Initiative, Empower, and the City of Bologa. Bella Mossa ran for a second year with local funding.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<ol>
+<li><em>Smartphone Tracking.</em> Participants downloaded a free Smartphone app that used GPS to automatically record their trips based on location, motion and time. Based on this information, the system determined the number, length and travel modes for all trips when the Smartphone was being carried and was turned on (the app did not need to be running). To mitigate cheating, a validation system calibrated on each mode of transport checked for consistency along each journey.</li>
+<li><em>Participant survey.</em> Participants completed surveys at baseline and at the end of the program.</li>
+<li><em>In-App Questions.</em> At the end of their trips, some participants were randomly asked if their recent trip replaced a car journey.</li>
+</ol><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Individual feedback was provided by the Smartphone app and communications between members of team challenges. Group feedback was provided through leaderboards.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Bella Mossa was the most successful city project within the EMPOWER initiative.</p>
+<p>2017:  By the end of the program’s first six months, 15,000 people reported 895,000 trips by alternative transportation methods. These trips totaled 3.7 million kilometres and saved up to 728 tonnes of CO2 emissions. Per person, that’s an average of 60 alternative trips totalling 247 km and saving 0.05 tonnes of CO2 emissions.  Most of the trips were made during weekdays. Survey responses indicated that 80% of these trips replaced trips that would have otherwise been taken by car.</p>
+<ul>
+<li>The most used alternative travel mode was “walk” with 350,000 journeys; the highest number of km – around 1.3 million – was covered by train</li>
+<li>77% said the program motivated them to walk more</li>
+<li>73% reduced their car use</li>
+<li>63% said that their opinion of public transport improved</li>
+<li>84% of participants said they would participate in another Bella Mossa challenge</li>
+</ul>
+<p>2018: Over the six months between March and October 2018, 10,000 people (62% of whom had not taken part the year before) reported taking 995,000 trips by alternative transportation methods. That’s 100,000 more than the previous year, despite the 33% drop in participant numbers. The distance covered was the same – 3.7 million kilometres, saving 711 tonnes of CO2 emissions. Per person, that’s an average of 99.5 alternative trips totalling 370 km and saving 0.07 tonnes of CO2 emissions.</p>
+<p>The following user comments illustrate their perspective on the project’s impact.</p>
+<ul>
+<li>Easy, enjoyable, environmentally friendly</li>
+<li>Useful, original, supercool</li>
+<li>Being a little lazy, it helped me to begin walking</li>
+<li>A good way to encourage daily use of sustainable means of transport</li>
+<li>It’s very fun, but we also do it for the rewards</li>
+<li>Lots of activity is always good for people’s well-being</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Christopher Bristow <br/>
+Chief Operating Officer<br/>
+BetterPoints Ltd.<br/>
+<a href="mailto:chris.bristow@betterpoints.uk?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> chris.bristow@betterpoints.uk </a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<ul>
+<li>This approach has also been used to successfully reduce single-occupant vehicle throughout the United Kingdom. In addition, a mini "Bella Mossa" project called VaiDeZica was implemented in Joinville, Brazil.</li>
+<li>The approach can also be easily adapted to other behaviors. For example, the BetterPoints Behaviour Change Management System has also been used to tackle obesity, inactivity and other health conditions.</li>
+<li>The program’s innovativeness was recognized by CIVITAS, which awarded the program its “Bold Measure" award in 2017. This European award is given each year to the most innovative and successful initiatives relating to sustainable mobility.</li>
+<li>The original research project lasted only one year, which restricted getting a longer term view of the different methodologies – a process that is especially important for planning incentives. With a longer program, the team would have tested different incentive levels with different groups (A/B testing), reducing churn over time, and moving the dial from extrinsic to intrinsic.   Bella Mossa ran for a second year with local funding, during which it applied lessons from year 1 and saw a higher level of participation per person.</li>
+<li>Bella Mossa did not have an opportunity to delve into why only 38% of year 1 participants took part in year 2, even though the end-project-survey respondents in year 1 stated they would do it again (80%). There was a smaller marketing budget and fewer activities in year 2.</li>
+</ul>
+<p><strong>Lessons Learned</strong> </p>
+<ul>
+<li>Combining Smart phone, scanner, Internet and computing technologies can increase personalization, ease of participation and scalability.</li>
+<li>The key elements, according to the program organizers include the following.
+    <ol>
+<li>Smart phone and associated GPS tracking capabilities</li>
+<li>Incentives and gamification, with the ability to easily customise for different population groups and different goals</li>
+<li>Robust reward engine</li>
+<li>A personalized messaging system that responds to user journeys</li>
+</ol>
+</li>
+</ul>
+<p> </p>
+<p><strong>Author and Landmark Designation</strong></p>
+<p>This case study was compiled in 2020 by Jay Kassirer, based on information in the attached report.</p>
+<p>The program described in this case study was designated in 2019. Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff, and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Wallace Beaton, Green Communities Canada</li>
+<li>Aaron Gaul, UrbanTrans</li>
+<li>Nathalie Lapointe, Federation of Canadian Municipalities</li>
+<li>David Levinger, Mobility Education Foundation</li>
+<li>Geoff Noxon, Noxon Associates</li>
+<li>Lisa Kay Schweyer, Carnegie Mellon University</li>
+<li>Phil Winters, CUTR and the University of South Florida</li>
+</ul><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

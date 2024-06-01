@@ -1,0 +1,272 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Gary Slutkin, U. of Illinois at Chicago</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Large municipalities such as Chicago, New York and Cape Town</li>
+<li>Small and mid-sized municipalities such as Kansas City, Baltimore, Durham, and Yonkers.</li>
+<li>Latin American municipalities in countries such as Honduras, El Salvador, and Colombia</li>
+<li>Middle East communities in countries such as Iraq, Syria, and Morocco</li>
+<li>Prisons</li>
+<li>Schools</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Multiple independent evaluations at locations around the world have found large statistically significant reductions in violence.</li>
+</ul>
+<p> </p>
+<p><a href="/userfiles/Cure ViolenceV3.pdf" target="_blank">Case Study PDF</a></p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Cure Violence</h1>
+<p>Cure Violence shows it can be effective to treat violence using a health approach – i.e. to treat it as a contagion rather than as a problem of bad people.  The intervention relies heavily on peer influencers and norm appeals. It has had multiple independent evaluations – all showing large statistically significant reductions in violence.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program. </strong></p>
+<p>Cure Violence was developed in 2000 by Gary Slutkin, M.D., an epidemiologist at the University of Illinois at Chicago’s School of Public Health. Launched in West Garfield, which at that time was Chicago’s most violent community, the approach reduced shootings by 67% in its first year and by 42% over three years.</p>
+<p>In 2004, it expanded to 15 communities and homicides in Chicago dropped by 25%. The program name was changed to Cure Violence in 2012, and by the end of 2015 it was being implemented in 23 cities in North and Central America.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Returning to Chicago after working in Africa, epidemiologist Gary Slutkin was shocked by the city’s relatively high crime rate. He noticed three similarities with the epidemics he had previously been working with: (1) they clustered in particular times and places, (2) they self-replicated - one incident led to another, and (3) they increased in waves.  He wondered if similar mitigation approaches might work. That meant treating violence as a contagion that infected people, rather than a problem with bad people.</p>
+<p>While working to stop the spread of TB in the US, and then the spread of AIDS and cholera in Africa, he learned that people were most receptive to advice delivered by peers.</p>
+<p><strong>Prioritizing Audiences </strong></p>
+<p>The program focused on those currently involved in violence or at very high risk for involvement in violence.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Cure Violence used three main strategies to prevent violence:</p>
+<ol>
+<li>Detect and interrupt potentially violent conflicts</li>
+<li>Identify, treat and foster positive behavior change among high-risk individuals, and</li>
+<li>Mobilize the community to change norms.</li>
+</ol>
+<p>Using a health approach to reduce the risk of “infection”, and recognizing the importance of communicating through peer networks, the program hired peers from each community to change behaviors and norm and intervene in disputes. Outreach Workers and “Violence Interrupters” were employed and trained to identify high-risk situations and persons by patrolling specific neighbourhoods and utilizing their existing networks. They then intervened before disagreements escalated into violence and worked with the highest risk to change behaviors and norms. (Neighbourhood Coaches and Block Leaders, Norm Appeals, Word of Mouth)</p>
+<p>Violence Interrupters and Outreach Workers used their street credibility to change behaviors and  interrupt conflicts. They also modeled and taught community members better ways of communicating with each other and how to resolve conflicts peacefully.</p>
+<p><strong>1. Detect and interrupt potentially violent conflicts </strong></p>
+<p>Trained violence interrupters and outreach workers prevented shootings by identifying and mediating potentially lethal conflicts in the community, and following up to ensure that the conflict did not reignite.</p>
+<ul>
+<li><em>Preventing Retaliations</em> – Whenever a shooting happened, trained workers immediately worked in the community and at the hospital to cool down emotions and prevent retaliations – working with the victims, friends and family of the victim, and anyone else connected with the event.</li>
+<li><em>Mediating Ongoing Conflicts</em> – Workers identified ongoing conflicts by talking to key people in the community about ongoing disputes, recent arrests, recent prison releases, and other situations and used mediation techniques to resolve them peacefully.</li>
+<li><em>Keeping Conflicts ‘Cool’</em> – Workers followed up with conflicts for as long as needed, sometimes for months, to ensure that the conflict did not become violent.</li>
+</ul>
+<p>2. Identify, treat and foster behavior change <strong>among those at highest risk</strong></p>
+<p>Trained, culturally-appropriate outreach workers worked with the highest risk community members to make them less likely to commit violence, by meeting them where they were, talking to them about the costs of using violence, and helping them to obtain the social services they needed – such as job training and drug treatment.</p>
+<ul>
+<li><em>Accessing Those at Highest Risk</em> – Workers utilized their trust with high-risk individuals to establish contact, develop relationships, and begin to work with the people most likely to be involved in violence.</li>
+<li><em>Changing Behaviors</em> – Workers engaged with high-risk individuals to convince them to reject the use of violence by discussing the cost and consequences of violence and teaching alternative responses to situations. For example, this involved talking about what would happen to their girlfriend or children if they went to prison, or how their mother would feel if something happened to them. Workers also taught their clients new methods of behavior, such as how to deescalate conflicts, save face in a confrontation, and stop a friend from being violent. (Vivid, Personalized, Credible, Empowering Communication)</li>
+<li><em>Providing Treatment</em> – Workers developed a caseload of clients who they worked with intensively – seeing them several times a week and assisting with their needs such as drug treatment, employment, and leaving gangs.</li>
+</ul>
+<p>These workers were trained in methods of persuasion, alternatives to violence, detection and diagnosis of violent behavior, appropriate referrals for client issues, as well as a number of other areas and learn the methods that could be used to encourage new positive behaviors such as conveying new information, teaching new skills applicable to the new behaviors, practicing, developing opportunities for positive peer reactions, and avoiding negative peer reaction. The program tried to maintain relationships with all of the city’s gangs and violent cliques.</p>
+<p><strong>3. Mobilize the community to change norms.</strong></p>
+<p><strong> </strong> Workers engaged leaders in the community as well as community residents, local business owners, faith leaders, service providers, and the high risk, conveying the message that the residents, groups, and the community did not support the use of violence. (Norm Appeals)</p>
+<ul>
+<li><em>Responding to Every Shooting </em>– Whenever a shooting occurred, workers organized a response where dozens of community members voiced their objection to the shooting</li>
+<li><em>Organizing Community</em> – Workers coordinated with existing block clubs, tenant councils, and neighborhood associations to assist; they also established new ones</li>
+<li><em>Spreading Positive Norms</em> – The program distributed materials and hosted events to convey the message that violence was not acceptable</li>
+</ul>
+<p>By 2018, The Cure Violence Health model had been implemented in large cities such as New York City, Chicago, Baltimore, San Antonio and New Orleans, and also in smaller cities like Kansas City, Syracuse and Albany, and all over the world – from San Pedro Sula, Honduras to Cape Town, South Africa.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>In 2018, Cure violence received $5.4 million funding in Chicago (from state and city police budgets) and $17.2 in New York.  Across the US, programs received about $40 million in funding.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The program emphasized continual data collection and monitoring.  Program success was measured using the rates of reported crimes and violent injuries.</p>
+<p>In May 2008, Dr. Wesley G. Skogan, at Northwestern University, completed a three-year, independent, Department of Justice-funded report finding large reductions in violence attributable to the program. There have been more than a dozen additional studies showing similar effects.  Additionally, in Chicago in 2015 and 2016, budget cuts and subsequent budget reinstatement provided a reversal design opportunity to see the impacts on the city’s crime rates.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>The Cure for Violence Health Model has since had multiple independent evaluations showing large statistically significant reductions in violence.</p>
+<p><strong>Chicago</strong></p>
+<p>When first introduced in Chicago, the approach reduced shootings by 67% in its first year and by 16-34% over three years. In 2004, it expanded to 15 communities and homicides in Chicago dropped by 25%.  A 2009 NIJ/Northwestern University evaluation analyzed  seven communities in Chicago over three years. It found that the program reduced shootings and killings by 41% to 73%, with retaliatory shootings eliminated in five of seven communities examined.  During 2015 budget cuts eliminated program workers in 13 of 14 communities; homicides began increasing within a month and the following year was Chicago’s deadliest in nearly two decades.  In the one community where it continued, violence continued to go down. In 2017 funding was restored and murders dropped by 16%.</p>
+<p><strong>Baltimore</strong></p>
+<p>A 2012 CDC/Johns Hopkins evaluation of 4 communities in Baltimore credited the program with reducing shootings and killings by up to 34-56%. Community norms were influenced, even with those who did not directly participate in the program, and the reductions in violence spread to surrounding communities as well.</p>
+<p><strong>New York </strong></p>
+<p>New York ‘s program yielded a 37% to 50% reduction in gun injuries in two communities;  a 63% reduction in shootings in one community; a 14% reduction in attitudes supporting violence, with no change in controls;  and an 18% reduction in killings across 13 program sites while matched controls had a 69% increase (2004-2013).</p>
+<p><strong>Philadelphia</strong></p>
+<p>In Philadelphia, a 2017 evaluation found a 30% reduction in shootings, comparing the 24 months before the implementation of CeaseFire to the 24 months after implementation. In the five hotspot areas, CeaseFire was associated with a statistically significant reduction in both total shootings (victims of all ages) and shootings of individuals between the ages of 10 and 35.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Gary Slutkin, MD, Founder &amp; CEO<br/>
+1603 W. Taylor St., MC #923<br/>
+Chicago, IL 60612<br/>
+Main office phone: 312-996-8775<br/>
+<a href="http://cureviolence.org" target="_blank"> cureviolence.org</a><br/>
+<a href="mailto:Cureviolence@uic.edu?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> Cureviolence@uic.edu</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lesson Learned </strong></p>
+<p>Violence can be treated effectively using a health approach– i.e. treated as a contagion rather than as a problem with bad people.</p>
+<p><strong>Resources</strong> </p>
+<p><em>Online Video:</em> <a href="http://www.pbs.org/wgbh/pages/frontline/interrupters/">The Interrupters</a> is a critically acclaimed 2011 documentary telling the story of three Cure Violence workers who try to protect their Chicago communities from the violence they once employed.</p>
+<p>Report(s)and additional details  available at:</p>
+<ul>
+<li><a href="http://cureviolence.org/" target="_blank">Program website</a></li>
+<li><a href="https://www.ted.com/talks/gary_slutkin_let_s_treat_violence_like_a_contagious_disease?language=en" target="_blank">TED talk</a></li>
+<li><a href="https://www.nytimes.com/2018/05/08/opinion/fighting-street-gun-violence-as-if-it-were-a-contagion.html" target="_blank">NY Times article</a></li>
+<li><a href="http://cureviolence.org/wp-content/uploads/2018/04/KnowViolenceCV.pdf " target="_blank">Background paper: Seeing and Treating Violence as a Health Issue </a></li>
+<li><a href="https://www.cnn.com/2015/10/05/health/gupta-stopping-violence/index.html ">CNN article </a></li>
+</ul>
+<p>This case study was written in 2018 by Jay Kassirer, using information provided by the program.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

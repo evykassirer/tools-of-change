@@ -1,0 +1,775 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Norwegian Government</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Electric vehicles outsold petrol and diesel vehicles</li>
+<li>Norway achieved the highest market penetration of electric vehicles per capita in the world</li>
+</ul>
+<p> </p>
+<p>Case Study <a href="/userfiles/Norway Electric Vehicles V2.pdf" target="_blank">PDF</a></p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Norway’s Promotion of Electric Vehicles</h1>
+<p><iframe height="auto" src="https://www.youtube.com/embed/2slVtJRc65Y" width="97%">
+</iframe></p>
+<p>Several policies / incentives, in place over an extended period, have made Norwegians more likely to purchase electric vehicles (EVs) than people in any other country. These incentives have included: exemption from vehicle registration and high purchase taxes, reduced road tolls, free parking, and access to some bus lanes. A similar long-term approach could be adapted for other big-ticket purchasing behaviors where the impact justifies the expense – for example energy-efficient home / building retrofits and appliances. Norway's electric cars are close to zero-emission as 98% of its electricity came from hydropower.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong><em>Note:  To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></strong></p>
+<p>Norway actively supported the adoption of zero emission vehicles since the 1990’s.  Its electric cars were close to zero-emission as 98% of its electricity came from hydropower. Switching to vehicles powered by electricity rather than fossil fuels was therefore a practical option for reducing air pollution, including greenhouse gas emissions. </p>
+<p><img alt="" height="300" src="/userfiles/Image/vlad-tchompalov-b1UPWwZHph8-unsplash.jpg" width="450"/></p>
+<p>Photo courtesy of Unsplash and Vlad Tchompalov </p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p><strong>Barriers </strong></p>
+<p>Consumer surveys indicated that the key barriers to Norwegians purchasing an electric vehicle were the additional purchase cost and lack of information. Range anxiety was less important, and Norwegians had a strong preference for home charging. This was corroborated by the relatively low use of the public charging infrastructure, once in place.</p>
+<p><strong>Motivators </strong></p>
+<p>According to surveys, lower operating costs, followed by environmental concerns were the two most important motivators. However, norm appeals and/or word-of-mouth (social diffusion) were also important; a 2017 survey found that on average each electric car owner had inspired 2.4 other people to purchase an electric car.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Incentives</strong></p>
+<p>Norway provided a number of financial incentives for battery-powered vehicles. These generally paid for themselves, with taxes on standard cars generally covering the cost of the financial incentives.</p>
+<p>The following taxes were charged on standard vehicles. Electric cars were partly of fully exempt from the first nine.</p>
+<ol>
+<li>25% Value Added Tax (VAT) (exempt)</li>
+<li>Graduated vehicle registration tax (exempt)</li>
+<li>Reregistration tax on second hand sales (exempt)</li>
+<li>Annual circulation (ownership) tax (exempt)</li>
+<li>Fuel tax (not applicable)</li>
+<li>Road tolls (exempt or partly exempt)</li>
+<li>Ferry fares  (lower fees)</li>
+<li>Public parking fees (often fully exempt)</li>
+<li>Income tax on private use of company cars (lower rates)</li>
+<li>Weight and Euro-class-graduated annual ownership tax on heavy-duty freight vehicles</li>
+</ol>
+<p>These ten funds paid for the following financial incentives.</p>
+<ol>
+<li>Exemption from the above taxes for electric vehicles, set to more than compensate for the higher price of an electric vehicle compared with a conventional one.</li>
+<li>Government support for fast charging and hydrogen refueling facilities</li>
+<li>Free recharging of electric vehicles at public parking lots</li>
+<li>Subsidy on new battery or fuel cell electric light commercial vehicles</li>
+<li>Subsidies on zero emission heavy-duty vehicles and machinery</li>
+</ol>
+<p>In addition, gas taxes and gas prices were relatively high in Norway, making it relatively costly to drive a gas-fueled car, and battery-powered vehicles were able to use bus lanes.</p>
+<p>Key milestones are outlined below (based largely on Wikipedia).<span style='font-size:11.0pt;font-family:"Minion Pro",serif'> </span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext">
+<tbody>
+<tr>
+<td style="width:36.35pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="48">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif'>1990<o:p></o:p></span></p>
+</td>
+<td style="width:413.5pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="551">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><span style='font-family:"Arial",sans-serif'>Temporary   (trial) exemption from import tax<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:36.35pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="48">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif'>1996<o:p></o:p></span></p>
+</td>
+<td style="width:413.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="551">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Import   tax exemption made permanent<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Annual   registration tax reduction introduced<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:36.35pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="48">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif'>1997<o:p></o:p></span></p>
+</td>
+<td style="width:413.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="551">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Exemption   from road tolls introduced<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:36.35pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="48">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif'>1999<o:p></o:p></span></p>
+</td>
+<td style="width:413.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="551">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Identifying   letters ("EL", "EK" and "EV") introduced on   license plates of electric vehicles to facilitate the enforcement of EV   incentives and perks. It had the added benefit of raising the visibility of   these vehicles (norm appeal, word of mouth))<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Free   parking in public places introduced<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Free   passage through toll booths introduced<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:36.35pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="48">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif'>2000<o:p></o:p></span></p>
+</td>
+<td style="width:413.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="551">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Reduced   company car tax introduced<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:36.35pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="48">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif'>2001<o:p></o:p></span></p>
+</td>
+<td style="width:413.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="551">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>VAT   tax reduced from 25% to 0<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:36.35pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="48">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif'>2003<o:p></o:p></span></p>
+</td>
+<td style="width:413.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="551">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Access   to bus lanes tested in Oslo<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:36.35pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="48">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif'>2005<o:p></o:p></span></p>
+</td>
+<td style="width:413.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="551">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Access   to bus lanes launched nation-wide<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:36.35pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="48">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif'>2009<o:p></o:p></span></p>
+</td>
+<td style="width:413.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="551">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Free   access to road ferries introduced<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:36.35pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="48">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif'>2012<o:p></o:p></span></p>
+</td>
+<td style="width:413.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="551">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Incentives   extended until 2018, or when the 50,000 EV target is achieved<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:36.35pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="48">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif'>2015<o:p></o:p></span></p>
+</td>
+<td style="width:413.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="551">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Incentives   extended through 2017 after achieving 50,000 EV target, with a gradual   reduction of incentives gradually starting in 2018<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Local   authorities got the right to decide for their own regions if EVs could use   bus lanes and get free parking <o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This combination of incentives enabled Norway to meet its target (50,000 EV), in the process becoming the worlds’ greatest per-capita purchaser of EVs.</p>
+<p><strong>Charging Infrastructure and </strong><strong>Overcoming Barriers</strong></p>
+<p>While range anxiety was a lower barrier than others, Norway still saw public charging points as important, as they ensured interregional access and were essential for electric car owners that do not have access to a reserved parking place. Norway therefore ensured an adequate distribution of charging stations early in the program.</p>
+<p>The following table lists the key barriers to action and how they were addressed.<span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-ansi-language:EN-CA'> </span><span style="font-size:11.0pt"><o:p></o:p></span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:9.9pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid #1F497D .5pt;mso-border-themecolor:text2;mso-yfti-tbllook:1184;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:.5pt solid #1F497D;
+ mso-border-insideh-themecolor:text2;mso-border-insidev:.5pt solid #1F497D;
+ mso-border-insidev-themecolor:text2">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:20.2pt">
+<td style="width:67.65pt;border:solid #1F497D 1.0pt;
+  mso-border-themecolor:text2;mso-border-alt:solid #1F497D .5pt;mso-border-themecolor:
+  text2;padding:0cm 5.4pt 0cm 5.4pt;height:20.2pt" valign="top" width="90">
+<p class="MsoNormal"><b><span style="font-size:11.0pt">Barriers<o:p></o:p></span></b></p>
+</td>
+<td style="width:143.85pt;border:solid #1F497D 1.0pt;
+  mso-border-themecolor:text2;border-left:none;mso-border-left-alt:solid #1F497D .5pt;
+  mso-border-left-themecolor:text2;mso-border-alt:solid #1F497D .5pt;
+  mso-border-themecolor:text2;padding:0cm 5.4pt 0cm 5.4pt;height:20.2pt" valign="top" width="192">
+<p class="MsoNormal"><b><span style="font-size:11.0pt">How they   were addressed<o:p></o:p></span></b></p>
+<p class="MsoNormal"><b><span style="font-size:11.0pt"> </span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes;height:41.85pt">
+<td style="width:67.65pt;border:solid #1F497D 1.0pt;
+  mso-border-themecolor:text2;border-top:none;mso-border-top-alt:solid #1F497D .5pt;
+  mso-border-top-themecolor:text2;mso-border-alt:solid #1F497D .5pt;mso-border-themecolor:
+  text2;padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top" width="90">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif'>Higher cost of electric cars compares   to conventional ones<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif'> </span></p>
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif'>Entrenched car purchasing habits</span></p>
+<p class="MsoNormal"> </p>
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif'><br/>
+</span></p>
+<p class="MsoNormal"> </p>
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif'><br/>
+</span></p>
+<p class="MsoNormal"> </p>
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif'><br/>
+</span><span style='font-family:"Arial",sans-serif'>Range anxiety</span><span style='font-family:"Arial",sans-serif'><br/>
+</span><span style='font-family:"Arial",sans-serif'><br/>
+</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:143.85pt;border-top:none;border-left:
+  none;border-bottom:solid #1F497D 1.0pt;mso-border-bottom-themecolor:text2;
+  border-right:solid #1F497D 1.0pt;mso-border-right-themecolor:text2;
+  mso-border-top-alt:solid #1F497D .5pt;mso-border-top-themecolor:text2;
+  mso-border-left-alt:solid #1F497D .5pt;mso-border-left-themecolor:text2;
+  mso-border-alt:solid #1F497D .5pt;mso-border-themecolor:text2;padding:0cm 5.4pt 0cm 5.4pt;
+  height:41.85pt" valign="top" width="192">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Reduced   the up-front cost of purchasing a new vehicle    by exempting new electric vehicles from vehicle registration and high   purchase taxes<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Reduced   relative operating costs by keeping taxes high on gasoline, and by providing   some free parking and lowering road tolls for electric vehicles<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#0070C0">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><span style='font-family:"Arial",sans-serif'>This barrier may have been less important in Norway compared with other countries, since Norwegians drive shorter distances than those in regions like Australia and North America.This barrier may have been less important in Norway compared with other countries, since Norwegians drive shorter distances than those in regions like Australia and North America.</span><span style='font-family:"Arial",sans-serif'><br/>
+</span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style="color: rgb(0, 112, 192); font-family: Symbol; font-size: 16px;">·</span><span style="color: rgb(0, 112, 192); font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal;">       </span><span style='font-family:"Arial",sans-serif'>While less important than cost, an adequate distribution of charging stations helped allay these concerns.</span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style='font-family:"Arial",sans-serif'><span style="color:#0A0A0A"> </span><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Critiques </strong></p>
+<p>Criticisms of the approach have included the following.</p>
+<ul>
+<li>High public subsidy compared to the value of the reduced carbon footprint of electric vehicles</li>
+<li>Traffic congestion in some bus lanes due to the increased number of electric cars</li>
+<li>Some people bought an electric vehicle as a second car instead of taking buses and trains</li>
+<li>Loss of revenue for some ferry operators due to the large number of electric cars exempted from payment</li>
+<li>Shortage of parking spaces for owners of conventional cars</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Two measures were used.</p>
+<ol>
+<li>EV share of new car sales</li>
+<li>EV share of cars on the road</li>
+</ol><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<ul>
+<li>In March 2014, Norway became the first country with at least 1 in every 100 passenger cars on the road that were battery-powered.</li>
+<li>In 2015, Norway achieved its target of selling 50,000 EVs</li>
+<li>By December 2016, 5 in every 100 passenger cars on the road in Norway were battery-powered.</li>
+<li>By December 2018, 10.7 in every 100 passenger cars on the road in Norway were battery-powered. In comparison, the USA had 0.45 cars (California had 2.1), Sweden had 0.6 cars, and Europe on average had 0.5 cars per 100 passengers.</li>
+<li>In March 2018, Norway had the world's largest plug-in segment market share of new car sales at 49.1%. The next highest share for new cars was Iceland at 19%. Canada had 2.1%  B.C. was third in North American jurisdictions at 4.0%, behind California at 7.8%., and Washington state at  about 4%).</li>
+<li>In March 2019, Norway recorded the first ever month where electric vehicle sales had a majority market share (58%) over traditional petrol and diesel vehicles. Norway had the highest market penetration of electric vehicles per capita in the world (10% of all passenger cars on the road).</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p>This approach can be used elsewhere to promote electric vehicles. That said, Norway has had the added advantage that Norwegians drive relatively short distances, so relatively inexpensive electric cars with relatively short ranges have been more practical than in countries like Canada and the USA. However, this difference is becoming less important as technologies evolve (e.g. affordable new batteries that allow for greater ranges.)</p>
+<p>While Norway has been in a unique position to pioneer the introduction of electric vehicles, its model of providing a range of suitable incentives to overcome key barriers, paid for by taxing more polluting vehicles, is nonetheless widely replicable for the following reasons. This is not to say that all their policies would work in all other contexts.</p>
+<ul>
+<li>The overall approach is to use taxes on standard vehicles to pay for incentives for purchasing electric vehicles. Such programs can cover their own costs this way, or at least reduce public funding required.</li>
+<li>Large incentives were required initially to offset the higher initial cost of electric cars. However, this cost difference has narrowed over time as more electric vehicles are manufactured and is expected to become insignificant soon.</li>
+<li>While travel distances tend to be shorter in Norway than in regions like North America and Australia, battery innovations have more than doubled the distance that an average electric vehicle can go before needing to be recharged. This, combined with well-distributed public charging stations and much shorter recharge times, is helping to minimize range anxiety.</li>
+<li>Multiple countries are now collaborating to foster the spread of electric vehicles. The Electric Vehicle Initiative is a multi-government policy forum established in 2009. In 2017, its 13 member countries set a collective aspirational goal of 30% market share for electric vehicles (for passenger cars, light commercial vehicles, buses and trucks) by 2030. Eight members, including Norway, committed to electrify their own fleets (Government Fleet Declaration.)</li>
+<li>While Norway is contextually unique and its approach required multiple levels of buy-in/support, the following table reflects the growing number of counties, operating under different conditions, that have been able to achieve effective policies and incentive/disincentive structures.</li>
+</ul>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext">
+<tbody>
+<tr>
+<td style="border:solid windowtext 1.0pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal"><span lang="EN-CA" style='font-size:10.0pt;font-family:"Arial",sans-serif'>Country<o:p></o:p></span></p>
+</td>
+<td style="border:solid windowtext 1.0pt;border-left:none;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal"><span lang="EN-CA" style='font-size:10.0pt;font-family:"Arial",sans-serif'>Incentives   for Electric Vehicles / Disincentives for Other Vehicles<o:p></o:p></span></p>
+</td>
+<td style="border:solid windowtext 1.0pt;border-left:none;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal"><span lang="EN-CA" style='font-size:10.0pt;font-family:"Arial",sans-serif'>Impact   as of 2021<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal"><span lang="EN-CA" style='font-size:10.0pt;font-family:"Arial",sans-serif'>China<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Purchase incentives, scaled to car range. The   incentives were reduced in 2019 and were to expire in 2020 at the height of   the COVID pandemic. However, when sales started to plummet the incentive was   extended for two more years and sales rebounded.<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Sells more electric vehicles than any other   country – roughly half of sales worldwide; also has a huge population<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal"><span lang="EN-CA" style='font-size:10.0pt;font-family:"Arial",sans-serif'>France<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Purchase incentive – initially 6,000 Euros,   up to 27% of vehicle value<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><!--[endif]--><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Scrappage incentive for retiring older petrol   or diesel models - up to 2,500 Euros.<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Surcharge for highest emitting cars – up to   10,000 Euros<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><!--[endif]--><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Fourth in terms of number of electric vehicles   sold each year<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal"><span lang="EN-CA" style='font-size:10.0pt;font-family:"Arial",sans-serif'>Germany<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><!--[endif]--><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Purchase incentive – initially 4,000 Euros<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><!--[endif]--><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Exempt from vehicle tax for up to 10 years<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><!--[endif]--><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>50% reduction in income tax assessed on vehicle   ownership <o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Tax bonus based on battery size; amount per   battery was reduced each year<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><!--[endif]--><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Next to China, sells the most electric vehicles   each year<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal"><span lang="EN-CA" style='font-size:10.0pt;font-family:"Arial",sans-serif'>Iceland<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Like Norway, Iceland has low electricity   prices paired with high fossil-fuel prices<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>VAT sales tax discounts and exemption until   2020<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>The <a href="https://reykjavik.is/frettir/hledslustodvar-fyrir-rafbila-i-bilastaedahusum"><span style="color: windowtext; text-decoration-line: none;">City of   Reykjavik offers free charging as well as time-limited free parking</span></a> for   low-emission vehicles. <o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><!--[endif]--><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Excise tax based on CO2 emissions and waived   for pure electric cars<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><!--[endif]--><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Third most electric vehicles per capita<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><!--[endif]--><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Starting in 2020, the majority of new car   sales have been electric vehicles<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal"><span lang="EN-CA" style='font-size:10.0pt;font-family:"Arial",sans-serif'>Netherlands<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>No vehicle tax until 2020<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Company car drivers who also use the vehicles   privately, pay income tax of only 4% of the sales value when selling an electric   car, rather than 22%.<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Vehicle registration tax based on CO2   emissions and waived for pure electric cars<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Fifth most electric vehicles per capita<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal"><span lang="EN-CA" style='font-size:10.0pt;font-family:"Arial",sans-serif'>Sweden<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Purchase incentive – initially 60,000 Swedish   Krona (5,700 Euros) up to 25% of vehicle value <o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>For companies, the purchase incentive cap is 35%   of the increased cost compared with a similar petrol or diesel vehicle.<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>The incentive is reduced for every gram of   CO2 emitted per km<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Fourth most electric vehicles per capita<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:7;mso-yfti-lastrow:yes;height:87.15pt">
+<td style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:87.15pt" valign="top">
+<p class="MsoNormal"><span lang="EN-CA" style='font-size:10.0pt;font-family:"Arial",sans-serif'>USA<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:87.15pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Federal taxes that depend on fuel consumption   are waived<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Tax credit of up to 7,500 US dollars per buyer   for up to 200,000 units per manufacturer<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Some US cities gave HOV access to   low-emission vehicles until they became more common  <o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:87.15pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><!--[endif]--><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Second to Norway in number of electric   vehicles per capita<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span lang="EN-CA" style='font-size:10.0pt;
+  font-family:"Arial",sans-serif'>Third in terms of number of electric vehicles   sold each year<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong>Further Reading</strong></p>
+<p><a href="https://en.wikipedia.org/wiki/Plug-in_electric_vehicles_in_Norway" target="_blank">https://en.wikipedia.org/wiki/Plug-in_electric_vehicles_in_Norway</a></p>
+<p><a href="https://www.nsenergybusiness.com/news/electric-vehicle-registrations-europe-norway/" target="_blank">  https://www.nsenergybusiness.com/news/electric-vehicle-registrations-europe-norway/ </a></p>
+<p> </p>
+<p>This case study was written in 2020 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

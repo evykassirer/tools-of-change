@@ -1,0 +1,285 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>Clean Air Champions</p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>HSBC Bank Canada</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>During the 2011-12 school year: 3,230 students from 87 schools took part</li>
+<li>30.6% reduction in greenhouse gas emissions</li>
+<li>45.2% increase in active transportation</li>
+<li>57.7% of families used their cars less  </li>
+</ul>
+<p> </p>
+<p>Case Study <a href="/userfiles/Clean Air Achievers Case Study.pdf" target="_blank">PDF</a></p>
+<p>Webinar <a href="/userfiles/Stockholm Transcript(1).pdf">Transcript </a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>HSBC Clean Air Achievers</h1>
+<p>CAC's HSBC Clean Air Achievers programs provides youth with a chance to meet high profile athletes and be inspired by personal messages to adopt healthier, more active and sustainable lifestyles. The program has dual goals of reducing air pollution and increasing physical activity levels via active transportation. Designated a Landmark case study in 2013. </p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<h6><em>Note: To minimize site maintenance costs, all Tools of Change case studies are written in the past tense, even if they are ongoing programs, as is the case with this one.</em></h6>
+<p>HSBC Clean Air Achievers was delivered through Clean Air Champions (CAC), a national charity formed in 2001. Its mission was to  educate Canadians on the importance of air quality and its connections to health. CAC worked with some of Canada’s most respected athletes (the Champions) to educate and inspire people to adopt healthier, more active and sustainable lifestyles.</p>
+<p><img alt="" height="298" src="/userfiles/Image/Integrated Messages.PNG" width="450"/></p>
+<p>CAC was founded by three members, each of whom had extensive education and long careers in the sports and environment fields.  CAC offered three main programs, all of which were connected to the curriculum for Grades 5 through 12. Its longest running program, the HSBC Clean Air Achievers was offered free to Grades 5 to 9; the other two programs were fee-based. </p>
+<p>At the heart of all of the CAC's programs were the Champions. More than 200 Olympic, Paralympic and National Team athletes acted as educators, program ambassadors and motivational speakers, relating stories about their own health and well-being. Every Champion was also passionate about CAC's dual goals of improving the environment and the health of Canadians and their stories helped engage and motivate their audiences.</p>
+<p><img alt="" height="404" src="/userfiles/Image/ChampionV2.JPG" width="450"/></p>
+<p><em>Lisa Bentley was a Clean Air Champion and Ironman triathlete who suffered from asthma, allergies and cystic fibrosis, and relied on the national Air Quality Health Index to know when it was safe for her to be active.</em> </p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The program had two goals: produce fewer GHGs through reduced reliance on the automobile, and enhance fitness levels by choosing active modes of transportation.</p>
+<p>Schools engaged in the program were asked to target a</p>
+<ul>
+<li>15% reduction in GHGs (measured in CO2) and a</li>
+<li>15% increase in active transportation (measured in kilometres).</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>CAC's initial research indicated that the optimum audience for the program was youth between Grades 5 and 9 (aged 10 to 15). Youth in this age range were most easily influenced to adopt new travel behaviours. The younger ones were beginning to have independence in their lives, especially in their travel and buying habits. The older ones were on the verge of becoming licensed car drivers.</p>
+<p>Existing curriculum activities could not be found that integrated environment, health and physical activity. CAC therefore brought in curriculum consultants on climate, physical activity and health issues, and then created the program's activities.  "We put in some really unique things that we haven’t seen anywhere else and that teachers continue to use today," said Ms. LaFramboise.</p>
+<p>CAC evolved the program over three years of pilot testing with different approaches and different grade levels (Grades 4 to 11), and with comprehensive evaluation via surveys, focus groups, one-on-one interviews with teachers, youth, and the Champions.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>HSBC Clean Air Achievers was a bilingual, curriculum-connected program delivered in the classroom. It aimed to educate youth to choose more sustainable and healthier travel options. (<em>School Programs that Influence the Home</em>)</p>
+<p>Champion athletes—identified as positive and inspirational role models—were trained to deliver the program. They were recruited from a network of over 200 Olympic, Paralympic and National Team athletes. These athletes shared CAC's values of and commitments to active living and active transportation, and many carried a dedication to environmental preservation as they spent their time training in outdoor environments. Many of them also cycled or used other forms of sustainable transportation to get to their presentations.</p>
+<p>More than 30% of the Champions suffered from asthma, exercise-induced asthma and/or allergies, and could speak from experience about how clean air impacted their health. For example, Andrew Haley, a Paralympics swimmer, was a cancer survivor. He had lost part of his leg and a lung. "When Andrew speaks about air pollution impacting him," said Deirdre LaFramboise, CAC’s Executive Director, "he speaks very passionately about the topic."</p>
+<p>The Champions began each presentation with an inspirational orientation session that included a multi-media presentation, and were available to communicate with the students throughout implementation. Many of the Champions integrated their personal experiences and values into their presentations. (<em>Vivid, personalized, credible, empowering communication</em>)</p>
+<p><img alt="Talking with school groups about air pollution and travel choices " height="339" src="/userfiles/Image/Auditorium.jpg" width="450"/></p>
+<p>Supporting the Champions’ presentation were a number of resources, including backgrounders, games, and curriculum-connected activities that provided both theoretical and practical learning experiences. (<em>Building Motivation over Time</em>)</p>
+<p>At the centre of the program was the Trip Tracker, a website that recorded students' travel trips and quantified the amount of GHGs by mode of travel. Each trip entered by a student gave the total kilometres traveled and the total GHGs (in carbon dioxide) that would be reduced if the student chose to change their travel behaviours. (<em>Feedback</em>)</p>
+<p>The online component was directly linked to a Teachers Manual of additional activities and lessons on the themes of air quality, health, active transportation, goal setting and healthy lifestyle choices. (<em>Vivid, personalized, credible, empowering communication</em>)</p>
+<p>At the end of each presentation, classes were invited to join the annual Champions Challenge for a chance to win $1,000 to go towards a green initiative at their school and to participate in a sporting event with two Clean Air Champions. First prize went to the class–or school if the entire school decided to participate–that had the year's best Trip Tracker results and the most participants. Second and third place prizes were both $500. (<em>Building motivation over time, Challenges, Incentives</em>)</p>
+<p>In some cases, the Champion was invited back for a second visit. "The first visit is more about the message and the second one is more celebratory, to reinforce the message," said Ms. LaFramboise. "The Champions come back and discuss with the kids what their challenges were; it's more of a dialogue than a presentation."</p>
+<p>The program was delivered in all 10 Canadian provinces in both English and French. CAC adapted the program for geographic variances or socio-economic disparities by allowing each student to work towards personal goals.</p>
+<p><img alt="" height="337" src="/userfiles/Image/Crystal_Phillips_May2012V2.jpg" width="450"/></p>
+<p><em>Crystal Phillips in a classroom</em> </p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>HSBC Bank Canada donated more than $550,000 to the HSBC Clean Air Achievers program from 2006 to 2013.</p>
+<p>CAC also had partnerships with Honda, the Government of Canada and CN (Canadian National).</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>CAC used the Trip Tracker as its primary method of monitoring the impact of the program. Reports produced by the Trip Tracker were available to students and teachers as well as CAC staff. </p>
+<p>Students entered their travel trips (unlimited in number) using a Google locator tool and drop-down selection of their mode of travel (car, hybrid car, truck/van/SUV, bus, subway, walking, cycling, skateboarding and rollerblading). The online tool allowed them to select regular travel trips taken in the past (for example, between school and home) and to easily record subsequent trips by simply selecting the new (or same) mode of travel.</p>
+<p>The Trip Tracker calculated the total distance travelled per mode of travel, the “old” emissions in kilograms (i.e. when using the usual mode of travel in the past), the “new” emissions (i.e. when using the more active or sustainable mode of travel), and the difference in kilograms of emissions between the travel modes. It also calculated the percentage of GHG reduction and the percentage of active transportation. All data were tracked for each participant and/or for the class or school as a whole. The program’s overall impact was measured by compiling all of the data at the end of each school year.</p>
+<p>CAC also conducted surveys after every Champion presentation and conducted one-on-one interviews with select teachers and Champions. In addition, an exit survey conducted at the end of the school year addressed the overall program attributes and tools and resources as well as the role of the Champion.</p>
+<p>Each year all data were put into a summary report of the impact youth had had on the environment and their transportation for that year. The report included anecdotes and quotes from teachers, Champions and youth participants.</p>
+<p>Due to the fact that the data were specific to the Trip Tracker participation in the program, CAC knew that there were no changes caused by non-program influences.</p>
+<p>Each year CAC reviewed the program evaluation results and took time over the summer months to make enhancements and improvements as needed.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>At the centre of the program was the Trip Tracker, a website that recorded students' travel trips and quantified the amount of GHGs by mode of travel. Each trip entered by a student gave the total kilometres traveled and the total GHGs (in carbon dioxide) that would be reduced if the student chose to change their travel behaviours. </p>
+<p><img alt="" height="334" src="/userfiles/Image/Trip Tracker.PNG" width="450"/></p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Year after year, HSBC Clean Air Achievers consistently met its goals to attain a minimum 15% decrease in GHGs (measured in CO2) and a 15% increase in students' active transportation (measured in kilometres).</p>
+<p>Between 2006 and 2013 the program impacts were similar from year to year. The average results for the 2011-2012 school year were a</p>
+<ul>
+<li>30.6% reduction in greenhouse gas emissions, a</li>
+<li>45.2% increase in active transportation, with more than 25,000 kilometres traveled by active transportation, and</li>
+<li>3,230 youth from 87 schools taking part in the program.</li>
+</ul>
+<p>The average survey return rates for the Champions was100%, while teachers averaged an 80% return rate. Students were more difficult to reach (with return rates between 4% and 9%) as CAC had to go through the teachers. Survey results from that year also revealed that:</p>
+<ul>
+<li>73% said they were going to try to travel more by active modes of transportation.</li>
+<li>57.7% of families used the car less after participating in the program.</li>
+<li>68% of participants strongly liked the program.</li>
+</ul>
+<p>Qualitative feedback provided additional evidence of the program’s impact and value. For example, Ms. Laframboise reported that the program reached well beyond its target audience. "We know we are having some impact on families, from the feedback we get from students telling us how their parents were engaged in the challenge."</p>
+<p>One Grade 6 student put it this way: “I liked it because it was fun to walk more. Also because, it felt good to help the environment. Also, it was good for my health. Also because my dad walked with me and I helped him get healthier too. Last but not least, it was funner [sic] to walk to school than drive.”</p>
+<p>Teachers reported that the program was easy to implement and provided students with concrete goals on how to lessen their impact on the environment. "Having a Champion come into the classroom was a fantastic motivator," said one teacher. "The program runs like a clock and fit seamlessly into our regular programming. The kids loved it, the parents were impressed, and it made me look like a star."</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Joséphine Hénault<br/>
+Program Manager <br/>
+Clean Air Champions <a href="mailto:josephine@cleanairchampions.ca ?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">josephine@cleanairchampions.ca   </a></p>
+<p>www.cleanairchampions.ca / www.championsdelairpur.ca</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned</strong></p>
+<p><em>Get staff on side</em></p>
+<p>Laframboise said that the program was about relationships. "The school system is a challenge in itself, it's not easy to get in and reach teachers, so we learned pretty quickly that we needed to have school board staff on side, the curriculum experts who supported the program, and principals."</p>
+<p><em>Teacher support is key</em></p>
+<p>Teachers were central to the success or failure of the program. "If teachers weren't behind the program endorsing it, it would not sustain," said Ms. LaFramboise. "We listen to what they say, every year, review the evaluations, and make the changes we need to."</p>
+<p><strong>Landmark Designation</strong></p>
+<p>The program described in this case study was designated in 2013.</p>
+<p>Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated through an open nomination process and by our peer-selection panels and Tools of Change staff, and then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Mark Dessauer, Blue Cross Blue Shield of NC Foundation</li>
+<li>Jacky Kennedy, Green Communities Canada</li>
+<li>Ryan Lanyon, City of Toronto</li>
+<li>Nathalie Lapointe, Federation of Canadian Municipalities</li>
+<li>Patricia Lucy, Translink</li>
+<li>David Levinger, Mobility Education Foundation</li>
+<li>Geoff Noxon, Noxon Associates</li>
+<li>Chuck Wilsker, U.S. Telework Coalition</li>
+<li>Phil Winters, CUTR and the University of South Florida</li>
+</ul>
+<p>This case study was written in 2014 by Jay Kassirer and Sharon Boddy.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

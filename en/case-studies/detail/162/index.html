@@ -1,0 +1,367 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>Seattle Public Utilities and King County</p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>PRR</li>
+<li>The Frause Group</li>
+<li>Brumley Communications</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Periodic polling between 1997 and 2001 shows almost double the amount of households are now leaving their grass clippings on their lawns, have ceased to use pesticide-containing products and are no longer watering their lawns.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Bert the Salmon: Promoting Natural Lawn Care in the Seattle Area</h1>
+<p>An extremely successful, media-based public relations campaign has convinced hundreds of thousands of Seattle-area homeowners to turn their backs on many environmentally harmful lawn care practices and embrace elements of natural lawn care. The campaign also uses a habit change kit that includes a lawn sign.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>In the mid-1990s, residents, businesses and government in King County (which includes Puget Sound and the Seattle area, in Washington State, USA) used about 1.1 million pounds of pesticides a year. Meanwhile, the areas 1.1 million homeowners generated nearly 550,000 tons of grass clippings. The pesticides had a negative impact on water quality, stream health and therefore wildlife habitat, while the grass clippings threatened to push the local composting facility beyond capacity. Furthermore, homeowners used almost twice the amount of water during summer as they did in winter, which threatened to strain the regions water supply. Much of this summer water consumption was for lawn watering and other outdoor use.</p>
+<p>In 1996 a consortium of public agencies led by Seattle Public Utilities and King County hired PRR, The Frause Group and Brumley Communications to devise and implement a program that would convince as many homeowners in the area as possible to adopt natural lawn care (NLC). </p>
+<p><img alt="" height="387" src="/userfiles/Image/Mapcruzin.JPG" width="450"/>Map courtesy of Mapcruzin.com</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The programs overall goal was to change the northwest lawn care ethic so that homeowners would move towards environmental best practices for lawn care. The specific behaviour changes it hoped to achieve were the following:</p>
+<ul>
+<li>to increase the number of people who practice grasscycling</li>
+<li>to decrease the number of people who use weed-n-feed products on their lawns</li>
+<li>to decrease the amount of water used on lawns</li>
+</ul>
+<p>No specific targets were set for the objectives.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The program found its target audience through a poll of 400 Seattle area residents. The poll determined that male homeowners from 25 to 54 years of age with a household income of $30,000 or more were most likely to own a lawn that they cared for themselves. Subsequent focus group research showed that while the group was interested in behaving in a responsible way, most were not receptive to learning complex lawn care techniques.</p>
+<p>"We learned that we had to keep the message as simple as possible", said Julie Colehour, Director of Marketing at PRR. "Also, the focus groups showed us that the target audience was more receptive and learned better through an upbeat message rather than a doom and gloom message."</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The team developed a simple message for the campaign that it could adapt to use in all media and at all events. The slogan was: <em>When it comes to your lawn, act naturally.</em> To reinforce the slogan, the team developed a friendly character called Bert the Salmon to act as spokesfish and deliver the NLC message in a humourous way.</p>
+<p>According to Colehour, Bert was not your typical salmon. He was developed to appeal to the male target audience in terms of look, style and tone, she said. He wears a baseball cap and jacket and has a sense of humor. The fact that he is a salmon sends an underlying message of why NLC is important.</p>
+<p>In the course of its research, the communications team determined that an integrated community outreach approach was the best method to reach the target audience. It recognized that NLC was a difficult concept for communities to grasp and, therefore, reopted for a grassroots approach. The promotional campaign included the following activities:</p>
+<ul>
+<li>television and radio advertising during Seattle Mariners baseball games</li>
+<li>media relations and promotional events at which news media would be present</li>
+<li>support materials, including habit change kits, lawn care information brochures and a promotional video</li>
+<li>education at special events such as the Garden Show and Home Show. This included distribution of literature and one-on-one education to interested parties.</li>
+</ul>
+<p><strong>Advertising</strong> <br/>
+The cornerstone of the campaign was television advertising aired during Seattle Mariners baseball games (<a href="/en/tools-of-change/mass-media/">Mass Media</a>). Because the target audience was men, the communication steam reasoned that baseball was an excellent venue for getting its message across. A 30-second ad, which cost $25,000 to produce, was aired in 1998 and 2000. The group spent $260,000 in 1998 and $230,000 in 2000 to air the ads.</p>
+<p>The two years where we aired the ads on Mariners TV were the two years where we saw the biggest behavior changes, said Colehour. While polling showed continuous improvement in all three behaviour areas over the four years of the campaign, the largest movements happened during the two years where we used Mariners TV advertising.</p>
+<p>In 1997 and 1999 the program also advertised NLC during Mariners <em>radio</em> baseball games. It rotated radio spots over nine weeks from April through August, which coincided with the growing season. Ads that focused on grasscycling predominated in April and June. From June to August, the irrigation season in Seattle the program aired ads aimed at water conservation. In 1999, the program again focused on radio advertising. That year the communications team worked with Mariners to produce 19 NLC tips that it broadcast during the games. During the 15-second tips, Bert the Salmon interacted with a Mariners team member. The advertising cost $210,000 in 1997, and $128,000 in 1999.</p>
+<p><strong>Engaging the news media</strong> <br/>
+Engaging the news media effectively was another critical aspect of the NLC campaign (<a href="/en/tools-of-change/mass-media/">Mass Media</a>). We held many media events and got lots of news coverage, said Colehour. Because we used various vehicles to disseminate information, people heard the message several times.</p>
+<p>Each year the communications team developed a different media hook to get the public interested.</p>
+<ul>
+<li>In 1997, the team invited the media to the home of a resident who practiced NLC. The media talked with the resident about NLC and showed the result - a great looking lawn. Public officials were on hand to discuss the program with reporters.</li>
+<li>In 1998 a junior high school student wrote to Seattle Mayor Paul Schell to complain he was afraid for his pets because of pesticide spraying in his neighborhood. Several local newspapers published his letter, which led to a community forum at the teens home. Schell conducted the event and the news media showed up in droves. Every local television station covered the forum and the two leading Seattle newspapers ran front-page feature articles. Community newspapers gave the event extensive coverage and radio stations conducted several interviews. The communications team considered the event one of its most successful public relations events.</li>
+<li>In 1999, the team issued a press release about how an increase in diazinon pesticide use during August and September could harm birds and fish, including the Chinook Salmon. It also pointed out that adult crane flies cannot be controlled with diazinon pesticides. The press release, which got extensive media coverage, asked people to embrace NLC as an alternative. In a second media push that year the communications team recruited all Seattle public libraries to stop using pesticides on their grounds. Mayor Schell announced the change at a library media event and asked citizens to adopt the same practices at home.</li>
+<li>In 2000 the team recruited an entire neighborhood in Renton Hill to dispense with lawn chemicals and embrace grass mulching for the season. The group offered each of the 19 households a free Black and Decker electric mulching lawn mower (Black and Decker donated the mowers to the communication steam), free lawn care consultations and free environmentally friendly lawn care products such as organic fertilizers (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives</a>; <a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). In return, the team asked residents to pull weeds by hand, water their lawns sparingly instead of daily and to dispose of all their chemical pesticides for six months (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>). The team invited the media to the program launch.</li>
+</ul>
+<p>The Renton Hill event was very successful, said Colehour. We had shots of little old ladies wheeling their gas mowers away and people using wheelbarrows to get rid of their pesticides. The media attention we got was very helpful in publicizing NLC. At the end of the summer all but two of the Renton Hill neighbors said they would continue to use NLC. The communications team asked the media back to discuss the experience with residents. Both media events gave substantial coverage to the program and many nearby neighbors asked how they could participate.</p>
+<p>What we hope is that with all the media and other exposure the peer pressure to have a perfect lawn will start working the other way around, said Colehour. We want people to feel the pressure to stop using pesticides and to embrace NLC.</p>
+<p><strong>Support Materials</strong> <br/>
+Before the campaign's 1997 launch, the communications team developed a basic brochure on how to practice NLC. It distributed the brochure at various seminars and events such as the Home Show, the Garden Show and neighborhood meetings. It also distributed through Seattle Public Utilities, King County and through its toll-free phoneline (<a href="/en/tools-of-change/mass-media/">Mass Media</a>). The brochure featured Bert the Salmon on virtually every page and listed six steps to using NLC (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>):</p>
+<ul>
+<li>Mow high, mow often and leave the clippings.</li>
+<li>Fertilize moderately in May and September with natural organic or slow release fertilizer.</li>
+<li>Water deeply to moisten the root zone, but infrequently.</li>
+<li>Improve poor lawns with aeration and over-seeding. Consider fixing the soiland replanting.</li>
+<li>Think twice before using weed n feed or other pesticides.</li>
+<li>Consider alternatives to lawns for steep slopes, shady areas, or near streams and lakes.</li>
+</ul>
+<p>In 1999 the communications team identified the need to support the excellent media coverage of NLC with a package of specific instructions about how to get started. To do this it developed a habit change kit that included the NLC brochure and other pamphlets loaded with practical information on how to use alternative pesticides, how to water lawns effectively and minimally and how to care for lawns without pesticides or excessive water use. The kit also included a Bert the Salmon lawn sign so people could show their neighbors they practiced NLC (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>). The team distributed the kits at special events and through the NLC hotline.</p>
+<p>The program used utility bill inserts to disseminate its message. These inserts focused primarily on water conservation and the impact of excessive water use on lakes and streams and, therefore, on salmon. Over the course of the program, Seattle Public Utilities distributed hundreds of thousands of inserts to its customers (<a href="/en/tools-of-change/mass-media/">Mass Media</a>;<a href="/en/tools-of-change/prompts/">Prompts</a>).</p>
+<p>The group produced a nine-and-a-half minute video for use during NLC speaker presentations at community centres, and for free distribution to every customer who purchased a mulching lawn mower through a mulch mower rebate program. In addition, it was provided to interested neighborhood groups and streamed free of charge on the King County Web site and the King County Department of Natural Resources Web page. It cost $24,000 to produce.</p>
+<p>The reason the campaign worked so well was that we used an integrated approach, said Colehour.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td><strong>Campaign Mix</strong></td>
+<td align="center"><strong>1997</strong></td>
+<td align="center"><strong>1998</strong></td>
+<td align="center"><strong>1999</strong></td>
+<td align="center"><strong>2000</strong></td>
+</tr>
+<tr>
+<td>Strategy/Planning</td>
+<td align="right">$8,544</td>
+<td align="right">$5,190</td>
+<td align="right">$25,061</td>
+<td align="right">$10,000</td>
+</tr>
+<tr>
+<td>Creative development and <br/>
+            production of ads, flyers, etc.</td>
+<td align="right">$70,800</td>
+<td align="right">$44,668</td>
+<td align="right">$28,000</td>
+<td align="right">$40,000</td>
+</tr>
+<tr>
+<td>PR/Outreach</td>
+<td align="right">$17,751</td>
+<td align="right">$28,005</td>
+<td align="right">$41,000</td>
+<td align="right">$40,000</td>
+</tr>
+<tr>
+<td>Media planning and purchase <br/>
+            (buying air time)</td>
+<td align="right">$210,542</td>
+<td align="right">$260,000</td>
+<td align="right">$128,000</td>
+<td align="right">$236,000</td>
+</tr>
+<tr>
+<td>Creative testing <br/>
+            (focus groups)</td>
+<td align="right">0</td>
+<td align="right">$11,405</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>Neighborhood meetings</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">$45,000</td>
+<td align="right">$10,000</td>
+</tr>
+<tr>
+<td>Habit change kit</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">$20,500</td>
+<td align="right">$5,000</td>
+</tr>
+<tr>
+<td>Targeted population outreach <br/>
+            (including promotional video)</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">$29,500</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>Grasscycling education <br/>
+            (participation at mulch mower <br/>
+            sales events)</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">$3,000</td>
+<td align="right">$3,000</td>
+</tr>
+<tr>
+<td>Evaluation (polling)</td>
+<td align="right">$5,992</td>
+<td align="right">$14,077</td>
+<td align="right">$33,000</td>
+<td align="right">$10,000</td>
+</tr>
+<tr>
+<td>Project management</td>
+<td align="right">0</td>
+<td align="right">$4,543</td>
+<td align="right">$12,088</td>
+<td align="right">$6,000</td>
+</tr>
+<tr>
+<td><strong>TOTAL</strong></td>
+<td align="right">$313,629</td>
+<td align="right">$367,888</td>
+<td align="right">$365,149</td>
+<td align="right">$360,000</td>
+</tr>
+</tbody>
+</table><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Over the four years of the campaign, the communications team conducted eight consumer polls one before the summer season and one in the fall - in which it asked 400 residents about each of the three behaviours the communications team was trying to change. Frequent polling made it possible to assess the effects of each stage of the promotion strategy.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Between 1997 and 2001, periodic polling has documented the following behaviour changes.</p>
+<ul>
+<li>The percentage of the population that leave their grass clippings on their lawns most of the time has increased from 27.7 per cent to 41 per cent (146,300households).</li>
+<li>The percentage of the population that does not use weed-n-feed or a similar pesticide-containing product on their lawns has increased from 46.8 per cent to 60 per cent (145,200 households).</li>
+<li>The percentage of the population that does not water their lawns has increased from 18.4 per cent to 34 per cent (171,600 households).</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Julie Colehour <br/>
+Colehour+Cohen <br/>
+1417 Fourth Avenue, Suite 201 <br/>
+Seattle, Washington 98101 <br/>
+Tel: (206) 262-0364 <br/>
+E-mail: <a href="mailto:jcolehour@prrbiz.com">jcolehour@colehourcohen.com</a> <br/>
+Web site: <a href="http://www.colehourcohen.com" target="new">www.colehourcohen.com</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>In March 2002, Go for Green, in partnership with Environment Canada, Home Depot and Tools of Change, hosted a Forum on Public Education Strategies to encourage "Gardening for Life" in Toronto to develop an educational model on sustainable lawn and garden practices for homeowners. The result was the release of a Gardening for Life blueprint and the "Bert the Salmon" case study, providing municipalities with much needed strategies on how to encourage citizens to become more physically active in lawn and garden care by using non-motorized tools and pesticide-free approaches.</p>
+<p><a href="http://www.goforgreen.ca/gardening/" target="_parent">Click here</a> to view the Gardening for Life blueprint and related papers.</p>
+<p>Last updated: July 2004<br/>
+Written in 2002 by Jay Kassirer </p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

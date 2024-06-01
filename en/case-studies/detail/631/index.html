@@ -1,0 +1,245 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Southwest Florida Water Management District</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Institute of Food and Agricultural Sciences (IFAS) Extension offices</li>
+<li>Homeowners associations</li>
+<li>Area utilities</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Based on pre- and post-campaign survey results, an estimated 1.2 billion gallons of water saved during the four month campaign, at a cost of $0.60 per thousand gallons.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Southwest Florida Management District's "Skip a Week" Yard Watering Campaign</h1>
+<p>This "Skip a Week" yard watering campaign used a combination of mass media and norm appeals  to overcome misconceptions about the amount of water required for healthy yard plants and to reduce yard water use. It resulted in an estimated 1.2 billion gallons of water saved during the four month campaign, at a cost of $0.60 per thousand gallons.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The Southwest Florida Water Management District (District) is a regional government agency that encompasses all or part of 16 counties in west-central Florida. Its mission includes ensuring adequate water supplies now and in the future. As the region entered its fourth year of drought at the end of 2009, the District needed to extend existing water supplies through the reduction of wasteful use. In designing its annual water conservation campaign, the District desired to deliver a campaign that would promote behaviors that would reduce water use.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>One main behavior change was chosen for this campaign  - reducing yard irrigation to no more than every other week from December through February.</p>
+<p>This behavior was selected for two reasons: (1) according to the University of Florida, grass needs to be watered only every 10 to 14 days during Florida's cooler months, and (2) outdoor water use typically accounts for up to 50 percent of water consumed by households in the District. Even relatively small reductions in residential irrigation can have significant, positive impacts on improving and sustaining water supplies for the region.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The campaign was based on formative research and a two-year pilot program on irrigation behaviors.</p>
+<p><strong>Previous Studies</strong></p>
+<p>Previous surveys commissioned by the District had found that residents preferred receiving lawn maintenance information from their neighbors and wanted to know simple behaviors to conserve water.  </p>
+<p><strong>Focus Groups and Survey</strong></p>
+<p>To design the pilot program, the District conducted focus groups made up of representatives from the selected neighborhoods. Subsequently, a Districtwide survey was conducted to provide segmentation data on ways to encourage residential irrigation water conservation and formulate the pilot program strategy.</p>
+<p>The survey sample included 802 people who (1) lived in a residence with a lawn or landscape, (2) watered their landscape, and (3) had an automatic irrigation system. Approximately half the sample was selected from communities designated as pilot project sites. The other respondents were selected using random digit dialing among exchanges used throughout the District. Analysis of the survey responses indicated the following:</p>
+<p><em>Audience segmentation</em><strong>:</strong> Over half the population fell into the willing to change, interested in learning the best way to water their yard category. The group also used more water than recommended, indicating that adoption by this group would impact water consumption while modeling desired behavior for friends and neighbors.</p>
+<p><em>Product strategy:</em> Benefits for skipping a week of irrigation included water conservation and the fact that rainfall often meant additional irrigation was not needed. Over half the respondents did not want their neighbors to think they watered too much.</p>
+<p><em>Pricing strategy / Overcoming Barriers:</em> The major barrier was the belief that the lawn would suffer/grass would die. As a result, the pilot program and later the campaign stressed the unhealthy results of overwatering.<br/>
+<br/>
+<em>Placement strategy:</em> Extension agents, master gardeners and the Southwest Florida Water Management District, identified by respondents as trusted sources for information, were program spokespeople.</p>
+<p><em>Promotional strategy</em><strong>: </strong>Educational pieces were distributed through direct mail. Homeowner association members were also recruited to become community models by agreeing to skip a week.</p>
+<p><strong>Pilot Irrigation Program 2007-2009</strong></p>
+<p>The pilot program was designed to help staff determine which social marketing interventions were most effective in reducing water use. For the pilot program, three high water-using neighborhoods within the District were selected, each with 100 homes similar in size and age. Water use was tracked at each of the neighborhood homes prior, during and after the project period. One neighborhood served as the control group, one received education interventions only and one received education interventions and advertising. </p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Staff used this information to produce five commercials, which were tested with focus groups of area residents. A commercial featuring two neighbors, Tom and Stan, was preferred by focus group participants and became the foundation of the campaign (<em><a href="http://toolsofchange.com/en/tools-of-change/norm-appeals/">Norm Appeals</a></em>). </p>
+<p>Acknowledging that members of the target audience feared their yards suffering and dying if irrigation were reduced, the campaign's messages emphasized the deleterious effects of overwatering and confirmed that yards do not need to be watered weekly during the winter months (<em><a href="http://toolsofchange.com/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). </em>The focus group members' positive response to these messages during ad pretesting was consistent with foundational research.</p>
+<p>The "Skip a Week" integrated campaign was conducted December 2009 to February 2010. Media outlets included television, radio, billboards, bill stuffers, direct mail and bus wraps (<em><a href="http://toolsofchange.com/en/tools-of-change/mass-media/">Mass Media</a></em>). To help increase the public's recall of messages, staff created a cohesive look by using the same actors, logos and messages on each advertising piece. Drawing on formative research, the District (1) Partnered with the Institute of Food and Agricultural Sciences (IFAS) Extension offices; (2) Provided information to 1,330 homeowners associations; and (3) Partnered with area utilities to distribute "<em>Skip a Week"</em> inserts in 435,000 utility bills.</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Districtwide surveys were conducted just before (November 2009) and just after (March 2010) the “Skip a Week” campaign. One thousand one hundred and fifty-two (1,152) District residents were interviewed in each study. The sampling error for each study was 2.9 percentage points given a 95 percent confidence level.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>By comparing the pre- and post-surveys, the “needle moved” in the following areas:</p>
+<ul>
+<li>The public’s awareness of the “Skip a Week” message was increased by 450 percent.</li>
+<li>The campaign’s unaided recall rate was 22 percent, up from 4 percent for the previous year.</li>
+<li>Prior to the campaign, residents believed they should water their lawns during winter on average 3.1 times per month. After the campaign, this number decreased to 1.8 times per month.</li>
+<li>19 percent fewer respondents thought yards need watering every week year-round to remain healthy.</li>
+<li>16 percent more respondents reported turning their irrigation system off manually as needed.</li>
+<li>23 percent more respondents knew that brown grass doesn’t always need water.</li>
+<li>19 percent more respondents reported skipping every other week of irrigation.</li>
+<li>An estimated 1.2 billion gallons of water  saved during the four month campaign. (based on the number of irrigation systems in the District, average amount of water used per week by an irrigation system and the 19 percent more respondents who reported they skipped every other week of irrigation in the post-campaign survey compared to the pre-campaign survey.)</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Darcy Brune<br/>
+Southwest Florida Water Management District<br/>
+Brooksville, FL, United States<br/>
+<span class="MsoHyperlink"><span lang="EN-US" style='font-family: "Calibri","sans-serif"; font-size: 11pt; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: EN-US; mso-fareast-language: EN-CA; mso-bidi-language: AR-SA'><a href="mailto:darcy.brune@watermatters.org"><font color="#0000ff">darcy.brune@watermatters.org</font></a></span></span></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>LESSONS LEARNED</p>
+<ul>
+<li>We originally designed the pilot irrigation program to help us determine the effectiveness of individual interventions and thus desired to isolate the pilot groups from any advertising (from programs) about the behavior. Because of the worsening drought, the District promoted the “Skip a Week” message to critical areas during the pilot program — only one of our three pilot neighborhoods was exposed to the advertising. Because that neighborhood was the only one of the three that showed a significant reduction in water use, we learned that advertising plus educational materials worked best.</li>
+<li>We also learned that our pilot groups were too small to effectively determine efficacy of individual interventions.</li>
+<li>Look for your market segment that is ready for the change or to take action. This campaign targeted a segment that was affected by the drought and were the decision-makers regarding lawn care. Formative research deemed the audience “willing to change.”</li>
+<li>Promote one simple behavior.</li>
+<li>Research barriers and remove them to assist in behavior change. Focus groups and surveys helped us to identify our target markets real and perceived barriers to the desired behavior. We were able to use this information in our campaign education, materials and messaging.</li>
+<li>Use research to pretest materials--focus groups and intercept interviews helped us test and adjust our pilot program materials and campaign ads to ensure the message was received clearly and the audience was motivated to act.</li>
+<li>Use research to evaluate your campaign’s success. Conducting surveys just before and just after the campaign allowed us to confirm significant increases in nearly all the behaviors that were promoted in the campaign. We were careful to emphasize that projections were based on self-reported behavior and that external influences like a wetter than average winter could not teased out. Nonetheless, being able to project 1.2 billion gallons of water saved helped District Executive staff and funding boards see the value of the campaign more clearly. These projected savings translate to a cost $0.60 per thousand gallons of water saved. Generally, $1 per thousand gallons saved is considered good.</li>
+<li>Promote a behavior in such a way that your audience sees it as normal. </li>
+</ul>
+<p> </p>
+<p>This case study was written in 2012 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

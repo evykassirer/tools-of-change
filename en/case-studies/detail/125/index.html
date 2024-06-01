@@ -1,0 +1,241 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+</ul>
+<h5>Initiated By</h5>
+<p>N/A</p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<p>N/A</p><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>N/A</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Setback Thermostats: Research and Resource Alert</h1>
+<p>This alert reviews research and resources relevant to turning down the heat (turning up the air conditioning temperature) - either by hand or using a setback thermostat - based on a report from Toronto Public Health.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>For every degree the automatic thermostat lowers your heating level, you'll save two percent on your heating. This action should be promoted both to homeowners and to those who rent and pay their own heating bills. A thermostat can be manually turned down or a programmable thermostat can be used.</p>
+<p>A programmable thermostat allows homeowners and/or renters to regulate the temperature automatically, for specific times and days of the week (e.g., they may wish to set the temperature low between 9:00 a.m. and 5:00 p.m. on weekdays when they are at work). The cost of a programmable thermostat varies from $40 - $140 (Home Hardware, Ottawa, Canada). The more expensive ones can also be programmed to regulate central air conditioning. A mid-range programmable thermostat with basic options (i.e., for temperature control for specific times and days) will cost between $75 and $80.</p>
+<p>Depending on actual energy savings, a programmable thermostat can pay for itself within 1-2 years. Savings are highest during the nighttime hours. Turning a thermostat down 10 to 15 degrees for 8 hours, can result in savings of 5% to 15% a year on heating bills (U.S. Department of Energy, <a href="http://www.pueblo.gsa.gov/cic_text/housing/thermo/thermo.htm">www.pueblo.gsa.gov/cic_text/housing/thermo/thermo.htm</a>). Older homes tend to have greater energy efficiency problems and can benefit more.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>N/A</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p><strong>Motivators</strong>:</p>
+<ul>
+<li>Homeowners will install a programmable thermostat to save money and enhance home comfort (some people like a cooler temperature when sleeping)</li>
+<li style="list-style-type: none; list-style-image: none; list-style-position: outside;">Homeowners must feel that the installing a programmable thermostat is essential to solving a negative situation (<a href="http://www.cbsm.com">www.cbsm.com</a>, The Implementation of Set-Back Thermostats and Social Diffusion in Twin Rivers, New Jersey).</li>
+</ul>
+<p><strong>Barriers</strong>:</p>
+<ul>
+<li>Misunderstanding. Many people believe that a furnace works harder than normal to warm the space back to a comfortable temperature after the thermostat has been set back, resulting in little or no savings (U.S. Department of Energy, <a href="http://www.pueblo.gsa.gov/cic_text/housing/thermo/thermo.htm">www.pueblo.gsa.gov/cic_text/housing/thermo/thermo.htm</a>).</li>
+<li>Forgetting to turn the thermostat down at night (<a href="http://www.pueblo.gsa.gov/cic_text/housing/thermo/thermo.htm">Ibid</a>). This can likely be overcome using prompts.</li>
+<li>Concern about increased discomfort.</li>
+<li>Perceived lack of skill at installing a programmable thermostat.</li>
+<li>Initial Cost. Some programmable thermostats may be too expensive for most lower income households (costs range from $40-$140). This could be overcome through subsidies for lower income households.</li>
+</ul><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Incentives</strong></p>
+<p>Promising approaches illustrated by case studies on this site include:</p>
+<ul>
+<li><a href="/en/case-studies/detail/99">TV modelling</a></li>
+<li>Work / Workshop-based: <a href="/en/case-studies/detail/117">Action By Canadians</a></li>
+<li>School - based: <a href="/en/case-studies/detail/13">In Concert with the Environment</a></li>
+<li>Home Energy Audits: <a href="/en/case-studies/detail/1">BC 21 PowerSmart</a></li>
+<li>Peer Group Approach: <a href="/en/case-studies/detail/9">GAP</a></li>
+</ul>
+<p>Key program elements include:</p>
+<ul>
+<li>Partnering with municipal utility companies.</li>
+<li>Partnering with local suppliers of programmable thermostats (e.g., hardware stores or direct suppliers, such as Honeywell).</li>
+<li>Vivid communication tools placed in utility bills.</li>
+<li>Prompts and commitment techniques for manual temperature adjustments.</li>
+<li>For lower income families: Partnering with lower income support services, such as Social Services, Welfare, etc. Piggybacking on programs already in progress through municipal departments allows access to lower income families and an opportunity to educate them on energy saving initiatives.</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>N/A</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>N/A</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>N/A</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>N/A</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>N/A</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Notes</strong></p>
+<ul>
+<li>Heat pumps require specific programmable thermostats. A conventional programmable thermostat can cause the heat pump to work inefficiently and result in an increase in energy use (Automatic and Programmable Thermostats, U.S. Department of Energy, <a href="http://www.pueblo.gsa.gov/cic_text/housing/thermo/thermo.htm">www.pueblo.gsa.gov/cic_text/housing/thermo/thermo.htm</a>).</li>
+<li>Mercury thermostats are considered hazardous waste and must be disposed of properly.</li>
+</ul>
+<p><strong>Tools:</strong></p>
+<ol>
+<li>Natural Resources Canadas Reno$ense Project Planner Guide (<a href="http://oee.nrcan.gc.ca:80/buildings/renosense/project_planner.htm">http://oee.nrcan.gc.ca:80/buildings/renosense/project_planner.htm</a>).</li>
+<li>Thermostats, <a href="http://www.floorplan.com/library/articles/thermostats.cfm">www.floorplan.com/library/articles/thermostats.cfm</a>.</li>
+<li>Go Green Renters Guide to Cost-Effective Environmentally-Friendly Living <a href="http://www.urbanoptions.org/pages/gogreen.htm">www.urbanoptions.org/pages/gogreen.htm</a>.</li>
+<li>Residential Energy Efficiency Database <a href="http://www.its-canada.com/reed/savings/noc-heat.htm">www.its-canada.com/reed/savings/noc-heat.htm</a>.</li>
+</ol>
+<p>This alert is based on a report prepared by <a href="http://www.cullbridge.com" target="http://www.cullbridge.com">Cullbridge Marketing and Communications</a> for Toronto Public Health, titled "20/20 - The Way to Clean Air: Literature Review"</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

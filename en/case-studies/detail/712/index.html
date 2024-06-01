@@ -1,0 +1,220 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/school-programs-that-involve-the-family/">School Programs that Involve the Family</a></li>
+</ul>
+<h5>Partners</h5>
+<ul>
+<li> Local schools</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Annual reductions of 500 miles travelled per family and half a million miles travelled overall, at a public cost of $0.05/mile of reduced travel/person</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Denver’s Schoolpool </h1>
+<p>Schoolpool is a dynamic program that gets students to and from school in a safer, more social and environmentally sustainable fashion,using carpools, transit and finding buddies for walking and cycling. Parents and guardians can locate nearby families or search for them along their child’s route to school. The program serves 150 campuses in the Denver region, and more than 19,000 families. </p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong><u>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</u></strong></p>
+<p>Schoolpool operates under the Denver Regional Council of Governments (DRCOG) Way to Go program.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p><em>Motivators</em>  </p>
+<ul>
+<li>While Schoolpool worked with all types of campuses, the Way to Go team found that schools without bus service had the most to gain. That said, school administrators were always eager to reduce the number of cars in pick-up and drop-off lines, which made mornings and afternoons move a bit more seamlessly.</li>
+<li>When families used Schoolpool, they could share the responsibilities and costs of transporting students among their school community.When parents were ill, or running late from work, they could rely on a network of support. Parents could also pass along  to their children the values of energy conservation, clean air and community-mindedness.</li>
+</ul>
+<p><em>Barriers</em></p>
+<ul>
+<li>Privacy was the primary concern among both parents and school administrators. </li>
+</ul><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Schoolpool targeted school administrators and parents or guardians. In 2017, the program had one Outreach Specialist that met with schools, explained the benefits and provided them with access to other campus families via the secure, online platform MyWaytoGo.org. Word of mouth  brought a number of schools on board as well. </p>
+<p>The program equipped participating schools with collateral, sales training and great selling points such as help for families and peace of mind with a secure online platform. However, once schools were signed up, Schoolpool actually had very little interaction with students and families. Because of the inherent value of carpooling to and from school, families were attracted to it. </p>
+<p>Schoolpool made it easy for participating families to find other nearby participating families. Once schools elected to participate, they had access to a map of other families on the same campus. Schoolpool continued to explore strategies that made carpooling an easy option, including ways for families with students in the same after-school activities (sports, theater, band, etc.) to coordinate evening or seasonal carpool options. </p>
+<p>The program set yearly targets for new schools and families enrolled.</p>
+<p><strong>Overcoming Barriers</strong></p>
+<p>Privacy was the primary concern among both parents and school administrators. To eliminate this barrier, Schoolpool gave campuses the opportunity to be 'opt-in', so that parents had to approve their children's participation in the program before their addresses and contact information were available to other families.<em> (Overcoming Specific Barriers)</em></p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The number of schools and families in carpools was tracked on an ongoing basis. Each year, the program cleared its database and started fresh with “active families.” Lists of these families were provided by the campuses.</p>
+<p>These numbers were triangulated periodically using a survey of participating families.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p> <strong>Individual Participants</strong></p>
+<p>The yearly cumulative VMT saved through Schoolpool has grown each year to 9,511,381 per year. That’s an average reduction of 500 VMT per family per year, at a public cost of $0.05/mile of reduced travel.</p>
+<p>On average, four out of five families that used Schoolpool participated in a carpool five mornings a week.</p>
+<p>Schoolpool also helped introduce alternative commute options to families that usually drove to school. This helped alleviate the stress on parents who may be suddenly unable to drive – and help maintain reliable access to before- or after-school programs. One parent was especially grateful for access to Schoolpool’s maps and database when she found herself unable to drive after a car accident: “I used the map provided by Schoolpool to find another family nearby. It turned out my son was in the same class as their daughter. It was a relief for me to know my son could get to and from school every day, and they both enjoyed a bit more social time before class began.”</p>
+<p><strong>Overall  Impacts</strong></p>
+<p>Population size of the program’s audience: 19,000 families across 150 campuses</p>
+<p>Between 2011 and 2017, cumulative VMT saved through Schoolpool grew from 6,596,321 to 9,511,381, an average saving of around half a million miles travelled a year at a public cost of $0.05/mile of reduced travel/person.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Winna MacLaren<br/>
+Public Relations Coordinator | Communications and Marketing<br/>
+Denver Regional Council of Governments <br/>
+Direct: 303-480-6743 | Fax: 303-480-6790 | Email: wmaclaren@drcog.org</p><!-- Contacts already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

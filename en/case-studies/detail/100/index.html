@@ -1,0 +1,255 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Vancouver General Hospital</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>B.C. Cancer Agency</li>
+<li>B.C. Teachers' Federation</li>
+<li>B.C. Rehab Hospitals</li>
+<li>B.C. Centre for Disease Control</li>
+<li>Children's and Women's Health Centre of B.C.</li>
+<li>City of Vancouver</li>
+<li>Insurance Corporation of B.C.</li>
+<li>Providence Health Care Society (includes Brock Fahrni Holy Family Hospital Mt. St. Joseph Hospital St. Paul's Hospital St. Vincent's Hospitals - Heather, Arbutus, and Langara, and Youville Residence)</li>
+<li>VanCity Savings</li>
+<li>Vancouver Hospital and Health Sciences Centre</li>
+<li>Vancouver Police Department</li>
+<li>Vancouver School Board</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Single occupancy vehicle drivers dropped by 1.6%, transit use increased by about 25%, and cycling increased to 5.5% from 4.5%.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Improving Employee Transportation: The Cambie Corridor Consortium</h1>
+<p>The Cambie Corridor Consortium (CCC) was the first transportation management association (TMA) established in Canada. A TMA is an alliance of business, government, and other groups that aims to reduce traffic in a particular area by pooling resources and expertise. Cambie's aim is to reduce the number of single occupancy vehicles commuting to the Cambie/Broadway area of Vancouver and improve air quality by providing alternative transportation solutions and information. Approximately 25,000 employees are represented through CCC's 21 members.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Over the previous ten years, the Cambie area, which includes the Cambie Bridge to 33rd Avenue and Main to Granville Street, had become Vancouver's second largest business district, combining business, shopping, and residential areas. The area also includes several hospitals and medical centres. In the early 1990s, the B.C. Teachers' Federation and one of the Vancouver Police Stations moved into the area, increasing traffic even more. Because of the nature of the businesses in the area, parking was becoming more and more of a challenge because hospital workers work 24 hours a day.</p>
+<p>A transportation consultant and other staff at the Vancouver General Hospital had been meeting with some of these partners for the last several years, and in 1995, they decided to form the Cambie Corridor Consortium to address some of their transportation problems. From those meetings, a trip reduction expert developed a transportation management plan that was used as the basis for the CCC's programs and services.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>CCC's objectives were to:</p>
+<ol>
+<li>Reduce single occupancy traffic by 20%</li>
+<li>Restore livability in the area, and</li>
+<li>Improve air quality</li>
+</ol><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>In 1994, a baseline survey was conducted of employees at Vancouver General Hospital and the University of British Columbia. CCC also had access to a traffic flow analysis that was done of the area by the City of Vancouver. Of the employees who completed the survey, over half were single occupancy drivers, with the remainder using transit, cycling, walking, or carpooling. According to Bett Lauridsen, transportation management coordinator for CCC, the average commuting distance for the majority of employees is about 10 kilometres.</p>
+<p>The survey found that three-quarters of all respondents said that the car was the quickest way to get to work, and one-third believed that transit took too much time. Half of all staff who responded to the survey would not take transit, even if it were free. The primary reasons for this attitude was that staff felt that the additional time taken in transit cut into their family time, and shift workers felt uneasy taking late night buses. The survey did, however, show that many employees were willing to consider transit if schedule improvements were made.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Vancouver General Hospital already employed Ms. Lauridsen as a part-time transportation consultant. A planned expansion of the hospital would have meant increasing the number of parking spaces. On average, each space costs $15,000 to $25,000 to build, maintain, and administer. Instead, the CCC hired Ms. Lauridsen to also serve as the part-time transportation management coordinator, making her the primary point of contact for its members and their employees. Transit kiosks were erected at each member's work site where employees could easily obtain information on transit fares, shuttle bus schedules, and other information (<a href="/en/tools-of-change/communication/">Vivid Personalized Communication</a>).</p>
+<p>A shuttle bus service was implemented to transport hospital staff between sites, and today the bus makes approximately 2,100 trips per month, carrying 9,000 passengers. The CCC also used the shuttle bus to transport equipment, supplies, and documents between sites, saving member hospitals approximately $200,000 each year in courier costs.</p>
+<p>Van pooling services were arranged through the Jack Bell Foundation (<a href="http://www.ride-share.com">www.ride-share.com</a>) and are used by approximately 200 employees. Another 500+ staff members carpool.</p>
+<p>CCC worked with B.C. Transit on an 18-month pilot project that implemented a payroll deduction program that allows employees to purchase their bus pass at a 15% discount (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>).</p>
+<p>To respond to the needs of employees, and address some of the barriers expressed in the initial surveys, an emergency ride home was implemented. CCC had a contract with a local taxi company and employees were given vouchers if they needed to leave work in case of illness or emergency. To avoid abuse of the program, employees were allowed up to four emergency rides home per year (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>Also in response to employee requests, additional shower and change facilities, and secure bike cages were installed at some of the members' work sites (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>The Board of Directors met every six weeks to discuss policy issues, set goals and plans for the future, and to evaluate its programs and services on an ongoing basis.</p>
+<p><strong>Promotion</strong></p>
+<p>Summer students distributed pamphlets to members and to other interested businesses in the area. Five pamphlets, each detailing a different method of transportation and its benefits, were available (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>).</p>
+<p>Regular transit fairs were held at different member sites to promote active and sustainable methods of commuting, and promotional items such as mugs and t-shirts were offered as prizes (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>).</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Environment Canada provided a grant of $60,000 with the provision that the CCC's members contribute an equal amount in in-kind donations. Each new member was given a one-year exemption from any fees, but the CCC was planning to solicit annual dues based on the number of employees from current and future members.</p>
+<p>The Cambie Corridor Consortium initiated the shuttle bus service. Before the service was implemented, hospitals were paying parking fees and mileage to employees who drove their cars between sites. These savings paid for the new shuttle service for their employees.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Two surveys, (1994 and 1998) were conducted, and represent the views of staff at Vancouver General Hospital and the University of British Columbia. The average response rate for the two organizations was about 30% (about 1,500 people; note that the low response rate calls into question the representativeness of the data collected). The surveys measured attitudes, habits, barriers, and other opinions on the programs and services offered by the CCC.</p>
+<p>In the case of the member hospitals, staff using the shuttle bus service completed an entry in a log book. CCC regularly tracked how many people were using the shuttle bus for trips between sites.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>The Transit kiosks set up at each member's work site were an effective way for employees to provide feedback on the programs and services. The primary kiosk, located at Vancouver General Hospital, was staffed seven hours a day.</p>
+<p>An annual report on the transportation management plan from Vancouver General Hospital reported on changes in behaviour, survey results, staff levels, membership, and other details. The report was available to members and other interested parties.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Results from the second survey conducted in 1998 showed increases in the use of alternative transportation. Since the initial 1994 survey, single occupancy vehicle drivers had dropped by 1.6%, transit use had increased by about 25%, and cycling had increased to 5.5% from 4.5%.</p>
+<p>The number of walkers had increased tremendously since 1994. Previously, employees who lived a short distance away would drive to work so that they would have a car available during the day to make trips between sites. Almost 10% of all survey respondents said that they regularly walked to work. In addition, of the people responding to the 1998 survey, 85% said they no longer brought their car to work because the shuttle bus allowed them to travel between sites.</p>
+<p>Eight hundred employees from the CCC members were using the reduced transit fare program in 1998. B.C. Transit has since expanded the program to more employers where employees can purchase a bus pass at a discount through payroll deduction.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Ms. Bett Lauridsen <br/>
+Transportation Management Coordinator <br/>
+Cambie Corridor Consortium <br/>
+855 West 12th Avenue <br/>
+Vancouver, B.C. V5Z 1M9 <br/>
+Tel: 604-875-4118 <br/>
+Fax: 604-875-4608 <br/>
+E-mail: <a href="mailto:blaurids@vanhosp.bc.ca">blaurids@vanhosp.bc.ca</a></p>
+<p> </p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned</strong></p>
+<p>In its latest annual report, CCC offered several suggestions to overcome barriers to active and sustainable commuting. Some are specific to the Cambie area, but others are more general and would need support from all levels of government to establish a significant paradigm shift. TMAs are uniquely qualified to lobby municipal and provincial governments for changes as they represent a greater number of people than a single organization.</p>
+<ul>
+<li>Legislation is needed to require employers to put trip reduction programs in place. This would make transportation management associations more attractive as they would reduce the overall costs of implementing trip reduction programs.</li>
+<li>Transit services need to be improved in such areas as reliability and connections. In the case of Cambie, shift workers would benefit from 24-hour transit service.</li>
+<li>High occupancy vehicle lanes for carpools should be established, and monitored regularly to avoid abuse of the lanes.</li>
+<li>Auto insurance rates should be amended to encourage people to leave their car at home for part of the week.</li>
+<li>Parking rates should be increased and bridge or highway tolls should be implemented.</li>
+</ul>
+<p>This case study was written in 2001 by Sharon Boddy, an Ottawa writer and editor, specializing insustainable transportation and energy efficiency issues. </p>
+<p>Funding for the addition of this case study was generously provided by the Government of Canadas Climate Change Action Fund, Suncor, Syncrude, Enbridge Consumers Gas and TetraPak Canada.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

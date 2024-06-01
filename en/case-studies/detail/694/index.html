@@ -1,0 +1,239 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p> Pathfinder International</p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<p>USAID, CARE, Population Services International, and World Relief</p><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>A statistically significant increase in current use of contraception from 7.2% at baseline (2010) to 17.6% at endline (2014)</li>
+<li>CYP increased by nearly 400%, from 28,841 in 2010 to 142,906 in 2014</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>SCIP Improves Contraceptive Uptake in Mozambique</h1>
+<p>From 2009 to 2015, Pathfinder International and its partners implemented the USAID-funded Strengthening Communities through Integrated Programming (SCIP) project in Nampula province, Mozambique. As part of SCIP’s overarching mandate to improve quality of life at the household and community levels, the project worked to increase access to contraceptive services by strengthening and better integrating health and community systems. There was a 400% increase in couple years of protection that occurred across all contraceptive methods included in the Mozambican method mix, suggesting improved method choice and minimized health provider bias.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Despite recent progress in important health indicators —including substantial declines in infant and child mortality—contraceptive use in Mozambique had remained stagnant over a decade (11.7% in 2003; 11.3% in 2011). In Nampula, the nation’s largest province by total population, contraceptive prevalence had declined from 9.2% in 2003 to just 5% in 2011, representing the third lowest rate in the country. Although uptake lagged, unmet need for contraception in Nampula rose sharply over the same time period—from 13.3% to 25%—reflecting a growing number of women understanding and expressing their sexual and reproductive health (SRH) needs.</p>
+<p>From 2009 to 2015, Pathfinder International and its partners implemented the USAID funded <em>Strengthening Communities through Integrated Programming</em> (SCIP) project in 14 of Nampula’s 21 districts. quality of life at the household and community levels. As part of this broad objective, Pathfinder worked with the Ministry of Health (MOH) to increase access to contraceptive services at both the facility and community levels.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The program in Mozambique aimed to improve health and quality of life at both the household and community levels by</p>
+<ul>
+<li>
+<p>Increasing couple years of protection (CYP) This measure was derived by multiplying the total amount of all contraceptive methods <em>distributed</em> in SCIP-supported sites by the relative effectiveness of each method to estimate the total years a given couple would be protected from pregnancy.</p>
+</li>
+<li>
+<p>Expanding access to information and services for sexual and reproductive health, maternal and child health, HIV, malaria, clean water, sanitation, and hygiene.</p>
+</li>
+<li>Creating a bridge between communities and distant health facilities—mobilizing community leaders to promote healthseeking behavior, improving referral systems, and deploying mobile outreach brigades to deliver health care locally.<br/>
+     </li>
+<li>Building the skills of clinical providers and help facilities secure supplies and resources, so clients can access the quality, lifesaving care they urgently need.</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>When the SCIP project began in 2009, the range of contraceptive methods available in Mozambique was quite narrow. Contraceptive implants had not yet been introduced into the country’s health system and although intrauterine devices (IUDs) were offered, providers reported a lack of confidence in their IUD insertion and removal skills. Provision of permanent methods was limited to central hospitals with the requisite surgical capacity. These factors led to a situation in which long-acting and permanent methods were rendered largely absent from the method mix, with a full 95 percent of modern method users in Mozambique relying on pills, condoms, and injectables (Depo) for ongoing contraception. 4 Chronic nationwide shortages of both short- and long-acting methods further restricted availability.</p>
+<p>Distance to health services posed another acute barrier to contraceptive access and uptake.5 At project start-up, there were two government-led modalities for providing health services at the community level— mobile brigades (i.e., teams of health providers who routinely travel to a central location within communities to offer services) and maternal and child health (MCH) weeks (i.e., targeted MCH outreach campaigns conducted in communities by health facility staff, and heavily supported by partner organizations). However, the range of services offered through these platforms fell short of meeting communities’ diverse needs. At that time, condoms and oral contraceptive pills were the sole methods provided through mobile brigades, and MCH weeks offered only vaccination and maternal health services. Pervasive sociocultural barriers, such as myths and misconceptions about contraception and limited male involvement in SRH, compounded supply- side obstacles.</p>
+<p>Given the multiple barriers to accessing and adopting contraception in Nampula province, the SCIP project worked with the MOH, communities, and local leaders’ groups to: mitigate severe commodity shortages; improve facility-based services; expand method availability through both static and community-based service delivery points; and support communities and individuals to identify and demand quality contraceptive services that meet their needs.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>SCIP’s key contraception interventions fall into two main categories: health systems strengthening and integrated community and health systems strengthening. </p>
+<h4>Health Systems Strengthening <br/>
+</h4>
+<p><em>Interventions Improving commodity security</em></p>
+<p>At project start-up, the nationwide shortage of contraceptive commodities undermined initiation of planned SCIP activities. For example, community-based distribution of contraception was delayed due to prolonged national stock-outs of oral contraceptive pills, and provider trainings were deferred due to limited method availability. Recognizing the critical need to strengthen commodity security, Pathfinder and other stakeholders provided technical assistance through participation in the national and provincial commodity supply task forces to build government capacity to accurately forecast commodity needs. At the facility level, SCIP provincial MCH nurse supervisors reviewed available stock during quarterly supervision visits, and worked with providers to estimate needed commodities for the upcoming month and correctly complete stock order forms.</p>
+<p><em>Strengthening human resources for health</em></p>
+<p>To expand method choice at static facilities, Pathfinder worked with the government to build providers’ clinical capacity to offer long-acting methods. Given provider discomfort with IUDs, SCIP worked with the MOH to enhance provider skills and confidence through a series of competency- based trainings on IUD insertion and removal for a total of 99 health providers who staff the 139 SCIP-supported health facilities. These trainings were facilitated by SCIP-supported provincial MCH nurses and used the MOH training curriculum, supplemented by a Pathfinder module covering balanced contraceptive counseling.</p>
+<p>Following the government’s introduction of contraceptive implants into the health system in 2012, Pathfinder worked with the MOH to expedite rollout of the new method. During the July–September 2012 quarter, Pathfinder supported a pilot training for 32 providers, followed by subsequent mass trainings for 103 providers on implant insertion and removal. Similar to the IUD trainings, SCIP provincial MCH nurses facilitated the implant trainings, and Pathfinder worked with the MOH to revise the contraception curriculum to include information pertaining to implants.</p>
+<p>Review of the training curricula revealed one distinguishing factor across the implant- and IUD-specific trainings. In both, dedicated time was allocated to reviewing all other methods included in the Mozambican method mix. Often, contraception trainings focus solely on the method that is being introduced due to time and resource constraints, along with assumptions that the workforce is sufficiently skilled and confident in provision of existing methods. This may inadvertently introduce provider bias toward the new method, either by implicitly placing undue emphasis on the method or simply because these skills become the most recently updated. Careful to avoid this, Pathfinder worked with the MOH to ensure that the curricula not only covered the new method, but also reviewed all other methods available, contraindications of each, and the importance of balanced counseling.</p>
+<p>Following trainings, SCIP provincial nurse supervisors conducted day-long mentorship visits with providers on a quarterly basis to reinforce their newly acquired skills. During these visits, nurse supervisors used a checklist aligning with the MOH’s quality standards to assess counseling, clinical skills, infection prevention measures, and management and flow of contraceptive services. Nurse supervisors then provided on-the-job training and mentorship to individual providers to redress any observed gaps.</p>
+<p><em>Expanding contraceptive service delivery</em></p>
+<p>To mitigate access barriers and expand contraceptive service delivery at the community level, Pathfinder worked with its government counterparts to broaden the range of methods offered through mobile brigades and to integrate contraception into biannual MCH weeks. At project start-up, pills and condoms were the only methods provided during mobile brigades, although providers involved had the capacity to offer long-acting methods as well. To broaden clients’ choice, the project advocated for expansion of the range of methods available during brigades with its local government counterparts.</p>
+<p>Even more restrictive, no contraceptive methods were offered through MCH weeks at project start-up. Supported primarily by UNICEF, the main goal of the MCH weeks was to increase vaccination and maternal health coverage; yet as a national campaign, they reached communities across the country. Recognizing this key missed opportunity to reach women at the community level with contraceptive services, SCIP leveraged Pathfinder’s broader involvement in the national Sexual and Reproductive Health Steering Committee to advocate for provision of contraception during MCH weeks. Pathfinder’s efforts contributed to increased method availability via mobile brigades and MCH weeks throughout the project’s lifecycle. </p>
+<h4>Integrated Community and Health Systems Strengthening </h4>
+<p> </p>
+<p>Fostering informed, empowered communities capable of identifying and demanding quality health services lies at the core of the SCIP project’s mission. With an eye to sustainability, Pathfinder worked to strengthen existing, formalized community structures tasked with overseeing local health initiatives per the country’s decentralization policy, such as community leadership councils and health facility co-management committees. Without these key structures, very few avenues exist for bridging community and health systems; however, at project start-up, many had weakened or lapsed altogether. Responding to this challenge, the project first revitalized and, where necessary, established, these structures.</p>
+<p>Once these were functional, the SCIP project supported nurses from the nearest health facility to facilitate discussions with community leadership councils about the social norms and beliefs that hamper informed contraceptive decision making by couples and families. These nurses led “hot topics” discussions with 31,069 community leaders on a range of SRH issues, including: contraception; sexually transmitted infections; HIV and AIDS; institutional deliveries; and antenatal and postpartum care. In addition, SCIP provincial nurse supervisors trained a total of 948 community leader facilitators (described in the box below) in the importance of male involvement in SRH, emphasizing contraception. These discussions with community leadership councils and leader facilitators contributed to an enabling environment for behavior change, encouraged health-seeking behavior among community members, and generated demand for services</p>
+<p>To ensure that community needs (as identified and aggregated by community leadership councils and community leader facilitators) are systematically fed back into the health system, SCIP built the capacity of 100 health facility co-management committees to serve as the formal mechanism linking health and community systems. These co-management committees also played a role in assisting facilities to gauge community demand for contraceptive methods, which helped facility staff forecast the amount of commodities needed for outreach events.</p>
+<p>In addition to these vital community structures, the project supported a cadre of 33,693 community health workers (animadoras) and volunteers to: sensitize community members on a constellation of health issues including contraception, to directly distribute pills and condoms, and to refer clients to facilities for other methods and for initial contraception consultations. However, as a result of the severe shortages of oral contraceptive pills at project start-up, animadoras focused almost exclusively on behavior change and demand generation until early 2012. This extended period of time allowed animadoras to nurture sustained, continuous dialogue with community members about the importance of healthy timing and spacing of pregnancies, alongside other important health issues.</p>
+<p>Finally, with technical support from Pathfinder, the provincial health directorate organized the Nampula Provincial Family Planning Conference in November 2012. This full-day event attracted 201 political, community, and religious leaders, and focused on making FP relevant to the diverse stakeholders present. Sessions drew connections between FP and a constellation of issues relevant to attendees, including improved MCH, nutrition status, and economic opportunity. The conference resulted in increased FP awareness among influential political and religious leaders, further solidifying the enabling environment for improved access to and uptake of contraception that the project had fostered at the community level.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The project was funded by USAID.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Couple years of protection (CYP) was a key measure. It was derived by multiplying the total amount of all contraceptive methods <em>distributed</em> in SCIP-supported sites by the relative effectiveness of each method to estimate the total years a given couple would be protected from pregnancy.</p>
+<p>Pathfinder compared trends in CYP in the 14 SCIP-supported districts with the remaining 7 non-SCIP-supported districts in Nampula province.</p>
+<p>Because of differences in population size between these two groups, Pathfinder standardized the comparison by estimating <em>overall “coverage”</em> for each group—defined as the proportion of women protected from pregnancy by contraception. Coverage was calculated by dividing the total CYP achieved in a given quarter in each district by the estimated number of non-pregnant women of reproductive age residing in that district. The SCIP team then plotted a line of best fit to calculate the incremental average increase in coverage per quarter per group.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Over the life of the SCIP project, Pathfinder observed a statistically significant increase in current use of contraception from 7.2% at baseline (2010) to 17.6% at endline (2014) in the project’s catchment area. CYP increased by nearly 400%, from 28,841 in 2010 to 142,906 in 2014. Interestingly, not only did overall CYP increase, but from the April– June 2013 quarter onward, an increase began to occur across all contraceptive methods included in the Mozambican method mix. This suggests that both access to and choice of methods improved, and implies that health provider bias toward any particular method during contraceptive counseling was minimized.</p>
+<p>The consistent increase in uptake of long-acting methods is particularly notable, given that contraceptive use in Mozambique is heavily skewed toward short-acting methods. </p><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study was compiled by Jay Kassirer in 2015, based on the Pathfinder International Technical Brief "<em><a href="http://www.pathfinder.org/publications-tools/pdfs/ISS-for-improved-contraceptive-access-and-uptake.pdf" target="_blank">Integrated Health and Community Systems Strengthening for Improved Contraceptive Access and Uptake in Nampula Province, Mozambique</a></em>" (October, 2015), </p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

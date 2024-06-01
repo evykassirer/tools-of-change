@@ -1,0 +1,295 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Toronto Public Health</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Ontario Ministry of Environment (OMOE)</li>
+<li>Canada Mortgage Housing Corporation (CMHC)</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>There was a significant (p &lt;.001) shift away from spraying towards the use of the (safer) paste /gel alternatives. One year after the pilot, property management reported that there was very little use of pesticide sprays in apartment units throughout the housing complex.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>The Roach Coach Project</h1>
+<p>This pilot program demonstrated how a brief, on-site, educational intervention coupled with resource materials can influence tenants to adopt less hazardous pest control methods. Materials were developed for use by others.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The Roach Coach was an eight month long pilot program run in Toronto, Ontario, in 1997. It tested whether a brief, on-site, educational intervention coupled with resource materials could influence tenants in multi-unit housing complexes to adopt less hazardous pest control methods (Integrated Pest Management, or IPM).</p>
+<p>IPM is recognized internationally as superior to traditional pesticide spray programs, being less or non-toxic, and cost competitive. Since areas of application are confined, and only non-spray formulations (e.g. hydramethylnon gel, baits, and boric acid paste) are employed, the likelihood of exposure, particular among young children, to pesticide residues is reduced. Unlike sprays, which immediately kill on exposure, the gels and pastes are designed to be carried back by a host to destroy an entire nest reducing the need for reapplications. Despite these advantages, use of IPM methods remains low.</p>
+<p>The pilot focused on control of cockroaches because they are the most common structural pest and result in the greatest use of professional pest control services in Toronto. A site was chosen in Toronto because of its relatively high concentration of apartment buildings.</p>
+<p>A number of non-governmental organizations began implementing elements of the pilot in 1998. Anyone interested in implementing a Roach Coach program can start by obtaining copies of the following publications, created as part of the pilot (available in English and French, see contact information, at the end of this case study):</p>
+<p><em>Farewell to Cockroaches: Getting Rid of Cockroaches the Least Toxic Way</em>, for use with participants (available free)</p>
+<p><em>Curbing Cockroaches the Least Toxic Way</em>, a train-the-trainers resource guide that contains details about the IPM method, promotion ideas, and health and environmental risks associated with pesticide use (cost is $12.95, + 3.95 shipping &amp; handling + applicable taxes)</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>One objective was to promote the use of IPM among apartment dwellers.</p>
+<p>Other objectives were: to enhance the biophysical environment through reduced use of pesticides overall, and to improve indoor air quality and minimize pesticide exposure in the home.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Background research uncovered a number of factors thought to be barriers to widespread implementation of IPM-applicable to landlords, building managers, and residents - including:</p>
+<ul>
+<li>limited knowledge or experience with IPM;</li>
+<li>lack of trust in IPM's effectiveness;</li>
+<li>a misunderstanding that IPM costs more than traditional spray methods;</li>
+<li>an expectation for immediate elimination of pests;</li>
+<li>the stigma associated with cockroaches, making information-sharing difficult;</li>
+<li>poor understanding of factors that contribute to pest infestations; and,</li>
+<li>lack of awareness about health risks associated with pesticide sprays.</li>
+</ul>
+<p>Thirty minute (pretest) telephone interviews with participating tenants were used to assess the relevance of these barriers to the participants.</p>
+<p>A multi-sectoral project advisory committee was formed to enhance the inclusion of public, business, government and academic perspectives on pesticide use control methods. Membership on the Committee included representation from the Ontario Pest Control Association, OMOE, CHMC, Health Canada, Federation of Metro Tenants Association, South Riverdale Community Health Centre, Toronto Environmental Alliance and York University.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Promotion and Recruitment</strong></p>
+<p>To gain access to a host site, information about the IPM method, its long-term effectiveness, its cost competitiveness ($38.83 for IPM vs. $39 for pesticide sprays per unit per year), and the avoidance of health risks were communicated to property/building management to gain their support. Management in turn met with tenant representatives to inform them about the project and gain their approval and support.</p>
+<p>A personalized recruitment letter was then distributed to tenants, accompanied by a supporting letter from property management. The initial response rate was only 4%. A follow-up door-to-door recruitment leading to on-site training (<a href="/en/tools-of-change/home-visits/">Home Visits</a>), yielded a total of 80 volunteers.</p>
+<p>Participants were asked to make a verbal commitment to complete all aspects of the eight month pilot (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>). To minimize attrition, those completing the pilot were given $25 (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>).</p>
+<p><strong>On-Site Workshops and Tenant Monitoring</strong></p>
+<p>Participants were then invited to an hour long workshop, held on the premises, with group-sizes limited to eight or fewer people. The first 40 minutes consisted of a slide show and the last 20 minutes consisted of demonstrations and a question and answer period. The slides were specifically chosen to relate to common motivators and/or to address the potential barriers that had been identified (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>, <a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>The slides depicted the health risks associated with pesticide sprays (e.g. a child with asthma, and a pest control technician in protective gear for spraying vs.a technician without gear applying a gel), prevention (e.g. plugging holes around plumbing), and sanitation (e.g. a pile of dirty dishes). Information about IPM's long-term effectiveness, cost competitiveness and avoidance of health risks was also communicated.</p>
+<p>At the workshops, tenants were instructed how to visually examine their apartments for signs of cockroaches. They were also shown the alternative methods by which the pest control technician would apply the pesticide control products. Posters, bait guns, pest control products, and cockroach specimens sealed in plastic served as props. To combat the stigma associated with cockroaches, humor was used throughout the presentation. An information booklet was also given to each participant for further reading.</p>
+<p>Participants were directed to visually monitor for signs of cockroaches, and to check the traps set in their apartments (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>). If cockroaches were observed, participants were encouraged to request an IPM treatment - including structural improvements if required. However, tenants who requested spray treatment were permitted this option.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>CMHC and the Ontario Ministry of the Environment each supplied approximately half of the $42,000 cost of the pilot, which included*:</p>
+<table border="0">
+<tbody>
+<tr>
+<td>Research and development</td>
+<td>$20,000</td>
+</tr>
+<tr>
+<td>Creation of workshop slides, train-the-trainers resource guide, posters and public information booklets</td>
+<td>$22,000</td>
+</tr>
+</tbody>
+</table>
+<p>*Total did not include Toronto Public Health Staff Time.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p><strong>Telephone Questionnaire</strong></p>
+<p>The primary evaluation tool was a close-ended questionnaire administered over the phone at the beginning of the pilot, and about six weeks after the educational intervention. The questionnaire was constructed to measure the following:</p>
+<ul>
+<li>Overall knowledge: health risks of pesticides; precautions with pesticide use; health risks and habits of cockroaches; factors contributing to cockroach infestations; and, familiarity with IPM method.</li>
+<li>Overall attitude: effectiveness/desirability of alternatives; concern about spraying; and, concern about cockroaches.</li>
+<li>Overall practice: recognition/management of cockroach problems; and, prevention of cockroach infestations.</li>
+</ul>
+<p>The pretest and posttest questionnaires repeated the same questions with a few exceptions: demographic information was collected in only the pretest questionnaire; feedback about the educational workshop and resource materials were included in only the posttest questionnaire.</p>
+<p><strong>Cockroach Monitoring</strong></p>
+<p>Three cockroach monitoring traps were placed in participants units at the beginning and again at the end of the pilot. The traps were used to determine changes in levels of infestation due to an IPM intervention. Cockroach data were also compiled based on a visual assessment (i.e. how many cockroaches, on average, participants observed in the home per week.)</p>
+<p><strong>Pesticide Use Monitoring</strong></p>
+<p>Data were complied on pesticide treatments, from pest control company records, for the 18 months prior to and the eight months during the pilot. Changes in the types of treatments selected by tenants during and after the pilot could therefore be measured.</p>
+<p>The pilot was conducted without a control group. In order to screen for effects from other promotional campaigns running at the time of the pilot, participants were asked during the posttest questionnaire whether they had received information from sources other than the pilot.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>N/A</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>There was a significant (p &lt;.001) shift away from spraying towards the use of the (safer) paste /gel alternatives.</p>
+<table border="0">
+<tbody>
+<tr>
+<td>Behavior</td>
+<td>Pre-pilot</td>
+<td>During Pilot</td>
+</tr>
+<tr>
+<td>Use of paste/gel treatments</td>
+<td>38%</td>
+<td>90%</td>
+</tr>
+<tr>
+<td>Use of pesticide sprays (by tenant or pest control technician)</td>
+<td>62%</td>
+<td>11%</td>
+</tr>
+<tr>
+<td>Purchase and self-application of pesticide sprays</td>
+<td>60%</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table>
+<p>One year after the pilot, property management reported that their was very little use of pesticide sprays in apartment units throughout the housing complex. The following reasons were provided for continuing with an IPM approach to pest control:</p>
+<ul>
+<li>The use of gel and paste baits was more convenient for tenants than sprays, which required they empty their kitchen cupboards prior to application.</li>
+<li>Many tenants wanted to avoid pesticide sprays.</li>
+<li>From a building management perspective, the IPM method was found to be no more expensive in the long run, despite the fact that gels and pastes cost twice as much as sprays. This was because the number of repeat applications was reduced by using the IPM approach. In addition with spraying, tenants sometimes failed to empty their cupboards prior to a visit from a pest control company, preventing the spraying from proceeding and incurring an unnecessary charge.</li>
+</ul>
+<p><strong>Cockroach Infestation Levels</strong></p>
+<p>Overall, cockroach levels were lower or the same after the IPM intervention compared with before.</p>
+<p>Of the units that received IPM interventions, infestation levels were: reduced in 79% of units; the same in 12% of units; and, higher in 9% of units.</p>
+<p><strong>Knowledge and attitudes concerning IPM</strong></p>
+<p>Statistically significant improvements in knowledge and attitudes (p &lt;0.001 for many measures) were found in participants' knowledge and attitudes concerning IPM. However, for most measures, the degree of improvement was relatively small. The largest changes concerned new knowledge gained about IPM, and a large shift in attitudes away from the use of pesticide sprays.</p>
+<p><strong>Process Evaluation</strong></p>
+<p>About 90% of participants thought that the one hour educational session was perfectly timed (i.e. neither too long nor too short). Almost all thought the presentation was informative, and 88% thought the hands-on demonstration made the slide show easier to understand. More than 90% thought they learned enough information (rather than too little or too much).</p>
+<p>Although the educational booklet handed out during the workshop was rated positively, and although almost all participants read at least some of the booklet, only half read it in its entirety, indicating the value of workshops in communicating essential information.</p><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p> This case study was written in 2000 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

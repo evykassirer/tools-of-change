@@ -1,0 +1,324 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Quinte Regional Recycling</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Centre and South Hastings Recycling Board</li>
+<li>Ontario Ministry of Environment and Energy</li>
+<li>Industry funders</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>The program's successes include:</p>
+<ul>
+<li>50 percent return on investment for the composting program</li>
+<li>tonnage diverted from waste grew by nearly half between 1989 and 1994, while recycling program costs dropped by over half between 1991 and 1995</li>
+<li>waste diversion levels averaged 66 percent across all municipalities by 1996</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Quinte Waste Solutions and History of the Blue Box in Canada</h1>
+<p>To encourage people to reduce the amount of curbside waste going to land fills, a range of waste diversion programs were introduced in the Centre and South Hastings Region of Ontario and Prince Edward County, including backyard composting, expanded Blue Box recycling, reducing and properly disposing of household hazardous waste, and a user-pay system. The notes section tells the history of the Blue Box in Canada.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Quinte Waste Solutions was a program of the Centre &amp; South Hastings Waste Services Board, an association formed from 15 municipalities in southeastern Ontario with a combined population base of 95,000. In 1991, with the support of the Ontario Ministry of Environment and Energy, the Board launched Blue Box 2000. This program was a one-year demonstration to show how a municipal waste diversion program could be expanded to its maximum potential. A combination of extensive backyard composting, user payment, and an expanded Blue Box recycling program were used.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The goals set by Quinte and its partners, based on data obtained from local waste stream studies, were:</p>
+<ul>
+<li>71 percent diversion from the residential waste stream by the year 2000</li>
+<li>cost effectiveness</li>
+<li>80 percent of single family householders composting at home</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Blue Box 2000 involved three main areas of focus: increasing backyard composting, expanding the Blue Box recycling program and introducing a user-pay system. The program was introduced and tracked independently in each of the six participating communities, with a local service club being involved in the delivery of each program. School workshops assisted in the delivery of all three areas of the program, and featured tours of local recycling plants. Quinte Region estimates that approximately 15,000 children had direct contact with representatives of their programs through these initiatives.</p>
+<p><strong>Backyard Composting</strong></p>
+<p>The backyard composting program, implemented to deal with residential organic waste, was called YIMBY (Yes, In My Back Yard). Launched in the spring of 1992, it involved a threefold approach. An extensive advance promotion campaign was launched to inform residents of the program and increase acceptance levels. This was followed by door-to-door distribution of free composters, as an incentive (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>) and to overcome the cost and inconvenience to residents (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>Finally, decals carrying the words, "We Compost Too" were attached to the Blue Boxes of householders, making it clear who was composting in the community (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>).</p>
+<p>Another barrier, the "yuck factor," had to be addressed. To handle residents' fears that the compost bin would be messy, smell bad, or attract unwelcome insects and animals, education reinforced that composting was easy and clean. This was provided through brochures, an information hotline, a composting demonstration site and workshops.</p>
+<p>"Shelf talkers" were placed in one grocery store along the produce section as prompts to shoppers to compost (<a href="/en/tools-of-change/prompts/">Prompts</a>). Shelf talkers were also placed throughout this store to provide information about which products and packaging were recyclable or made of recycled products.</p>
+<p><strong>Blue Box</strong></p>
+<p>Blue Box recycling had started in 1990 and was expanded in 1991 with the Blue Box 2000 program. The Blue Box containers had proven to be a convenient and appealing method for people to recycle. In order to encourage participation, free boxes were distributed. A promotion and education campaign instructed residents about which materials to recycle and how to put them out for collection. The campaign included door-to-door distribution of "Beside and Inside Cards." These were 8.5" x 14", two-colour, two-sided cover stock cards, listing which recyclable materials should be placed inside the Blue Box, and which should be placed beside. Surveys showed that these were the single most effective promotional tool, as people found them to be compact, attractive and sturdy enough to put them up on their refrigerators (<a href="/en/tools-of-change/prompts/">Prompts</a>).</p>
+<p>Specific reminder cards were also left in Blue Boxes from time to time. These were typically 4.25" x 5.5", two-colour cover-stock cards covering such topics as problems, instructions on handling new materials, and Christmas reminders. Residents therefore received constant personal prompts on the proper use of Blue Boxes. Also, if non-recyclable materials were put out, these were left behind at collection time with, occasionally, a short explanatory note. Finally, each box carried the words "We recycle." In some locations, decals were also placed on the boxes, listing the materials which could be put into them for collection (<a href="/en/tools-of-change/prompts/">Prompts</a>).</p>
+<p>The Blue Boxes acted as an effective and consistent prompt to recycle, because they were seen on the curbside each collection day. The high visibility of participation also served to provide a strong normative appeal.</p>
+<p><strong>Household Hazardous Waste (HHW)</strong></p>
+<p>In 1994, the "Clean &amp; Green" program was implemented, which encouraged residents to consider healthy alternatives to toxic household products. This was done with mobile displays and through numerous "house parties" hosted by community members and attended by a staff person. These events offered staff the opportunity to talk face-to-face with residents about the numerous alternative products and recipes that were developed (<a href="/en/tools-of-change/home-visits/">Home Visits</a>). All tips, recipes and alternatives to toxic household products and practices were documented in a "Clean &amp; Green" booklet made available free of charge to residents.</p>
+<p>The focus of the collection program was reuse. Paint, which made up the largest portion of material collected, was offered back to residents for free, one day every week, if the paint was still useful. Most of the paint collected was disposed of in this way.</p>
+<p>Inconvenience was the other barrier to participation. In order to serve a large geographical area, a "Toxic Taxi" went to numerous communities throughout the year, so that residents would have better access to HHW disposal options (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p><strong>User Pay</strong></p>
+<p>Sidney Township, the second largest municipality in Centre &amp; South Hastings, started a volume-based user-pay garbage program in 1994 to provide an incentive for waste reduction (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>). For the first year, each household was given 52 "free" tags (only tagged bags would be collected.) Extra tags could be purchased for $1.50 each. Each bag could weigh no more than 40 lbs and could be no larger than 30" x 38". A lift limit of 10 bags was maintained. Fines were introduced for any breach of the by-law, ranging from $10,000-$25,000 for individuals and $50,000-$100,000 for corporations (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>). No fines had been levied as of 1996.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p><strong>Composting</strong></p>
+<ul>
+<li>The free composters cost a total of $500,000 ($23 per composter). Two thirds of the funding for these was provided by the Ontario Ministry of Environment and Energy, and the remaining third by the local municipalities.</li>
+<li>Advertising and promotion to launch the program cost $40,000.</li>
+<li>Distribution of the composters cost $100,000.</li>
+<li>$25,000-$30,000 was spent annually to run the composting program. This had decreased to $15,000-$20,000 by 1996.</li>
+<li>Advertising, promotion and education cost another $25,000 annually. As of 1996, Quinte Region was expecting that this cost would be paid through advertising sponsorships and participating businesses.</li>
+</ul>
+<p><strong>Blue Boxes</strong></p>
+<ul>
+<li>The capital cost for the free Blue Boxes was estimated at $170,000 ($4.20 per box).</li>
+<li>Advertising and promotion to launch the program cost $40,000. $15,000 of this covered the production of the "Inside and Beside" cards.</li>
+<li>Each municipality handled its own distribution of the Blue Boxes through their Public Works Departments, at an estimated cost of $5,000.</li>
+</ul>
+<p><strong>User pay</strong></p>
+<ul>
+<li>Sidney organized and funded the user-pay program.</li>
+<li>The initial advertising and promotion costs were $5,500.</li>
+<li>Approximately 120 person hours were required to implement the user-pay program, with an annual use of 175 person hours each year afterwards.</li>
+<li>The tags cost $3,000 to produce and $3,000 to distribute.</li>
+</ul><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The following factors were tracked on an ongoing basis: curbside lift counts, waste composition studies, weight of waste going to landfills, weight of Blue Box material, incidence of illegal dumping, tipping savings, impact on collection and processing of recyclables, studies on households' use of backyard composters, and a study of citizens' attitudes and reactions to the program.</p>
+<p>Quinte Waste Solutions provided positive feedback to citizens through radio spots, video presentations on local television stations, newspaper articles, and a yearly waste reduction calendar (<a href="/en/tools-of-change/feedback/">Feedback</a>). These featured stories about citizens and local businesses who participated in the Blue Box 2000 program effectively and therefore made a difference in their community. A public sign was erected in each of the six participating communities charting how that community was doing.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Overall</strong></p>
+<p>Throughout the participating municipalities, the average levels of waste diverted from landfill were:</p>
+<table border="0" cellpadding="5" cellspacing="5" width="100%">
+<tbody>
+<tr>
+<td width="20%">1991 			<br/>
+            1992 			<br/>
+            1993</td>
+<td width="20%">26% 			<br/>
+            27% 			<br/>
+            36%</td>
+<td width="20%"> </td>
+<td width="20%">1994 			<br/>
+            1995 			<br/>
+            1996</td>
+<td width="20%">46% 			<br/>
+            51% 			<br/>
+            66%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Composting</strong></p>
+<ul>
+<li>The annual return on investment was approximately 65 percent.</li>
+<li>The percentage of households composting increased from 34 percent prior to the introduction of the YIMBY program, to 65 percent after. A third of participating households had two or more units.</li>
+<li>The percentage of composting homes which were composting effectively increased from 53 percent in 1994 to 65 percent in 1996.</li>
+<li>The estimated diversion per composter was 170 kg/yr (this figure includes those households who were not using their composter to full effect).</li>
+<li>A total of 5,000 tons of material per year was diverted from landfill.</li>
+<li>The net savings in collection and tipping fees to municipalities resulting from 10 years of composting is estimated at $150 per unit.</li>
+</ul>
+<p><strong>Blue Box</strong></p>
+<ul>
+<li>The tonnage of recycled material collected rose by 56 percent between 1991 and 1994.</li>
+<li>The net cost per ton of the recycling program decreased 56 percent, because of the economies of scale achieved as more tonnage was collected and processed.</li>
+<li>The revenues resulting from recycling rose sharply (150 percent) between 1991 and 1994. Revenue continued to increase after this period; as of 1995 revenue had increased by 100 percent over the 1994 level. This increase was attributed to the increased tonnage of aluminum and generally higher prices for all materials.</li>
+<li>Almost all citizens were using Blue Boxes by 1996, with a capture rate of 85 percent.</li>
+</ul>
+<p><strong>User Pay</strong></p>
+<ul>
+<li>The tons of garbage sent to landfill decreased by 46 percent in the year user pay was introduced (1994). This compares to an average decrease of 3.5 percent for the same period for the municipalities who did not implement user pay.</li>
+<li>Reductions in contractor costs for collection, processing and tipping were over $180,000 in 1994 for Sidney Township.</li>
+<li>The average number of bags set out per week per household was 0.75, down 59 percent from 1.83 bags before user pay. Ninety-three percent of households regularly put out one or fewer bags per week. In 1996 other municipalities were still averaging 1.5 bags per week.</li>
+<li>In Sidney, the Blue Box capture rate increased by 18 percent between 1993 and 1994. This compares to an increase of 8 percent for the same period where there was no user pay. In Sidney, Blue Box materials collected at curbside increased in weight by 26 percent.</li>
+<li>54 percent of kitchen waste was diverted to backyard composters in Sidney in 1994, as compared to an average of 35 percent in non-user-pay communities.</li>
+<li>100 percent of yard waste was diverted primarily to backyard composters. Only 2 percent of this went to drop-off depots.</li>
+<li>Household hazardous waste placed in garbage decreased by 50 percent. The capture rate for aerosols and paint cans was more than double that in other municipalities.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Quinte Waste Solutions 	<br/>
+270 West Street 	<br/>
+Trenton, Ontario 	<br/>
+K8V 2N3 	<br/>
+(613) 394-6266 	<br/>
+Fax: (613) 394-6850</p>
+<p>Rick Clow 	<br/>
+Recycling Coordinator 	<br/>
+<br/>
+Marvin Tucker 	<br/>
+Composting Coordinator 	<br/>
+<br/>
+Jeanne Vilneff 	<br/>
+Hazardous Waste Coordinator</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>The Rapid Spread of Blue Box Recycling</strong></p>
+<p>The Blue Box approach to recycling has proved tremendously successful. In Ontario, three million Blue Boxes had been distributed in 1996, with participation rates well over 90 percent. Fifty million people across North America participate in similar or identical curbside recycling programs. Almost all of these programs are derived from the Blue Box programs originally developed in Ontario.</p>
+<p>Why has this program been so successful? One reason is that the approach is built on past efforts. Jack McGinnis, then with the Is Five Foundation, drove around the country to see what others were doing. Is Five also examined its own experience running a curbside collection program since 1974. Four key success factors were identified from this research. First, it had to be as convenient to recycle as to throw things away. Second, some sort of standard collection "hardware" was required to make recycling "real" for people. Third, a standard, visible recycling container was needed so that collectors could distinguish between trash and recyclables. Finally, norm appeals had to be built into the approach.</p>
+<p>Is Five conceived of and first tested the Blue Box approach in 1977 at Canadian Forces Base Borden, near Barrie, Ontario. Various materials were tried until the light, shatter-resistant, bright Blue Boxes were selected. They then found a strong ally in Nyle Ludolph of Laidlaw. Together they carried out a pilot program in Kitchener in 1981 that tested several variations. Within six months the most cost-effective model had emerged using Blue Boxes accompanied by a promotional flyer. Participation rates were expecting to be around 30 percent. Instead, they started at 70 percent. While home visits increased participation rates even further, they were not considered to be worth the additional cost.</p>
+<p>In 1983, the Kitchener pilot was expanded to full, city-wide implementation, reaching about 33,000 households. Within three months a participation rate of 83 percent had been achieved, rising over the coming months to above 90 percent thanks to the various Tools of Change that had been built into the program.</p>
+<p>The program made recycling convenient and participation highly visible. Neighbours saw each other putting out their Blue Boxes at collection time. Residents used the Blue Boxes as a sign that their household was doing something for the environment (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>). Furthermore, their neighbours' Blue Boxes served as prompts (<a href="/en/tools-of-change/prompts/">Prompts</a>) when they forgot to put out their own recyclables for collection. In addition, the approach tied recycling closely to an activity that people already did; they took out their recyclables for collection at the same time as their garbage. This made it even more convenient to do, provided another prompt, and helped build motivation over time (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation OverTime</a>).</p>
+<p>The next year, in 1984, the Kitchener waste contract came up for tender and a competitor underbid Laidlaw by $600,000. However, after local school boards and citizens made presentations to Kitchener Council expressing their devotion to the Blue Box program, the Council awarded the contract to Laidlaw despite the high premium. Mississauga was the next city to replicate the Kitchener program. Then the approach spread rapidly because a number of powerful partners began to promote it.</p>
+<p>Soft drink and can manufacturers wanted lower quotas on the use of returnable bottles. Alcan Aluminium Ltd. wanted to change the Ontario soft drink regulations that basically banned aluminum cans. In 1985 these businesses, their material suppliers and key environmental organizations reached consensus about asking the Ontario Government to change the regulations. They argued that if aluminum cans could be used with lower bottle quotas, the value of the aluminum collected for recycling would pay for the collection of other materials as well. The Ontario Government agreed to change the regulations accordingly and matched the soft drink industry in contributing $5 million for marketing support. The media were also involved in promotional planning and helped generate publicity for the program.</p>
+<p>Simultaneously, Ontario's Environmental Assessment Act was changed, giving citizens the opportunity to require alternative approaches to waste disposal problems. People who didn't want a landfill near them could successfully challenge it on the basis of having no recycling program going. Municipalities that wanted to establish new landfill sites needed to have a recycling program operating, even if only as a precautionary measure. And with the Blue Box program, the municipality only had to pay a third of the cost of the program, with the remainder coming from the province and the soft drink industry.</p>
+<p>While the rapid spread of the Blue Box across Ontario was fuelled by many factors specific to a particular time and place, the adoption of the approach across North America is another matter. The approach works. It illustrates the power of combining a number of the Tools of Change, as described above.</p>
+<p>See also <a href="http://stewardshipontario.ca/wp-content/uploads/2013/02/Blue-Box-History-eBook-FINAL-022513.pdf" target="_blank">http://stewardshipontario.ca/wp-content/uploads/2013/02/Blue-Box-History-eBook-FINAL-022513.pdf</a></p>
+<p>Last updated: August 2004</p>
+<p>This case study was originally published in 1998 in "Tools of Change: Proven Methods for Promoting Environmental Citizenship" by Jay Kassirer and Doug McKenzie-Mohr (Published by Canada's National Round Table on the Environment and the Economy)</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

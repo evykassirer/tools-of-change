@@ -1,0 +1,268 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Researchers at the John Hopkins Bayview Medical Center.</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Marley Station Mall</li>
+<li>American Heart Association</li>
+<li>Chesapeake</li>
+<li>The Hartford Foundation</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Overall, stair use increased significantly, from 4.8% to around 7%.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Marley Station Mall</h1>
+<p>This pilot used simple signs to promote health and weight control by encouraging the use of stairs instead of escalators.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>According to the American Heart Association, a sedentary lifestyle - and the excess weight often associated with it - represents a significant and preventable health risk. However, despite focused media attention and substantial public health efforts to encourage more physical activity in the US population, most Americans continued to be physically inactive, 25% were completely sedentary, and only 22% were active enough to derive health benefits from their physical activity. These statistics accounted in part for the fact that one-third of Americans were overweight.</p>
+<p>It was known that to reduce mortality rates from associated diseases, including cardiovascular disease, a minimum of 30 minutes of moderate-intensity physical activity was required per day. Because the benefits of small amounts of physical activity are cumulative, introducing such activities into ones lifestyle could provide results similar to those achieved through longer periods of uninterrupted physical activity.</p>
+<p>Taking the stairs instead of escalators was seen as an easy way for people to introduce moderate-intensity physical activity into their daily routines. In addition to the direct benefits from doing so, such involvement could lead to more traditional exercise programs among physically inactive adults.</p>
+<p>To test the effectiveness of signs in prompting the use of stairs, a pilot program was run in 1997 for a three month period in the Marley Station Mall. This mall, located in Glenburnie - a suburb situated between the cities of Baltimore, Maryland and Washington DC - received 8 million shoppers annually. Adults in Maryland were less active than most Americans, and adults in Washington were the least active Americans.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The obective was to increase the use of stairs instead of escalators, in order to promote health and weight-control.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Two previous studies had examined the effects of placing a sign at the base of an escalator located adjacent to a flight of stairs, to encourage stair use. They had shown that a simple low-cost sign could result in statistically significant increases in stair use by adults. However, the effects lasted for only one month after the signs were removed, and returned to baseline levels three months after the signs were removed.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The program was set-up at a site in the mall where escalators sat adjacent to a stairway, all of which led from the main to second level. The stairway consisted of 10 stairs, a 6-foot landing, and 10 more stairs</p>
+<p>The pilot involved an initial baseline phase, and two subsequent intervention phases using the signs. Each phase lasted one month. During the baseline phase, no signs were used. During the second phase a sign was placed on an easel beside the escalators. The sign communicated the health benefits associated with exercise. It featured a caricature of a heart at the top of a flight of stairs and the statement, "Your heart needs exercise, use the stairs". For the third and final phase, the sign was replaced with one that focused on weight control, with no cool-off period in between. It featured a caricature of a woman at the top of a flight of stairs with a thin waistline, wearing pants that had become too large. The caption on the sign read, "Improve your waistline, use the stairs" ( <a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a> ).</p>
+<p>This program illustrates anumber of the key steps in the effective use of prompts . The messages focused on the most common motivators for exercising (health benefits and weight control) - on which many people were presumably already pre-disposed to acting. In addition, they described in positive, clear terms, the specific action that was being promoted (use the stairs). Finally, the signs were placed in a noticeable position, at the time and place where the action took place.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>N/A</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>During each phase of the pilot, the frequency of stair use was compared to use of the escalators. Observations were made between 10:30 a.m. and 9:00 p.m. on all days of the week, by a person seated in an inconspicuous spot at the foot of the steps that allowed for clear observation. Participants were unaware that they were being observed. In all, the choices of 17,901 people were recorded.</p>
+<p>Each person's sex and ethnicity (African Americans, Caucasians, or other) was recorded. In addition, each person was classified as being older or younger than 40, and as being lean to normal weight or overweight. Excluded, were people judged to be younger than 18, or those carrying a child or items larger than a briefcase. In preparation for the pilot, one day was spent at the mall practicing how to classify the shoppers consistently.</p>
+<p>The long-term impact of the signs could not be determined because, presumably, the same people did not return to the shopping mall each day. In addition, mall employees or frequent shoppers may have been coded more than once. Results may have therefore reflected a substantial increase in physical activity among only a small percentage of people who changed their behavior consistently. Finally, since no cool-off time was provided between use of the health benefits and weight-control signs, there may have been some carryover effect between the second and third phase.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>N/A</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Overall, stair use increased significantly, from 4.8% to 6.9% and 7.2% with the health benefits and weight-control signs respectively.</p>
+<p>The results for stair use were broken down as follows:</p>
+<table border="0">
+<tbody>
+<tr>
+<td>Participants</td>
+<td>Baseline usage</td>
+<td>Health benefits sign</td>
+<td>Weight-control sign</td>
+</tr>
+<tr>
+<td>People under forty</td>
+<td>4.6%</td>
+<td>6.0%</td>
+<td>6.1%</td>
+</tr>
+<tr>
+<td>People over forty</td>
+<td>5.1%</td>
+<td>8.1%</td>
+<td>8.7%</td>
+</tr>
+<tr>
+<td>Caucasians</td>
+<td>5.1%</td>
+<td>7.5%</td>
+<td>7.8%</td>
+</tr>
+<tr>
+<td>African Americans</td>
+<td>4.1%</td>
+<td>3.4%</td>
+<td>5.0%</td>
+</tr>
+<tr>
+<td>Lean to normal weight</td>
+<td>5.4%</td>
+<td>7.2%</td>
+<td>6.9%</td>
+</tr>
+<tr>
+<td>Overweight</td>
+<td>3.8%</td>
+<td>6.3%</td>
+<td>7.8%</td>
+</tr>
+</tbody>
+</table>
+<p>As these results show, statistical differences in stair use were found based on age and race. However, no statistically significant difference were found between men and women, nor between the use of the health benefits sign and the weight-control signs.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Ross E. Andersen, Ph.D. <br/>
+John Hopkins Bayview Medical Center <br/>
+5501 Hopkins Bayview Circle, Suite 5B81 <br/>
+Baltimore, Maryland <br/>
+21224 <br/>
+Tel: (410) 550-3540 <br/>
+Email: <a href="mailto:andersen@jhmi.edu">andersen@jhmi.edu</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study was wrritten in 1999 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

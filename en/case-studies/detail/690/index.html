@@ -1,0 +1,266 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li> New York City</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>By the end of 2013 Citi Bikes comprised 29% of bike trips within the bike share service area. </li>
+<li>By early February 2015, Citi Bike riders had taken more than 13.6 million trips, and an average of 34,000 trips daily - comparable to the ridership of the busiest local New York City Transit bus routes.</li>
+<li>Over 90% of those rides were taken by annual members, rather than casual users.</li>
+<li>Over 120,000 riders had become annual members.</li>
+</ul>
+<p> </p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Citi Bike - NYC Bikeshare </h1>
+<p>New York City’s <em>Citi Bike</em> is the largest bike share program in North America, and a key element in the city’s transportation network, providing a last mile solution. A similar approach is replicable in the downtown cores of other major cities where taxies, buses and individual cars all intertwine together.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong>Note:</strong> <em>To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program</em></p>
+<p>Compared to cities in Latin America, Asia, and Europe, New York and other American cities were relatively slow to implement bike sharing. Early forms of bike share began in Dutch and Danish cities in the 1960’s and 1990’s, and Paris pioneered the first public computerized bike share program in 1998. By 2013, nearly 400 bike share programs were established or growing in cities across Europe and Latin America.</p>
+<p>Bike share came to New York City during the rise of the “sharing economy,” and an economic recovery after the 2008 recession. Bicycle commuting in the City had doubled between 2007 and 2011. Likewise, screenline counts of riders at bridge crossings had nearly tripled from 12,756 in 2000 to 36,434 in 2013. Massive improvements in the city’s bicycle networks, coupled with popular support, created a political and infrastructure foundation that made Citi Bike possible.</p>
+<p> </p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>In 2007, the Forum for Urban Design, a group of architects, designers and planners, sponsored a five-day pilot project. Twenty bicycles were available free, for up to 30 minutes, from 10 a.m. to 6 p.m. Bicycles could be returned to the gallery or dropped off at other nearby sites like Washington Square Park and Tompkins Square Park. Displays described eight European cities, including Barcelona, Spain, and Lyon, France, where bicycle-share programs were thriving. The project was designed to gather data on the viability of such a program in New York.</p>
+<p>That same year, the NYC Department of Parks and Recreation conducted a consumer survey and studied the prospects of a bicycle sharing system.</p>
+<p>New York City and various New York media have conducted various user surveys since launch. When asked what they find most valuable about the program, Citi Bike users cite convenience, ready availability, flexibility in travel, saves time, saves money, provides exercise, fun and getting outdoors to see the city. For example, in an intercept survey of 1,038 users, conducted at bike share stations in August 2013:</p>
+<ul>
+<li>44% said the most valuable aspects were Citi Bike’s convenience, ready availability and flexibility</li>
+<li>15% said it was faster, more efficient and time-saving</li>
+<li>11% cited exercise</li>
+<li>11% cited saving money</li>
+<li>9% cited fun, seeing the city, getting outdoors, making them happy and relaxed</li>
+</ul>
+<p><strong>Prioritizing Audiences</strong></p>
+<p>Citi Bike was designed to provide bikeshare services to individuals within targeted high-density areas surrounding subway stations (geographical segmentation). In addition, it focused on people taking short trips (behavioral segmentation). Citi Bike presented a quick and relatively inexpensive alternative to walking, taking a cab, or a crosstown bus for relatively short trips. New York City’s buses were among the slowest in the USA. A one mile bus trip across 34th Street could take more than 20 minutes, compared with 10 minutes or less by bike, depending on the rider. Citi Bike encouraged short trips and multimodal trips by minimizing or entirely eliminating the hassles of securing a private bicycle, time spent walking and the cost of a taxi or car service. Plus it had the added benefit of providing exercise.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The Department announced in 2011 that kiosks would be built for the service to begin in 2012. The project was slated to introduce 10,000 bikes that would be available from 600 stations made by <a href="http://www.toolsofchange.com/en/case-studies/detail/660">Bixi</a> and operated by Alta Bicycle Share, the operators of similar schemes in other U.S. cities.</p>
+<p>Citi Bike launched in May 2013 with 330 stations and 5,000 bikes in the lower half of Manhattan and pockets of northwest Brooklyn, including Williamsburg and downtown Brooklyn. Prior to launch day, DOT and NYC Bike Share staff hosted events to introduce New Yorkers to the system. By launch day, 16,000 people had signed up as annual members.</p>
+<p>Annual Citi Bike memberships cost $149 in 2015 and $99 at launch. To appeal to the short trips segment of its market, the program allowed members to take an unlimited number of rides, as long as each ride took under 45 minutes. Rides longer than 45 minutes resulted in overage charges ranging from $2.50 for an additional 25 minutes to more than $9.00 for additional time. Seven-day passes were available for $25 and 24-hour passes were available for $9.95, both with similar trip time constraints. New York City Housing Authority residents and credit union members qualified for discounted $60 annual memberships.(<em>Building Motivation and Engagement Over Time, Financial Incentives, Overcoming Specific Barriers</em>)</p>
+<p>The system was initially plagued by a number of technical issues. First, faulty system software torpedoed bike share's initial launch, which had been planned for the summer of 2012. Then Hurricane Sandy came, destroying millions of dollars worth of equipment. That delay translated into millions of dollars' worth of lost operating revenue — even as capital costs were rising.</p>
+<p>Then, when the program DID launch, the problems kept coming. Software glitches continued. Another key issue that arose is that Citi Bike proved more popular than expected with annual users who generated comparatively little revenue. In 2014, some 99,000 people paid $95 a year plus tax to be able to use the bikes for 45 minutes at a time. This price was subsequently increased to $149. The potential for far greater revenue, however, was with short-term users. Many of those were expected to be tourists, and they hadn’t used the bikes nearly as much as officials had anticipated.</p>
+<p>Ease of transfer between bike and public transit was a key location and design consideration. 64% of all Citi Bike stations were under a quarter-mile from a subway station, 33% were within 500 feet, 16% were within 200 feet and 10% were within 100 feet. There were roughly two Citi Bike stations for every subway station.(<em>Overcoming Specific Barriers</em>)</p>
+<p>Smartphone apps built by civic hackers helped Citi Bike riders find stations with open docks or available bikes. (<em>Overcoming Specific Barriers</em>)</p>
+<p>Under contract with the city, NYC Bike Share faced financial penalties when adjacent station outages occurred for more than one hour. To avoid outages, dozens of rebalancing teams shuttled bikes between full and empty stations using big box trucks, sprinter vehicles, and bicycle trailers. </p>
+<p>Citi Bike offered partnership discounts on products, food and events.(<em>Financial Incentives</em>)</p>
+<p>In 2015, Alta Bicycle Share was acquired by a New York-based investment venture, and was renamed Motivatae. Motivate operates bike share systems around the world, including Citi Bike in New York, Capital Bikeshare in D.C., Hubway in Boston and in Toronto.</p>
+<p><strong>Overcoming Barriers </strong></p>
+<p>The system was designed to reduce the financial costs and hassles of cycling for short trips. This was done by pricing the service affordably for short trips, and by making it easy to pick up and return bikes and transfer between bike and public transit.</p>
+<p>Additional barriers, especially those effecting women, became evident after program launch.</p>
+<ul>
+<li>In 2015 77% of riders were male (80% in inclement weather), while in Europe roughly 50% of ride-share users were male</li>
+<li>The stations that women used tended to be the safer ones (e.g. adjacent or connected to a bike lane or protected greenway, lower traffic, fewer lanes, restricted truck access)</li>
+<li>While some parents brought young children to school on their own bike-mounted child seats, Citi Bike did not offer any child-friendly options (e.g. bike-mounted child seats, and child-sized bikes and helmets)</li>
+<li>If child-friendly options were offered and the remaining stations were made safer, use by women was expected to increase and eventually approximate use by men.</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Citigroup bought a five-year $41 million sponsorship and the bike-share system is therefore named Citi Bike. Finding additional sponsors proved challenging because the program became so closely associated Citi Bike. Mastercard added $6.5 million.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Ridership numbers are based on ridership counts conducted by the NY Department of Transport (DOT) at sample locations within the Citi Bike service area. Intercept surveys are used to assess attitudes and trip purpose.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>A 2013 DOT intercept survey of more than 1,000 bike share users found that New Yorkers commonly used Citi Bike in tandem with other transportation modes, including the subway (57 percent) and walking (65 percent) and that 21 percent used Citi Bike instead of taking a taxi, livery car or their own car. The survey found that bike share led 46 % to go places by bicycle that they would otherwise not have gone without bike share.</p>
+<ul>
+<li>54% of Citi Bike trips were for work purposes (includes commuting)</li>
+<li>33% were for errands, personal business, shopping</li>
+<li>14% for sightseeing</li>
+<li>12% for exercise</li>
+<li>8% other</li>
+</ul>
+<p>Most bike share trips were used to go places that users frequently visited</p>
+<ul>
+<li>69% came to the area daily or several times a week</li>
+<li>14% came at least once a week</li>
+<li>5% at least once a month</li>
+<li>12% less than once a month</li>
+</ul>
+<p>Without Citi Bike, users would generally have taken the subway or walked, while one-quarter would use a taxi/livery or their own car: (multiple responses allowed)</p>
+<ul>
+<li>65% would have used subway for current trip if bike share did not exist</li>
+<li>63% would have walked</li>
+<li>18% would have taken the bus</li>
+<li>21% would have used a taxi, livery or their own car</li>
+<li>9% would have used their own bike</li>
+</ul>
+<p>Ridership increased dramatically in 2013. By the end of the year, Citi Bikes comprised 29 percent of bike trips within the bike share service area. By early February 2015, Citi Bike riders had taken more than 13.6 million trips, and an average of 34,000 trips daily - comparable to the ridership of the busiest local New York City Transit bus routes. Over 90% of those rides are taken by annual members, rather than casual users. Over 120,000 riders had become annual members.</p>
+<p>Unlike other American bike share programs, Citi Bike operated at a dense, concentrated core that intertwined with transit. When mass transit faced serious constraints, Citi Bike complemented and supplemented existing transit in New York City.</p><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p>See also our <a href="http://www.toolsofchange.com/en/case-studies/detail/660">BIXI Montreal</a> case study</p>
+<p>Data Sources</p>
+<ul>
+<li>This write-up is largely based on the report “Ciy Bike: The First Two Years”, written by Sarah M. Kaufman, Lily Gordon-Koven, Nolan Levenson and Mitchell L. Moss and published by the NYU Wagner Rudin Center for Transportation Policy and Management in June, 2015.</li>
+<li>DOT Press release, Dec. 12, 2013 “After First 200 Days of Citi Bike, NYC DOT Releases New Data Showing that Significant Numbers of New Yorkers are Biking, Complementing Transit System.” http://a841-tfpweb.nyc.gov/dotpress/2013/12/new-biking-data/</li>
+</ul>
+<p> </p>
+<p>This case study was written in 2015 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

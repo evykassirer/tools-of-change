@@ -1,0 +1,308 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>Durham Works Department</p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<p>Canada Mortgage and Housing Corporation</p><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>30% reductions in peak water use at first, leveling off at around 17% over time</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Water-Efficient Durham</h1>
+<p>The Regional Municipality of Durham targeted neighbourhoods with high summer peak water use, and convinced most residents to sign a written pledge to water their lawns in accordance with municipal guidelines. The program has consistently reduced peak water use in targeted neighborhoods by 30% at first, then leveling off at around 17% after a year. It cost $19 per household in 2004 and is considered to be 1/5 the cost of the alternative - which is to expand the water supply infrastructure.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>In 1995 the Regional Municipality of Durham recognized it had a potentially expensive water supply problem. Its population of 430,000 was growing at an average rate of three percent annually with residential water consumption growing at six percent. Since residential consumption represented 65 percent of the region's total water consumption, Durham set out to reduce demand among its 110,000 metered customers. The result was a water efficiency program called Water Efficient Durham.</p>
+<p>In 1995, Water Efficient Durham initiated a toilet replacement program that replaced 8,200 toilets throughout the region over a six-year period. While the program decreased water consumption by an average of 20 percent per household, it did not address another of Water Efficient Durham's prime concerns: peak summer consumption.</p>
+<p>There were about 20 days per year generally following a dry spell that saw water demand peak in Durham. On these days, the system operated at or near plant capacity, mainly because people were watering their lawns. There was no technological fix available, short of increasing supply. In order to avoid expensive plant expansions, Durham set out to convince residents to reduce demand on those days by watering their lawns less.</p>
+<p>Lawn watering was the most important habit to change, said Glen Pleasance, Durham regions water efficiency co-ordinator. People needed to be shown that they could help to avoid costly plant expansions by changing their behaviour.</p>
+<p>The region's job was especially difficult because Durham is situated along the shores of Lake Ontario. People assumed there was an abundant supply of fresh water. Durham had to show residents that despite their proximity to the lake, expensive water treatment was vital in getting clean water to their houses and that excessive summer water use threatened to overtax the treatment plant.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>Durham's goal was to develop a program that would convince homeowners to water their lawns a maximum of one inch per week, including rainfall.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Durham decided from the outset to use a non-coercive technique to change homeowners' behaviour. For years Glen Pleasance had talked to and attended seminars held by Dr. Doug MacKenzie-Mohr on the effectiveness of <em>community-based social marketing</em> <a href="http://www.cbsm.com">www.cbsm.com</a>. Pleasance recognized that Mohrs method, which relies on face-to-face contact with homeowners, would allow regional employees to explain to homeowners the regions water conservation objectives. Furthermore, employees would be able to show homeowners how to grow healthier lawns.</p>
+<p>A literature review and focus group research had revealed that a key barrier to participation would be a concern that less watering would mean a less healthy lawn. "We realized wed be able to develop relationships with homeowners and show them that they could grow a healthier lawn and save money by using less water, said Pleasance.</p>
+<p>The region hired consultant Ambrose Samulski, of Maple Durham, to implement a student employee summer program to reduce peak day summer water consumption. Samulski was a Durham College educator who handpicked student employees based on their communication skills and general compatibility for community-based social marketing.</p>
+<p>The fact that we were not relying on an hour-long interview paid dividends as soon as these students started talking to residents, said Pleasance. They were outgoing, intelligent people with extraordinary interpersonal skills, which was vital to their success.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>The pilot project</strong></p>
+<p>In 1997, Durham launched a pilot project in the town of Ajax to test the value of the student employee program against more traditional methods of public education. Durham monitored four separate study areas, using a different approach in each. One area was used as a control. In another, the region used a traditional mail out, in which Durham sent four water conservation brochures to homeowners (<a href="/en/tools-of-change/mass-media/">Mass Media</a>). In a third area the region put master gardener volunteers (<a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">NeighbourhoodCoaches and Block Leaders</a>) into the field to provide landscape assessments for homeowners. A fourth area tested the student employee approach to community-based social marketing.</p>
+<p>The students went through a three-day training period, which included an introduction to community-based social marketing, presentations on lawn care and xeriscaping, role playing, and a field trip to a xeriscape garden. Neighbourhoods with a history of higher than average summer water use were targeted, and weekly milestones were assigned to each team of students.</p>
+<p>Over a ten-week period the students, traveling by bicycle or on foot, then did six field interventions at each of 200 houses (<a href="/en/tools-of-change/home-visits/">Home Visits</a>). During the first intervention the students followed the following formula:</p>
+<ul>
+<li>Working in pairs, they approached homeowners outside their homes when the owners were not busy. They never approached residents who were leaving the premises. (The region considered it vital not to inconvenience or interrupt homeowners in any way.)</li>
+<li>They handed homeowners information brochures about water efficiency - the same brochures sent to homeowners in the traditional mail out test area - and engaged them in discussions about water conservation (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</li>
+<li>They made the connection between moderate irrigation and a healthier lawn by stressing that lawns need only an average of one inch of watering and rainfall a week to remain healthy (<a href="/en/tools-of-change/communication/">Vivid, Personalized, Credible Communication)</a>.</li>
+</ul>
+<p>The students followed up at each house with five more interventions, each time developing a more trusting relationship with the homeowner.(<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>)</p>
+<p>To help establish credibility, they wore project hats, T-shirts and Photo-ID.(<a href="/en/tools-of-change/communication/">Vivid, Personalized, Credible Communication)</a></p>
+<p>Students monitored and timed the watering habits of homeowners in all four study areas for 14 hours a day during the test period. Their observations showed the most effective method by far was the student employee program, which relied on community-based social marketing. It reduced lawn watering by 26 percent. This reduction translated into the potential for new service for 250 new homes without any increase in demand on peak days.</p>
+<p><strong>The 1998 study</strong></p>
+<p>For 1998 the region dispensed with the traditional mail out and master gardener programs. It expanded the student employee program to 900 houses in six communities in Pickering, Ajax, Whitby, Port Perry and Uxbridge, chosen for their histories of high summer water consumption. Six students repeated the approach of the previous summer, with one major refinement: their goal was to convince homeowners to sign a written public commitment form to water a maximum of one inch per week, including rainfall.(<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>)</p>
+<p>When you have people sign something, it makes them much more likely to make good on their promise, said Pleasance. It is a proven social psychological method, better than a verbal commitment.</p>
+<p>Eighty-eight percent of homeowners in the study areas signed the document. The program cost $88 per household for a total of about $80,000 and replicated the 26 percent reduction in water use of the 1997 study.</p>
+<p>The program achieved its goals by giving residents the information they needed to understand the necessity of reducing lawn watering, then giving them the tools to do so, said Pleasance. This was the first season in which students handed homeowners the regions Household Guide to Water Efficiency, which offers several tips on how to reduce daily water consumption. Durham produced the sixty-page guide as an ongoing reference for homeowners looking to cut down on water use.(<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>)</p>
+<p>The region launched several new water efficiency initiatives in 1999 and therefore did not run a student employee program that year.</p>
+<p><strong>The 2000 study</strong></p>
+<p>For the summer of 2000 Durham reduced costs by further refining the system. It increased the size of the study area and had students do only four interventions per household. They worked in neighborhoods in Whitby (350 homes) and Oshawa (700 homes). The four interventions unfolded as follows:</p>
+<ul>
+<li>Working in pairs the students introduced themselves to homeowners and handed them two brochures. One featured Durhams Water Efficient Demonstration Garden and another set out the programs goal to limit lawn watering to a maximum of one inch of watering a week.</li>
+<li>During the second visit, students gave homeowners rain gauges and handed out lawn care brochures..(<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>)</li>
+<li>On the third visit, homeowners received the Household Guide to Water Efficiency and tags to attach to their outdoor faucets. The tags reminded homeowners of three things: to pay attention to the weeks rainfall, to abstain from watering if their lawns had already received that weeks inch of rainfall and to be mindful of whether or not this was a designated watering day. (Homeowners were organized into two groups by matching street numbers to calendar days. Some residents watered on even days and others watered on odd.)(<a href="/en/tools-of-change/prompts/">Prompts</a>).</li>
+<li>During the fourth intervention the students asked homeowners to sign the commitment form that had worked so well in 1998, in which they pledged not to water their lawns more than one inch a week, including rainfall (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>). Critical to this step were the relationships students had cultivated with homeowners. Students specifically avoided a coercive, lecturing approach as they talked to homeowners. They specifically attempted to engage homeowners in amiable discussions about water use.</li>
+</ul>
+<p>The students offered free information and tools in the form of brochures and rain gauges with the expectation that homeowners would offer behaviour change in return, said Pleasance.</p>
+<p>In both study areas 82 percent of homeowners signed the commitment forms. The region hired Veritec Consulting Inc. to monitor water consumption during this phase using bulk metering. It which showed the study areas used 32 percent less water than the control area. Bulk metering offered the first quantitative proof that the students efforts had reduced irrigation. Furthermore, Water Efficient Durham reduced the cost of the program by almost half to $45 per household.</p>
+<p><strong>The 2001 study</strong></p>
+<p>During the summer of 2001, Water Efficient Durham changed its approach in two ways. First, to further reduce program costs, the region asked summer students to try an approach that blended two tools: (<a href="/en/tools-of-change/word-of-mouth/">Word-of-mouth</a>), and (<a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a>). This involved students recruiting volunteers from within the study area to do some of the face-to-face interventions with homeowners. The idea was to enlighten a group of volunteers and have those people spread the word among their circles of friends and acquaintances. The region again hired six students, but this time with a 3,000-house area to cover instead of the 950 houses of summer 2000. The study area was again in Whitby, but not including the 2000 study area. The students recruited volunteers from gardening clubs, ratepayers associations and any visible, like-minded groups in the community.</p>
+<p>This approach failed in this context for two reasons. Students were unable to recruit sufficient numbers of volunteers and it took more effort to motivate volunteers than it would have to do all front line work themselves. The students reverted to front-line contact for the sub-group of 300 houses that was being bulk-metered that year.</p>
+<p>The second thing organizers did differently in 2001 was test the sustainability of the previous summers success. It bulk metered the 2000 study and control areas without contacting any of those homeowners. Results showed the 32 percent reduction of 2000 was retained only on weekends in 2001 with no apparent reduction on weekdays. The region was unable to confirm the source of this incongruity. However, the summer of 2001 was significantly dryer and hotter than 2000; in August 2001 precipitation was three millimetres versus 11 millimetres in 2000. The mean temperature was two degrees hotter in 2001. Regardless, Durham planned to revert back to 2000 methods for the summer of 2002 on an expanded scale.</p>
+<p> </p>
+<p><strong>2004 Update</strong></p>
+<p>By 2004, the Region had reduced the investment required to only 3-4 home visits.</p>
+<ul>
+<li>First, the Region sent out a letter to targeted neighbourhoods, introducing the project, its goals and benefits.</li>
+<li>The first visit included a 12-question baseline survey that characterized both actual and self-perceived watering habits. The students handed out the rain gauges, a fridge magnet with instructions (<a href="/en/tools-of-change/prompts/">Prompts</a>), water -efficient gardening brochure and plant list.</li>
+<li>In the second visit, the students let residents set the tone and direction of the conversation, so they would be more invested in the project (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>),(<a href="/en/tools-of-change/communication/">Vivid, Personalized, Credible Communication</a>). At this step, the students also left behind two more brochures on water efficiency and lawn care.</li>
+<li>During the third trip, the students asked for a commitment to measure rainfall and irrigation, water only in the morning or evening, keep grass 3" high or more, leave clippings on the lawn, select water efficient plants, and use mulch in the garden. At this time the students provided a reminder tag that hung on the outside water faucet. The tags said, "Is it Odd or Even today? Has it rained in the last week? Lawns require 1" / week." (<a href="/en/tools-of-change/prompts/">Prompts</a>)</li>
+<li>The fourth visit was scheduled only if required.</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The summer student employee program cost about $58,000 in 2000. Financing came out of Water Efficient Durham's annual budget of $320,000. The region paid consultant Maple Durham $49,848, or $38.35 per household, more than 82 percent of which was used to pay the students. It spent $8,653, or $6.65 per household, on supplies for homeowners and students for a total of $45 per household.</p>
+<p>The program's 32 percent reduction in peak day demand translates into a saving of 215 litres per household on those days. It is important to note that peak irrigation days represent the most expensive water for any supplier to provide. The program did not affect household water demand on non-peak days.</p>
+<p>The peak day saving of 215 litres per household translated to a revenue loss for the region of about $6 per household per year, based on approximately 20 peak irrigation days during the summer. With this in mind, the program accomplished two things: it addressed the regions goal of reducing demand <em>and</em> protected revenue by focusing on reducing demand on the least lucrative days of the year peak irrigation days.</p>
+<p>Veritec calculated that if the student employee program were implemented on a region-wide basis it would cost about $20 per household (Update: by 2004 it was costing $19 per household). Combined with the $6 per household loss in revenue, Durham would in effect spend about $26 per household to reduce peak day demand. The region calculated it would cost approximately $86 per day to supply a house with 215 litres of water should the region be forced to expand the capacity of its treatment plants.</p>
+<p>Furthermore, the region invested a portion of water billing revenues into a fund for future capital expansion. By deferring expansion the region stood to earn significantly more from that fund.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>During the early years of the program, the Region relied on anecdotal information supplied by students, who observed and timed the lawn watering habits of homeowners in the study areas. The students also asked homeowners detailed questions about how much they irrigated and whether or not the contact with students had helped them change their habits.</p>
+<p>During the summer of 2000 Veritec bulk-metered 400 houses in the study area. Vertitec did this by closing valves in order to isolate a single feed into the neighborhood and installed a data logger in the water main to measure water use. The data logger took a reading every five minutes, 24 hours a day. Monitoring began in early July and continued into October. Since watering stopped at the end of September, the October data provided several weeks of baseline, non-irrigation data for typical neighborhood water consumption. The infrastructure determined the size of the area studied (Older neighbourhoods without reliable valve records were not bulk metered).</p>
+<p>Water Efficient Durham bulk metered for two reasons. First, measuring the results of the lawn watering program was not as simple as was the regions toilet replacement program because there was nothing to bolt on. For the program to be successful the region had to change peoples behaviour and bulk metering was the only way to measure that change. Second, bulk metering allowed the region to monitor homeowners without their knowledge. This circumvented the <em>Hawthorne Effect</em>, which asserts that people tend to modify their behaviour when they know they are being monitored.</p>
+<p>The region bulk metered the 2000 study and control areas again throughout the summer of 2001. The purpose here was to determine what portion of 2000's irrigation reduction had continued for a second season. Neither the students nor the region contacted those homeowners in 2001.</p>
+<p>Water Efficient Durham included both a study and a control group during the 2000 and 2001 programs, once it had introduced bulk metering. This allowed the region to discriminate between changes in demand due to weather or media coverage of water conservation issues versus changes in demand due to student employee efforts. The region also ensured that the study and control groups had similar demographics, property age and lot size to allow for an accurate comparison. The study and control areas were each about 300 houses.</p>
+<p>By 2004, the project was using Palm Pilots (small, hand-held personal digital assistants, or PDAs) to collect the data, which cut data gathering time from 25% to 5% of paid student time. The data were then downloaded to an Excel spreadshet for analysis.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Durham Works Department distributed a newsletter to all homeowners every spring and fall. It shared its results from the 2000 program in November 2000. Reactions from homeowners were positive since the program appeared to have worked.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<ul>
+<li>1997: study areas used 26% less water (estimated, based on observations).</li>
+<li>2000: study areas used 32% less water than the control area, at a cost of $45 per household.</li>
+<li>2001: tested the sustainability of the previous summers success (bulk metered the 2000 study and control areas without contacting any of those homeowners). Results showed the 32 percent reduction of 2000 was retained on weekends and fell off during the week.</li>
+<li>2002: With no further intervention, study areas were maintaining a 17% reduction in peak water use. Cost had been reduced to $24 per household.</li>
+<li>2004: Consistent results were being obtained year to year, with 30% reductions at first, leveling off at around 17% by the next year, and with 80-90% participation rates in the targeted neighborhoods. It is considered to be 1/5 the cost of the alternative - which is to expand the water supply infrastructure.</li>
+</ul>
+<p>Note that the magnitude of weather variability makes year to year comparisons difficult</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Glen Pleasance 	<br/>
+Water Efficiency Co-ordinator 	<br/>
+Works Department 	<br/>
+The Regional Municipality of Durham 	<br/>
+605 Rossland Rd. 	<br/>
+Whitby, On. 	<br/>
+L1N 0B7 	<br/>
+Phone: 905-668-7711 x3511 	<br/>
+<a href="http://www.region.durham.on.ca">www.region.durham.on.ca</a> <br/>
+<a href="mailto:%20glen.pleasance@region.durham.on.ca">glen.pleasance@region.durham.on.ca</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons learned</strong></p>
+<p>It took two years to convince senior staff to launch the pilot project. Since the program was based on education, rather than a technical solution, it was more difficult to convince staff of its potential efficacy.</p>
+<p><strong>The Halton study</strong></p>
+<p>In 2001 the Regional Municipality of Halton studied the relative effects of three methods of delivering Canada Mortgage and Housing Corporation's Household Guide to Water Efficiency (CMHC's document was based on a similar document produced by the Regional Municipality of Durham). Faced with the same conservation concerns as Durham, Halton's purpose was to reduce peak day water demand in the region in the most cost-effective way possible. Working with a consultant, the region tested the following three methods of delivery:</p>
+<ul>
+<li>dropping off the guide without directly contacting homeowners</li>
+<li>phoning homeowners to tell them they would soon receive the guide and following up by phone once they had received it to ask if they had any questions</li>
+<li>a higher level of community-based social marketing. In this method, summer student employees visited homeowners, surveyed them to bring their attention to water conservation and then left them with CMHC's guide to read.</li>
+</ul>
+<p>The region also monitored a control group that did not receive the guide in order to provide a comparison to the three study groups.</p>
+<p>The results were impressive.</p>
+<ul>
+<li>When the guide was delivered on its own without any contact, homeowners reduced their water consumption by 34 litres per peak irrigation day.</li>
+<li>When the guide was delivered in conjunction with a phone call water savings jumped to 54 litres per household per peak irrigation day.</li>
+<li>Unfortunately the consultant was unable to properly analyze the data collected for the third study group. It is likely that this group, which received Community Based Social Marketing, achieved more than a 54-litre per peak irrigation day saving.</li>
+</ul>
+<p>For more information contact:</p>
+<p>Cassandra Bach 	<br/>
+Water Efficiency Co-ordinator 	<br/>
+The Regional Municipality of Halton 	<br/>
+Long Range Planning, Planning and Public Works 	<br/>
+1151 Bronte Rd. 	<br/>
+Oakville, ON 	<br/>
+L6M 3L1 	<br/>
+Phone: 905-825-6000 ext. 7787 	<br/>
+or 1-800-4HALTON ext. 7787 	<br/>
+Fax: 905-825-8822</p>
+<p> </p>
+<p>Last updated: August 2004. This case study was written in 2002 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

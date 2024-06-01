@@ -1,0 +1,565 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>King County Metro</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>13 cities, non-profits, and other organizations</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Reduced four drive-alone trips per person per week (40.58 vehicle miles and 37.57 pounds of CO2e) </li>
+<li>Contributed to a 4% decrease in the number of regional drive-alone commute trips from 2018-2019</li>
+</ul>
+<p> </p>
+<p><strong>Downloads</strong></p>
+<ul>
+<li><a href="/userfiles/Seattles Just One Trip.pdf" target="_blank">Case Study PDF</a></li>
+<li><a href="https://justonetrip.org/wp-content/uploads/pdfs/I-90_Report_Short Version_Final.pdf" target="_blank">Consolidated report f</a>or Just One Trip Phase I and II and additional programming</li>
+</ul><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Seattle’s Just One Trip Phase II</h1>
+<p><iframe height="auto" src="https://www.youtube.com/embed/dZnO9D7OD4I " width="97%"></iframe></p>
+<p>Just One Trip Phase II illustrates the use of Propensity Modelling / Predictive Analysis, Street Ambassadors, Quality Online User Experience (UX), and trip planning to reduce the proportion of single-occupant car trips in Seattle WA, USA.  It engaged over 21,000 people and on average participants reduced four drive-alone trips per week per person. Designated a <em>Landmark</em> case study in 2020.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Seattle metro area was one of the fastest-growing U.S. cities, and was ranked the sixth worst U.S. city for traffic. While many residents took transit, biked, walked, teleworked or rideshared, to curb congestion, more needed to get onboard.</p>
+<p>Seattle’s regional transit agency, King County Metro, had a cornerstone program outreach program, Just One Trip, designed to raise awareness of green travel options and recruit new riders. The four-year program was divided into two 2-year phases. Phase I, from 2016-2017, focused on raising awareness, with a far-reaching ad campaign (86 million paid impressions) that led to one in two regional survey respondents saying they had seen communications related to replacing drive alone trips with alternative options.</p>
+<p>By the end of Phase I, 5,000 residents had pledged to reduce their drive-alone trips, removing 100,000 annualized vehicle trips off the road.</p>
+<p>For the second half of the program (Phase II, from 2017-2019), Metro wanted to move more people from awareness to behavior change - riding transit, biking, walking, teleworking, or ridesharing.</p>
+<p><img alt="" height="387" src="/userfiles/Image/Mapcruzin.JPG" width="450"/>Map courtesy of Mapcruzin.com</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The objectives for Phase II of Just One Trip were as follows.</p>
+<ol>
+<li>Recruit 15,000 people to pledge to try an alternative to driving alone.</li>
+<li>Motivate those participants to shift a total of 400,000 drive-alone trips to an alternate mode of travel.</li>
+</ol><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Using propensity modeling software, the research team cross-compared vast data sets, including Metro’s past program participant lists and a wealth of independent consumer data, to reduce a universe of 400,000 potential participants down to the 150,000 most likely to take transit, bike, walk, or rideshare. The team also identified ZIP codes with a high concentration of high-propensity residents, who also had easy access to frequent bus routes.</p>
+<p>To identify high-propensity households, the program’s data contractor developed a regression model utilizing the following process:</p>
+<ol>
+<li>Entered data files including individuals who had exhibited the target behavior in past programs</li>
+<li>Compiled existing data and identified variables indicating positive cases/high propensity and variables indicating negative cases/low propensity (including variables such as hobbies, age, education level, family formation, and more)</li>
+<li>Appended 400+ variables from U.S. Census and Household specific data</li>
+<li>Ran the regression model over the travel shed areas</li>
+<li>Analyzed output data to identify households with high likelihood to exhibit the target behavior</li>
+<li>Created an implementation file scoring each household</li>
+</ol>
+<p>In addition, to get a sense of the audience’s barriers and benefits, Metro aggregated its past programmatic research from a series of neighborhood and regional programs conducted throughout the county.</p>
+<p>Metro also surveyed 1,600 households in the region.</p>
+<ol>
+<li>64% agreed that “Offering incentives or rewards are an effective means to encourage people to change their travel behaviors.”</li>
+<li>When exposed to Just One Trip messaging, 51% said they personally connected with the messaging, and 33% said the messaging made them seriously consider reducing the number of drive-alone trips they make.</li>
+</ol>
+<p><img alt="Spanish Facebook ad for Seattle SOV trip reduction program" height="762" src="/userfiles/Image/Spanish Facebook Ad.png" width="450"/><span lang="EN-CA" style="font-size:8.0pt;mso-bidi-font-family:Arial;color:windowtext;mso-ansi-language:
+EN-CA">Spanish Facebook ad<o:p></o:p></span></p>
+<p>The program targeted 150,000 English- and Spanish-speaking households. While all residents of Seattle and King County were eligible, this program sought to identify and focus outreach on those with the highest propensity to take transit, bicycle, walk, telework or rideshare.</p>
+<p>The program was transcreated into Spanish, the second most-spoken language in King County (after English).</p>
+<p>Linguistically, transcreation seeks to avoid the pitfalls of traditional word-by-word translation, which doesn't take into account context or culture. For example, in Spanish “bus” can be called autobús, buseta, bondi and omnibús, depending on the culture and context of the audience.</p>
+<p>The approach itself was transcreated for King County’s Spanish speakers, with strategies designed to address key barriers for engaging multicultural and multilingual communities with government programs. Past transit outreach had shown that in this community, face-to-face outreach in a trusted setting was far more effective than collateral, ads and other tactics. While the program did utilize mailings and ads in Spanish to reinforce the message, the heart of the Spanish outreach was partnerships with trusted community-based organizations, which facilitated face-to-face outreach in trusted settings, featuring bicultural, bilingual staff.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Once high-propensity households and ZIP codes were identified, the campaign maximized budget by targeting every outreach tactic to them, reaching them multiple times in different ways:</p>
+<ol>
+<li>Mailings to their homes</li>
+<li>Ads served to their devices</li>
+<li>Events in their neighborhoods</li>
+</ol>
+<p>Outreach tactics were chosen based on successful results from previous travel behavior change campaigns and scaled for deployment to high-propensity households and ZIP codes throughout the metro area. Public outreach was conducted from March 2018-April 2019.</p>
+<p><strong>Creative</strong></p>
+<p>Phase I research (through an online survey panel of King County drivers) tested multiple creative concepts, and the concept of Just One Trip resonated the most with survey takers. Like other successful campaigns for dieting or exercise, Just One Trip asked drivers to make small changes to experience big benefits. Since the campaign could not promise a shorter commute, the creative focused on a more relaxing one, from napping to knitting on the bus. <em>(Building Motivation, Engagement and Habits Over Time; Vivid, Credible, Empowering Communication)</em></p>
+<p><em><img alt="Seattle SOV trip reduction program website" height="353" src="/userfiles/Image/Just One Trip Website .png" width="450"/></em><span lang="EN-CA" style="font-size:8.0pt;mso-bidi-font-family:
+Arial;color:windowtext;mso-ansi-language:EN-CA">Just One Trip website<o:p></o:p></span></p>
+<p><strong>Website Redesign</strong></p>
+<p>The program website was redesigned to take residents through a streamlined journey laser-focused on conversion - getting them to take the pledge and complete the accompanying travel survey. The UX design worked – the pledge page was the most-visited page on both the Spanish and English versions of the website, with 82% of program signups submitted through the online travel survey. <em>(Obtaining a Commitment)</em></p>
+<p><strong>Direct Mail &amp; Incentives</strong></p>
+<p>An attention-grabbing mailer was created in English and Spanish and sent to the 130,000 households in the program area with the highest propensity for travel behavior change. The mailers achieved an above-average 3.1% response rate and led to a huge spike in online sign-ups the week they went out. Those who enrolled in the program were sent a customized packet of travel information and a $25 incentive based on their chosen travel mode. Incentives included a free transit pass or vouchers for free trips in a King County Metro vanpool, amongst others. Of all the selections, the transit pass was the most popular, accounting for more than three-quarters of the incentives distributed. <em>(Financial Incentives; Personalized, Credible, Empowering Communication)</em></p>
+<p><img alt="Mailer for Seattle SOV trip reduction program" height="281" src="/userfiles/Image/Mailer2.png" width="450"/><span lang="EN-CA" style="font-size:8.0pt;mso-bidi-font-family:
+Arial;color:windowtext;mso-ansi-language:EN-CA">Top portion of English mailer<o:p></o:p></span></p>
+<p><strong>Travel Ambassador Street Teams</strong></p>
+<p>A street team of multilingual Travel Ambassadors trained in behavioral coaching techniques conducted outreach at events in hotbed ZIP codes. Their job description: don’t just hand out flyers and event swag—get the travel maps and sign-up forms out to help people navigate their barriers and determine whether a bus, carpool, vanpool, or bike ride might work for them. These Ambassadors put in more than 500 hours of face time at neighborhood and regional events, from local farmers markets to high-impact regional events with thousands of attendees. In total, the team signed up 2,855 residents on the spot. <em>(Overcoming Specific Barriers; Vivid, Credible, Empowering Communication)</em></p>
+<p><img alt="Outreach event" height="338" src="/userfiles/Image/Outreach Events.jpg" width="450"/><span lang="EN-CA" style="font-size:8.0pt;mso-bidi-font-family:Arial;
+color:windowtext;mso-ansi-language:EN-CA">Outreach event</span><b><span lang="EN-CA" style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-ansi-language:
+EN-CA'> <o:p></o:p></span></b></p>
+<p><strong>Click-to-Convert Ad Campaign</strong></p>
+<p>A tiered advertising campaign focused the bulk of the ad budget on click-to-convert mechanisms like Facebook, display network, and local online placements. These were targeted to high-propensity ZIP codes and drove 98% of the program’s web traffic. Midway through the program, social ads were updated to utilize social norming, with text such as, “Did you know 17,000 of your neighbors are driving alone less? Join them and earn a $25 reward!”  A supporting outdoor media buy helped establish reach and frequency in the priority areas (travelsheds), achieving 100,840,000 impressions while taking advantage of Metro’s transit exteriors. <em>(Mass Media; Norm Appeals)</em></p>
+<p><img alt="King County Metro Transit Outreach ad" height="755" src="/userfiles/Image/English Facebook Ad.PNG" width="450"/><span lang="EN-CA" style="font-size:8.0pt;
+mso-bidi-font-family:Arial;color:windowtext;mso-ansi-language:EN-CA">  English Facebook ad</span><b><span lang="EN-CA" style='font-size:11.0pt;font-family:"Minion Pro",serif;
+mso-ansi-language:EN-CA'><o:p></o:p></span></b></p>
+<p><strong>Transcreation Into Spanish </strong></p>
+<p>The Metro Ambassador Program was a transcreated program approach designed to build trust within the Spanish-speaking community, increase access to the Just One Trip program among individuals with language barriers, and help navigate barriers associated with utilizing transportation resources. The program sent bilingual, bicultural outreach staff to meet the community where they were and help them sign up for Just One Trip. Through this face-to-face engagement, Ambassadors could build trust, answer questions about transportation options, and help community members who felt hesitant to try new modes of transportation. The Ambassador Program was the cornerstone of Just One Trip’s transcreation strategy and gathered most of the signups completed in Spanish.<em> (Overcoming Specific Barriers; Vivid, Personalized, Credible, Empowering Communication)</em></p>
+<p>The team partnered with community-based organizations to meet the audience where they were and to reach them through a trusted community voice. Based on recommendations from partners, bilingual outreach was provided at health clinics, tiendas (corner stores), local libraries, food banks, and at digital literacy classes and other courses at a community resource center. Just One Trip Ambassadors were able to gather 537 pledges through this outreach.  The following table summarizes the key barriers and how each was addressed <em>(Overcoming Specific Barriers).</em></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid #9CC2E5 .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #9CC2E5;mso-border-insidev:.5pt solid #9CC2E5">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:20.2pt">
+<td style="width:103.45pt;border:solid #5B9BD5 1.0pt;
+  border-right:none;mso-border-top-alt:solid #5B9BD5 .5pt;mso-border-left-alt:
+  solid #5B9BD5 .5pt;mso-border-bottom-alt:solid #5B9BD5 .5pt;background:#5B9BD5;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.2pt" valign="top" width="138">
+<p class="MsoNormal"><b><span style='font-size:9.0pt;font-family:"Calibri",sans-serif;color:white'>Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="border:solid #5B9BD5 1.0pt;border-left:none;mso-border-top-alt:
+  solid #5B9BD5 .5pt;mso-border-bottom-alt:solid #5B9BD5 .5pt;mso-border-right-alt:
+  solid #5B9BD5 .5pt;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:
+  20.2pt" valign="top">
+<p class="MsoNormal"><b><span style='font-size:9.0pt;font-family:"Calibri",sans-serif;color:white'>How it   was addressed<o:p></o:p></span></b></p>
+<p class="MsoNormal"><b><span style='font-size:9.0pt;font-family:"Calibri",sans-serif;color:white'> </span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:41.85pt">
+<td style="width:103.45pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top" width="138">
+<p class="MsoNormal"><span style="font-size: 9pt; font-family: Calibri, sans-serif;">Unsure how to ride transit (where to catch the bus   or train, which route to take, navigating transfers and timing) </span><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #9CC2E5 1.0pt;
+  border-right:solid #9CC2E5 1.0pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-left-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:
+  Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-size: 9pt; font-family: Calibri, sans-serif;">Offered customized trip planning   (online and over the phone)</span><span style='font-size:9.0pt;font-family:
+  "Calibri",sans-serif'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:
+  Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-size: 9pt; font-family: Calibri, sans-serif;">Face-to-face behavioral coaching and   trip planning at over 500 hours of events, to help residents navigate their   barriers and commit to their new commute.</span><span style='font-size:9.0pt;
+  font-family:"Calibri",sans-serif'><o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'> </span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:41.85pt">
+<td style="width:103.45pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top" width="138">
+<p class="MsoNormal"><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'>Unsure how to pay   bus/train/ferry fare<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #9CC2E5 1.0pt;
+  border-right:solid #9CC2E5 1.0pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-left-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:
+  Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'>The   program offered pre-loaded ORCA cards (a regional transit smart card pass for   bus, ferry, rail or train) good for several trips.<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:
+  Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'>Unlike   paper bus passes, these cards could be reused / reloaded. They included   instructions for reloading online and at participating retailers and vending   machines, opening the door to long-term behavior change.<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;height:41.85pt">
+<td style="width:103.45pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top" width="138">
+<p class="MsoNormal"><span style="font-size: 9pt; font-family: Calibri, sans-serif;">Concern about needing to get home quickly in an   emergency</span><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #9CC2E5 1.0pt;
+  border-right:solid #9CC2E5 1.0pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-left-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;mso-layout-grid-align:none;text-autospace:none"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-size: 9pt; font-family: Calibri, sans-serif;">All participants were given a free   Guaranteed Ride Home, good for one taxi ride up to 60 miles one-way, valued   at $100, in the case of an unexpected emergency (like getting sick, having a   family emergency, or having to unexpectedly work late).</span><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4;height:41.85pt">
+<td style="width:103.45pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top" width="138">
+<p class="MsoNormal"><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'>Need car for   personal reasons after work, or had an irregular work schedule<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #9CC2E5 1.0pt;
+  border-right:solid #9CC2E5 1.0pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-left-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:
+  Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'>The   campaign emphasized flexibility with a call to change “just one trip”,   allowing flexibility for the need to use other commuting modes some of the   time<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:5;mso-yfti-lastrow:yes;height:41.85pt">
+<td style="width:103.45pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top" width="138">
+<p class="MsoNormal"><span style="font-size: 9pt; font-family: Calibri, sans-serif;">Felt riding the bus was not convenient – due to   geographic location, irregular schedule, etc. </span><span style='font-size:
+  9.0pt;font-family:"Calibri",sans-serif'><o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'> </span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #9CC2E5 1.0pt;
+  border-right:solid #9CC2E5 1.0pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-left-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;line-height:
+  15.0pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:
+  9.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-size: 9pt; font-family: Calibri, sans-serif;">The campaign offered tools and   incentives for a variety of green travel options, including ride matching for   carpools and vanpools.</span><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:-.9pt;tab-stops:0cm 12.6pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'> </span></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The budget for this effort came from multiple sources and was split between various efforts. Parties who are interested in understanding more about the financial cost of this type of program are encouraged to contact Metro and/or C+C (see contact details below.)</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<ul>
+<li>Pre-Program Survey: As a required part of the enrollment process, all 21,162 participants completed an in-depth travel behavior survey at the start of the program (online or on paper).</li>
+<li>Post-Program Survey: A post-program survey asking the same set of travel questions was sent to participants at the end of the program, with prize drawing incentives to encourage participation. A total of 4,355 participants (20.5%) completed the post-program survey.</li>
+<li>Panel Analysis: The Washington State Department of Transportation conducted a cross-panel analysis of the pre- and post-campaign surveys to extrapolate trip reduction results using industry standard calculations.</li>
+<li>Regional Surveying: A three-plus year regional research program surveyed residents through a baseline survey, plus five additional rounds of sampling. The survey sampling used mixed-mode data collection (online and phone) and occurred in five waves throughout Phase I and II. </li>
+</ul>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoTable15Grid4Accent5" style="border-collapse:collapse;border:none;mso-border-alt:solid #9CC2E5 .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
+<tbody>
+<tr>
+<td style="width:148.6pt;border:solid #5B9BD5 1.0pt;
+  border-right:none;mso-border-top-alt:solid #5B9BD5 .5pt;mso-border-left-alt:
+  solid #5B9BD5 .5pt;mso-border-bottom-alt:solid #5B9BD5 .5pt;background:#5B9BD5;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="198">
+<p class="MsoNormal"><b><span style='font-size:9.0pt;font-family:"Calibri",sans-serif;
+  color:white'>Survey Wave<o:p></o:p></span></b></p>
+</td>
+<td style="width:66.9pt;border:solid #5B9BD5 1.0pt;
+  border-left:none;mso-border-top-alt:solid #5B9BD5 .5pt;mso-border-bottom-alt:
+  solid #5B9BD5 .5pt;mso-border-right-alt:solid #5B9BD5 .5pt;background:#5B9BD5;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="89">
+<p class="MsoNormal"><b><span style='font-size:9.0pt;font-family:"Calibri",sans-serif;
+  color:white'>Number of Respondents<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr>
+<td style="width:148.6pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="198">
+<p class="MsoNormal"><span style="font-size: 9pt; font-family: Calibri, sans-serif;">Baseline: September 2016</span><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:66.9pt;border-top:none;border-left:none;
+  border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="89">
+<p class="MsoNormal"><span style="font-size: 9pt; font-family: Calibri, sans-serif;">1,573</span><span style='font-size:
+  9.0pt;font-family:"Calibri",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:148.6pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="198">
+<p class="MsoNormal"><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'>Wave   1: September 2016<o:p></o:p></span></p>
+</td>
+<td style="width:66.9pt;border-top:none;border-left:none;
+  border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="89">
+<p class="MsoNormal"><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'>1,630<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:148.6pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="198">
+<p class="MsoNormal"><span style="font-size: 9pt; font-family: Calibri, sans-serif;">Wave 2: January 2018</span><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:66.9pt;border-top:none;border-left:none;
+  border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="89">
+<p class="MsoNormal"><span style="font-size: 9pt; font-family: Calibri, sans-serif;">1,019</span><span style='font-size:
+  9.0pt;font-family:"Calibri",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:148.6pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="198">
+<p class="MsoNormal"><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'>Wave   3: May 2018<o:p></o:p></span></p>
+</td>
+<td style="width:66.9pt;border-top:none;border-left:none;
+  border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="89">
+<p class="MsoNormal"><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'>1,067<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:148.6pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="198">
+<p class="MsoNormal"><span style="font-size: 9pt; font-family: Calibri, sans-serif;">Wave 4: September 2018</span><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:66.9pt;border-top:none;border-left:none;
+  border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="89">
+<p class="MsoNormal"><span style="font-size: 9pt; font-family: Calibri, sans-serif;">    920</span><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:5;mso-yfti-lastrow:yes;height:3.5pt">
+<td style="width:148.6pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.5pt" valign="top" width="198">
+<p class="MsoNormal"><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'>Wave   5: January 2019<o:p></o:p></span></p>
+</td>
+<td style="width:66.9pt;border-top:none;border-left:none;
+  border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.5pt" valign="top" width="89">
+<p class="MsoNormal"><span style='font-size:9.0pt;font-family:"Calibri",sans-serif'>  999<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Phase II of <em>Just One Trip</em> exceeded both program objectives:</p>
+<p><strong>Objective 1: </strong>Recruit 15,000 people to pledge to try an alternative to driving alone.</p>
+<p>Result: In 13 months, the team motivated 21,162 people to pledge to try a new mode of travel. These results exceeded the Phase II stretch goal by 41% and quadrupled the existing participant number from Phase I, demonstrating that the program approach was highly effective. This represented 14% of targeted households.</p>
+<p><strong>Objective 2: </strong>Motivate those participants to shift a total of 400,000 drive-alone trips to an alternate mode of travel.</p>
+<p>Result: Participants reduced 861,621 annualized drive-alone trips in the region, as measured by a Washington State Dept. of Transportation panel analysis of participants’ pre- and post-campaign travel surveys, using industry standard calculations. This represents 8,181,523 pounds of CO2 emissions reduced.</p>
+<p> </p>
+<ul>
+<li>A comparison of pre- and post- survey data showed significant reductions in drive alone travel among participants.  Participants who took both the pre- and post-campaign surveys reduced 861,621 annualized drive-alone trips and 8,835,907 vehicle miles traveled.</li>
+<li>This represents 8,181,523 pounds of CO2 emissions reduced annually.</li>
+<li>If these numbers are extrapolated to the entire participant universe (beyond the 20.5% who took both the pre- and post-surveys), they amount to 4,183,942 trips reduced, 42,906,257 vehicle miles traveled reduced, and 39,728,637 pounds of CO2e reduced. This is the CO2 reduction equivalent to taking 3,893 passenger vehicles off the road completely for one year.</li>
+<li>The campaign asked participants to change one drive-alone trip. On average, individuals reduced 4 drive-alone trips per week, which in turn reduced an average of 40.58 vehicle miles traveled and 37.57 pounds of CO2e per week.</li>
+<li>If that behavior was maintained on an annualized basis, each individual would reduce 198 drive-alone trips per year, equating to 2,029 miles of travel and 1,879 pounds of CO2e.</li>
+<li>A legacy survey from Phase I of Just One Trip demonstrated enduring behavior change. Immediately following Phase I, participants had shifted 21% of commute trips away from drive-alone. Two years later, participants still retained a 14% shift away from drive-alone, compared to pre-program numbers.</li>
+<li>The post-program survey asked respondents which mode they tried instead of driving alone. Transit was cited by 62% of respondents who completed the form in English, followed by biking (11.4%), carpooling (9.8%), and walking (9.8%.) Similarly, respondents who completed the form in Spanish cited transit as the most common mode, (71.4%), followed by biking (14.2%), carpooling (9.5%), and telework (4.7%).</li>
+<li>Regional surveying found a small but steady 4% decrease in the number of drive-alone commute trips from 2018 to 2019. As of January 2019, the number of drive-alone commute trips (at the individual level) was the lowest reported over the course of the research (from 2016 to 2019). According to the research firm, “while not statistically significant, the increase in transit ridership during this same period suggests that this may be a real decrease in the number of drive-alone trips.” Researchers noted this was a positive sign, though it cannot be directly attributed to the Just One Trip program.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Alex Hughan, PMP <br/>
+Transportation Planner, Market Innovation Section<br/>
+King County Metro<br/>
+<a href="mailto:ahughan@kingcounty.gov?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> ahughan@kingcounty.gov</a></p>
+<p>Erin Cawley-Morse<br/>
+Vice President C+C<br/>
+<a href="mailto:ecawleymorse@cplusc.com?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> ecawleymorse@cplusc.com</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<ul>
+<li><strong>Moving from Awareness to Behavior Change<br/>
+<br/>
+</strong>   This approach proved cost-effective. In Phase II, the program recruited a whopping 21,162 participants, quadrupling the existing participant number, and scaling the program’s ability to reduce trips. Many of the same tools were offered in Phase I (commitments, incentives, trip planning), but the focused approach of Phase II drove a higher level of behavior change. Phase I drove valuable widespread awareness of the Just One Trip brand, which allowed Phase II to focus on moving more residents from awareness to behavior change. </li>
+</ul>
+<ul>
+<li><strong>Propensity Modelling / Predictive Analysis<br/>
+<br/>
+</strong>  Governments often experience under-utilization of their programs, and face challenges in making residents aware of the tools they offer. This program offers a replicable structure for creating a CBSM-inspired program that gets these tools in front of the people most likely to utilize these tools to overcome their barriers.<br/>
+<br/>
+    Propensity Modelling / Predictive analysis is a new way of defining the audience for transportation demand management programs, which often define audiences by geography, employer, or demographics. Propensity modeling is being used by researchers and marketers in many disciplines, from healthcare research to tourism marketing. Finding those with the highest propensity to do a given behavior, then focusing efforts there, is a powerful way for programs with limited budgets and/or large project areas to use program funds effectively. <br/>
+<br/>
+    This has enormous potential in fields including:
+    <ul>
+<li>Energy efficiency (for instance – defining those more likely to adopt higher-level measures like ductless heat pumps)</li>
+<li>Healthcare (for instance – defining those most likely to join a health-smart challenge)</li>
+<li>Waste management</li>
+<li>Water efficiency </li>
+</ul>
+    Anyone with a large project area and list of past participants, who is ready to scale and expand a universe of past participants into a much bigger area, can utilize this approach to cost-effectively focus outreach resources on those most likely to respond. <br/>
+<br style="font-weight: 400;"/>
+<strong> <span style="font-weight: 400;">This approach also gives program managers the ability to leverage work their organization has done over many years to recruit past participants, and cross-compare those individuals against consumer data sets to figure out who to prioritize next. Knowing how likely a person is to engage means that you can focus your resources and efforts on the individuals for whom engagement and the proper “nudge” will be more likely to lead to a meaningful change in behavior.<br/>
+<br type="_moz"/>
+</span></strong></li>
+<li><strong>Quality Online User Experience (UX)<br/>
+<br/>
+</strong>Quality online user experience (UX) is often overlooked in behavior change campaigns, but effective UX was critical in this program, ensuring residents successfully made the commitment by taking the pledge. Once they did, not only did their perception of themselves begin to change, but it opened the door for the program team’s ongoing follow-up, encouraging them in their new behaviors and self-views, and providing additional tools. <br/>
+<br/>
+    Thoughtful UX was paired with conversion-focused online advertising. The success of this approach shows that behavior change practitioners have a meaningful opportunity to pair CBSM tools (social norms, commitments, prompts, and incentives) with tools from traditional advertising.</li>
+</ul>
+<ul>
+<li><strong>Fine-Tuning Traditional Tactics<br/>
+<br/>
+</strong>This program combined newer approaches with tried-and-true tactics, like events outreach and direct mail. It demonstrates that these traditional tactics can be effective if applied strategically. For instance, face-to-face outreach can be extremely effective in helping residents navigate complex behavior change, as long as outreach staff are trained in behavioral interviewing and not just handing out flyers. And direct mail can elicit a high response if sent to high-propensity audiences, using appealing creative and a clear call to action to commit to the next step.</li>
+</ul>
+<ul>
+<li><strong>Potential Future Innovations<br/>
+<br/>
+</strong>   For future programming, it would be interesting to perform a by-participant analysis to see if there are trends in travel results based on referral method (for instance, whether someone who signed up at an event was more likely to reduce trips than someone who signed up via an online ad). </li>
+</ul>
+<p><strong>Author and Landmark Designation</strong></p>
+<p>This case study was compiled in 2021 by Jay Kassirer, based on information provide by C+C.</p>
+<p>The program described in this case study was designated in 2020.  Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff, and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Wallace Beaton, Green Communities Canada</li>
+<li>Aaron Gaul, UrbanTrans</li>
+<li>Nathalie Lapointe, Federation of Canadian Municipalities</li>
+<li>David Levinger, Mobility Education Foundation</li>
+<li>Geoff Noxon, Noxon Associates</li>
+<li>Lisa Kay Schweyer, Carnegie Mellon University</li>
+<li>Phil Winters, CUTR and the University of South Florida</li>
+</ul><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

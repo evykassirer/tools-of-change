@@ -1,0 +1,436 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+<li><a href="/en/tools-of-change/work-programs-that-influence-the-home/">Work Programs that Influence the Home</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Bay Area Air Quality Management District</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>BayCAP</li>
+<li>RIDES for Bay Area Commuters, Inc.</li>
+<li>Metropolitan Transportation Commission</li>
+<li>Local Employers, Businesses and Public Agencies</li>
+<li>Local Media</li>
+</ul>
+<p> </p><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>258,656 trips reduced in 1999</li>
+<li>3.36 tons of ozone-causing emissions reduced in 1999</li>
+<li>29.7-49.2% of participants and 11.3% of random samples of the public drove less on Spare the Air days in 2000</li>
+<li>82% of the general public aware of the program in 2000</li>
+</ul>
+<table cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" complete="complete" height="26" src="/images/lightbulb.gif" width="27"/> Tip: Click on an image to enlarge it. Click your back button to return to this page. <hr color="#ffcc00"/>
+<p><a href="/images/documentimages/SparetheAir/SAsurvey.gif" target=""><img alt="Spare the Air survey" border="0" complete="complete" height="135" src="/images/documentimages/SparetheAir/SAsurvey1.gif"/></a> <br/>
+            The email survey used for Spare the Air.</p>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Spare the Air</h1>
+<p>When air pollution concentrations approach unhealthy levels, people living and working within the San Francisco Bay Area are notified, and encouraged to avoid activities that pollute the air. Partnerships with local businesses and public agencies allow the program to target commuters at work, and offer information, incentives and services to help them choose less polluting alternatives.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Between June and October each year, ground-level ozone in the San Francisco Bay Area occasionally reached unhealthy levels. In the wintertime, from November to February, the pollutant of concern is particulate matter (small particles 10 microns or less in size). The area's 6.1 million residents, with 5 million registered vehicles, and large numbers of commuters from surrounding regions who worked in the Bay Area, contributed to the air pollution.</p>
+<p>In the early 1990s, when it became apparent that cars were the primary contributors to air pollution, the Bay Area Air Quality Management District (BAAQMD) decided to create an approach to curtail motor vehicle emissions in the region. As a result, the BAAQMD launched the Spare the Air campaign, a voluntary program, in the summer of 1991. As ground-level ozone is the most persistent pollution problem in the Bay Area, this case study focused on the summertime Spare the Air program.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The goals of Spare the Air, in order of priority, were:</p>
+<ul>
+<li>To achieve health benefits as a result of improved air quality.</li>
+<li>To maintain air quality status according to federal attainment regulations. For the Bay Area, maintaining attainment status required the reduction of ozone emissions, because the area was already in attainment for other pollutants, including carbon monoxide, lead and sulfur dioxide.</li>
+<li>To foster public education on the health issues related to ground-level ozone, its causes and health effects, and the actions individuals could take to avoid making the pollution worse.</li>
+</ul>
+<p>The program's main objective was to promote voluntary measures among commuters and the general public. When poor air quality was forecasted, Spare the Air encouraged participants to reduce polluting activities, especially car use, in favour of less polluting alternatives.</p>
+<p>Each year, Spare the Air aimed to increase awareness, and involve more individual participants and employers than in the previous year. In 2000, the program aimed to involve 6000 individuals, 1500 employers and to establish a youth component within the campaign.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>A public opinion survey was used to determine people's awareness of local air pollution issues. Another survey examined commuters' travel choices.</p>
+<p>Focus groups were used to examine how people perceived public transit, the BAAQMD, and the programs messaging, and to find out if they would take the issue of high ozone concentrations seriously. Focus groups were run in Spanish and Chinese as well as in English. From the experience of the California Recycling program, Spare the Air organizers learned that children were effective at relaying information to their parents and influencing their behavior.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The first year of Spare the Air was spent getting partners involved. In the second year, the program itself was established. Particularly at the beginning of the program, a great deal of effort was spent working with employers, other partners and the media, coordinating promotional events and developing incentives. Partnership issues became easier as the components of the program fell into place and participants became aware of what to do on Spare the Air days. In 2000, the focus was on outreach - developing a Youth Outreach program, translating information into Spanish and Chinese, and continuing to increase public awareness of the program.</p>
+<p>To motivate people to participate in Spare the Air, the program's messaging informed people that ground-level ozone was harmful to human health, because it damaged lung tissue, especially in children, the elderly, and those with respiratory problems. The issue of ground-level ozone was a local, real-life problem that people were told they could help prevent (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>, <a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p>Meteorologists from the BAAQMD used monitoring stations and forecasting models to analyze pollution and weather patterns, including winds, temperature and ozone precursors, and predict ozone concentrations for the following day. When the predicted ozone concentration was in excess of the federal health standard of 84 parts per billion, or an Air Quality Index over 100, a Spare the Air day was declared. Since the program began, the number of Spare the Air days ranged from three to 25 each season (one can visit <a href="http://www.sparetheair.org">www.sparetheair.org</a> to obtain a running boxscore of the number of Spare the Air days and/or federal violations that have occurred in the Bay Area).</p>
+<p>Spare the Air advisories were announced by the BAAQMD shortly after 1:00 pm on the day they were forecast. Television and radio stations, newspapers, participating employers and individuals registered with the network were notified by phone, fax or email. Updated forecasts were posted on the Spare the Air web site (<a href="/en/tools-of-change/mass-media/">Mass Media</a>).</p>
+<p>A registration form was available online for individuals who wanted to receive email notification of Spare the Air days. Individuals who registered were eligible to win prizes in a year-end draw. (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>, <a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives</a>). As an offshoot to the program, people were also given an opportunity to nominate someone who was improving air quality, as a Clean Air Champion. The winner was honored at a presentation during the BAAQMD Board of Directors' meeting. The purpose of selecting a Clean Air Champion was to recognize environmentally conscious individuals whose actions were inspirational to others (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>, <a href="/en/tools-of-change/word-of-mouth/">Word of Mouth)</a>.</p>
+<p>Television stations announced Spare the Air days in their news and weather reports. Radio stations mentioned them in their news reports, and disc jockeys announced them during their shows. Local newspapers included Spare the Air advisories in Air Quality Index reports, published articles about the program, and displayed the Spare the Air Day slogan on their mastheads, at the top of the front page (<a href="/en/tools-of-change/mass-media/">Mass Media</a>). As people prepared to leave for work, these announcements reminded them to avoid contributing to the ozone problem (<a href="/en/tools-of-change/prompts/">Prompts</a>).</p>
+<p>The public learned about the program and the actions they could take through:</p>
+<ul>
+<li>Television, radio and newspaper advertisements (<a href="/en/tools-of-change/mass-media/">Mass Media</a>)</li>
+<li>The program's Internet site (<a href="%20http://www.sparetheair.org">www.sparetheair.org</a>), which included ozone movie maps that showed changes in ground level ozone over the Bay Area. (<a href="/en/tools-of-change/mass-media/">Mass Media</a>, <a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>)</li>
+<li>A Toll-free number (1-800-HELP-AIR)</li>
+<li>Partnerships that reached customers (eg. some partners promoted Spare the Air in their newsletters to customers. Clover Dairy put messages on their milk cartons, and the City of San Francisco placed a large Spare the Air this Summer banner along the Bay Bridge, where those traveling into the city from the east could not help but read it as they commuted into San Francisco. (<a href="/en/tools-of-change/mass-media/">Mass Media</a>)</li>
+<li>The Spare the Air employer program (<a href="/English/ToolsofChange/default.asp?Section=Work">Work Programs that Influence the Home</a>)</li>
+<li>Public education booths at community events</li>
+<li>Workshops (for schools, industry, public)</li>
+<li>Public speakers</li>
+<li>Transportation Fairs</li>
+</ul>
+<p>Local businesses and public agencies, including the cities and nine counties in the Bay Area, promoted the program to the public and their employees. The Bay Area Clean Air Partnership (BayCAP) was a public/private partnership initiated in 1996 to promote voluntary actions to improve air quality in the Bay Area by supporting an enhancing the Spare the Air campaign. With the assistance of RIDES for Bay Area Commuters, BAAQMD and BayCAP developed outreach materials during monthly workshops (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). These workshops led to the formation of resource teams that provided additional promotional support and incentives, including public transit discounts, free transit, auto repair and tune-up discounts, and monetary rewards (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>).</p>
+<p>To promote alternatives to commuting alone by car, the cities and counties in the Bay Area provided incentives and services for commuters and employers. The incentives consisted of reduced and complimentary transit fares, funding for bike parking, free carpool parking, and prizes (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>). Those who used commute alternatives were also guaranteed rides home in an emergency (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>On Spare the Air days, participants were encouraged to:</p>
+<ul>
+<li>Leave their cars at home, and try a commute alternative</li>
+<li>Not use gas-powered lawn mowers and leaf blowers</li>
+<li>Avoid using consumer spray products like hairspray and household cleaners.</li>
+<li>Ignite barbecues with an electric or chimney starter only (no lighter fluids).</li>
+<li>Refuel their cars after the sun has gone down --- and not top off the tank.</li>
+<li>Avoid household maintenance activities that produce emissions of Volatile Organic Compounds (painting, stripper, degreasing, etc)</li>
+</ul>
+<p><strong>RIDES for Bay Area Commuters</strong></p>
+<p>RIDES for Bay Area Commuters, Inc. was a private, nonprofit corporation, funded by the Metropolitan Transportation Commission (MTC) and the BAAQMD. RIDES offered free commute services (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>) for Bay Area residents, including:</p>
+<ul>
+<li>Consultations to determine a commuters best alternative</li>
+<li>Carpool and vanpool referrals from its database of over 12,000 commuters</li>
+<li>Bicycle information and referrals</li>
+<li>Assistance to take public transit or telecommute</li>
+<li>Information on using diamond lanes, Park &amp; Ride lots, Commuter Check, and more</li>
+<li>Assistance in forming carpools and vanpools</li>
+<li>Vanpool services and support</li>
+</ul>
+<p>Its messages were We can help you get there faster, cheaper and easier, and Use a commute alternative to driving alone, and you'll save money, time, and stress.</p>
+<p>RIDES recommended the following commute alternatives:</p>
+<ul>
+<li>Use alternative modes of transportation (car/vanpools, transit, etc) instead of driving alone</li>
+<li>Keep vehicles tuned-up</li>
+<li>Combine multiple auto trips throughout the day</li>
+<li>Work from home (telecommute)</li>
+<li>Keep travel speeds at the speed limit and steady</li>
+<li>Walk or bicycle to work</li>
+</ul>
+<p><strong>Employer Program</strong></p>
+<p>Until 2000, the employer component of the Spare the Air program was managed by the BAAQMD, through Community Focus, a non-profit contractor. When a large grant allowed the program to grow in 2000, Community Focus partnered with RIDES, a larger contractor, to manage the larger project effectively.</p>
+<p>Employers registered online to participate in Spare the Air, and were added to a list that could be seen by visitors to the program's web site (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>, <a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>). Participating partners were offered free support materials and information on running a workplace Spare the Air program, and an employer toolbox was available, containing newsletter articles and graphics that could be adapted for use in each partners promotional materials (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>Through their newsletters, intranet, email and other internal communications, employers informed their employees of impending Spare the Air days and educated them about the ways individuals could improve air quality (<a href="/en/tools-of-change/mass-media/">Mass Media</a>, <a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>). They provided motivation to take action by offering free or discounted transit fares, telecommuting on Spare the Air days, preferential parking for carpools and vanpools, carpool matching, raffles for prizes (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>) and guaranteed emergency rides home for employees who used commute alternatives (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>, <a href="/English/ToolsofChange/default.asp?Section=Work">Work Programs that Influence the Home</a>).</p>
+<p>On Spare the Air days, businesses themselves were asked to reduce or avoid high-emitting production, maintenance and landscaping activities, and truck idling. Participation by businesses and public agencies was voluntary. Companies participated in the program because of the positive publicity, because they were partly responsible for their employees long commutes due to their locations, and because if they did not help the Bay Area comply with federal air quality standards, enforceable regulations would have had to be introduced.</p>
+<p><strong>Youth Outreach Program</strong></p>
+<p>Youth outreach was achieved through schools, and TV and radio broadcasts. Free kits, featuring a cartoon character named Kaila the Clean Air Champion were distributed to children who called the 1800 HELP AIR line. These kits contained comic activity books, bookmarks, rulers, membership cards, and temporary tattoos. The comic books featured clean air tips and explained why children should care about the air. Children learned about particulate matter and ground level ozone pollution, its causes and health effects, as well as what individuals can do to make clean air choices. Commercials about Spare the Air were run on television and radio stations popular with children, Nickelodeon, the Cartoon Channel and Disney Radio (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>, <a href="/en/tools-of-change/mass-media/">Mass Media</a>).</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>In 2000, Spare the Air was funded by a $1,044,415 grant given to the Metropolitan Transportation Commission by the federal Department of Transportation. This grant allowed BAAQMD to purchase more airtime for radio and television advertising to improve program recognition.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Expenses for 2000</strong></td>
+<td><strong>Amount (US$)</strong></td>
+</tr>
+<tr>
+<td>Advertising and marketing</td>
+<td>$494,000</td>
+</tr>
+<tr>
+<td>Voluntary curtailment and outreach</td>
+<td>$225,000</td>
+</tr>
+<tr>
+<td>Community outreach</td>
+<td>$212,285</td>
+</tr>
+<tr>
+<td>Youth outreach</td>
+<td>$37,700</td>
+</tr>
+<tr>
+<td>Measurement and survey</td>
+<td>$75,430</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>$1,044,415</td>
+</tr>
+</tbody>
+</table>
+<p>In the first year of the program (1991), its budget was $250,000, of which $150,000 came from a grant from the federal Environmental Protection Agency. The other $100,000 was provided by BAAQMD. In addition, Spare the Air's partners provided advertising funds and prize donations.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Surveys on program awareness and participation were conducted on selected Spare the Air days. Participants were asked closed-ended questions about their awareness and understanding of Spare the Air, what actions they took part in that day, and why. The following survey methods were used:</p>
+<ul>
+<li>Random phone surveys of the general public (400 interviews per Spare the Air day in 1998, 600 in 1999 and 2000)</li>
+<li>Employee participation data, collected from surveys completed by participating employees, by email, on the Web site or on hardcopy surveys. (912 hardcopy surveys analyzed in 1998)</li>
+<li>Email surveys of participants who had registered online. When participants registered, they provided information on the distances they normally commuted. A coded authentication marker on each survey identified the respondent, so the distances of reduced trips were known, and emission reductions could be calculated. (1187 surveys analyzed in 1998)</li>
+<li>Online surveys, which were active throughout the ozone season. Only surveys completed on a Spare the Air day or up to two days after were used in program evaluation. (610 surveys analyzed in 1998)</li>
+</ul>
+<p>The same 12 core questions were asked in all the surveys, and in some surveys additional details were requested, about the respondents choices and demographics. The results of the random phone surveys were considered representative of the awareness and actions of the general public, whereas the other surveys were completed by individuals who chose to participate and were committed to Sparing the Air.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>This program had built-in feedback. When high ozone levels were predicted, and people were asked to change their behaviour, they were informed, through the program's channels of communication, whether they had succeeded in keeping ozone levels within safe limits or not. This feedback was immediate (the same day they took action) and a natural consequence of their actions.</p>
+<p>Several times during the summer, an Employer Report Card for Spare the Air was published online and faxed to employers. In this Report Card, a day-by-day commentary of ozone status, notes about media coverage of Spare the Air days, and a Thank You message to participating employers provided short-term feedback on the most recent activities.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>The program's impact improved each year. Because the email, Web and hardcopy surveys were completed by those who chose to participate in Spare the Air, their results were more positive than those of the random public phone surveys. The results from the email surveys were similar to the Web survey results.</p>
+<p><strong>Trip reductions</strong> <br/>
+The number of trips reduced was 209,760 in 1998 and 258,656 in 1999.</p>
+<p><strong>Emission reductions</strong> <br/>
+As a result of trip reductions, ozone-forming emissions per Spare the Air episode were reduced by 2.92 tons in 1998, and 3.36 tons in 1999.</p>
+<p><strong>Behaviour changes</strong> <br/>
+<em>Driving</em> <br/>
+Percentage of those who knew it was a Spare the Air day, and drove less for air quality reasons:</p>
+<ul>
+<li>Random public surveys - 5.6% in 1998, 7% in 1999 and 11.3% in 2000.</li>
+<li>Email (and Web) surveys (1998) - 49.2%</li>
+<li>Hardcopy surveys (1998) - 29.7%</li>
+</ul>
+<p><em>Consumer Products</em> <br/>
+Percentage of those who knew if was a Spare the Air day, and used consumer spray products (eg. hairspray and cleaners) less as a result (all in 1998):</p>
+<ul>
+<li>Random public surveys - 5.9%</li>
+<li>Email (and Web) surveys - 19.4%</li>
+<li>Hardcopy surveys - 29.7%</li>
+</ul>
+<p><em>Gardening</em> <br/>
+Percentage who knew it was a Spare the Air day, and reduced their use of gas-powered garden equipment as a result (all in 1998):</p>
+<ul>
+<li>Random public surveys - 6.5%</li>
+<li>Email (and Web) surveys - 15%</li>
+<li>Hardcopy surveys - 22.3%</li>
+</ul>
+<p><strong>Episode day awareness</strong> <br/>
+Percentage who were aware it was a Spare the Air day:</p>
+<ul>
+<li>Random public surveys 38% in 1998, 42% in 1999 and 53.8% in 2000</li>
+<li>Email (and Web) surveys (1998) - 95.7%</li>
+<li>Hardcopy employee surveys (1998) - 77.6%</li>
+</ul>
+<p>In 1998, approximately 45% of those who knew it was a Spare the Air day had found out from a television advisory, 29-37% heard it on the radio, 6-10% from freeway message signs, 4-6% from a newspaper and 4-5% from their workplace.</p>
+<p><strong>Program awareness</strong> <br/>
+Program awareness increased, mostly because of media promotions.</p>
+<p>Percentage who heard of Spare the Air:</p>
+<ul>
+<li>Random telephone surveys - 67% in 1996, 75% in 1998, 80% in 1999 and 82% in 2000</li>
+<li>Email (and Web) surveys (1998) - 97.3%</li>
+<li>Hardcopy surveys (1998) - 81.7%</li>
+</ul>
+<p><strong>Participation</strong> <br/>
+There were 250 employers participating in Spare the Air in 1992, 400 in 1994 and 650 in 1995. By the end of August 2000, 1612 employers were participating, over one million employees had been notified about the program, with 22% participating, and 8300 individuals were registered to receive email notification.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Spare the Air <br/>
+Bay Area Air Quality Management District <br/>
+939 Ellis St <br/>
+San Francisco, CA 94109 <br/>
+<a href="http://www.sparetheair.org">www.sparetheair.org</a></p>
+<p>Teresa Lee <br/>
+Director of Public Information <br/>
+Bay Area Air Quality Management District <br/>
+(415) 749-4905 <br/>
+fax: (415) 956-1811</p>
+<p>Will Taylor <br/>
+Web Site Manager <br/>
+(415) 749-4783 <br/>
+<a href="mailto:wtaylor@baaqmd.gov">wtaylor@baaqmd.gov</a></p>
+<p>Luna Salaver <br/>
+Public Information Officer <br/>
+(415) 749-5196 <br/>
+<a href="mailto:lsalaver@baaqmd.gov">lsalaver@baaqmd.gov</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned</strong></p>
+<ul>
+<li>Invite public comment, especially when you are dealing with a scientific or technical issue, to make sure you are not overwhelming people with information they don't understand</li>
+<li>Partnerships with the media, transit agencies, employers and public agencies were essential to the program's success</li>
+<li>The amount of time it takes to establish this type of program depends on how dependent people are on cars for their transportation, and how environmentally conscious the public and employers are. If public transit is well established, and people have other choices besides driving, it is easier to establish the program.</li>
+</ul>
+<p><strong>Related Programs (from RIDES web site)</strong></p>
+<p>Commuter Check allowed employers to offer their employees a financial benefit for using commute alternatives. Commuter Checks could be used to purchase Bay Area transit passes, or pay for fares on registered vanpools/buspools. Commuter Checks were either purchased by the employer, or the employee (with a pre-tax salary deduction), or with a combination of both funds. Over 1,500 Bay Area employers participated in Commuter Check in 2000. Commuter Check was one way employers could implement a federal Commuter Choice tax-savings program. Employees could take advantage of this, or any benefit under the Commuter Choice program only if their employers established this program at their worksite.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>How Employees Benefited:</strong></td>
+<td><strong>How Employers Benefited:</strong></td>
+<td><strong>How the Bay Area Benefited: </strong></td>
+</tr>
+<tr>
+<td valign="top">Receive up to $780 a year of tax-free income <br/>
+            Save the money it would cost by driving alone to work <br/>
+            Reduce stress from driving alone in traffic <br/>
+            Read, sleep, work, or relax while commuting <br/>
+            Improve the environment <br/>
+            Reduce commuting costs even further if currently taking transit or vanpooling</td>
+<td valign="top">Avoid paying payroll taxes while enhancing employee compensation packages <br/>
+            Reduce employee turnover and enhance recruitment of new hires <br/>
+            Improve employee morale and productivity <br/>
+            Reduce traffic congestion and air pollution <br/>
+            Enhance company image <br/>
+            Reduce capital and operating costs for employee parking</td>
+<td valign="top">Reduced traffic congestion <br/>
+            Improved air quality <br/>
+            Conservation of non-renewable energy resources</td>
+</tr>
+</tbody>
+</table>
+<p>RIDES conducted annual region-wide phone surveys on commuting behaviours, and published the results as Commute Profiles. The Commute Profile for 1999 reported a decrease of almost 5% in the drive-alone rate compared to 1998. However, there was no net benefit, because the drive-alone rate increased by the same amount the previous year. Transit use increased the most from 1998 to 1999 over 3%. Smaller increases in carpooling and "other" mode use were recorded. Within the "other" mode category, telecommuting increased substantially, and biking and walking rebounded somewhat from a bad weather-induced low of 1998. According to this report, some of these changes were small enough to possibly be noise. More information about Commute Profiles and RIDES services is available at <a href="http://www.rides.org">www.rides.org</a>.</p>
+<p><strong>BayCAP</strong></p>
+<p>BayCAP was founded by the Air District, the Bay Area Council (businesses), and the Silicon Valley Manufacturing Group. BayCAP's primary effort is to support and enhance the Spare the Air campaign. In addition to focusing on reducing the number of days the Bay Area violates air quality standards, BayCAP has two other goals: to verify efforts to reduce emissions; and to explore new voluntary strategies to reduce emissions. Big Bay Area-based businesses, such as Pacific Bell, Chevron, Mervyn's California, Metropolitan Transportation Commission, Hewlett Packard, the Gap, and Kaiser Permanente participated in BayCAP.</p>
+<p>Last updated: July 2004. This case study was written in 2000 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

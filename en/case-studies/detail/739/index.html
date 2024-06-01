@@ -1,0 +1,677 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>City of Austin</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Reduced participants’ drive-alone trips from 53% to 41% mode share within six months</li>
+</ul>
+<p> </p>
+<p><strong>Links and Downloads</strong></p>
+<p><a href="/userfiles/Austin Leave Time Reward.pdf" target="_blank">PDF </a>of this case study</p>
+<p>You can read more about the <a href="http://austintexas.gov/sites/default/files/files/ADL%20Guidelines%20(Rules)%203_2_20.pdf" target="_blank">Official Program Guidelines here</a>.  </p>
+<p><a href="https://mycommutesolutions.com/#/subsite/austin" target="_blank">SmartCommuteAustin.com</a> is the platform website. </p>
+<p>RideAmigos powers the trip tracking platform and has posted a <a href="https://rideamigos.com/city-of-austin-commuter-incentives-case-study/" target="_blank">Smart Commute Rewards case study</a> that focused on the pilot phase. </p>
+<p>To learn more about Austin’s aggressive goal to reduce the annual drive alone mode share citywide to 50% see the <a href="http://www.austintexas.gov/page/about-asmp" target="_blank">Austin Strategic Mobility Plan</a>. </p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>City of Austin’s Leave Time Travel Incentive</h1>
+<p>The City of Austin reduced employee commute travel by one million vehicle miles within six months of making its Leave Time Reward (LTR) a permanent incentive. During this period, the percentage of drive-alone trips fell from 53% to 41%. Attribution of these impacts to the City’s time off incentive policy is strengthened because that policy was introduced in the pilot study, then withdrawn after the pilot, then later reintroduced for the permanent program (Reversal Design.) Designated a <em>Landmark</em> case study in 2020.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></strong></p>
+<p>The City of Austin, located in Texas, USA, rewards its 13,000 employees for taking voluntary actions to reduce their drive-alone work trips thereby managing traffic congestion and maintaining air quality. These rewards are offered through the City’s Smart Commute Rewards program, which is the incentive arm of the City’s Commute Connections Program. </p>
+<p>Prior to 2017, the City was already offering its employees commuter benefits such as free annual transit passes, free annual bikeshare memberships, and subsidized vanpool options. However, employees were still commuting by driving alone at a higher rate than the City’s general population. To move employees out of their drive-alone habit even just one day a week and try something new, Austin needed to be more creative and engaging. </p>
+<p>In 2017 The City established Smart Commute Rewards and pilot tested its most innovative and engaging incentive – the LTR – which allowed employees to qualify for additional paid time off.</p>
+<p>Initially, City staff considered offering employees a cash incentive to commute sustainably but the City’s executive team recognized leave time as being a more valuable incentive. The City’s Wellness Program was already using an LTR incentive and it had proved popular among employees and senior managers alike. Employees preferred this style of incentive because they valued the time off more highly than cash. Also, this was the easiest style of incentive to manage, as a monetary incentive would add burden to the City’s finance and payroll staff and introduce taxable income implications.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The LTR program was designed to engage more employees in reducing drive-alone work trips.</p>
+<p>Overall, the Smart Commute Rewards program worked in support of two City policies.</p>
+<ol>
+<li>Austin’s Strategic Direction 2023 mobility strategy - “encourage use of sustainable modes of transportation and discourage driving alone and single-purpose trips citywide to maximize the use of Austin’s transportation network. Lead by example as an employer in incentivizing, offering, promoting, and implementing mobility options for all City employees.” </li>
+<li>Austin's Strategic Mobility Plan Action Item #57 – “Continue to implement and strengthen the City of Austin's employee commute program. Provide incentives to employees to reduce their drive-alone trips. Provide multimodal options for mid-day trips to reduce the desire to bring a vehicle to work.”</li>
+</ol>
+<p>Smart Commute Rewards aimed to set City of Austin as a leader in helping to manage traffic congestion and to maintain regional air quality.</p>
+<p>The following specific targets were set for 2019/2020.</p>
+<ul>
+<li>Employee Participation: 20% of all City employees enrolled on trip logging platform. (Because only full and part time regular employees were eligible to earn paid time off incentives, the City wanted to create another goal that included all city employees, including interns, temporary employees, contract employees, and employees who weren’t motivated by incentives but wanted to track their trips.) 15% of eligible employees enrolled for the LTR (only full and part time regular employees were eligible to earn paid time-off incentives)</li>
+<li>Number of Sustainable Trips: 170,000 trips logged in the commute logging system</li>
+<li>Vehicle Miles Reduced: 3 million vehicle miles reduced</li>
+<li>Climate Change: 50 tons CO2 emissions reduced</li>
+<li>Calories Burned: 6 million calories burned</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>In addition to emails, newsletter articles and posters, the Smart Commute Rewards program kicked-off its program enrollment periods with in-person enrollment events at three of the City’s largest office facilities. To keep the buzz going it also tabled frequently at employee events, such as annual Health Expos and Safety Conferences that were open to all City employees, and at New Employee Orientations that occurred every two weeks with an average of 40 new employees each session.</p>
+<p>These face-to-face opportunities, combined with annual surveying and regular program feedback, enabled the City to identify the key barriers that its employees faced to commute more sustainably. These opportunities were also crucial for connecting with employees, hearing their concerns (and commuting success stories), and developing creative, effective programming.</p>
+<p>In 2017, after running a pilot program, the City surveyed managers and supervisors to see how they felt about the LTR program. Most of the responses were positive, and the areas that were identified as weaknesses or things to improve were mainly about communication – advertising the program more to employees, and communicating more to Human Resources &amp; executives in each department about who is participating and their impact.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Contests</strong></p>
+<p>Starting in 2017, the Smart Commute Rewards program offered five to six contests per year, with five to seven winners per contest. The prizes included $50 gift cards or items like a polaroid camera, YETI tumbler, and speakers. Over time, the program transitioned to only offering electronic gift cards, as it was easier to manage distribution of the gift cards straight from the online program platform. In addition, with concerns about spreading COVID-19, the gift cards were preferable because they required no in-person delivery/contact.</p>
+<p>The City set up these contests to engage employees who needed an extra push to try a new behavior. To potentially win a $50 gift card or other prizes, users had to log four sustainable commutes over two weeks, which was basically taking a sustainable commute to and from work for two days over two weeks.</p>
+<p>In addition, the contests made the Smart Commute Rewards Program more equitable. While only full- and part-time regular City employees were eligible for the time off incentive, all employees, including interns, temporary, and contract employees, could participate in the contests. The City allowed for seven to eight different travel modes, because it recognized that not all employees lived near bus stops or were able to bike; including carpools and vanpools encouraged and included employees who lived further from work.</p>
+<p><strong>Pilot Test </strong></p>
+<p>The LTR began in May 2017 as a six-month pilot that offered all full- and part-time employees leave time for taking and logging sustainable commutes. Eligible modes included: carpool, vanpool, bus, train, bike, walk, and telework.</p>
+<p>That year, Austin received a grant from the Capital Area Council of Governments to purchase a multi-modal tracking tool. The City issued a request for proposal and contracted with RideAmigos for its trip planning and tracking web platform and mobile app.</p>
+<p>Employees used the platform and app to explore their commute options and connect with other commuters at their workplace, or across the 10-county area. Using the platform, they could participate in contests throughout the year (Incentives), and in the LTR program itself. The platform also gave the administrators of the LTR reward robust data and surveying tools for analyzing and reporting on project progress.</p>
+<p><strong>Permanent Program</strong></p>
+<p>On reviewing the pilot study results, management and Human Resources recommended a few changes. As a result, telework was removed from the eligible modes, the tier structure was adjusted, and the number of hours earned per six-month period was decreased.</p>
+<p>The modified version of the LTR reward officially launched as a permanent program on September 3, 2019. Full- and part-time employees earned their first two hours by just completing an enrollment commute questionnaire.</p>
+<p>This survey included questions about individual commute behavior, knowledge of commute options, and awareness of the commuter benefits available from the City. This step got more employees thinking about sustainable commuting and challenging any perceived barriers. In addition, it made the program more equitable. Even employees who (for work or personal reasons) could not regularly take sustainable commutes could nonetheless participate and receive a time off reward by providing their data. <em>(Building Motivation, Engagement and Habits Over Time; Norm Appeals; Vivid, Personalized, Credible, Empowering Communications)</em></p>
+<p>Once they completed the questionnaire and agreed to comply with the program terms, participants were fully enrolled and could begin exploring their commute options on the Smart Commute Rewards platform.</p>
+<p>Next, employees could earn four LTR hours total by taking and logging 50 sustainable commute trips, six LTR hours for 150 trips, or eight LTR hours for 220 trips. Eligible modes for the permanent program were carpool, vanpool, bus, train, bike, walk, and scooter. The LTR incentive was designed to run every six months, with everyone starting from scratch with the launch of a new six-month program period. Period One ran from September to February; Period Two ran from March to August. If an employee participated in both reward periods, they could earn up to 16 hours of leave time annually.</p>
+<p>The second LTR incentive period launched on March 2, 2020. The program started with 675 employees enrolled. However, two weeks into the incentive the 2020 COVID-19 outbreak occurred. To keep employees and the community safe, Austin decided to cut the second period short so that the only commute option promoted was telework. The City rewarded everyone who enrolled with the 2 LTR hours and ended the program early. The following table summarizes the key barriers and how each was addressed <em>(Overcoming Specific Barriers).</em> </p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid #9CC2E5 .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #9CC2E5;mso-border-insidev:.5pt solid #9CC2E5">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:20.2pt">
+<td style="border:solid #5B9BD5 1.0pt;border-right:none;
+  mso-border-top-alt:solid #5B9BD5 .5pt;mso-border-left-alt:solid #5B9BD5 .5pt;
+  mso-border-bottom-alt:solid #5B9BD5 .5pt;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;
+  height:20.2pt" valign="top">
+<p class="MsoNormal" style="page-break-after:avoid;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-family:"Arial",sans-serif;color:white;mso-bidi-language:#0400'>Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="border:solid #5B9BD5 1.0pt;border-left:none;mso-border-top-alt:
+  solid #5B9BD5 .5pt;mso-border-bottom-alt:solid #5B9BD5 .5pt;mso-border-right-alt:
+  solid #5B9BD5 .5pt;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:
+  20.2pt" valign="top">
+<p class="MsoNormal" style="page-break-after:avoid;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-family:"Arial",sans-serif;color:white;mso-bidi-language:#0400'>How   it was addressed<o:p></o:p></span></b></p>
+<p class="MsoNormal" style="page-break-after:avoid;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-family:"Arial",sans-serif;color:white;mso-bidi-language:#0400'> </span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:41.85pt">
+<td style="border:solid #9CC2E5 1.0pt;border-top:none;mso-border-top-alt:
+  solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;
+  padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">Thinking that they live too   remotely to have rideshare matches</span><span style='font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #9CC2E5 1.0pt;
+  border-right:solid #9CC2E5 1.0pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-left-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">The Smart Commute Rewards   platform showed employees their commute options, including any carpool or   vanpool matches that were available. Many employees were surprised to see so   many matches in the system and could connect with those matches within the system.   Providing the LTR incentive on top of this feature encouraged people to take   that leap to reach out to rideshare matches and set up a carpool or vanpool. In   terms of Stages of Change Theory, the incentive helped move people from the   Pre-contemplation stage to the Contemplation stage.</span><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:41.85pt">
+<td style="border:solid #9CC2E5 1.0pt;border-top:none;mso-border-top-alt:
+  solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:41.85pt" valign="top">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif;mso-bidi-language:
+  #0400'>“What if I have a family/child emergency mid-day?”<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #9CC2E5 1.0pt;
+  border-right:solid #9CC2E5 1.0pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-left-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top">
+<p class="MsoNormal" style="margin-left:-.9pt;tab-stops:12.6pt"><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'>Many parents said   they would not give up their car even one day a week because of this barrier.   The City partnered with the Capital Area Council of Governments Commute Solutions   Program to implement a <a href="https://commutesolutions.com/emergency-ride-home/"><span style="color: windowtext; text-decoration-line: none;">regional emergency ride home  program</span></a> that reimbursed Smart   Commute Rewards participants up to $75 seven times per year for any emergency   trips taken from work if the employee used a sustainable mode to get to work.<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;mso-yfti-lastrow:yes;height:41.85pt">
+<td style="border:solid #9CC2E5 1.0pt;border-top:none;mso-border-top-alt:
+  solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;
+  padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Arial, sans-serif;">“I don’t know how to take a   sustainable commute”</span><span style='font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #9CC2E5 1.0pt;
+  border-right:solid #9CC2E5 1.0pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-left-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top">
+<p class="MsoNormal" style="margin-left:-.9pt;tab-stops:12.6pt"><span style="font-family: Arial, sans-serif;">Often,   employees just defaulted to driving alone, usually because they were not   aware of the commuter benefits available and they did not know how to explore   their options. Through tabling at many events, hosting one-on-one commute   consulting conversations, and showing employees all of their options on the Smart   Commute platform, the City was able to help make this information more   digestible for employees, interactive, and fun too. It tracked this barrier   over time through a behavior change spectrum question in a bi-annual commute   questionnaire.<br/>
+<br/>
+            Before the LTR incentive launched in 2019, 45% of users said they were considering   making commute changes but didn’t know how or hadn’t started yet. After the first   six-month LTR program period, that percentage dropped to only 32% of respondents   who said they didn’t know how or hadn’t started yet. There was a corresponding   increase in the percentage of employees who said they took a sustainable   commute and had been doing so for at least six months.<br/>
+<!--[if !supportLineBreakNewLine]--><br/>
+<!--[endif]--></span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The estimated total cost of running the Smart Commute Rewards program in the 2017 pilot phase was approximately $250,000, inclusive of the cost of leave time awarded and other incentives offered. As a result of the pilot testing, opportunities for cost savings were identified. Revisions in the program resulted in lowering the cost of the program in the permanent phase. During the pilot the Capital Area Council of Governments provided a $26,000 grant and additional support through the emergency ride home program.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The program platform automatically calculated carbon dioxide reduced, vehicle miles reduced, calories burned, and cost savings based on self-reported trip logs. Dollars saved was calculated by ($0.566/number of passengers) x the number of miles. That figure came from AAA Exchange at the cost per mile of 56.6 cents based on a mid-sized sedan and traveling 15,000 miles per year. This figure included all costs of driving (costs of ownership, maintenance, gas, etc.)</p>
+<p><strong>Improving the Reliability of Self-Reported Data</strong></p>
+<p>Based on recommendations from the City Auditor’s Office, the program used random audits to corroborate the self-reported data. For example, it compared vanpool trip logs to data from the vanpool providers. Trips logged were compared with timesheets; this showed, for example, if an employee coded on their timesheet that they took a sick day or vacation day, but they also logged a sustainable commute that day. The City wanted to but was not able to track or audit parking data.</p>
+<p>In addition, when employees enrolled in the program every six months, they were first asked to read through the program Terms and Conditions, including rules about honesty in self reporting, and had to complete a step to agree to those rules.</p>
+<p><strong>Pilot Study</strong></p>
+<p>The pilot study approach was originally proposed to the City’s key decision makers to decrease the risk to the City and increase the likelihood of acceptance. After the pilot, additional time was required to gain acceptance for a permanent program. This program down-time allowed for fine-tuning the program before it was re-introduced.  In addition, attribution of measured impacts to the LTR policy was strengthened because that policy was introduced in the pilot study, then withdrawn after the pilot (in 2018 and the beginning of 2019), then later reintroduced in September 2019 for the permanent program (Reversal Design.)</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<ul>
+<li>Users were able to see their personal commute statistics on the platform dashboard, updated immediately as each trip was logged</li>
+<li>Leave time rewards were highly valued, so earning them provided direct feedback to employees</li>
+<li>To celebrate the success of the pilot program, statistics on the metrics and achievements were shared across the organization. The impact information was broken down by department and shared with Department Directors or managers when requested.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>The following results were completely attributable to the LTR.</p>
+<p><strong>Pilot Study (2017)</strong></p>
+<p>During the 2017 pilot, 990 employees participated for the LTR reward and 606 employees received a reward memo. Users reduced 380 tons of carbon dioxide, 3 tons of nitrogen oxides, and 53% of participants made a positive shift to reduce their drive-alone trips with carpool and vanpool trips doubling.</p>
+<p>At the end of the pilot program in 2017, 97% of participants said that they preferred the LTR incentive over cash or other incentives.</p>
+<p><strong>Permanent (2019-2020)</strong></p>
+<p>EMPLOYEE PARTICIPATION</p>
+<ul>
+<li>2,876 employees enrolled on the platform (22% of employees enrolled)</li>
+<li>1,224 eligible employees enrolled in the first LTR program (13% of employees)</li>
+<li>843 employees received a reward memo for two LTR hours by enrolling. Of these, 208 employees qualified for 4 hours by taking 50 sustainable commutes or more, 126 employees received 6 hours by logging 150 sustainable commutes, and 46 employees received 8 LTR hours by logging 220 sustainable commutes or more.</li>
+</ul>
+<p>SUSTAINABLE TRIPS</p>
+<ul>
+<li>96,699 trips were logged in the commute logging system</li>
+<li>The overall mode split for Smart Commute Rewards participants changed from 53% drive alone before the launch of the permanent LTR program to 41% drive alone just 6 months later.</li>
+</ul>
+<p>VEHICLE MILES</p>
+<ul>
+<li>Approximately 1 million vehicle miles were avoided</li>
+<li>This is equivalent to removing 61,000 vehicles from the road.</li>
+</ul>
+<p>ENVIRONMENTAL</p>
+<ul>
+<li>Reduction in CO2: approximately 262 tons CO2 emissions</li>
+<li>Reductions in nitrogen oxides: 1 ton</li>
+</ul>
+<p>CALORIES BURNED</p>
+<ul>
+<li>Approximately 3.2 million calories burned</li>
+</ul>
+<p>The following chart shows average individual impacts per mode from the first six-month permanent LTR program.<span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:#0400'><br/>
+<!--[endif]--><o:p></o:p></span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid #9CC2E5 .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #9CC2E5;mso-border-insidev:.5pt solid #9CC2E5">
+<tbody>
+<tr>
+<td style="width:89.95pt;border:solid #5B9BD5 1.0pt;
+  border-right:none;mso-border-top-alt:solid #5B9BD5 .5pt;mso-border-left-alt:
+  solid #5B9BD5 .5pt;mso-border-bottom-alt:solid #5B9BD5 .5pt;background:#5B9BD5;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal" style="page-break-after:avoid;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-family: "Minion Pro", serif;'> Mode</span></b><b><span style='font-size:11.0pt;font-family:"Minion Pro",serif;color:white;
+  mso-bidi-language:#0400'><o:p></o:p></span></b></p>
+</td>
+<td style="width:89.95pt;border-top:solid #5B9BD5 1.0pt;
+  border-left:none;border-bottom:solid #5B9BD5 1.0pt;border-right:none;
+  mso-border-top-alt:solid #5B9BD5 .5pt;mso-border-bottom-alt:solid #5B9BD5 .5pt;
+  background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal" style="page-break-after:avoid;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-family: "Minion Pro", serif;'>AVG CO2 Savings (grams)<o:p></o:p></span></b></p>
+</td>
+<td style="width:89.95pt;border-top:solid #5B9BD5 1.0pt;
+  border-left:none;border-bottom:solid #5B9BD5 1.0pt;border-right:none;
+  mso-border-top-alt:solid #5B9BD5 .5pt;mso-border-bottom-alt:solid #5B9BD5 .5pt;
+  background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal" style="page-break-after:avoid;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-family: "Minion Pro", serif;'>Avg Dollars Savings<o:p></o:p></span></b></p>
+</td>
+<td style="width:90.0pt;border-top:solid #5B9BD5 1.0pt;
+  border-left:none;border-bottom:solid #5B9BD5 1.0pt;border-right:none;
+  mso-border-top-alt:solid #5B9BD5 .5pt;mso-border-bottom-alt:solid #5B9BD5 .5pt;
+  background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal" style="page-break-after:avoid;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-family: "Minion Pro", serif;'>Avg Miles<o:p></o:p></span></b></p>
+</td>
+<td style="width:90.0pt;border:solid #5B9BD5 1.0pt;
+  border-left:none;mso-border-top-alt:solid #5B9BD5 .5pt;mso-border-bottom-alt:
+  solid #5B9BD5 .5pt;mso-border-right-alt:solid #5B9BD5 .5pt;background:#5B9BD5;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal" style="page-break-after:avoid;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-family: "Minion Pro", serif;'>Calories<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr>
+<td style="width:89.95pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-size: 11pt; font-family: "Minion Pro", serif;'>Carpool</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:89.95pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>144,769g</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:89.95pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>$227</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>801</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>N/A</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:89.95pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'>Vanpool<o:p></o:p></span></p>
+</td>
+<td style="width:89.95pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>497,690g</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:89.95pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>$1,882</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>3,995</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>N/A</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:89.95pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-size: 11pt; font-family: "Minion Pro", serif;'>Bike</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:89.95pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>103,159g</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:89.95pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>$161</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>285</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>14,240</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:89.95pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'>Walk<o:p></o:p></span></p>
+</td>
+<td style="width:89.95pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>11,409g</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:89.95pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>$18</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>32</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>3,159</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:89.95pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-size: 11pt; font-family: "Minion Pro", serif;'>Bus</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:89.95pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>247,246g</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:89.95pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>$91</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>781</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>N/A</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:89.95pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'>Train<o:p></o:p></span></p>
+</td>
+<td style="width:89.95pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>286,922g</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:89.95pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>$98</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>849</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>N/A</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:89.95pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-size: 11pt; font-family: "Minion Pro", serif;'>Scooter</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:89.95pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>12,502g</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:89.95pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>$20</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>35</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+<td style="width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="120">
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif;'>1,737</span><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> <strong>Reversal Design</strong></p>
+<p>Attribution of these impacts to the LTR policy is strengthened because that policy was introduced in the pilot study, then withdrawn after the pilot (in 2018 and the beginning of 2019), then later reintroduced in September 2019 for the permanent program (Reversal Design.)</p>
+<p>In the two graphs below you can see a large increase in participation when LTR was offered and a large decrease when it was removed. The first graph shows participation (based on number of users active on the platform) during the pilot (May-October 2017) and then after the pilot ended when only contests were offered. The second graph shows participation in 2019 leading up to the permanent program. Also outlined in red on both graphs are when the City hosted contests, which typically increased participation.</p>
+<p class="MsoNormal"><img alt="Austin Leave Time Incentive" height="216" src="/userfiles/Image/Pilot Chart.png" width="450"/></p>
+<p class="MsoNormal"><img alt="Reversal Design for Austin Leave Time Reward" height="218" src="/userfiles/Image/Permanent Program Chart.png" width="450"/></p>
+<p class="MsoNormal"><span style='font-family: "Minion Pro", serif; font-size: 8pt;'>Note that ADL (administrative leave) was another name for the LTR program.</span></p>
+<p><strong>Building Engagement Over Time</strong></p>
+<p>As for moving employee population along the behavior change spectrum, before LTR launched, 45% of users said they were considering making commute changes but didn’t know how or hadn’t started yet. After the six-month Permanent LTR program period, that percentage dropped to only 32% of respondents saying they didn’t know how or hadn’t started yet. There was a corresponding increase in the percentage of employees saying they took a sustainable commute and had been doing so for at least six months. This indicates that the LTR incentive and Smart Commute Rewards platform were encouraging employees to try a new commute behavior.</p>
+<p><img alt="Behavior Change for Austin Leave Time Program" height="243" src="/userfiles/Image/Chart - stages of change.png" width="450"/></p>
+<p><strong>Quotes from Participants </strong></p>
+<ul>
+<li>“Smart Commute Rewards is convenient and cost effective. I consider this as one of my employment benefits.”- Austin Fire Department employee</li>
+<li>“I am a big fan of the Smart Commute Rewards LTR. It got me to bike to work nearly every day…it is an excellent way to decrease congestion, improve air quality, and encourage healthy practices.” - Neighborhood Housing &amp; Community Development employee</li>
+<li>“Simple to use and as a major employer we owe it to set a positive example for other government agencies, as well as the private sector.”- Austin Transportation Department employee</li>
+<li>“Everybody knows that they should carpool, bike, or bus, but most times they need the extra push. The rewards program is an awesome mechanism to encourage folks on the brink of changing their habits to actually make the change. Keep up the great work!” – Watershed Protection Department employee</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Austin Transportation Department<br/>
+512-974-1150<br/>
+<a href="mailto:SmartCommute@AustinTexas.gov?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> SmartCommute@AustinTexas.gov</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Author and Landmark Designation</strong></p>
+<p>This case study was compiled in 2021 by Jay Kassirer based on information provided by the City of Austin.</p>
+<p>The program described in this case study was designated in 2020. Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff, and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Wallace Beaton, Green Communities Canada</li>
+<li>Aaron Gaul, UrbanTrans</li>
+<li>Nathalie Lapointe, Federation of Canadian Municipalities</li>
+<li>David Levinger, Mobility Education Foundation</li>
+<li>Geoff Noxon, Noxon Associates</li>
+<li>Lisa Kay Schweyer, Carnegie Mellon University</li>
+<li>Phil Winters, CUTR and the University of South Florida</li>
+</ul>
+<p> </p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

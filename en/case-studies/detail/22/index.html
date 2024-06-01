@@ -1,0 +1,263 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Toronto Environmental Alliance</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Environmental Youth Corps</li>
+<li>Canada Trust</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Within three months there was an average 18 percent drop between past and intended future use of toxic consumer products. Of those who tried alternatives, three quarters did not intend to return to using toxic products. After two years, with no further promotional efforts, no clear impact of the program could be detected.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>The Toxic Challenge</h1>
+<p>To encourage people to reduce their use of toxic-containing consumer products, a door-to-door campaign was organized in two neighbourhoods of Metropolitan Toronto. Summer students staffed the campaign in which residents were asked to try non-toxic or less toxic alternatives.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The Toronto Environmental Alliance (TEA) wished to address the health and environmental impacts associated with the use of toxic-containing consumer products (toxics), and the household hazardous wastes (HHW) they generate.</p>
+<p>TEA had concerns about traditional end-of-pipe solutions such as municipal-run HHW collection depots, because less than 5 percent of the public use these depots and they are expensive to run. Instead, TEA wanted to focus on prevention measures - ones that involved the participation of the community. To do so, a door-to-door campaign was launched in 1993.</p>
+<p>Based on the apparent success of this campaign, a similar campaign was undertaken in 1994. Follow-up telephone surveys were included to measure both short-term and long-term behavioral changes.</p><!-- Background already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>During a seven-week period in the summer of 1994, 5,809 households were approached cold, door to door, by students trained as canvassers for the campaign (<a href="/en/tools-of-change/home-visits/">Home Visits</a>). Residents were told about the health and environmental impacts associated with the use of toxics.</p>
+<p>They were then asked to complete a "report card" by indicating the types of toxics they had purchased in the previous six months (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>). Based on the responses, a grade was given. If one or no toxics had been purchased, they received an "A," accompanied by the statement, "Congratulations! You have an environmentally friendly home." Alternatively, if four or more toxics had been purchased, householders received a failing grade of "D," accompanied by the statement, "You are hooked on toxics."</p>
+<p>After filling out the report card, people were invited to participate in The Toxic Challenge by agreeing to reduce or eliminate their use of toxics (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>). Of those approached, 1,154 households (22 percent) agreed to participate.</p>
+<p>Those accepting the challenge were given a support kit containing information on the potential human and environmental effects associated with the use and disposal of toxics (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). Information on non-toxic or less toxic alternatives was also included. Toxics that were targeted included: chemically-manufactured pesticides, herbicides, fertilizers, chlorine-based cleaners, chlorine bleach, drain cleaners and disposable batteries. To help people fulfill their commitment, TEA ran a telephone support line.</p>
+<p><strong>Initial Research and Training</strong></p>
+<p>Canvassers were provided with a series of five workshops covering health and environmental impact issues, product labeling, pesticide regulations, HHW disposal options, organic lawn care and sustainable landscaping. A workshop was also provided on safe and effective canvassing techniques.</p>
+<p>TEA facilitated a multi-stakeholder process bringing together a team of pesticide and waste activists, environmental groups, and government representatives. The team worked together to develop a range of effective alternatives to be included in the support kit.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The Environmental Youth Corps (EYC) funded one project coordinator for 16 weeks and 12 canvassers for 12 weeks. Salaries for the 12 canvassers totalled approximately $35,000.</p>
+<p>The Etobicoke Chapter of Canada Trust's Friends of the Environment Fund covered printing costs for the support kit. The cost of developing and printing the kit was approximately $2,000. Some additional material included in the kit was donated. Workshop training for canvassers was provided by resource people from a variety of organizations who donated their time.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>To measure short-term behavioural changes, a follow-up telephone survey was conducted after three months among a third of those residents who agreed to participate in the campaign. Respondents were asked about toxics purchased since their agreement, and about alternatives tried.</p>
+<p>To measure long-term behavioural changes, a second telephone survey was conducted two years later. The survey groups included:</p>
+<ul>
+<li>householders who had agreed to make changes (36 respondents)</li>
+<li>householders contacted during the campaign, but who did not agree to make changes (50 respondents)</li>
+<li>a control group of householders not contacted during the campaign, but who were neighbours of those contacted (50 respondents)</li>
+</ul>
+<p>The same questionnaire was used for all three groups. Respondents were asked to estimate how often in the previous two years they had purchased each of the targeted toxics. They were also asked to estimate how often they had tried any associated alternatives, or made use of a HHW depot. Respondents estimated their use frequency using a numbered scale, between "never" and "very often."</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Three-Month Follow-up Survey</strong></p>
+<p>Among householders who had agreed to make changes, The Toxic Challenge campaign results showed:</p>
+<ul>
+<li>an average 18 percent drop between past and intended future use of toxics</li>
+<li>73 percent of those who tried alternatives did not intend to return to using the toxic counterparts</li>
+</ul>
+<p>The degree to which individuals tried alternatives varied, often reflecting whether opportunities for change had yet arisen. Most (72 percent) reported having tried non-chlorine-based cleaners, 52 percent had tried alternatives to chemically manufactured herbicides, 20 percent had tried alternatives to insecticides and 9 percent had tried bleach alternatives. About 27 percent had made use of a HHW depot, compared to an average of less than 5 percent among the general public. A few (3.3 percent) cancelled their lawn care service or switched to a company's organic option.</p>
+<p><strong>Two-Year Follow-Up Survey</strong></p>
+<p>Two years later, with no further promotional efforts, the gains made by the program appeared to have diminished dramatically. Those who had received the home visits were not significantly different from the control group in terms of purchasing the targeted toxics. Furthermore, four out of every ten households that had agreed to make changes did not remember having made the agreement. The households that did remember reported a significantly greater use of bleach alternatives, non-chlorine-based cleaning recipes and non-chemical pest control methods. However, there was no corresponding reduction in the purchase of the toxic products that these alternatives replace, so the accuracy of these results is questionable.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Lois Corbett <br/>
+Executive Director <br/>
+Toronto Environmental Alliance <br/>
+30 Duncan Street, Suite 201 <br/>
+Toronto, Ontario <br/>
+M5V 3C3 <br/>
+(416) 596-0660 <br/>
+Fax: (416) 596-0345 <br/>
+E-mail: <a href="mailto:tea@web.net">tea@web.net</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Of the households that were approached "cold" and that completed the following report card, one in five agreed to participate in The Toxic Challenge. In comparison, We're Toxic Free achieved a one in two participation rate using a less confrontational survey.</p>
+<table width="100%">
+<tbody>
+<tr>
+<td valign="top" width="25%"><strong>Step #1</strong>
+<p>CONGRATULATIONS, you have taken the first step.</p>
+<p>Keep this report card to measure your success.</p>
+</td>
+<td valign="top" width="75%"><strong>ADMIT THERE'S A PROBLEM</strong>
+<p>Has anyone in your house bought or used any of the following hazardous household products in the last six months?</p>
+<p>YES NO</p>
+<p>1 [10] [0] Chemical herbicides or chemicals designed to kill unwanted plants such as Killex or Roundup</p>
+<p>2 [10] [0] Chemical insecticides or chemicals designed to kill unwanted insects such as Diazinon</p>
+<p>3 [10] [0] Synthetic chemical fertilizers</p>
+<p>4 [10] [0] Chlorine-based cleaners such as Ajax or Comet</p>
+<p>5 [10] [0] Chlorine bleach for bleaching clothes</p>
+<p>6 [10] [0] Drain cleaners such as Drano</p>
+<p>7 [10] [0] Disposable batteries</p>
+<p>How did you score?</p>
+<p>0-10 "A" Congratulations! Yours is an environmentally friendly home.</p>
+<p>20-30 "B" You've got the right idea, but there's room for improvement.</p>
+<p>40-50 "C" You are an average chemically dependent Canadian family.</p>
+<p>60 "F" You are hooked on toxics!</p>
+<p>TEA invites you to take the "Toxic Challenge." For the health of your family, your community, and EARTH itself, sign the pledge on the back and live "Toxic Free!"</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Last revised: November 8, 1999</p>
+<p>Additional key words: pollution prevention</p>
+<p>This case study was originally published in 1998 in "Tools of Change: Proven Methods for Promoting Environmental Citizenship" by Jay Kassirer and Doug McKenzie-Mohr (Published by Canada's National Round Table on the Environment and the Economy)</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

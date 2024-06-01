@@ -1,0 +1,304 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Department for Transport, London, England</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Public transit</li>
+<li>Police</li>
+<li>Health groups</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>The number of walking trips per head grew by 10%~13%, compared to a national decline in similar towns. The cost per car kilometer removed was about 4 pence, and the implied benefit-cost ratio (allowing only for congestion effects) is in the order of 4.5.</p>
+<p><strong>Documents</strong></p>
+<p><a href="/userfiles/Sustainable Travel Towns Written Case Study January 2012.pdf">PDF</a> of this case study</p>
+<p><a href="/userfiles/Sustainable Travel Towns - Transcript.pdf" target="_blank">Webinar transcript</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>England’s Sustainable Travel Towns</h1>
+<p>This project demonstrates how a sustained transportation demand management program can have greater impact when coupled with infrastructure improvements. By investing £10M over a five-year period, three towns in England have decreased car use and increased sustainable modes of travel. This program was designated a Landmark case study in 2010.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>In 2004, England’s Department for Transport (DFT) published <em>Smarter Choices: Changing the Way We Travel</em> (Cairns et al., 2004). The report suggested that a sustained and comprehensive package of travel choice measures had the potential to deliver substantial changes in travel behaviour and reductions in traffic, if implemented in a supportive policy context and on a large scale over a period of ten years.</p>
+<p>As a result of the report, the DFT launched the Sustainable Travel Towns project, which would test the report’s findings. The towns of Darlington, Peterborough and Worcester were selected from more than 50 local authorities in England who had expressed an interest in becoming demonstration towns. The towns’ populations ranged from 100,000 to 150,000, large enough to test the concepts in a range of different communities and with people who had varying interests and needs.</p>
+<p>Darlington, Peterborough and Worcester are all relatively free-standing towns, located in the north and middle of England.</p>
+<p>Each town had a specific reason for participating in the program. Darlington, for example, was looking for healthy solutions to the increased development around its town edge; Peterborough and Worcester wanted to deal with traffic congestion in their town cores.</p>
+<p>To complement the investment made by the DFT, each town was also encouraged to use its own capital funding to improve transportation infrastructure.</p>
+<p>Over a five-year period, the towns shared £10 M of funding—which works out to be approximately £10 per person—provided by the DFT, and also used their own capital funding for certain infrastructure improvements.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Beginning in the fall of 2004, the travel behaviour of more than 12,000 people in the three towns was surveyed and more than 1,200 people were interviewed in depth. The results formed the baseline data for monitoring the project and also provided insights into people’s regular travel behaviour. The DFT also conducted additional research into similar programs in other jurisdictions.</p>
+<p>Joe Finlay of the DFT said that the report made “it clear that there was potential based on the previous projects we looked at and we decided to test it out in specific towns with a level of investment that wasn’t normally given to these sorts of things.”</p>
+<p>Traffic growth was a significant issue of public concern, with between 80% and 94% of respondents considering it to be a problem. The same surveys showed strong public support to give more sustainable transport modes (buses, walking and cycling) a priority in transport policy.</p>
+<p>A link to the research reports can be found in the left hand column</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The projects ran from 2004-2009 and involved large-scale testing of the concept of trip planning and information marketing.</p>
+<p><em>Key Elements</em></p>
+<p>All three towns established similar programs that focused on developing:</p>
+<ul>
+<li>A clear brand identity</li>
+<li>Large-scale personal travel programs. According to after-program evaluations, personalized trip planning was the most-used measure of all three towns.</li>
+<li>Travel awareness campaigns, including loyalty schemes, advertising and media campaigns</li>
+<li>Cycling and walking promotion, including cycling festivals, guided rides and walks, training, cycling route signage and bicycle parking</li>
+<li>Public transport information and marketing campaigns and bus network improvements</li>
+<li>School travel planning, which complemented the DFT’s <em>Travelling to School Initiative</em></li>
+<li>Workplace travel planning that engaged employers to encourage their employees to adopt travel planning.</li>
+</ul>
+<p><em>Branding the Program</em></p>
+<p>Once the DFT funds had been allocated, the Department provided a staff team of between six and ten people per town. Each town also created their own team of staff and volunteers to carry out the program.</p>
+<p>Branding the program was an important first step. “All three towns created a clear brand identity, which allowed for the development of specific marketing and loyalty schemes,” said Finlay. () The branding was used in all communications and throughout the towns in particular areas. Darlington and Peterborough, for example, used their branding primarily at bus stops and other key transportation hubs.</p>
+<p><em>Trip Planning</em></p>
+<p>Each town implemented a personalized travel planning program. A team member went to each household in the town (Darlington did every household, while Peterborough and Worcester approached a significant majority) and asked if the household was willing to discuss its travel habits. If a person was interested, team members would provide travel information specific to their town. In some cases, an in-depth travel audit was done of a person’s travel and given advice on travel opportunities. <em>(Home Visits; Vivid, Personalized, Credible, Empowering Communication</em>)</p>
+<p>“It was completely voluntary so if someone said no, then that was the end of it,” said Finlay. “It was very labour intensive but it was a good way to collect information.” <em>(Obtaining a Commitment)</em></p>
+<p>In some cases, prior actions such as emails, mailings, or telephone calls to households were made ahead of the visits. Finlay noted, however, that after the first wave of visits, “neighbours began to talk among themselves and would call the team directly for information,” he said. “That was a clear advantage of branding. It helped with advance marketing.”<em> (Word-of-Mouth)</em></p>
+<p><em>Darlington</em></p>
+<p>In addition to the DFT funding, Darlington invested a further £4.4M, primarily in upgrading its cycling infrastructure. Darlington also used the funds to promote walking and cycling, training, and creating a more pedestrian-friendly town centre.</p>
+<p>The town put an emphasis on active travel in order to address health issues and was the only Sustainable Travel Town to also become a Cycling Demonstration town. <em>(Overcoming Specific Barriers)</em></p>
+<p><em>Peterborough</em></p>
+<p>As a relatively new town, Peterborough had a large road capacity with a high level of car accessibility and a strong car culture.</p>
+<p>Although the town had a relatively good cycling network already in place, Peterborough It focused its efforts on increasing the use of public transit and invested an additional £6.8M to improve its bus network. (<em>Overcoming Specific Barriers</em>) It also built a new information hub near their central bus station. (<em>Vivid Communication; Prompts</em>)</p>
+<p><em>Worcester </em></p>
+<p>Worcester also had high levels of congestion in its town core, but with its more traditional and narrower street layout, the car culture wasn’t as strong as in Peterborough.</p>
+<p>It invested an additional £4.4M, mostly on walking and cycling promotion and travel awareness campaigns. Worcester also attempted to start a car-sharing club, which was ultimately not successful because the car club operator pulled out less than a year after it was established.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Taken together the three towns spent £15 million, of which £10 million was special Government funding provided by the Department for Transport.</p>
+<p>As well as being a Sustainable Travel Town, Darlington was selected as one of six Cycling Demonstration Towns in 2005. This resulted in the injection of an additional £500,000 per year from 2005 onwards, largely for cycling infrastructure improvements. Capital spending on cycling was £14 per head of population over the five years, while it was £3 to £6 over this period in the other two towns, equivalent to £2.80, £1.20 and 60 pence per person per year. Capital spending on walking was between £1 and £5 per head of population over the five years in the two towns for which data were available (RR8.3.3), equivalent to between 20 pence and £1 per person per year.</p>
+<p>Each town made its own choice on how much to spend on each of a range of different measures. They all spent most on personal travel planning (from a third to nearly half of revenue spending), followed by travel awareness campaigns, promoting walking and cycling, and public transport marketing. Smaller amounts were spent on workplace and school travel plans. The programmes were implemented by teams of 6-10 staff in each town.</p>
+<p>The estimated outturn costs of the programme were £10 per person per year (roundly £11 at November 2009 prices), including both capital and revenue expenditure,</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>To complement the 2004 study (See Getting Informed) , DFT and town staff performed detailed household travel surveys at the beginning, middle and end of the program to measure behaviour shifts. They also conducted more informal surveys throughout the program in homes, schools and workplaces, counts of bus passengers; automatic and manual counts of cyclists; manual counts of pedestrians; and automatic and manual vehicle counts.</p>
+<p>The data were compared to England’s National Travel Survey (NTS), and to traffic counts from the National Road Traffic Estimates (NRTE) for other towns of comparable size. “The data from the towns were not precisely comparable to the NTS, but were close enough and gave us a way of seeing what was happening in those towns and whether it was typical of the rest of the country,” said Finlay.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Prior to the program, roughly 40% of the towns’ populations drove a car for all trips, while an additional 24% were passengers for all trips.</p>
+<p>The final results, for all three towns:</p>
+<ul>
+<li>Car trips decreased by 9%</li>
+<li>Bus trips increased by 10 to 22%</li>
+<li>Cycling trips increased by between 26% and 30% (in Darlington, their cycling trips started out very low but due to their investments in cycling infrastructure, cycling trips in that town increased by 113%)</li>
+<li>Walking trips increased by between 10% and 13%</li>
+</ul>
+<p>Compared to the NTS, the three towns that participated as Sustainable Travel Towns performed very well. Nationally, and over the same time period as the STT program, car trips were down only 1.2% (compared to a 9% decrease overall in the three towns), while bus, cycling, and walking trips were also down (0.5%, 9% and 9%, respectively).</p>
+<p>The greatest behaviour changes, said Finlay, were for trips of less than one kilometre, but the largest reductions in distance (vehicle kilometres travelled) were from medium- and long-distance trips.</p>
+<p>“The most obvious changes were in modal shift, simply replacing what you’d normally do by car with a bus, bicycle, or walking,” said Finlay. Others, he said, changed their trips altogether, citing an example of people shopping locally instead of shopping at an out-of-town supermarket.</p>
+<p>The final evaluation found that men and women were equally likely to have changed their travel behaviour. The greatest shifts in behaviour came from college students, job seekers and the recently retired, while the lowest rates of change were from full- and part-time workers, intensive car users and those aged 41-45 and 61-65. The majority of the distance travelled savings came from switching leisure and shopping trips.</p>
+<p>The cost per car kilometre removed was estimated at 3.6 pence (4 pence at November 2009 prices). On conservative assumptions, the implied benefit-cost ratio of the achieved outcome in the three towns, allowing only for congestion effects, is in the order of 4.5. Including environmental, consumer-benefit and health effects on the basis of recent Department for Transport modelling could broadly double the congestion-only figure.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Joe Finlay<br/>
+Department for Transport<br/>
+Great Minster House 76 Marsham Street<br/>
+London SW1P 4DR<br/>
+011 20 7944 2146<br/>
+<a href="mailto:Joe.Finlay@dft.gsi.gov.uk?subject=I%20read%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">joe.finlay@dft.gsi.gov.uk</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study was selected as a Tools of Change Landmark case study in 2010 by a peer selection panel consisting of</p>
+<ul>
+<li> Chuck Wilsker, U.S. Telework Coalition</li>
+<li> Daniel Coldrey, Transport Canada</li>
+<li> Elizabeth Allingham, Federation of Canadian Municipalities</li>
+<li> Geoff Noxon, Noxon and Associates</li>
+<li> Jacky Kennedy, Green Communities Canada</li>
+<li> JoAnn Woodhall, Translink</li>
+<li> Lorenzo Mele, Town of Markham</li>
+<li> Ryan Lanyon, Smart Commute</li>
+</ul>
+<p><strong>Lessons Learned</strong></p>
+<p>Finlay offered several lessons learned from the Sustainable Travel Towns program.</p>
+<p> <em>Locally driven</em></p>
+<p>"I can’t stress enough how important it was that the projects were locally driven,” he said. “The teams in the towns were very motivated and excited about what they were doing. That was an important factor. They also planned how they would approach the program, where they would target the measures and many had strong demographic data that they could use to tailor their program.”</p>
+<p><em>Branding</em></p>
+<p>Each town developed strong branding. “This was important for tying all the measures together and to encourage people to change their behaviour,” said Finlay. “Once the program started, the information went out across the whole town and that reached a lot of the population.”</p>
+<p> <em>Stakeholders</em></p>
+<p>“Getting buy-in from local partners was vital,” said Finlay and offered Darlington’s experience as an example.</p>
+<p>Darlington held regular meetings of a larger management group that they developed, which included the town, the DFT, Department of Health, businesses, community groups and schools.</p>
+<p>“Gradually, that larger group brought in a wide range of people,” he said. “That influenced transport outcomes, but also health and environmental ones, and generated a lot of interest in the community.”</p>
+<p>He noted, however, that consultation was not always optimal.</p>
+<p>“Initially, Darlington had difficulty increasing its bus trips and this was due to a dispute the town was having with the private bus operators,” he said. “In addition, when they began pedestrianizing their town core, they didn’t engage with all groups,” he said, explaining that some age groups and disabled groups were omitted from the initial consultations. “Once they recognized that and consulted with those groups, they were able to make sure that what they were doing was suitable for all everybody. After that, the changes they made to their core had a rapid impact on people’s travel behaviour.”</p>
+<p> <em>Investment spurs investment</em></p>
+<p>Finlay said that the money DFT invested helped to incentivize the towns to invest their own money in the program. As mentioned previously, the three towns, combined, invested an additional £15M over and above the DFT investment of £10M.</p>
+<p> <em>Targeting the right issues and people</em></p>
+<p>Finlay said that one of the most important elements in the program was that the towns had to think about the problem they were trying to solve and come up with sensible solutions. Peterborough, for example, wanted to make better use of its public transit. “They invested in their bus station and developed information around that and worked with their local bus supplier,” noted Finlay.</p>
+<p>“If you’re looking at how to best target the problem with the least money, I would recommend that you either go for the mode of transport you’re targeting or think of it thematically,” he said. “For example, instead of looking only at transportation corridors, you could look at people with health challenges or people who are just changing jobs or are retired.”</p>
+<p>In the future, Finlay said that the DFT would probably avoid targeting an entire town’s population (as was done with the trip planning), and instead target the people most likely to change. “Going to every household was labour intensive and expensive,” he said. “For those interested in doing a similar program, I would recommend that you target it to those most likely to change.”</p>
+<p><em>Strike while the iron’s hot</em></p>
+<p><em> </em>Finlay said that the DFT’s original 2004 research found that, once behaviour change starts, you need to lock in the complementary measures for long-term change.</p>
+<p> “If you’ve reduced car trips and increased bus trips, there could be an opportunity to reallocate road space and increase the number of bus lanes, which would make the service faster,” Finlay explained. “Quality of service matters to people, particularly on public transport. The better it is, the more people are likely to continue using it.”</p>
+<p><em>Be prepared to switch gears</em></p>
+<p>“Towns had to be willing to change tactics depending on what they were seeing on the ground,” said Finlay, noting that Darlington changed its brand early on when they found it wasn’t working.</p>
+<p><em>Data collection</em></p>
+<p>All of the surveys conducted throughout the program were independently reviewed to ensure that the towns had accurate information.</p>
+<p>That being said, Finlay said that, although the DFT collected data throughout the five-year program, “In an ideal world, we would have invested more time and money on it. But it’s expensive and difficult to gauge the point when you’re not actually improving the data.”</p>
+<p> </p>
+<p>This case study was written in 2011 by Jay Kassirer and Sharon Boddy.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

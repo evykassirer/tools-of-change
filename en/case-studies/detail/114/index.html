@@ -1,0 +1,446 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Urban Environment Centre</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Natural Resources Canada</li>
+<li>Ontario Government</li>
+<li>City of Toronto</li>
+<li>Metro Toronto</li>
+<li>Toronto Atmospheric Fund</li>
+<li>Trillium Foundation</li>
+<li>Toronto Community Foundation</li>
+<li>Toronto Hydro</li>
+<li>Enbridge Consumers Gas</li>
+<li>Lever PondÕs</li>
+<li>CityHome</li>
+<li>Local retailers and contractors</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p><strong>Pre-EnerGuide Green Home Visits</strong></p>
+<ul>
+<li>Approximately 450 tonnes of annual CO2 reductions</li>
+<li>Average of $650 saved annually on energy bills</li>
+<li>90 percent of customers reported better comfort</li>
+<li>Over 12,000 home visits completed, about 3.5% of Toronto houses assessed</li>
+</ul>
+<p><strong>Housewarming Service for CityHome</strong></p>
+<ul>
+<li>32 percent air leakage reductions</li>
+<li>$20,000 saved annually by CityHome</li>
+</ul>
+<p><strong>EnerGuide for Houses</strong></p>
+<ul>
+<li>reduced CO2 emissions by approximately 540 tonnes in the first year of EnerGuide for Houses</li>
+<li>Customers reported improved comfort</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Green$aver</h1>
+<p>Green$aver provides home energy efficiency assessments and retrofit services in metropolitan Toronto. These assessments are conducted using Canada's EnerGuide for Houses system, which rates the overall energy efficiency of houses, identifies priority areas for improvement, and measures post-retrofit energy savings. Green$aver charges its customers a fee for its services, and it is trying to become a self-sustaining business. Work-based marketing approaches are being piloted, to promote Green$avers services to employees of local partner organizations.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Green$aver operated in Toronto, Canada's largest city (population: 2.4 million in 1998), with one of the world's most ethnically diverse populations. Because most Toronto homes were built before 1960 and were poorly insulated, the City of Toronto determined that more of the city's CO2 emissions came from houses (30%) than cars (20%). These residential emissions resulted from the use of energy for heating, cooling, lighting, water heating, and appliances. The abundance of houses with poor energy efficiency presented a large market for energy efficiency home visits.</p>
+<p>With support from the Ontario government, the Urban Environment Centre, an organization concerned with environmental issues in houses, launched Green$aver as a Green Community Initiative in 1994. Like other Green Community members, Green$aver was a non-profit organization with Green Home Visits at the centre of its activities.</p>
+<p>Starting in 1998, Green$aver adopted the framework of the EnerGuide for Houses program for its energy efficiency home visits, and discontinued its other programs to focus on this service. EnerGuide for Houses was initiated by Natural Resources Canada to help Canadians improve the energy efficiency of their houses. Through the Green Communities Association, Green$aver and several other Green Community members obtained licenses to provide EnerGuide for Houses services to their customers. The Green Communities Association was better able to compete for the licenses than its individual members, because it could provide training, certification, technical support, quality assurance and marketing on a provincial level. It granted licenses to those members that satisfied the criteria necessary to deliver the service.</p>
+<p>From its inception, Green$aver was subsidized by its partners, while it worked towards becoming a self-sustaining non-profit business. To that end, it gradually introduced user-pay fees for its services as their quality improved, enhanced its marketing efforts and offered its services to customers beyond downtown Toronto.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>Green$avers mandate was to assist Toronto in meeting its goal of 20% reduction in CO2 emissions by 2005, compared to 1990 levels.</p>
+<p>Its other objectives, which were not quantified, were:</p>
+<ul>
+<li>to help customers attain more comfortable homes and lower utility bills, while conserving resources</li>
+<li>to create jobs and provide training</li>
+<li>to stimulate local economic development</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>To learn how to make its energy efficiency home visits more effective, Green$aver sought feedback from its recent customers. Green$aver staff conducted surveys that consisted of a mailed, one-page questionnaire or a 2-4 minute phone interview. Every few years, a marketing consultant was hired to conduct more extensive surveys of past customers. The most recent, in 1997, consisted of a 10-minute telephone survey, in which 60-70 questions were asked. The combined surveys provided Green$aver with information about such issues as customers satisfaction with its services, how much they were willing to invest in improving their homes energy efficiency, which retrofits were implemented or planned, and how much was saved on energy bills.</p>
+<p>These customer surveys also showed that:</p>
+<ul>
+<li>comfort was homeowners' prime motivator for requesting an energy efficiency audit</li>
+<li>the second most common motivator was monetary savings</li>
+<li>less than 4% of Green$avers customers requested assessments for environmental reasons</li>
+<li>the expense of assessing and retrofitting was the main barrier preventing homeowners from having the energy efficiency of their homes evaluated and improved</li>
+<li>other barriers were a lack of education about energy efficiency and low motivation to change the situation (eg. thinking there was no other choice but to put up with discomfort or pay high energy bills)</li>
+</ul>
+<p>The results of these surveys helped Green$aver to focus on its customers needs in its marketing.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Pre-EnerGuide Green Home Visits</strong></p>
+<p>The cost of Green$aver's Green Home Visits (<a href="/en/tools-of-change/home-visits/">Home Visits</a>) was originally fully subsidized through the Ontario Ministry of Environment and Energy's <em>Green Communities Initiative</em>; the service was free to residents. These home visits were comprehensive, including energy and water efficiency audits, waste management and indoor air quality assessments, and retrofits by trained personnel. At first, the energy efficiency portion of these assessments consisted only of a visual inspection of the house.</p>
+<p>To improve the accuracy of the energy efficiency assessments, a blower door test was integrated, because air leakage was considered to be the most serious area of energy loss, and the most effective and noticeable way to improve comfort and savings on energy bills. In a blower door test, a plastic sheet covered an open exterior doorway. A fan was used to blow air out of the house through a hole in the sheet, reducing the air pressure inside to 50Pa, and creating a relative vacuum. As air rushed into the house through leaky areas, the assessor used a smoke pencil to identify leaks in need of repair (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>).</p>
+<p>Financing for large projects was available from Canada Trust and Toronto Dominion Bank (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). Although surveys showed that most Green$aver customers in 1998 wanted financing for major retrofits, the financing program was shelved during a merger of the two banks.</p>
+<p><strong>Housewarming Service</strong></p>
+<p>In 1996 Green$aver partnered with CityHome and the Toronto Atmospheric Fund, to provide the Housewarming Service to low-income residences. A grant from the Toronto Atmospheric Fund helped Green$aver deliver the program. CityHome, which managed low-income housing in Toronto, used the assessments to identify areas where improvements were needed and energy savings could most effectively be attained, and prioritize improvements to its buildings. CityHome intended to improve the energy efficiency of its buildings before transferring energy costs to its tenants.</p>
+<p>Before EnerGuide for Houses, Green$aver considered its Housewarming Service for CityHome to be a project, separate from its Green Home Visit services for individual houses. However, the additional infrastructure needed to design and deliver separate services made this approach inefficient for Green$aver as a business. Green$aver eventually considered CityHome an ordinary customer although one with many residential units and delivered the same service its other customers received. Although the results of the audits were discussed with tenants, the reports were delivered to CityHome, which made the decisions about which steps to take. Green$aver gave CityHome a discount for the bulk sale, and accepted it as its client during the summer, when the demand for energy assessments was otherwise low. CityHome paid for the service, with 50% of the fee coming from its reserve funds and 50% from the Toronto Atmospheric Fund.</p>
+<p><strong>EnerGuide for Houses Service</strong></p>
+<p>EnerGuide for Houses audits were similar to Green Home Visits, but they were enhanced by EnerGuide software that helped quantify air leakage. This quantification further improved the accuracy of the assessments, so that customers were willing to pay for the service. Although EnerGuide for Houses focused on energy efficiency, the assessments touched on indoor air quality and water conservation as well.</p>
+<p>To enable Green$aver to establish each customer's baseline energy consumption before retrofits, Toronto Hydro provided customer bill histories. Where consumption histories were unavailable, EnerGuides database of national averages for various types of houses provided the baseline values. Before this database existed, if billing histories were unavailable, assessors had to estimate the baselines from their own experience.</p>
+<p>The EnerGuide software generated a Home Energy Plan, a customer-friendly report on the results of the assessment. This report provided detailed test results, itemized the recommended upgrades, prioritized and estimated the cost of each improvement and showed the expected savings (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>, <a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). Computer modeling was used to outline and rate the overall energy efficiency of a home on a scale of one to 100. Test results were very reliable and standardized, so that houses could be compared nation-wide, and between different assessors. By using the EnerGuide system, assessors could produce a report for customers on-site and discuss recommendations in the initial visit. The EnerGuide system reduced the visits from a 5-6 hour assessment and 1-hour follow-up, to a single 2-3 hour visit.</p>
+<p>Green$aver provided some retrofit services directly, and a list of screened, approved contractors specializing in energy- and water-conservation services. This made it easy for customers to take further action (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>, <a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>The actual cost of providing each assessment was at least $300, which covered only the training and wages of a home inspection technician, but not Green$aver's administrative overhead. Half the cost of the assessments was subsidized by Natural Resources Canadas sponsorship (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>) and half was paid by customers. EnerGuide audits were detailed and focused enough that customers could see their value and were willing to pay for them. However, Green$aver's market surveys found that homeowners would not pay more than $150 for the assessments.</p>
+<p><strong>Marketing the Visits</strong></p>
+<p>Mailed flyers were the most effective method for attracting customers, with approximately 90-95% of 1998 Green Home Visit customers requesting assessments as a result of brochures sent with Toronto Hydro utility bills (<a href="/en/tools-of-change/mass-media/">Mass Media</a>). Most 1999 EnerGuide assessments were requested as a result of a direct mail campaign by Green$aver. Enbridge Consumers Gas also promoted energy efficiency through its mail campaign, and incorporated Green$aver's EnerGuide for Houses service into its Home Comfort Network program. By the end of 1999, approximately 500,000 homes in Toronto received promotional mail from Green$aver.</p>
+<p>Green$aver encouraged promotion by word of mouth by leaving flyers with customers after completing assessments, and asking them to recommend the service if they were satisfied with it. Many new customers were referred by friends who were satisfied with Green$aver's services (<a herf="/en/tools-of-change/word-of-mouth/" href="/en/tools-of-change/word-of-mouth/">Word of Mouth</a>). Occasional exposure in the media, such as an appearance on a CBC radio phone-in talk show, resulted in floods of requests for assessments (<a href="/en/tools-of-change/mass-media/">Mass Media</a>).</p>
+<p>The Green Home Visits and EnerGuide for Houses services were also publicized through</p>
+<ul>
+<li>Green$aver's municipal and corporate partners</li>
+<li>national promotions for EnerGuide for Houses, such as newspaper ads, by Natural Resources Canada</li>
+<li>web sites for Green$aver, the Green Communities Association and Enbridge Consumers Gas</li>
+<li>participation by Green$aver and Toronto Hydro in trade shows</li>
+<li>Green$aver's participation in community activities and Boards of Trade</li>
+</ul>
+<p>Green$aver's home visits gained exposure and credibility from being associated with Natural Resources Canada and the well-known EnerGuide label, as well as its other partners.</p>
+<p>In its early campaigns, Green$aver advertised all of the benefits of improving home energy efficiency, including energy bill savings, greenhouse gas reductions and improved comfort. However, their marketing gradually became more focused on the needs and concerns of their customers' comfort and lower energy bills. Marketing also reflected homeowners' seasonal concerns, such as weather in winter and renovations in summer.</p>
+<p><strong>Employee Program</strong> <br/>
+Please see the <a href="#Notes">Notes</a> section for details about the Employee Program.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Green$aver's budget and funding sources varied from year to year.</p>
+<table>
+<tbody>
+<tr>
+<td valign="top"><strong>Expense</strong></td>
+<td><strong>Funding source</strong></td>
+</tr>
+<tr>
+<td valign="top">Assessments (training and wage of auditor): $300 per assessment</td>
+<td>
+<ul>
+<li>Pre-EnerGuide Green Home Visits: Originally fully subsidized by Ontario Ministry of Environment and Energy, then Customers paid $99.50 per assessment</li>
+<li>EnerGuide for Houses: NRCan: $150 per assessment, Customers: $150 per assessment</li>
+<li>Employee Program: Lever Ponds: Subsidies for its employees (40% of assessments)</li>
+<li>Housewarming Service: CityHome: 50% of each assessment, Toronto Atmospheric fund: 50% of CityHomes assessments</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Core operational funding and organization building</td>
+<td>
+<ul>
+<li>Grants from Lever Ponds and Toronto Atmospheric Fund</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td valign="top">Promotion</td>
+<td>
+<ul>
+<li>Some in-kind from partners</li>
+<li>Some directly from Green$aver</li>
+<li>Grant from Toronto Hydro</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td valign="top">Retrofitting</td>
+<td>
+<ul>
+<li>Customers</li>
+<li>Lever Ponds: Subsidies for its employees (20% of retrofits)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Other salaries and training</td>
+<td> </td>
+</tr>
+<tr>
+<td>Administrative overhead</td>
+<td> </td>
+</tr>
+<tr>
+<td>$25 per audit paid to Green Communities Association</td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+<p>Over the years, money was contributed by governments, foundations, retailers and manufacturers, and sales from products.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Before EnerGuide for Houses, Green$aver measured the results of its visits by analyzing post-retrofit energy consumption data, if available, and through quarterly customer surveys. In these surveys, customers were asked which retrofits they had undertaken, and the reduction in energy use was calculated for each retrofit. Green$aver used an accepted formula to convert the estimated amount of energy saved to CO2 reductions.</p>
+<p>With the EnerGuide for Houses service, the measurement of results became more direct and accurate. If significant retrofits were implemented following an EnerGuide audit, the Green$aver assessors conducted a free follow-up visit to repeat the blower door test and report the houses new energy efficiency score. These follow-ups also ensured that the installation work was done well and that enough air exchange existed for natural ventilation and air hazard prevention. The EnerGuide for Houses software automatically calculated the CO2 reductions resulting from each houses energy efficiency improvements.</p>
+<p>Natural Resources Canada paid Green$aver $150 for each of its EnerGuide for Houses audit reports. It used the information from the audits to further develop its national database on housing and energy efficiency for the EnerGuide for Houses program.</p>
+<p>Quality assurance of Green Home Visits and EnerGuide visits was performed through the Green Communities Association, which regularly obtained reports from the Green$avers home visits and randomly reviewed them. They checked that the data were reasonable and consistent with the description and age of the house, the recommendations were appropriate, ventilation was balanced with draftproofing, and the reports to customers were well written. Customers were invited to call the Green Communities Association with comments or complaints about Green$aver's services.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>The improved EnerGuide energy efficiency rankings and information obtained in the post-retrofit visits gave customers confidence that they had improved the energy efficiency of their homes. It was hoped that they would also help homeowners who were planning to sell their houses to quantify the annual cost savings and other benefits from their energy efficiency improvements, and therefore to sell the houses at a higher price.</p>
+<p>The EnerGuide Home Energy reports showed customers how much the recommended improvements were estimated to contribute to the reduction of CO2 emissions, and how much money they might save in energy bills, based on calculations from the assessment. Finally, these estimates were verified for the homeowners through actual reductions in subsequent energy bills.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Pre-EnerGuide Green Home Visits (1994-1998)</strong></p>
+<p>Energy savings:</p>
+<ul>
+<li>Approximately 450 tonnes of annual CO2 reductions (conservative estimate)</li>
+</ul>
+<p>Other benefits:</p>
+<ul>
+<li>90 percent of customers reported better comfort</li>
+<li>90 percent of customers considered the service superior</li>
+<li>Average of $650 saved annually on energy bills</li>
+<li>Payback periods for energy retrofits ranged from less than 5 to 20 years</li>
+</ul>
+<p>Reach:</p>
+<ul>
+<li>Over 12,000 home visits completed, about 3.5% of Toronto houses assessed</li>
+<li>Retrofits ranged from a few hundred to several thousand dollars, and averaged $700. Most retrofits consisted of air sealing and insulation</li>
+</ul>
+<p><strong>Housewarming Service for CityHome (1997 results)</strong></p>
+<p>Energy savings:</p>
+<ul>
+<li>32 percent air leakage reductions</li>
+</ul>
+<p>Other benefits:</p>
+<ul>
+<li>$20,000 saved annually by CityHome</li>
+</ul>
+<p>Reach:</p>
+<ul>
+<li>160 CityHome units audited in 1997</li>
+<li>113 retrofitted with energy and water conservation measures</li>
+</ul>
+<p><strong>EnerGuide for Houses (mid-1998 to end of 1999)</strong></p>
+<p>Energy savings:</p>
+<ul>
+<li>Green$aver implemented 120 retrofits</li>
+<li>Green$aver estimated that its retrofits reduced CO2 emissions by approximately 540 tonnes in the first year of EnerGuide for Houses.</li>
+</ul>
+<p>Other benefits:</p>
+<ul>
+<li>Customers reported being satisfied with the EnerGuide service, and finding it educational and thorough.</li>
+<li>Customers reported improved comfort</li>
+<li>Customers each spent between $250 and $10,000 or more on retrofits. The average spent was $1200. In all, Green$avers customers spent a total of roughly $150,000 to $200,000 on audits and retrofits during this period, supporting the local economy.</li>
+<li>Twelve people were hired and trained by Green$aver for the EnerGuide service in 1998 and 1999. Most of those were assessors, and the rest were installers and administrative / clerical staff.</li>
+</ul>
+<p>Reach:</p>
+<ul>
+<li>Green$aver completed approximately 600 EnerGuide for Houses assessments. This was a reduction from previous years, because customers had to pay more for EnerGuide assessments.</li>
+</ul>
+<p><strong>Employee Programs</strong></p>
+<p>Green$aver reached several thousand households through the Employee Program pilots, but gained only 50 new customers. Green$aver determined that the response was lower than they had hoped because the promotional campaigns were too short-lived to allow most homeowners time to consider the value of the assessments and decide to request an appointment. They planned to follow up with Enbridge Consumers Gas and Lever Ponds, to give their employees a chance to request assessments, and to make their future campaigns lower-profile but more continuous. They also planned to promote Employee Challenges more.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Keir Brownstone <br/>
+Green$aver <br/>
+51 Wolseley St., 5th Floor <br/>
+Toronto, Ontario <br/>
+M5T 1A4 <br/>
+Phone: (416) 203-3106 ext.225 <br/>
+Fax: (416) 203-3121 <br/>
+<a href="keir@Green$aver.org">keir@Greensaver.org</a></p>
+<p>For more information on Green Communities, <a href="http://www.gca.ca/">click here</a>.</p>
+<p>For more information on EnerGuide for Houses, <a href="http://oee.nrcan.gc.ca/houses-maisons/">click here</a>.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><a name="Notes"></a></p>
+<p><strong>Employee Program</strong></p>
+<p>EnerGuide for Houses was also promoted through employee programs at Lever Ponds and Enbridge Consumers Gas. The Employee Programs began in the spring and summer of 1999, and were at the pilot program stage at the time of writing. Green$aver planned to expand them to include four other partners in 2000.</p>
+<p>The partner organizations were companies with environmental interests, willing to lead by example, by encouraging their employees to have EnerGuide for Houses assessments. Lever Ponds subsidized 40% of the assessment fees and 20% of retrofit costs for their employees, to encourage them to participate (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>). Enbridge Consumers Gas market tested its province-wide Home Comfort energy efficiency program on its own employees, with Green$aver delivering the EnerGuide for Houses service as part of Enbridge's program.</p>
+<p>The messaging was similar to that used in promotions to other customers, with the emphasis still on comfort. However, because the partner businesses were environmentally inclined, the environmental benefits of energy efficiency were also promoted. Green$aver and its partners promoted EnerGuide for Houses to employees in the workplace through:</p>
+<ul>
+<li>emails</li>
+<li>posters</li>
+<li>newsletters</li>
+<li>flyers</li>
+<li>lunch and learn sessions, in which a blower door test and EnerGuide home visit were demonstrated, comfort issues were discussed and employees learned about energy efficiency issues related to Toronto homes</li>
+<li>testimonials from senior management</li>
+<li>Employee Challenges, in which groups of coworkers compete with other groups to collectively reduce more CO2 emissions</li>
+</ul>
+<p><strong>Roles of Partners</strong></p>
+<ul>
+<li>Lever Ponds, Enbridge Consumers Gas and Toronto Hydro were businesses with environmental interests that encouraged their employees to participate in EnerGuide for Houses, through workplace promotion and subsidies</li>
+<li>Enbridge, City of Toronto, Toronto Hydro and Natural Resources Canada promoted Green$aver's services through their mail campaigns and advertising Metro Toronto, the Ontario Government, Lever Ponds, Toronto Atmospheric Fund, Toronto Hydro and foundations provided financial support to Green$aver</li>
+<li>CityHome helped Green$aver secure funds from the Toronto Atmospheric Fund</li>
+<li>Natural Resources Canada and Green Communities Association evaluated the assessments and improved the EnerGuide for Houses program</li>
+<li>The City of Toronto helped Green$aver become a Green Community member and the Green Community Association helped Green$aver obtain a license to deliver EnerGuide for Houses</li>
+</ul>
+<p><strong>Lessons Learned</strong></p>
+<ul>
+<li>Effective marketing is criticall.</li>
+<li>Marketing has to be layered and repeated.</li>
+<li>Marketing messages must be focused, to avoid confusing people with too much information.</li>
+<li>For attracting customers, targeted marketing is more effective than educating and raising awareness.</li>
+<li>Environmental concern does not sell energy efficiency assessments.</li>
+<li>Partners can be valuable in promoting a service for low cost, lending their credibility, visibility and resources.</li>
+</ul>
+<p><strong>Ontario EnerGuide for Houses results</strong></p>
+<p>Since Green$aver had not yet conducted many post-retrofit audits at the time of writing (January 2000), province-wide results from the first 50 post-retrofit audits are provided below..</p>
+<ul>
+<li>Those EnerGuide for Houses customers who implemented retrofits did over 50% of the recommended retrofits</li>
+<li>The average potential energy saving (if all recommended retrofits were implemented) was 23 percent, or up to 4.3 tons of CO2 reduction per house per year.</li>
+<li>The average EnerGuide rating before retrofits was 62, and the average potential post-retrofit rating was 73.</li>
+<li>The average energy efficiency was actually improved by 8 points on the EnerGuide scale.</li>
+<li>The average retrofitted house reduced its annual CO2 emissions by 16%.</li>
+<li>Homeowners generally waited longer to do more expensive retrofits (replacing windows, insulation, furnace), so major energy savings were not seen immediately after the assessments. Although many houses that were assessed were not retrofitted right away, with the Home Energy Plan, customers had the information they needed to make improvements in the future.</li>
+<li>Green$aver customers could potentially save 20-50 percent on energy bills per month, on average, if they did all the recommended retrofits.</li>
+</ul>
+<p> </p>
+<p>Last updated: July, 2004. This case study was written in 2000 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

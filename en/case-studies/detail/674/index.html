@@ -1,0 +1,345 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Class 5 Energy</li>
+<li>Case study authored by Karen Mann</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>School districts, area hospitals</li>
+<li>Minnesota Department of Commerce</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Over eight years in the program, Cambridge-Isanti Public School district reduced energy use per person by about 36% and saved $2.6 million in energy costs.</li>
+</ul>
+<p> </p>
+<p>Webinar <a href="/userfiles/Class 5 Transcript.pdf" target="_blank">Transcript</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Class 5 Energy</h1>
+<p>This comprehensive, long-term approach combines education, training, behavior change and goal setting with progress tracking, recognition and continuous improvement to reduce energy use in schools, hospitals and other institutional settings.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<h6><em>Note: To minimize site maintenance costs, all Tools of Change case studies are written in the past tense, even if they are ongoing programs, as is the case with this one.</em></h6>
+<p>CLASS 5 Energy, based in White Bear Lake, Minnesota, was established in 2002 as part of a consulting engineering firm that specialized in energy planning, behavioral energy programs, utility tracking, and energy efficiency resources</p>
+<p>This case study involves two implementations that illustrate its energy reduction approach – one in a school setting, and the other in a healthcare setting.  </p>
+<p><em>School Setting:</em> The school implementation involves Class 5 Energy’s Schools for Energy Efficiency (SEE) program, a behavior-based energy efficiency program offered to K-12 school districts. The original SEE program materials were developed in 2002 from a series of pilot programs in Minnesota school districts. The implementation discussed in this case study was carried out for the Cambridge-Isanti School District, located about an hour north of Minneapolis and St. Paul in Minnesota, USA.</p>
+<p><img alt="" height="367" src="/userfiles/Image/Book.JPG" width="450"/></p>
+<p><em>Healthcare Setting:</em> In 2010, Class 5 Energy received a grant from the Minnesota Department of Commerce to test its approach in the healthcare sector. After interviewing a number of appropriate pilot sites, it selected Ridgeview Medical Center in May 2011, based on Ridgeview’s previous sustainability efforts, enthusiasm for adding a behavioral component, and its diverse building mix.</p>
+<p><img alt="" height="238" src="/userfiles/Image/MapV2.JPG" width="450"/></p>
+<p>State of Minnesota, USA    Map courtesy of mapcruzin.com</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The SEE Program recommended that school districts adopt the following objectives:</p>
+<ol>
+<li>A 10% energy reduction goal</li>
+<li>Development of an energy policy and a steering committee to implement the policy.</li>
+<li>ENERGY STAR® recognition for participating schools</li>
+<li>Health, safety and comfort levels should be maintained (e.g. students should not suffer intolerable heat or cold for the sake of energy reductions).</li>
+</ol>
+<p>The purpose of the RMC pilot project was to adapt the existing SEE program to a healthcare setting and to assess how successful a hospital—a 24-7 environment—could be at reducing energy using only behavioural strategies and without major financial investment.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p><strong>Prioritizing Audiences</strong></p>
+<p>CLASS 5 Energy focused on two priority audiences:</p>
+<ol>
+<li>schools</li>
+<li>hospitals and other institutional settings<br/>
+</li>
+</ol>
+<p><strong>Identifying Barriers</strong></p>
+<p>While these two audiences had some distinct barriers, they also shared some. The primary barrier—for both the school and hospital programs—was overcoming cultural inertia.</p>
+<p>"In each organization, culture is created and sustained by the people who live it. Changing that culture, changing those habits and creating new, better habits is hard," said CLASS 5 Energy's General Manager, Amy Anderson. "The goal of a behavior program is to change the culture of an organization to one in which saving energy is not something you do because you're told to, it’s something you do because you want to."</p>
+<p>In addition, there were fears that the program meant "extra work." People felt they would be asked to do yet “one more thing.”</p>
+<p>There was an additional key challenge in the healthcare sector - a mentality that all equipment needed to be on and ready to use 24/7. But the reality was that while some parts of the hospitals did work 24/7, the clinics generally did not. For example, if a certain doctor was only in a clinic two days a week, the equipment he or she used did not need to be on all the time. In a lot of cases the clinics had just left that equipment on because they didn’t ever want to be criticized for equipment not being ready for use when the doctor needed it.</p>
+<p>Therefore, a note was developed that people could put on their doors that said, “I’m still here today, but I’m at a meeting.”</p>
+<p>Therefore, part of this program’s formative research involved going into the clinics and some of the professional buildings and asking, “When does this equipment need to be on”? It also included a lot of testing about how long it took to re-start equipment that had been turned off.</p>
+<p>Class 5 Energy continued to look for and address barriers throughout program implementation – not just during initial research and planning. “If we’re not seeing results”, said Anderson, “part of the program involves going back and finding out what is going on. You can guess, but you would be surprised at how many different reasons people have when things aren’t working. As well, it may be a question of how many solutions can be brought to the table to help overcome those barriers.”</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>All of CLASS 5 Energy's behavioural programs followed a five-step process:</p>
+<ol>
+<li>Educate people about why saving energy is important and how they can help.</li>
+<li>Identify opportunities for easy savings across the organization.</li>
+<li>Engage people and ask them to do their part in the energy saving effort.</li>
+<li>Measure and track progress toward the energy goal.</li>
+<li>Communicate and celebrate the results often and with everybody.</li>
+</ol>
+<p><img alt="" height="449" src="/userfiles/Image/5-step.jpg" width="450"/></p>
+<p>This process helped to overcome certain cultural barriers and create a "new normal." <em>(Norm appeals, Overcoming specific barriers</em>)</p>
+<p>In addition, CLASS 5 Energy provided a structure for the overall energy saving effort, which included:</p>
+<ul>
+<li>Organization leadership (visible and vocal support from the highest levels of the organization)</li>
+<li>Energy coordinator (the person or people designated to coordinate the different aspects of the program) and an energy steering committee. The key function of the steering committee was to develop energy policies and procedures</li>
+<li>Representation from all the key areas of the organization (site leaders, departmental managers), and</li>
+<li>Peers who were willing to both talk and to “walk the talk” to demonstrate that energy conservation was a key choice in helping the organization achieve its mission and critical goals (<em>Neighborhood coaches, block leaders and office reps</em>).</li>
+</ul>
+<p>Two versions of CLASS 5's energy behavioural program were designed, one for each priority audience. Within the broad program approach described above, each priority ayudience had its own tailored strategies and program materials.</p>
+<p><strong>Schools for Energy Efficiency (SEE)</strong></p>
+<p>In 2004, the school district in the Minnesota towns of Cambridge and Isanti was the first to sign on to the SEE program. The district initially had five schools and one administration building, but added two new school buildings in 2006 for a total square footage of about 900,000.  The district served more than 5,000 students and had about 742 staff members.</p>
+<p>The school superintendent was an enthusiastic supporter. He believed in the program and supported it verbally and in written communications, which helped to support the efforts of everyone in the district.</p>
+<p>The district hired a part-time energy coordinator who worked with the district's buildings and grounds director. Together, they formed a steering committee, which included all department heads, kitchen and information technology (IT) staff, as well as principals and administrative staff.</p>
+<p><img alt="" height="675" src="/userfiles/Image/School children.jpg" width="450"/></p>
+<p>CLASS 5 Energy worked to integrate the program into existing initiatives and responsibilities, to show that it involved little if any extra work. To further minimize the time required, it provided schools with a guidebook that had step-by-step planning tools and communication templates, a members-only website, achievable minimum energy reduction targets, outreach and recognition materials, support and coaching from a consultant, and weather-normalizing utility tracking software. (<em>Overcoming specific barriers</em>) </p>
+<p>After five years in the program, SEE members could also join the “alumni club” to retain the SEE outreach materials, consultant support and utility tracking. (<em>Building motivation over time</em>)</p>
+<p>The following key strategies were used to involve students, teachers and staff in energy saving behaviors.</p>
+<ul>
+<li>Specific energy saving behaviors were targeted, such as turning off lights and other equipment when not in use, managing temperature set points, and eliminating unnecessary equipment such as fridges and small appliances.</li>
+<li>Student energy squads were organized to patrol the schools. They recognized good behavior with WOW Post-It notes and left OOPS stickers behind where energy was being wasted. The students particularly loved busting their teachers for leaving things on. (<em>Building motivation over time; Feedback; Prompts; Vivid, personalized, credible, empowering communications</em>)</li>
+<li>A competition was organized among the school custodians to see which school could save the most energy. All custodians met quarterly to review results, strategize and share tips and successes. (<em>Building motivation over time, Challenges and competitions, Feedback</em>)</li>
+<li>The energy coordinator used school communications and local newspapers to publicize successes and recognize key people. One month she wrote a full article for the local newspaper about what the kitchen staff had done. She got all of the building operators and building custodians to attend one school board meeting, and to be recognized in front of the board and the entire community, since those meetings were publicized. (<em>Feedback and recognition</em>)</li>
+<li>Other communications included monthly newsletters, newspaper articles, posters, and an "Energy Hog" mascot who visited the schools and engaged students in activities. (<em>Vivid, personalized, credible, empowering communications</em>)</li>
+</ul>
+<p><strong>Ridgeview Medical Center (RMC)</strong></p>
+<p>Located in Waconia, Minnesota (a small town on the western side of the Twin Cities), RMC had more than 1,500 employees and 13 buildings, including a 109-bed hospital, five off-site clinics, professional buildings and a hospice home.</p>
+<p>Beginning in the spring of 2012 and running through that December, CLASS 5 program consultants worked with Ridgeview’s leadership and employees to implement and evaluate the program, modeled on a similar process and structure as SEE.</p>
+<p> <img alt="" height="303" src="/userfiles/Image/Ridgeview(1).jpg" width="450"/></p>
+<p>As was the case for the school program, a key leader at the hospital—RMC's CEO Robert Stevens—was instrumental in getting the CLASS 5 Energy program in place. He was personally committed to it, which helped to convey that message down through the ranks.</p>
+<p>"We asked employees across our hospital campus and clinics to see energy as a controllable cost and do their part to reduce consumption using the CLASS 5 Plan," he said.</p>
+<p>Due to the sheer number of buildings, there was no one person who could be physically present at all of them. CLASS 5's program consultant asked for volunteers from the various hospital departments to be her "eyes and ears" on the ground. While there was no formal screening process, the volunteers had to be approved by their managers and the managers were provided with information about the kind of people that would be good for this. The managers were also asked to consider the relationships the volunteers had with their peers, and the time they could make available during the day.</p>
+<p>Forty-four people got permission from their managers and stepped forward to take on the challenge. Adding these advocates to the team made CLASS 5 Energy's job far easier and sped up the adoption rate of several of its key strategies. "What made this strategy so powerful was that research had shown that when employees are asked to take on a new initiative or model a new behavior they look two directions before they act. They look upward, toward management, and they look sideways, toward their peers," explained Amy Anderson, CLASS 5 Energy’s General Manager. "If they receive positive affirmation from both directions they are far more likely to embrace the new idea." (<em>Building motivation over time; Neighborhood coaches, block leaders and office reps; Norm appeals; Vivid, personalized, credible, empowering communication</em>)</p>
+<p>“We also know that there's a lot of research that shows that people feel better about working for companies that share their values” continued Anderson. “Not only are you engaging these people in doing something that they feel strongly about personally (and that makes them great advocates in those buildings when one person from our staff or the energy coordinator can't be there all the time), but you're also building that relationship between that employee and the organization by giving them a connection that goes beyond just their day-to-day work.” (<em>Building motivation over time</em>)</p>
+<p>These local office advocates helped in many ways. They hung awareness materials in their buildings. They administered our surveys and organized “lunch and learns”. One went around at night and if she saw computer monitors or lights on she would leave a little sticker or a note, or if they were off again, leave a piece of candy.</p>
+<p>The following key strategies were used to involve hospital staff in energy saving behaviors.</p>
+<ul>
+<li>An organization-wide kick-off in every facility</li>
+<li>Peer champions in each department (<em>Neighborhood coaches, block leaders and office reps</em>)</li>
+<li>A tracking system for employee suggestions</li>
+<li>Sharing stories about employee participation and overall results through multiple communication channels (<em>Feedback and recognition</em>)</li>
+<li>Celebrating good results in ways that increased motivation and participation. For example, when RMC reached a 16% energy reduction level, the peer champions walked around and passed out candy and celebrated the “sweet 16” that the clinics and the campus had achieved. (<em>Building motivation over time, Feedback and recognition; Vivid, empowering communication</em>)</li>
+<li>Including CLASS 5 Energy updates and presentations in quarterly management training, so that organizational leadership knew that the pilot was a priority. (<em>Building motivation over time, Feedback and recognition; Vivid, personalized,  credible, empowering communication</em>)</li>
+</ul>
+<p>Overcoming the 24-7 mentality was a challenge. The program arranged clinic visits to determine which equipment needed to stay on and which could be turned off, and did a lot of testing about how long it took to start the equipment back up and get it ready for use. This enabled it to engage the clinics in turning off equipment when possible. It also got people thinking in new ways about energy conservation and what really did need to be left on. (<em>Building motivation over time; Overcoming specific barriers</em>)</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The school district paid an annual fee for the CLASS 5 Energy program materials and support. "[Although] we are a for-profit company, giving away the program is not always the best thing because then people don't have as much 'skin in the game' and won't work as hard," said Ms. Anderson. The energy savings realized more than offset the cost. </p>
+<p>The Minnesota Department of Commerce provided a grant to run the RMC pilot project.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Initially, the Cambridge-Isanti District used a third-party engineering firm to measure and verify their results. Later, CLASS 5 Energy developed its own web-based tool for calculating energy savings. This tool allowed users to enter monthly utility data directly, track progress and share results graphically. The web-based tool also compared the data with weather-adjusted baseline usage. </p>
+<p>The program organizers believed in a “whole building” approach. All energy use was tracked, and all reductions were attributed to the building-wide effort to reduce energy through different behaviours and means.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Over its 10 years in business, CLASS 5 Energy had used a similar approach with more than 700 buildings throughout the USA, resulting in total kWh savings of more than 250,000,000 kWh and total MMBtu  savings of more than 2,283,000. The total cost avoidance was more than $34 million.</p>
+<p><strong>Cambridge-Isanti School District </strong></p>
+<p>Over nine years in the program, Cambridge-Isanti Public School saved over $3 million in energy costs, funds that were then allocated to the classroom. </p>
+<p>In year one, annual energy cost savings were about $99,000; by year nine, those savings had grown to more than $500,000 per year. The overall return on investment was over $15 for every dollar spent, and had increased steadily from $2.55 in the first year to $76.33 in year nine.</p>
+<p><img alt="" height="328" src="/userfiles/Image/School savings.jpg" width="450"/></p>
+<p>In year one the district reduced energy consumption by about 7%; by year nine, consumption had been reduced by 37%. </p>
+<p>During the first two years, the school board had not undertaken any energy-efficient upgrades to its equipment or systems, so all of the savings could be attributed to behavior changes. Over time other asset changes and upgrades happened, which complicates attribution. Nonetheless, the board considered it clear that the contribution from behaviors remained significant.</p>
+<p>In 2010, every school in the district met the energy performance standards of the U.S. Environmental Protection Agency and was awarded ENERGY STAR® certification.</p>
+<p><strong>Ridgeview Medical Center</strong></p>
+<p>After 15 months, RMC had saved more than $75,000 and reduced overall energy use by 6% across the campus, without negatively affecting patient comfort or safety. Some of the off-site clinics realized double-digit savings during the same period.</p>
+<p>During the pilot period, RMC did not undertake any energy-efficient upgrades to its equipment or systems, so all of the savings realized were attributable to behavior changes.</p>
+<p>Once the pilot was concluded, 400 of RMC's 1,500 staff completed an attitude survey. "In a healthcare environment where people are very dedicated to patient comfort, safety and outcomes, 89% said that they were more likely to engage in energy saving behaviour," said Ms. Anderson.  "83% had a more positive attitude toward saving energy, 91% learned that individuals can have an impact on organizational energy costs, and 94% would be willing to submit an energy saving idea to their department if they had one."</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p><img alt="" height="142" src="/userfiles/Image/amyanderson(1).jpg" width="106"/></p>
+<p>Amy Anderson<br/>
+General Manager<br/>
+CLASS 5 Energy<br/>
+<a href="mailto:aanderson@class5energy.com ?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> aanderson@class5energy.com</a></p>
+<p><img alt="" height="144" src="/userfiles/Image/karenmann(1).jpg" width="105"/></p>
+<p>Karen Mann<br/>
+Director of Measurement and Verification for Schools and Energy Efficiency<br/>
+CLASS 5 Energy<br/>
+<a href="mailto:kmann@class5energy.com?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> kmann@class5energy.com</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned</strong></p>
+<p><em>Long-term senior-level support required</em></p>
+<p>Once employees knew that organizational leaders were committed to the effort, they were much more likely to participate. Moreover, management buy-in helped mobilize human and financial resources to support the effort, expedited coordination of working relationships and schedules across departments, and helped remove any institutional barriers to success.</p>
+<p>In school settings, shared values and accepted behaviors started at the school board level, moved down through the department heads, then across the district through the adults. Because that continued year after year, the culture really started to change. (Building Motivation and Engagement Over Time)</p>
+<p><em>Have an internal coordinator</em></p>
+<p>The internal coordinators in the CLASS 5 energy programs served as the point of connection between building occupants, the facilities team, communications and IT, and the energy steering committee. The coordinator acted as an opinion leader, role model, messenger, “boots on the ground,” and change advocate.</p>
+<p><em>Involve utilities</em></p>
+<p>Although not used in either the SEE or RMC program, CLASS 5 Energy believed that utility companies could play a significant role in identifying and supporting customers who are interested in participating in a multi-year behavior-based effort. Because behavioral shifts take time, utility involvement could provide validation of efforts, through recognition opportunities and/or financial incentives that would increase the likelihood of ongoing participation over time.</p>
+<p><em>Continual contact</em></p>
+<p>CLASS 5 Energy kept in regular communication with the organizations' energy coordinator and steering committee.</p>
+<p>"You start with the highest levels in the administration, but are simultaneously connecting with many different departments," said Ms. Anderson. By building those relationships early, the energy coordinators and steering committee were comfortable contacting the CLASS 5 energy consultants if they had questions or problems.</p>
+<p><em>Give people the autonomy to make decisions</em></p>
+<p>In the case of the Cambridge-Isanti program, the school superintendent empowered the energy steering committee with making all energy decisions. For example, if a school wanted to have a cold lunch once a month, steering committee members could make that decision with the kitchen staff without having to obtain approval from the school board.</p>
+<p><em>Change takes longer in larger organizations</em></p>
+<p>According to Mann, “the bigger the organization, the longer it takes to make impacts, because the message gets filtered from the top down to the bottom. On the other hand, Anderson advises, it helps if an organization spends a certain amount on energy. We’ve shown that the program works in smaller organizations; if the annual energy cost is $10,000-$15,000, a 10% savings is doable. However, it is harder to get people to make it a priority because the dollars are small and represent a relatively small percentage of the organization’s overall budget.”</p>
+<p><em>Don’t assume you know all of the barriers to action</em></p>
+<p>Despite Class 5 Energy’s years of experience with energy efficiency programs, it continues to run across new barriers to action that must be addressed. In one office implementation there was a group of people that were very uncomfortable turning off their lights when they left to go to meetings because they didn’t want people to think that they had left for the day. The culture there was that people would think, “So-and-so is leaving early. They're slacking off.” To address this barrier they created a note people could put on their doors that said, “I’m still here today, but I’m at a meeting.”</p>
+<p> </p>
+<p>This case study was written by Jay Kassirer in 2014.</p>
+<p><strong>Landmark Designation </strong></p>
+<p>The program described in this case study was designated in 2013.</p>
+<p>Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff, and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Jon Connor, Federation of Canadian Municipalities</li>
+<li>Arien Korteland, BC Hydro</li>
+<li>Doug McKenzie-Mohr, McKenzie-Mohr Associates</li>
+<li>Edward Vine of Lawrence Berkeley National Laboratory</li>
+</ul>
+<p> </p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

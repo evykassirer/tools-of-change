@@ -1,0 +1,296 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/school-programs-that-involve-the-family/">School Programs that Involve the Family</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>We Energies</li>
+<li>ICF International</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>City of Burlington</li>
+<li>Chamber of Commerce</li>
+<li>Economic Development Corporation</li>
+<li>Local schools</li>
+<li>Local media and other local businesses </li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Program participants that signed a pledge to reduce energy had a higher level of participation in existing energy efficiency incentive programs, their levels of participation increased over time, and they also indicated an increasing sense of responsibility to conserve energy.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Way to Save Burlington!</h1>
+<p>The Way to Save, Burlington! pilot program was a community-based approach to marketing energy efficiency. Unlike many other community-based energy efficiency programs, no new measures were offered and existing rebate levels were not enhanced. The pilot increased active participation in existing conservation programs among all customer segments: residential, commercial, and industrial.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>We Energies</em> is Wisconsin’s largest energy utility based in Milwaukee, WI, USA. Small towns in <em>We Energies’</em> service territory had generally been harder to reach in terms of energy efficiency measures (both behaviorally and in terms of program participation).</p>
+<p>Burlington was representative of many towns in <em>We Energies</em>’ service area:</p>
+<ul>
+<li>Population: 10,000 - 15,000</li>
+<li>Typical energy use profiles</li>
+<li>Strong industry presence</li>
+<li>Not the target of similar efforts</li>
+<li>Outside major metropolitan areas</li>
+<li>Community pride and spirit</li>
+</ul>
+<p>We Energies and ICF International, the pilot’s implementation contractor, met with city leaders to assess Burlington’s interest in and appropriateness for a pilot program. The pilot was initiated in July 2010 and was originally designed to operate for one year; however, it was extended to three and a half years in order to more fully understand program impacts.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The goal for the pilot was to determine whether  the pilot’s innovative strategies could be cost-effective implemented across We Energies’ programs.</p>
+<p>In addition, the Energy Task Force set two objectives</p>
+<ol>
+<li>Generate 1% energy savings annually within Burlington, Wisconsin, and</li>
+<li>Collect 2,250 pledges to save energy from community members by December 2013.</li>
+</ol><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Three main barriers were identified:</p>
+<ol>
+<li>Limited customer awareness of energy efficiency</li>
+<li>Limited motivation to take energy efficiency actions</li>
+<li>Potential lack of trust of the government and/or the utility.</li>
+</ol><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Energy savings were achieved through creative marketing, resourceful outreach, and strategic relationships to drive participation in existing energy efficiency programs offered by the statewide utility-funded Focus on Energy. Initiatives and activities included stakeholder communication, school energy fairs and competitions, corporate fairs, media outreach, rewards programs, energy makeover contests, workshops, presentations and promotional events.</p>
+<p>The four core elements of the pilot were:</p>
+<ol>
+<li>The “<em>Energy Ambassador,</em>” who worked with all segments of the community to identify and eliminate potential barriers. His role was to integrate into community, act as a catalyst, and connect residents, businesses and institutions with existing energy efficiency programs as well as energy behavior information.</li>
+<li>The <em>Energy Task Force</em>, which served as an advisory board to the program and which was made up of volunteer community leaders including the Mayor, Assistant Superintendent of the school district, President of the community bank, business leaders, CFO of a local manufacturer, We Energies’ Local Affairs Account Manager, Director of the local community action agency, and the Editor in Chief of the local newspaper. This group met regularly, assisted in creating community-specific marketing plans, and sets the goals for the Community Challenge.</li>
+<li>The <em>Community Challenge</em>, which had two goals: energy savings and behavioral changes.</li>
+</ol>
+<p><img alt="" height="320" src="/userfiles/Image/More to Do.jpg" width="450"/></p>
+<ol>
+<li>The <em>Pledge</em>. To participate in the CEP Program, customers “pledged,” or agreed to undertake their choice of up to five specific energy-saving actions. Participants were only asked to pledge once it was clear that they were pre-disposed to doing the behaviors. Most pledging occured though school energy competitions. (<em>Obtaining a Commitment, School Programs</em>)</li>
+</ol>
+<p><img alt="" height="1033" src="/userfiles/Image/Pledge.png" width="450"/></p>
+<p>Building trust was accomplished by the Energy Ambassador having enough time to establish strategic relationships and leveraging those relationships in an effort to touch harder to reach segments,(<em>Credible, Personalized, Empowering Communications</em>)</p>
+<p>Tailoring messaging and outreach to each segment in the community was essential. For example, messaging used in reaching out to the business community was different that that used at school events or residential outreach.</p>
+<p>The program conducted workshops at the Burlington Public Library, Boardwalk Apartments, LOVE, Inc., and Chamber of Commerce. It ran promotional events at a Burlington High School basketball game, orchestra concert, school conferences, Burlington Chamber of Commerce, Home Expo and golf outing, holiday parade, Racine County Triad West Mardi Gras, farmers’ markets, grocery stores, hardware stores and Walmart. It also made presentations to local organizations, such as the Chamber of Commerce, Rotary, Lions, Women’s Business Club, and local Sierra Club Chapter.</p>
+<p><img alt="" height="337" src="/userfiles/Image/Booth.jpg" width="450"/></p>
+<p>Way to Go Burlington helped organize and assist local corporate energy teams and participated in local environmental, safety and health fairs. To reach smaller businesses, it conducted blitzes and outreach in collaboration with the local Economic Development Corporation.</p>
+<p>Web-based media promotion incuded a program website, twitter feed and Facebook page. Local retailers displayed in-store materials.</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>There were four main impact measures for the project:</p>
+<ol>
+<li>Energy use (utility data)</li>
+<li>Deemed energy savings from program participation (uptake of existing incentive offers)</li>
+<li>Self-reported behaviors (survey)</li>
+<li>Self-reported attitudes (survey)</li>
+</ol>
+<p>Watertown served as a comparison community (non-randomized control or Quasi-Experimental Design.)  </p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>1.  Energy use </strong></p>
+<p>The analysis did not find significant differences in energy use between the two communities as a whole.</p>
+<p><strong>2. Deemed energy savings from program participation</strong></p>
+<p>According to tracking data from local energy efficiency incentive programs, customers in Burlington experienced a net increase in deemed program savings, compared to customers in Watertown. This suggests that one outcome of the CEP Program was to increase the level of participation in these programs among those who signed a pledge card.</p>
+<ul>
+<li><em>Residential Programs.</em>  The CEP program period correlated with a net increase of 18% in deemed Therm savings, and 22% in deemed kWh savings, but a net decrease of 3% in deemed kW impacts.</li>
+<li><em>Commercial Programs.</em>  The CEP program period correlated with a net increase of 5% in deemed Therm savings, 122% in deemed kWh savings, and 86% in deemed kW impacts for commercial programs.</li>
+<li><em>All Programs.</em>  The CEP program period correlated with a net increase of 8% in deemed Therm savings, 109% in deemed kWh savings, and 78% in deemed kW impacts. </li>
+</ul>
+<p><strong>3. Self-reported behaviors</strong></p>
+<p>Overall, Burlington customers were no more likely to adopt energy efficient attitudes and behaviors than their counterparts in Watertown. However, customers who made the pledge to save energy tended to conduct no- and low-cost energy-saving actions and they reported increasing the number of actions they took over time. This increase was not seen in the general population.</p>
+<p><strong>4. Self-reported attitudes</strong></p>
+<p>The participant survey showed that over time fewer participants agreed with the statement “If I can pay for it, I have the right to use as much energy as I want.” While it may be the case that customers who were more aligned with energy efficiency were more likely to pledge, it is also the case that over time they indicated an increasing responsibility to conserve energy.</p><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p>Way to Save, Burlington! can serve as a model, which can be adapted, scaled and applied to a wide range of communities. In addition to energy efficiency, programs based on this model could be effective in providing education and outreach to utility customers regarding disaster preparedness, safety, outage reports, K-12 energy education, and electric vehicle programs. This model can also enhance customer service and connect customers to useful technologies and information. </p>
+<p><strong>Lessons Learned</strong></p>
+<p>Further details on each can be found in section ES.4 of the Final Evaluation Report (accessible at the bottom of the left hand column.)</p>
+<p><em>Measuring Program Activity</em></p>
+<ul>
+<li>Evaluations are more effective when programs are designed with the evaluation in mind and when goals are established early in the program design phase.</li>
+<li>Customers need a way to monitor their progress toward program goals. </li>
+</ul>
+<p><em>Marketing and Outreach</em> </p>
+<ul>
+<li>Different customer groups responded differently to each marketing channel. In the case of residential customers, survey results indicated that the public billboard was the most common method in reaching customers described as belonging to the youth or mature customer group, whereas newspaper advertisement was the most effective method in reaching customers described as the family customer group. In the case of commercial customers, the most effective methods were: town meetings for the services group; the Burlington Standard for the offices group; and the public billboard display for the miscellaneous group.</li>
+<li>A person in the community who takes an active <span id="1416933274468S" style="display: none;"> </span>role in the program (such as the CEP Program Energy Ambassador) is a useful means of increasing participation and awareness. Survey respondents rated the information provided by the Energy Ambassador as the most useful of all marketing and outreach efforts, and 20% of respondents who stated they had participated in a Focus on Energy program said they heard about the program directly from the Energy Ambassador.</li>
+<li>The Way to Save, Burlington! (program) website was the most common way that CEP participants learned of Focus on Energy programs.</li>
+</ul>
+<p><em>Attitudes and Behaviors </em></p>
+<ul>
+<li>The act of pledging was correlated with the adoption of energy efficient behavior among residential customers, especially for those who were able to recall their pledge.</li>
+<li>The majority of customers already perceived their behavior as energy-efficient.</li>
+<li>Commercial customers encountered unique barriers to adopting energy efficient practices. More so than residential customers, commercial customers encountered barriers resulting from costs, other priorities, and the lack of local personnel responsible for energy management.</li>
+<li>The top six motivators for taking energy efficient actions included three that were a direct result of the pilot program (as indicated by asterisks): 1.	Saving money, 2.	Using less energy, 3.	Encouraged by a family member as a result of the School Energy Competition*, 4.	Contributing to the community goal*, 5.	Being “green”, and 6.	Encouraged by Way to Save, Burlington! information*.</li>
+<li>The top five energy saving actions taken among respondents since taking the pledge included: 1.	Switching off lights when leaving rooms, 2.	Switching off electronics when not in use, 3.	Installing energy efficient lightings, 4.	Changing/programing thermostat settings appropriately, and 5.	Using a clothesline.</li>
+</ul>
+<p><strong>Logic Model</strong></p>
+<p><img alt="" height="239" src="/userfiles/Image/Logic MOdel.jpg" width="450"/></p>
+<p> </p>
+<p><b>Process Mapping</b></p>
+<p> </p>
+<p align="center" class="MsoPlainText" style="text-align:center"><em>Energy Users</em></p>
+<p align="center" class="MsoPlainText" style="text-align:center"><em><img alt="" height="304" src="/userfiles/Image/Energy Users.png" width="450"/></em><b><o:p></o:p></b></p>
+<p align="center" class="MsoPlainText" style="text-align:center"><em>Community Groups</em></p>
+<p align="center" class="MsoPlainText" style="text-align:center"><em><img alt="" height="309" src="/userfiles/Image/Community Groups.jpg" width="450"/></em></p>
+<p align="center" class="MsoPlainText" style="text-align:center"><em>Stakeholders</em></p>
+<p align="center" class="MsoPlainText" style="text-align:center"><em><img alt="" height="350" src="/userfiles/Image/Stakeholders.png" width="450"/></em></p>
+<p> </p>
+<p>This case study was written in 2014 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

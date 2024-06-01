@@ -1,0 +1,521 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Commuter Connections</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Canadian Climate Change Action Fund (CCAF)</li>
+<li>Universities and Colleges across Canada</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>4000 individuals enrolled in active carpools by the end of the second year of the program</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Multi-University Rideshare Project</h1>
+<p>The University Rideshare Project provides universities and colleges across Canada with the information, training, tools and encouragement needed to easily set up their own car pooling programs, free of charge.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>A rideshare program is an organized effort to bring commuters together to form carpools. In 2000, Commuter Connections obtained funding from the Canadian Climate Change Action Fund (CCAF) to implement rideshare programs at 14 Canadian universities. The amount of funding offered by CCAF determined the number of universities that could participate. Commuter Connections selected participants based on needs assessment surveys sent to 80 different institutions (see "<a href="#Informed">Getting Informed</a>").</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The objective was to increase the number of active carpools.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Commuter Connections sent a needs assessment survey to 80 universities across the country to determine which schools were most needy and best suited to take part in the project. The surveys identified the following:</p>
+<ul>
+<li>the schools demographics</li>
+<li>the availability of carpool parking and associated costs</li>
+<li>parking policies</li>
+<li>commuting patterns</li>
+<li>the level of interest and commitment the school showed with respect to implementing a rideshare program.</li>
+</ul><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The project was implemented at the participating universities in September 2000 and ran until April of 2001. Each university was asked to appoint one to three rideshare coordinators to manage the program at their school. These coordinators were most often members of the parking department, but in some cases a student or student group was chosen to manage the program - the choice was left up to the school. The rideshare coordinators served as the local contact people, working with Commuter Connections to market and promote the program. They were also responsible for distributing carpool parking passes and other incentives, where applicable.</p>
+<p>Commuter Connections invited the rideshare coordinators to a workshop in June, 2000 where they received training in the following:</p>
+<ul>
+<li>marketing and promotion</li>
+<li>parking management and traffic demand strategies</li>
+<li>the Internet database software Easy Rider, which was developed for the University Rideshare Project. Its website, <a href="http://www.carpool.ca">www.carpool.ca</a> provides 24-hour access to ridesharing information for commuters at each institution.</li>
+</ul>
+<p>Commuter Connections, with the support of CCAF, supplied each university with posters, bookmarks and marketing tips to help promote their programs . Such slogans as Why Drive Yourself Crazy, When You Can Carpool?, If you Cant Stand the Heat- Get Into a Carpool, and Carpool and Save! addressed the key reasons for ridesharing: the frustration of gridlock and not being able to find parking, climate change, and peoples desire to save money (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>; <a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives</a>; <a href="/en/tools-of-change/communication/">Vivid, Personalized Communications</a>).</p>
+<p>The universities promoted their rideshare programs using one or a combination of the following (<a href="/en/tools-of-change/mass-media/">Mass Media</a>):</p>
+<ul>
+<li>articles in campus newspapers</li>
+<li>ongoing dates in faculty/staff newsletters</li>
+<li>posters distributed across campus</li>
+<li>emails to parking permit holders with information about ridesharing</li>
+<li>bookmarks handed out or distributed in pay-stub envelopes or other mailings</li>
+<li>promotional give-aways (e.g. coffee mugs with the website and slogans on them which also strengthened <a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>)</li>
+</ul>
+<p>The posters and bookmarks advertised the website and used slogans and cartoons to draw attention to the program and its purpose.</p>
+<p>Easy Rider, a key component of the project, helped potential carpoolers connect with others to form regular carpools or to occasionally share rides. By logging on to the website <a href="http://www.carpool.ca">www.carpool.ca</a>, students and faculty could register to participate in the program. The website required registrants to enter basic information about their ridesharing needs, including:</p>
+<ul>
+<li>their phone number</li>
+<li>email address</li>
+<li>home address</li>
+<li>commuting destination</li>
+<li>travel distance</li>
+<li>arrival and departure times</li>
+<li>whether they smoked, or preferred to only travel with one gender</li>
+<li>whether they wished to drive or ride</li>
+<li>additional comments</li>
+</ul>
+<p>To protect people's privacy, only the person's first name and last initial, preferences and either email or phone number were released to other potential carpoolers. After people had registered on the website, they gained access to the names and contact information of others with matching, or similar, ridesharing needs.</p>
+<p>The carpool website also provided two on-line calculators, which allowed carpoolers to calculate their individual cost savings and CO2 savings.</p>
+<p>Some of the universities supported the program by reserving choice parking spaces for carpoolers. In other cases registered carpools received parking passes at reduced rates (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives</a>). Commuter Connections believed the effort and commitment of the institutions themselves would determine how well and for how long the programs were destined to perform.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The Climate Change Action Fund provided Commuter Connections with funding and support for the program. The entire budget follows:</p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td>Programming</td>
+<td>$70,000</td>
+</tr>
+<tr>
+<td>Supplies, Equipment</td>
+<td>$70,000</td>
+</tr>
+<tr>
+<td>Staff Salary (15 months, one person)</td>
+<td>$50,000</td>
+</tr>
+<tr>
+<td>Workshops</td>
+<td>$20,000</td>
+</tr>
+<tr>
+<td>Misc. (shipping, travel)</td>
+<td>$10,000</td>
+</tr>
+<tr>
+<td>Office space, admin., etc.</td>
+<td>$30,000</td>
+</tr>
+<tr>
+<td><strong>TOTAL BUDGET</strong></td>
+<td><strong>$250,000</strong></td>
+</tr>
+</tbody>
+</table><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>When participants registered on-line to join carpools, they were asked to record their usual mode of travel and distance traveled to school. Those who took cars to school were also asked for their vehicle type (e.g. economy, small, mid-sized etc.) This information was converted into distance reductions and associated greenhouse gas savings, based on data from the Pembina Institute.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Commuter Connections provided feedback to universities primarily via monthly newsletters. The newsletters offered encouragement, tips and news, and status reports for all the universities involved (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>). In addition, the Easy Rider software calculated the resulting reductions of CO2 emissions. These tools encouraged participants to stick with the program by showing them how their actions had made a difference.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Participation grew quickly in the projects second year. As of June 2001, there were 4,000 individuals enrolled in active carpools, up from about 1,000 at the beginning of April 2001. However, the initial start-up was somewhat slow.</p>
+<p>The following outlines the status of each university involved in the project as of December 31, 2000.</p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td><strong>University/College</strong></td>
+<td><strong>As of Sept 30, 2000</strong></td>
+<td><strong>As of Oct 30</strong></td>
+<td><strong>As of Nov 30</strong></td>
+<td><strong>As of Dec 31</strong></td>
+<td><strong>As of Mar 31, 2001</strong></td>
+</tr>
+<tr>
+<td>University of British Columbia, B.C.</td>
+<td>54</td>
+<td>74</td>
+<td>89</td>
+<td>100</td>
+<td>1096</td>
+</tr>
+<tr>
+<td>Simon Fraser U, B.C.</td>
+<td>11</td>
+<td>14</td>
+<td>20</td>
+<td>30</td>
+<td>72</td>
+</tr>
+<tr>
+<td>Univ. College of the Fraser Valley, B.C.</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>4</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Langara College, B.C.</td>
+<td>4</td>
+<td>6</td>
+<td>16</td>
+<td>19</td>
+<td>75</td>
+</tr>
+<tr>
+<td>Okanagan Univ., B.C.</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Royal Roads U., B.C.</td>
+<td>14</td>
+<td>16</td>
+<td>18</td>
+<td>17</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Camosun College, B.C.</td>
+<td>0</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+<td>10</td>
+</tr>
+<tr>
+<td>University of Victoria, BC</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>7</td>
+<td>11</td>
+</tr>
+<tr>
+<td>University of Calgary</td>
+<td>8</td>
+<td>15</td>
+<td>18</td>
+<td>22</td>
+<td>485</td>
+</tr>
+<tr>
+<td>University of Sask.</td>
+<td>3</td>
+<td>6</td>
+<td>7</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>University of Toronto</td>
+<td>28</td>
+<td>38</td>
+<td>49</td>
+<td>52</td>
+<td>64</td>
+</tr>
+<tr>
+<td>Brock University, ON</td>
+<td>-</td>
+<td>24</td>
+<td>54</td>
+<td>56</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Queens U., ON.</td>
+<td>0</td>
+<td>3</td>
+<td>4</td>
+<td>10</td>
+<td>16</td>
+</tr>
+<tr>
+<td>Conestoga College, ON.</td>
+<td>11</td>
+<td>11</td>
+<td>11</td>
+<td>11</td>
+<td>15</td>
+</tr>
+<tr>
+<td>University of New Brunswick</td>
+<td>17</td>
+<td>16</td>
+<td>17</td>
+<td>17</td>
+<td>18</td>
+</tr>
+<tr>
+<td>University of Kings College, N.S.</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Project Total</strong></td>
+<td><strong>157</strong></td>
+<td><strong>233</strong></td>
+<td><strong>323</strong></td>
+<td><strong>362</strong></td>
+<td><strong>1965</strong></td>
+</tr>
+</tbody>
+</table><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Anne Marie Thornton 	<br/>
+Director, Commuter Connections 	<br/>
+Phone: 1 800 668 7433 	<br/>
+Fax: 1 250 743 8000 	<br/>
+Email: <a href="mailto:information@carpool.ca">information@carpool.ca</a> <br/>
+Website: <a href="http://www.carpool.ca">www.carpool.ca</a> <br/>
+Postal Address: 	<br/>
+P.O. Box 192 	<br/>
+Shawnigan Lake, B.C. 	<br/>
+V0R 2W0</p>
+<p> </p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Notes:</strong></p>
+<p><strong><em>Lessons Learned</em></strong></p>
+<ul>
+<li>Rideshare programs are known to grow rather slowly at first. Success only comes through motivated organizers and co-operative institutions.</li>
+<li>The most successful programs were those in which parking department employees acted as rideshare coordinators. The employee coordinators were more likely than student coordinators to demonstrate sustained commitment to the project, and were easy for participants to get in touch with to obtain passes and information. Student coordinators, who had diverse interests and who were not consistently available, were generally unable to offer long-term commitment.</li>
+<li>Two of the fourteen universities involved pulled out of the program after Commuter Connections had already provided training and assistance. Because funding was limited, it may have been prudent to guarantee some kind of commitment to the project from the beginning.</li>
+</ul>
+<p><strong><em>Calculators</em></strong></p>
+<p>The calculators appeared on the <a href="http://www.carpool.ca">www.carpool.ca</a> website as follows:</p>
+<p><strong>Cost Savings Calculator</strong></p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td>Loan/financing cost (monthly)</td>
+<td>$ input</td>
+</tr>
+<tr>
+<td>Insurance (monthly)</td>
+<td>$ input</td>
+</tr>
+<tr>
+<td>Oil change (yearly)</td>
+<td>$ input</td>
+</tr>
+<tr>
+<td>Maintenance costs (yearly)</td>
+<td>$ input</td>
+</tr>
+<tr>
+<td>Fuel cost</td>
+<td>$ input</td>
+</tr>
+<tr>
+<td>Parking</td>
+<td>$ input</td>
+</tr>
+<tr>
+<td>TOTAL COST (annually)</td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>Savings if carpooling with 1 other</td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>Savings if carpooling with 2 others</td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>Savings if carpooling with 3 others</td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td> </td>
+<td>Calculate</td>
+</tr>
+</tbody>
+</table>
+<p><strong>CO2 Savings Calculator</strong></p>
+<p>Type of car driven</p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Daily travel distance</td>
+<td>0 km</td>
+</tr>
+<tr>
+<td>Total Daily CO2 Savings</td>
+<td>0 kg</td>
+</tr>
+<tr>
+<td> </td>
+<td>Calculate</td>
+</tr>
+</tbody>
+</table>
+<p>Last update: July 2004</p>
+<p>This case study was written in 2002 by Wanda Baxter.</p>
+<p>Funding for the addition of this case study was generously provided by the Government of Canada's Climate Change Action Fund, Suncor, Syncrude, Enbridge Consumers Gas and TetraPak Canada.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

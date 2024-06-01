@@ -1,0 +1,686 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/peer-support-groups/">Peer Support Groups</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Johns Hopkins Bloomberg School of Public Health Center for Communications Program (CCP)</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Malawi Ministry of Health</li>
+<li>Malawi National AIDS Commission</li>
+<li>Malawi Network of Service Organizations (MANSO), Public Affairs Committee</li>
+<li>Save the Children U.S.</li>
+<li>Population Services International (PSI)</li>
+<li>U.S. Agency of International Development (financing)</li>
+<li>Dozens of local and international community groups</li>
+<li>Local radio stations</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>At baseline, less than 15% of respondents reported testing for HIV. The number steadily increased throughout the campaign, rising to more than 50% by the end of the project.</li>
+<li>Close to 15% of those not exposed to the campaign believed that people living with HIV/AIDS should be avoided, whereas this figure was less than 5% among those with high levels of campaign exposure.</li>
+<li>Overall knowledge about HIV/AIDS rose from approximately 67% at baseline (2004) to approximately 78% by end-of-project (2008).</li>
+</ul>
+<p><a href="/userfiles/Malawi Bridge Case StudyV2b.pdf" target="_blank">PDF of this case study</a></p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Malawi’s BRIDGE Project </h1>
+<p>BRIDGE was a 6-year behavior change HIV prevention project implemented in Malawi from 2003 to 2009 by the Johns Hopkins Bloomberg School of Public Health Center for Communication Programs (CCP), in partnership with a number of Malawi-based organizations, and with funding from USAID.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>At the time of the project, Malawi was one of the ten countries worldwide most affected by AIDS. The country had an HIV prevalence rate of 15% among 15-49 year olds, and AIDS was the leading cause of death among adults, with life expectancy reduced from 54 to 39 years. Over 70% of medical ward beds were occupied by patients with HIV/AIDS-related conditions. Yet only 14% of men and 5% of women reported condom use during their last sexual encounter.</p>
+<p>To address the need for a coordinated, comprehensive, scientifically sound approach, BRIDGE coordinators developed the consensus-based National Behavior Change Intervention Strategy. Once implemented as part of a comprehensive program of prevention, services and care, this strategy was designed to contribute to a decline in new HIV infections. BRIDGE coordinators recognized the need to operationalize this strategy to link it with concrete actions.</p>
+<p>With funding from the United States Agency of International Development (USAID), the Malawi BRIDGE project was initiated to address the growing problem of accelerating HIV infection rates in the country. BRIDGE was implemented with local partners in eight focus districts (Balaka, Chikwawa, Kasungu, Mangochi, Mulanje, Mzimba, Ntcheu, and Salima), while mass media campaigns had national reach.</p>
+<p> </p>
+<p><img alt="Eight regions" height="272" src="/userfiles/Image/Eight regions.jpg" width="165"/></p>
+<p><img alt="Malawi is a country in South East Africa" height="316" src="/userfiles/Image/Africa with star.JPG" width="261"/></p>
+<p>The project is based on the risk perception attitude (RPA) framework (Rimal &amp; Real, 2003), which indicates  that when high risk perceptions are coupled with strong efficacy beliefs, people are motivated and able to engage in self-protective behaviors.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>BRIDGE had five objectives:</p>
+<ol>
+<li>Increase the median age at first sex</li>
+<li>Decrease the number of unmarried youth aged 15-24 having sex in last 12 months</li>
+<li>Decrease the number of men reporting more than one sexual partner during the last 12 months</li>
+<li> Increase condom use by unmarried youth, and</li>
+<li>Increase condom use by adults with non-regular partners.</li>
+<li>The time period for meeting the objectives was the duration of the project. No specific targets were set for the changes in behavior (Tools of Change recommends setting specific targets i.e. “SMART” objectives.)</li>
+</ol>
+<p>A logic model was created that illustrated the activities and interventions, initial outcomes, intermediate behavioural outcomes and, finally, sustainable outcomes. The model helped coordinators divide the program into three levels:</p>
+<ol>
+<li>National: create an enabling environment</li>
+<li>Community: create structures that would foster leadership and social norms, and</li>
+<li>Individual: foster feelings of self-efficacy, provide life skills, etc.</li>
+</ol>
+<p><img alt="LOgic MOdel" height="347" src="/userfiles/Image/Logic Model.jpg" width="450"/></p>
+<p>Initial outcome objectives at the individual level also included influencing perceived risk and stigma, and establishing a demand for the program’s services.  Intermediate outcome objectives at the individual level included targeted behaviours such as sexual abstinence, partner reduction and condom use.  The ultimate  outcome objective was to reduce the rate of new HIV infections.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>A literature review suggested that several psycho-social factors were associated with people’s unwillingness to get tested for HIV. Besides gender and education, these included lack of awareness, stigma, low perceived risk and low self-efficacy.</p>
+<p>Ten focus groups were held in two of the eight districts to investigate perceptions, beliefs, norms and practices, identify the key motivators and barriers, and determine the most credible sources and channels of information. There were 8-10 participants per group, except for the two groups with elders which had only 4-5 per group. The focus group discussions were non-directive and participatory, using self- projection images and games to generate open discussions.</p>
+<p>The focus groups were followed up by one-on-one interviews conducted through simple random selection. The questionnaire was pre-tested, adjusted to improve clarity and flow, and then translated from English into Chichewa and Tumbuka. These two versions were then back-translated into English to establish semantic equivalence.</p>
+<p><img alt="Malawi" height="300" src="/userfiles/Image/8798-2.jpg" width="450"/></p>
+<p><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:TrackMoves />
+<w:TrackFormatting />
+<w:DoNotShowComments />
+<w:DoNotShowPropertyChanges />
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF />
+<w:LidThemeOther>EN-CA</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+<w:SplitPgBreakAndParaMark />
+<w:DontVertAlignCellWithSp />
+<w:DontBreakConstrainedForcedTables />
+<w:DontVertAlignInTxbx />
+<w:Word11KerningPairs />
+<w:CachedColBalance />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math" />
+<m:brkBin m:val="before" />
+<m:brkBinSub m:val="&#45;-" />
+<m:smallFrac m:val="off" />
+<m:dispDef />
+<m:lMargin m:val="0" />
+<m:rMargin m:val="0" />
+<m:defJc m:val="centerGroup" />
+<m:wrapIndent m:val="1440" />
+<m:intLim m:val="subSup" />
+<m:naryLim m:val="undOvr" />
+</m:mathPr></w:WordDocument>
+</xml><![endif]--></p>
+<p><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="0" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" Priority="34" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-qformat:yes;
+mso-style-parent:"";
+mso-padding-alt:0pt 5.4pt 0pt 5.4pt;
+mso-para-margin:0pt;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Calibri","sans-serif";
+mso-fareast-font-family:Calibri;}
+</style>
+<![endif]--><span style='font-size:7.5pt;font-family:"Times New Roman","serif";
+mso-ascii-font-family:ArialMT;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:ArialMT;color:#333333;mso-ansi-language:EN-CA;mso-fareast-language:
+EN-CA;mso-bidi-language:AR-SA'>©</span><span style='font-size:7.5pt;font-family:
+ArialMT;mso-ascii-font-family:ArialMT;mso-fareast-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:#333333;mso-ansi-language:EN-CA;
+mso-fareast-language:EN-CA;mso-bidi-language:AR-SA'> 2012 Victoria A Smith, Courtesy of Photoshare</span></p>
+<p>Additional information came from the 2004 Malawi Demographic and Health Survey (MDHS), which found that awareness of how to prevent HIV was high. The survey found that 85% of women and 92% of men knew at least two of the major ways to avoid HIV infection, with the most commonly cited responses being reducing the number of partners and using condoms.</p>
+<p>However, adoption of self-protective behaviours had not kept pace. For example, in the same MDHS, 10% of married men responded that they had engaged in extramarital sex in the last 12 months, and approximately 25% of non-married men had had multiple partners during the same time period. Only 14% of men and 5% of women reported condom use during their last sexual encounter.</p>
+<p><em>Barriers</em></p>
+<p>Focus group participants felt helpless in the face of poverty and HIV while recognizing the impact that HIV had on their community in terms of lost adults who could work and care for children and the elderly.</p>
+<p>Participants expressed pessimism about the effectiveness of condom use and were fearful about HIV testing. Fears about HIV testing included feelings that a positive result would invoke, such as depression, suicidal tendencies, anxiety and reactions from others, including insults, teasing, and isolation. Perceptions of stigma were also high.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Campaign Phasing and Targeting the Audience</strong></p>
+<p>The general population was first broken into four groups based on two factors: perceived risk and self-efficacy. The avoidance group, illustrated in the graphic below by the apples, was large. This indicated a very real danger that the program would be unsuccessful if it could not first increase self-efficacy. Otherwise, as predicted by the Risk Perception Attitude (RPA) framework that is derived from Bandura’s social–cognitive theory, many people might have simply ignored the program messages rather than taking action, and might have become further stigmatized and marginalized.</p>
+<p><img alt="Initial Segmentation" height="268" src="/userfiles/Image/Segmentation1.JPG" width="450"/></p>
+<p>The goal of the first phase of the campaign was therefore to reinforce feelings of confidence and self-efficacy among Malawians in their ability to prevent HIV &amp; AIDS. The campaign slogan, Nditha! means “I can do it!” in Chichewa. The campaign highlighted the many “small do-able” actions that people could take right away to build their sense of efficacy and foster an environment of openness and support that would lead to greater adherence to the “ABCs.” These small do-able actions included discussing HIV with family members; supporting friends to avoid risky situations; and having community leaders speak out openly about HIV and the ABC approach.</p>
+<p><img alt="Nditha posters - AIDS program" height="385" src="/userfiles/Image/Nditha.jpg" width="450"/></p>
+<p>The formative research conducted by BRIDGE showed that men perceived their HIV risk to be lower, were more likely to have multiple partners, typically had more control in relationships, and were highly susceptible to social norms that placed them at a higher risk of exposure to HIV. As a result, the second phase of the Nditha! campaign focused specifically on men, building their capacity to protect themselves, their partners and families. (Overcoming specific barriers) </p>
+<p>Once the levels of self-efficacy had been sufficiently increased, the campaign could then focus more strongly on risk reduction. The formative research had identified several key audiences at particularly high risk who could have a strong impact on the future of the epidemic if their behaviors changed. The project’s third phase targeted these specific audiences with messages to help them assess their specific risk factors and develop plans to minimize them.</p>
+<p>These audiences and messages included:</p>
+<ol>
+<li>Pregnant women, and the risk of transmitting HIV to their unborn children</li>
+<li>Older men, and the risks associated with HIV transmission through alcohol abuse and intergenerational sex</li>
+<li>Younger women, and the risks from engaging in transactional or intergenerational sex, and</li>
+<li><span lang="EN-US" style='font-size:11.0pt;
+    font-family:"Times New Roman","serif";mso-ansi-language:EN-US'>Community leaders, and messages to help them influence members of these high risk groups</span><span lang="EN-US" style='font-size:11.0pt;font-family:"Times New Roman","serif"'> </span></li>
+</ol>
+<p> </p>
+<p><img alt="Segmentation 2: HIV / AIDS project" height="268" src="/userfiles/Image/Segmentation2.JPG" width="450"/></p>
+<p>The scratch card shown below was one of the tools used to help people assess their risk. Each line contained a question about a risky behavior. You could scratch off the circle covering the answer, yes or no, revealing a thumb up or a thumb down. Any thumb down indicated a risky behavior, and the back of the card contained suggestions of actions you could take to minimize the risk. 90,000 of these cards were printed to be distributed at community events and through local NGO partners of the BRIDGE Project.</p>
+<p><img alt="AIDS scratch card" height="190" src="/userfiles/Image/Scratch card.jpg" width="138"/></p>
+<p> <b>Campaigns</b></p>
+<p><em>Tisankhenji ("The choice is mine") Radio Program</em></p>
+<p>The Tisankhenji radio program targeted pre-adolescent girls (10-14) and aimed to instill self-confidence and self-efficacy and to promote resilience in making decisions about their health and future. The program promoted small, do-able actions that young girls could take to prevent HIV.</p>
+<p>Each 30-minute program included two 15-minute drama and discussion segments. Each story centred on how a young girl overcame life's challenges and achieved her future goals. (Mass media; Overcoming specific barriers; Vivid personalized communication; Norm appeals)</p>
+<p>Regular listeners formed "Listeners Clubs" where young girls talked about the issues and shared their stories; these clubs also helped to make the clubs popular with boys. Parents also began listening to the weekly episodes and used them as a starting point to talk to their children about their health and their future. (Peer support groups, Word of mouth)</p>
+<p><em>Hope Kit</em></p>
+<p>The Hope Kit assisted community organizations in conducting local outreach and mobilization by providing a package of ready-to-use discussions, activities and demonstrations that modeled prevention behaviours, challenged myths and assumptions about HIV transmission, and provided an opportunity for frank discussion to address stigma and discrimination.</p>
+<p>The kit promoted open discussion about sexual behaviour and issues related to HIV/AIDS, using an interactive and fun approach that actively engaged people. Activities included The Bridges, which helped people understand how prevention options could be applied to their own lives; the Future Island, which enabled people to set goals and ensure HIV would not prevent them from reaching those goals; and the Positive Living Cards, which allowed people to confront stigma. All of these activities gave participants the skills to enable them to make informed, positive health choices.</p>
+<p>Supplementary kit updates were also produced. In Phase II, for example, the Bambo Wachitsanzo ("Great Guy") Hope Kit Update encouraged Malawian men to take responsibility for and invest in their families by practicing mutual faithfulness to prevent HIV. The program presented positive yet realistic role models and actions for men to emulate, while encouraging men to spend more time with their wives and children, learn about HIV, and get tested. (Overcoming specific barriers)</p>
+<p>BRIDGE also developed the Have a Healthy Baby PMTCT Hope Kit Update Supplement, which highlighted actions that women and couples could take to prevent passing HIV on to their unborn child.</p>
+<p><em>Radio Diaries</em></p>
+<p> <img alt="Radio Diaries - AIDS / HIV program" height="143" src="/userfiles/Image/Radio diaries.jpg" width="450"/></p>
+<p>The Radio Diaries helped people overcome some of the stigma that prevented them from getting an HIV test, or discussing HIV prevention with their partners. (Mass media; Overcoming Specific Barriers)</p>
+<p>The Radio Diaries featured a variety of voices of men and women, from different socioeconomic, religious and age groups. The diarists were people who knew their status and were willing and able to talk about their situations honestly, openly and with genuine emotion. (Norm appeals; Vivid, credible communication)</p>
+<p>Each week, diarists focused on one issue or key event in their lives. Over time, different topics of everyday life were covered: relationships with partners, family, friends and the community at large; medical issues and perceptions of response from health care providers (prejudice, support, etc); work and leisure activities; diminished capacity; emotional stress; and coming to terms with the realities of a terminal condition.</p>
+<p>The Radio Dairies were broadcast on eight stations throughout the country, either on its own or as part of an existing HIV/AIDS-related program. The diversity of radio stations, (government, commercial and religious) enabled the program to reach a broad cross section of the population.</p>
+<p><em>Nditha! Sports</em></p>
+<p>Nditha! Sports was first piloted in the Mzimba district. Based on the overwhelmingly positive results, BRIDGE scaled up the activity to the remaining seven districts.</p>
+<p>Nditha! Sports integrated HIV prevention themes into constructive recreational activities, including sports and traditional games for youth. The program encouraged positive mentoring of young adults by the community, built youth leadership skills by encouraging decision making, and empowered and validated youth involvement in community activities. It also encouraged young adults to set goals and place value on their lives, building their sense of self-esteem and self-efficacy. (Peer support groups; Neighbourhood coaches and block leaders)</p>
+<p>Nditha! Sports was implemented at school and community settings through active collaboration with local government departments, NGOs, faith-based organizations, school authorities and youth clubs. Beyond the training aspect, BRIDGE also provided sports materials and activity guides for the Nditha! Sports program. (School Programs that Influence the Home; Vivid, credible communication)</p>
+<p><em>Girls' Leadership Congress</em></p>
+<p>BRIDGE developed the idea of youth and girls congresses with the goal of building youth skills in HIV prevention and implementing behaviour change activities, in addition to sharing best practices to strengthen self-efficacy and leadership skills among Malawian youth.</p>
+<p>Held at the national level, the first Youth Congress in 2004 brought together those aged 15-25 throughout Malawi. Following the success of the National Youth Congress, BRIDGE and its partners implemented a series of regional congresses in all three regions of Malawi, followed by congresses in all eight districts. The congresses were designed to specifically address the unique social, cultural, and biological challenges faced by Malawian young women and girls that render them particularly vulnerable to HIV. (Norm appeals)</p>
+<p><em>Agogo Training</em></p>
+<p>Agogos ("grandmothers") are traditional counselors and youth mentors. However, BRIDGE found that many of their teachings were putting young girls at increased risk of HIV infection. Agogos were trained to continue carrying out their important role by passing on advice that would help young people avoid HIV.</p>
+<p>Workshops equipped older women with HIV/AIDS knowledge and behavior change skills to enable them to effectively discuss the issues with their children, grandchildren and young family members, as well as others in the larger community. (Overcoming specific barriers; Neighborhood coaches/block leaders; Word of Mouth)</p>
+<p><em>Partnerships</em></p>
+<p>Collaborating partners included the Malawi Ministry of Health, the Johns Hopkins Bloomberg School of Public Health Center for Communications Program, Save the Children U.S., and the U.S. Agency of International Development (financing).</p>
+<p>Local and international partners included:</p>
+<ul>
+<li>Malawi Network of AIDS Service Organizations,	Public Affairs Committee</li>
+<li>Population Services International</li>
+<li>National Youth Council of Malawi</li>
+<li>Top Advertising Inc.</li>
+<li>Galaxy Media</li>
+<li>Business Eye and Creative Communications</li>
+<li>Nanzikambe Art Theatre</li>
+<li>Malawi Girl Guides Association</li>
+<li>National Association of People Living with HIV and AIDS in Malawi</li>
+<li>Malawi Network of People Living with HIV and AIDS</li>
+<li>Zodiac Radio</li>
+<li>Power 101</li>
+<li>Radio Maria</li>
+<li>Transworld Radio</li>
+<li>Capital FM</li>
+<li>Joy Radio</li>
+<li>Malawi Broadcasting Corporation and</li>
+<li>Radio Islam</li>
+</ul>
+<p> </p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Financing was provided by the United States Agency of International Development.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The major method used to gauge the effectiveness of the BRIDGE program involved a series of household surveys, using carefully matched non-intervention groups for comparison.</p>
+<p>All eight districts were surveyed at baseline and at the end of the project.  However, during the two midterm surveys, only four of the districts were surveyed.</p>
+<p>The survey design comprised a series of cross-sectional data waves, with participants selected at random during each wave. Across all the data waves, sampling procedures and survey methods were kept as similar as possible in order to make them comparable with each other.</p>
+<p>One significant difference in the design at baseline, as compared to subsequent waves, was that, at subsequent waves, sampling was stratified according to high-exposure areas (where the BRIDGE project operated) and low-exposure areas (where the BRIDGE did not specifically operate). Based on respondents’ exposure to BRIDGE activities and channels (communication methods), they were categorized into one of four groups:</p>
+<ol>
+<li>No exposure</li>
+<li>Low exposure (up to 3 channels)</li>
+<li>Medium exposure (up to 5 channels)</li>
+<li>High exposure (more than 5 channels)</li>
+</ol>
+<p>This enabled the program to see if people with greater exposure were affected more.</p>
+<p>Three additional measures tracked exposure to other national and district-level campaigns. This enabled the program to estimate the portion of observed changed that were due to these other campaigns, and how much could be attributed to BRIDGE activities.</p>
+<ol>
+<li>Name recognition of organizations associated with the national campaign</li>
+<li>Name recognition of district-level organizations associated with the campaign(s), and</li>
+<li>Recognition of campaign images (i.e., posters, booklets, billboards, etc.).</li>
+</ol>
+<p>The household survey measured, among other things, changes in stigma and self-efficacy. Stigma was broken down into various components and each was measured by asking survey participants how strongly they agreed or disagreed with a number of statements.</p>
+<p>For example, survey participants were asked how strongly they agreed or disagreed when asked if people living with HIV or AIDS should be avoided, or if teachers who have AIDS should be barred from teaching. Other questions measured fear of casual contact, blame and shame, as well as how comfortable people felt speaking with their partner(s), family, friends or neighbours about condom use and HIV/AIDS.</p>
+<p>Self-efficacy to carry out prevention behaviors was measured by asking survey participants to say how strongly they agreed or disagreed with related statements. Here are some examples:</p>
+<ul>
+<li>I am confident that I can remain faithful to my partner (that is, not have sex with anyone else)</li>
+<li>If I am not in a long-term relationship with someone, I am confident that I can remain abstinent.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Exposure to the BRIDGE programs was generally high. The project generated trust in the communities and contributed to the “hope and openness” necessary to create and sustain an enabling environment. Risk perception was clearly enhanced from baseline to end-of-project and monumental gains were made in the areas of self-efficacy with regard to abstinence, faithfulness and condom use.</p>
+<p>Overall knowledge about HIV/AIDS increased from about 67% at baseline to more than 77% by the end of the campaign.  Those who had been exposed to BRIDGE activities had the highest increases with respect to knowledge of the issues, whereas those who were not exposed had the lowest level of knowledge.</p>
+<p>There was a steady increase from baseline to end-of-project in people’s ability to reduce their number of sexual partners. Furthermore, across all measures involving issues of self-esteem and self-efficacy, there was evidence of a “ceiling-effect,” i.e., at a certain point, levels of efficacy were so high there was little room left for improvement.</p>
+<p>Data showed significant improvements in HIV testing rates. At baseline, less than 15% of respondents reported testing for HIV. By the first midterm survey, that number had increased to close to 25%, to more than 35% at the second midterm, and to more than 50% at end-of-project. HIV testing in Malawi was fast becoming the norm in all BRIDGE districts. From 2003 to 2008, there was an approximately four-fold increase in the proportion of people who reported testing for HIV.</p>
+<p>With respect to the use of condoms, ability to talk to partners about condom use and to remain faithful to one partner, there was a significant association with exposure. Again, those who were exposed to more activities and channels had higher levels of efficacy.</p>
+<p>There was a striking decrease in stigma with exposure to BRIDGE. Whereas close to 15% of those not exposed to the campaign believed that people living with HIV/AIDS should be avoided, this figure was less than 5% among those with high levels of exposure.</p>
+<p>BRIDGE’s research also found that other programs at the national level were having a significant impact on some measures, such as knowledge and testing rates. It accounted for this in its analysis and still found that exposure to the BRIDGE campaign was a significant and strong predictor of knowledge and testing rates.</p>
+<p><b>Selected Campaign Results</b></p>
+<p>Evaluation of the <em><b>Tisankhenji</b></em> radio program revealed that students in the treatment schools, compared to the comparison schools, were significantly more likely to have greater career aspirations, higher self-esteem, and to engage in meaningful discussions with their teachers and parents about topics relating to their future careers. They also had more discussions about their career plans with their friends, teachers and parents.</p>
+<p>Positive outcomes were observed for both boys and girls in the treatment schools, even though the program specifically targeted girls. Qualitative studies done with girl participants revealed that they were aware of the barriers they would  encounter in their pursuit of career goals, but they also had higher levels of self-efficacy to overcome them, indicating that their beliefs were based on a careful appraisal of existing hurdles.</p>
+<p>Results indicated that participation in <em><strong>Hope Kit </strong></em>activities was associated with higher community efficacy, more favourable gender norms and a greater likelihood to use condoms. However, the analysis also found that non-participants who interacted with Hope Kit participants did not gain much knowledge despite their social ties.</p>
+<p>The more <em><strong>Radio Dairies </strong></em>programs that audiences listened to, the more stigma was reduced (the more they felt that people living with HIV/AIDS were “just like them.”)</p>
+<p>Participants in <em><strong>Nditha! Sports</strong></em> reported having undergone positive changes in their attitudes, beliefs and behaviours with regard to sexuality. They also demonstrated keen interest in continuing their education. After the program, participating youth were found to be more knowledgeable about issues pertaining to HIV/AIDS, especially with regard to preventing HIV infection, than when the project was first introduced.</p>
+<p>Participants in the <em><strong>Girls' Leadership Congress </strong></em>reported having acquired critical thinking skills as a result of the program. This, in turn, helped them solve problems on their own, thereby increasing their ability to deal with the challenges of facing negative gender norms. Girls also reported that their social network had been greatly expanded after participation in the program.</p>
+<p> </p><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Partnerships were key to success</strong></p>
+<p>BRIDGE worked with many public, private and civil society organizations and agencies. These partnerships were, in large part, responsible for the project’s success. The BRIDGE approach to partnership—built on a foundation of collaboration and capacity building—enabled the project to share technical expertise and best practices, while including partners in the development of tools and campaigns. This contributed to developing a concerted and effective national response to HIV/AIDS in Malawi.</p>
+<p><strong>Collaboration ensured local ownership</strong></p>
+<p>All messages, materials and tools included input from local HIV, communication, development and government partners, as well as from residents in the eight districts. This ensured that communication products were community-based, had local ownership and would be sustainable beyond the end of the project. All collaborating and interested parties were also given copies of the tools and the opportunity to participate in training on how to use them.</p>
+<p><strong>Capacity building</strong></p>
+<p>BRIDGE project staff strengthened the national response to HIV/AIDS by providing support to a number of technical working groups and building the capacity of national organizations to strengthen their behavior change strategies and interventions. BRIDGE actively participated in the National AIDS Commission's Behavior Change Intervention Technical Working Group and Youth Technical Working Group and contributed to the development of the National HIV Prevention Strategy and the National Action Framework. BRIDGE’s Leadership in Strategic Health Communication workshop trained key Malawi HIV and behavior change professionals in state-of-the-art communication and prevention approaches. Project staff also provided technical assistance to a number of other partners including I-Life, Peace Corps, and the Umoyo Network.</p>
+<p><strong>Low literacy rates need to be addressed</strong></p>
+<p>Exposure to BRIDGE programs was positively associated with education, suggesting that better-educated individuals, relative to their less-educated counterparts, derived greater benefits from the program. This suggested that future programming should take special steps to reach those not currently being served because of their low literacy levels.</p>
+<p><strong>Note</strong></p>
+<p>This case study was written in 2014 by Jay Kassirer, Sharon Boddy and Heather Bowen Ray, with funding from the Public Health Agency of Canada.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

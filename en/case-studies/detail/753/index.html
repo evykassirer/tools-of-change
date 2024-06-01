@@ -1,0 +1,727 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/vivid/">Vivid</a></li>
+<li><a href="/en/tools-of-change/personalized-communication/">Personalized Communication</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Results</h5>
+<ul>
+<li>Reduced car traffic in its core (Ile de France) from a mode share of 12.8% in 2010 to 6% in 2020</li>
+<li>Increased walking and cycling from 55.4% to 68%</li>
+</ul>
+<p>Case study <a href="/userfiles/Paris Reduces Car Use.pdf" target="_blank">PDF</a> </p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Paris Reduces Car Use, Boosts Walking and Cycling</h1>
+<p><iframe height="auto" src=" https://www.youtube.com/embed/sI-1YNAmWlk" width="97%">
+</iframe></p>
+<p>Paris is an inspiration for large cities around the world, having reduced car traffic in its core (Ile de France) from a mode share of 12.8% in 2010 to 6% in 2020.  How did Paris get to be one of the cities in the world with the lowest mode share for single occupant vehicles? The city is comparatively dense and has one of the top subways in the world. But what is most striking about its transformation is the increase in cycling and walking during this period – they increased from 55.4% in 2010 to 68% in 2020. Numerous programs offered by three levels of government explicitly prioritized bicycles over cars and reduced on-street car parking to make room for bike lanes. They taxed and restricted more polluting vehicles, and gradually phased them out, while providing a conversion bonus for the purchase or lease of electric-assisted bicycles and cargo bikes. In addition, car ads had to include messages promoting greener methods of transportation, and incentives were provided for bike repairs and tune-ups. Designated a <em>Landmark</em> case study by our sustainable transportation peer review and selection panel in 2022.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em><u>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</u></em><u> <o:p></o:p></u></p>
+<p>The central area of Paris is built on an island, the Ile de France, which limits the amount of land available and therefore promotes a denser community. The region in and around the city had a population of about 10 to 11 million at the time of this case study, a number that had tripled over the last century. The island itself housed about 2 million residents, squeezed into just 41 square miles.</p>
+<p>Paris’s public transit system had become one of the best in the world. One of the main driving forces behind this success was stable, dedicated financing though a local transport tax (“Versement du Transport.”) This 2% tax (1.2 % in the suburbs) was levied on local enterprises with more than nine employees.</p>
+<p>Changing the transportation habits of so many people has involved the introduction of numerous programs offered by three levels of government. In consultation with its citizens, the City of Paris increasingly prioritized more sustainable transportation options over cars. This shift in focus was supported by complementary policy changes at the metropolitan and national levels.</p>
+<p>in 2007, Paris launched Vélib’, one of the world’s largest public bikesharing programs, based on similar launches in La Rochelle and Lyon.  In 2008, France started taxing the purchase of high-emitting second hand vehicles, based on their CO2 emissions, engine power, and date of a vehicle’s initial registration.</p>
+<p>In 2014, Anne Hidalgo was elected mayor of Paris, promising to address the city’s notorious air pollution problems. One of the big polluters was the diesel engine. Diesel fuel was being taxed at a lower rate than regular gasoline and by 2015, 74% of the city’s cars were diesel.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Paris is an exceptionally consultative city. 10% of city spending is determined by participatory budgeting processes at the neighbourhood level, enabling residents to participate in the design and selection of projects to be implemented in their own local areas. This is one of the highest shares in the world.</p>
+<p>Three levels of government combined their consultation efforts. For example, in 2017  the Grand Paris Metropolitan Forum (Forum métropolitain du Grand Paris), in cooperation with the Ile-de-France Mayors Association (Association des Maires d’Ile-de-France), the Greater Paris Metropolitan Authority (Métropole du Grand Paris) and the Paris City Council (Ville de Paris), conduced a joint citizen consultation. In addition, the city periodically surveyed its residents to understand their needs and priorities. In general, residents wanted more vegetation, bike parking and lanes, benches, and space for pedestrians. Parking spaces for cars were a lower priority.</p>
+<p>Public consultations found the following.</p>
+<ul>
+<li>Much of the motor vehicle traffic on the island came from vehicles passing through without stopping</li>
+<li>"Service vehicles" (commercial vehicles, taxis, heavy goods vehicles) accounted for only 33% of the traffic</li>
+<li>Only 30% of freight forwarders needed to use a motor vehicle to make their journey. For the remaining 70%, the car was first and foremost a convenience.</li>
+</ul>
+<p>Some business owners were concerned about a drop in business with less car parking spaces, but data showed that most purchases were made by pedestrians and limiting street access to cars did not negatively impact sales.</p>
+<p>In 2021, bicycle theft was the number one reason first-time cyclists gave up their new habit.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Paris’s Plan Velo (2015)</strong></p>
+<p>In 2015 Hidalgo released Plan Velo, a $167 million proposal that promised to build 1,400 kilometers (~870 miles) of cycleways by 2020, essentially doubling the size of the city’s cycling network. Part of this plan involved replacing the riverside road on the left bank of the Seine River by linear parks and a pedestrian and cycle path. This created a cycle ‘expressway’ along the city’s east-west axis. Paris created a second bicycle expressway running north-south that provided access to parks near Vincennes, and Bois de Boulogne and Vincennes.</p>
+<p>To counter bicycle theft, the Plan Velo established 10,000 secure bicycle parking spaces. To counter safety concerns, it reduced the speed limit to 30 km/hour in designated zones and set up its cycling lanes so that cyclists usually travelled against-the-flow-of-traffic. (<em>Overcoming Specific Barriers</em>)</p>
+<p><strong>France’s LTEVC, Conversion Bonus, and </strong><strong>Restricted Traffic Zones (ZCR) (2015, 2016)</strong></p>
+<p>The same year, France passed the Energy Transition Law for Green Growth (Loi de transition énergétique pour la croissance verte, or LTECV), which set out a low-carbon national strategy. The LTECV included legally binding targets and detailed policy plans and proposals for how to achieve these targets.</p>
+<p>For example, one target was to cut greenhouse gas emissions by 40% between 1990 and 2030, and by 75% by 2050. The law raised the carbon tax on fossil fuels from 14.5 euros per ton in 2015 to 56 euros per ton in 2020, and 100 euros in 2030. It aimed to promote low-emission vehicles by creating 7 million charging stations and dedicated parking places for them. The state had to prioritise electric and low-carbon vehicles in procurement (at least 50% of new procurement). For taxi and rental company fleets, at least 10% of their vehicles had to be low-carbon. The law also provided a subsidy for replacing old diesel vehicles. Metropolitan areas were allowed to lower traffic speeds and ban polluting vehicles at certain times. (<em>Financial Incentives and Disincentives</em>)</p>
+<p>In 2015, France introduced its conversion bonus for the purchase and lease of low-polluting vehicles (new or used; priced under €60,000) that emitted under 117 g CO2/km.  Eligibility was based on initial vehicle registration date, fuel used, and reference tax income. While this bonus initially applied only to electric cars, vans, scooters and electric motorcycles, it was extended in 2021 to electric-assisted bicycles and cargo bikes. (<em>Financial Incentives</em>)</p>
+<p>In 2016, the federal government set up its restricted traffic zones system (Zone de Circulation Restreinte, or ZCR), to gradually phase out the most-polluting vehicles. Vehicles had to display a Crit’Air sticker on their windscreen indicating how polluting the vehicle was. There were six stickers, ranging from least polluting (100% electric) to most polluting (older diesel-engine cars). Local authorities could determine their own terms of access, including areas covered, vehicles covered, and hourly and daily restricted times.</p>
+<p><strong>Metropolitan Government Created with a Focus on Air Quality (2016) </strong></p>
+<p>Also In 2016, the metropolitan government (Métropole du Grand Paris) was created, with air quality as one of its priorities. It offered a 25% subsidy for purchasing or renting (for at least two years) low-emission vehicles, including electric bikes. To facilitate use of these subsidies, residents could file a single grant application for the national ecological bonus and conversion bonus as well as the regional incentive, starting with their introduction in 2019. That year, the regional subsidies were increased and harmonized with the national scheme. (<em>Financial Incentives</em>)</p>
+<p><strong>Paris Establishes First Permanent Low-Emission Zone, Others Follow (2017) </strong></p>
+<p>In 2017, Paris used France’s new ZCR framework to establish the first permanent low emission zone in Paris. Older cars were banned from downtown neighborhoods on weekdays. The most polluting vehicles were gradually banned over 14 years. By 2030 only electric and fuel cell vehicles (green certificate) were to be allowed on the island Monday to Friday from 8:00 am to 8:00 pm.</p>
+<p>The regional government soon authorized its 79 member municipalities to create their own low-emission zones. By 2020, 57 had either launched a public consultation or signed a decree to establish the zone. The regional government provided impact studies on air quality, public transport, road traffic and health (compulsory) and on social and economic repercussions (optional).</p>
+<p><strong>Discontent and Suspension of France’s Gas Tax Increase (2018 and 2019) </strong></p>
+<p>There were widespread complaints in 2018 and 2019 about the number of related construction projects. However, the greatest pushback related to increasing gas taxes. In 2018, after three weeks of increasingly violent protests led by low-income motorists in suburban and rural communities, France decided to suspend further tax increases.</p>
+<p><strong>France’s Mobility Orientation Law on Transport, and Ecological Bonus (2019)</strong></p>
+<p>In 2019, France passed its Mobility Orientation Law on Transport (loi d’orientation des mobilités, LOM) setting out its legal strategy for eliminating ‘car addiction’, accelerating the growth of new transportation options, and investing in infrastructure for those options.</p>
+<p>The law banned the sale of fossil-fueled cars by 2024 and aimed to triple the modal share of cycling by then. It also created a fund to connect cycle paths, and to mark bikes with owner information to discourage theft. The law also promoted the deployment of electric vehicles and aimed to increase the number of public e-vehicle charging stations fivefold by 2022. It also allowed employers to pay up to 400 euros per year to employees commuting to work by bicycle or carpooling; in 2020, the French Government began paying its own staff and agents up to €200 per year. (<em>Financial Incentives; Overcoming Specific Barriers</em>)</p>
+<p>Starting in 2019, the country started paying an ecological bonus of up to €6,000, depending on income, towards the purchase of an electric car (new or used), or a new rechargeable hybrid car; €200 towards the price of an electric bicycle; or €1,000 towards a cargo bike, a bike adapted for the disabled, or an electric cycle trailer.</p>
+<p>At the same time, France introduced its conversion bonus, paying an additional amount (again, depending on income) towards purchase of a new or used low-emission vehicle in exchange for the scrapping of a qualifying older vehicle.</p>
+<p><strong>Transit Strike Increased Cycling (2019)</strong></p>
+<p>In 2019, France had a 46-day transit strike, which resulted in many more people cycling. Months afterwards, the cycling mode share remained high, with a 131% year-on-year rise in the number of cyclists.  During 2018 and 2019, the average monthly modal share growth rate was 15%.</p>
+<p><strong>Paris Introduces the 15-Minute City (2020)</strong></p>
+<p>In her 2020 campaign for re-election, mayor Hidalgo unveiled plans for a ‘15-minute city’, where everyone could meet most, if not all, of their needs within a short walk or bike ride from home.  This involved decentralizing city life and services, removing 72% of on-street parking, and making all streets cycle-friendly. The space made available by removing on-street parking was to be transformed into bike lanes, green spaces, vegetable plots, and playgrounds. The plan, which built on Plan Velo, promised that every street would have a cycle path, every bridge would have protected cycleways, and every resident would be able to walk or cycle to get anything they needed. Despite some bad press and opposition to her plans, Hidalgo won by a landslide. (<em>Norm Appeals</em>)</p>
+<p>Later that year, in response to the COVID pandemic and people’s preference to be outdoors rather than in vehicles, the city created an additional 60 km (37 miles) of temporary cycle lanes (‘coronapistes’), many of which were subsequently made permanent. It also focused on building more paths to connect existing routes and to facilitate transportation between neighborhoods and across the city.  During this period, it implemented more cycle lanes than anywhere else in Europe. It also opened more parking spaces for bikes. (<em>Building Motivation, Engagement and Habits Over Time; Overcoming Specific Barriers</em>)</p>
+<p>Paris also began providing financial incentives for the personal and professional use of cargo bikes. In addition, large-scale events like the Journée Sans Voiture and Paris Respire closed streets to allow citizens to experience active transport and cleaner air on their streets for a day. (<em>Financial Incentives; Vivid, Personalized, Credible, Empowering Communications</em>)</p>
+<p><strong>France Introduces Incentives for Bike Repairs and Tune-Ups (2020) </strong></p>
+<p>Also in 2020, the French government began providing grants of up to €50 towards bike repairs or tune-ups. Bike repair shops in Paris were booked up for months and bike rental programs like Velib were working at capacity. (<em>Financial Incentives; Overcoming Specific Barriers</em>)</p>
+<p><strong>Paris School Program (2020)</strong></p>
+<p>In 2020, Paris introduced its after-school Know How to Ride a Bike program so that children could learn cycling safely and maintenance from a young age. The goal was for all elementary school children to have achieved a “Bike Permit” by high school, and to be better able to travel independently and sustainably. In addition, the city planned to restrict access to pedestrians and cyclists on the streets around schools. (<em>Building Motivation, Engagement and Habits Over Time; Norm Appeals; Schools Programs that Influence the Home</em>)</p>
+<p><strong>France Mandates Bicycle Marking, Makes it Easier to Combine Cycling with Public Transport; Paris Adds More Parking Spaces (2021)</strong></p>
+<p>To address bicycle theft in France, since 2021 all new or used bicycles sold by traders have had to be permanently marked with 10-character alphanumeric identifiers, and this number has had to be included in all bills of sale / invoices. The unique characters are entered into a national database that makes it easier to find the rightful owners. (<em>Overcoming Specific Barriers</em>)</p>
+<p>New regional and long-distance trains had to have at least eight locations for bicycles on board. New intercity busses had to be able to carry five bicycles without disassembly. Most of the year, these spaces could be reserved ahead. 1,133 high-traffic train and bus stations were required to provide a specified number of secure bicycle parking by 2024. (<em>Overcoming Specific Barriers</em>)</p>
+<p>To address bicycle theft, Paris created 120,000 new secure bicycle parking spots, with 1,000 reserved for cargo bikes and 40,000 near train stations. <em>(Overcoming Specific Barriers</em>)</p>
+<p><strong>France Requires Car Ads to Include Messages Promoting Cycling and Walking (2021)</strong></p>
+<p>To address the ‘competition’ and reach people who were not yet interested in cycling and walking more, France started requiring car ads to include specified messages promoting greener methods of transportation. This applied to ads in all media, from billboards to radio to videos in movie theatres. The specified messages, which included "For short trips, choose to walk or cycle," "Think about carpooling," and "Take public transit daily," had to get equal exposure, and there were also requirements regarding size and placement, depending on the medium. (<em>Building Motivation, Engagement and Habits Over Time; </em><em>Mass Media; Norm Appeals</em>)</p>
+<p><strong>Next Steps: Creating Further Car Restrictions on the island (by 2024)</strong></p>
+<p>In 2022, Paris was preparing to create a “limited traffic zone” (ZTL, or ‘peaceful zone’) that would limit some categories of vehicles from the island. Similar approaches had already been successful at lowering traffic in the downtown areas of several French cities, Madrid, Milan and Rome. The restrictions did not apply to people living in the area (including hotel guests), buses, taxis, ‘destination’ traffic (e.g., delivery drivers, and those accessing services such as shopping,) and people with a disability (i.e. with a mobility inclusion card or a European parking card.) Even with these exceptions, the ZTL was expected to lower the number of cars travelling the island by 100,000 cars per day, reducing traffic by half. Paris indicated that it would extend its ZTL zone further if public consultation indicated support for doing so.</p>
+<p><strong>Key Barriers</strong></p>
+<p>The following table summarizes the key barriers to action and how each was addressed.<span lang="EN-CA" style="color:white;
+mso-themecolor:background1;mso-ansi-language:EN-CA"> </span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:375.4pt;border-collapse:collapse;border:none;mso-border-alt:solid #A8D08D .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #A8D08D;mso-border-insidev:.5pt solid #A8D08D" width="501">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="width:80.7pt;border:solid #70AD47 1.0pt;
+  border-right:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-left-alt:
+  solid #70AD47 .5pt;mso-border-bottom-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal" style="margin-top:6.0pt"><b><span style="color:white;
+  mso-themecolor:background1">Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="width:294.7pt;border:solid #70AD47 1.0pt;
+  border-left:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-bottom-alt:
+  solid #70AD47 .5pt;mso-border-right-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="393">
+<p class="MsoNormal" style="margin-top:6.0pt"><b><span style="color:white;
+  mso-themecolor:background1">How it was addressed<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:19.75pt">
+<td style="width:80.7pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal" style="margin-top:6.0pt">Disinterest in considering alternative modes<b><o:p></o:p></b></p>
+</td>
+<td style="width:294.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="393">
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:17.85pt;text-indent:-17.85pt;line-height:normal;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Introduction   of new mobility options like Vélib’ bikesharing<o:p></o:p></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Reduction   of core city parking supply, traffic speeds, and vehicle traffic to provide   more space for pedestrians, bus and bike-lanes, and trees, and reduce noise   and air pollution. Although through traffic is restricted, residents, businesses,   visitors and people with disabilities are still allowed to drive on city streets.   <o:p></o:p></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Banning   of older cars from downtown neighborhoods during weekdays<o:p></o:p></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Reduction   in car space in parks and squares<o:p></o:p></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Introduction   of car-free days.<o:p></o:p></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->25%   subsidy for purchasing or renting (for at least two years) low-emission vehicles,   including electric bikes<o:p></o:p></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Conversion   bonus for the purchase and lease of low-polluting vehicles; inclusion in 2021   of electric-assisted bicycles and cargo bikes<o:p></o:p></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Ecological   bonus towards the purchase of an electric bike, cargo bike, bike adapted for the   disabled, or an electric cycle trailer<o:p></o:p></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Incentives   for bike repairs and tune-ups<o:p></o:p></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Reduction   in on-street parking for motor vehicles<o:p></o:p></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Requiring   car ads to include messages promoting greener methods of transportation<o:p></o:p></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Restricted   traffic zones system<o:p></o:p></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Rise   in the carbon tax on fossil fuels from 14.5 euros per ton in 2015 to 56 euros   per ton in 2020<o:p></o:p></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->School   cycling education program<o:p></o:p></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:19.75pt">
+<td style="width:80.7pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal" style="margin-top:6.0pt">Safety when walking and cycling<b><o:p></o:p></b></p>
+</td>
+<td style="width:294.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="393">
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:17.85pt;text-indent:-17.85pt;line-height:normal;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Reduction   of speed limit to 30 km/hour in designated zones<o:p></o:p></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Cyclists   travelling against-the-flow-of-traffic<o:p></o:p></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;height:19.75pt">
+<td style="width:80.7pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal" style="margin-top:6.0pt">Bicycle theft<o:p></o:p></p>
+</td>
+<td style="width:294.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="393">
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:17.85pt;text-indent:-17.85pt;line-height:normal;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Secure   bike parking spaces<o:p></o:p></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Mandatory   bike marking<o:p></o:p></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4;mso-yfti-lastrow:yes;height:19.75pt">
+<td style="width:80.7pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal" style="margin-top:6.0pt">Administrative burden<o:p></o:p></p>
+</td>
+<td style="width:294.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="393">
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  8.0pt;margin-left:17.85pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Harmonization   of incentive schemes offered by three levels of government<o:p></o:p></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Vehicle counts were sampled by direct observation and automatic counters</p>
+<p>One method of evaluating the combined impact of the numerous programs offered by all three levels of government, was to compare the shifts in Paris with those experienced by other large cities. This comparison was available from 2001 onward, in the EMTA Barometer (linked below.)</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>On average, each person on the island walked and cycled 23% more in 2020 than in 2010. The travel impacts and benefits were significantly smaller in the suburbs.</p>
+<p><strong>Changes in Mode Share</strong></p>
+<p>The following chart shows the increase in mode share of cycling and walking on the island, and the decrease in motorized vehicles between 2010 and 2020.<span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:#0400;
+mso-bidi-font-style:italic'> </span><span style='font-family:"Minion Pro",serif;mso-bidi-language:#0400;mso-bidi-font-style:
+italic'> </span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid #A8D08D .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #A8D08D;mso-border-insidev:.5pt solid #A8D08D">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="width:30.85pt;border:solid #A8D08D 1.0pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#70AD47;mso-background-themecolor:
+  accent6;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="41">
+<p class="MsoNormal" style="margin-top:6.0pt"><b><span style='font-size:9.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;color:white;mso-themecolor:
+  background1'>2010<o:p></o:p></span></b></p>
+</td>
+<td style="width:30.85pt;border:solid #A8D08D 1.0pt;
+  border-left:none;mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#70AD47;mso-background-themecolor:accent6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal" style="margin-top:6.0pt"><b><span style='font-size:9.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;color:white;mso-themecolor:
+  background1'>2015<o:p></o:p></span></b></p>
+</td>
+<td style="width:30.85pt;border:solid #A8D08D 1.0pt;
+  border-left:none;mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#70AD47;mso-background-themecolor:accent6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal" style="margin-top:6.0pt"><b><span style='font-size:9.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;color:white;mso-themecolor:
+  background1'>2017<o:p></o:p></span></b></p>
+</td>
+<td style="width:30.85pt;border:solid #A8D08D 1.0pt;
+  border-left:none;mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#70AD47;mso-background-themecolor:accent6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal" style="margin-top:6.0pt"><b><span style='font-size:9.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;color:white;mso-themecolor:
+  background1'>2020<o:p></o:p></span></b></p>
+</td>
+<td style="width:280.35pt;border:solid #A8D08D 1.0pt;
+  border-left:none;mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#70AD47;mso-background-themecolor:accent6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="374">
+<p class="MsoNormal" style="margin-bottom:0cm;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style='font-size:8.0pt;line-height:107%;font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400;mso-bidi-font-style:italic'> </span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:19.75pt">
+<td style="width:30.85pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="41">
+<p class="MsoNormal" style="margin-top:6.0pt;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">55.4</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:30.85pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal" style="margin-top:6.0pt;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">55.4</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:30.85pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal" style="margin-top:6.0pt;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">55</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:30.85pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal" style="margin-top:6.0pt;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">68</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:280.35pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="374">
+<p class="MsoNormal" style="margin-top:6.0pt;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">Cycling and walking (island)</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:19.75pt">
+<td style="width:30.85pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">40.3</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:30.85pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">40.3</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:30.85pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">40</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:30.85pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">36</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:280.35pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="374">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">Cycling and walking (metro)</span><span style='font-size:10.0pt;line-height:107%;font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;height:19.75pt">
+<td style="width:30.85pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">31.8</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:30.85pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">31.8</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:30.85pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">31</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:30.85pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">26</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:280.35pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="374">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">Public Transport (island)</span><span style='font-size:10.0pt;line-height:107%;font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4;height:19.75pt">
+<td style="width:30.85pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">20.2</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:30.85pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">20.2</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:30.85pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">20</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:30.85pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">22</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:280.35pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="374">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">Public Transport (metro)</span><span style='font-size:10.0pt;line-height:107%;font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:5;height:19.75pt">
+<td style="width:30.85pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">12.8</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:30.85pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">12.8</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:30.85pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">13</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:30.85pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">6</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:280.35pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="374">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">Other motorized modes (island)</span><span style='font-size:10.0pt;line-height:107%;font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:6;mso-yfti-lastrow:yes;height:19.75pt">
+<td style="width:30.85pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">39.5</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:30.85pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">39.5</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:30.85pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">40</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:30.85pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="41">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">43</span><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;mso-bidi-language:#0400;
+  mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+<td style="width:280.35pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="374">
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 107%; font-family: Arial, sans-serif;">Other motorized modes (metro)</span><span style='font-size:10.0pt;line-height:107%;font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal">According to the EMTA Barometer, in 2010 the mode share for private cars on the island was 12.8% and nine of the 25 ‘main cities’ had a lower modal share for private cars. By 2020, the mode share for cars on the island had fallen to 6%, easily the lowest of 30 cities, and half that of the closest contender (Bilbao at 12%). The share for active modes was 68% - besting even Copenhagen and Barcelona. At 26%, the share of public transport was lower than eight other cities.</p>
+<p>In comparison, in the whole Metro region the mode share for private cars had gone up to 43% during his time period, transit had increased to 22%, and active modes had gone down to 36%.</p>
+<p>From September 2018 to 2019 alone, the number of Parisians using bikes rose 54%.</p>
+<p>In a 2022 report, UNEP noted that although the portion of street space devoted to automobile traffic had declined, congestion had not increased significantly, indicating that reductions in road supply had been offset by reductions in vehicle travel.</p><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p>The four most innovative aspects of this program are as follows.</p>
+<ol>
+<li>Explicit prioritization of bicycles over cars on the island, and the reduction in on-street car parking to make room for bike lanes</li>
+<li>Incentives for bike repairs and tune-ups</li>
+<li>Requiring car ads to include messages promoting greener methods of transportation</li>
+<li>Restricted traffic zones system and the gradual elimination of gas-powered vehicles</li>
+</ol>
+<p><strong>Landmark Designation</strong></p>
+<p>The program described in this case study was designated in 2022.</p>
+<p>Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Aaron Gaul from UrbanTrans</li>
+<li>Nathalie Lapointe, Federation of Canadian Municipalities</li>
+<li>David Levinger, The Mobility Education Foundation</li>
+<li>Lisa Kay Schweyer, Traffic21 Institute and Mobility21 National University Transportation Center</li>
+<li>Jessica Roberts, Alta Planning + Design</li>
+<li>Phil Winters, CUTR and the University of South Florida.</li>
+</ul><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>The Clean Nova Scotia Foundation</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Environment Canada</li>
+<li>Atlantic Chapter of American Water Works Association</li>
+<li>Canada Water Works Agreement</li>
+<li>Halifax County</li>
+<li>Town of New Glasgow</li>
+<li>Crane</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>No significant results to date.</p>
+<table cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" complete="complete" height="26" src="/images/lightbulb.gif" width="27"/> Tip: Click on an image to enlarge it. Click your back button to return to this page. <hr color="#ffcc00"/>
+<p><strong>The Be Water Wise commitment form, judged as too long and complicated by participants.</strong></p>
+<p><br/>
+<a href="/images/documentimages/BeWaterWise/BeWaterWise-1.jpg" target=""><img alt="Be Water Wise Image" border="0" complete="complete" height="134" src="/images/documentimages/BeWaterWise/BeWaterWise-1.jpg" width="102"/></a> <br/>
+<strong>Page 1</strong> <strong><br/>
+</strong><br/>
+<br/>
+<a href="/images/documentimages/BeWaterWise/BeWaterWise-2.jpg" target=""><img alt="Be Water Wise Image" border="0" complete="complete" height="147" src="/images/documentimages/BeWaterWise/BeWaterWise-2.jpg" width="103"/></a> <br/>
+<strong>Page 2</strong></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Be Water Wise. It Makes Cents</h1>
+<p>To promote water efficiency and reduce water consumption, residents were offered home visits conducted by trained volunteers and the opportunity to obtain discounts on home water-saving devices.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>In April 1996, The Clean Nova Scotia Foundation launched the Be Water Wise ... It Makes Cents program in response to concerns about diminishing supplies of clean water. It was implemented in the three municipalities of Sackville, Bedford (urban) and New Glasgow (rural), with a total population of 55,000.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>To test their assumption that cost and convenience could be barriers to participating in a water conservation program, The Clean Nova Scotia Foundation conducted preliminary research through the Internet to investigate other water conservation programs that had been implemented in Canada and the United States. This research substantiated their assumptions, so the program was designed to minimize or eliminate these barriers.</p>
+<p>Originally, the Be Water Wise ... It Makes Cents program was to include kits containing only low-flow shower heads and faucet aerators. The program was modified to include the ultra low-flow toilets when research revealed that water consumption could be reduced by 20 percent in homes which installed these water-saving devices.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The campaign began with a news conference on Earth Day, April 22, 1996, during which organizers displayed and described the water saving devices. Local radio and television stations aired news releases, public service announcements, interviews and quizzes. Local newspapers featured stories about "waste-wise" families, and printed much of the same information covered by radio and television. The program was also promoted in the three municipalities' newsletters. Inserts were included in telephone and power bills.</p>
+<p>An Internet Web site provided information on the program, and further information was provided at Bedford Days, Arbor Day, Canada Day, as well as at home shows. Community centres, public libraries, museums, and The Clean Nova Scotia Foundation affiliates (Bedford and New Glasgow EnviroTown Programs) were also provided with information.</p>
+<p>One hundred households selected from each of the three communities received a 10-minute home visit conducted by trained volunteers (<a href="/en/tools-of-change/home-visits/">Home Visits</a>). During this visit the program was outlined and an information package on water conservation delivered. The package contained an explanation of the program, a fact sheet on waste reduction, a brochure explaining why and how to conserve water in the home, and a program sign to post in the window (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a> and <a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p>Following this, participants were asked to sign a commitment form stating that they would reduce water consumption for one year. The participants were told that all committed water-savers would be publicly recognized in the local newspaper and at a news conference the next year (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>).</p>
+<p>Ninety-two participants from this group signed commitment forms. People commented that the form was too long and complicated.</p>
+<p>A second group of 300 households (100 from each community) were given the opportunity to receive a retrofit kit in addition to a 20-minute home visit and the information package. The retrofit kit offered participants a rebate of $9 per low-flow shower head, $5 per faucet aerator, $177 per ultra low-flow toilet and $30 per toilet installation (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>). The total cost per household was estimated to be $219 before the rebate; $75 plus tax after the rebate. Since running the program, The Clean Nova Scotia Foundation decided that it would be more cost effective to pay the rebates through the local water utility bill. This would reduce the administrative and accounting costs of issuing rebates by combining them with an existing billing system.</p>
+<p>These rebates were used to overcome the cost barrier identified in the initial research. The convenience barrier was addressed by the home visits and by providing a list of approved plumbers who could install the toilets (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). Following the home visit, a public commitment to reduce water consumption for one year was also requested from this group.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The budget for the Be Water Wise ... It Makes Cents program was $45,000. Operating costs amounted to $30,000, as follows:</p>
+<table width="100%">
+<tbody>
+<tr>
+<td>Salaries</td>
+<td>$ 15,000</td>
+</tr>
+<tr>
+<td>Printed material</td>
+<td>$ 600</td>
+</tr>
+<tr>
+<td>Advertising</td>
+<td>$ 4,400</td>
+</tr>
+<tr>
+<td>Other</td>
+<td>$10,000</td>
+</tr>
+</tbody>
+</table>
+<p>The cost of subsidies for the water-saving devices was $15,000.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Water consumption levels were measured for two months preceding the program launch, and periodically throughout the program.</p>
+<p>Participants were randomly selected from each of the three municipalities. A third group of 300 randomly selected residents served as a control group, who did not receive a home visit and were not asked to make a commitment to the program. Their only source of information about the Be Water Wise program was the public education campaign.</p>
+<p>All the participants were asked to complete a telephone survey at the end of the summer of 1996. This survey measured changes in attitudes and water consumption behaviour.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>The response to the retrofit kit approach was poor. Apparently, the public education campaign had not adequately prepared residents who were visited to consider purchasing the water-saving devices. When they were later offered to all residents in the three communities through a message printed on their water utility bill, the remaining kits were sold.</p>
+<p>The Clean Nova Scotia Foundation felt that a stronger education campaign would result in more interest in water conservation and the installation of water-saving devices. They expressed that, in future, they would like to allocate more money toward education.</p>
+<p>At the time of writing, this project was still ongoing. The results to date have not shown any significant reductions in water usage, relative to the control group.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Steve Machat <br/>
+Executive Director <br/>
+Clean Nova Scotia <br/>
+126 Portland Street <br/>
+Dartmouth, NS <br/>
+B2Y 1H8 <br/>
+(902) 420 3476</p>
+<p>Email: <a href="mailto:CNS@clean.ns.ca">CNS@clean.ns.ca</a> <br/>
+Web Site: <a href="http://www.clean.ns.ca">www.clean.ns.ca</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Last revised: July, 2004</p>
+<p>This case study was originally published in 1998 in "Tools of Change: Proven Methods for Promoting Environmental Citizneship" by Jay Kassirer and Doug McKenzie-Mohr (Published by Canada's National Round Table on the Environment and the Economy)</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

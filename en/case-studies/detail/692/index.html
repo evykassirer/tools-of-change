@@ -1,0 +1,270 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>U.S. Green Building Council</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<p>LEED rating systems for Existing Buildings: Operations &amp; Maintenance (GSA Study):</p>
+<ul>
+<li>25 percent lower energy use</li>
+<li>Operational costs cut by 19 percent </li>
+</ul>
+<p>LEED rating systems for Design and Construction</p>
+<ul>
+<li>Dramatic reductions in waste. In Canada alone, between 2005 and 2015, LEED builders recycled more than 2.7 million tonnes of construction and demolition waste in Canada.</li>
+<li>Green materials are being more widely available and more widely used (market transformation).</li>
+</ul>
+<p>Overall</p>
+<ul>
+<li>By August 2015, LEED had been adopted in more than 150 countries and territories worldwide, with 13.8 billion square feet of building space participating in the suite of rating systems and 1.85 million feet certifying per day around the world.</li>
+</ul>
+<p> </p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>LEED</h1>
+<p><iframe height="auto" src=" https://www.youtube.com/embed/scWAk3HRKZ8" width="97%">
+</iframe></p>
+<p><em>2019 Youtube Program Update Video from USGBC</em></p>
+<p>Leadership in Energy and Environmental Design (LEED) is a tremendously successful program that engages builders and owners in designing, building, selling / buying and operating more energy-efficient buildings. It awards points for meeting targets and doing targeted behaviors like benchmarking and tracking energy and water consumption, using specific types of materials, and recycling waste materials. It has become the most used green building rating system out there, adopted in more than 150 countries and territories worldwide. The program received  <em>Landmark</em> designation in 2015.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong>Note:</strong> <em>To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>The U.S. Green Building Council created LEED in the 1990s and it came to Canada in 2002. Its goal is simple: to create resource-efficient, high-performing, healthy, cost-effective buildings.</p>
+<p>LEED is an acronym for Leadership in Energy and Environmental Design. The <a href="http://www.usgbc.org/" target="_blank">U.S. Green Building Council</a> is a Washington D.C.-based, non-profit coalition of building industry leaders.</p>
+<p>LEED provides a framework that gives project teams the ability to choose solutions that contribute to aggregate environmental progress. Many small parts working together can have big impacts.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>LEED is a consensus based rating system. A corps of volunteers from across the built environment work with staff to develop LEED. These 150+ volunteers participate on the LEED Committees, providing insight into benefits of LEED and barriers to change as well as possible solutions. The LEED Steering Committee is responsible for the work of these committees. Also, the LEED International Roundtable connects USGBC to built environment professionals in countries around the world, who propose solutions to overcoming market and technical barriers to using LEED in their countries.</p>
+<p>LEED’s experience over the years is that owners build LEED for two main reasons: ego and dollars. Getting certified demonstrates how green a building is and can boost press coverage. In addition, as studies have shown, LEED buildings find tenants more easily and can charge more for rent. Certification may also be required to take advantage of certain government incentive programs.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>To receive LEED certification, building projects satisfy prerequisites and earn points to achieve different levels of certification. Prerequisites and credits differ for each rating system, and teams choose the best fit for their project. There are five rating systems that address multiple project types. <em>LEED rating systems for Existing Buildings: Operations &amp; Maintenance</em> is one of these five.</p>
+<p><img alt="Five LEED rating systems" height="138" src="/userfiles/Image/categories.JPG" width="450"/></p>
+<p>Each rating system is made up of a combination of credit categories. For example, building performance is assessed on the basis of energy, water, waste, transportation and human experience. Within each of the credit categories, there are specific prerequisites projects must satisfy and a variety of credits projects can pursue to earn points. The number of points the project earns determines its level of LEED certification. There are four levels of certification - the number of points a project earns determines the level of LEED certification that the project will receive. (<em>Building Motivation Over Time; </em><em>Challenges; Feedback and Recognition; Norm Appeals; Vivid, Credible, Personalized, Empowering Communication)</em></p>
+<p><em><img alt="" height="194" src="/userfiles/Image/points(1).JPG" width="450"/></em></p>
+<p>While LEED began with a Design and Construction rating system reflecting its roots within the architecture and construction industries, it quickly expanded its scope to cover operational performance. Green buildings provide immediate and measurable results for building managers and occupants. LEED enables a project to benchmark energy and water, which is a critical tactic that is saving companies and government millions of dollars, year over year, simply by reducing costs through saved energy, water and other resources. Green building measures that were once deemed exceptional are now industry standard, which is why USGBC continually raises the bar.</p>
+<p>LEED has becomes increasingly rigorous over time. In 2015 it was in its third version, with its most stringent energy reduction targets. <em>(Building Motivation Over Time)</em></p>
+<p>One of the most recent refinements to the program involves the introduction of a “Dynamic Plaque” building performance monitoring and scoring platform. This involves an annual software subscription for inputting building performance data, accessing customer service support and achieving LEED certification or recertification. An optional display unit (plaque) showcases the commitment to building performance and provides up to date information. All claims need to be substantiated annually through submission of relevant records / documentation.</p>
+<p>The LEED Dynamic Plaque makes the invisible actionable and offers a means for interaction with the building on multiple levels: visitors can "see" performance, occupants can provide feedback on their experience, and owners and building managers can view trends to make informed decisions to optimize the building, benefitting people, planet and profit. (<em>Building Motivation Over Time; </em><em>Challenges; Feedback and Recognition; Norm Appeals; Vivid, Credible, Personalized, Empowering Communication)</em></p>
+<p><em><br/>
+</em><strong>Overcoming Barriers</strong></p>
+<ul>
+<li>Owners face a higher initial investment, but LEED buildings find tenants more easily and can charge more for rent. In addition, some government incentive programs are offered, that help offset the initial investment. The program stresses these well-documented savings.</li>
+<li>Builders face an initial learning curve and the actual nuts and bolts of certifying a LEED building aren’t the most fun. The points-based system is a bit of a cross between doing your taxes and filing a lawsuit. It takes time and money to build the capacity to be able to do it, and not all companies have the resources. The program works at increasing ease-of-use.</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p> A fee is required to register a building, and to submit design and construction applications. Fees, which are based on total floor space, range from a minimum of $2,900 to over $1 million. There are usually some additional, building costs as well to quality for LEED certification. These range from 1% to 6% of the total project cost, with an average cost increase of 2%, or an extra $3–$5 per square foot.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>LEED rating systems for Existing Buildings: Operations &amp; Maintenance, where certification occurs post-occupancy, is based on real energy data for the past year. Buildings must be re-certified each year, using the past year’s performance data. The data must include the following.</p>
+<ul>
+<li>Measured and benchmarked energy performance (not just raw energy consumption but actual performance using comparative benchmark targets);</li>
+<li>Metered water use</li>
+<li>Measured rate of occupant use of transit/alternative commuting</li>
+<li>Measured percentage of waste recycled, based on hauler reports and audit reports</li>
+<li>Measured fresh air delivery</li>
+<li>Occupant surveys</li>
+<li>Mandatory policies that require green operational practices including required green cleaning and sustainable site management</li>
+</ul>
+<p>LEED rating systems for new construction ask project teams to demonstrate a potential percentage improvement over a baseline. The certification process for design teams is made up of two consecutive applications: one including design credits, and one including construction credits. All of the LEED credits in each rating system are assigned to either the design application or the construction application. The design credits include those that are the purview of the architect and the engineer, and are documented in the official construction drawings. The construction credits include those that are predominantly under the purview of the contractor, and are documented during the construction and commissioning of the building.</p>
+<p><strong>U.S. General Services Administration (GSA) Study</strong></p>
+<p>To study the impacts of LEED's rating systems for Existing Buildings: Operations &amp; Maintenance, the General Services Administration (GSA) selected 22 representative green buildings from its national portfolio, including 12 buildings whose performance was assessed initially in 2007. The evaluation was comprehensive, measuring environmental performance, financial metrics, and occupant satisfaction. Results were compared to both industry and GSA baselines. All buildings in the study incorporated sustainable design practices. Sixteen were LEED-NC certified or registered, representing more than one-third of the LEED buildings in GSA’s inventory at the time of the study. The remaining six buildings implemented a suite of sustainability strategies to enhance building performance.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Impacts – Individual Owners and Builders</strong></p>
+<p><em>Energy reduction</em></p>
+<p>The 2011 GSA study found LEED-certified buildings to have 25 percent lower energy use compared to the national average. These high-performing buildings reduced operational costs by 19 percent compared to the national average. LEED Gold buildings were singled out as being particularly high performers, with a 27% lower energy use.</p>
+<p><em>Waste reduction</em></p>
+<p>Clark Builders in Edmonton, Canada provides an example of the impacts LEED has had on an individual construction company. Cam Munro is the Innovative Construction Manager at Clark Builders and he can thank LEED for his title. Clark took on its first LEED project in 2003, and one year later 50 per cent of the projects at this large construction company pursued a LEED certification. Munro says 15 years ago his company would have been happy diverting 10 to 15 per cent of its construction waste from landfills. “Today, we've got numerous projects that are over 95 per cent diverted from landfills,” says Munro.</p>
+<p><em>Green materials</em></p>
+<p>LEED rewards builders for using locally sourced materials and environmentally friendly glues, paints, primers, sealants and materials with low or no-VOC and no added urea formaldehyde. Many of these materials were hard to get in 2003, but by 2015 they were readily available. Clark Builders doesn’t even stock materials that don’t meet these LEED requirements, because it’s not worth the hassle to source and separate them. So by default even non-LEED projects get greener, healthier materials. “We're changing our processes so that everything we're doing could be a LEED job even if it isn't,” says Munro.</p>
+<p><strong>Impacts- Overall</strong></p>
+<p>By August 2015, LEED had been adopted in more than 150 countries and territories worldwide, with 13.8 billion square feet of building space participating in the suite of rating systems and 1.85 million feet certifying per day around the world.</p>
+<p><em>Energy reduction</em></p>
+<p>Given the realities of the real estate market, the evolution of the LEED rating system over time, and LEED’s substantial international presence, LEED has not yet been able to rigorously calculate its overall impact across all participating buildings internationally. It is the organization’s hope that the LEED Dynamic Plaque platform, which calculates real-time energy and water usage, will eventually be able to provide the data required to do so.  In the interim, for the purpose of this case study, the scope of energy savings can be assumed to be in the billions of kWh per year. (35,000,000,000 kWh per year = 13.8 billion square feet of buildings certified x 25% energy reduction of LEED-certified buildings compared to industry average x  average of at least 10 kWh per square foot per year.)</p>
+<p>In Canada alone, between 2005 and 2015, LEED is credited with saving 2.6 billion kWh hours of electricity, enough energy to power 89,000 homes in Canada for a full year.  Using EPA's national benchmarking scale for energy performance, LEED for Existing Building projects are high performers: 35 percent are in the top ten percent nationally, and over 60 percent are in the top 15 percent nationally.</p>
+<p>LEED has been so successful at ratcheting up energy efficiency that the national model building code and some regional codes will require all buildings to be 25 per cent more efficient than the building code — LEED is becoming the new normal.</p>
+<p><em>Waste reduction</em></p>
+<p>In Canada alone, between 2005 and 2015, LEED builders recycled more than 2.7 million tonnes of construction and demolition waste in Canada.</p>
+<p><em>Green materials</em></p>
+<p>LEED is gradually ratcheting up the availability of green materials as well. For example, Low Volatile Organic Compound (VOC) paints and materials take harmful chemicals out of the supply chain thus having a tangible impact on the health of building’s indoor air quality, improving the conditions inside for occupants. This was a difficult credit to achieve when LEED was introduced into the market in 2001. As more projects were certified, manufactures responded to the demand by increasing the supply of low-VOC paints and materials</p><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<ul>
+<li>This case study was compiled in 2016 by Jay Kassirer. It is largely based on an <a href="http://www.greenenergyfutures.ca/episode/leed-building-industry-transformed" target="_blank">article</a>  in Green Energy Futures, titled "<em>LEED works: How a green building rating system transformed the construction industry"</em>, by David Dodge and Duncan Kinney </li>
+</ul>
+<ul>
+<li>There has been some discussion in the literature about the difference between reductions in site (building) energy and overall reductions in energy used (taking into account the cost of producing and transporting energy to the site for use.) Regardless, if the campaign was successful in shifting energy use choices and habits – as measured by actual site energy use reductions – it illustrates a successful behavior change approach.</li>
+<br/>
+<li><strong>2021 update:</strong> In March 2021, the U.S. National Bureau of Economic Research published a working paper titled, "Does LEED Certification Save Energy? Evidence from Federal Buildings." This paper "examines the effects of LEED certification on energy efficiency in federally owned buildings. Using propensity score matching and difference in differences models, (it found) no effect of LEED certification on average energy consumption. This reflects the fact that energy use is one of a number of attributes that receives scores under the LEED program. Buildings with above average energy scores have greater energy efficiency post-certification. Some other attributes, notably higher water scores, decrease energy efficiency post-certification. Trade-offs across LEED attributes account for the absence of energy savings on average. If energy efficiency is the primary policy goal, LEED certification may not be the most effective means to reach that goal." </li>
+</ul><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

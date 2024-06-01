@@ -1,0 +1,338 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/school-programs-that-involve-the-family/">School Programs that Involve the Family</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>Green Communities Canada</p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Canadian Partnership Against Cancer (CLASP)</li>
+<li>Public Health Agency of Canada</li>
+<li>George Weston/Loblaw Companies Limited</li>
+<li>University of Toronto</li>
+<li>Cape Breton University</li>
+<li>Numerous schools, school councils and school boards across Canada</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>120 participating schools across Canada in 2012</li>
+<li>Some schools had achieved a modal shift of 20% towards walking and cycling</li>
+<li>Some provinces had average modal shifts of 6% across alll participating schools</li>
+</ul>
+<p><strong>Webinar </strong><a href="/userfiles/GCC ASRTS transcript(1).pdf"><strong>Transcript</strong></a></p>
+<p><strong>PDF of this Case Study  </strong><a href="/userfiles/GCC ASRTS case handout.pdf">Download PDF</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>GCC Active and Safe Routes to School (2008 on)</h1>
+<p>This case study picks up from our <a href="http://www.toolsofchange.com/en/case-studies/detail/97/">previous one</a> on the early years of Green Communities Canada's national Active and Safe Routes to School Program. It covers the launch of the "school travel planning" approach. Viewpoints are provided from the national, provincial, municipal and school levels. Designated a Landmark case study by a Tools of Change Peer Selection Panel in 2009. Updated in 2012.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>Active and Safe Routes to School (ASRTS) is an international movement of organizations dedicated to creating safe community environments where families choose to walk or use other methods of active transportation to and from school. It's ultimately about ensuring that children today have independent mobility.</p>
+<p>GCC’s ASRTS program started back in 1997 with pilot projects in Ontario and British Columbia. In 1999 and 2000, Nova Scotia, Alberta, Quebec, and Manitoba came on board. By 2011 Saskatchewan, the Yukon, New Brunswick, Prince Edward Island, Newfoundland and Labrador, North West Territories and Nunavut had also joined the program, which had grown to a national movement involving thousands of schools and hundreds of communities.</p>
+<p>National-level activities, led by GCC, provided resources, tools, information and links for the provinces/territories for schools and communities to create their own unique Active &amp; Safe Routes to School programs.</p>
+<p>A case study describing the program between 1996 and 2005 is available at <a href="http://www.toolsofchange.com/en/case-studies/detail/97" target="_blank">www.toolsofchange.com/en/case-studies/detail/97</a></p>
+<p>While the program was very successful, individual school programs suffered from the lack of a policy document at the school level. A School Travel Plan is that policy document, as well as the process that develops it.</p>
+<p>The main benefit of School Travel Planning is that active school travel becomes an integral part of municipal transportation planning and policy. Things like travel to school start to be included in official plans and transportation plans - because often they're not - and it also involves working in conjunction with the school district and having them think about other modes of transportation and not just school buses. It provides targets for implementation, which are really key.</p>
+<p>All relevant stakeholders have to get involved, which involves parents, students, school staff, municipal transportation engineers and planners, the police, public health, school districts, politicians, and local residents, and any other organizations that might have something to do locally with active school travel.</p>
+<p>By approaching school travel and active school travel in a comprehensive way, you can save everybody's time, there's no duplication of effort, and because you're collecting the data, you can see the results of your investment over time and you can see the savings that are being accrued. In addition, it can be tied to policies at the national, regional, provincial, and local level around health, environment, and injury prevention. </p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p><strong>National level</strong></p>
+<p>Influence national, provincial and local municipal and school district policies and practices related to active school travel.</p>
+<p>Reduce expected number of cancer cases by:</p>
+<ul>
+<li>Increasing the number of elementary school children actively travelling to/from school</li>
+<li>Decreasing automobile congestion and resulting air pollution in school zones</li>
+<li>Applying lessons learned from UofT’s BEAT project research and CBU’s sustainable happiness research</li>
+</ul>
+<p>Expand and establish STP projects in 5 new P/Ts</p>
+<p>Reach 120 schools, 2,400 teachers; 48,000 students; 60 community stakeholders</p>
+<p>Educate at least 20 planners/20 transportation engineers</p>
+<p><strong>School level</strong></p>
+<p>Each School Travel Plan set objectives for that school.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p><strong>Targeting the Audience</strong></p>
+<p>The program’s primary audience was students from kindergarten to grade eight, particularly those living within one km of school and those with peers who were already walking to school.</p>
+<p>The secondary audiences were their parents, and schools. The parents were involved to:</p>
+<ul>
+<li>Help run the program in their schools</li>
+<li>Encourage their children to participate</li>
+<li>Drive and park responsibly</li>
+<li>Turn off engines when parked</li>
+</ul>
+<p><strong>Getting Informed at the National Level</strong></p>
+<p>In 2006, Green Communities Canada, with funding from Transport Canada's Moving on Sustainable Transportation initiative, started an extensive research project to look at international best practice in School Travel Planning. This led to the creation of an international best practice document, along with some recommendations for Canada.</p>
+<p>GCC turned those recommendations into a funding application to the Public Health Agency of Canada, who provided funding from 2007 to 2010 to pilot test the recommendations in Nova Scotia, Ontario, Alberta, and British Columbia. The pilot testing first included three pilot and two control schools per province (20 in all.) This was followed up with piloting at 70 elementary schools and focus groups with teachers and students at six of those schools. In 2010 Green Communities received two-and-a-half years of funding from the Canadian Partnership Against Cancer’s CLASP (Coalitions Linking Action and Science for Prevention) initiative to disseminate the Canadian STP model to every province and territory.</p>
+<p>Results from the initial four province pilot indicated that students would like to walk and cycle to/from school but it was their parents who made the decisions about how they got to school. The boys in particular said they would prefer to cycle to school in the nice weather when the distance was three km or less rather than taking the school bus. Since parent meetings hadn’t been as effective as desired in reaching the parents, GCC started focusing on the students themselves as the key influencers in their families. The students were attracted through IWALK clubs, IWALK Days, and Winter Walk Days. </p>
+<p><strong>Getting Informed at the Regional Level</strong></p>
+<p>Inspired by the national progress, Halton Region Health Department spearheaded a one year pilot in 2008. That pilot was so well received by the school board, that it seconded the local organizer from her Public Health position for 16 months to the Halton District School Board where she worked on a larger pilot project with 20 Halton District School Board elementary schools and five Catholic School Board schools.</p>
+<p>In parallel to the national STP dissemination, Green Communities partnered with MetroLinx, an agency of the Government of Ontario that oversaw the implementation of the regional transportation plan for the Greater Toronto and Hamilton Area (GTHA). This 3 year pilot was led by Metrolinx with funding from Transport Canada’s ecoMOBILITY program, and the project partners were Green Communities, Region of Peel and the City of Hamilton. The GTHA pilot involved 30 elementary schools and incorporated a Smart Commute element for school staff.</p>
+<p>As part of this project, Metrolinx conduced a telephone survey of about a thousand parents and guardians of elementary-aged children (junior kindergarten to grade eight.) The survey collected information on the children's usual mode of travel to and from school, parental perceptions around school travel, awareness of school travel programs, and interest in active and sustainable ways to travel to school.</p>
+<p>This research found that nearly 60 percent of parents felt that their children's school was close enough that they could reasonably walk or bike. About 40 percent of those parents who said that their children were currently being driven to school said that they would be very interested in considering a different mode of school travel.</p>
+<p><strong>Getting Infomred at the School Level</strong></p>
+<p>Every year, additional research was conducted by each participating school. GCC’s previous approach to Active and Safe Routes to School involved voluntary, less rigorous surveys. The School Travel Planning approach required student surveys, family surveys, school site visits as well as walkabouts, traffic, pedestrian, and cyclist counts, to determine current travel patterns, key issues at the schools, and possible volunteers. This research was conducted at the beginning of each school year (September), and then again at the end of each school year (May).</p>
+<p><strong>Benefits and Barriers</strong></p>
+<p>The key benefits to students from walking and cycling to school were found to be: convenience, time savings, independence, socializing time, and interaction with adults. Small incentives were found to be helpful in encouraging participation in the program.</p>
+<p>The key benefits for school staff from participating in the program were: improved routes to school, safer school zones, building school and community spirit, healthier, more attentive students, and saving time and reduced stress otherwise spent on traffic duty. They were also attracted to participate when offered incentives such as funds for sports equipment, school walking routes signage, ‘no idling’ signs and incentives for students and classes.</p>
+<p>The key barriers for students were: living too far from school (over 1 km), not having someone else to walk or cycle with, automobile-dependence, without seeing self as part of the problem, unsafe infrastructure in school communities (making it safer to travel in a car or by bus), parents not allowing their children to walk in cold or wet weather conditions, and parents believing that walking consumes a much longer period of time than driving (in reality, it often takes less time and less frustration to walk a child to school.)</p>
+<p>The key barriers for school staff were: time pressures and competing priorities (although the program can actually save them time and stress), liability concerns, and unsafe infrastructure in school communities, making it safer to travel in a car or by bus.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>National Level</strong></p>
+<p>With initial pilot funding from the Public Health Agency of Canada, along with a financial contribution from George Weston/Loblaw Company, GCC created a Canadian guide and toolkit for the school travel planning process. The toolkit consists of more than 30 appendices, with everything a community needs to implement a comprehensive School Travel Planning initiative. In 2010, the Canadian Partnership Against Cancer provided funds to disseminate the model to every part of the country.</p>
+<p><strong>Municipal / School Level</strong></p>
+<p>By June (three months before school starts) participating municipalities established a Municipal Steering Committee, which then selected the schools that would participate, established school-level committees, and worked out an overall project plan.</p>
+<p>The process requested municipal committee members to sign a Statement of Support, to be reviewed by their organizations, specifying the level of support and contributions from each organization. Each committee then created a Terms of Reference based on the statement of support. (Building Motivation Over Time, Obtaining a Commitment)</p>
+<p>In September/October the school-level data collection took place, described above under “Getting Informed.” That process indentified the key issues as well as allowing a better understanding of parent perceptions and attitudes towards school travel.</p>
+<p>Neighbourhood walkabouts then brought together all of the key stakeholders (politicians, parents and school administration) to observe these safety concerns, determine built environment issues, and brainstorm short and long-term solutions. That way they were fully aware of the issues, had begun discussing them with the other participating decision makers, and had become invested in finding a solution (Building Motivation Over Time; Overcoming Specific Barriers; Vivid, Personalized, Credible, Empowering Communication.)</p>
+<p>Next, with the School Travel Plan Facilitator as the lead, the Stakeholder Committees worked with each school to identify action items that would effectively and efficiently address these issues. With an agreed to action plan in place, the team could then move to implementation.</p>
+<p>Based on the formative research findings (see above, in “Getting informed”), the program focused on the students themselves as the key influencers in their families. This involved organizing IWALK clubs, IWALK Days, and Winter Walk Days that were fun and easy to participate in, and could lead to further commitments to walk and cycle at other times as well. (Building Motivation Over Time; Obtaining a Commitment; School Programs that Influence the Home; Vivid, Personalized, Credible, Empowering Communication)</p>
+<p>The program also encouraged the use of small incentives and recognition for encouraging initial involvement and increasing engagement in the program. To increase word-of-mouth promotion and norm appeals, each student in the initial four province pilots received a pencil case with the logo “It’s Really Cool to Walk to School,” along with pencils bearing the same logo. In addition, teacher/principal champions at each of the 12 pilot schools received reusable mugs bearing the same message. The longer-term strategy is to get the school boards and municipalities to develop more supportive policies, by engaging enough schools across each municipality to ask for those changes. (Building Motivation Over Time, Financial Incentives, Norm Appeals, Word of Mouth)</p>
+<p>Sometimes, the action planning and the implementation stages overlapped, and the communities were able to get things done (like changing the markings painted on a road) while still planning other actions.</p>
+<p>This pattern was repeated each year, and each year, all of the research findings were fed into the continually evolving Travel Plan document. The school engineers and planners really liked this process because it mirrored a lot of the work that they were already doing. (Building Motivation Over Time, Feedback)</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Each participating school conducted student surveys, family surveys, school site visits, walkabouts, and traffic, pedestrian, and cyclist counts at the beginning of each school year (September, yearly baseline) and then again at the end of each school year (May.)</p>
+<p>Hands-up classroom surveys were used to find out the modes of transportation used by every student in the school to and from school for one week.</p>
+<p>The family surveys obtained information from every family about present mode of school transportation, routes taken to school, existing barriers along those route, and attitudes towards school travel.</p>
+<p>Traffic/ pedestrian/ cyclist counts recorded the number of pedestrians/ cyclists/ vehicles arriving at each school entrance, as well as any unsafe behavior observed.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>By 2013 the program had spread to 120 schools across Canada. Some of the schools had achieved a modal shift of over 20% towards walking and cycling. The provinces that had been conducting the program the longest had average modal shifts of up to 6% across all participating schools. Across all 120 schools (at various stages of implementation) the modal shift averaged 1%. Beyond the end of the national School Travel Planning pilot, the following provinces and territories continued with the initiative and expanded their reach: St. John’s, Newfoundland; Nova Scotia; Quebec; Ontario; Manitoba; Saskatchewan; Alberta; British Columbia; Yukon Territory.</p>
+<p>Further details are contained in the 2012 Update Report, which can be downloaded using the link in the left hand summary column.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Jacky Kennedy Director, Canada Walks Green Communities Canada<br/>
+<a href="mailto:asrts@sympatico.ca?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20wesbite">asrts@sympatico.ca</a><br/>
+<a href="http://www.saferoutestoschool.ca" target="_blank">www.saferoutestoschool.ca </a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>To access the 2012 program report and the  transcript, video and handouts from the Tools of Change 2010 case study webinar, click on the links in the left hand summary column on this page.</p>
+<p>This case study was selected as a Tools of Change Landmark case study in 2009, by a peer selection panel consisting of:</p>
+<ul>
+<li>Danny Albert, University of Ottawa's Parking and Sustainable Transportation Department</li>
+<li>Daniel Coldrey, Transport Canada</li>
+<li>Mark Dessauer, Active Living by Design</li>
+<li>Catherine Habel, Metrolinx</li>
+<li>Jacky Kennedy, Green Communities Canada</li>
+<li>Jessica Mankowski, Federation of Canadian Municipalities</li>
+<li>Gary McFadden, National Center for Biking and Walking</li>
+<li>Lorenzo Mele, Town of Markham</li>
+<li>Chuck Wilsker, U.S. Telework Coalition</li>
+<li>Phil Winters, University of South Florida</li>
+<li>JoAnn Woodhall, Translink</li>
+</ul>
+<p>It was wrtitten in 2009 by Jay Kassirer.</p>
+<p><strong>Developing Partners</strong></p>
+<p>Planning team members included:</p>
+<p><em>National Level:</em></p>
+<ul>
+<li>Green Communities Canada – the Project Lead and the Program Manager (project management)</li>
+</ul>
+<ul>
+<li>Cape Breton University - academic staff from the Department of Education (Child and Youth-Friendly Guidelines, sustainable happiness, sustainability)</li>
+<li>University of Toronto – academic staff from the departments of Geography (infrastructure aspect of transportation planning, evaluation) and Physical Activity and Health (health and psychological influences)</li>
+</ul>
+<p><em>Provincial level:</em></p>
+<p>The Provincial and Territorial lead organizations were:</p>
+<ul>
+<li>City of St. John’s, Newfoundland and Labrador</li>
+<li>Recreation PEI, Prince Edward Island</li>
+<li>Ecology Action Centre, Nova Scotia</li>
+<li>New Brunswick Lung Assocation</li>
+<li>Velo Quebec</li>
+<li>Green Communities Canada, Ontario</li>
+<li>Green Action Centre, Manitoba</li>
+<li>Saskatchewan in motion</li>
+<li>SHAPE Alberta</li>
+<li>HASTE BC</li>
+<li>Recreation and Parks Association of the Yukon</li>
+<li>Education District 1, Yellowknife, NWT</li>
+<li>Department of Health and Social Services, Government of Nunavut</li>
+</ul>
+<p><em>Municipal level:</em></p>
+<ul>
+<li>Municipal lead (municipal level coordination)</li>
+<li>Municipal health, education and transportation representatives</li>
+<li>Police</li>
+<li>School District representatives</li>
+</ul>
+<p><em>School level</em></p>
+<ul>
+<li>Vice Principal (official administrator)</li>
+<li>Parent volunteer </li>
+</ul>
+<p><strong>Lessons Learned</strong></p>
+<ul>
+<li>You really have to have all the right stakeholders at the table (see “Developing Partners.”</li>
+<li>You also need to have some things that make it fun for the kids to get them engaged.</li>
+<li>Liability concerns come up often. The School Travel Plan process, if it's followed properly, brings together all of the stakeholders, and one of the things that we recommend in our process is that you put in an application to your school district to ask their permission to do this project to bring them to the table. We're having a lot of success in getting those approved here in Ontario and in other parts of the country. That way, you have an opportunity to explain to them what the process is about and to show them some of the tools. Because we bring together all of the stakeholders, no one is pointing fingers; you're coming at it as a team effort.</li>
+</ul><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

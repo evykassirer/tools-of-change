@@ -1,0 +1,242 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>Green Communities Canada</p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<p>municipalities, schools, and health organizations</p><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>86% of respondents reported reduced idling, 69% reported reduced highway speeds, 60% reported reduced hard starts and stops, 52% reported more frequent checking of tire pressure, and 28% reported walking or riding a bike more frequently.</p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>GCC EcoDriver Program</h1>
+<p>Green Communities Canada’s EcoDriver program promotes fuel-saving behaviours in three core areas: fuel-efficient driving, purchase of fuel-efficient vehicles, and driving less. Participants attend driver-to-driver-format workshops, indicate the specific changes in driving habits they will make and the number of people they will tell about what they learned, and attend special events such as tire clinics where they are given free pressure gauges and can learn to test their tire pressure.  This program was designated a Tools of Change Landmark case study in 2011. A webinar on the program will be held in February 2011. About half a year later, this case study will be updated and the webinar recording, transcript and handouts will be posted. </p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong>Note:</strong> <em>To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>Green Communities Canada’s EcoDriver program was developed as a pilot project to test the viability of ecodriving messaging for Canadian drivers. The objective was to use the success of a small project to inform and promote the development of multi-pronged ecodriving strategies that would be adopted at the provincial level by governments across the country, starting with Ontario.</p>
+<p>Twenty-two million Canadians use motor vehicles every day. And cars aren’t likely to disappear from Canada’s roads anytime soon. Even under the boldest scenarios for modal shift projected by the Greater Toronto Area Regional Transportation Authority, the projections still show more than 60% of morning commute trips by car in 2034. Metrolinx’s target for GHG reductions from personal transportation is 5 to 7 megatonnes, but they project only 1.6 MT can be achieved through modal shift.</p>
+<p>Improvements in vehicle fuel efficiency and shifts to lower carbon fuel sources (e.g. electric vehicles) will help, but because of slow fleet turnover (normally about 13% annually) it will take a long time for technological improvements to new vehicles to have substantial impact.</p>
+<p>The average driver, implementing simple changes in driving style, can realize fuel efficiency savings in the range of 15%. Based on this fact plus outcomes of ecodriving programs in Europe, the International Energy Agency estimates a major ecodriving campaign in North America could yield a 5% reduction in fuel use at a cost of just 6 cents U.S. per barrel of oil saved.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>EcoDriver was based on a program in Nova Scotia called Drive Wiser. Additional research included investigation of fuel efficient behaviours and barriers to adopting those behaviors.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The program operated in twelve Ontario communities, including Hamilton, Peel Region, Toronto, Durham Region, York Region, and Collingwood, from September 2008 to March 2011. It promoted fuel-saving options through behavior in three core areas: fuel-efficient driving, purchase of fuel-efficient vehicles, and driving less.</p>
+<p>The target population of the EcoDriver project was suburban families. While it was clear that some members of this target audience would already be implementing some fuel efficient driving techniques, it is highly unlikely that they would be fully aware of all the savings that they could achieve.</p>
+<p>Activities included:</p>
+<ul>
+<li>Workshops and Presentations: Participants learned about driving habits that could increase their fuel efficiency, how much they could save through fuel-efficient vehicle purchases, and how driving less could reduce their personal GHG emissions. Workshop participants signed an exit survey at the end of the workshop that indicated what changes they planned to make to their driving habits from that time on. A follow-up survey eight to twelve weeks later reinforced those commitments.</li>
+<li>Tire Pressure Blitzes: Just one tire under-inflated by 8 psi reduces fuel efficiency by 4%. Blitzes at local events included tire pressure gauge giveaways, dummy tires for learning how to use them, and on-the-spot fill-ups from a compressor where possible.</li>
+<li>Displays: Staffed displays for community events and stand-alone displays at locations such as car dealerships and community centres are available upon request. Staffed displays usually included a tire and tire pressure gauges, where people were offered the chance to test their skills hands-on. Bumper stickers that said “Driving 100 uses 20% less fuel than 120” were also available.</li>
+<li>Partnerships: To maximize impact, local partnerships were developed with a range of players such as municipalities, schools, and health organizations.</li>
+<li>Local media events: For example, demonstrating fuel-saving habits with a journalist by taking them on a drive with a Scangauge fuel consumption meter, or organizing a Fuel Efficiency Rally that challenged drivers to go as far as possible on one tank. From September 2008 to March 2010 Green Communities hosted 123 EcoDriver workshops with 3500 attendees. These workshop participants made 13,000 different commitments to make changes in their driving habits. Eight hundred vehicles were checked at tire clinics and 5,000 drivers received free tire gauges. Over 20,000 people approached staffed displays at community events. Thousands more were reached through special events: a Hybrid Alley display in York Region showcased fuel efficient vehicles to 10,000 visitors; an EcoDriver Challenge Rally in Thunder Bay received front page coverage; 2.43 million impressions were the result of 59 EcoDriver media hits over 18 months in three languages; an EcoDriver billboard in Collingwood was posted on the main road out of town, where it was visible to 8800 motorists daily.</li>
+</ul>
+<p>To ensure the greatest impact possible the EcoDriver project incorporated many CBSM tools:</p>
+<ul>
+<li>Obtaining a Commitment –exit surveys to get people to make commitments in the workshops; workshops took place where people knew each other, such as workplaces and places of worship, so that there was a sense of public-ness to those commitments. In addition, for those who used the buttons and bumper stickers touting efficient driving practice, these reinforced their own behaviour (driving the speed limit) and shifted their self-identity; because they took that action, they come to think of themselves as efficient drivers.</li>
+<li>Prompts – follow-up surveys sent out six to eight weeks later reinforced the messaging and reminded participants of their commitment; EcoDriver buttons and bumper stickers also served as prompts.</li>
+<li>Peer-to-peer learning and Credible, Personalized Communications – norm appeals work better to influence behaviour when the person who is delivering the message is perceived to be “like” the person receiving the message, so EcoDriver was delivered in a friendly, driver-to-driver format. The person delivering the workshop always self-identified as a driver and at the beginning of the session talked about the reasons he or she liked driving as concerns about the environmental impact.</li>
+<li>Word of Mouth / Social diffusion – exit surveys asked how many people the participants were planning to tell about what they learned.</li>
+<li>Vivid Communications, Hands-on learning – at tire clinics and workshops tire gauges were put in people’s hands so they learned themselves how to check tire pressure (many had never done this).In addition, the presentation script had been carefully crafted to include vibrant imagery (e.g. to drive smoothly, imagine there’s a cup of coffee on the dashboard that you don’t want to spill).</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The cost for the EcoDriver program as implemented was about $300/tonne of CO2. This is clearly very expensive, because of the small scale of operation. Economies of scale would reduce that. Funding was provided by the Ontario Ministry of the Environment’s Community Go Green Fund and Natural Resources Canada</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Impact was measured using follow-up surveys 8-12 weeks after workshops.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Eighty-six percent of survey respondents reported reduced idling, 69% reported reduced highway speeds, 60% reported reduced hard starts and stops, 52% reported more frequent checking of tire pressure, and 28% reported walking or riding a bike more frequently. That corresponds with savings of 265,000 litres of fuel and 635 metric tonnes (635,000 kg) of CO2. These estimates do not take into account the further impacts resulting from face-to-face outreach at community events, tire pressure clinics, and media hits. Nor do they take into account the word of mouth impact of the program, also likely to be substantial, given that survey respondents reported telling an average of 5.86 others about what they had learned. Based on the success of this pilot program’s results, staff successfully advocated for inclusion into the Region’s transportation plan, measures that would address fuel-efficient driving behaviour. EcoDriver staff representatives have met with the Ontario Minister of Transportation, as well as some of the Ministry Staff and the Ontario Climate Change Secretariat.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Beth Jones <br/>
+EcoDriver Project Manager<br/>
+Green Communities Canada<br/>
+<a href="mailto:bjones@greencommunitiescanada.org?subject=I%20noticed%20your%20case%20study%20on%20Tools%20of%20Change">bjones@greencommunitiescanada.org</a></p>
+<p> </p>
+<p> </p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Manitoba’s ecoDriver Manitoba program has been developed based on Green Communities’ program in Ontario.</p>
+<p>This case study was selected as a Tools of Change Landmark case study in 2011 by a peer selection panel consisting of</p>
+<ul>
+<li>Jacky Kennedy, Green Communities Canada</li>
+<li>Ryan Lanyon, on educational leave from Metrolinx</li>
+<li>Lorenzo Mele, City of Mississauga</li>
+<li>JoAnn Woodhall, Translink</li>
+<li>Chuck Wilsker, U.S.Telework Coalition</li>
+<li>Lisa Goodlet and Ben Campbell, Transport Canada</li>
+<li>Geoff Noxon, Noxon Associates</li>
+<li>Nathalie Lepointe, Federation of Canadian Municipalities</li>
+<li>Mark Dessauer, Active Living by Design</li>
+</ul>
+<p>This case study was written in 2012 by Robert Rowell.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

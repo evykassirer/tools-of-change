@@ -1,0 +1,301 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>San Francisco Department of Public Health, STD Prevention and Control Services</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Los Angeles Department of Health</li>
+<li>Community testing sites</li>
+<li>Retail businesses in the Castro area of San Francisco</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>More than 80% of those surveyed during the campaign were aware of the campaign and its key messages.</li>
+<li>Of those surveyed at testing sites, about 41% said that the campaign influenced them to get tested.</li>
+<li>Gay and bisexual men who were aware of the campaign were more likely than those unaware to have recently tested for syphilis and to have greater knowledge about syphilis. This effect was sustained for almost three years.</li>
+</ul>
+<p><a href="/userfiles/Healthy Penis case studyV2.pdf" target="_blank">PDF of this case study</a></p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>The Healthy Penis Campaign</h1>
+<p>The Healthy Penis was a humor-based campaign that increased syphilis testing and awareness among gay and bisexual men in San Francisco.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>San Francisco experienced a sharp rise in early syphilis between 1999 and 2002, with the number of cases rising from 44 to 494 per year.     Most of the syphilis cases were among men who identified as gay or bisexual (88%), were white (60%), and were infected with HIV (61%).</p>
+<p>In June 2002, the San Francisco Department of Public Health's (SFDPH) STD Prevention and Control Services launched a social marketing campaign, called the Healthy Penis, designed to increase syphilis testing and awareness among gay and bisexual men</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>Based on the characteristics of the target audience, and with input from the community partners group, the SFDPH determined that the primary campaign message should be “get tested,” with the main objective of changing community norms around syphilis testing.</p>
+<p>Secondary objectives were to increase awareness about the syphilis epidemic in gay and bisexual men and to increase knowledge about syphilis in general (symptoms, routes of transmission, the link between syphilis and HIV transmission, etc.).</p>
+<p>Ultimately, the campaign sought to have the target audience undergo routine screening (every 3-6 months), which would help the health department identify new cases and decrease the duration of infectivity.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The campaign was initially conceived and developed by Better World Advertising, a gay-owned media company with a history of successful HIV prevention advertising, in collaboration with staff from the SFDPH.</p>
+<p>All campaign materials were reviewed by focus groups of gay men and key community leaders; draft materials were also circulated on an Internet list-serve of gay men in San Francisco.</p>
+<p>Focus groups expressed a need for basic facts about syphilis and information on testing and other services; however, participants did not want the campaign to be judgmental or discuss sexual risk behaviour. They said that scare tactics would be tuned out, and that didactic messages could be perceived as "preachy."</p>
+<p>Since the community was already inundated with HIV prevention messages, the campaign needed to stand out. The chosen approach was specifically designed to be sex-positive, bold, and humorous; provocative elements (e.g., penis costumes and squeezie toys) were intended to raise awareness and generate secondary waves of discussion.</p>
+<p>All feedback (from focus groups and the list-serve) was reviewed by the development team, and the health department’s executive staff approved the final materials.</p>
+<p><b>Targeting the audience</b></p>
+<p>Epidemiological data determined that the target audience should be gay and bisexual men who lived in San Francisco. The campaign was promoted in neighborhoods where the greatest concentration of gay or bisexual men lived and where there were businesses that catered to this population.</p>
+<p>Key messages included:</p>
+<ul>
+<li>Syphilis is on the rise among gay and bisexual men in San Francisco.</li>
+<li>If you are a sexually active gay or bisexual man in San Francisco, get tested for syphilis every 3-6 months.</li>
+<li>Methamphetamine use increases your risk of acquiring syphilis.</li>
+</ul><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The first phase of the Healthy Penis campaign was launched during the annual San Francisco Lesbian Gay Bisexual Transgender Parade in late June 2002 and continued through December 2005. A second phase followed, after a related social marketing campaign ended.</p>
+<p><strong>Phase I </strong></p>
+<p><strong> </strong>The campaign incorporated the use of humorous cartoon strips that featured characters like the Healthy Penis and Phil the Sore. (Vivid, personalized communications) These characters helped spread messages about:</p>
+<ul>
+<li>Syphilis testing</li>
+<li>The rise of syphilis among gay and bisexual men</li>
+<li>Information on syphilis transmission, symptoms and prevention, and</li>
+<li>The connection between syphilis and HIV.</li>
+</ul>
+<p>The cartoon strips were initially published semi-monthly in a popular gay Bay Area publication. After publication, poster-size reproductions were posted on the streets, bus shelters and bus advertising, in bars and commercial sex venues, and on banner advertisements on one of the most popular Internet sites for meeting sex partners among gay men. (Mass media) Messages were targeted by neighborhood and in venues where gay men frequented, during hours when the most number of men could be reached.</p>
+<p>Topics addressed in the cartoons initially emphasized all of the messages described above; after a year and a half, the campaign focused on the “get tested” message.</p>
+<p><img alt="Syphilis Cartoon Characters (Healthy Penis Program)" height="657" src="/userfiles/Image/Dick Tracy.JPG" width="450"/></p>
+<p>In addition to messages contained within the cartoon strips, brief text boxes were displayed on the bottom of the cartoon images describing modes of syphilis transmission (skin-to-skin contact, oral, anal and vaginal sex), symptoms (painless sore and/or rash), and explaining that syphilis is curable. These text boxes were displayed on cartoons from June 2002 to October 2003 with decreasing frequency.</p>
+<p>Promotional items were handed out at events (Incentives) and included:</p>
+<ul>
+<li>Palm cards</li>
+<li>Magnets, and</li>
+<li>Photos taken with one of three 7' tall Healthy Penis costume characters, which were then posted on the Healthy Penis website and on social networking websites (Facebook, MySpace and Twitter). (Mass Media)</li>
+</ul>
+<p><img alt="Healthy Penis Costumes - Siphilis" height="364" src="/userfiles/Image/Costumes(1).JPG" width="450"/></p>
+<p>Phase I of the Healthy Penis campaign ended in San Francisco in late 2005. The campaign was subsequently implemented in other cities that had increasing syphilis rates among gay and bisexual men (Cleveland, OH, San Jose, CA, Seattle, WA, and Winnipeg, MB).</p>
+<p><strong>Phase II</strong></p>
+<p>In mid-2007, community leaders in San Francisco felt that the Healthy Penis campaign was “getting old,” so a new social marketing campaign called “Dogs are Talking” was introduced with the primary objective to increase syphilis testing among gay and bisexual men.</p>
+<p>This campaign was more limited in budget and scope than the Healthy Penis campaign. It was designed in conjunction with another local social marketing firm, Promotions West, along with input from community members, and was meant to appeal to the large number of gay and bisexual dog owners in San Francisco. However, an evaluation found that awareness of this campaign was low and organizers ended the program in late 2008.</p>
+<p>Although the incidence of early syphilis in San Francisco in 2005 was lower than in the previous three years, and declines continued through 2007, in 2008 early syphilis incidence spiked to almost 500 cases among gay men and remained high through 2009. Reasons for this increase were unclear, but could have included decreased resources allocated to syphilis prevention and control resulting in early clinic closures, fewer public health field workers, and decreased community engagement, issues which persisted through 2010.</p>
+<p>In response, health officials and gay community leaders reintroduced the Healthy Penis campaign in February 2009. The new campaign featured three Healthy Penis characters of different ethnicities, Clark, Byron, and Pedro, along with an updated serial comic strip. (Vivid, personalized communications)</p>
+<p><strong>Partnerships</strong></p>
+<p>The campaign was created by Better World Advertising and launched in collaboration with the San Francisco Department of Public Health. The campaign was also developed in collaboration with the Los Angeles Department of Health, which opted for a "Stop the Sores" campaign centred on the character "Phil the Sore" rather than the "Healthy Penis," after feedback from its local gay community groups.</p>
+<p>Partners also included community testing sites and retail businesses in the Castro area of San Francisco.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The SFDPH funded the Healthy Penis campaign and its evaluation.   Partnering with the Los Angeles Department of Health allowed campaign organizers to lower their start-up costs to $75,000 in 2002. The campaign was continued through the end of 2005 at an additional cost of $295,000. Three-quarters of the campaign's first-year funds were spent on campaign development, with the remaining quarter spent on displaying campaign materials.  The costs of evaluating the campaign included data entry and analysis and 13 survey interviewers. These costs totaled approximately $US 11,360.  An unpaid intern performed data entry for street-level surveys. </p>
+<p>The cost to relaunch Phase II of the campaign was $US 104,130.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The effectiveness of the campaign's first phase  was assessed using:</p>
+<ul>
+<li>Clinic testing data</li>
+<li>Clinic survey data</li>
+<li>Street intercept survey data</li>
+<li>Number of hits on the Healthy Penis website, and the number of friends Facebook and MySpace pages, and on Twitter.</li>
+</ul>
+<p>The campaign was unable to conduct baseline measurements. Two waves of surveys were conducted using the same survey: Evaluation I (EI) took place six months after the campaign began (December 2002 to February 2003); Evaluation II (EII) took place two and half years after the campaign began (September 2004 to March 2005).</p>
+<p>For each survey, men were intercepted at coffee shops, bars, markets, laundromats, sex clubs, a clean and sober community centre, on sidewalks and in other venues located in campaign-targeted neighborhoods.</p>
+<p>Respondents were asked about:</p>
+<ul>
+<li>Basic demographic information</li>
+<li>Unaided (e.g., spontaneous mention) and aided (e.g., prompted response) awareness of the Healthy Penis campaign</li>
+<li>Perceived key messages of the campaign: syphilis knowledge (via open-ended questions); sexual practices in the past month; HIV status; and how many times they were tested for syphilis in the past six months.</li>
+</ul>
+<p>Comparisons were then made among those aware of the campaign between the first and second sample of respondents. Recent history of syphilis testing was compared with campaign awareness level for each evaluation separately. Analysis included Fisher's Exact (statistical significance) and Cochran-Armitage (trend) tests, and logistic regression.</p>
+<p>In EI, 244 interviews were conducted with San Francisco residents and 150 interviews were included in EII. All respondents were men, aged 18-60, who had sex with men and most were white and HIV negative. There were no significant demographic differences between the first and second evaluation participants. </p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Campaign awareness was high with 80% (EI: 194/244) and 85% (EII: 127/150) of respondents aware of the campaign.</p>
+<p>Awareness was similar between the two evaluations: 33% (aided) versus 41% (unaided) mentioned the Healthy Penis campaign when asked to recall recent advertisements or public events about sexual health issues; an additional 47% (EI) versus 44% (EII) recognized the campaign when shown a campaign image.  There was no difference in overall campaign awareness, unaided awareness, or aided awareness between the two evaluations.</p>
+<p>Of those surveyed, 40.7% of those who saw the campaign agreed that it had influenced them to get tested.</p>
+<p>There was a strong positive association between campaign awareness and recent syphilis testing.</p>
+<p>After controlling for extraneous variables (i.e., age, HIV status, casual sex partners in the last month), each increase in campaign awareness level during EI (none vs. aided awareness vs. unaided awareness) was associated with a 90% increase in likelihood for having been tested for syphilis in the past six months. The same multivariable model applied to EII respondents found each increase in campaign awareness level to be associated with a 76% increase in likelihood for having been tested for syphilis.</p>
+<p>Knowledge of the campaign’s key message (“get tested”) also increased over time with increasing exposure. This effect was sustained for almost three years.</p>
+<p>Gay and bisexual men who were aware of the campaign were also more likely to have greater knowledge about syphilis than those unaware.</p>
+<p>In both evaluations, HIV-infected respondents showed an increased likelihood of syphilis testing than those who were HIV negative. Overall, reported syphilis testing in the previous six months did not change from the first evaluation to the second evaluation (42% versus 49%).</p>
+<p>In 2005, the incidence of early syphilis was lower than in the previous three years, with decreases in cases in gay/bisexual men accounting for the drop. Although campaign evaluations were cross-sectional and causality cannot be determined, it did appear that the Healthy Penis campaign, along with other SFDPH syphilis elimination efforts, may have led to this decrease in syphilis incidence.</p>
+<p>Additional indicators:</p>
+<ul>
+<li>52,345 website hits; 28,316 of those hits were searches to learn about the basics of syphilis</li>
+<li>Approximately 2,348 individuals became friends of one of the characters on the Facebook or MySpace sites.</li>
+<li>Most of those surveyed saw campaign materials on posters and on buses (shelters and in-bus.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Jacqueline McCright, MPH<br/>
+Community STD Services Manager<br/>
+San Francisco Department of Public Health <a href="mailto:Jacque.McCright@sfdph.org?subject=Jacque.McCright%40sfdph.org">Jacque.McCright@sfdph.org</a><br/>
+T. 415-355-2015<br/>
+<a href="http://www.healthypenis.org/"> http://www.healthypenis.org/</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned</strong></p>
+<p><em>Invest in campaign development</em></p>
+<p>Campaign organizers believed that spending more on start-up resources on campaign development rather than campaign placement likely led to the high level of campaign awareness and demonstrated that the messages resonated with the target audience.</p>
+<p><em>Partnerships help lower costs</em></p>
+<p>By partnering with another jurisdiction (Los Angeles), campaign organizers lowered their start-up costs and created a Community Partners Group, which helped tailor campaign messages to be most effective.</p>
+<p><em>Well-planned evaluations are critical</em></p>
+<p>Campaign organizers carefully planned their evaluations and evaluation techniques to assess the impact of the campaign. These evaluations helped support a continuation of the campaign (Phase II) in San Francisco, as well as in other U.S. and Canadian cities.</p>
+<p>Planned comparisons of pre- and post-campaign syphilis testing rates  among gay men might also have provided more compelling evidence of  campaign effectiveness (e.g., some community members were reluctant to  ascribe increases in syphilis testing to the effect of the campaign).</p>
+<p><em>Community input</em></p>
+<p>The Healthy Penis campaign was developed with input from the affected community and this was seen as a key factor in successfully reaching the target audience and leading to a reduction in syphilis incidence in 2005. By actively participating in the campaign’s development, community leaders provided critical insight, feedback, credibility and balance, and helped create the campaign messages and materials.</p>
+<p><em>Better communication with local authorities</em></p>
+<p>All health department executive staff were aware of the campaign from the start, but not all local authorities felt comfortable with every component of the campaign, despite its impact.</p>
+<p>In the future, communication with and participation of an expanded group of political and community stakeholders would be helpful.</p>
+<p><strong>Note</strong>:   This case study was written in 2014 by Jay Kassirer and Heather Bowen Ray, with funding from the Public Health Agency of Canada.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

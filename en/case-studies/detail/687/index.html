@@ -1,0 +1,519 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>Bankstown Town Council</p><!-- Initiated already contains li tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Recycle Right</h1>
+<p>Bankstown, Australia tested a range of options for reducing waste contamination. </p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Since the introduction of the household recycling service, councils had experienced challenges in helping residents understand how to Recycle Right.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>To address this, Bankstown City Council commenced work on a major project to reduce contamination rates in yellow recycling bins to below 10%.</p><!-- Objectives already contains P tags.-->
+<h2>Results</h2>
+<p>  </p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+    mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt">
+<tbody>
+<tr>
+<td style="width:119.7pt;border:solid windowtext 1.0pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA"> </span></p>
+</td>
+<td style="width:119.7pt;border:solid windowtext 1.0pt;
+            border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+            solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA"> </span></p>
+</td>
+<td style="width:119.7pt;border:solid windowtext 1.0pt;
+            border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+            solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Contamination Rate Before</span></p>
+</td>
+<td style="width:119.7pt;border:solid windowtext 1.0pt;
+            border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+            solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Contamination Rate After</span></p>
+</td>
+</tr>
+<tr>
+<td style="width:119.7pt;border:solid windowtext 1.0pt;
+            border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+            padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Door hangers (Well done! or Oh no!)</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Large complex</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">22%</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">22%</span></p>
+</td>
+</tr>
+<tr>
+<td style="width:119.7pt;border:solid windowtext 1.0pt;
+            border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+            padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Door hangers</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Small complex</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">26%</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">12%</span></p>
+</td>
+</tr>
+<tr>
+<td style="width:119.7pt;border:solid windowtext 1.0pt;
+            border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+            padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Recycling tubs (in-home buckets)</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Multi-unit dwellings</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">32%</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">18%</span></p>
+</td>
+</tr>
+<tr>
+<td style="width:119.7pt;border:solid windowtext 1.0pt;
+            border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+            padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Recycling tubs</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Single-unit dwellings</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">24%</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">8%</span></p>
+</td>
+</tr>
+<tr>
+<td style="width:119.7pt;border:solid windowtext 1.0pt;
+            border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+            padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Door knocking plus feedback</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Multi-unit dwellings<o:p></o:p></span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">45%</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">15%</span></p>
+</td>
+</tr>
+<tr>
+<td style="width:119.7pt;border:solid windowtext 1.0pt;
+            border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+            padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Door knocking plus feedback</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Single-unit dwellings<o:p></o:p></span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">29%</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">12%</span></p>
+</td>
+</tr>
+<tr>
+<td style="width:119.7pt;border:solid windowtext 1.0pt;
+            border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+            padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Pledge</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Multi-unit dwellings<o:p></o:p></span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">41%</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">17%</span></p>
+</td>
+</tr>
+<tr>
+<td style="width:119.7pt;border:solid windowtext 1.0pt;
+            border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+            padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Pledge</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Single-unit dwellings<o:p></o:p></span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">28%</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">10%</span></p>
+</td>
+</tr>
+<tr>
+<td style="width:119.7pt;border:solid windowtext 1.0pt;
+            border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+            padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Flag and tag (well done! or Oh no!)</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA"> </span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">21%</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">11%</span></p>
+</td>
+</tr>
+<tr>
+<td style="width:119.7pt;border:solid windowtext 1.0pt;
+            border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+            padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Changing lids</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA"> </span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">30%</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">5%</span></p>
+</td>
+</tr>
+<tr>
+<td style="width:119.7pt;border:solid windowtext 1.0pt;
+            border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+            padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Wall poster</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA"> </span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">32%</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">6%</span></p>
+</td>
+</tr>
+<tr>
+<td style="width:119.7pt;border:solid windowtext 1.0pt;
+            border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+            padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA">Poster on bulk bins</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="EN-CA"> </span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">22%</span></p>
+</td>
+<td style="width:119.7pt;border-top:none;border-left:
+            none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+            mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+            mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+<p align="center" class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;"><span lang="EN-CA">59%</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal"><span lang="EN-CA"> </span></p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Town Council web page: <a href="http://www.bankstown.nsw.gov.au/index.aspx?NID=1004" target="_blank">http://www.bankstown.nsw.gov.au/index.aspx?NID=1004</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><a href="https://www.youtube.com/watch?v=4YvoH1o4IxE&amp;feature=youtu.be" target="_blank">You Tube video</a> showing how each intervention was carried out.</p>
+<p>This case study was compiled in 2015 by Jay Kassirer and Kelley Dennings.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

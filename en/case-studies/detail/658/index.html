@@ -1,0 +1,379 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Portland Bureau of Transportation</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Metropolitan Planning Organization (Portland region)</li>
+<li>Oregon Department of Transportation</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>About 5,400 participants took part in the program, of which 10.5% ordered materials</li>
+<li>Reduction of more than 1 million VMT (vehicle miles travelled), representing approximately 200 miles per new resident per year</li>
+<li>Drive-alone trips decreased 10.4% among new resident populations, not just those involved in the program</li>
+<li>Walking, biking and use of transit rose 13.6% among new residents  </li>
+</ul>
+<p><a href="/userfiles/SmartTrips Landmark case studyV4.pdf" target="_blank">Case Study PDF</a></p>
+<p>Webinar <a href="/userfiles/Smart Trips Transcript - Final.pdf" target="_blank">Transcript</a> and <a href="/userfiles/Smart Trips Welcome     Remaining Questions.doc" target="_blank">Answers to remaining questions</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Portland's Smart Trips Welcome Program</h1>
+<p>With an average of 15% of the U.S. population moving each year, new residents represent a significant portion of urban dwellers. In response, Portland has refocused its Individualized Marketing efforts and incorporated an innovative and targeted communication strategy to help new residents develop environmentally-friendly and active transportation habits. As a result, the city’s new residents took 10% fewer drive-alone trips and the proportion of their trips taken by green and active methods increased by 14%. This comprehensive approach includes a strong evaluation design and targeted social marketing strategies. SmartTrips Welcome was designated a Landmark (best practice) case study in 2012.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: </em>To minimize site maintenance costs, all Tools of Change case studies are written in the past tense, even if they are ongoing.</p>
+<p>Portland was well known for its progressive planning and transit policies. Its population was 600,000, within a larger region of just over two million people, and was relatively compact, thanks to an urban growth boundary that helped to prevent sprawl. Six percent of all commuting trips were done by bicycle.</p>
+<p>The League of American Bicyclists gave Portland a Platinum rating in 2008 and reaffirmed that status in 2013. </p>
+<p>"We're known for transportation, it's kind of in the blood," said Linda Ginenthal, SmartTrips Program Manager.</p>
+<p>Since 2003, the Portland Bureau of Transportation had operated the SmartTrips program. Its comprehensive approach of individualized marketing activities and education had reached 80% of Portland households, encouraging healthy, active transportation options and reducing millions of vehicle miles traveled (VMT).</p>
+<p>“SmartTrips Welcome” took a fresh step on the SmartTrips program to encourage positive transportation behaviour in <em>new</em> residents.</p>
+<p>By redefining the approach and developing innovative strategies to target a different audience—new residents—SmartTrips Welcome built upon previous successes to develop an innovative, effective, and replicable transportation behavior change program. </p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>SmartTrips Welcome set six objectives:</p>
+<ol>
+<li>Reduce VMT</li>
+<li>Reduce drive-alone trips</li>
+<li>Increase awareness and use of environmentally-friendly and active transportation modes</li>
+<li>Engage eight percent of target new residents to participate</li>
+<li>Demonstrate a shift in primary work and neighborhood mode choice</li>
+<li>Engage each new mover three times, and each participant seven times</li>
+</ol>
+<p>"We wanted to increase those biking, walking, and taking transit and we included car sharing and carpooling as well," said Ginenthal.</p>
+<p>"We also had a goal to engage 8% of new target residents to participate in the program."  SmartTrips had traditionally been geographically based and their engagement numbers were typically higher than in the objectives set for SmartTrips Welcome.  "We've had up to 28% and as low as 15% in our geographically-based residential program," explained Ginenthal.  "Here, we wanted to set the bar a little bit lower.  We knew this is a really hectic time for new movers and we weren't sure we were going to gain their attention."</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p><strong><em>Targeting the Audience  </em></strong></p>
+<p>From US Census data, program organizers found that 35% of the entire population had moved between 2005 and 2010. Said Ginenthal, “To us, this represented a significant number of people with an immediate gap in knowledge about their local travel options.”</p>
+<p>One of the more interesting studies found in reviewing the literature was a 2003 German social science experiment conducted by three researchers (Bamberg, Rolle and Weber) where an individualized marketing intervention was used at a time of what they called a "changed decision" context, meaning immediately after relocation.  The research found that if, when in a new situation, people received personally relevant and persuasive information, they were more likely to use it for making new behavioral decisions.</p>
+<p>SmartTrips Welcome operated under the assumption that new residents (defined as having moved within six months prior to the program launch date) needed to learn the transportation options specific to their new location, and that this was a good time to introduce, encourage, and support environmentally-friendly, active transportation behavior.</p>
+<p>Staff theorized that new circumstances brought about by relocation, necessarily demanded changes to daily routines, and thus new residents would be more receptive to positive travel solutions.</p>
+<p>"Brain research has shown that habitual behaviour, doing something repeatedly over and over again, creates neural pathways in our brains for that behavior," explained Andrew Pelsma, SmartTrips program specialist. “Neurons are continually firing in repeated sequences, creating deeper and deeper pathways that become easier and easier for us to process.  It's an evolutionary adaptation that allows our brains the ability to focus on other, more immediate or challenging concerns.”</p>
+<p>“Think of it like paths in the snow.  We tend to follow the same habitual behavior pathways because they're the easiest behaviors for our brains to process.”</p>
+<p><img alt="habits are like paths in the snow" height="322" src="/userfiles/Image/Path through snow.jpg" width="451"/></p>
+<p>"When a person changes residence, everything changes:  the way to the store, the way to work, even the steps to the fridge.  This time of change offers a unique opportunity to create new neural pathways or reinforce old ones that haven't been used for a while and make these stronger than habitual pathways."</p>
+<p>Staff also believed that targeting new residents would provide long-term program savings, as the incremental costs of program operations decrease when targeting a population that continually refreshes itself.</p>
+<p>SmartTrips chose three areas within the city; these regions had demonstrated higher rates of single occupancy vehicle use than more central counterparts and offered varying topography, facilities, and level of service.</p>
+<p> <img alt="Target communities" height="338" src="/userfiles/Image/Map.jpg" width="450"/></p>
+<p>SmartTrips purchased an inexpensive mailing list from a data services company, which was based on the U.S. Postal Service's National Change of Address database. The list contained Portland residents from particular zip codes who had moved within the last six months.</p>
+<p>Three weeks prior to the program launch, a survey was mailed to the target audience (5,400 people) and to a control group (1,352 people). The survey provided key information about daily transportation behaviour and residents' awareness of transportation resources.</p>
+<p>To gauge program benefits and barriers, staff relied on their years of experience with previous SmartTrips programs. To address additional concerns new movers had about their new home, staff also participated in a series of trainings with other City of Portland and Portland Metro personnel.</p>
+<p><em><strong>Barriers </strong></em></p>
+<p>From their research, SmartTrips staff determined that the main barriers to new residents using active, environmentally-friendly modes of transportation included:</p>
+<ul>
+<li>System intimidation, i.e., new residents may be intimidated by the size and complexity of the city's large transportation system •	Lack of awareness</li>
+<li>Lack of information</li>
+<li>Socio-economic stigma (for cycling and taking the bus)</li>
+</ul><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>SmartTrips Welcome began in the late summer and fall of 2011. It was based on three strategies:</p>
+<ol>
+<li>Individualized marketing</li>
+<li>Customized, personal communication</li>
+<li>Reinforcement and encouragement. </li>
+</ol>
+<p class="Interviewer" style="text-align: justify; text-indent: -18pt; margin-left: 18pt; mso-list: l0 level1 lfo1;"><img alt="" height="338" src="/userfiles/Image/Ven Diagram.jpg" width="450"/></p>
+<p class="Interviewer" style="text-align: justify; text-indent: -18pt; margin-left: 18pt; mso-list: l0 level1 lfo1;"> </p>
+<p><em><strong>1. Individualized Marketing</strong></em></p>
+<p>To inform new residents about the program, staff used three staggered mail-outs. New residents first received an eye-catching postcard, designed to stand out from other mail</p>
+<p><img alt="Postcard" height="291" src="/userfiles/Image/Postcard-front.jpg" width="450"/>.</p>
+<p>Residents then received an order form, which gave them a choice of 30 different types of resources (grouped by mode) and a choice of three incentives.</p>
+<p><img alt="order form" height="291" src="/userfiles/Image/Order form.jpg" width="449"/></p>
+<p>The third mailing was a "reminder" postcard.  (Prompts, Building Motivation Over Time)</p>
+<p><strong><em><img alt="" height="298" src="/userfiles/Image/Last Chance.jpg" width="449"/></em></strong></p>
+<p>Ordered materials were packaged in tote bags and delivered to their homes by bicycle within two to three weeks. (<em>Home Visits; Incentives; Vivid, Credible, Personalized, Empowering Communication</em>)</p>
+<p><img alt="" height="300" src="/userfiles/Image/Delivering.jpg" width="450"/></p>
+<p>Delivering orders by bicycle was a cost-effective and efficient method.  It not only placed emphasis on the program's commitment to active transportation, but also provided new residents with an opportunity to speak with a transportation expert face-to-face.  (<em>Credible Communication</em>)</p>
+<p>"The quick turnaround reinforced the message that we were right on top of it," said Ginenthal. The key, she says, was that they did not force material onto residents. "We gave them the information that they specifically asked for, we didn't just push the information out."</p>
+<p>Each order included a thank you letter, a pledge form, a local area coupon sheet, as well as the information that the resident had specifically requested (e.g., bicycle maps, transit information, etc.). Transit use was de-mystified by system maps and planning tips and items that catered to families with kids, including school-specific information in a fun workbook, and lastly car share, carpool, and Smart Driving tips.    (<em>Building Motivation Over Time; Overcoming Specific Barriers</em>)</p>
+<p>The order also included a link to an on-line trip diary where participants could log their daily trips and indicate their primary commute mode and their primary in-neighborhood mode.</p>
+<p><strong><em>2. Personalized Follow-Up</em></strong></p>
+<p>Follow-up with residents was a key part of program delivery and consisted of phone calls, emails and newsletters. (<em>Building Motivation Over Time</em>)</p>
+<p>A phone call to all participants was made approximately two weeks after delivery of the materials, giving participants the chance to ask questions and for program staff to provide support and encouragement. The phone calls were generally very well-received, even if the individual didn't have any immediate questions or concerns.  However, they were very time-consuming and, depending on capacity, could be hard to implement on a very large scale. (<em>Overcoming Specific Barriers</em>)</p>
+<p>The second approach used personalized emails with transit information.  Participants were asked on their order form if they wanted information on a specific transit line; if they mentioned specific lines, they were sent a personalized email with hyperlinks to those transit schedules.  If not, staff looked up the transit lines closest to their residence and emailed them those.</p>
+<p>The third approach involved market segmentation, which uses the preferences, behaviours, knowledge levels, attitudes, needs, vocation, demographic information, and other personal characteristics that separate populations into categories.</p>
+<p>"We grouped our target population by characteristics that helped us more closely match individuals with the information and services that are most relevant to them," said Pelsma.</p>
+<p>"The targeted message consisted of two customized and personal emails to each participant that encouraged behaviour change unique to them."    The first email addressed the resident's primary commute mode choice, and the second email addressed their primary neighborhood mode choice.</p>
+<p><img alt="" height="521" src="/userfiles/Image/newsletter.jpg" width="450"/></p>
+<p> Participants were divided by their primary mode choice (drive-alone, bike/walk, transit). Those three subsets were then further divided by the three geographic regions targeted.</p>
+<p>"This gave us nine different subsets from which we then crafted nine separate emails, each targeting their primary mode choice and their location, getting participants useful and relevant information," Pelsma explained.</p>
+<p><img alt="" height="338" src="/userfiles/Image/segmentation.jpg" width="450"/></p>
+<p>Market segmentation was also used to customize electronic newsletters, which, depending on the participant's mode choices, included relevant articles and pictures.</p>
+<p><em><strong> 3.  Reinforcement and Encouragement</strong></em></p>
+<p>SmartTrips sent participants eleven monthly newsletters that contained active transportation articles and tips.   </p>
+<p><img alt="" height="453" src="/userfiles/Image/newsletter-2.jpg" width="351"/></p>
+<p>Pledge forms were used to obtain a further commitment. Participants pledged to shift trips by week or month from driving alone to walking, biking, public transit, carpooling and/or car sharing. Those who sent back the pledge form and continued to connect with the program were entered into drawings for more active transportation prizes. (<em>Incentives; Obtaining Progressive Commitments) </em></p>
+<p><img alt="" height="250" src="/userfiles/Image/Pledge.jpg" width="450"/></p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>"Funding has always been a matter of creativity and making the business case for spending a fraction on encouragement and transportation demand management versus huge sums on capital and operating budgets," said Ginenthal.</p>
+<p>In 2000, the city combined its bicycle and pedestrian programs into a new division called Transportation Options. "We were charged with coming up with innovative strategies to promote walking, bicycling, transit use, carpooling and car sharing without using capital dollars," she said.</p>
+<p>The cost for the initial pilot program was approximately $78,000 ($12.76/household, $5.59 per person and $0.07 per driving trip reduced.) Of that, staff time was the greatest expenditure at $42,000 (three staff people, plus program manager).</p>
+<p>“This project represented about 1,500 hours of work by the four of us.” “We’d already developed the materials and were familiar with the program and how it worked, so our costs were probably lower than it would be for others.”</p>
+<p>In general, funding for SmartTrips Welcome came from a variety of sources:</p>
+<ul>
+<li>
+<p>General transportation revenues (gas taxes, parking fees, permits and fines, etc.),</p>
+</li>
+<li>
+<p>Congestion Mitigation and Air Quality (CMAQ) Improvement Program</p>
+</li>
+<li>
+<p>Flex Funds</p>
+</li>
+<li>
+<p>Federal energy-efficiency stimulus money</p>
+</li>
+<li>
+<p>Sponsorships from healthcare providers and insurers</p>
+</li>
+<li>
+<p>Oregon Business Energy Tax Credits.</p>
+</li>
+</ul><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Program success was measured using three approaches: new resident population, regional analysis, and long-term panel analysis.</p>
+<p><em><strong>Surveys with Program Participants </strong></em></p>
+<p>As noted above, SmartTrips sent out a survey before the program was launched to determine current habits and attitudes. The survey was sent to the target audience (N=5,400) as well as a control group (N=1,352), which helped control variable factors that applied to the target new resident community (e.g, weather, geography, unemployment rates, gas prices, etc.). In all, there were 953 target audience baseline responses (18% response rate) and 230 control baseline responses (17% response rate.)</p>
+<p>The survey generated a snapshot of an individual’s daily transportation behaviour by asking for a one–day up to four-trip diary, primary and secondary work and neighbourhood modes, and awareness of area TDM resources.</p>
+<p>After completion of the SmartTrips Welcome program, a follow-up survey was then mailed to both target and control groups using the same format. This information was entered manually into databases specifically built to store and filter the survey results. A raffle was used to encourage residents to complete the surveys.</p>
+<p><em><strong>Regional analysis </strong></em></p>
+<p>To isolate trends in regional variances and to reinforce success of replication and expansion, the regional analysis broke down the data by geographic regions within the target new resident group. The regions selected differed topographically, socially, demographically, and economically, and offer varying transit service and active transportation infrastructure.</p>
+<p><em><strong>Long term panel analysis </strong></em></p>
+<p>A one-year follow up looked at long-term program impacts. A longitudinal panel study was designed to measure and record participants’ progress over the course of the program.</p>
+<p>Target residents were encouraged to order materials online where they were asked to fill out a trip diary and survey questionnaire.</p>
+<p>After implementing the individualized marketing component and providing continued encouragement and reinforcement throughout the year, participants were then issued the same survey one year later. This survey method allowed for direct participant measurement by asking the same questions to the same population sample under comparable conditions over time. In 2011 the panel survey was sent to 356 participants and 56 responded (16% response rate.)</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>SmartTrips Welcome resulted in the following:</p>
+<ul>
+<li>VMT reduced by 1,076,118, the equivalent to 200 miles per target new resident per year</li>
+<li>A 10.4% reduction in drive-alone trips among all new resident populations, not just those that ordered information and materials.</li>
+<li>Relative increase of 13.6% in environmentally-friendly mode use among new residents</li>
+<li>0.5% of new residents ordered materials</li>
+<li>All three regions showed improvements over their control counterparts regarding mode split for all trips and primary work and neighbourhood mode choice</li>
+<li>The panel participants reported a 10% increase in environmentally-friendly mode use and a 15% decrease in drive-alone trips one year later.</li>
+<li>Panel survey participants also reported a 10% and 5% increase in environmentally-friendly primary commute and neighbourhood modes, respectively, and a corresponding decrease in drive-alone trips by 9% and 13%.</li>
+</ul>
+<p>"We had an overwhelmingly positive response from folks who participated," said Pelsma. "Our analysis showed that targeting new residents as they are acclimating to their new surroundings is an excellent time to introduce, encourage and support positive transportation behaviour and that a simple, well-timed marketed intervention can make a real difference for travel behaviour change." </p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Linda Ginenthal<br/>
+SmartTrips Program Manager<br/>
+Portland Bureau of Transportation<br/>
+<a href="mailto:linda.ginenthal@portlandoregon.gov?subject=I%20saw%20your%20case%20study%20on%20Tools%20of%20Change">linda.ginenthal@portlandoregon.gov</a></p>
+<p>Danielle Booth<br/>
+SmartTrips Program Specialist <br/>
+<a href="mailto:danielle.booth@portlandoregon.gov?subject=I%20saw%20your%20case%20study%20on%20Tools%20of%20Change">danielle.booth@portlandoregon.gov<br/>
+</a></p>
+<p>Andrew Pelsma<br/>
+SmartTrips Program Specialist<br/>
+<a href="mailto:andrew.pelsma@portlandoregon.gov?subject=I%20saw%20your%20case%20study%20on%20Tools%20of%20Change">andrew.pelsma@portlandoregon.gov</a></p>
+<p><a href="http://www.portlandoregon.gov/transportation/4380" target="_blank">www.portlandoregon.gov/transportation/4380</a></p>
+<p><img alt="" height="140" src="/userfiles/Image/Linda Bio Picture(1).JPG" width="142"/> <img alt="" height="140" src="/userfiles/Image//DaniellePic.jpg" width="123"/> <img alt="" height="131" src="/userfiles/Image//Andrew%20Bio%20Picture.jpg" width="269"/></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>The first hurdle </strong></p>
+<p>"When you're looking to change people's travel behaviour, the first hurdle for people is to try something new. Just trying it is much more difficult than keeping it as a habit," said Ginenthal. "SmartTrips focus on customizing the message to the individual got new residents over that first hurdle."</p>
+<p><strong>The right message</strong></p>
+<p>Different messages resonated with different people, but Pelsma said that, overall, they found that the most important messages were ones dealing with safety, ease and convenience of use. "Without that, the options are less doable."  Cost was sometimes a factor, he said, but noted that "it's rarely the deciding factor on whether one drives to a friend's house or takes their bicycle. Health motivates people to get out of their car and walk or bike, so the health connects are stronger than cost, particularly for short trips."</p>
+<p><strong>Follow-up is worthwhile, but can be time consuming </strong></p>
+<p>SmartTrips conducted several surveys and follow-ups with participants to determine whether or not they had made changes to their travel behaviours.   The phone calls were time-consuming and, depending on capacity, could be hard to do on a large scale. Similarly, when sending out materials to the control and target groups, the returning data was manually input, which again was a time-consuming endeavour.</p>
+<p><strong>Multi-unit buildings </strong></p>
+<p>Residents in apartments and condominiums were more difficult to reach than single households, due to security reasons or limited access into the building.</p>
+<p>"We worked with property managers to help gain access and did follow-ups with residents," said Ginenthal. "For this type of residential development, there needs to be buy-in from everyone and for these types of units, the program should focus on the local facilities, commute options and local destinations. It also helps, if possible, to price parking accordingly."</p>
+<p><strong>Maximize use of newly-built infrastructure </strong></p>
+<p>In 2004, Portland built its light rail system at a cost of several million dollars. Ginenthal noted that adding light rail decreased vehicle trips by about 3%, whereas in areas of the city where light rail existed <em>and</em> the SmartTrips program was working, vehicle trips were cut by 12%.</p>
+<p>"There's a lot of data that says 'if you build it, they will come,' but if you promote it, they're going to come a lot more," said Ginenthal. "We have many miles of streets that are underutilized by walking and biking, so we try to maximize the infrastructure we already have."</p>
+<p><strong>Corroborate self-reports </strong></p>
+<p>When people are self-reporting their behaviour, particularly those individuals who are participating in the program, there's always a possibility of them over reporting what they're actually doing simply because they had this kit delivered to them, they know that they made commitments, etc.  There's also a possibility that there could be an interaction between the survey measurements and the actual strategy. Participating in the pre-intervention survey may itself contribute to the observed changes in behavior that are being self-reported.</p>
+<p>Where possible, triangulate (corroborate) self-reports with unobtrusive observations to test the validity of the self- reports. However, that would be challenging in this case because the audience is dispersed in the three regions.</p>
+<p> </p>
+<p><strong>Landmark Designation</strong></p>
+<p>The program described in this case study was designated in 2012.</p>
+<p>Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated through an open nomination process and by our peer-selection panels and Tools of Change staff, and then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Mark Dessauer, Active Living by Design</li>
+<li>Jacky Kennedy, Green Communities Canada</li>
+<li>Ryan Lanyon, Metrolinx</li>
+<li>Nathalie Lapointe, Federation of Canadian Municipalities</li>
+<li>David Levinger from the Mobility Education Foundation</li>
+<li>Lorenzo Mele, Town of Markham</li>
+<li>Geoff Noxon, Noxon Associates</li>
+<li>Chuck Wilsker, U.S. Telework Coalition</li>
+<li>Phil Winters from CUTR and the University of South Florida</li>
+<li>JoAnn Woodhall, Translink</li>
+</ul>
+<p>This case study was written in 2013 by Sharon Boddy and Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

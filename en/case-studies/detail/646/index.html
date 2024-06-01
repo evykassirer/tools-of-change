@@ -1,0 +1,324 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li> City of Edmonton</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Global Alliance for Ecomobility</li>
+<li>Parkallen City League</li>
+<li>Transport Canada</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>On average, each household reduced their driving by 400 kilometres in the month of June, 2009</li>
+<li>GHG emission reductions were calculated to be 3,979 per household</li>
+<li>Cordon counts in Parkallen showed an average decrease in traffic flow of 14%</li>
+<li>In a survey conducted three months after the program ended, 55% of participants were still making more eco-friendly transportation choices and 63% of participants were planning their trips more efficiently (up from 32% and 42%, respectively, at the beginning of the program) </li>
+</ul><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Edmonton’s LocalMotion Program</h1>
+<p>Edmonton’s LocalMotion project encouraged residents to drive less and consider other modes of transportation. LocalMotion used a combination of special community events, a challenge, and opportunities for hands-on experience of alternate modes of transportation. It promoted both flexible working hours and alternative modes of transportation such as walking, cycling, public transit, and carpooling. To further boost word-of-mouth communication and norm appeal, early adopters of ecoMobile practices were recruited to participate in program planning and promote it to their neighbors and to local policy makers. Designated a Landmark case study in 2011.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The City of Edmonton developed LocalMotion based on a need to mitigate the impacts of automobile traffic, reduce environmental impacts of greenhouse gas emissions and improve air quality. This pilot project took various transportation demand management elements and brought them together in one neighbourhood.</p>
+<p>The idea for the project was the result of a convergence of interests from a city staff member, a city councilor and the Global Alliance for EcoMobility, an international cross-sector partnership that promotes active and sustainable transportation.</p>
+<p>"We were at the UN Conference on Climate Change in Bali the year before we started working on this project," recalled Ian Hosler, program coordinator for Walkable Edmonton. "The Global Alliance for EcoMobility was looking for a municipality to host an EcoMobility demonstration pilot and it just so happened that Transport Canada also had an EcoMobility grant program that was available to fund such a project." The city applied for, and received a Transport Canada matching grant of $219,919 to begin building the program.</p>
+<p>LocalMotion fell under the auspices of the city's environmental department, but the primary project team also included city staff members from transportation planning (which includes Edmonton Transit) and community services departments in order to bring together a range of skills and resources to the project.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The goal of the project was to ask the people of one community to leave their cars at home for a month, or as long as they could.</p>
+<p>"We recognized that was a lofty goal, but we wanted to help them overcome their barriers and seek out opportunities to try as many different ways of getting around without using a car," said Hosler.</p>
+<p>"That being said, our motto was 'small changes add up'.  We made it clear to folks right from the get-go that as much as we were trying to get them to reduce their auto use, we recognized the realities of their day-to-day lives," he said. Residents were asked, therefore, to consider a range of choices that would help them to drive less.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The city decided to offer the program in one neighbourhood. "That was because community development was our strength," said Hosler, noting that both he and Julie Cournoyer, the program manager for LocalMotion, were both recreation professionals and had experience working with communities.</p>
+<p>A survey conducted in the fall of 2008 showed that about 89% of Edmontonians relied on their cars for daily transportation; although approximately 70% of those surveyed agreed that all city residents needed to reduce their driving, only 36% agreed that they, personally, should reduce their driving. The survey also identified a number of barriers to driving less or to using more sustainable modes of transportation.</p>
+<p>A basic information package about the program was developed and sent to all of the city's community associations (known as city leagues in Edmonton). Thirteen city leagues applied. The neighbourhood of Parkallen was eventually chosen because it already had some interested residents (early adopters) and a community champion to help garner interest and excitement.</p>
+<p><strong>Selecting the Community</strong></p>
+<p>Hosler admits that no particular area of the city was targeted. "We put it out there to any possible league that showed interest," he said.</p>
+<p>From the communities that did apply, the program managers considered several different neighbourhood elements, including:</p>
+<ul>
+<li>Community interest and capacity</li>
+<li>Size and location</li>
+<li>Built form</li>
+<li>Local amenities</li>
+<li>Access to transit, and</li>
+<li>Department plans and capacity</li>
+</ul>
+<p>Because this was a pilot project, the city wanted to find a neighbourhood that was neither too big, nor too small, and which had a good mix of the above elements.</p>
+<p>"We also called upon community representatives from our trails path routes and transit advisory committees to help us decide which community would be selected," said Hosler, "and surveyed our other city colleagues to make sure that we weren’t in conflict with any other big projects that were going on."</p>
+<p>Hosler said that they were looking for a neighbourhood that already had a number of things in place that would support a project like this.  "Although this project was initiated by the city, we very much wanted to have strong ties with the community, so we needed a community that had the capacity to take this on and enough interest from the folks in the community."</p>
+<p>Parkallen was the right size (about 1,200 households with about 2,256 residents), had a wide diversity of housing, and some commercial elements. It was also surrounded on three sides by major arterial roadways, with good access to public transit.  From discussions with their city colleagues, Hosler and Cournoyer found that Parkallen was on the list for street and sidewalk rehabilitation.  "It was a very good fit because we were able to undertake some of the capital things that had already been suggested."</p>
+<p>"As a bonus, the neighbourhood was also within one kilometre of our newest light rail transit station at the time so there was a lot of survey evaluation measurement involved," says Hosler.</p>
+<p>Hosler said that another key factor in choosing Parkallen was that the residents would be able to do the counting (self-reporting) themselves, which would free the program managers to work on other tasks</p>
+<p>Once Parkallen was chosen, the city held a community information night to introduce the program to residents.</p>
+<p>"We had a good turnout for that and we followed up shortly thereafter with a community visioning workshop," said Hosler. "This really helped the community understand the barriers and opportunities in their neighbourhood."</p>
+<p>Using the survey conducted the previous fall, program managers asked residents what barriers they faced to driving less.</p>
+<p>"The findings were pretty consistent with the previous survey, things like travel time, flexibility for multiple stops, flexibility in case of emergencies or working late or having to pick up the kids," said Hosler.  "Weather in Edmonton is always an issue.  Although the project was to be launched in June, which is usually our best month for weather, people still needed to carry stuff or needed a car during the day."</p>
+<p>At the workshop, city staff and residents also developed a list of ideas that they thought would work in Parkallen. The ideas were ranked by the citizens, and a steering committee (residents, city staff) then reviewed each idea to see which ones had the greatest chance of success.</p>
+<p>"We also worked with the business community, other partners and other focus groups to help define the project and engage them in it. That helped us define what we were going to try and accomplish in June in Parkallen," said Hosler.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>LocalMotion used a combination of special community events, a challenge, and opportunities for hands-on experience of alternate modes of transportation. It promoted alternative modes of transportation such as walking, cycling, public transit, and carpooling.</p>
+<p>To help overcome the barrier of work schedules, the program also promoted flexible working hours. Because interventions were concentrated in a single community, the project became well known locally. To further boost word-of-mouth communication and norm appeal, early adopters of ecoMobile practices were recruited to participate in program planning and promote it to their neighbors and to local policy makers.</p>
+<p><strong>Events</strong></p>
+<p>Two special events, attended by more than 800 people, attracted interest, engaged participants in face-to-face conversations about sustainable transportation options, and led them to consider committing to the challenge. The events also included participation from artists, community organizations and local vendors.</p>
+<p>One of the special events, the LocalMotion launch, included a “Try-It” area where visitors could test out a variety of transportation options: a tandem tricycle, an electric bicycle, assorted bikes and Xooter scooters. Edmonton Transit also exhibited a bus with a bike rack and bike loading races.</p>
+<p>Residents had the opportunity to participate in a number of other public events in Parkallen, as well as other related activities in other areas of the city.</p>
+<p>"We encouraged them to ride their bike to some of these bigger events," said Hosler.  "We were also able to bring in some different events, such as a theater event that dealt with eco-mobility."</p>
+<p>To wrap up the month, program managers hosted a community block party to gather all the participants together, show them the results, and garner feedback from the residents.(Feedback)</p>
+<p><strong>Household Challenge</strong></p>
+<p>The household challenge was the key element of the project and was designed to provide incentives to participants in return for their commitment to drive less. (<em>Challenge</em>)</p>
+<p>"We developed a challenge card that was hand delivered in May to each household in Parkallen," said Hosler.  "Residents were encouraged to register for the program online or by phone."</p>
+<p>Upon registering, each participant agreed to track the number of kilometres they drove by car during the month of May—this was used as the baseline—and then track them again during the month of June when they had committed to drive less. <em>(Obtaining a Commitment)</em></p>
+<p>"The challenge card was a self-reporting tool, but we wanted to see what kind of difference people were willing to make, what kind of changes they were willing to undertake in their own travel habits, and whether a neighbourhood challenge would help encourage this," said Hosler.</p>
+<p>Once participants committed to the program, they were also provided with a toolkit, which included:</p>
+<ul>
+<li>A LocalMotion field guide, a community walking map series that was developed for communities in Edmonton; the guide also included a map of Parkallen showing walking and cycling routes and different destinations</li>
+<li>Discount cards from local businesses</li>
+<li>"Swag," including bumper stickers, magnets, a Park it for Parkallen parking pass, which residents could hang from their car mirror as a reminder (<em>Prompts</em>)</li>
+<li>The choice of either a free month's bus pass or a bike odometer or pedometer, and</li>
+<li>Access to prizes that would be awarded during the program (<em>Incentives</em>)</li>
+</ul>
+<p><strong>Information &amp; Educational Programs</strong></p>
+<p>A calendar of events was developed that listed many related activities and events that linked up with the program's goals, such as workshops and courses (e.g., bicycle maintenance, walking groups, bicycle convoys, etc.).</p>
+<p>"We also hired a programmer to work with the local kids in the park," said Hosler.  Throughout the month of June, the programmer worked in the community and at the local school.  "June is a very busy month for students but we were able to get into some of the physical education classes. That was quite impactful because the kids took the message to heart and got their parents to participate."  (<em>School Programs</em>)</p>
+<p>A weekly electronic newsletter was also sent to all participants to alert people of the different events and opportunities planned for that week, as well as other related information. The newsletter was also a way for the program managers to remind participants of their commitment.<em> (Feedback, Building Motivation Over Time, Vivid, Personalized Communication)</em></p>
+<p>The program managers also undertook a video project that consisted of 11 short videos that were loaded individually to YouTube, and which were eventually edited into a documentary about the program. The documentary was shown at the follow-up party in Parkallen in November 2010, and has since been used in a number of city events and distributed widely to other jurisdictions. (<em>Vivid, Personalized Communication)</em></p>
+<p>"We followed a bunch of citizens and their experiences," said Hosler. "It started as a side part to LocalMotion, but people really liked it. They liked seeing their fellow Parkallen residents and what their experience of the month was like."</p>
+<p><strong>Small Improvements</strong></p>
+<p>The program managers were able to arrange for a few small neighbourhood improvements to address barriers that were identified by the community.  For instance, pedestrian signals at the three major arterial roadways in Parkallen were taken offline.</p>
+<p>"Normally, the pedestrian signals on those roads are coordinated electronically with the overall traffic system, but we were able to take those offline.  If you wanted to cross the street, you pushed the button and the lights changed quickly," reported Hosler. "That was a big thing for the participants because normally the light timings often meant a longer wait for them." <em>(Overcoming Specific Barriers)</em></p>
+<p>As part of a broader city program, some "Share the Road" markings were also painted on certain roads to indicate bicycle routes. "There is a bike route through Parkallen that connects with the city's bike network, so this was one of the first opportunities we had to try that out in a community," said Hosler.</p>
+<p>They also added bike lockers and bike racks in certain areas of Parkallen and at the nearby light rail transit station. </p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>This was a well-financed program, beyond what would normally be spent on a project of this nature.</p>
+<p>LocalMotion received a $219,919 matching grant from Transport Canada’s EcoMobility program, and used cash, staff hours, and in-kind departmental contributions for its matching dollars.</p>
+<p>"We were also able to leverage the Transport Canada grant to undertake a lot of the work, especially on the measurement and video components," said Hosler.  "About 50% of that money was actually used up in staff time because we were able to hire one full-time and one part-time coordinator to develop this project."</p>
+<p>Total project costs came to $439,838 and the key budget expenditures for the period September 2008 to December 2010 included:</p>
+<ul>
+<li>Project coordination and management:  $230,000 (approximately 95,000 of this was staff time in kind as a cross-departmental initiative)</li>
+<li>Communication, outreach &amp; establishing the project: $100,000</li>
+<li>Documentation – video shorts and documentary: $80,000</li>
+<li>Measurement and monitoring: $30,000</li>
+</ul>
+<p>The approximate cost per participating household was $20. Hosler noted, however, that this amount could be decreased depending on the contents of the toolkits.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>With the funding from Transport Canada, program managers were able to do pre-, during and post-program telephone surveys of the residents of Parkallen, as well as the surrounding community.</p>
+<p>Program managers also used the self-reporting logbooks that people used to track their kilometres in May and June, and the city's transportation department conducted cordon counts to count all vehicles entering and leaving Parkallen before, during and after the project.</p>
+<p>"We also got the data on the use of pedestrian signals," said Hosler. "Every time someone pushed a pedestrian signal on one of the surrounding arterial roadways crossings, we got that data, again, both pre- and post-project.  The data gave us a positive indication that more people were crossing the street and, we assumed, accessing transit or other modes."</p>
+<p>A community feedback wall was at all of the local events where participants and non-participants alike could share their views and ideas.</p>
+<p>A monthly survey of participants was also conducted to keep track of how people were doing. </p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>A weekly electronic newesletter provided group feedback to participants. </p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>About 12% of all 1,200 households in Parkallen participated (~144 households).</p>
+<p>Challenge participants reported driving an average of 400 kilometres less per household in June than in May, resulting in an average decrease in CO2 emissions of approximately 3,979 kilograms per household. Cordon counts showed that average vehicle volumes at six intersections also decreased by an average of 14% between April and June.</p>
+<p>As mentioned in the previous section, telephone surveys were conducted before the program launch (fall 2008, mentioned above in Getting Informed), during the program (June 2009), and then three months after the program finished (September 2009).</p>
+<p>A survey conducted one month after the program was launched, found that:</p>
+<ul>
+<li>31% of Parkallen residents said that the program had impacted their travel behaviour </li>
+<li>32% had started to make more eco-friendly transportation choices</li>
+<li>42% consciously planned their trips more efficiently</li>
+<li>94% were aware of the project, and</li>
+<li>34% had attended at least one LocalMotion community event.</li>
+</ul>
+<p>In the final survey, conducted three months after program completion, results indicated that:</p>
+<ul>
+<li>55% were making more eco-friendly transportation choices (up from 32%), and</li>
+<li>63% were planning their trips more efficiently (up from 42%).</li>
+</ul>
+<p>"From our perspective, the number of people planning their trips was a real highlight," said Hosler. "The follow-up survey done in September showed that some of that stuff had stuck."</p>
+<p>The surveys also showed that 28% of Parkallen residents had started to walk more, 26% had increased their bicycle use, and 25% had increased their use of public transportation.</p>
+<p>"All of these results suggests a lasting impact on those that retained the behaviours that were modeled in the LocalMotion project," said Hosler.</p>
+<p>One other interesting result was the impact on surrounding and comparable communities.  In polls conducted in other neighbourhoods, program managers found increases in eco-friendly transportation behaviours.</p>
+<p>"It wasn't to the same degree as Parkallen, but it did suggest that those surrounding communities were caught up a little bit in the program, so that has potential," said Hosler.  "And when we asked the folks living in Parkallen if they would recommend the project, 75% of the respondents said yes.  Folks from the surrounding communities were also largely in agreement that it was a positive experience."</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Ian Hosler<br/>
+City of Edmonton Community Services Ian.Hosler@edmonton.ca</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned</strong></p>
+<p><em>Cross-department coordination was key</em></p>
+<p>Hosler said that, due to the very tight timeline they were under to develop and launch the program, having additional city staff was critical.</p>
+<p>"We created a cross-departmental team and were able to draw on the different expertise available at the City of Edmonton to bring as many elements of our strengths to bear, both at a worker level and a management level," said Hosler. "We also had management team that supported and moved the project ahead, which was really key."</p>
+<p><em>Timing is everything</em></p>
+<p>LocalMotion was run in June, a busy month for most residents, particularly those with children.</p>
+<p>"We knew that June would be a positive month, because of the weather, but also a challenge because there was so much going on in the community," said Hosler. "While it was a nice month weather-wise to engage in the activities, it was also a tremendously busy time for folks.  That showed in some of our program activities, some of which were really well attended and others than were not."</p>
+<p><em>Let the community define the parameters</em></p>
+<p>Hosler said that the true success factor of LocalMotion was the high level of community engagement in developing the program. "It was the community itself, to a large degree, that defined LocalMotion."</p>
+<p><strong>Partnerships </strong></p>
+<p>Transport Canada provided financial support (EcoMobility grant) as well as other information resources and coaching assistance. </p>
+<p>Internationally, the Global Alliance for EcoMobility offered ideas and helped the program managers build the initial concept.</p>
+<p>As mentioned earlier, staff from the environmental, transportation planning, and community services were also invaluable in developing and promoting LocalMotion.</p>
+<p>This case study was written by Jay Kassirer and Sharon Boddy in 2012.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

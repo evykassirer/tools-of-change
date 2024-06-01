@@ -1,0 +1,266 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>North Shore Recycling Program</p><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Households not previously composting increased composting volumes by up to 450 kg/year; those already composting increased volumes by 25%.</li>
+<li>Higher quality, better-managed compost and fewer bear / pest problems.</li>
+<li>Coached households reduced waste generation by 250 kg/year.</li>
+<li>Curbside set-outs from Coached households were reduced by 350 kg/year.</li>
+</ul>
+<p><a href="/userfiles/Compost Coaching-ToolsChange.pdf" target="_blank">Case study (PDF)</a> </p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Compost Coaching: House-Calls Help Reduce Waste</h1>
+<p>This case study is a great model for increasing composting rates, reducing waste generation and reducing tonnages placed curbside for collection through coaching. It also reports on a study of diversion rates from backyard composting that showed that diversion from backyard composting is usually under-estimated.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The North Shore Recycling Program (NSRP) was the recycling, composting and waste reduction department for three municipalities on the west coast of Canada: the City of North Vancouver, the District of North Vancouver, and the District of West Vancouver.  The municipalities had a combined population of about 180,000 residents.  In 2007, the NSRP set out to reduce their municipalities’ curbside organic waste through the creation of a compost program called “Compost Coaching”.</p>
+<p><em> Note: To minimize site maintenance costs, all Tools of Change case studies are written in the past tense, even if they are ongoing – as is the case with this particular program.</em></p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The NSRP’s vision was to reach their region’s waste diversion goal of 70% from garbage by 2015. They set out to investigate two questions: First, how much does a single family household actually keep off the curb by composting? Second, using a Community-Based Social Marketing approach, what was the best method to achieve maximum residential waste reduction within the NSRP’s available resources?</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>During their research, the NSRP realized that the Metro Vancouver Region had been underestimating the contribution from backyard composting. It had been using a diversion rate that only took yard-trimmings into account and that was a quarter-century out-of-date: 250kg (560lbs) of organics per household per year. To see what this number would be from a family composting all their organics (including food scraps), the NSRP had twenty five families weigh all of the organics they composted on-site – from inside the home and from the yard – for a year.  These residents were provided with personalized compost instruction and training for taking and reporting measurements.</p>
+<p>The study found that a single, trained household, on average, kept 450 kg (992lb) of organic material off the curb per year through on-site composting.  Combined with data from an earlier phone survey of untrained residents who composted, the study also found that a composting household without the benefit of any training kept about 360 kg (794lb) off the curb each year.</p>
+<p>In order to learn more about their audience, their desired behavior change, and best practices for outreach, the NSRP conducted waste audits and literature reviews, and began testing their existing outreach programs.</p>
+<p>The literature review found that personalized and repeated messaging, personal contact, bin delivery and set up, having a ‘real person’ to help troubleshoot, and personal follow-ups increase bin usage and long term success. The literature review also revealed that word-of-mouth and peer-examples were the strongest motivators for backyard composting. Thus, “Compost Coaching” was born.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Program Set-up and Marketing: </strong></p>
+<p>Compost Coaching was offered free to residents to remove any financial barriers to participation.</p>
+<p>To promote the program, the NSRP designed a poster that was placed in local garden shops and community centers, as well as an 8 cm promotion card that was given to residents who had asked for help with composting.  The card had a direct link to their online booking page, which, in turn, provided easy access to all of their composting information and award-winning How-To videos. <em>(Overcoming Specific Barriers; Prompts; Vivid, Credible, Empowering Communication)</em> </p>
+<p><em>Poster</em></p>
+<p><img alt="North Shore compost coaching poster" height="778" src="/userfiles/Image/Compost_Coaching_Poster.jpg" width="500"/></p>
+<p> </p>
+<p>Front of the card</p>
+<p><img alt="Front of North Shore compost coaching promo card " height="286" src="/userfiles/Image/Compost_Promo-Card_front.jpg" width="501"/></p>
+<p> Back of the card </p>
+<p><img alt="Back of North Shore compost coaching promotion card" height="286" src="/userfiles/Image/Compost_Promo-Card_back.jpg" width="501"/></p>
+<p> </p>
+<p>In addition, a promotion sticker was placed across the top seam of every compost box sold by the municipalities. <em>(Prompt)</em></p>
+<p><em>Sticker</em></p>
+<p><em><img alt="North Shore compost coaching sticker" height="502" src="/userfiles/Image/Compost_Coaching_Sticker.jpg" width="500"/></em></p>
+<p>To allow news of the program to reach into the realm of social media, NSRP also created a short promotional video, which was posted on their website and shared on Facebook and Twitter (<em>Mass Media</em>)</p>
+<p><strong>Before Appointments:</strong></p>
+<p>The initial residential composting appointments were set up through an online system. Composting instructors or “Coaches” as they were referred to in this program, would fill in their availability through the office database, which was instantly visible on a public online calendar.</p>
+<p>A resident who wanted to book a coaching session then went to the NSRP’s website and made an appointment by selecting a convenient time and completing a short online form. The information from this form was automatically entered into a database, so that staff and Coaches had access to the resident’s contact information.  A resident could also phone the office to make a booking.</p>
+<p>Once an appointment was made, the resident received a confirmation email, detailing the date and time of his appointment, who his Coach would be, and what to expect at the session. The confirmation also included an invitation to ask friends and neighbors to join. At the same time, the Coach received an email notification about the new booking. (<em>Word of Mouth; Vivid, Personalized, Credible, Empowering Communication)</em></p>
+<p>A few days before the appointment, the resident received an automated email reminder, and the Coach phoned the resident to remind her of her appointment and ask a few questions. At this point, if picking up the bin from the depot had been a barrier to composting, the Coach could deliver the free bin directly to the resident’s home. <em>(Overcoming Specific Barriers; Personalized, Credible, Empowering Communication)</em></p>
+<p><strong>During Appointments:</strong></p>
+<p>The in-home session was designed to be fun, informal, and guided by the participants’ needs.  Although the Coaches had a basic script for teaching compost techniques, the conversation often shifted depending on the questions asked by the resident, as well as on the condition of her compost bin.  The session covered basic composting information and tips for coexisting with bears, all within 30-45 minutes.</p>
+<p>At the end of the session, the Coach offered a “Pass it On” card, and said that he would call to check on progress in six to eight weeks. The “Pass it On” postcard enabled the participant to be an ambassador for composting while “giving” a free Compost Coaching session to his friends, family or neighbors. (<em>Home Visits; Overcoming Specific Barriers; Vivid, Personalized, Credible, Empowering Communication; Word of Mouth Communication</em>)</p>
+<p>Front of the card</p>
+<p><img alt="recycling coaching card to build word of mouth promotion" height="333" src="/userfiles/Image/Pass-it-on_Card_front.jpg" width="500"/></p>
+<p>Back of the card</p>
+<p><img alt="" height="333" src="/userfiles/Image/Pass-it-on_Card_back.jpg" width="500"/></p>
+<p><strong>After Appointments:</strong></p>
+<p>Within a day or two, the Coach sent a personalized Thank You email with any requested additional information and a reminder that she would check in again by phone. Six to eight weeks later, the Coach made two attempts to follow-up, checking in on how the resident was doing with the challenges discussed during their session. (<em>Building Motivation Over Time; Overcoming Specific Barriers; Vivid, Personalized, Credible, Empowering Communication</em>)</p>
+<p><strong>Timeline</strong></p>
+<ol>
+<li>Waste Audits (2007)</li>
+<li>Literature Review (2007)</li>
+<li>Single-Family Curbside Collection Telephone Survey (2008)</li>
+<li>Backyard Composter Purchasers Follow-up Survey (2008)</li>
+<li>Diversion due to Backyard Composting: Calibration Study (2010-2011)</li>
+<li>Test Outreach Options (2008-2009)</li>
+<li>Outreach Alternatives to Curbside Collection (Scenario Analysis and Report, 2009)</li>
+<li>Ongoing Evaluation (2008-2013)</li>
+<li>Implementation (2011-2013)  </li>
+</ol><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The NSRP had one staff member who dedicated 0.3 of a full‐time equivalent to all program management. Compost Coaches were paid staff, hired as needed.</p>
+<p>Even including start‐up costs, the payback period (when savings in tipping fees outweighed program expenses) was two to five years depending on program complexity. The program budget was approved based on anticipated tipping fee savings due to reduced curbside collection tonnages.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p><em>Impact:  </em>The impact of the program was estimated using pre- and post-pilot surveys with residents receiving the program, and with the 25 families that participated in the “compost calibration” study.</p>
+<p><em>Cost-Benefit Analysis:</em>  The NSRP estimated program expenses compared to avoided tipping fees, in order to demonstrate whether their program was cost-effective.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><em>Impact: Composting Behaviours and Tonnages</em></p>
+<p>Based on their surveys, the NSRP determined that personalized yard visits were a promising outreach method. Households that had not previously being composting increased the volume of their composted materials by up to 450 kg/year. On average, households that were already composting increased their composting volumes by 25%.  Participants also more actively managed their bins, improved their confidence in their composting abilities, created higher quality compost, finished composting faster, and reduced the hazards from bears and pest problems.</p>
+<p>Overall, the NSRP’s research found that the weight of organic waste diverted by backyard composting was similar to the tonnages collected through the existing curbside organics collection program. Both were able to reduce the burden on North Shore’s curbside garbage collection systems, thus saving the municipalities millions of dollars each year. However, backyard composting was able to accomplish this goal at a fraction of the cost of curbside organics collection.</p>
+<p>The number of residents reached through these “house-calls” was one-and-a-half times the number of people who had signed up for the service;  since these yard visits had the feel of an informal, fun social call, residents often invited their friends, family or neighbors to join them at their at-home compost talks.</p>
+<p>The resources the NSRP had been putting into supporting composting efforts had been close to zero, but the personal contact and support made all the difference to compost bin usage and long-term success, and it created composting champions in many different peer networks in their community.</p>
+<p><em>Impact: Curbside Set-Outs and Diversion Rates</em></p>
+<p>The municipalities also saw changes at the curb for those households that had had coaching: garbage collected decreased from 496 kg/year to 225 kg/year and yard trimmings decreased from 293 kg/year to 216 kg/year. (Unfortunately, blue box-type recyclables were not measured.) The result of this shift at the curb means that calculated diversion rates for these coached households had increased from 53% to 68%, approaching the Region’s diversion targets.</p>
+<p><em>Impact: Waste Generation   </em></p>
+<p>A side-benefit to the direct objective of Compost Coaching was measured: households’ waste generation profiles changed with Coaching. At baseline, untrained households generated 1,428 kg/year of garbage, recyclables, curbside-collected yard trimmings and backyard composted organics. After Coaching, households generated only 1,171 kg/year of these same materials, a decrease of 257kg/year of waste actually generated.</p>
+<p>This surprising result shows that the regional diversion targets were reached NOT by shifting materials from one collection stream to another BUT by actually reducing waste generated and increasing quantities of organic waste managed on-site by the people responsible for it.</p>
+<p><em>Cost Benefit Analysis:</em> Even including start-up costs, the payback period (when savings in tipping fees outweighed program expenses) was two to five years.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Elizabeth Leboe or Jenn Meilleur<br/>
+<a href="mailto:info@nsrp.bc.ca?subject=Your%20case%20study%20on%20the%20Tools%20of%20Change%20website" target="_blank">info@nsrp.bc.ca<br/>
+</a>604.984.9730</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Program website: <a href="http://coaching.northshorerecycling.ca" target="_blank">coaching.northshorerecycling.ca</a></p>
+<p>This scase study was written in 2015 by Jay Kassirer and Jennifer Meilleur, based on Jenn's presentation, “Compost Coaching: House-Calls Help Reduce Waste”. That presentation was delivered at the webinar, “Changing Recycling and Composting Behaviors Through Social Marketing”, sponsored by Keep America Beautiful and Tools of Change on May 9th, 2013.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

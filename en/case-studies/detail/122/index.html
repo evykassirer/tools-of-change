@@ -1,0 +1,584 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/peer-support-groups/">Peer Support Groups</a></li>
+<li><a href="/en/tools-of-change/school-programs-that-involve-the-family/">School Programs that Involve the Family</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Better Environmentally Sound Transportation (B.E.S.T)</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Secondary Schools:</li>
+<li>Burnaby North (Burnaby)</li>
+<li>Central Junior (Victoria)</li>
+<li>Churchill (Vancouver)</li>
+<li>Gladstone (Vancouver)</li>
+<li>Johnston Heights (Surrey)</li>
+<li>Killarney (Vancouver)</li>
+<li>Mt Douglas Senior (Victoria)</li>
+<li>North Surrey (Surrey)</li>
+<li>Terry Fox (Port Coquitlam)</li>
+<li>University Hill (Vancouver)</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>A significant (9-16%) reduction in single student vehicle use (compared with baseline survey results) at three of the four participating schools;</li>
+<li>Levels of walking, cycling, taking transit and car-pooling (2+ students per vehicle) remained the same as the baseline results (within 1-3%).</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>off ramp</h1>
+<p><em>Off ramp </em>was an out-of-class initiative that encouraged secondary school students to walk, cycle or take transit to school more often, thereby reducing car use. It increased awareness of transportation and climate change issues, provided incentives, and reduced barriers to transportation alternatives. In short, it improved the availability and popularity of sustainable transportation within the schools and their communities.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Vancouver's Go Green Challenge was an annual event on Clean Air Day which pitted schools against each other in an attempt increase the use of sustainable transportation alternatives. Although 18 secondary schools participated in 1999, there was no prelude or follow-up encouraging secondary students to walk, bike or take the bus to and from school.</p>
+<p>Better Environmentally Sustainable Transportation (B.E.S.T.) was a non-governmental organization in the Vancouver region whose mission was to promote the use of sustainable transportation. B.E.S.T. was concerned about the popular culture surrounding vehicle use, and the lack of education regarding automobile impacts on air quality, health and quality of life were added concerns. A regional district survey had found a 53% increase in the number of school students who were driven to school, in the last 10 years.</p>
+<p>To address these issues, B.E.S.T. designed a pilot program to reach out to secondary students, which became known as <strong>off ramp</strong>. The pilot began in 1999 in five Vancouver and two Victoria area secondary schools located in urban and suburban settings. By its second year (2000 - 2001), <strong>off ramp</strong> was underway in a total of 10 schools, eight located in Vancouver and two in Victoria.</p>
+<p>Vancouver is a booming port city on the west coast of British Columbia, Canada, renowned for its mountainous scenery, proximity to the ski resort at Whistler and close ties to Asian markets. The Lower Mainland area surrounding Vancouver has a population of approximately 2 million, contained in the wide Fraser River valley and floodplain. The growing population of this city has clogged freeways with commuter vehicles and reduced air quality throughout the valley.</p>
+<p>Located on a large island approximately 2 hours by ferry from Vancouver, Victoria is known for its mild west coast climate. Its popularity has grown in recent years for those looking to live in a culturally diverse smaller city, with access to many outdoor activities. Due to the spatial constrictions of the surrounding ocean, increased numbers of vehicles have decreased effective transportation in the area.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p><strong>Off Ramp</strong> wanted to:</p>
+<ul>
+<li>Reduce student vehicle trips by 20% after 2 years, and</li>
+<li>Initiate a trip-reduction program in 12 secondary schools during the 2 year time frame of the pilot project.</li>
+</ul>
+<p>For further details on the evolution of the program goals and objectives, see the <a href="#Notes">Notes</a> section below.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Secondary students were targeted for this program, for several reasons:</p>
+<ul>
+<li>Youth of this age can set their own schedules and make their own independent decisions;</li>
+<li>Many students are of driving age (16); and</li>
+<li>There was no program aimed at youth that promoted the use of sustainable transportation, particularly for getting to and from school.</li>
+</ul>
+<p>Information from other programs stressed the importance of starting by:</p>
+<ul>
+<li>Determining the amount of time that a group of students (and teachers) would be able to commit to the program, in addition to all the other curricular and extra-curricular activities which were already in place.</li>
+<li>Determining which components of the program could be in-class assignments set by teachers.</li>
+<li>Building into the program requests for support from local businesses, in terms of providing prizes and advertising.</li>
+</ul>
+<p>Key motivators identified for the successful integration of the <strong>off ramp</strong> project into the secondary school system included:</p>
+<ul>
+<li><em>For school teachers:</em> need for environmental activities which could be integrated into classroom learning; and</li>
+<li><em>For students:</em> understanding, becoming involved, and making a difference in real-life issues that were relevant to their communities.</li>
+</ul>
+<p>The motivators and barriers specific to each school were identified through school surveys (see the section on <a href="#Surveys">Delivering the Program</a>, below.)</p>
+<p>Challenges identified for the successful integration of the project, and how <strong>off ramp</strong> addressed these challenges in both the initial design of the pilot project and as the program evolved, are outlined in the table below.</p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td>Challenges</td>
+<td>How off ramp addressed the challenges</td>
+</tr>
+<tr>
+<td>Attitude (that everyone drives a car)</td>
+<td>Published statistics of the high numbers of students already walking, cycling and taking transit</td>
+</tr>
+<tr>
+<td>creating a new program/club within the school</td>
+<td>Built upon other programs and clubs ie. environment club, leadership program, marketing class, bike club <br/>
+<br/>
+            Teacher resources to help teachers raise awareness of related issues within the classroom.</td>
+</tr>
+<tr>
+<td>Time required of teachers (outside class)</td>
+<td>Encouraged leadership from students and hosted student workshops that the teachers did not attend</td>
+</tr>
+<tr>
+<td>Lack of free-time by students for non-academic pursuits</td>
+<td>In the 2000-2001 school year, schools were paired up to increase the social side of the program and to trade ideas between schools.</td>
+</tr>
+<tr>
+<td>Leadership students, who were to promote the program, were initially shy and didnt have the skills to undertake leadership roles.</td>
+<td>A one day workshop led by a drama professional was held to strengthen students leadership abilities.</td>
+</tr>
+<tr>
+<td>Lack of community infrastructure (i.e. bus shelters and schedules, bike shelters and lock-up areas, sidewalks, bike lanes, crosswalks)</td>
+<td>Letter writing campaigns were undertaken by students involved in the <strong>off ramp</strong> project requesting increased infrastructure from the City and local government bodies.</td>
+</tr>
+<tr>
+<td>Launch of a new program (teething problems)</td>
+<td>Outside support on this issue was the catalyst many teachers needed in taking action. The support and background provided by B.E.S.T. helped reduce the time teachers needed to meet with and co-ordinate students.</td>
+</tr>
+</tbody>
+</table><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Initial Planning</strong></p>
+<p>In planning the <strong>off ramp</strong> project, the organizers (B.E.S.T. and each participating school group) felt that a minimum of 3 months would be required to plan, implement and evaluate a trip-reduction program in each school. Brainstorming sessions, held in the planning stages of the program, covered the critical issues of time commitments and student schedules, in-class opportunities, and incentives from local businesses. In response, B.E.S.T. developed a calendar of events that waxed around special school activity days and waned around exams and holidays. Class assignments were designed around tallying surveys, making posters, planning events, generating publicity, and writing letters. The group also approached local businesses to donate prizes to reward students who tried more sustainable means of transportation.</p>
+<p>During this stage, it was also decided how the program would be launched in each school. For some, it was through an existing Environmental Club, Social Studies Class or Leadership Class. In many cases, it was through student leaders or Student Advisory Committee executive members some of whom started <strong>off ramp</strong> clubs.</p>
+<p>Also during the planning stages, three surveys were designed to determine the specific goals which each school would try to address through the program.</p>
+<p><a name="Surveys"><strong>Conducting Surveys</strong></a></p>
+<p>To start the program, a baseline was required for each school. The first survey (a hands-up school-wide poll) determined the baseline of how students got to school on an average day. The inclusion of teachers in this survey was decided on a school by school basis and proved to be a contentious issue!</p>
+<p>The second survey was a questionnaire given to 10-15% of the student body, which uncovered barriers and potential incentives for using alternative forms of transportation. Questions on this survey included why the students traveled to school the way they did, and what would encourage them to try alternative forms of transportation.</p>
+<p>The third survey was a questionnaire for parents/caregivers who dropped off and/or picked up students from school. The questions on this survey were similar to those of the second survey, but addressed to parents and/or caregivers. This last survey also assisted in publicizing the program to the community at large.</p>
+<p>Once the results were tallied, each school group determined what aspects of sustainable transportation they wanted to address. For example, one school promoted bike use after finding that bike ridership was very low (only about 2%) but that those who did bike to school enjoyed the freedom of the activity. Survey responses assisted in determining barriers to change and helped define specific themes which were then used to promote sustainable transportation.</p>
+<p><a name="Surveys"><strong>Start-up and Focus</strong></a></p>
+<p>Planning meetings bought students together from different schools involved in the program (<a href="/en/tools-of-change/peer-support-groups/">Peer Support Groups</a>). Students chose the name <strong>off ramp</strong> for its meaning (off the beaten path, alternative).</p>
+<p>School groups tried to tie their start-up date to an existing event such as Earth Day, Youth Week or a specific environmental event. T-shirts, stickers, pins (most designed by students), bike rallies, workshops, focus groups, and cycle-to-school days made participation more visible (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>), raised awareness and encouraged participation. At Gladstone Secondary School, a poster detailing Environmental Disaster Effects was made by students to show the effects of the under-use of sustainable forms of transportation. Students chose the title because they felt that climate change was not conveying the severity of the situation.</p>
+<p>Each school held ongoing events (such as a Cycle in the Rain Day and a Cycling Gear Fashion Show) in conjunction with other events, to vividly model how to cope with rain and other obstacles to participation (<a href="/en/tools-of-change/mass-media/">Mass Media</a>; <a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>; <a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>). Killarney Secondary School set up a labyrinth on its basketball courts (on World Walk to School Day) to commemorate the number of pedestrians killed in auto accidents. In addition, information booths or tables were periodically set up displaying the project at school events.</p>
+<p>One by one, specific barriers to participation were addressed. For example, to overcome lack of knowledge about transit times, bus routes and schedules were displayed at bus stops surrounding the schools. In other cases, petitions and/or applications for funding were completed to get bike racks and storage shelters (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p><strong>Incentives</strong></p>
+<p>Prizes such as water bottles, stickers and buttons were provided for those switching to new forms of transportation (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>). One day at Terry Fox Secondary School, free hot chocolate was given out to all students and teachers who walked to school. At another school, bike safety packages were given out as prizes, to encourage bike use.</p>
+<p><strong>Handbook Available</strong></p>
+<p>A 95 page student handbook is available from B.E.S.T. for a nominal fee, which covers the following topics:</p>
+<ul>
+<li>Background - The relationship between transportation and the environment, and why we should care.</li>
+<li>Assessing Problems and How to Address Them - A question and answer section designed to assist in behavioural change.</li>
+<li>Events (This section may be removed in future and placed on the B.E.S.T. website) - A list of related events held in the Vancouver and Victoria areas.</li>
+<li>Toolkit - Leadership and communication issues and barriers to the integration of sustainable transportation alternatives into the general population lifestyle.</li>
+</ul>
+<p>The handbook may become available at a later date via the internet.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Grants provided for running the 2 year pilot project (<strong>off ramp</strong>) are outlined in the table below.</p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td><strong>Organization</strong></td>
+<td><strong>Grant Amount</strong> (CAN$)</td>
+</tr>
+<tr>
+<td>Climate Change Action Fund (CCAF)</td>
+<td>$98,208 over 2 years</td>
+</tr>
+<tr>
+<td>VanCity (a credit union based in Vancouver)</td>
+<td>$20,000 in 1999</td>
+</tr>
+<tr>
+<td>ICBC RoadSense Team, Lower Mainland North Brokers</td>
+<td>Value unknown</td>
+</tr>
+<tr>
+<td>BC Transit, Victoria Regional Transit System</td>
+<td>Value unknown</td>
+</tr>
+</tbody>
+</table>
+<p>The estimated annual cost of running the <strong>off ramp</strong> project as described above, included:</p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td><strong>Annual Budget Breakdown</strong></td>
+<td><strong>Cost</strong> (CAN$)</td>
+</tr>
+<tr>
+<td><strong>CO-ORDINATOR</strong></td>
+<td> </td>
+</tr>
+<tr>
+<td>Co-ordinator Salary
+            <ul>
+<li>approximately 30 hours/week</li>
+</ul>
+</td>
+<td>Variable</td>
+</tr>
+<tr>
+<td>Professional development
+            <ul>
+<li>training courses</li>
+</ul>
+</td>
+<td>$500</td>
+</tr>
+<tr>
+<td>Co-ordinator expenses
+            <ul>
+<li>travel to meetings</li>
+</ul>
+</td>
+<td>$700</td>
+</tr>
+<tr>
+<td><strong>Total Co-ordinator Expenses</strong></td>
+<td><strong>Salary plus $1,200</strong></td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td><strong>OVERHEAD</strong></td>
+<td> </td>
+</tr>
+<tr>
+<td>Office rental</td>
+<td>$4,000</td>
+</tr>
+<tr>
+<td>Office supplies
+            <ul>
+<li>phone line, internet access, paper products</li>
+</ul>
+</td>
+<td>$700</td>
+</tr>
+<tr>
+<td>Postage</td>
+<td>$300</td>
+</tr>
+<tr>
+<td>Insurance</td>
+<td>$500</td>
+</tr>
+<tr>
+<td>Holding Special Events</td>
+<td>$700</td>
+</tr>
+<tr>
+<td>Promotional Items
+            <ul>
+<li>T-shirts, buttons, posters</li>
+</ul>
+</td>
+<td>$2,000</td>
+</tr>
+<tr>
+<td><strong>Total Overhead Expenses</strong></td>
+<td><strong>$8,200</strong></td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td><strong>VOLUNTEER</strong></td>
+<td> </td>
+</tr>
+<tr>
+<td>Volunteer expenses
+            <ul>
+<li>food for meetings</li>
+</ul>
+</td>
+<td>$200</td>
+</tr>
+<tr>
+<td>Promotional Items
+            <ul>
+<li>T-Shirts, buttons, posters</li>
+</ul>
+</td>
+<td>$200</td>
+</tr>
+<tr>
+<td><strong>Total Volunteer Expenses</strong></td>
+<td><strong>$400</strong></td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>TOTAL ANNUAL COSTS</td>
+<td><strong>Co-ordinator Salary and $9,800</strong></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td><strong>Annual Budget of Volunteer Time</strong></td>
+<td><strong>Cost (Hours)</strong></td>
+</tr>
+<tr>
+<td>Teacher Time - 1 Teacher per school
+            <ul>
+<li>1 hr/ 2 weeks during school year, outside class</li>
+</ul>
+</td>
+<td>18/year per teacher</td>
+</tr>
+<tr>
+<td>Student Time (required of each student leader per school)
+            <ul>
+<li>1 hr/ week during school year, outside class</li>
+</ul>
+</td>
+<td>35/year per student leader</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td><strong>Other Costs</strong></td>
+<td><strong>Cost (CAN$)</strong></td>
+</tr>
+<tr>
+<td>Student handbook
+            <ul>
+<li>one time production cost (approx. 100 copies)</li>
+</ul>
+</td>
+<td>$6,000</td>
+</tr>
+<tr>
+<td>Donated prizes
+            <ul>
+<li>from local merchants</li>
+</ul>
+</td>
+<td>No Charge</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+</tbody>
+</table><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Teachers in homeroom classes or advisory periods periodically conducted hands-up surveys. The <strong>off ramp</strong> group at each school tallied the results and charted the total number of students using each particular mode of transportation that day. They then converted the results into percentages (of the total number of students surveyed that day). These percentages were then compared to past surveys.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>The <strong>off ramp</strong> group at each school created posters showing their survey results and a comparison with the baseline survey results. They also advertised the results through school newsletters and flyers. This encouraged participants to increase the percentage of those involved in change and reduce the number of single student vehicles travelling to and from the school.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>During the first year of the project, the following results were documented through hands-up surveys:</p>
+<ul>
+<li>Three of the four schools which submitted multiple survey results (monthly through April, May and June) reported a significant (9-16%) reduction in single student vehicle use (compared with baseline survey results);</li>
+<li>During the same time frame the percentage of students walking, cycling, taking transit and car-pooling (2+ students per vehicle) remained the same as the baseline results (within 1-3%).</li>
+</ul>
+<p>Other successes include:</p>
+<ul>
+<li>Strong teacher interest;</li>
+<li>Placement of 2 student interns in the B.E.S.T. office during career placement week;</li>
+<li>Press attention:
+    <ul>
+<li>17 articles were published in a variety of publications, including a feature in the Vancouver Sun (the main Vancouver daily newspaper)</li>
+<li>Mention of program events in 7 publications</li>
+<li>Articles in Orion Afield (a Massachusetts publication), Green Teacher (a Toronto magazine) and TEACHER (the newsletter of the BC Teachers Federation)</li>
+</ul>
+</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Arthur Orsini <br/>
+<strong>off ramp</strong> Program Manager <br/>
+Better Environmentally Sound Transportation (B.E.S.T) <br/>
+822 - 510 W. Hastings St. <br/>
+Vancouver, BC <br/>
+V6B 1L8 <br/>
+Phone (604) 669-2860 <br/>
+FAX (604) 669-2869 <br/>
+Internet <a href="http://www.best.bc.ca">www.best.bc.ca</a> <br/>
+B.E.S.T. E-Mail <a href="mailto:best@best.bc.ca">best@best.bc.ca</a></p>
+<p>This case study was written in 2001 by Tania Millen. </p>
+<p>Funding for the addition of this case study was generously provided by the Government of Canadas Climate Change Action Fund, Suncor, Syncrude, Enbridge Consumers Gas and TetraPak Canada.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Lessons learned during the delivery of the first year of the <strong>off ramp</strong> pilot project included the following:</p>
+<ul>
+<li>Overdo it - Teens expect prizes and promotional items at events. Local business donations can make up the bulk of these freebies.</li>
+<li>Raising awareness of the relationships between sustainable transportation and environmental concerns is a tough job - Teacher led classroom activities are paramount to ensure success in raising awareness regarding these issues. Student leaders simply didnt have time for this, although they were very keen to host events.</li>
+<li>A Student Council connection is important - School administration encouraged community events such as the <strong>off ramp</strong> project, from Student Councils. In some cases, financial benefits were available to student leaders to promote the project.</li>
+<li>Career placement is a bonus - This created added incentive for keen students to investigate specific items of interest to them.</li>
+<li>Strikes within School Districts occur - Be prepared.</li>
+</ul>
+<p><a name="Notes">The original goals of the <strong>off ramp</strong> project included:</a></p>
+<ul>
+<li>Reducing student vehicle trips by 20% after 2 years;</li>
+<li>Developing a program for secondary school students which addressed specific transportation concerns within the students community;</li>
+<li>Educating students about transportation issues and the relationship between transportation and air quality and climate change, thereby raising awareness of the links between personal driving habits and environmental impacts; and</li>
+<li>Initiating a trip-reduction program (<strong>off ramp</strong>) in 12 secondary schools during the 2 year time frame of the pilot project.</li>
+</ul>
+<p>In addition to the original goals of the project, as outlined above, the revised goals for the second year of <strong>off ramp</strong> (2000-2001), included:</p>
+<ul>
+<li>Holding fun events that offered opportunities and incentives to students to try transportation alternatives; and</li>
+<li>The creation of infrastructure improvements in the schools communities to support changes in behaviour toward more sustainable transportation.</li>
+</ul>
+<p>To reach the goals outlined for the project, objectives were set for each year. Objectives for the first year of the project (1999-2000), included:</p>
+<ul>
+<li>Developing a student co-ordinator training manual;</li>
+<li>Providing the manual and training to student co-ordinators in the 7 participating schools; and</li>
+<li>Assisting with the development of a trip-reduction program in each school.</li>
+</ul>
+<p>Providing the objectives of the first year of the project were met, anticipated outcomes of the first year of <strong>off ramp</strong> would include:</p>
+<ul>
+<li>The creation of an advisory committee to provide advice and strategic direction for the project;</li>
+<li>The production and distribution of an <strong>off ramp</strong> student manual;</li>
+<li>Completion of 3 <strong>off ramp</strong> co-ordinator training workshops;</li>
+<li>Having student co-ordinators trained in 7 schools; and</li>
+<li>A trip reduction plan started in each participating school.</li>
+</ul>
+<p>Due to lessons learned during the first year of the project, revised objectives for the second year included:</p>
+<ul>
+<li>Developing subject specific activity plans so that teachers could include <strong>off ramp</strong> program goals in their classroom activities;</li>
+<li>Revising the student manual; and</li>
+<li>Furthering the development of trip-reduction programs in participating schools.</li>
+</ul>
+<p>Anticipated outcomes of the second year of the program (to be assessed in July 2001) included:</p>
+<ul>
+<li>The facilitation of teacher professional development day workshops at <strong>off ramp</strong> pilot schools;</li>
+<li>Having student co-ordinators trained in 10 schools; and</li>
+<li>An ongoing commitment to vehicle trip-reduction from each school that participated.</li>
+</ul>
+<p>This case study was written in 2001 by Tania Millen. </p>
+<p>Funding for the addition of this case study was generously provided by the Government of Canadas Climate Change Action Fund, Suncor, Syncrude, Enbridge Consumers Gas and TetraPak Canada.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

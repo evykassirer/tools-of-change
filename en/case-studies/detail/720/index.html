@@ -1,0 +1,305 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>New York State Energy Research and Development Authority (NYSERDA)</li>
+<li>Action Research</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li> Building Owner</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Electricity reductions of 4%</li>
+<li>Statistically significant persistence savings for 10 months post treatment for the normative feedback condition</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>NYSERDA Window Air Conditioning Pilot</h1>
+<p>This easily replicable pilot demonstrated how to use normative feedback and conservation tips to reduce window air-conditioning use among low- to moderate-income tenants of large multi-family buildings who do not pay their own utilities. Both the normative feedback and normative feedback combined with intrinsic priming resulted in significantly reduced electricity consumption compared to a control condition, with monthly electricity savings from 3% to 5%. There was a statistically significant persistence savings for 10 months post treatment for the normative feedback condition.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The New York State Energy Research and Development Authority (NYSERDA) and Action Research collaborated on a project using normative feedback and conservation tips to reduce window air-conditioning use among low- to moderate-income tenants of a large multi-family building in downstate New York who do not pay their own utilities.</p>
+<p>This pilot program replicated and extended an earlier pilot conducted by NYSERDA and Action Research which included both normative information and in-person visits from peers during the prior summer.  The pilot described here eliminated the resource intensive in-person component and demonstrated similar effects with just a series of two flyers slipped under the door.  This model enhanced the scalability and cost-efficiency of the approach over the initial pilot.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p><strong>Prioritizing Audiences</strong></p>
+<p>This program focused on low-to-moderate income tenants of a large multi-family building in downstate New York who did not pay their own utilities. The audience was identified by NYSERDA as an opportunity for an impactful energy conservation program because (a) participants in the target audience did not pay their own electricity bills and therefore did not have an economic motivation to save energy, (b) the apartments were individually sub-metered providing for impact analysis at the household level, and (c) the population of individuals across New York state that do not pay their own energy bills is sizable, representing an opportunity for large-scale implementation and impact.</p>
+<p><strong>Barriers/Benefits</strong></p>
+<p>Utility- and government-run conservation, energy-efficiency, and renewable (clean energy) programs have historically used an economic gain frame to prompt participants to take advantage of energy-efficiency programs.  However, this approach cannot be used in master-metered buildings where tenants do not pay energy bills and energy savings are not passed on to tenants.  Therefore, a significant barrier in this audience was the lack of economic incentive for participating in energy conservation and efficiency programs.</p>
+<p><strong>Addressing Motivation</strong></p>
+<p>Program planners reviewed the research on normative social influence.</p>
+<ul>
+<li>Normative messages have been found to be most effective for individuals not already engaged in the target behavior.  Additionally, messages that align a descriptive and an injunctive message are more effective than a descriptive norm or injunctive norm alone.</li>
+<li>OPower Home Energy Reports (HERs) that used social comparisons and normative feedback (e.g., adding a smiling face vs. frowning face to indicate desired versus undesired energy use) plus energy saving tips had effectively promoted energy conservation (saving on average 2%).</li>
+<li>Schultz et al. (2015) had found that households with in-home displays providing social comparisons and normative feedback reduced their electricity use by 9% in the initial two weeks following feedback and 7% in the next three months, while simple kWh feedback and economic messages without normative feedback were ineffective at reducing energy.</li>
+</ul>
+<p><strong>Selecting Behaviors</strong></p>
+<p>The program planners reviewed the impact of various behaviors that tenants of large multi-family buildings could potentially participate in. As tenants were not in control of their heating (this was controlled at the building level), the most significant opportunity for energy savings was reducing window air conditioning (AC) usage because an examination of energy use across the year showed significant peaks in electricity consumption over the summer months.</p>
+<p>The building operations staff also reported that the majority of residents used their air conditioners excessively and often left windows open when air conditioning units were operating.</p>
+<p>Behaviors promoted as part of this program included the following:</p>
+<ul>
+<li>Keep drapes and blinds closed to block direct sunlight</li>
+<li>Keep windows closed, except when it is cooler than 76⁰ F outside</li>
+<li>Keep your apartment between 76⁰ - 78⁰ F and use fans to stay cool</li>
+<li>Keep AC turned OFF when people or pets are not home.</li>
+</ul><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The pilot had two treatment conditions: (1) normative feedback and conservation tips and (2) normative feedback and conservation tips combined with an intrinsic prime focus on an environmental and public health message.</p>
+<p>The normative feedback component included information about a household’s energy use compared to similar neighbors’ use (meaning, apartments in their complex that were the same size – studio to studio, 1 bedroom to 1 bedroom, etc.). The messages were delivered via a flyer that included a graphical representation of their own and their neighbors’ energy use, a happy or sad face to indicate whether the apartment was energy efficient or had room to improve, and tips on staying comfortable without air conditioning. (<em>Norm Appeals)</em></p>
+<p>For the intrinsic prime variation, the flyer also included a message about how energy conservation was linked to cleaner air. </p>
+<p>All treatment apartments were also given a wall sticker thermometer to self-monitor their indoor temperature.  Both treatments were delivered twice with a 2-week interval, with the second delivery containing an updated graph using most recent energy use data.<span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400"><o:p> </o:p></span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:17.4pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt;
+ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtext">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="width:105.0pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:19.75pt" valign="top" width="140">
+<p class="MsoNormal" style="tab-stops:0in .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><b style="mso-bidi-font-weight:normal"><span lang="EN-CA" style="font-size:11.0pt;
+  mso-bidi-language:#0400">Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="width:4.95in;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:19.75pt" valign="top" width="475">
+<p class="MsoNormal" style="tab-stops:0in .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><b style="mso-bidi-font-weight:normal"><span lang="EN-CA" style="font-size:11.0pt;
+  mso-bidi-language:#0400">How it was addressed<o:p></o:p></span></b></p>
+<p class="MsoNormal" style="tab-stops:0in .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><b style="mso-bidi-font-weight:normal"><span lang="EN-CA" style="font-size:11.0pt;
+  mso-bidi-language:#0400"><o:p> </o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:40.9pt">
+<td style="width:105.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:40.9pt" valign="top" width="140">
+<p class="MsoNormal" style="tab-stops:0in .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400">Low motivation   (no financial incentive to save energy)<o:p></o:p></span></p>
+</td>
+<td style="width:4.95in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:40.9pt" valign="top" width="475">
+<p class="MsoNormal" style="tab-stops:0in .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400">Enhance   motivation through social norms/normative feedback<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:40.9pt">
+<td style="width:105.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:40.9pt" valign="top" width="140">
+<p class="MsoNormal" style="tab-stops:0in .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400">No way to gauge   room temperature<o:p></o:p></span></p>
+</td>
+<td style="width:4.95in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:40.9pt" valign="top" width="475">
+<p class="MsoNormal" style="tab-stops:0in .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400">Provide a room   thermometer<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;mso-yfti-lastrow:yes;height:40.9pt">
+<td style="width:105.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:40.9pt" valign="top" width="140">
+<p class="MsoNormal" style="tab-stops:0in .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400">No way to know   whether air-condition use was excessive<o:p></o:p></span></p>
+</td>
+<td style="width:4.95in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:40.9pt" valign="top" width="475">
+<p class="MsoNormal" style="tab-stops:0in .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400">Provide normative   feedback compared to an efficient neighbor<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal" style="tab-stops:0in .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400"><o:p> </o:p></span></p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>This pilot and demonstration study was financed by a grant from NYSERDA.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>A blocked randomization procedure was used to ensure that the three conditions (two treatments and a control) were equivalent in terms of number of bedrooms and historical summer electricity usage for their apartment. Each apartment was randomly assigned to control (N=345), feedback only (N=345), or feedback + intrinsic priming (N=345) conditions.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>The normative feedback component included information about a household’s energy use compared to similar neighbors’ use (meaning, apartments in their complex that were the same size – studio to studio, 1 bedroom to 1 bedroom, etc.). The messages were delivered via a flyer that included a graphical representation of their own and their neighbors’ energy use, a happy or sad face to indicate whether the apartment was energy efficient or had room to improve, and tips on staying comfortable without air conditioning.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Short-term analysis of energy consumption during the summer of the intervention demonstrated a weekly savings ranging from 1% to 8% and a monthly savings ranging from 3% to 5%. In the short-term analysis, the reduced levels of consumption persisted for two months for both conditions.</p>
+<p>For the long-term analysis, the participating apartments’ electricity data was evaluated through the end of the following summer, over a year after the initial intervention. The treatment apartments received no additional targeted interventions. The long-term results demonstrated statistically significant persistence savings for 10 months post treatment for the normative feedback condition, but not for the normative feedback + intrinsic priming condition.</p>
+<p>Using averages from our data, an average apartment in our study used 17.85 kWh per day over the course of a year, meaning 4% savings would result in .71 kwh saved per day or 261 kwh per year, per apartment. If we assume a cost of 15 cents per kWh, each apartment costs $977 per year in electricity, and would save $39/year/apartment.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Marsha L. Walton, Ph.D. <br/>
+Senior Project Manager<br/>
+NYSERDA<br/>
+17 Columbia Circle<br/>
+Albany, NY 12203<br/>
+518-862-1090 x3271 <a href="mailto:marsha.walton@nyserda.ny.gov?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">marsha.walton@nyserda.ny.gov</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<ul>
+<li>Many traditional programs view most audiences, especially low to moderate income ones, as being primarily motivated by financial savings, and our results speak to another successful motivation, social comparisons, that can be successfully used in the absence of financial.</li>
+<li>Few behavioral studies have demonstrated such stable and lasting effects of behavior-change in the energy domain.</li>
+<li>The household level program can be delivered via the postal service in the form of a personalized home energy report, similar to Opower’s Home Energy Reports (HERs).  This intervention can be applied regardless of whether households pay for their energy bills, provided that wireless energy meters (WEMs) or a similar technology is installed to measure energy consumption at the household level in the absence of billing data</li>
+<li>Future research may want to explore using intrinsic motivations and health-based messaging without normative feedback to determine if the combination in some way undermined the power of social comparisons and if intrinsic messaging can be effectively used in situations where electricity usage cannot be measured at the apartment level.</li>
+</ul>
+<p>This case study was written in 2018 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

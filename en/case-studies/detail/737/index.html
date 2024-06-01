@@ -1,0 +1,508 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>London Hydro</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Critical Peak reductions of 34%, On-Peak reductions of 5%, and Mid-Peak reductions of  3% </li>
+<li>Adding RT to CPP made little difference </li>
+</ul>
+<p><em>For More Information </em></p>
+<p><a href="https://www.oeb.ca/sites/default/files/LondonHydro-RPP-Pilot-Final-Evaluation-Report-20200421.pdf" target="_blank"> https://www.oeb.ca/sites/default/files/LondonHydro-RPP-Pilot-Final-Evaluation-Report-20200421.pdf</a></p>
+<p> </p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>London Hydro’s Price Plan Pilot Cuts Peak Use</h1>
+<p>London Hydro ran a Randomized Control Trial to test the impacts of real time information (RT), and critical peak pricing (CPP) on peak time residential energy use. CPP participants delivered summer On-Peak and Mid-Peak energy savings that were statistically significant at the 90% confidence level. Adding RT to CPP did not make much difference. Both groups reduced their daily On-Peak consumption by approximately 5% on average, and their Mid-Peak consumption by approximately 3% on average.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>London Hydro is a Local Distribution Company that services the city of London, Ontario, Canada. It has a peak load of 719 megawatts and over 152,549 customers from the residential, institutional, commercial and industrial sectors.</p>
+<p>This pilot program was implemented in May of 2018 for approximately 1,600 participants and ran until April 30, 2019. It was funded by the Ontario Energy Board as part of its ongoing Regulated Price Plan Roadmap. One of the major elements of the Roadmap is implementation of pilots for new pricing mechanics and non-price mechanisms.</p>
+<p>As requested by the Ontario Energy Board (OEB), the selection of pilot participants did not target specific demographics or customer profile, instead the pilot had a mix of residential customers, randomly selected.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Ambassador focus groups obtained feedback from 62 participants. These focus groups were used for monitoring implementation and improving app features.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>This pilot used a randomized control trial design in which 2,267 participants were divided into four groups.</p>
+<ol>
+<li>1,135 customers received real-time energy consumption information (RT).</li>
+<li>340 customers were enrolled in critical peak pricing (CPP)</li>
+<li>The third group (318 participants) received both RT and CPP.</li>
+<li>The fourth group (control group of 474 participants) applied to participate in but were not selected to participate in the pilot.</li>
+</ol>
+<p><strong>Real-Time Energy Consumption Information (RT)</strong></p>
+<p>1,135 customers were given real-time information on their energy consumption using a mobile app. The app, which was developed by London Hydro as part of the project, also provided energy saving tips, and notifications when overall energy consumption exceeded that of peer households. <em>(Feedback; Overcoming Specific Barriers; Personalized, Credible, Empowering Communication; Norm Appeals)</em></p>
+<p><strong>Critical Peak Pricing (CPP)</strong></p>
+<p>340 customers got a slightly discounted off-peak time-of-use rate, AND a slightly elevated rate (59.5 cents per kWh) during 36 one-hour critical peak pricing periods. There were 18 of these one-hour periods during the first summer and 18 over the winter (36 in all during the one-year pilot). In addition, these participants received a cash incentive for participating - $25 at enrollment and $75 at completion. <em>(Incentives)</em></p>
+<p>Each participating household got a smart plug and a load control switch connected to the home’s electrical panel. The smart plug could control up to three 30 amp circuits. Both the plug and switch enabled London Hydro to automatically turn on and off all connected devices.<em> (Overcoming Specific Barriers)</em></p>
+<p>The Trickl app notified the customer of the peak pricing events. (<em>Prompts) </em>It also enabled customers to remotely control the devices connected to the smart plug and switch.  </p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoTable15Grid4Accent6" style="border-collapse:collapse;border:none;mso-border-alt:solid #A8D08D .5pt;
+ mso-border-themecolor:accent6;mso-border-themetint:153;mso-yfti-tbllook:1184;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
+<tbody>
+<tr>
+<td style="border:solid #70AD47 1.0pt;mso-border-themecolor:accent6;
+  border-right:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-top-themecolor:
+  accent6;mso-border-left-alt:solid #70AD47 .5pt;mso-border-left-themecolor:
+  accent6;mso-border-bottom-alt:solid #70AD47 .5pt;mso-border-bottom-themecolor:
+  accent6;background:#70AD47;mso-background-themecolor:accent6;padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal"><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:white;mso-themecolor:
+  background1;mso-bidi-language:#0400'>Pricing Period<o:p></o:p></span></b></p>
+</td>
+<td style="border-top:solid #70AD47 1.0pt;mso-border-top-themecolor:
+  accent6;border-left:none;border-bottom:solid #70AD47 1.0pt;mso-border-bottom-themecolor:
+  accent6;border-right:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-top-themecolor:
+  accent6;mso-border-bottom-alt:solid #70AD47 .5pt;mso-border-bottom-themecolor:
+  accent6;background:#70AD47;mso-background-themecolor:accent6;padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="text-align:center;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt;
+  mso-yfti-cnfc:1"><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:white;mso-themecolor:
+  background1;mso-bidi-language:#0400'>Standard RPP Consumer rate (in cents)<o:p></o:p></span></b></p>
+</td>
+<td style="border:solid #70AD47 1.0pt;mso-border-themecolor:accent6;
+  border-left:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-top-themecolor:
+  accent6;mso-border-bottom-alt:solid #70AD47 .5pt;mso-border-bottom-themecolor:
+  accent6;mso-border-right-alt:solid #70AD47 .5pt;mso-border-right-themecolor:
+  accent6;background:#70AD47;mso-background-themecolor:accent6;padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="text-align:center;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt;
+  mso-yfti-cnfc:1"><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:white;mso-themecolor:
+  background1;mso-bidi-language:#0400'>CPP and CPP+RT participant rate (in cents)<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr>
+<td style="border:solid #A8D08D 1.0pt;mso-border-themecolor:accent6;
+  mso-border-themetint:153;border-top:none;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-top-themecolor:accent6;mso-border-top-themetint:153;mso-border-alt:
+  solid #A8D08D .5pt;mso-border-themecolor:accent6;mso-border-themetint:153;
+  background:#E2EFD9;mso-background-themecolor:accent6;mso-background-themetint:
+  51;padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:0cm;mso-yfti-cnfc:68"><span lang="EN-CA" style="font-size: 9pt; font-family: Arial, sans-serif;">Off-Peak 7pm to 7am, on weekdays 24 hours on   weekends and holidays.<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  mso-border-bottom-themecolor:accent6;mso-border-bottom-themetint:153;
+  border-right:solid #A8D08D 1.0pt;mso-border-right-themecolor:accent6;
+  mso-border-right-themetint:153;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-top-themecolor:accent6;mso-border-top-themetint:153;mso-border-left-alt:
+  solid #A8D08D .5pt;mso-border-left-themecolor:accent6;mso-border-left-themetint:
+  153;mso-border-alt:solid #A8D08D .5pt;mso-border-themecolor:accent6;
+  mso-border-themetint:153;background:#E2EFD9;mso-background-themecolor:accent6;
+  mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="text-align:center;mso-yfti-cnfc:64"><span lang="EN-CA" style="font-size: 9pt; font-family: Arial, sans-serif;">6.5<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  mso-border-bottom-themecolor:accent6;mso-border-bottom-themetint:153;
+  border-right:solid #A8D08D 1.0pt;mso-border-right-themecolor:accent6;
+  mso-border-right-themetint:153;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-top-themecolor:accent6;mso-border-top-themetint:153;mso-border-left-alt:
+  solid #A8D08D .5pt;mso-border-left-themecolor:accent6;mso-border-left-themetint:
+  153;mso-border-alt:solid #A8D08D .5pt;mso-border-themecolor:accent6;
+  mso-border-themetint:153;background:#E2EFD9;mso-background-themecolor:accent6;
+  mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="text-align:center;mso-yfti-cnfc:64"><span lang="EN-CA" style="font-size: 9pt; font-family: Arial, sans-serif;">6.0<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:solid #A8D08D 1.0pt;mso-border-themecolor:accent6;
+  mso-border-themetint:153;border-top:none;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-top-themecolor:accent6;mso-border-top-themetint:153;mso-border-alt:
+  solid #A8D08D .5pt;mso-border-themecolor:accent6;mso-border-themetint:153;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:0cm;mso-yfti-cnfc:4"><span lang="EN-CA" style="font-size: 9pt; font-family: Arial, sans-serif;">Mid-Peak 7am to 11am and 5pm to 9pm, summer15   weekdays 11am to 5pm, winter weekdays<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  mso-border-bottom-themecolor:accent6;mso-border-bottom-themetint:153;
+  border-right:solid #A8D08D 1.0pt;mso-border-right-themecolor:accent6;
+  mso-border-right-themetint:153;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-top-themecolor:accent6;mso-border-top-themetint:153;mso-border-left-alt:
+  solid #A8D08D .5pt;mso-border-left-themecolor:accent6;mso-border-left-themetint:
+  153;mso-border-alt:solid #A8D08D .5pt;mso-border-themecolor:accent6;
+  mso-border-themetint:153;padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="text-align:center"><span lang="EN-CA" style="font-size: 9pt; font-family: Arial, sans-serif;">9.4<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  mso-border-bottom-themecolor:accent6;mso-border-bottom-themetint:153;
+  border-right:solid #A8D08D 1.0pt;mso-border-right-themecolor:accent6;
+  mso-border-right-themetint:153;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-top-themecolor:accent6;mso-border-top-themetint:153;mso-border-left-alt:
+  solid #A8D08D .5pt;mso-border-left-themecolor:accent6;mso-border-left-themetint:
+  153;mso-border-alt:solid #A8D08D .5pt;mso-border-themecolor:accent6;
+  mso-border-themetint:153;padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="text-align:center"><span lang="EN-CA" style="font-size: 9pt; font-family: Arial, sans-serif;">9.4<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:solid #A8D08D 1.0pt;mso-border-themecolor:accent6;
+  mso-border-themetint:153;border-top:none;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-top-themecolor:accent6;mso-border-top-themetint:153;mso-border-alt:
+  solid #A8D08D .5pt;mso-border-themecolor:accent6;mso-border-themetint:153;
+  background:#E2EFD9;mso-background-themecolor:accent6;mso-background-themetint:
+  51;padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:0cm;mso-yfti-cnfc:68"><span lang="EN-CA" style="font-size: 9pt; font-family: Arial, sans-serif;">On-Peak 11am to 5pm, summer weekdays 7am to 11am and   5pm to 9pm, winter weekdays<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  mso-border-bottom-themecolor:accent6;mso-border-bottom-themetint:153;
+  border-right:solid #A8D08D 1.0pt;mso-border-right-themecolor:accent6;
+  mso-border-right-themetint:153;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-top-themecolor:accent6;mso-border-top-themetint:153;mso-border-left-alt:
+  solid #A8D08D .5pt;mso-border-left-themecolor:accent6;mso-border-left-themetint:
+  153;mso-border-alt:solid #A8D08D .5pt;mso-border-themecolor:accent6;
+  mso-border-themetint:153;background:#E2EFD9;mso-background-themecolor:accent6;
+  mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="text-align:center;mso-yfti-cnfc:64"><span lang="EN-CA" style="font-size: 9pt; font-family: Arial, sans-serif;">13.2<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  mso-border-bottom-themecolor:accent6;mso-border-bottom-themetint:153;
+  border-right:solid #A8D08D 1.0pt;mso-border-right-themecolor:accent6;
+  mso-border-right-themetint:153;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-top-themecolor:accent6;mso-border-top-themetint:153;mso-border-left-alt:
+  solid #A8D08D .5pt;mso-border-left-themecolor:accent6;mso-border-left-themetint:
+  153;mso-border-alt:solid #A8D08D .5pt;mso-border-themecolor:accent6;
+  mso-border-themetint:153;background:#E2EFD9;mso-background-themecolor:accent6;
+  mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="text-align:center;mso-yfti-cnfc:64"><span lang="EN-CA" style="font-size: 9pt; font-family: Arial, sans-serif;">13.2<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:solid #A8D08D 1.0pt;mso-border-themecolor:accent6;
+  mso-border-themetint:153;border-top:none;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-top-themecolor:accent6;mso-border-top-themetint:153;mso-border-alt:
+  solid #A8D08D .5pt;mso-border-themecolor:accent6;mso-border-themetint:153;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:0cm;mso-yfti-cnfc:4"><span lang="EN-CA" style="font-size: 9pt; font-family: Arial, sans-serif;">Critical Peak 18 one-hour events in summer 18 one-hour   events in winter Events occur only between 4pm and 8pm, prevailing time, on   non-holiday weekdays<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  mso-border-bottom-themecolor:accent6;mso-border-bottom-themetint:153;
+  border-right:solid #A8D08D 1.0pt;mso-border-right-themecolor:accent6;
+  mso-border-right-themetint:153;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-top-themecolor:accent6;mso-border-top-themetint:153;mso-border-left-alt:
+  solid #A8D08D .5pt;mso-border-left-themecolor:accent6;mso-border-left-themetint:
+  153;mso-border-alt:solid #A8D08D .5pt;mso-border-themecolor:accent6;
+  mso-border-themetint:153;padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="text-align:center"><span lang="EN-CA" style="font-size: 9pt; font-family: Arial, sans-serif;">N/A<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  mso-border-bottom-themecolor:accent6;mso-border-bottom-themetint:153;
+  border-right:solid #A8D08D 1.0pt;mso-border-right-themecolor:accent6;
+  mso-border-right-themetint:153;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-top-themecolor:accent6;mso-border-top-themetint:153;mso-border-left-alt:
+  solid #A8D08D .5pt;mso-border-left-themecolor:accent6;mso-border-left-themetint:
+  153;mso-border-alt:solid #A8D08D .5pt;mso-border-themecolor:accent6;
+  mso-border-themetint:153;padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="text-align:center"><span lang="EN-CA" style="font-size: 9pt; font-family: Arial, sans-serif;">59.5<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Enrollment and Engagement</strong></p>
+<p>The pilot used a variety of customer outreach events and tools, such as focus groups, open houses, online surveys, door to door campaigns, breakfast events, family events with educational activities, and more, to communicate with customers and keep them engaged not only during the pilot but also after the pilot ended. (<em>Building Motivation, Engagement and Habits Over Time;Vivid, Personalized, Credible, Empowering Communication)</em></p>
+<p>Open Houses: Between June 11, 2018 and March 8, 2019, London Hydro held 28 open house events at its headquarters, so participants could get in-person assistance. 100 people took advantage of this option.</p>
+<p>Breakfasts Events:  Two breakfast events were held in March 2018 and were attended by about 262 pilot participants. The breakfasts built enthusiasm and distributed information on how to benefit most from participation in the pilot. They also enabled participants with connectivity issues to report them and get them resolved; home visits were scheduled if required.</p>
+<p>Door to Door Engagement: 125 appointments were booked for in-home technical assistance. (<em>Home Visits; Overcoming Specific Barriers</em>)</p>
+<p>The following table summarizes the key barriers and how each was addressed.</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoTable15Grid4Accent6" style="border-collapse:collapse;border:none;mso-border-alt:solid #A8D08D .5pt;
+ mso-border-themecolor:accent6;mso-border-themetint:153;mso-yfti-tbllook:1184;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
+<tbody>
+<tr style="mso-yfti-irow:-1;mso-yfti-firstrow:yes;mso-yfti-lastfirstrow:yes;
+  height:19.75pt">
+<td style="border:solid #70AD47 1.0pt;mso-border-themecolor:accent6;
+  border-right:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-top-themecolor:
+  accent6;mso-border-left-alt:solid #70AD47 .5pt;mso-border-left-themecolor:
+  accent6;mso-border-bottom-alt:solid #70AD47 .5pt;mso-border-bottom-themecolor:
+  accent6;background:#70AD47;mso-background-themecolor:accent6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top">
+<p class="MsoNormal"><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:white;mso-themecolor:
+  background1;mso-bidi-language:#0400'>Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="border:solid #70AD47 1.0pt;mso-border-themecolor:accent6;
+  border-left:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-top-themecolor:
+  accent6;mso-border-bottom-alt:solid #70AD47 .5pt;mso-border-bottom-themecolor:
+  accent6;mso-border-right-alt:solid #70AD47 .5pt;mso-border-right-themecolor:
+  accent6;background:#70AD47;mso-background-themecolor:accent6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top">
+<p align="center" class="MsoNormal" style="text-align:center;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt;
+  mso-yfti-cnfc:1"><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:white;mso-themecolor:
+  background1;mso-bidi-language:#0400'>How it was addressed<o:p></o:p></span></b></p>
+<p class="MsoNormal"><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:white;mso-themecolor:
+  background1;mso-bidi-language:#0400'> </span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:0;height:19.75pt">
+<td style="border:solid #A8D08D 1.0pt;mso-border-themecolor:accent6;
+  mso-border-themetint:153;border-top:none;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-top-themecolor:accent6;mso-border-top-themetint:153;mso-border-alt:
+  solid #A8D08D .5pt;mso-border-themecolor:accent6;mso-border-themetint:153;
+  background:#E2EFD9;mso-background-themecolor:accent6;mso-background-themetint:
+  51;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:0cm;mso-yfti-cnfc:68"><span style="font-size: 9pt; font-family: Arial, sans-serif;">Lack of a </span><span lang="EN-CA" style="font-size: 9pt; font-family: Arial, sans-serif;">personal</span><span style="font-size: 9pt; font-family: Arial, sans-serif;"> incentive to reduce energy use during peak times</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  mso-border-bottom-themecolor:accent6;mso-border-bottom-themetint:153;
+  border-right:solid #A8D08D 1.0pt;mso-border-right-themecolor:accent6;
+  mso-border-right-themetint:153;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-top-themecolor:accent6;mso-border-top-themetint:153;mso-border-left-alt:
+  solid #A8D08D .5pt;mso-border-left-themecolor:accent6;mso-border-left-themetint:
+  153;mso-border-alt:solid #A8D08D .5pt;mso-border-themecolor:accent6;
+  mso-border-themetint:153;background:#E2EFD9;mso-background-themecolor:accent6;
+  mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-left:25.05pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 25.05pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt;
+  mso-yfti-cnfc:64"><!--[if !supportLists]--><span style="font-size:9.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;
+  mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span style="font-size: 9pt; font-family: Arial, sans-serif;">Increased the relative   price penalty for using energy at peak times</span><span style='font-size:
+  9.0pt;font-family:"Arial",sans-serif;mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes;height:19.75pt">
+<td style="border:solid #A8D08D 1.0pt;mso-border-themecolor:accent6;
+  mso-border-themetint:153;border-top:none;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-top-themecolor:accent6;mso-border-top-themetint:153;mso-border-alt:
+  solid #A8D08D .5pt;mso-border-themecolor:accent6;mso-border-themetint:153;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:0cm;mso-yfti-cnfc:4"><span style='font-size:9.0pt;
+  font-family:"Arial",sans-serif;mso-bidi-language:#0400'>Technical issues </span><span lang="EN-CA" style="font-size: 9pt; font-family: Arial, sans-serif;">setting</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;mso-bidi-language:#0400'>   up the system<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  mso-border-bottom-themecolor:accent6;mso-border-bottom-themetint:153;
+  border-right:solid #A8D08D 1.0pt;mso-border-right-themecolor:accent6;
+  mso-border-right-themetint:153;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-top-themecolor:accent6;mso-border-top-themetint:153;mso-border-left-alt:
+  solid #A8D08D .5pt;mso-border-left-themecolor:accent6;mso-border-left-themetint:
+  153;mso-border-alt:solid #A8D08D .5pt;mso-border-themecolor:accent6;
+  mso-border-themetint:153;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-left:25.05pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:0cm 25.05pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'>Provided free in-home technical assistance<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:24.95pt;text-indent:-17.85pt;
+  page-break-after:avoid;mso-list:l0 level1 lfo1;tab-stops:0cm 25.05pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-bidi-language:#0400">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><!--[endif]--><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'>Door knocking campaign monitored customer experience   and proactively identified homes where technical assistance was required <o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>London Hydro hired a third party – Navigant Consulting – to evaluate the pilot.</p>
+<p>The pilot used a randomized control (RCT) design in which 2,150 participants were divided into four groups.</p>
+<ol>
+<li>1,135 customers received real-time energy consumption information (RT).</li>
+<li>340 customers were enrolled in critical peak pricing (CPP)</li>
+<li>The third group (318 participants) received both RT and CPP.</li>
+<li>The fourth group (control group of 474 participants) applied to participate in but were not selected to participate in the pilot. </li>
+</ol>
+<p>The following four types of data were used to estimate program impacts:</p>
+<ul>
+<li>Participant and non-participant interval (hourly consumption) data</li>
+<li>Hourly weather data</li>
+<li>CPP event schedule data</li>
+<li>CPP participant group connectivity data</li>
+</ul>
+<p>London Hydro gave Navigant hourly electricity use data for all participant and control households, from May 1, 2016 to April 30, 2019. Regression analysis of the pre-pilot participant and control demand data showed that the four different groups were similar before the pilot began, validating the experimental design. Data from the pre-pilot period were also used to help develop regression variables for the impact estimation, control for non-program-related patterns in individual customer consumption, improve the precision and accuracy of the estimations, and better understand the program impacts. Only the data from May 2018 to April 2019 were used in determining the pilot’s impacts.</p>
+<p>For those customers participating in critical peak pricing, London Hydro also gave Navigant information on when each household had its load control technologies connected and ready to work during a peak period event. This additional data helped identify which impacts were purely behavioral and which were a combination of behavioral and automated reductions.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>RT customers were given real-time information on their energy consumption using a mobile app.</p>
+<p>All customers received information on their energy consumption on their bills.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>CPP</strong></p>
+<ul>
+<li>CPP participants delivered summer On-Peak and Mid-Peak energy savings that were statistically significant at the 90% confidence level. Both the CPP and the CPP+ RT participants reduced their daily summer On-Peak consumption by approximately 5% on average, and their Mid-Peak consumption by approximately 3% on average.</li>
+<li>During the summer, CPP demand response impacts (the amounts each household reduced energy consumption during a Critical Peak event) were on average 0.67 kW (34%) and were positively correlated with temperature. During the hottest event of the summer, participants delivered an average of 1 kW each of demand response.</li>
+<li>During the winter, CPP demand response impacts were small and do not appear to be correlated with temperature. This is likely because there is less discretionary energy use in the winter.</li>
+<li>Participants whose load switches were not connected, and thus whose load switches could not automatically reduce demand in response to London Hydro’s signal were still able to deliver 0.3 kW (15%) of demand reductions during Critical Peak events, despite receiving only 15 minutes’ notice.</li>
+<li>CPP participants reduced consumption during hours in which CPP events were likely to occur, despite not knowing when each event would occur until 15 minutes before the event.</li>
+</ul>
+<p><strong>RT </strong></p>
+<ul>
+<li>RT participants reduced their On-Peak consumption by about 2%. These impacts were just barely non-significant.</li>
+<li>Those with both CPP and RT reduced their energy use by about the same amount as those with CPP only.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<ul>
+<li>Transitioning from traditional Home Energy Reports to disaggregation-powered digital communications enabled London Hydro to provide itemization and personalized savings recommendations to its consumers, helping them tackle the loads in their homes with the highest opportunity for savings. play.</li>
+<li>This pilot illustrates two best practice methods for measuring impacts. It used an RCT evaluation design, and it tested two approaches and a combination of the two (a/b testing)</li>
+<li>The CPP illustrates how a financial incentive to do a behavior can be funded/ offset by combining it with a surcharge for doing the competing behavior.</li>
+<li>As we transition to a more renewable grid, having the ability to reduce load is going to be more and more important in more localities.</li>
+<li>The data suggest that education and customer engagement were key drivers of participant behavior.</li>
+<li>While Navigant could not categorically state what behaviour drove the energy savings, the fact that the CPP savings were statistically significantly correlated with temperature, and were statistically significant only in summer months, suggests that much of the savings were due to reductions in the use of air conditioners.</li>
+</ul>
+<p>This case study was written in 2021 by Jay Kassirer, based on information provided in the linked report.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

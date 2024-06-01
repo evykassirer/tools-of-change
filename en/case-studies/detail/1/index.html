@@ -1,0 +1,562 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>Halifax Regional Municipality</p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<p>Clean Nova Scotia</p><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>In 2001 only 7 percent still used pesticides as their main method of weed and pest control, and 90 percent had used pesticide alternatives.</li>
+</ul>
+<p>For the 2002 growing season, only 15% of pesticide permit applications were repeats.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Halifax Regional Municipality Pesticide By-law</h1>
+<p>In 2000, Halifax introduced a by-law reducing the use of pesticides on municipal and residential properties, to protect human health and the environment. The municipality used internal resources and external partners to phase in the by-law over several years while educating residents on sustainable turf maintenance and alternatives to synthetic pesticides.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The Halifax Regional Municipality (HRM) is the capital of the Province of Nova Scotia, Canada. In August 2000, it enacted a pesticide by-law, based on recommendations from its pesticide advisory committee and subsequent public hearings.</p>
+<p>This historic decision began in 1997 with discussions by Council regarding toxic products. In the spring of 1999, following serious lobbying for the municipal regulation of pesticides through the Municipal Government Act, Nova Scotia granted the Halifax Regional Municipality (HRM) the right to regulate the cosmetic use of pesticides on residential and municipal properties.</p>
+<p>Since almost 40 percent of Nova Scotia's residential properties were situated in the Halifax municipality, it was anticipated that the by-law would have a great impact.</p>
+<p>The by-law applied strictly to the <em>cosmetic</em> use of pesticides on municipal and residential properties, and not to the use of pesticides by forestry, agriculture, and commercial and institutional properties. Pesticide use was phased out over several years:</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Time Frame</strong></td>
+<td><strong>Phase</strong></td>
+</tr>
+<tr>
+<td>2000-2001</td>
+<td>Immediate ban of pesticide use on municipal properties, effective August 19, 2000.</td>
+</tr>
+<tr>
+<td>Transition Period: <br/>
+            April 2001-March 2003</td>
+<td>Ban of pesticide use on:
+            <ul>
+<li>Residential properties in close proximity to medically registered properties i.e. properties whose occupants suffer from the effects of pesticides</li>
+<li>Properties that border schools, day care centres, playgrounds, parks, churches, seniors residences, universities, and hospitals.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>2003</td>
+<td>General ban on the cosmetic use of pesticides on <strong>all</strong> residential and municipal properties, effective April 1, 2003.</td>
+</tr>
+</tbody>
+</table>
+<p>The phased approach immediately protected individuals suffering from severe effects of exposure to pesticides, herbicides, and insecticides, while providing the community and landscape industry a two-year transition period to adapt to more sustainable maintenance practices.</p>
+<p>Approval for pesticide application was only given to municipal and residential properties to control or destroy plants or insects where they constituted a danger to human beings, or had infested a property (insects only).</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>HRM's objectives were to:</p>
+<ul>
+<li>Create public awareness of the by-law that protected human health and the environment;</li>
+<li>Educate and encourage people to voluntarily practise sustainable gardening and landscape maintenance; and</li>
+<li>Implement the by-law effectively both in cost and operation.</li>
+</ul>
+<p>Clean Nova Scotia (CNS) was one of the many external partners HRM worked closely with. CNS, a non-profit organization, had worked for over 14 years with households, schools, and other organizations in Nova Scotia and the Maritimes, affecting behaviour change towards the environment. While under contract to HRM, CNS objectives were to:</p>
+<ul>
+<li>Provide personal service and support regarding the new by-law;</li>
+<li>Educate HRM property owners one-on-one in sustainable maintenance practices; and</li>
+<li>Process pesticide permit applications within 24 hours.</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Environmental Management Services, through the Strategic and Sustainable Resource Management section, led the by-law implementation. In October and November 2000, they organized a series of facilitated process mapping workshops to determine responsibilities, roles, budgets, etc. of all effected business units. Beginning in December 2000, HRM forwarded five project management updates to all involved to keep staff abreast of progress and critical updates.</p>
+<p>HRM effectively used existing internal resources and external partnerships to keep the project on schedule and the costs low. Here's how their departments worked together:</p>
+<table>
+<tbody>
+<tr>
+<td><strong>HRM Business</strong></td>
+<td><strong>Activity</strong></td>
+</tr>
+<tr>
+<td>Environmental Management Services</td>
+<td>Lead business unit.</td>
+</tr>
+<tr>
+<td>Shared Services</td>
+<td>
+<ul>
+<li>Call Centre &amp; Business Centres administrative support, tier one calls, etc.</li>
+<li>Geographic Information Services in conjunction with Information Services developed and put in place a complex record management and geographic mapping links for the Property Registry System.</li>
+<li>Marketing, design and communications staff assisted with the:
+                <ul>
+<li>Design, advertising, displays, brochures, fact sheets and other collateral materials</li>
+<li>Overall communications plan and corporate logo and word mark.</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Strategic and Sustainable Resource Management Unit</td>
+<td>Pesticide By-law and related Public Education and Awareness Programs</td>
+</tr>
+<tr>
+<td>By-law Enforcement section of Community Projects</td>
+<td>Oversaw enforcement related matters.</td>
+</tr>
+<tr>
+<td>Legal Services</td>
+<td>Provided timely legal advice.</td>
+</tr>
+<tr>
+<td>Solid Waste Management</td>
+<td>Partnered on sustainable maintenance research trials.</td>
+</tr>
+<tr>
+<td>Environmental Initiatives Committee</td>
+<td>Assisted with the promotion of sustainable practices, particularly through the Naturally Green newsletters.</td>
+</tr>
+</tbody>
+</table>
+<p>Key external partners included Clean Nova Scotia, Dalhousie University, Nova Scotia Agricultural College, the Regional Library, and Landscape Nova Scotia.</p>
+<p><strong>Communications &amp; Public Education and Awareness</strong></p>
+<p>Since the pesticide policy was under the HRM Naturally Green umbrella of a sustainable community, the by-law was promoted in conjunction with it. Promotional tools such as decals and fact sheets were printed in the tens of thousands and distributed, for example at home shows and workshops.</p>
+<p>The communications plan focused on internal training and promotional tools. Examples of internal training were:</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Time frame</strong></td>
+<td><strong>Who participated</strong></td>
+<td>Training</td>
+</tr>
+<tr>
+<td>December 2000</td>
+<td>40 HRM staff volunteers representing all HRM business units.</td>
+<td>Train the Trainer program</td>
+</tr>
+<tr>
+<td>April 2001</td>
+<td>By-law Enforcement, Business Centre administrative staff, and Clean Nova Scotia staff</td>
+<td>Technical workshops on pesticides</td>
+</tr>
+<tr>
+<td>April 2001</td>
+<td>Members of Regional Council</td>
+<td>Orientation sessions on the by-law</td>
+</tr>
+<tr>
+<td>May 2001</td>
+<td>Call Centre staff</td>
+<td>Briefings on the by-law</td>
+</tr>
+</tbody>
+</table>
+<p>Public education and awareness tools included:</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Tools of Change</strong></td>
+<td><strong>Tools Used in 2000-2001</strong></td>
+</tr>
+<tr>
+<td><a href="/en/tools-of-change/prompts/">Prompts</a> / <a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></td>
+<td>
+<ul>
+<li>Recipe cards, posters, decals, and seed packs. HRM suggested placing the decals on lawn mowers as a visible reminder of healthy landscaping practices. The wildflower seed packs had fundamental maintenance practices printed on the inside.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><a href="/en/tools-of-change/mass-media/">Mass Media</a></td>
+<td>
+<ul>
+<li>Series of radio advertisements in April-May</li>
+<li>Series of newspaper advertisements in spring, summer, and fall</li>
+<li>Major articles in three Naturally Green newsletters, sent to all HRM households</li>
+<li>Several dozen newspaper, radio, and TV interviews locally, regionally, and internationally</li>
+<li>Educational posters in the Daily News and National Post</li>
+<li>Clean Nova Scotia newsletters</li>
+<li>PSAs on major initiatives</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></td>
+<td>
+<ul>
+<li>Pesticide By-law web site with links to resources and information on sustainable maintenance practices.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><a href="/en/tools-of-change/feedback/">Feedback</a></td>
+<td>
+<ul>
+<li>The web site also provided community feedback through yearly reports and public opinion survey results.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Other</td>
+<td>
+<ul>
+<li>Pesticide By-law brochure</li>
+<li>Display unit for trade shows and public displays; participation at major home shows in HRM</li>
+<li>Various Naturally Green Maintenance Tips fact sheets on topics such as:
+                <ul>
+<li>Sustainable Turf Maintenance (natural /organic techniques for healthy lawns and lawn care and soil conditioning)</li>
+<li>Permitted Pesticides</li>
+<li>Fall Practices for Taking Care of the Soil</li>
+<li>Chinch Bug, White Grub and European Crane Fly</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>In 2002, HRM added these tools:</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Tools of Change</strong></td>
+<td><strong>Tools Used</strong></td>
+</tr>
+<tr>
+<td><a href="/en/tools-of-change/prompts/">Prompts</a></td>
+<td>
+<ul>
+<li>Sustainable landscape maintenance calendar sent to all HRM households</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><a href="/en/tools-of-change/mass-media/">Mass Media</a></td>
+<td>
+<ul>
+<li>Family-oriented TV commercials on a local family TV station</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></td>
+<td>
+<ul>
+<li>Recyclable lawn signs, one of which had the motto I Garden Sustainably.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Other</td>
+<td>
+<ul>
+<li>Fact sheet on permitted pesticides</li>
+<li>Information flyer sent to all households regarding by-law</li>
+<li>Various small scale community events</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>In 2003, HRM:</p>
+<ul>
+<li>Ran another series of public workshops</li>
+<li>Created more fact sheets</li>
+<li>Focused their key messaging on the full ban that became effective April 1, 2003.</li>
+</ul>
+<p><strong>About the public workshops</strong></p>
+<p>Feedback to staff and a survey pointed out a need for information about alternatives to synthetic pesticides. HRM addressed this with a series of public workshops given by volunteers from the region. The first step was to train the volunteers. So, in 2001, a local radio garden personality led over 110 volunteers in train-the-trainer technical workshops on sustainable gardening and landscape maintenance. In 2002, a lecturer of the local agricultural college and a renowned author with expertise in environmental law led the workshops. During the transition years, the volunteers together with the HRM partners, the Regional Library, Landscape Nova Scotia, and Nova Scotia Agricultural College offered numerous free public workshops highlighting for example Healthy Soil and Energy Cycling in Your Garden. (<a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a>)Upon request, the volunteers and HRM staff also gave these popular and well-attended workshops to garden clubs, PTAs, and community groups.</p>
+<p><strong>About the posters</strong></p>
+<p>HRM distributed colourful and animated 8 x 11 Naturally Green posters with the slogan <em>Think Globally Act Locally</em>. The Healthy properties-through sustainable lawn care poster had a calendar with lawn care activities for each season such as:</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Calendar</strong></td>
+<td><strong>Lawn Care Activity</strong></td>
+<td><strong>Recommendation</strong></td>
+<td><strong>Explanation</strong></td>
+</tr>
+<tr>
+<td>Any time during growing season</td>
+<td>Soil quantity, quality and testing</td>
+<td>Get to know your soil. The pH of healthy soil is generally between 6.1-6.7. The Provincial Department of Agriculture and Fisheries will test your soil for a small fee. For more information call (902) 893-7444 or visit <a href="http://www.gov.ns.ca/nsaf/ge">www.gov.ns.ca/nsaf/ge</a></td>
+<td>Lawns should have at least 8 inches (20 cm) of soil with sufficient organic matter. If the soil is too shallow, depth can be gradually increased over time. Add top dressing in the spring after aeration. Add - inch (0.5 1.25cm) mixture of soil, sand and compost. Scratch into the lawn with the back of a rake.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>About the newspaper posters</strong></p>
+<p>HRM included several posters in local newspapers. (<a href="/en/tools-of-change/mass-media/">Mass Media</a>)Some had themes such as:</p>
+<blockquote><strong><em>Each of us can practice fundamental principles of Sustainable Maintenance which include: <br/>
+Take Care of the Soil If the soil is healthy, plants will be healthy.</em></strong> A soil that is cared for is deep enough for the plants, is loose and porous for healthy root growth, contains enough organic matter, nutrients and moisture, and is covered at all times of the year by plants or mulch. </blockquote>
+<p><strong>Sustainable Maintenance Research</strong></p>
+<p>In 2001, the HRM Solid Waste Management business unit began research trials on their sport fields using a compost topdressing of municipal solid waste. The partners in this effort included the Provincial Resource Recovery Board, FCM Federal Green Municipal Enabling Funds, and Dalhousie University.</p>
+<p><strong>Property Registry</strong></p>
+<p>During the transition years, HRM maintained a registry of properties whose residents reacted severely to pesticide exposure and required advance notice of spraying. When the full ban came into effect April 1, 2003, notice was required for approved spraying on <em>all</em> residential and municipal properties.</p>
+<p>HRM Business Centres handled the free property registration. There were 182 properties registered in 2001, and 200 in 2002. In accordance with the by-law, HRM provided monthly updates of the registered properties to commercial pesticide applicators in the Halifax municipality.</p>
+<p><strong>Call Centre</strong></p>
+<p>In the summer of 2001, the existing Call Centre processed around 4500 general pesticide enquiries. The Centre also entered pesticide complaints into the by-law complaint-tracking database.</p>
+<p><strong>By-law Enforcement</strong></p>
+<p>In the transition period, April 2001 to March 2003, the by-law was enforced only in the <em>buffered</em> zone i.e. properties that were within a 50-metre radius of medically registered properties, or that bordered schools, day care centres, playgrounds, parks, churches, seniors residences, universities, or hospitals.</p>
+<p>During the transition, the By-law Enforcement section partially contracted out by-law enforcement with the Canadian Corps of Commissionaires, the largest security organization in Atlantic Canada. All HRM employees involved with by-law enforcement were sworn in as special constables of HRM and wore the uniform of the Canadian Corps of Commissionaires. All by-law personnel received training in pesticides and by-law enforcement.</p>
+<p>From April to November 2001, pesticide enforcement officers responded to approximately 400 complaints/queries received by the Call Centre. During this first season, the approach to by-law violations was through education, mediation, and persuasion of alleged violators. Repeat violators were ticketed and/or prosecuted a total of fourteen tickets were issued. (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>)</p>
+<p>In both 2001 and 2002, by-law enforcement services ran seven days a week from April to November. The number of pesticide complaints received in the second year of enforcement was reduced to 111 from 400 the previous year.</p>
+<p><strong>Pesticide Permit Applications and Assessment</strong></p>
+<p>In January 2001 HRM eliminated fees for pesticide application permits removing a potential cost deterrent to complying with the application process. (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>)</p>
+<p>Starting in April 2001 Clean Nova Scotia (CNS) reviewed pesticide permit applications and conducted on site evaluations; and responded to related questions, for example regarding the by-law, natural landscaping alternatives, and permitted pest control methods and products.</p>
+<p>HRM trained CNS staff members in natural landscaping alternatives, types of pesticide products, and an overview of the by-law. In addition a local agricultural college trained staff in weed identification and control.</p>
+<p><strong>1. Pesticide Application Review Process</strong></p>
+<p>The steps involved in the Pesticide Application review process were:</p>
+<ol>
+<li>HRM Business Centres received permit requests.</li>
+<li>The Centres faxed the pesticide permit applications to CNS offices each morning.</li>
+<li>Upon receipt, CNS made appointments, in advance where possible, and created a schedule for site visits on the same day. (<a href="/en/tools-of-change/home-visits/">Home Visits</a>) To maintain a desired 24-hour turnaround, CNS made no advance appointments during the very peak season, mid to late July.</li>
+</ol>
+<p>Normally, two assessors visited the affected property to evaluate the conditions described in the homeowners application including:</p>
+<ul>
+<li>Type of pest</li>
+<li>Threat to human health</li>
+<li>Likelihood of the infestation spreading to neighbouring properties</li>
+<li>Extent of damage</li>
+<li>Whether the condition was treatable.</li>
+</ul>
+<p>CNS staff provided the resident with applicable Sustainable Maintenance Tips outlining natural alternatives to controlling and preventing weed and pest problems, and the Naturally Green Pesticide Reducing Pesticide Use pamphlet.</p>
+<p>In many neighbourhoods there was a follow the leader effect. Analysis of 2001 data showed clusters on streets where people had applied for pesticide permits within a one to two week period.</p>
+<p><strong>2. Public Education and Awareness</strong></p>
+<p>Through their inquiries, CNS educated Halifax homeowners:</p>
+<ul>
+<li>With solutions to specific weed and pest problems ranging from dandelions to chinch bugs;</li>
+<li>By answering questions about the by-law such as affected properties, and signage and notification requirements, and permitted pesticide products; and</li>
+<li>By handling complaints about the permit application process, the by-law, and neighboring properties that had applied pesticides.</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>In a nutshell, HRM'S total pesticide use reduction initiative, which was region wide, cost about sixty cents per person.</p>
+<p>Although Council allocated $200,000 for by-law start up and roll out costs in 2000-2001, HRM only used $120,000. Staff achieved these savings to taxpayers of approximately 45 percent by maximizing existing internal resources and cost-effective partnerships with external agencies.</p>
+<p>In 2001-2002, the cost of implementing the by-law was $210,000.</p>
+<p>The 2002-2003 operating budget was:</p>
+<p> </p>
+<table>
+<tbody>
+<tr>
+<td>Public Education and Awareness</td>
+<td>$ 40,000</td>
+</tr>
+<tr>
+<td>Communications Plan, Advertising, Promotion, etc.</td>
+<td>$ 40,000</td>
+</tr>
+<tr>
+<td>Research, Education and Related</td>
+<td>$ 5,000</td>
+</tr>
+<tr>
+<td>Permit Review Process and Education Program</td>
+<td>$ 35,000</td>
+</tr>
+<tr>
+<td>Administration, Support and Related</td>
+<td>$ 45,000</td>
+</tr>
+<tr>
+<td>By-law Enforcement</td>
+<td>$ 32,000</td>
+</tr>
+<tr>
+<td>Total estimated budget</td>
+<td>$197,000</td>
+</tr>
+</tbody>
+</table><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Throughout, Corporate Research Associates Inc. conducted polls to test awareness and how many residents were complying. HRM also kept track of the number of complaints and repeat permit applications.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Awareness &amp; Pesticide Reduction</strong></p>
+<p>In 2001, 92 percent of homeowners were aware of the by-law; only 7 percent still used pesticides as their main method of weed and pest control, and 90 percent had used pesticide alternatives.</p>
+<p>For the 2002 growing season, only 15% of pesticide permit applications were repeats i.e. properties that had received permits to spray in the previous season. Pesticide complaints also went down from 400 in the 2001 season of enforcement to 111 in the 2002 season.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>For more technical information on the Halifax Regional Municipality pesticide initiatives, contact:</p>
+<p>Stephen King <br/>
+Manager-Senior Advisor <br/>
+Strategic and Sustainable Resource Mgt., Environmental Management Services <br/>
+Halifax Regional Municipality <br/>
+Tel: (902) 490-6188 <br/>
+Email: <a href="mailto:Pestbylaw@halifax.ca">Pestbylaw@halifax.ca</a></p>
+<p>To reach the Pesticide By-law and Sustainable Gardening and Landscape Maintenance website, follow the Naturally Green and Pesticide By-law links at: <a href="http://www.halifax.ca">http://www.halifax.ca</a></p>
+<p>For more information on the Clean Nova Scotia programs, contact:</p>
+<p>Donald Dodge <br/>
+Programs Officer <br/>
+Clean Nova Scotia <br/>
+126 Portland St. <br/>
+Dartmouth, NS B2Y 1H8 <br/>
+Tel.: (902) 420-3474 <br/>
+Fax: (902) 424-5334 <br/>
+<a href="mailto:ddodge@clean.ns.ca">ddodge@clean.ns.ca</a><a href="http://www.clean.ns.ca">http://www.clean.ns.ca/</a></p>
+<p>This case study was written in 2003 by Ria van der Veen. </p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Last updated: August 2004</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>The City of Waterloo and concerned citizens</p><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>In Waterloo, pesticide-spraying decreased from 73 per cent of green space to less than one tenth of a percent of green space.</li>
+<li>Pesticide-free horticulture led to more appealing green spaces.</li>
+<li>Using fewer pesticides saved money.</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Waterloo's Plant Health Care Program</h1>
+<p>The City of Waterloo has dramatically decreased its use of pesticides on municipally owned land through practices that promote healthy, vigorous turf and soil. The city's Plant Health Care Program (PHCP) has over time become Waterloo's preferred method of turf care. </p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>In the late 1970s the City of Waterloo sprayed more than 73 per cent of its land with pesticides. In 1979, Waterloo began to experiment with lawn fertility programs that reduce the use of pesticides or synthetic fertilizers. The idea was that a vigorous lawn with healthy, deep roots, would thrive. Weeds and disease simply would not have the opportunity to take hold. At the time, this was a novel approach.</p>
+<p>If our team invested time monitoring the turf conditions and paid attention to what were the stressors on a specific area such as a sports field, we knew we could keep the area very healthy with good plant cultural practices, said Karen Richter, Organizational Leader of Parks Maintenance at the City of Waterloo.</p>
+<p>With the consistent application of these horticultural practices, Waterloo decreased its use of pesticides at a steady pace throughout the 1980s. By the mid-1980s, the city had eliminated blanket spraying. By 1990, Waterloo spot sprayed less than 10 per cent of its green space.</p>
+<p>There was no launch of a Plant Health Care Program per se, said Richter. It was a gradual process that evolved over time. We learned through trial and error, and advancements in equipment and products.</p><!-- Background already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>In the mid 1980s, a residents' group began to lobby the city to take the pesticide reduction issue even more seriously. The Pesticide Action Group was led by five Waterloo women who claimed to have suffered significant health problems as a result of being exposed to pesticides both within Waterloo and elsewhere. The group spent several years writing letters and articles for local news organizations about health risks associated with pesticide use (<a href="/en/tools-of-change/mass-media/">Mass Media</a>). To advocate for the use of fewer pesticides on public land, they held a series of meetings with city staffers and addressed council on several occasions. The group also held information sessions in Waterloo and surrounding areas to increase awareness and gather support (<a href="/en/tools-of-change/word-of-mouth/">Word of Mouth</a>, <a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p>By 1990, the group had convinced the Waterloo City Council to establish a task force to look into alternatives to pesticide spraying and to determine what those alternatives would cost (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>, <a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p>Made up of 19 people, the task force set out to accommodate the concerns of two broad groups: those who lobbied for the elimination of pesticide use and those who advocated for the controlled use of pesticides (<a href="/en/tools-of-change/communication/">Vivid, Credible, Personalized Communication</a>). To accomplish this, the task force included a wide range of participants, including:</p>
+<ul>
+<li>academic specialists</li>
+<li>environmental groups</li>
+<li>lawn care and horticultural associations</li>
+<li>school boards</li>
+<li>private landscapers</li>
+<li>groundwater specialists</li>
+<li>sport associations</li>
+<li>the Guelph Turf Grass Institute</li>
+<li>elected officials</li>
+<li>city staff</li>
+<li>representatives from the medical community</li>
+</ul>
+<p>Over four months, the task force held eight meetings and conducted three informal public meetings in which residents voiced their concerns. The task force heard 11 private citizen delegations and received 27 written submissions. It heard expert testimony on the risks of groundwater contamination by lawn chemicals (The City of Waterloo was the largest city in Canada that relied wholly on groundwater for its water supply). It heard various viewpoints on the possible adverse health effects of lawn chemicals. Ultimately, however, the task force did not feel qualified to evaluate the scientific data or present a definitive viewpoint on health risks and lawn chemicals.</p>
+<p>The task force made 15 turf management recommendations intended to help eliminate the use of pesticides. It also made seven educational strategy recommendations for promoting community awareness and alternatives to pesticides. The recommendations were restricted to lawn chemical use and did not include pesticide use on agricultural land, garden products and fruit and vegetable products.</p>
+<p>In 1991, these recommendations were incorporated into the city's Plant Health Care Program (PHCP).</p>
+<p>The PHCP followed a set of horticultural practices designed to enhance the health of the turf and soil, limiting the use of pesticides to spot applications of noxious weed areas, such as poison ivy along the sides of footpaths. The cultural practices employed by the PHCP team included:</p>
+<ul>
+<li>Mowing grass to a minimum height of three inches (as grass height is correlated to root growth), and never removing more than 1/3 of the leaf blade at one time</li>
+<li>Aerating on a regular basis to ensure that high traffic areas did not become compacted, and aerating prior to fertilizer application to get the fertilizer closer to the root zone to maintain healthy plant growth. (Waterloo used both organic and synthetic fertilizers and sometimes a combination of the two, depending on the specific needs of the turf.)</li>
+<li>Topdressing with compost and/or topsoil to prepare for over-seeding, and to enhance the soil structure</li>
+<li>Over-seeding with grass varieties appropriate for the specific area</li>
+<li>Irrigating when necessary, in particular watering deeply in the early morning to avoid evaporation of moisture. (Although Waterloo did not follow a specific water control formula, staff monitored all turf areas and watered when the areas showed signs of drought.)</li>
+<li>De-thatching when necessary to encourage vigorous plant growth</li>
+<li>Monitoring sports fields and green spaces on a regular basis to ensure they were receiving the proper care</li>
+<li>If an area looked unhealthy, evaluating the problem and applying corrective action.</li>
+</ul>
+<p>City parks staff prioritized green space and monitored it accordingly. For example, the highest priority areas were sports fields, because they received the most use and stress, and high profile public areas because they were considered important visual symbols of the city. Park green spaces received a lower priority because they were used less and they generally received less stress. Boulevards and cul-de-sacs received the lowest priority.</p>
+<p>Richter said the PHCP used a pro-active approach to create healthy turf that did not often need pesticides or chemical fertilizers to stay vigorous. The approach led to environmental and social benefits for Waterloo.</p>
+<p>Unlike many integrated pest management systems, which fight the effects of diseases and pests by treating the problem once it has occurred, the PHCP aimed to prevent problems from occurring. In fact, because staff kept extensive maintenance records and because experience taught them to share information and ideas, the PHCP team was able to plan well ahead and keep pest problems under control. Experience, commitment and information sharing were critical aspects of the program.</p>
+<p>To educate the public about the PHCP and to encourage homeowners to refrain from using pesticides on their lawns, the parks department produced a newsletter, brochures and chemical-free lawn signs for distribution to homeowners (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>).</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>In 1991, the city allocated approximately $32,000 for advertisement of PHCP, evaluation of horticultural practices and staff schedules. City council provided an additional $10,000 to implement some of the recommendations made by the task force.</p>
+<p>Budget requests were to be made in subsequent years to enhance the approved task force recommendations. Approximately 2,100 staff hours have been devoted to this project to date and no additional staff were hired.</p><!-- Financing already contains P tags.-->
+<h2>Results</h2>
+<p>When consistently used, the PHCP virtually eliminated the need for pesticides on the average lawn. The program, coupled with the recommendations of the task force, led to impressive environmental and social results:</p>
+<ul>
+<li>In 1979, Waterloo applied chemical pesticides to more than 73 per cent of its green space. Despite the fact that the green space under care increased almost five-fold over the following two decades, pesticide spraying steadily decreased to one tenth of a percent of the overall green space.</li>
+<li>The PHCP recorded economic savings after the task force completed its work in 1991. (Note: Karen Richter says those data are not available because as the program was unfolding the city was laying off staff. Richter hasn't determined what proportion of the total savings can be attributed to the program).</li>
+<li>Because the cultural practices enshrined in the PHCP were hands-on, staff developed a sense of ownership for the program and for their work.</li>
+<li>Sports clubs said they preferred Waterloo's sports fields to those in other municipalities because of the relatively good condition of the turf.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>City of Waterloo, Park Services, <br/>
+265 Lexington Court <br/>
+Waterloo, Ontario N2J 4A8 <br/>
+Canada <br/>
+Phone: (519) 747-8601 <br/>
+Fax: (519) 886-5788 <br/>
+E-mail: <a href="mailto:parks@city.waterloo.on.ca">parks@city.waterloo.on.ca</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study was written in 2002 by Jay Kassirer. Funding for the write-up was provided by Environment Canada's <a href="http://www.ec.gc.ca/nopp" target="new">National Office of Pollution Prevention</a>. For more information on this and other pollution prevention success stories, please visit the <a href="http://www.ec.gc.ca/pp/" target="new">Canadian Pollution Prevention Success Stories website</a>.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

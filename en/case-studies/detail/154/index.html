@@ -1,0 +1,305 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>EnviroCentre</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Climate Change Action Fund (CCAF)</li>
+<li>the former Region of Ottawa-Carleton</li>
+<li>OC Transpo</li>
+</ul><!-- Partners already contains li tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Walking the Talk?</h1>
+<p>In the City of Ottawa, EnviroCentre developed and implemented community-based social marketing (CBSM) techniques designed to reduce greenhouse gas emissions through transportation demand management (TDM) initiatives linked to Green Home Visits (GHVs). By combining social marketing with community-based credibility and capacity, and by building partnerships with other stakeholders in the community, EnviroCentre demonstrated how cost-effective techniques can help people overcome barriers to changing their transportation habits.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The Walking the Talk? program was run and initiated by EnviroCentre - an Ottawa based non-profit organization involved with local sustainability issues - with support from the federal Climate Change Action Fund (CCAF), the former Region of Ottawa-Carleton, and OC Transpo (the City of Ottawa's public transportation agency). The program operated from December 1999 to March 2001 within the City of Ottawa. Located in eastern Ontario, Ottawa is Canada's capital and home to 1.2 million people. The city also boasts the most extensive bicycle and walking path networks of any city in the country.</p>
+<p>Walking the Talk? was originally intended to show how CBSM tools could help increase the impact of programmes to promote healthy and sustainable behaviours. EnviroCentre had planned to deliver a variety of home-based visits providing advice on energy and water conservation (GHVs) and thought that it would be a perfect opportunity to see if additional CBSM techniques could increase the degree to which people actually implemented the recommendations. However, when EnviroCentre applied for funding for the project through CCAF, they found that the only local non-federal funding they could secure to qualify under the CCAF was from the Region of Ottawa-Carleton (now the City of Ottawa), who were primarily concerned about transportation issues. As a result EnviroCentre modified their proposal and Walking the Talk? adopted a TDM focus. In October 1999, EnviroCentre signed research contracts with the CCAF and the Region of Ottawa-Carleton to test the potential of CBSM to modify transportation attitudes and habits when combined with GHVs.</p>
+<p>Early in the planning process, a Steering Committee was formed to identify what each program partner was most interested in achieving: the Region wanted to experiment with practical examples of CBSM to get cars off the roads; the City of Ottawa wanted to meet its goal to reduce CO2 emissions; OC Transpo wanted to increase ridership; and EnviroCentre wanted to generate measurable results from a program that could be tied to its residential energy conservation programs. The meetings also focused on what changes in behaviour could reasonably be expected, what social marketing tools to use, and what information should be provided to participants. As the project was intended to identify practical ways to use CBSM on an operational basis in cities like Ottawa, all approaches had to be able to be used in the future with much larger groups, without additional personnel, and without relying on people to mail things back.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>Due to fiscal constraints, baseline data could not be collected and few quantitative targets were set.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p><em><a href="http://www.epa.gov/otaq/traq/traqpedo/italladd/">It All Adds Up to Cleaner Air</a></em>, an initiative of the U.S. Environmental Protection Agency and Department of Transportation, was the most important source of information. <em><a href="http://www.epa.gov/otaq/traq/traqpedo/italladd/">It All Adds Up to Cleaner Air</a></em> was a multi-level public education and partnership-building program that used television, radio and print public service announcements (PSAs) to inform citizens about the connections between their transportation choices, traffic congestion, and air pollution. The program broadcast positive messages that encouraged the public to take voluntary actions - such as trip changing (combining trips), car maintenance, and the use of alternative modes of transportation - to help meet the challenges of reducing traffic congestion and air pollution. Certain aspects of the program were repeated with permission in Walking the Talk?.</p>
+<p>EnviroCentre's own surveys and experience using CBSM tools in their existing GHVs program were also valuable sources of information. This information suggested that working with people who had already indicated some interest in improving the energy-efficiency of their home (through their GHVs program) would likely increase the impact of the program. It also suggested that any information distributed to participants should be targeted at the specific behaviours in question. For example, if the objective is to get people to bike more often or ensure that their tires are properly inflated, it is most effective to focus on those actions as opposed to background material on climate change.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>600 households, who had already received or were paying for a GHV, a more comprehensive <a href="http://www.tools-of-change.com/en/case-studies/detail/115">EnerGuide for Houses</a> evaluation, or a water conservation service, were provided with packages promoting new transportation options. Some packages were simply mailed out, but most were delivered in person after some level of commitment (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>) was solicited from the householder. The packages contained low-cost basic resources and background information on transportation habits such as car maintenance, reduction of idling time, and helping children walk or bike to school. The basic information package included the following items:</p>
+<ul>
+<li>Car Economy Calculator (from NRCan)</li>
+<li>Fuel Consumption Guide (from NRCan)</li>
+<li>Canada's Transportation Challenge (from Environment Canada)</li>
+<li>Rack and Roll bike brochure (from OC Transpo)</li>
+<li>Bus route map (from OC Transpo)</li>
+<li>Cyclist guide map (from Region of Ottawa-Carleton)</li>
+<li>Active and Safe Routes to School flyer (from Go for Green)</li>
+<li>an EnviroCentre business card.</li>
+</ul>
+<p>About half of the packages also contained a free one-day bus pass (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives</a>) and a prompt (<a href="/en/tools-of-change/prompts/">Prompts</a>) - an attractive yellow reminder card and memo holder to remind householders of their commitment to participate in the project. Commitments to participate involved displaying the prompt in a prominent location in the home over a two-week period in the months of May and June, 2000 (when walking, biking, and waiting for buses is easier to do in Ottawa). The prompt acted as a reminder, listing "10 Simple Steps to Improve Air Quality," and offered space for each household to record which of the actions they participated in over the two-week period.</p>
+<p>Packages that did not include the prompts contained an action sheet that provided basic information on the project. The action sheet encouraged participants to take the same 10 Simple Steps to Improve Air Quality, but without the use of prompts.</p>
+<p><strong>Key Messages:</strong> <br/>
+The 10 Simple Steps to Improve Air Quality were preceded by the following message:</p>
+<blockquote>Walking the Talk can help you save money, stay fit, and get safer streets and cleaner air by trying some new transportation options. It's a pilot project of EnviroCentre, a non-profit organization based at Ottawa's City Hall, that is supported by the Region of Ottawa-Carleton, OC Transpo, and the Climate Change Action Fund.
+<p>Please see how many of the following actions listed you and your family can take during the next 2 WEEKS to reduce urban smog and greenhouse gases that contribute to health problems like asthma in children. We'll give you a call afterwards to see what you were able to do to help protect the environment.</p>
+</blockquote>
+<p><strong>10 Simple Steps to Improve Air Quality:</strong></p>
+<ol>
+<li><em>Walking to where you need to go</em> instead of driving or being driven</li>
+<li><em>Taking the bus</em> instead of driving or being driven</li>
+<li><em>Meeting by phone, banking, or shopping on-line</em> instead of going there in person</li>
+<li><em>Making sure your car is tuned-up</em> by following the maintenance manual</li>
+<li><em>Biking anywhere for anything</em> instead of driving or being driven</li>
+<li><em>Checking the pressure in your tires</em> to ensure that they are properly inflated</li>
+<li><em>Shutting off your car motor</em> to avoid idling</li>
+<li><em>Starting or joining a car pool</em> or sharing a ride instead of driving alone</li>
+<li><em>Helping kids bike or walk to school</em> instead of being driven</li>
+<li><em>Using a Rack &amp; Roll bus</em> by taking your bike on board</li>
+</ol><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The program received $75,000 from Climate Change Action Fund and $25,000 from the City of Ottawa, to which EnviroCentre added about $25,000 in kind.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Each of the participants was requested to participate in a follow-up survey, carried out by the Survey Centre at Carleton University's School of Journalism. Participants were categorized according to three groups:</p>
+<ol>
+<li><strong>Old GHVs:</strong> Randomly selected from the 3,500 conservation pioneers visited in 1996 by employees of EnviroSense (predecessor to the EnviroCentre).</li>
+<li><strong>EnerGuide for Houses:</strong> Households that had paid the EnviroCentre $150 over the previous few months for a 2-3 hour home energy evaluation.</li>
+<li><strong>New GHVs:</strong> Households that had received free water conservation devices during a short EnviroCentre GHV.</li>
+</ol>
+<p>Each of these groups was divided into four sub-categories (see below) to isolate various approaches and scenarios. To ensure an adequate sample size (determined to be 40 respondents for each data group) 50-60 people were sampled in each sub-category.</p>
+<p><strong>A. Group 1 (old GHVs) = 200 households</strong> <br/>
+Of those surveyed in this category:</p>
+<ul>
+<li>50 were surveyed at random (control group)</li>
+<li>50 had received an unsolicited information package (including a prompt) by mail</li>
+<li>50 had agreed by phone to get a package (without a prompt) by mail</li>
+<li>50 had agreed by phone to get a package (including a prompt) by mail.</li>
+</ul>
+<p><strong>B. Group 2 (EnerGuide for Houses) = 100 households</strong> <br/>
+Of those surveyed in this category:</p>
+<ul>
+<li>50 had agreed to accept a package (including a prompt) at their visit</li>
+<li>50 were former clients who had received an EGH, but were not asked to accept an information package (control group).</li>
+</ul>
+<p><strong>C. Group 3 (new Green Home Visits) = 300 households</strong> <br/>
+Of those surveyed in this category:</p>
+<ul>
+<li>60 had not received any information about the program (control group)</li>
+<li>60 had received an unsolicited information package (including a prompt)</li>
+<li>60 had received an unsolicited information package (without a prompt)</li>
+<li>60 had agreed during their visit to accept an information package (which included a prompt)</li>
+<li>60 had agreed during their visit to accept an information package (which did not include a prompt).</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Results obtained from the surveys of all the people surveyed in Walking the Talk?:</p>
+<ul>
+<li>25% reported walking more (6% reported walking less)</li>
+<li>16% used the bus for a new purpose (though only 19% reported using the bus pass)</li>
+<li>22% rode their bikes more often</li>
+<li>50% used on-line banking or shopping</li>
+<li>47% of those with children reported increased biking and walking by their children.</li>
+<li>18% reported checking their tire pressure more often since receiving the kit</li>
+<li>7% reported increased tune-ups</li>
+<li>16% reported tracking their fuel consumption more carefully</li>
+<li>10% carpooled more often (although 13% carpooled less)</li>
+<li>26% turned off their engine more often</li>
+</ul>
+<p>30% of respondents said that the changes they made were related to the information they received in the kit.</p>
+<p>Some of these behavioural changes appear to be more dramatic within the prompt sub-groups:</p>
+<ul>
+<li>30% reported walking more often</li>
+<li>30% reported biking more often.</li>
+</ul>
+<p>90% of household respondents kept the prompt meaning that it remains in the home or at the office as an on-going reminder. The survey also recorded participants' overall response to the information package.</p>
+<ul>
+<li>26% said the kit was very valuable," 58% somewhat valuable. 13% said it was not valuable."</li>
+<li>41% of those who received the prompt read through it thoroughly and 30% used the materials at least occasionally. Only 19% did not use it at all. 62% kept the yellow memo card in sight and 28% used it to check their responses.</li>
+<li>Although 27% said nothing was helpful in the kit, 18% chose the bus route map as most helpful, 14% the bike route map, 9% the memo card, and 8% said the fuel consumption guide.</li>
+<li>73% of the respondents said they would be very likely (1 or 2 on a 7 point scale) to turn off their car, and 64% said they would be very likely to tune-up their car.</li>
+</ul>
+<p>Responses to questions regarding recycling, waste management, indoor and outdoor environmental upgrades indicated that most of the respondents were already environmentally aware.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Dana Silk, General Manager/Directeur Gnral <br/>
+EnviroCentre <br/>
+City Hall/Htel de ville <br/>
+110 Laurier <br/>
+Ottawa ON <br/>
+K1P 1J1 <br/>
+T: 613-580-2582 F: 613-580-2494 <br/>
+<a href="mailto:envirocentre@city.ottawa.on.ca">envirocentre@city.ottawa.on.ca</a> <br/>
+<a href="http://www.envirocentre.ca">www.envirocentre.ca</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Complementary fieldwork was conducted during the last two weeks of March 2001 on work-based TDM behaviour, in co-operation with Nortel Networks, a major corporate employer in Ottawa. This parallel program involved 200 employees, all of whom received an information package at their workplace encouraging them to take ten steps to modify their transportation habits, and half of whom receive a cotton lunch bag containing the memo holder as a prompt. This program was found to be unsuccessful based on timing and other external factors related to downsizing of the corporate partner.</p>
+<p><strong>Lessons Learned</strong></p>
+<p>EnviroCentre attempted to promote too many actions that did not share a common barrier. One specific action promoted to a specific group might have proved to be more effective.</p>
+<p>It is important to be clear and realistic about program objectives. Much time and effort was expended trying to help some people overcome barriers to car pooling or using public transit. With some of these participants, time would have been more effectively used by focusing on promoting more frequent vehicle tune-ups, and idling avoidance.</p>
+<p>The importance of keeping survey work as simple as possible was underestimated.</p>
+<p>Last updated: July 2004. This case study was written in 2001 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

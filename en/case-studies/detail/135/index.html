@@ -1,0 +1,274 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/school-programs-that-involve-the-family/">School Programs that Involve the Family</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Greater Vancouver Regional District</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Insurance Corporation of British Columbia</li>
+<li>The RoadSense Team</li>
+<li>Parents</li>
+<li>Elementary School staff</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>10-to-15 percent reduction in vehicles on regular days and a much higher participation rate on special event days. </li>
+</ul>
+<p> </p>
+<p><strong>Handouts</strong></p>
+<p>The program has ended and can no longer supply old materials. However, many of the ideas and the steps it developed show up here:  <a href="http://www.saferoutestoschool.ca/school-travel-planning" target="_blank">http://www.saferoutestoschool.ca/school-travel-planning</a>   Download the PDF with the best of what was developed together during over a decade of introducing the Way to Go! School Program in BC and other Active and Safe Routes to School programs throughout Canada. </p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>British Columbia's Way to Go! Program</h1>
+<p>A tiny pilot project in the Greater Vancouver Regional District (GVRD) that got families out of their cars and onto the street has grown into a burgeoning, province-wide, active transportation program. Between December, 1998, and spring, 2001, 350 schools in British Columbia embraced the Way To Go! school trip reduction project.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program. </em></p>
+<p>Every ten years GVRD conducts a trip diary survey to determine the transportation habits of its residents. In 1994, GVRD was astonished to find that half of all school students were traveling to school by car. This was a 50 percent increase over the 1984 survey, which had found one in three students travelling by car.</p>
+<p>Put another way, one in five cars on the road during peak hours was transporting a child to or from school, despite the fact that many students lived only a few blocks from school.</p>
+<p>GVRD was concerned about the dangers this trend posed for air quality and traffic safety and about the long-term effects it could have on children's physical fitness and attitudes about car use: modern families were raising a whole generation that would be dependent on cars, even for very short trips.</p>
+<p>In the fall of 1997, GVRD commissioned a school trip reduction project to address these concerns. This project eventually became the Way To Go! school program.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>To begin, the research team gathered information about existing school trip reduction programs in Canada and other countries. It identified relevant stakeholders in GVRD municipalities, such as engineering departments and traffic safety officers. These stakeholders assisted with traffic-safety-education research and recruitment of pilot schools.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The team then selected six pilot schools from among 30 applicants. These schools represented a wide geographical area and diverse socio-economic backgrounds. Because Way To Go! addressed traffic safety concerns, the pilot was funded by the Insurance Corporation of British Columbia (ICBC).</p>
+<p>Way To Go! developed into an approach that eventually included a detailed process manual and resource kit for schools. This kit was fundamental to the projects success: a comprehensive information package meant schools had less research to do as they launched their school trip reduction programs (<a href="/en/tools-of-change/school-programs/">School Programs That Involve the Family</a>).</p>
+<p>The process manual showed each school group how it could:</p>
+<ul>
+<li>collect data through surveys and mapping exercises</li>
+<li>determine the best routes to school</li>
+<li>integrate safe pedestrian and cycling education in schools</li>
+<li>establish a safer school site</li>
+<li>implement alternative travel strategies</li>
+</ul>
+<p>The resource kit included:</p>
+<ul>
+<li>background facts and reasons for a traffic-reduction program</li>
+<li>traffic safety information</li>
+<li>ideas from similar programs</li>
+<li>community resources and contacts</li>
+<li>suggested activities to generate enthusiastic and sustainable involvement</li>
+<li>forms and models to use as the program was implemented</li>
+</ul>
+<p>Way To Go! staff designed the material to be parent focused. Although the kits included resources for teachers and administrators to use should they wish to, Way To Go! wanted to give parent groups the tools to address problems surrounding their own schools.</p>
+<p>"That is what makes the program completely innovative," said Way To Go! Provincial Co-ordinator Bernadette Kowie. "It was not curriculum based. It really belonged to the Parent Advisory Councils."</p>
+<p>Way To Go! staff offered training and support to schools groups, which Kowey considered essential to the program's success. This support provided school groups with the following:</p>
+<ul>
+<li>an introduction to the Way To Go! program and its resources</li>
+<li>dates for relevant special events, such as Earth Day and Walk to School Day, which helped schools link their programs to widely-recognized health, fitness, traffic safety and environmental initiatives (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>)</li>
+<li>an ongoing link to new ideas for schools Way To Go! programs, which helped schoolsmaintain their momentum</li>
+<li>a semi-annual idea-sharing newsletter</li>
+</ul>
+<p>Because parent-volunteer hours were limited, schools were free to proceed at their own pace. Some schools began slowly by planning one special active-transportation day such as a walk-or bike-to-school day. Way To Go! staff said this was a positive strategy: it was not overwhelming, schools built on their success and families slowly broke their old driving habits (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p>The pilot project was very successful: schools reported that Way To Go! significantly reduced neighborhood traffic. Four of the six pilot school programs were still continuing in 2001. (One program ended when the school lost a key parent volunteer and one pilot school participated in Way To Go! on an intermittent basis.)</p>
+<p>The news media ran several stories on the pilot and Way To Go! was inundated with requests for process manuals and resource kits (<a href="/en/tools-of-change/mass-media/">Mass Media</a>).</p>
+<p>"The pilot project ended, our funding ended and my phone kept ringing," said Kowey. In December, 1998, Way To Go! staff secured funding to expand the program. The RoadSense Team, a partnership between autoplan brokers in B.C. and the Insurance Corporation of British Columbia, recognized that the program fit well with their commitment to provide communities with the tools to initiate and maintain traffic safety programs and practices. The RoadSense Team funded the necessary staff and program resources to make Way To Go! available to all elementary and middle schools in the province of British Columbia.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The RoadSense Team provincial program committee funded the Way To Go! program throughout the province of B.C. The RoadSense Team helps support communities that want to develop road safety programs. It spent $180,000 a year on Way To Go! staff, travel costs, resource development and production, distribution of information and resources and all communication and administration costs related to providing the program province wide. Regional RoadSense teams in British Columbia provided some schools with grants for special projects and supplies. Grants paid for traffic safety amenities such as reflective vests and orange cones and for communication costs such as photocopying and laminating maps. RoadSense teams also provided in-kind contributions such as printing, laminating and photocopying. Provision of the resources was determined on a case-by-case basis by each regional RoadSense Team.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Schools monitored their own achievements, as they saw fit, through surveys and traffic counts as Way To Go! staff thought that mandatory surveys would be a substantial disincentive.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Providing feedback was an essential part of the Way To Go! approach. Way To Go!'s success depended on the participation of families - and these families needed to know that their actions were making a difference. Schools generally provided feedback directly to students, staff, teachers, parents and principals through school newsletters, bulletin-board postings and by walking from class to class to disseminate information. For example, at Maple Lane elementary in Richmond, the Student Leadership Club went into each classroom to tell students that the school had had almost 100 percent participation on International Walk to School Day.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Some of the more impressive results include the following:</p>
+<ul>
+<li>Willows Elementary, in Oak Bay, saw a 10-to-15 percent reduction in vehicles on regular days and a much higher participation rate on special event days.</li>
+<li>Frank Hobbs Elementary in Victoria encouraged students to choose active transportation once a month, with a different class taking responsibility for promoting the event each time. Surveys indicated more than 90% student participation in January 2001 and on International Walk to School Day in October 2000.</li>
+<li>RJ. Tait Elementary, Richmond saw a huge increase of children walking and a marked decrease in cars parked at school as a result of its very organized walking school bus program. On two special event days the school had a 100-percent participation rate.</li>
+<li>At Hawthorne Elementary, which was one of the pilot schools, everyday use of bikes for getting to school doubled under the Way to Go! program. It was not unusual to find sixty to eighty bicycles in the bike racks. When some of the Hawthorne students went to the newly built Neilson Grove Elementary, they now continue to bicycle to that school.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>The program ended in 2008.</p>
+<p>Bernadette Kowey <br/>
+Provincial Co-ordinator <br/>
+Way To Go! School Program <br/>
+(604) 732 -1511 <br/>
+toll free: 1-877-325-3636 <br/>
+fax: (604) 733-0711 <br/>
+email: <a href="mailto:waytogo@telus.net">waytogo@telus.net</a></p>
+<p>For more information about Way to Go and other programs like it, also visit Go for Green's Web site at <a href="http://www.goforgreen.ca/asrts/tools_e.html">www.goforgreen.ca/asrts/tools_e.html</a> and <a href="http://www.saferoutestoschool.ca/school-travel-planning" target="_blank">http://www.saferoutestoschool.ca/school-travel-planning</a>.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons learned</strong></p>
+<p>Issues that face rural schools are often different from those that face urban schools. In rural areas families that walk to school risk encounters with cougars, bears and busy highways. In these areas, carpooling, ride sharing and busing are often the most effective strategies for reducing car use.</p>
+<ul>
+<li>School trip reduction programs are cost effective. Parents have a vested interest in protecting their childrens health and safety and many will volunteer their time to achieve this.</li>
+<li>Schools required sufficient lead time to formulate active transportation plans and process applications. Providing applications in the fall is the most successful strategy.</li>
+<li>Schools learn a great deal from one another. Ideas, such as Walking Week, that work in one community, were borrowed and adapted by others to fit their unique needs. Those ideas, in turn, inspire other schools.</li>
+<li>Long-term support is important to the success of Way To Go! School groups need to know they are not alone, that they can learn from one another, and that they can depend on stakeholders for support.</li>
+<li>Schools reported that students enjoy the data-gathering stage of the program. Students can help conduct traffic and pedestrian counts and graph the results.</li>
+<li>Signage that identified individual schools with Way To Go! Helped build support for and a strong identity with the program.</li>
+<li>Translation of essential messages, posters, parent surveys and invitations to planning meetings is crucial in schools with a high ESL population.</li>
+<li>Measurement of results can be problematic. Collating information and reporting can take a great deal of time.</li>
+<li>Stakeholders, such as police, engineers and school district staff saw that Way To Go! was a success. They realized it was a tool they could use to address traffic safety issues in the vicinity of schools. Way To Go! used their endorsement to invite more schools to try this option.</li>
+</ul>
+<p>Last updated: August 2004. This case study was written in 2002 by Tina Reilly. Funding for the addition of this case study was generously provided by the Government of Canadas Climate Change Action Fund, Suncor, Syncrude, Enbridge Consumers Gas and TetraPak Canada.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/school-programs-that-involve-the-family/">School Programs that Involve the Family</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Metrolinx</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Transport Canada</li>
+<li>University of Toronto</li>
+<li>Green Communities Canada</li>
+<li>Region of Peel</li>
+<li>City of Hamilton</li>
+<li>Local school boards</li>
+<li>Numerous community supporters</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Average decrease of school car trips by 7% in morning peak hour; 3% decrease in afternoon peak</li>
+<li>101,635 vehicle kilometres and 22 tonnes of greenhouse gas emissions avoided</li>
+<li>Estimated 750,000 additional minutes of physical activity among students at the schools each year <em> </em></li>
+</ul>
+<p>Case Study <a href="/userfiles/Stepping It Up Landmark Case Study - Final.pdf">PDF</a></p>
+<p>Webinar <a href="/userfiles/Stepping It Up Transcript-Final.pdf" target="_blank">Transcript</a>  </p>
+<p>Stepping It Up Videos</p>
+<ul>
+<li><a href="http://www.youtube.com/watch?v=KG4e5txF1r8 www.youtube.com/watch?v=r59_rzKuAMA www.youtube.com/watch?v=7XUyslpUCb4" target="_blank">Video One</a></li>
+<li><a href="http://www.youtube.com/watch?v=r59_rzKuAMA " target="_blank">Video Two</a></li>
+<li><a href="http://www.youtube.com/watch?v=7XUyslpUCb4" target="_blank">Video Three</a></li>
+</ul><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Stepping It Up</h1>
+<p>Stepping It Up, led by the regional transportation authority Metrolinx, illustrates a coordinated, highly replicable, and institutionalized approach for reducing car traffic and increase walking and cycling to school. The program worked with 30 elementary schools in the City of Hamilton and Region of Peel, Ontario. Stepping It Up was designated a Landmark (best practice) case study in 2012.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: </em>To minimize site maintenance costs, all Tools of Change case studies are written in the past tense.</p>
+<p>Stepping It Up used two existing travel models to promote active and sustainable modes of school travel for students, families and staff:  1) the Canadian School Travel Planning (STP) model, created by Green Communities Canada (<a href="http://www.saferoutestoschool.ca" target="_blank">www.saferoutestoschool.ca</a>), and 2) the Smart Commute model (<a href="http://www.smartcommute.ca" target="_blank">www.smartcommute.ca</a>), an employer-based program of Metrolinx.</p>
+<p>These models helped program organizers to:</p>
+<p>1) Identify and assess the transportation-related conditions and issues at elementary schools through baseline data collection;</p>
+<p>2) Work with the school and community to create a school travel plan with actions aimed at reducing car traffic around schools and creating safer, healthier conditions for students, staff and families to walk, cycle and use other active and sustainable modes of transportation;</p>
+<p>3) Implement actions in the short, medium and long term in collaboration with the school population, school board and community partners. Actions and measures undertaken by schools and community partners draw from among the ‘Five Es’: engineering, education, enforcement, encouragement and evaluation, depending on the unique needs of each school; and</p>
+<p>4) Monitor behaviour change after implementation of actions, and adjust school travel plan/actions as necessary.</p>
+<p>Using this approach, municipal School Travel Facilitators worked with 30 public and Catholic elementary schools in urban and suburban settings in the City of Hamilton and Region of Peel, Ontario.</p>
+<p>Students, parents, staff and community partners worked together to implement solutions to their transportation-related challenges, and to sustain and build upon those efforts year over year.</p>
+<p><img alt="" height="305" src="/userfiles/Image/Map3(1).JPG" width="450"/></p>
+<p><i style="mso-bidi-font-style:normal"><span lang="EN" style='font-size:8.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Microsoft Sans Serif";mso-ansi-language:
+EN;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>Map courtesy of mapcruzin.com</span></i></p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>Stepping It Up aimed to shift the school population’s behaviour from driving to and from school to walking, cycling, and other more sustainable modes of transportation.</p>
+<p>"Our goal was to work with 30 schools by the end of the project," explained Jennifer Lay, Program Advisor for School Travel, Metrolinx.</p>
+<p>The overall target was to decrease the footprint of travel by car transporting students to and from school by 5% and decrease the footprint of travel from school staff driving alone to and from work by 3%.</p>
+<p>"By shifting mode share away from car trips, we were also aiming to increase physical activity levels," said Lay. "We wanted to help obtain a minimum of 20 minutes per day of physical activity for students, which is mandated by the Ontario government through more walking or cycling to school.</p>
+<p>"We also wanted to create awareness of existing programs and supports to help make a change in school travel habits, improve positive perceptions of active transportation, and build a greater sense of community and safety by putting more eyes on the street."</p>
+<p>Stepping It Up's goals and initiatives aligned with the Ministry of Education’s  Healthy Schools model, and the Ontario's EcoSchools program.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The Stepping It Up approach combined and built upon pre-existing school-based and workplace-based transportation demand management models and toolkits to engage the entire school population. The audience therefore included students and their families, and school staff.</p>
+<p>To understand each audience, program organizers undertook a number of surveys that asked about behaviours and attitudes towards transportation. They included:</p>
+<ul>
+<li>A paper-based, take-home family travel survey for students' parents/caregivers</li>
+<li>A paper-based student travel survey, which was completed in class</li>
+<li>An online staff travel survey, and</li>
+<li>An online school administrator survey.</li>
+</ul>
+<p>A community walkabout was also conducted at each school and involved parents, school staff, police, municipal health and traffic safety staff, and other community members.</p>
+<p> <img alt="" height="233" src="/userfiles/Image/Walkabout.jpg" width="200"/></p>
+<p><em>The walkabouts gave program organizers a better understanding of the unique issues and needs of each school from the perspective of the key stakeholders.</em></p>
+<p>From this information, program organizers found that the four main concerns/barriers to the desired behaviours, as reported by parents and staff, were:</p>
+<ul>
+<li><em>Convenience</em>. Parents and staff perceived that driving is more convenient than walking, cycling or other modes</li>
+<li><em>Time</em>. Parents and staff perceived driving to be faster than other modes</li>
+<li><em>Distance</em>. Parents and staff perceived the distance to be too great to use modes other than driving</li>
+<li><em>Safety. </em>Parents perceived walking to be unsafe due to concerns such as strangers or bullies approaching children, and speeding cars around schools. Also, parents were concerned about having their child walk alone without adult accompaniment.</li>
+</ul><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Stepping It Up operated from April 2009 to December 2011.  In each of the program's three years, 10 schools were added to make up the program's goal of involving 30 elementary schools in the program.</p>
+<p>The project's strategy and tactics included:</p>
+<ol>
+<li>Securing municipal staff time to lead and facilitate the project in each area (i.e. 1 FTE), and involvement from staff in public health, public works, traffic, police, risk management and communications.</li>
+<li>Ensuring that the work was overseen by a municipal Active and Safe Routes to School Committee in each area. These committees included municipal staff, school board staff, community groups, parents, students, local politicians and others.</li>
+<li>Approaching and securing formal approval by participating school boards, which was accomplished through school board research and ethics processes. (<em>Obtaining a Commitment</em>)</li>
+<li>Selecting and recruiting schools based on specific criteria. Schools were selected based on not being involved in other similar programming.</li>
+<li>Establishing school project committees. This was often piggy-backed on an existing related committee and included the principal, parents, teachers, and students.</li>
+<li>Sending project communications to schools through various media channels (Feedback)</li>
+<li>Collecting baseline data through surveys, walkabouts, school profiles, and traffic counts)</li>
+<li>Developing a School Travel Plan in collaboration with the school project committee, and implementing actions within it over the short, medium and long term.</li>
+<li>Conducting follow up measurements after one year and two years of implementation using surveys and traffic counts.<img alt="" height="429" src="/userfiles/Image/Model.jpg" width="450"/></li>
+</ol>
+<p>In each school's school travel plan (STP), individual actions were chosen by the school and tailored to its needs, following the "Five Es.".</p>
+<p>Many of these actions were chosen to overcome the identified concerns and barriers of parents and staff. (<em>Overcoming Specific Barriers</em>.)</p>
+<p>Examples of some these measures included:</p>
+<ul>
+<li><em>Encouragement:</em> Walking Wednesdays, Walking Reward Programs, Walking School Buses, Road Watch programs, International Walk to School Day, Winter Walk Day, Bike repair workshops, contests, letter writing to local politicians, online ride-matching for staff. (<em>Building Motivation Over Time</em>)</li>
+</ul>
+<p><img alt="" height="338" src="/userfiles/Image/Be Cool.jpg" width="451"/></p>
+<ul>
+<li><i>Engineering</i>: addition and/or relocation of bike racks, crosswalk markings, stairs replaced with ramp, speed monitor displays, walking route signage, speed limit signage, closing of unsafe areas, sidewalk maintenance. (<em>Prompts</em>)</li>
+<li><i>Education: </i>Links to physical activity, traffic-pedestrian-driver safety, cycling education, brochures, displays, banners, web pages, newsletters</li>
+<i> </i>
+<li><i>     Enforcement</i>: crossing guards, police (speeding, parking), parking lot safety enhancements</li>
+<li><em>Evaluation:</em> The fifth "E," Evaluation, was completed as part of the program's measurement activities (see Measuring Achievements).</li>
+</ul>
+<p>As an incentive to participate in the project, each school received an honorarium of $1,250 upon completion of their baseline data collection and another $1,250 upon completion of their follow-up data collection.<em> (Financial Incentives)</em></p>
+<p>"Schools weren't demanding honorariums, but it was a nice bonus, and many of them chose to spend it on their STPs," said Lay.</p>
+<p><strong>Partnerships</strong></p>
+<p>In addition to the partnerships with the municipalities, Green Communities Canada, and the individual schools involved, program organizers also established partnerships with McMaster University and the University of Toronto.</p>
+<p>McMaster's geography department helped to map out the cycling and walking routes for schools in the City of Hamilton, while the University of Toronto helped to analyze and evaluate overall project data.</p>
+<p><img alt="" height="338" src="/userfiles/Image/Partnerships.jpg" width="450"/></p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Total project cost was $989,500, of which $405,000 was provided by a Transport Canada ecoMOBILITY grant. The bulk of the project budget was in-kind staff time, honoraria to schools, and funding to conduct data collection and analysis.</p>
+<p>Lay said that, on average, each partner contributed one full-time equivalent staff position to the program, as well as other in-kind services. </p>
+<p>"If the municipalities implemented signage, crossing guards, or sidewalk improvements, this was all in-kind and part of existing services or infrastructure that they would be offering anyway, so it was not charged back to the project or the school," she explained.</p>
+<p>Stepping It Up had a data collection budget of about $2,000 per school for baseline data collection and $2,000 for follow-up data collection, although by the end of the program, the actual cost of each data collection phase was less, about $1,500.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Through baseline and follow-up surveys, students, families, and staff were asked:</p>
+<ul>
+<li>How they usually travelled to and from school.</li>
+<li>The time in minutes and distance in kilometres of the trip to and from school.</li>
+<li>If their school travel behaviour changed following implementation of Stepping It Up.</li>
+<li>What the effects were of the project at their school.</li>
+</ul>
+<p>For added confidence in the findings, the impact measurement approach used data triangulation. In addition to self-reported data from both student and family travel surveys, each school carried out traffic counts. In order to represent a normal school day, before and after implementation of measures, traffic counts were conducted on days when no significant events were occurring at the school.</p>
+<p>"In some cases, students were involved in leading surveys in classrooms and counting morning traffic and they used that information to inform the school travel action plan," said Lay.</p>
+<p>Baseline data was collected near the beginning of the school year (October/November), and follow-up data was collected toward the end of the school year (May/early June).</p>
+<p>"This helped to minimize the differences from seasonal variations and ensured that there was time in between for implementation of actions from the school travel plan," said Lay.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Stepping It Up measured an overall average decrease in school car trips of 7% in the morning period and 3% in the afternoon period.</p>
+<p>"We measured equivalent increases in walking to and from school, which translated to nearly 750,000 additional minutes of physical activity among students at these schools each year," said Lay.</p>
+<p>In addition, more than 100,000 vehicle kilometres travelled were avoided, with associated greenhouse gas emission and air pollution reductions of 22 tonnes and 884 kilograms, respectively.</p>
+<p>"Parents said they saw an increase in the amount of physical activity their child was getting, an increase in the convenience and safety of walking to school, as well as an increase in awareness among drivers of children walking to school," said Lay.</p>
+<p>When program organizers spoke with staff, many who had started carpooling during the project said that it saved them money, provided companionship during their commute, and gave them extra time for lesson planning.</p>
+<p>By the end of the project, the 30 schools involved had collected their baseline data and 20 had collected their follow-up data. Of the 30 schools, 20 had created school travel plans by the end of the project.</p>
+<p>"Our target was to have 30 actions from the school travel plans implemented, so at least one or two actions per school within the time frame," said Lay. In all, nearly 100 actions were implemented within the project's time frame.</p>
+<p>The top six school actions were:</p>
+<ol>
+<li>Walking to school announcements and newsletters</li>
+<li>Dedicated weekly walk days and student reward programs</li>
+<li>Walking school bus</li>
+<li>Adding or relocating bike racks</li>
+<li>Hiring crossing guards and ensuring police enforcement</li>
+<li>Pedestrian, cycling and traffic safety education.</li>
+</ol>
+<p>"The school travel plans also had additional actions that could not be carried out in the time period, but schools are continuing to work on these medium and long-term actions."</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p><img alt="" height="185" src="/userfiles/Image/Jennifer.jpg" width="200"/></p>
+<p>Jennifer Lay<br/>
+Program Advisor – School Travel, Metrolinx<br/>
+Jennifer.lay@metrolinx.com<br/>
+(416) 202-5951</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><em><strong>LESSONS LEARNED</strong></em></p>
+<p><strong>Don't reinvent the wheel</strong></p>
+<p>Metrolinx used the existing Canadian School Travel Planning model developed by Green Communities Canada as well as Metrolinx’s own Smart Commute model. "By incorporating the Smart Commute model, schools also had the opportunity to include actions that related to staff travel," says Lay, citing Metrolinx's online ride-matching database, the Carpool Zone, as a prime example.</p>
+<p><strong>Stakeholder engagement and commitment</strong></p>
+<p>Each community assembled a school travel planning stakeholder group, which included representatives from public health, municipal transportation, traffic planning, recreational and police, schools and school boards, student transportation services, counselors, local not-for-profits, parents, and students.</p>
+<p>Additionally, each participating school assembled a small school travel planning team. "This group was either part of an existing school committee or a new group, and was supported and guided through the project at the school level," said Lay.</p>
+<p>Lay also said that you need enthusiastic champions.</p>
+<p>"Internal champions are needed at each school, school board, and in each community to lead and sustain the work and ensure that it's embedded into policy, planning, and programming."</p>
+<p><strong>Long-term sustainability</strong></p>
+<p>Lay said that incorporating school travel planning as a topic into the Healthy Schools and EcoSchools programs helped ensure that the work would be sustained.</p>
+<p>"Make connections with existing programs and initiatives," she said. "Good links include environmental, health, or physical education curriculum because a program like Stepping It Up directly supports these areas."</p>
+<p>She cautioned, however, that although Stepping It Up was effective, it's not enough to change the broader culture.</p>
+<p>"A sustainable model calls for a provincially-led multi-sector committee that would champion the initiative, develop policies and monitor progress," she said. "As part of this there would be point people working within all municipalities, regions, and school boards to jointly share this mandate."</p>
+<p><strong>STP facilitator is an integral role</strong></p>
+<p>Having a dedicated person(s) coordinating and advancing school travel planning processes provided an essential link between the school, the stakeholder group, and the wider community.</p>
+<p>In the Halton region, for example, the project manager for the Active and Safe Routes to School program was housed within the district School Board; in York region, the school travel facilitator was housed within the transportation services consortium which jointly manages transportation for two School Boards ; in the town of Ajax, the Active Living coordinator was housed within the recreation department; and in the Waterloo Region, the work was jointly managed by public health and transportation staff.</p>
+<p><strong>Empower kids to be ambassadors</strong></p>
+<p>Kelly Scott, who helped facilitate the Stepping It Up project in 16 Hamilton schools, said that the program's active transportation messages resonated with students. One Hamilton student, for example, said that, "I'm the one who's been bugging Mr. K for the last year and a half to get the school bike racks."  Another student said that, “I encourage kids to walk to school 'cause its way more fun than driving, you get to hang out with your friends, get away from your parents and it wakes you up in the morning and helps you focus.”</p>
+<p>"Those quotes demonstrate how kids can be ambassadors for this work," she said. "Kids can make things happen if they are empowered as leaders."</p>
+<p>Many students helped to lead classroom surveys, took part in traffic counts, devised solutions and actions that could be included in the school travel plan, and challenged their fellow students, teachers, staff and parents to become involved.</p>
+<p><em><strong>INNOVATIONS</strong></em></p>
+<p><em>Innovation 1:</em> The approach focused on engaging the full school population (student and their families, staff, administration) and community partners (from traffic engineers, to public health practitioners to policy-makers, to local bike co-ops) to implement the project and sustain it year over year; hence the approach is meant to address barriers by bringing together all stakeholders and utilizing their skills, expertise and decision-making powers to support desired behaviour changes over the short and longer term. From this, program managers can learn how to break down silos and create the necessary connections to ensure a successful, sustainable program.</p>
+<p><em>Innovation 2:</em> By gathering information from the perspective of users (i.e. students, parents and staff) with regards to different types of trips (i.e. school, work, extra-curricular activities) this approach helps program managers to make connections between different destinations that different users need to reach throughout their day and the relationships involved (e.g. parent to child) and begin to think about transportation in a mobility management context rather than a single trip or single user context (e.g. if a parent could access a Walking School Bus for their child, they would be free to cycle to work perhaps or use public transit rather than drive alone; and if that child could access a walking buddy program following their extra-curricular activities in the evening, they may be able to travel independently in active ways rather than picked up by parents in vehicles).</p>
+<p>Beyond the transportation behaviour change focus of the project, we discovered that this approach can be used to assist schools and the surrounding community to delve into deeper and broader issues such as crime, graffiti, neglected buildings, gangs, garbage in the environment, bullying and other interconnected community issues. Thus, the approach can kick-start discussions about revitalizing neighbourhoods. As noted above this model can also be used as a youth engagement tool to empower children and youth to be leaders in their community (e.g. through the application of the photovoice method noted above).</p>
+<p> </p>
+<p><strong>Landmark Designation</strong></p>
+<p>The program described in this case study was designated in 2012.</p>
+<p>Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated through an open nomination process and by our peer-selection panels and Tools of Change staff, and then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Mark Dessauer, Active Living by Design</li>
+<li>Jacky Kennedy, Green Communities Canada</li>
+<li>Ryan Lanyon, Metrolinx</li>
+<li>Nathalie Lapointe, Federation of Canadian Municipalities</li>
+<li>David Levinger from the Mobility Education Foundation</li>
+<li>Lorenzo Mele, Town of Markham</li>
+<li>Geoff Noxon, Noxon Associates</li>
+<li>Chuck Wilsker, U.S. Telework Coalition</li>
+<li>Phil Winters from CUTR and the University of South Florida</li>
+<li>JoAnn Woodhall, Translink</li>
+</ul>
+<p>This case study was written in 2013 by Jay Kassirer and Sharon Boddy.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

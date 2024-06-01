@@ -1,0 +1,328 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/work-programs-that-influence-the-home/">Work Programs that Influence the Home</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p> San Mateo County</p><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Quadrupled the number of carpools logged in San Mateo County over about six months from the Fall of 2018 to Spring 2019, from 6,400 in to nearly 30,000.</li>
+<li>Reduced CO2 emissions by 829 tons per year.</li>
+</ul>
+<p>See also:</p>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Commute.org" target="_blank">http://en.wikipedia.org/wiki/Commute.org</a></li>
+<li><a href="http://rideamigos.com/commute-org-commuter-incentives-case-study" target="_blank">http://rideamigos.com/commute-org-commuter-incentives-case-study</a></li>
+<li><a href="http://ccag.ca.gov/wp-content/uploads/2021/10/5-A3-2021-Draft-San-Mateo-CCAG-CMP-Report.pdf " target="_blank">http://ccag.ca.gov/wp-content/uploads/2021/10/5-A3-2021-Draft-San-Mateo-CCAG-CMP-Report.pdf </a></li>
+</ul>
+<p>Case Study <a href="/userfiles/Carpooling and Vanpooling in San Mateo County V2.pdf" target="_blank">PDF</a></p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Carpooling and Vanpooling in San Mateo County, California</h1>
+<p>This program promotes carpooling and vanpooling instead of driving alone during peak commute periods, using advertising (online, video, and display), challenges, and prize-based campaigns to attract and retain its target audience. It also made its standard Guaranteed Ride Home system easier to use. This case study illustrates the timing of incentives to promote habit formation. It also exemplifies how benefits can be increased by integrating some of the participant-facing aspects of multiple, independent programs in neighboring regions.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>This case study is undergoing a final edit before being posted.</p>
+<p>Commute.org was founded in 2000 as the public agency responsible for transportation demand management in San Mateo County, California, just south of San Francisco. The agency’s members included 17 cities and towns as well as San Mateo County. It received funding from the City/County Association of Governments of San Mateo County, the San Mateo County Transportation Authority, and the Bay Area Quality Management District and the Metropolitan Transportation Commission. Its mission was to decrease traffic congestion and air pollution, especially during peak commuting hours, by increasing the use of alternative modes of transportation that were less stressful, less costly, and better for the environment. Starting in 1988, voters in San Mateo County authorized tax increases to fund transportation improvements and reduce traffic congestion.</p>
+<p>Commute.org had been promoting carpooling and vanpooling in San Mateo County since its inception. From the beginning, there was the benefit that carpoolers and vanpoolers could avoid traffic jams and bridge tolls by using designated high occupancy ‘diamond’ lanes. The organization helped match carpoolers vanpoolers and offered draws for incentives. Vanpool passengers split the cost of operating a leased van and were reimbursed for half of their vanpool costs for the first 3 months, up to $80.00 per month. Drivers rode for free and could keep the van for personal use on weekends. Drivers who started new vanpools and kept them on the road for at least six months received an additional $500.</p>
+<p>Starting in 2003, carpoolers could receive a $40 gas card incentive per passenger for two months of carpooling with two other people.</p>
+<p>Then in 2014 the county’s Metropolitan Transportation Commission launched the Bay Area Commuter Benefits Program, which required employers with at least 50 full-time employees to join the program and offer commuter benefits to their employees. Later that year, the carpooler incentive was increased to $60. Vanpool incentives remained the same, but riders could earn up to $100 per month for the first three months.</p>
+<p>In 2017. Commute.org piloted a carpooling incentive of $2 per weekday rush hour trip per person.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The county benefited from previous, related research in the San Francisco area. For example, since 2013 Plan Bay Area had incorporated a state-mandated Sustainable Communities Strategy for Bay Area transportation and land-use policies. Its first public consultation process spanned three years and engaged 6,000 individuals. The consultation included 12 community-hosted focus groups and a phone survey of 2,516 Bay Area residents. The survey was conducted in English, Spanish, and Cantonese.</p>
+<p>Past rideshare efforts had also contributed helpful information. For example, a 2014 intercept survey of casual carpoolers had found the primary motivations to be convenience, time savings, and monetary savings (environmental and community-based motivations scored lower); 75% previously took public transit and over 10% formerly drove alone. User surveys from the 2017 pilot provided information on how participants heard about the program, how they would have travelled if they hadn’t carpooled, and why they used the service.</p>
+<p><strong>Targeting the Audience</strong></p>
+<p>The program focused on commuters to workplaces and colleges in San Mateo County, California.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>In 2016, Commute.org launched its STAR (Support, Track and Reward) platform, powered by RideAmigos, to help commuters find carpools and vanpools. STAR was accessed by a website or by using an app. STAR helped commuters find and plan alternative ways to work and school (carpooling, vanpooling, taking public transit or shuttles, bicycling and walking) and offered them incentives and challenges. Each quarter, a different mode or collection of modes were the focus of the challenges. Points could be used to buy items in the STAR store or to donate to a non-profit organization. (<em>Financial Incentives; Overcoming Specific Barriers; Vivid, Personalized, Credible, Empowering Communications)</em></p>
+<p>The STAR platform also allowed San Mateo County employers to operate their own customized, employer-specific programs under the STAR platform umbrella.</p>
+<p>In 2018, Commute.org started offering commuters a $25 e-gift card for every 10 days they carpooled to work if there were at least two people per car and the driver was not reimbursed above the standard rate. To encourage habit formation, this incentive could be received up to four times a year or 40 days of carpooling, since it typically takes 21-66 days to form new habits. To promote ongoing engagement, the agency offered additional incentives on an ongoing basis. For example, each quarter it offered up to three randomly drawn participants an additional e-gift card valued up to $100. In addition, every April and May, Commute.org sponsored the San Mateo County Commuter Challenge, which offered weekly and grand prize raffle incentives. The Challenge was scheduled to include the annual Bay Area Bike to Work Day in May, which Commute.org coordinated for San Mateo County. (<em>Building Motivation, Engagement and Habits Over Time; Competitions</em>)</p>
+<p>The incentives program relied heavily on the use of advertising (online, video, and display), challenges, and prize-based campaigns to attract and retain the target audience. It was marketed through a variety of channels including digital billboards, a social media campaign, commuter outreach, employer partnerships, direct mail to residents, and special challenges. (<em>Mass Media; Work Programs</em>)</p>
+<p>To address the need for last-minute change of plans, the agency had been offering a Guaranteed Ride Home Program using paper taxi vouchers. Commuters who used any approved alternative travel mode to get to work or college and who experienced an emergency while there, could use the taxi vouchers to get home. The ‘emergency’ could involve a personal or family illness or emergency, a change in work schedule, losing a ride home because the carpool driver with had an emergency, an emergency at home, or an elder care or day care emergency. In 2018 that program was expanded so that participants could use any form of transportation to get home (e.g public transit, Uber, car share, or taxi) and be reimbursed up to $60 per trip up to 4 times a year. If they used public transit for at least part of their GRH ride, Commute.org gave them a $5 e-card bonus.</p>
+<p>To encourage more people to use vanpools as an alternative to driving alone, the van pool incentive was expanded in 2021. New vanpools were eligible for an incentive of up to $3,600, paid out at $150 per month over two-years. Vanpools had to meet eligibility requirements and the months of operation had to be consecutive.</p>
+<p>In 2022, recognizing that many travelers crossed county lines, six transportation demand agencies in the San Francisco area integrated their commuter platforms and began offering seamless access to their carpool and vanpool ride-matching and eligibility-based trip rewards. The new partnership expanded ride-match opportunities and customer support, particularly for those commuting across county lines. Commuters could then see  information from all relevant agencies through a single user account.</p>
+<p><strong>Overcoming Barriers</strong><o:p> </o:p></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:5.4pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid #A8D08D .5pt;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-border-insideh:.5pt solid #A8D08D;mso-border-insidev:.5pt solid #A8D08D">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="width:64.35pt;border:solid #70AD47 1.0pt;
+  border-right:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-left-alt:
+  solid #70AD47 .5pt;mso-border-bottom-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="86">
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm"><b><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri;color:white'>Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="width:157.05pt;border:solid #70AD47 1.0pt;
+  border-left:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-bottom-alt:
+  solid #70AD47 .5pt;mso-border-right-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="209">
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-indent:1.15pt"><b><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri;color:white'>How it was addressed<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:40.9pt">
+<td style="width:64.35pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top" width="86">
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm"><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri;color:black;mso-color-alt:windowtext'>Time   and effort required to find and use carpools</span><b><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:Calibri'><o:p></o:p></span></b></p>
+</td>
+<td style="width:157.05pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top" width="209">
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:36.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#4472C4;
+  mso-color-alt:windowtext"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>       </span></span></span><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri;color:black;mso-color-alt:windowtext'>Ride   matching platform </span><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:36.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#4472C4;
+  mso-color-alt:windowtext"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>       </span></span></span><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri;color:black;mso-color-alt:windowtext'>Incentives   and competitions</span><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm"><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri'><o:p> </o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:40.9pt">
+<td style="width:64.35pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top" width="86">
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm"><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri'>Habits take time to become established</span><b><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri'><o:p></o:p></span></b></p>
+</td>
+<td style="width:157.05pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top" width="209">
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:36.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#4472C4"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>       </span></span></span><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri'>Carpool incentive could be received up to   four times a year (40 days of carpooling)<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:36.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#4472C4"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>       </span></span></span><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri'>Vanpool incentives could be received monthly   for up to 24 consecutive months <o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;mso-yfti-lastrow:yes;height:40.9pt">
+<td style="width:64.35pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top" width="86">
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm"><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri;color:black;mso-color-alt:windowtext'>Sometimes   people’s travel plans must change at the last minute</span><b><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri;color:black;mso-color-alt:windowtext'> </span></b><b><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:Calibri'><o:p></o:p></span></b></p>
+</td>
+<td style="width:157.05pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top" width="209">
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:36.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#4472C4;
+  mso-color-alt:windowtext"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>       </span></span></span><!--[endif]--><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri;color:black;mso-color-alt:windowtext'>Flexible,   easy-to-use Guaranteed Ride Home Program</span><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri'><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The agency managed the incentives on its STAR platform powered by RideAmigos. Participants had to record their trips to their own accounts using e mobile apps (1) Waze Carpool or (2) Scoop.</p>
+<p>The agency measured behavioral persistence using post-incentive surveys of incentive recipients.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>The program made it easier and more rewarding for individuals to carpool and vanpool. In the spring of 2019, the average citizen was about four times more likely to carpool, compared with the fall of 2018. Each carpooler saved about $580 per year and reduced CO2 emissions by about one third of a ton per year.</p>
+<p>Over about six months from the Fall of 2018 to Spring 2019, Commute.org's Carpool 2.0 program led to a quadrupling of carpools logged in San Mateo County through its Star commuter platform each month, from 6,400 in to nearly 30,000.</p>
+<p>Between October 2018 and December 2019, the program rewarded 1,961 carpoolers, making 218,453 one-way trips, travelling 4,708,310 miles, and saving $1,325,860. About 40% of program participants drove alone before the program, and 33% reported costs savings as their top motivation to carpool. There was an associated reduction of 955 tons of CO2 emissions (about 819 tons per year.)</p>
+<p>From 2020 to 2022, the COVID19 crisis significantly reduced participation in the program, but organizers anticipated a gradual increase in program participation once local shelter-in-place orders were eased.</p><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p>This program tested new refinements to a proven approach, including the following:</p>
+<ul>
+<li>Timing of incentives to encourage ongoing engagement and habit formation, and</li>
+<li>Expansion of the Guaranteed Ride Home Program so participants could use any form of transportation to get home.</li>
+</ul>
+<p>These enhancements are readily replicable to many other carpool and vanpool programs around the world.</p>
+<p>The lessons learned about incentive timing are adaptable to many behaviors that are performed on an ongoing basis.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

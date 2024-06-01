@@ -1,0 +1,256 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li> City of Chicago</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>From 2016 to 2020 alone, the median carbon emissions per ft2 (GHG Intensity) for reporting buildings fell by 25%, while median energy use per ft2 (Energy Use Intensity) fell by 7%</li>
+<li>From 2017 to 2020, saved 7,293.6 million Btu (2.1 million kwh)  per year</li>
+</ul>
+<p>Case study <a href="/userfiles/Chicago Building Energy Rating System.pdf" target="_blank">PDF</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Chicago’s Building Energy Rating System</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="150" src="https://www.youtube.com/embed/6YVN7fAA-wc" title="Chicago Energy Benchmarking" width="97%"></iframe></p>
+<p>Chicago was the first U.S. city to require building owners to prominently post a building’s energy performance rating, and to share that that rating with potential buyers and/or renters. While the rating system was being introduced, ComEd and Peoples Gas ran extensive complementary incentive and rebate programs that enabled building owners and managers to make energy improvements at little to no cost. Designated a <em>Landmark</em> case study in 2022 by our climate change peer review panel.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong>Note:</strong> To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</p>
+<p>The City of Chicago had committed to the goals of the Paris Climate Agreement, including a 26-28% reduction in greenhouse gas emissions by 2025. Energy use in buildings represented over 70% of the City’s greenhouse gas emissions, and the City had to improve energy efficiency in buildings to meet its long-term climate goals.</p>
+<p>Chicago was the first U.S. city to require building owners to prominently post a building’s energy performance rating, and to share that that rating with potential buyers and/or renters. Energy benchmarking can help identify opportunities to reduce energy use and save on utility bills. Starting in 2013, Chicago required buildings over 50,000 square feet (sq. ft.) to report energy use annually, and to verify the data every three years. The City started with its largest buildings, and all required building had to report by 2016. Then, in 2019, it introduced the Chicago Energy Rating System, which made energy use information for large buildings easily accessible to residents, while encouraging energy savings.</p>
+<p>The program targeted the owners/potential buyers/ potential renters and building managers of about 3,600 buildings in Chicago bigger than 50,000 square feet. It encouraged building owners and managers to identify and address opportunities to reduce energy use and associated greenhouse gas emissions. It encouraged potential buyers and renters to choose buildings that were more energy efficient and created fewer greenhouse gas emissions.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Formative research indicated that additional visibility and transparency of ratings could improve performance. For example, restaurants in New York City were required to post grades of A, B, or C, based on their health inspections. The number of restaurants receiving an A grade on initial inspection increased by 14% in the 18 months after the city required restaurants to start posting their grades.</p>
+<p>Research also indicated that increasing the ENERGY STAR score by just 10 points per building could reduce energy use by about 8%, weather normalized.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The original Chicago Energy Benchmarking ordinance (2013) allowed the City to share buildings’ ENERGY STAR scores and other metrics publicly. Starting that year, the city required buildings over 50,000 square feet (sq. ft.) to report energy use annually, and to verify the data every three years. The primary intent was to boost visibility and transparency of information that was already publicly available; there were no new reporting requirements, and no new costs directly associated with the updates. The City started with its largest buildings, and all required building had to report by 2016.</p>
+<p>Property owners or their representatives received their first rating placards in the fall of 2019. After an initial grace period of six months, property owners were required to post their placards, and to share their ratings at time of listing the property for sale or lease. Owners continued to receive updated rating placards on an annual basis and were required to post and share them.</p>
+<p><strong>Energy Scores</strong></p>
+<p>Chicago’s star system was based on the EPA’s Energy Star scoring system, which compared a property’s overall energy performance to similar building types in the USA, taking climate into account. A score of 50 indicated median energy performance, higher scores (up to 100) showed high energy performance, and lower scores indicated significant opportunities for improvement.</p>
+<p>In addition, Chicago’s system gave each one-, two-, or three-star property an extra star if it made a 10-point improvement.</p>
+<p><img alt="" height="346" src="/userfiles/Image/Chicago Energy Rating Label.png" width="450"/></p>
+<p><img alt="Four Star Rating System" height="186" src="/userfiles/Image/4 Star Rating System.png" width="450"/></p>
+<p>Compliance with the Chicago Energy Benchmarking was generally high, although numbers dropped slightly during the COVID-19 pandemic. A survey of noncompliant buildings at the time found some teams shifting their focus to other priorities or having more difficulty engaging with building owners/managers. In 2020, 2,841 properties spanning over 720 million sq. ft. reported energy use, an 85% reporting rate. In 2019, the reporting rate had been 91%.</p>
+<p><img alt="" height="351" src="/userfiles/Image/Compliance by Year.jpg" width="450"/></p>
+<p>In 2019, multi-family housing represented 48% of the total space being reported and 32% of total energy use. The next largest user, office space, represented 28% of total space and 21% of total energy use. Healthcare was next at 13% of total energy use and 5% of total space. Other sectors analyzed included lodging (9% of total energy use), retail (4%), college/university (4%), k-12 schools (1%), and other (16%.)</p>
+<p><strong>Water Use Reporting</strong></p>
+<p>In 2019, the city began including water use information. Building owners didn’t need to gather and report water usage data, as city’s Department of Water Management and Department of Finance were already collecting the data. Owners could opt out of having this information shared publicly.</p>
+<p><strong>Incentives and Rebates</strong></p>
+<p>Extensive incentive and rebate programs, available from ComEd and Peoples Gas, enabled building owners and managers to make energy improvements at little to no cost. ComEd and Peoples Gas programs also offered advice to nonprofits, houses of worship, and affordable housing facilities.</p>
+<p><strong>Attractive Financing Options</strong></p>
+<p>In addition, Chicago began offering Property Assessed Clean Energy (PACE) in 2019, a voluntary low-cost financing opportunity for energy efficiency and renewable energy improvements. PACE was a particularly attractive choice for building owners that did not have the upfront funds needed to implement larger scale projects. PACE made it possible for owners and developers of commercial and multifamily properties to obtain low-cost, long-term financing for energy efficiency, sustainability and renewable energy infrastructure installed in new or existing buildings.</p>
+<p>PACE was based on legislation that classified energy efficient and/or renewable upgrades as well as new installations at or above-code as a public benefit. Up to 100% of the “energy improvements and associated soft costs (permitting, structural support, etc.) could be financed with no money down and then repaid as a benefit assessment on the property tax bill over a term that matched the useful life of improvements (often as long as 20-25 years). What made this attractive is that the financing was based on the anticipated energy cost savings the building owner could expect to experience once improvements were installed. The financing offered a fixed interest rate, and projects typically had a net positive cash flow beginning in the first year. An additional advantage was that the assessment transfered on sale to the new owner.</p>
+<p>PACE was available to the following types of properties:</p>
+<ul>
+<li>Commercial and industrial properties</li>
+<li>Multifamily residential apartment buildings or cooperative housing properties with five or more units</li>
+</ul>
+<p><img alt="Overcoming Barriers" height="302" src="/userfiles/Image/Overcoming Barriers.jpg" width="303"/></p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<ul>
+<li>Participants had to report total energy and floor space annually and verify the data every three years.</li>
+<li>The city was already collecting water use data for each property.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Emissions and Energy Use</strong></p>
+<ul>
+<li>From 2016 to 2020 alone, the median carbon emissions per ft2 (GHG Intensity) for reporting buildings fell by 25%, while median energy use per ft2 (Energy Use Intensity) fell by 7%, adjusted for yearly weather differences. This helped counteract the growth in square feet used.</li>
+<li>From 2016 to 2020 alone, each property saved on average 1,167 kwh.</li>
+<li>Most properties continued to improve energy efficiency and achieve savings opportunities, even after multiple years of required energy benchmarking, which went into effect for all properties over 50,000 sq. ft. in 2016.</li>
+<li>In all, Chicago properties required to benchmark saw a reduction in energy use per ft2 of 9.2% from 2017 to 2020. This represents 7,293.6 million Btu saved per year or 2.1 million kwh overall per year.</li>
+<li>The median weather-normalized source energy use per sq. ft. for all reporting buildings dropped by 7% from 2016 to 2020. All sectors saw decreases since 2016, except for Retail and College/University. The greatest improvements were in the Lodging (18% improvement) and Office (15% improvement) sectors.</li>
+<li>In 2020, the median ENERGY STAR score for all analyzed properties in Chicago was 60 out of 100, an increase of three points from the median of 57 in 2019. It is difficult to compare data from the previous three years because the EPA updated its performance metrics in 2018, due to technical platform updates within Portfolio Manager meant to periodically update the benchmarks used for scoring.</li>
+<li>Properties that received a score of 75 or higher and met other criteria could earn an ENERGY STAR label. In Chicago, the number of ENERGY STAR certifications continued to rise. As of 2020, 192 properties subject to the energy benchmarking ordinance had been certified, up from 142 certified properties in 2016.</li>
+</ul>
+<p><img alt="Program Impacts" height="190" src="/userfiles/Image/Program Impacts.jpg" width="450"/></p>
+<p><strong>Water Use</strong></p>
+<ul>
+<li>Based on data reported by the city for buildings required to benchmark in 2020, average water use intensity across all buildings was 25.9 gallons per ft2., down from 26.2 gallons per ft2 in 2019.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p>A similar approach could be applied to buildings throughout the world.</p>
+<p>The overall idea – of making a seller provide information on particular achievements – for example, regarding energy and water use, can be applied to a range of products and services from cars and trucks to train and plane rides. It can also be applied to healthy environments (e.g. air quality measures), healthy products (e.g. alcohol, THC or nicotine content) and safety (safety record.)</p>
+<p><strong>Author and Landmark Designation</strong></p>
+<p>This case study was written by Jay Kassirer in February, 2023.  The program described in this case study was designated in 2022. Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff, and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The Climate Change panel that designated this program consisted of:</p>
+<ul>
+<li>Kathy Kuntz, Dane County Office of Energy &amp; Climate Change</li>
+<li>Doug McKenzie-Mohr, McKenzie-Mohr Associates</li>
+<li>Britta Ng, City of Coquitlam</li>
+<li>Susan Schneider</li>
+<li>Brooke Tully</li>
+</ul><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

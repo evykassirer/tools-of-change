@@ -1,0 +1,257 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Cape Light Compact</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<p>On an annual basis, residential electricity consumption declined by 9.3%. </p>
+<p><strong>Case Study </strong><a href="/userfiles/Cape Light Landmark Case Study June 2012-V2.pdf" target="_blank"><strong>PDF</strong></a></p>
+<p><strong>Webinar </strong><a href="/userfiles/Cape_Light-transcriptV3.pdf" target="_blank"> <strong>Transcript</strong></a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Cape Light Compact Smart Home Energy Monitoring Pilot</h1>
+<p>This well designed and executed pilot project, which  achieved unusually high energy use reductions among 100 volunteer participants, illustrates the power of real-time feedback, friendly competition, and timely, personalized, credible, empowering communications. Using wireless in-home energy monitors connected to the internet, participating homes received detailed information on how much energy was being used in the home, when it was being used, how much it cost, and actions that could reduce energy consumption and promote savings. In addition, a web-enabled communications network enabled the sharing of energy savings experiences and helped achieve individual and collective energy savings goals. Designated Landmark in 2010.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>In 2009, Cape Light Compact implemented a one-year long residential Smart Home Energy Monitoring Pilot (SHEMP) program to evaluate the potential energy savings from in-home energy monitoring systems. CLC hoped to gain insight into behavioural aspects of energy use that could be used inform future residential energy-efficiency programs.</p>
+<p>Cape Light Compact (CLC) is an inter-governmental organization consisting of 21 towns and two counties on Cape Cod and Martha’s Vineyard, Massachusetts. CLC serves approximately 200,000 accounts, the majority of which are residential, and administers a $24 million annual energy-efficiency budget that includes such initiatives as home energy assessments, and rebate and incentive programs for energy-efficient products.</p>
+<p>Communities in Massachusetts are governed by the Green Communities Act, enacted in 2008. The Act requires all electric and natural gas resource needs to be met first through available energy-efficiency demand reduction resources that are more cost effective or less expensive than supply.</p>
+<p>“We are encouraged to allocate a certain portion of our budgets to explore pilot programs,” explained Kevin Galligan, CLC’s energy-efficiency program manager. The goal of SHEMP was to educate residents about energy efficiency by showing them how and when they were using energy in the home. </p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>When CLC first began considering the SHEMP, it contacted the Northeast Energy Efficiency Partnerships organization for information.</p>
+<p>“With just one phone call they suggested we sit down with the folks at GroundedPower Inc.,” recalled Galligan.</p>
+<p>GroundedPower [now Tendril Energize, a company that specializes in energy-use behaviour modification by combining web and wireless technology with social marketing principles] suggested that CLC use their wireless in-home monitoring system in combination with a web interface where residents could view their daily, weekly and monthly energy use.</p>
+<p>In February 2009, “we tossed the idea out to our customer base through a very small news article,” said Galligan. Even though the exact product offering was not yet defined, Galligan said that CLC “got overwhelming interest, receiving more than 300 calls from customers who wanted to sign up.”</p>
+<p>Galligan credited that interest with the price of oil at the time. “In October 2008, the price of oil went over $138 a barrel, so we had increased awareness from many customers who wanted to find more innovative ways to save energy.”</p>
+<p>Early in the design phase of the SHEMP, CLC looked at other, similar programs in other jurisdictions. The main program they looked at was from the <a href="http://www.toolsofchange.com/en/case-studies/detail/642">Sacramento Municipal Utility District</a>. </p>
+<p>“We reviewed a lot of what they learned in some of their early ventures, particularly the design protocols,” said Galligan. In addition, CLC conducted an in-depth online survey with interested homeowners described immediately below.)</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>In May 2009, CLC selected 100 households to participate in the SHEMP. </p>
+<p>As a first step, CLC conducted an in-depth online survey with each interested homeowner to find out the number of bedrooms, number of people in the home, what energy-saving measures homeowners had already adopted, etc.</p>
+<p>“We also asked them what they wanted us to set as their annual or monthly energy reduction goal – and they could update this as they went,” said Galligan. “In effect, we asked them for a commitment.” (Obtaining a Commitment)</p>
+<p>From there, CLC narrowed the field down to 100 participating households. Participants were chosen primarily based on their energy use; as a ground rule, CLC chose participants that were using more than 600 kWh per month, on average. For those customers who, for one reason or another, were not able to participate in the pilot, CLC retained their contact information for future programs.</p>
+<p>Between July and September 2009, CLC’s partner, Rise Engineering, installed the technical systems on participating customers’ electric panels. The system, which was developed and provided by GroundedPower, consisted of a clamp that attached to a customer’s main electrical panel, which allowed electricity use information to be transmitted through a wireless gateway to the CLC web site.</p>
+<p>The house monitor measured the current on the main feeds in the electrical panel and communications wirelessly via ZigBee radio to the gateway, which uploaded data through a local internet router to the GroundedPower web server.</p>
+<p>“The technology that they demonstrated was solid. It worked,” said Galligan. “The only major requirement was that customers had to have a high-speed internet connection and we informed them up front about that.”</p>
+<p>For a typical customer enrolled in the SHEMP, once the technical apparatus was installed in their home, all they had to do was log onto the CLC web site. There, they could view their electricity usage, by hour, week or month. (Personalized, Credible Communication; Individual Feedback)</p>
+<p>“The customer’s page was unique to each home” explained Galligan. “It had a welcome message, current usage and the point scores relative to performance.”</p>
+<p>Participants could choose how much information they wished to share with others. The system also allowed them to ask questions of and share ideas with others in the program.</p>
+<p>“For example, if there was a spike in someone’s energy use, the customer could ask the group if they had an idea of what might be going on,” Galligan explained. He also noted that, as customers became more engaged with the program, there was more feedback between CLC and the participants, and among the participants themselves.</p>
+<p>CLC offered more than 100 different prompts for taking action on reducing energy on its web site. “The system let users see how many people actually took those actions and how their usage compared with others,” said Galligan. (Feedback; Norm Appeals; Prompts)</p>
+<p>The web site also offered seasonal tips. “As we came into a cooling season, for example, we’d promote high-efficiency cooling incentives and be able to track customers that took advantage of our rebate programs,” said Galligan. (Prompts)</p>
+<p>Electricity usage information was in near real time (depending on the customer’s bandwidth) on the web site, allowing customers to see how much more electricity was being used, for example, if they turned on the air conditioner.</p>
+<p>“With the gateway we used, we could see whether a customer was taking action or not based upon suggestions we’d made. At times of peak power use we tried to see if real-time demand response actions could be taken,” said Galligan. “For example, when we saw that the power grid might be coming into a challenging time [for meeting demand], we rewarded people with additional points if they took action during those times.”</p>
+<p>Galligan said that customer response was very good and that, in particular, SHEMP participants liked the peer group communication. “We saw customers willing to share with each other what they were doing and what they were learning. That real-time view provided powerful information for customers to quickly and effectively see what they were doing to draw up or bring down their consumption,” said Galligan, who noted that those involved in SHEMP had an increased awareness of CLC’s other efficiency programs. (Building Motivation Over Time; Personalized, Credible, Empowering Communication)</p>
+<p>Galligan said that combining a behavioural program with technology increased customers’ overall benefits. “For some, this was an entry to what they’d been hearing about and what we’d been offering for years.”</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Funding for the program came from the Massachusetts Department of Public Utilities (DPU).</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Early on, CLC decided to monitor and evaluate data as they became available. “We did things in concert and then quickly got into study results because we started to see some very early indicators of positive performance,” said Galligan. “We wanted to be sure that the data we were collecting were readily available to be analyzed through the course of the pilot, not only from a process standpoint, but also, at the conclusion of the pilot, on an impact basis to really see the savings that had accrued through it.”</p>
+<p>Of the initial 100 participants, 86 remained with the program throughout the year-long pilot. CLC used two other groups—about 200 people who had asked to join the pilot but had not been chosen and a stratified random sample of about 400 others with similar households, family size, and background —for comparison.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Personalized feedback was provided to participants, as described above in the section "Delivering the Program."</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>On an annual basis, residential electricity consumption declined by 9.3%. Galligan was quick to point out that this figure excluded other program participation effects. “We took care to look and see if any customers that had reduced electric consumption had replaced an appliance or participated in a home energy audit,” he said. “We removed those other program effects to get the true consumption reductions.” </p>
+<p>Customer interest in the program was very high. After only one short media article, more than 340 people called to get more information about the pilot program. Although only 100 households were chosen for the pilot, 304 people completed the initial online questionnaire.</p>
+<p>Despite some project installation difficulties, overall satisfaction with the pilot was very high. About 90% of all participants reported being “very satisfied” with the program; 60% of participants also reported high levels of satisfaction with the scheduling process for the monitor installation, the assistance they received from CLC, and the experience of using the online monitor.</p>
+<p>Participant interest in keeping the monitoring system was also very high. About 90% of participants said that they wanted to keep the home monitor after the 12-month pilot period and, on average, participants were willing to pay for the monitor (a fee of about $8/month).</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Kevin Galligan<br/>
+Energy Efficiency Program Manager<br/>
+Cape Light Compact <a href="mailto:kgalligan@capelightcompact.org?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">kgalligan@capelightcompact.org<br/>
+</a>Web site: <a href="http://www.capelightcompact.org" target="_blank">www.capelightcompact.org</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Screen carefully. </strong>CLC could have benefited from an earlier participant screening process with a higher level of detail in terms of household energy use. </p>
+<p><strong>Focus on customer care.</strong> Galligan said that customer care made a huge difference. “We are a community-based group, we live and work in our communities, so our staff really listened to what customers were saying,” he said. “It may or may not be totally related to this pilot, but it’s all related to the service that we need to look after when we’re delivering on energy efficiency.”</p>
+<p>Galligan also said that they were careful to let customers know all the details up front. “We were most concerned with negative feedback, so we emphasized over and over that this was a pilot and that we were looking to engage a small group of customers and learn from them.”</p>
+<p><strong>Ensure proper data collection. </strong>As noted, CLC monitored results as they went. “We did have challenges tying actions to the savings and we need to do more on that end,” said Galligan. “But by setting up the customer profile and collecting data from the beginning, it allowed us to tie actions and savings together.”</p>
+<p><strong>Be ready for technical challenges. </strong>Galligan noted that, a few years ago, its electric distribution company, NSTAR Electric, changed out all of the meters across the CLC territory from analog to digital. During the initial phases of SHEMP, however, CLC had to contend with some analog electric meters and CT clamps were therefore used to transmit information from the home to the gateway.</p>
+<p>Certain customers were excluded from the pilot because of solar photovoltaic systems. “Due to some complications with net metering, we couldn’t offer the program to those customers who had a solar PV system or any kind of on-site generation,” said Galligan. “It’s disappointing. I have a PV system but the device we use in SHEMP won’t give the total usage of the home because of the netting effect.”</p>
+<p>Furthermore, CLC ran into some problems with online connectivity, even after participants had confirmed that they had a high-speed internet connection. Some types of computers also needed additional configuration.</p>
+<p><strong>Evaluation is key.</strong> Galligan said that evaluation should start immediately and continue throughout the program in order to make any necessary adjustments.</p>
+<p><strong>Landmark Designation</strong></p>
+<p>The program described in this case study was designated in 2010. Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff, and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Melissa Klein, US EPA’s ENERGY STAR® Program</li>
+<li>Arien Kortland, BC Hydro</li>
+<li>Clifford Maynes, Green Communities Canada</li>
+<li>Stephanie Thorson, Summerhill</li>
+<li>Edward Vine, Lawrence Berkeley National Laboratory</li>
+<li>Dan York, ACEEE</li>
+</ul>
+<p>This case study was written by Jay Kassirer and Sharon Boddy in 2012, based on information provided by Cape Light Compact.</p>
+<p> </p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

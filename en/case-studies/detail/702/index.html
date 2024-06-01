@@ -1,0 +1,374 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Community of Playa Vista, California USA</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>4.9% decrease (a decrease of 3.5 percentage points from 71.4% to 67.9%) in peak time drive alone mode share across the <em>entire</em> community over seven months</li>
+<li>Corresponding increases in carpool trips, cycling trips and transit Trips</li>
+</ul>
+<p> </p>
+<p><a href="/userfiles/Playa Vista case studyV4.pdf" target="_blank">PDF </a>of this case study</p>
+<p>Webinar <a href="/userfiles/Playa_Vista_Transcript.pdf" target="_blank">Transcript</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Playa Vista Ability2Change </h1>
+<p>Playa Vista's Ability2Change program is a great example of a targeted, strategic approach to transport behavior change. It features careful market segmentation and barrier removal, with different initiatives for different people. In just seven months it yielded a 4.9% decrease in peak time drive alone mode share across the <em>entire</em> community (a decrease of 3.5 percentage points from 71.4% to 67.9%), with corresponding increases in carpool, cycling and transit trips. </p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing<em> </em><u><strong><em>as is the case with this particular program.</em></strong></u></p>
+<p>Better known as "Silicon Beach", Playa Vista is a commercial, residential, and retail development in west Los Angeles, home to some of North America's most congested roadways. In 2015 the development was still new, its growth rate surpassed 40%, and companies in the development employed about 6,000 employees.</p>
+<p>The Playa Vista development created Compass, a transportation demand management (TDM) program designed to change commuter behaviour. Compass in turn created the Playa Vista Ability2Change work-place based transportation campaigns. The campaigns used custom services and incentives to overcome specific barriers.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>This program’s goal was to decrease single-occupant-vehicle (SOV) peak period behaviors in Playa Vista, California. There are no targets to report.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The first steps in the Ability2Change campaigns were to visualize the home locations of single-occupant vehicle (SOV) drivers, and to analyze the existing transportation infrastructure to identify the regions where one could safely and realistically adopt the desired behaviour(s). Transit, cycling and pedestrian routes, and the home locations of existing carpoolers were studied to identify where these travel modes were already succeeding without outside intervention.</p>
+<p>The City of Los Angeles's commuter behaviour database (all new developments are required to measure and monitor commuter behaviours) provided some of the data required.</p>
+<p><img alt="Employee Home Location" height="583" src="/userfiles/Image/Map1.jpg" width="450"/></p>
+<p><em>The blue dots are the home locations of all of our commuters In 2015, only 13% of commuters lived three miles or less from work and 34% lived 4-10 miles from work. At the same time, only 9% lived 20 or more miles from work.</em></p>
+<p><img alt="2016" height="507" src="/userfiles/Image/Map2.png" width="450"/></p>
+<p><em>By 2016, more commuters lived close to work: 28% lived three miles or less from work (a 15% increase) and 39.7% lived 4-10 miles from work. However, 15.8% lived 20 or more miles from work – a 6.8% increase.</em></p>
+<p>Next, Compass conducted a behavior change assessment to figure out what it already knew and could learn from other programs about fostering the targeted modes. </p>
+<p>Focus groups were then held with existing users of non-SOV modes to identify how to “create more people like them”, and how to best promote Ability2Change programming and incentives.</p>
+<p>A network of employer representatives from each worksite helped to identify program delivery channels, and partnerships were created with other transportation organizations. </p>
+<p>For each targeted mode, Compass also conducted a service design exercise to map out the process that commuters went through and the barriers they faced when using that mode.</p>
+<p><img alt="Service Design Exercise for Daily Commute" height="337" src="/userfiles/Image/Service_Design.jpg" width="450"/></p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The Ability2Change campaigns strove to match the right SOV commuter with the right mode, and to provide supportive programming at the right time.</p>
+<p>Compass created three mode-specific campaigns:  transit, ridesharing, and cycling. For each mode, it focused initially on those people who had the ‘ability2change’ to that that mode, rather than on motivation to change. Compass considered this an enhancement to individualized marketing. As Gaul explained, “that's been a differentiator in this program; we can work on motivation later. But if we super focus on ability, then we can use a lot less work to get them motivated.</p>
+<p>Targeted individuals were sent a series of tailored emails asking them to look at the transit zone map and to select one or more of the three targeted modes. From there, they opted in to receiving each type of incentive. </p>
+<p><em>Transit Campaign</em></p>
+<p>For its transit campaign, Compass targeted SOV drivers who lived within 1/2 mile (0.8 km) of work via a one-transfer transit ride.</p>
+<p>With more than 24 municipal transit agencies in the county, one of the biggest barriers was confusion over which route(s) to take. Convenience, time, missing a bus, and being stranded were also concerns. Compass therefore created an interactive online map that let commuters input their home address and quickly find if they lived in a ‘transit zone’, as well as the best transit route(s) to take. (<em>Overcoming Specific Barriers; Vivid, Personalized, Credible, Empowering Communications</em>)</p>
+<p><img alt="Transit Zones" height="358" src="/userfiles/Image/Transit Zones.png" width="450"/> </p>
+<p><em>This map quickly showed commuters if they lived in one of the targeted ‘transit zones’, and the best route to take.</em></p>
+<p>Commuters who expressed interest then received a package containing a free transit pass and "swag." Compass also included a series of cards, each of which covered a different topic (e.g. the emergency ride home program, information about bus passes, and a "pro tips” sheet). (<em>Building Motivation, Engagement and Habits over Time; Incentives; Vivid, Personalized, Credible, Empowering Information</em>)</p>
+<p><img alt="Transit Pass and Swag Influence Travel Behavior" height="339" src="/userfiles/Image/Box.jpg" width="450"/></p>
+<p><em>Commuters who expressed interest then received a package containing a free transit pass and "swag."</em></p>
+<p>"If you're already a transit rider, you know these things, but if you're just starting out you may be worried about the repercussions," said Aaron Gaul, Director of UrbanTrans North America, a planning and marketing firm hired by Compass to deliver the campaigns. "Not knowing how to ride a bus was a barrier that we took to heart. It sounds simple, but many people don't want to admit they don't know how to do it."</p>
+<p>Because zip codes in the area are so large, Compass always gave people an option to opt out so that they didn't feel like they were being talked to in an inappropriate manner. That also opened a new door to talk about the right things with them.</p>
+<p><em>Ridesharing campaign</em></p>
+<p>For its ridesharing campaign, Compass targeted SOV drivers who lived in locations that were not well served by other options. Priority was given to those drivers who had HOV (high-occupancy vehicle) toll lanes or park/ride facilities near their homes.</p>
+<p>“A lot of the employers that were setting up shop had their own TDM or transportation programs. We brought them all together and created a critical mass”, said Gaul.</p>
+<p>As in the transit campaign, all home locations were mapped out. "We found where those people were, and we specifically reached out only to them," said Gaul. (<em>Vivid, Personalized, Credible, Empowering Information</em>)</p>
+<p>The following table shows the key barriers to ridesharing and how each was addressed by the program. (<em>Overcoming Specific Barriers</em>)<span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt"> </span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext">
+<tbody>
+<tr>
+<td style="width:81.9pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="109">
+<p align="center" class="MsoNormal" style="text-align:center"><b><span style='font-family:"Arial","sans-serif"'>Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="width:144.9pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="193">
+<p align="center" class="MsoNormal" style="text-align:center"><b><span style='font-family:"Arial","sans-serif"'>Solution(s)<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr>
+<td style="width:81.9pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt" valign="top" width="109">
+<p class="MsoNormal"><span style='font-size:9.0pt;font-family:"Arial","sans-serif"'>Other   TDM programs at employers<o:p></o:p></span></p>
+</td>
+<td style="width:144.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="193">
+<p class="MsoNormal"><span style='font-size:9.0pt;font-family:"Arial","sans-serif"'>Compass   brought all employers together to deliver the campaign, which included the   emergency ride home program<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:81.9pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt" valign="top" width="109">
+<p class="MsoNormal"><span style='font-size:9.0pt;font-family:"Arial","sans-serif"'>Not   sure how to rideshare / find others<o:p></o:p></span></p>
+</td>
+<td style="width:144.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="193">
+<p class="MsoNormal"><span style='font-size:9.0pt;font-family:"Arial","sans-serif"'>Developed   incentive program to walk people through the steps, and created rideshare   program people could sign up for<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:81.9pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt" valign="top" width="109">
+<p class="MsoNormal"><span style='font-size:9.0pt;font-family:"Arial","sans-serif"'>Don't   want to commit<o:p></o:p></span></p>
+</td>
+<td style="width:144.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="193">
+<p class="MsoNormal"><span style='font-size:9.0pt;font-family:"Arial","sans-serif"'>Emphasized   trying the behaviour for one day, without a long-term commitment<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="width:81.9pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt" valign="top" width="109">
+<p class="MsoNormal"><span style='font-size:9.0pt;font-family:"Arial","sans-serif"'>Need   a car during the day<o:p></o:p></span></p>
+</td>
+<td style="width:144.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="193">
+<p class="MsoNormal"><span style='font-size:9.0pt;font-family:"Arial","sans-serif"'>A   shuttle service was provided for the development, free of charge, and Compass   also looped in other programs such as Uber and Lyft<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Compass created an incentive scheme that walked people using baby steps to walk people through the initial barriers related to getting started. "We emphasized committing to trying, not committing to long-term use," Gaul explained. "We asked them to try it on a Friday - or some other convenient day - and see how it worked." (<em>Building Motivation, Engagement and Habits Over Time</em>)</p>
+<p>“We also wanted to help people visualize the benefits vividly,” said Gaul. Compass created a video that showed the feeling of going down the HOV lane fast compared to traffic in the regular lanes. “That's something that's really hard to get into someone's mind until they do the behavior, so we wanted to showcase the feeling they would get.” (<em>Vivid, Credible, Empowering Communication</em>)</p>
+<p><img alt="Video provides vivid HOV lane experience" height="200" src="/userfiles/Image/Driving.jpg" width="450"/></p>
+<p><em>Compass created a video that showed the feeling of going down the HOV lane fast compared to traffic in the regular lanes.</em></p>
+<p>When commuters opened an account with the rideshare program, they were given $5, and an additional $15 if they posted a carpool matching request.  "Posting requests was a huge barrier so we built the incentives in," said Gaul. "We also gave them a $5 gift card if they messaged their carpoolers through our online tool." Additional incentives included a transponder so that drivers could access the HOV toll lanes for free, a $35 gas card when they started, and smaller gifts based on a lottery system. (<em>Incentives; Obtaining a Commitment; Overcoming Specific Barriers</em>)</p>
+<p>To keep rideshare participants engaged, Compass sent out regular messages, which included tips on forming carpools, when and where Playa Vista rideshares met, and similar information.</p>
+<p><img alt="" height="515" src="/userfiles/Image/Vanpool Promotion (transportation behavior).png" width="450"/></p>
+<p><img alt="Promoting Rideshare Travel Behavior" height="750" src="/userfiles/Image/Rideshare Promotion (transportation behavior).png" width="450"/></p>
+<p> </p>
+<p><em>Cycling campaign</em></p>
+<p>As in the other two campaigns, Compass targeted SOV drivers in specific areas around Playa Vista for its cycling campaign.</p>
+<p>"The big barrier here was infrastructure. This is a car-centric community, so you've got to have the infrastructure to create new behaviours," said Gaul. Compass conducted a series of focus groups to better understand the experiences of people who were already cycling.</p>
+<p>"We had them draw on a map how they got to Playa Vista, and other routes that new cyclists could take," Gaul explained. From that, they honed in on what infrastructure would work best to encourage cycling.</p>
+<p>Another common barrier was not owning a bike. "A lot of programs assume someone owns one, which is often not the case, so we had to overcome that." Compass created a bike loaner program with a local bike shop that had recently opened in Playa Vista. New cyclists could try the behaviour to see if they liked it, without having to invest in a new bicycle. (<em>Building Motivation, Engagement and Habits Over Time; Overcoming Specific Barriers</em>)</p>
+<p><img alt="Promoting Bicycle Behavior" height="494" src="/userfiles/Image/Bike Loaner (travel behavior).png" width="450"/></p>
+<p>Comfort and hygiene were also cited by commuters as barriers. Despite shower facilities at many work sites, many commuters were reluctant to use them. Compass gave cyclists branded "Action Wipes" (large cleansing wipettes) that could be used in place of a full shower. They also hosted "lunch &amp; learns" and brought in registered trainers to educate people on all aspects of cycling. (<em>Overcoming Specific Barriers</em>)</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>All funding was provided by the Playa Vista property owners. The program is one of a number of community-wide amenities that they support through annual fees. Funding increases slightly as the community grows. Further, trip mitigation targets are not met, the TMA gets more resources to deliver interventions.</p>
+<p>"Brookfield had the foresight to arrange this," said Gaul. "Many TMAs spend a lot of time trying to track down money instead of trying to actually deliver programs. This fully pays for the TMA. It also means that the TDM services were subsidized by all the employers."</p>
+<p>The largest chunk of this budget went to intervention labor, at 66%; only 1% went for evaluation incentives; 12% was for the survey. The intervention incentives are about 21% of the program's budget.</p>
+<p><img alt="Playa Vista TDM Budget" height="357" src="/userfiles/Image/Budget.png" width="450"/></p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Compass was required by law to use California's regional framework, as laid out in their Rule 2202, <a href="http://www.aqmd.gov/docs/default-source/rule-book/support-documents/rule-2202/rule-2202-employee-commute-reduction-program-guidelines-(ecrp).pdf" target="_blank">Employee Commute Reduction Program Guidelines</a>. Among its requirements, the framework set guidelines for the survey instruments used in the campaigns.</p>
+<p>Campaign impacts were measured primarily through an annual commuter survey conducted in October, and gate counts at office parking garage entrances.</p>
+<p>We were required to have a 60% response rate, according to the regional evaluation framework," said Gaul. If an employer got a 65% survey response rate or better, Compass gave them $100. It also gave awards to specific employers at special annual presentations. For example, there were awards for the highest response rate, the lowest SOV rate, and the newbie award, “just to make it fun because it's a lot of hard work by everybody.”</p>
+<p>For employees, Compass provided small incentives during the survey week to get people excited and talking. It randomly distributed 100 five dollar gift cards throughout the week to people who completed the survey. In addition, if the worksite had over a 5% participation rate, someone at that worksite won a big prize.</p>
+<p>Average vehicle ridership (AVR) was measured by dividing the total number of employees arriving at the worksite in a given work week by the number of vehicles. Staff with the property owners tracked the gate counts.</p>
+<p>To gather additional information on participation and engagement, specific campaigns such as the transit campaign also used on-line trip reporting. Bike Month participants were also surveyed in late June 2016 and Culver CityBus Transit Pass users had their transit passes audited in July 2016 to validate impacts. </p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>From April to October 2015, peak time drive-alone mode share across the entire development decreased by 4.9%; it continued to drop in 2016.</p>
+<p><img alt="Impacts of the Travel Demand Management (TDM) Program" height="262" src="/userfiles/Image/Results1.jpg" width="450"/></p>
+<p>From April to October 2015:</p>
+<ul>
+<li>Carpool Trips increased by  12%  (to 9.5 % in 2015 from 8.5% in 2014)</li>
+<li>Biking Trips increased by  53% (to 2.6% in 2015 from 1.7 % in 2014)</li>
+<li>Transit Trips (rail, plane, bus) increased by 10% (to 4.4% in 2015 from 4% in 2014)</li>
+</ul>
+<p>The AVR for the 2015 evening peak hour was 1.34, a 13% increase compared to the AVR of 1.19 observed in 2014. It should be noted, however, that between April and October 2015, the commuter population of the area doubled. By 2016 it had increased to 1.37.</p>
+<p><img alt="Average Vehicle Ridership (AVR)" height="256" src="/userfiles/Image/Results2.jpg" width="450"/></p>
+<p><em>Average Vehicle Ridership during the peak PM period increased steadily towards the goal of 1.5. The orange start marks the beginning of the Compass program.</em></p>
+<p>Starting in April 2015, Compass enabled employees to self-report sustainable trips. Within a year, more than 20,000 trips had been reported, more than 65 tonnes of CO2 emission had been prevented, and commuters reported a collective savings of more than $85,000.</p>
+<p><em>Return on Investment:</em> It cost Compass $10,800 for each percentage point decrease in SOV behavior across the entire development.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Aaron Gaul<br/>
+Playa Vista Compass<br/>
+<a href="mailto:aaron@playavistacompass.com?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> aaron@playavistacompass.com<br/>
+</a>  310.929.5946</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned</strong></p>
+<p><em>Invest in good data</em></p>
+<p>Gaul said that having good data was key in Compass's campaigns.</p>
+<p>"Much of our evaluation was prescribed," said Gaul (Rule 2202). "We knew what we had to measure and that gave us a good foundation."</p>
+<p>Gaul said that data came from a few sources, including the city's commuter behaviour database, but primarily from the commuters themselves. Employee home locations were plotted so that organizers could see which campaign would work best for which commuters.</p>
+<p>"The biggest part was ensuring that we were managing the data correctly," said Gaul. "The strategies only worked when you had a lot of people providing the data and opting in."</p>
+<p><em>Let the commuter be your guide</em></p>
+<p>Unlike other transportation programs, Compass focused on a commuter's ability to do the behaviour, not the person's motivations.</p>
+<p>"We could work on motivation later, but if we focused on ability, it took less work," said Gaul. "The reality is that no matter where you are no one loves traffic. No one loves the cost of driving and everyone loves having more time in their day."</p>
+<p>Compass also learned from commuters who were already doing certain behaviours, like cycling.</p>
+<p>"We invited the people who were already doing it to lunch-and-learns to talk about their experiences," said Gaul. "If there were things that were impeding their ability to do the behavior, we had to come up with a solution."</p>
+<p>For example, Gaul said that many cyclists stopped biking each year when Daylight Savings Time started (and clocks were shifted an hour ahead) because it was too dark and they didn't feel safe. "That was a huge element that we had to address," he said. "We found ways to change that, including lighting some areas and equipping riders with lights. If they still wouldn't cycle, we focused instead on their secondary sustainable travel options, so they didn't fall back into being single-occupant vehicle drivers."</p>
+<p>Compass always gave participants an option to opt out. "We gave them an easy way to say, 'This isn't for me, but thanks for reaching out’" Gaul said. "That allowed us to respect the communication with them, overcome issues of privacy, and open a new door to talk about other options they might be interested in."</p>
+<p><em>Use existing programs to your advantage</em></p>
+<p>Gaul said some of the larger Playa Vista employers already had their own commuter incentive schemes, based on the regional framework. "If they were a big employer, they were already forced to do certain things.” Compass built on these efforts.</p>
+<p> </p>
+<p><strong>Landmark Designation  </strong></p>
+<p>The program described in this case study was designated in 2016.</p>
+<p>Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff, and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this case study consisted of:</p>
+<ul>
+<li>David Levinger from The Mobility Education Foundation</li>
+<li>Geoff Noxon from Noxon Associates</li>
+<li>JoAnn Woodhall from Translink</li>
+<li>Nathalie Lapointe from the Federation of Canadian Municipalities</li>
+<li>Phil Winters from the University of South Florida</li>
+<li>Ryan Lanyon from the City of Toronto.</li>
+</ul>
+<p>This case study was written in 2018 by Jay Kassirer and Sharon Boddy.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,449 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/school-programs-that-involve-the-family/">School Programs that Involve the Family</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+<li><a href="/en/tools-of-change/work-programs-that-influence-the-home/">Work Programs that Influence the Home</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p><span id="1675607945611S" style="display: none;"> </span></p>
+<ul>
+<li>SEMCOG (The Southeast Michigan Council of Governments)</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>AAA Michigan </li>
+<li>American Lung Association of Michigan </li>
+<li>ANR Pipeline Company </li>
+<li>BP Amoco </li>
+<li>City of Detroit </li>
+<li>Clean Air Action Corporation </li>
+<li>Consumers Energy </li>
+<li>DaimlerChrysler </li>
+<li>DTE Energy </li>
+<li>Detroit Regional Chamber </li>
+<li>East Michigan Environmental Action Council </li>
+<li>Equilon Enterprises LLC </li>
+<li>EQ Ñ The Environmental Quality Company </li>
+<li>Ford Motor Company </li>
+<li>General Motors Corporation Great Lakes Division</li>
+<li>National Steel Corporation </li>
+<li>International Union, UAW </li>
+<li>Macomb County </li>
+<li>Marathon Oil Company </li>
+<li>Metropolitan Detroit Landscape Association </li>
+<li>Michigan Consolidated Gas Company </li>
+<li>Michigan Corn Growers Association </li>
+<li>Michigan Manufacturers Association </li>
+<li>Michigan United Conservation Clubs </li>
+<li>Mobil Oil Corporation </li>
+<li>Oakland County </li>
+<li>SEMCOG </li>
+<li>Shell Oil Products Company </li>
+<li>SMART </li>
+<li>Southeast Michigan Health &amp; Hospital Council </li>
+<li>State of Michigan </li>
+<li>St. Clair County </li>
+<li>Texaco </li>
+<li>Wayne County</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>helped the Detroit area reduce ground-level ozone</li>
+<li>by 1998, 88% of households heard of the program, and of those, 88% took action as a result</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Ozone Action Program</h1>
+<p>In Southeast Michigan, the Clean Air Coalition runs a program to help reduce the formation of ground level ozone, which is a threat to environmental and human health and is one of the primary contributors to smog. The Ozone Action Program educates households and businesses, and encourages participation in voluntary ozone reduction activities. A key component of the program involves Ozone Action alerts which are issued when ozone levels are expected to exceed federal standards the following day.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The Clean Air Coalition was founded in 1994 by SEMCOG, the Southeast Michigan Council of Governments. They partnered with government, business (including auto companies and utilities), labour, transit, and environmental and health organizations, and used these collective resources to promote cleaner air in the Detroit region. Their particular focus was the reduction of ground level ozone. Before the Ozone Action Program started, SEMCOG was already working with the regulatory agency and local companies to reduce pollution, so the program had the support of "big names" from the beginning.</p>
+<p>The Clean Air Coalition originally consisted of 35 partners. There was strong participation from all of them in the beginning, as they sponsored events, created and distributed promotional materials, provided funding and expressed their support for the program visibly. When the program became well-known, there was less for them to do; they were less active but supported the program from the background, providing financial and in-kind support.</p>
+<p>The areas of coverage were the Detroit Metropolitan area, Livingston, Macomb, Monroe, Oakland, St. Clair, Washtenaw, and Wayne counties. The combined area had approximately 4.8 million residents.</p>
+<p>The Ozone Action season ran in concert with the ozone monitoring program in southeast Michigan. Monitoring occurred during the spring and summer months, and the season for Ozone Action Days began May 1 and ended on September 30.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The program objectives were:</p>
+<ol>
+<li>To attain and maintain the National Ambient Air Quality Standard (NAAQS) i.e. no days with higher than recommended ground level ozone.</li>
+<li>Public education as a preventive measure against increased ozone levels.</li>
+<li>Health benefits from decreased ozone levels.</li>
+</ol><!-- Objectives already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The Ozone Action Program had two components:</p>
+<ol>
+<li>Ozone Action Days which took place when high ozone levels were expected, and</li>
+<li>an outreach component which encouraged action throughout the season.</li>
+</ol>
+<p>Ozone Action Days were developed to inform the general public, employers, teachers and children that ozone levels were expected to exceed federal standards the following day. The Coalition organized Ozone Action Days when weather conditions were likely to combine with pollution to create concentrations of ground-level ozone that approached levels of concern regarding public health. Meteorologists at the Clean Air Coalition forecast Ozone Action Days according to a number of factors that included temperature, wind speed and direction, cloud cover, ultraviolet radiation, ozone transport from other regions, the previous days air quality, and expected emissions from regional sources. The Coalition expected approximately 10-12 Ozone Action Days each year.</p>
+<p>When meteorologists predicted elevated ozone levels approaching air quality standards for the following day, a message was sent to the coordinator at the Clean Air Coalition. The coordinator sent out press releases to all media in the area stating that the next day was an Ozone Action Day. As well, a fax or email was sent to the employers and other participants. This message contained a reminder to take action against the formation of ground level ozone through various means eg. Ride the transit, bike etc (<a href="/en/tools-of-change/prompts/">Prompts</a>).</p>
+<p>The Michigan Department of Transportation (Detroit Office) displayed advisories of the upcoming Ozone Action Days on digitized highway signs. Television stations linked the Action Day announcements with their weather forecasts for the region, and radio stations included the notifications with their regular broadcasts (<a href="/en/tools-of-change/mass-media/">Mass Media</a>).</p>
+<p>Near the beginning of the ozone season, a reminder that the Ozone Action season was starting was sent to the media, employers, and other participants. Participating employers and coalition members were offered posters, magnets and pamphlets to help their employees understand the program, and what to do on Ozone Action days. These materials included instructions to share the information with friends, relatives and coworkers (<a href="/en/tools-of-change/word-of-mouth/">Word of Mouth</a>). Sunglasses, sunscreen, and frisbees featuring the Ozone Action logo were sent to the media to help them remember the program when they used the items throughout the season.</p>
+<p>The Coalition developed educational materials that encouraged people to participate in activities to decrease the production of ground level ozone every day. A very strong link was made, in the educational materials, with ozone and the harm it could cause to humans and the environment if levels exceeded the federal standards (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>). The Coalition stressed the importance of participating in decreasing ozone emissions at all times, and especially on Ozone Action Days, when ground level ozone approached unacceptable limits. The messages in the outreach program were proactive and preventative: If you do these things the air will be cleaner and The air could be cleaner and there are many small things that can be done to be part of the solution.</p>
+<p>The information was passed on to the various targeted groups by:</p>
+<ul>
+<li>Creation and dissemination of public education materials</li>
+<li>Sending education materials to participating employers</li>
+<li>Television and radio interviews and shows</li>
+<li>Newspaper articles</li>
+<li>Public education booths at community events</li>
+<li>Workshops for schools, industry and the public</li>
+<li>Internet Website</li>
+<li>Elevator notice boards on business complexes</li>
+<li>Writing articles (eg. Chamber of Commerce, AAA and the Detroiter magazine)</li>
+<li>Press releases sent to all TV, radio and newspapers on Ozone Action Days (<a href="/en/tools-of-change/mass-media/">Mass Media</a>)</li>
+<li>Hotline set up for the general public</li>
+</ul>
+<p><strong><em>The General Public</em></strong> <br/>
+The Coalition distributed information to the general public by various methods including a hotline number, radio, TV, Internet and newspapers. The public was informed of the Ozone Action Program as well as Clean Car Care, Fast Facts on Clean Air, Action Tips, and a list of <a href="#list">twenty-five activities</a> that would help improve air quality at all times.</p>
+<p>To encourage participation in the program, the general public was initially given free transit rides from one of the transit companies (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>). This incentive was later discontinued and, as of 2000, the coalition and the transit companies had not discussed other methods of promoting the program.</p>
+<p><strong><em>Employers</em></strong> <br/>
+The Ozone Action Program was marketed to businesses as a way to draw the attention of millions of consumers, and a way of marketing their image as good corporate citizens. Having clean air was promoted as being in the interest of business because when ozone levels were kept within federal health standards, costly mandates were avoided (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>).</p>
+<p>To make involvement easy for businesses, organizations and governments, they were invited to register for the Clean Air Coalitions free fax Broadcast Notification System. The notification alerted groups about the upcoming Ozone Action Day. It was promoted as step one in helping to clear the air and in identifying businesses as good neighbours who share community concerns about air quality, good health and the environment. Companies were given public recognition of their participation in the Ozone Action Program through the local media, usually when Action Days took place.</p>
+<p>In 2000, approximately 500 employers in the Detroit region participated by educating and informing their employees about Ozone Action (<a href="/English/ToolsofChange/default.asp?Section=Work">Work Programs that Influence the Home</a>). Employers participating in the program made a commitment, which percolated down to their employees. Businesses were asked to:</p>
+<ul>
+<li>Designate a workplace co-ordinator for the Ozone Action Program</li>
+<li>Subscribe to the notification system</li>
+<li>Alert colleagues and coworkers by 2:30pm the day before the Ozone Action day using their internal communication systems (email, PA, online bulletin boards, voice-mail where appropriate), displaying Ozone Action announcement tent cards or any way the coordinator saw fit to spread the word.</li>
+</ul>
+<p>Businesses were also encouraged to do the following actions (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>, <a href="/en/tools-of-change/prompts/">Prompts</a>):</p>
+<ul>
+<li>Send out a letter from the CEO that alerted employees and underscored their organizational commitment to clean air</li>
+<li>Print articles in the employee newsletter that prepared employees to take specific actions on Ozone Action days and showed support of the community-based program (<a href="/en/tools-of-change/mass-media/">Mass Media</a>);</li>
+<li>Place counter cards at key locations as effective reminders when the following day was an Ozone Action Day and emission reduction activities were encouraged;</li>
+<li>Place posters in cafeterias or rest areas to keep the Ozone Action message in front of employees throughout the Action season. Tip cards helped people plan their emission-reduction activities;</li>
+<li>Schedule an Ozone Action display in lobbies or cafeterias;</li>
+<li>Make Ozone Action days casual days as an incentive/reward for employees to practice Ozone Actions;</li>
+<li>Re-arrange work schedules by using flex-time or compressed work weeks;</li>
+<li>Encourage conference calls instead of driving to meetings on Ozone Action Days;</li>
+<li>Place bumper stickers on fleet vehicles and offer stickers to employees (<a href="/en/tools-of-change/word-of-mouth/">Word of Mouth</a>);</li>
+<li>Encourage the use of public transportation on Ozone Action Days;</li>
+<li>Subsidize or sell employee public transit passes at the office. Some employers offered free or discounted transit fares to their employees (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>);</li>
+<li>Provide a bike rack for employees or allow employees to keep their bicycles indoors; and</li>
+<li>Create a special lunch discount in the cafeteria to encourage lunch on-site (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>).</li>
+</ul>
+<p><strong><em>Educators</em></strong> <br/>
+Teachers were encouraged to bring Ozone Action information into the classroom. The Ozone Action website provided a free resource kit for teachers of elementary and secondary school students. The kit was developed under the guidance of a task force of educators from the seven-county region around Detroit. Teachers incorporated the Program into the regular curriculum. The classroom package was available online at the <a href="http://www.semcog.org/ozoneaction/trks.html">Ozone Action website</a>. Teachers who did not have Internet access could request them by sending postcards, and the coalition printed the materials and mailed them. Kits were available for students at three levels, from kindergarten to Grade 12, and contained age-appropriate lessons and experiments.</p>
+<p>An educational compact disc, called the Spatially Plotted Ozone Tracking System (SPOTS) was also available. The curriculum was goal oriented and was designed to teach children about the formation and transport of ozone. An information booklet on SPOTS was provided online for teachers to augment the curriculum. Included in S.P.O.T.S. was a comparison study of ozone levels in southeast Michigan to California, the Great Lakes Region and a number of northeastern states.</p>
+<p>The Coalition reached the education community by attending the Science Teachers Conferences and seminars in the Detroit region. It promoted S.P.O.T.S. as a tool that helped children with critical thinking processes and aided them in making informed decisions about how their actions affected human health and the environment.</p>
+<p><strong><em>Children</em></strong> <br/>
+The Ozone Action Program website contained a section for children, which was available in brochure format as well. The website had suggestions for ozone action and easy experiments for children to try at home or in school. The site gave information on substances that produce hydrocarbons (which contribute to ozone formation) and suggested that children survey their own homes for substances that could potentially produce ozone.</p>
+<p><strong><em>Partners as Ambassadors</em></strong> <br/>
+The coalition asked its partners to act as ambassadors for the program. For example, a utility and other companies worked with their suppliers and contractors (especially groundskeeping crew and transportation fleet contractors) to follow the suggested actions for ozone reduction such as postponing lawn maintenance and fleet refuelling until the evening, or another day. One company had a 10-point list of actions that it suggested to its plants. The utility companies added information on ozone reduction and the Ozone Action Program to their billing statements. An oil company provided program brochures at its 300 gas stations in the area. A media company donated airtime for public service announcements. An oil company developed and marketed low vapour gasoline (RVP) that helped reduce ozone pollution.</p>
+<p>To motivate people to participate in Ozone Action Days, the programs messaging informed people that ground-level ozone was harmful to their health. The issue of ground-level ozone was a local, real-life problem that people were told they could help prevent (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>, <a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The program was funded by CMAQ (Congestion Mitigation Air Quality) grant through the Michigan Department of Transportation, and private contributors. It had an annual budget of US$150,000. There was one staff member at the Coalition who worked on the program part-time.</p>
+<p>In 1994-1996, the program received a CMAQ grant of $200,000, and actually cost $240,000.</p>
+<p>Ozone Action Program Budget for 1994-1996</p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td><strong>Expenses</strong></td>
+<td><strong>Amounts</strong></td>
+</tr>
+<tr>
+<td>Salaries</td>
+<td>$40,928</td>
+</tr>
+<tr>
+<td>Subcontracts</td>
+<td>$61,753</td>
+</tr>
+<tr>
+<td>Travel</td>
+<td>$610</td>
+</tr>
+<tr>
+<td>Supplies</td>
+<td>$45,639</td>
+</tr>
+<tr>
+<td>Other expenses (including advertising)</td>
+<td>$14,782</td>
+</tr>
+<tr>
+<td>Fringe benefits</td>
+<td>$18,707</td>
+</tr>
+<tr>
+<td>Support services</td>
+<td>$30,337</td>
+</tr>
+<tr>
+<td>Indirect costs</td>
+<td>$27,249</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>$240,000</td>
+</tr>
+</tbody>
+</table><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>A market research company was commissioned by SEMCOG to conduct a study of public awareness. Southeast Michigan households were polled randomly by phone, and asked 15 questions about awareness and opinion of the program, participation and action, and demographics. Most of the questions were multiple choice. The results were compared to those of previous, similar polls. Polls were conducted in July 1994, shortly after the program began, and again in July 1995 and September 1998.</p>
+<p>The S.P.O.T.S. tool for teachers was rated by educators. The survey asked for suggestions for improving the program.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Feedback was included in this program, through natural consequences. When high ozone levels were predicted, participants were informed the same day whether they had succeeded in keeping ozone levels within acceptable limits or not.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>According to the Coalition, Ozone Action Days helped the Detroit area reduce ground-level ozone.</p>
+<p>The Coalition considered the public awareness campaign the best indicator of the success of the project. The following results were from the random public awareness and opinion telephone surveys:</p>
+<table>
+<tbody>
+<tr>
+<td> </td>
+<td><strong>1994</strong></td>
+<td><strong>1995</strong></td>
+<td><strong>1998</strong></td>
+</tr>
+<tr>
+<td><strong>Number of households polled</strong></td>
+<td>604</td>
+<td>775</td>
+<td>600</td>
+</tr>
+<tr>
+<td><strong>How many have heard of Ozone Action?</strong></td>
+<td>52%</td>
+<td>78%</td>
+<td>88%</td>
+</tr>
+<tr>
+<td><strong>How many of those have taken action as a result?</strong></td>
+<td>69%</td>
+<td>82%</td>
+<td>88%</td>
+</tr>
+<tr>
+<td><strong>Of those who knew about the program, how many used alternative transportation?</strong></td>
+<td>18%</td>
+<td>8%</td>
+<td>4%</td>
+</tr>
+</tbody>
+</table>
+<p>The Coalition was very pleased with the support from local business. The coordinator at the Coalition received an increasing number of requests for educational materials.</p>
+<p>The S.P.O.T.S. tool for teachers was rated by educators. Ninety-eight percent of those who used the program found it a very useful tool for teaching about ground level ozone.</p>
+<p>A number of cities across the United States adopted the Ozone Action Program. The coalition considered this a sign of the program's success.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Anita Blasius 	<br/>
+Clean Air Coalition of Southeast Michigan 	<br/>
+660 Plaza Drive Suite 1900 	<br/>
+Detroit Michigan USA 48226 	<br/>
+<br/>
+Phone: 313-324-3402 	<br/>
+Fax: 313-961-4869 	<br/>
+Ozone Action Hotline: 1-800-66-33-AIR 	<br/>
+email: <a href="mailto:steinberg@semcog.org">steinberg@semcog.org</a> <br/>
+Website: <a href="http://www.semcog.org.ozoneaction.html">www.semcog.org.ozoneaction.html</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned/Future Recommendations</strong></p>
+<ul>
+<li>The support from the press was very strong and was considered crucial to the success of the Ozone Action Days promotion.</li>
+<li>Also suggested was a scientific study to analyse all trend data on the overall change in air quality since the inception of the program.</li>
+<li>It was recommended that more surveys be done of the behavioural changes in residents to see if there was an increase in overall participation and awareness of the program.</li>
+<li>Also recommended was to utilize the coalition partners in a more productive manner in the promotion of the program.</li>
+</ul>
+<p><a name="list"><strong>Twenty-Five Things You Can Do To Reduce Ozone Production</strong> <br/>
+<br/>
+1. Reduce your automobile use by biking, walking, car or van pooling. 		<br/>
+2. When driving, avoid traffic congestion; plan an alternative route to work so you can avoid traditional stop and go rush-hour traffic. 		<br/>
+3. Avoid long periods of unnecessary idling. Sitting in place for a while at the drive-through window or waiting for a friend? Turn your engine off, saving fuel and keeping air cleaner. 		<br/>
+4. Combine trips whenever possible. Go from home to the bank to the store to the post office. Stopping at home in between errands means more cold starts and more emissions. 		<br/>
+5. Save money. Reduce your fuel consumption (and associated emissions) by maintaining your vehicle to manufacturers' specifications. A well-tuned car with properly inflated, balanced and rotated tires uses less gasoline and emits fewer pollutants than the alternative. 		<br/>
+6. Avoid spilling gas when you are at the fuel pump. Avoid over filling the tank and, when you're finished, avoid spills by carefully removing the hose from its stand and giving it a slight "jiggle" before removing it and carefully placing it back in its place. The last drops will end up in your tank where they belong. 		<br/>
+7. Make sure your gas caps on your vehicles, gas cans and maintenance equipment are replaced when missing or when their threads are stripped. 		<br/>
+8. When going on a trip, drive your newest car. Chances are it is equipped with better emission controls than your older model. 		<br/>
+9. Park in the shade to avoid evaporative emissions from your sun-heated gas tank while parked. 		<br/>
+10. Pick one day a week to leave your car at home. If only 1 percent of America's car owners did this, it would save millions of gallons of gasoline a year and keep a good deal of pollutants out of the atmosphere.</a></p>
+<p><a name="list"><strong><em>On the Homefront</em></strong> <br/>
+11. Conserve energy at home, at work, everywhere. In the long term, it helps to reduce the emissions associated with energy production. 		<br/>
+12. Avoid using oil/solvent based paints, degreasers or lighter fluids. 		<br/>
+13. Opt for water-base cleaning and painting products whenever possible. 		<br/>
+14. Apply paint with rollers and brushes instead of sprays; it cuts down on fumes. 		<br/>
+15. Enjoy summer barbecues, but avoid using charcoal lighter fluid. 		<br/>
+16. Consider natural gas, propane or electric grills as alternatives next time you replace your backyard or patio barbecue. 		<br/>
+17. Maintain your propane tanks according to specifications. Periodic check ups and maintenance ensure there are no leaks. 		<br/>
+18. Consider manual or electric-powered lawn and garden maintenance equipment when replacing your gasoline-powered polluters. 		<br/>
+19. Treat your personal water craft and other leisure items just like your cars. Perform proper maintenance and avoid long periods of idling. You'll reap the rewards of cost-efficiency and clean air.</a></p>
+<p><a name="list"><strong><em>At Work</em></strong> <br/>
+20. Try tele-commuting. If you work from home, you save yourself the commute and clear the air. 		<br/>
+21. Take advantage of teleconferencing technologies. Why drive to a meeting when you don't have to? 		<br/>
+22. Ask your employer to install a bike rack for employees who wish to ride to work. 		<br/>
+23. Brown bag it at work instead of driving to a restaurant for lunch. 		<br/>
+24. Encourage your employer to buy and maintain fleets of energy efficient cars and trucks. 		<br/>
+25. Tell your friends, family and coworkers what you are doing and why. Education and small modification of activities will do wonders for keeping air cleaner in your corner of the world. 		<br/>
+</a></p>
+<p><a name="list"><strong>Related Programs</strong></a></p>
+<p><a name="list">The Ozone Action Program was partnered with another program, The Alternative Commute Program. This program encouraged people to use others forms of transportation for business and pleasure, such Tele-commuting, bike, car-pool, and transit to promote clean air and healthier lifestyles. SEMCOG staff ran both programs and the programs were promoted together at events and other appropriate opportunities.</a></p>
+<p><a name="list">Last updated: July 2004</a></p>
+<p> </p>
+<p>This case study was written in 2000 by Lauren Sandiford.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

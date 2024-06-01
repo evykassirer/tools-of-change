@@ -1,0 +1,198 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>BEST</p><!-- Initiated already contains li tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>BEST's Bicycle Valet</h1>
+<p>Want to encourage more people to cycle to special events instead of taking their cars? Here's a great way to make it easier for them to do so. BEST's Bicycle Valet, operating in Metro Vancouver, provides free and safe special-event parking for bicycles and other modes of active transportation, allows event patrons to leave their  helmets, panniers and other cycling apparel, and offers cycling route maps, transit maps and other information about active transportation. The service is paid for by the event organizers and sponsored by Travelsmart.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The Bicycle Valet provides free and safe special-event parking for bicycles and other modes of active transportation, which helps encourages patrons of concerts, farmers markets, street parties and other events to sustainably reach their destinations. The service also allows event patrons to leave their helmets, panniers and other cycling apparel, and offers cycling route maps, transit maps and other information about active transportation. It is operated by BEST (Better Environmentally Sound Transportation)</p>
+<p>Free to the user, costs are borne by event organizers looking to “green” their events and increase their triple bottom line.  Providing ample opportunities for sponsorship and advertising, both onsite and online, the Bicycle Valet is a developing social enterprise that advocates for sustainable transportation through a solutions based approach.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Extensive research was done on existing Bicycle Valet programs in San Francisco, Chicago, Washington DC and other places. Local market research established the need for a program and identified branding and service parameters with the highest likelihood of success, considering market conditions, competition, price barriers, and overall social and institutional support.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The key strategy and tactic has been to engage event organizers and management companies, and stakeholders such as municipalities and the transit authority, illustrating the positive benefits to them in terms of reduced traffic congestions, reduced clutter from parked bicycles as well as environmental impacts and a boost to PR and company image. Concurrently, BEST built a broad cyclist user base and database of supporters by offering contest prizes to cyclists who sign up.</p>
+<p>Beginning as an adjunct to another program the service has grown exponentially year to year in the numbers of event days serviced and the number of bikes parked. For example in 2009 BEST parked about 7,000 bikes at 38 events; in 2010, about 13,500 at 80+ events (including Winter Olympic venues); and in 2011, over 22,000 bikes at about 150 events. User surveys indicates that a good portion of users are choosing to ride to the event because they know there is safe and secure bicycle parking available.</p>
+<p><strong>Overcoming Barriers </strong></p>
+<p><strong> </strong><em>Event participants:</em> The approach was developed to help overcome barriers such as inconvenience and fear of bicycle theft, so that more event participants are willing to leave their cars at home and cycle to events instead.</p>
+<p><em>Event organizers:</em> The main barrier initially was in events not recognizing the need for the service, as well as budget concerns. These have been reduced by delivering a highly visibly, professionally run service with each event feeding into greater demand for future events. BEST strives to work with community organizations to reduce costs by using a combination of paid staff and volunteers, and has targeted professional event management organizations who recognize the value of and need for the service and are cognizant of the costs of delivering excellent service.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Operating since 2006 with start-up funding from the City of Vancouver and TransLink, to help cover capital and initial operating costs, the Bicycle Valet has grown into a cost-recovery operation. The costs are paid for by the event organizers.</p><!-- Financing already contains P tags.-->
+<h2>Results</h2>
+<p>By January 2012, the service had parked over 40,000 bicycles, with 22,000 parked in 2011 alone.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p><strong>BEST</strong></p>
+<p>Stephanie Williams<br/>
+stephanie.williams@best.bc.ca<br/>
+(604)-669-2860</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p> This case study was written in 2013 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

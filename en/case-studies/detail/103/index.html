@@ -1,0 +1,268 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>City of Barrie Municipal Works Department</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Ontario Clean Water Agency</li>
+<li>Ontario Ministry of Environment</li>
+<li>Barrie Public Utilities Commission (PUC)</li>
+<li>Green Community Initiative</li>
+<li>Environmental Action Barrie</li>
+<li>Contractors</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Estimated total savings of 1,782,500 liters per day</li>
+<li>Water consumption was reduced by an average of 62 litres per day per person</li>
+<li>14,200 Ultra Low Flow toilets were installed</li>
+<li>The Citys $3.1M program investment translated into a net deferral of $18.7M for 7 years</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Barrie Water Conservation Program</h1>
+<p>The City of Barrie, Ontario has deferred millions of dollars in waste water and water supply capital expenditures with its retrofit water conservation program. The City supplied subsidized ultra low flow toilets, showerheads and aerators to Barrie residents over a two-year period.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>In the 1990s, Barrie, Ontario, located on Lake Simcoe, 80 kilometres north of Toronto, was one of Canada's fastest growing communities with a population of 90,000 (expected to reach 185,000 by 2021). Consequently, it had a rapidly growing demand for water and wastewater systems. By 1994, average daily wastewater flows had reached 37,300 cubic metres (nearly 80% of the systems capacity) and the City was faced with a $41M facilities upgrade/sewer infrastructure expansion to accommodate future growth.</p>
+<p>The Barrie Public Utilities Commission (PUC) provided the entire City's water through groundwater wells. The projected cost of developing a new surface water supply on Kempenfelt Bay to meet the increased demand was approximately $27M, and construction was scheduled to start in 2000. The City was faced with having to spend $68M on water supply and sewerage over the 10 years from 1994, a cost of over $750 per resident.</p>
+<p>The Municipal Works Department conducted an environmental assessment of the sewerage and water supply problems and discovered that, by implementing a conservation strategy, they could postpone most of their capital expenditures by 10-25 years and defer interest payments on the necessary borrowings. A plan to install low flow toilets and showerheads to 15,000 homes, to reduce both wastewater flows and water usage, was developed in partnership with the Ontario Clean Water Agency and the Ministry of Environment .</p>
+<p>The program proved beneficial, not only to the City but also to residential and industrial water users, as conservation savings were reflected in their metered water charges.</p>
+<p>As a result, only one upgrade was required over the 1995 to 2001 period - to handle the increased discharges of solids associated with population growth. That upgrade replaced the existing chlorination system with an ultra violet light disinfection system, which reduced the concentration of chlorine derivatives into Kempenfelt Bay and Lake Simcoe. Although the cost of maintaining the new system was higher than the chlorine system, it was only about 0.5% of the total operating and maintenance costs.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The City set a goal to save 50 litres of water per consumer per day in 15,000 households, about 55% of Barrie's 1994 housing stock by February 1999. This translated into about a 5.5% reduction in average day flows. It also wanted to defer major capital expenditures for 3-5 years.</p><!-- Objectives already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The program focused on replacing standard showerheads and toilets in existing homes with ultra low flow (ULF) ones. These devices reduced water demand and wastewater flow as there was less water flushed through each homes system. The ULF toilets, approved by the Canadian Standards Association, used 6 litres per flush instead of the typical 20 litres, while the low flow showerheads reduced flow from 16-20 litres per minute to 9.5 litres per minute while still delivering optimal water pressure.</p>
+<p>To offset installation costs (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>), the City developed a list of contractors who agreed to a set price for each installation: $53 for one ULF toilet and $85 for two. Contractors were asked to bid on:</p>
+<ol>
+<li>The cost to install one, two or three toilets in a single family home,</li>
+<li>The cost to install one showerhead and two aerators in a single family home, and</li>
+<li>The cost to install 1-10, 11-25, 26-50 and 50+ toilets and the cost to install the same number of showerheads in multi-residential buildings.</li>
+</ol>
+<p>The lowest tender then gave that contractor exclusive rights to a number of multi-residences and/or single-family homes.</p>
+<p>Specifications for the materials required were provided, so that householders were given the option of installing the devices themselves or using a qualified plumber, then notifying the City once the work was completed.</p>
+<p><strong>Promotion</strong></p>
+<p>The program was advertised through newspapers, permanent displays at home shows and shopping malls, and inserts posted to consumers with their water bills (<a href="/en/tools-of-change/mass-media/">Mass Media</a>). The Green Community Initiative and Environmental Action Barrie (non-profit organisations) also promoted the program.</p>
+<p>The promotional material included details of the different models of ULF toilets, shower heads and aerators available, and asked consumers to contact the City for more information about joining the program. It was also explained that if the program did not conserve a sufficient amount of water, the City would be faced with expensive additions to the water pollution control plant and possibly an additional water treatment centre, all of which could raise water rates (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>). The program was open to all Barrie residents.</p>
+<p>The City sent information kits to those householders and landlords who inquired about the program. The kits included a list of eligible water-saving devices, program guidelines, and a list of plumbing contractors who were successful in the tendering process.</p>
+<p>An energy/water/waste audit was conducted on some of the homes to ensure that the ULF toilets and showerheads were needed and to set a baseline for later comparisons.</p>
+<p>A rebate program was also developed. The City offered householders a $145 rebate per toilet, which meant that most toilets were free to the homeowner. Any toilet upgrade costs above the $145 rebate were the responsibility of the homeowner. Low flow showerheads were also offered at a rebate cost of $8 each (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives</a>). The householder would pay the bill for the toilet(s) and showerhead(s) and then mail the receipt to the City for the rebate. Householders covered the cost of installation.</p>
+<p>For a one-time investment of between $53 for one toilet or $85 for two (which could be paid for with interest-free instalments on their water bill <a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>), the householder could expect an ongoing reduction in their water charges. The reduction in the bill quickly offset their small investment.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>A partnership including the City, the Ontario Clean Water Agency (OCWA) and the Ministry of Environment covered materials and program administration costs. OCWA provided $1.1 million, the City provided $2 million, and other sources contributed the remaining 0.6 million. Ontario Hydro, Consumers Gas, Environmental Action Barrie, the PUC, and property owners provided additional support. The breakdown of costs was 22% administration including monitoring and evaluation ($806,825), 62% for fixtures and rebates ($2,305,221) and 16% for residents ($604,137) for installation. The cost per household was $323 total (11,500 households) $270 by government and $53 by residents.</p>
+<p>From the start of the program in early 1995 to the end of the program in February 1999, $3.7M was spent assisting 11,500 households. Approximately 62% ($2,305,221) of the total costs went to fixtures and rebates for the toilets and showerheads, 22% ($806,825) to program administration and delivery costs (including monitoring and evaluation), and 16% ($604,137) to homeowner costs associated with fixture installations. An average of 1.4 toilets and 1.6 showerheads were installed per household at a total program cost of just under $323 per household. Of this amount, Government agencies contributed $270 of this amount and residents themselves paid the remaining $53.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The success of the program was gauged using five parameters:</p>
+<ol>
+<li>The number of households that joined the program.</li>
+<li>The amount of water consumed before and after the installation of the toilets and showerheads. Water consumption in 1,866 households was compared for six months after the installations with rates prior to installation. A further, more detailed analysis was done on a sample of 15 households using in line water metering to obtain a water use profile for the house from all water using fixtures. This was done for one to two weeks prior to the installation and again for one to two weeks after installation.</li>
+<li>The wastewater flow reductions estimated from water consumption savings.</li>
+<li>The public's reaction to the program. Follow-up interviews with randomly selected households were conducted, and householders were asked about the performance of the toilets, the quality of the installation work, if the program guidelines were easy to follow, and why they participated in the program.</li>
+<li>The cost effectiveness of the program as measured by net deferral of capital expenditure attributable to the program.</li>
+</ol><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>The City placed newspaper advertisements thanking participants for achieving the goals, but did not tell them how much water had been saved. For consumers, however, the program's success was evident in their lower water bills. The estimated water saving per household was about 56 cubic meters, an annual saving of about $55. The average cost of the program to the householder was $53, representing a payback of less than one year and annual savings of $55 thereafter.</p>
+<p>In addition, the deferral of the infrastructure costs meant that householders avoided a rate increase that would have been necessary to pay for those works.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>By February 1999, a total of 11,500 households (over one third of the 1994 housing stock) had joined the program, and 14,200 ULF toilets had been installed. The follow-up interviews with householders showed exceptionally high approval ratings for both the administration of the program (90% satisfied or better) and the ULF toilets (93% satisfied or better).</p>
+<p>Reduction in water consumption was estimated by analysing actual consumption in 1,866 of the recruited households before and after installation of the fixtures. The results showed that water consumption was reduced by an average of 62 litres per day, per person, 12 liters (24%) over the goal of 50 litres per day per household, with an estimated total savings of 1,782,500 liters per day or 1,782 cubic meters per day.</p>
+<p>The reduction in wastewater flow was more difficult to measure as some of the water reduction was due to the elimination of lawn watering in the colder months. Allowing for this, it was estimated that wastewater flow was reduced by 55 litres per day per household. Of the households involved, it was estimated that wastewater flow was reduced by 1,335 cubic metres per day.</p>
+<p>The effluent quality upgrades under way in 1998 at the WPCC were expected to cost about $19.2M of the total projected cost of $41M. The cost of a new UV disinfection system represented about $0.5M of this total, and was expected to cost approximately $15,000 per year in operating costs. In addition, the maintenance costs were higher than with the old chlorine system, requiring 20 person-hours per week compared to 3 person-hours per week for chlorine. These costs, however, represented only about a 0.5% increase in the total operating and maintenance budget.</p>
+<p>The projected costs associated with wastewater flow increases were $21.8M. The City's $3.1M program investment, therefore, translated into a net deferral of $18.7M for 7 years. The projected cost of a new water filtration plant on Kempenfelt Bay, an additional $27M, has also been deferred seven years.</p>
+<p>The deferral of site works for both the WPCC and new water filtration plant meant deferral of the disruption to both the aquatic and terrestrial environment that construction would have caused. The program also meant the deferral of a possible disruption to water levels and water flows in Kempenfelt Bay and Lake Simcoe that the water filtration plant may have caused.</p>
+<p>The UV disinfection system has eliminated the discharge of chlorine and its derivatives into the bay, and bacteriological treatment of the waste has been improved.</p>
+<p>The OCWA calculated that 825 jobs, over and above those that would have been created by the infrastructure program, have and will be created by the labour-intensive nature of the water conservation program.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>For more information on the program</p>
+<p>Green Industry Office <br/>
+135 St. Clair Avenue West, 5th Floor <br/>
+Toronto, Ontario, M4V 1P5 <br/>
+Tel: 416-314-7898 <br/>
+Fax: 416-314-7919 <br/>
+E-mail: <a href="mailto:defoebr@ene.gov.on.ca">defoebr@ene.gov.on.ca</a> <br/>
+Internet: <a href="http://www.ene.gov.on.ca">www.ene.gov.on.ca</a></p>
+<p>Mr. Barry Thompson <br/>
+City of Barrie <br/>
+70 Collier Street (Box 400) <br/>
+Barrie, Ontario, L4M 4T5 <br/>
+Tel: 705-739-4220 ext 4557 <br/>
+Fax: 705-739-4247 <br/>
+Email: <a href="mailto:BaThompson@city.barrie.on.ca">BaThompson@city.barrie.on.ca</a></p>
+<p><strong>The Writer</strong></p>
+<p>This case study was written by Duncan Reilly. Duncan, who is based in Adelaide, South Australia, writes in a variety of styles from commentary to factual, from commercial to technical. Duncan may be contacted at <a href="mailto:duncanreilly@duncan-reilly.com">duncanreilly@duncan-reilly.com</a> and samples of his work and CV are available at <a href="http://www.duncan-reilly.com">www.duncanreilly.com</a>.</p>
+<p>Funding for the addition of this case study was generously provided by the Government of Canadas Climate Change Action Fund, Suncor, Syncrude, Enbridge Consumers Gas and TetraPak Canada.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Last updated: July 2004</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

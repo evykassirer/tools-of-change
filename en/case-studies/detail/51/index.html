@@ -1,0 +1,416 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Toronto City Council</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Enbridge Consumers Gas</li>
+<li>The Toronto Atmospheric Fund</li>
+<li>Toronto Hydro</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Pay-back period: 3-10 years</li>
+<li>Negative cost to city</li>
+<li>CO2 emissions: reduced by 100 000 tonnes per year</li>
+<li>Buildings retrofitted by mid-1999: 155</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Better Buildings Partnership</h1>
+<p>Toronto's Better Buildings Partnership (BBP) involves comprehensive energy efficiency retrofits and building renewal initiatives for buildings in the public, non-profit and private sectors. Innovative financing strategies are implemented and energy and water technologies are bundled together with other building renewal measures to allow for project flexibility.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The City of Toronto, Canada's largest municipality, was committed to promoting and implementing energy efficiency and building renewal programs and other initiatives in order to address the challenge of global warming and its climate change impact. In January 1990, Toronto made an official commitment to reduce the city's net CO2 emissions by 20 percent relative to 1988 levels by the year 2005. The newly amalgamated City of Toronto reaffirmed its goal, readjusting the base year to 1990 to align itself with the Kyoto Protocol.</p>
+<p>To help the city meet its greenhouse gas reduction goal, the Toronto Atmospheric Fund (TAF) was established in 1992, with an endowment of $23 million from the sale of city property. It was managed by a board of directors made up of city councilors, city staff and citizens who worked to ensure that the fund achieved its goals. Loans were generated from the Toronto Atmospheric Fund and provided to community groups, government organizations and businesses, which worked in partnership with TAF to reduce emissions. The funds were used to finance projects that:</p>
+<ul>
+<li>Saved energy and money</li>
+<li>Cut emissions that affect climate change</li>
+<li>Created jobs</li>
+<li>Made Toronto a healthier place to live and work</li>
+</ul>
+<p>The consulting firm Conservation Strategies Consortium developed the original concept for the BBP, in partnership with:</p>
+<ul>
+<li>Enbridge Consumers Gas</li>
+<li>The Toronto Atmospheric Fund</li>
+<li>Toronto Hydro</li>
+<li>Ontario Hydro</li>
+</ul>
+<p>A broad range of stakeholders were consulted, including:</p>
+<ul>
+<li>The International Council for Local Environmental Initiatives (ICLEI)</li>
+<li>Financial institutions</li>
+<li>Building owners and managers</li>
+<li>The environmental community</li>
+<li>Trade unions</li>
+<li>Community groups</li>
+<li>Equipment manufacturers</li>
+<li>The construction energy/water efficiency service delivery industries</li>
+</ul><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The purpose of the Better Buildings Partnership was to address the challenge of global warming and its climate change impact through energy efficiency and building renewal programs and other initiatives. The following objectives were set for the Toronto pilot project:</p>
+<ul>
+<li>40,000 tonnes per year in GHG reductions</li>
+<li>900 to 1500 person years in jobs</li>
+<li>$3 million per year in building operating cost reductions</li>
+<li>$30 million in investment levered by the program</li>
+<li>100 buildings retrofitted (1% of Toronto builidings)</li>
+<li>5% return on the city's investment</li>
+</ul>
+<p>For the full-scale program, the goal became to retrofit all Toronto buildings.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<ul>
+<li>Prior to the creation of the BBP, city staff had determined through their contact with building owners that there would be interest in participating in such a program.</li>
+<li>The City of Toronto Conservation Strategies Consortium conducted preliminary research to determine existing conditions and identify needs.</li>
+<li>Feasibility audits of participating buildings were conducted to determine the potential monetary and energy costs and savings of the proposed renovations. The energy savings were converted to reductions in CO2 using conversion factors. Goals were set based on the results of the feasibility studies.</li>
+<li>The pilot program provided the background research upon which the full-scale program was based.</li>
+</ul><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The City of Toronto began by retrofitting its own buildings. In 1996, the first non-government building of the BBP pilot project (Metro Toronto YMCA) was retrofitted. The first major private sector building - First Canadian Place - was retrofitted in 1997. The full-scale BBP project began in 1999, with the participation of the Toronto Dominion Centre.</p>
+<p>Other projects included:</p>
+<ul>
+<li>Over 120 public and separate schools in the city</li>
+<li>Many social housing projects, churches and non-profit buildings</li>
+<li>Government buildings, including Toronto's City Hall</li>
+</ul>
+<p><strong>Key Messages</strong></p>
+<p>The key messages of the BBP programs were:</p>
+<ul>
+<li>Energy and water efficiency retrofits can be a vehicle for other building improvements</li>
+<li>Energy efficiency retrofits produce a variety of benefits for all involved</li>
+</ul>
+<p><strong>Role of Energy Management Firms</strong></p>
+<p>The Energy Management Firms selected to implement the BBP worked with property owners and building managers to find cost-effective and creative solutions to enhance comfort, increase energy efficiency and reduce operating costs in buildings. They provided a comprehensive package of professional services including:</p>
+<ul>
+<li>The identification, analysis and design of energy and water-efficiency measures</li>
+<li>The development, provision and facilitation of comprehensive financing.</li>
+<li>The design, engineering, implementation, inspection and commissioning of technical measures</li>
+<li>Quality assurance and performance guarantees</li>
+<li>Monitoring and verification of energy and water consumption</li>
+<li>Training of facility operators during and after project completion.</li>
+</ul>
+<p><strong>Role of Utility Companies</strong></p>
+<p>As utility partners in the BBP, Enbridge Consumers Gas and Toronto Hydro provided comprehensive energy-management services that lowered building operating and maintenance costs and improved the health and comfort of occupants/tenants. Their professional services included:</p>
+<ul>
+<li>Training and educational programs regarding energy-efficiency retrofits</li>
+<li>Facilitating access to customized financing options such as the Loan Recourse Fund</li>
+<li>Technical advice on new and emerging technologies</li>
+<li>The design of building envelope improvements, make-up air and control strategies and the installation of cost-effective equipment, such as upgraded lighting, space heating and cooling systems</li>
+</ul>
+<p><strong>Encouraging Participation</strong></p>
+<p><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives</a></p>
+<ul>
+<li>Interest-free loans were offered to public and non-profit building owners</li>
+<li>The program incorporated innovative financial strategies beyond traditional energy service financing to enhance the attractiveness of the program to building owners, the energy service community and the financial community</li>
+<li>Prequalifying of energy management firms facilitated the process</li>
+<li>Loan repayment insurance removed a barrier to obtaining financing</li>
+<li>Participation was also encouraged by guaranteeing savings</li>
+</ul>
+<p>Promotion and Feedback</p>
+<p>The program was publicized by:</p>
+<ul>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word-of-mouth</a></li>
+<li>Appearances at building management trade shows and trade magazines</li>
+<li>BBP web site</li>
+<li>Mail-outs by Enbridge Consumers Gas to building owners (<a href="/en/tools-of-change/mass-media/">Mass Media</a>)</li>
+<li>Milestones, such as the first building to be renovated, announced at events that were attended by the press, building owners, the public and the mayor, and featuring guest speakers.</li>
+<li>An awards ceremony honouring participants (<a href="/en/tools-of-change/feedback/">Feedback</a>).</li>
+</ul>
+<p>Group feedback was provided by recognizing participation in the following ways:</p>
+<ul>
+<li>Building Registry Program</li>
+<li>BBP Environmental Award of Excellence</li>
+<li>Photographs in Canadian Property Management Magazine</li>
+<li>Inclusion in the list on the BBP web site</li>
+<li>Inclusion in the promotional package that is distributed at property management trade shows and events attended by BBP.</li>
+<li>A newsletter produced for participants</li>
+</ul>
+<p><strong>Programs</strong></p>
+<p>The Residential Energy Awareness Program</p>
+<p>The Residential Energy Awareness Program was a program designed to increase the public's knowledge of energy efficiency and conservation in the residential sector. By increasing awareness around lifestyle changes that reduced household energy use, it protected the environment and saved money.</p>
+<p>The Large Office Building Program</p>
+<p>The Large Office Building Program was a very successful component of the BBP and achieved great energy/water cost savings. Expansion of this program across the entire city was expected to enable many more building owners to participate in the program.</p>
+<p>The Small/Medium Commercial Buildings Program</p>
+<p>The Small/Medium Commercial Buildings Program provided tools that assisted participants of this sector to realize energy and expanded cost savings. This program was designed to increase awareness of the benefits of energy efficiency and to provide financial solutions for these projects.</p>
+<p>The Multi-Residential Non-Profit Buildings Program</p>
+<p>The Multi-Residential Non-Profit Buildings Program was oversubscribed in the pilot phase of the BBP as there was a tremendous market response. Potential benefits for building owners in this sector included decreased operating costs, reduced maintenance costs and an increase in property value.</p>
+<p>The In-House Energy Efficiency Program</p>
+<p>The In-House Energy Efficiency Program retrofitted municipally-owned buildings. Energy/water efficiency continued to be an opportunity for cost reduction and environmental protection through CO2 reduction.</p>
+<p>The BBP Loan Recourse Fund</p>
+<p>The small/medium sized industrial-commercial-institutional buildings were considered prime candidates for realizing significant improvements in energy efficiency and building renewal. However, due to the financial constraints that these properties had, commercial bank financing for these retrofits was often not available. The Loan Recourse Fund addressed this barrier as follows. The Better Buildings Partnership, through Enbridge Consumers Gas, offered on-bill financing and collecting to eligible building owners. This program provided competitive loans to building owners and managers and permitted them to receive financing with no down payments at competitive rates.</p>
+<p>The BBP Loan Recourse Fund provided loans through Enbridge Consumers Gas to building owners for energy efficiency retrofit projects by securitizing loans. This was an innovative program designed for the small/medium ICI and multi-residential sectors.</p>
+<p>Guaranteed savings</p>
+<p>Any shortfall in energy savings, as determined in the contract agreement between the EMF and the building owner, was guaranteed by the EMF or through third-party arrangements (performance contracting).</p>
+<p>The BBP Building Registry Program</p>
+<p>The BBP Registry Program enabled building owners to provide on-line registration of their building. By being part of the BBP Registry, building owners received a certificate of recognition and regular information about the BBP, upcoming events, etc. They were also eligible for the annual BBP Awards program.</p>
+<p>A building registry was established as a promotional tool that recognized building owners for their participation in the Better Buildings Partnership. The building registry program was specifically designed to be an effective publicity and environmental awareness campaign that enhanced the market profile of participating buildings.</p>
+<p>The BBP registry provided a comprehensive record of the buildings that were retrofitted and a description of the implemented measures used in improving their buildings. The registry was effective because:</p>
+<ul>
+<li>It was a method of recognizing building owners/managers that participate in the BBP in addition to those buildings which previously demonstrated their commitment to energy efficiency and building renewal through other programs</li>
+<li>It was a way of disseminating information about existing participants to potential clients of the BBP that helped to further reduce energy use and greenhouse gases and improve Toronto's building stock</li>
+<li>It provided provincial and Canada-wide recognition to encourage development of other building improvement programs such as the BBP on a provincial and national level or in other municipalities</li>
+<li>It was a method of promoting the benefits to the participating building owners/managers of the additional marketing features for the promotion of their buildings for sale/rental/lease.</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<ul>
+<li>The costs incurred for staff and consultants were paid by the City of Toronto.</li>
+<li>Initially, financing was provided via a tripartite funding arrangement through the Canada Ontario Infrastructure Works Program (COIW) whereby the federal, provincial and municipal governments each contributed a one third share towards the building renovation cost. The Citys share was provided by EMFs as private sector financing. This funding arrangement provided for interest free loans for up to 2/3 of the renovation cost.</li>
+<li>After COIW funding no longer became available, funding was provided by private sector financial institutions or the building owners own resources such as reserve funds, with utility bill savings assisting in the repayment of loans.</li>
+<li>Enbridge Consumers Gas, the Toronto Atmospheric Fund and the City have entered into an agreement and have established a Loan Recourse Fund, which provides the opportunity for more readily accessible loans. Specifically, the Loan Recourse Fund provides security for loans made by Enbridge Consumers Gas through its on-bill financing and collecting program.</li>
+<li>The agreement with Enbridge Consumers Gas includes a provision for receipt by the City of budget incentive contributions as approved by the Ontario Energy Board based upon projected gas savings of qualified buildings participating in the BBP. A budgeted incentive contribution or avoided cost is the cost in dollars to the utility for not having to produce and transmit a unit of energy as a result of implementing energy saving measures within a given year. Enbridge Consumers Gas has estimated that $739,000 has been contributed by these buildings into the Loan Recourse Fund to date.</li>
+</ul><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Achievements were determined by measuring the amount of energy and money saved by auditing buildings, as in the feasibility studies. The savings in CO2 emissions were determined using conversion factors.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>The Toronto Pilot project achieved the following:</p>
+<ul>
+<li>Over 100,000 tonnes per year in greenhouse gas reductions</li>
+<li>150 buildings retrofitted</li>
+<li>Almost 25% per year return on the city's investment. The returns were re-invested in the BBP loan fund to continue the rapid expansion of the program.</li>
+<li>3,000 person years in jobs</li>
+<li>Over $11 million per year in building operating cost reductions</li>
+<li>Over $100 million in economic impact (investment levered by the program)</li>
+</ul>
+<p>All of the results greatly surpassed the goals of the program.</p>
+<ul>
+<li>BBP made a significant contribution to the City of Toronto's official CO2 emissions reduction goals and objectives adopted by City Council.</li>
+<li>It was evident that the BBP, in co-operation with the marketplace, had the capacity and momentum to significantly increase the amount of retrofits implemented by 400-800 percent in dollar value and CO2 emissions per year.</li>
+<li>It was estimated that the payback period for the pool of buildings in the program ranged from three to ten years.</li>
+<li>All sectors were highly supportive of the Toronto program, including energy suppliers and environmental advocacy groups.</li>
+</ul>
+<p><strong>Promoted benefits</strong></p>
+<p>Environmental</p>
+<ul>
+<li>Reduced energy consumption, peak utility loads and their related costs, carbon dioxide and other emissions that lead to climate change and poor air quality including smog</li>
+<li>Improved indoor air quality and the comfort of building occupants</li>
+<li>Reduced water consumption and lowering water costs through the installation of water-efficient technologies and measures.</li>
+</ul>
+<p>Economic</p>
+<ul>
+<li>Stimulated economic activity by enhancing the demand for energy and water-efficiency technologies and measures</li>
+<li>Created jobs, especially in the construction, manufacturing and engineering sectors</li>
+<li>Reduced the costs associated with doing business in Toronto and enticing new business development</li>
+<li>Increased the attractiveness of buildings to tenants/occupants due to lower operating costs and better working conditions</li>
+</ul>
+<p>Social</p>
+<ul>
+<li>Increased the knowledge and awareness of the benefits of energy and water-efficiency technologies and measures through the implementation of seminars, workshops and training programs for building owners, operators and tenants</li>
+<li>Renewed the city building stock to make Toronto a more healthy and vibrant city for building owners, tenants, investors and citizens</li>
+<li>Exported best practices in energy and water-efficiency programming to other municipalities across Canada and throughout the world</li>
+</ul>
+<p>Technical</p>
+<ul>
+<li>Increased technical penetration of energy efficient technologies and measures that offered improved building performance and significant environmental benefits that involved the use of all commercially available forms of energy</li>
+<li>Encouraged the development of new technologies that were even more energy efficient and further improved building performance</li>
+</ul>
+<p><strong>Full-scale program</strong></p>
+<p>The full-scale program, which was launched on May 4, 1999, had the potential to achieve over 3 million tonnes of CO2 reduction, a large portion of the amalgamated city's 20 percent goal. The full-scale program was anticipated to generate approximately $3 billion in investment.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Jack Layton, Ph.D. <br/>
+City Councilor, Toronto <br/>
+President of the Toronto Atmospheric Fund and formerly CEO of the Conservation Strategies Consortium (which designed the BBP concept for the City of Toronto) <br/>
+416-392-4060</p>
+<p>For program information:</p>
+<p>Richard Morris <br/>
+Manager <br/>
+Energy Efficiency Office <br/>
+City of Toronto <br/>
+416-392-1452</p>
+<p>For technical information:</p>
+<p>Heinrich Feistner <br/>
+Senior Energy Consultant <br/>
+Energy Efficiency Office <br/>
+Toronto Works and Emergency Services <br/>
+City Hall, 20th Floor, East Tower <br/>
+100 Queen Street West <br/>
+Toronto, Ontario <br/>
+M5H 2N2 <br/>
+phone:(416)392-1501 <br/>
+fax:(416)392-1456 <br/>
+email: <a href="mailto:hfeistne@city.toronto.on.ca">hfeistne@city.toronto.on.ca</a></p>
+<p>For general information about programs and information for potential participants:</p>
+<p>Energy Efficiency Office <br/>
+(416) 392-1500 <br/>
+Email: <a href="mailto:bbp@city.toronto.on.ca">bbp@city.toronto.on.ca</a> <br/>
+Web site: <a href="http://www.torontobbp.on.ca">www.torontobbp.on.ca</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Some of the content of this report was taken from the Better Buildings Partnership web site and was reproduced with permission.</p>
+<p><strong>Lessons Learned</strong></p>
+<ul>
+<li>Political will was important to the success of the program. City council initiated and supported the program because they were interested in the environmental savings. The support of the city provided capabilities and credibility that would otherwise have been out of reach.</li>
+<li>It was important to streamline and simplify to prevent red tape from being a barrier. Toronto planned to supply generic contracts, such as applications for loans. The contracts would be impartial and accepted by all parties, reducing the need to spend resources on legal negotiations.</li>
+<li>A strong link between the BBP and the City's Buildings and Inspections Department reduced complications and delays with applications for renovations. A task force was created to deal with BBP applications at Buildings and Inspections.</li>
+<li>A Procedures manual was produced for internal use and modified for use by other municipalities.</li>
+</ul>
+<p>This case study was written in 1999 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

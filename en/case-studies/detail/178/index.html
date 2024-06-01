@@ -1,0 +1,287 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/work-programs-that-influence-the-home/">Work Programs that Influence the Home</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Enviros RIS</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Energy Council of Canada</li>
+<li>Climate Change Action Fund</li>
+<li>Office of Energy Efficiency</li>
+</ul>
+<p>Enviros RIS as well as the following ABC sponsor companies: Enbridge Inc., Gaz Metropolitain, Ontario Power Generation, SaskEnergy/TransGas, SaskPower, Shell Canada Ltd., Suncor, Syncrude Canada Ltd., AECL, Manitoba Hydro, BC Hydro, Newfoundland Power, Transcanada Pipelines, and Alberta Energy Company Ltd.</p><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>An annual reduction of 1,333 tonnes of greenhouse gas emissions</li>
+<li>Two months after the workshops, 40% of participants reported taking specific actions as a result of the workshop.</li>
+<li>83% were more aware of climate change;</li>
+<li>90% were more aware of personal energy use;</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Action By Canadians / Count Me In</h1>
+<p>The Action By Canadians (ABC) and Count Me In! programs were designed to communicate the issue of climate change to the Canadian public through workshops delivered to individuals at their place of work. The climate change workshop focused on action by providing participants, at the end of the workshop, an opportunity to make a commitment to reduce greenhouse gases by adopting specific measures in their personal lives. By October 2000, over 3,500 Canadians had participated in these workshops. The Ontario Society of Training and Development awarded the ABC program with the Best External Training Program Award.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>In 1997, Enviros RIS carried out initial research on finding the "Blue Box of Climate Change". The goal was to find a simple action which individuals could take which would raise awareness of climate change, and change behaviour in a way which would contribute to the solution. Finding a simple icon like the Blue Box is more challenging for climate change, because the issue is more complex, and more difficult to explain to the public.</p>
+<p>The company developed a climate change workshop, designed to be delivered to Canadians at their workplace. The purpose of the workshop was to raise awareness of the climate change issue amongst Canadians, and also to initiate individual action to limit greenhouse gas emissions. A National Pledge Program was envisioned at the time, whereby individuals pledge to make several changes in their own lives (at home and on the road) to decrease greenhouse gases.</p>
+<p>In December, 1998, the Office of Energy Efficiency at NRCan, endorsed an Enviros RIS submission made to the Climate Change Action Fund (CCAF) to test the climate change workshop at 30 locations (15 energy innovator companies, 10 government offices, 5 small to medium sized companies), and identify the impacts of the program. A second CCAF funded project initiated by the Energy Council of Canada- the Action By Canadians (ABC) program- also aimed to deliver workshops at the workplace. Companies who participated in the ABC program offered the workshop as one component of a more comprehensive climate change strategy.</p>
+<p>Over 175 workshops were delivered to more than 3,500 Canadians across Canada.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>In 1998, Environment Canada funded a feasibility study on the concept of employee based training, incorporating the idea of a National Pledge Program. Enviros RIS staff interviewed 25 senior executives at companies across Canada to test the concept, as it was essential that the program have private sector support. The interviews identified a short, 2-hour workshop as the best method to access Canadians and raise awareness on the climate change issue. The endorsement of the employer was considered an important message to give to employees.</p>
+<p>The workshop was pilot tested at Sorema Reinsurance Company in Toronto in October 1998. The feedback was extremely positive and according to the workshop evaluation, 93% of the workshop participants felt their knowledge of the issue was increased. Six months after the first pilot test, a follow-up survey was distributed to participants. Over 70% of survey respondents said they had followed through with some of their climate change pledges. Workshop participants reported that they made a number of changes as a result of the workshop such as turning lights off, driving less, lowering night time temperatures in their homes, installing low flow showerheads and re-insulating their homes, etc.</p>
+<p>The feasibility study and pilot workshop both supported the idea that employee based training was an effective way to reach out to Canadians on the climate change issue and promote action. At that time, this was the first program of its kind in North America.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Workshop description</strong></p>
+<p>The climate change workshop was a one and a half or two-hour interactive workshop focused on developing awareness and understanding of climate change, and the actions which individuals could take to reduce their own greenhouse gas emissions. The workshop was designed by professional adult educators and applied the principles of adult education. Some key principles used in the design included: adults learn by doing (as opposed to passively listening or watching) and there are differing learning styles. Lengthy lecture segments were also avoided.</p>
+<p>The training program has the following key features:</p>
+<ul>
+<li><strong>An introductory lecture on the science of climate change.</strong> <br/>
+    A compelling mini-lecture created a need to know around the issue of climate change. The lecture covered the primary causes and projected impacts of climate change. After the lecture, participants better understood the issue and its importance, and felt compelled to learn what they could do about the issue. (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>)</li>
+<li><strong>A group activity that highlights what can be done.</strong> <br/>
+    Participants played a game that allowed them to actively evaluate and then choose the most energy saving measures based on the relative ease or difficulty of implementation, and the relative amount of energy savings. This creative learning activity exposed participants to more than 30 energy efficient measures in an enjoyable game format that was much more likely to lead to retention of the information than simply lecturing about energy saving measures.</li>
+<li><strong>A lecture and facilitated discussion about how we can all make a difference.</strong> <br/>
+    This section embodied an inspirational message intended to illustrate that it is possible for individuals to collectively make a difference and contribute to adoption of new social norms (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>). The facilitated discussion encouraged participants to reflect on their own experience and report examples of issues where they have witnessed changing social norms (drinking &amp; driving, smoking at the workplace, etc).</li>
+<li><strong>An opportunity for participants to commit to energy efficient actions.</strong> <br/>
+    Participants were encouraged to undertake small, realistic actions, appropriate for their own circumstances, which would start them on the road to increased energy efficiency. Completing and signing the voluntary pledge (part of a national Pledge Program) was a subtle, yet definite kind of commitment (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>), increasing the chance that participants would actually adopt one or more actions.</li>
+<li style="list-style: none none outside">(See Count Me In! pledge at the end of this report)</li>
+<li><strong>Post workshop monitoring and reinforcement.</strong> <br/>
+    To assist participants with retaining the workshop information and motivating action, a follow-up prompt was delivered by fax, mail or email to all workshop participants. The prompt reported the estimated GHG savings for the program to date (<a href="/en/tools-of-change/feedback/">Feedback</a>) and reminded the participants of their individual workshop pledges (<a href="/en/tools-of-change/prompts/">Prompts</a>). The monitoring program provided the opportunity for participants to report back on their achievements (e.g. "yes I did install a low-flow showerhead) and calculated the estimated GHG savings for the completed actions.</li>
+</ul>
+<p>The following list presents top 10 activities that participants reported having achieved after the workshop.</p>
+<p><strong>Top 10 Achieved Activities Reported</strong></p>
+<ol>
+<li>Turn off lights when not in use</li>
+<li>Reduce speed</li>
+<li>Recycle more</li>
+<li>Reduce idling</li>
+<li>Install low flow equipment</li>
+<li>Keep tires fully inflated</li>
+<li>Run dishwasher only when full</li>
+<li>Turn off computer at night</li>
+<li>Fix leaky faucet</li>
+<li>Ride bike or walk</li>
+</ol>
+<p><strong>Workshop Marketing</strong></p>
+<p>The first step in marketing the workshops was to identify the companies and government offices that would agree to have it delivered to their employees. For ABC, the Energy Council of Canada (ECC) approached member companies that were interested in becoming sponsors of the ABC program- both financially and by providing staff support to promote the program internally. Fourteen ECC companies chose to become sponsors. Each of these companies committed to deliver a series of workshops to their employees (from 10 to 20 workshops per company) as part of a broader, more comprehensive strategy on climate change. Each company spent a considerable amount of effort to determine how to best fit the workshops fit in to their own workplace and in promoting / organizing the workshops (<a href="/English/ToolsofChange/default.asp?Section=Work">Work Programs that Influence the Home</a>).</p>
+<p>The Count Me In! program marketed the workshop to individual companies with the intent of delivering the workshop to 30 different companies and offices. Over 120 companies and government offices were contacted in order to identify 31 Count Me In! work locations.</p>
+<p>Workshops were delivered at companies and locations which included Shell, Dofasco, Syncrude, Ontario Power Generation, IBM, Enbridge, Dupont Canada and the City of Toronto. The companies approached were typically those who felt climate change was a serious concern and were willing to take some sort of action. Through the ABC or Count Me In! in-reach programs, companies were able to increase employee awareness, promote action and send a strong message to their staff and customers that they take climate change seriously. ABC has also been piloting the workshop in communities as outreach efforts, to extend the program beyond internal company training.</p>
+<p><strong>Workshop Delivery</strong></p>
+<p>Between May of 1999 and October 2000, over 175 workshops were delivered to over 45 different companies and government offices across Canada. The target audience was Canadians who did not have an extensive background on climate change. More than 3,500 people participated in the workshop including office employees, CEOs and VPs, plant workers and field crew. Regardless of the audience or the company, the workshop was very well received. The workshop was modified based on comments and feedback received from the pilot phase and early workshop deliveries. The workshop and workshop tools were also modified regionally to take into account each regions' circumstances and source of energy (i.e. greenhouse gas generation is dependent on the type of energy source such as hydroelectric, nuclear, coal, etc.)</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The following components of the program evaluation strategy were intended to measure the impact of the workshops. Evaluation was ongoing.</p>
+<ul>
+<li><strong>Pre- and post- workshop survey</strong> <br/>
+    Participants completed a the same survey immediately prior to and following the workshop. These surveys asked participants basic knowledge and awareness questions about climate change and energy efficiency. These tests were designed to assess the change in participants knowledge and awareness of climate change and energy efficiency as a result workshop attendance.</li>
+<li><strong>Post- workshop evaluation</strong> <br/>
+    At the end of the workshop, participants also completed an evaluation form that assessed participants' reaction to the workshop.</li>
+<li><strong>Pledge- and follow up- monitoring</strong> <br/>
+    Participants were invited to complete a voluntary pledge form at the workshop, committing themselves to one or several specific actions to reduce their personal energy consumption. The pledge was on NCR (no carbon required) paper to allow participants to keep one copy for themselves, while leaving the other copy with trainers for follow-up purposes. Following the workshop, pledges were entered into a database which tallied the estimated greenhouse gas emissions (kg and tonnes) pledged to be saved or reduced.</li>
+</ul>
+<p><strong>Follow-up &amp; Monitoring Program</strong></p>
+<p>The ABC program developed and designed a follow-up and monitoring program to track longer term behaviour changes as a result of the workshop and to encourage further action. Data collected during the workshop delivery (e.g. participant name, email, evaluation form and pledges) were entered into a sophisticated program designed using Microsoft Access.</p>
+<p>Two and six months after the workshop delivery, each participant was contacted by email. The email message reported the progress of the program and asked the participants to click on a personalized website address where they could report what pledged activities they had completed. The hotlink greeted participants by name and reminded them about what actions they had pledged to do at the workshop. The interactive website urged participants to answer a series of questions relating to their pledged actions and calculated the amount of greenhouse gas emissions saved as a result of their achieved actions to date. This site also included a survey that queried participants on the changes to their attitudes and behaviour as a result of the workshop. Those without email received a letter through mail or fax requesting participants to complete a hard copy of the pledge and fax back, the returned forms were also entered into the database.</p>
+<p>The Access database was designed to track the actions that participants pledged to do, the actions they completed, and the estimated GHG savings of those actions. Workshop summary reports were also produced which included data such as the amount of greenhouse gases saved, the follow-up response rate, change in awareness or behaviour, etc. These reports could be produced on a program basis (ABC or Count Me In!), or by company, province or individual workshop. The individual workshop and company reports were provided to the company contact who could communicate the results to employees through newsletters, intranet sites, posters and/or company meetings.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>The ABC and Count Me In! programs provided feedback to the participants through the follow-up program described above. The participant follow-up reminded participants of their commitments, reported back the progress of the program (e.g. amount of GHG saved by the participants and the company they work with), provided participants with links to further information and resources, and encouraged them to report back on actions they have followed through on.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Workshop trainers delivered over 175 workshops to over 3,500 participants between May 1999 and August 2000. Participants pledged to decrease an estimated 5,990 tonnes of greenhouse gases each year, an average of 2 tonnes/per participant that completed a pledge form. The top 5 actions pledged include:</p>
+<ol>
+<li>Keep tires fully inflated (1,302 pledges)</li>
+<li>Turn off lights when not in use (1,188 pledges)</li>
+<li>Recycle more (1,154 pledges)</li>
+<li>Reduce speed (1,006 pledges)</li>
+<li>Reduce idling (879 pledges)</li>
+</ol>
+<p>The workshops also proved successful in terms of raising awareness and providing new energy efficient ideas to workshop participants. The workshop duration was considered appropriate.</p>
+<p>There was also a change in awareness following the workshop. Participants prior to the workshop scored an average of 81% on the presurvey, but immediately following the workshop, participants scored 89% on the same survey questions.</p>
+<p>Two months after the workshop, almost 30% of participants responded to the follow up request, and reported back on the actions they had completed as a result of the workshop. Of those that reported, a total of 1,333 tonnes of greenhouse gases were saved/year, for a total of over 2,300 kgs per person that reported.</p>
+<p>A number of participants also completed the awareness survey on the ABC and Count Me In! Websites. Six to eight weeks after the workshop, participants reported the following:</p>
+<ul>
+<li>83% were more aware of climate change;</li>
+<li>90% were more aware of personal energy use;</li>
+<li>44% were more aware of TV programs on climate change;</li>
+<li>62% were more aware of articles in the newspaper and magazines about climate change;</li>
+<li>45% reported that they had attempted to take public transit since they participated in the workshop.</li>
+</ul>
+<p>A second follow-up letter was also sent to a sample of participants that had email. Between the two follow-up programs, more than 40% of the workshop participants reported that they took specific action as a result of the workshop.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Maria Kelleher <br/>
+RIS International <br/>
+Toronto, Ontario <br/>
+Tel: 416-482-7007</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Last updated: July 2004</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

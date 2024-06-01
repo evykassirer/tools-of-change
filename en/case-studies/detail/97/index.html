@@ -1,0 +1,526 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/school-programs-that-involve-the-family/">School Programs that Involve the Family</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Greenest City</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Green Communities Canada</li>
+<li>Toronto Community Foundation</li>
+<li>Go for Green</li>
+<li>The Laidlaw Foundation</li>
+<li>Great Lakes Health Effects Program</li>
+<li>Ontario Trillium Foundation</li>
+<li>The Ontario Ministry of Tourism and Recreation</li>
+<li>Transport Canada</li>
+<li>Toronto Atmospheric Fund</li>
+<li>Toronto District School Board</li>
+<li>Toronto Catholic District School Board</li>
+<li>Toronto Public Health</li>
+<li>Toronto Police Service</li>
+<li>Transportation Options</li>
+<li>FoodShare</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Between 1996 and 2002, 154,878 Toronto students avoided the release of 46 tonnes of eCO2</p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>GCC Active and Safe Routes to School (1996 to 2005)</h1>
+<p>The Green Communities Active and Safe Routes to School program encourages families to reduce automobile use and increase physical activity for children as they travel to and from school. This case study covers pilot implementation by Greenest City, and expansion to other schools across the Greater Toronto Area and then throughout Ontario. Green Communities Canada now supports delivery of Active and Safe Routes to School programs nationwide. Updated in 2005. More recent information is contained in a <a href="http://www.toolsofchange.com/en/case-studies/detail/635/">new case study</a>.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong>Note:</strong> <em>To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>Greenest City was a Toronto-based non-profit organization that had been addressing a variety of environmental issues with innovative, locally-based initiatives. In early 1996, it approached the Toronto District School Board with a program offering safer and healthier travel for students to and from school. Delighted with the opportunity to make school communities safer for students, the Board endorsed The Active and Safe Routes to School (ASRTS) program and with funding from the Toronto Atmospheric Fund, Greenest City's vision became a reality.</p>
+<p>By focusing on schools and their communities, Greenest City was able to address several urban issues related to traffic intensification, including: higher incidences of traffic-related injury and fatalities, a decrease in children's physical activity, and an increase in greenhouse gas emissions. Greenest City also wished to promote the diversity of Toronto's communities by bringing families from the same neighbourhoods together. Essentially, the ASRTS program offered an opportunity for communities to create networks that would make student travel safe, healthy, and fun.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Research by public health and transportation agencies revealed a number of rallying points. For example, an increase in vehicle ownership was contributing to a rise in air pollutants (a leading cause of respiratory illness and of which children are particularly susceptible). It was also leading to a decrease in children's physical fitness. Child safety issues were also a concern, due to an increase in traffic injuries and fatalities as well as threats of bullying, harassment and abduction. On a larger scale, the program could also help reduce the greenhouse gas emissions that contribute to climate change.</p>
+<p>The research suggested that Greenest City would face several key barriers when presenting the ASRTS program to parents and schools. First, North Americans were automobile-dependent but most drivers did not see themselves as part of the problem. Secondly, the infrastructure in school communities, particularly with the increase in vehicle ownership, was unsafe. In such areas it was often safer to travel in a car or by bus. Weather was another barrier. Many parents would not allow their children to walk in cold or wet weather conditions. Also, perceptions of time limited pedestrian travel because parents believed that walking consumed a much longer period of time than driving. In reality, it can often take less time and less frustration to walk a child to school. Finally, there was a lack of health awareness in North America.</p>
+<p>When developing the iWalk club in 2004, organizers built on the experience of three related programs: Go for Gold, a project of the Safer Routes to School Team of Buckinghamshire County Council; the Toronto Heart Health Challenge, a physical activity initiative of Toronto Public Health; and the Frequent Rider Miles contest of the Safe Routes to Schools project of Marin County, California.</p>
+<p><strong>Prioritizing Audiences</strong></p>
+<p>This program divided its participants into two groups: those who lived close enough to school and those who lived farther away. Walking tactics like the <em>Walking School Bus</em> and <em>International Walk to School Day</em> were targeted at the first group, to reduce the barriers to walking and promote trial.  In contrast, <em>Walk a Block</em> engaged students in the second group to walk the final two blocks to school. <em>No-Idling at School</em> engaged parents and caregivers in the second group.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>General Implementation</strong> <br/>
+In the fall of 1996, Greenest City of Toronto responded to a growing concern for the health and safety of elementary students by introducing the Active and Safe Routes to School program in parent meetings and through information displays at school events. Maurice Cody and John Wanless Public Schools in North Toronto and Howard Public School in West Toronto were the first schools to join the program. Each of the three schools implemented all of the ASRTS programs including: The Walking School Bus, Blazing Trails Through The Urban Jungle, and No-Idling at School. Greenest City later introduced two new components to the ASRTS program; the Neighbourhood Walkabout, and International Walk to School Day (<a href="/en/tools-of-change/school-programs/">School Programs that Involve the Family</a>).</p>
+<p><strong>The Walking School Bus (WSB)</strong> <br/>
+The Walking School Bus (WSB) component of the program involved elementary students traveling to and from school by foot and under the supervision of parents or trusted neighbours. In this way, communities were able to share the responsibility of childcare (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>), stimulate the children's minds through conversation and their bodies through physical activity. Ultimately, the ASRTS program was based around the idea of the Walking School Bus to involve school communities in active transportation. However, the WSB component of the ASRTS program was closely connected to the other program components. For example, the Neighbourhood Walkabout was used to establish safe WSB routes to school.</p>
+<p>The WSB existed in many forms. Some <em>Buses</em> consisted only of a few families, whereas others had as many as sixteen families. Often the Buses were made up of <em>Walking Buddies</em> (older children who simply traveled to and from school in the company of their friends). <em>Walk a Block</em> functioned as a WSB for children who lived too far to walk to school (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). Instead, their parents were encouraged to park in a legal and safe space within walking distance of the school and then walk the remaining distance to and from school with their children. Similarly, the <em>Walking School Bus to the Bus</em> allowed parents to share the load of supervising their children as they traveled to a designated waiting area along a city bus route. <em>Cycling School Buses</em> were set up to provide safe student travel by bicycle. Parents were encouraged to educate their children in bicycle safety and to accompany them on their bike rides to school. This program also prompted action to be taken to establish bike paths along the routes to school.</p>
+<p>The WSB programs began by mapping the schools' catchment areas and marking the locations of homes of participating families. Walking School Buses were identified along school routes by coloured hats, backpacks, scarves and vests worn by all participants. Theme days managed by individual Buses were also successful. Greenest City suggested that routes be marked by permanent or temporary signs to indicate the use of the route by school children and their families.</p>
+<p>Greenest City reported that by November 1996, all three schools had at least one WSB operating. Expansion to more culturally-diverse communities was made possible through support from the Community Foundation of Greater Toronto. At Topcliff Public School, for example, information booklets and newsletters were published in Chinese, Vietnamese, and Tamil, as well as English.</p>
+<p>Greenest City was approached by local Public Health organizations (in Toronto and Scarborough) as well as agencies at the national level because the program fit their mandate i.e. heart health, active living, injury prevention, and environmental health. These new partnerships allowed Greenest City to expand its partner base</p>
+<p><strong>Blazing Trails Through the Urban Jungle</strong> <br/>
+The Blazing Trails Through the Urban Jungle was a classroom mapping activity that complemented the Ontario school board curriculum in social studies, mathematics, and science. By mapping street names, landmarks, and safe places, for example, children felt safer and more confident traveling in their community.</p>
+<p><strong>No-Idling at School</strong> was one of the program's first efforts to engage those living too far from school to walk.It was also one the program's first tactics aimed at reduced vehicle emissions in school areas and improved air quality. It raised awareness of the impacts of idling engines, and encouraged drivers to adhere to the City of Torontos Idling Control By-law. The program included student banners reminding parents to turn off their engines when parked near a school or a campaign (<a href="/en/tools-of-change/prompts/">Prompts</a>).</p>
+<p><strong>The Neighbourhood Walkabout</strong> <br/>
+The Neighbourhood Walkabout program identified traffic and safety issues specific to each school community. The evaluation of these issues provided a basis upon which a plan of action could then be developed. A description of the concerns raised by this tool paired with visual maps has influenced many positive changes to be made in the participating school communities (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>Greenest Citys ASRTS Resource Guide has suggested several items (adapted from the Parent Safety Patrol Information Package, Whitby Community Police Office) that need to be considered when conducting a Neighbourhood Walkabout:</p>
+<p>School Site observations</p>
+<ul>
+<li>Teacher and visitor parking</li>
+<li>Walking paths to the school</li>
+<li>Bicycle Facilities</li>
+<li>Location of School Bus Loading Zones</li>
+<li>Number of buses, vans and handicapped vehicles used</li>
+<li>Emergency vehicle access</li>
+</ul>
+<p>Areas Surrounding School Site observations</p>
+<ul>
+<li>Volume and speed of traffic on surrounding streets</li>
+<li>Are there sidewalks?</li>
+<li>Number and position of adult crossing guards</li>
+<li>Timing of traffic lights</li>
+</ul>
+<p>Non-traffic related observations</p>
+<ul>
+<li>Types of buildings around school: residential, commercial, industrial</li>
+<li>Location of other public spaces near school</li>
+<li>Block Parent or Neighbourhood Watch community</li>
+<li>Graffiti on buildings</li>
+<li>Obstructions on the sidewalks</li>
+</ul>
+<p>Allenby Public School in Toronto focussed on traffic safety in its Neighbourhood Walkabout. In fact, the schools participation resulted in the areas inclusion in a Community Safety Zone pilot project for Ontario. Another school, St. Roch Catholic School in North York, was able to make pedestrian-friendly changes in its school community. Based on the success of the program the school introduced <em>Walking Wednesdays</em> - the first Wednesday of each month were designated Walk to School days; and the <em>Golden Shoe Award</em> - recognizing monthly participation in the program. Apparently "children were begging their parents to walk them to school instead of driving."</p>
+<p><em>Lessons learned from the Neighbourhood Walkabout program:</em> <br/>
+There have been many positive alterations in school communities based on Neighbourhood Walkabout projects. Only a few are listed here.</p>
+<p>Based on the findings of Allenby Public Schools Safety Committee (made up of concerned parents), the following changes were made:</p>
+<ul>
+<li>Lowering the speed on Avenue Road, from 50 km/hour to 40 km/hour during school drop-off and pick-up times</li>
+<li>Moving pedestrian crossing areas to safer spots</li>
+<li>Increasing the timing of traffic lights on Avenue Road and St. Clements giving pedestrians more time to cross the road</li>
+<li>Improving traffic signs around the school</li>
+<li>Restricting parking in unsafe areas</li>
+<li>Installing designated drop-off only areas on both sides of the school</li>
+</ul>
+<p>St. Michaels Catholic School in Toronto was able to deal with issues related to homeless people, drug dealers, lack of lighting, safety in the underground parking, restoration of the play structures to meet CSA code and the determination of a school bus loading zone.</p>
+<p><strong>International Walk to School Day (IWALK)</strong> <br/>
+The International Walk to School Day promoted awareness surrounding the transportation of children to and from school. Families were encouraged to walk to school together to take pleasure from physical activity, promote cleaner air, and enjoy their neighbourhoods without traffic dangers and congestion. In 1998, the program's first year in Canada, 50 Toronto schools took part in IWALK. In 1999, 250 took part; in 2000, 400 schools from across Ontario participated.</p>
+<p><strong>Promotion and Communication</strong> <br/>
+Greenest City has successfully supported networking between schools through the use of discussion groups and an ASRTS newsletter. In 1998, it hosted a meeting of representatives from every participating school in Toronto and ASRTS partners. The gathering allowed concerns to be addressed and resolved through program improvements. With the support of Go for Green at the national program level, Greenest City's ASRTS newsletter was circulated to participating schools and partners with the intention of linking all participants together as well as providing a way for participants to express their successes and other feedback.</p>
+<p>Greenest City's ASRTS programs were also been recognized by the media (<a href="/en/tools-of-change/mass-media/">Mass Media</a>). The program was profiled on:</p>
+<ul>
+<li>City Pulse News and Breakfast Television, City TV</li>
+<li>CBC Evening News</li>
+<li>CBC Marketplace</li>
+<li>CBC Radio - Metro Morning</li>
+<li>Talk 640, Energy 108, CFRB News</li>
+<li>CFTO News</li>
+<li>Global TV</li>
+<li>CTV</li>
+<li>Vision Television - Skylight</li>
+<li>And in articles in Time magazine, Today's Parent, Canadian Living, The Globe and Mail, The Toronto Star, LExpress, Alternatives, and many community newspapers.</li>
+</ul>
+<p><strong>Growth of the Program Across Canada</strong> <br/>
+The program grew steadily. By 1999, it supported 250 schools located in the Greater Toronto Area. By 2001, it had expanded to over 450 located across the province of Ontario. In 2002, the program came under the umbrella of Green Communities Canada and took on a national focus.</p>
+<p>In 2002, the program also received money from the Trillium Foundation to pilot an approach of "seeding" communities with the program. The three year pilot provided funding for ten communities to start Active and Safe Routes to School. Each community received (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Incentives</a>):</p>
+<ul>
+<li>$30,000 over three years - $10,000 per year;</li>
+<li>All related resources at no cost; and</li>
+<li>Hands-on consulting support from Green Communities Canada</li>
+</ul>
+<p>All of these communities established stakeholder committees consisting of representatives from their School Board/Districts, Health Unit, Police, municipal transportation staff, local politicians, local ENGO/NGO, local funders/sponsors, parents, and school staff. The programs in these pilot communities reached over 510 new Ontario elementary schools, and over 220,000 students and their parents. Soon the program supported over 1,000 schools.</p>
+<p>In December 2004, organizers launched the iwalk club to promote ongoing active transportation at schools participating in International Walk To School Week. Each participating student was given an iwalk club card (<a href="/en/tools-of-change/prompts/">Prompts</a>). Every time the student walked or used active transportation to get to school, the card was stamped. Cards were also stamped for relevant in-school activities. Every tenth stamp was a Golden Shoe sticker. Students who accumulate 50 stamps were eligible for rewards, as determined by each school, such as an extra recess for winning classes, golden shoe or boot awards, or visits from local celebrities. Participating schools received a gift for registering and were entered into a yearly draw (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Incentives</a>).</p>
+<p><strong>Walk a Block</strong></p>
+<p>Schools were encouraged to set up 'walk-a-block' zones around their schools; students who were unable to walk all the way to school could still qualify for a stamp on their club card if they walked at least from the start of the 'walk-a-block' zone (typically a minimum of two full blocks from the school.) This was the program's first significant step at influencing children who lived too far from school to walk (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The ASRTS program was initially funded by the Toronto Atmospheric Fund. Financial support was then offered by the Toronto Atmospheric Fund, Toronto Community Foundation, and the Ontario Trillium Foundation. Parts of the program were funded by Laidlaw, the Canada Trust Friends of the Environment, as well as many other sponsors. The ASRTS program evaluation research was supported by the Ontario Trillium Foundation, Transport Canada, and the Ministry of the Environment. The iwalk club was made possible with funding from The Ontario Ministry of Tourism and Recreation's Active 2010 Communities In Action Fund, and Transport Canada's Moving on Sustainable Transportation (MOST) initiative.</p>
+<p>Program expenses included: program maintenance, funds for salary and contract positions, honorariums to schools, and costs for materials.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Greenest City asked each school to report on the number of children involved in each activity, and the average distance travelled by participants to school. This information was then converted, using a simple Excel spreadsheet, into resulting reductions in distances traveled by car and associated greenhouse gas emissions. The conversion assumed that on average about 30% switched from driving to walking or biking.</p>
+<p>In addition, in May 2005, program management used interviews and questionnaires in three of the Trillium-funded communities to gather qualitative data on the new dissemination model.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Based on the information provided by participating schools, the Walking School Bus component of the program was responsible for the greatest measured impact, although it was expected that the car idling component would grow more quickly. The table below summarizes results for the first few years of the program. An update from 2002 is contained in the notes section, below.</p>
+<p class="MsoNormal"> </p>
+<table cellpadding="0" cellspacing="2">
+<tbody>
+<tr>
+<td bgcolor="#d0dfe2">
+<p><strong>Program Component</strong></p>
+</td>
+<td bgcolor="#d0dfe2">
+<p><strong>Year</strong></p>
+</td>
+<td bgcolor="#d0dfe2">
+<p><strong>Participation Rates</strong></p>
+</td>
+<td bgcolor="#d0dfe2">
+<p><strong>Reduction in Distance Travelled by Car (km)</strong></p>
+</td>
+<td bgcolor="#d0dfe2">
+<p><strong>GHG Reduction</strong></p>
+<p><strong>eCO2 in tonnes</strong></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="#d0dfe2" rowspan="2">
+<p><strong>Walking School Bus</strong></p>
+</td>
+<td>
+<p>1999</p>
+</td>
+<td>
+<p>33 schools</p>
+<p>278 families</p>
+</td>
+<td>
+<p>36,830</p>
+</td>
+<td>
+<p>11.27</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2000</p>
+</td>
+<td>
+<p>44 schools</p>
+<p>422 families</p>
+</td>
+<td>
+<p>51,242</p>
+</td>
+<td>
+<p>15.68</p>
+</td>
+</tr>
+<tr>
+<td bgcolor="#d0dfe2" rowspan="2">
+<p><strong>Walking Wednesday</strong></p>
+</td>
+<td>
+<p>1999</p>
+</td>
+<td>
+<p>1475 participants</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>?</p>
+</td>
+</tr>
+<tr style="height: 14.35pt">
+<td>
+<p>2000</p>
+</td>
+<td>
+<p>4567 participants</p>
+</td>
+<td>
+<p>9,020</p>
+</td>
+<td>
+<p>2.76</p>
+</td>
+</tr>
+<tr>
+<td bgcolor="#d0dfe2" rowspan="2">
+<p><strong>No Idling</strong></p>
+</td>
+<td>
+<p>1999</p>
+</td>
+<td>
+<p>59 idling recanters</p>
+</td>
+<td>
+<p>7,092</p>
+</td>
+<td>
+<p>2.17</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2000</p>
+</td>
+<td>
+<p>124 recanters</p>
+</td>
+<td>
+<p>14,869</p>
+</td>
+<td>
+<p>4.55</p>
+</td>
+</tr>
+<tr>
+<td bgcolor="#d0dfe2" rowspan="3">
+<p><strong>Walk to School Day</strong></p>
+</td>
+<td>
+<p>1998</p>
+</td>
+<td>
+<p>75 schools</p>
+<p>14,000 participants</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>?</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1999</p>
+</td>
+<td>
+<p>197 schools</p>
+<p>44,325 partipants</p>
+</td>
+<td>
+<p>7,320</p>
+</td>
+<td>
+<p>2.24</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2000</p>
+</td>
+<td>
+<p>400 schools</p>
+<p>90,000 participants</p>
+</td>
+<td>
+<p>20,000</p>
+</td>
+<td>
+<p>6.12</p>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Jacky Kennedy <br/>
+Program Manager, Green Communities | Active &amp; Safe Routes to School <br/>
+57 Douglas Avenue <br/>
+Toronto, Ontario <br/>
+M5M 1G4 <br/>
+Ph: (416) 488-7263 <br/>
+Fax: (416) 488-2296 <br/>
+E-mail: <a href="mailto:info@saferoutestoschool.ca">info@saferoutestoschool.ca</a> <br/>
+WEB: <a href="http://www.saferoutestoschool.ca">www.saferoutestoschool.ca</a></p>
+<p> </p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>2002 Update</strong></p>
+<p>Between 1996 and 2002, 154,878 Toronto students participated in Greenest City's Active &amp; Safe Routes to School (ASRTS) program. These students, in over 160 schools, have collectively walked 317,980 kilometres, equal to 43 trips across Canada from St. Johns, Newfoundland to Vancouver, British Columbia (7,423 km one trip), Their efforts and commitment to using active transportation on the journey to school has avoided the release of 46 tonnes of eCO2 into our atmosphere, reducing Toronto's contribution to the build-up of greenhouse gases responsible for climate change. A further savings of 89.1 tonnes of eCO2 has been avoided through the success of Greenest City's No Idling at School project.</p>
+<p><strong>Lessons learned from the Walking School Bus:</strong></p>
+<ul>
+<li>Schools are busy places. Parents and staff don't have the time they would like to devote to the issue, so you should allow a full school year to ensure successful implementation.</li>
+<li>To some extent informal, unrecognized WSBs are already happening in schools, so at the start of the project it is a good idea to seek out these families. With their permission, you can create 'local heroes' and use them as role models. This is very effective in expanding the program.</li>
+<li>Hosting a neighbourhood walkabout at the start of the program is essential to identify safety hazards for pedestrians and to work to create solutions. Parents respond positively to this process and feel confident that safety is being addressed in an official and systematic manner.</li>
+<li>The program works best when it has a 'home' in the school. Often this is under a safety, traffic, or environment committee, but sometimes a special WSB committee is formed by the parent council.</li>
+<li>Ongoing promotion within the school is key to the success, especially for the WSB component. Regular WSB Updates in the school newsletter sent home to parents are very helpful.</li>
+<li>WSB promotions at school events held throughout the year are very effective. These include kindergarten registration, curriculum nights, safety fairs, and PTA meetings.</li>
+<li>There is a perception among many parents that participating in a WSB involves lots of organization and time. These individuals need to know that experienced participants find a modest investment of time at the beginning leads to an ongoing time savings once the program is up and running.</li>
+<li>Every school and community is unique. It is important to be sensitive to individual needs such as language diversity, peculiar safety issues, and socio-economic situations.</li>
+<li>At the time, Ontario had two major, pulicly funded school systems. Involving the smaller Catholic School Board was challenging because there were fewer schools and larger catchment areas. However, it was considered important to include such schools because they had a greater percentage of children using busses.</li>
+</ul>
+<p><br/>
+<strong>2005 Update: Lessons Learned from the Trillium-Funded Pilots</strong></p>
+<p>All three communities cited the following key reasons in their decision to implement the program</p>
+<ul>
+<li>Directly addressing personal and traffic safety concerns in the community through street proofing and conflict resolution;</li>
+<li>Opportunities to teach students and their families important street safety skills to prevent and avoid injuries;</li>
+<li>Provide education and action for reducing local air pollution and greenhouse gas emissions, including involving youth in these issues, as well as to reduce childhood asthma rates;</li>
+<li>Encouraging the switch from the automobile for short local trips to public transit and active transportation;</li>
+<li>Dealing with the aggression and conflict surrounding traffic congestion in and around school zones;</li>
+<li>Providing education and action to increase daily physical activity and demonstrate healthy active lifestyles.</li>
+</ul>
+<p>When asked what they liked best about the program, each community noted  the program's adaptability. Being able to create a program that addresses the unique needs of each school and providing several program components that allow for inclusivity of all students was seen as an extremely positive feature. As well, because the program addressed many issues at the same time, schools could choose to focus on the one issue that best suited their community whether that was physical activity, traffic safety, personal safety, air quality and/or environment.</p>
+<p> </p>
+<p>To access the transcript and handouts from the 2010 case study webinar, click on the links in the left hand summary column on this page.</p>
+<p>...............................................</p>
+<p>This case study was selected as a Tools of Change Landmark case study in 2009, by a peer selection panel consisting of:</p>
+<ul>
+<li>Danny Albert, University of Ottawa's Parking and Sustainable Transportation Department</li>
+<li>Daniel Coldrey, Transport Canada</li>
+<li>Mark Dessauer, Active Living by Design</li>
+<li>Catherine Habel, Metrolinx</li>
+<li>Jacky Kennedy, Green Communities Canada</li>
+<li>Jessica Mankowski, Federation of Canadian Municipalities</li>
+<li>Gary McFadden, National Center for Biking and Walking</li>
+<li>Lorenzo Mele, Town of Markham</li>
+<li>Chuck Wilsker, U.S. Telework Coalition</li>
+<li>Phil Winters, University of South Florida</li>
+<li>JoAnn Woodhall, Translink</li>
+</ul>
+<p>The first publication of this case study was written in 2000 by Quenby Barris and was updated by Jay Kassirer in 2009.</p>
+<p>Funding for the addition of this case study was generously provided by the Government of Canadas Climate Change Action Fund, Suncor, Syncrude, Enbridge Consumers Gas and TetraPak Canada.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

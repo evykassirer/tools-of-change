@@ -1,0 +1,257 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/peer-support-groups/">Peer Support Groups</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>The Bonneville Power Administration</p><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Savings of 20 million kWh and $US 9 million annually at first and 58 million kWh annually by 2016</li>
+</ul><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Bonneville Power Administration Energy Smart Industrial Energy Efficiency Program</h1>
+<p>The Bonneville Power Administration’s <em>Energy Smart Industrial</em> (ESI) energy management program has changed how large industrial facilities prioritize and manage energy. Through participation in ESI’s High Performance Energy Management (HPEM—now called Strategic Energy Management) program component, corporate leaders are encouraged to establish and communicate energy policies and goals, conduct regular reviews of energy performance metrics, and actively support energy efficiency improvement efforts. At the shop-floor level, HPEM/SEM impacts a broad range of behaviors and practices. Common improvements include the shutdown of idling equipment during non-production hours, implementing more energy efficient set points, and adopting enhanced preventative maintenance practices. Designated a Landmark case study in 2016.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong><em>Note: </em></strong><em>To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>In 2010, the Bonneville Power Administration (BPA) introduced the <em>Energy Smart Industrial</em> (ESI) energy management pilot program to the Pacific Northwest region to help address common barriers industrial facilities encounter in achieving higher levels of energy efficiency. High Performance Energy Management (HPEM) was one component of the pilot program. HPEM was a multi-year, organizational approach to energy efficiency that teaches behavior-based and continuous improvement methods to drive ongoing savings. The program was designed for medium and large industrial facilities, including heavy industrial processes (pulp and paper, cement, glass, etc.), manufacturing (transportation, high tech, wood products, etc.), and municipal facilities (large water and wastewater treatment plants). HPEM helped large industrial companies develop and implement energy management systems through the delivery of cohort-based training workshops, on-site technical support, and energy performance tracking tools.</p>
+<p>The first HPEM cohort, consisting of 13 industrial facilities in Washington and Oregon, completed its five-year project in 2015. At the end of the fifth year, this cohort reported annual savings of 20 million kilowatt-hours (kWh) and a total financial benefit of over $9 million. HPEM demonstrated that a multi-company cohort comprised of motivated organizations, equipped with knowledge and supported by their management, could achieve significant savings through low-cost/no-cost improvements to existing equipment.</p>
+<p>The program targeted energy-wasting activities broadly applicable to many different types of industrial facilities. Examples include:</p>
+<ul>
+<li>Turning off idling equipment during non-production periods</li>
+<li>Reducing lighting levels in unoccupied areas</li>
+<li>Minimizing heat infiltration by maintaining the building envelope</li>
+<li>Addressing common “Lean” wastes such as over-processing and rework</li>
+<li>Using set-point checklists to reduce the risk of backsliding</li>
+</ul>
+<p>These behaviors were selected because of their broad applicability to many different types of industrial facilities. In addition, they are generally high-impact/low-cost/low-risk activities.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>While industrial facilities understand concepts of continuous improvement through approaches already used in other aspects of their operations, such as ISO 9001, Lean Manufacturing, etc., very few had applied those concepts to energy. BPA’s partner in designing and implementing HPEM, Cascade Energy, had over 20 years of experience working with over 1,000 industrial customers on energy efficiency projects. Their experience showed that most facilities did not have well-defined business practices relating to energy management and generally treated energy as a fixed cost, with ad hoc project-based activities as the primary approach for improvement. In recruiting for this cohort, ESI representatives assessed several potential barriers to HPEM success including the inability to commit time to attend monthly cohort trainings, insufficient availability of data required to establish a baseline and track performance, and competing priorities that may have impeded implementation activities. Sites with substantial barriers were connected with other ESI program components..</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The HPEM delivery model segmented SEM adoption into three levels (developing energy management systems, practicing energy management, and energy management maturity), supporting participants throughout the process as they built their energy management system from the early stages through maturity.(<em>Building Motivation and Engagement Over Time</em>)</p>
+<p>During the first year of engagement, participants established an energy team, set an energy goal (<em>Goal Setting</em>), committed resources to achieving that goal (<em>Obtaining a Commitment</em>), and engaged their employees in saving energy. The cohort approach fostered peer learning through regular in-person workshops that rotated between cohort facilities. The program provided a base of support including both organizational coaching and technical guidance for all participants for the first year. </p>
+<p><img alt="Energy Efficiency Planning" height="300" src="/userfiles/Image/Cohort participants work through an exercise.jpg" width="450"/></p>
+<p><em>Cohort participants work through an exercise</em></p>
+<p>In subsequent years, HPEM support became increasingly targeted to address the needs of individual participants. Workshops focused more on facilitated peer-to-peer sharing. Sites were supported as they systematically made improvements to managing their energy consumption. (<em>Peer Support Groups; Overcoming Specific Barriers)</em> </p>
+<p>The process of allowing cohort participants to become more gradually self-sustaining proved to be an essential factor in the cohort’s success. Additionally, seeing the results of specific actions reflected in the energy model led to increased awareness of the impact certain behaviors have on energy efficiency, which inspired motivated participants to do more. (<em>Building Motivastion Over Time; Feedback</em>)</p>
+<p>By the end of the five-year engagement, SEM became an integral part of the participants’ core business improvement practice. The extended engagement period allowed participants to focus on and immerse themselves in the practice of continuous improvement–a critical foundation for SEM success. HPEM cohort participants noted several specific behavior changes resulting from participation, including:</p>
+<ul>
+<li>A transition from ad-hoc, project-based energy management to more holistic approaches</li>
+<li>Engineering and operations staff working together to achieve energy savings</li>
+<li>Considering energy use when making operational decisions and capital purchases</li>
+<li>Considering energy up front, at the start of a project</li>
+</ul>
+<p><em>Overcoming Barriers</em></p>
+<p>Organizational resistance to modifying long-standing practices was a common challenge encountered by participants. To address this barrier the program focused on establishing a high level of support from leadership before proceeding with broader implementation activities. By leveraging management support and employee engagement strategies, participants were able to equip individuals to understand the connection between energy management and the organization’s core values and objectives (e.g. cost reduction, profitability, sustainability). With this foundation of understanding, employees were more eager to offer ideas and proactively contribute to the effort. (<em>Credible, Empowering Communication; Financial Incentives; Norm Appeals</em>) </p>
+<p>The program also focused on intentionally planning for one or more ‘early win,’ to provide the team a sense of confidence and boost the credibility of the effort. Support from engaged and supportive leadership was the key to addressing these obstacles, along with the other common challenges such as personnel time constraints, risk aversion, and continuity in Energy Team composition. (<em>Building Motivation Over Time; Feedback</em>)</p>
+<p><img alt="Energy Efficiency Success" border="30" height="300" src="/userfiles/Image/Reporting success at final cohort workshop.jpg" width="450"/> <em>Reporting success at final cohort workshop</em></p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p><em>Measuring Energy Savings</em></p>
+<p>All HPEM energy savings were subjected to a rigorous measurement and verification (M&amp;V) process. The M&amp;V methods described in the ESI Monitoring, Targeting, and Reporting (MT&amp;R) Reference Guide were used to quantify energy savings via a whole-facility regression-based energy model, commonly referred to as a “top-down” approach. A baseline energy model was developed for each participant, providing a method of “normalizing” energy performance for weather effects and production drivers, thereby isolating the impact of the continuous energy improvement efforts. The overall energy savings was tracked using a cumulative sum of differences (CUSUM) methodology that quantified the cumulative difference between predicted energy use and actual energy use over each annual performance period. Savings specific to behavior-based/O&amp;M changes were then estimated by removing the capital project savings from the whole-facility energy savings.</p>
+<p>The February 2013 <em>Energy Management Pilot Impact Evaluation</em> by the Cadmus Group verified an 88% realization rate,  affirming the statistical methodologies applied in this engagement.</p>
+<p><em>Measuring Behavior Change</em></p>
+<p>The ESI program’s top-down modeling method measured the aggregate impact of all behavioral changes for each participating site. However, significant impacts could be detected by inflections in the resulting CUSUM (cumulative sum of energy savings) chart. A simple example of a CUSUM chart is provided below.</p>
+<p><img alt="Industrial energy conservation impacts" height="311" src="/userfiles/Image/Impacts Graph2.png" width="450"/></p>
+<p>Due to the nature of industrial sites, behavioral impacts were highly site/system/process dependent.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Overall Impacts</strong></p>
+<p>At the end of five years, the cohort reported annual savings of 20 million kWh, enough energy to power over 2,000 Northwest homes for a year. The joint financial benefit over five years, including performance incentives and avoided energy cost, exceeded $9 million.</p>
+<p>The ESI program also realized a significant increase in completed capital projects among the HPEM participants. The additional capital projects resulted from several factors, including the increased level of engagement promoted by the utility and ESI staff, along with ideas generated in the course of cohort meetings.</p>
+<p>By April 2016, the ESI Program had offered four additional HPEM cohorts that included a total of 23 participating industries. These additional participants were saving at a rate of 37.7 million kWh/yr.</p>
+<p><em>Cost Effectiveness</em></p>
+<p>Cost-effectiveness for the HPEM program was on par with the ESI program as a whole (estimated at $0.181/kWh, unlevelled). Additionally, since program resources were front-loaded and savings grew over time, cost effectiveness improved as industrial businesses engaged in energy management components for three years or longer. The results of a series of cost tests, as reported in the February 2013 “<em>Energy Management Pilot Impact Evaluation</em>” performed by The Cadmus Group, showed that the ratepayer funds used for this energy management program were a solid public investment for BPA and its utility customers.</p>
+<p><strong>Individual Sites</strong></p>
+<p>The annual electrical energy consumption of the 13 participating sites ranged from 4 million to 56 million kWh/year, equating to a $200,000 to $3 million annual energy cost per site. On an individual site basis, the cohort included a broad range of performance, from 0% to nearly 17% energy savings. While the level of energy savings performance can be anecdotally correlated to several organizational characteristics, the most prominent factors included the end user’s overall commitment to continuous improvement, the degree to which employees were empowered to suggest and test new ideas, and the early identification of energy savings strategies. BPA sponsored an impact evaluation that included an assessment of cost effectiveness.</p>
+<p>Energy impacts for individual participants are provided in the table below. <br/>
+<img alt="" height="246" src="/userfiles/Image/Results Table 3.JPG" width="450"/></p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Sara York<br/>
+ESI Energy Management Program Manager<br/>
+<a href="mailto:sara.york@energysmartindustrial.com?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">sara.york@energysmartindustrial.com</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>At the onset of the ESI program, SEM principles were still evolving in the marketplace. A key innovation involved establishing an MT&amp;R process to help ensure consistency and transparency in the methods used for estimating O&amp;M and behavior-based savings, and for the treatment of capital projects and non-routine changes with project measurement boundaries. This methodology is documented in BPA’s <em>ESI Monitoring, Targeting, and Reporting Reference Guide,</em> now in its fifth edition. The Cadmus impact evaluation provided an objective validation of these methodologies.</p>
+<p>Another innovative approach was the multi-year nature of the HPEM engagement (options included three- or five-year contracts). HPEM engagements longer than one year benefit both participants and the ESI program by increasing the magnitude and reliability of energy savings. ESI has combined an intensive, standardized first year curriculum with a lighter, targeted approach in the following years to maximize the investment of both program and participant staff. Longer HPEM engagements increase program delivery costs, but the investment is worthwhile, especially if the increased magnitude and reliability of energy savings is considered in the assessment.</p>
+<p> </p>
+<p>This case study was written by Jay Kassirer in 2017.</p>
+<p><strong>Landmark Designation</strong></p>
+<p>The panel that designated this case study consisted of:</p>
+<ul>
+<li>Arien Korteland from BC Hydro</li>
+<li>Doug McKenzie-Mohr of McKenzie-Mohr Associates</li>
+<li>Brian Smith from the Pacific Gas and Electric Company</li>
+<li>Marsha Walton from the New York State Energy, Research and Development Authority</li>
+<li>Dan York of ACEEE</li>
+</ul><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Le Club Millezinc</li>
+<li>L'Association des gens intéressés à l'environnement et à la Santé (AGIES)</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>L'Union Québécoise de la Conservation de la Nature</li>
+<li>Commission scolaire de la Jonquière</li>
+<li>Départment des ressources éducatives du C-GEP de Jonquière</li>
+<li>Le Club Richelieu</li>
+<li>Health Canada, Environment Canada</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>34% of the younger students made environmentally conscious changes to their lifestyle. Overall, 60% of students became more aware of the link between the environment and human health.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Le Club Millezinc</h1>
+<p>Student volunteers are enlisted and trained to present information to younger students regarding environment-friendly lifestyle changes, and the relationship between environmental protection and human health. The volunteers create videos and written material and travel to local schools to deliver the presentations.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The best way to reach teenagers is often through other teenagers. On the basis of this principle, school volunteers were enlisted to spread information to younger students on the impact pollution has on our health. The program was run by Le Club Millezinc and AGIES between August 1996 and March 1997 in Jonquire, Qubec- a community of approximately 20,000 households. The French language materials they developed (including a student workbook, trainers manual, and videos) are available on request for others to use.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The objectives of this project were to increase awareness and understanding among youth about the relationship between protecting the environment and human health, and to promote the adoption of environment-friendly lifestyle changes.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Two random surveys conducted in 1995 and 1996 uncovered a lack of awareness among Jonquire's secondary school students about the link between environmental degradation and harm to human health.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>This program was built around presentations by students to slightly younger students. Some of the senior students were chosen from the CGEP course, 'Environnement au Quebec'. The rest were from the secondary 5 'Programme d'éducation internationale' (PEI), which required that students provide community service. The 37 volunteers were trained to deliver two consecutive presentations to the younger students, who were enrolled in secondary 3 level biology courses. In addition to successfully engaging the younger students (<a href="http://www.toolsofchange.com/en/tools-of-change/norm-appeals/">Norm Appeals</a>), this approach also provided leadership opportunities for the older ones (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation over Time</a> ).</p>
+<p>Training for the first presentation included a review of the program's objectives, presentation materials and a sample script. Training for the second presentation included the use of role playing for teaching effective communications skills, and a review of the information to be covered.</p>
+<p>The volunteers were given an appointment schedule for their presentations, authorization slips to miss classes, and taxi rides to and from the schools they visited. They were required to check in and out with each school's administrative office. This procedure helped track the volunteers' safe arrival and departure. It also required the volunteers to pick up their presentation materials (overheads, video etc.) from the office when they arrived at each school - minimizing the risk that these materials might be forgotten or damaged en route.</p>
+<p>The first presentation used an eight minute video, created by the volunteers, called Honey, I Shrunk the Garbage! (Chérie, j'ai réduit les vindages). Following the video, students were asked to complete a questionnaire about what they had just seen.</p>
+<p>As an introduction to the second presentation, the volunteers created another video called Detour to the Future (Détour vers le futur). Like the first video, it employed humor to convey environmental messages, and included examples of local pollution problems (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation over Time</a>). A workbook, distributed to the younger students, required them to fill-in-the-blanks during the course of the presentation. The workbook included, for example, an illustration of a human figure containing the names of various toxins which students were directed to match to descriptions about their health effects (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>). While presented in a scientific manner, the workbook maintained a balance of humor to make sure that it was engaging. As part of the final questionnaire,  students were asked what they could do to improve environmental problems (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Funding consisted of $27,746 in grants, and $13,600 in in-kind help. The bulk of this funding came from the Community Animation Program (CAP), administered jointly by Environment Canada and Health Canada.</p>
+<p>Costs, not including taxes, were:</p>
+<table border="0">
+<tbody>
+<tr>
+<td width="220">Salaries (coordinator, technical administrator, secretary etc.)</td>
+<td>$16,310</td>
+</tr>
+<tr>
+<td>Contracted Services</td>
+<td>$ 1,920</td>
+</tr>
+<tr>
+<td>Copyright Charges</td>
+<td>$ 300</td>
+</tr>
+<tr>
+<td>Travel</td>
+<td>$ 1,650</td>
+</tr>
+<tr>
+<td>Equipment</td>
+<td>$ 1,829</td>
+</tr>
+<tr>
+<td width="220">Rent $1,200 Operating Costs (supplies, telephone calls, postage, copies, etc.)</td>
+<td>$ 4,537</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Total</td>
+<td>$27,746</td>
+</tr>
+</tbody>
+</table>
+<p>All amounts are in Canadian dollars</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>In order to evaluate the presentation's impact, three questionnaires were completed by all students - one at the beginning of the program and one after each of the two presentations.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>According to the evaluation questionnaires:</p>
+<ul>
+<li>34% of the younger students made environmentally conscious changes to their lifestyle</li>
+<li>27% talked to other students about the presentations and what they learned (Tool: <a href="/en/tools-of-change/word-of-mouth/">Word-of-mouth</a>)</li>
+</ul>
+<p>Improvements in awareness measured among students who received the presentations were:</p>
+<ul>
+<li>76% in the knowledge of the most serious types of pollution</li>
+<li>18% in the knowledge of how air pollution affects human health</li>
+<li>29% in the knowledge of how water pollution affects human health</li>
+<li>16% in the knowledge of how soil pollution affects human health</li>
+</ul>
+<p>Overall, 60% of students became more aware of the link between the environment and human health.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Lise Tremblay <br/>
+AGIES <br/>
+(418) 542-1426</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p> This cae study was written in 2000 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

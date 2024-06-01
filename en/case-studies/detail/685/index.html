@@ -1,0 +1,240 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>University of British Columbia</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Yearly energy savings: 26,578 kWh</li>
+<li>Daily energy savings<em> <em>187.69 kWh (</em>6.73%)</em></li>
+<li>Yearly dollar savings: $2,000 (at $.0752 /kWh) </li>
+<li>Cost effectiveness in first year: $0.91 /kWh </li>
+<li>Cost-effectiveness after: estimated at $0.46 /kWh </li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>UBC Energy Reduction Challenge</h1>
+<p>This is a great model for generating enthusiasm among students for energy efficiency. To engage more students in energy conservation, UBC adapted a Facebook application called <em>My Every Day Earth</em> to create a point structure for participation that was in addition to the typical kWh meter readings.  Users were able to gain points through activities such as: performing 11 actions they pledged to perform each day; creating short films to get their co-residents engaged and thinking about energy conservation; meeting with other students to discuss energy efficiency; and contacting their local politicians about energy efficiency.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The goal from the outset was to get young people to think about their energy consumption in ways that would cause them to conserve energy in the long-run. Students living in residence in their first year of university are in a transformative period in their lives as they begin to navigate the world away from their childhood homes. The program's premise was that attitudinal and behavioural shifts at this time in people’s lives would have a lasting impact.</p>
+<p>UBC therefore formed a team that launched a version of a campus-wide energy reduction challenge that was unique in attracting a greater diversity of people than would typically be involved. The typical form of the competition had been to pit individual dormitories and campuses against one another and see who would conserve the most energy from a baseline reading. However, participation was generally limited to those students who were environmentalists.</p>
+<p>This program therefore sought to make the competition fun and exciting to a broader set of students. It adapted a Facebook application called <em>My Every Day Earth</em> to create a point structure for participation that was in addition to the typical kWh meter readings.  Users were able to gain points through a number of different activities including creating short films to get their co-residents engaged and thinking about energy conservation.  The result was far greater participation and energy conservation than in prior years of the competition.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>UBC began with a <a href="http://www.toolsofchange.com/en/topic-resources/detail/139" target="_blank">literature review</a> of other campus programs. It also tracked attitudes and behaviors through the use of focus groups and interviews.</p>
+<p>The program worked with campus resident organizers and former campus residents who had become organizers. It also conducted meetings and conference calls with team members comprised of campus sustainability officers, residence organizers and members of a campus non-profit group called <em>goBEYOND</em>.  goBEYOND was a youth-led project which worked to educate, inspire, engage and support youth peers in taking climate action.  Based on everyone’s input, organizers designed a competition schedule that would work with resident activities and was optimized for peak engagement around weekly and semester schedules. For continuity with prior versions of the competition, UBC kept the name <em>Do It In The Dark</em> but added considerably more content and entertainment to the competition itself.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The competition was designed to build excitement and create buzz around energy conservation. Organizers wanted to attract young people to fun and exciting activities that would then cause them to think deeply about energy consumption and to change their life long attitudes. Students gained points for doing any of the following challenges. (<em>Challenges</em>)</p>
+<ol>
+<li><em>Do It Daily: </em>A set of 11 actions students pledged to perform each day: turning off the lights, putting on a sweater, using the stairs instead of the elevator, using natural light whenever possible; unplugging phone and laptop chargers, closing windows to conserve heat, putting on a sweater instead of cranking the heat, taking the stairs; not using a blow dryer or straightener, taking a shower that is 4 min or less, using colder water in the shower, washing clothes in cold water; studying in group study areas and unplugging your fridge and sharing with your friend;</li>
+<li><em>Do It Together:</em> A set of in-person events organized by residences  encouraged students to come together and participate in awareness, dialogue, and energy saving activities (<em>Norm Appeals</em>);</li>
+<li><em>Do It On Camera:</em> Students earned points for creating diary-style video blogs (vlogs) based on prompts in order to reflect on their experience, generate awareness, and share tips for reducing energy (<em>Norm Appeals; Obtaining a Public Commitment; Vivid, personalized, Credible, Empowering Communication</em>);</li>
+<li><em>Do It With Your Politician:</em> A civic engagement challenge that informed students about local issues relating to climate change and required them to contact their local politician by email, mail or telephone.</li>
+</ol>
+<p><strong>Overcoming Barriers  </strong></p>
+<p>Two of the biggest challenges faced were apathy and competing demands on students’ time. In order to grab their attention, the program had to create a competition environment that was compelling enough to draw them away from other activities. This revised version of <em>Do It In The Dark</em> was intended to appeal to people’s playful, creative and social inclinations to build a sense of community and common purpose around energy conservation. It was hypothesized that generating stronger peer interest and support would increase each individual’s incentive to participate and thereby increase overall participation.</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>UBC measured achievement by tracking kWh of electricity consumed in the largest of the student residences across all six campuses (Totem Park at UBC). The residence was home to 1757 students, 201 of whom actively participated in the MyEveryDay Earth Facebook application and approximately 150 participated in the face-to-face events.  It also measured participation in the facebook application as well is in the face-to-face events it helped support such as <em>Dine in the Dark</em>.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Overall</strong></p>
+<p><em>Yearly energy savings:</em> 26,578 kWh</p>
+<p><em>Daily energy savings <em>187.69 kWh (</em>6.73%)</em></p>
+<ul>
+<li>These savings were calculated  for Totem Park Residence, in comparison with the base period, and over the whole six-month period after the competition. During the competition itself this campus residence reduced daily electricity consumption by 16.3% (454.7 kWh per day).</li>
+<li>The total savings was 454.7kWh x 18 days = 8,184.6 kWh, during the competition period and 187.69kWh x 98 days = 18393.62 kWh for the period after the competition.</li>
+</ul>
+<p><em>Yearly dollar savings:</em> $2,000 (at $.0752 /kWh) </p>
+<p><em>Cost effectiveness in first year:</em> $0.91 /kWh</p>
+<p><em>Cost-effectivess after: </em>estimated at $0.46 /kWh </p>
+<ul>
+<li>It cost $24,000 to help promote and facilitate the competition and to contribute some funds towards development of the Facebook application.  Cost-effectiveness was calculated as $24,000 / 26,578 kWh = $.91 per kWh.</li>
+<li>Subsequent iterations would require half the cost.</li>
+<li>Estimated lifelong savings easily exceed the cost of hosting and supporting the competition. </li>
+</ul>
+<p><strong>Daily Reductions</strong></p>
+<p><em>Average daily energy saving: </em>2.26 kWh per person.</p>
+<ul>
+<li>Because meter readings were for entire buildings, UBC was not able to determine individual residents’ reductions in energy consumption. It therefore generated an average based on overall reductions. </li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<ol>
+<li>There was no cost implication or financial incentive to reduce consumption for the students. Their residence fees included all electricity and water bills.</li>
+<li>Through interview and focus group data, UBC determined attitudinal and behavioural shifts in team leaders and in many individual residents. It documented evidence of self-reported and peer reported shifts in behaviour such as continuing to take the stairs all year instead of the elevator as was happening before the competition. Some of this data as well as the statistically tested kWh savings are published in the Journal of Environmental  Psychology. <a href="http://www.sciencedirect.com/science/article/pii/S0272494414000048">http://www.sciencedirect.com/science/article/pii/S0272494414000048</a></li>
+</ol>
+<p> </p>
+<p>This case study was written in 2014 by Jay Kassirer.</p>
+<p> </p>
+<p class="MsoNormal" style="mso-pagination:widow-orphan lines-together;
+    page-break-after:avoid;tab-stops:0in .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400"><o:p></o:p></span></p>
+<p> </p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Rare</li>
+<li>Comisión Nacional de Áreas Naturales Protegidas (Mexico)</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Eco-Alianza de Loreto A.C.</li>
+<li>Parque Nacional Bahia de Loreto</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>The number of fishers operating legally increased fourfold, from 20% to 80%</li>
+<li>The number of fishers participating in fisheries management increased from 30 to 200</li>
+<li>300% increase in exclusive rights permits granted for four fisheries and nearly 75 species</li>
+<li>Fishers made 5-7 times more income from the sale of chocolate clams and paid for local enforcements through their profits</li>
+</ul>
+<p><a href="/userfiles/Loreto Bay -Rare Case StudyV3.pdf" target="_blank">Case study PDF</a></p>
+<p>To learn more about the Loreto Bay Pride campaign and other Pride campaigns run by Rare:</p>
+<p><a href="http://www.rareconservation.org/article/loreto-bay-national-park-mexico" target="_blank">www.rareconservation.org/article/loreto-bay-national-park-mexico</a></p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Rare's Loreto Bay Campaign for Sustainable Fisheries Management</h1>
+<p>This two-year campaign by Rare empowered local fishers in Mexico to practice sustainable fishing practices and inspired their communities to support conservation as a way of life.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Rare trains local conservation leaders all over the world to change the way their communities relate to nature. Rare’s signature method is called a “Pride campaign” – so named because it inspires people to take pride in the species and habitats that make their community unique, while also introducing practical alternatives to environmentally destructive practices.</p>
+<p>Pride campaigns are based on social marketing and utilize tactics including: audience segmentation; focus-group testing of highly targeted messages; use of multiple media vehicles and outlets to reinforce messages over a sustained period of time; and rigorous measurement of “product adoption” (i.e. new attitudes, behaviors, and sustainable alternatives).</p>
+<p>Rare does not directly implement these Pride campaigns, and instead trains local organizations in methods for social and behavioral change and then relies on them to add an essential understanding of local culture and norms as they conduct all outreach activities. These local implementing partners are critical to both achieving and sustaining impact t the community level. Rare also partners with organizations at the national and international levels to ensure that local strategies are well-integrated with broader conservation priorities in the region.</p>
+<p>This campaign was launched in 2009 by Rare and Perla Lozano Angulo of the Loreto Bay National Park.</p>
+<p>Often referred to as “the world’s aquarium” for its spectacular biodiversity, the Gulf of California is home to species representing one-third of Earth’s marine mammals and samples of more than 80 percent of the aquatic mammals found in the Pacific Ocean. At its entrance sits the Loreto Bay National Park, known internationally for its 2,065 square kilometers of islands, wetlands, lagoons, mangroves, sea grass beds and marine areas which support 72 percent of all marine mammal species in Mexico.</p>
+<p>The five island chain of Loreto Bay is a seasonal home to thousands of species including blue, fin, sperm, pilot, and humpback whales. The archipelago of Espíritu Santo, located just off the coast from the communities of Ensenada Blanca and Ligui, harbors some 1,200 species. Loreto Bay Marine Park also harbors rocky reef fish, loggerhead, black, and green sea turtles, nesting sea birds, black coral, yellowtail, dorado, groupers, and snappers.</p>
+<p><img alt="" height="267" src="/userfiles/Image/Map3.JPG" width="451"/></p>
+<p>Map courtesy mapcruzin.com</p>
+<p>This rich collection of marine biodiversity is under siege by myriad human activities that threaten the biodiversity and economic sustainability of the region. Among the most critical challenges brought about by increasing coastal development are overfishing and unsustainable fishing practices.</p>
+<p>Almost 12,000 people live in the municipality of Loreto. The primary economic activities are tourism, commerce, and fishing. Loreto's tourism industry caters primarily to US residents and one of the most popular tourist activities in Loreto is sport fishing.</p>
+<p>At the time that Rare began its campaign, local fishers were overharvesting a number of economically important species (in violation of allowable-catch quotas) and illegally removing from the population juveniles and protected species.</p>
+<p>The local community’s unsustainable fishing practices led to a decline in abundance of key market species. With fewer and fewer fish locals traveled further from their traditional fishing grounds sometimes bringing communities around the park in conflict with one another.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>Perla targeted as her primary audience the fishers living in communities adjacent to Loreto Bay National Park that earned a living from the species they caught within the park. With this group she wanted to increase the adoption of sustainable fishing practices like respecting no-take zones, closed seasons, and illegal species.</p>
+<p>Her secondary audience was the other locals within those communities who influenced the primary audience. With this group she wanted to build community awareness and support for sustainable fishing in the park.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Pride campaigns use pre-campaign Knowledge, Attitude, and Practice (KAP) surveys to establish baseline data.</p>
+<p>Having received training from Rare in how to do qualitative research with a target audience, including how to conduct interviews and carry out KAP surveys, Perla set out to establish baseline information about fishers, their habits, and their attitudes.</p>
+<p>She asked key questions regarding their preferred methods of fishing, which species they targeted, what condition they perceived those species to be in at that time as well as historically, as well as what they knew about the allowable-catch laws that existed and how much knowledge they had about areas within the park where fishing was restricted.</p>
+<p>Prior to Perla’s campaign, Loreto Bay National Park had adopted new guidelines to increase the size of No-Take Zones (NTZs) within the park. NTZs are areas, often spawning grounds, in which fishing is prohibited that allow for species recovery. Local fishers ultimately benefit from the ‘spillover effect’ of NTZs, wherein recovering fish populations leave the NTZ and enter local fishing grounds.</p>
+<p>Perla learned through her baseline research that among the fishers that she surveyed 50% had never heard of an NTZ, 64% thought that most fishers rarely or never respect NTZs, and 85% had never participated in a conservation or sustainable use activity in the past. She also found that only 20% of fishers were adhering to the allowable catch laws and fishing legally.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>For local fishers, Perla provided workshops with local technical experts, covering topics such as</p>
+<ul>
+<li>environmental and economic benefits of No-Take Zones designed for marine species protection and fisheries replenishment</li>
+<li>negative effects of overfishing</li>
+<li>respecting NTZs</li>
+<li>registering for permits</li>
+<li>monitoring and enforcement of the MPAs</li>
+</ul>
+<p>(Vivid, Personalized, Credible, Empowering Communications)</p>
+<p>To build community awareness and support for sustainable fishing in the park, Perla designed a variety of campaign activities under the slogan “Loretanos…for a Sea Full of Life”. These activities included: painting murals, delivering conservation-themed puppet shows, and producing games and activities for local public events and festivals. These activities focused on the negative effects of overfishing and the environmental and economic benefits of No-Take Zones.  (Norm Appeals; Vivid, Personalized Communication; Word of Mouth)</p>
+<p>Perla also worked with members of the local community to develop a full suite of communication materials including: radio ads and posters, campaign songs, bumper stickers, hats, and stickers. (Mass Media, Norm Appeals, Word of Mouth.)</p>
+<p>The radio ads and posters featured local fishers, which served as public commitments from these fishers and strengthened norm appeal at the same time. (Obtaining a Commitment, Norm Appeals.)</p>
+<p>One of the hallmarks of Rare’s Pride campaigns is the use of a mascot to help establish a brand identity for the campaign. Typically the mascot is one of the area’s flagship species that are threatened by the human activity being addressed. In Loreto Bay Perla and her team designed a charismatic Chocolate Clam mascot (a species for which Loreto is famous) which was used to draw attention to the campaign and promote conservation awareness at parades, schools, and events throughout the area. (Vivid, Personalized Communication)</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Perla used the same KAP survey methodology and protocols before and after the campaign to measure changes in knowledge, attitude, and practice.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Outputs </strong></p>
+<ul>
+<li>200 tide calendars with campaign messages were distributed to fishers</li>
+<li>26 murals painted; community members now ask for campaign images on their walls</li>
+<li>59% of fishers informed of access rights credit their knowledge to talks with Rare’s Campaign Manager</li>
+<li>300+ Loretanos were taken out into the park for the first time</li>
+<li>3000 community members participated in festivals</li>
+</ul>
+<p><strong>Outcomes</strong></p>
+<ul>
+<li>Up from 20%, 80% of fishers surveyed were operating legally as of 2012, a 60 percentage point increase</li>
+<li>The number of fishers participating in fisheries management (voluntary shifts to patrol the NTZ for illegal activity) increased from 30 to 200.</li>
+<li>300% increase in exclusive rights permits granted for four fisheries and nearly 75 species</li>
+<li>8% of the park dedicated to fish recovery zones; up from .07% in 2007</li>
+<li>Community knowledge about marine reserves increased by 75 percent</li>
+<li>Fishers made 5-7 times more income from the sale of chocolate clams and paid for local enforcement through their profits</li>
+<li>The value of the fishers’ catch increased. They sold 20 clams for $150 pesos, whereas they used to earn just $20 pesos.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p> This case study was written in 2013 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

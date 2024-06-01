@@ -1,0 +1,339 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Clean Air Foundation</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Alberta Automotive Recyclers and Dismantlers Association</li>
+<li>Alberta Ecotrust</li>
+<li>Alberta Environment</li>
+<li>Automotive Recyclers of Canada</li>
+<li>BC Auto Recyclers</li>
+<li>Canadian Association of Recycling Industries</li>
+<li>Canadian Steel Producers Association</li>
+<li>EcoSuperior</li>
+<li>Environment Canada</li>
+<li>Fluorescent Lamp Recyclers</li>
+<li>Institute of Scrap Recycling Industries</li>
+<li>International Centre for Sustainable Cities</li>
+<li>Mercury Recovery Fund</li>
+<li>Ontario Automotive Recyclers Association</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Over 150 participating businesses, including half the auto recyclers in Ontario</li>
+<li>Half indicated a collection rate of 91% of their total potential</li>
+<li>Diverted 250 kilograms of mercury from waste</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Switch Out Mercury Recovery Program</h1>
+<p>The Switch Out program draws on the voluntary assistance of Canadian automotive recyclers to remove light switches containing mercury from end-of-life vehicles. Initiated by the Clean Air Foundation (CAF) in June 2001, Switch Out has significantly reduced the impact of mercury disposal into the environment.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Mercury is a neurotoxin that affects the central nervous system and can produce emotional or behavioral abnormalities. One gram of mercury can contaminate a 20-acre lake, rendering the fish inedible and posing a dangerous health hazard for humans and marine life for up to one year.</p>
+<p>Although there is little federal or provincial legislation to back up the impact mercury has on human health, Environment Canada and other federal departments have policy and program initiatives for mercury management under the <em>Canadian Environmental Protection Act</em> of 1999. The act identifies the risks of mercury to the environment and focuses on pollution prevention and the protection of the environment and human health.</p>
+<p>Environment Canada states that research on the nature of mercury and its impact continues in order to develop policies and legislation that reflect their presence in and effect on the environment. (See: <em>Mercury and the Environment: Mercury Management Federal Legislation and Guidelines at:</em> <a href="http://www.ec.gc.ca/MERCURY/MM/EN/mm-flg.cfm?SELECT=MM">http://www.ec.gc.ca/MERCURY/MM/EN/mm-flg.cfm?SELECT=MM</a>)</p>
+<p>Many vehicle light switches contain slightly less than one gram of mercury. Mercury in light switches accounts for one-fifth of the total amount found in products in Canada. In the past, light switches were demolished with the rest of the vehicle, once the vehicle reached the end if its life, releasing the mercury directly into the environment. In fact, in 2002-2003, almost 143,000 mercury-containing light switches were discarded in Ontario alone.</p>
+<p>A pilot mercury recovery program involving 11 auto recyclers was initially delivered in Ontario by Pollution Probe in 2000 and is now operated and managed by the Clean Air Foundation (CAF), and is the subject of this case study. CAF is a national, not-for-profit organization dedicated to developing, implementing and managing public engagement programs and other strategic approaches that lead to measurable emissions reductions.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The objectives of the 2001 Switch Out program were to:</p>
+<ul>
+<li>engage up to 150 participating auto recyclers in Ontario to recover and remove mercury light switches from vehicles prior to demolition;</li>
+<li>expand the program to two other Canadian provinces; and</li>
+<li>collect 60,000 switches by April 2004.</li>
+</ul>
+<p>The first two goals were met, but after studying the results of the Ontario campaign, Switch Out realized that the program would fall short of its third goal (collection of 60,000 switches). A business plan was prepared in February 2003 to identify new strategies to meet that collection goal and, in early 2004, Switch Out commissioned a study to identify areas for improvement. The plan and the study resulted in the following new objectives:</p>
+<ul>
+<li>increase the number of participants regionally through a broader marketing mix;</li>
+<li>linitiate or expand the program to other provinces;</li>
+<li>increase the recovery rate among participating recyclers; and</li>
+<li>diversify the programs funding base.</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Businesses in the auto recycling industry vary from small back yard operators to large automotive shops that dispose of hundreds of cars every year. However, the industry as a whole had little knowledge of the hazards associated with the mercury contained in vehicle light switches. Since there was great potential to reach such a wide-ranging industry in order to recover and properly dispose of mercury, this industry was chosen as the target audience.</p>
+<p>Mercury cannot be transported by regular means. Mercury transporters must obtain a certificate of approval from the Ontario Ministry of the Environment and also meet federal training protocols for handling hazardous materials under the <em>Transport of Dangerous Goods Act</em>. The federal protocols apply Canada-wide and although provincial licensing does vary, it is fundamentally the same for each province.</p>
+<p>Switch Out researched similar mercury recovery and transportation programs found in the United States, discovering that the U.S. Environmental Protection Agency's (EPA) collection requirements for hazardous materials to be superior to those in Canada. Under its <em>Universal Waste Rule</em>, the EPA regulations had streamlined hazardous waste management standards, including the collection, transportation, and recycling and treatment of what are deemed universal wastes (batteries, pesticides, mercury-containing thermostats and lamps, etc.).</p>
+<p>Compared to Canada, the EPA regulations had eased the burden on retail stores and others (such as auto recyclers) that wished to collect or generate these types of wastes. They also facilitated programs to reduce the quantity of wastes going to municipal landfills or combustors and ensure that all wastes go to appropriate treatment or recycling facilities pursuant to full hazardous waste regulatory controls. Individual states could modify the universal waste rule to add additional wastes. <em>(EPAs Streamlined Regulations for Universal Waste:</em> <a href="http://www.epa.gov/epaoswer/hazwaste/id/univwast.htm">http://www.epa.gov/epaoswer/hazwaste/id/univwast.htm</a> )</p>
+<p>Unlike in the United States, there was no third-party body in Canada that handled the collection and management of these types of programs.</p>
+<p>Based on its research, Switch Out developed an outreach and marketing strategy and created an advisory committee to guide the program. The advisory committee contributed technical and marketing expertise, and met about three times a year.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Switch Out engaged Ontario's auto recycling industry by showcasing the program at trade shows and by contacting Trevor Pettit, the Executive Director of the Ontario Automotive Recyclers Association (OARA). Mr. Pettit sent out a letter to each of OARA's members, urging their participation. OARA had already been engaged in many environmental best practices (including a <em>Code of Ethics</em> to be come more environmentally responsible) and was, therefore, very receptive to the program. Businesses that expressed interest were asked to join the program (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>).</p>
+<p>The program worked this way. Recyclers removed light switches containing mercury from vehicles that were being dismantled and held them in designated containers. Training aids were provided the most useful being <em>Switch Out: Auto Dismantlers Guide, </em>which helped participants identify and recover the correct types of switches (not all cars contained mercury light switches, such as those manufactured in Asia).</p>
+<p>The recyclers held the switches on-site until they were collected, subject to small quantity exemptions set out by the Ontario Ministry of Environment. This exemption applied so long as participants did not store more than five kilograms of mercury per month. The Switch Out collection system was quick and easy, with no cost to the recycler.</p>
+<p>The switches were picked up on a regular basis by Purolator Courier and taken to Fluorescent Lamp Recyclers Inc.s (FLR) Cambridge, Ontario facility. FLR provided Switch Out with long-term storage of the collected switches and recycled the mercury.</p>
+<p>Switch Out ensured that the mercury never re-entered the environment. The recycled mercury was reused in the manufacture of new products. All of these products had to belong to take back programs as part of the EPA regulations, in which the manufacturer took the product back from the consumer at the end of the products life.</p>
+<p>Purolator was chosen as the designated courier because the company had already participated in similar hazardous materials collection programs in the past. The company had obtained a <em>Hazardous Waste Systems Certificate</em> (provincial license) under the <em>Environmental Protection Act</em> and had met all federal training for handling and transporting dangerous goods.</p>
+<p>Before Switch Out was introduced, there was no practical mechanism for auto recyclers to collect and correctly deal with mercury switch recovery. The program provided the necessary infrastructure to collect, transport, store and recycle the mercury collected by participating recyclers (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>In 2003, with the success of the Ontario program, Switch Out expanded the program to Alberta recyclers through the Alberta Automotive Recyclers and Dismantlers Association (AARDA), and, in March 2004, to British Columbia through the International Centre for Sustainable Cities (ICSC). The Alberta campaign also spread to some auto recyclers in Saskatchewan.</p>
+<p><strong>Participant Motivation</strong></p>
+<p>Switch Out used a combination of direct contact, trade association newsletters, direct mailings, Web sites, and other communications to raise awareness of the issue in the automotive recycling industry. That industry includes the scrap and steel sector and government departments and agencies.</p>
+<p>The legwork proved successful since it drew in such major partners as federal and provincial ministries, the Canadian Steel Producers Association, and the Institute of Scrap Recycling Industries. Recognition among related industries was also apparent, with some scrap dealers and steel processors taking active roles in the promotion of the recovery program. All of these partnerships gave the program the legitimacy and leverage it needed to convince managers to integrate the program into their businesses.</p>
+<p>These relationships evolved over time. Beginning with individual managers from a few key companies, Switch Out expanded and became more formal, with program staff meeting with representatives from each of the parties every four to six months.</p>
+<p>The general public was also informed, sowing the seeds of consumer demand for the program by recognizing participating businesses on the Switch Out Web site and in press releases. Switch Out was featured on CBCs <em>Marketplace</em> in October 2002, and the program won a 2001 Recycling Council of Ontario Waste Minimization Award (<a href="/en/tools-of-change/mass-media/">Mass Media</a>).</p>
+<p>Businesses found that it was a relatively easy process to incorporate the recovery and collection of the switches into the dismantling process that mechanics performed with every vehicle. Most participating businesses simply made it one of the many tasks required by their workers. Many business owners took part out of a sense of environmental stewardship, while employees participated based on job requirements. By making it part of the every day routine, it simply became the responsible thing to do (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p>Any program that seeks to change peoples behaviour requires leadership and direct contact with the target audience. One leader who emerged as a result of the program was Bruce Woodbeck of Woodbeck Auto Parts in Sterling, Ontario. Even before Switch Out was launched, Mr. Woodbeck had been removing light switches containing mercury. When Switch Out contacted him, he immediately responded to the idea and was instrumental in getting the OARA on board. The OARA then promoted the program to the recycling industry in general and its members in particular.</p>
+<p>Switch Out found that business owners were more likely to participate if they saw their competition doing so. If a business initially chose not to join, Switch Out's communication strategy of creating a demand for the program was effective in countering their decision (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>; <a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>).</p>
+<p>When the program was expanded into Alberta, Switch Out used the lessons learned in Ontario. As it did with the OARA, Switch Out established a relationship with the Alberta Automotive Recyclers and Dismantlers Association (AARDA) to obtain their co-operation. The AARDA's well-respected reputation among its members helped Switch Out convince many auto recycling shops in Alberta to participate (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p><strong>Tackling Obstacles</strong></p>
+<p>After two successful years of operation in Ontario, Switch Out felt that more needed to be done to convince businesses to participate and, therefore, raise the number of collected switches.</p>
+<p>Businesses often cited a lack of time as the number one reason for not participating. In the highly competitive auto recycling industry, as with most industries, time equals money. To address the issue, a one-month financial incentive program was developed in November 2003 in which a bounty of $1.00 per switch collected was awarded to participants (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>; (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>).</p>
+<p>Even though the incentive program was not administered at the best time of year for the recycling industry (spring and summer tend to be easier for recyclers to dismantle automobiles sitting in scrap yards), it attracted new participants and generated an immediate increase in the rate of collection. Although there was a subsequent decrease in collection over time, the collection rate leveled off at a higher level than before the incentive program.</p>
+<p>Switch Out did consider raising the $1 per switch bounty, but since that rate was standard in similar programs in other jurisdictions, it was doubtful whether the program would ever offer a higher incentive.</p>
+<p>Obtaining commitments, including funding, from all of the various sectors was crucial in developing the program. For example, Switch Out obtained funding from both the Ontario Ministry of Environment and from Environment Canada, and also worked with various levels of government to enact legislation requiring the collection of automotive mercury. A majority of auto recyclers support Switch Outs lobbying efforts. The lack of comprehensive public policy or legislation like that of the U.S. EPA's Universal Waste regulations remained a key barrier to reaching the programs ultimate objectives.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The cost to initiate the program in 2001 was $50,000. Additional funding was later secured to support the expansion of the program in Ontario and the development and management of Switch Out Alberta and Switch Out BC.</p>
+<p>Financing of the program for the year 2003-2004 budget was generated from:</p>
+<ul>
+<li>Ontario Power Generation</li>
+<li>Environment Canada</li>
+<li>the Ontario Ministry of the Environment</li>
+<li>Alberta Environment</li>
+<li>Alberta Ecotrust</li>
+<li>Recycling Council of Alberta</li>
+</ul><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Switch Out tracked the number of participating businesses, the number of switches collected, and the amount of mercury diverted from the waste stream.</p>
+<p>As noted above, Switch Out staff commissioned a study in early 2004 to gather feedback on the program. The survey identified program accomplishments, challenges, and opportunities. It also helped Switch Out refine its overall communications strategy and enhance its relationship with participating recyclers. Sixty-one program participants and 11 non-participating auto recyclers, primarily from Ontario and Alberta, were surveyed by telephone on a variety of program issues.</p>
+<p>The top four strengths identified by program participants were:</p>
+<ol>
+<li>Recovery of switches.</li>
+<li>Stakeholder engagement.</li>
+<li>Leverage of business/political support.</li>
+<li>Consistency with government priorities and programs.</li>
+</ol>
+<p>The key challenges identified were:</p>
+<ul>
+<li>no incentive / it costs to participate;</li>
+<li style="list-style-type: none; list-style-image: none; list-style-position: outside;">li&gt;lack of time;</li>
+<li>lack of information;</li>
+<li>staff forget;</li>
+<li>cold weather; and</li>
+<li>lack of or insufficient on-site self-inspection programs.</li>
+</ul>
+<p>In March 2004, CAF set out several new strategies for expanding the program, including objectives to:</p>
+<ul>
+<li>strengthen Switch Out in Ontario, Alberta and British Columbia;</li>
+<li>initiate the program in Qubec;</li>
+<li>increase participation and switch collection through certificates ($1 bounty) and other non-monetary incentives;</li>
+<li>establish a national advisory group; and</li>
+<li>outline the objectives and requirements for a national Switch Out program.</li>
+</ul>
+<p>In addition, Switch Outs Web site also provided information on milestones reached to date, media coverage, the programs future objectives, and other information for both the general public and participants.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>After only three years, Switch Out had gained widespread recognition in the auto recycling industry. Even many non-participants had at least heard of the program, while participating recyclers were surprised when they were told that Switch Out had not yet been implemented nationwide. The program was successfully expanded into Alberta and to a lesser extent into Saskatchewan, engaging a number of participants in that region even without the financial incentive.</p>
+<p>Key results for Switch Out Ontario by 2004:</p>
+<ul>
+<li>over 150 recycling businesses were participating, over 26,000 switches had been recovered; and about 250 kilograms of mercury had been diverted from the waste stream;</li>
+<li>86% of all OARA members participated (representing over half of all automotive recyclers in Ontario);</li>
+<li>in its first year of operation, Switch Out recovered 2,500 switches; in 2002-2003, 14,000 switches were recovered; and</li>
+<li>half of all participants surveyed indicated a collection rate of 91% of their total potential, with participants showing a higher rate of recovery the longer they had been involved in the program.</li>
+</ul>
+<p>Switch Out was also featured prominently on CBC's Marketplace consumer affairs television show in 2002 <a href="http://www.cbc.ca/consumers/market/files/cars/mercury/">http://www.cbc.ca/consumers/market/files/cars/mercury/</a>)</p>
+<p>Switch Out obtained a commitment from the automotive manufacturing industry to eliminate the use of mercury in all light switches by 2003. This was important to participating auto recyclers: survey results showed that they were more committed to the program if they felt that the problem was being addressed at the source.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>For more information about Switch Out, contact:</p>
+<p>Ms. Fatima Dharsee 	<br/>
+Program Manager 	<br/>
+Switch Out 	<br/>
+Tel: (416) 922-9038, ext. 48 	<br/>
+E-mail: <a href="mailto:fdharsee@cleanairfoundation.org">fdharsee@cleanairfoundation.org</a> <br/>
+Web site: <a href="http://www.switchout.ca">http://www.switchout.ca</a></p>
+<p>For more information about the Clean Air Foundation, contact:</p>
+<p>Mr. Ian Morton 	<br/>
+Executive Director 	<br/>
+Clean Air Foundation 	<br/>
+Tel: (416) 922-9038, ext. 26 	<br/>
+E-mail: <a href="mailto:imorton@cleanairfoundation.org">imorton@cleanairfoundation.org</a> <br/>
+Web site: <a href="http://www.cleanairfoundation.org">http://www.cleanairfoundation.org</a></p>
+<p>For more information and results regarding the independent review of the Switch Out program contact:</p>
+<p>Mr. Jay Kassirer 	<br/>
+President 	<br/>
+Cullbridge Marketing and Communications 	<br/>
+Tel: (613) 224-3800 	<br/>
+E-mail: <a href="mailto:kassirer@cullbridge.com">kassirer@cullbridge.com</a> <br/>
+Web site: <a href="http://www.cullbridge.com">http://www.cullbridge.com</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned</strong></p>
+<ul>
+<li>Understand the needs and motivations of the industries involved. This was a key factor in developing appropriate communication and program delivery strategies.</li>
+<li>Develop partnerships within federal and provincial government departments and agencies, and in related industry associations. This established acceptance of the program when introducing it to potential participants and provided leadership once businesses joined the program.</li>
+<li>Identify barriers early and develop strategies or partnerships to overcome them. The issue of transporting hazardous waste, for example, was an unforeseen barrier that had to be faced and solved before the program could advance.</li>
+<li>Ensure that incentives coincide with industry needs. A more carefully designed incentive program would likely have had even more positive results than the trial that was conducted.</li>
+<li>Future government support will be critical in order to expand participation. Enacting legislation for mercury collection and disposal has become an important focus of the program and Switch Out continues to lobby for comprehensive policies and legislation at all levels of government.</li>
+</ul>
+<p>This case study was written in 2004 by Jay Kassirer and Sharon Boddy.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

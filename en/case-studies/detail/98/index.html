@@ -1,0 +1,283 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+<li><a href="/en/tools-of-change/work-programs-that-influence-the-home/">Work Programs that Influence the Home</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Auto Free Ottawa</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Region of Ottawa-Carleton</li>
+<li>City of Ottawa</li>
+<li>OC Transpo</li>
+<li>Société de transport de l'Outaouais</li>
+<li>Environment Canada</li>
+<li>Health Canada</li>
+<li>Transport Canada</li>
+<li>Canada Trust/Friends of the Environment Fund</li>
+<li>Solidum Systems</li>
+<li>KPMG Consulting</li>
+<li>Export Development Corporation</li>
+<li>The Message Centre</li>
+<li>Pembina Institute </li>
+<li>Canadian Urban Transit Association</li>
+<li>Citizens for Safe Cycling</li>
+<li>Mountain Equipment Co-Op</li>
+<li>Conseil régional de l'environnement et du développement durable de l'Outaouais (CREDDO)</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>10,939 people (1% of the region's population) participated and diverted almost 300 metric tonnes of air pollution. </p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Ottawa's Commuter Challenge</h1>
+<p>Ottawa's Commuter Challenge is a week long event that encourages people of legal driving age (16+) to reduce air pollution by using active or sustainable transportation to get to and from work or school. People are asked to walk, cycle, take the bus, telework, carpool, or a combination of those, instead of driving alone.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The Commuter Challenge is a fun and competitive event that highlights the health, financial, and environmental benefits associated with active or sustainable transportation, and raises awareness of climate change issues. It also engages participants in trying out more sustainable transportation alternatives. The week long campaign is held during the first week of June each year, and coincides with Canada's National Environment Week (<a href="http://www.on.ec.gc.ca/environment-week/intro.html">www.on.ec.gc.ca/environment-week/intro.html</a>) and Clean Air Day Canada, the first Wednesday in June (<a href="http://www.ec.gc.ca/cleanair">www.ec.gc.ca/cleanair</a>). People are encouraged to participate as a workplace team and compete against similar sized groups, but can also participate as individuals if their workplace is not registered.</p>
+<p>The Commuter Challenge began as a grassroots initiative in major cities across Canada. In the Ottawa-Carleton Region, Auto Free Ottawa (AFO) had organized an annual Cycling Challenge week since 1991, and during that time, had created an on-line database that could be used by participants who had access to the Internet. The database continues to be modified and improved with each successive campaign.</p>
+<p>In 1998, AFO adopted the Commuter Challenge name to be consistent with other Canadian cities running similar campaigns. That year, all other active and sustainable modes of transportation were added, including walking, taking the bus, teleworking, and carpooling. An estimated 2,000 people from approximately 40 groups participated in 1998. In 1999, with the addition of Regional government funding to hire a part-time coordinator, participation in the National Capital Region* tripled to 6,248 participants.</p>
+<p>*The National Capital Region includes the municipalities of Ottawa, Kanata, Nepean, Gloucester, Vanier, Cumberland, and the Townships of Rideau, Goulbourn, and Osgoode in Ontario, and the municipalities of Hull, Aylmer, Gatineau, and Buckingham in Qubec. The total approximate population is 1,000,000.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The objectives of the 2000 Commuter Challenge campaign were:</p>
+<ol>
+<li>Reduce greenhouse gas emissions associated with private automobile use.</li>
+<li>Double the participation rate of 1999.</li>
+<li>That at least 5% of all participants be single occupant drivers who changed their commuting habit for either a) Clean Air Day Canada (CADC), or, b) the full week of the Challenge.</li>
+<li>For the 2nd year running, beat Calgary (another Canadian city) in an inter-city challenge.</li>
+<li>Obtain higher level involvement from youth in Ottawa-Carleton and Outaouais district schools.</li>
+</ol><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>N/A</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The 2000 Commuter Challenge campaign began in late 1999 with Auto Free Ottawa (AFO) securing core funding from the Region of Ottawa-Carleton, and in January 2000, a coordinator was hired. As in previous years, AFO worked closely with Environment Canada, to promote the Challenge as part of National Environment Week and Clean Air Day Canada, and with the City of Ottawa's Environment Department and the Region of Ottawa-Carleton's Mobility Management Branch. Additional financial and "in-kind" sponsorship was secured from private companies who had previously participated in the Commuter Challenge, or who supported the goals of the campaign.</p>
+<p>Using past contact lists and the AFO database, groups who had participated in previous campaigns were contacted starting in March. Groups were divided by public, private, or education sectors, and for prizes and awards, were further divided by their employee or student population (1000+, 100-999, and 1-99). Environment Canada and municipal government staff also identified key contact people.</p>
+<p>The Commuter Challenge was also open to anyone of legal driving age who regularly used active and sustainable transportation modes, not just those who normally drove alone. This recognized the efforts of active commuters, and encouraged those people to act as role models to their coworkers, neighbours, family, and friends (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>, <a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>). People are asked to walk, cycle, take the bus, telework, carpool, or a combination of those, instead of driving alone (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>As they did in 1999, the National Capital Region challenged the City of Calgary, which has a similar population size, to see which one could get the most participants.</p>
+<p><strong>Promotion</strong> <br/>
+Beginning in March, community newspaper articles promoted the Commuter Challenge and invited workplace teams to register. In April and May meetings were held with federal government departments to provide them with information and assistance on setting up their workplace campaigns.</p>
+<p>The two local transit authorities, OC Transpo, and Socit de transport de l'Outaouais, prepared brochures that promoted the Commuter Challenge. This was part of their larger campaign, working with the Canadian Urban Transit Association (CUTA), to increase ridership across the country. In Ottawa-Carleton, 20,000 copies of the brochure were printed and distributed on every bus during the week prior to the Commuter Challenge. More information was also printed in OC Transpo's passenger newsletter "Circuits." OC Transpo and CUTA distributed bright yellow t-shirts with the "Walk Bike Ride" logo on it, and these were given away as promotions and prizes. Local politicians also wore the t-shirts at Commuter Challenge events.</p>
+<p>CKCU FM community radio was very supportive of the Commuter Challenge and aired several interviews highlighting different types of transportation, the issue of climate change, and the health benefits of active commuting (<a href="/en/tools-of-change/mass-media/">Mass Media</a>). Local television stations, and CBC Radio also aired interviews.</p>
+<p>A public service announcement for radio was prepared and can be heard on the Media page of the Commuter Challenge web site. The PSA was sent to several radio stations in the National Capital region. Follow-up to these stations revealed that on-air personalities choose which PSAs to run, and PSAs are not tracked as to when they are played. To date, no information has been received that the PSA was played, but it will be retained and amended for future campaigns.</p>
+<p>Advertisements were placed in community newspapers, and "XPress," a weekly entertainment newspaper. XPress also printed articles about the Commuter Challenge.</p>
+<p>Several local non-profit groups, Environment Canada, the City of Ottawa, and the Region of Ottawa-Carleton added a link from their web site to the Commuter Challenge web site, giving the campaign a higher profile.</p>
+<p>The following events were either organized by the Commuter Challenge, or by supporting groups who were holding similar campaigns:</p>
+<ul>
+<li>A bicycle safety demonstration was organized with the support of Citizens for Safe Cycling.</li>
+<li>Free newspapers were handed out by local mayors, city and regional politicians, and the Honourable David Anderson, Federal Minister of the Environment at two "thank you" events for bus commuters.</li>
+<li>OC Transpo and the Canadian Urban Transportation Association unveiled a new advertising campaign to increase ridership in May.</li>
+<li>The David Suzuki Foundation, Nortel Networks and Canada Post organized trade fairs that highlighted active and sustainable transportation, among other issues, in April, May and June.</li>
+</ul>
+<p>In many of these promotional activities, AFO capitalized on the challenge between the National Capital Region and Calgary to foster interest and friendly competition.</p>
+<p>On the Commuter Challenge web site, and in articles and radio interviews, cost savings were used to promote active and sustainable transportation (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation over Time</a>). For example, the cost of operating a vehicle (figures from the Canadian Automobile Association) was compared to the cost of a yearly bus pass, or the purchase price of a new bicycle. The rising price of gas was also used as a financial disincentive to driving a single occupant vehicle and was referred to in radio interviews and articles. (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>).</p>
+<p><strong>Information Kits</strong> <br/>
+An Information Kit was sent to any group that was interested in participating. The Kit provided suggestions on how to run the campaign at the workplace or school, and included eye-catching posters that sported the Commuter Challenge mascot (the "Walking Briefcase"), information on local transit services, a Regional cycling map, and a diskette that included a spreadsheet application for gathering information, and sample e-mail messages that could be sent to all of the group's participants. The main information document, spreadsheet, and sample e-mails, were also available on the Commuter Challenge web site as a downloadable file.</p>
+<p>Many people, in past campaigns, cited a lack of information and resources as a barrier to using active or sustainable transportation (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). The Information Kit and web site, therefore, were designed to give people concrete information (bus and cycling maps, resource lists, benefits, etc.) about alternative modes. Some groups who registered with the Commuter Challenge already had facilities at work (showers and change rooms, bicycle racks, preferred parking for carpoolers, etc.), and these groups ensured that information was readily available to their employees before and during the campaign.</p>
+<p>The poster was professionally designed and mimicked the design of the web site. The "Walking Briefcase" mascot was used on all communications: poster, web site, buttons, articles, and press releases.</p>
+<p>Each group received promotional buttons that could be worn on clothing, hats, backpacks, or workplace cubicles that featured the Walking Briefcase logo and the dates of the Commuter Challenge. These helped to raise the visibility of participation, and to promote the event to employees as something that their workplace supported and approved (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>).</p>
+<p>Each group was asked to name a "Team Captain" who would be the main contact for the Commuter Challenge coordinator and who would run the campaign for their group by promoting the event and getting their employees or students involved.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>AFO secured core funding of $14,000 from the Region of Ottawa-Carleton, and $8,500 from the private sector. In-kind donations of prizes, information materials, human resources, office supplies, telephone services, graphic design, mailing costs, French language services, etc. represented at least another $10,000.</p>
+<p>Primary expenses included the coordinator's fees, printing, advertising, promotional buttons, translation, and web site and graphic design.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>There were three ways for people to register the distance that they travelled and the type of transportation they used.</p>
+<ol>
+<li>Tally sheets were included in the Information Kit so that employees could fill in their information and fax it to the Commuter Challenge coordinator. The information was then manually input into the AFO database. Groups who ran a paper campaign used volunteers to gather information, asking each employee to make a commitment to the campaign, for either the full week or a portion of it (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>).</li>
+<li>The spreadsheet included in the Information Kit allowed Team Captains to record the name of each participant, the distance travelled, and mode of transportation used on a computer application. The file was emailed to the coordinator and converted to a form that was readable by the AFO database.</li>
+<li>Web site registration was the quickest way to be counted. A "shortcut" web site address (URL) was created for each registered group so that Team Captains could send an email to all their employees with the unique URL hyperlinked in the message. Once the link was clicked, an employee was taken directly to their group's page on the Commuter Challenge web site where they could input their information.</li>
+</ol>
+<p>The AFO database collected information on each participant's method of transportation and the kilometres that they travelled for the week of the Commuter Challenge. An Environment Canada pollution model was used to translate the distance and mode information into kilograms of air pollution diverted. Carbon dioxide, carbon monoxide, hydrocarbons, and nitrous oxides were measured.</p>
+<p>Registered groups were listed on the Commuter Challenge web site and permitted to link their company or government department's web site to the Commuter Challenge site. Commitment was stronger from these groups since their results were listed on a public web site (a href="/en/tools-of-change/obtaining-a-commitment/"&gt;Obtaining a Commitment).</p>
+<p>Each participant was asked how they normally commuted to determine how many participants were single occupant drivers who had changed their behaviour that week. The first three digits of each participant's home postal code were also requested to determine the number of participants from both the Ontario and Quebec sides of the Nation's Capital.</p>
+<p>The final number of people who participated was used to declare a winner in the challenge against Calgary.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>10,939 people (1% of the National Capital Region's population) from approximately 100 registered groups participated. This represented a diversion of almost 300 metric tonnes of air pollution had each of those participants been driving alone. Approximately 20% of all participants indicated that they normally drove a car alone, two days per week or more.</p>
+<p>In both 1999 and 2000 the National Capital Region won its challenge against Calgary.</p>
+<p>Many of the groups who had participated in previous years saw marked increases in their participation rates. For example, Export Development Corporation increased its participation from to 30% in 1999 to 70% in 2000, and Health Canada increased its participation from 23% in 1999 to 47% in 2000.</p>
+<p>There was also an increase in the number of new groups who had never participated in the Commuter Challenge before. Approximately 20% of all groups were new registrations.</p>
+<p>School involvement was still quite low and was a direct result of the Commuter Challenge dates conflicting with the end of the school year, particularly for secondary schools.</p>
+<p>There is no information on longer-term changes in behavior that may have resulted from the Commuter Challenge.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Auto Free Ottawa: <a href="http://www.flora.org/afo/">www.flora.org/afo/</a> <br/>
+Commuter Challenge: <a href="http://ottawa.commuterchallenge.net">http://ottawa.commuterchallenge.net</a> <br/>
+Canadian Commuter Challenge: <a href="http://www.commuterchallenge.net">www.commuterchallenge.net</a></p>
+<p> </p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>The Canadian Commuter Challenge is based in Calgary. Currently, several city coordinators are working with the organizers in Calgary to prepare a workable data-collection solution for all cities. On its web site, AFO also provides free open-source documentation to any city that wishes to use the AFO database (<a href="http://www.flora.org/afo/lists/">www.flora.org/afo/lists/</a>). Some initiatives for the future could include national sponsorship and a national media campaign. A partnership with schools is also being contemplated, since the timing of the Commuter Challenge (first week of June) conflicts with the end of the school year.</p>
+<p>The Commuter Challenge in the National Capital also acted a springboard where groups could find information on and/or continue transportation demand management programs already in place. For example, the Region of Ottawa-Carleton launched its ECOPASS program for employees (employees buy a year-long bus pass at a 15% discount through payroll deduction) just prior to the Commuter Challenge, and used both campaigns to persuade employees to take the bus rather than drive their car.</p>
+<p>The Commuter Challenge and the Region of Ottawa-Carleton jointly hosted a Travel Options workshop, developed by B.C. Transit (<a href="http://www.transitbc.com/traveloptions/">www.transitbc.com/traveloptions/</a>). Representatives from approximately 25 companies and government departments attended the workshop to learn more about implementing trip reduction programs year round.</p>
+<p>Last updated: July 2004</p>
+<p>This case study was written in 2000 by Sharon Boddy.</p>
+<p>Funding for the addition of this case study was generously provided by the Government of Canadas Climate Change Action Fund, Suncor, Syncrude, Enbridge Consumers Gas and TetraPak Canada.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

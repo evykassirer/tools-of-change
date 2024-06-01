@@ -1,0 +1,237 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p> TransLink</p><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>95% adoption rate of the new card system</li>
+<li>Transit ridership increased 4-6% per year following introduction</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>TransLink’s Smart Card </h1>
+<p>British Columbia’s TransLink introduced Compass, a travel pass payment system that replaced 150 different tickets and passes. To ensure positive adoption, TransLink brought customers through a series of messaging that generated awareness, created broad comprehension around Compass benefits and features, and educated customers on proper card use behaviour. It achieved a 95% adoption rate within months of closing the gates, and transit ridership increased 4-6% per year following introduction</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>TransLink is Metro Vancouver's regional transportation authority, responsible for regional transit, cycling and commuting options as well as Intelligent Transportation System programs. It delivers its services through operating companies. </p>
+<p>In addition, Translink shares responsibility for the Major Road Network (MRN) and regional cycling with municipalities in Metro Vancouver. It is the first North American transportation authority to be responsible for the planning, financing and managing of all public transit in addition to major regional roads and bridges. Under legislation introduced by the provincial government in 2007, TransLink’s governance structure was changed so that it has the ability to provide services under agreements with nearby municipalities from Pemberton to Hope.</p>
+<p>The organization is committed to environmentally responsible solutions by helping people make smarter transportation choices. Its environmental and emissions policies are developed to address the influence it has on the region-wide transportation system. </p>
+<p>In 2015, as part of its journey to create a seamless fare system providing greater travel convenience, flexibility and security, Translink introduced Compass. This new payment system replaced 150 previous tickets and passes. </p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>This intervention directly addressed convenience as a barrier to taking transit more.</p>
+<p>Barriers to switching to the new card system included the following.</p>
+<ul>
+<li>Switching from an established fare payment system that was in place for over 30 years</li>
+<li>Gaining public trust of newly implemented technologies</li>
+<li>Travel impacts related to closing fare gates</li>
+<li>Achieving buy-in of the benefits and improved conveniences, including improved securities and cost savings to both individual users and institutions</li>
+</ul><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Compass cards were deployed in August 2015. Full deployment for the general public took place on November 2, 2015. After April 4, 2016, Compass cards and tickets were required for all trips taken on the SkyTrain and SeaBus.  While the launch of the Compass system was targeted at all metro Vancouver residents and visitors, specific sub-targets included commuters, social agencies, businesses, schools, seniors, accessible community, newcomers and special event attendees.</p>
+<p>The integrated marketing campaign featured transit advertising, retail point of purchase, newspaper, out of home, digital, video, radio, earned media and outreach teams to ensure a smooth transition for customers.(<em>Mass Media, Prompts</em>)</p>
+<p><img alt="Transit promotion case study - Compass" height="142" src="/userfiles/Image/Compass Card promo1.png" width="450"/></p>
+<p>Outreach was delivered over a six month period, predominately during peak times, with coverage on three transit lines, Sea Bus Stations and high-traffic bus hubs. Ongoing outreach has been provided on request, particularly to local special interest groups such as businesses, schools, seniors.</p>
+<p><img alt="Transit promotion case study" height="332" src="/userfiles/Image/Compass Card promo2.png" width="450"/></p>
+<p>Promotional channels included: bus wraps and other transit system ads, newspaper and radio ads, digital ads and promotion (including Facebook, CNN, RevScene, Bloomberg, The Vancouver Sun, You Tube, Twitter and Instragram), and point-of purchase ads on ticket vending machines.</p>
+<p> <img alt="Promo on transit ticket machines " height="301" src="/userfiles/Image/Picture1(1).jpg" width="450"/></p>
+<p>The region continued to evolve its integrated transportation / mobility options with Compass to provide residents and visitors with even more convenience when getting around the Region sustainably and conveniently.  One element of this work involved creating wider access to secure bike parking facilities.</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Key measures included the following.</p>
+<ul>
+<li>Fare revenue and ridership</li>
+<li>Compass adoption rate</li>
+<li># of impressions delivered through campaign channels such as in-situ transit advertising, traditional and digital paid media and social media.</li>
+<li># registered Compass cards</li>
+<li>Earned positive media</li>
+<li>Interdepartmental cooperation</li>
+<li>Establishment of outreach group</li>
+<li># training sessions for special interest groups including social agencies, business, schools and seniors</li>
+<li>Creation of Ask Compass website</li>
+<li>Creation of new Compass Service Center</li>
+<li>Information materials developed in multi languages</li>
+<li>Additional staff support at CVM’s for purchase and loading of Compass products</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Translink achieved a 95% adoption rate to Compass within months of closing the gates on April 4, 2016.</p>
+<p>Transit ridership increased by between 4% and 6% each year since introduction of the new card in 2015.</p>
+<ul>
+<li>During the same time period (2014-2017) GVRD’s population was growing at only <a href="http://www2.gov.bc.ca/gov/content/data/statistics/people-population-community/population/population-estimates " target="_blank"><em>1.4% to 1.6%</em> </a>a year</li>
+<li>During the same time period (2014-2017) transit growth elsewhere in Canada and the USA was <a href="https://beta.theglobeandmail.com/news/politics/drop-in-transit-ridership-has-officials-across-canadastumped/article30178600/?ref=http://www.theglobeandmail.com&amp;" target="_blank"><em>stagnant</em></a>.</li>
+</ul>
+<p>The decrease has therefore been attributed in large part to (1) introducing a fare system that provided greater travel convenience, flexibility and security, and (2) related advertising. </p><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p>Many employees from across the TransLink organization volunteered their time and supported frontline staff and customers as they transitioned to Compass &amp; the fare gate closures. This initiative proved to boost employee morale, provided a chance for staff to work with peers from other work area’s and ultimately helped customers transition seamlessly. </p>
+<p>Integrated transportation / mobility options with Compass continued to evolve and provide residents and visitors more convenience to getting around the Region sustainably and conveniently including access to secure bike parking facilities. </p>
+<p><strong>Data Sources</strong><br/>
+<a href="http://www.compasscard.ca/">www.compasscard.ca/</a> <br/>
+<a href="http://www.translink.ca/en/Fares-and-Passes/Compass-Card.aspx">www.translink.ca/en/Fares-and-Passes/Compass-Card.aspx</a> </p>
+<p> </p>
+<p>This case study was written in 2018 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

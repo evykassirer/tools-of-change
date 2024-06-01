@@ -1,0 +1,339 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>City of Medicine Hat</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>MyHEAT </li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>The heat loss imaging plus norms treatment was twice as effective as the traditional energy report treatment</li>
+</ul>
+<p> </p>
+<p><a href="/userfiles/Heat Loss Images, Norms.pdf" target="_blank">Case study PDF</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Heat Loss Images, Norm Appeals Raise Impacts in Medicine Hat</h1>
+<p>A Randomized Controlled Trial tested the impacts of providing consumers, on their monthly utility bills, with high-resolution infrared images of their houses, information about their heat loss relative to their neighbors, and estimated savings from improving their home’s insulation and air tightness. This treatment was twice as effective as a traditional Home Energy Report (HER) treatment. This demonstrates the power of visual cues that help make the intangible more vivid, concrete, and actionable. This case study also illustrates how norm appeals can backfire when descriptive norms are provided to those who are already doing “better” than most, without also providing an affirming injunctive norm. Designated a <em>Landmark</em> case study in 2020.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Infrared has been used before as part of home energy visits, to help increase participant response. However, this appears to be the first time it has been coupled with automated on-bill HERS reporting.</p>
+<p>Medicine Hat is a politically conservative city of about 63,000 people in western Canada, with relatively hot summers and cold winters and a municipally owned utility. Prior to this experiment, residents had not been provided with behavioral feedback on their utility bills.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>A literature review revealed the following.</p>
+<ul>
+<li>Thermal images may make representations of energy loss more vivid, thus drawing viewers in, holding their attention, and exciting their imagination, in a way that tabular information fails to do.</li>
+<li>They may also be more easily remembered during decision making and can make abstract ideas (such as energy loss and energy conservation) more concrete and actionable.</li>
+<li>While measuring heat loss through the roof does not provide a full picture of the air leaks and heat loss in a house, it does provide a reasonable proxy. This is partly because so much heat loss typically happens through the roof. It is also because, due to thermal bridging from the walls to the rooftop, rooftop temperatures are affected by and are therefore indicative of overall building heat loss.</li>
+<li>It was going to be a challenge to motivate residents to reduce their energy use. Medicine Hat is a key hub of Canada’s natural gas industry. It was one of the most conservative regions in Canada and had one of the lowest shares of environmentalists; both factors generally indicate a reduced uptake of energy conservation programs. Further, the City was a “later adopting region,” and such regions tend to have less favorable conditions for their success, and smaller impacts than earlier-adopting regions.</li>
+</ul><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>14,000 single-detached households were randomly selected to participate in this study and were then randomly divided into three groups of equal sizes - two treatment groups and one control group.</p>
+<p><strong>1. ‘Traditional’ Home Energy Report (HER) Treatment Group. </strong>This group received monthly on-bill messaging, which included the following components (Building Motivation, Engagement and Habits Over Time).</p>
+<ul>
+<li>A month-to-month consumption comparison between a given household, the 50 most similar households, and the top quintile (most efficient) of those 50 households (<em>Descriptive Norm Appeal; Personalized, Credible, Empowering Communication</em>)</li>
+<li>Potential bill savings if energy use were reduced to the mean use for these similar households. Households using more energy than the mean saw this number framed as a potential saving, whereas households using less energy saw their numbers framed as savings achieved. Note that both options were framed to indicate that it is a good thing to reduce energy use. (<em>Financial Incentives; Descriptive and Injunctive Norm Appeals</em>)</li>
+<li>Graphical information on natural gas and electricity consumption over the past year for the household compared to the similar households (<em>Descriptive Norm Appeal</em>)</li>
+<li>A list of potential options for reducing energy consumption (<em>Personalized, Credible, Empowering Communication</em>)</li>
+</ul>
+<p>The following is an example of the information they received.</p>
+<p><img alt="Energy Efficiency Program Treatment One " height="632" src="/userfiles/Image/Treatment One.png" width="450"/></p>
+<p><em><br/>
+</em><strong><br/>
+2. Heat Loss Imaging and Norms Group. </strong>This group received monthly on-bill messaging, which included the following components (B<em>uilding Motivation, Engagement and Habits Over Time</em>).</p>
+<ul>
+<li>An infrared image of their home’s roof, taken at night during the heating season, acquired using an aircraft-mounted thermal infrared sensor. Households were not asked to agree to this ahead of time, but those few who had concerns were satisfied once they knew that the images and information for any given home were only made available to the people living at that home. Generally, there was more concern about the City ‘wasting’ money on airplanes and colour pictures. (<em>Vivid, Personalized, Credible Communication</em>)</li>
+<li>A heat loss (MyHEAT) score ranging from 1 to 10, along with the average heat loss score for houses in their neighborhood and for the entire City. Note that those households that learned that they were relatively energy efficient did not receive an accompanying injunctive norm to reinforce their positive behavior. (<em>Descriptive Norm Appeal</em>)</li>
+<li>Highlighted information on potential bill savings from reducing heat loss to the best possible category. Note that the more energy-efficient the household, the lower this incentive became. (<em>Financial Incentives</em>)</li>
+</ul>
+<p>The following is an example of the information this group received.</p>
+<p><img alt="Graphic of heat loss report in energy conservation program" height="612" src="/userfiles/Image/Heat Loss Score report(1).png" width="450"/> In addition, both treatment groups were given the same set of four tips to reduce their consumption, as shown below. This on-bill messaging ran for three consecutive months from February through April 2018 and then again in November 2018. </p>
+<p><img alt="Graphic of heat loss report in energy conservation program" height="696" src="/userfiles/Image/Screenshot 2020-12-13 101203.jpg" width="450"/></p>
+<p><strong><br/>
+3. Control Group.</strong> This group did not receive any tips or behavioral feedback on their utility bills.</p>
+<p><strong>Opt-Out Rollout  </strong></p>
+<p>The program was offered on an opt-out basis, with homes being removed from the MyHEAT platform and project within 1-5 business days upon a request being made. Due to the nature of the RCT, the project team did not want the customer base to be aware that the treatment was occurring, however there was an initial media release mentioning the project and the involvement of MyHEAT’s technology.</p>
+<p>City staff fielded questions from a few residents about privacy concerns, but these were easily resolved once the residents understood that their home’s image was not publicly available.</p>
+<p><strong>Word-of-Mouth Promotion </strong></p>
+<p>The City received many calls from customers who did not receive heat loss details and who wanted to access information about their homes. Since there was no public advertising, this suggests that there was significant word-of-mouth promotion for the project and a lot of interest from customers outside of the treatment groups. (<em>Word of Mouth</em>)</p>
+<p>The following table lists the key barriers to action and how they were addressed. (<em>Overcoming Specific Barriers</em>)    <span style='font-size:11.0pt;
+font-family:"Minion Pro",serif;mso-bidi-language:#0400'> </span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="border:solid windowtext 1.0pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal"><b><span style='font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'>Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="border:solid windowtext 1.0pt;border-left:none;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal"><b><span style='font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'>Strategy<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:19.75pt">
+<td style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'>Energy conservation   is generally of low importance to the priority audience. <o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'>Competing communications<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'>Lack of   information on household air leaks and insulation <o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal"><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'>Thermal images   were used to make representations of energy loss more vivid, thus drawing   viewers in, holding their attention, and exciting their imagination in a way   that tabular information fails to do.</span><b><span style='font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'> </span></b></p>
+<p class="MsoNormal" style="margin-bottom:2.0pt;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'>Norm appeal:   comparison with neighbors<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;mso-yfti-lastrow:yes;height:19.75pt">
+<td style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal"><span style='font-family:
+  "Arial",sans-serif;mso-bidi-language:#0400'>Energy conservation is abstract.<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-bottom:2.0pt;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'>Thermal images   were used to make abstract ideas (energy loss) more concrete and actionable,   and to increase recall during decision making. <o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>An academic third-party team (Dr. Maya Papineau from Carleton and Dr. Nicholas Rivers from Ottawa University) was retained for the evaluation.</p>
+<p>14,000 single-detached households were randomly selected to participate in the study and were then randomly divided into three groups of equal sizes - two treatment groups and one control group. Subjects did not know they were part of an experiment, which eliminates Hawthorne effects.</p>
+<p><strong>Measures</strong></p>
+<ul>
+<li>Utility bills - monthly consumption and expenditure data starting in 2015</li>
+<li>Household meters - Medicine Hat uses digital (smart) electricity meters that record electricity and natural gas consumption at both daily and hourly intervals. The main analysis is based on this daily natural gas and electricity consumption data, from January 2017 to March 2019 (one year prior to and after treatment.)</li>
+<li>Post-intervention participation in energy-efficiency programs</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Individual Feedback was provided directly to consumers in the two treatment groups, on their monthly utility bills.</p>
+<ul>
+<li>On each bill, the first intervention group received the traditional HER approach using a graphical overview of natural gas and electricity consumption over the past year for the household compared to similar households. In addition, these households were told their savings achieved / potential bill savings, relative to the mean use for these similar households.</li>
+<li>On each bill, the second intervention group received visual and numerical feedback on their home’s winter heat loss using infrared images and MyHEAT scores, along with the average heat loss score for houses in their neighborhood and for the entire City.  In addition, these households were told their potential bill savings from reducing heat loss to the best possible category.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>The heat loss imaging plus norms treatment was twice as effective as the traditional HER treatment. At the mean potential estimated saving of $150 per year per household, natural gas use was reduced by an average of 4.4% in the group shown heat loss imagery and comparisons, and only 2.0% in the group shown only the consumption comparison graph.</p>
+<p><img alt="Impacts on energy use from using aerial heat loss images" height="220" src="/userfiles/Image/Impacts1(2).png" width="450"/></p>
+<p>Households that received the heat loss treatment were subsequently also more likely to take advantage of energy efficiency programs than the other two groups.</p>
+<p>In addition, local weatherization rebate programs saw nearly 30% higher participation from those seeing their heat loss details. Participation in energy conservation rebate programs unrelated to weatherization increased by 19%.</p>
+<p><img alt="Impacts on energy use from using aerial heat loss images" height="141" src="/userfiles/Image/Impacts1(1).png" width="450"/></p>
+<p>On initial analysis overall program impacts appeared relatively small. However further analysis revealed a “backfire” (rebound) effect. Low efficiency / high use households decreased their natural gas and electricity use by over 5% on average, while high efficiency / low consumption households increased theirs by 3% on average.</p>
+<p>The next few paragraphs focus specifically on the low efficiency /high use households because (1) programs can be specifically targeted at them, (2) they represent a substantial number of homes, and (3) steps can be taken to reduce the ‘backfire’ or ‘rebound’ effect on the high efficiency/low use households in future.</p>
+<p>In total, the high use households in treatment two alone decreased their total annual energy use by roughly 3,393,000 kWh.</p>
+<p>There were 895 high use customers in treatment two, and their average pre-treatment consumption levels were 0.626 mcf per day of natural gas and 24.26 kWh per day of electricity. Average daily household total energy use (gas plus electricity) before treatment was therefore 183.46 + 24.26 = 207.72 kWh. Annual use across all customers in this segment was 207.72 x 365 x 895 = 67,856,931 kWh. The 5% savings was 3,392,847 kWh.</p>
+<p>Additional savings were achieved for the high use customers in treatment one.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Mike Dykstra <br/>
+City of Medicine Hat<br/>
+<a href="mailto:MIKDYK@medicinehat.ca?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> MIKDYK@medicinehat.ca</a></p>
+<p>MyHEAT<br/>
+<a href="mailto:hello@myheat.ca?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> hello@myheat.ca</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<ul>
+<li>Visual cues can help make the intangible more vivid, concrete, and actionable. In particular, the impact of imagery that strikes a chord with the viewer (“look at our house”) can be powerful.</li>
+<li>Norm appeals can backfire (boomerang) when descriptive norms are provided to those who are already doing “better” than most, without also providing an affirming injunctive norm. This approach tends to drive consumers towards “the magic middle”, because people tend to measure the appropriateness of their behavior by how far they deviate from the norm. Those who were doing significantly “worse” than others are influenced to do better, but those who were doing better than others are influenced to relax a bit and do worse than they had been doing. <br/>
+    Steps can be taken to reduce this ‘backfire’ or ‘boomerang’ effect. For example, when the utility in Sacramento USA first put feedback graphs on its bills, it encountered a similar effect. They fixed it by putting a smiley face on the bills that were below average. This sent an Injunctive Social Norm-- "Your Society is happy you are using less electricity. Please continue your behavior".<br/>
+    According to Deviance Regulation Theory (Blanton &amp; Christie, 2003) a message to change behavior should focus on deviators from the norm, painted in a positive or negative light depending on whether that deviance is good or bad. (Injunctive Norm).</li>
+<li>According to Mike Dykstra at the City of Medicine Hat, “For many people, the information seemed to exist in a bit of a vacuum.  Customers weren’t quite sure how to interpret the images. …  I think the corporate ‘we’ could have done more with leveraging the images as a springboard to talking about the causes and remediation of heat loss.” </li>
+</ul>
+<p><strong>Landmark Designation  </strong></p>
+<p>The program described in this case study was designated in 2020.</p>
+<p>Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Arien Korteland, BC Hydro</li>
+<li>Kathy Kuntz, Kanndo Consulting</li>
+<li>Doug McKenzie-Mohr, McKenzie-Mohr Associates</li>
+<li>Sea Rotmann, Sustainable Energy Advice Ltd.</li>
+<li>Brian Smith and Lester Sapitula, Pacific Gas and Electric Company</li>
+<li>Reuven Sussman, American Council for an Energy-Efficient Economy</li>
+<li>Marsha Walton, New York Energy Research and Development Authority </li>
+</ul>
+<p>This case study was written in 2020 by Jay Kassirer, based on information provided by the academic third-party evaluation team, MyHEAT and the City of Medicine Hat.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

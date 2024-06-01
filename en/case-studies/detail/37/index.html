@@ -1,0 +1,482 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Montreal Dietary Dispensary (MDD)</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Centraide du Grand Montréal</li>
+<li>The Provincial and Federal Governments</li>
+<li>Local churches</li>
+<li>Local clubs (e.g. Rotary Club)</li>
+<li>Non-profits (e.g. Montréal Harvest, In His Name Society)</li>
+<li>Private sector organizations (e.g. Montreal Gazette, CHM communications)</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>27-50% reductions in the number of low birth weight babies</li>
+<li>Reductions in associated medical problems</li>
+<li>For every $1 spent on an MDD client, $8 were saved in health care costs.</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Montreal Dietary Dispensary</h1>
+<p>This award-winning program was established to help disadvantaged women give birth to babies of healthy weight, by providing nutritional counselling and support to expectant mothers at risk.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>From its beginnings as a soup kitchen in 1879, when volunteers prepared food and delivered it to the needy, MDD evolved into a center for the prevention of low birth weight (LBW) in babies; the greatest cause of death and disabilities for children below the age of one, by providing prenatal nutritional guidance and support to women below the poverty level.</p>
+<p>Critical to this evolution was the work of Agnes C. Higgins, past executive director of MDD, who, in 1948, began questioning why so many economically disadvantaged women in the Greater Montreal Area (Quebec's largest metropolitan area) were two to three times more likely to have LBW babies than women in the general population. At issue was the fact that without sufficient income, women suffered from poor diets and were unable to meet pregnancy's high nutritional demands. There were additional risks of malnutrition associated with teen pregnancies for both mother and child because teenage mothers are themselves still growing.</p>
+<p>LBW babies were a greater burden on the health care system than healthy weight babies because they:</p>
+<ul>
+<li>had longer hospital stays at birth</li>
+<li>more frequently required costly neonatal intensive care</li>
+<li>were hospitalized more often, and for longer periods, during their first year of life</li>
+<li>experienced greater developmental disabilities</li>
+<li>were more likely to develop chronic health problems as adults (e.g. diabetes, hypertension, cardiovascular disease)</li>
+</ul>
+<p>Mrs. Higgins wanted to determine why LBW persisted among clients despite the fact that, starting in the 1920s, MDD expanded its mandate from distributing food to the economically disadvantaged to include dietary education. Realizing that improvements could be made to their educational intervention, Ms. Higgins said, "We have it in our power to prevent some birth defects by providing food supplements and motivating expectant mothers to use them." She therefore developed a correction formula that compensated for women's poor nutritional status by providing a protein and calorie supplement. Over a fifteen year period, Mrs. Higgins perfected her hands-on method of one-on-one nutritional counseling; one specifically tailored to meet the needs of pregnant women who were of low-income.</p>
+<p>By 1996, MDD was assisting over 2,600 clients, an estimated two-thirds of all low-income pregnant women in Montreal (pop. 2.5 million), who required nutritional counseling and support. Clients included teenagers, newly arrived immigrants, single heads of family and women living alone without any family or social support.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<ul>
+<li>To reduce the number of LBW babies born to disadvantaged mothers.</li>
+<li>To promote health in the Greater Montreal Area among women whose pregnancies may be at risk.</li>
+<li>To empower MDD clients to take charge of their well-being and that of their families, and to foster their societal integration.</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>To develop her method of nutritional intervention, which came to be known as the Higgins Method, Agnes C. Higgins collected data on expectant mothers who were MDD clients. Records were made of their weight, nutritional habits, obstetrical history as well as biological, psychological and social factors. Also recorded were babies weights and measurements.</p>
+<p>Higgins found that 80% of expectant mothers had LBW contributing factors that required nutritional rehabilitation. Such factors included the women being underweight, undernourished, suffering from insufficient weight gain, having a poor obstetrical record, or experiencing emotional distress. She also noted that overweight women were more likely to be malnourished, while those who were underweight tended to gain weight during pregnancy at the expense of their fetus. Key barriers to improved nutritional status amongst clients included:</p>
+<ul>
+<li>a lack of income</li>
+<li>feelings of guilt associated with eating scarce family food</li>
+<li>a lack of role models/lack of knowledge about preparing nutritious meals</li>
+<li>lack of proper cooking facilities</li>
+<li>addiction to cigarettes, alcohol and/or drugs</li>
+<li>social isolation and depression</li>
+<li>emotional stress due to abusive or unstable relationships</li>
+<li>ambivalence towards/denial of pregnancy</li>
+<li>lack of time (e.g. raising a family with no support)</li>
+<li>mistaken belief that weight gain should be limited during pregnancy.</li>
+</ul>
+<p>Armed with data, Mrs. Higgins created an advisory committee to develop guidelines, procedures and alliances to deliver an effective method of intervention.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The Higgins Method involved the following steps, administered by counselors who received intensive training followed by months of supervision:</p>
+<p><strong>1.</strong> Assess client's nutritional status. On average, nutritional counseling began during the fifth month of pregnancy. However, this timing varied according to the level of risk, with very high risk clients being seen immediately. The dietitian gathered psych-socio-medical information and then obtained a diet history calculating usual daily caloric and protein intake. Changes in food consumption during pregnancy was noted. What clients ate and how much she or her family spent on food was used to validate the diet history. The resulting food intake served as a yardstick for measuring nutritional status. Diets were adjusted for twin pregnancies which posed greater nutritional demands, and, if left untreated, resulted in ten times the LBW rate with recommended energy and protein intake doubled.</p>
+<p>Women who, due to physical, financial, emotional or other circumstances, were considered to be at particularly high risk were offered an initial home visit. During this visit, the counselors assessed each clients' living conditions (e.g. food stocks, cooking facilities) and used this information to tailor the intervention (<a href="/en/tools-of-change/home-visits/">Home Visits</a>).</p>
+<p><strong>2.</strong> Once the assessment was completed, the dietitian calculated the nutritional prescription which included the following components:</p>
+<ul>
+<li>determination of basic non-pregnancy requirements</li>
+<li>addition of normal pregnancy needs</li>
+<li>rehabilitation allowances, as per the Higgins Method, for being underweight, undernourished, and stress factors</li>
+</ul>
+<p><strong>3.</strong> Provide dietary education and support. To minimize resistance to making changes to ingrained eating habits, diets were designed to introduce as few changes as possible. These changes were discussed with client (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>To motivate clients to feed and care for their baby before birth, the idea of a fetus as an individual with real needs, that only the mother was in a position to provide, was emphasized. Women were taught that they were eating to feed their unborn babies, as well as themselves. A developing baby's special needs for growth, the "building of a baby", was compared to the "building of a house", requiring the intake of nutrients as building blocks for the child (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>). This perspective helped diminish the guilt associated with increased food intake, especially in situations where family food supplies were limited (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>Clients understood that milk was the best food for babies. Reinforcing the idea that the developing fetus is an individual with needs, a dietitian would explain that just like a baby, a fetus needs to be fed milk six times a day. Even if clients were unaccustomed to drinking milk, it was explained that the milk was to be ingested to feed their baby. To reinforce this habit, women were encouraged to write B for baby on bottles of milk. Placing a "B" on the bottle also diminished feelings of greed or guilt for not sharing the milk with other family members.</p>
+<p>Financially disadvantaged clients were provided with vouchers for home-delivered milk along with one dozen eggs and a supply of minerals every two weeks (<a href="/en/tools-of-change/prompts/">Prompts</a> and <a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). The effects of tobacco, alcohol and drugs on a fetus were explained and, when appropriate, a corrective strategy was devised with and agreed upon by the client (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p><strong>4.</strong> Provide follow-up supervision through one-on-one meetings held every two weeks. Follow-up meetings, held at the MDD offices, provided ongoing support. Every time a client visited the center, she received a ticket for a monthly prize draw. Women also had access to knitted baby wear to enhance maternal bonding, and hair styling donated by volunteers to alleviate stress. Furthermore, sustained personal attention allowed counselors to develop a strong bond with their clients. In combination, these approaches helped keep dropout rates as low as 5% (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p>Eating habits were reviewed at each meeting, and the mothers weight was recorded. Positive changes in their diet were praised and reinforced. To assess a client's well-being, inquiries were made about changes in health, lifestyle or living situation. A ledger was used to list the strengths and weaknesses such as diet, smoking, drinking, and drug use.</p>
+<p>To address common feelings of ambivalence or denial towards pregnancy, clients were asked to place a model of a fetus at a position on a line scale they felt represented their acceptance of their pregnancy. On one end of the scale was a small heart, and at the other, a large heart. When necessary, a client was referred to one of over one hundred volunteers and fifty various partner organizations to provide complementary support services (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a> and <a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>To ensure that clients could make it to the MDD center, child care and transit passes were made available on an as needed basis. If a client missed a scheduled visit, the dietitian would make every effort to contact the client, express concern over her progress, and try to schedule another visit, or, if necessary, visit the client at her home (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p><strong>Group Activities</strong></p>
+<p>In addition to counseling, women could attend group activites held at the MDD center. A calendar of topics was posted in the center's waiting room, and clients received a phone call reminding them about the activity times and dates. Clients could join weekly knitting groups or attend discussions on parent-infant bonding, early childhood development, baby massage, self-esteem, personal growth, communication with partners, breast feeding and an introduction of foods, other than milk, for an infant. These activities allowed women to interact and share information and tips with their peers (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>).</p>
+<p>Attendance at the discussions averaged eight women per group. To facilitate client participation in these activities, child care and transit passes were made available on an as-needed basis (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). Prize drawings occasionally added zest to these activities (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>). Leadership opportunities were created for past clients. For example, they could volunteer to receive special training to provide breast feeding guidance to current clients or look after a second-hand clothing depot run from the centre (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p><strong>Promotion</strong></p>
+<p>MDD promoted the spread of the Higgins Method through the delivery of conferences, as well as through its participation in, or local provision of, intensive training for dietitians and health professionals. Press releases were distributed each time a new study on the method was published. To assist fundraising efforts, MDD participated in media events organized in conjunction with the city's centralized fundraising program, the United Way (<a href="/en/tools-of-change/mass-media/">Mass Media</a>). Media coverage averaged about twenty stories a year.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The following was MDD's budget for 1997</p>
+<table border="0">
+<tbody>
+<tr>
+<td width="75%">Revenues Centraide du Grand Montréal</td>
+<td align="right">$420,495</td>
+</tr>
+<tr>
+<td width="75%">Government Grants</td>
+<td align="right">$304,500</td>
+</tr>
+<tr>
+<td width="75%">Donations</td>
+<td align="right">$104,824</td>
+</tr>
+<tr>
+<td width="75%">Sale of Publications and Services</td>
+<td align="right">$8,898</td>
+</tr>
+<tr>
+<td width="75%">Interest</td>
+<td align="right">$2,079</td>
+</tr>
+<tr>
+<td width="75%"><strong>Total</strong></td>
+<td align="right"><strong>$840,796</strong></td>
+</tr>
+<tr>
+<td width="75%"> </td>
+<td align="right"> </td>
+</tr>
+<tr>
+<td width="75%"><strong>Expenditures</strong></td>
+<td align="right"> </td>
+</tr>
+<tr>
+<td width="75%">Food Supplements</td>
+<td align="right">$264,114</td>
+</tr>
+<tr>
+<td width="75%">Salaries and Fringe Benefits</td>
+<td align="right">$564,585</td>
+</tr>
+<tr>
+<td width="75%">Insurance</td>
+<td align="right">$5,191</td>
+</tr>
+<tr>
+<td width="75%">Utilities, Repair, Maintenance</td>
+<td align="right">$22,057</td>
+</tr>
+<tr>
+<td width="75%">Office Supplies</td>
+<td align="right">$7,151</td>
+</tr>
+<tr>
+<td width="75%">Other (e.g. travel and entertainment, professional fees, taxes, permits)</td>
+<td align="right">$13,578</td>
+</tr>
+<tr>
+<td width="75%"><strong>Total</strong></td>
+<td align="right"><strong>$876,676</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The average cost of intervention per client was $350. This amount covered 5 nutritional counseling sessions, 140 liters of milk, 12 dozen eggs and a daily supply of vitamins and minerals.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Outcomes were evaluated on an ongoing basis through a series of studies; the results of which were used to refine the Higgins Method. Some of the key Studies conducted included the following:</p>
+<p> <strong>Sibling Study</strong></p>
+<p>To measure the Higgins Method's overall effectiveness, two children born to the same mother were compared. The first child was untreated and the second (born after the first) was treated with the Higgins Method. The study was conducted between 1963 and 1979. The analysis involved 552 pairs of siblings. Records were made of birth weights, the number of visits to the MDD center during the treated pregnancy, and the nutritional status of the mother prior to intervention.</p>
+<p><strong>Twin Pregnancy Study</strong></p>
+<p>To measure how effective intervention was when applied to women carrying twins, the pregnancy outcomes of 354 MDD twins were compared to 686 untreated twins.</p>
+<p><strong>Teen Pregnancy Study</strong></p>
+<p>To measure how effective the intervention was when applied to pregnant teens, the pregnancy outcomes of 1,203 treated adolescents were compared to those of 1,203 women who were untreated but were the same age and gave birth in the same year and at the same hospital as the treated group. The study was conducted between 1981 and 1991. An equal number of subjects were randomly selected for both groups (treated and untreated) from each of the 15 hospitals. This frequency matching was done to control for any differences in infant outcomes associated with variations in obstetric care between different hospitals. Compromising the study was the fact that women in the comparison group had significantly lower social-risk profiles.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>N/A</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>The following table summarizes the percentage of reductions in the number of low birth weight babies (LBWs) and associated medical problems, when comparing treated and untreated mothers.</p>
+<table border="0">
+<tbody>
+<tr>
+<td> </td>
+<td colspan="3">
+<p align="center"><strong>Percent Reduction</strong></p>
+</td>
+</tr>
+<tr>
+<td align="center" width="55%"> </td>
+<td align="center" width="15%"><strong>Sibling study</strong></td>
+<td align="center" width="15%"><strong>Teen pregnancy study</strong></td>
+<td align="center" width="15%"><strong>Twin study</strong></td>
+</tr>
+<tr>
+<td>Overall LBW babies</td>
+<td>50</td>
+<td>27</td>
+<td>36</td>
+</tr>
+<tr>
+<td>LBW for mothers identified as undernourished before the intervention</td>
+<td>66</td>
+<td>--</td>
+<td>--</td>
+</tr>
+<tr>
+<td>LBW for mothers who had four or more visits</td>
+<td>76</td>
+<td>--</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Pre-term births</td>
+<td>--</td>
+<td>32</td>
+<td>41</td>
+</tr>
+<tr>
+<td>Perinatal mortality</td>
+<td>--</td>
+<td>--</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Infant mortality</td>
+<td>--</td>
+<td>--</td>
+<td>19</td>
+</tr>
+<tr>
+<td>Neonatal admissions to intensive care</td>
+<td>--</td>
+<td>--</td>
+<td>29</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ability of the Higgins Method to Improve Pregnancy Outcomes</strong></p>
+<table border="0">
+<tbody>
+<tr>
+<td> </td>
+<td colspan="6"><strong>% Reduction in Treated vs. Untreated Group</strong></td>
+</tr>
+<tr>
+<td width="40%"><strong>MDD Study</strong></td>
+<td width="10%"><strong>#</strong></td>
+<td width="10%"><strong>LBW</strong></td>
+<td width="10%"><strong>VLBW</strong></td>
+<td width="10%"><strong>Pre-term</strong></td>
+<td width="10%"><strong>IUGR</strong></td>
+<td width="10%"><strong>NICU</strong></td>
+</tr>
+<tr>
+<td>Siblings</td>
+<td>552</td>
+<td>52</td>
+<td>--</td>
+<td>--</td>
+<td>38</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Overall</td>
+<td>327</td>
+<td>78</td>
+<td>--</td>
+<td>--</td>
+<td>70</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Mothers who had four or more visits</td>
+<td>142</td>
+<td>67</td>
+<td>--</td>
+<td>--</td>
+<td>50</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Mothers undernourished before intervention</td>
+<td>83</td>
+<td>79</td>
+<td>--</td>
+<td>--</td>
+<td>--</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Twins, Overall</td>
+<td>354</td>
+<td>27</td>
+<td>47</td>
+<td>32</td>
+<td>--</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Teens, Overall</td>
+<td>1203</td>
+<td>39</td>
+<td>56</td>
+<td>41</td>
+<td>--</td>
+<td>47</td>
+</tr>
+</tbody>
+</table>
+<p>LBW: low birthweight <br/>
+VLBW: very low birth weight <br/>
+IUGR: intrauterine growth retardation <br/>
+NICU: neonatal intensive care unit (% reduction in number of days)</p>
+<p>A cost/benefit analysis revealed that for every $1 spent on an MDD client, $8 were saved in healthcare costs. It was estimated that the $6 million required to provide intervention for all of the low-income pregnant women at any one time in the province of Quebec, could be entirely recovered through reduced health care costs within 12-14 months.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Marie-Paule Duquette <br/>
+Executive Director <br/>
+Montreal Diet Dispensary <br/>
+2182 Lincoln Avenue <br/>
+Montreal, PQ <br/>
+H3H 1J3 <br/>
+Tel: (514) 937-5375 <br/>
+Fax: (514) 937-7453</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p> This case study was written in 1999 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

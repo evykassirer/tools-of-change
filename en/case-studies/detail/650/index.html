@@ -1,0 +1,592 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Individuals in the Washington DC and North Virginia areas, USA</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>A 66% decrease in the number of cars on Highways I-95 and 395</li>
+<li>Approximately 25 per cent of the vehicles using I-95 HOV lanes south of the Pentagon during the morning HOV-restricted period were carrying at least one slug.</li>
+</ul>
+<p><a href="/userfiles/Slugging_Transcript_2-9-2010.pdf">Webinar transcript</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Casual Carpooling in DC</h1>
+<p>It has been said that one of the greatest untapped transportation resources is the empty seats in private automobiles. This case study illustrates how a unique casual carpooling program in Washington, D.C. fills those empty seats while meeting the needs of busy commuters and reducing road congestion. Slugging in D.C. was designated a Landmark case study by Tools of Change in 2009.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>“Slugging” is a term used to describe a unique form of commuting in the Washington D.C. and northern Virginia areas. As a response to the oil crises of the 1970s, and the subsequent rise in gasoline prices, many U.S. state and federal highways adopted high occupancy vehicle (HOV) lanes to encourage citizens to carpool.</p>
+<p>Along the U.S. highways I-95 and 395 certain lanes were, therefore, designated as HOV-3 (high occupancy vehicle, minimum 3 person per vehicle) during the morning and afternoon peak periods (6-9 a.m. and 3:30 to 6 p.m.). Slugging began when single occupant drivers, who wanted to take advantage of the HOV lanes, would drive up to bus stops and offer a seat to a transit user.</p>
+<p>In his book, Slugging: The Commuting Alternative for Washington D.C., David LeBlanc explained how the term slugging originated.</p>
+<p>"Bus drivers were warned about watching for fake tokens put into fare boxes,” he said. “When slugging first started, bus drivers would pull up to the bus line, but of the ten people waiting, only four or five got on. The bus drivers began to recognize the people standing in the line and could differentiate between the real bus riders from the ‘fakes’ or ‘slugs’.” ‘Slug,’ therefore, became the name given to a person waiting in the bus line but who wasn’t an actual bus rider. </p><!-- Background already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Slugging evolved as a spontaneous transportation solution between drivers and non-drivers. Little, if any, outside programming or intervention was, therefore, required to encourage people to use the system.</p>
+<p>Slugging first began in the 1970s when a portion of Highway 395 (the Shirley Highway) was opened for mass transit. In 1975, they designated the lane to include both mass transit and high occupancy vehicles. When drivers did not have the required number of people to meet the requirements, they began pulling up to bus lines and offering rides to transit users. Bus riders had a choice: they could either wait for a bus and pay the up to $5 one-way fare, or hop into the car. Since most people had regular commuting patterns, it didn’t take long for word to spread. <em>(Word-of-Mouth)</em> People at the bus stops soon realized that hopping into a car was faster and free.<em> (Financial Incentives; Overcoming Specific Barriers)</em></p>
+<p>Over time, new slug lines formed and all slug lines—for both origin and destination locations—were pre-determined. Drivers looking for additional passengers to meet the HOV requirements would pull up to a slug line, pick up the necessary number of people (typically two passengers to make three people in the vehicle), and off they went. Due to the way slugging evolved, most slug lines were located at existing transit stops, but lines were also set up at restaurants, shopping centres and other common meeting points.</p>
+<p>Although there has never been a central agency that organized the slug lines, the website, www.slug-lines.com, was created as a one-stop shop for drivers and passengers alike to view the locations of morning and afternoon slug lines, destinations, and other information such as rules and etiquette. For people who were interested in forming a new slug line, the site also offered tips and information on doing so, and free signs that could used to denote the new line.</p>
+<p>New lines, said LeBlanc, were generally set up when someone visited Slug-lines.com and asked about a slug line in a particular area. “If there wasn’t one, and the person was motivated, I’d give them the tools to do it. They promoted it and we’d add the line to the website.”</p>
+<p>As of 2011, there were 25 slug lines between Washington DC and Fredericksburg, Virginia (40 miles from DC).</p>
+<p><strong><em>Slugging Rules &amp; Etiquette</em></strong></p>
+<p>Slugging has evolved a number of rules and etiquette.</p>
+<p>1. Slugging is a first-come, first-serve service. The first person standing in a slug line going to the same destination as the driver has the right to get into that car (although there is no obligation to do so if the passenger doesn’t feel comfortable with a particular car or driver).</p>
+<p>2. Slugs do not talk during the ride. In general, slugs and the driver greet each other but then ride in peace and quiet. Slugs read the newspaper, work, even sleep. “The ‘do not talk’ rule is a rule that most people enjoy,” said LeBlanc.</p>
+<p>3. No money is exchanged. The driver benefits from being able to use the HOV lane and thus gets to work faster; slugs don’t have to use their own vehicles, get a free ride and get to work faster than riding the bus.</p>
+<p>4. Cell phone use is not acceptable, other than for very short calls.</p>
+<p>5. Eating or smoking is not allowed while driving. This applies to both the driver and slugs.</p>
+<p>6. The driver is in charge. Slugs are not permitted to ask the driver to change the conditions of the ride, e.g., heating, air conditioning, radio station, etc.</p>
+<p>7. As a general rule, women are not left alone in slug lines at night (afternoon peak periods).</p>
+<p>8. There is no curbside service. Slugs are dropped off only at the pre-determined locations. Once a driver accepts passengers, however, he/she must deliver those passengers to the designated destination.</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Although a study conducted by the Irving Institute said that the first slug line was in 1989, evidence points to the first slug lines forming in the mid-1970s.</p>
+<p>Since the Irving Institute study, very little other research or data collection had been done on the subject, other than traffic counts performed by the Virginia Department of Transportation. In 2008, however, Marc Oliphant, an urban planner with the U.S. Navy who was seconded to the Federal Highway Administration for six months in 2010, decided to study the slugging phenomenon for his Master’s thesis.</p>
+<p>Oliphant collected data from a 30-question on-line survey. Over a one month period, he recruited 285 drivers and slugs to take the survey through Slug-lines.com, slugging list-servs and in person at slug lines.</p>
+<p>Oliphant was surprised to learn that his initial assumptions about the type of person who would be interested in slugging were wrong. “I thought that women wouldn’t do it because of safety reasons, or that only young adventurous types would participate,” he said. “All of those early assumptions were wrong.”</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<ul>
+<li>A 66% decrease in the number of cars on Highways I-95 and 395 (which has led to less pollution and congestion), based on highway traffic counts conducted by the Virginia Department of Transportation.</li>
+<li>Slugging provides both time and cost savings for participants:
+    <ul>
+<li>60% of survey respondents reported at least a 30-minute time savings per day</li>
+<li>Passengers who reported cost savings as an incentive noted that a round trip fare on public transit costs about $10/day. </li>
+</ul>
+</li>
+<li>Slugging has reduced the burden on the public transit system.</li>
+</ul>
+<p>Slugging benefits both drivers and passengers. For the driver, he/she can use the HOV lanes and get to work quicker. Ditto for the slugs, who also save time and money (by either not driving themselves or not using transit). In addition, slugs benefit by not waiting too long at bus stops, avoiding bad weather and overcrowded buses.</p>
+<p>Slugging offers flexibility to both drivers and passengers. A slug can join a casual carpool without any forms to fill out or money exchanging hands, and slug lines are available during the busiest morning and afternoon rush hours.</p>
+<p>LeBlanc says that people who are tied to a set carpool—with the same people everyday going to the same location at the same time—do not enjoy the same benefits.</p>
+<p>“If I was the driver of a regular carpool and I wanted to get to work early, I would be inconveniencing my fellow carpoolers,” he explained. “If I had to work late, again I would be inconveniencing the carpool. They would either have to wait for me or find another way home. Slugging resolved that for me. I can come and go as I wanted.”</p>
+<p>LeBlanc says that a lot of slugs also use the system in the morning, but take transit home. “In some cases there are several slug lines to take you to one area, but on the return home you may need to go to a different location to get back. Some people elect to slug to work but take transit because the bus stop or train station is closer than the nearest slug line.” </p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>David LeBlanc<br/>
+Webmaster, Slug-lines.com<br/>
+<a href="mailto:Webmaster, Slug-lines.com?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">webmaster@slug-lines.com</a></p>
+<p>Marc Oliphant<br/>
+Urban Planner, U.S. Navy <a href="mailto:marcoliphant@hotmail.com?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">marcoliphant@hotmail.com</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study was selected as a Tools of Change Landmark case study in 2009 by a peer selection panel consisting of</p>
+<!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:TrackMoves />
+<w:TrackFormatting />
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF />
+<w:LidThemeOther>EN-CA</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+<w:SplitPgBreakAndParaMark />
+<w:DontVertAlignCellWithSp />
+<w:DontBreakConstrainedForcedTables />
+<w:DontVertAlignInTxbx />
+<w:Word11KerningPairs />
+<w:CachedColBalance />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math" />
+<m:brkBin m:val="before" />
+<m:brkBinSub m:val="&#45;-" />
+<m:smallFrac m:val="off" />
+<m:dispDef />
+<m:lMargin m:val="0" />
+<m:rMargin m:val="0" />
+<m:defJc m:val="centerGroup" />
+<m:wrapIndent m:val="1440" />
+<m:intLim m:val="subSup" />
+<m:naryLim m:val="undOvr" />
+</m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" Priority="34" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-qformat:yes;
+mso-style-parent:"";
+mso-padding-alt:0pt 5.4pt 0pt 5.4pt;
+mso-para-margin:0pt;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman","serif";}
+</style>
+<![endif]-->
+<p class="MsoNormal" style="text-indent: -12pt; margin-left: 18pt; mso-line-height-alt: 10.9pt; mso-list: l0 level1 lfo1; tab-stops: list 18.0pt"><span style="font-family: Symbol; mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-CA; mso-bidi-language: #0400"><span style="mso-list: Ignore">·<span style='font: 7pt "Times New Roman"'>    </span></span></span><span style="font-size: 11pt; mso-ansi-language: EN-CA; mso-bidi-language: #0400">Daniel Coldrey, Transport Canada </span></p>
+<p class="MsoNormal" style="text-indent: -12pt; margin-left: 18pt; mso-line-height-alt: 10.9pt; mso-list: l0 level1 lfo1; tab-stops: list 18.0pt"><span style="font-family: Symbol; mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-CA; mso-bidi-language: #0400"><span style="mso-list: Ignore">·<span style='font: 7pt "Times New Roman"'>    </span></span></span><span style="font-size: 11pt; mso-ansi-language: EN-CA; mso-bidi-language: #0400">Mark Dessauer, Active Living by Design</span></p>
+<p class="MsoNormal" style="text-indent: -12pt; margin-left: 18pt; mso-line-height-alt: 10.9pt; mso-list: l0 level1 lfo1; tab-stops: list 18.0pt"><span style="font-family: Symbol; mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-CA; mso-bidi-language: #0400"><span style="mso-list: Ignore">·<span style='font: 7pt "Times New Roman"'>    </span></span></span><span style="font-size: 11pt; mso-ansi-language: EN-CA; mso-bidi-language: #0400">Catherine Habel, Metrolinx </span></p>
+<p class="MsoNormal" style="text-indent: -12pt; margin-left: 18pt; mso-line-height-alt: 10.9pt; mso-list: l0 level1 lfo1; tab-stops: list 18.0pt"><span style="font-family: Symbol; mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-CA; mso-bidi-language: #0400"><span style="mso-list: Ignore">·<span style='font: 7pt "Times New Roman"'>    </span></span></span><span style="font-size: 11pt; mso-ansi-language: EN-CA; mso-bidi-language: #0400">Jacky Kennedy, Green Communities Canada </span></p>
+<p class="MsoNormal" style="text-indent: -12pt; margin-left: 18pt; mso-line-height-alt: 10.9pt; mso-list: l0 level1 lfo1; tab-stops: list 18.0pt"><span style="font-family: Symbol; mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-CA; mso-bidi-language: #0400"><span style="mso-list: Ignore">·<span style='font: 7pt "Times New Roman"'>    </span></span></span><span style="font-size: 11pt; mso-ansi-language: EN-CA; mso-bidi-language: #0400">Jessica Mankowski, Federation of Canadian Municipalities </span></p>
+<p class="MsoNormal" style="text-indent: -12pt; margin-left: 18pt; mso-line-height-alt: 10.9pt; mso-list: l0 level1 lfo1; tab-stops: list 18.0pt"><span style="font-family: Symbol; mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-CA; mso-bidi-language: #0400"><span style="mso-list: Ignore">·<span style='font: 7pt "Times New Roman"'>    </span></span></span><span style="font-size: 11pt; mso-ansi-language: EN-CA; mso-bidi-language: #0400">Gary McFadden, National Center for Biking and Walking </span></p>
+<p class="MsoNormal" style="text-indent: -12pt; margin-left: 18pt; mso-line-height-alt: 10.9pt; mso-list: l0 level1 lfo1; tab-stops: list 18.0pt"><span style="font-family: Symbol; mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-CA; mso-bidi-language: #0400"><span style="mso-list: Ignore">·<span style='font: 7pt "Times New Roman"'>    </span></span></span><span style="font-size: 11pt; mso-ansi-language: EN-CA; mso-bidi-language: #0400">Lorenzo Mele, Town of Markham </span></p>
+<p class="MsoNormal" style="text-indent: -12pt; margin-left: 18pt; mso-line-height-alt: 10.9pt; mso-list: l0 level1 lfo1; tab-stops: list 18.0pt"><span style="font-family: Symbol; mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-CA; mso-bidi-language: #0400"><span style="mso-list: Ignore">·<span style='font: 7pt "Times New Roman"'>    </span></span></span><span style="font-size: 11pt; mso-ansi-language: EN-CA; mso-bidi-language: #0400">Chuck Wilsker, U.S. Telework Coalition </span></p>
+<p class="MsoNormal" style="text-indent: -12pt; margin-left: 18pt; mso-line-height-alt: 10.9pt; mso-list: l0 level1 lfo1; tab-stops: list 18.0pt"><span style="font-family: Symbol; mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-CA; mso-bidi-language: #0400"><span style="mso-list: Ignore">·<span style='font: 7pt "Times New Roman"'>    </span></span></span><span style="font-size: 11pt; mso-ansi-language: EN-CA; mso-bidi-language: #0400">Phil Winters, University of South Florida </span></p>
+<p class="MsoNormal" style="text-indent: -12pt; margin-left: 18pt; mso-line-height-alt: 10.9pt; mso-list: l0 level1 lfo1; tab-stops: list 18.0pt"><span style="font-family: Symbol; mso-bidi-font-size: 11.0pt; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-CA; mso-bidi-language: #0400"><span style="mso-list: Ignore">·<span style='font: 7pt "Times New Roman"'>    </span></span></span><span style="font-size: 11pt; mso-ansi-language: EN-CA; mso-bidi-language: #0400">JoAnn Woodhall, Translink </span></p>
+<p><strong>Lessons Learned</strong></p>
+<p>Oliphant said that slugging worked in Washington DC because it was “robust and predictable. People use slugging and are dependent on it just as much as they depend on the bus, train or subway,” he said.</p>
+<p>The sheer volume of workers going to similar destinations was another reason why slugging worked in this city. In 2011, more than 25,000 people worked at the Pentagon, while still more worked in other government buildings, and an estimated 13,000 people worked at the Washington DC Navy Yard.</p>
+<p>Both Oliphant and LeBlanc said that slugging worked because it benefited people personally and directly. “The commute time has to be long enough that it’s worth it for someone to park at a commuter lot and wait in line for a ride,” said Oliphant. “They need convenient alternatives to driving.”</p>
+<p>He also said that having most of the slug lines co-located with bus stops was key to slugging’s success. “If people don’t get a ride in a vehicle, they can just hop on a bus when one comes along. The two systems feed off one another.”</p>
+<p>One might think that slugging, which removed fare-paying passengers from the transit system, would not be supported by transit agencies or local governments, but this has not been the case in DC.</p>
+<p>“Public transit doesn’t make money and every transit seat is subsidized,” said Oliphant. “The more people who slug, the fewer buses and seats on those buses have to be subsidized.” He noted that, in some jurisdictions, municipalities supported slugging by providing signage for the slug lines.</p>
+<p>Oliphant said that governments and other businesses could help promote slugging if they provided benefits, such as tax write-offs, for employees who slugged, vanpooled or carpooled.</p>
+<p>That being said, he noted that many of the participants he surveyed were wary of government getting involved. “There is a fear among slugging participants that if the government gets involved, it’ll mess it up and make it into a bureaucratic nightmare.”</p>
+<p><strong>More Study Findings</strong></p>
+<p>Oliphant’s study found that</p>
+<ul>
+<li>60% of respondents were passengers, 12% drivers</li>
+<li> 85% slugged roundtrip</li>
+<li> 42% of respondents had been slugging for five years or more, with 20% slugging for less than one year</li>
+<li> Most drivers participated for time reasons, while most passengers participated for monetary reasons.</li>
+<li>Both drivers and passengers cited slugging’s flexibility and environmental reasons as other major benefits</li>
+<li>Not surprisingly, given the governmental nature of work in the DC area, more than three-quarters of participants had at least a Bachelor’s or other professional degree</li>
+<li>Slightly more than half (52%) of participants were women</li>
+<li>The typical slug made over $100,000 a year, worked for the federal government, and tended to be older (35-54 years of age).</li>
+</ul>
+<p>Oliphant could find no evidence of any major crime incidents associated with slugging.</p>
+<p><strong>Slugging in other cities</strong></p>
+<p>Other U.S. cities, notably San Francisco, Houston and Seattle, have adopted slugging, In these other cities slugging may be called “flexible carpooling” or “casual carpooling” and starting locations are found mostly at park-and-ride facilities.</p>
+<p>LeBlanc points out that, in San Francisco, HOV lanes only require two people in the vehicle but in order to use flexible carpooling, vehicles must have three people in them. “Even though the road itself is designated HOV-2,” said LeBlanc, “flexible carpooling is HOV-3.” If Washington were to adopt San Francisco’s example, LeBlanc said that slugging could flourish even more in the DC area.</p>
+<p> </p>
+<p>This case study was written by Jay Kassirer and Sharon Boddy in 2011, based on a Tools of Change webinar presented on Feb. 9, 2010 by David LeBlanc &amp; Marc Oliphant.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

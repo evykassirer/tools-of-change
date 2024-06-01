@@ -1,0 +1,242 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/peer-support-groups/">Peer Support Groups</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>A Better City</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>City of Boston</li>
+<li>100 local businesses</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Overall impact across all participants, from 2009 to 2014:</p>
+<ul>
+<li>18% reduction in GHG </li>
+<li>15,000 ton reduction of CO2 emissions on average per year</li>
+<li>88 million kWh reduced</li>
+<li>$7 million in savings through energy efficiency investments</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Boston’s Challenge for Sustainability</h1>
+<p>A Better City’s Challenge for Sustainability has engaged over 100 participating businesses and properties to develop and meet sustainability standards and practices, and to drive local innovation in energy efficiency. The program uses a combination of monthly information and networking meetings, Challenge Coordinators who provide technical and educational guidance one-on-one with participants, benchmarking, utility tracking, and goal setting.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<h6><em>Note: To minimize site maintenance costs, all Tools of Change case studies are written in the past tense, even if they are ongoing programs, as is the case with this one.</em></h6>
+<p> </p>
+<p>The City of Boston was founded on the ideals of revolution. As the effects of climate change continued to emerge world-wide, Boston had the opportunity to once again, lead the revolution in aggressive greenhouse gas emission reduction and resiliency planning. The City established a 2020 emission reduction goal of 20% from 1990 levels, and an 80% reduction by 2050.</p>
+<p>The commercial real estate (CRE) sector in Boston accounted for nearly 40% of the City’s greenhouse gas emissions while also being among the leading contributors to the City’s economic growth. The prominence of Boston’s CRE industry made it both a challenging as well as valuable audience to target for the focus of the program.</p>
+<p>As an organization, A Better City (ABC) had worked with the commercial real estate sector since its inception in 1989, therefore building the trust and the fundamental relationships with a large portion of leading players in the industry. When climate change initiatives became a focus for the organization, ABC’s network positively responded through participation and leadership. When the Challenge for Sustainability program emerged, the CRE sector’s involvement helped the program grow in both scope and influence, while demonstrating a successful example of how aligning economic and environmental leadership results in deeper and more progressive benefits that extend well beyond the confines of the City.</p>
+<p>A Better City’s Challenge for Sustainability worked with over 100 participating businesses and properties to develop and meet a broad range of sustainability standards and practices, including increasing energy efficiency, reducing resource consumption, decreasing solid waste, and reducing greenhouse gas emissions. While the scope of projects and reduction goals varied, a high level of commitment was consistent throughout all participating properties, creating a powerful network of industry leaders that continue to establish sustainability and climate change mitigation as a permanent priority for the City of Boston.</p>
+<p><img alt="" height="134" src="/userfiles/Image/newsletter(1).jpg" width="450"/></p><!-- Background already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The Challenge for Sustainability focused on benchmarking, utility tracking, and goal setting.</p>
+<p>Participants kept a detailed account of current practices and annual utility consumption using a Challenge Scorecard. Building on the scorecard data, participants then worked with Challenge Sustainability Coordinators to develop a concrete Action Plan for the current year-a compilation of projects and programs that were feasible for implementation.<em>(Goal Setting, Obtaining a Commmitment)</em></p>
+<p>The Challenge Coordinators worked one-on-one with participants to accomplish their annual Action Plans, providing technical and educational guidance. At the end of each year, the utility data and the project status were updated in order to corroborate the tracking data with the improvement strategies.</p>
+<p>In addition, monthly meetings and networking opportunities provided participants with information on emerging technologies, best practices, and relevant sustainability topics. These meetings brought together property managers, sustainability managers, operations &amp; facilities managers, and more, from across Boston to share best practices and learn from each other. This helped drive innovation. It also helped the CRE sector stay abreast with city and statewide interests, incentive programs, and reporting ordinances, thereby improving access to large scale efficiency improvement projects and sustainable infrastructure. It also brought together technology innovators, waste haulers, utility representatives, etc. to help tailor products and incentive programs to the end-users (the private sector), enabling these business to make large capital investments in energy efficiency and sustainability projects, driving deeper reductions. <em>(Finanical Incentives, Norm Appeals, Overcoming Specific Barriers; Peer Support Group)</em> </p>
+<p><strong>Reducing Barriers</strong></p>
+<p>The main barrier to implementing a successful program was aligning sustainability goals with economic goals. Reducing this barrier required education on how efficiency could improve the bottom-line and how to invest savings back into the business or facility. Monthly workshops, networking events, and informational sessions created a routine for participants to learn from experts, examples, and other participants about an unrestricted range of sustainability topics and strategies. Participants also had online access to resources, project databases, and case studies and facilitated meetings with the Challenge Coordinators for consulting needs and technical guidance. Just as importantly, the program used benchmarking and targeted action plans to track the achievements and to share project strategies. Education took place both internally, among the company stakeholders and employees, as well as externally through the growing CRE network of sustainability leaders.</p>
+<p><img alt="" height="582" src="/userfiles/Image/jpeg Infographic.jpg" width="450"/></p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Participants tracked utility usage. The newly adopted Building Energy Reporting and Disclosure Ordinance in Boston also influenced the program impacts by giving additional value to the importance of being accountable for energy consumption and the significant impacts of collaborative efficiency efforts.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>An Annual Challenge Awards event was held every year to recognize the achievements, improvements, and ongoing success of the participants. The Challenge Awards were collaborative and inspirational, speaking to the true leadership that each and every participant exemplified in building a stronger, more resilient City. </p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>The program engaged over 100 commercial businesses (building owners, property managers, tenants, institutions, attractions), representing over 36 million square feet, over 86,000 employees, and 550 million kWh.</p>
+<p>Impacts in 2013:</p>
+<ul>
+<li>6,000 tons of CO2 reduced</li>
+<li>18 million kWh reduced</li>
+<li>$1.4 million savings</li>
+</ul>
+<p>Overall impact across all participants, from 2009 to 2014:</p>
+<ul>
+<li>18% reduction in GHG </li>
+<li>88 million kWh reduced</li>
+<li>$7 million in savings through energy efficiency investments</li>
+<li>15,000 ton reduction of CO2 emissions on average per year</li>
+<li>1,500 sustainability projects implemented</li>
+<li>Increased investment in energy efficiency and overall sustainability projects</li>
+<li>Increased hiring of ‘sustainability managers’, ‘chief sustainability officers’, ‘energy managers’, etc.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Mihir Parikh<br/>
+A Better City<br/>
+mparikh@abettercity.org<br/>
+(617) 502-6245</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p> This case study was written by Jay Kassirer in 2014.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

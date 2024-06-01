@@ -1,0 +1,269 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/school-programs-that-involve-the-family/">School Programs that Involve the Family</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Brisbane City Council</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Active student travel to and from school increased by 23%</li>
+<li>Car trips fell by 23%</li>
+</ul>
+<p> </p>
+<p><a href="/userfiles/Brisbane Active School Travel(1).pdf" target="_blank">Case Study PDF</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Brisbane's Active Schools Travel Program</h1>
+<p><iframe height="auto" src=" https://www.youtube.com/embed/kfbSbSAkqlY" width="97%">
+</iframe></p>
+<p>By the end of 2017, Brisbane’s Active Schools Travel Program had engaged over 157 primary schools to reduce single car trips by up to 35% and increase walking trips correspondingly. Half of the students at participating schools travel to school by active means, twice the state average. This program illustrates good use of safety instruction and practice, stamped student passports, norm appeals, competitions, and three levels of recognition and incentives. Designated a Landmark Case Study in 2018. </p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</strong> </p>
+<p>Brisbane City Council’s Active School Travel (AST) Program was established in 2004, as a response to public complaints about traffic congestion, driver behaviour and parking around Brisbane schools. The AST Program changes the travel behaviour of Brisbane primary school students, parents and school communities. It encourages and enables more people to walk, cycle, scooter, car pool or catch public transport to and from school and leave the car at home. </p>
+<p>The program initially focused on road safety and evolved into an active travel program to ensure there was a balanced approach to reduce traffic congestion and increase physical activity levels. </p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The AST program’s goal was to reduce single car trips to school by 10%.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Each AST school committee selected from a list the most relevant benefits of increased active travel. These often included: less congested streets, increased physical activity, improved road safety skills, increased student independence and closer communities.</p>
+<p>The local barriers to active travel were identified both by the school’s AST committee and by an annual parents’ survey. Common barriers were:	 distance from home to school; safe crossing points; knowledge of best routes; time constraints; poor weather; parental concern; and a lack of skills and confidence, facilitation, and infrastructure planning. Table One lists these barriers and shows how the program addressed each.</p>
+<p><strong>Prioritizing Audiences</strong></p>
+<p>The program focused on primary school children aged from five to 12 years old, in Brisbane, Australia.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Primary schools demonstrating need and commitment applied to be selected for the three year program, which offered a tailored suite of initiatives to participating schools. Each school on the AST program established a committee that worked closely with a dedicated Council officer to provide families with the information, motivation and opportunity to adopt active travel modes.</p>
+<p>In addition to safety instruction and practice, the program offered weekly active travel days, special events, maps, bike and scooter skills training, and public transportation orientation classes. Competitions and rewards incentivised individuals, classes and whole school populations, and infrastructure improvements were identified by the school population.</p>
+<p>The program took a whole-school approach with the following strategies and tactics. Table One shows how they addressed the key barriers.</p>
+<p><strong>1. Relationships and Support</strong><strong> </strong></p>
+<p>Council worked closely with each school to create an AST Committee, form relationships, and provide guidance, expertise and resources. In the first year of each school’s three-year program, its dedicated Council officer attended monthly committee meetings, facilitated skills sessions, provided resources and had regular phone and email contact with the school.<br/>
+<br/>
+Each school program began with an intensive level of support during year one of the program, then Council gradually stepped back in years two and three. Whilst support was always available, the program aimed for the school to be independent and sustainable by the end of year three, with active travel imbedded as a new social norm at that school. (<em>Building Motivation, Engagement and Habits Over Time; Norm Appeals</em>)</p>
+<p><strong>2. Skills<br/>
+</strong><strong> </strong> Council facilitated road safety, bike, scooter and public transport skills sessions to give parents the confidence to allow their children to actively travel to and from school. Students also gained practical skills through weekly experience in the AST program, when walking or riding to school. (<em>Overcoming Specific Barriers</em>)</p>
+<p><strong>3. Incentives, Recognition and Norm Appeals</strong><br/>
+Rewards at three levels encouraged active travel and helped establish active travel modes as the preferred way to get to school (<em>Building Motivation, Engagement and Habits Over Time; Competitions; Incentives and Recognition; Norm Appeals; Word of Mouth</em>)</p>
+<ul>
+<li>Individual students: Students received stamps in their passports when they actively traveled and the children aimed to reach reward levels. Kids loved the handball reward!</li>
+<li>Classes: Strong inter-class competition encouraged classes to work together to win a trophy or box of sports equipment which was presented at a school assembly.</li>
+<li>Whole Schools: An inter-school competition, The <em>Golden Boot,</em> encouraged schools to compete against each other each month to win the coveted boot. Council also presented annual awards for the <em>AST School of the Year</em> and inducted schools showing long-term behaviour change into the <em>Walk of Fame</em>.  </li>
+</ul>
+<p><strong>4. Promotion and Resources: </strong>AST provided schools with information, templates and factsheets for a range of AST initiatives and events. The committee used AST newsletter articles, social media posts and messaging to highlight and help establish active transportation modes as the preferred way to get to school. Customized maps of each school’s local area highlighted safe routes to school and active travel options. Each family was given a high-quality printed map and the school had a large version to display. In addition, easily recognised, age-appropriate characters and a catchy song with key messages were featured in the scripted assembly performances.  (<em>Building Motivation, Engagement and Habits Over Time; Mass Media; Norm Appeals; Vivid, Personalized, Credible, Empowering Communication</em>)</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Brisbane City Council funded the program. In 2018-19, the AST annual budget was $755,000 AUD. The majority of the budget paid for the 3.5 staff who ran the program, with some funds spent on merchandise (rewards and passports, skills sessions, assembly performances and other collateral.)</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Annual evaluation data were compiled from four sources for schools in the first year of the program:</p>
+<ol>
+<li>Pre-Intervention Hands Up Survey</li>
+<li>Post-Intervention Hands Up Survey (five days)</li>
+<li>Parent Survey</li>
+<li>Active School Travel Committee Survey.</li>
+</ol>
+<p>All schools in the program also conducted hands-up surveys once a week during the school term on the designated active travel day.</p>
+<p>In years 2 &amp; 3 of the program all schools were asked to continue to gather weekly statistics. These statistics were then used for determining awards.</p>
+<p>The AST evaluation did not take external influences into account, such as changes (both positive and negative) to public transport, the road network or changes to school catchments.</p>
+<p>An annual program evaluation report collated the average increase for all schools. For example, in 2017, the schools saw an average 23 percentage point increase in active travel rates. Some schools achieved much higher rates than the average.</p>
+<p>The annual evaluation process coupled with public reporting of its results, ensured continual improvement and made the overall program publicly accountable.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Competitions and incentives were provided to recognize progress (see Section 3 in Delivering the Program). Each school received an annual evaluation report with that school’s statistics and level of change. In addition, Council publicly reported the overall achievement of the AST program each year.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Results for 2017 were as follows:</p>
+<ul>
+<li>Active student travel to and from school increased by 23 percentage points, almost all due to an increase in walking trips</li>
+<li>Car trips fell by 23% (on average per student, and overall)</li>
+<li>50% of students at participating schools travelled to school each day using active travel options (compared to a state average of only 25%)</li>
+<li>82% of parents believed their children’s road safety awareness had improved as a result of the program</li>
+</ul>
+<p>Some schools continued to embed active travel beyond the three year program. .  One school joined in 2008 and nine years later 83% of students were actively travelling each month. AST had been integrated into the curriculum, events were regularly hosted, and the AST committee was still meeting regularly. </p>
+<p>In addition to the increase in active travel, schools also reported increased exercise levels that improved the health and wellbeing of students and parents, and increased student independence.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Michele Smith<br/>
+Program Manager – Travel Behaviour Change<br/>
+<a href="mailto:active.transport@brisbane.qld.gov.au " target="_blank"> active.transport@brisbane.qld.gov.au</a></p>
+<p>Report(s) available on request.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Landmark Designation</strong></p>
+<p>This year’s panelists included members from on-the-ground programs as well as from some of North America’s most proactive consulting, NGO, and government organizations supporting sustainable transportation professionals. They  include: David Levinger from The Mobility Education Foundation, Geoff Noxon from Noxon Associates, JoAnn Woodhall from Translink, Nathalie Lapointe from the Federation of Canadian Municipalities, Phil Winters from the University of South Florida, and Ryan Lanyon from the City of Toronto.</p>
+<p> </p>
+<p><strong>Notes</strong></p>
+<p>Consultations with schools, service providers and partners led to many innovations including:</p>
+<ul>
+<li>Expansion of the program from one year to three years to increase sustainability</li>
+<li>Creation of the ‘AST Crew’(cartoon characters representing each active travel mode) who come to life at school assemblies and events</li>
+<li>Redesign of active travel maps and mapping process</li>
+<li>Introduction of scooter skills recognising the rising popularity of this form of travel •	Trial footpath decals with directional and road safety messaging</li>
+<li>Conversion of formal walking school buses to informal walking groups to reduce administrative burden</li>
+<li>Use and promotion of #activeschooltravel hashtag. This helped schools share their events and successes and build a culture that normalized active travel.</li>
+<li>Review of reward structure to ensure relevance and value (some schools chose to focus on class incentives like the use of a sports box at lunchtime rather than individual student incentives.)</li>
+<li>Introduction of a <em>School of the Year</em> Award for current schools, and a <em>Walk of Fame</em> Award for schools no longer on the program but sustaining long term travel behaviour change.</li>
+<li>Piloted the removal of the Council officer and weekly surveys, while retaining rewards and skills training. No evidence of behaviour change was seen in schools that did not have a Council officer and weekly surveys.</li>
+</ul>
+<p>Principals, teachers and students all can change during any given year. Some schools chose to apply to do the program again, after a one year break.</p>
+<p>Brisbane held an AST forum for other government officers in the region to encourage them to run similar AST programs and share research.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

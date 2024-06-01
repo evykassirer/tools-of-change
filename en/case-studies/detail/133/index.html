@@ -1,0 +1,321 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a></li>
+<li><a href="/en/tools-of-change/school-programs-that-involve-the-family/">School Programs that Involve the Family</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Halifax Regional Municipality</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>MIRROR Nova Scotia</li>
+<li>Miller Waste Systems</li>
+<li>New Era Farms</li>
+<li>The regionÕs schools</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>This strategy diverted 43 per cent of the waste that would normally have gone to landfill, totalling 36,000 tonnes of organics and 22,000 tonnes of recyclable materials</li>
+<li>reduced annual greenhouse gas emissions (mostly methane) by approximately 1.4 tonnes per resident</li>
+<li>Participation rates were approximately 90 per cent</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Halifax Waste Resource Management Strategy</h1>
+<p>The Halifax Regional Municipality (HRM), along with public and private partners, has implemented an innovative strategy for the on-site separation of wet, dry and recyclable waste at both residential and business sources. Operational since January 1999, the Halifax approach demonstrates an environmentally sound alternative to incineration or raw waste land-filling and continues to generate national and international interest.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Halifax Regional Municipality (HRM), Nova Scotia, consists of four communities: Halifax, Dartmouth, Bedford and Halifax County. Its population of 350,000 is spread over an area of 2,224 square miles and ranges from high-density urban settings to rural communities. The search for a new solid waste strategy began in the early 1990s, when the local raw waste landfill was reaching capacity and began causing odour and other problems. The nuisance was such as to force the municipality to buy some houses and award compensation to other nearby residents. This left residents suspicious of traditional waste solutions and distrustful of municipal staff and politicians developing sustainable alternatives. In 1994, after much controversy, the Provincial Minister of Environment rejected a proposal for a new incinerator to replace the landfill. At the same time, the province introduced new legislation requiring source separation of waste and diversion.</p>
+<p>HRM therefore invited the public to join a new Community Stakeholder Committee (CSC) to develop an alternative approach through a year-long consensus-based process. Residents were receptive to the public meetings. A core group of approximately 300 people attended every meeting, eventually forming the CSC.</p>
+<p>When the CSC proposed a new Integrated Solid Waste Resource Management Strategy in March 1995, the four communities and eventually the HRM, used key elements of the strategy as the basis for the new solid waste system. Timing was crucial for co-ordination of all aspects of the strategy, which included awareness, building, contract negotiations and requests for proposals for the various facilities.</p>
+<p>HRM had made a commitment to the community to close the old landfill and had contracted with Cumberland County to haul all waste to its facility for one year, with an option to extend this period by six months or an additional full year. During this time, HRM succeeded in launching its new waste strategy. Final implementation followed the construction of two new composting plants and a new waste stabilization and disposal facility.The whole process was a massive undertaking due to the sheer size of the region. There were no comparable projects in North America.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The HRM Waste Resource Management Strategy was developed to meet three long-term goals and several short-term objectives.</p>
+<p>The long-term goals of the Strategy were:</p>
+<ol>
+<li>Maximize the 3 Rs (reduction, reuse and recycling).</li>
+<li>Maximize environmental sustainability and minimize costs.</li>
+<li>Foster stewardship and the values of a conserver society.</li>
+</ol>
+<p>In the short term, HRM guaranteed the community that the former landfill would close by January 1997. In addition, HRM staff proposed to distribute 95,000 green carts to residents and have two new compost plants, an expanded materials recovery facility, a household hazardous waste depot and the Otter Lake waste processing and disposal facility operating with eight new collection contracts within one to two years.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p><strong>Initial Research</strong> <br/>
+A private sector consultant was hired to investigate alternative waste management facilities and technologies that separated waste at source, land-filled only inert and stable materials, diverted as much waste as possible from landfill facilities and were within the project's cost restrictions. HRM, the community stakeholder committee and the regional council's solid waste resource advisory committee reviewed the consultant's findings.</p>
+<p><strong>Pilot Study</strong> <br/>
+Starting in 1996, a two-year pilot project of the system was conducted in 2,000 homes, chosen from each of the four participating communities. Carts and mini-bins from three short-listed manufacturers were used during the pilot to allow comparison of their performance. HRM welcomed residents to the pilot project by giving them each a green cart, showing them how to use the system and underlined their special contribution as a pilot community. Collection dates were reviewed using a leave-behind calendar and information was provided on the proper sorting of garbage. In addition, the HRM hotline number was printed on a sticker attached to the lid of each mini-bin.</p>
+<p>Residents from a cross-section of single and semi-detached dwellings, townhouses and multi-units (six units or less) were asked to separate their waste and comment on their particular model of cart and mini-bin. A random phone survey of the residents evaluated each style of cartand mini-bin for each of the four communities. Participants were asked for their opinions of the carts, ease of use in all seasons and conditions (including snow), convenience, durability and presence of odours. They were also asked to compare the ease of transporting the carts to curbside and back. This information was analyzed for urban vs. rural locations and long vs. short driveways. Lastly, the survey also asked about colour preference, whether lids closed securely and the clarity of the information provided with the carts.</p>
+<p>Based on this feedback, the mini-bin sticker material was changed to make it more durable and a cart and mini-bin model was chosen for the 95,000 households involved when the system was rolled out on a full scale.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Public Consultation</strong> <br/>
+HRM hired Clean Nova Scotia, a provincial non-profit organization with established contacts and school programs, to network with the community at large and engage residents in discussion through public meetings. Clean Nova Scotia organized and facilitated these meetings, which were advertised in the local newspapers. HRM staff also met with the editorial boards of the local newspapers and provided them with information packages. This brought the newspapers on side with a clear understanding of the issues and resulted in accurate and informative editorials (<a href="/en/tools-of-change/mass-media/">Mass Media</a>).</p>
+<p>An independently incorporated community monitoring committee had the power to monitor the new system and received municipal funding for a public consultation and information program. Its first communications were through a newsletter and articles in the local community newspaper (<a href="/en/tools-of-change/mass-media/">Mass Media</a>). The committee then distributed updates and minutes of meetings to residents who chose to become members (memberships were available at a nominal charge). The community's initial mistrust of authorities was transformed into a commitment to undertake the subsequent monitoring of the Strategy (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p>Regional Council also struck a subcommittee of council members, the Solid Waste Resource Advisory Committee, to provide a continuing public forum for developing the new system and to deal with start-up and other problems.</p>
+<p><strong>Rollout</strong> <br/>
+Rollout of the green carts began in July 1998, with the full strategy becoming operational on January 1, 1999. HRM staff delivered the tools to residents' homes (<a href="/en/tools-of-change/home-visits/">Home Visits</a>). These tools included a kitchen mini-bin (a small covered container to temporarily store wet waste in the kitchen) and a green cart (a large cart on wheels, with air holes to begin the composting process). The green cart was stored outside and transported to the roadside on collection days. In addition to the calendar and separation information provided during the pilot project, residents also received refrigerator magnets to remind them to use the new system (<a href="/en/tools-of-change/prompts/">Prompts</a>). HRM's neighbourhood teams went door to door and explained how to do the sorting and where to keep the cart and mini-bin (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>While the Solid Waste Resources Business Unit of HRM was primarily responsible for implementing the new system, other departments also provided support. For example, by-law enforcers continued to support and encourage participation in the source separation program.</p>
+<p>Collection alternated weekly between refuse and organic carts and vehicles were adapted to lift the green carts. HRM set an initial limit of 10 garbage bags every two weeks and planned to gradually reduce this limit two bags at a time.</p>
+<p>Halfway through the first year, HRM began approaching businesses to assist with educational materials for the establishment of a source separation program. HRM initially contacted grocery stores and restaurants and most agreed to comply. It then focused on apartment complex owners, providing them with information and expertise on how to implement the waste strategy within their buildings, leaving the owners to educate and encourage the participation of their tenants (<a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a>).</p>
+<p>HRM, in conjunction with the Nova Scotia Department of Environment, worked actively at developing industry stewardship programs, through which producers of waste would take responsibility for reducing and diverting their own waste. After a few years of negotiation, industries such as dairy producers began to pay for the cost of recycling milk packaging.</p>
+<p><strong>Promotion</strong> <br/>
+HRM staff set up display booths at malls, community events, county fairs and industry events such as the Restaurant Association's annual meeting. The green carts proved to be magnets in attracting people to the display. CSC members and HRM staff were invaluable ambassadors at these displays (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>).</p>
+<p>Clean Nova Scotia produced local cable television shows as part of their work for the province to reinforce messages about the new provincial legislation concerning source separation of waste and diversion. The shows featured interviews with HRM staff members who spoke about hazardous waste management, landfills, recycling and composting. Local cable companies aired these shows in 1997 and 1998 at no charge. In 2000, HRM created 15-second TV commercials that were issue driven (e.g., nuisance control) (<a href="/en/tools-of-change/mass-media/">Mass Media</a>).</p>
+<p>A quarterly newsletter, Wasteless Exchange, was distributed by mail starting in mid-1998. It focused on the community-based nature of the waste strategy, the environmental benefits, what the strategy means to householders and how residents could contribute (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>). It also provided information on inquiries received over the hotline, including a list of responses to frequently asked questions. Because the hotline handled all inquiries to HRM (not just those that were waste-related), call centre staff were provided with a manual and trained to respond specifically to waste management inquiries (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>HRM's school promotion consisted of games and contests based on source separation, with prizes such as tours of the new waste management facilities. Students used images of vegetables, potato chip bags and other waste to indicate "what goes where" and were given information to take home (<a href="/en/tools-of-change/school-programs/">School Programs that Involve the Family</a>). HRM also produced a video in conjunction with a public relations firm that covered the complete waste management strategy. The video, which HRM distributed to all libraries and schools within the municipality, won national recognition for its quality and educational value.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The municipality contracted Cumberland County to haul all waste to their facility for a two-year period, at a cost of $16 million per year.</p>
+<p>HRM financed the bulk of the Waste Resource Management Strategy through a combination of capital debt financing, private partnerships (compost plant capital), tipping fees for commercial users and property taxes. More than 400 people contributed invaluable volunteer time and input over the years of the waste strategy's development.</p>
+<p>Capital costs, most of which were financed through 20-year municipal debentures, consisted of the following:</p>
+<table>
+<tbody>
+<tr>
+<td width="150">Otter Lake front end processor, waste stabilization facility</td>
+<td>$24 million</td>
+</tr>
+<tr>
+<td>Otter Lake landfill (cell 1 of 20) and access road</td>
+<td>$20 million</td>
+</tr>
+<tr>
+<td>100,000 green organic carts and kitchen mini-bins</td>
+<td>$8.5 million</td>
+</tr>
+<tr>
+<td>Burnside composting plant</td>
+<td>$9 million</td>
+</tr>
+<tr>
+<td>Ragged Lake composting plant</td>
+<td>$9 million</td>
+</tr>
+<tr>
+<td>Materials recycling facility (pre-existing)</td>
+<td>$4.5 million</td>
+</tr>
+<tr>
+<td>Permanent household hazardous waste depot</td>
+<td>$125,000</td>
+</tr>
+<tr>
+<td>Total System Capital</td>
+<td>$75 million</td>
+</tr>
+</tbody>
+</table>
+<p>The annual operating costs of the waste resource management system are approximately $37 million, including $3 million for debt and other costs from the former Highway 101 Landfill. Commercial tipping fees recover approximately $10 million of the operating costs, with provincial waste diversion grants and other revenues bringing recoveries up to about $12 million. The net cost of $25 million per year is charged to municipal property taxes.</p>
+<p>In the first year of operation, HRM also spent $450,000 on promotion and awareness. As waste diversion dramatically increased, HRM received proportionally increased revenue through a standard provincial government solid waste funding formula based on per capita waste disposal in 1989 compared to the current per capita disposal.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Corporate Research Associates Inc. (CRA) conducted a phone survey of 505 randomly selected residents in November 1998 to determine the convenience of using the green cart system, level of resident approval of the new strategy and the types of problems encountered. Similar phone surveys were conducted at a later time to gauge participation.</p>
+<p>The amount of garbage diverted from landfill and the associated reductions in methane emissions were calculated by comparing the weight of waste handled by the new system compared to the old landfill. Scales at each of the facilities automatically transmitted information onthe weight of organics and recyclables being processed. Similarly, information from each of the eight collection areas regarding participation by area was sent to HRM daily. The resulting information was used for targeting communication materials and budget forecasting.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Feedback was provided throughout the process via numerous routes, garnering further support, participation and pride in the community's accomplishment. Radio spots in 1998 provided testimonials for the green cart system in the pilot project and reinforced HRM's key message: this was a citizen-based strategy.</p>
+<p>A minority of residents who did not approve of the waste strategy for various reasons (e.g., did not have time to sort, thought their cart smelled) were vocal. The media focused on their concerns and the local councillors listened. HRM went to the silent, approving majority, knocking on their doors, doing interviews and gathering testimonials. With this information in hand, the HRM revisited the newspapers' editorial boards and took out paid advertisements to combat the negative publicity.</p>
+<p>Radio spots and the newsletter Wasteless Exchange both reported the outstanding achievements in diverting waste and commended citizens. One newsletter testimonial featured a keen, 80-year-old woman who rolled her cart back and forth to the curb. Students were also sent home with information for parents.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>HRM achieved its short-term key objectives in the first year of operation and is well on the way to achieving its long-term goals.</p>
+<ol>
+<li><strong>Maximize the 3 Rs (reduction, reuse and recycling).</strong> <br/>
+    In 1999/00, HRM residents and businesses diverted 43 per cent of the waste that would normally have gone to landfill, totalling 36,000 tonnes of organics and 22,000 tonnes of recyclable materials, including white goods (metal appliances such as stoves, refrigerators, washersand dryers).</li>
+<li><strong>Maximize environmental sustainability and minimize costs.</strong> <br/>
+    The new system proved environmentally sound and HRM closed its only raw waste landfill. The strategy reduced annual greenhouse gas emissions (mostly methane) by approximately 1.4 tonnes per resident based on the volume of organic materials diverted from the landfill to two new compost plants and by the use of a waste stabilization facility (a type of composting plant) for non-inert material. The output from that facility is similar to the material collected in central vacuums, making leaching of toxic liquids a non-issue. 		<br/>
+<br/>
+    The system was also economical. HRM introduced the new system without the need for a related property tax increase or even a dramaticincrease in tipping fees. Overall costs were comparable to earlier incineration cost estimates for a similar scale operation. The new system also resulted in 125 new permanent jobs in a broad range of occupations at the various facilities (e.g., sorters of waste, administrative staff in the scale houses, equipment operators and lab workers at the landfill site).</li>
+<li><strong>Foster stewardship and conserver-society values.</strong> <br/>
+    Participation rates were approximately 90 per cent after the first year and the vast majority of people were proud to be part of such a large and successful initiative. A growing number of businesses and institutions also adopted the organic waste and recyclables separation concept. What was once a major environmental and political problem for the community was transformed into a significant source of community pride.</li>
+</ol><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Mark Bernard <br/>
+Solid Waste Manager <br/>
+Halifax Regional Municipality <br/>
+P.O. Box 1749 <br/>
+Halifax, Nova Scotia B3J 3A5 <br/>
+Tel.: 902-490-6716 <br/>
+Fax: 902-490-6690 <br/>
+E-mail: <a href="mailto:bernarm@region.halifax.ns.ca">bernarm@region.halifax.ns.ca</a> <br/>
+Web site: <a href="http://www.region.halifax.ns.ca/wrms/mainpage.html">www.region.halifax.ns.ca/wrms/mainpage.html</a></p>
+<p>HRM provides customized packages on its system to interested parties and also accepts invitations to conferences to share its strategy.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Halifax's Waste Resource Management Strategy was recognized by a Sustainable Community Award from the Federation of Canadian Municipalities in 2000.</p>
+<p><strong>Lessons Learned</strong></p>
+<p><strong><em>What worked and why</em></strong> <br/>
+Through the dedication and co-operation of the volunteer community stakeholder committee, HRM learned that it is possible to develop anew municipal service with significant levels of community participation and to harness that same participation to deliver and monitor the new system.</p>
+<p><strong><em>What did not work</em></strong> <br/>
+While most elements of the new system worked well, HRM encountered problems with the design capacity of the Otter Lake front end processing facility, which was not able to process as much waste as was produced in the city. This inability was mainly due to daily and seasonal variations and a buoyant local economy. While it was necessary to export some waste to another municipal landfill in the first year of operation, a $2 million expansion eventually resolved this capacity problem. HRM expected to reduce the first summers nuisance issues associated with using the Green Carts (mostly fruit flies) through further experience and public awareness.</p>
+<p>An awareness initiative that did not serve its intended purpose was the informal neighbourhood workshops. In a region the size of HRM, spreading the word from neighbour to neighbour proved ineffective.</p>
+<p><strong><em>What would be done differently</em></strong> <br/>
+In hindsight, it would have been preferable to have had operational compost plants long before completing the new front end processing facility and related residuals disposal facilities. This would have allowed more time to get residents and businesses separating organic materials before starting up the organic-free landfill processing and stabilization facility. This would have reduced the first year's capacity problems and would have developed participation levels more fully, particularly among businesses and institutions.</p>
+<p>It would also have been advantageous to invest more time and money up front educating residents about the types of facilities, choice of sites and concerns such as odours from the composting plants.</p>
+<p><strong><em>What lessons can be transferred</em></strong> <br/>
+Judging from the number of visits and inquiries from other Canadian and international communities, there is much to learn from the Halifax experience. HRM has proven that a community-based, four-stream waste diversion system can work in an urban setting and has demonstrated a new approach to achieving an organics-free landfill. Their system is a significant advance over previous raw waste landfill or waste incineration technologies and was accomplished within reasonable financial limits for a city of 350,000 people.</p>
+<p>This cse study was written in 2001 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

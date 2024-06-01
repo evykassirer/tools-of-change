@@ -1,0 +1,338 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a></li>
+<li><a href="/en/tools-of-change/peer-support-groups/">Peer Support Groups</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>University of Toronto Sustainability Office</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Facilities and Services Department, University of Toronto</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Rewire reduced consumption by between 221 and 258 MWh in its second year when it ran in seven residences with 1,500 students.</p>
+<p> </p>
+<p>Case Study<strong> </strong><a href="/userfiles/Rewire Landmark Case Study June 2012-v2.pdf" target="_blank">PDF </a></p>
+<p>Webinar <a href="/userfiles/REWIRE TranscriptV3.pdf" target="_blank">Transcript</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Rewire Behaviour Change Program at U of T Residences</h1>
+<p>This case study is a great model for reducing energy consumption through behaviour changes in student residences. Toolkits provide student organizers with detailed discussions of the environmental impact of specific behaviours, implementation strategies for energy conservation, and an assortment of 'action tools'. These organizers use the materials conservation-themed events to set a positive social norm for environmentally conscious activities. This program was designated a Landmark case study in 2010.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>In 2012, the University of Toronto had more than 75,000 students (4,000 of whom lived on campus), 15,000 faculty and staff, more than 250 buildings on three campuses, and an estimated annual economic impact on the Greater Toronto Area of approximately $5.4 billion.</p>
+<p>Rewire was started by students for students. The University’s Sustainability Office developed the framework then trained students to deliver it to their peers.</p>
+<p>The program evolved from a one-month pilot project (piloted at four residences), conducted in 2008, to a more mature, year-round program predicated on eye-catching visuals and a top-down delivery system that used student volunteers to influence their peers and drive more energy-efficient behaviour.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>In developing Rewire, Stuart Chan, the University’s Sustainability Officer, reported that they first conducted a review of Community-Based Social Marketing, the Theory of Planned Behaviour, and Persuasion Theory to craft the program’s messaging in terms of engagement mechanisms, tone and content.</p>
+<p>“We were looking to change habits, to reduce resource consumption and thus reduce greenhouse gas emissions at the University of Toronto,” he said. One way that the University had accomplished this task in the past was to implement technological changes, such as lighting and other building retrofits. But, said Chan, although these changes resulted in significant energy reductions, in the long run, those kinds of initiatives needed to be coupled with changes in behaviour to maximize their effectiveness.</p>
+<p>Chan noted that, in their research, they found that information or incentive/disincentive-based programs aimed at changing behaviour work only some of the time.</p>
+<p>“We found a relatively weak link between attitude and behaviour. People often don't do what they believe they should do for a number of reasons,” reported Chan. “There's also a surprisingly weak link between information and attitude. People tend to seek out and remember information that confirms their pre-existing beliefs and biases, and that notion is somewhat flawed and based on an oversimplified model of behaviour.”</p>
+<p>He explained that, in traditional information-based campaigns, there is often a lack of feedback from the program audience. “Information campaigns tend to fit existing business models and deliverables. They also tend to be based on the advertising model, which is about changing consumer preference in an existing behaviour instead of creating a new behaviour,” he said. “The idea that a convincing argument leads to intention leads to action doesn't really work.”</p>
+<p>Chan added that these kinds of campaign tend to be based on an oversimplified linear model of how humans make decisions. “If we're to visualize this, the logic behind an information campaign assumes a fairly singular relationship between what we see, hear, feel, think and behave,” he explained. “They place emphasis on one variable, material interest and/or altruism, ignoring others that can overpower them. That's really not a strong incentive or an argument.”</p>
+<p>What Chan found in the literature was that human behaviour is governed by a combination of rational aspects and automatic factors. “A choice is influenced by a combination of individual and social dimensions, which we – as well as a large number of scholars – believe to be perhaps the largest driver of human behaviour,” he said.</p>
+<p>From the information his office uncovered, Chan said that they adopted the Theory of Planned Behaviour to craft Rewire.</p>
+<p>“The theory tries to explain the not-so-straightforward, casual connection between attitudes and behaviour, and has been shown to be one of the more predictive models of behaviour,” said Chan. “The intention to carry out a specific behaviour are shaped by our attitude towards the behaviour as well as by subjective norms – whether we think it is important to people who are influential to you – and perceived control of your surroundings or of that specific action.”</p>
+<p>As an example, Chan said that people tend to adopt more pro-environmental behaviours at home than at work. While this is partly due to financial reasons (you don't see a financial gain when you're saving energy at work), it's also due to a lack of perceived control. “People don't feel like they can do something or the right behaviours aren't being modeled.”</p>
+<p>To understand their specific audience, the Sustainability Office augmented their research with interviews, focus groups and surveys. “We uncovered students’ attitudes, understood their social landscape, as well as what they felt they could and could not do,” said Chan.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Armed with the information from the literature review and surveys, the Sustainability Office developed resources and tools that volunteers could use to persuade their peers to adopt more energy-efficient behaviours.</p>
+<p>“We [the Sustainability Office] placed ourselves in the middle, where our role was to develop the framework, coordinate the volunteers and trainthem how to do it,” said Chan. (Neighbourhood Coaches and Block Leaders)</p>
+<p>The Sustainability Office worked with the residence administrators so that they could facilitate anything that was needed by the students. “We got the students and the administration to work together, as opposed to using us as a conduit,” said Chan.</p>
+<p>Rewire was an ongoing year-long program (every September-April to cover the school year), and each month had a different theme (Building Motivation Over Time):</p>
+<ul>
+<li>September was for volunteer recruitment</li>
+<li>October targeted computer use</li>
+<li>November targeted lighting use</li>
+<li>December urged students to turn off or unplug equipment before students leave for the holidays</li>
+<li>January targeted laundry (water use and dryers)</li>
+<li>February looked at exam study solutions, including activating the energy-efficiency settings on personal computers</li>
+<li>March focused on students taking the stairs instead of the elevator</li>
+<li>April targeted water consumption (showers)</li>
+</ul>
+<p><strong>Recruiting Volunteers</strong></p>
+<p>New volunteers were recruited through the administration. Chan said that the Sustainability Office spoke with the Deans and the residences’ Life Coordinators to identify the most likely people.</p>
+<p>“They knew the students better than we did,” said Chan. “The students who were most involved in the residences in general, or who were interested in environmental issues were usually the ones who stood out.” As the program matured, outgoing volunteers were asked to recruit new ones to take their place. </p>
+<p><strong>Residence Meetings</strong></p>
+<p>As a first step, volunteers were asked to present the Rewire program at their monthly floor or house meeting. “We didn’t want to burden the volunteers with the task of going to each person door to door,” said Chan. “If we had asked them to do that, they would probably not have volunteered for us for very long because that's a major time commitment on their part.”</p>
+<p>At the initial meeting, volunteers discussed the program and energy conservation in general. “They explained to them the whole framework and at the end of the presentation, they got students to sign a commitment to energy conservation,” said Chan. Students were presented with a pledge to commit to the actions outlined by the Rewire program. “We kept the pledge vague so that students were buying into the program as a whole as opposed to a certain action.” (Obtaining a Commitment)</p>
+<p>Once the initial meeting was held, volunteers would then pick up prompts (primarily posters) from the Sustainability Office at the beginning of each month and put them up on their floors. These materials were customized for each of the behaviours asked of the students. (Prompts)</p>
+<p>At subsequent monthly meetings, volunteers talked to their peers about the goals for that month. “It was then up to them, for the rest of the month, to talk about the theme and the actions with their peers whenever they got the chance, as well as to hold events or other types of programs,” said Chan. (Norm Appeals, Peer Support Groups)</p>
+<p>For example, with the assistance of the residence administration, one student started a clothes drying rack lending program at her residence. “Any time there can be collaboration between students and the administration, we tried to foster those relationships,” said Chan.</p>
+<p>Events held throughout the school year were also part of the Rewire program. Events were student run and not prescribed by the Sustainability Office. “We asked volunteers to hold events, such as movie nights or ‘green’ pub nights,” reported Chan. “We've had other creative ideas, such as a recycling relay, where teams of people run a relay through the cafeteria, putting the materials into the right bins. We also had a Take the Stairs Challenge.” (Building Motivation Over Time)</p>
+<p>In terms of the delivery mechanisms, Rewire focused on three things:</p>
+<ol>
+<li>Knowing their audience’s barriers and motivations. “We focused, first of all, on word-of-mouth and fostering social norms, and we used the materials and posters to deliver that message. But we found it to be much more powerful when that message came from an actual person, especially friends and neighbours, rather than a piece of paper on the wall or even the administration,” said Chan. (Norm Appeals; Vivid, Credible, Personalized Communication; Word-of-Mouth)</li>
+<li>Tools to help overcome laziness or forgetfulness. “The visual prompts reminded people of the actions they’d committed to,” said Chan. The original materials were developed by a design student at the Ontario College of Art and Design. “The main goal was to make them look different than all the things that were on bulletin boards, meaning more color and more visuals.” (Prompts, Vivid Communication)</li>
+<li>Convenience. “We wanted to make sure that if students wanted more information, they had it at their fingertips,” said Chan. The Sustainability Office created a website for the Rewire program (<a href="http://sustainability.utoronto.ca/projects/rewire.htm" target="_blank">http://sustainability.utoronto.ca/projects/rewire.htm</a>), which included details on the energy-saving actions and other resources. </li>
+</ol><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Rewire obtained funding from the Ontario Power Authority and the federal government’s ecoACTION program, for a total revenue stream of $300,000, including in-kind donations. That was the budget for developing the program for the first three years. Subsequently, it received another grant to continue to develop and fine-tune the program, including salary, and that was about $150,000 over three years.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Chan admitted that monitoring and measuring behaviour change from the Rewire program was difficult to do, although the Sustainability Office did install electricity sub meters in certain areas of each residence.</p>
+<p>“It was a lot harder to isolate this program from all the other things that were happening – weather, daylight hours, etc.,” he said. “We stopped measuring electricity mainly because of the cost. It's incredibly expensive to measure electricity at that level because we were only looking at user-mediated behaviour.”</p>
+<p>Instead, Rewire relied on student surveys to determine what changes had been made. Students were asked to self-report changes to their behaviour based on the energy-saving actions they were asked to take.</p>
+<p>“Our latest survey determined that social norms had the greatest influence on people's behaviours, followed by attitude and perceived control. This knowledge of the power of social norms was extremely potent as it prioritized our approach when constructing the messaging and delivery mechanism.” (Norm Appeals)</p>
+<p>Chan also said that they attempted to measure the changes on a year-long basis, but a lack of human resources prevented them from “crunching the numbers.”</p>
+<p>The true measure of a behaviour change program is often in the long-term impacts, i.e., do the people involved in the program continue to act on energy-saving measures, without an official program prompting them to do so?</p>
+<p>“We had a student researcher who tried to track down students who were involved in Rewire when they lived in residence,” reported Chan, but residence administrators weren’t keen on giving out contact information of former students. “It’s been a battle, but we are still trying because we want to know if those behaviours have persisted and how Rewire changed their perspective on energy conservation.” </p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Chan said that students were always looking for feedback on how well they were doing in the program, but that it was difficult for the volunteers or the Sustainability Office to provide hard feedback, other than through survey data.</p>
+<p>“We’re looking to develop better feedback mechanisms in the future,” he said. “It could be a store-bought solution or something we may have to develop in-house.”</p>
+<p><strong>Recognition</strong></p>
+<p>Providing recognition to volunteers was a critical aspect to maintaining their morale and their support for the program.</p>
+<p>“You need to give your volunteers a lot of recognition for the work that they do,” said Chan. “You can do that by giving out treats, a certificate, badge or praise, but really any kind of recognition will help maintain the relationships between the organization and the volunteers, and between the volunteers and the students.” </p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Rewire reduced consumption by between 221 and 258 MWh in its second year when it ran in seven residences with 1,500 students. The savings were attributed to powerful pro-environmental social norms.</p>
+<p>On average, 75% of students signed the Rewire pledge each new school year. Chan estimated that, based on an electricity rate of 10¢ per kilowatt-hour and an average occupancy of 250 students, electricity savings per residence were approximately $4,000 annually.</p>
+<p>Certain selected energy-saving actions had a very large uptake by students, particularly those that encouraged turning off lights. Others, such as those dealing with water use, were not as successful. Selected results included:</p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td><strong>Behaviour</strong></td>
+<td><strong>1st Survey</strong></td>
+<td><strong>2nd Survey</strong></td>
+<td><strong>% Change</strong></td>
+</tr>
+<tr>
+<td>Turn off lights and TVs when leaving common room</td>
+<td>67.69%</td>
+<td>82.05%</td>
+<td>+14.36%</td>
+</tr>
+<tr>
+<td>Turn off lights when leaving bathroom</td>
+<td>13.05%</td>
+<td>69.05%</td>
+<td>+56%</td>
+</tr>
+<tr>
+<td>Activate computer’s energy-efficiency settings</td>
+<td>58.34%</td>
+<td>71.07%</td>
+<td>+12.73%</td>
+</tr>
+<tr>
+<td>Take quick showers</td>
+<td>40.28%</td>
+<td>30.96%</td>
+<td>-9.32%</td>
+</tr>
+<tr>
+<td>Turn off ceiling fan when not needed</td>
+<td>71.24%</td>
+<td>54.67%</td>
+<td>-16.48%</td>
+</tr>
+</tbody>
+</table><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Stuart Chan, Sustainability<br/>
+University of Toronto<br/>
+sustainability@utoronto.ca</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned</strong></p>
+<p><em>Make it clear, personal and positive</em></p>
+<p>“We found that, any time you have a physical medium like a poster or a sticker, you need to make it vivid, personal, and make sure that expectations are clear,” said Chan. “Making sure of the attitudes and behaviours of audiences prior to developing messages will also help you design these materials.”</p>
+<p>One of the lessons Chan learned from his office’s research into community-based social marketing was that people tend to respond better to positive messages over negative ones.</p>
+<p>“People don’t respond well to negative messages because they take away most people’s feelings of agency and control,” said Chan. “We found out that if they feel empowered to do something, they'll actually do it. It’s much more likely than if we tell them it’s all doom and gloom.” (Empowering Communication)</p>
+<p>On the subject of messaging, Chan noted that one of their initial posters turned out to be too hot to handle for some.</p>
+<p>“We created a poster that showed the silhouette of an androgynous person behind a shower curtain in a provocative pose where the hands were behind the head, arms raised, shoulders back. The headline read: ‘Horny? Well, take a cold shower’,” Chan recalled. “That proved to be a little too risqué for some students, although others, including the residence administrators thought it was funny.”</p>
+<p>Getting that type of feedback, said Chan, made them change direction. “We wanted to appeal to as many people as possible and to polarize them was something we didn't want to do.”</p>
+<p><em>Credibility</em></p>
+<p>Community-based social marketing has proven that messages delivered by credible individuals or organizations have a greater chance of being accepted by the target audience.</p>
+<p>“Peers are more credible than, for example, the university administration, which is usually coined ‘the man’ around here. (Credible Commuication)</p>
+<p><em>Provide several avenues for information</em></p>
+<p>Rewire was delivered by student volunteers, aided by resources and tools developed by the Sustainability Office. The Office also created a Facebook page so that students could learn more about the program and to remind them about events.</p>
+<p>“We tried to foster some type of troubleshooting forum on the Facebook page for the volunteers, but it turned out to be a non-starter,” said Chan. Instead, the Facebook page was used mostly as a message board from the Sustainability Office to the students, rather than between peers. “We don't know how to fix that yet, but we'd like to have some kind of forum where students can exchange solutions and help each other out,” he said.</p>
+<p><em>Too much enthusiasm is not always a good thing</em></p>
+<p>Chan said that when the program first started, people got so excited that they started turning lights off in the hallways. “It got to the point that it became a health and safety hazard,” he said. “You have to be careful. Students can get a little too enthusiastic, to the point where it breaks the building code.”</p>
+<p> </p>
+<p>Full details on the literature review, which includes the Theory of Planned Behaviour, can be found at: <a href="http://sustainabilty.utoronto.ca/projects/rewire/Theory.htm" target="_blank">http://sustainabilty.utoronto.ca/projects/rewire/Theory.htm</a>.</p>
+<p> </p>
+<p><strong>Landmark Designation</strong></p>
+<p>The program described in this case study was designated in 2010. Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff, and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Melissa Klein, US EPA’s ENERGY STAR® Program</li>
+<li>Arien Kortland, BC Hydro</li>
+<li>Clifford Maynes, Green Communities Canada</li>
+<li>Stephanie Thorson, Summerhill</li>
+<li>Edward Vine, Lawrence Berkeley National Laboratory</li>
+<li>Dan York, ACEEE</li>
+</ul>
+<p>This case study was weritten in 2012 by Jay Kassirer and Sharon Boddy.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

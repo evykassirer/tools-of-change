@@ -1,0 +1,372 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/work-programs-that-influence-the-home/">Work Programs that Influence the Home</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>Commuter Connections, part of the Metropolitan Washington Council of Governments</p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>U.S. federal government</li>
+<li>State of Maryland</li>
+<li>Commonwealth of Virginia</li>
+<li>Virginia Department of Rail and Public Transportation</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Between 1998 and 2007, the number of teleworkers in the region grew from 12% to 19%, or more than 450,000 workers</li>
+<li>Of those 450,000 teleworkers, 11% had been reached directly through Commuter Connections</li>
+<li>Eliminated 22,000 vehicle trips and 414,000 vehicle miles</li>
+<li>Approximately 2¢ per trip reduced</li>
+<li>In the Commonwealth of Virginia, the number of teleworkers increased from less than 5% in 2006 to 24% in 2010</li>
+<li> Played a large role in helping staff work during blizzards and other emergencies.</li>
+<li> As of 2010, 125 employers were enrolled in Telework Virginia </li>
+</ul>
+<p><strong>Handouts</strong></p>
+<p>Case Study <a href="/userfiles/Maryland and Virginia Telework Case Study January 2012.pdf">PDF</a></p>
+<p><a href="/userfiles/Maryland_and_Virginia_Telework - transcript.doc">Webinar Transcript</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Maryland &amp; Virginia Telework </h1>
+<p>How can municipal and regional governments best promote telework? This case study highlights the telework program that originated in the Washington DC area in 1996, and the state-wide program that was subsequently established in the Commonwealth of Virginia. The later offers cost reimbursement (up to $35,000 per business), free personal assistance, and promotional “Telework Days.” Both programs help overcome key policy and adoption barriers, and both have impressive impact data.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>This case study focuses on telework initiatives in the region of Washington, DC, which covers the District of Columbia and surrounding jurisdictions (counties and cities within Maryland and Virginia). In 2010, the region had about 2.8 million workers and the regional forecast is to add 1.2 million new jobs to the region by 2030. Such growth forecasts will impact the region’s transportation infrastructure.</p>
+<p>Commuter Connections, a regional network of transportation organizations coordinated by the Metropolitan Washington Council of Governments (COG), started in 1974 to provide mobility solutions in the region. The network is administered through the Regional Metropolitan Planning Organization, part of the National Capital Region Transportation Planning Board (TPB)  </p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The Commonwealth set a goal of having 20% of its eligible workforce [approximately 105,000 employees) teleworking by 2010.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>“Dating back to the late 1980s, the TPB conducted a series of reviews of telecommuting pilot programs, which were in operation in Los Angeles and in Arlington County, Virginia,” explained Nicholas Ramfos, Commuter Connection’s Alternative Commute Programs Director. “These programs were primarily started at the local government level with the idea that lessons learned could be shared with the rest of the businesses in those jurisdictions and beyond.”</p>
+<p>The TPB also reviewed the federal government's Flexiplace program (a telework and flex-hour program), and monitored the actions of the Commonwealth of Virginia’s Governor’s Advisory Taskforce on Telework and Telecommuting, and the State of Maryland’s Economic Subcommittee of the Governor’s Information Technology Department.</p>
+<p>In 1994, the Washington, D.C. metropolitan region, through the TPB, adopted a region-wide telework measure to address air quality conformity issues. The telework measure was launched through Commuter Connections and goals were set for both congestion and air quality impacts.</p>
+<p>In 1996, an aggressive outreach campaign was launched and implemented to educate the business community in the Washington, D.C. metropolitan region as well as the general public on the benefits of teleworking.</p>
+<p>Focus groups were first held with business executives, which led to the development of a regional telework how-to kit, along with an accompanying video that employers could use as part of the new hire orientation process.</p>
+<p>“The most important research we did was at the very beginning when we conducted focus groups with senior executives throughout the region,” said Ramfos. “We wanted to get their opinion on what would it take to start or expand a telework program in their organization. The number one thing we heard, that surprised us, was that most executives wanted a bottom-up approach. They wanted their employees to come to them and tell them that it was something they were interested in, versus a top-down approach. We weren’t expecting that.”</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>In 1997, Commuter Connections launched a telework demonstration project with employers to document the challenges and opportunities that resulted from the implementation of an employer-based telework program.</p>
+<p>“We designed the program as a grassroots approach where if you were interested, we offered training and a how-to kit,” said Ramfos (Overcoming Specific Barriers). “We also had a presence on radio and that was really how we got the interest of the business community” (Mass Media.)</p>
+<p>Between 1997 and 2005, a series of telework seminars were held for employers that addressed issues concerning teleworkers and supervisors, as well as technology challenges and solutions. Information on teleworking was also disseminated through the Commuter Connections website and through traveler information kiosks in the region.</p>
+<p>“The seminars were highly popular and helped establish a baseline of employers willing to move forward with either starting or expanding a teleworking initiative at their work location,” said Ramfos. “Our staff began assisting these employers as well as other employers that contacted the Commuter Connections telework resource center for assistance.”</p>
+<p>Commuter Connections also provided marketing support to approximately 15 telework centres scattered throughout the region, through direct mail to residents living within a one-mile radius of each of the centres, and by offering presentations on teleworking at the centres in the evening. Commuter Connections also participated in eCommute, a program whereby employers were provided free consulting assistance to start a telework program, and were then required to track the instances of teleworking electronically. </p>
+<p>Commuter Connections maintained on-call assistance for Maryland employers up to 2012, when such assistance was provided through the local level.</p>
+<p>In 2000, legislation was adopted that required each federal department to establish a policy under which eligible employees could participate in teleworking to the maximum extent possible without diminished employee performance. This legislation helped increase participation rates among federal workers in the region.</p>
+<p>“In 2002, the region was faced with not meeting its set goals for pollutants and had to adopt additional transportation emission reduction measures,” said Ramfos. “One of the measures adopted was an expanded telecommuting effort on a regional scale. The purpose of the program was to target already existing employer-based telework programs for expansion.”</p>
+<p>Data were collected and analyzed from the earlier programs in an effort to quantify both congestion and air quality impacts of the telework and expanded telework terms.</p>
+<p>“We placed an emphasis on not doubling efforts between all of the initiatives,” said Ramfos. “In order to accomplish this, a framework methodology was developed to detail how the data would be collected, and then analyzed.”</p>
+<p>In addition to the regional efforts of Commuter Connections, Maryland and Virginia began their own state-sponsored telework initiatives.</p>
+<p>The State of Maryland was the first to launch a program—the Telework Partnership with Employers (TPE), which provided free consulting assistance to employers who wanted to start a telework program.</p>
+<p>The Commonwealth of Virginia’s demonstration project was called Telework Virginia and was launched first in Northern Virginia and administered through Commuter Connections. Later, the program was expanded to the rest of the Commonwealth.</p>
+<p><strong>Commonwealth of Virginia</strong></p>
+<p>Karen Jackson, Deputy Secretary of Technology with the Commonwealth of Virginia, explained the role of the state in the telework initiatives.</p>
+<p>“We saw the need for telework as a congestion mitigation tool,” she said, noting that Virginia’s telework program was unusual in that it was born out of the legislative side of the house.</p>
+<p>“It was the legislature’s foresight and vision that put some very general and basic telework language into the code of Virginia, and directed that certain pieces of our formal telework program to be put into place,” she said.</p>
+<p>In 2006, the Commonwealth of Virginia created the Office of Broadband and Telework. At the time, less than 5% of the state’s employees were teleworking.</p>
+<p>The Commonwealth set a goal of having 20% of its eligible workforce [approximately 105,000 employees) teleworking by 2010. “We had to make a push on trying to provide agency heads with the information they needed to make smart decisions about who would be eligible and who wouldn’t.”</p>
+<p>Jackson said that they spent the first year “going backward. We knew where we wanted to go, but we recognized early on that we did not have the foundation from a policy standpoint, even in terms of definitions. Our definition of telework in 2006 didn’t define how often a person teleworked, or how many days per week or the equivalent per month. We had to make a hard stop and get all of these pieces in order,” she said. “We spent a year on policy development, meeting with agency heads, finding out which pieces of the decision process they felt were missing, where they needed more information, and training.”</p>
+<p>Virginia standardized as much of the process for its agency heads as possible, including offering sample telework policies, work agreements, and a telework eligibility checklist.</p>
+<p>Jackson said that one of their biggest challenges was building cultural change (Overcoming Specific Barriers).</p>
+<p>“Virginia is steeped in history. We like it the way we had it hundreds of years ago and see no need to change it, so we had a lot of older managers who didn’t subscribe to the fact that employees can work as well out of sight as they do right in front of them,” said Jackson. “We still struggle with some of those cultural issues, but we’re starting to get to the backside of that argument. With gas prices rising, and with the preparation of pandemic and continuity of operations plans, we are seeing a change in attitude toward telework and what role it can play.”</p>
+<p>Technology standards were also a challenge. “In some cases, people wanted to use their own personal computers to telework,” she said. “We had to figure out how to do that. For example, if an employee was working with an individual’s social security number, how do you deal with privacy issues if the employee is working from a personal computer?”</p>
+<p>The solution was a broad set of technology standards created through the Virginia Information Technologies Agency that dictated the appropriate use of personal computing as part of telework. “We knew that if we didn’t standardize these things (e.g., acceptable use of personal computers, security standards, etc.), we would never get where we wanted to go,” said Jackson.</p>
+<p><strong>Telework Virginia </strong></p>
+<p>Telework Virginia began in 2001 as part of the state’s Innovative Progress program, and was launched in partnership with Commuter Connections.</p>
+<p>Jennifer Alcott of the Virginia Department of Rail and Public Transportation, the program’s lead agency, said that the department’s mission is to improve the mobility of people and goods while expanding transportation choices in Virginia.</p>
+<p>“We approach telework as a transportation demand management strategy. If we remove some people from the roads, that allows other people who need to be on the roads to move more efficiently,” she said. “Telework, therefore, really can be a congestion management strategy.”</p>
+<p>Telework Virginia’s outreach and marketing was employer focused. “It’s critical that you get buy-in from the top down to make a telework program successful within an organization,” said Jackson. “Telework is very different from the other alternative transportation strategies—an individual can decide to ride the bus to work, or to take the metro or carpool. However, if an individual person wants to telework, it takes a great deal of buy-in from their employer from the top level. Our outreach really has been very focused on the decision makers within the organizations.” (Obtaining a Commitment)</p>
+<p>Telework Virginia incentivized telework in the private sector by providing expert assistance and financial incentives to private sector and non-profit businesses in the three metropolitan areas of Virginia that are non-attainment areas in terms of air quality.</p>
+<p>“We offered up to $35,000 in financial incentives for employers in Northern Virginia, Richmond and Hampton Roads,” said Jackson. “We also had a new promotion for large employers in northern Virginia affected by the Virginia Megaprojects construction [a series of large-scale transportation improvements designed to ease congestion] and we could offer up to $50,000 in financial incentives and assistance to private sector and non-profit companies.”</p>
+<p>The financial assistance was provided on a reimbursable basis only. “It’s not a cheque that was written to the organization upfront, and then they spent it on telework expenses,” Jackson explained. “The reimbursements were done on a percentage basis. The company wasn’t just given a freebie. We stressed the importance of employer buy-in in terms of implementing a telework program and there were varying percentages in terms of what expenses we could pay for.” (Financial Incentives, Obtaining a Commitment, Building Motivation Over Time)</p>
+<p>Telework Virginia also provided web resources, such as e-learning modules, and educational events and telework-related promotions.</p>
+<p>“In 2009, Virginia had a statewide telework day and that was a joint venture between the Governor’s Office, the Office of Telework Promotion and Broadband Assistance, and the Telework Exchange,” said Jackson. “Even when an employer is not in an area that is eligible for financial incentives, we can still offer assistance and training to those companies.”</p>
+<p>Jackson said that one of the barriers they faced was with respect to unions. “We have run into those concerns, and what’s happened is that management will usually collaborate with the union leaders in hammering out an agreement that would be acceptable to both sides,” she said. “In other cases, we’ve had unions come in and say that they would not accept a telework agreement. In other cases, there have been unions that have come in and demanded a telework agreement. It varies by company and by organization. It depends on the business culture and what the business model is at that particular location.” (Overcoming Specific Barriers)</p>
+<p>Ramfos notes that, as technology advanced, much of the promotional work was being done for them. “The private sector took an interest in teleworking so we didn’t have to spend $50,000-$75,000 a year on radio advertising because we had technology companies talking about teleworking and how their product could help your company meet its telework goals,” he said. “That to me is a victory because we’ve been able to ingrain telework as a way of doing business. We’ve been able to attract the private sector to develop products that are available to employers and to the consumer. It’s a win-win situation. We planted the seed early and technology was there to support it.”</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Funding for Commuter Connections was provided by the U.S. Department of Transportation and by the state departments of transport for the District of Columbia, Maryland and Virginia.</p>
+<p>Funding for Telework Virginia came from several different sources, including the Innovative Progress Fund and Congestion Mitigation and Air Quality funding. The Northern Virginia Transportation Management Plan also had some funding available that was used to provide extra incentives for large Northern Virginia businesses.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Commuter Connections created a formalized data collection process and evaluation process. Its framework methodology evaluation document outlined how the data was to be collected and used.</p>
+<p>“We collected data usually over a three-year timeframe,” said Ramfos. “We were able to produce an analysis report at the end of those three years and then the results go into our air quality conformity determination for the region.”</p>
+<p>In the case of Telework Virginia, in 2007, the Virginia Department of Rail and Public Transportation arranged for a Virginia State of the Commute survey to be conducted in Northern Virginia by Commuter Connections.</p>
+<p>“About 12% of our commuters were teleworking, which equated to about 440,000 commuters. There were almost 750,000 commuters who said that they could and would telework if their employers would let them,” Jackson reported. “That means that their job is ‘teleworkable’ or could be done at least part of the week at home or at an alternate worksite.”</p>
+<p>Although Telework Virginia didn’t define telework in terms of the number of days a week, they did measure it. “We found that in Virginia, the average teleworker does so 1.7 days a week,” said Jackson. “When we look at other data, a lot of regions count work-at-home entrepreneurs, small business people who work out of their homes, and even farmers as teleworkers. It’s hard to get a handle on comparisons because the data is so different. It would be wonderful if we could have some sort of national survey that provides consistent data for all 50 states, but to the best of my knowledge, the closest metric that I’ve been able to find says that about 8% of commuters telework nationwide.”</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>On an annual basis, Commuter Connections developed case studies on companies that had successful programs, and circulated them widely through their employer outreach efforts, employer newsletters, and through the Commuter Connections website.</p>
+<p>“We also set up a Facebook page for telework,” said Ramfos. “The page was there for collaboration for both employers that had telework programs, and for those already teleworking or thinking about teleworking. We found this was an excellent way to disseminate real-time information on telecommuting and allow for a collaborative environment.”</p>
+<p>Ramfos said that no full cost-benefit analysis was undertaken for individual telework initiatives mainly because, in most cases, Commuter Connections could obtain the necessary data. However, they were able to produce information on some cost benefits. “For instance, if the company was looking to expand their facility and add parking spaces, we could look at what that would cost to add and maintain those parking spaces versus implementing a telework program,” explained Ramfos. “The cost comparison is pretty dramatic because typically it costs about $20,000 per parking space on average to build and maintain.</p>
+<p> </p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>In 1998, the number of teleworkers in the region was approximately 250,000 (12% of the region’s workforce). By 2007, that figure had grown to more than 450,000 workers (19% of the region’s workforce), and those teleworking tended to do so an average of 1.5 days per week.</p>
+<p>Ramfos admits that, while improvements in technology and remote access capabilities were factors in the increase, the efforts of Commuter Connections played a key role. In 2007, for instance, 11% of the approximately 456,000 teleworkers in the region had been reached through COG’s efforts (39,000 commuters were assisted directly by COG’s workplace interventions and an additional 5,000 through worksite assistance).</p>
+<p>The regional telework efforts have reduced approximately 22,000 vehicle trips, 414,000 vehicle miles, about 0.2 tons of volatile organic compounds and about 0.126 tons of nitrogen oxides.</p>
+<p>Approximately 2¢ is spent on every trip reduced, 1¢ for every vehicle mile of travel reduced, just over $3,000 for every ton of VOC reduced, and about $1,800 for every ton of NOx reduced.*</p>
+<p>*All figures are quoted in American dollars.</p>
+<p>In the Commonwealth of Virginia, Jackson notes that, “When we started in 2006, we only had about 4.6% of our employees that were eligible teleworking. Of those about 12.1% were actually teleworking,” she said. “Now, we have surpassed our goal and have hit about 24% of our eligible workforce actively participating in telework at least one day per week.”</p>
+<p>As of 2010, 125 employers were signed up for Telework Virginia, ranging from the very small (20 employees) to the very large (1,000+ employees). “We also have private sector employees and non-profit organizations involved,” said Alcott. “We also provide assistance to some government entities.”</p>
+<p>The increased number of telecommuters also proved helpful in emergency situations, said Ramfos. “This past February we were hit with back-to-back blizzards, and teleworking played a very large role in terms of individuals being able to work from home and not having to go into the office. It has also played a role in the region in the past where we’ve had anthrax scares and the 9-11 incident. It’s now positioned as something that employers, both public and private sector employers, need to have in place in the event there is an emergency. You may want to think of an overall commuter emergency preparedness plan that would include things such as carpooling, vanpooling, using public transit if it’s available, and the like.”</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Nicholas Ramfos<br/>
+Alternative Commute Programs Director<br/>
+National Capital Regent Transportation Planning Board, Metropolitan Washington Council of Governments<br/>
+<a href="mailto:nramfos@mwcog.org?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">nramfos@mwcog.org</a></p>
+<p>Karen Jackson<br/>
+Deputy Secretary of Technology<br/>
+Commonwealth of Virginia <a href="mailto:Karen.jackson@governor.virginia.gov?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">Karen.jackson@governor.virginia.gov</a></p>
+<p>Jennifer Alcott<br/>
+Telework Program Manager<br/>
+Virginia Department of Rail and Public Transportation <a href="mailto:Jennifer.Alcott@drpt.virginia.gov?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">Jennifer.Alcott@drpt.virginia.gov</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study was selected as a Tools of Change Landmark case study in 2010 by a peer selection panel consisting of</p>
+<ul>
+<li> Chuck Wilsker, U.S. Telework Coalition</li>
+<li> Daniel Coldrey, Transport Canada</li>
+<li> Elizabeth Allingham, Federation of Canadian Municipalities</li>
+<li> Geoff Noxon, Noxon and Associates</li>
+<li> Jacky Kennedy, Green Communities Canada</li>
+<li> JoAnn Woodhall, Translink</li>
+<li> Lorenzo Mele, Town of Markham</li>
+<li> Ryan Lanyon, Smart Commute</li>
+</ul>
+<p> <strong>Lessons Learned</strong></p>
+<ul>
+<li><em>Provide Training<br/>
+</em><br/>
+    Ramfos said that training was the biggest draw in terms of getting people interested. “The advantage of providing training, particularly in a start-up phase,” said Ramfos, “is that it provides you with names and faces and a ready-made sales lead that you can work with that helps start a telework program at the worksite or even expanding an existing one.” <br/>
+<br/>
+    He advised periodically “shaking up the curriculum” in order to attract additional employers. “Consider offering it in a virtual environment [on-line],” he said. “You may even want to start with virtual training since technology has improved tremendously over the last decade.”<br/>
+<br/>
+    He cautioned, however, that there should be limitations set on how long training should be offered.<br/>
+<br/>
+    “In our case, we found that after the first five years of providing training, there was ‘curriculum fatigue,’ meaning we really needed to shake up the training content and the speakers,” he said. “Then we noticed that the same individuals were starting to show up for training each year. After nine years of providing on-site training, we decided to put all of the training content online and have sections for managers, co-workers and the teleworkers themselves.” <br/>
+<br/>
+    Training, Ramfos said, also needs to be modular and focus on specific issues that are of interest to a particular organization. “For instance, if you hold workshops, they need to lead to actions after they concluded. Customized workshops for teleworkers, co-workers, and managers made the expansion of the program successful.”</li>
+<li><em>Identify outcomes<br/>
+</em> <br/>
+    Ramfos said that it’s important to identify specific organizational outcomes, such as transportation or emission impacts, number of employers starting or expanding a telework program, etc. <br/>
+<br/>
+    “You may want to set a goal of having 10% of your employees working from home at least one day a week within the next two years,” he said. “A program in place either at the regional or employer level is not enough. You need to set goals; otherwise, the program may not be taken seriously.”</li>
+<li><em>Measurements and metrics <br/>
+<br/>
+</em>Ramfos said that having a measurements and metric set allowed Commuter Connections to gauge the program’s effectiveness.<br/>
+<br/>
+    “At the employer level, the metrics varied between departments, which required varying forms of measurements to take place,” he said. “In some cases, it was based on the performance levels of the individuals’ teleworking, while for others it was based on achieving team or departmental goals by both teleworkers and non-teleworkers.” <br/>
+<br/>
+    Regardless of the organization, Ramfos said that strong performance measurement tools must be place. “Whether an employee is teleworking or not,” he said, “having a measurement and metrics set in place lets you identify what the employee is doing in terms of productivity and meeting the goals and objectives for the company.”</li>
+<li><em>Avoid a one-size-fits-all approach<br/>
+</em> <br/>
+    Ramfos said that, while it was beneficial to develop templates and checklists, each employer’s culture was different and required a more flexible approach.<br/>
+<br/>
+    “After the initial evaluation of the program, recommendations were made to some sites to expand the telework offering to include alternative work schedules,” he explained. “If there was reluctance in a particular department to offer teleworking, the alternative was to try a pilot for telework, and perhaps offer compressed work weeks to flex schedules or vice versa.”<br/>
+<br/>
+    Ramfos cautioned that, in some cases, using alternative work schedules was not conducive to the formation of carpools and vanpools. “While there may be benefits on the transportation side, emission reductions may suffer because it may lead to a decrease in auto occupancy,” he said. “Some of this is also predicated on transit access and availability as well. If transit is abundantly available, then using alternative work schedules may have little or no impact on auto occupancy.”</li>
+<li><em>Show employers the benefits<br/>
+</em> <br/>
+    Research has shown that both alternative work schedules and telecommuting can increase the bottom line for employers in the form of decreased absenteeism and increased productivity.<br/>
+<br/>
+    Ramfos said that it was important to show employers how a telework program could work in tandem with their business model. “The argument used included the establishment of metrics that matter, and this resonated with company workers and executives alike,” he said. “Managers take cues from senior staff and performance measures may need to be adjusted to meet a new telework environment in the department.”<br/>
+<br/>
+    That being said, Ramfos said that they did “a lot of handholding in the beginning. The development implementation maintenance, which also included an evaluation component, was the key area where employers required assistance,” he said. “It served two purposes: to assist employers in figuring out if they were meeting their goals, and to assist in identifying challenging areas that needed attention.”</li>
+<li><em>Identify internal champions<br/>
+</em> <br/>
+    Ramfos said that, in his experience, mass mailings and cold calls to senior executives in an organization usually don’t work. <br/>
+<br/>
+    “To get an organization interested, you really need to identify an internal champion for the program,” he said. “That may be the person at the top, but often times it may be somebody else in the organization who has a vested interest in starting up a telework program. In most cases, it’s going to be someone in the human resources area, or in other cases, it may be a facilities manager.” <br/>
+<br/>
+    Regardless of who the champion turns out to be, Ramfos said that it’s “essential that senior staff, managers, and the teleworkers themselves be part of the implementation process. You need to have champions throughout the organization to make the program successful.”<br/>
+<br/>
+    Jackson notes that their internal champion turned out to be the then governor, who established Virginia’s Office of Broadband and Telework by executive order. “We learned that top-down leadership, especially in government, was paramount.” In late 2009, the Virginia Governor made it a requirement that every cabinet department had to adopt a telework policy.<br/>
+<br/>
+    “Each department had to report on it,” she explained, “and each weekly report to the Governor had to include who was teleworking, how many, for how many days, etc. We started to see an impact once the executive branch adopted telework. People saw that the executive branch was doing it too and we started to see a sea change after that edict was passed.” (Building Motivation Over Time, Credible Communication)</li>
+<li><em>Avoid informal telework programs<br/>
+</em> <br/>
+    Ramfos found that employers that had informal programs were less likely to be successful when it came to bottom-line advantages. “Therefore, as part of our pitch, we cautioned against having informal programs in place, unless, of course, there were strong performance plans in place as well as program monitoring.”</li>
+<li><em>Eliminate organizational barriers<br/>
+</em> <br/>
+    Jackson said that a successful telework program eliminates the reasons for people to say no. “If our agency heads could find any reason—a missing policy or procedural guideline, for instance—not to get involved with a telework program, they were going to take it.” She advised that program organizers ensure that all necessary policies and guidelines are in place before beginning a telework program.<br/>
+<br/>
+    A strong organization document management program was also a must. “You need acceptable use of document policies to answer questions like, ‘What kind of documents leave the office? And when?’ We always think about security breaches happening with a computer but it doesn’t necessarily have to be that way,” she said. “That was one of our biggest Aha! moments.”<br/>
+<br/>
+    She also said that working with other departments, such as operations, emergency management, and information technology, helped eliminate barriers and streamlined policies and procedures.<br/>
+<br/>
+    “When we first started down this path some of our agency heads said that, in the case of a pandemic, 50 of our 100 employees would telework, even if they had never tried it before,” she explained. “The network administrators were not thrilled with the idea that they could potentially have hundreds, if not thousands, of state workers suddenly trying to work from home in the middle of a crisis, something that had never even attempted it before.”<br/>
+<br/>
+    Telework Virginia met with the state’s Department of Emergency Management and Continuity of Operations planners and had them include the question of telework in their planning process. “We asked them how they were going to use telework, how it would be implemented, and who would telework. If there was a crisis we wanted employees who had been teleworking for a while. You can’t just do it when the problem arises.”</li>
+<li><em>Identify resources <br/>
+</em><br/>
+    Ramfos said that, while providing free resources is an important element, those resources should have a fixed end date. “If you provide, for example, free seminars or consulting services, they should be for a limited time so that you can get a firm commitment from the company that they’re going to allocate resources, such as staff time, to start up the program.” <br/>
+<br/>
+    Having said that, Ramfos said that it’s equally important to identify the resources needed at the employer’s work site, with an eye toward flexibility and partnership.<br/>
+<br/>
+    Jackson said she was never “shy about borrowing best practices from others. There’s a lot of really good online training out there, so don’t be afraid to borrow or leverage what’s already out there. There’s no point spending money to reinvent the wheel.”<br/>
+<br/>
+    She offered an example. “We mirrored a federal government product that we used to create our own telework roadmap,” she explained. “That really helped people understand and have a frame of reference of what telework could do and what it couldn’t, and it helped lay the groundwork for a lot of conversations.”</li>
+</ul>
+<p>This case study was written in 2012 by Jay Kassirer and Sharon Boddy.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

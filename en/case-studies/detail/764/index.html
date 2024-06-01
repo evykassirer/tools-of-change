@@ -1,0 +1,338 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Unilever</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>BEworks, WRAP, and other leading food waste experts</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Reduced food waste by 33% to 46%</li>
+</ul>
+<p>Case Study <a href="/userfiles/Fridge Night.pdf" target="_blank">PDF</a></p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Fridge Night / Use Up Day</h1>
+<p>The Fridge Night programme offers simple, practical solutions to help people be more resourceful with and enjoy eating the food they have at home, thereby reducing food waste and associated greenhouse gas emissions. Participants pledge to use up expiring perishables one evening a week for a month, and complete weekly challenges. They are sent reminders and tips. In return, they save time and money and get tools for easily planning meals with leftovers.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>Fridge Night was an extension of past efforts by Unilever-owned mayonnaise brand Hellmann’s Canada, which had made food waste reduction a central part of its brand. A number of partners helped develop, launch, and operate the program, including behavioral scientists BEworks, climate action NGO the Waste and Resources Action program (WRAP), and other leading food waste experts.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Fridge Night was developed by Hellmann’s and its partners, based in part on their past experience with waste reduction and behavior change. In addition, they piloted and further researched the approach in Canada in 2020 and 2021 (more details below.)</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Hellmann’s developed Fridge Night / Use Up Day based on three central strategies:</p>
+<ol>
+<li><strong>A weekly Use-Up Day challenge.</strong> Participants committed to one ‘Use-Up Day’ per week when they would create a meal with ingredients already in their homes that might otherwise be thrown out. This created a simple, once-a-week focus on using up perishables, which participants could commit to, then schedule, remember and be prompted about. The challenge promised participants cost savings, more free time, and a way to contribute towards slowing climate change. (<em>Building Motivation and Engagement Over Time, Norm Appeals,  Obtaining a Commitment, Overcoming Speific Barriers, Prompts</em>)</li>
+<li><strong>The "3+1" framework</strong>. This provided an easy-to learn and easy-to-use structure and mental prompt for creating nutritious, appetising meals with leftovers. In addition, it provided a structure for the program’s flexible recipes (Flexipes; see below). The framework prompted participants to use ingredients in four different categories: a carbohydrate base, a most-wasted vegetables or fruit, a source of protein, plus a ‘magic touch’ in the form of herbs, spices, or a sauce to bring a dish together. (<em>Overcoming Specific Barriers, Prompts</em>)</li>
+<li>The program‘s <strong>Flexipes </strong>helped participants to create nutritious, appetising meals quickly and easily using their perishables and other items they were likely to have on hand. Each part of the 3+1 recipe was a building block, with ingredients that can be easily substituted by others. (<em>Overcoming Specific Barriers</em>)</li>
+</ol>
+<p>The program offered a free e-book that guided participants through scheduling and planning their weekly Fridge Night meals.</p>
+<p>To further engage participants, Fridge Night launched the first version of its Fridge Night app in February 2022. The free app could be downloaded in the US, Canada, and UK. The goal was to expand to additional countries.</p>
+<p>The app added fun, weekly challenges, hosted by a national celebrity chef who appealed to different target audiences. (<em>Feedback; Vivid, Personalized, Credible, Empowering Communication</em>)</p>
+<ul>
+<li>10 Meals in a Minute (identify 10 possible meals in your fridge within one minute)</li>
+<li>Mystery Ingredient Change Up (replace a Flexipe item with a substitute)</li>
+<li>The Kid Judges (learn how to succeed at impressing picky eaters)</li>
+<li>Fakeout in 15 (learn how to, then create a favorite takeout order in 15 minutes)</li>
+</ul>
+<p>Participants who completed the weekly challenges earned rewards and prizes (e.g. food coupons). In addition, for each completed challenge, the program donated an additional meal to someone in need (via FareShare in the UK, and via Feeding America in the USA). Participants also got weekly tips on food management. (<em>Financial Incentives, Prompts</em>)</p>
+<p>The app also supported a Community Forum, where participants could share tips and tricks, recipe hacks and photos of their Fridge Night meals. (<em>Norm Appeals</em>)</p>
+<p>Using the app or program website, participants could easily search for recipes by main ingredient, occasion, cuisine, and course, with the ability to also search for salads and sandwiches, and for vegetarian and vegan meals. Using the ‘cuisine’ tag, they could find recipes from various regions of the world.</p>
+<p><strong>Tailoring for Particular Audiences</strong></p>
+<p>The app tailored communications to different audiences. (<em>Credible, Empowering Communication</em>)</p>
+<ul>
+<li>The weekly challenges were hosted by a celebrity chef who appealed to the audience. In Canada, it was MasterChef Canada finalist Andy Hay. In the UK, it was baker and food judge Liam Charles. For Hispanic families in the USA, it was Michelin Star restauranteur and Celebrity Chef Juan Manuel Barrientos.</li>
+<li>Participants could search for recipes by ‘cuisine’, which filtered for recipes popular with that audience.</li>
+<li>The meals donated to people in need were arranged through an NGO that served that region.</li>
+<li>The Hispanic app used Spanish rather than English.</li>
+</ul>
+<p>To build recruitment and awareness, the app was promoted using the brand’s owned channels, and both paid and earned media. This included having influencers describe their own “fridge night” experiences. (<em>Mass Media</em>)</p>
+<p>The following table summarizes the key barriers to action and how each was addressed.<span lang="EN-CA" style='font-size:11.0pt;font-family:"Minion Pro",serif;
+color:black;mso-ansi-language:EN-CA;mso-bidi-language:#0400'><o:p> </o:p></span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid #A8D08D .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #A8D08D;mso-border-insidev:.5pt solid #A8D08D">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="width:80.7pt;border:solid #70AD47 1.0pt;
+  border-right:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-left-alt:
+  solid #70AD47 .5pt;mso-border-bottom-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal" style="tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-size:11.0pt;font-family:"Arial",sans-serif;color:white;
+  mso-bidi-language:#0400'>Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="width:140.7pt;border:solid #70AD47 1.0pt;
+  border-left:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-bottom-alt:
+  solid #70AD47 .5pt;mso-border-right-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="188">
+<p class="MsoNormal" style="tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-size:11.0pt;font-family:"Arial",sans-serif;color:white;
+  mso-bidi-language:#0400'>How it was addressed</span></b><b><span style='font-size:11.0pt;font-family:"Arial",sans-serif;color:white;
+  mso-bidi-language:#0400'><o:p> </o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:19.75pt">
+<td style="width:80.7pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal" style="tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style='font-family:"Arial",sans-serif;color:black;mso-color-alt:windowtext;
+  mso-bidi-language:#0400'>Not noticing foods that are about to go bad, before   it is too late</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+<td style="width:140.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="188">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-bidi-language:
+  #0400"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>           </span></span></span><!--[endif]--><span style='font-family:"Arial",sans-serif;
+  color:black;mso-color-alt:windowtext;mso-bidi-language:#0400'>Challenge, requiring   a commitment to action, and focusing action on one evening a week that can be   scheduled</span><span style='font-family:"Arial",sans-serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo2"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-bidi-language:
+  #0400"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>           </span></span></span><!--[endif]--><span style='font-family:"Arial",sans-serif;
+  color:black;mso-color-alt:windowtext;mso-bidi-language:#0400'>E-reminders </span><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.7pt;text-indent:-18.7pt;mso-list:
+  l1 level1 lfo1;tab-stops:0cm 20.15pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-bidi-language:#0400"><span style="mso-list:
+  Ignore">·<span style='font:7.0pt "Times New Roman"'>            </span></span></span><!--[endif]--><span style='font-family:"Arial",sans-serif;
+  color:black;mso-color-alt:windowtext;mso-bidi-language:#0400'>Program focus   on saving money, time, and greenhouse gas emissions </span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:19.75pt">
+<td style="width:80.7pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:white;mso-background-themecolor:background1;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="108">
+<p class="MsoNormal" style="tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style='font-family:"Arial",sans-serif;color:black;mso-color-alt:windowtext;
+  mso-bidi-language:#0400'>Having to find a recipe to use up at-risk perishables</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+<td style="width:140.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:white;mso-background-themecolor:
+  background1;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="188">
+<p class="MsoNormal" style="margin-left:18.7pt;text-indent:-18.7pt;mso-list:
+  l1 level1 lfo1;tab-stops:0cm 20.15pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-bidi-language:#0400"><span style="mso-list:
+  Ignore">·<span style='font:7.0pt "Times New Roman"'>            </span></span></span><!--[endif]--><span style='font-family:"Arial",sans-serif;
+  color:black;mso-color-alt:windowtext;mso-bidi-language:#0400'>Flexipes</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;mso-yfti-lastrow:yes;height:19.75pt">
+<td style="width:80.7pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal" style="tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style='font-family:"Arial",sans-serif;color:black;mso-color-alt:windowtext;
+  mso-bidi-language:#0400'>Thinking one’s actions don’t make much difference</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+<td style="width:140.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="188">
+<p class="MsoNormal" style="margin-left:18.7pt;text-indent:-18.7pt;mso-list:
+  l1 level1 lfo1;tab-stops:0cm 20.15pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-bidi-language:#0400"><span style="mso-list:
+  Ignore">·<span style='font:7.0pt "Times New Roman"'>            </span></span></span><!--[endif]--><span style='font-family:"Arial",sans-serif;
+  color:black;mso-color-alt:windowtext;mso-bidi-language:#0400'>Individual and group   feedback on impacts</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+  mso-bidi-language:#0400'><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>A pilot study was conducted in Canada over five weeks beginning in November 2020. Over 1,400 households from all provinces enrolled and 911 completed the study. Participants were their household’s primary shoppers and food preparers and had at least one child.</p>
+<p>Participants completed a weekly survey on food waste and other food management behaviors, using a validated food waste questionnaire. Respondents indicated which, and how much, of each food was thrown out and how much was saved. These responses were then converted into grams of food waste to calculate the amount saved over the entire program.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Feedback was provided through the app and competitions.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>In the Canadian pilot, participants reduced their food waste by an average of 33%. When replicated in the USA, this rose to 46%.  Over five weeks, the Canadian pilot with 1,400 households saved 10.1 metric tons of food from going to waste. That, in turn, saved them a total of $50,000, and eliminated the release of an equivalent of 43.7 metric tons of CO2.  A 2021 pilot study with 1,000 households in the USA found that people who completed the Fridge Night program reduced their self-reported food waste by 46%.</p><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p>A similar approach using a commitment and weekly or monthly goals, challenges, and contests, could also be used with other programs that can be implemented in stages and/or that focus on ongoing decisions and actions. Examples of suitable program areas include active living, fitness, sustainable landscaping, sustainable agriculture, and water conservation.</p>
+<p><strong>For More Information</strong></p>
+<p><a href="http://wrap.org.uk/media-centre/press-releases/cost-conscious-consumers-are-adjusting-household-behaviours-untapped" target="_blank">http://wrap.org.uk/media-centre/press-releases/cost-conscious-consumers-are-adjusting-household-behaviours-untapped</a></p>
+<p><a href="http://www.hellmanns.com/us/en/fridgenight.html" target="_blank">http://www.hellmanns.com/us/en/fridgenight.html </a></p>
+<p><a href="http://www.hellmanns.com/ca/en/fridgenight.html" target="_blank">http://www.hellmanns.com/ca/en/fridgenight.html </a></p>
+<p><a href="http://www.unilever.co.uk/news/press-releases/2022/for-the-love-of-leftovers-hellmanns-launches-fridge-night-app/" target="_blank">http://www.unilever.co.uk/news/press-releases/2022/for-the-love-of-leftovers-hellmanns-launches-fridge-night-app/ </a></p>
+<p><a href="http://www.foodnavigator.com/article/2022/06/20/hellmann-s-and-wrap-launch-platform-to-help-hospitality-cut-food-waste" target="_blank">http://www.foodnavigator.com/article/2022/06/20/hellmann-s-and-wrap-launch-platform-to-help-hospitality-cut-food-waste</a></p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

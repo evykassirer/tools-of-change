@@ -1,0 +1,375 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li> City of Durham</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Duke Center for Advanced Hindsight</li>
+<li>North Carolina Central University</li>
+<li>RideAmigos</li>
+<li>Bloomberg Philanthropies</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>2018: reduced City staff drive-alone trips by 9.3% (8.2% without the bus lottery)</li>
+<li>2019: reduced student drive alone-trips by 7.2% (3.2% with fewer emails)</li>
+</ul>
+<p> </p>
+<p><strong>Downloads and Additional Details</strong></p>
+<ul>
+<li><a href="/userfiles/Way to Go DurhamV2.pdf" target="_blank">PDF </a>of this case study</li>
+<li><a href="https://www.citylab.com/transportation/2018/10/durhams-plan-to-nudge-drivers-out-of-cars/574264/ https://advanced-hindsight.com/connect/ https://waysandmeansshow.org/files/2019/03/S4E2-Transcript.pdf https://www.futurity.org/commute-transportation-2005232/" target="_blank">http://www.citylab.com/transportation/2018/10/durhams-plan-to-nudge-drivers-out-of-cars/574264/<br type="_moz"/>
+</a></li>
+<li><a href="http://advanced-hindsight.com/connect/" target="_blank">http://advanced-hindsight.com/connect/</a></li>
+<li><a href="https://waysandmeansshow.org/files/2019/03/S4E2-Transcript.pdf" target="_blank"> http://waysandmeansshow.org/files/2019/03/S4E2-Transcript.pdf</a></li>
+<li><a href="https://www.futurity.org/commute-transportation-2005232/" target="_blank">http://www.futurity.org/commute-transportation-2005232/</a></li>
+</ul>
+<p> </p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Way to Go Durham</h1>
+<p>This case study covers the formative research and pilot testing of the City of Durham’s Way to Go program with City staff and local university students. It illustrates the value of A/B testing and Randomized Control Trials for evaluating alternative program tactics. It exemplifies the effective use of personalized commute plans distributed en-masse and shows that they can have a substantial impact on travel behavior, even with no added incentives.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The City of Durham, North Carolina wanted to reduce the number of single-occupancy vehicle (SOV) trips into its downtown area. This case study describes two pilot studies that Durham carried out in 2018 and 2019.</p>
+<p><strong>2018 Pilot Test</strong></p>
+<p>The City’s first round of program research in 2018 tested two strategies:</p>
+<ol>
+<li>Personalized commute plans (recommending alternative modes of transportation to work)</li>
+<li>Personalized commute plans combined with a bus lottery.</li>
+</ol>
+<p><strong>2019 Pilot Test</strong></p>
+<p>SmartTrip was also tested in a second pilot (2019) with 3,800 North Carolina Central University (NCCU) commuting students.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p><strong>2018 Pilot Test</strong></p>
+<p>For the 2018 pilot, the team started with four ideas that might change commuting behavior for Durham employees, based on behavioral science principles proven effective in other contexts. To iterate and develop these ideas, City staff and partner, Duke Center for Advanced Hindsight, gathered input from about 1,100 individuals with over 4,000 feedback opportunities through 10 feedback approaches.</p>
+<p>Research methods included the following.</p>
+<ul>
+<li>Exploratory survey of residents regarding current transportation behaviors and interest in alternative incentives (N=617)</li>
+<li>Small, personalized route pilot (N=20)</li>
+<li>Feedback from mayor and City Council</li>
+<li>One-on-one interviews with residents (N&gt;10)</li>
+<li>Focus groups with potential users and employers</li>
+</ul>
+<p>From the exploratory learnings, the City narrowed ideas to two and pilot tested them with City of Durham employees.</p>
+<p><strong>2019 Pilot Test</strong></p>
+<p>For the 2019 pilot, the team conducted two preliminary surveys around communication and commuting habits with NCCU students, followed by user testing through a focus group and one-on-one interviews with students, behavioral science researchers, and transportation experts. Key insights from these prototyping activities further informed the program’s experimental design and pilot to reduce students drive-alone trips to campus.</p>
+<p><strong>Prioritizing Audiences</strong></p>
+<p>2018 Pilot Test: City employees</p>
+<p>2019 Pilot Test: NCCU commuting students</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>2018 Pilot Test</strong></p>
+<p>In 2018 the team tested the following two assumptions through a Randomized Control Trial.</p>
+<ol>
+<li><em>SmartTrip:</em> Providing people with personalized commute plans using alternative modes of transportation reduces the frequency with which people drive alone.</li>
+<li><em>Bus lottery:</em> Offering people a chance to win a weekly $163 prize for riding the bus increases the attractiveness of transit and usage of the personalized commute plan.</li>
+</ol>
+<p>To test these assumptions, 1,570 employees were randomized into three groups of equal size: a control, personalized commute plan (SmartTrip), and personalized commute plan plus bus lottery (Plus).</p>
+<ul>
+<li>The control group only received weekly surveys asking about their commute habits.</li>
+<li>In addition to these surveys, the personalized commute group received personalized commute plans, based on home and work addresses. Their emails also included trip time comparisons and listed the potential benefits of alternatives to solo driving (weight loss, gas savings, and reduced commute times.) The maps said, “Driving downtown is so 2017.” (<em>Overcoming Specific Barriers; Vivid, Personalized, Credible, Empowering Communication</em>)</li>
+<li>In addition to the above, the Plus group could participate in bus lotteries with a weekly cash drawing incentive for taking the bus. (<em>Building Motivation, Engagement and Habits Over Time; Financial Incentives)</em></li>
+</ul>
+<p>The timeline of this pilot was 5 weeks.</p>
+<p><strong>2019 Pilot Test</strong></p>
+<p>In 2019, the team tested the following two hypotheses to see if additional behavioral nudges further reduced the number of student trips.</p>
+<ol>
+<li>Receiving an invite to create a personalized route reduces the share of commute trips a student makes to campus by driving alone.</li>
+<li>Further enhancing the personalized route and sending follow up emails offering eligible students further transportation-related services (incentives to track trips, carpooling options, transportation consultations) further reduces the share of commute trips a student makes to campus by driving alone.</li>
+</ol>
+<p>To test these two hypotheses, 3,797 students were randomized into three groups.</p>
+<ul>
+<li>The control group only received weekly surveys asking about their commute habits.</li>
+<li>In addition to these surveys, the SmartTrip group received the individualized commute email (SmartTrip). (<em>Overcoming Specific Barriers; Vivid, Personalized, Credible, Empowering Communication)</em></li>
+<li>In addition to the above, the SmartTrip Plus group received emails with transportation service offerings and updates on parking enforcement. (<em>Building Motivation, Engagement and Habits Over Time)</em></li>
+</ul>
+<p>The timeline of this pilot was 12 weeks.</p>
+<p><strong>Overcoming Barriers</strong></p>
+<p>The following table lists the key barriers to action and how they were addressed. (<em>Overcoming Specific Barriers</em>) </p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid #9CC2E5 .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #9CC2E5;mso-border-insidev:.5pt solid #9CC2E5">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:20.2pt">
+<td style="border:solid #5B9BD5 1.0pt;border-right:none;
+  mso-border-top-alt:solid #5B9BD5 .5pt;mso-border-left-alt:solid #5B9BD5 .5pt;
+  mso-border-bottom-alt:solid #5B9BD5 .5pt;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;
+  height:20.2pt" valign="top">
+<p class="MsoNormal"><b><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:
+  Calibri;color:white;mso-bidi-language:#0400'>Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="border:solid #5B9BD5 1.0pt;border-left:none;mso-border-top-alt:
+  solid #5B9BD5 .5pt;mso-border-bottom-alt:solid #5B9BD5 .5pt;mso-border-right-alt:
+  solid #5B9BD5 .5pt;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:
+  20.2pt" valign="top">
+<p class="MsoNormal"><b><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:
+  Calibri;color:white;mso-bidi-language:#0400'>How it was addressed<o:p></o:p></span></b></p>
+<p class="MsoNormal"><b><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:
+  Calibri;color:white;mso-bidi-language:#0400'> </span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:41.85pt">
+<td style="border:solid #9CC2E5 1.0pt;border-top:none;mso-border-top-alt:
+  solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;
+  padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Calibri, sans-serif;">Reliance on car, do not know how to get   to work or campus without a car</span><span style='font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:Calibri'><o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #9CC2E5 1.0pt;
+  border-right:solid #9CC2E5 1.0pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-left-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Calibri, sans-serif;">Personalize commute plan (SmartTrip) Pilots   2018 and 2019</span><span style='font-family:"Calibri",sans-serif;mso-fareast-font-family:
+  Calibri'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:41.85pt">
+<td style="border:solid #9CC2E5 1.0pt;border-top:none;mso-border-top-alt:
+  solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:41.85pt" valign="top">
+<p class="MsoNormal"><span style='font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri'>Perceived   inconvenience of the alternatives<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #9CC2E5 1.0pt;
+  border-right:solid #9CC2E5 1.0pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-left-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top">
+<p class="MsoNormal"><span style='font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri'>Incentives   like financial reward (bus lottery) Pilot 2018<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;height:41.85pt">
+<td style="border:solid #9CC2E5 1.0pt;border-top:none;mso-border-top-alt:
+  solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;
+  padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Calibri, sans-serif;">Lack of salience of alternative commute   options</span><span style='font-family:"Calibri",sans-serif;mso-fareast-font-family:
+  Calibri'><o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #9CC2E5 1.0pt;
+  border-right:solid #9CC2E5 1.0pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-left-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:41.85pt" valign="top">
+<p class="MsoNormal"><span style="font-family: Calibri, sans-serif;">Personalized commute plan (SmartTrip)   Pilots 2018 and 2019, biweekly communication emails Pilot 2019</span><span style='font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4;mso-yfti-lastrow:yes;height:13.7pt">
+<td style="border:solid #9CC2E5 1.0pt;border-top:none;mso-border-top-alt:
+  solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:13.7pt" valign="top">
+<p class="MsoNormal"><span style='font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri'>Lack   of salience of the benefits of alternative mode use<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #9CC2E5 1.0pt;
+  border-right:solid #9CC2E5 1.0pt;mso-border-top-alt:solid #9CC2E5 .5pt;
+  mso-border-left-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.7pt" valign="top">
+<p class="MsoNormal"><span style='font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri'>Personalized   commute plan (SmartTrip) message framing (centered around financial savings,   enforcement avoidance, and incentives) Pilot 2019<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Both pilots were structured as Randomized Control Trials (RCTs). Outcomes were compared across control and treatment groups.  This provides a higher degree of certainty of the impacts, by controlling for non-program influences (i.e. eliminating the ‘noise’ from non-program factors.)</p>
+<p><strong>2018 Pilot Test</strong></p>
+<p>With the 2018 pilot design, the team tested two assumptions to see if commuter behavior could be changed. To test these assumptions, 1,570 employees were randomized into three groups: a control, personalized commute plan (SmartTrip), and personalized commute plan and bus lottery (Plus).</p>
+<p>The team measured the effectiveness of this pilot through:</p>
+<ol>
+<li>Pulse surveys – employees self-reported their commuting behaviors on a weekly basis</li>
+<li>Evaluative survey – final survey conducted at the end of the pilot period</li>
+<li>Transit data – tracking individual GoPass (bus pass) usage</li>
+</ol>
+<p><strong>2019 Pilot Test</strong></p>
+<p>With the 2019 pilot design, the team tested two hypotheses using the SmartTrip to see if the SmartTrip plus additional behavioral nudges reduced the number of trips a student made to campus by driving alone.</p>
+<p>For this pilot, the team relied on</p>
+<ol>
+<li>Pulse surveys - – students self-reported their commuting behaviors on biweekly basis</li>
+<li>GoPass usage</li>
+<li>Trip-tracking data</li>
+<li>Parking permit purchases</li>
+<li>NCCU commuter program participation</li>
+</ol>
+<p>In addition, aggregate stats were collected regarding open and click rates for all communications delivered.  In examining results, external, influencing factors were controlled for (such as student level and prior experience using transit).</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>2018 Pilot Test</strong></p>
+<p>Relative to the control group, the average proportion of drive alone trips was 8.2 percentage points lower for those who received the personalized route and 9.3 percentage points lower for people who received the personalized route and bus lottery. Both comparisons were statistically significant (p&gt;0.05) and this reduction held for the five-week study period. While this study is by no means the final word on the use of personalized commute plans, reasonably consistent findings across data collection methods and over time indicate that the personalized commute leads to at least a moderate decrease in drive alone trips.  * Please see the linked pilot plan reports for study and data limitations, etc.</p>
+<p><img alt="" height="277" src="/userfiles/Image/2018 commute behavior.png" width="450"/></p>
+<p><strong>2019 Pilot Test</strong></p>
+<p>Relative to the control group, when averaged by individuals across all five self-report surveys delivered over 12 weeks, the percentage of drive alone trips was 3.2% lower for those in the SmartTrip group and 7.2% lower for those in the Plus group. The difference in the drive alone rate of the Plus group compared to the control is statistically significant (p=0.03). * Please see the linked pilot plan reports for study and data limitations, etc.</p>
+<p>Because very few students participated in the RideAmigos trip tracking or commuter consultations to earn incentives, the added effect in the Plus condition is likely centered around the added communications.</p>
+<p><img alt="" height="277" src="/userfiles/Image/2019 commute behavior by mode.png" width="450"/></p><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<ul>
+<li>This case study illustrates a practical method of testing the impacts / value of alternative tactics.</li>
+<li>Few Individualized Marketing programs provide personalized trip maps without incentives. This case study shows that individualized trip maps can have a substantial impact on travel behavior, even with no added incentives.</li>
+<li>The 2019 pilot illustrates the value of offering additional transportation services and updates on parking enforcement.</li>
+<li>This is a good example of the importance of personalizing communications. While other behaviors may not involve travelling, most nonetheless involve a “customer journey” that can be presented graphically and in a personalized manner in a small number of relevant best options.</li>
+<li>This case study also highlights that partnerships can exist across public (Durham), private enterprise (RideAmigos), nonprofit (Bloomberg Philanthropies), and academic organizations (Duke Center for Advanced Hindsight and North Carolina Central University).  Each enterprise contributed its expertise and resources to solve TDM problems that are common to other cities, businesses, and universities.  This partnership enabled the core team to prototype, test and then share promising solutions with other enterprises at a faster pace.</li>
+<li>Iteration and replication of the personalized commute plan tool (“SmartTrip”) with the RideAmigos commute platform, has enabled personalized commute plans to be distributed en-masse.</li>
+</ul><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

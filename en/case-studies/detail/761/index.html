@@ -1,0 +1,408 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>World Resources Institute (WRI)</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Food service providers spanning hotels, restaurants, hospitals, cities, and universities.</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Reduced per-plate emissions by 10%</li>
+</ul><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Coolfood</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="150" src="https://www.youtube.com/embed/-aHBS6WaLrg" title="Youtube Video of a presentation on Smartfood" width="97%"></iframe></p>
+<p>Coolfood – World Resources Institute’s (WRI) initiative for curbing diet-related emissions – provides the food service industry with the tools and expertise to reduce emissions by 25% by 2030, in line with the goals of the Paris Agreement.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>Different types of food generate different amounts of greenhouse gas emissions. For example, plant-based foods – such as fruits and vegetables, whole grains, beans, peas, nuts, and lentils – generally use less energy, land, and water to grow, and have lower greenhouse gas intensities than animal-based foods. Animal-based foods (especially ruminant meat) account for about 2/3 of emissions from food production. The World Resources Institute’s (WRI’s) Better Buying Lab conducted initial work that led to the development of this program.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The objective of the program was to guide food service providers to reduce greenhouse gas emissions associated with the food they served by 25% by 2030 relative to a baseline.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>In developing its “Playbook for Guiding Diners Toward Plant-Rich Dishes in Food Service,” WRI conducted a scoping review of 4,000 academic research papers from 14 different countries, of which 89 proved helpful. Of these, 33 were conducted in real-life dining facilities, 27 were conducted in simulated dining environments or online experiments (e.g., virtual supermarkets, lab-based buffets), and 29 were conducted in retail settings (e.g., supermarkets, grocery stores.) The draft interventions were first reviewed by a small group of industry experts.  This reduced the number of interventions to 57.</p>
+<p>Then, 77 industry experts from 16 different countries, 44 different organizations, and 9 different sectors, were asked to rate the interventions, using an online survey. These industry experts rated the interventions according to likelihood of working well (“impact”) and ease of implementation (“feasibility”.) This resulted in a final shortlist of 23 interventions, which were included in WRI’s Playbook.</p>
+<p>The intervention that scored highest was “Use language on menus to emphasize the positive attributes of plant-rich dishes.” The lowest-rated interventions were those that emphasized the negatives of eating meat, restricted choice, or involved redesigning packaging or tableware.</p>
+<p>In addition, WRI helped develop robust, relevant, feasible and cost-effective metrics for the program, based on experience with more than 30 food providers. The companion peer-reviewed <a href="http://www.wri.org/research/identifying-cool-food-meals" target="_blank">impacts calculator </a>provided land-use and emission factors by region, drawing from two recent global studies. It calculated five key metrics:</p>
+<ul>
+<li>Food purchases by food type (boneless equivalent, kilograms or pounds)</li>
+<li>Food-related GHG emissions from agricultural supply chains, (metric tonnes of carbon dioxide equivalent [CO2e])</li>
+<li>Food-related land use (hectares)</li>
+<li>Food-related carbon opportunity costs (tonnes of CO2e)</li>
+<li>Normalized metrics (several possible units of measure)</li>
+</ul><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Coolfood was designed for people around the world who ate out, and was launched in 2019. It  worked with food providers at every stage:</p>
+<ul>
+<li><em>Novice:</em>  Hadn’t started anything</li>
+<li><em>Beginner</em>: Had a strategy but no procurement measurement</li>
+<li><em>Intermediate</em>:  Had already set clear targets  •	Experienced: Had made progress on targets</li>
+<li><em>Advanced:</em> Were on track to meet targets</li>
+</ul>
+<p>Coolfood guided food service providers through three steps: pledge, plan and promote. </p>
+<p><strong>1.	Pledge<br/>
+<br/>
+</strong>   The food service providers could take a pledge to reduce greenhouse gas emissions associated with the food they served by 25% by 2030 relative to a baseline. (<em>Obtaining a Commitment</em>)</p>
+<p><strong>2.	Plan </strong></p>
+<p>WRI’s “Playbook for Guiding Diners Toward Plant-Rich Dishes in Food Service” presented 23 key behavior change strategies for reducing food waste, organized according to a “5P” framework that referred to the main targets for change. (<em>Financial Incentives; Overcoming Specific Barriers; Prompts; Vivid, Credible, Empowering Communication; Word of Mouth</em>)</p>
+<ul>
+<li>Product interventions (modifying the dish or product itself- seven interventions)</li>
+<li>Placement interventions (changing food displays - two interventions)</li>
+<li>Presentation interventions (ways to redesign food menus - four interventions)</li>
+<li>Promotion interventions (how to price and market plant-rich meals more effectively -four interventions)</li>
+<li>People interventions (how to engage staff members to influence diners’ choices - six interventions)</li>
+</ul>
+<p>In the Playbook, the descriptions of each behavior strategy were accompanied by tips for carrying out the strategy, a brief food services case study illustrating the approach, and references to relevant academic studies for further reading.</p>
+<p><img alt="" height="766" src="/userfiles/Image/Coolfood Strategies.png" width="665"/></p>
+<p><em>                                       Image courtesy of WRI (from WRI’s Playbook)</em></p>
+<p> </p>
+<p>The companion impacts calculator provided land-use and emission factors by region, drawing from two recent global studies. It calculated the five key metrics described above.</p>
+<p>Consumers /purchasers could look for the Coolfood Meals badge when they shopped or dined out. </p>
+<p>                                             <strong>Coolfood Meals Badge</strong></p>
+<p><img alt="" height="569" src="/userfiles/Image/Coolfood Badge.png" width="455"/></p>
+<p><em>                                               Image Courtesy of Coolfood</em></p>
+<p> </p>
+<p><strong>3.	Promote </strong></p>
+<p>Coolfood supported promotion in four ways. (<em>Building Motivation Over Time; Mass Media; Norm Appeals; Word of Mouth; Vivid, Personalized, Credible, Empowering Communication</em>)</p>
+<ol>
+<li>Worked with member food service organizations to create messages that effectively engaged diners and employees.</li>
+<li>Promoted members’ achievements in the press and on social media.</li>
+<li>Published collective performance against GHG targets annually.</li>
+<li>Celebrated individual achievements at an annual event.</li>
+</ol>
+<p>A WRI study found that the use of climate-related messages on menus could double sales for plant-based dishes. Two message types were most effective: “small changes big impact” and “joining a movement.”</p>
+<p>In 2022, Coolfood launched its “Give a Fork” campaign, to “raise consumer awareness that even small actions like choosing a WRI-certified Coolfood Meal could have a big impact for the planet.” The campaign included a micro-website, messaging and graphics with a distinct look and feel that were adaptable to support rather than distract from members’ unique brands. </p>
+<p><img alt="" height="749" src="/userfiles/Image/Coolfood Give a Fork.png" width="304"/></p>
+<p><em>Image Courtesy of Coolfood</em></p>
+<p><strong>Addressing Motivators and Barriers</strong></p>
+<p>The program spoke to five key motivators for participating food service organizations.</p>
+<ol>
+<li>Directly engaging employees and diners in their sustainability eﬀorts</li>
+<li>Meeting employees’ and diners’ evolving dietary preferences and needs</li>
+<li>Reducing their supply chain GHG emissions</li>
+<li>Building their reputations as leaders in a growing movement that tackles the climate impact of food</li>
+<li>Connecting with a social media community of Coolfood consumers</li>
+</ol>
+<p>The program addressed the key barriers faced by consumers and industry (<em>Overcoming Specific Barriers</em>).<span lang="EN-CA"> </span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:467.55pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid #A8D08D .5pt;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-border-insideh:.5pt solid #A8D08D;mso-border-insidev:.5pt solid #A8D08D" width="623">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="width:148.6pt;border:solid #70AD47 1.0pt;
+  border-right:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-left-alt:
+  solid #70AD47 .5pt;mso-border-bottom-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="198">
+<p class="MsoNormal"><b>Barrier<o:p></o:p></b></p>
+</td>
+<td style="width:318.95pt;border:solid #70AD47 1.0pt;
+  border-left:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-bottom-alt:
+  solid #70AD47 .5pt;mso-border-right-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="425">
+<p class="MsoNormal"><b>How   it was addressed<o:p></o:p></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:19.75pt">
+<td style="width:148.6pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="198">
+<p class="MsoNormal">Consumers   thought that plant-based foods had worse flavor and texture<b><o:p></o:p></b></p>
+</td>
+<td style="width:318.95pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="425">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Helped   members improve the flavor, texture, and appearance of plant-based dishes.<o:p></o:p></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:19.75pt">
+<td style="width:148.6pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="198">
+<p class="MsoNormal">Consumers were not aware of the relative greenhouse gas   emissions of different dishes <b><o:p></o:p></b></p>
+</td>
+<td style="width:318.95pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="425">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]-->The Coolfood badge identified those foods that   generated lower GHG emissions.<o:p></o:p></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;height:19.75pt">
+<td style="width:148.6pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="198">
+<p class="MsoNormal">Consumers   were new to this, and some might have resisted meals without meat (learning   curve)<b><o:p></o:p></b></p>
+</td>
+<td style="width:318.95pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="425">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Advised   members to serve alternatives to known and popular dishes.<o:p></o:p></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Advised   members to allow the addition of meat to plant-rich dishes for an extra   charge.<o:p></o:p></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4;height:19.75pt">
+<td style="width:148.6pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="198">
+<p class="MsoNormal">Industry was new to this (learning curve)<b><o:p></o:p></b></p>
+</td>
+<td style="width:318.95pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="425">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Provided members with a playbook of promising strategies.<o:p></o:p></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Advised members to offer staff training programs   (e.g. how to prepare attractive and delicious plant-based dishes); and to audit   their equipment to identify any needs for additional tools and equipment for supporting   staff in preparing these meals.<o:p></o:p></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:5;mso-yfti-lastrow:yes;height:19.75pt">
+<td style="width:148.6pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="198">
+<p class="MsoNormal">Industry   was fast paced, with many competing demands for attention<b><o:p></o:p></b></p>
+</td>
+<td style="width:318.95pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="425">
+<p class="MsoNormal">Advised   members to: <o:p></o:p></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Motivate   back-of-house staff by engaging chefs and food preparation staff in reflecting   on and measuring the environmental impact of their own dietary choices.<o:p></o:p></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Motivate   front-of-house staff /servers to try the plant-based dishes. <o:p></o:p></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Provide   staff with clear and actionable ‘next steps’ that could be taken right away.<o:p></o:p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>New York City was the first city in the U.S. that signed on to the Coolfood Pledge. In 2023, it increased its pledge to reduce its absolute carbon emissions from food purchases across its city agencies by 33% by 2030. By 2022, six cities in five countries had taken the pledge. (<em>Obtaining a Commitment</em>)</p>
+<p>The program expanded globally. As of 2022 it was running at 63 organizations spanning food service companies, hotels, restaurants, hospitals, cities, and universities predominantly across Europe and North America, but also with locations in Latin America, Asia, and Australia.</p>
+<p>The following is a Youtube Video of a presentation on Smartfood, by a participating foodservice company." </p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="150" src="https://www.youtube.com/embed/Sohne6rM4Ic" title="Youtube Video of a presentation on Smartfood" width="437"></iframe></p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The first restaurants to sign up used data from 2015 to 2018 as a baseline.</p>
+<p>Participating organizations reported their food purchases by weight annually, separated into animal-based foods and plant proteins.</p>
+<p>Because of the COVID epidemic, fewer people ate at restaurants during 2020 and 2021. As a result, Coolfood’s reports also included the estimated reduction of GHG emissions “per plate”.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Feedback was provided by promoting members’ achievements in the press and on social media; publishing collective performance against GHG targets annually; and celebrating individual achievements at an annual event. (Feedback; <em>Mass Media; Norm Appeals; Vivid, Personalized, Credible, Empowering Communication)</em></p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>By 2023, food providers serving two billion meals annually had committed to Coolfood’s science-based target (known as the Coolfood Pledge.) Members that had joined prior to 2022 had reduced per-plate emissions by 10%.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p><a href="mailto:coolfood@wri.org?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">coolfood@wri.org</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned</strong></p>
+<p>Support BOTH consumers and the food service organizations they buy meals from, to reduce the carbon footprint of meals purchased /sold.</p>
+<p><strong>Landmark Designation</strong></p>
+<p>The program described in this case study was designated in 2023.  Designation as a <em>Landmark</em> (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff and are then scored by the selection panels based on impact, innovation, replicability, and adaptability.  The panel that designated this program consisted of:</p>
+<ul>
+<li>Amjad Abdulaziz Alghamdi, George Mason University Department of Communication</li>
+<li>Madelaine Lemaire and Britta Ng, City of Coquitlam</li>
+<li>Doug McKenzie-Mohr, consultant</li>
+<li>Susan Schneider, consultant</li>
+<li>Brooke Tully, consultant</li>
+</ul>
+<p><strong>For More Information</strong></p>
+<p><a href="http://www.wri.org/initiatives/cool-food-pledge" target="_blank">http://www.wri.org/initiatives/cool-food-pledge</a></p>
+<p><a href="http://www.wri.org/news/low-carbon-cool-food-movement-brings-wins-fight-against-climate-change" target="_blank">  http://www.wri.org/news/low-carbon-cool-food-movement-brings-wins-fight-against-climate-change</a></p>
+<p><a href="http://coolfood.org/pledge/#pledge" target="_blank">  http://coolfood.org/pledge/#pledge</a></p>
+<p><a href="http://www.nyc.gov/office-of-the-mayor/news/263-23/mayor-adams-commits-reducing-city-s-food-based-emissions-33-percent-2030-after-releasing#/0" target="_blank">  http://www.nyc.gov/office-of-the-mayor/news/263-23/mayor-adams-commits-reducing-city-s-food-based-emissions-33-percent-2030-after-releasing#/0 </a></p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

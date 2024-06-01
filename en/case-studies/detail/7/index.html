@@ -1,0 +1,326 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>The Environment Network</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Canada Trust</li>
+<li>Collingwood Public Utilities Commission</li>
+<li>Consumers Gas</li>
+<li>Environment Canada</li>
+<li>Ontario Hydro</li>
+<li>Simcoe County</li>
+<li>Town of Collingwood</li>
+<li>Ontario Ministry of Environment and Energy</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Electricity use and water consumption were both reduced by one third. There were also significant reductions in household hazardous wastes and increases in sustainable landscaping practices.</p>
+<table cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" height="26" src="/images/lightbulb.gif" width="27"/> Tip: Click on an image to enlarge it. Click your back button to return to this page.  			<hr color="#ffcc00"/>
+<p><a href="/images/documentimages/EnviroNet/EnviroNet-3.jpg" target=""><img alt="The Environment Network Image" border="0" height="158" src="/images/documentimages/EnviroNet/EnviroNet-3.jpg" width="165"/></a> <br/>
+            Green Home Tune-Up promotional brochures used financial incentives.</p>
+<p><a href="/images/documentimages/EnviroNet/EnviroNet-4.jpg"><img alt="The Environment Network Image" border="0" height="117" src="/images/documentimages/EnviroNet/EnviroNet-4.jpg" width="158"/></a> <br/>
+            Portion of a "sliding window" waste management card advising householders on care and disposal of hazardous waste. 				<br/>
+<br/>
+<a href="/images/documentimages/EnviroNet/EnviroNet-1.jpg"><img alt="The Environment Network Image" border="0" height="221" src="/images/documentimages/EnviroNet/EnviroNet-1.jpg" width="158"/></a> <br/>
+            Self-adhesive decals served as prompts when affixed to products. <strong> <br/>
+</strong></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>The Environment Network</h1>
+<p>This comprehensive program utilized several strategies including home visits, incentives and starter kits to induce households to reduce energy, water consumption, waste to landfill and pollution.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The program was introduced in September 1994 in the Georgian Triangle, an area comprising Collingwood, Collingwood Township, Meaford, Thornbury and Wasaga Beach, with a combined population of approximately 53,000.</p>
+<p>The project was initiated in cooperation with the Ontario Ministry of Environment and Energy's Green Communities Initiative in an effort to defer the need to build a new transformer station supplying Collingwood and area by reducing demand for electrical energy. Reducing water consumption would extend further the life of the existing waste water treatment plant, and reducing levels of waste to landfill would delay the need for additional landfill.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>Objectives were set during a six-month strategic planning process based on information obtained from consultations with the communities and utilities, and on previously set Ontario Ministry of Environment and Energy goals.</p>
+<p>The specific objectives were to:</p>
+<ul>
+<li>reduce water consumption in Collingwood 10 percent by the year 2000</li>
+<li>reduce energy consumption 10 percent by 1996 and 25 percent by 2000</li>
+<li>cut waste to landfill by 10 percent by 1996 and 25 percent by 2000</li>
+<li>complete 1,500 Green Home Tune-Ups within one year</li>
+<li>demonstrate that raising demand for environmentally protective products and services would create direct and indirect jobs</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>A review of Canadian environmental programs in other communities revealed that cost could be a barrier to enrolling for a home tune-up. In response, the program provided the home tune-up service free of charge.</p>
+<p>Interviews were conducted with community and municipal representatives to determine their objectives for energy and water consumption, and waste reduction.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The Green Home Tune-Up provided free environmental home assessments conducted by pairs of trained employees. Residents were invited to call to arrange an appointment. During these home visits (<a href="/en/tools-of-change/home-visits/">Home Visits</a>), the assessors provided information to increase the awareness of environmentally responsible behaviour and offered the following services:</p>
+<ul>
+<li>To identify where energy consumption could be reduced, each home was examined for heat loss, insulation levels and proper ventilation. Water heaters were checked and tune-ups were carried out where necessary. Advice was provided on energy efficient lighting.</li>
+<li>To address water conservation, taps and toilets were inspected for leaks. Tap aerators, low-flow shower heads, foam gaskets and toilet tank water-saving devices were installed. Advice was given on maintaining "green" gardens by modifying watering habits and planting native and naturalized species that require less water.</li>
+<li>Residents were told how to reduce household hazardous waste and solid waste to landfill. They were educated on the proper use of their Blue Boxes and encouraged to compost, practise organic gardening, and purchase non-toxic cleaning products.</li>
+</ul>
+<p>Each resident was provided with recommendations on more extensive improvements that would enhance the energy efficiency of the home, such as additional insulation, caulking, weather-stripping, or window and door replacement. As an incentive to carry out these improvements, participants were offered low interest EnviroLoans from Canada Trust and "Green Loans" from the Toronto Dominion Bank (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>).</p>
+<p>During the program, additional barriers to change were identified: participants felt that proper disposal of hazardous waste required too much time and effort because the disposal site was far away. In response, a local hazardous waste depot was opened in the spring of 1996.</p>
+<p>Some people indicated that they were reluctant to use alternative cleaners because they were afraid that they would not work to "kill germs." Education about the effectiveness of the suggested products allayed this fear. In addition, assessors pointed out that if residents were concerned about cleanliness and health factors, they should consider the link between what was spilled down drains and toilets and their drinking water supply.</p>
+<p><strong>Starter Kits</strong></p>
+<p>In the summer of 1996, Collingwood pilot-tested the use of starter kits designed to reduce the use of household hazardous wastes (HHW) and to promote sustainable landscaping methods. Participants, who had all previously received home visits, were provided with the kits along with a second 10-minute home visit in which the contents and use of the kits were explained.</p>
+<p>The HHW kit contained samples of non-toxic cleaning products - a toilet bowl cleaner, dishwashing soap and cream cleanser. It also included a HHW education "sliding window" card and reminder decals provided by the Environmental Hazards Management Institute. The decals - to be placed on hazardous waste products in the home (<a href="/en/tools-of-change/prompts/">Prompts</a>) - suggested what to do with them ("use up," "recycle" or "save" for proper disposal at the HHW depot). During the visits, several decals were placed on products in the home.</p>
+<p>The sustainable landscaping kit included earthworm castings, diatomaceous earth, insecticidal soap, and sunflower and native wildflower seeds, as well as discount coupons for related products. Both kits included information on using the kit's contents and where to purchase more supplies, emphasizing local retailers.</p>
+<p><strong>Promoting the Program</strong></p>
+<p>The most effective promotional tool for arranging the visits was word-of-mouth (<a href="/en/tools-of-change/word-of-mouth/">Word-of-mouth</a>). Individuals who were satisfied with their own home tune-up passed the word on to friends and neighbours. Inserts in utility bills were also highly effective in securing tune-up appointments. Together, these two promotional methods accounted for 44 percent of the completed visits.</p>
+<p>The program was also promoted through the mass media using newspaper editorials and advertisements, magazine advertisements, local cable television video spots, and radio coverage. Information was distributed through newsletters, posters placed in high visibility areas, local banks, displays at special events, community presentations, as well as through the Public Utilities Commission office. Telemarketing and direct marketing in the form of door-to-door visits were carried out.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The annual budget for the program was $266,475.</p>
+<p>The costs were allocated as shown below:</p>
+<table border="0" width="75%">
+<tbody>
+<tr>
+<td width="50%">Salaries</td>
+<td align="right" width="50%">$ 163,200</td>
+</tr>
+<tr>
+<td width="50%">Product subsidies</td>
+<td align="right" width="50%">$ 50,175</td>
+</tr>
+<tr>
+<td width="50%">Overhead</td>
+<td align="right" width="50%">$ 23,600</td>
+</tr>
+<tr>
+<td width="50%">Training and manuals</td>
+<td align="right" width="50%">$ 13,500</td>
+</tr>
+<tr>
+<td width="50%">Advertising</td>
+<td align="right" width="50%">$ 9,000</td>
+</tr>
+<tr>
+<td width="50%">Project management</td>
+<td align="right" width="50%">$ 5,000</td>
+</tr>
+<tr>
+<td width="50%">Other</td>
+<td align="right" width="50%">$ 2,000</td>
+</tr>
+<tr>
+<td width="50%"><strong>Total</strong></td>
+<td align="right" width="50%"><strong>$266,475</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The cost of subsidies for the environmental products was $50,175.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The home advisors recorded the number and types of products which were installed in each household on a daily basis. This information was tracked by The Environment Network. Using this data, energy and water consumption savings were estimated by the Collingwood Public Utilities Commission. A follow-up telephone survey was conducted with 100 randomly selected participants to determine which of the home visit recommendations they had followed through on, how much money was spent on these changes, and whether they intended to do any more work.</p>
+<p>Each participant was also asked to fill out a comment card to evaluate the home tune-up and to assess satisfaction with the program. Fifty-two cards were completed and returned.</p>
+<p>One hundred households which had already received a Green Home Tune-Up were randomly selected; 50 received the sustainable landscaping kit, 50 received the household hazardous waste kit. A third group of 50 residents who had participated in the Green Home Tune-Up program were randomly selected as a control group, and received neither kit. In the fall of 1996, a telephone survey was conducted to compare the three groups' use and purchasing intentions regarding pesticides, synthetic chemical fertilizers, and toxic cleaning products.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Newspaper articles, newsletters and spots on the local public television and radio stations were used to provide feedback to participants about the progress of the program. Residents of Collingwood were informed about how much energy they had saved, how their participation in home tune-ups translated into savings, and how the community had benefited from growth in the local economy due to increased home renovations.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Home Visits</strong></p>
+<ul>
+<li>About 33 percent less water was treated and pumped to participants' homes (83,634 m3). This resulted in a saving of $21,839.</li>
+<li>Electrical energy consumption in these homes was reduced by about 30 percent (533,364 kWh) over 1993 levels. This translated into savings of $42,653.</li>
+<li>As of September 1995, $67,600 in EnviroLoans had been obtained for further renovations.</li>
+</ul>
+<p>A total of 1,578 home tune-ups had been completed by November 1996. Although figures were not yet available, further savings were achieved through increased recycling and reduced sewage treatment, natural gas consumption, and waste to landfill.</p>
+<p><strong>Starter Kit Pilot</strong></p>
+<p>Residents who received the gardening starter kit were significantly more likely* to have used and to have continued purchasing organic lawn care and pest control alternatives. However, this group had not necessarily stopped using hazardous products, showing no significant differences in their past use or future intentions regarding chemical/hazardous lawn products. They simply used the alternatives as well.</p>
+<p>Those who received the HHW starter kit were significantly less likely* to use herbicides and synthetic chemical fertilizers. They reported that they were less likely to use these products in the future as well. In terms of future intentions, they were also significantly less likely to use insecticides, and more likely to use compost and slow-release fertilizers. Information about herbicides and insecticides was contained in the materials provided to this group.</p>
+<p>Both groups receiving the starter kits were significantly less likely* to use disposable batteries and chlorine or ammonia-based cleaners over the past summer, and reported that they were less likely to use them in the future as well. They claimed to have disposed of material more frequently at the local HHW depot, although they were apparently just as likely to have saved HHW to take to the depot (all groups reported doing this frequently).</p>
+<p>Neither group indicated significant changes in their use of chlorine bleach and drain cleaners,* even though these were covered in the materials that came with the HHW kit.</p>
+<p>About one quarter of the participants with the sustainable gardening kit reported using the coupons provided. They reported that the coupons had strongly influenced their decision to try the alternatives.</p>
+<p>* Compared to the control group.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Michele Rich <br/>
+The Environment Network <br/>
+125A Napier St. <br/>
+Collingwood, Ontario <br/>
+L9Y 3T1 <br/>
+(705) 446-0551 <br/>
+Fax: (705) 446-0561</p>
+<p>Jennifer Smalley Kaufman 	<br/>
+Manager of Environmental Programs 	<br/>
+Environmental Hazards Management Institute 	<br/>
+10 Newmarket Road 	<br/>
+P.O. Box 932 	<br/>
+Durham, New Hampshire 03824 	<br/>
+U.S.A. 	<br/>
+(603) 868-1496 	<br/>
+Fax: (603) 868-1547</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Green Communities</strong></p>
+<p>The Environment Network is one of a number of Green Community case studies on this site. The others are ReCAP, Guelph 2000 and Peterborough Green-Up. For more information on Green Communities <a href="http://www.gca.ca">click here</a>.</p>
+<p>This case study was originally published in 1998 in "Tools of Change: Proven Methods for Promoting Environmental Citizenship" by Jay Kassirer and Doug McKenzie-Mohr (Published by Canada's National Round Table on the Environment and the Economy)</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

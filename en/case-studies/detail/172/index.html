@@ -1,0 +1,255 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>Municipalities of Hudson, St. Lazare and Notre Dame de L'Ile Perrot</p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<p>Alternative Solutions</p><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>An immediate 70-90% reduction in use the first year that the by-laws came into effect, and ongoing compliance levels above 80 to 90 %.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Reducing Pesticide Use in Hudson, St. Lazare, and Notre Dame de l'Île Perrot</h1>
+<p>A combination of by-laws with escalating fines and home visits enabled a number of small towns in Quebec, Canada to reduce the cosmetic use of pesticides on residential properties by 80 to 90%. They were some of the first communities in North America to do so.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>On May 6th 1991, the Town of Hudson became the first municipality in Canada with a by-law regulating pesticide use on residential property. By 1999, there were a number of communities in the southwestern part of the Province of Quebec with municipal by-laws banning cosmetic use on residential properties. This study covers by-laws and related outreach programs in several small communities located to the South West of Montreal. St. Lazare (population13,000) and Hudson (population 4,800) are neighbouring communities located about 50 km away from Notre Dame de l'Île Perrot (population 9,000).</p>
+<p>Hudson's By-law No. 270 prohibited the spreading and use of landscaping pesticides on residential properties without a permit. A permit could be applied for on the grounds of danger to health or insect infestations of buildings, and had to be substantiated in writing by a qualified individual.</p>
+<p>St. Lazare enacted a by-law similar to Hudson's in 1992. The by-law had not been enforced strongly before 2002, when the firm Alternative Solutions (AS) was hired to assist. Almost all requests for permits had been coming from lawn care companies or extermination companies, and few if any were refused. That year the municipality decided to change its procedures and start enforcement activities. Municipal staff was trained to handle permit requests, and permits were only issued when deemed necessary. The city sent a letter to local lawn care and extermination companies advising them ahead of time of the changes. The staff of AS also followed up by phone and spoke with the owners or directors of all the major lawn care and extermination companies to create a new standard of cooperation. This was well received by most companies.</p>
+<p>Notre Dame de l'Île Perrot banned the spreading and use of synthetic pesticides in 2001, to be applied January 1, 2002. Only low impact pesticides as defined in the by-law could be used without a permit. Permits were provided only when there was a major infestation that was a menace to the survival of the plant or to human health, and all alternatives that were better for health and the environment had been exhausted, including low impact ones.</p>
+<p>In all three communities, the municipal by-laws were not phased in. The communities took the perspective that People don't listen until they have to. They put the by-law in place immediately, and were lenient at first unless people displayed a bad attitude.</p><!-- Background already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>By-laws with Escalating Fines</strong></p>
+<p>A key element in the success of the programs was the existence of by-laws that provided escalating fines (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Disincentives</a>) for non-compliance.</p>
+<p>Hudson's by-law provided fines for first offenders ($300 - $1,000 for individuals and up to $2,000 for corporations), and increased fines for repeat offenders ($600 - $2,000 for individuals and up to $4,000 for corporations). It was enforced on a complaints basis only.</p>
+<p>In Notre Dame de l'Île Perrot, fines were $100 - $1,000 for individuals plus court fees and $500 to $2,000 for corporations. An increased fine applied to repeat offenders ($200 - $2,000 for individuals and $1,000 -$3,000 for corporations). For a third offence, the fine was $500 to $3,000 and $3,000 to $10,000. In 2003 only one person was fined, and 10-15 warning letters were sent out - down from about 30 the year before.</p>
+<p>St. Lazare enforced its by-law on a complaints basis only from 1992 to 2001, then as per Notre Dame de l'Île Perrot. First offenders were fined from $300 to $1,000 for individuals and from $500 to $2,000 for corporations. For repeat offenders, the fines were $500 to $2000 for individuals and $1,000 to $4,000 for corporations. 	<br/>
+<br/>
+<strong>Permits and Person-to-Person Education</strong></p>
+<p>Aside from the fines, the main method of ensuring compliance with the municipal by-laws was to educate residents about how to solve their pest problems without the banned pesticides (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). This was done through patrolling / <a href="/en/tools-of-change/home-visits/">Home Visits</a> as described below, and through horticultural counseling by telephone. That required putting in place inspectors with sufficient technical training and/or coaching skills to be able to help residents find the appropriate horticultural solutions.</p>
+<p>Notre Dame de l'Île Perrot had a full time educator / inspector on foot and car patrol (including Saturdays) between May and September 2002. In 2003, the building inspector and the program manager handled complaints and permit requests only through a contract with the firm Alternative Solutions (AS). The firm sent its staff to evaluate each situation and the damage involved, identify the source of the problem, offer practical alternatives to pesticides, and educate the resident about the potential dangers of using pesticides.</p>
+<p>When staff saw people gardening they would stop and talk with them and provide free horticultural advice. They also had information to leave behind with the people they visited. If they saw evidence of pesticide use, they would take an educational approach followed up a by a letter (for the record) but no fine unless the person was obviously aware of the by-law and had decided to ignore it. Repeat offenders were fined.</p>
+<p>After 1991, both St. Lazare and Notre Dame required residents to apply for their own permits. Not only did this help reduce the number of permits requested, it also provided an opportunity to educate applicants in a personalized, one-on-one manner (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>).</p>
+<p>When people applied for permits, they received a visit and a response within 24 hours (usually within 2-3 hours). Permits to use the banned pesticides were allowed only when inspectors were convinced there was a major infestation that was a menace to the survival of the plant, and all alternatives that were better for health and the environment had been exhausted, including low impact ones. Staff were trained how to recognize and identify insect, disease and weed problems, how to say no, and how to help permit applicants solve their pest problems through low impact alternatives and cultural practices.</p>
+<p>In Notre Dame, no permits were given out in 2002, all request where solved with low impact pesticides. In 2003, there were about 10 applications and 2 permits granted.</p>
+<p>When St. Lazare first introduced its by-law, lawn care companies could apply directly to get pesticide application permits. That procedure was changed in 2001. Based on follow-up calls at that time, AS deemed that most of the permit applications submitted by the lawn care companies had not been necessary, and in some cases had not even been asked for by the residents. 	<br/>
+<br/>
+<strong>Workshops, Talks and Mass Media</strong> <br/>
+<br/>
+Some of the additional communication approaches used were:</p>
+<ul>
+<li>Two-hour gardening talks by agronomists, entomologists and other experts, held on weekday evenings</li>
+<li>Weekend workshops with some outdoors activities</li>
+<li>Articles in the municipal bulletin and newspaper. Notre Dame and St. Lazare partnered with another municiaplit to save on the cost of hiring AS to write and publish technical horticultural articles to help citizens replace pesticides with low impact methods.</li>
+<li>A leave-behind information package for everyone who was visited - to help them remember the information they had learned</li>
+<li>A focus on creating municipal pride in being pesticide-free. For example, in Saint Lazare a big sign was erected in the park in the middle of the community, talking about how natural the city was with no pesticides. A pesticide-free campaign identity was used on all city paperwork for a number of years in Notre Dame and St. Lazare. In St-Lazare, it featured a child with a flower and a no pesticides symbol.</li>
+</ul>
+<p><strong>Partnerships</strong></p>
+<p>Notre Dame and St. Lazare saved money by splitting the cost of developing shared newspaper articles. They also both partnered with AS for training staff, and patrolling /educating residents.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The budget for developing and enforcing the by-law was between $5,000 to $15,000 per year, depending on the size of the community for the first few years. AS estimated that for small communities such as these, it takes one full time person from May to August for every 40,000 to 50,000 residents. That equates to about $0.50 to $1.00 per person depending on the extent of the outreach.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>A relatively clear and consistent picture of purchases and use in the three municipalities was provided through two main sources of data: intercept interviews with 40-50 lawn care service providers at the St. Hyacinthe Horticultural Trade show in November 2003; and ten independent estimates from local experts.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Sales</strong></p>
+<p>In the three communities being studied, lawn care services were almost universally complying with the by-law and were only selling services that made use of the banned pesticides when a permit had been obtained by the resident; and this seldom happened. Overall, in the region the demand for services that did not rely on synthetic pesticides appeared to be growing quickly perhaps by as much as 10-30 % a year. Because few companies offered the full spectrum of cultural practices (aeration, topdressing, seeding, etc.) an increasing number of people were apparently doing it themselves.</p>
+<p>Almost all local stores continued to sell the banned pesticides. There appeared to have been reductions to one third of previous sales levels immediately after the by-laws were put in place, dropping again to about 10% of previous sales levels in the following years. In contrast, throughout the rest of Quebec there was no drop; if anything, sales had been marginally up. AS attributed the increase to recent droughts and a lack of good soil preparation, which made lawns more susceptible to insect problems.</p>
+<p>Sales of low-impact pesticide alternatives were growing quickly overall in Quebec, roughly doubling every year for the companies we interviewed. This increase was most marked in the study area. Sales to garden centres in the Southern part of the province west of Montreal - where the three study municipalities are located, appeared to have been growing on average- at over twice the rate of sales to other parts of the province. The products were apparently being given better shelf space by retailers; they were usually displayed up front, rather than in the back corner - as they had often been before. Further, their shelf space had doubled each year over the past few years. Within Quebec, the greatest increase in shelf space had been in the study area, and those stores were ordering farther ahead and asking for a broader selection of products.</p>
+<p>Unsolicited inquiries for natural lawn care franchises were reported to have been 10 times more frequent from companies that operated or planned to operate in the study region, compared with other parts of the province. Inquirers from the study region who had been using traditional pesticide practices serviced a number of local municipalities some of which had bans and some of which did not. They reported having lost about 25% of their overall sales, and were calling to investigate adding or switching to natural lawn care services. 	<br/>
+<br/>
+<strong>Use</strong></p>
+<p>The experts that were interviewed suggested that there had been an immediate 70-90% reduction in use the first year that the by-laws came into effect, and ongoing compliance levels above 80 to 90 %. 	<br/>
+<br/>
+<strong>Exercise</strong></p>
+<p>The experts suggested that, because of the pesticide bans, there has been a slight increase in gardening activity. On the one hand, more and more people were using manual and cultural rather than chemical methods to reduce weeds such as dandelions. However, many local residents now simply accepted a less than perfect lawn.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>This case study was excerpted from the report <em>The Impact of By-Laws and Public Education Programs on Reducing the Cosmetic / Non-Essential, Residential Use of Pesticides: A Best Practices Review</em>, which is reviewed on this site.</p>
+<p>For more information on the approach used by <em>Alternative Solutions</em> (AS), or to engage their assistance, contact: 	<br/>
+<br/>
+Micheline Levesque, President 	<br/>
+Alternative Solutions 	<br/>
+Tel: (514) 453-2500 	<br/>
+Email: <a href="mailto:%20sae@videotron.ca">sae@videotron.ca</a></p>
+<p>AS specializes in municipal turnkey systems for by-law development and implementation.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Other Lessons Learned</strong></p>
+<ul>
+<li>Controversy and public discussion around the decision to have a by-law can have a great and long lasting impact on public support and behavior. Centre-Do-It said its sales of herbicides decreased to 10% of previous levels even before Hudson's by-law came into effect, and have stayed at that level since, despite low-key education and enforcement.</li>
+<li>It can take time to change people's minds and habits. CAP and AS currently advise prospective municipalities to allow three years to achieve high levels of compliance. The first year is mostly education letting people know there is a ban. The second year involves continued education, and stronger enforcement. The third year should be the target for high compliance rates. Companies must comply from the start.</li>
+<li>In the beginning consumers are confused and uninformed. They want to know what the difference is between products that are allowed vs. those that area not allowed. This is both a tremendous learning challenge and opportunity.</li>
+<li>To ensure high levels of compliance, a dedicated, consistent education / enforcement effort is required that is firm with local gardeners and lawn care companies, and at the same time helps them find practical alternatives to the banned pesticides they know how to use.</li>
+<li>People in Quebec are less familiar with the OMRI tools. There are so few low impact alternatives available that it is simpler to just list them rather than use a long list like OMRIs. That way the stores know what to buy.</li>
+<li>The people who do the home patrols / education should be motivated, have a horticultural background, good communications skills and a love for people. Municipalities would benefit from ready-to-order brochures or brochure templates, and a public media campaign.</li>
+<li>Municipalities would benefit from expert advice on by-laws that work and how to apply them from expert sources that are not linked to the industry. Application and decision making in the process of giving out permits cannot and should not be handed over to anyone linked in any manner to the industry (lawn care companies, extermination companies, agronomists that sell products such as pesticides and fertilizers, tree service companies, etc.).   </li>
+</ul>
+<p>This case study was written in September 2004 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

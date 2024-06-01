@@ -1,0 +1,264 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Liz Reynolds and Kevin McLaughlin, two entrepreneurs</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Co-op Housing Federation of Toronto (CHFT)</li>
+<li>Metro Credit Union</li>
+<li>Toronto Transportation Commission (TTC)</li>
+<li>Toronto Atmospheric Fund</li>
+<li>VIA Rail</li>
+<li>Local car rental agencies</li>
+<li>local bike and sporting good stores</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>40% of members reported giving up a car or not buying a new one because of their membership</li>
+<li>one shared car was estimated to replace 6 individual ones</li>
+<li>27% reported a higher use of public transit after one year as a member in AutoShare</li>
+<li>25% reported that they cycled or inline skated more often after joining</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>AutoShare</h1>
+<p>AutoShare, a car sharing company in Toronto, provides individuals with the freedom of driving without the hassles and high costs associated with owning a car. The company began in October of 1998, with 16 members sharing the use of 3 cars, and had grown to over 500 members and 28 cars by July 2001.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Car sharing began in Europe over a decade ago and has been effective in reducing the problems associated with automobiles, such as traffic gridlock, parking difficulties and smog. In Bremen, Germany, for example, car sharers have removed 500 vehicles from the citys streets. In Switzerland, where car sharing is most prevalent, over 30,000 people belong to car share organizations. Even Ford Motor Company's Chairman of the Board, William Clay Ford Jr., told delegates at the London Greenpeace Business Conference in October 2000, that Ford has plans to develop a car-sharing program.</p>
+<p>Benoit Robert opened Canadas first car sharing companies, CommunAuto in Quebec City in 1994, and AUTO-COM in Montreal in 1995. By February of 2000, over 1500 people were sharing the use of about 80 cars in those cities.</p>
+<p>Liz Reynolds and Kevin McLaughlin started AutoShare in Toronto in October 1998, with 16 members sharing the use of 3 cars. Reynolds heard about car sharing on the CBC TV program, Marketplace, which featured Roberts businesses in Montreal and Quebec City and met with Robert to discuss the idea. McLaughlin found out about car sharing while researching business solutions for environmental problems. In 1995, he co-founded the Co-operative Auto Network in Vancouver. McLaughlin and Reynolds later met on an on-line chat about car sharing, where she asked him to join AutoShare.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Research showed that for people who drove less than 12,000 km a year, car sharing was a cost-effective alternative to owning a car. In 1998, the Canadian Automobile Association estimated that the average cost to own and operate a small compact car per year was $8,000 CAD. Larger cars averaged $12,000 CAD and up (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives</a>).</p>
+<p>AutoShare learned from other cities experiences that car sharing worked best in a city environment with a densely populated urban center, where people had access to all necessary amenities, including a well-connected public transit system. Toronto fit the profile perfectly.</p>
+<p>AutoShare received a Jobs Ontario Community Action (JOCA) grant to conduct 70 interviews with randomly selected people who had already expressed an interest in car sharing. This information was used to determine how car sharing would be accepted in Toronto, which groups of people would most likely use the service, and what effect such a service would have on greenhouse gas reductions.</p>
+<p>The study first polled people on their age, gender, geographic location, language, and household income range. Nine areas or neighborhoods of Toronto were represented, with two, Riverdale and Annex, having the most participants at 23% each. Driving and work habits were also studied. The study found that:</p>
+<ul>
+<li>86% of the people polled worked outside of their homes.</li>
+<li>57% used public transit to commute to their jobs, 29% cycled, 14% drove, and 2% carpooled. All others walked (10%), took taxis (1%), or employed some other mode of transport like Torontos GO train and regional bus (6%). Almost 25% said that their transportation choices varied with the seasons.</li>
+<li>The average mileage driven per year was 6,770 km (with the lowest at 0 km and the highest at 20,000 km). Almost 50% said that they rented a car 1-4 times per year, with 56% of all car rentals used for vacation and leisure purposes, and 17% for business engagements.</li>
+</ul>
+<p>The study helped determine these target audiences:</p>
+<ol>
+<li>Young families who were able to buy a house or a car, but not both.</li>
+<li>Environmentally conscious individuals who relied on cycling as their main form of transportation.</li>
+<li>Self-employed people and others who worked from home.</li>
+<li>People who used public transit as their main form of transportation.</li>
+<li>Urban professionals who lived and worked downtown.</li>
+</ol><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Aside from initial start up fees, AutoShare members paid only for the time and the distance that they drove, and had 24-hour access to a fleet of cars stationed all over the city. The company paid all insurance, maintenance, and gasoline costs. Unlike traditional car rental agencies, AutoShare members were allowed the use of vehicles for as little as 30 minutes or for as long as they needed. However, since car rental agencies were a better option for extended trips, AutoShare also developed partnerships with local rental car companies to provide discounts to its members (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>Members called the company office to book a car for the date, time and duration that the vehicle was needed. Reservations could be made on the spur-of-the-moment or 3 months in advance. With 15 members to each car, the company maintained a 95% rate of accessibility. About half of the fleet was in use during peak hours. Cars were parked near public transit stations so that even if all vehicles closest to a members home were in use, members could still travel by public transit to another car that was available.</p>
+<p>AutoShare members traveled directly to where the car was parked, at an agreed time, and had a key to the companys security system, so they never had to go to the main office. To ensure the upkeep of the vehicles, drivers used a trip log located inside each automobile to note dents, scratches, or anything else worth noting about the condition of the car. The trip log was also used to tally the time and mileage after the car was brought back to the lot. Cars had to be brought back at the agreed upon time to ensure fairness to other members. Failure to do so could result in additional charges, although AutoShare reported that few people had abused the service in this way.</p>
+<p>Members filled the gas tank if it fell below half while the car was in their possession, and were then reimbursed for the cost. AutoShare maintained all vehicles, and car washes were also expensed to the company if a customer needed a car to be extra clean.</p>
+<p>Each month, members were sent an itemized statement showing all their charges, with any gasoline or other out-of-pocket expenses credited to the statement. AutoShare also considered offering a telephone/internet banking option for members who wished to pay their account that way.</p>
+<p><strong>Costs</strong></p>
+<p>A membership with AutoShare cost $20. Eligible applicants had to be at least 25 years old with a good driving record (3 tickets or less within the last 3 years), and a full class G drivers license. If the criteria were met, prospective members paid the initial $500 refundable membership fee and a $10 refundable key deposit. Members chose a plan that fit their needs, based on their estimated mileage. The rate is about $6 / hr including gas + insurance. For more specific rates please visit <a href="http://www.autoshare.com/rates.html">www.autoshare.com/rates.html</a></p>
+<p><strong>Insurance</strong></p>
+<p>Insurance was covered under a fleet plan through Co-operators Insurance Group, so that AutoShare, not individual members, held the coverage. In the event of an at-fault accident, the driver was required to pay the $500 deductible and $30 for each day the vehicle was not available (If the member was not at fault the deductible did not have to be paid). The insurance also covered roadside assistance.</p>
+<p>Because some insurance companies charge a higher rate for people that have been without auto insurance for an extended period of time, AutoShare ensured that members who left the organization and obtained their own car were considered to have been continually insured during the time that they belonged to AutoShare (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p><strong>Overcoming Other Barriers</strong></p>
+<p>The $500 refundable membership fee proved to be an economic barrier for some potential members of AutoShare. In December 2000, the company joined the Co-op Cost Cutters Program, a project that helped co-op housing residents obtain goods and services around Toronto at a more economically feasible rate. The Co-op Housing Federation of Toronto (CHFT) worked closely with AutoShare and Metro Credit Union to provide a micro-loan program that deferred the initial membership cost to co-op housing residents (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). AutoShare was considering offering this loan program to its general membership in the future (also through Metro Credit Union).</p>
+<p>Parking space for AutoShare had to fit specific criteria and this was also found to be a barrier to the company's expansion into other Toronto neighborhoods. Current and prospective members were encouraged, through a $50 reward, to alert the company about potential space through a web site (<a href="http://www.WeNeedParking.com">www.WeNeed Parking.com</a>). Members received their bonus when the space was secured. Parking spaces had to be in well-lit areas that were easily accessible day and night, close to public transit, plowed during winter months and priced at a reasonable rate.</p>
+<p><strong>Promotion</strong></p>
+<p>Because the concept of car sharing was new to Toronto and the company had a small budget, AutoShare favored a face-to-face approach to advertising. They set up information booths during outdoor festivals and events in the downtown area during the warmer months. This marketing strategy was inexpensive and allowed them to explain the idea more thoroughly than a newspaper or magazine ad might have. To keep in contact with residents who had expressed an interest, a database was compiled listing the names and addresses of individuals who stopped by the info-booths. So many people were impressed by the idea of car sharing and asked, Why didn't someone think of this sooner? that it was made into a company slogan, appearing on brochures and mail-outs.</p>
+<p>The company also placed posters in various locations of the city, such as cafs and bookstores, which listed the key motivators of the service along with the telephone number and web site address (<a href="http://www.autoshare.com">www.autoshare.com</a>).</p>
+<p>Many news and magazine articles have also been printed about AutoShare in publications around Toronto and Canada, including The Toronto News, The Toronto Star, The National Post, The Financial Post, The Vancouver Sun, and The Toronto Voice <a hre="/en/tools-of-change/mass-media/">Mass Media</a>.</p>
+<p><strong>Partnerships</strong></p>
+<p>Partnerships with some of Toronto's other transportation options provided AutoShare members with discounts on bike and inline skate rentals, VIA Rail, and area car rental agencies.</p>
+<p>In May 2000, a mutual effort between AutoShare and the Toronto Transportation Commission (TTC) offered a $100 discount on AutoShare's membership fee for transit riders who subscribed to the TTCs Metropass Discount Plan (MDP). Through mail-outs, MDP pass holders were sent information on AutoShare, including a subway map that showed the locations of transit stops and AutoShare cars. The link between mass transit and car sharing is a key component in reducing pollution and traffic problems in Toronto.</p>
+<p>AutoShare met with Toronto City planners to discuss how car sharing fits into the citys sustainable transportation agenda. The city supported AutoShare by facilitating the partnership with the TTC, provided start-up loans through the Toronto Atmospheric Fund, and recognized the need for adequate parking for the companys cars. AutoShare and other car sharing programs are included in the City of Toronto's Moving the Economy initiative to develop Personal Mobility Systems as a part of a sustainable transportation program for the future.</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>AutoShare required members to fill out a questionnaire along with their membership application, and then again at yearly intervals. This captured such information as: miles driven per year, number of trips per year by VIA Rail or bus, and the percentage of trips taken by each mode of transportation.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<ul>
+<li>40% of members reported giving up a car or not buying a new one because of their membership. By industry standards one shared car replaces 6 individual ones.</li>
+<li>27% reported a higher use of public transit after one year as a member in AutoShare, while only 7% reported that they used it less. (Research conducted by S. Shaheen at UC Berkley, California, found that car share members make a modal shift from 35% of trips by transit to 53%, instead of driving).</li>
+<li>25% reported that they had cycled or inline skated more often after joining, while 8% said that they did so less often.</li>
+<li>Even those members who used the service the most paid no more than $3,500 annually.</li>
+</ul>
+<p>AutoShare had grown steadily to 500 members by mid 2001. Research data gathered from studies done in Europe showed that for every 500 people who belong to a car share, more than 500 tonnes of carbon dioxide emissions per year are diverted. In general, car share members tended to drive 30% less after one year of membership. Car share companies also tend to select more fuel-efficient cars for their fleet.</p>
+<p>AutoShare has become popular among those who can easily afford a car, making car sharing more about convenience and personal choice. As an example, Brent Pearlman, a commercial real estate broker, joined AutoShare in December 1998. He lives and works in downtown Toronto and has easy access to many other modes of transit, such as the TTC, but chose the service because he only needs a car a few times a week. If I dont have a car sitting in my driveway, I wont be tempted to use it, Mr. Pearlman said. I know I would drive instead of walking if I owned a car, but I have chosen this lifestyle instead.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Kevin McLaughlin, President <br/>
+AutoShare <br/>
+24 Mercer Street <br/>
+Toronto, Canada M5V IH3 <br/>
+Tel: (416) 340-7888 <br/>
+Fax: (416) 340-0080 <br/>
+Website: <a href="http://www.autoshare.com">www.autoshare.com</a></p>
+<p>This case study was written by Brian Baraszu, Jay Kassirer and Sharon Boddy in 2001.</p>
+<p>Funding for the addition of this case study was generously provided by the Government of Canadas Climate Change Action Fund, Suncor, Syncrude, Enbridge Consumers Gas and TetraPak Canada.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Last updated: July 2004</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

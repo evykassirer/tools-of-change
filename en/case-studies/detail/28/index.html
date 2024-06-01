@@ -1,0 +1,354 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/work-programs-that-influence-the-home/">Work Programs that Influence the Home</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>The Greater Vancouver Regional District's Employee Environmental Awareness Committee</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>GVRD</li>
+<li>BC Transit</li>
+<li>Jack Bell Foundation (Vanpools)</li>
+<li>Better Environmentally Sound Transportation (BEST)</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>elimination of 42 Single Occupant Vehicle commuter trips per day, or 210 per week</li>
+<li>increase in Average Vehicle Ridership from 1.56 to 1.78</li>
+<li>63,031 kg CO2 and 4,728 kg of smog and other ground-level contaminants reduced annually</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Vancouver's Employee Trip Reduction Program</h1>
+<p>The Greater Vancouver Regional District's (GVRD's) Employee Trip Reduction Program took an integrated, multi-modal approach. By supporting the use of all modes of alternative transportation, a higher rate of employee buy-in could be obtained. This case study also shows how a municipality first developed a program for its own employees and then used it as a model for other employers. Even though GVRD has more resources to draw on than many other municipalities, the program's elements can be replicated by any community. This case study documents a program that took place between 1996 and 2002. A separate case study covers <a href="http://toolsofchange.com/en/case-studies/detail/628/">more current details</a> on the public program that resulted.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Launched May 1, 1996, the Employee Trip Reduction Program represented the GVRD's commitment to address transportation and air quality issues by promoting the reduction of single-occupant vehicle (SOV) commuter travel among its employees.</p>
+<p>The Trip Reduction Program was initiated by the GVRD's Employee Environmental Awareness Committee. While the program was adopted as a corporate initiative supported by all of GVRD's departments, the Communications and Education Department and the Air Quality Department with assistance from BC Transit, were primarily responsible for implementation.</p>
+<p>GVRD's offices were located in Burnaby, a highly urbanized municipality well-served by public transit. Burnaby was located within the Greater Vancouver Region, which had a population of 1.7 million people.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p><strong>1.</strong> To shift the percentage of trips taken by each of the following commuting methods, from 1996 to 1998, as follows:</p>
+<ul>
+<li>single-occupant vehicle commuter travel from 57% to 40%;</li>
+<li>carpools from 15% to 20%;</li>
+<li>public transit from 19% to 30%;</li>
+<li>cycling stable at 3%;</li>
+<li>walking/jogging from 6% to 8%; and,</li>
+<li>telecommuting from 0% to 3%.</li>
+</ul>
+<p><strong>2.</strong> To increase the average vehicle ridership (AVR), the ratio of employees to vehicles arriving at a worksite each working day, from 1.56 to 2.0.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>As part of their background research, the GVRD relied on a two-year-old internal employee survey. The survey assessed existing travel patterns, measured modal splits (the percentage of employees using one form of transportation as opposed to another), and provided attitudinal data regarding the kinds of incentives people wanted.</p>
+<p>A background literature search of previous employer trip reduction programs was conducted to uncover barriers to resource-efficient transportation, how they were overcome, and incentives used and their degree of success.</p>
+<p>The key barriers identified were:</p>
+<ul>
+<li>public transit - took too much time;</li>
+<li>carpooling/vanpooling - needed car for personal reasons after work, or had an irregular work schedule (overcome by allowing flexibility in participation - for example the flexibility to use other commuting modes some of the time); and</li>
+<li>walking/cycling/jogging - lived too far away; lack of showers and lockers, poor bike storage (overcome by upgrading the facilities).</li>
+</ul>
+<p>The key incentives used were:</p>
+<ul>
+<li>discounts on transit passes.</li>
+</ul>
+<p>A baseline employee survey administered by the GVRD confirmed that these were important barriers for GVRD employees. The survey also measured AVR and modal splits. Most employees came to work in single-occupant vehicles; although many used public transit. Almost no-one telecommuted, and there was a lack of awareness about this commuting alternative. Most existing carpools had only two people per vehicle. By measuring commuting distances, it was determined that 46 per cent of employees lived within 10 and 25 km of their workplace, distances well suited to the use of public transit or carpooling. It was further determined that 28 per cent of employees lived within 10 km of their workplace, distances well suited to cycling, walking, or jogging to work.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>For the first year, a full-time coordinator was allocated to the development and implementation of the Employee Trip Reduction Program. Considering the scale of this initiative, creating a full-time coordinator's position for the program's start-up was considered to be crucial to its success. The coordinator position was reduced to half time after the first year, and the responsibilities split over several employees.</p>
+<p>A cornerstone of GVRD's strategy was the phasing out of a 60 per cent subsidy available for employee parking, removing an incentive to drive (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>). Subsidies were phased out over a five-year period starting six months after the program began. The subsidy phase out, as well as administration of savings for other employee benefits, were negotiated as part of a new contract between GVRD management and the employees' union.</p>
+<p>To register for the Trip Reduction Program, employees filled out a form indicating their willingness to use resource-efficient commuting alternatives to driving alone, at least one day per week (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>). The one day per week minimum provided participants with great flexibility, and a do-able first step that might lead to greater involvement (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p>The program contained six initiatives:</p>
+<p><strong>1. <em>Carpool Ride-Matching Program</em></strong></p>
+<p>A ride-matching program was implemented to connect people traveling from the same neighborhood or general area so they could commute in a single vehicle (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). To find potential carpool partners, employees filled out ride-matching forms with such details as the nearest major intersection to home, usual work start and finish times, and their preference for being a driver, passenger, or both. An Employee Transportation Coordinator provided information about the program and processed the forms.</p>
+<p>A two-month trial period was offered during which employees were not required to give up their parking spots, for which there was a waiting list of up to five years (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a> , <a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>). During this time they were reimbursed for their monthly parking payroll deductions.</p>
+<p>A corporate carpooling fleet was made available - at a charge of 26 cents per kilometer to recover 100 per cent of the cost of insurance, parking, gas and maintenance - to carpool groups that did not have access to a vehicle (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). Employees were required to sign an agreement to use the cars strictly for commuting purposes.</p>
+<p>When subsidies for employee parking were phased out, incentives were added to encourage carpooling (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>). Carpool groups consisting of two employees could claim a 50 per cent reimbursement of parking payroll deductions. Groups of three or more could claim a 100 per cent reimbursement.</p>
+<p><strong>2. <em>Vanpool Empty Seat Insurance</em></strong></p>
+<p>While all Vancouver commuters had access to a vanpool service operated by the Jack Bell Foundation, vanpools were sometimes forced to disband when a member dropped out, because a replacement could not be immediately found, which consequently increased the cost per person. The GVRD therefore offered Empty Seat Insurance to cover the cost of one empty seat for a period of up to two months per year (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). The two-month period was considered a reasonable time frame in which to find a replacement.</p>
+<p><strong>3. <em>Cycling Safety Workshops and Worksite Facility Upgrades</em></strong></p>
+<p>Safety workshops were organized for employees who were prepared to cycle to work but were unsure about the best travel routes, or were concerned about traffic safety. Cycling coaches provided through an externally run group called Better Environmentally Sound Transportation (BEST) mapped out individualized routes and accompanied participants on a trial run. Free bicycle maintenance workshops were also provided (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>Improvements were also made to shower facilities at work sites, and more bicycle racks were installed (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). To increase visibility, one of the racks was placed at the building's front entrance (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>). In addition, a cage for up to 50 bicycles was provided in an underground parking lot, replacing some existing car parking spots.</p>
+<p><strong>4. <em>Guaranteed Ride Home Service</em></strong></p>
+<p>A Guaranteed Ride Home Service was provided free-of-charge to ensure that individuals enrolled in the Employee Trip Reduction Program were not left stranded at the office in cases of emergency, unscheduled overtime, or missed rides (<em>Overcoming Specific Barriers</em>.)</p>
+<p> The service was available to program participants, up to a maximum of four times per year, on days when they didn't drive alone. A department receptionist would either arrange for use of a corporate car, or would call a taxi and issue a voucher.</p>
+<p><strong>5. <em>Flextime</em></strong></p>
+<p>As long as it did not interfere with a department's operational requirements, participants could change the times they started and ended work by up to one-half hour, to create a work schedule that accommodated commuting via carpooling, public transit, cycling, walking, or jogging (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p><strong>6. <em>Subsidized Transit Program</em></strong></p>
+<p>BC Transit representatives held workshops at GVRD work sites. Participants received information about the most direct commuting routes, visually demonstrated using computers. Estimated travel times were also calculated. Each participant then received a personalized printout of the results (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>).</p>
+<p>To encourage use of public transit for local business travel, transit tickets were available free-of-charge from each department. Employees could also purchase monthly transit passes through payroll deduction and receive a 15 per cent discount (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>s). To receive the discount, employees were required to sign a contract with BC Transit agreeing to purchase the monthly transit passes for a period of 12 consecutive months (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>). GVRD also promoted the use of public transit for local business activity by issuing free transit tickets to each department.</p>
+<p><strong>Promotion</strong></p>
+<p>Electronic mail and posters were the main means of promoting the six initiatives. Messages linked commuting choices with air quality and traffic congestion "hot issues in the community" as well as to other common motivators like saving money and time, and avoiding stress (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p>Information about the program could also be obtained by calling a hot-line staffed by an Employee Transportation Coordinator, or by visiting one of three staffed Commuter Information Centers (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>). The centers contained public transit maps and schedules, public transit pass applications, a cycling commuter map, a bulletin board with transportation related information, and up-to-date information on existing carpools.</p>
+<p>To strengthen the motivation of participants, and to encourage non-participating staff to "join in", steps were taken to increase the visibility of participation by others (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>). For example, a monthly employee newsletter included photographs of individuals using the promoted commuting practices. Designated carpool parking spots were clearly marked for all to see. In addition, prizes were given for participation in monthly Clean Air Days. Ballot boxes were located at receptionists' desks - highly visible locations. Additional communications encouraged employees to engage in other "clean air activities" such as planting trees, using a push lawn mower instead of a gas-powered one, and minimizing SOV use for non-commuting purposes.</p>
+<p><strong>Regional Trip Reduction Service</strong></p>
+<p>To help bring transportation alternatives to workplaces throughout the Greater Vancouver Area, the GVRD contracted out for the development of a program called Go Green Choices. When the Greater Vancouver Transportation Authority, also known as TransLink, was created in 1998, they took on responsibility for the Trip Reduction Program and the Employer Pass Program. The Trip Reduction Program included Go Green Choices and the Jack Bell Foundation rideshare programs.</p>
+<p>The Go Green Choices program offered these services:</p>
+<ul>
+<li>distributing a brochure ("It's Your Business: Commuting Alternatives for your Workplace") to help in "selling" participation to key decision makers at each workplace;</li>
+<li>training a designated employee at each workplace as a Go Green Coordinator, to create and manage the trip reduction program at the workplace;</li>
+<li>providing a Go Green Coordinator's Kit, including a guide with step-by-step instructions and checklists; templates for e-mails, memos, and employee transportation surveys; and a brochure, poster and postcard for use with employees;</li>
+<li>promoting the Jack Bell Foundation rideshare program; and,</li>
+<li>offering free on-going assistance.</li>
+</ul>
+<p>The Go Green Choices program was positioned to employers as a service that would improve their workplace and their profit-margins. The following links were made to common employer-related motivators (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>):</p>
+<ul>
+<li>monetary savings through parking management;</li>
+<li>lower demand for office space through the introduction of telecommuting programs;</li>
+<li>a healthier more productive workforce, with reduced absenteeism, due to more employees cycling, running, or walking to work; and,</li>
+<li>a competitive advantage resulting from a higher public profile and boosted employee morale.</li>
+</ul>
+<p><strong>Barriers to Implementation</strong></p>
+<p>The most significant barriers or challenges to program implementation were:</p>
+<ul>
+<li>getting all of management on-side;</li>
+<li>obtaining funding for program start-up;</li>
+<li>educating employees about the value of having a corporate trip reduction program;</li>
+<li>structuring a payroll deduction system for the transit pass purchases; and,</li>
+<li>negotiating changes to unionized employees' contract regarding parking subsidy benefits.</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>N/A</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>A survey was conducted amongst GVRD employees one year after the Employee Trip Reduction Program was initiated, to determine whether the program was achieving its objectives. Additional surveys were conducted as required. An ongoing monitoring system for participation was also used, with the information collected from enrolment forms inputted into a database.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>N/A</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<ul>
+<li>elimination of 42 SOV commuter trips per day, or 210 per week; and,</li>
+<li>an increase in AVR from 1.56 to 1.78 (target was 2.0).</li>
+</ul>
+<p>The percentage of trips taken by each of the following commuting methods shifted, from 1996 to 1997, as follows:</p>
+<ul>
+<li>SOV commuter travel from 57% to 46% (1998 target was 40%);</li>
+<li>carpooling from 15% to 21% (1998 target was 20%);</li>
+<li>public transit from 19% to 22% (1998 target was 30%);</li>
+<li>cycling from 3% to 5% (1998 target was 3%);</li>
+<li>walking/jogging stable at 6% (1998 target was 8%); and,</li>
+<li>telecommuting stable at 0% (1998 target was 3%.)</li>
+</ul>
+<p>Overall participation in the program steadily increased from 177 employees in 1996, to 213 in 1999. Of these 213 participants, 10 walked, 96 took transit, 13 cycled and 92 carpooled.</p>
+<p>Annual estimated greenhouse gas reductions were:</p>
+<ul>
+<li>63,031 kg CO2 (equivalent to the effect of planting 1,300 to 1,400 trees) and</li>
+<li>4,728 kg of smog and other ground-level contaminants.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>This case study documents a program that took place between 1996 and 2002. A separate case study covers <a href="http://toolsofchange.com/en/case-studies/detail/628/">more current details</a> on the public program that resulted.  </p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>UPDATE as of December 2002:</strong></p>
+<p>A full-time coordinator was responsible for promoting and delivering the Trip Reduction Program in its first year and was found to be critical to the programs success. Later the coordinator worked part-time, sharing some of the duties with other staff. The program continued to be promoted to staff using different approaches including:</p>
+<ul>
+<li>The celebration of Clean Air Day the first Wednesday of every month to encourage staff to try alternative transportation at least once a month Participation in the National Clean Air Day in June</li>
+<li>E-mail messages are sent to staff, including program information (i.e. events) and ballot winners (employees are encourage to submit ballots to win monthly prizes</li>
+<li>When the program was first launched, an information booklet was designed for distribution to new staff. Although a good tool, the booklet had not been updated so was no longer distributed.</li>
+</ul>
+<p>The success of the program resulted in the development of the Go Green Choices program (delivered by B.E.S.T.), which was delivered to other companies and organizations in the GVRD.</p>
+<p><strong>Lessons Learned</strong></p>
+<p>There were several factors influencing the success of this program, as follows:</p>
+<ul>
+<li>A full-time coordinator to initiate the first year of the program</li>
+<li>Phasing out 60% of the employee parking subsidy</li>
+<li>Designing a flexible program that met the needs of different types of lifestyles/people</li>
+<li>Written approval received from all those wanting to participate in the program</li>
+<li>Using a portion of parking revenues to fund part of the program</li>
+<li>The "dynamics" of the carpool group is crucial to program success but be careful to match up compatible carpoolers</li>
+<li>The Transit Pass Initiative that was originally devised as a monthly pay deduction approach covering the cost of a transit pass (at a 15% discount). However, this was changed to a yearly pay deduction approach after discovering the high administration requirements associated with the monthly deduction system. This has resulted in a more cost effective and easier administration system for the Go Green coordinators but has proven less flexible for the employee.</li>
+<li>Some employees were not satisfied with the yearly transit pass because it is inflexible. A six-month pass purchase program might be more useful to employees who chose to cycle or integrate other non-motorized forms of commuting parts of the year.</li>
+</ul>
+<p><strong>UPDATE as of December 2007:</strong></p>
+<p>Since 2002, the program was called Metro Vancouver's OnBoard Program.</p>
+<p>The program promoted a variety of commuting options initiatives:</p>
+<p><em>1. Employer Pass Program.</em> This discounted annual transit pass gave employees a 15% discount on their transit pass when 25 or more employees from the same company participated. Payment for the pass was facilitated through payroll deduction by the employer. The pass was valid for travel throughout the year, and pass holders could take up to five family members (1 adult and 4 children) on transit on Sundays and statutory holidays at no extra charge. Employers often choose to provide an additional subsidy. By providing heavily discounted transit passes, employers were able to attract new hires in this competitive labor market. At the same time they demonstrated their commitment to corporate environmental responsibility.</p>
+<p><em>2. Ridesharing</em>. Jack Bell Ride-Share is a not-for-profit organization which hosts an online ride-matching database that helps people find casual ridesharing partners and formal car and vanpool groups. TransLink, through the OnBoard program, provided ongoing funding support to Jack Bell Ride-Share. It also supported the annual Ride-Share week.</p>
+<p><em>3. Corporate Car Share.</em> TransLink, in partnership with the Cooperative Auto Network, created a corporate car share program called The Company Car. The Company Car provided businesses with access to corporate vehicles for employees. The Company Car helped companies save money on their fleet vehicles, and helped employees save money for gas and parking costs.</p>
+<p><em>4. Active Transportation. </em>The OnBoard program promoted cycling and walking to work through cycling workshops and region-wide events such as Bike to Work Week, Commuter Challenge and Ride-Share Week. TransLink also consulted with employers to create facilities such as bike cages and showers to facilitate more cycling and walking. It also sponsored Bike To work Week, Bike Month and Ride-Share Week.</p>
+<p><em>5. Parking Management.</em> TransLink encouragedemployers to implement parking management strategies to complement their trip reduction initiatives. Converting free parking to pay parking, creating preferential parking for ridesharing vehicles, and equitable transportation allowances are all examples of parking management strategies.</p>
+<p><em>6. Guaranteed Ride Home.</em> Guaranteed or Emergency ride home was a policy which ensured that employees who commuted using alternative transportation could get home in event of emergency, or when their shared ride was not available.</p>
+<p><em>7. Teleworking.</em> Working from home (1 to 3 days a week) meant that employees did not have to commute. Telework benefited employers, employees, and the environment. It had been shown to increase employee productivity and reduce absenteeism.</p>
+<p><em>8. Park and Ride.</em> There were 20 park and ride sites in Metro Vancouver, all of which connected with transit (either at a major bus loop or at a SkyTrain station).</p>
+<p>Promotion</p>
+<p>TransLink promoted and marketed the OnBoard program through a variety of communications. An information package was sent to specific targeted employers. This was followed up with a phone call and request for an interview. Presentations were made to employers, and often to employees at lunch and learn sessions. A number of marketing initiatives were employed using different media. These included advertising in business papers and magazines, local newspapers, advertising with Captivate television screens in building elevators, Lightvision screens (large billboards on highways), direct e-blasts to employers, ads on parking arms in parking lots, on-line advertising with agencies such as CBC, Telus.com, Google.com, banners in SkyTrain stations. GVRD also hosted transportation fairs in areas such as business and office parks. These initiatives reached a number of employers who then contacted the OnBoard program for assistance in implementing programs at their worksites.</p>
+<p>Results</p>
+<p>Since the launch of the program, OnBoard had helped more than 300 companies in the GVRD to develop and implement trip reduction programs.</p>
+<p>Conclusion</p>
+<p>The OnBoard program was very successful in working with employers to offer commuting alternatives for employees. The employer pass program had seen an increase from 108 to 240 in participating companies since the launch of the OnBoard program. The number of participating employees had also risen since, from 6,000 to over 14,000 participants. In 2006 alone the employer pass program helped eliminate 700,000 single occupancy vehicle trips from the region's roads.</p>
+<p>Ridesharing also experienced increasing success. Since the launch of the OnBoard program, Jack Bell Ride-Share, which can be viewed at www.ride-share.com, had eliminated more than 1,000,000 single occupancy vehicle trips in Metro Vancouver.</p>
+<p>The OnBoard program helped provide commuting options at a lower cost. It reduced commuting hassles and stress, promoted commuting choices that enhanced the quality of life, and helped employers attract and retain good employees. It also reduced congestion on the region's roads, as well as GHG emissions.</p>
+<p><strong>Resources</strong></p>
+<ul>
+<li>Sample of Posters for Bike Workshops</li>
+<li>Clean Air Day Participation Ballots</li>
+<li>Employee Trip Reduction Program Introduction Document</li>
+</ul>
+<p> </p>
+<p>Last updated: December 2007. This case study was written in 2000 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

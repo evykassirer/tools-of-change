@@ -1,0 +1,290 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li> Ohm Connect</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li> Utilities</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>50-100kWh per year per household during peak times</li>
+<li>1 GWh during peak times across all program participants (2017)</li>
+</ul>
+<p> </p>
+<p><a href="/userfiles/Ohm Connect Case StudyV3.pdf"><strong>Case Study PDF</strong></a></p>
+<p><a href="https://youtu.be/G8krHA2F_MQ" target="_blank"><strong>Five-Minute YouTube Video Summary</strong></a></p>
+<p> </p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Ohm Connect’s #OhmHour Peak Time Energy Conservation Program </h1>
+<p><iframe height="auto" src="https://www.youtube.com/embed/G8krHA2F_MQ" width="97%">
+</iframe></p>
+<p>OhmConnect pays participants to save energy when it’s most beneficial to the grid and their wallets. On average, participants save 50-100 kWh at peak times per year per household. This case study highlights three innovative elements of the program: a focus on reducing peak demand with remarkable frequency, flexibility and precision; rich gamification features that encourage user participation; and an option to automate energy savings that was not available until the recent installation of smart meters and widespread availability of smart devices. Designated in 2017.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong><em>Note:</em></strong><em> To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>Energy used during peak times puts a strain on our electricity networks and is the most expensive and environmentally damaging energy used. That’s why energy conservation is particularly important at peak times.  OhmConnect paid participants to not use this energy.</p>
+<p>To do this, the company harnessed the interplay between two emerging opportunities by connecting (1) new energy markets and (2) evolving home automation technologies (including smart phones and smart meters.)</p>
+<p>At the time of writing this case study in 2018, OhmConnect was the largest third-party residential demand response provider in North America.  The company had focused on homes and small businesses in Ontario, Canada and the US states of California and Texas. Its platform was tailored to areas that had smart meters.  Users could opt-in to the program and save energy on a weekly basis to earn rewards such as points and rebates. </p>
+<p><img alt="" height="315" src="/userfiles/Image/Promo screen shot.png" width="450"/></p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>In developing its program, OhmConnect relied on the experience of its internal energy experts and resources. In addition, prior to program launch it conducted exploratory discussions with utilities regarding similar projects had been implemented previously.  Understanding the challenges, impacts and success of these projects proved essential in determining possible incentive and barriers for its priority audiences.</p>
+<p>In addition, recruitment demographics were analyzed on an ongoing basis to determine which social and cultural cohorts were most receptive to the idea of residential demand incentives. </p>
+<p>Ohm Connect started with a platform that provided some value to participants and piloted and continually improved it over three years of iterations. Matt Duesterberg, (Founder and CEO), said “When I was looking at this product for the first time, I wanted to provide a line graph with my consumption overtime– provide as much data as possible. But 99% of the people don’t care about my data – they care about my points. I was putting in graphs, I was putting in maps, and my co-founder kept saying no our consumers do not want that and the data consistently showed that we cannot give them what we think is important, we need to give them what they value.”</p>
+<p>To do this effectively, the company identified the main motivators for its key audience segments and made sure the product offered something powerful relating to each. There was a very straight forward appeal to those people who would conserve for the money. The focus on “energy sharing” and the ability to donate any money earned to various charities, appealed to community-minded participants (e.g. 100 participants earning $100 a year could earn $10,000 for a common cause). The gaming, technological and challenge aspects themselves appealed directly to some people. There was also the ability to reduce the use of dirty power sources, which appealed to the environmentally-motivated. </p>
+<p><strong>Prioritising Audiences</strong><br/>
+<br/>
+The company initially focused on residential clients. This was identified as an under-served audience because these audiences had not had an easy way to participate in energy markets.  This was partly because the necessary technologies were still emerging, and because of administrative barriers to joining existing programs.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The program paid households and businesses to reduce their energy use when the electric grid was stressed and power had to come from expensive and highly-polluting sources of generation. It financed these payments by selling their aggregated energy reductions into competitive wholesale electricity markets. (<em>Financial Incentive</em>s) </p>
+<p>In effect, the energy markets saw these energy savings as virtual power plants, so instead of turning on more polluting (e.g. dirty diesel) power plants, they paid participants to turn down their energy use. </p>
+<p>The program positioned peak time reductions as “energy sharing.” Participants were encouraged to “share” their portions of energy by not using them during peak times. </p>
+<p>Energy reduction events – branded as #OhmHours– normally occurred about once or twice a week for an hour in the morning or evening.  In advance of each event, the program notified relevant participants by email and SMS. Then, when the #OhmHour began, these targeted participants took whatever actions they could to reduce their energy use, such as turning off lights, unplugging laptops and cell phones, and delaying dishwasher and laundry cycles. (<em>Prompts</em>) </p>
+<p>After each #OhmHour, participants received data on their performance (based on interval usage data from their electric smart meters) and were awarded points in proportion to the amount of energy they saved. Bonus points were awarded to customers who consistently performed during #OhmHours. (<em>Feedback</em>) </p>
+<p>Customers could “cash out” their points at any time via PayPal or Venmo, donate their points to charities and schools, or spend their points on smart devices in the program’s online store. </p>
+<p>While each #OhmHour was by definition an hour long, the program had been experimenting with “Doubledown #OhmHours” that extended to longer periods of time. </p>
+<p>Some users with wifi thermostats or electric cars connected their devices to the program’s website to automate their participation, but that was not required. The program platform integrated with many popular wifi smart devices, such as programmable communicating thermostats (e.g. Nest and ecobee), smart plugs, and electric vehicle chargers. Participants could connect their smart devices – whether purchased from the program’s store or elsewhere – to their online program accounts and thereby automate their participation in #OhmHours. In this way, their smart devices would automatically turn off when an #OhmHour began, and automatically turn back on when an #OhmHour ended.</p>
+<p>According to John Anderson, Director of Energy Markets, “We’re moving towards a paradigm where we have more and more intermittent renewables, we have more a more distributed energy resources like storage and electric vehicles that are causing imbalance on the grid any time of day any time of year, any day of the week.  You’re not just getting our Ohm hours on a hot summer afternoon, you’re getting them on weekends, you’re getting them in the morning, they’re getting them in the evening, you’re getting them in the springtime and wintertime.” </p>
+<p><strong>Engagement and Gaming Aspects</strong> </p>
+<p>In order to sell reliable energy savings into the energy markets, Ohm Connect had to engage more people more deeply than existing programs. </p>
+<p><img alt="" height="335" src="/userfiles/Image/Gaming.png" width="450"/></p>
+<p>It was successful at recruiting and retaining customers by keeping its messaging simple (“Save energy. Get paid.”) and by keeping customers engaged via frequent #OhmHours, prompt feedback and a variety of gaming aspects. (<em>Building Motivation, Engagement and Habits Over Time</em>) </p>
+<p>Participants could challenge themselves to progress to different “status levels” based on their reductions in the previous 20 #OhmHours. (<em>Goal Setting</em>)</p>
+<ul>
+<li>Platinum status required an average savings of 40% or more beneath forecasts</li>
+<li>Gold status - 20% or more</li>
+<li>Silver status - less than 20% </li>
+</ul>
+<p>For example, if forecasted usage for an #Ohmhour was 1.0kWh and the participant actually used 0.6 kWh, that would be a 40% reduction. </p>
+<p>Platinum status members received a 4x multiplier on #OhmHour points, Gold status members received a 2x multiplier on #OhmHour points, and Silver status members received no #OhmHour point multiplier. </p>
+<p>Participants could also earn points (worth up to $75) for each new participant that they referred to the program – depending on the status level the new participant achieved. (<em>Norm Appeals, Word of Mouth</em>)  </p>
+<p>In addition to points, participants could earn tokens in a variety of ways, such as visiting the program website, sharing energy reduction stories and referring a friend who got to the Bronze status level (<em>Norm Appeals, Word of Mouth</em>). In contrast to points, tokens could not be exchanged for cash. However, they could be used to temporarily increase one’s baseline values (which increased both one’s savings relative to baseline), and the incentive for making referrals. Tokens could also be used to participate in draws for prizes ranging from a wifi-thermostat or device discount to a lease on a Tesla Model S. </p>
+<p>In 2017, the program introduced “streaks”, where customers could earn bonus incentives for an event if they had successfully reduced their consumption for one or more previous consecutive events.  The more they saved, the more they earned. Participants who saved energy during a given #OhmHour received 5% bonus points for successfully reducing energy during the next #OhmHour. For each subsequent #OhmHour in a streak, an additional 5% bonus points was added. For example, four successful events in a row provided a bonus of 15% points during the next #OhmHour. The streak ended if and when the participant went over baseline or opted-out of an event. </p>
+<p>Some families encouraged their children to be the main ones turning off the lights, pulling out the plugs etc. and earning the money. </p>
+<p>The program’s free service proved especially popular among lower-income households, for whom the points earned participating in #OhmHours were a meaningful source of extra income. </p>
+<p>To help ensure that participants were receptive to the prompts, and to reduce message fatigue from receiving messages at inconvenient times, participants had the ability to choose when they wanted to receive (and not receive) these messages. (<em>Obtaining a Commitment; Prompt</em>s) </p>
+<p>The program used a continuous improvement approach to find new and better ways to keep its participants engaged and excited about  opportunities to help the environment and get rewarded. </p>
+<p>Although the program focused on residential participants, some of these customers began using it with their small businesses as well.</p>
+<p><strong>Reducing Barriers</strong></p>
+<p>The program’s “try before you buy” approach to reducing energy allowed customers to participate in #OhmHours – and earn points for their performance – without having to buy expensive energy-management devices. Further, California participants could apply up to $150 of future points earnings towards the purchase of discounted smart devices. There was no sign-up fee and no program membership fee. (<em>Overcoming Specific Barriers</em>) </p>
+<p>One of the key barriers to energy conservation is that it is a low priority – so people often neglect to take action even when they support energy conservation in principle. This barrier was reduced by providing benefits participants did care about (see the section above on Getting Informed.)<em> (Vivid, Personalized, Credible, Empowering Communication</em>). </p>
+<p>In terms of program participation, the main hurdles were getting users to register for the program and then transition to continued participation in #OhmHour events.  These barriers were reduced through advertising, making it easy to register (using one’s existing utility user name and password) and through offering a great experience leading to word-of-mouth promotion (a majority of new users came from referrals.) (<em>Word of Mouth</em>) </p>
+<p>For all these reasons, the program was accessible to many more households and businesses than more costly demand energy response solutions, like solar PV and battery storage. </p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The program was financed through selling participants’ aggregated energy reductions into competitive wholesale electricity markets.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>the time of writing in 2018, the program was only able to measure energy consumption directly for the following users, whose utilities had agreements with the program: those in California served by PG&amp;E, SDG&amp;E, SCE; those served by Toronto Hydro in Ontario, Canada; and some Texas Smart Meter users. The program connected to the utility and received a stream of smart meter data, which allowed for measurements of the amount of energy sharing and saving as well as the impact the program had on the grid.  Participants in California who had energy provided by PG&amp;E or SDG&amp;E were asked to sign a document called the CISR, which authorized the program to access their meter data and operate as their Demand Response Provider. All other participants self-reported what they were doing to save energy.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>After each #OhmHour, participants received data on their performance (based on interval usage data from their electric smart meters) and were awarded points in proportion to the amount of energy they saved.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>On average, program participants saved 100-200kWh <em>at peak times</em> per year per household.</p>
+<p>Overall impact across all program participants:</p>
+<ul>
+<li>745,000 kWh per year <em>at peak times</em></li>
+<li>Replacement of peak power plants with resources made up of thousands of users providing energy efficiency</li>
+<li>Increased adoption rate of devices</li>
+<li>Payments of over $2m across all users in 2017</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Innovation</strong></p>
+<p>The program was able to achieve penetration into a significant number of homes based on a given incentive amount per kWh. At increasing values per kWh, it witnessed increased penetration of users. This enabled the grid to have higher penetration of renewable, as it offset the negative pressure on renewables due to grid integration costs. In the chart below, the green line represents the program adoption or energy sharing adoption rate (titled Response Adoption) and the red line represents Solar Adoption. As the value for responsive load increases, solar adoption rates drop while energy sharing adoption rates increase, allowing for a relatively insulated adoption for prosumers under various pricing regimes.</p>
+<p><img alt="Illustrative graphic of adoption rates of solar or responsive demand at different Grid Integration Costs" height="321" src="/userfiles/Image/adoption rates.png" width="450"/></p>
+<h3 style="font-size:8.0pt;">Illustrative graphic of adoption rates of solar or responsive demand at different Grid Integration Costs</h3>
+<p> </p>
+<p>The program saw various adoption rates in California by sampling in different locations and using various price signals. After controlling for price, lower-income regions like Bakersfield showed higher adoption rates than higher-income regions like Beverly Hills. Within a single region, there were significantly higher adoption rates for users if paid more. </p>
+<p>This case study illustrates three innovative elements.</p>
+<ol>
+<li>First, this program focused specifically on peak demand with remarkable frequency, flexibility and precision.
+    <ul>
+<li>Participants anticipated multiple #OhmHours per week (and at various times of day) in contrast with traditional episodic programs that might only go into effect a few times a month at most; thus, participants’ collective energy reduction capability was available for more frequent utilization.</li>
+<li>#OhmHour notifications could be targeted to customers in specific locations, depending on the needs of the grid. </li>
+<li>Participants could begin reducing energy use within seconds of receiving #OhmHour notifications, via behavioral and/or automated actions.</li>
+<li>Participants could provide additional energy reductions at higher price points – i.e. if they were informed that they would be awarded extra points during specific #OhmHours.</li>
+</ul>
+</li>
+<p>2.	Second, this program added the rich gamification features discussed above, that encouraged user participation.</p>
+<p>3.	Third, it made use of an optional level of automation that was not available until the installation of smart meters and the widespread availability of smart devices.</p>
+</ol>
+<p><strong>Replication</strong></p>
+<p>With appropriate infrastructure investments, a similar approach could be used with other resource conservation behaviors – for example water use during peak periods – or for resource rationing in times of emergency.</p>
+<p><strong>Data Sources </strong></p>
+<p>More information regarding this program can be found at <a href="http://www.ohmconnect.com" target="_blank">www.ohmconnect.com</a></p>
+<p>This case study was written in 2018 by Jay Kassirer.</p>
+<p> </p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

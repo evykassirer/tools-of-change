@@ -1,0 +1,370 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+<li><a href="/en/tools-of-change/work-programs-that-influence-the-home/">Work Programs that Influence the Home</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Port of San Diego</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>San Diego Gas &amp; Electric (SDG&amp;E)</li>
+<li>80+ Waterfront Businesses</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Reduced approximately 10.8 million kilowatt hours and 300,000 therms</li>
+</ul>
+<p> </p>
+<p>Case Study <a href="/userfiles/Port of San Diego V2 .pdf" target="_blank">PDF</a></p>
+<p>Green Business Network <a href="https://www.portofsandiego.org/environment/green-business-network" target="_blank">website</a></p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Port of San Diego</h1>
+<p>The Port of San Diego’s (Port’s) Green Business Network (Network) is an integrated energy efficiency and sustainability program that educates tenant businesses on sustainable business practices and identifies resources to implement building and operational improvements. The Green Business Network provides a forum for businesses across the Port’s five member cities to network on sustainability best practices. Between 2010 and 2017, participating businesses reduced energy use by 10.8 million kWh and 300,000 therms.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em><strong>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense. When the program is ongoing as is the case with this particular program, the Introduction (only) is written in the present tense.</strong></em></p>
+<p>While many ports in California were focused predominantly on the cargo industry, the Port was unique, with most land comprised of commercial tenants (including hotels, museums, restaurants, retail stores, and a convention center), industrial businesses, two maritime terminals and two cruise ship terminals. For this reason, the Green Business Network was instrumental in educating and engaging a diverse group of businesses on the importance of sustainability and how businesses could leverage existing utility programs to reduce project costs and increase return on investment.</p>
+<p>The Network included over 80 businesses across all business sectors of the Port which benefited from the resource offerings. These resources included educational and technical workshops, energy and water audits, networking events, information on rebates and incentives, behavioral change campaigns, and one-on-one sustainability technical support.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>In 2013, the Port adopted a Climate Action Plan establishing greenhouse gas (GHG) reduction goals for the Port’s jurisdiction, including Port owned and operated facilities, as well as tenant and subtenant operations. Tenant and subtenant operations accounted for approximately 96% of the total GHG emissions and 80% of the total energy consumption. In order to meet the Climate Action plan GHG reduction goals, it was vital to engage the tenant community.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The Green Business Network provided member businesses with access to technical and educational resources that yielded actionable steps to improve energy efficiency and sustainability. It also offered promotional and networking resources. These are summarized in the following list.</p>
+<ul>
+<li>Energy Audits (13 completed). Audits identified over 995,000 kilowatt hour (kWh) of energy savings and over $175,000 in annual cost savings</li>
+<li>Water Audits (4 Completed). Audits identified over 6 million gallons of water savings and $95,000 in annual cost savings</li>
+<li>Assistance to create Sustainability Action Plans that prioritized energy, waste and water reductions over a five-year timeline (13 completed; plans identified approximately 1.6 million in annual kWh savings)</li>
+<li>Marketing Videos (28 created)</li>
+<li>Educational Workshops and Facility Tours (over 30 workshops completed with 700 participants). Topics included: sustainability facility tours of local businesses, energy efficiency rebates and incentives, marketing sustainability initiatives to consumers, electric vehicles, LEED building design, and microgrids.</li>
+<li>Annual Sustainable Achievement Awards Program and Ceremony (26 Awards over four years in various categories)</li>
+<li>Bi-Monthly Newsletters outlining sustainability case studies, member highlights</li>
+<li>Alerts on applicable grant opportunities</li>
+</ul>
+<p><img alt="" height="300" src="/userfiles/Image/2019 GBN Award Winners.JPG" width="450"/></p>
+<p><i><span lang="EN-CA" style='font-size:8.0pt;font-family:"Minion Pro",serif;mso-ansi-language:EN-CA;
+mso-bidi-language:#0400'>2019 Award Winners</span></i></p>
+<p>In addition, in 2018, the Green Business Network introduced a Green Employee Engagement Campaign to educate and engage tenants and their employees about energy efficiency in the workplace and at home. Studies had shown that gamification programs could result in energy efficiency reductions</p>
+<ul>
+<li>5 businesses participated across various sectors: CP Kelco, Hilton San Diego Airport/ Harbor Island,  San Diego Convention Center, San Diego Yacht Club and Sun Harbor Marina</li>
+<li>186 total participants</li>
+<li>1,900 sustainability actions taken</li>
+</ul>
+<p>The following table summarizes the key barriers and how each was addressed.</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid #8EAADB .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #8EAADB;mso-border-insidev:.5pt solid #8EAADB">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="width:114.65pt;border:solid #4472C4 1.0pt;
+  border-right:none;mso-border-top-alt:solid #4472C4 .5pt;mso-border-left-alt:
+  solid #4472C4 .5pt;mso-border-bottom-alt:solid #4472C4 .5pt;background:#4472C4;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="153">
+<p class="MsoNormal" style="tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:white;
+  mso-bidi-language:#0400'>Barriers<o:p></o:p></span></b></p>
+</td>
+<td style="border:solid #4472C4 1.0pt;border-left:none;mso-border-top-alt:
+  solid #4472C4 .5pt;mso-border-bottom-alt:solid #4472C4 .5pt;mso-border-right-alt:
+  solid #4472C4 .5pt;background:#4472C4;padding:0cm 5.4pt 0cm 5.4pt;height:
+  19.75pt" valign="top">
+<p class="MsoNormal" style="tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:white;
+  mso-bidi-language:#0400'>Solution</span></b><b><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:white;
+  mso-bidi-language:#0400'><o:p> </o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:19.75pt">
+<td style="width:114.65pt;border:solid #8EAADB 1.0pt;
+  border-top:none;mso-border-top-alt:solid #8EAADB .5pt;mso-border-alt:solid #8EAADB .5pt;
+  background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="153">
+<p class="MsoNormal" style="margin-bottom:3.0pt;tab-stops:0cm 12.0pt 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style='font-family:"Calibri",sans-serif;color:black;mso-bidi-language:#0400;
+  mso-bidi-font-weight:bold'>Tenant </span><span style='font-family:"Calibri",sans-serif;
+  color:black;mso-bidi-language:#0400'><span style="mso-bidi-font-weight:
+  bold">projects were self-funded; </span>therefore<b>,</b><span style="mso-bidi-font-weight:bold"> many tenants d</span>id<span style="mso-bidi-font-weight:
+  bold">n’t have enough capital budget to implement sustainability projects with a payback greater than 5 years<o:p></o:p></span></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #8EAADB 1.0pt;
+  border-right:solid #8EAADB 1.0pt;mso-border-top-alt:solid #8EAADB .5pt;
+  mso-border-left-alt:solid #8EAADB .5pt;mso-border-alt:solid #8EAADB .5pt;
+  background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:black;
+  mso-bidi-language:#0400;mso-bidi-font-weight:bold"><span style="mso-list:
+  Ignore">·<span style='font:7.0pt "Times New Roman"'>       </span></span></span><span style='font-family:"Calibri",sans-serif;
+  color:black;mso-bidi-language:#0400;mso-bidi-font-weight:bold'>Grant Funding   Notifications<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:black;
+  mso-bidi-language:#0400;mso-bidi-font-weight:bold"><span style="mso-list:
+  Ignore">·<span style='font:7.0pt "Times New Roman"'>       </span></span></span><!--[endif]--><span style='font-family:"Calibri",sans-serif;
+  color:black;mso-bidi-language:#0400;mso-bidi-font-weight:bold'>Information on   relevant rebates and incentives<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:black;
+  mso-bidi-language:#0400;mso-bidi-font-weight:bold"><span style="mso-list:
+  Ignore">·<span style='font:7.0pt "Times New Roman"'>       </span></span></span><span style='font-family:"Calibri",sans-serif;
+  color:black;mso-bidi-language:#0400;mso-bidi-font-weight:bold'>Free energy   and water audits to analyze project costs to create future budgets for   projects<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:black;
+  mso-bidi-language:#0400;mso-bidi-font-weight:bold"><span style="mso-list:
+  Ignore">·<span style='font:7.0pt "Times New Roman"'>       </span></span></span><span style='font-family:"Calibri",sans-serif;
+  color:black;mso-bidi-language:#0400;mso-bidi-font-weight:bold'>Utilizing   SDG&amp;E rebates and incentives to reduce overall project costs<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:19.75pt">
+<td style="width:114.65pt;border:solid #8EAADB 1.0pt;
+  border-top:none;mso-border-top-alt:solid #8EAADB .5pt;mso-border-alt:solid #8EAADB .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="153">
+<p class="MsoNormal" style="margin-bottom:3.0pt;tab-stops:0cm 12.0pt 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style='font-family:"Calibri",sans-serif;color:black;mso-bidi-language:#0400;
+  mso-bidi-font-weight:bold'>Lack of technical expertise and competing demands for staff time within tenant businesses<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #8EAADB 1.0pt;
+  border-right:solid #8EAADB 1.0pt;mso-border-top-alt:solid #8EAADB .5pt;
+  mso-border-left-alt:solid #8EAADB .5pt;mso-border-alt:solid #8EAADB .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;tab-stops:
+  0cm 12.0pt 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;color:black;mso-bidi-language:#0400;mso-bidi-font-weight:bold"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>       </span></span></span><!--[endif]--><span style='font-family:"Calibri",sans-serif;
+  color:black;mso-bidi-language:#0400;mso-bidi-font-weight:bold'>Free energy   and water audits<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;tab-stops:
+  0cm 12.0pt 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;color:black;mso-bidi-language:#0400;mso-bidi-font-weight:bold"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>       </span></span></span><!--[endif]--><span style='font-family:"Calibri",sans-serif;
+  color:black;mso-bidi-language:#0400;mso-bidi-font-weight:bold'>Technical   assistance: one-on-one sustainability assistance<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;tab-stops:
+  0cm 12.0pt 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;color:black;mso-bidi-language:#0400;mso-bidi-font-weight:bold"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>       </span></span></span><!--[endif]--><span style='font-family:"Calibri",sans-serif;
+  color:black;mso-bidi-language:#0400;mso-bidi-font-weight:bold'>Educational   Workshops and Facility Tours<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;tab-stops:
+  0cm 12.0pt 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;color:black;mso-bidi-language:#0400;mso-bidi-font-weight:bold"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>       </span></span></span><!--[endif]--><span style='font-family:"Calibri",sans-serif;
+  color:black;mso-bidi-language:#0400;mso-bidi-font-weight:bold'>Bi-Monthly   Newsletters<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;tab-stops:
+  0cm 12.0pt 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;color:black;mso-bidi-language:#0400;mso-bidi-font-weight:bold"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>       </span></span></span><!--[endif]--><span style='font-family:"Calibri",sans-serif;
+  color:black;mso-bidi-language:#0400;mso-bidi-font-weight:bold'>LEED Trainings   for Member employees<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;mso-yfti-lastrow:yes;height:19.75pt">
+<td style="width:114.65pt;border:solid #8EAADB 1.0pt;
+  border-top:none;mso-border-top-alt:solid #8EAADB .5pt;mso-border-alt:solid #8EAADB .5pt;
+  background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="153">
+<p class="MsoNormal" style="margin-bottom:3.0pt;tab-stops:0cm 12.0pt 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style='font-family:"Calibri",sans-serif;color:black;mso-bidi-language:#0400;
+  mso-bidi-font-weight:bold'>Cost to implement the Green Business Network<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #8EAADB 1.0pt;
+  border-right:solid #8EAADB 1.0pt;mso-border-top-alt:solid #8EAADB .5pt;
+  mso-border-left-alt:solid #8EAADB .5pt;mso-border-alt:solid #8EAADB .5pt;
+  background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;tab-stops:
+  0cm 12.0pt 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;color:black;mso-bidi-language:#0400;mso-bidi-font-weight:bold"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>       </span></span></span><!--[endif]--><span style='font-family:"Calibri",sans-serif;
+  color:black;mso-bidi-language:#0400;mso-bidi-font-weight:bold'>Ability to   utilize the Port’s SDG&amp;E Local Government Partnership Funds to fund   energy efficiency projects, marketing opportunities and educational   opportunities<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Program impacts were measured through surveys as the Port didn’t have direct access to member businesses’ utility data. The Port worked closely with San Diego Gas &amp; Electric (SDG&amp;E) to continue to improve ways to track data associated with the Green Business Network while maintaining full privacy rights of all businesses.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Program reporting and promotion activities provided member businesses with feedback on group achievements.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Between 2011 and 2017, member businesses reduced energy use by approximately 10.8 million kWh and 299,000 therms. That is an average of 1,500,000 kWh and 42,000 therms per year. </p>
+<p>There was an accompanying 56% decrease in water use.</p>
+<p>Energy efficiency improvements made to member businesses fell into the following two categories.</p>
+<ul>
+<li><em>Energy efficiency retrofits:</em> installed occupancy sensors, LED lights, variable frequency drives, more efficient HVAC units, and additional initiatives</li>
+<li><em>Employee behavior change:</em> drove internal change and further reduced overall energy consumption through awareness and engagement initiatives</li>
+<li><em>Water conservation measures:</em> installed drought tolerant landscaping, low flow water fixtures, and smart irrigation systems.</li>
+</ul>
+<p>In addition, 13 businesses created 5-year Sustainability Action Plans outlining large-scale initiatives to reduce energy consumption. The Green Employee Engagement Campaign led to 1,900 sustainability actions taken that contributed to these energy savings. </p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Kellie Carlson<br/>
+Senior Environmental Specialist, Energy &amp; Sustainability, Port of San Diego<br/>
+3165 Pacific Highway, San Diego, CA 92101<br/>
+<a href="mailto:kcarlson@portofsandiego.org?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">kcarlson@portofsandiego.org </a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<ul>
+<li>The program provided the Port with a channel to assist Port tenants and subtenants with reduced financial expenses and environmental impacts, which helped the Port meet the Climate Action Plan goals.</li>
+<li>The power of networking allowed businesses to share best practices on sustainability measures.</li>
+<li>Businesses that didn’t have staff focusing on sustainability and environmental initiatives still benefited from educational resources, newsletters and technical assistance.</li>
+<li>This approach could be easily replicated in other ports, airports, business parks, local government agencies and business associations.</li>
+</ul>
+<p>This case study was wrtten in 2020 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

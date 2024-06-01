@@ -1,0 +1,336 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/work-programs-that-influence-the-home/">Work Programs that Influence the Home</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li> City of Austin</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Capital Area Metropolitan Planning Organization (CAMPO)</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Participation rate of 5-10% of households contacted</li>
+<li>5-10% reduction in drive-alone trips among participants (about 41,000 vehicle trips per year)</li>
+<li>5-10% increase in active and shared trips</li>
+</ul>
+<p>Case Study <a href="/userfiles/Smart Trips Austin - without images.pdf" target="_blank">PDF</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Smart Trips Austin</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="150" src="https://www.youtube.com/embed/7ZSNV-qpYAw" title="Smart Trips 2020 Citywide Program" width="97%"></iframe></p>
+<p><em>Smart Trips Austin </em>encourages residents of Austin Texas, USA to take multi-modal transportation options (walk, bike, ride transit, and share rides) more often, rather than drive alone. The program focuses on personal interactions — educating individuals on their options and overcoming barriers to multi-modal travel. <em>Smart Trips </em>reinforces this new information using community-based programs such as learn-to-ride classes, transit instruction, and group walking activities. Initially, the program targeted residential neighbourhoods of Austin Texas; each year a different area was targeted. In 2020 the program expanded to city-wide and began to segment using a Stages of Change approach.  In 2021, it started targeting residents who had recently moved to or around Austin. <em>Smart Trips Austin</em> averaged a participation rate of 5-10% of households contacted, a 5-10% reduction in drive-alone trips among participants (about 41,000 vehicle trips per year), and a corresponding 5-10% increase in active and shared trips. This account of the program was designated a <em>Landmark</em> case study in 2023, making the City of Austin one of the few governments with more than one program designation. </p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this program.</em></p>
+<p>Well before <em>Smart Trips</em>, Austin had introduced other innovative approaches to encourage the use of sustainable transportation options. For example, in 2013 it launched MetroBike, which became one of the most successful bike sharing programs in the USA. More recently, a case study of Austin's <a href="https://toolsofchange.com/en/case-studies/detail/739">Leave Time Travel Incentive</a> for its employees received a Tools of Change <em>Landmark</em> designation.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p><em>Smart Trips Austin</em> had three program goals:</p>
+<ol>
+<li>Manage congestion by encouraging residents to explore the city in new ways</li>
+<li>Reduce single-occupant vehicle trips by five percent</li>
+<li>Increase active transportation trips by five percent</li>
+</ol><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The <em>Smart Trips</em> Program was first piloted in 2015 with a grant from the American Planning Association (APA).</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Based on success of the pilot, in 2017 the City of Austin and Capital Metro entered a financial and planning partnership to run the program. The City approved a contract for a two-year period, with an option to extend for an additional 3 years with Council authorization. In addition, the Capital Area Metropolitan Planning Organization (CAMPO) contributed $216,000.</p>
+<p>The Program focused on personal interactions to communicate transportation options and overcome key barriers to multi-modal travel. For example, its multi-modal transportation incentive toolkits were delivered in person.<i>(Home Visits; Overcoming Specific Barriers; Vivid, Personalized, Credible, Empowering, Communications) </i></p>
+<p>These were supplemented with community-based events such as group bike rides, transit adventures, and Mayor and Council Members group walking activities.</p>
+<p>In 2018, Austin became one of 25 cities across the USA supported by the Bloomberg American Cities Climate Challenge to accelerate climate action, using a holistic approach that focuses on clean buildings and transportation. Money from this award was used in 2020 to hold Transportation in Equity workshops with local community organizations. This led to the formation of the Bike Equity Alliance, which provided free bikes, safety gear, and training to residents earning below 50% of Austin's Median Family Income.(<em>Financial Incentives; Norm Appeals; Overcoming Specific Barriers; Vivid, Personalized, Credible, Empowering, Communications</em>)</p>
+<p>In 2019, Austin City Council unanimously adopted a Strategic Mobility Plan that included a commitment that within 20 years, half of Austinites would get to work without driving alone in a car. At that point, 74% of car trips were drive-alone and the goal was 50%. In keeping with this commitment, Austin also engaged its own staff to use alternative modes of travel more often. Its Smart Commute Rewards program for city staff began offering employees time off for logging sustainable commutes, and the drive alone rate of participants soon fell from 53% to 41%. In 2019, the City also piloted an electric bike fleet for staff, which has since expanded.(Work Programs that Influence the Home)</p>
+<p>The 2020 COVID pandemic brought a sharp rise in interest and use of telework and a corresponding decrease in the use of other transportation modes. At that time, the program moved to a city-wide neighbourhood-by-neighbourhood approach. Promotions and incentives enticed participants to request a custom guide, then connect virtually with an expert for one-on-one support. When requesting the guide, participants answered a question that helped sort them by stage of change. Resources were focused on those at the Contemplation, Preparation and Action stages. The stage of change also informed what information was provided and how. Participants could also join live Facebook sessions for tips on staying active and connected, and to access virtual resources like maps and videos.<em>(Mass Media; Vivid, Personalized, Credible, Empowering, Communications)</em></p>
+<p>Development review moved towards a "TDM-first" approach. During the analysis and review of development applications, applicants were asked to incorporate TDM strategies to reduce the anticipated increase in drive-alone trips. Trip reduction targets depended on the area of town (city center, urban, and suburban.) The more TDM strategies implemented in a project, the greater the credit received towards required transportation mitigations.</p>
+<p>Recognizing cycling as an important choice for the first and last portion of trips, Austin has also invested in providing and promoting access to bicycles. The city’s “Capital Metropolitan Transportation Authority” (CapMetro) rebranded the City’s B-Cycle bicycle rental service as MetroBike and began integrating it into transit hubs and their upgrades. Payments were integrated into its CapMetro App that was already being used for trip planning and trips by bus. (<em>Overcoming Specific Barriers</em>) </p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="150" src="https://www.youtube.com/embed/m0w77jbz3f0" title="Smart Trips Social Cycling" width="437"></iframe></p>
+<p><em>Smart Trips Social Cycling</em></p>
+<p>In 2021, the Program began utilizing a CAMPO grant to reach residents who had recently moved to or around Austin. It also piloted a community ambassador program to increase the depth and breadth of community outreach while also fostering deeper, locally-focused relationships with neighborhoods and communities.</p>
+<p>In 2022, Smart Trips Austin became part of Get There ATX, which also targeted the Austin’s employees, employers and visitors, as well as residents.<span style='font-family:"Arial",sans-serif'><o:p> </o:p></span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoTable15Grid4Accent6" style="border-collapse:collapse;border:none;mso-border-alt:solid #A8D08D .5pt;
+ mso-border-themecolor:accent6;mso-border-themetint:153;mso-yfti-tbllook:1184;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
+<tbody>
+<tr style="mso-yfti-irow:-1;mso-yfti-firstrow:yes;mso-yfti-lastfirstrow:yes;
+  height:19.75pt">
+<td style="width:85.7pt;border:solid #70AD47 1.0pt;
+  mso-border-themecolor:accent6;border-right:none;mso-border-top-alt:solid #70AD47 .5pt;
+  mso-border-top-themecolor:accent6;mso-border-left-alt:solid #70AD47 .5pt;
+  mso-border-left-themecolor:accent6;mso-border-bottom-alt:solid #70AD47 .5pt;
+  mso-border-bottom-themecolor:accent6;background:#70AD47;mso-background-themecolor:
+  accent6;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="114">
+<p class="MsoNormal" style="mso-yfti-cnfc:5"><span style='font-family:"Arial",sans-serif;
+  color:white;mso-themecolor:background1;mso-bidi-font-weight:bold'>Barrier<o:p></o:p></span></p>
+</td>
+<td style="width:135.7pt;border:solid #70AD47 1.0pt;
+  mso-border-themecolor:accent6;border-left:none;mso-border-top-alt:solid #70AD47 .5pt;
+  mso-border-top-themecolor:accent6;mso-border-bottom-alt:solid #70AD47 .5pt;
+  mso-border-bottom-themecolor:accent6;mso-border-right-alt:solid #70AD47 .5pt;
+  mso-border-right-themecolor:accent6;background:#70AD47;mso-background-themecolor:
+  accent6;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="181">
+<p class="MsoNormal" style="mso-yfti-cnfc:1"><span style='font-family:"Arial",sans-serif;
+  color:white;mso-themecolor:background1;mso-bidi-font-weight:bold'>How it was   addressed<o:p></o:p></span></p>
+<p class="MsoNormal" style="mso-yfti-cnfc:1"><span style='font-family:"Arial",sans-serif;
+  color:white;mso-themecolor:background1;mso-bidi-font-weight:bold'><o:p> </o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:0;height:40.9pt">
+<td style="width:85.7pt;border:solid #A8D08D 1.0pt;
+  mso-border-themecolor:accent6;mso-border-themetint:153;border-top:none;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-top-themecolor:accent6;
+  mso-border-top-themetint:153;mso-border-alt:solid #A8D08D .5pt;mso-border-themecolor:
+  accent6;mso-border-themetint:153;background:#E2EFD9;mso-background-themecolor:
+  accent6;mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top" width="114">
+<p class="MsoNormal" style="mso-yfti-cnfc:68"><span style='font-family:"Arial",sans-serif;
+  color:black;mso-color-alt:windowtext'>Lack of awareness of transportation options   and infrastructure improvements</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+<td style="width:135.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;mso-border-bottom-themecolor:accent6;
+  mso-border-bottom-themetint:153;border-right:solid #A8D08D 1.0pt;mso-border-right-themecolor:
+  accent6;mso-border-right-themetint:153;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-top-themecolor:accent6;mso-border-top-themetint:153;mso-border-left-alt:
+  solid #A8D08D .5pt;mso-border-left-themecolor:accent6;mso-border-left-themetint:
+  153;mso-border-alt:solid #A8D08D .5pt;mso-border-themecolor:accent6;
+  mso-border-themetint:153;background:#E2EFD9;mso-background-themecolor:accent6;
+  mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top" width="181">
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:17.85pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1;mso-yfti-cnfc:
+  64"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:
+  Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>           </span></span></span><!--[endif]--><span style='font-family:"Arial",sans-serif;
+  color:black;mso-color-alt:windowtext'>Hand-delivered customized resource   toolkits</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:17.85pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1;mso-yfti-cnfc:
+  64"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:
+  Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>           </span></span></span><!--[endif]--><span style='font-family:"Arial",sans-serif;
+  color:black;mso-color-alt:windowtext'>Personalized support and transportation   information through e-newsletters and social media</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+  margin-left:17.85pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1;mso-yfti-cnfc:
+  64"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:
+  Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>           </span></span></span><!--[endif]--><span style='font-family:"Arial",sans-serif;
+  color:black;mso-color-alt:windowtext'>Increased the capacity of community   partners to communicate the benefits of transportation options</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes;height:40.9pt">
+<td style="width:85.7pt;border:solid #A8D08D 1.0pt;
+  mso-border-themecolor:accent6;mso-border-themetint:153;border-top:none;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-top-themecolor:accent6;
+  mso-border-top-themetint:153;mso-border-alt:solid #A8D08D .5pt;mso-border-themecolor:
+  accent6;mso-border-themetint:153;padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top" width="114">
+<p class="MsoNormal" style="mso-yfti-cnfc:4"><span style='font-family:"Arial",sans-serif'>Inertia   to change habits<o:p></o:p></span></p>
+</td>
+<td style="width:135.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;mso-border-bottom-themecolor:accent6;
+  mso-border-bottom-themetint:153;border-right:solid #A8D08D 1.0pt;mso-border-right-themecolor:
+  accent6;mso-border-right-themetint:153;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-top-themecolor:accent6;mso-border-top-themetint:153;mso-border-left-alt:
+  solid #A8D08D .5pt;mso-border-left-themecolor:accent6;mso-border-left-themetint:
+  153;mso-border-alt:solid #A8D08D .5pt;mso-border-themecolor:accent6;
+  mso-border-themetint:153;padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top" width="181">
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:17.85pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>           </span></span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Supportive   bike rides, group walks, and transit adventures<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+  margin-left:17.85pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>           </span></span></span><!--[endif]--><span style='font-family:"Arial",sans-serif'>Increased   the capacity of community partners to host transportation events<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Mode share, mode shift, and mode frequency were all measured before and after implementation to evaluate program effectiveness. In addition to reported changes in transportation behavior, changes in confidence and awareness are also collected.</p>
+<p>Mode share was based on data from the American Community Survey from the U.S. Census Bureau.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Smart Trips Austin averaged a participation rate of 5-10% of households contacted, a 5-10% reduction in drive-alone trips among participants (about 41,000 vehicle trips per year), and a corresponding 5-10% increase in active and shared trips.</p>
+<p>Assuming sustained behavior change, the program spent $1.50 per vehicle trip taken off the road over a five year period, with a one-time cost of approximately $22 per target area household.</p><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Author and Landmark Designation</strong></p>
+<p>This case study was compiled in 2022 and 2023 by Jay Kassirer. The program described in this case study was designated in 2023. Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff, and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Aaron Gaul, UrbanTrans</li>
+<li>Nathalie Lapointe, Federation of Canadian Municipalities</li>
+<li>David Levinger, Mobility Education Foundation</li>
+<li>Nicole Roach and Charlotte Estey, Green Communities Canada</li>
+<li>Jessica Roberts, Alta Planning + Design</li>
+<li>Lisa Kay Schweyer, Foursquare ITP</li>
+<li>Phil Winters, CUTR and the University of South Florida</li>
+</ul>
+<p>See also</p>
+<p class="MsoNormal"><a href="http://www.austintexas.gov/edims/document.cfm?id=346962">http://www.austintexas.gov/edims/document.cfm?id=346962</a><o:p></o:p></p>
+<p class="MsoNormal"><a href="http://storymaps.arcgis.com/stories/1af8a2821738434b9e9db8f8e5e3366e">http://storymaps.arcgis.com/stories/1af8a2821738434b9e9db8f8e5e3366e</a></p>
+<p><a href="https://youtu.be/7ZSNV-qpYAw" target="_blank">https://www.youtube.com/watch?v=7ZSNV-qpYAw</a></p>
+<p><a href="https://youtu.be/m0w77jbz3f0" target="_blank">https://youtu.be/m0w77jbz3f0</a></p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

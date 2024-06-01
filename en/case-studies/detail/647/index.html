@@ -1,0 +1,316 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Opower</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>10 Minnesota utilities (other state utilities and some in the U.K. also partner with Opower)</li>
+<li>Honeywell</li>
+<li>Natural Resources Defense Council</li>
+<li>Facebook</li>
+<li>U.S. Postal Service</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>$6 million (US) annually on home  energy bills and more than 107 GWh of electricity saved.</li>
+<li>By 2011, the Opower program (including all of the partner utilities in the U.S. and in the U.K.) had saved more than 690 gigawatt hours.</li>
+</ul>
+<p> </p>
+<ul>
+<li><a href="/userfiles/Opower Landmark Case Study 2012.pdf" target="_blank">PDF</a> of Case Study</li>
+<li>Webinar <a href="/userfiles/Opower Transcript.pdf" target="_blank">Transcript</a> </li>
+</ul><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Opower’s Home Energy Report, Minnesota</h1>
+<p>This program is a great example of the use of ongoing individualized feedback and prompts, coupled with norm appeals. Opower helps individual utility companies to send customized home energy use feedback reports to their residential utility customers. The full-colour reports include a comparison with other similar households, offer tips and strategies to reduce energy use, and provide seasonal energy consumption information. A web portal offers personalized insights and tips, and tools for choosing an optimal energy rate plan. In addition, Opower offers utilities the opportunity to send text messages directly to customers to alert them when their energy consumption is high and offer ways to reduce it. Updated as of October, 2014.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>To minimize site maintenance costs, all Tools of Change case studies are written in the past tense, even if they are ongoing – as is the case with this particular program.</em> </p>
+<p>Opower is an energy information software company that partners with utilities in the United States and overseas. Using its proprietary communications software, Opower helps electric and natural gas utilities connect with their residential customers in a targeted manner through customized home energy reports.</p>
+<p>This case study showcases the results of home energy reports delivered to the residential customers of Minnesota utilities. Reports are sent monthly, bi-monthly or quarterly and include: 1) an Action Module that shows a household exactly how much energy it currently uses, and where and how it can reduce usage, and 2) a Comparison Module that shows the household how its energy use compares to neighbors (each household’s energy consumption is compared to that of its 100 nearest geographical neighbours in houses with similar square footage and heating type).</p>
+<p>In 2009, Opower contracted with its first Minnesota utility to provide home energy reports; as of August 2011, Opower had 10 of the state’s utilities under contract.</p>
+<p>Part of the rationale for utilities to partner with Opower was state legislation (in Minnesota and several other U.S. states) requiring utilities to reduce electricity demand. In the State of Minnesota legislation required investor-owned utilities to achieve 1.5% of energy savings. Customers were charged a small surcharge per unit of energy that was invested into conservation programs.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>In an initial evaluation of customers’ energy habits, Opower found that a household’s electricity consumption was influenced by three main things: </p>
+<ol>
+<li>Households derived satisfaction from being shown to be more frugal than their neighbours.</li>
+<li>Consumers perceived energy conservation as a public good that reduces GHG emissions.</li>
+<li>People were more likely to adopt certain behaviours if they felt that others were doing so as well.</li>
+</ol>
+<p>To develop its home energy reports, Opower first extracted electricity usage information (received directly from the utility) and demographic information from several different data sources. An energy use baseline was then derived from data on each household’s energy consumption over a 12-month period.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Home energy reports were sent to customers monthly, bi-monthly, or quarterly, at the utility’s discretion. In general, the Opower program was aimed at single-family residences. “In a few locations we tested the impact for multi-family residences and found that the percentage of savings was roughly the same,” said Bufford.</p>
+<p>The full-colour report included the comparison with other similar households, offered tips and strategies to reduce energy use, and provided seasonal energy consumption information. (<em>Norm Appeals; Vivid, Credible, Personalized, Empowering Communication</em>) Households that had high energy consumption during the summer, for example, received suggestions specific to air conditioning, using ceiling fans and blinds, etc.</p>
+<p>Bufford explained that customers not only liked the normative comparison to homes that were similar to theirs, they also, in some cases, wanted to compare their energy use against that of friends and family members in other parts of the country. (<em>Norm Appeals</em>)</p>
+<p>“One of the ways we did that was to bring energy-efficiency information into the social media realm,” he said. “Opower partnered with the Natural Resources Defense Council and with Facebook to develop an application that presents energy-efficiency information, linkages and comparisons. That, in turn, created a public discourse about energy efficiency within social networks.” (<em>Word-of-Mouth Promotion</em>).</p>
+<p>As noted above, Opower worked with behavioural scientists to craft the home energy reports. “Dr. Cialdini warned us that folks on both ends of the energy spectrum—the very high users and the very low users—would migrate to the middle, so low users might begin to use more,” Bufford recalled.</p>
+<p>Opower combated this by using an injunctive norm to strengthen the descriptive one; they assigned a positive value to the behavior of using less energy. If someone was a low energy user, for example, Opower congratulated them and acknowledged their behavior. (<em>Feedback</em>) “We were able to offset the risk of over-achievers migrating back to the centre,” said Bufford.</p>
+<p>Sucheta Lakhani, Opower’s Engagement Manager, said that the real value of the home energy reports was the amount of personalized and customized information given to customers.</p>
+<p>“We received millions of pieces of data from all the utilities and were able to take that data and do something very personal for each customer,” she said. “Specifically, we were able to provide that normative comparison that allowed customers to contextualize and understand their usage. People got a better of sense of what they were doing and how they could save more energy.”</p>
+<p>Opower noted that most of its partner utilities had energy-efficiency initiatives that complemented the home energy reports (e.g., rebate programs for energy-saving products, appliance recycling programs and home energy audits). Once customers received their first reports, therefore, utilities had the option of contacting them to determine what energy-efficiency measures they had taken. (<em>Building Motivation Over Time</em>)</p>
+<p>Utilities also had the option of integrating their website with Opower’s web portal (Opower Marketplace) to offer customers even more insights to customers about their home energy use. The site included tools that allowed users to choose the optimal energy rate plan for their lifestyle and individualized energy-efficiency tips. Opower also offered utilities the opportunity to send text messages directly to their customers to alert them when their energy consumption was high and to offer ways to reduce it. (<em>Building Motivation Over Time; Feedback</em>)</p>
+<p>Lakhani said that the Opower Marketplace web portal was “where we took it to the next level.” In addition to the energy-efficiency tips, the site allowed customers to craft a personalized energy-savings plan. “The site was also set up to send reminders to make sure that customers continued to follow their plan,” said Lakhani, “and provided varying looks at their usage so that they got a better sense of where they were actually using energy.” (<em>Building Motivation Over Time; Prompts</em>) </p>
+<p>Opower Marketplace also provided customers with coupons for energy-reducing products. The first such coupon offered was for cold water laundry detergent; other coupons were available for products from such retailers as Home Depot. The coupons’ barcodes allowed Opower and its partner utilities to track exactly who had adopted the measures.</p>
+<p>“The coupons offered a quick and cost-saving way for customers to actually complete an action we were asking of them,” said Lakhani. (<em>Financial Incentives</em>)</p>
+<p><b>CenterPoint Energy</b></p>
+<p>CenterPoint Energy, a natural gas and electric utility based in Texas, but with customer service outlets in Minnesota, began its partnership with Opower in 2009 and launched its program in 2010.</p>
+<p>“We had 125,000 natural gas customers receiving the reports in Minnesota. We did a staged rollout with 75,000 customers in 2010 and then added 25,000 customers incrementally to those in 2011 and 2012,” said Todd Berreman, who works with CenterPoint’s conservation improvement programs. “We were one of the early adopters of Opower in our marketplace and were one of the very first to launch the reports on a large scale.”</p>
+<p>Berreman noted that the company had recently added the home energy use reports to its customers in the Arkansas and Oklahoma regions. In the latter state, 30,000 reports were sent to customers in 2011.</p>
+<p>Berreman said that the use of the home energy reports fed back into their own messages to their customers. For example, CenterPoint used the reports to promote their home energy audits. The company offered a $100 home energy audit that included a blower door test and infrared thermal imaging of the home.</p>
+<p>“Before we sent that message out on the reports we were normally getting about 20 to 25 requests a day,” noted Berreman. “Afterwards, requests doubled, up to 50 or 60 requests per day.” Berreman reported that CenterPoint Energy’s other residential energy-efficiency programs received a similar boost as a result of the reports.</p>
+<p>“In the tips portion of the report we always offered opportunities for things such as low-flow shower heads, water heater rebates, heating system rebates, etc.,” he said. “It directed the people who were receiving the reports to our energy-efficiency website and then customers could toggle back and forth between our site and Opower’s to get all the information required to submit one of those rebates.”</p>
+<p>Lakhani said that Opower’s other utility partners had similar experiences. “We saw anywhere in the range of a 20% to an over 60% increase in program participation for report recipients. All of them got that same positive uplift as an affect of the home energy report programs.”</p>
+<p>CenterPoint’s experience confirmed what Opower had discovered in it is initial research.</p>
+<p>“Having more touch points increases energy-efficiency savings,” said Bufford. “When sending out e-mails we looked for more places where consumers might want to interact with their utility or with their friends and neighbors about energy.”</p>
+<p><strong>Financing the Program</strong></p>
+<p>In Minnesota, a surcharge on customer bills (per unit of energy) was used to finance conservation programs. “In the U.S., most of our programs were directly funded through the utilities’ conservation programs,” said Lakhani.</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Each home energy use report was triple verified for accuracy. Opower’s methodology and results were also independently verified by leading industry analysts and non-profit organizations, including the American Council for an Energy-Efficient Economy (ACEEE), The Brattle Group, Navigant Consulting, Power Systems Engineering, KEMA, Environmental Defense Fund (EDF), as well as by established academics from several leading institutions.</p>
+<p>Lakhani reported that Opower’s approach to measuring behavioural efficiency had been accepted by a variety of different state-level public utility commissions endorsed by the ACEEE.</p>
+<p>“Opower is dedicated to a clearly defined measurement and verification approach,” said Lakhani. “We recognized early on the importance of measurable, verifiable energy savings and we approached our experimental design using best practices from other industries.”</p>
+<p>She explained that Opower created a group of all eligible customers, targeted those households, and then randomly allocated them to a control group or a task group, which were considered statistically equivalent. The task group received reports and the control group did not.</p>
+<p>“Over time, we measured the difference in energy use between the customers who got reports and the ones who didn’t,” she said. “Although every single house is unique, when aggregated together in groups of tens of thousands, those individualities bled together and we could measure the savings with a very tight statistical relevance.”</p>
+<p>An in-depth evaluation of the program was published in early 2010 and updated in early 2011. Approximately 600,000 households were involved in the evaluation (half received the report; half were in a control group). After receiving the reports, households with the highest energy consumption before the program began conserved substantially more (6.3%) than those whose baseline consumption was relatively low.</p>
+<p>The study attributed this to two reasons: 1) there were greater conservation opportunities in high energy-using households and 2) low-consumption households had already taken steps to reduce electricity consumption.</p>
+<p>The evaluation recommended, therefore, that targeting households with higher than average consumption would improve the program’s overall cost effectiveness. In fact, it was estimated that if the program were targeted to the highest-consuming households, the cost to utility companies per kilowatt-hour conserved would be reduced by about 44%. Households that received the report quarterly, rather than monthly, conserved less energy, suggesting that households that received more reports had a greater chance of acting on the contents.</p>
+<p>Bufford said that, because Opower saw increases in energy efficiency year over year, the maximum savings level had likely not yet been reached.</p>
+<p>“Consumers tend to find new ways to save over time. They start to understand additional technology and so they all tend to become more efficient,” he said. “Also over time, as the program changed, that allowed us to innovate on an ongoing basis. We are always finding new ways of presenting information and opportunities and delivering the information through different channels. That helps to sustain and increase the level of savings. We anticipate that the savings will be there for a very long time.”</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Since the partnership between Opower and its first Minnesota utility began in 2009, Minnesota households had saved more than $6 million (US) annually on their energy bills and more than 107 GWh of electricity. In 2010, 6% of the more than two million households in Minnesota received the reports; Opower estimated that if one-quarter of all Minnesota households received the reports, more than $21 million in electricity costs could be saved.</p>
+<p>By 2011, the Opower program (including all of the partner utilities in the U.S. and in the U.K.) had saved more than 690 gigawatt hours.</p>
+<p>In surveys conducted by Opower, households were asked to self-report changes in energy consumption. The most frequently reported changes were to everyday usage behaviours (e.g., turning off lights, unplugging appliances, adjusting thermostats, closing blinds, etc.)</p>
+<p>Other survey results found that:</p>
+<ul>
+<li>83% recognized the Opower name and remembered receiving a home energy report</li>
+<li>73% read the report completely and 74% took action after seeing the report</li>
+<li>64% agreed that the report helped them make better energy decisions and 69% believed that the reports should be sent to all customers</li>
+<li>86% reported that they were satisfied with their utility’s partnership with Opower</li>
+<li>Greater than 60% of those surveyed had shared the information with friends and relatives.</li>
+</ul>
+<p>On average, customers whose electrical utilities partnered with Opower saw energy savings ranging between 2% and 4% and those savings had remained consistent over several years.</p>
+<p>“Across the board, regardless of income, demographics, or any kind of political affiliations, we aren’t seeing that much of a difference in terms of savings,” said Lakhani.</p>
+<p>In addition, Todd Berreman reported that, through its research with JD Power (a global market research company), consumers who were aware of and occasionally participated in energy-efficiency programs attained energy savings three times higher than those people who were unaware of their energy use.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Josh Bufford <br/>
+Director of Client Solutions<br/>
+Opower <br/>
+703 778 4544</p>
+<p>Sucheta Lakhani<br/>
+Engagement Manager<br/>
+Opower<br/>
+703 778 454</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Update as of October, 2014</strong></p>
+<p>The blog posting at <a href="https://blog.opower.com/2014/11/home-energy-reports-research-3-charts/" target="_blank">https://blog.opower.com/2014/11/home-energy-reports-research-3-charts/</a> provides some interesting updates as of October, 2014.</p>
+<p>The behavioral impact of Home Energy Reports can be observed immediately. Then, “recipients’ daily electric savings begin to ‘backslide’ after a couple weeks of receiving a given report ... Of note, the authors point out that this ‘backsliding’ effect becomes less prominent as recipients become more accustomed to the reports, and that after four reports, the backsliding effect becomes negligible” and ...”households that continue to receive reports (black curve) demonstrate incremental energy savings.” However, “a discontinuation of (these) personalized guidance and nudges causes a gradual erosion of energy efficient behavior.” ...  “Sustained Home Energy Report programs do more than drive incremental energy savings over time; they also prevent a savings decline that would happen if a program were halted.”   </p>
+<p><strong>Landmark Designation</strong></p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Devin Causely, Federation of Canadian Municipalities</li>
+<li>Melissa Klein, US EPA’s ENERGY STAR® Program</li>
+<li>Arien Kortland, BC Hydro</li>
+<li>Doug Mckenzie-Mohr, McKenzie-Mohr Associates</li>
+<li>Edward Vine, Lawrence Berkeley National Laboratory</li>
+<li>Dan York, ACEEE</li>
+</ul>
+<p><strong>Lessons Learned</strong></p>
+<p><em>The ideal delivery system</em></p>
+<p>One of the initial challenges that Opower faced was printing and delivering the full-colour, personalized reports. Opower developed a proprietary PDF scripting engine to allow every report to be rendered in less than 0.6 seconds, the rate necessary to keep high-powered printers working at optimal cost effectiveness.</p>
+<p>“We would prefer not to send truckloads of mail in order to drive energy efficiency, but one of the realities of delivering messages that are useful for families to consume is that you need to give it to them, at least occasionally, in a format that can be easily shared,” said Bufford. “Over time, however, our messaging will migrate more and more towards electronic delivery.”</p>
+<p>Opower’s goal was to ensure that their messages were delivered to the right recipient expeditiously and in a low-impact way.</p>
+<p>To do that, Opower partnered directly with the U.S. Postal Service to ensure that they had the best and most up-to-date addresses for the delivery of the home energy reports.</p>
+<p>Opower used recycled paper, soy-based inks, and monitored load factors on trucks to ensure that only full trucks were going out. “We also used a geographic distributed print production model that allowed us to print and produce these materials close to their destination,” noted Bufford.</p>
+<p>Lakhani said that complementing the paper reports with e-mails, “drove energy savings because it continued that engagement with customers and continued that messaging during months when they didn’t receive a paper copy of the report.” She also noted that the e-mails “reminded customers about their energy usage so that they could continue to think about it and make those behavioural changes.”</p>
+<p><em>Privacy issues</em></p>
+<p>Because Opower collected such a wide range of data and information, privacy issues could have become an issue for some customers. Bufford noted, however, that privacy issues were fairly straightforward to deal with.</p>
+<p>“Opower works as a service provider to utilities so all of the data that we collect through the utility channel continue to belong to the utility,” he said. “For example, with respect to the coupon programs, people opt into those. When they redeem the coupon they are opting into using that tracking method in order to get their instant rebate.”</p>
+<p>Opower has also published the data security and privacy standards that they adopted.</p>
+<p><em>Opt in vs. opt out</em></p>
+<p>Opower chose to adopt an “opt-out” philosophy for the home energy reports. In other words, customers were automatically enrolled in the program unless they chose not to participate (i.e. opted out of it).</p>
+<p>“Achieving scale takes a lot longer with an opt-in program, where people have to choose to participate; I suspect that not nearly as many of these people would have participated,” said Bufford. “We were able to turn on 125,000 residents for CenterPoint Energy fairly quickly in about a matter of 90 to 120 days by doing an opt-out program.”</p>
+<p>He further noted that opt-in programs inevitably end up with a natural bias (people who are already motivated to change their behaviour or seek information on energy use tend to make up the majority of program users.)</p>
+<p>“Running it as an opt-out program created a very clean method for measurement and verification, which we need to report to state regulators, among others.”</p>
+<p><em>Programmable thermostats</em></p>
+<p>Programmable thermostats also proved to be a challenge.</p>
+<p>“The problem was that the thermostats were difficult to program and even our partners at Honeywell agreed that building in a strong user interface had been difficult,” Bufford explained. Opower entered into a joint venture with Honeywell to re-imagine the user interface behind the thermostat.</p>
+<p>“In our research we saw that 81% of consumers left the HVAC on when they were away, both in the cooling and heating periods,” said Bufford. Opower also determined that more than half (53%) of customers never actually programmed their programmable thermostat in the first place.</p>
+<p>“The way that we deployed this technology with CenterPoint, and with other utilities, was to create a new user interface that allowed consumers to have a pre-set efficient program, and then provided feedback and control through the web interface, smart phones and the thermostat device in the wall.”</p>
+<p>With these changes, Bufford anticipated that energy-efficiency savings would increase by 20% on cooling, 15% on heating, and 15% on fan load.</p>
+<p> </p>
+<p>This case study was written in 2012 by Jay Kassirer and Sharon Boddy.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

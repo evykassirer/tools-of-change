@@ -1,0 +1,273 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>TransLink</p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Business Community</li>
+<li>Municipalities</li>
+<li>Schools</li>
+<li>NGOs</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Employer Pass Program</p>
+<ul>
+<li>Drive-alone trips by participants dropped by 14% </li>
+</ul>
+<p>TravelSmart Individualized Marketing pilot:</p>
+<ul>
+<li>Walking increased by 9%.</li>
+<li>Public transportation increased by 12%</li>
+<li>Bicycling increased by 33%</li>
+<li>Trips made by driving alone dropped by 8%.</li>
+</ul>
+<p> </p>
+<p><strong>Video and Downloads</strong></p>
+<p><a href="/userfiles/TransLink TravekSmart - July 8 2010.pdf">Case Study</a> PDF</p>
+<p><a href="http://cullbridge.na3.acrobat.com/p21161885/">Video</a> of webinar on the Individualized Marketing pilot </p>
+<p><img alt="" complete="complete" height="55" src="/userfiles/Image/TravelSmart-ID with TL.jpg" width="200"/></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>TransLink's TravelSmart Program</h1>
+<p>TransLink’s TravelSmart program helps businesses and residents of Metro Vancouver make smart travel choices and reduce the number of trips made by driving alone. It includes an Employer Pass Program, ridesharing, car share (including corporate car share), active transportation, parking management, guaranteed ride home, and telework, all supported by strong promotion. This case study also reports on TransLink’s individualized marketing pilot, which was designated Landmark status in 2008.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing – as is the case with this particular program. </em></p>
+<p>TransLink’s TravelSmart program was first developed and refined as an in-house program and rolled out to other employers in the region. TravelSmart evolved from the <a href="http://toolsofchange.com/en/case-studies/detail/28">Greater Vancouver Regional District's Employee Trip Reduction Program</a> (1996) and replaced the <em>OnBoard</em> program (in 2009).</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Employee surveys and other market research found that two critical factors motivated people to take a particular travel mode, or influenced them to try another: time and money – with time being the most important. While environmental concerns were important, they were not strong enough on their own to change driving behaviours.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The TravelSmart program included promotion and delivery of a variety of initiatives.</p>
+<p>1. The <strong>Employer Pass Program</strong> discounted annual transit passes by approximately 15% for employees of participating companies. Payment for the pass was facilitated through payroll deduction by the employer. Employers often chose to provide an additional subsidy for employees. Heavily discounted transit passes helped participating employers attract new hires, while demonstrating commitment to corporate environmental responsibility (<a href="http://toolsofchange.com/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentive</a>s).</p>
+<p>The pass was valid for travel throughout the year, and pass holders could travel on transit with an additional five family members (1 adult and 4 children) on Sundays and statutory holidays with their employer pass, at no extra charge.</p>
+<p>It was generally the Employer Pass Program that got TransLink ‘in the door’ at each worksite - whether or not TransLink approached the employer or was contacted by the company or its employees (<a href="http://toolsofchange.com/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p>To get employees to involve their workplaces, one advertising ‘call to action’, posted at all SkyTrain stations for a couple of years, was to “Ask Your employer how you can get a discounted transit pass” (<a href="http://toolsofchange.com/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>; <a href="http://toolsofchange.com/en/tools-of-change/word-of-mouth/">Word of Mouth</a>).</p>
+<p>Once a company signed on (<a href="http://toolsofchange.com/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>), a company Coordinator attended a training session covering how to administer the program within the company, as well as all other TravelSmart options.</p>
+<p>2. <strong>Ride-sharing</strong> was delivered through the website www.ride-share.com. This free online ride-matching service helped people find others with similar work schedules (<a href="http://toolsofchange.com/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>Each commuter could use his or her own vehicle, ride in someone else’s, or find a seat in a vehicle supplied at ride-share.com. TransLink provided ongoing funding support for the program, and led the annual TransLink Ride-Share Week. Formal car and vanpooling was also offered through the site.</p>
+<p>3.<strong> Car Sharing for Business and Individuals</strong>. Metro Vancouver had two car sharing agencies: The Co-operative Auto Network and Zip Car; TransLink’s TravelSmart Program sponsored the launch of The Company Car with The Co-operative Auto Network, and promoted both agencies through employer outreach and online ads.</p>
+<p>Corporate Car Sharing was positioned as a great way for companies and individuals to gain access to a vehicle when needed, without the ongoing costs of owning and maintaining a car or a fleet of vehicles. It also saved money on taxis, and parking. The program allowed the use of sustainable modes of transportation (like transit, walking or cycling) for most trips. Car share vehicles were stationed in residential neighbourhoods, as well as in the downtown core. (<a href="http://toolsofchange.com/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>4. <strong>Active Transportation</strong> - Cycling skills workshops and region-wide events such as Bike to Work Week and Bike Month (June) were promoted as events to try cycling to work, and celebrate cycling as a travel choice. TransLink sponsored Bike to Work Week, held each year in May and November, and consulted with employers to create facilities such as secure bike parking and showers to facilitate more cycling and walking. Walking was also encouraged as a smart travel choice and tips were provided on how to include walking in everyday activities (<a href="http://toolsofchange.com/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>; <a href="http://toolsofchange.com/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>;<a href="http://toolsofchange.com/en/tools-of-change/communication/">Vivid, Personalized, Credible, Empowering Communication</a>).</p>
+<p><strong>5. Parking Management</strong> strategies were promoted as another way employers and property managers could affect travel choices by staff and visitors. These strategies included converting free parking to pay parking, creating preferential parking for employees who rideshared, and providing equitable transportation allowances (<a href="http://toolsofchange.com/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>; <a href="http://toolsofchange.com/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>).</p>
+<p>6. The <strong>Guaranteed or Emergency Ride Home </strong>initiative provided participating employers with a program template to assist employees who commuted using sustainable transportation (transit, cycling, walking ridesharing), to get home in the event of an emergency, unexpected longer working hours or when their shared ride was not available (<a href="http://toolsofchange.com/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>7. <strong>Teleworking,</strong> or working from home (anywhere from one to five days a week) enabled employees to avoid commuting some of the time. It was positioned as benefitting employers, employees, and the environment, as increasing employee productivity and reducing absenteeism, and as being a standard element in Emergency Preparedness Plans. TransLink worked with businesses to establish a teleworking program at their worksites and conducted a Telework Pilot Project in 2008.</p>
+<p>8. <strong>Park and Ride</strong> - TransLink offered 22 park and ride sites in Metro Vancouver; all connected with a major bus loop or SkyTrain station (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p><strong>Promotion - </strong>TransLink promoted and marketed the TravelSmart program through a variety of strategies: e-blasts to employers, mailing information packages to employers, making presentations, assisting with employee surveys and lunch and learn sessions. It advertised in business papers and magazines, local newspapers, Captivate television screens in building elevators, direct e-blasts to employers, on-line advertising with agencies such as CBC, Telus.com, Google.com, as well as digital screens and banners in SkyTrain stations.</p>
+<p>TransLink also hosted and attended transportation fairs at business and office parks, and participated in trade shows (such as BC Business Top 100 Employers Lunch).</p>
+<p>The employers reached through such initiatives then contacted the TravelSmart program for assistance in implementing programs at their worksites. A number of e-tools were also used for promotion and outreach (media) such as website, blog, Buzzer, twitter.</p>
+<p>In addition, TransLink checked on a regular basis through business papers for new businesses moving into Vancouver or the region and sent them program information.</p>
+<p> <strong>Individualized Marketing Pilot</strong></p>
+<p>In 2005/2006, as part of Transport Canada’s UTSP, TransLink piloted Socialdata’s very successful individualized marketing program in six unique neighbourhoods. After segmenting households, those that wanted to increase the number of trips made by walking, cycling or transit received a combination of generic and customized information, incentives, and rewards to assist them in meeting their goal, including in-person or telephone assistance if they wished. Working one on one with households, and covering the full range of trips, the results were similar to the experience in Europe, Australia and the United States. For more details see the <em>Video and Downloads</em> section in the summary bar at the top left of your screen.</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Measurement Methods included trip diaries, surveys, <em>TransLink Listens</em> (a web portal for customer comments), ride-share statistics, and updates from car sharing companies on new clients.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<ul>
+<li>Employees who joined the Employer Pass Program (22,000 in total in 2010) reduced their number of drive-alone trips by an average of 14%. </li>
+<li>During the TravelSmart individualized marketing pilot, the use of sustainable modes of transportation increased substantially. Among program participants, walking and the use of public transportation increased by 9% and 12%, respectively, while bicycling showed an even bigger increase of 33%. Trips made by driving alone dropped by 8%.</li>
+<li>TransLink’s Ride-Share Week in 2009 resulted in:
+    <ul>
+<li>1700 new ride-share.com registrants (89% increase over 2008)</li>
+<li>160 new ride-share groups (60% increase over 2008)</li>
+<li>30 new company sub-site sign-ups (50% increase over 2008)</li>
+<li>150 new TransLink Ride-Share Week Coordinators</li>
+</ul>
+</li>
+<li>TransLink Trip Diary results in 2009 indicated that Metro Vancouver residents had made fewer trips in all, over the past four years, which might have been due to a combination of several factors, including a downturn in the economy, high fuel prices, and the impact of transportation demand management strategies.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>travelsmart@translink.ca<br/>
+(604) 216 - 3299<br/>
+<a href="http://www.translink.ca">www.translink.ca</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Key factors related to behaviour change:</p>
+<ul>
+<li>Time and money were the main motivators</li>
+<li>Geting information out using a variety of media</li>
+<li>Getting support of employers – tying into business objectives/company philosophy, and relationship management with employers/businesses</li>
+<li>Providing a good product and continuing to improve transit service levels</li>
+<li>Having consistent messaging under the TravelSmart brand</li>
+</ul>
+<p>TravelSmart’s initiatives were driven by TransLink’s Transport 2040 Goals for the entire region, including the following:</p>
+<ol>
+<li>Greenhouse gas emissions from transportation are aggressively reduced, in support of federal, provincial and regional targets;</li>
+<li>Most trips are by transit, walking and cycling;</li>
+<li>The majority of jobs and housing in the region are located along the Frequent Transit network</li>
+<li>Traveling in the region is safe, secure and accessible for everyone</li>
+<li>Economic growth and efficient goods movement are facilitated through effective management of the transportation network;</li>
+<li>Funding for TransLink is stable, sufficient, appropriate and influences transportation choices.</li>
+</ol>
+<p>This case study was written in June 2010 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/work-programs-that-influence-the-home/">Work Programs that Influence the Home</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>Ride Amigos and the City of Santa Monica. </p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Participating businesses</li>
+<li>Advocacy organizations</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>In 2015, one in five participants increased from cycling once a week to cycling three times a week during the Bike Month challenge, and this habit remained in place during the two weeks following the challenge.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>CommuteSM</h1>
+<p>CommuteSM is Santa Monica’s Transportation Management Association, formed pro bono in 2012 by RideAmigos. In collaboration with the City of Santa Monica, CommuteSM launched Santa Monica’s first-ever Commuter Challenge in 2015 (April 1 to September 1). This challenge encouraged residents and employees in Santa Monica to bike, carpool/vanpool, ride transit, or walk to work, instead of driving alone.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong>Note:</strong> <em>To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program</em></p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Using information from previous surveys, the program targeted companies that were not achieving their AVR (average vehicle ridership)and were ripe for improvement.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>CommuteSM ran a city-wide challenge to create playful inter &amp; intra-company competition. It partnered with advocacy organizations to cross-market and collaborate on community events. It also promoted directly to employees through various outreach events and channels such as: Bike to Work Day Pit Stop, Earth Day events, tabling at highest frequented transit stops, kick off breakfasts, office parks, lunch-n-learns, group walks, and targeted email marketing. (<em>Building Motivation Over Time</em>)</p>
+<p>The program made interaction a key part of its marketing strategy-- teams did a number of activities together, such as group walks and Bike to Work Day pit stops. (<em>Norm Appeals; Vivid, Personalized, Credible, Empowering Communication</em>)</p>
+<p>Using information from previous surveys, it targeted companies that were ripe for improvement, tailored messaging for each, and bolstered the argument that employees at each company would want to participate in the challenge. However, in many cases there was insufficient buy-in from the Employee Transportation Coordinators within these targeted companies.</p>
+<p>With every logged trip, participants were automatically entered into weekly drawings for donated prizes such as gift cards from local merchants. (<em>Financial Incentives</em>) In addition, at the conclusion of each month, individuals with the highest CO2 reductions from the monthly mode were recognized, along with the company having the greatest rate of employee participation. (<em>Feedback and Recognition</em>)</p>
+<p>The program tailored its messages by mode, focussing primarily on health benefits for walking/biking, on environmental savings for carpooling, and on regained time for transit.</p>
+<p>Timeline</p>
+<ul>
+<li>April:  incentivizes for general trip logging</li>
+<li>May: focus on cycling</li>
+<li>June: focus on carpooling/vanpooling</li>
+<li>July: focus on public transportation</li>
+<li>August: focus on walking</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Impact measurement was based on self-reported trip data. To triangulate (strengthen confidence in) the data, the program used data from both (1) trip logs and (2) post-campaign surveys.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>In 2015, one in five participants increased from cycling once a week to cycling three times a week during the Bike Month challenge, and this habit remained in place during the two weeks following the challenge.</p>
+<p>2015</p>
+<ul>
+<li>Trips logged: 1770</li>
+<li>CO2 saved: 3.362 tons</li>
+<li>Distance logged:  10,717.8 miles    [miles/ dollar spent: 1.6 miles/ $]</li>
+<li>Money saved through commute mode switch: $3,502.47</li>
+<li>Calories burned: 272,256</li>
+<li>Participants: 73</li>
+<li>Companies engaged: 22</li>
+<li>Program cost: $6,665.7</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Ma’ayan Dembo<br/>
+CommuteSM<br/>
+<a href="mailto:maayan@commutesm.com?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website.">maayan@commutesm.com</a><br/>
+(650) 804-6256</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>This program used the <a href="http://rideamigos.com/" target="_blank">Ride Amigos </a>online platform, which was designed to build engagement.</p>
+<ul>
+<li>The interface “gamified” commuting with leaderboards, shareable virtual badges (via Facebook and Twitter), prizes, and the rewarding of egos.</li>
+<li>Users could plan trips and choose the best commuting options. When combined with Esri’s ArcGIS mapping technology, the Trip Planner function displayed transportation options between any two given points in the city, with estimated time and length of trip.</li>
+<li>Users could rapidly log trips directly in the system through an easy to use calendar interface, and trip logging tool. They could then compare how they and their teams ranked at a glance, and view trip history.  They could also see their accrued CO2, monetary, and caloric savings through their alternative trips.</li>
+<li>Team captains could see how their teams were doing in real time and can then spur on their teams to victory for the various trophies and monetary prizes at stake.</li>
+</ul>
+<p>The system produced detailed administration reports, mapping &amp; visualization based on each region’s needs, and infrastructure. It also tracked trip information and generated data-rich maps of commuter habits that could be used in marketing and promoting alternative commuting methods, and in making more informed transportation planning decisions. For example, data about bike path usage, and about where cyclists were travelling to and from, opened up dialogues to better support cyclists.</p>
+<p>This case study was written by Ma’ayan Dembo and Jay Kassirer in 2015.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

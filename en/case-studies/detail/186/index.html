@@ -1,0 +1,278 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>King County</li>
+<li>Metro Seattle, Washington, USA</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<p>Local non-profit organizations</p>
+<ul>
+<li>Hopelink</li>
+<li>Rainier Chamber of Commerce</li>
+<li>NW Bicycle Alliance</li>
+<li>YMCA</li>
+<li>Feet First</li>
+<li>Flexcar</li>
+</ul>
+<p>Local businesses</p>
+<p>Local cities</p><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>On average, 10% of residents participated and reduced their drive-alone trips by over 20%</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Seattle Neighborhoods In Motion</h1>
+<p>Seattle’s <em>In Motion </em>program uses tantalizing neighborhood prompts followed by direct outreach to engage residents in learning about and trying travel options. King County Metro (KCM) has completed demonstrations in three neighborhoods, and additional demonstrations are now being conducted by several partner cities. It was designed for easy replication, and a program how-to guide is currently being prepared to facilitate implementation by others.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>King County Metro had an established track record working with employers to increase use of commute options other than driving alone. However, over 75% of all trips were not work-related. KCM sought to effect travel choice for the larger segment of trips being made on a daily basis – those discretionary trips, many of which originate from the home end. The In Motion program was designed specifically to address trips being made to the full range of travel destinations, and to work directly with individuals rather than with a representative, such as an employer.</p>
+<p><img alt="" height="387" src="/userfiles/Image/Mapcruzin.JPG" width="450"/>Map courtesy of Mapcruzin.com</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>KCM did not set measurable objectives for the demonstrations. Its objectives were to:</p>
+<ul>
+<li>Test the ability to engage residents in evaluating their travel options;</li>
+<li>Test the ability to influence travel behavior for all types of trips; and</li>
+<li> Develop a replicable program.</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Prior to selecting target neighborhoods, KCM reviewed land use and demographic data, and transit availability and ridership.</p>
+<p>KCM obtained local information on perceptions, barriers, and motivators by:</p>
+<ul>
+<li>Interviewing community and business leaders to learn how best to reach into their community, to understand their concerns and suggestions for the program, and to solicit partners for program implementation; and</li>
+<li>Conducting several guided discussion groups – including both community leaders and “regular” folks.</li>
+</ul>
+<p>During the discussion groups KCM led participants through a process to identify key barriers and motivators, as well as favored communication techniques. From this process, it learned that:</p>
+<ul>
+<li> Key barriers to using various forms of transportation were personal safety and availability of service; and</li>
+<li> Key motivators were personal health benefits and the opportunity to connect with neighbors.</li>
+</ul>
+<p>For its initial demonstrations, In Motion selected neighborhoods with reasonable bus service (30 minute headways all day), sidewalks and access to nearby services. These neighborhoods also had a range of housing type and income levels.</p>
+<p>The target audience was defined as those individuals that could reasonably use an alternative form of transportation for some trips, that were interested in using alternatives modes, and that needed some assistance to get over whatever barrier was keeping them from engaging in this alternative travel behavior. KCM decided to not focus on special needs populations – although they were not excluded if they chose to participate in the program.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>In Motion looked and felt like a community effort – not a government program. KCM incorporated an element of playfulness into program materials to increase interest levels and encourage individuals to take the first step - reading the materials sent to their home.</p>
+<p>The program was launched by placing over 200 prompt posters throughout the neighborhood – primarily on telephone poles along travel corridors (<em>Prompts</em>).</p>
+<p>These posters had simple action phrases promoting alternative travel, such as “Ride Your Bike, Mike”, “Hop on the Bus, Russ” or “Take a Stroll, Nicole”. The only other information on the posters was the program logo, website and phone number. In addition to reminding people to use these travel options, the posters were incredibly successful in generating interest – KCM began receiving web visits and phone calls before it had even delivered its direct mail piece!</p>
+<p><strong>Direct Mail:</strong> Shortly after the posters were placed, KCM mailed a program packet to all residents in the project area. This packet contained a simple brochure designed to incorporate the main motivators gleaned from the initial research – healthy travel and community connections. Also included was a walking map of the neighborhood, a tear-off form by which individuals could request information on specific travel options, a pledge to change their travel behavior, and a notepad to remind them to think about their travel choices. (<em>Obtaining a Commitment, Prompts, Building Motivation Over Time, Overcoming Specific Barriers)</em> Local businesses were invited to sponsor the program by donating goods or services for use as prizes, agreeing to place a program logo slick on their door or window, and placing program brochures at counters.</p>
+<p><strong>Information Requests: </strong>Upon receiving an information request, the materials were punctually packaged for delivery (via post). All respondents received 10 Free Ride Tickets for Metro transit; the first 100 respondents also receiving a free program t-shirt. (<em>Overcoming Specific Barriers, Incentives)</em></p>
+<p><strong>The Pledge:</strong> Individuals were offered the chance to pledge to change two trips a week from drive-alone to any other travel mode. Any individual taking the pledge was enrolled in Club Motion. By reporting their trip changes on a weekly basis, they could earn additional incentives (vouchers for travel related goods) and be eligible for prize drawings donated by local businesses (<em>Obtaining a Commitment, Incentives).</em></p>
+<p><strong>Yard Signs:</strong> Participants could also request a yard sign to place on their property. The yard sign identified them as a Club Motion member, providing an impetus for word-of-mouth program dissemination and increased acceptance of using travel alternatives. T-shirts and water bottles (distributed at a community event) also were visible signs of program participants, increasing the validity of In Motion. <em>(Norm Appeals, Word of Mouth)</em></p>
+<p><strong>Local Leaders:</strong> Neighborhood residents were solicited to become part of the Transportation Action Team. Team members were paid a small stipend to provide the local interface for In Motion. This included maintaining the posters (they became “collectibles” in several neighborhoods), filling brochure racks at businesses, delivering yard signs and fulfilling information requests. The TAT members also helped organize an In Motion presence at community events such as the local farmers’ market and community festivals and parades. <em>(Neighborhood Coaches)</em></p>
+<p> <strong>Communication:</strong> Primary methods of communication included direct mail and a website (www.metrokc.gov/inmotion.) Physical displays were also located at community centers, libraries, local businesses and the farmer’s market. The primary communication tool was a simple walk/bike/transit map centered on the neighborhood and indicating distance in terms of walk and bike travel time, and destinations served by bus. Coupled with the map was the tear-off information request card, which allowed individuals to get information on only the modes of travel they were interested in, targeted to their neighborhood. (<em>Overcoming Specific Barriers; Vivid, Personalized Communication</em>) Delivery of the program evolved with each implementation, depending on the characteristics of the community involved.</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>In Motion’s success in achieving project goals were measured using the following metrics:</p>
+<ul>
+<li>Ability to engage residents in evaluating their travel options
+    <ul>
+<li>participation rates</li>
+<li>program awareness levels</li>
+</ul>
+</li>
+<li>Ability to influence travel behavior
+    <ul>
+<li>reported travel changes</li>
+<li>controlled bus stop boarding counts</li>
+<li>controlled perception survey</li>
+</ul>
+</li>
+<li>Ability to develop a replicable program
+    <ul>
+<li>ability to adapt to various cities and neighborhoods o ability to attract partners</li>
+</ul>
+</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Ability to engage residents</strong>: By all measures, the In Motion program proved successful. Program participation rates ranged from 6 to 10%. Over 33% of residents within the target neighborhood were aware of the program; over 80% recognized some element of the program.</p>
+<p><strong>Ability to Influence Travel Behavior: </strong>In Motion members reported more than a 28% decrease in drive-alone travel, and substantial increases in all other modes. Bus stop boardings showed an 11% increase in the target neighborhood up to 9 months after the program intervention, compared to 1% in the control neighborhood. Further, compared to individuals not exposed to In Motion, those aware of the program were more open to using transit for non-work trips (28% to 51%), did not consider hills a barrier (26% to 66%), and were willing to walk longer distances (5 blocks to 13 blocks).</p>
+<p><strong>Replicability: </strong>In Motion was initially implemented in two urban Seattle neighborhoods. The subsequent year, the program was implemented by three local suburban cities in various neighborhoods. Three In Motion programs were being implemented in various urban neighborhoods in 2006, one by King County Metro, one by the city of Seattle and one by the city of Bellevue. Local non-profit organizations partnered to manage the fulfillment process in two projects, and were interested in continuing to play that role in future projects.  </p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Carol Cooper<br/>
+Market Development Planner<br/>
+King County Metro<br/>
+400 Yesler Way<br/>
+MS YES-TR-0600<br/>
+Seattle, WA 98104<br/>
+Phone: 206-684-6766<br/>
+Fax: 206-684-2058<br/>
+<a href="mailto:Carol.cooper@metrokc.gov">Carol.cooper@metrokc.gov</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Individual travel behavior can be affected through the innovative application of social marketing techniques. Key lessons from initial program implementations include the following:</p>
+<ul>
+<li>Targeting messages to local motivations increases responsiveness. The information obtained through initial discussion groups was invaluable in shaping the way KCM talked to its market.</li>
+<li>Personal feedback to responders both during and after the program increased ownership and sense of being part of something larger than oneself.</li>
+<li>Requiring regular reporting of travel behavior over time was valuable in reinforcing behavior. Finding ways to make this easier will increase participation.</li>
+<li>Locating visual prompts around the neighborhood increases participation. Where postering is discouraged, other ways to increase visibility should be explored.</li>
+</ul>
+<p>This case study was written in 2007 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

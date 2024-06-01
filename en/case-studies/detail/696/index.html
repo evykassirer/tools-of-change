@@ -1,0 +1,427 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Alameda County</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>192 events and meetings were certified in only six weeks, with 144 brand-new event planners</li>
+<li>The certified events resulted in reductions in food and beverage purchasing, paper and supplies ordering, business travel, and waste generation</li>
+</ul>
+<p><strong>Case Study<a href="/userfiles/Alameda Green PurchasingV4.pdf" target="_blank"> PDF</a></strong></p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Alameda’s Green Purchasing Program</h1>
+<p>This innovative green purchasing program engaged hundreds of event planners and over 18,000 event participants to build a new county culture of sustainable and healthy gatherings in Alameda County, California. In only six weeks, its promotion competition enrolled 192 events and meetings, reaching over 9,200 attendees with model green &amp; healthy practices.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong>Note:</strong> <em>To minimize site maintenance costs, all Tools of Change case studies are written in the past tense, even if they are ongoing – as is the case with this particular program. </em></p>
+<p>In 2010, Alameda County (California, USA) set an ambitious ten-year Climate Action Plan for Government Services and Operations to achieve a minimum 15% reduction in operational greenhouse gas emissions. Full implementation would require significant culture shifts in the County, including the purchasing choices of decentralized divisions and employees as they planned the many meetings and events crucial to serving their community. Food and beverage purchasing, paper and supplies ordering, business travel, and waste generation were all impacted by how events and meetings are conducted. These behaviors were difficult to shift, as decision-making about them was decentralized across the entire organization. </p>
+<p>The County’s Climate Executive Committee selected “greening County-sponsored events” as one of five cross-agency climate initiatives to be launched in 2014 by employee teams. A cross-agency team was formed to develop guidance that would be effective across the County’s twenty diverse agencies. The team, chaired by staff from the County Library and Community Development Agency, included staff from seven county agencies; the Sustainability Program provided research and administrative support.</p>
+<p><img alt="Alamada Green Purchasing Team" height="338" src="/userfiles/Image/Team.jpg" width="450"/></p>
+<p><span style="font-size: 8pt;">The cross-agency climate team brought together representatives from seven agencies: County Administrator, Community Development, Health Care Services, General Services, Library, Sheriff, and Social Services.</span><span style="font-size:8.0pt;line-height:125%"> <br/>
+</span><span style="font-size:
+8.0pt;line-height:125%;color:red"><o:p></o:p></span></p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The overall Green &amp; Health Events &amp; Meeting program had two over-arching goals:</p>
+<ol>
+<li>Develop a framework for climate-friendly events and meetings at the County, in order to reduce environmental impacts of decentralized purchasing choices</li>
+<li>Engage employees across the county – including all 20 Alameda County agencies –  to participate in the program and certify meetings &amp; events as Green &amp; Healthy</li>
+</ol>
+<p>In addition, a key objective of the Green &amp; Healthy Awards promotion was to triple the highest certification monthly figure to-date by certifying 40 events during the six-week contest in the fall of 2015.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Over nine months the cross-agency team researched approaches to greening events and meetings. They studied external models and current practices and met with diverse event planners to determine the most effective way to “green.” Based on event planner input and best practices at area institutions, the team developed and refined a checklist of eco-actions and related resources, as described in more detail below. The team decided to integrate the County’s physical activity and nutrition guidelines to ensure events were both green and healthy.</p>
+<p>Through four focus groups, 60 survey respondents and a handful of high-level stakeholder interviews, it was determined that Alameda County employees responded well to:</p>
+<ul>
+<li>Competition</li>
+<li>Word of mouth (there was an implicit trust of messages that came from fellow employees)</li>
+<li>Personal benefits (e.g., information on healthy habits)</li>
+<li>“Bite-sized” requests</li>
+</ul>
+<p>They were deterred or worried by:</p>
+<ul>
+<li>Taking action without explicit approval</li>
+<li>Actions that took a long time or didn’t seem “doable”</li>
+</ul><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>In order to effectively engage employees in culture change, the Sustainability Program welcomed them into the process of devising climate action strategies, in cross-agency teams.  <em>(Building Motivation, Engagement and Habits Over Time)</em> </p>
+<p>The cross-agency green events team, with input from employee purchasers, developed a certification process for events and meetings. The certification process brought together everyday operational sustainability shifts into a single, actionable checklist for employees to use when planning any gathering, from a weekly staff meeting to a large community expo. Each required or recommended “eco-action” advances the Climate Action Plan. For example, a prohibition on bottled water at events helped reduce the climate impact of the supply chain and reduced inputs to the waste stream. <em>(Checklists)</em> </p>
+<p>The certification process was piloted with events in several agencies and then the checklist was refined based on feedback from the pilots. Once it was ready for county-wide launch, the team promoted the new program via county-wide emails, a presentation to County department heads, and a training for about 50 agency designees. </p>
+<p><img alt="Green Certification Guide" height="1109" src="/userfiles/Image/Guide2.png" width="450"/></p>
+<p>  <img alt="Green Conferences and Trainings Guide" height="1109" src="/userfiles/Image/Guide1(1).png" width="450"/></p>
+<p><span style="font-size:8.0pt;line-height:125%">Six “Easy Certification Guides” (two are pictured above) summarized the most common eco-actions chosen for each type of event or meeting, in a fun, accessible format. <o:p></o:p></span></p>
+<p><img alt="Infographic" height="145" src="/userfiles/Image/Infographic.png" width="450"/></p>
+<p><span style="font-size:8.0pt;line-height:125%">Sharing the environmental impact of event-related actions through infographics helped to communicate the importance of certification.<o:p></o:p></span></p>
+<p><strong>The Competition</strong></p>
+<p>The certification process was deemed easy and useful by the pilot testers and early adopters, but only about 10 events per month were being certified. Participation had to be scaled up to maximize benefits. At the same time, the Executive Committee realized that Climate Action Plan implementation needed to include broader employee engagement to reach the full potential of environmental benefits. The Green &amp; Healthy certification was the first initiative selected for a county-wide employee engagement campaign because of its measurability, its accessibility to employees at all levels, and its potential to reach large numbers of employees and members of the public as event attendees. </p>
+<p>A six-week contest was designed to recognize and celebrate employees that certified events and meetings through the program. To encourage broad-based participation, the agency “Green Machine” award was based on the number of staff who had certified events rather than on the number of certified events. Motivated employees reported that they actively recruited others to participate and certify in order to win. <em>(Competitions, Norm Appeals, Recognition, Word of Mouth)</em></p>
+<p> <img alt="Green Purchasing Award" height="221" src="/userfiles/Image/Awards.jpg" width="450"/></p>
+<p class="MsoNormal" style="mso-pagination:widow-orphan lines-together;
+page-break-after:avoid;tab-stops:0in .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><span lang="EN-CA" style='font-size:8.0pt;font-family:"Minion Pro","serif";mso-ansi-language:
+EN-CA;mso-bidi-language:#0400'>The Green &amp; Healthy Awards celebrated event planners that chose to certify their events as Green &amp; Healthy in a 2-week contest.<o:p></o:p></span></p>
+<p><strong>Trendsetters</strong></p>
+<p>In addition, a Trendsetter award was offered for the first person to certify in each agency. Trendsetters were then asked to spread the word to colleagues, put up signs, and encourage others in their agencies to participate. <em>(“Block” Leaders, Norm Appeals, Word of Mouth).</em></p>
+<p>The names and photos of all Trendsetters were used in email outreach to show ease of use in every agency.</p>
+<p><img alt="Green Purchasing Trendsetters" height="397" src="/userfiles/Image/Trendsetters.jpg" width="450"/></p>
+<p><span style='font-family: "Minion Pro", serif; font-size: 8pt;'>Organizers found leaders and trendsetters within agencies, and asked them to spread the word to colleagues, put up signs, and encourage others to participate.</span></p>
+<p class="MsoNormal"><span style='font-size:8.0pt;font-family:"Minion Pro","serif";mso-bidi-language:#0400'><o:p></o:p></span></p>
+<p><strong>Supporting Approaches</strong></p>
+<p>Visibility of participation was further heightened through pictures of award winners and green events. These were solicited by offering a “Shutterbug” award for Best Photo, and were featured prominently in outreach as evidence of enthusiastic participation. The winning certifiers and agencies were also celebrated at an Awards Ceremony. Winners “walked the green carpet” to accept certificates, and learned from each other about innovative ways to green events.<em> (Feedback and Recognition; Norm Appeals; Vivid, Personalized, Credible, Empowering Communication; Word of Mouth)</em> </p>
+<p>Program staff also spent a full day visiting Trendsetters and other certifiers with posters, table tents, and reusable pitchers that could be used to spread the word about the contest. </p>
+<p>Friendly competition was stoked with emails personalized to each agency. The emails mentioned agency standing, and whether a competitor was close to overtaking the lead, to encourage more certifications. The day this segmented email went out set the record for most certifications in a single day. <em>(Competition)</em> </p>
+<p>While the program focused on County employees, it contained an element that reached into the local business community as well. It promoted patronage of local catering businesses certified as Green Businesses or Small, Local &amp; Emerging Businesses (SLEB) by providing online lists of these businesses to planners. It also encouraged local catering businesses and other service providers to offer green and healthy options to county and other customers by empowering catering purchasers with lists of “green” practices. </p>
+<p>During this period, the Sustainability Program began recording and reporting standard climate action progress metrics to each agency through agency reports. These rolled up into a climate dashboard which tracked agency and county-wide performance on a number of metrics, including the number of green &amp; healthy events certified. These metrics were also reported to the Climate Executive Committee. <em>(Building Motivation, Engagement and Habits Over Time)</em></p>
+<p> </p>
+<p><em><img alt="Green Purchasing Awards and Recognition" height="787" src="/userfiles/Image/Green Carpet.jpg" width="450"/></em></p>
+<p> <span style='font-family: "Minion Pro", serif; font-size: 8pt;'>Winners “walked the green carpet” to accept certificates</span></p>
+<p class="MsoNormal"><span style='font-size:8.0pt;font-family:"Minion Pro","serif";mso-bidi-language:#0400'><o:p></o:p></span></p>
+<p> Program staff also spent a full day visiting Trendsetters and other certifiers with posters, table tents, and reusable pitchers that could be used to spread the word about the contest.</p>
+<p>Friendly competition was stoked with emails personalized to each agency. The emails mentioned agency standing, and whether a competitor was close to overtaking the lead, to encourage more certifications. The day this segmented email went out set the record for most certifications in a single day. <em>(Competition)</em></p>
+<p>While the program focused on County employees, it contained an element that reached into the local business community as well. It promoted patronage of local catering businesses certified as Green Businesses or Small, Local &amp; Emerging Businesses (SLEB) by providing online lists of these businesses to planners. It also encouraged local catering businesses and other service providers to offer green and healthy options to county and other customers by empowering catering purchasers with lists of “green” practices.</p>
+<p>During this period, the Sustainability Program began recording and reporting standard climate action progress metrics to each agency through agency reports. These rolled up into a climate dashboard which tracked agency and county-wide performance on a number of metrics, including the number of green &amp; healthy events certified. These metrics were also reported to the Climate Executive Committee. <em>(Building Motivation, Engagement and Habits Over Time)</em></p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Program implementation costs were covered under the Sustainability Program budget.  Materials costs for the Awards contest are shown below.<span lang="EN-CA" style='font-size:11.0pt;font-family:"Minion Pro","serif";mso-ansi-language:
+EN-CA;mso-bidi-language:#0400'> </span></p>
+<table align="left" border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;mso-yfti-tbllook:1184;mso-table-lspace:8.55pt;
+ margin-left:6.3pt;mso-table-rspace:8.55pt;margin-right:6.3pt;mso-table-anchor-vertical:
+ paragraph;mso-table-anchor-horizontal:column;mso-table-left:left;mso-padding-alt:
+ 0in 0in 0in 0in">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:.4in">
+<td style="width: 67.25pt; border-width: 1pt; border-style: solid; border-color: windowtext; background: rgb(182, 221, 232); padding: 0in 5.4pt; height: 0.4in;" valign="top" width="90">
+<p class="MsoNoSpacing" style="margin-top:6.0pt;mso-element:frame;mso-element-frame-hspace:
+  8.55pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:column;mso-height-rule:exactly"><b><span style="font-size:8.0pt">Category<o:p></o:p></span></b></p>
+</td>
+<td style="width: 345.55pt; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: none; background: rgb(182, 221, 232); padding: 0in 5.4pt; height: 0.4in;" valign="top" width="461">
+<p align="center" class="MsoNoSpacing" style="margin-top:6.0pt;text-align:center;
+  mso-element:frame;mso-element-frame-hspace:8.55pt;mso-element-wrap:around;
+  mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:column;
+  mso-height-rule:exactly"><b><span style="font-size:8.0pt">Item<o:p></o:p></span></b></p>
+</td>
+<td style="width: 54.2pt; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: none; background: rgb(182, 221, 232); padding: 0in 5.4pt; height: 0.4in;" width="72">
+<p align="center" class="MsoNoSpacing" style="text-align:center;mso-element:frame;
+  mso-element-frame-hspace:8.55pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:column;mso-height-rule:exactly"><b><span style="font-size:8.0pt">Cost ($US)<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:.4in">
+<td rowspan="4" style="width: 67.25pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; background: rgb(229, 229, 229); padding: 0in 5.4pt; height: 0.4in;" valign="top" width="90">
+<p class="MsoNoSpacing"><b><span style="font-size:8.0pt">Award   Promotion<o:p></o:p></span></b></p>
+</td>
+<td style="width:345.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext 1.0pt;background:white;padding:0in 5.4pt 0in 5.4pt;
+  height:.4in" valign="top" width="461">
+<p class="MsoNoSpacing"><span style="font-size:8.0pt">Green &amp;   Healthy Awards website, reusable for future campaigns<o:p></o:p></span></p>
+<p class="MsoNoSpacing"><span style="font-size:8.0pt">(IT design, hosting, and support)<o:p></o:p></span></p>
+</td>
+<td style="width:54.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext 1.0pt;background:white;padding:0in 5.4pt 0in 5.4pt;
+  height:.4in" width="72">
+<p align="right" class="MsoNoSpacing" style="text-align:right;mso-element:frame;
+  mso-element-frame-hspace:8.55pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:column;mso-height-rule:exactly"><span style="font-size:8.0pt">$3,000<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:.4in;mso-height-rule:exactly">
+<td style="width:345.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt;height:.4in;mso-height-rule:
+  exactly" valign="top" width="461">
+<p class="MsoNoSpacing"><span style="font-size:8.0pt">Awards   promotional materials <o:p></o:p></span></p>
+<p class="MsoNoSpacing"><span style="font-size:8.0pt">(50   reusable water pitchers with program logo)<o:p></o:p></span></p>
+</td>
+<td style="width:54.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:white;
+  padding:0in 5.4pt 0in 5.4pt;height:.4in;mso-height-rule:exactly" width="72">
+<p align="right" class="MsoNoSpacing" style="text-align:right;mso-element:frame;
+  mso-element-frame-hspace:8.55pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:column;mso-height-rule:exactly"><span style="font-size:8.0pt">$855<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;height:.4in">
+<td style="width:345.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt;height:.4in" valign="top" width="461">
+<p class="MsoNoSpacing"><span style="font-size:8.0pt">Travel within   county for presentations and site visits<o:p></o:p></span></p>
+<p class="MsoNoSpacing"><span style="font-size:8.0pt"> (Electric   vehicle and transit)<o:p></o:p></span></p>
+</td>
+<td style="width:54.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:white;
+  padding:0in 5.4pt 0in 5.4pt;height:.4in" width="72">
+<p align="right" class="MsoNoSpacing" style="text-align:right;mso-element:frame;
+  mso-element-frame-hspace:8.55pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:column;mso-height-rule:exactly"><span style="font-size:8.0pt">$160<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4;height:.4in;mso-height-rule:exactly">
+<td style="width:345.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt;height:.4in;mso-height-rule:
+  exactly" valign="top" width="461">
+<p class="MsoNoSpacing"><span style="font-size:8.0pt">Supplies and   in-house printing<o:p></o:p></span></p>
+<p class="MsoNoSpacing"><span style="font-size:8.0pt"> (Flyers and certificates)<o:p></o:p></span></p>
+</td>
+<td style="width:54.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:white;
+  padding:0in 5.4pt 0in 5.4pt;height:.4in;mso-height-rule:exactly" width="72">
+<p align="right" class="MsoNoSpacing" style="text-align:right;mso-element:frame;
+  mso-element-frame-hspace:8.55pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:column;mso-height-rule:exactly"><span style="font-size:8.0pt">$75<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:5;height:.4in;mso-height-rule:exactly">
+<td rowspan="2" style="width: 67.25pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; background: rgb(229, 229, 229); padding: 0in 5.4pt; height: 0.4in;" valign="top" width="90">
+<p class="MsoNoSpacing"><b><span style="font-size:8.0pt">Award Event<o:p></o:p></span></b></p>
+</td>
+<td style="width:345.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt;height:.4in;mso-height-rule:
+  exactly" valign="top" width="461">
+<p class="MsoNoSpacing"><span style="font-size:8.0pt">Awards ceremony<o:p></o:p></span></p>
+<p class="MsoNoSpacing"><span style="font-size:8.0pt"> (Room &amp; tech rental, food &amp; drink)<o:p></o:p></span></p>
+</td>
+<td style="width:54.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:white;
+  padding:0in 5.4pt 0in 5.4pt;height:.4in;mso-height-rule:exactly" width="72">
+<p align="right" class="MsoNoSpacing" style="text-align:right;mso-element:frame;
+  mso-element-frame-hspace:8.55pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:column;mso-height-rule:exactly"><span style="font-size:8.0pt">$1,200<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:6;height:.4in;mso-height-rule:exactly">
+<td style="width:345.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt;height:.4in;mso-height-rule:
+  exactly" valign="top" width="461">
+<p class="MsoNoSpacing"><span style="font-size:8.0pt">Prizes<o:p></o:p></span></p>
+<p class="MsoNoSpacing"><span style="font-size:8.0pt"> (Mugs with tea, healthy snack bars)<o:p></o:p></span></p>
+</td>
+<td style="width:54.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:white;
+  padding:0in 5.4pt 0in 5.4pt;height:.4in;mso-height-rule:exactly" width="72">
+<p align="right" class="MsoNoSpacing" style="text-align:right;mso-element:frame;
+  mso-element-frame-hspace:8.55pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:column;mso-height-rule:exactly"><span style="font-size:8.0pt">$285<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:7;mso-yfti-lastrow:yes;height:.4in">
+<td colspan="2" style="width: 412.8pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-top: none; background: rgb(229, 229, 229); padding: 0in 5.4pt; height: 0.4in;" width="550">
+<p align="right" class="MsoNoSpacing" style="text-align:right;mso-element:frame;
+  mso-element-frame-hspace:8.55pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:column;mso-height-rule:exactly"><b><span style="font-size:8.0pt">Total</span></b><span style="font-size:8.0pt"><o:p></o:p></span></p>
+</td>
+<td style="width:54.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
+  height:.4in" width="72">
+<p align="right" class="MsoNoSpacing" style="text-align:right;mso-element:frame;
+  mso-element-frame-hspace:8.55pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:column;mso-height-rule:exactly"><span style="font-size:8.0pt">$5,575<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNoSpacing"> </p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Internal environmental impact calculations for event metrics provided cumulative impact figures for reductions in resource use associated with changed purchasing decisions.</p>
+<p><img alt="Green Purchasing Metrics" height="282" src="/userfiles/Image/Metrics.png" width="450"/></p>
+<p class="PhotoTitle"><i><span style="font-size: 8pt; line-height: 125%;">Metrics that Mattered</span></i><span style="font-size:
+8.0pt;line-height:125%">: </span><span style="font-size: 8pt; line-height: 125%;">This table shows how progress was measured, and how it would advance larger goals.</span><span style="font-size:8.0pt;line-height:
+125%"><o:p></o:p></span></p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>In addition to the Green &amp; Healthy Awards process, regular emails provided participants with information about program progress within each agency.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Between March 2014 and Summer 2016, over 18,230 event attendees had been exposed to green and healthy practices, through certification of 298 county events and meetings. Each event took steps to reduce paper handouts; increase purchase of sustainable, healthy food; switch to reusable or compostable food service ware; encourage clean business travel; and/or implement a number of other sustainable steps.</p>
+<p><strong>The Competition</strong></p>
+<p>The Green &amp; Healthy Awards promotion wildly exceeded its goals. The average rate of certification was ten events per month prior to the campaign, and the goal was set to triple the highest monthly figure to certify 40 events during the contest. Ultimately, 192 events and meetings were certified in only six weeks, with 144 brand-new event planners from all 20 county agencies participating. Through these events, 9,248 event attendees – employees and members of the public – were exposed to green &amp; healthy practices in everyday county operations.</p>
+<p><img alt="Green Purchasing Competition Results" height="299" src="/userfiles/Image/Competition_Results.jpg" width="450"/></p>
+<p>The program’s environmental impact calculations show that events certified during the contest conserved over 1,300 gallons of water simply by avoiding the use of paper plates.  Just by avoiding the use of bottled water in events during the contest, 4.7 barrels of oil were saved. </p>
+<p>Another result of the outreach was the creation of a contact database of 550 employees in all agencies who plan events and meetings, which helps address the challenge of identifying and reaching the right audience for this program.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Sarah Church &amp; Emily Sadigh<br/>
+Alameda County Sustainability<br/>
+<a href="mailto:acsustain@acgov.org?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> acsustain@acgov.org</a><br/>
+510-208-9654<br/>
+<a href="http://acsustain.org" target="_blank"> http://acsustain.org</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study is based on a case prepared by the Sustainable Purchasing Leadership Council (SPLC.)  That report is publicly available at <a href="http://www.acgov.org/sustain/documents/casestudy_2016splc-greenandhealthy.pdf " target="_blank">http://www.acgov.org/sustain/documents/casestudy_2016splc-greenandhealthy.pdf </a></p>
+<p><strong>Lessons learned</strong></p>
+<p><em>Bring your audience in to lead the design process. </em>The audience for this effort was made up of decentralized event planners all over the County. The decision to engage this audience by having them lead the process through a cross-agency team was a key to success. If the County had simply borrowed a checklist from another institution, it may have been less applicable to the context and more difficult to implement. Engaged employees were also able to ask for honest feedback from their colleagues during pilot testing, which helped to make the program more streamlined and user-friendly.</p>
+<p>The high level of participation during promotion shows the success of the cross-agency team that developed the certification process. Certification was straightforward and meaningful enough to effectively engage employees over time, and support a diversity of greening strategies at events all over the county.</p>
+<p><em>Challenges to Quantifying Impact:</em> Calculating environmental impacts was a challenge due to lack of marketplace information on converting purchasing changes into hard environmental impact figures. The calculations above required more research than anticipated. For example, major manufacturers were often unable to share environmental metrics for their items. Having done this research, organizers can now obtain a more robust calculation of program impact.</p>
+<p>Longer-term impacts or “stickiness” has been challenging to measure. In an effort to welcome more participation, event planners participating in the Green &amp; Healthy Awards were allowed to pre-certify events that happened as late as January 31, 2016. As expected, few new certification applications were submitted in December and January because events happening then had already been certified during the contest. </p>
+<p>Further, it has been observed that, without reminders, event planners often do not continue to certify recurring events, even though they have already shifted practices and simply must fill out the short online form to certify. </p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

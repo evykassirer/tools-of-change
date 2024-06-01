@@ -1,0 +1,247 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Bell Canada</li>
+<li>Nature-Action Qu?bec</li>
+<li>Action-Environnement</li>
+</ul>
+<p> </p><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Cut in half the number of employees who idled their cars once or more a week.</li>
+<li>Cut by one third the number of employees leaving their monitors on at the end of the day.</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Everyday Kyoto</h1>
+<p>Everyday Kyoto is a program for educating Bell Canada employees on climate change and inviting them to reduce the amount of greenhouse gasses released at work and at home.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing, as is the case with Everyday Kyoto.</em></p>
+<p>Bell Canada is Canadas largest communications network, offering local, long distance and wireless telephone service, Internet, and video services. At the time of the program in 2004, it had 49, 800 employees. The company had been developing more sustainable business practices for some time, and had been approached in 2002 by Nature-Action Quebec and Action-Environnement to jointly pilot a work-based program for reducing the amount of greenhouse gasses released by employees at work and at home. The Government of Canada contributed financially towards the pilot, through its Climate Change Action Plan.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>Bell set three main objectives for the program:</p>
+<ol>
+<li>Raise employee awareness about climate change issues and greenhouse gas reduction initiatives;</li>
+<li>Involve 50% of the 5,000 targeted technicians and 6.7% of the 40,000 targeted office employees in workshops; and</li>
+<li>Lead these targeted employees to adopt specific actions (on a voluntary basis) to reduce the amount of greenhouse gasses they release at work and at home.</li>
+</ol><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>To better understand its target audience, they first conducted four focus groups with Bell employees two with technicians and two with administrative workers located in Montral and Toronto.</p>
+<p>To establish a baseline of activity levels and attitudes towards the program, they then conducted a survey of 190 randomly selected Bell employees. They also used this survey to quantify the contribution of key motivators and barriers associated with vehicle idling and telework.</p>
+<p>They found that Bell technicians who idled their vehicles the least while working tended to share the following characteristics:</p>
+<ul>
+<li>They believed that most of their colleagues turned their cars off while parked for a minute or two, and that it was the right thing to do;</li>
+<li>They knew that it is harder on a cars engine to idle rather than turn off the engine then restart;</li>
+<li>They realized that idling uses more gas than restarting the engine;</li>
+<li>They also idled their cars less during off-work time (except when warming up the vehicle and keeping it warm); and</li>
+<li>They simply forgot to turn the engine off. While most employees (69%) indicated that this was not a factor for them, it was an important factor for one in four of the respondents who idled most often when warming up their cars and keeping them warm.</li>
+</ul>
+<p>This suggested that increased program impacts could be achieved regarding idling by setting clear anti-idling guidelines and raising the visibility of conformity to those guidelines (norm appeals), correcting misinformation, and providing an in-vehicle prompt for those who would use it.</p>
+<p>While many employees were aware of the personal and business benefits of teleworking, those who did it the most were the most convinced of these benefits and the most optimistic about the value to them and their business units from increasing the number of telework days. Their two main reasons for not teleworking more often were:</p>
+<p>(1) a concern about not being seen and involved, and (2) a need for a quicker Internet connection at home.</p>
+<p>In contrast, those who did not telework or did not do it often indicated that their main limitations were that their jobs and/or supervisors did not allow it.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Bell set up an Everyday Kyoto Intranet site, and offered road shows and on-site workshops to educate employees and recruit participants.</p>
+<p>A kiosk was staffed for a total of 13 days across eight different buildings. This included one day in each of seven buildings when launching the program in April 2004 and an additional six days close to the announcement of ratification of the Kyoto Protocol.</p>
+<p>In addition to the on-site workshops, Bell piloted web-based workshops for staff that did not work in large centers. Participants saw the PowerPoint slides and a video display of the presenter on their computer screens or on large presentation screens in a conference room. They listened to the presentation using a regular teleconference system.</p>
+<p>The program was promoted to employees 11 times in all - three times through Bellnet (the news section of Bells Intranet), two through Bell in Brief (a weekly publication sent to each Bell employees), two times on In the Community (a community news site in Bellnet) and two times by e-mail.</p>
+<p>As often happens with workplace programs, the launch was complicated by a number of internal factors. From January to August 2004, the likelihood of a strike grew stronger each month, but the strike was finally avoided in August. In addition, management decided to make administrative attendance at the workshops voluntary. Then, a few months after the beginning of the project, Bell announced a major re-organization and the reduction of almost 10% of its workforce. This meant that the project did not receive the attention it would have otherwise had from senior management.</p>
+<p>As a result, Bell conducted far fewer workshops for administrative staff than had been planned.</p>
+<p>The situation was different for the technicians. Their senior managers required most of them to participate in a workshop during the fall of 2004. In Ontario, the managers asked that they be trained to present the workshops to their staff, so a manager training kit was created.</p>
+<p>Organizers had hoped to have staff meetings in various cities with the President or one of the Vice Presidents. After the restructuring announcement these were cancelled. Instead, Bell sent out e-mail workshop invitations with a vivid Power Point presentation highlighting testimonials from employees and managers who had already participated (<a href="http://www.tools-of-change.com/en/tools-of-change/communication/">Vivid, Personalized, Credible Communication</a>; <a href="http://www.tools-of-change.com/en/tools-of-change/norm-appeals/">Norm Appeals</a>).</p>
+<p>2,089 people visited the program's intranet site between April 2004 and March 2005. Other forms of participation were as follows:</p>
+<p>852 technicians participated in face-to-face workshops, and 34 took part in web-based workshops.</p>
+<p>534 office workers participated in face-to-face workshops, 630 were recruited though the traveling kiosk, and 112 participated in the web-based workshops.</p>
+<p>Bell asked program participants to pledge to adopt specific actions that they chose from a list of alternatives (Obtaining a Commitment). 88% of workshop participants committed to taking action.</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Bell conducted a baseline survey of 190 randomly selected Bell employees in April and May 2004, before launching Everyday Kyoto. It carried out a follow-up survey of 184 randomly selected employees and an additional 81 randomly selected program participants one year later, in the spring of 2005</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Overall, the program was most successful in achieving changes in behaviour that involved smaller barriers to taking action (e.g. idling and turning off computer monitors), as one would expect from a program that is largely promotional and educational.</p>
+<p>Compared with 2004, Bell technicians (not just those enrolled in Everyday Kyoto) reduced the amount of time they idled their cars at work to warm up the vehicles in 2005. In 2004, two out of three (66.3%) did this once a week or more; in 2005 only one out of three did (34.7% overall; 33.4% for program participants).</p>
+<p>Compared with 2004, Bell employees were less likely to have left their computer monitors on at the end of the day: one out of ten (11.6% for all employees and 7.5 % for program participants) said they had done this once a week or more, compared with two out of ten (16.8%) in 2004.</p>
+<p>In 2005, seven out of ten program participants said they did most or all of the actions they had pledged to do (68.8%), and were still doing most or all of them (72.8%). Further, almost eight out of ten (77.8%) thought they would continue doing most or all of the activities. The numbers were much higher among those who said that having pledged had contributed to their having done these activities (87.9%, 84.9% and 93.9% respectively), indicating the value of using a pledge with such participants.</p>
+<p>Two out of three respondents (66.7%) said that participation in Everyday Kyoto had had a fair (51.9%) or big (14.8%) impact on how often they had done these actions. Fewer than one in four (23.5%) said it had had a little impact.</p>
+<p>Nineteen out of twenty employees (95.0%; 94.9% for program participants) said that knowing that Bell's products and services help reduce greenhouse gas emissions was at least as important as other sources of pride from working at Bell, with seven out of ten (68.8%) saying it was more important or much more important (These numbers were 91.7% and 60.6% in 2004). It is difficult to attribute this size of difference to the program.</p>
+<p>The main barrier to doing the activities (49.3% of all responses to the multiple-response question about barriers) was that people simply forgot, indicating that simple reminders (prompts) could help increase program impacts. Another significant barrier (21.7% of responses) was that people needed more help to do the activities (11.6% of responses were took too much time to do, 7.2% were needed more help, and 2.9% were too hard to do).</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Jacques Poitras, Action-Environnement : (450) 447-8142 action.environnement@videotron.ca</p>
+<p>Benoit Sicotte, Associate Director, Bell Canada Corporate Responsibility and Environment (514) 350-3184 benoit.sicotte@bell.ca</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Lessons Learned</p>
+<ul>
+<li>Additional assistance would have been needed to increase participation in activities with larger barriers (e.g. providing showers at work for those who were cycling).</li>
+<li>Mandatory workshops would have worked better for the administrative staff.</li>
+<li>The kiosks were less effective than the workshops in recruiting participants.</li>
+<li>The web-based workshops were a good way of reaching people who were not in large centers.</li>
+</ul>
+<p>This case study was written in 2006 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

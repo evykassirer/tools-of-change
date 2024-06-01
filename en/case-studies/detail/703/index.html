@@ -1,0 +1,454 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>York Region Public Health, Health Protection Division</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Local public health unit and local social housing providers</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Engaged 218 out of a total of 285 housing units – 76 per cent of tenants</li>
+<li>90 per cent of tenants surveyed indicated they had an increased knowledge of how to clean their air at home</li>
+<li>95 per cent reported having more confidence in how to clean their air at home</li>
+<li>72 per cent reported performing one of the five steps to clean their air at home more often</li>
+<li>45 per cent reported performing all five steps to clean their air at home more often</li>
+</ul>
+<p>Case study <a href="/userfiles/Tools of Change_Clean Air at Home-V4.pdf" target="_blank">PDF</a></p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Clean Air at Home</h1>
+<p>"Clean Air at Home: Small Steps Make a Big Difference" is a targeted, community-based social marketing campaign that reduces young families’ exposures to environmental contaminants at home such as mould, dust, fumes from toxic cleaners and tobacco smoke. Almost three in four participants changed some of their behaviors and almost one half reported performing all five of the behaviors being promoted.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong>Note: </strong>To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing.</p>
+<p>York Region’s Public Health and Housing Services Branches partnered to pilot Clean Air at Home: Small Steps Make a Big Difference.  The campaign used an interpersonal approach that challenged tenants from social housing complexes to take five steps over five weeks to clean the air at home for their children’s health. Tenants, public health and housing partners participated in campaign planning and implementation to increase buy-in and trust.</p>
+<p>The strong partnership between York Region’s Public Health and Housing Services Branches facilitated direct access to low-income residents living at social housing sites and helped both partners work towards shared objectives around community engagement.</p>
+<p>The Regional Municipality of York is part of the Greater Toronto Area in Ontario, Canada.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p><em>Goal: </em> To reduce exposure to indoor air contaminants among children from birth to six years old from low-income families.</p>
+<p><em>Objectives: </em></p>
+<ol>
+<li>Engage at least 30 per cent of target audience with campaign </li>
+<li>Increase knowledge about  the five promoted steps (5-Steps) to clean air at home in 60 per cent of target audience </li>
+<li>Increase confidence to take the 5- Steps to clean air at home in 60 per cent of target audience</li>
+<li>Increase the rate of behaviours related to the 5-Steps in 40 per cent of target audience </li>
+<li>Engage 10 tenants and partners to participate in community activities viewed as fulfilling and effective at advancing campaign outcomes </li>
+</ol><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Extensive epidemiological and other research concerning the burden of illness related to environmental exposures, the populations at highest risk, and the environmental contaminants of most concern guided decisions around campaign need, key messages and target audience.</p>
+<p>This research identified a need to target parents of children from birth to six years of age from low-income families, and to promote actions that reduced exposure to mould, dust, toxic cleaners and tobacco smoke.  An environmental scan revealed a lack of similar messages tailored specifically for this target group.</p>
+<p>York Region Public Health conducted an analysis of the target audience to assess demographics, current knowledge, attitudes, behaviours and barriers related to protecting against environmental exposures.  Psychographic characteristics and health literacy were also assessed through a literature search and a series of focus groups.</p>
+<p>Some of the key findings that shaped program development are outlined below.</p>
+<ul>
+<li>2.7 per cent of York Region residents were low-income. Immigrants made up the highest proportion of the low-income population</li>
+<li>Knowledge/concern about environmental exposures did not necessarily lead to the use of protective barriers</li>
+<li>Involving organizations that served this population could increase buy-in and trust</li>
+<li>Barriers to action included low-risk perception, lack of time and a perceived lack of control over exposure – including the perception that protecting children from environmental contaminants is too overwhelming a task</li>
+<li>Low socio-economic status (SES) was inversely related to health, and was associated with lower health consciousness, health literacy and information-seeking behaviour</li>
+<li>People with low SES sought health information through passive communication channels and spent most of their free time at home</li>
+<li>People with low SES often have limited free time, lack access to transportation and childcare assistance, and lack access to services</li>
+</ul>
+<p>Researchers also investigated strategies that would best reach low-income families. Some of the key findings are outlined below.</p>
+<ul>
+<li>Make use of existing groups/events in their community that are easy for residents to access</li>
+<li>Use interactive, experiential and mixed learning tools that are simple and straightforward</li>
+<li>Provide easy opportunities to practice the behaviour change and reward participation</li>
+<li>Involve organizations that serve this population to increase buy-in and trust</li>
+</ul>
+<p>These insights helped develop the campaign’s strategy and tactics, key messages and branding. York Region Public Health then tested these findings in focus groups with the target audience and housing partners.</p>
+<p>The Clean Air at Home campaign was strategically designed to meet the unique needs of its target audience based on two health behaviour theories - Community Organization Theory and the Community – based Social Marketing Theory - that support community engagement. The campaign used a combination of social marketing and community engagement tactics and invited Housing Services partners and tenants to collaborate with Public Health in campaign development and rollout.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Partnerships and Collaboration</strong> </p>
+<p>York Region Public Health partnered with York Region Housing Services to allow direct campaign implementation at the target audience’s home – the social housing complexes in York Region. This reduced access and transportation barriers to participation and allowed for delivery of interpersonal and community-based campaign tactics. On-site York Region staff also helped build trust with tenants. </p>
+<p><strong>Strategy, Branding and Key Messages </strong></p>
+<p>A campaign tagline - Small steps make a big difference - was carefully designed to focus on simplicity, reduce perceived barriers and counter the prevailing perception that the task of protecting children from environmental contaminants is too overwhelming. (Vivid, Personalized, Credible, Empowering Communication)</p>
+<p>The campaign centered on a 5-Step Clean Air at Home Challenge that invited tenants to take five small, low-cost steps over a five-week period to clean their air at home:</p>
+<p>Step 1:  Turn on a fan or open a window when you shower</p>
+<p>Step 2:  Clean the floor with a damp mop or cloth</p>
+<p>Step 3:  Turn on a fan or open a window when you fry, sauté or grill food</p>
+<p>Step 4:  Use non-toxic cleaning products more often</p>
+<p>Step 5:  Make your home smoke-free</p>
+<p> </p>
+<p><strong>Tactics</strong></p>
+<p><em>Social Marketing Tactics</em></p>
+<p>By promoting a series of manageable steps, the campaign boosted confidence and made it easier to adopt the promoted behaviours. (Building Motivation and Engagement Over Time)</p>
+<p>In addition, the campaign used the following tactics to maximize successful tenant completion of the 5-Step Challenge. </p>
+<p>Tenants were:</p>
+<ul>
+<li>Given a guidebook  that provided information about why clean air at home is important to children’s health and steps on how to clean the air</li>
+</ul>
+<p><img alt="Clean Air at Home IAQ / IEQ Guidebook" height="449" src="/userfiles/Image/Guidebook.png" width="450"/></p>
+<p><em>Guidebook</em></p>
+<ul>
+<li>Given an invitation to take the 5-Step challenge and instructions on setting weekly goals to participate (Goal-setting / Obtaining a Commitment)</li>
+<li>Given a <strong>free toolkit</strong> with tools needed to complete the challenge. These tools included a mop, bucket, vinegar, baking soda, magnet and lemon. Two decals were also included to prompt turning on a fan or opening a window – when showering and when frying, sautéing or grilling food</li>
+</ul>
+<p> <img alt="Clean Air at Home IAQ / IEQ Toolkit" height="346" src="/userfiles/Image/Toolkit(1).jpg" width="450"/></p>
+<p><font-size:x-small><em>TOOLKIT: Mop, bucket, vinegar, baking soda, magnet, decal as reminders to turn on a fan/open window.</em></font-size:x-small></p>
+<ul>
+<li>Given incentives/rewards to participate – a chance to win one of three $50 grocery gift cards, in addition to getting the free toolkit (Incentives)</li>
+<li>Given weekly reminders and prompts throughout the 5-Step Challenge.  Banners were put up around housing complexes and door hangers were placed on tenants’ door knobs to remind them what step of the Challenge to take each week. These public reminders helped to socially normalize the Challenge in the community (Prompts)</li>
+</ul>
+<p><img alt="" height="342" src="/userfiles/Image/Step 4 Door Hanger Front(1).png" width="150"/>      <a href="/userfiles/Step 4 Door Hanger Back.png"><img alt="" height="337" src="/userfiles/Image/Step 4 Door Hanger Back(1).png" width="150"/></a></p>
+<p> <em>Door hanger for step 4</em></p>
+<p><img alt="Clean Air at Home Rollup Banner (IAQ / IEQ)" height="499" src="/userfiles/Image/Step 4 Banner.png" width="150"/></p>
+<p> <em>Roll-up banner for step 4</em></p>
+<ul>
+<li>Invited to make a public pledge to take the Challenge to build additional resolve. During a community event, tenants were invited to add their signed post-it notes, shaped as a hand, to a pledge board display. This signified their pledge to take the 5-Step Challenge starting the next day. (Norm Appeals, Obtaining a Commitment, Word-of-Mouth)</li>
+</ul>
+<p> <img alt="Clean Air at Home Pledge Board (IAQ / IEQ)" height="300" src="/userfiles/Image/Pledge Board_11.JPG" width="450"/></p>
+<p><em>Pledge board</em></p>
+<p><strong>Community Engagement Tactics</strong></p>
+<p>The campaign also incorporated tactics from Community Organization Theory to meet the target audience’s learning needs and increase their buy-in and trust. As such, the campaign provided tenants with opportunities to engage with one another and get involved in campaign design and delivery.</p>
+<ul>
+<li><em>Community Champions (Champions): </em>      Fifteen tenants met with York Region Public Health staff on a regular basis to plan, deliver, promote and offer feedback on the 5-Step Challenge at their housing complexes. These Champions benefited with an opportunity to learn new skills –meeting facilitation, event planning and team building – and a certificate of recognition signed by York Region’s Medical Officer of Health and by the Commissioner of the Community and Health Services Department. (Block Leaders / Neighbourhood Coaches)</li>
+<li><em>5-Step Challenge Kick-off Community Event:</em>   Tenants were invited to an on-site community event to interact with neighbours and Public Health and Housing Services Branch staff, enjoy a BBQ and participate in family-fun activity stations that promoted the Challenge’s 5-Steps in a fun, experiential way. (Vivid, Personalized, Empowering Communication; Word of Mouth)</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>York Region Public Health primarily financed the campaign with additional funds provided by York Region Housing Services.</p>
+<p>Amounts are expressed per 100 housing units.</p>
+<p><em>Social marketing tactics: $6,720</em></p>
+<ul>
+<li>Toolkit</li>
+<li>Guidebook</li>
+<li>Incentives – grocery gift cards</li>
+<li>Printing – challenge invitation, recruitment postcards, etc.</li>
+<li>Reminders – door hangers</li>
+<li>Prompts – banners (one-time cost)</li>
+</ul>
+<p><em>Community engagement tactics: $4,800</em></p>
+<ul>
+<li>Food for community event</li>
+<li>Printing – postcards (invitation to event), activity game passport</li>
+<li>Miscellaneous – activity prizes</li>
+<li>Banners (one-time cost)</li>
+<li>Activity games (one-time cost) ~ additional $5,500</li>
+<li>Community Champions – cost of refreshments for meetings<b><span style="font-size: 11pt; font-family: Arial, sans-serif;"> </span></b></li>
+</ul>
+<p><em>Evaluation: $1,050</em></p>
+<ul>
+<li>Incentives ($10 grocery gift cards per housing unit)</li>
+<li>Postcards – upcoming surveys</li>
+</ul>
+<p><em>Staff FTEs and Overtime</em></p>
+<ul>
+<li>Staff time – 2 FTEs</li>
+<li>Overtime (2 staff to facilitate community champion meetings held after business hours; Volunteers for community event; Staff to facilitate evaluation surveys after business hours; </li>
+</ul><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>York Region Public Health conducted a door-to-door survey of tenants approximately five weeks after campaign implementation. The post-intervention evaluation survey was used to measure campaign outcomes and obtain feedback on individual campaign tactics.  Residents were provided advanced notice of the door-to-door survey based on recommendations from property managers to make residents more comfortable opening their doors. </p>
+<p>In order to achieve the best response rate possible, Public Health staff knocked on tenants’ doors at different times throughout the day and during different days of the week. Regardless of whether or not tenants completed surveys, and as a token of appreciation for their time, tenants were given a $10 grocery gift card prior to completing the survey. This increased the likelihood that tenants would complete the survey. </p>
+<p>Surveys were delivered and picked up by Public Health staff to reduce the burden for respondents. This provided the added benefit of face-to-face help in completing the survey, especially in the case of language barriers.</p>
+<p>In addition to the quantitative survey evaluation, interviews were conducted with Housing Services and Community Champions. The partner interviews provided feedback on the campaign and on future resourcing, development and partnership opportunities. The Community Champion interviews provided feedback on community engagement tactics and the future potential of using the Community Champion structure.</p>
+<p>While the campaign pilot offered valuable insights, staff resources and sample size limited the rigour of evaluation methods. </p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><em>Note: To test the value of various social marketing and community engagement tactics, four different campaign models were piloted in 2014 to 2015 at five different social housing complexes in municipalities with high prevalence rates of low-income residents. Each of the four models built on the last; offering tenants progressively more tactics to participate in the 5-step Challenge. The responses from Model 4 resulted in the best evaluation results and therefore, have been used as the example in this case study.</em></p>
+<p>Of the 285 total housing units, a total of 218 tenants opened their door (76%). Out of 218 tenants who opened their door, 123 (43%) surveys were completed. The tenants had to report that they read the printed material and/or attended the community event in order to meet the screening criteria. The remaining 95 tenants (out of 218) were either not interested in filling out the survey or did not meet the screening criteria.</p>
+<p>Fifteen tenants (five above the target of “at least 10”) were recruited as Community Champions for the campaign.</p>
+<p>The campaign exceeded all target outcomes:<span lang="EN-CA" style='font-size:11.0pt;font-family:"Arial","sans-serif";mso-ansi-language:
+EN-CA;mso-bidi-language:#0400'> </span><span lang="EN-CA" style='font-size:11.0pt;font-family:"Arial","sans-serif";mso-ansi-language:
+EN-CA;mso-bidi-language:#0400'> </span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:5.4pt;border-collapse:collapse;mso-table-layout-alt:fixed;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:1184;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:.5pt solid windowtext;
+ mso-border-insidev:.5pt solid windowtext">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.35pt">
+<td style="width:120.5pt;border:solid windowtext 1.0pt;mso-border-alt:
+  solid windowtext .5pt;background:#D2DFEA;padding:0in 5.4pt 0in 5.4pt;
+  height:15.35pt" width="161">
+<p class="MsoNormal" style="line-height:115%"><b><span style='font-family:"Arial","sans-serif"'>Objective<o:p></o:p></span></b></p>
+</td>
+<td style="width:49.6pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#D2DFEA;padding:0in 5.4pt 0in 5.4pt;height:15.35pt" width="66">
+<p class="MsoNormal" style="line-height:115%"><b><span style='font-family:"Arial","sans-serif"'>Target<o:p></o:p></span></b></p>
+</td>
+<td style="width:51.3pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#D2DFEA;padding:0in 5.4pt 0in 5.4pt;height:15.35pt" width="68">
+<p class="MsoNormal" style="line-height:115%"><b><span style='font-family:"Arial","sans-serif"'>Result<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:14.8pt">
+<td style="width:120.5pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:14.8pt" width="161">
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>↑ </span><span lang="EN-CA" style='font-family:"Arial","sans-serif";mso-ansi-language:EN-CA;
+  mso-bidi-language:#0400'>Knowledge: How to clean the air at home</span><span style='font-family:"Arial","sans-serif"'><o:p></o:p></span></p>
+</td>
+<td style="width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.8pt" width="66">
+<p align="center" class="MsoNormal" style="text-align:center"><span style='font-family:"Arial","sans-serif"'>60%<o:p></o:p></span></p>
+</td>
+<td style="width:51.3pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:14.8pt" width="68">
+<p align="center" class="MsoNormal" style="text-align:center;line-height:115%"><span lang="EN-CA" style='font-family:"Arial","sans-serif";mso-ansi-language:EN-CA;
+  mso-bidi-language:#0400'>90%</span><span style='font-family:"Arial","sans-serif"'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:13.45pt">
+<td style="width:120.5pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:13.45pt" width="161">
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>↑ </span><span lang="EN-CA" style='font-family:"Arial","sans-serif";mso-ansi-language:EN-CA;
+  mso-bidi-language:#0400'>Confidence: How to clean the air at home</span><span lang="EN-CA" style='font-family:"Arial","sans-serif"'> </span><span style='font-family:"Arial","sans-serif"'><o:p></o:p></span></p>
+</td>
+<td style="width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:13.45pt" width="66">
+<p align="center" class="MsoNormal" style="text-align:center"><span style='font-family:"Arial","sans-serif"'>60%<o:p></o:p></span></p>
+</td>
+<td style="width:51.3pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:13.45pt" width="68">
+<p align="center" class="MsoNormal" style="text-align:center;line-height:115%"><span lang="EN-CA" style='font-family:"Arial","sans-serif";mso-ansi-language:EN-CA;
+  mso-bidi-language:#0400'>95%</span><span style='font-family:"Arial","sans-serif"'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;height:26.05pt">
+<td style="width:120.5pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:26.05pt" width="161">
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>↑ </span><span lang="EN-CA" style='font-family:"Arial","sans-serif";mso-ansi-language:EN-CA;
+  mso-bidi-language:#0400'>Behaviours: Performed at least one of the 5-Steps   more often</span><span lang="EN-CA" style='font-family:"Arial","sans-serif"'> </span><span style='font-family:"Arial","sans-serif"'><o:p></o:p></span></p>
+</td>
+<td style="width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:26.05pt" width="66">
+<p align="center" class="MsoNormal" style="text-align:center"><span style='font-family:"Arial","sans-serif"'>40%<o:p></o:p></span></p>
+</td>
+<td style="width:51.3pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:26.05pt" width="68">
+<p align="center" class="MsoNormal" style="text-align:center;line-height:115%"><span style='font-family:"Arial","sans-serif"'>72%<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4;mso-yfti-lastrow:yes;height:26.05pt">
+<td style="width:120.5pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:26.05pt" width="161">
+<p class="MsoNormal"><span style='font-family:"Arial","sans-serif"'>↑ </span><span lang="EN-CA" style='font-family:"Arial","sans-serif";mso-ansi-language:EN-CA;
+  mso-bidi-language:#0400'>Behaviours: Performed each of the 5-Steps more often</span><span style='font-family:"Arial","sans-serif"'> <o:p></o:p></span></p>
+</td>
+<td style="width:49.6pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:26.05pt" width="66">
+<p align="center" class="MsoNormal" style="text-align:center"><span style='font-family:"Arial","sans-serif"'>40%<o:p></o:p></span></p>
+</td>
+<td style="width:51.3pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:26.05pt" width="68">
+<p align="center" class="MsoNormal" style="text-align:center;line-height:115%"><span lang="EN-CA" style='font-family:"Arial","sans-serif";mso-ansi-language:EN-CA;
+  mso-bidi-language:#0400'>45%</span><span style='font-family:"Arial","sans-serif"'><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoPlainText">In interviews, the Community Champions said they were able to leverage their existing relationships with neighbours which helped to motivate additional tenants to participate in the Challenge. Community Champions were able to promote and gain interest in the Challenge by meeting with neighbours while distributing campaign items. They provided valuable insight into best methods for catering the campaign to each specific community.</p>
+<p class="MsoPlainText">Partners and Community Champions reported that their community activities were fulfilling and had an impact on campaign outcomes, and all Champions expressed an interest in completing similar work again in the future.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p><strong>Vittoria Vecchiarelli</strong><br/>
+Senior Public Health Inspector<br/>
+Health Protection Division,<br/>
+Community and Health Services Department<br/>
+The Regional Municipality of York<br/>
+1-877-464-9675 ext. 74556<br/>
+<a href="mailto:Vittoria.Vecchiarelli@york.ca?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">Vittoria.Vecchiarelli@york.ca</a></p>
+<p>Stephanie Zeoli<br/>
+Health Educator Health Protection Division,<br/>
+Community &amp; Health Services Department<br/>
+The Regional Municipality of York<br/>
+1-877-464-9675 ext. 74684<br/>
+<a href="mailto:Stephanie.Zeoli@york.ca?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">Stephanie.Zeoli@york.ca</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><em>Lessons Learned</em></p>
+<p>The initial campaign pilot employed limited social marketing tactics and no community engagement. Tenants at this social housing complex only received education through the Guidebook, a goal-setting opportunity (invitation to participate in the 5-Step Challenge) and incentives (one in three chances to win a grocery gift card). This was done through a generic mail drop and only resulted in a four per cent response rate.</p>
+<p>Additional social marketing and community engagement tactics were added at the next social housing complex pilot to solicit additional tenant engagement. The campaign strategy was presented to all partners’ senior management for feedback and approval. Ongoing consultation with the partners’ management and with Community Champions guided all campaign decisions. While valuable, this client-centred approach also presented challenges. It required plans, timelines and resources to be fluid enough to accommodate new ideas that arose from stakeholders throughout the planning cycle. It also required York Region staff to work outside regular hours on occasion to accommodate tenant schedules.</p>
+<p>The logistics of delivering an interpersonal, community-based campaign was also challenging. Coordinating and delivering campaign tactics and evaluation surveys, hosting numerous meetings and a large community event over an intensive 9.25 month period required more staff time than expected.</p>
+<p>Furthermore, when engaging with social housing tenants, staff had to be sensitive to many barriers around mental health, mobility and work abilities. As such, York Region Public Health consulted with Housing Services on best ways to work with this population and how to remain sensitive to their barriers.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

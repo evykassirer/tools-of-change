@@ -1,0 +1,308 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Southern California Edison</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Participating manufacturers and retailers</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Over 2 million CFLs were sold through the residential program, with cumulative energy savings of over 200,000 MWh from 1992-1994 and projected lifecycle savings of over 650,000 MWh. The commercial program generated similar results. The programs generated an eight-fold increase in retail distributors of CFL products.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Compact Fluorescent Lamp Vendor Program</h1>
+<p>Southern California Edison, an American electric utility, reduced the price barrier that discouraged its residential and commercial customers from utilizing compact fluorescent lamps (CFLs) rather than the less energy-efficient incandescent bulbs. Unlike traditional rebate programs that offer discounts directly to the consumer, the utility offered rebates of $5 per lamp to manufacturers of CFLs. The discount was amplified through the retail mark-up process, becoming even greater by the time it reached the consumer. This model was subsequently adopted by other utilities across the country.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Southern California Edison (SCE), a subsidiary of SCEcorp., was the second-largest electric utility in the United States at the time of the program, serving over 4.1 million customers in central and southern California. Its service territory was home to over 11 million people. Between 1973 and 1994, SCE was one of the nations leading utilities in demand-side management (DSM) activities, designed to encourage customers to modify their level and pattern of electricity usage. SCE spent almost $1.2 billion on DSM programs during this period.</p>
+<p>Within SCE's service territory, there were over 100 million light sockets that were targeted by DSM programs aimed at delivering more efficient lighting. A study conducted in 1994 by the American Council for an Energy-Efficient Economy found that although compact fluorescent lamps (CFLs) used one-third to one-fourth the energy of incandescent bulbs, they were used in less than 2% of the countrys sockets. This lack of use was primarily due to price, as at that time CFLs cost as much as 10 to 30 times more than incandescent bulbs. Previous approaches for encouraging the use of CFLs, such as direct installation, failed to achieve lasting market transformation, leading SCE to seek out new approaches.</p>
+<p>After conducting a pilot program testing different methods of reducing the price of CFLs for residential customers, SCE decided that the most effective approach was to offer rebates to manufacturers of the lamps. This program, called the Compact Fluorescent Bulb (CFB) program, was launched full-scale in July 1992. The approach was extended to commercial customers in 1993, in a separate program called The CFL program. The two programs ran until the end of 1994, at which time they were cancelled due to large cutbacks made to the utility's DSM expenditures.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>Residential Program</p>
+<ul>
+<li>950,000 CFLs sold through the program in 1992, 467,000 in 1993, 613,000 in 1994</li>
+</ul>
+<p>Since the cost of the rebates per CFL remained constant at $5, the projected number of lamps to be moved by the program was determined by the program budget for each year. In 1992, the initial goal for the CFB program was 518,000 units, which was later upgraded to 950,000. Due to budget restrictions, the rebate allotments were reduced for 1993 and 1994 to roughly 467,000 and 613,000 lamps, respectively.</p>
+<p>Commercial Program</p>
+<ul>
+<li>455,000 CFLs in 1993 and 321,000 in 1994.</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>In 1991, SCE launched a three-phase pilot program to test different methods of lowering the retail price of CFLs in order to stimulate market demand within the residential sector. The first phase of the program consisted of $5 clip-out rebate coupons distributed to customers directly through local newspapers. In the second phase, the $5 rebate coupons were distributed via direct mail and point-of-purchase displays. These two strategies moved a combined total of roughly 29,000 lamps in almost 8 months, with overhead costs comprising 70% of total costs. These strategies were not felt to be very successful or cost-effective, and so a different approach was sought.</p>
+<p>In phase 3 of the pilot program, the rebates of $5 per lamp were offered not to customers but to three lighting manufacturers. The discount was applied to the wholesale price and was thus magnified through the retail mark-up process, becoming even greater by the time it reached the customer. In the three-week period of the trial, 170,000 units were sold. Overhead costs accounted for only 29% of the total cost. Based on these results, this third method was selected for full-scale implementation.</p>
+<p>When the commercial program was developed, it was assumed that the same approach of manufacturer rebates would be the most effective means of encouraging the use of CFLs. The commercial program was test marketed in 1993 in the Palm Springs area, resulting in the sale of 455,139 lamps. Based on the success of the pilot testing, the program was implemented full-scale at the beginning of 1994.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The full-scale residential CFB program started in July 1992. Requests for proposals were issued to thirty-five CFL manufacturers. Sixteen of these manufacturers responded and nine elected to sign agreements with SCE. Two additional manufacturers joined the program in 1993.</p>
+<p>The total rebate pool was determined by the programs budget for the year. Participating manufacturers were allocated a share of the total pool based on several factors, including distribution capabilities, contribution to marketing, performance criteria, and their own additional contributions to price reduction. The scoring system helped maximize discounts to the consumer while minimizing the marketing and distribution costs for the program. In addition, it gave SCE a hand in directing the market for CFLs by favoring manufacturers producing lamps with a high power factor, low harmonic distortion, high lumens per watt, and high colour rendering.</p>
+<p>The manufacturers received rebates of $5 per CFL for a portion of their inventory to be sold within SCE's service territory. The utility stipulated that the savings be passed downstream, taking advantage of the normal functioning of the retail process to amplify the discount to the final customer (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>). The retail price of lighting products was typically marked-up 67% from the wholesale price, and so the $5 reduction in the wholesale price resulting from the rebates actually became a discount to the customer of $8.35 ($5 wholesale rebate plus 67% markup of $3.35). The manufacturers were offered a degree of flexibility in the distribution of their rebate money. The dollar discount per model could be redistributed to place higher discounts on more expensive products at the expense of less costly ones, so long as the average rebate was $5 per lamp.</p>
+<p>The manufacturers were also encouraged to contribute additional price reductions to further lower the cost of the lamps, and were rewarded for doing so through the scoring system. Most manufacturers were willing to contribute, since they could expect to benefit with increased shares in the market for CFLs. Manufacturers contributions averaged $1.50 per CFL, bringing the total consumer rebate to around $9.85 (almost twice the original investment by SCE!).</p>
+<p>The manufacturers were required to commit to selling 30% of their inventory allocated for rebate within three weeks, 60% in eight weeks and 100% in twelve weeks. If a manufacturer failed to meet the deadlines or performance criteria, its rebates were reassigned to other manufacturers.</p>
+<p>Based on the success of the residential program, a commercial program was test marketed in 1993, and implemented full-scale in 1994. The commercial program, called The CFL Program, expanded the rebates to include not only screw-based compact fluorescent lamps but also hard-wired fixtures and retrofit kits. The rebates were assigned by product category, ranging from $5 for retrofits and screw-based lamps to $10 for fixtures.</p>
+<p><strong>Marketing</strong></p>
+<p>Participating manufacturers carried out the bulk of the marketing for the two programs. Manufacturers were responsible for advertising the products, supplying posters and aisle-front kiosks to retail outlets, increasing the product knowledge of their dealers, and shipping products with special packaging or bright stickers indicating that the product was available at a special price in cooperation with SCE (<a href="/en/tools-of-change/prompts/">Prompts</a>).</p>
+<p>SCE marketed the programs at the ECO EXPO trade show in Los Angeles and invited neighbouring utilities to participate. SCE also ran a toll-free Action Line to provide customers with information and brochures on the products and the programs in general, as well as information on participating dealers.</p>
+<p><strong>Barriers Encountered</strong></p>
+<p>Some manufacturers were opposed to the program and declined to participate, particularly those who held large shares of the market for incandescent bulbs and did not want to see that market shifted towards CFLs. Some of these manufacturers even shifted their product focus away from CFLs within SCE's service territory. However, SCE found that many other manufacturers were eager to fill their spots, viewing the program as a valuable opportunity to gain market share.</p>
+<p>Another difficulty encountered was the leakage of discounted products outside SCE's service territory, since there was no way to assure where the purchased lamps were used. SCE dealt with this problem by encouraging neighbouring utilities to develop similar programs, in some cases essentially running the program for them and billing them for administrative costs and merchandise.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td>Cost Overview</td>
+<td>Administrative Costs</td>
+<td>Incentive Costs</td>
+<td>Total Program Costs</td>
+</tr>
+<tr>
+<td>CFB</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>1992</td>
+<td>$ 407,496</td>
+<td>$ 4,413,144</td>
+<td>$ 4,820,639</td>
+</tr>
+<tr>
+<td>1993</td>
+<td>$ 203,146</td>
+<td>$ 2,090,676</td>
+<td>$ 2,293,822</td>
+</tr>
+<tr>
+<td>1994</td>
+<td>$ 267,673</td>
+<td>$ 2,726,700</td>
+<td>$ 2,994,373</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>$ 878,315</td>
+<td>$ 9,230,519</td>
+<td>$10,108,834</td>
+</tr>
+<tr>
+<td>CFL</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>1993</td>
+<td>$ 14,691</td>
+<td>$ 2,469,029</td>
+<td>$ 2,483,720</td>
+</tr>
+<tr>
+<td>1994</td>
+<td>$ 113,462</td>
+<td>$ 1,719,413</td>
+<td>$ 1,832,876</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>$ 128,153</td>
+<td>$ 4,188,442</td>
+<td>$ 4,316,595</td>
+</tr>
+</tbody>
+</table>
+<p>By shifting the responsibility for marketing and tracking onto the participating manufacturers, SCE was able to minimize administrative costs. For the residential program, administrative costs accounted for less than 9% of total cost, with the balance going to the product rebates. This percentage was even lower for the commercial program, at roughly 6% of total cost, since the structure of the program was already in place when the commercial program was added.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The number of lamps sold through the program was easily tracked, as the program design included a self-monitoring component that shifted the responsibility for tracking from the utility to the manufacturer. Manufacturers were required to submit a Proof of Performance package consisting of purchasing and shipping documentation, and the rebate money was issued once the sale of the allotted goods was verified. The requirement to verify that a specified percentage of lamps had been sold within a certain time frame ensured that SCE knew exactly how many lamps were sold throughout the duration of the program.</p>
+<p>SCE staff also conducted field inspections throughout the year at participating retailers, collecting data on model numbers and inventory to determine distribution patterns and market shares and to verify that the products were appropriately priced and stocked. The inspectors also noted the shelf space given to discounted products and special product displays.</p>
+<p>In order to evaluate the energy savings generated by the CFB program, SCE conducted a Residential Lighting Study in 1993 as a baseline measure of residential lighting. The study entailed an on-site inventory of several hundred residences in the region to collect data on the number of fixtures, number and types of bulbs and the types of rooms they were used in, and the number of hours and time used. In a follow-up study in 1994, SCE conducted phone interviews with over 500 customers who purchased CFLs at the programs discounted price. The data gathered in this survey was used to establish the percentage of bulbs installed and their usage, as well as the percentage of bulbs purchased through the program that was used outside SCE's service territory. SCE also compared data on end-use patterns for residential lighting with neighboring utilities in order to confirm its own findings.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>No direct feedback was provided to participants, although customers received indirect feedback through longer lifespans of the lamps compared to incandescent bulbs, and through lower energy bills as a result of using the energy-efficient bulbs (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation over Time</a>).</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>In the three years that it ran, the residential CFB program moved over 2 million lamps, with 950,000 units sold in 1992, 466,374 units in 1993, and 613,417 units in 1994. An estimated 13% of the bulbs sold at the consumer level were used in residences outside of SCEs service territory. Through the commercial CFL program, 455,139 units were sold in 1993 and 321,058 units in 1994. For both programs, the entire quota of lamps budgeted for in each year were sold.</p>
+<p>The residential program resulted in energy savings of 47,382 MWh for the pilot program and first complete year, followed by savings of 22,800 MWh and 30,875 MWh for 1993 and 1994, respectively. This amounted to cumulative savings of 202,114 MWh from 1992-1994 and projected lifecycle savings of over 650,000 MWh. The commercial program generated even greater energy savings, since lighting constituted a greater proportion of commercial energy use than of residential use. Total savings from the commercial program were 70,416 MWh for 1993 and 48,563 MWh for 1994, for cumulative savings of 237,958 MWh and projected lifecycle savings of 773,365 MWh. Assuming 1000 hours of use per year per bulb and an average lifespan of 6,500 burning hours for a CFL (the bulbs sold by program had an average life of 6.5 years).</p>
+<p>Manufacturer participation in the CFB program increased from 3 during the pilot phase in 1991 to 11 in 1994. Retailer participation increased much more dramatically over the duration of the program. Prior to the program, about 100 stores within SCEs service territory carried CFLs, and they received little shelf space or advertising. By 1994, over 800 retailers carried CFLs. This increase was complemented by additional shelf space devoted to the products, special advertising displays, and an increase in sales clerks knowledge of the products. Similarly for the commercial program, manufacturer participation rose by a factor of three, from 6 manufacturers in 1993 to 18 in 1994, and the number of participating distributors rose from 13 to 148.</p>
+<p>The competitive pressures created by the programs prompted many retailers who had either run out of their rebated stock or did not carry the rebated products to mark down their regularly priced CFL units. This trend lasted as much as eight weeks after the distribution of the discounted goods. There was also evidence that the programs generated long-term market transformation, as retailers in the region shifted the product group into a lower mark-up bracket, resulting in a lower base price.</p>
+<p>SCEs CFL rebate programs served as a template that was spread to other technologies and other utilities. The same model was applied to SCE's Energy Efficient Motor program in 1993 and Residential Energy Efficient Pool Pump Motors program in 1994. Other utilities have used the manufacturer rebate model in their DSM portfolios as well. In 1993, the Consortium for Energy Efficiency, in conjunction with a number of non-profit organisations, began developing a national residential and small commercial energy efficient lighting initiative, modeled after SCE's program, to serve as a template for any utility wishing to implement such a program.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Bill Grimm <br/>
+Southern California Edison <br/>
+(626) 302-8795 <br/>
+<a href="http://www.sce.com">www.sce.com</a></p>
+<p>This case study was written by Sherry Lealess. Sherry offers writing, editing and research services, specializing in energy and environmental issues and international development. Email Sherry at <a href="mailto:s_lealess@yahoo.com">s_lealess@yahoo.com</a>.</p>
+<p>Funding for the addition of this case study was generously provided by the Government of Canadas Climate Change Action Fund, Suncor, Syncrude, Enbridge Consumers Gas and TetraPak Canada.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Lessons Learned</p>
+<p>Experimenting with different models for reducing the retail price of CFLs during the pilot phase enabled SCE to discover which method was both successful and cost-effective.</p>
+<p>By passing on the bulk of the responsibility for marketing and tracking to the manufacturers, SCE was able to greatly reduce its administrative costs and maximize the programs cost-effectiveness.</p>
+<p>Last updated: August 2004</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

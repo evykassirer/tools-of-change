@@ -1,0 +1,263 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Frank Porter Graham Child Development Institute, University of North Carolina at Chapel Hill, Chapel Hill, North Carolina</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Robert Wood Johnson Foundation</li>
+<li>Town of Carrboro</li>
+<li> Carrboro Recreation and Parks Department</li>
+<li>Carrboro Board of Aldermen</li>
+<li>Orange County Cooperative Extension</li>
+<li>Duke Energy</li>
+<li>Orange County Public Health Department</li>
+<li>Chapel Hill-Carrboro City Schools</li>
+<li>Carrboro Community Garden</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>17% (n=6) of obese or overweight children had improved their BMI classification</li>
+<li>100% of the children with a BMI classification of normal had maintained that BMI classification.</li>
+<li>The average number of servings of fruit eaten by the children increased by 28% (two additional servings per week).</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Growing Healthy Kids</h1>
+<p>This well-documented obesity prevention program pilot for low-income families in Carrboro NC (USA) featured three main components. Weekly work sessions in a community garden provided gardening instruction and practice opportunities and a familiarity with the vegetables. A seven-week workshop series covered cooking and nutrition. Social activities and events built and maintained interest in the garden and fostered interaction between garden members. By the end of their participation in the program, 17% (n=6, p&lt;0.004) of obese or overweight children had improved their BMI classification and 100% of the children with a BMI classification of normal had maintained that BMI classification.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: </em>This case study consists of exerpts from the open access <a href="http://www.ajpmonline.org/article/S0749-3797(12)00907-5/fulltext" target="_blank">article</a> "Growing Healthy Kids (GHK) A Community Garden–Based Obesity Prevention Program" by Castro, Samuels and Harman (2013). For full reference, including Creative Commons Licensing details, see the Note at the end of this case study (below). For tables, figures and references, please see the full article.</p>
+<p>A growing body of research suggests that the risk for childhood and adolescence obesity appears during the early childhood years. Children who have a high BMI or who are overweight or obese in early childhood are more likely to be overweight or obese in mid-childhood and adolescence. However, those risk factors are not uniformly distributed across racial/ethnic groups in the U.S. About one in seven low-income, preschool children in the country is obese, and Latinos are among those with the highest prevalence of obesity.</p>
+<p>Factors that have been identified as related to childhood obesity include limited intake of healthy food and limited physical activity. Some research shows that when low-income families do not have enough money to buy the food their families need, they adopt a deliberate strategy to stretch their food budget, such as purchasing low-cost, more energy-dense foods that tend to contain higher amounts of fat and sugar and lower amounts of important nutrients. Also, emerging research indicates that having access to local healthy food outlets seems to be associated with healthier food intake and a lower prevalence of childhood obesity.</p>
+<p>These research findings have led many community agencies and local governments to look for ways to work together to promote programs that allow their low-income residents to gain increased access to nutritious foods and opportunities for child and adult physical activities in the community. One such strategy is the use of community gardens—pieces of land gardened collectively by a group of people—as a resource for providing low-income residents with greater access to fruits and vegetables and allowing for increased activity.</p>
+<p>A few studies indicate that gardens have potential as an environmental approach that not only improve participants' nutrition and physical activity but also serve as a mechanism to influence public policy on obesity prevention by increasing awareness in the community and among policymakers.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<ol>
+<li>To help children achieve or maintain a healthy body weight for their age and height (based on BMI).</li>
+<li>To increase the number of fresh, frozen, and canned fruits and vegetables that children had access to, particularly in their homes.</li>
+<li>To increase the number of servings of fresh, frozen, and canned fruits and vegetables the children ate each day</li>
+</ol><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>A review of literature found that those who participated in a community garden consumed more fruits and vegetables than those who did not. Other studies reported gardeners consuming more vegetables and eating a balanced diet more often than comparison participants.</p>
+<p>A survey of 766 adults in Flint MI found that those who had participated in a community garden consumed fruits and vegetables 1.4 more times per day than those who did not participate, and they were 3.5 times more likely to consume fruits and vegetables at least five times a day. Also, in an evaluation of a community garden project of the California Healthy Cities and Communities initiative, 338 participants reported an increase of 10% in their intake of fruits and vegetables.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><em>Editorial Note: At the end of some paragraphs, Tools of Change has inserted in brackets the approaches (Tools of Change) illustrated in the paragraph. </em></p>
+<p>The GHK program used community gardens as a vehicle for providing low-income families that are raising young children access to information about proper nutrition and healthy eating. The project also provided these families an opportunity to work with their children to grow fresh vegetables for their families. Some of the vegetables and fruits grown include lettuce, spinach, Swiss chard, potatoes, peppers, squash, cucumbers, onion, strawberries, melons, roselle, lemongrass, hot peppers (various), beets, carrots, cilantro, mint, basil, sweet potatoes, pumpkins, gourds, and peas. Between Spring 2008 and Spring 2009, three community gardens were established. All three gardens were located in Carrboro NC (at an elementary school, a community park, and land owned by a utility company), and served families from surrounding communities within Orange County. The GHK program included three main components, as follows.</p>
+<p><em>Weekly gardening work sessions</em></p>
+<p>From April through November of each of the three program years (2008, 2009, and 2010), each community garden held established hours every week when the gardens were open and staff were present to assist families with preparing, planting, tending, and harvesting their gardens. During these weekly work sessions, the families learned specific gardening skills, such as soil preparation, proper planting and watering methods, and weeding. Work sessions also gave families the opportunity to practice gardening skills. All tools and materials were provided to families.(Building Motivation, Engagement and Habits Over Time; Feedback and Recognition; Overcoming Specific Barriers; Vivid, Personalized, Credible, Empowering Communication)</p>
+<p>Of the 60 participating families, 27 (45%) participated every week in the work sessions; 27 (45%) participated two to three times per month; and 4 (7%) participated once a month or less. For two families (3%), no attendance data were reported.</p>
+<p><em>Cooking and nutrition workshops</em></p>
+<p>North Carolina Cooperative Extension staff conducted a 7-week cooking and nutrition workshop series for all families, including both parents and children, participating in the GHK project. During the 2010 growing season, the cooking and nutrition workshops were offered in Spanish and specifically targeted toward the Hispanic families in the GHK program. The workshops also provided families and their children with useful information and resources related to making healthy food choices. All participants completed postworkshop session evaluations. (Building Motivation, Engagement and Habits Over Time; Feedback and Recognition; Overcoming Specific Barriers; Vivid, Personalized, Credible, Empowering Communication) </p>
+<p>Nine of the 25 Hispanic mothers/families (36%) participated in the Expanded Food and Nutrition Education Program (EFNEP) conducted by the North Carolina Cooperative Extension. Six cooking classes were conducted between May 1, 2010, and June 12, 2010, on Saturdays. NC Cooperative Extension staff taught all classes in Spanish. Seven of the nine mothers (77.8%) participated in all six classes; one mother participated in five classes; and one mother participated in four classes. </p>
+<p><em>Social activities and events </em></p>
+<p>Additional activities were planned to further emphasize the community nature of the project. Many community gardens utilize these types of activities to build and maintain interest in the garden and foster interaction between garden members. Several of these activities coincided with data collection dates and brought the families together in an easy-to-access location as they met with the project data collection staff. During the course of each program year, three to four additional activities and events were planned for participating families. </p>
+<p>Activities focused on the inclusion of the whole family participating in seasonal potluck dinners (with food made from garden ingredients using healthy recipes that were in many cases developed by the gardeners); garden community meetings to discuss the progress being made in the garden and troubleshoot any issues arising in the gardens; scarecrow making; birdhouse building; and pumpkin carving at the local farmers' market. A garden newsletter published in Spanish and English further emphasized the work of the gardeners and highlighted healthy recipes, common garden/growing issues, and included a children's section. Initially project staff planned the events but with the growth of the gardener advisory group, the families began to take much more responsibility for organizing the events, especially the potluck community meetings where more and more information was exchanged as the project progressed. (Building Motivation, Engagement and Habits Over Time; Feedback and Recognition)</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>This study was funded by the Robert Wood Johnson Foundation through its national program, Salud America! The RWJF Research Network to Prevent Obesity Among Latino Children (www.salud-america.org). Salud America!, led by the Institute for Health Promotion Research at The University of Texas Health Science Center at San Antonio, Texas, unites Latino researchers and advocates seeking environmental and policy solutions to the epidemic.</p>
+<p>Other sources of support for the implementation of the community gardens and parent nutrition classes came from community partners and individuals including the Town of Carrboro, Carrboro Recreation and Parks Department; The Carrboro Board of Aldermen; the Orange County Cooperative Extension, Duke Energy; Orange County Public Health Department, Chapel Hill-Carrboro City Schools, Carrboro Community Garden, Maria Hitt, and all the families and children who participated in this program</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The program centered on three primary goals related to preventing obesity and promoting healthy eating in young children. First, the program sought to help children achieve or maintain a healthy body weight for their age and height. To measure the achievement of this program goal, the height, weight, date of birth, and gender of each child was recorded at the time that their family began participating in the GHK program. Also, post-program height and weight information was collected and recorded for each child to determine change in child's BMI classification over the program period. </p>
+<p>Based on these measures, each child's BMI was calculated and classified using the CDC growth charts for children and the CDC's BMI classification categories. Children aged 2–5 years with a BMI-for-age ≥95th percentile were classified as obese; children between the 85th and 94th percentile were classified as overweight. A final change in BMI classification was determined based on each child's beginning BMI classification and his or her last recorded BMI classification. </p>
+<p>A second goal of the GHK program was to increase the number of fresh, frozen, and canned fruits and vegetables that children had access to, particularly in their homes. Providing access can increase the likelihood of children's consumption of fruits and vegetables. To measure the change in children's access to fruits and vegetables at home over the period of time their families participated in the GHK program, data were collected from parents using surveys administered at baseline and again at the end of each year the family participated in the program. </p>
+<p>The survey was designed after an agency-wide planning process that included focus groups with families. Feedback was received from the agency's community garden advisory committee. Also, the instrument was used with Latino families prior to this project. For each participating family, a primary parent was identified and asked to complete all surveys on behalf of the family. At each survey administration, the primary parents were asked to name all the fresh, frozen, and canned fruits that were currently available in their homes. The number of unique fruits identified by the primary parents at each survey administration was counted and recorded. Similarly, but separately, the primary parents were also asked to name all the fresh, frozen, and canned vegetables currently available in their homes. The numbers of unique vegetables identified at each administration of the surveys were also counted and recorded. </p>
+<p>The change in the availability of fruits in the children's homes was calculated as the difference between the total number of fruits named at baseline and at the last survey administration. In addition, both the absolute change and the relative change in the number of fruits available to children in their homes over the period of time their families participated in the GHK program were calculated. </p>
+<p>A third goal of the GHK program was to increase the number of servings of fresh, frozen, and canned fruits and vegetables the children ate each day. To measure the change in children's average daily consumption of fresh, frozen, and canned fruits and vegetables over the period of time their families participated in the GHK program, data were again collected from parents using surveys administered at baseline and at the end of each year the family participated. Each family identified a primary parent to complete all surveys. </p>
+<p>At each survey administration, the primary parents were asked: On a typical weekday, how many servings of fruit does your child eat? (Include fresh, frozen, dried, and canned fruit and 100% fruit juice. Don't include flavored drinks or snacks. Count servings your child may get both at daycare or preschool and at home.) The number of servings of fruits identified by the primary parents at each survey administration was counted and recorded. Similarly, but separately, the primary parents were also asked: On a typical weekday, how many servings of vegetables does your child eat? (Include fresh, frozen, and canned vegetables. Don't include french fries. Count servings your child may get both at daycare or preschool and at home.) The number of servings of vegetables identified at each administration of the surveys was also counted and recorded. </p>
+<p>The change in children's consumption of fresh, frozen, and canned fruits in their homes was calculated by subtracting the total number of servings of fruits identified by the primary parent at baseline from the total number of servings identified at the last (for that family) survey administration. In addition to the absolute change in number of servings of fruits eaten by the children during a typical weekday during the time their families participated, the relative change was calculated by dividing the post-program number of servings of fruits by the pre-program number of servings of fruits and multiplying by 100. For example, if the parent named four fruits in the home when the family joined the program and seven fruits in the home at their final survey, the absolute change in fruit availability would be recorded as +3, and the relative change as +175%. This process was repeated to determine the change in availability of fresh, frozen, and canned vegetables in the home from pre- to post-program. </p>
+<p>Data were collected across three growing seasons—2008, 2009, and 2010—and were analyzed throughout the duration of the study for progress monitoring purposes. The final analyses were conducted in early 2011 after the last data collection period in Fall 2010. </p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p> Personalized feedback was provided through the </p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Across three growing seasons (2008, 2009, and 2010), a total of 60 families with a combined 120 children participated in the GHK program with an average of four people per participating family (Table 1). Of the 120 children, 59 (49%) were boys and 61 (51%) were girls. Seventy-one children (59%) were Latino/a. The mean age of the children at the time their families began participating in the GHK program was 6.0 years (SD=3.4 years). </p>
+<p><em>Changes in Children's Body Mass Index Classifications</em></p>
+<p>Matched pre- and post-program height and weight data were collected for 95 children aged 2–15 years at the time their families entered the GHK project. The remaining 25 children were either aged &lt;2 years or did not have post-program data recorded. Of the 95 children for whom a BMI could be calculated, 36 (38%) had a BMI classification of either obese or overweight at the time their family joined the GHK. </p>
+<p>For these 36 children, six (17%; p&lt;0.005) had achieved an improved BMI classification by their last height and weight measures (Table 2). Of the 23 children with a classification of obese at the beginning of the program, three (13%; z=1.86, p&lt;0.05) had achieved a BMI classification of overweight at post-program, whereas 20 remained obese. Of the 13 children with a classification of overweight at the beginning of the program, three (23%; z=2.0, p&lt;0.03) had achieved a BMI classification of normal, and ten remained overweight. Of the six children (6.3%) who had a classification of underweight at the beginning of the program, five remained underweight, and one had achieved a classification of normal. The remaining 53 children (55.8%) had a classification of normal at the beginning of the program, and at post-program all of these children had maintained a BMI classification of normal weight. </p>
+<p><em>Availability of Fruits and Vegetables</em></p>
+<p>A second goal of the GHK program was to increase over the program period the availability of fresh, frozen, and canned fruits and vegetables for children in their homes. Using self-report survey data from pre-program to post-program, the goal was for parents to report having more fruits and vegetables in their home. A total of 48 families reported at both pre- and post-program on the question How many fresh, frozen, or canned fruits do you have at your home today? </p>
+<p>The average number of fruits named by the parents on the pre-program survey was 1.75 (SD=1.06), and the average named on post-program survey was 4.3 (SD=1.53; Figure 1). The average absolute change in the number for fruits available to the children in their homes over the program period increased by 2.55 (SD=1.41). The percentage increase was 146% (t=12.53, df=47, p&lt;0.001). </p>
+<p>Similarly, when asked How many fresh, frozen, or canned vegetables do you have at your home today? 48 families also reported at both pre- and post-program. The average number of vegetables named by the parents on the pre-program survey was 3.5 (SD=2.06), and the average named on post-program survey was 7.8 (SD=1.80). The average absolute change in the number for vegetables available to the children in their homes over the program period increased by 4.3 (SD=1.82; Figure 1); the percentage increase was 123% (t=16.37, df=47, p&lt;0.001).</p>
+<p><em>Consumption of Fruits and Vegetables</em></p>
+<p>The final goal of the GHK program was to increase over the program period the number of servings of fresh, frozen, and canned fruits and vegetables that children would eat on a typical day. Again, using self-report survey data from pre- to post-program, the goal was for parents to report an increase in the number of servings of fruits and vegetables that their children ate on a typical day. </p>
+<p>A total of 48 families reported at pre- and post-program on the question On a typical weekday, how many servings of fruit does your child eat? (Include fresh, frozen, dried, and canned fruit and 100% fruit juice. Don't include flavored drinks or snacks. Count servings your child may get both at daycare or preschool and at home.) The average number of servings of fruits named by the parents on the pre-program survey was 3.2 (SD=1.07), and the average named on post-program survey was 4.1 (SD=1.02; Figure 2). The average number for servings of fruits eaten by the children on a typical day over the program period increased by 28% per day (t=4.31, df=47, p&lt;0.001), which translates to two additional servings per week.</p>
+<p>Similarly, when asked On a typical weekday, how many servings of vegetables does your child eat? (Include fresh, frozen, and canned vegetables. Don't include french fries. Count servings your child may get both at daycare or preschool and at home.), 46 of the 48 families responded at both pre- and post-program. The average number of servings of vegetables named by the parents on the pre-program survey was 2.1 (SD=0.96), and the average named on post-program survey was 2.8 (SD=1.28; Figure 2). The average number for servings of vegetables eaten by the children on a typical day over the program period increased by 33% per day (t=3.17, df=45, p&lt;0.001), which translates to 4.9 additional servings per week.</p>
+<p>Examples of local policy changes included the following:</p>
+<ol>
+<li>The Town of Carrboro master plan for parks and recreation was edited to include designated parks and future parks capable of including community garden sites</li>
+<li>Local policy supported “micro farming” within the town limits and required recreational facilities/space in all private developments</li>
+<li>The GHK program team periodically reviewed Town and county policies to determine whether existing plans or ordinances needed modification to support the ongoing sustainability of the community garden sites.</li>
+</ol><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Address correspondence to: <a href="mailto:dina.castro@unc.edu?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">Dina C. Castro</a>, MPH, PhD, Frank Porter Graham Child Development Institute, University of North Carolina at Chapel Hill, 105 Smith Level Rd., CB #8180, Chapel Hill NC 27599-8180</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study contains excerpts from the <a href="http://www.ajpmonline.org/article/S0749-3797(12)00907-5/fulltext" target="_blank">open-access article</a> Growing Healthy Kids: A Community Garden–Based Obesity Prevention Program, by Dina C. Castro, MPH, PhD, Margaret Samuels, MSW, and Ann E. Harman, PhD . The article was originally published by the American Journal of Preventative Medicine in March, 2013 (Volume 44, Issue 3, Supplement 3, Pages S193–S199). Creative Commons License <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>.  </p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

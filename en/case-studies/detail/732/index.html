@@ -1,0 +1,447 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li> SEI</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<p> California utilities including:</p>
+<ul>
+<li>Pacific Gas and Electric Company</li>
+<li>Southern California Edison Company</li>
+<li>San Diego Gas &amp; Electric Company</li>
+<li>Southern California Gas Company</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>School energy reductions of 5% to 15%</li>
+</ul>
+<p> </p>
+<p>Case Study <a href="/userfiles/California Energize Schools V3.pdf" target="_blank">PDF</a></p>
+<p>Reports available at <a href="https://www.energizeschools.org/2018-energy-competition.html" target="_blank">https://www.energizeschools.org/2018-energy-competition.html</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>California’s Energy Conservation Competition</h1>
+<p>Participants in <em>California’s Energy Conservation Competition</em> work to change energy conservation behaviors in their schools relating to lighting, plug-loads, and mechanical systems. They also develop campaigns to encourage fellow students to communicate with teachers, peers, and administrators about energy conservation practices. This comprehensive program cuts school energy bills by 5% to 15%, and integrates climate education and energy efficiency, with linkages to hands-on job training and career development. Designated a <em>Landmark </em>case study in 2020.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></strong></p>
+<p>Every year, California schools spend $700 million on energy. That’s about the same amount they spend on school supplies and materials. The Energy Conservation Competition addresses this issue by providing holistic services to engage, inspire, and empower K-12 students to reduce energy consumption at their schools resulting in cost savings and greenhouse gas emissions reductions.</p>
+<p>The program was developed and implemented by non-profit SEI (see the Notes section for further details on SEI.)</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Through implementing energy conservation projects for 20 years in facilities ranging from apartment buildings to schools, SEI had developed a keen understanding of the benefits and barriers associated with individuals reducing their energy consumption. In addition to energy conservation expertise, the organization had years of experience working with K-12 teachers and school districts implementing project-based curriculum and providing in class instructional support. Its energy conservation expertise paired with experience working in K-12 education provided it with an understanding of individual and school wide opportunities and barriers to reducing energy consumption.</p>
+<p><strong>Prioritizing Audiences</strong></p>
+<p>The program’s priority audiences were K-12 students throughout the state of California.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Recruiting Teachers</strong></p>
+<p>SEI had developed relationships with area teachers and schools over a 20-year period. To recruit new teachers, it worked with county offices of education, districts, and other partners.</p>
+<p><strong>Energy Advisors, Instructional Planning and In-Class Instructional Support</strong></p>
+<p>Schools that registered for the Energy Conservation Competition received support from a dedicated SEI Energy Advisor. These Energy Advisors helped both teachers and student leaders to implement the Energy Conservation Competition, launch lessons and develop their campaign action plans. The Advisors provided instructional support and in-class instruction, developed teacher expertise about energy conservation, and made them more effective at supporting student’s behavior changes throughout the competition. The Energy Advisors were the experts for the school-wide energy reduction campaigns; they acted as advisors when questions or concerns came up from teachers, administrators, or students. This Energy Advisor support system reduced the knowledge barrier to achieving energy conservation behavior change.  <em>(Building Motivation, Engagement and Habits Over Time; Overcoming Specific Barriers)</em></p>
+<p><strong>Project-Based Classroom Curricula</strong></p>
+<p><em>Energy Education</em></p>
+<p>The first step in changing behavior was building student understanding of energy uses, sources, and the connection between energy and climate. To increase student interest and buy-in, this discussion emphasized the environmental, financial, and health impacts to students, their schools, and their communities. For example, the lighting curriculum highlighted how health and focus were improved by sufficient lighting.</p>
+<p>The program developed a wide range of climate solutions-focused curricula including ones designed specifically for teachers leading students through the Energy Conservation Competition. These curricula were ready-to-use and project-based, engaging students in sustainability projects and developing valuable career skills. The curricula were aligned with Common Core, California Career Technical Education, and Next Generation Science Standards.</p>
+<p>There were three versions of the Energy Conservation Competition project-based curriculum, each designed for different student audiences: K-2, 3-5 and 6-12 students. The K-5 curriculum focused on introducing students to the concept of energy. Students who completed the lesson and activities were able to describe what energy is and distinguish between energy sources. Students in grades 3-5 conducted a plug-load audit to identify opportunities for energy savings. The 6-12 version of the Energy Conservation Competition launch lesson covered the fundamentals of energy and electricity, renewable and non-renewable energy sources, and led students through a hands-on lighting and plug-load audit. (<em>Vivid, Personalized, Credible, Empowering Communication</em>)</p>
+<p><em>Conservation Action Planning</em></p>
+<p>After learning about the fundamentals of energy, students conducted a light and plug-load audit.</p>
+<p><img alt="Student from Harmony Magnet Academy conducts energy audit" height="338" src="/userfiles/Image/student from Harmony Magnet Academy conducts energy audit.jpg" width="450"/></p>
+<p class="normal" style="page-break-after:avoid;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+mso-border-shadow:yes"><i><span style='font-size: 8pt; font-family: "Minion Pro", serif;'>Student from Harmony Magnet Academy conducts energy audit<o:p></o:p></span></i></p>
+<p>They then created their energy conservation action plans. To teach students about action planning, SEI provided teachers with an Action Planning lesson. In the lesson students set a vision for their school, identified behavior changes that needed to happen to achieve their vision, and brainstormed ways to overcome those barriers. Then students used handouts to set a SMART goal for their campaigns (specific, measurable, achievable, relevant, time-bound). To empower students to overcome behavior change barriers, they were introduced to concepts in community-based social marketing. Finally, students created action plans and identified concrete next steps and timelines for all team efforts.</p>
+<p>Each school submitted its energy conservation campaign materials to its Energy Advisor. The campaigns were then judged on creativity, effort, initiatives, student empowerment, and impact. Cash prizes are awarded to the top three high schools and K-8 schools that saved the most energy, and to the top three conservation campaigns at high schools and K-8 schools.</p>
+<p><img alt="Student works on campaign poster" height="338" src="/userfiles/Image/Student works on  campaign poster.jpg" width="450"/></p>
+<p><i><span style="font-size: 8pt;">Student works on campaign poster<o:p></o:p></span></i></p>
+<p><strong>Competitions</strong></p>
+<p>Competitions focused attention on energy conservation and engaged students in learning related attitudes, knowledge and skills. Schools competed within two categories: (1) K-8 (elementary and middle schools) and (2) high schools.</p>
+<p>In addition to using the Energy Conservation Competition model to empower student-led energy reduction campaigns on school campuses, the Energize Schools program utilized the campaign competition model in an annual Earth Day Campaign Contest. In the Energize Schools Earth Day Campaign Contest, students educated their peers on an environmental issue in order to motivate positive behavior change. The program provided support and resources for designing and implementing an effective campaign on energy, water, waste, or transportation at school. As one example, some students designed campaigns to reduce single-use plastics and employed multiple creative strategies, including conducting a waste audit and presenting to fellow students, the school board, and their City Council about the importance of the issue.</p>
+<p><strong>Teacher Training Webinar</strong></p>
+<p>Participating teachers were offered a launch webinar that helped them prepare to lead their energy conservation teams. The webinar prepared them to facilitate successful Energy Conservation campaigns at their schools. During the webinar, they were oriented to the goals and scope of the Competition, reviewed Competition curriculum and instructional resources, and received detailed training about how to conduct energy audits at their schools. The webinar also provided a platform for teachers to discuss solutions to anticipated barriers to behavior change at their schools.</p>
+<p><strong>Materials</strong></p>
+<p>SEI ensured that all teachers had access to light meters and watt meters to conduct lighting and plug-load audits in their classrooms and campuses. Light meters and watt meters could be borrowed from the Energy Advisors and were also promoted through mailings. High schools could buy them using a mini-grant program that provided teachers with up to $500 in project-based learning materials.</p>
+<p>In addition to the access of light and watt meters, the Energy Conservation Competition provided the following resources to make it as easy as possible for teachers to participate with their students:</p>
+<ul>
+<li>SEI’s Energy Conservation Guide</li>
+<li>A weekend Shutdown Checklist to help school staff reduce utility use at school and contribute to their schools’ energy conservation campaigns</li>
+<li>Earth Tips to post on social media, school newsletters, or as a template for morning announcements</li>
+<li>Templates for door-hangers<br/>
+    1.	encouraging a behavior (e.g. “we all have the power! Power-down when you leave.”) 2.	recognizing a behavior (e.g. “Great job Energy Saver! Thanks for turning out your lights!)</li>
+</ul>
+<p><strong>Barriers</strong></p>
+<p>The following table summarizes the key barriers and how each was addressed.</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid #9CC2E5 .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #9CC2E5;mso-border-insidev:.5pt solid #9CC2E5">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="width:88.15pt;border:solid #5B9BD5 1.0pt;
+  border-right:none;mso-border-top-alt:solid #5B9BD5 .5pt;mso-border-left-alt:
+  solid #5B9BD5 .5pt;mso-border-bottom-alt:solid #5B9BD5 .5pt;background:#5B9BD5;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="118">
+<p class="MsoNormal"><b><span style='font-family:"Arial",sans-serif;color:white;mso-bidi-language:#0400'>Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="width:216.4pt;border:solid #5B9BD5 1.0pt;
+  border-left:none;mso-border-top-alt:solid #5B9BD5 .5pt;mso-border-bottom-alt:
+  solid #5B9BD5 .5pt;mso-border-right-alt:solid #5B9BD5 .5pt;background:#5B9BD5;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="289">
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-family:"Arial",sans-serif;color:white;mso-bidi-language:#0400'>How   it was addressed<o:p></o:p></span></b></p>
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-family:"Arial",sans-serif;color:white;mso-bidi-language:#0400'> </span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:40.9pt">
+<td style="width:88.15pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top" width="118">
+<p class="normal" style="margin-top:3.0pt"><span style="font-family: Arial, sans-serif;">Teachers already have too much on their plates to incorporate   new material</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+<p align="center" class="normal" style="margin-top:3.0pt;text-align:center"><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:"EB Garamond"'> </span></p>
+</td>
+<td style="width:216.4pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top" width="289">
+<p class="normal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#4472C4;
+  mso-themecolor:accent1">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Provided instructional planning support to identify connections   between the teachers existing projects <o:p></o:p></span></p>
+<p class="normal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#4472C4;
+  mso-themecolor:accent1">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Provided a flexible competition model that allows for scalable   participation </span><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:"EB Garamond"'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:40.9pt">
+<td style="width:88.15pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top" width="118">
+<p class="normal" style="margin-top:3.0pt"><span style="font-family: Arial, sans-serif;">Teachers’ unfamiliarity with energy auditing practices</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+<p class="normal" style="margin-top:3.0pt;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:"EB Garamond"'> </span></p>
+</td>
+<td style="width:216.4pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top" width="289">
+<p class="normal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#4472C4;
+  mso-themecolor:accent1">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Provided instructional planning and in-class instructional   support<o:p></o:p></span></p>
+<p class="normal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#4472C4;
+  mso-themecolor:accent1">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Provided a teacher training webinar<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;height:40.9pt">
+<td style="width:88.15pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top" width="118">
+<p class="normal" style="margin-top:3.0pt"><span style="font-family: Arial, sans-serif;">Student and teacher dissociation of energy use and environmental   and financial impact</span><span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+<p class="normal" style="margin-top:3.0pt;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:"EB Garamond"'> </span></p>
+</td>
+<td style="width:216.4pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top" width="289">
+<p class="normal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#4472C4;
+  mso-themecolor:accent1">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Provided project-based curriculum to establish the connection   between energy use and the environment and energy costs<o:p></o:p></span></p>
+<p class="normal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#4472C4;
+  mso-themecolor:accent1">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Empowered students to act and make changes in their   community <o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4;mso-yfti-lastrow:yes;height:40.9pt">
+<td style="width:88.15pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-alt:solid #9CC2E5 .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top" width="118">
+<p class="normal" style="margin-top:3.0pt"><span style="font-family: Arial, sans-serif;">Lack of understanding of the magnitude of energy use at the   school sites</span><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "EB Garamond"'><o:p></o:p></span></p>
+</td>
+<td style="width:216.4pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  mso-border-top-alt:solid #9CC2E5 .5pt;mso-border-left-alt:solid #9CC2E5 .5pt;
+  mso-border-alt:solid #9CC2E5 .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top" width="289">
+<p class="normal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+  margin-left:18.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:#4472C4;
+  mso-themecolor:accent1">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-family: Arial, sans-serif;">Tracked and shared energy use data and percentage reduction   results with administrators, teachers, and students<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><img alt="Poster from Buhach High School" height="667" src="/userfiles/Image/Buhach High School.png" width="445"/></p>
+<p class="MsoPlainText"><i><span lang="EN-CA" style='font-size: 8pt; font-family: "Minion Pro", serif;'>Campaign poster from Buhach High School<o:p></o:p></span></i></p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Since 2014, school energy conservation competitions have been supported by California utility customers under the auspices of the California Public Utilities Commission. A portion of the Energize Schools program was funded by California utility ratepayers and administered by Pacific Gas and Electric Company, Southern California Edison Company, San Diego Gas &amp; Electric Company and Southern California Gas Company under the auspices of the California Public Utilities Commission.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>To measure the impacts of the Energy Conservation Competition, the Energize Schools team first identified an individual at each school district who had access to energy data, then requested access and a release form, data sharing, and analysis. These barriers to data collection made it challenging to track long term impacts of the competition. Typically, the organizing team was only given permission to access school data for the three-week period of the competition and another three-week period prior to the competition that was used for a baseline comparison.</p>
+<p>To normalize baseline data for weather, baseline data were collected from the three-week period prior to the competition, when the weather was similar to the projected weather for the competition dates.</p>
+<p>In addition to this quantitative approach, anecdotal evidence was recorded to help capture some of the qualitative and otherwise undocumented program impacts.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Quantitative Findings </strong></p>
+<p>During the fall 2018 competition, the top seventeen elementary schools reduced energy by 10-15% and the next ten reduced energy by 5-10%. The top four high schools reduced energy by 10-15% and the next eight reduced energy by 5-10%.</p>
+<p class="normal" style="border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 4.0pt;
+mso-border-shadow:yes"><img alt="School Energy Savings" height="181" src="/userfiles/Image/Impacts_Chart.png" width="450"/></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:12.0pt">Impacts are higher on an annualized (rather than just three week) basis, assuming some retention of the behaviors and associated energy savings past each three-week period. Assuming that the behaviors and savings are retained after the three weeks at 30%, and a remaining school year of 27 weeks, the impacts on an annual basis may be an additional three times as high as stated (roughly 900,000 kWh in all.)</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 3pt 12pt;"> </p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width: 341.4pt; margin-left: 5.4pt; border-collapse: collapse;" width="455">
+<tbody>
+<tr>
+<td style="border-width: 1pt; border-style: solid; border-color: windowtext; width: 67pt; padding: 0cm 5.4pt;" valign="top" width="89">
+<p class="MsoNormal"><span style="font-size: 12pt;"> <o:p></o:p></span></p>
+</td>
+<td style="border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: none; width: 137.2pt; padding: 0cm 5.4pt;" valign="top" width="183">
+<p class="MsoNormal"><span style="font-size: 12pt;">4 years*<o:p></o:p></span></p>
+</td>
+<td style="border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: none; width: 137.2pt; padding: 0cm 5.4pt;" valign="top" width="183">
+<p class="MsoNormal"><span style="font-size: 12pt;">Per year<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border-top: none; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; width: 67pt; padding: 0cm 5.4pt;" valign="top" width="89">
+<p class="MsoNormal"><span style="font-size: 12pt;"> kWh<o:p></o:p></span></p>
+</td>
+<td style="border-top: none; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: none; width: 137.2pt; padding: 0cm 5.4pt;" valign="top" width="183">
+<p class="MsoNormal"><span style="font-size: 12pt;">908,095<o:p></o:p></span></p>
+</td>
+<td style="border-top: none; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: none; width: 137.2pt; padding: 0cm 5.4pt;" valign="top" width="183">
+<p class="MsoNormal"><span style="font-size: 12pt;">227,024 <o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border-top: none; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; width: 67pt; padding: 0cm 5.4pt;" valign="top" width="89">
+<p class="MsoNormal"><span style="font-size: 12pt;">$<o:p></o:p></span></p>
+</td>
+<td style="border-top: none; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: none; width: 137.2pt; padding: 0cm 5.4pt;" valign="top" width="183">
+<p class="MsoNormal"><span style="font-size: 12pt;">132,391<o:p></o:p></span></p>
+</td>
+<td style="border-top: none; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: none; width: 137.2pt; padding: 0cm 5.4pt;" valign="top" width="183">
+<p class="MsoNormal"><span style="font-size: 12pt;">33,098<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border-top: none; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; width: 67pt; padding: 0cm 5.4pt;" valign="top" width="89">
+<p class="MsoNormal"><span style="font-size: 12pt;">Lb. of CO2<o:p></o:p></span></p>
+</td>
+<td style="border-top: none; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: none; width: 137.2pt; padding: 0cm 5.4pt;" valign="top" width="183">
+<p class="MsoNormal"><span style="font-size: 12pt;">438,342<o:p></o:p></span></p>
+</td>
+<td style="border-top: none; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: none; width: 137.2pt; padding: 0cm 5.4pt;" valign="top" width="183">
+<p class="MsoNormal"><span style="font-size: 12pt;">109,586<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal" style="margin: 0cm 0cm 3pt 12pt; break-after: avoid;">*  fall 2014 to fall 2019</p>
+<p><strong>Qualitative Findings</strong></p>
+<p>Long-term changes in students’ habits, their ability to impact their families and friends, and what this could mean for their interest in (for example) climate activism, all have important but hard-to-measure longitudinal benefits.</p>
+<p>The impact of the competition clearly extended beyond the classroom. Middle school teacher Patty Wynman said it best when she described the impact the competition had on her students. “Everywhere they go these students are the energy police, they laugh about it, they are shocked by it and they can’t stop thinking about saving energy once they have been in this competition. They have become energy efficient themselves and pass it to their families because they have seen the cost savings.”</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Jessica Redden<br/>
+<a href="mailto:jessicaredden@seiinc.org?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website%2F">jessicaredden@seiinc.org</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned</strong></p>
+<p>Involving students in the baseline energy audits, energy use competitions, action planning, and project- and curriculum-based deep-learning opportunities are great ways to engage students in energy conservation and becoming local champions.</p>
+<p>The scope of each school's conservation campaigns varied depending on the capacity of participating student teams, resulting in a large variation in savings.  Students were encouraged to design their own campaigns and address opportunities at their specific school site. Elementary school facilities had different energy demands than middle school and high school facilities. Typically, elementary schools had fewer classrooms and did not have stadiums, large gymnasiums, workshops with power tools, or pools. These types of facilities, which represent large energy demands, are typically found in high schools and sometimes middle schools. Therefore, elementary schools tended to see a higher relative reduction in energy use throughout the competitions because the teachers in those schools were able to directly affect a larger portion of the school’s energy use. Historically this difference was accounted for by having two competition brackets, K-8 and 9-12.</p>
+<p><strong>Notes</strong></p>
+<p>Between 2014 and 2020, the Energy Conservation Competition model was used to implement 10 conservation competitions engaging schools from across the state of California. It has been used at a K-12 schools indicating the versatility of the program in meeting a wide range of student and teacher needs. The Energy Conservation Competition processes and systems in place, from data collection to Energy Advisor roles, made this competition adaptable and replicable.</p>
+<p><em>Replicability:</em> This approach can be easily replicated in regions with different climates and political leanings. The curriculum’s technical content provides career-relevant experience in the energy auditing field - which is a need everywhere. Regional climate challenges can be addressed by timing the competition to avoid extreme weather. If the challenge is implemented during a particularly hot season, additional curriculum on HVAC (already available in SEI’s Energy Auditing Curriculum) can be added to the competition content.  One challenge with expanding the competition beyond California is obtaining the energy data. Every utility has different ways of accessing energy data and policies for requesting the data.</p>
+<p><em>Adaptability:</em> This program emphasized energy conservation, but it could easily be modified to focus on any other sustainability behavior and to many other behaviors as well.</p>
+<p><em>Facility Staff:</em>Collecting schools’ energy use data was challenging. Data collection required identifying an individual at the school district that had access to energy data, requesting access and a release form, data sharing, and analysis. These barriers to data collection made it challenging to track long term impacts of the competition. Typically, the program only had permission to access school data for the three-week period of the competition and another three-week period prior to the competition that was used for a baseline comparison. It is critical that these “hard to reach" users be engaged early on in program planning, to ensure access to the required evaluation data.</p>
+<p><em>SEI</em> is a non-profit organization that was founded more than 20 years ago with the goal of supporting communities to transform the built environment to protect the climate. The organization has created sustainable communities through scalable programs and models. Energize Schools is one of four flagship programs that integrates climate education, training, and career development. SEI programs engage local talent to directly address their community’s sustainability goals by leading projects with measurable environmental, economic, and social benefits. The organization’s first projects engaged students in energy auditing and advising local businesses; they were the inception of SEI’s K-12 Energize Schools work. The organization’s team continues to develop and support innovative initiatives to create a sustainable world where communities thrive. </p>
+<p><strong>Landmark Designation</strong></p>
+<p>The program described in this case study was designated in 2020.</p>
+<p>Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Arien Korteland, BC Hydro</li>
+<li>Kathy Kuntz, Kanndo Consulting</li>
+<li>Doug McKenzie-Mohr, McKenzie-Mohr Associates</li>
+<li>Sea Rotmann, Sustainable Energy Advice Ltd.</li>
+<li>Brian Smith and Lester Sapitula, Pacific Gas and Electric Company</li>
+<li>Reuven Sussman, American Council for an Energy-Efficient Economy</li>
+<li>Marsha Walton, New York Energy Research and Development Authority  </li>
+</ul>
+<p>This case study was compiled by Jay Kassirer in 2020, based on information provided by SEI and PG&amp;E.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

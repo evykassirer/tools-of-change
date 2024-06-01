@@ -1,0 +1,334 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Paxis Institute</li>
+<li>State of Wisconsin Department of Health and Family Services</li>
+<li>State of Wyoming Department of Health and Family Services, Substance Abuse Division</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Wisconsin – Community Anti-Drug Coalitions of America</li>
+<li>Wyoming – Regional Prevention Centers</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Average illegal sales of tobacco to minors in the two states fell from 43% to 8.5%, and from 35% to 15.7%</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Reward and Reminder Reduces Illegal Cigarette Sales</h1>
+<p>Reward and Reminder, within months, dramatically reduced the illegal sales of cigarettes to minors in a number of American states, and is easily replicable. This case study is an excellent illustration of the use of multiple baseline design instead of control groups.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing – as is the case with this particular program.</em></p>
+<p>Reducing youth access to tobacco is one of the key elements of the U.S. Centers for Disease Control Best Practices for Comprehensive Tobacco Control.1 However, enforcement strategies and retail education strategies had generally failed to work or had aroused substantial backlash from businesses, political leaders, retail associations, and even anti-tobacco groups.2 Further, most of the published literature on reducing youth access had shown that states were failing to reach the federally mandated goal of not exceeding 20% illegal sales of tobacco to minors3,4 let alone a goal of only 10% illegal sales rate or so thought to be associated with reduced youth prevalence of tobacco use.5 Better methods of reducing youth access to tobacco were required, since higher levels of tobacco access corresponded to higher levels of tobacco initiation among adolescents.6</p>
+<p>The states of Wyoming and Wisconsin were both having difficulty reaching their federally mandated targets. Under the 1992 federal Synar Amendment, if they failed to achieve targeted reductions (i.e., below a 20% sales rate), they stood to lose 40% of the federal block grant for substance abuse treatment and prevention. In Wyoming, from 1996 through 1999 assessments required by the Synar Amendment indicated that 28.5% to 55% of stores were willing to sell tobacco to young people. Wisconsin had a similar history, though its rate of illegal sales hovered in the mid-20s for a number of years, then shot up to 33.7% in 2001. Wisconsin faced a $10 million dollar fine. Both states faced an urgent need to reduce illegal tobacco sales to minors.</p>
+<p>Reward and Reminder was quite distinct from conventional merchant education, which tended to emphasize the law, fines, and the adverse health consequences of tobacco. Neither enforcement nor merchant education procedures had fared consistently well in reducing illegal sales of tobacco to minors. 13 Further, enforcement was seen to have detrimental effects on overall community mobilization or political will. For these reasons, the Reward and Reminder approach was an attractive solution for both Wyoming and Wisconsin.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The program objective was to reduce tobacco sales to minors to below a 20% rate within one year.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The Reward and Reminder approach was originally designed by Dr. Tony Bigland. Prior research in eight Oregon communities indicated that the approach reliably reduced the proportion of outlets willing to sell tobacco to minors. In one study, employing a multiple baseline design, the intervention was shown to have significantly reduced sales rates in four communities.8 Repeated baseline assessments of sales rates in each of two communities were followed by implementation of the intervention in one community. The second community received the intervention after sales reductions were observed in the first community. This design was replicated in a second pair of communities. In all cases the intervention led to sizeable reductions in sales to minors.</p>
+<p>The intervention was then tested in four additional communities using a multiple baseline design in which two communities received the intervention, while two others did not receive the intervention but did have continuous observations.9 Across the eight communities, the proportion of outlets willing to sell dropped from 57% at baseline to 22% following the intervention. In 1996, the Reward and Reminder strategy was independently replicated in Wichita, Kansas, though it was called “commendation or citation” there.10</p>
+<p>The program designers also studied the incentives for selling tobacco to young people, and for refusing to sell. Tobacco outlets received substantial revenue from such sales. For example, Feighery and colleagues reported a significant shift within the tobacco companies in the 1990’s from traditional forms of advertising (e.g., magazines, billboards) to retailer incentive programs.7 In 1996, 47% of the industry’s $5.1 billion advertising budget went to incentives designed to increase retailers’ sales, with retailers reporting receiving more slotting allowances for tobacco products than for any other product they sold.</p>
+<p>The researchers found that retailers received an average of $3,157 per year from retailer incentive programs, $2,462 of which was directly tied to the sale of their tobacco products. In sum, though many retailers outwardly supported efforts to reduce youth access to tobacco, there were powerful monetary incentives to act otherwise.</p>
+<p>In addition to the financial incentives for selling tobacco to minors, there were disincentives for not doing so. When clerks refused to sell, the children would get angry, make threats, and create crisis and drama; the clerks would sell the cigarettes to the minors to avoid this fearful circumstance. The clerks were very poorly paid and worked bad hours. Further, it was not unusual for people to carry guns into stores and threaten them.</p>
+<p>To explore possible solutions, organizers interviewed (in the field) people who had successfully deterred out-of-control minors who had made threats. One clerk was particularly helpful. She was about 60 years old and about 4'5". She described how she successfully used humor in such situations. This led to the development of the response cards (see Delivering the Program). Lengthy processes, over a period of months, of town hall meetings, public hearings, Delphi Surveys, or needs assessments were not employed in this case—in part because of the need to achieve statewide results within 60-90 days.</p>
+<p><strong>Targeting the Audience</strong></p>
+<p>The program targeted convenience store clerks.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The Reward and Reminder approach had three components: (1) quick building of a consensus among stakeholders against illegal tobacco sales; (2) periodic visits to all tobacco outlets; and (3) media to promote norms against sales, and to recognize clerks and outlets for not selling. The store visit component involved young people attempting to purchase. If the clerk refused to sell tobacco, the clerk received a reward—typically a five to ten dollar gift certificate. Clerks willing to sell tobacco received a reminder about the law prohibiting such sales. (Financial Incentives and Disincentives; Feedback).</p>
+<p>The rationale behind this approach was that there was considerable reinforcement for selling tobacco to young people, but little for refusing to sell. Tobacco outlets received substantial revenue from such sales. (see the section on Getting Informed, above) One means of countering these contingencies was to provide rewards to clerks who refused to sell and bring positive publicity for outlets that obeyed the law.</p>
+<p><strong>Component 1: Quick Building consensus against illegal sales through Reward and Reminder.</strong></p>
+<p>A senior program organizer gave presentations to departmental, division, governor’s office representatives and key legislators in Wyoming and Wisconsin prior to program implementation. Program facilitators from the respective states were involved in follow up presentations to stakeholders. In both states, the need to implement Reward and Reminder was framed by the threatened loss of 40% of the federal block grant for substance abuse treatment if the states did not meet the federal goal of a less than 20% illegal sale rate of tobacco to minors. (<a href="http://www.toolsofchange.com/en/tools-of-change/communication/">Vivid, Personalized, Credible Communication</a>; <a href="http://www.toolsofchange.com/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>)</p>
+<p>Upon approval by key policy makers, presentations were scheduled with representatives of the tobacco and liquor retailers to secure commitment to Reward and Reminder. Their support was quickly attained, whereas such efforts had in the past been fought by retail merchants' associations.</p>
+<p>The difference is that with a regular law enforcement strategy the merchants would have been fined, and the fact that they had failed might have been publicized in the newspaper (which would have had the added disadvantage of telling minors where they could buy cigarettes). In contrast, Reward and Reminder provided rewards and no fines. </p>
+<p>This was followed by presentations to various anti-tobacco organizations.</p>
+<p>All stakeholders were asked to be become public endorsers of the campaign, which was symbolically framed by a proclamation at the state level and could also be signed at the local level. Program contractors received proclamations to take to city councils and boards of supervisors that they could sign, declaring that “we do not sell tobacco to minors in Wisconsin” (or Wyoming.) (<a href="http://www.toolsofchange.com/en/tools-of-change/communication/">Vivid, Personalized, Credible, Empowering Communication</a>; <a href="http://www.toolsofchange.com/en/tools-of-change/norm-appeals/">Norm Appeals</a>)</p>
+<p>These stakeholders were also given thank you cards targeted at store clerks. Whenever a community coalition went out and gave presentations, for example, at the Kiwanis Club, or if they met with a local official, they gave those folks thank you cards that, in turn, could be given to store clerks in the community. The cards basically said “Thank you for doing the right thing; we really appreciate that.” Elected officials received cards that were imprinted with their name and position (<a href="http://www.toolsofchange.com/en/tools-of-change/word-of-mouth/">Word of Mouth</a>; <a href="http://www.toolsofchange.com/en/tools-of-change/norm-appeals/">Norm Appeals</a>; <a href="http://www.toolsofchange.com/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>;).</p>
+<p><strong>Component 2: Recruiting and Training Reward and Reminder teams</strong>.</p>
+<p>Each state had Reward and Reminder cadres associated with political units or jurisdictions. In Wyoming, the state Substance Abuse Division organized the state into six regional teams, involving a total of 26 young people and their adult supervisors to implement the effort. In Wisconsin, county or major city health departments and tobacco coalitions were offered contracts to implement the Reward and Reminder cadres in all 70 counties of the state. All counties and communities were covered in Wyoming. Wisconsin did not achieve full coverage of counties until the fall of 2003, with about 60% of the counties covered by cadres in 2002, 70% in 2003 and 100% in 2004. This lesser initial coverage happened because some county entities initially refused the contract offers.</p>
+<p>The requirements for supervision, selection of youth, visits, pay, and reimbursement documentation were similar across states, but included minor variations related to state procurement. Both states provided funds for the payment of youth per visit (wages, certificates, etc.), which was typically managed at a local level. Both states provided incidental allowances for the purchase of items in the stores.</p>
+<p>A PowerPoint presentation, manuals, and role-play activities developed by PAXIS Institute staff and Oregon consultants were used to train adult supervisors and youth in each state.</p>
+<p>During the store visit, clerks were also provided with 12 different cards containing sample humorous responses to out-of-control minors who made threats. These response cards helped clerks resist giving in and selling cigarettes to these minors. For example, one response was: “Sure, I'll sell you the cigarettes. You need to give me – I'll need $500.00 for the fine. I'll need $350.00 for the lawyer's fees, $75.00 for my missed wages, and the price of the tobacco, which will be $4.75 plus tax. We accept cash only. That's my final answer.” (<a href="http://www.toolsofchange.com/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>)</p>
+<p>After the minor and the adult supervisor completed each store visit, they entered the data in a Palm Pilot device that was synched over the Internet. So, for example, the project had a database of almost 50,000 visits to the stores in Wisconsin organized by year, and program staff and policymakers could see real time progress data. If a county went over a prescribed level of illegal sales, various people received notification that something might need to be done. If it was below a certain level – if it was having success - policymakers got notification of this success so that they could call the Department of Health person and say, “Good job.”</p>
+<p>One PAXIS employee provided technical assistance to all of the teams. She saw the results everyday of every single county, and could provide the teams with immediate feedback. When she saw successes, she called them up, praised them, and then interviewed them about why or how they achieved that success, and then she promoted that, which increased their status. If something went wrong at a particular location, she called the team and asked them a little bit about what they did.</p>
+<p><strong>Component 3: Media Campaign </strong></p>
+<p>Using templates developed by PAXIS Institute in consultation with Oregon Research Institute, each state launched a very similar media campaign, using the same opening TV and radio ads—altered to fit the details of the state (Mass Media). Approximately $100,000 was committed in Wyoming during the first year to broadcast media, and $600,000 was committed to broadcast media in the first year in Wisconsin. Second and subsequent year media were much less extensive in both states.</p>
+<p>Past campaigns had generally emphasized that it's illegal to sell; it's bad. And paradoxically, that amplified the perception that tobacco sales to minors happen all the time. Instead, Reward and Reminder focused on the clerk and amplified the norm that clerks in the state do not sell tobacco to minors. The ads showed minors going into stores, and the clerk saying no, and then the voiceover at the very end simply said, “In Wyoming, we don't sell tobacco to minors” (<a href="http://www.toolsofchange.com/en/tools-of-change/norm-appeals/">Norm Appeals</a>).</p>
+<p>The campaign was designed to promote word-of-mouth communication. Many people think of word-of-mouth as a sort of thing that you don't really have any control over, but studies show that the choice of pronoun will dramatically affect word-of-mouth. As one example, most of the campaign materials did not use the second or third-person pronoun but, rather, the first-person pronoun – “I” and “We” (<a href="http://www.toolsofchange.com/en/tools-of-change/word-of-mouth/">Word of Mouth</a>).</p>
+<p>The media messages made extensive use of storytelling, amplifying the norm, casting the actors as the heroes of the action, rather than the evil people that you wanted to control (which would have elicited counter control.) The messages were designed to create the relational frame that not selling was good, that people were doing the right thing, that people were conscientious, people were moral, people were positive (<a href="http://www.toolsofchange.com/en/tools-of-change/communication/">Vivid, Personalized, Credible, Empowering Communication</a>; <a href="http://www.toolsofchange.com/en/tools-of-change/norm-appeals/">Norm Appeals</a>; <a href="http://www.toolsofchange.com/en/tools-of-change/word-of-mouth/">Word of Mouth</a>).</p>
+<p>Two different advertising agencies were involved in the adaptation and media buys, one for each state. Each state had a major press conference that produced stories in print and broadcast, wherein the state officials signed a proclamation. Media coverage included endorsements by retailers of the campaign as well as political and health leaders. At the introduction of the campaign, a flight of TV and radio commercials followed, in which a store clerk modeled doing the right thing, being recognized and rewarded for doing the right thing, and made it clear that the state norm was ‘no tobacco sales to minors’ (<a href="http://www.toolsofchange.com/en/tools-of-change/communication/">Vivid, Personalized, Credible Communication</a>; <a href="http://www.toolsofchange.com/en/tools-of-change/norm-appeals/">Norm Appeals</a>).</p>
+<p>Information was also provided directly to retail chains, associations, and individual establishments about the Reward and Reminder campaign.</p>
+<p>The branding of the campaign was achieved through a phrase and logo such as "Wisconsin Wins" or "Got ID?" Social marketing branding is very similar to the branding of a product that links images and words in an attractive perceived benefit. The branding allowed the use of intentional relational frame communications,24, 25 training and mobilization (e.g., reduced illegal sales helps Wyoming Win; by doing the right thing, clerks in your community are helping reduce substance abuse, juvenile crime, and protecting scarce resources for treatment so that Wisconsin Wins) (<a href="http://www.toolsofchange.com/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p>The Wisconsin project had a web site (<a href="http://www.wisconsinwins.com/">www.wisconsinwins.com</a>) with materials for contractors, the general public, merchants, law enforcement, and the media—including county-by-county “real time results” from the Palm Pilot OS software.</p>
+<p>Finally, the campaign organized publicity about successful stores and clerks for local media, and encouraged citizens to use special “thank you for doing the right thing” cards to local stores and clerks (<a href="http://www.toolsofchange.com/en/tools-of-change/feedback/">Feedback and Recognition</a>; <a href="http://www.toolsofchange.com/en/tools-of-change/norm-appeals/">Norm Appeals</a>).</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>A multiple baseline design was employed to assess the effects of the Reward and Reminder approach.14 In such a design, repeated measures of the target change variable are obtained in two or more settings (e.g., families, schools, communities). The program is then introduced in only one setting at a time. The effect of the intervention is indicated by (a) its impact on the trend line of the time-series for the setting receiving the intervention and (b) no change in the time-series for settings not receiving the intervention. Implementation in the next setting at a later point can provide a systematic replication, controlling for various time factors such as history, other events, and random variation.</p>
+<p>Such designs have been used for many decades in research on the effects of reinforcement on behavior, clinical practice, classroom education, personal and traffic safety, conservation, and prevention15-19, and more recently, suggested for the proactive evaluation of policies.20 Time-series designs can also be used as a valid post-hoc evaluation methodology, especially in matters of public health.21-23</p>
+<p>Reward and Reminder was introduced when the data were trending up in both states, which typically increases significance of any obtained downward interruptions.</p>
+<p>Two measures of access occurred in both states: 1) PAXFORMS™ Palm OS Reward and Reminder System (or paper version, if PALM OS devices were not available or used) for the implementation of Reward and Reminder, and 2) the official Synar Inspections approved by the federal government in each state. Both measures followed the protocol's minimum data set (e.g., specific variables that must be monitored such as age of youth making the visit) required for tobacco sales inspections.</p>
+<p>The official Synar inspections reported to the federal government were completely separate (different youth, different adults, different data management) from the Reward and Reminder data collection, as Synar was the key independent measure, whereas Reward and Reminder checks was the independent measure of the campaign.</p>
+<p>PALM OS handheld devices were used in both Wyoming and Wisconsin by the training managers and program coalitions for Reward and Reminder. In year four and five of their efforts, Wyoming reverted to pencil and paper forms.</p>
+<p>Teams for official Synar Inspections were managed independently from the campaign by the University of Wyoming and the University of Wisconsin, under contract as required by federal law. In all cases, however, the sampling of stores and outlets selling tobacco for Synar Inspections was required to follow federal policy and approved by the Substance Abuse and Mental Health Administration. The Synar Inspection Data are officially reported to the federal government, and used herein as the dependent measure, which were separate from Reward and Reminder visits and teams. Official reports of national Synar data, for all states, are available at <a href="http://prevention.samhsa.gov/tobacco/">http://prevention.samhsa.gov/tobacco/</a>, along with the general guidelines for inspections, training teens, and sampling procedures.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>The store visit element of this program provided personal feedback directly to store clerks. If the clerk refused to sell tobacco, the clerk received a reward. Clerks willing to sell tobacco received a reminder about the law prohibiting such sales. In addition, the campaign organized publicity about successful stores and clerks for local media, and encouraged citizens to use the special “thank you for doing the right thing” cards to local stores and clerks.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>At baseline, Wyoming and Wisconsin had a federally reported average illegal sails of tobacco to minors of 43% and 35% respectively. After Reward and Reminder, those rates declined to an average of 8.5% for Wyoming and 15.7% for Wisconsin. Both states achieved reductions to below the federal minimum standard in one year’s time, avoiding a $2.8 million penalty in Wyoming for exceeding the standard for two years previously and a $10 million penalty for Wisconsin.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Dennis D. Embry, Ph.D. <br/>
+PAXIS Institute <br/>
+520-299-6770 • <a href="mailto:dde@paxis.org" style="color: rgb(0, 128, 0);">dde@paxis.org </a><br/>
+<a href="http://www.paxtalk.com/Default.aspx?AspxAutoDetectCookieSupport=1">www.paxtalk.com</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><b>Concluding Thoughts</b></p>
+<p><b>Lessons Learned</b></p>
+<p>The present study demonstrates that the Reward and Reminder program can be quickly deployed with minor modifications across complex political jurisdictions and stakeholders in 45-60 days with measurable impact on legally, politically, programmatically, and fiscally important outcomes. The current study supports the recommendations by the Centers for Disease Control and Prevention for an effective tobacco access control as part of a balanced approach to tobacco use prevention, which has other epidemiological and experimental support<sup>6, 26, 27</sup> but has been challenged by those who have not produced significant effects on access reduction below a 10% threshold.<sup>4</sup></p>
+<p>Moreover, the present work suggests that diverse oppositional stakeholders (e.g. tobacco free advocates, tobacco retailers, trade associations, government agencies with financial losses at stake, political parties, and multi-levels of government) can be moved to measurable action without lengthy periods of needs assessments, coalition building, community adaptations, and other processes that are typically considered to be required practices in prevention.<sup>28</sup></p>
+<p>From a broader public health perspective, the current study shows that focused, simple behavioral vaccine or evidence-based kernels for public health<sup>11,12</sup> can be quickly organized, disseminated, and implemented in states, and thus produce a sustained state-level effect. This is contrary to more complex “best practices” and community needs assessment models, which, so far, have not achieved population-level effects on public health measures.<sup>29,30</sup> Inherent in the kernel or behavioral vaccine approach are the concepts of real-time data displays, in keeping with their roots from applied behavior analysis and multi-problem epidemiology.<sup>31</sup> In this case, Reward and Reminder had built-in data feedback about clerk and merchant behavior.</p>
+<p>Finally, the study demonstrates the utility of multiple-baseline, time-series designs in evaluating the effects of interventions in larger geo-political entities, including states. Such a procedure is far more likely to be feasible than the use of randomized controlled trials. One of the key benefits of the time-series approach is how simple it is to display and talk about to stakeholders, from elected officials, to businesses, to activists. The basic time-series logic can be applied by community coalitions to improve their self-efficacy.<sup>32,33</sup> The demonstration of the efficacy of a time-series approach with an evidence-based kernel or behavioral vaccine like Reward and Reminder across states has major implications for the development of programs that address multiple, related health behaviors.<sup>34</sup></p>
+<p>The implications of this study cut across multiple, linked health problems. These multi-problem links are what the Centers for Disease Control and Prevention call “syndemics”—inter-related afflictions with significant impact on morbidity and mortality.<sup>31,34-36</sup> The present study raises the possibility of using simple protocols to attack more than one element of syndemics, which then may impact linked issues such as alcohol, drugs, violence, sexually transmitted diseases, and youth crime. The present study suggests that an array of evidence-based elements like Reward and Reminder for different legs or elements of the syndemic could be measured in a time-series fashion, such as a classic multiple-baseline across places, behaviors, or settings within a state or jurisdiction.<sup>20</sup></p>
+<p>The potential of time-series designs coupled with low-cost, simple-to-use, evidence-based kernels or behavioral vaccines that can be socially marketed and rapidly deployed is large for public health and public policy. First, they are easy to understand by policy makers and stakeholder, creating political capital for important public health initiatives as indeed happened in both Wyoming and Wisconsin. Second, the model has stronger built-in accountability with the potential for changing trends faster—an important issue when syndemics like tobacco, alcohol, drugs, violence, sexually transmitted diseases, and crime are rampant and costly. Third, the model provides a rich alternative theory to the nearly institutionalized model of extensive needs assessments by individual communities, stakeholder selections of different evidence-based practices for each community, programmatic silos, and idiosyncratic evaluations.</p>
+<p><b>Other Notes</b></p>
+<p><i>“</i><i>Evidence-based kernels” or “behavioral vaccines”.</i></p>
+<p>The Reward and Reminder approach has been described as an “evidence-based kernel” or “behavioral vaccine”.<sup>11,12</sup> Evidence-based kernels are irreducible units of behavior change technology, and they can be put together into behavioral vaccines (low cost, daily practices like hand-washing or walking that reduce mortality or morbidity) with powerful longitudinal prevention results.</p>
+<p>Kernels and behavioral vaccines are simple. They are not programs or curriculum in the conventional sense of health promotion and prevention programs, which tend to be more complex, less transparent, and less susceptible to modeling effects. They also require extensive training and support, along with tight fidelity to operate effectively.<sup>12</sup> Evidence-based kernels and behavioral vaccines lend themselves to powerful social marketing strategies, because the behaviors and benefits can be easily modeled and communicated.</p>
+<p> </p>
+<p><i>Inspections</i></p>
+<p>Some changes in policy and state law affected Synar and Reward and Reminder inspections, and are worthy of mention here. Wyoming state law prevented the use of minors for the inspections until 1999, as until that time, only “young looking 18-year-olds” were to be used. Wisconsin law limits inspections, except for Synar, to two per calendar year. By policy, Wisconsin decided to run Reward and Reminder visits at bars and taverns, which require ID for 21 years of age, to determine if youth under age 18 could purchase tobacco products there. The state of Wyoming did not attempt to enter bars, taverns, or liquor stores for the Reward and Reminder project.</p>
+<p>Both Wisconsin and Wyoming recruit mostly 15-16 year olds for Synar inspections, and both states have extensive procedures for protecting the safety youth teams for either official Synar inspections as well as Reward and Reminder, including informed consent by youth and their parents or guardians. Reward and Reminder does not typically involve the youth actually making a tobacco purchase. By law, however, both states permit the use of minors presently to make inspections and make consummated buys for the purpose of tobacco control.</p>
+<p><i>Limitations</i></p>
+<p>The present study has several limitations. It does not have equivalent measures each year to tobacco use, comparable to illegal sales data for each year—which is regrettably true of most states. The magnitude difference in population between Wyoming and Wisconsin meant that not all counties in Wisconsin were able to contract for the Reward and Reminder campaign in the first year, and 100% coverage was not achieved by Wisconsin counties until the third year, a practical reality of larger states. Also, the current study has no measure of social sources of tobacco, which again was not available from any common year-to-year source in the respective states, to correspond to the multiple-baseline.</p>
+<p>The current study is not capable of answering questions about the effects of gender, ethnic, rural versus urban, other differences among youth and clerks, or minor variations in Reward and Reminder by state or county. Anecdotally, the Reward and Reminder model has had a large effect on stimulating community collaborations—but we have no formal measures of these. Finally, random assignment of the timing of which state was to receive, or which year to start, the intervention would strengthen the experimental design from a research perspective, but such an unlikely event lacks social and political validity when large penalties are at stake. Future studies may answer these and other questions, including the addition of protocols to address social sources and familiarity of youth buyers.<sup>37, 39,40</sup></p>
+<p> </p>
+<p><b>Training Video Text</b></p>
+<p>Male Speaker 1: An underage volunteer with adult supervision performs compliance checks at tobacco retailers.</p>
+<p>Female Speaker 1: I'm with adult supervisors. We're going into a store that sells tobacco … we ask to buy tobacco products.</p>
+<p>Female Speaker 2: All right.</p>
+<p>Female Speaker 1: Can I have a pack of Marlboro Lights, please?</p>
+<p>Female Speaker 2: Do you have your ID with you.</p>
+<p>Female Speaker 1: It's not on me.</p>
+<p>Female Speaker 2: I need to look at your ID</p>
+<p>Male Speaker: If the clerk doesn't do the proper ID check and complete the sale, the store's management receives a letter indicating the clerk's failure to comply with the law. This let's management know that more clerk training is needed.</p>
+<p>If the clerk asks for a valid ID and refuses a sale, he or she receives immediate recognition for doing the right thing, not selling tobacco to minors.</p>
+<p>Female Speaker 3: Well, historically, here in Wisconsin, we've taken a very punitive approach to underage access to tobacco products. In other words, we actually punish retailers who don't follow the law. What excites me the most about the Wisconsin Wins program is it combines positive reinforcement along with education. We're part of the Wisconsin Wins program, with this program to reward retailers who do the right thing. Thank you again for not selling to those teens. And to express our thanks, here's a $10.00 gift certificate for you.</p>
+<p>Female Speaker 2: Thank you.</p>
+<p>Female Speaker 3: Most people start this tobacco habit when they're teenagers, and so if we can stop that habit, and stop their access to tobacco products in their teens, we are well on the way to a healthier society.</p>
+<p>Male Speaker 1: Tobacco retailers support Wisconsin Wins because it reinforces their own efforts to comply with the law.</p>
+<p>Male Speaker 2: Well, we're happy to see that the State of Wisconsin is not only looking at ways to discipline co-workers if they do it, but also rewards the ones that are doing it right. And that's what the majority of them are doing.</p>
+<p>Male Speaker 1: The Wisconsin Wins program will be performing continuous compliance checks throughout the year, all across the state. Their goal: to ensure healthier Wisconsin teens.</p>
+<p>Female Speaker 1: I like knowing that I can make a difference.</p>
+<p><b>Radio Ad Text</b></p>
+<p>You’ve probably seen me. I'm the nice lady with the gray hair, who gets you going with a cup of coffee on your way to work, and the tired-eyed guy who feeds your midnight craving, and the man you buy gas from, who sells you chips and soda, who sees and knows almost everybody in my store. You know who I am. Now here's who I am not. I am not the man who sells tobacco to minors. I am not the girl who knows your sister, and will sell you smokes, knowing you're under age.</p>
+<p>I'm not the guy who thinks you're cute, and will ply your favor by selling you cigarettes. Here is who I am. I am someone who cares about my health and the health of others. I will not put cigarettes in the hands of kids. I'm not a fool, and neither are you. I'm a store clerk with a social conscience. When I refuse to sell tobacco to minors, I'm helping you steer clear of tobacco. In Wisconsin, we don't sell tobacco to minors. Together, Wisconsin wins.</p>
+<p> </p>
+<p><b>References</b></p>
+<p>1. Centers for Disease Control (1999). Best Practices for Comprehensive Tobacco Control Programs. Atlanta: U.S. Department of Health and Human Services, Centers for Disease Control and Prevention, National Center for Chronic Disease Prevention and Health Promotion, Office on Smoking and Health.</p>
+<p>2. Stead, LF, Lancaster, T. Interventions for preventing tobacco sales to minors. Cochrane Database of Systematic Reviews. 2004;1: CD001497</p>
+<p>3. Fichtenberg, CM, Glantz, SA. Youth access interventions do not affect youth smoking. Pediatrics. 2002;109:1088-1092.</p>
+<p>4. Ling, PM, Landman, A., Glantz, SA. It is time to abandon youth access tobacco programmes. Tob Control. 2002;11:3-6.</p>
+<p>5. Levy, DT, Friend, K, Holder, H, and Carmona, M. Effect of policies directed at youth access to smoking: results from the SimSmoke computer simulation model. Tob Control. 2001;10:108-16.</p>
+<p>6. Pokorny, SB, Jason, LA, Schoeny, ME. The relation of retail tobacco availability to initiation and continued smoking. Jrnl of Clinl Child &amp; Adol Psych. 2003;32:193-204. 7. Fiegheny and colleagues (1999)</p>
+<p>8. Biglan, A, Henderson, JM, Humphreys, D, et al. Mobilizing positive reinforcement to reduce youth access to tobacco. Tob Control. 1995;4:42-48.</p>
+<p>9. Biglan, A, Ary, D, Koehn, V, Levings, D, et al. Mobilizing positive reinforcement in communities to reduce youth access to tobacco. Am Jrnl of Comm Psych. 1996;24:625-38.</p>
+<p>10. Lewis RK, Paine-Andrews A, Fawcett SB, et al. Evaluating the effects of a community coalition's efforts to reduce illegal sales of alcohol and tobacco products to minors. Jrnl of Comm Hlth. 1996;21:429-36.</p>
+<p>11. Embry, DD. The Good Behavior Game: A best practice candidate as a universal behavioral vaccine. Clin Child and Fam Psych Rev. 2002;5:273-97.</p>
+<p>12. Embry, DD, 2004</p>
+<p>13. Stead and Lancaster, 2001</p>
+<p>14. Biglan, Ary, Wagenaar (2000)</p>
+<p>15. Luyben, PD. Effects of informational prompts on energy conservation in college classrooms. Jrnl of App Beh Analysis. 1980;13:611-17.</p>
+<p>16. Ferrari, JR, Baldwin, CH. Promoting safety belt use in shopping carts: "Buckle-up your baby." Environment &amp; Behavior. 1989;21:603-19.</p>
+<p>17. Hankin, JR, Sloan, JJ, Firestone, IJ, Ager, JW, Sokol, RJ, &amp; Martier, SS. A time series analysis of the impact of the alcohol warning label on antenatal drinking. Alcoholism: Clinical &amp; Experimental Research. 1993;17:284-89.</p>
+<p>18. Powers, SW, Blount, RL, Bachanas, PJ, Cotter, MW, &amp; Swan, SC. Helping preschool leukemia patients and their parents cope during injections. Jrnl of Ped Psych. 1993;18:681-95.</p>
+<p>19. Heck, A., Collins, J, &amp; Peterson, L. Decreasing children's risk taking on the playground. Jrnl of App Beh Analysis. 2001;34:349-52.</p>
+<p>20. Wagenaar, AC, Murray, DM, &amp; Toomey, TL. Communities mobilizing for change on alcohol: Design of a randomized community trial. Jrnl of Comm Psych. 1994;95: 79-101.</p>
+<p>21. Wagenaar, AC, Maybee, RG, &amp; Sullivan, KP. Mandatory seat belt laws in eight states: A time-series evaluation. Jrnl of Safety Rsrch. 1988;19:51-70.</p>
+<p>22. Stryker, JE. Media and marijuana: A longitudinal analysis of news media effects on adolescents' marijuana use and related outcomes, 1977-1999. Jrnl of Hlth Comm. 2003;8:305-28.</p>
+<p>23. Himle, MB, Miltenberger, RG, Miltenberger, CF, &amp; Brian, G. Teaching safety skills to children to prevent gun play. Jrnl of App Beh Analysis. 2004;37:1-9.</p>
+<p>24. Hayes, SC. Relational frame theory: A functional approach to verbal events. In: S. C. Hayes, L. J. Hayes, M. Sato, &amp; K. Ono. eds. Behavior analysis of language and cognition. Reno, NV: Context Press;1994:9-30.</p>
+<p>25. Embry, DD et al. (1996)</p>
+<p>26. DiFranza, JR. Is it time to abandon youth access programmes? Tob Control. 2002;11:282.</p>
+<p>27. Jason, LA, Pokorny, SB, Schoeny, ME, Fichtenberg, CM, Glantz, SA. It is premature to abandon youth access to tobacco programs. Pediatrics. 2003;111: 920-21.</p>
+<p>28. Hawkins, JD, Catalano, RF, Arthur, MW. Promoting science-based prevention in communities. Addictive Beh. 2002;27:951-76</p>
+<p>29. Secker –Walker, RH, Gnich, W, Platt, S, Lancaster, T. Community interventions for reducing smoking among adults. Cochrane Database of Systematic Reviews, 2002;3: CD001745.</p>
+<p>30. Hallfors, D, Hyunsan, C, Livert, D, Kadushin, C. Fighting back against substance abuse: Are community coalitions winning? Am Jrnl of Prev Med. 2000;23:237-324.</p>
+<p>31. Center for Disease Control (CDC). Introduction to Epidemiology. Available at: http://www.cdc.gov/syndemics/index.htm. Accessed on October 2, 2001.</p>
+<p>32. Cramer, ME, Mueller, KJ, Harrop, D. Comprehensive evaluation of a community coalition: A case study of environmental tobacco smoke reduction. Pub Hlth Nurs. 2003;20:464-77. 33. Roussos, ST, Fawcett, SB. A review of collaborative partnerships as a strategy for improving community health. Ann Rev of Pub Hlth. 2000;21: 369-402.</p>
+<p>34. Biglan et al., 2004</p>
+<p>35. Krieger, N. A glossary for social epidemiology. Jrnl of Epidem and Comm Hlth. 2001;55:693-700.</p>
+<p>36. Singer M. AIDS and the health crisis of the US urban poor: the perspective of critical medical anthropology. Social Science and Med. 1994;39:931-48.</p>
+<p>37. Landrine, H., Klonoff, EA. Validity of assessments of youth access to tobacco: The familiarity effect. Am J Public Hlth. 2003;93:1883-86.</p>
+<p>39. Jason, LA, Katz, R., Pokorny, SB, Engstrom, M., Tegart, G, Curie, C. The relationship between youth tobacco control enforcement and crime rates in a midwestern county. Am Jrnl of Hlth Promotion. 2000;14:229-231.</p>
+<p>40. Jason, LA, Okorny, S.B., &amp; Schoeny, M.E. Evaluating the effects of enforcements and fines on youth smoking. Critical Public Hlth. 2003;13:33-45. </p>
+<p> </p>
+<p>This case study was compiled in 2008 by Jay Kassirer, based on the article, “Evaluation of Reward and Reminder Visits to Reduce Tobacco Sales to Young People: A Multiple Baseline Across Two States”, by Dennis D. Embry et. al. (<a href="https://www.researchgate.net/publication/238642589_Evaluation_of_reward_and_reminder_visits_to_reduce_tobacco_sales_to_young_people_A_multiple-baseline_across_two_states" target="_blank">Dec. 2004</a>)</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

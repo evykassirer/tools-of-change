@@ -1,0 +1,255 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/school-programs-that-involve-the-family/">School Programs that Involve the Family</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Stanford University</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Girls Scouts of Northern California</li>
+<li>U.S. Department of Energy ARPA-e program</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>49% increase in residential energy saving behaviors (27% seven months later)</li>
+<li>Residential energy reductions of 5% (3% seven months later)</li>
+<li>7% increase in food-and-transportation energy saving behaviors </li>
+</ul>
+<p> </p>
+<p><strong>More Details</strong></p>
+<p><a href="https://healthimprovement.stanford.edu/GLEE" target="_blank">https://healthimprovement.stanford.edu/GLEE</a></p>
+<p>Program website and online training course to help troop leaders implement the program: <a href="http://glee.stanford.edu" target="_blank">http://glee.stanford.edu</a></p>
+<p> </p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Girl Scouts GLEE Program </h1>
+<p>The Girls Learning Energy and Environment Program (GLEE) was designed to reduce home energy consumption as well as energy use related to food and transportation, among targeted Junior Girls Scouts (ages 9-10) and their families. It was developed and rigorously evaluated over six years with funding from the U.S. Department of Energy ARPA-e program.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong><em>Note:</em></strong><em> </em><em>To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>Organizers initially met with multiple potential partners and then determined that the Girl Scout organization offered the greatest potential to support the research and scale the results internally. Thus, they developed and signed a memorandum of understanding with the Girls Scouts of Northern California Council. They recruited participating troops in collaboration with the Council through pre-established channels.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Prior to implementation, organizers piloted both the program and evaluation questionnaires in a summer camp sponsored by the Council and with two local Girl Scout troops. This helped identify that many girls had misconceptions and a low awareness, understanding and skill level related to how much energy various home devices used and the corresponding behaviors they could take at home to reduce their energy use.</p>
+<p>During program implementation, a weekly “Action Jar” activity fostered discussions about questions and barriers that had come up during the week, allowing for ongoing learning.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The program provided activity-based interventions, designed using principles from social cognitive theory (SCT). Modelling, skill development, behavioral rehearsal, behavior monitoring, and feedback to promote perceived self-efficacy were embedded in all programmatic elements, along with tools to take home to help children translate their skills to their homes and prompt support for parent-assisted behaviours.</p>
+<p>Each GLEE session included engaging activities to promote knowledge and build skills for specific individual and family behaviors related to reducing energy use, model desired behaviors, establish perceived group norms, self-monitor targeted behaviors, set goals and commitments, and rehearse behaviors and obtain feedback—all aimed at enhancing self-efficacy for the targeted behavior changes. Inherent to these strategies, Girl Scouts also took home tools to both facilitate behavior adoption and prompt family discussion. Moreover, working within the troop environment provided an opportunity to establish energy-saving norms among participants.(<em>Building Motivation, Engagement and Habits Over Time)</em></p>
+<p>Each intervention included five, 50-to-60-min lessons delivered over consecutive troop meetings according to the troops’ usual schedules. As an overarching thematic frame, the five lessons revolved around creating a videotaped newscast, in which the Girl Scouts played the roles of news anchors, investigative reporters, and energy experts. They rehearsed, modelled, and ultimately filmed the energy-saving behaviors learned in each lesson to create their newscasts.(<em>Building Motivation, Engagement and Habits Over Time; Vivid, Personalized, Credible, Empowering Communication</em>)</p>
+<p>Three activities comprised the majority of time in each intervention: a social behavior monitoring and reporting activity of energy-saving behaviors performed since the last lesson; rehearsing and videotaping the lesson’s behavioral activities; and a pledge of behaviors to be performed before the next lesson (<em>Norm Appeals; Obtaining a Commitment)</em>.</p>
+<p>The remaining time included the final lesson activities and ceremony: watching the completed video and distributing patches earned for participating in the curriculum. </p>
+<p>To extend the lesson content to their homes and parents after each lesson, Girl Scouts took home items to help implement the targeted behaviors they had learned (for example, reminder stickers, power strips, tire pressure gauges, reusable water bottles), as well as a parent-focused newsletter, which briefly summarized the activities in each lesson. (<em>Overcoming Specific Barriers; </em><em>Prompts, "School" Visits that Influence the Home; Word of Mouth</em>)</p>
+<p>In addition, a password-protected website for each troop provided program-related information to girls and their parents (for example, energy-saving information, electronic versions of parent newsletters, and access to view the final videos).</p>
+<p><em>Overcoming Specific Barriers</em></p>
+<p>The program was designed to overcome barriers related to misconceptions, and low awareness, understanding and skills, via games that taught the needed information and skills related to the targeted behaviors. This was true in particular for hot water heaters (which many girls did not know existed in their homes), vampire energy use, and many food behaviors. As an example of the later, many girls had no understanding of the energy consumption pathways of hamburger and packaging.</p>
+<p>In addition, the program helped overcome some common practical barriers by providing each participant with a power strip for plugging in devices, an octopus-shaped clothes hanger for hang drying clothes, and a thermometer for checking and adjusting the refrigerator temperature.</p>
+<p>A weekly “Action Jar” activity fostered discussions about questions and barriers that had come up during the week. This presented opportunities for the girls to teach each other, as well as for instructors to correct misperceptions and extend existing knowledge.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>This program was developed and rigorously evaluated over the past six years with funding from the U.S. Department of Energy ARPA-e program.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p><em>Ongoing Monitoring</em></p>
+<p>Ongoing behavior monitoring was part of a weekly “Action Jar” activity that also fostered discussions about questions and barriers that had come up during the week. This presented opportunities for the girls to teach each other, as well as for instructors to correct misconceptions and extend existing knowledge.</p>
+<p> </p>
+<p><em>Evaluation</em></p>
+<p>The program managers evaluated program impacts using a cluster-randomized controlled trial with 30 4th and 5th grade Girl Scout troops and their parents in Northern California (330 families).  The evaluation used a rigorous randomized controlled trial (RCT) design, so the observed changes may be causally attributed to the interventions. These results demonstrate efficacy using an RCT of a child-focused energy intervention. Baseline, post-test, and follow-up self-administered surveys with Girl Scouts and parents were used to assess each intervention’s efficacy. Consistent with the design, there were two primary outcomes: residential energy-saving behaviors and food-and-transportation energy-saving behaviors.</p>
+<p>A Girl Scout residential energy-saving behaviors index was created by averaging 18 items that asked about the frequency with which the girls performed residential energy-saving actions, such as turning off lights, turning off and unplugging devices, and adjusting refrigerator and hot water heater temperature settings.</p>
+<p>A Girl Scout food-and-transportation energy-saving behaviors index was created by averaging 75 items that asked about 14 food-and-transportation behaviors, such as daily meat consumption, daily bottled water consumption, reusable water bottle usage, and transportation mode to/from school.</p>
+<p>Parent residential energy-saving behaviors were assessed using 13 questions about the frequency of performing actions such as installing compact fluorescents (CFLs) and light-emitting diodes (LEDs), adjusting refrigerator and hot water heater temperature settings, air drying dishes, hang drying laundry, washing laundry in cold water, and setting thermostats.</p>
+<p>A parent food-and-transportation energy-saving behavior index was created using 11 questions that asked about the frequency of daily consumption of bottled water, sweet drinks, packaged snack foods, and fast food; weekly consumption of meatless lunches and dinners; frequency of household shopping at a farmers’ market; and transportation modes to and from the Girl Scout’s most recent school and troop meetings.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Recognition was provided by showing the completed video and distributing patches earned for participating in the curriculum.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Girl Scouts in troops randomly assigned to the residential energy intervention significantly increased their residential energy-saving behaviors by 49% by the end of the intervention, and by 27% more than seven months later, compared to controls.  Parents also made significant behavior changes.</p>
+<p>Based on estimates of the potential energy savings associated with the impacted behaviors, the observed post-test changes reported by the Girl Scouts are the equivalent of average annual household savings of 336 kWh and 17 therms per year, and the observed follow-up changes are the equivalent to average annual household savings of 191 kWh and 7 therms per year. These represent savings of about 5% and 3% in the average annual electricity and gas usage at post-test, respectively, and about 3% and 1%, at follow-up, respectively, for households in the public utility territory where most of our participants lived. These magnitudes in estimated annual energy savings are equivalent to avoided emissions of 160 to 330 pounds of CO2 per household per year.</p>
+<p>Girl Scouts in the residential energy treatment group made their greatest magnitude increases relative to food-and-transportation controls in turning off power strips at night, adjusting refrigerator temperatures, and washing clothes in cold water, from baseline to post-test; and in adjusting refrigerator temperatures, turning off power strips at night and plugging chargers into a power strip, from baseline to follow-up. Parents of Girl Scouts in the RE intervention group made their greatest magnitude increases compared to FTE controls in adjusting refrigerator temperatures, with smaller changes apparent in hang drying clothes and adjusting hot water heater temperatures, at post-test; and adjusting refrigerator temperatures, with smaller changes apparent in winter heat settings, at follow-up.</p>
+<p>Girl Scouts in troops randomly assigned to the food-and-transportation energy intervention significantly increased their food-and-transportation energy-saving behaviors by 7%, compared to controls.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p><strong>More Details</strong></p>
+<p><a href="https://healthimprovement.stanford.edu/GLEE" target="_blank">https://healthimprovement.stanford.edu/GLEE</a></p>
+<p>Program website and online training course to help troop leaders implement the program: <a href="http://glee.stanford.edu" target="_blank">http://glee.stanford.edu</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><em>Scalability through Partnerships</em></p>
+<p>The partnership with Girl Scouts is innovative for environmental behaviors. With one in every two adult women in the United States having been a Girl Scout member at some point in her life for an average of four years, scaling GLEE and similar interventions through Girl Scouts and other youth-serving organizations has the potential to impact the energy-saving behaviors of many US families.</p>
+<p><em>Innovation</em></p>
+<p>Three innovative aspects of the intervention were:</p>
+<ol>
+<li>Use of fun competitive team games each session – making the program very engaging for girls and eager to discuss with their families</li>
+<li>The newscast aspect of the program, whereby at the end of each sessions girls were videotaped showing their newly learned knowledge and skills and making a commitment (pledge) to a behavioral practice for the upcoming week.</li>
+<li>Dissemination of behavior skills tools for many of the weeks of the program, these tools such as powerstrips, fun clothes hangers, and tire gauges in turn stimulated family discussion and engagement.</li>
+</ol>
+<p> </p>
+<p><em>Replicability and Adaptability</em></p>
+<p>This approach can be easily replicated in other Girl Scout and youth programs and can be easily adapted to include or focus on other specific behaviors to be promoted. In fact, the organizers are currently working on adapting GLEE to other sustainability-related behaviors, like water use, and disseminating the program more broadly across Girl Scouts.</p>
+<p>This case was complied in 2016 by Jay Kassirer, based on a Landmark nomination wreitten by Hilary Boudet and June A. Flora</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

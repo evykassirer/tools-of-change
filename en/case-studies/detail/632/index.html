@@ -1,0 +1,496 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/school-programs-that-involve-the-family/">School Programs that Involve the Family</a></li>
+<li><a href="/en/tools-of-change/work-programs-that-influence-the-home/">Work Programs that Influence the Home</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Transport for London</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Borough of Sutton</li>
+<li>Borough of Richmond upon Thames</li>
+<li>National Health Service</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>6% (Sutton) to 7% (Richmond) decrease in car modal share, with corresponding increases in cycling, walking and public transport</p>
+<p><strong>Case Study PDF</strong></p>
+<ul>
+<li><a href="http://webinars.cullbridge.com/mod/resource/view.php?id=401"><img alt="" class="activityicon" src="http://webinars.cullbridge.com/pix/f/pdf.gif"/></a> <a href="/userfiles/Smarter Travel Case Handout2.pdf" target="_blank">Download PDF </a></li>
+</ul>
+<p><strong>Webinar Materials</strong></p>
+<ul>
+<li><a href="http://webinars.cullbridge.com/mod/resource/view.php?id=401"><span>Webinar Transcript</span></a></li>
+<li><a href="http://webinars.cullbridge.com/mod/resource/view.php?id=401"><img alt="" class="activityicon" src="http://webinars.cullbridge.com/pix/f/pdf.gif"/></a><a href="/userfiles/Smarter Travel - Remaining Questions.pdf" target="_blank">Answers to questions not covered in the webinar </a> </li>
+</ul>
+<p> </p>
+<p><img alt="Sutton map" height="199" src="/userfiles/Image/Sutton.JPG" width="200"/></p>
+<p><img alt="Richmond map" height="170" src="/userfiles/Image/Richmond.JPG" width="200"/></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Smarter Travel in Outer London: Integrated Marketing in the UK</h1>
+<p>This case study involves two boroughs in London England, and illustrates the use of integrated marketing. For each target audience, this approach integrates common messaging and synergistic interventions across multiple communication channels, including partners such as physicians, police, NGOs, and chambers of commerce, as well as home visits that provide personalized travel planning. The initiative also includes cycle training, car sharing clubs, workplace and school programs. This case study illustrates the application of traditional social marketing methods, including formative research, setting measurable objectives, audience segmentation and piloting (including a control community.)</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The Smarter Travel initiative grew out of a policy directive by the mayor of London to introduce transport demand management (also known as travel demand management, transportation demand management, or simply TDM) into boroughs on the outskirts of that rapidly expanding metropolis.</p>
+<p>Smarter Travel was the third major TDM initiative undertaken in the country. Two important TDM attempts were already underway. The first was in London, where the mayor had levied a daily fee on vehicles entering downtown London on weekdays. This coercive measure, in combination with an upgrade of the London public transport system, was proving both effective and popular.</p>
+<p>The second was in the middle and north of England, where UK Department for Transport had launched an education approach to transport demand management, called <a href="http://www.toolsofchange.com/en/case-studies/detail/644/">Sustainable Travel Towns </a>(STT), in three relatively free-standing towns. Here, organizers were combining face-to-face and personalized education of the public about their travel options, together with infrastructure improvements to so-called “sustainable” modes of transport (such as walking paths, cycling paths, and public transport). Their hope was this combination of approaches could have a measurable positive impact on a local transport network in a socially acceptable manner. At the time that Smarter Travel was conceived, however, there was not enough data to determine the effectiveness or acceptability of the STT programme.</p>
+<p><strong>Smarter Travel Sutton</strong></p>
+<p>The Smarter Travel initiative was launched in the London borough of Sutton (population 184,000). Sutton is situated about 17 miles south of central London; it covers an area of 17 square miles. Sutton’s hilly topography makes its climate slightly cooler than nearby areas such as the Sussex coast and central London and considerably drier overall than the rest of England – an advantage if one is to promote more walking and cycling. Sutton was ranked as London’s greenest borough at the time, with 11 percent of its area consisting of open land and parks.</p>
+<p>Housing in Sutton was characteristically low-density; large, detached and semi-detached properties built in the 1920s and 1930s. However, some areas in the north of the borough were much more densely populated, and the residents suffered high poverty and unemployment rates.</p>
+<p>Demographically, Sutton’s population was mostly white; only 15 percent of the population came from ethnic minority backgrounds. Culturally, residents identified themselves according to the town or village to which they lived closest in the borough and not as Sutton borough residents in general.Politically, Sutton was a strong bastion of the Liberal Democratic party.</p>
+<p>Sutton residents were both heavy car owners and users. They had one of the highest rates (77%) of car ownership in London. Almost half (46%) of Sutton households owned three or more cars – this was double the national average. They made most of their local trips of about 2 km or less in their personal vehicles.</p>
+<p>Sutton’s public transport contributed to this situation. It tended to isolate it from London. It had no London Underground or Overground stations within its boundaries, and no connections with the London Tramlink. The main public transport services in the borough were local rail from its various regional stations and local buses. Direct rail service to and from central London was infrequent and irregular. Commuters relied on several busy local rail routes running between the borough's towns to get them to a transfer point in and out of central London. Few major trunk roads ran through the borough.</p>
+<p><strong>Smarter Travel Richmond</strong></p>
+<p>The London Borough of Richmond upon Thames (2006 population 195,000) was the setting for the second phase of the Smarter Travel initiative. It is also located in the southern outskirts of the city, 15 miles southwest of central London and just two boroughs west of Sutton. It covers an area of 22.6 square miles. While Sutton was mostly hilly, Richmond’s distinguishing topographical feature is its 21 miles of river frontage. There are more than 100 parks and open spaces within its boundaries of which 140 hectares are part of the Metropolitan Green Belt of Greater London.</p>
+<p>Richmond’s residents were predominantly (90 percent) white. Their average household income was the second highest in London, just after the City itself. Residents of Richmond upon Thames were significantly more active in sports and other fitness activities than other parts of England according to a survey published in Sport England; 29.8% of the population participated at least 3 times a week for 30 minutes.</p>
+<p>Housing is Richmond was primarily residential semi-detached and detached dwellings. There were 76,100 households in 2006.</p>
+<p>Politically, Richmond switched from predominantly Liberal Democrat to Conservative during the implementation of the Smarter Travel initiative program in its borough.</p>
+<p>Richmond’s transport system was well-connected to central London through London Underground and Overground stations within its boundaries, and National Rail stations. It had an extensive local bus network.</p>
+<p>Richmond was also distinct from Sutton in that it was a popular tourist destination, hosting approximately 4.5 million tourists every year.</p>
+<p> </p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The Smarter Travel objectives evolved between the first and second phases of the initiative.</p>
+<ul>
+<li>The initial Smarter Travel Sutton (STS) aimed to decrease the share of journey made by car across the Borough and to key destinations by five percent over three years.</li>
+<li>The second phase Smarter Travel Richmond (STR) aimed to increase the share of journeys made by walking, cycling and public transport across the Borough and to key destinations by five percent over three years.</li>
+<li>There were secondary objectives around CO2 emissions and air quality and public health.</li>
+<li>Both phases of the Smarter Travel initiative sought to learn the feasibility and acceptability of Transport Demand Management (TDM) programs in general and specifically the social marketing approach to behavior change in Outer Boroughs of London.</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p><strong>Information Sources and Methods</strong></p>
+<p>Transport for London (TfL) approved and funded the Sutton phase of the initiative in September 2006. The organizers were given three months to get themselves the information they needed to move forward.</p>
+<p>First, they reviewed the results of two comprehensive surveys on Londoners’ travel behavior and attitudes: the 2001 London Area Transport Survey (LATS) and the 2005/2006 London Travel Demand Survey (LTDS). The organizers supplemented this data by commissioning a baseline household survey in September 2006. Surveyors conducted telephone interviews with a sample of 1,500 Sutton residents, and an additional 500 in neighboring Croydon borough, which served as a control area.</p>
+<p>They collected information on awareness of travel options, attitudes toward various travel modes, travel intentions, and claimed travel behaviors. They also conducted focus group research to deepen their understanding of specific groups of residents who the surveys identified as being most willing and able to change their behavior.</p>
+<p><strong>Awareness, Willingness to Change<br/>
+</strong>The organizers learned that more than half (54%) of Sutton residents were aware of bus routes close to them. Most were aware of the health benefits of cycling and walking and the environmental harm of excessive car use. However, organizers also learned that most (69%) Sutton residents believed that it was essential for them to have access to a car.</p>
+<p>Knowing that a gap between awareness and belief existed, the organizers were better informed on where they might need to focus their efforts.</p>
+<p><strong>Key Motivators</strong></p>
+<p>According to the research, groups of residents differed in what motivated their transport mode choices. For example, parents with school-aged children were motivated to drive their children to and from school out of concern for their security and because of time pressures they faced. However, they did say they were community minded; an appeal to their community values might convince them to review their choices. Research also reported that affluent women in this group could be motivated to adopt transport modes which included healthy activity; they claimed that they would walk and cycle more for the sake of their children.</p>
+<p>Another example of a potentially receptive group was overweight and obese residents who were enrolled in or candidates for the National Health Service’s Active Steps program. People in this group were likely to respond to appeals that promoted the health benefits of choosing walking for their transportation mode when it fit their schedule.</p>
+<p>On the other hand, men appeared to be motivated to drive their personal vehicle because it gave them the greatest sense of control, privacy, and security. However, they reported being heavily influenced by their work colleagues, so organizers recognized the possibility of using a norm appeal at workplaces to motivate them to change.</p>
+<p>Overall, the research showed that the target audiences primarily made transport choices not based on health or concern about the environment but on which mode was fastest and least expensive.</p>
+<p><strong>Key Barriers</strong></p>
+<p>Most (75%) borough residents did not believe the benefits of cycling and walking outweighed car use. And most (69%) believed that it was essential for them to have access to a car.</p>
+<p>Moreover residents reported spending little or no time considering their transport mode options.</p>
+<p>The key barriers facing the organizers were:</p>
+<ol>
+<li>The perception that the sustainable options recommended exposed adopters to security risks.</li>
+<li>The perception that time pressures precluded using sustainable transport options.</li>
+<li>The perception that public transport reduced privacy and control to an unacceptable level.</li>
+</ol>
+<p><strong>Application of Information Gathered</strong></p>
+<p>Based on the information they had gathered and analyzed, Smarter Travel organizers developed an integrated marketing program that:</p>
+<ul>
+<li>Mobilized existing community-based organizations and programs to support the transportation demand management effort. Organizers realized that they could best appeal to the community-mindedness of residents if their program was perceived as being a local community effort.</li>
+<li>Used a combination of advertising, publicity, events, and public relations to bring travel mode consideration to the top-of-mind of residents and to create an atmosphere of community support for making sustainable travel mode choices.</li>
+<li>Appealed to different groups of residents according to their particular motivations for and perceived barriers to making sustainable transport mode choices.</li>
+<li>Intensified travel planning programs in local schools and workplaces to mobilize these key institutions to support transport mode shifts.</li>
+<li>Invested in minor but critical infrastructure enhancements that addressed security concerns and time pressures.</li>
+<li>Engaged each resident face-to-face in a door-to-door personal travel planning effort designed to empower them to feel in control of and secure with alternative transport use.</li>
+</ul>
+<p><strong>Targeting the Audience, Segmentation</strong></p>
+<p>Based on their research, the organizers chose the following primary and key influencing/ enabling target audiences for the first phase of the initiative:</p>
+<ul>
+<li>Primary audiences:
+    <ul>
+<li>Families with school-aged children</li>
+<li>Men employed in Sutton businesses</li>
+</ul>
+</li>
+<li>Key influencing and enabling audiences:
+    <ul>
+<li>School staff</li>
+<li>Business owners within Sutton</li>
+<li>Managers of complementary programs</li>
+</ul>
+</li>
+</ul>
+<p>The organizers chose three segments of their primary audience as target audiences because they felt these segments to be most likely to change their behaviors:</p>
+<ul>
+<li><strong>Hard-pressed families:</strong> Mostly adults between 25 and 44 years old with school-age children who they transported to and from school. They viewed their car(s) as a practical necessity. They were not prejudiced against public transport. They made their travel mode choices based on time and cost.</li>
+<li><strong>Affluent women:</strong> These people led a hectic lifestyle which put them under considerable time pressure, especially during weekdays. Their primary motivators for choosing the car included convenience, flexibility, and security. They were willing to consider walking with their children to and from school and using public transport on weekends, especially if it enhanced their reputation as a good parent and helped keep their family healthy and active.</li>
+<li><strong>Locally employed men:</strong> These men were an opportunistic segment because they said they were strongly influenced by their work colleagues. They disliked travel in general, and valued the control, privacy and security offered by their cars. They did not consider public transport to be a viable alternative for them, but they were likely to consider car sharing, or even walking and cycling. These men said they would likely ignore any transport mode that required them to follow complex directions or learn detailed information.</li>
+</ul>
+<p>Smarter Travel Richmond learned a lot of lessons from Sutton, in particular about the value of targeting and segmentation. It looked at those who were dissatisfied with their current choices but who were open to change. Two market segments out of eight were found to be most likely to be responsive to Smart Travel-type interventions; these were named “Evironmentally Aware” and “Cosmopolitan Living.”</p>
+<p>Those segments had a range of demographic characteristics which were then compared to the profile and distribution of the population within the borough, and within that, four specific areas were identified where those market segments were particularly highly concentrated.For example, The Cosmopolitan Living segment was described as:</p>
+<ul>
+<li>Having professional jobs and an interest in the arts and culture side of Richmond as well as sport (and skiing particularly).</li>
+<li>Families having a single car or no car</li>
+<li>Using the train to go into London more than average</li>
+<li>Being quite willing and open to changing their behaviours</li>
+<li>Using the following brands: Sainsbury’s, Waitrose, Evening Standard, The Times, The Independent, Volkswagen, Renault, Peugeot</li>
+</ul>
+<p>Those target areas represented about 50,000 households.</p>
+<p>The organizers chose three segments among their <strong>influencing and enabling audience</strong> who were most likely to be catalysts for primary audience behavior change:</p>
+<ul>
+<li><strong>School staff:</strong> All schools in the UK had already been requested by the national government and the city to develop a school travel plan that would reflect a deliberate effort by the staff, parents, and community to travel safely to and from school and avoid unnecessary negative impacts on the local transport network. The process of creating this plan required substantial effort on the part of staff. The initiative organizers saw an opportunity to achieve their objectives by helping each school to produce a travel plan.</li>
+<li><strong>Sutton employers:</strong> there were 62,600 employee jobs provided in Sutton in 2006, consisting of 40,500 full time and 22,000 part-time positions. Business owners were at risk of losing employees and customers if traffic congestion increased in the borough. Smarter Travel organizers saw an opportunity to achieve their goals by supporting businesses to create travel plans. The initiative decided to concentrate its effort on the major employers first.</li>
+<li><strong>Managers of complementary programs:</strong> Many groups, including the local police, the national health service, the local chamber of commerce, local environmental charities, and commercial car clubs were already managing their own programs which could contribute to the Smarter Travel initiative achieving its objectives. Rather than set up parallel programs, the organizers decided to reach out to the managers of these programs to seek out mutually beneficial partnerships. </li>
+</ul><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The Smarter Travel initiative evolved considerably over the course of six years for three reasons.</p>
+<ul>
+<li>First, the program managers gained valuable experience and confidence with the social marketing approach during the first phase, and applied the lessons they learned to the second phase.</li>
+<li>Second, the venue of the second phase posed unique opportunities and challenges.</li>
+<li>Third, the context within which the initiative took place experienced several major changes, including a change of political administration, a national economic downturn, and a significant increase in the price of fuel.</li>
+</ul>
+<p>From its outset, the initiative was structured to be community driven, even though it was initiated by and received partial funding from Transport for London (TfL).</p>
+<p>The structure consisted of a Program board, a Project board, and a Project team.</p>
+<p>The Program board consisted of members of the Project board, the local Member of Parliament and representatives from key local stakeholder groups; it met twice yearly to discuss strategic issues and provide guidance to the Project board.</p>
+<p>The Project board included a senior officer from TfL, LBS, and the project team (see below); they met quarterly to help the program maintain momentum and provide guidance.</p>
+<p>The project team, paid for through TfL Local Grant funds, coordinated delivery of program products and services, including travel awareness, marketing, workplace travel planning, school travel planning, and personal travel planning. The team received support from TfL technical officers and other parts of borough government system.</p>
+<p>Planning took place as part of an annual cycle of activities, with a feedback loop to ensure lessons were learnt in order for the program to continually improve. The cycle included: strategy development, forward planning program and budget forecasting, program and budget management, project management and staff management, monitoring and evaluation, and reporting, dissemination and improvement.</p>
+<p>Year one of the project focused on engaging schools and workplaces to develop travel plans; and launching a personal travel advice campaign.</p>
+<p>Year two focused on promoting the health messages associated with walking and cycling, and targeted parents of school-age children, as well as participants in the NHS Active Steps program and gym members. Throughout the initiative, the programs provided the opportunity for the implementation and evaluation of numerous innovative projects.</p>
+<p>Coordinating such a wide variety of tasks, activities and partners required substantial project management skills and knowledge. To help the project team members adopt a common language and approach to project management, every team member took the Association of Project Managers introductory course and exam, and received additional training in social marketing.</p>
+<p>The program adopted a commonly used framework for understanding how ready people are to change their behaviour, the ‘Stages of Change’ Theory. This model describes behavior change as a process of moving through stages of readiness towards forming new habits. The key steps in the model and the program tools designed for each stage are as follows:</p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td><strong>Stage</strong></td>
+<td><strong>Description</strong></td>
+<td><strong>Program Tools Used</strong></td>
+</tr>
+<tr>
+<td>Pre-contemplation</td>
+<td>When a person is not considering and has no intention to change their current behavior</td>
+<td>Advertising, website, branding</td>
+</tr>
+<tr>
+<td>Contemplation</td>
+<td>When a person is considering options for change</td>
+<td>Roadshow events</td>
+</tr>
+<tr>
+<td>Preparation</td>
+<td>When a person intends to change and is preparing to do so</td>
+<td>Website, travel planning (workplace, school, personal), cycle training</td>
+</tr>
+<tr>
+<td>Action</td>
+<td>The person attempts the change</td>
+<td>Events, travel planning (workplace, school, personal)</td>
+</tr>
+<tr>
+<td>Maintenance</td>
+<td>The person sustains the new behavior until it becomes a habit</td>
+<td>Direct marketing, advertising</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Infrastructure Improvements</strong></p>
+<p>To reduce infrastructure barriers to walking and cycling a range of improvements were carried out, such as creating safer routes to schools, enhancing key cycling / walking routes, and installing more bicycle parking throughout the boroughs. (Overcoming Specific Brriers)</p>
+<p><strong>Public Events</strong></p>
+<p>There were a number of public events that were held regularly to bring people in, to engage them in a whole range of activities to help them reconsider their travel options and to help address some of the barriers that they may have perceived around their transport choices.</p>
+<p>In 2009 alone, 27,000 Sutton residents attended specific transport-themed events in the borough. (Building Motivation Over Time)</p>
+<p>Over the course of the initiative, there was an increasing emphasis on staging these events in the spring and summer (times when the weather was more conducive to people making particularly active travel choices.)</p>
+<p><strong>Travel Planning</strong></p>
+<p>School travel planning was a key tactic and in both boroughs 100% of the schools participated. The plans were actively integrated into curriculum topics to help these schools justify their engagement with it. Progress was recognized using a bronze, silver, gold scheme. Trial and new habit formation were encouraged through a walk-once-a-week initiative, which provided small incentives and recognition with badges, certificates and vouchers. (Schools Programs that Involve the Family)</p>
+<p>Similarly, all of the major employers were engaged in developing travel plans. (Work Programs that Influence the Home)</p>
+<p>Personalized travel advice was also offered to individuals. It involved understanding what the journey needs of the individuals were, what the options were, and then encouraging and supporting them in making change. (Overcoming Specific Barriers; Vivid, Personalized, Credible, Empowering Communication)</p>
+<p><strong>Active Steps Program</strong></p>
+<p>The Active Steps Program was about making an active connection between transport choices and health, particularly through a GP (physician) referral scheme. GPs seeing patients that appeared to have issues that might be related to physical activity referred them to receive personal travel advice. Recruiting the physicians was relatively straightforward, through a partnership with the National Health Service. (Vivid, Personalized, Credible, Empowering Communication)</p>
+<p><strong>Car Clubs</strong></p>
+<p>Car clubs are initiatives where you can pay an annual fee to join, and then you have access to a pool car or a variety of pool vehicles which you can hire on an hourly basis or on a daily basis at a relatively low cost. They reduce the requirement to own a car purely for the occasional use that you may have for it. Car clubs in London were private businesses that mostly promoted their own services. However, the Smarter Travel program dramatically increased awareness of and use of the clubs.</p>
+<p>Evidence from previous evaluation of car clubs in London had demonstrated that those people that joined car clubs were quite strongly inclined to give up their own cars. They reduced their own car use because there was an added barrier to casual use in that they had to then book and go get the cars. This encouraged people to actually think about the actual trip requirement rather than just jumping in the car without thought. On the other hand, car clubs offered members reserved, priority parking- a big incentive in London where there’s a lot of pressure on parking and a high degree of parking enforcement. (Building Motivation Over Time)</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Each borough received a £ 5 million budget to run the three year programs.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p><strong>Controls for Comparison</strong></p>
+<p>Both Sutton and Richmond used control areas for comparison. These were adjacent or nearby boroughs with similar populations and characteristics. Organizers also compared their results to baseline data collected, and data collected from the London Transport Demand Survey (LTDS). The LTDS was a rolling sample survey of households and individuals within Greater London. It had been conducted since 2005/6. It combined socio-demographic data with trip diary-based records of personal travel. The LTDS included annual updates to key trends and indicators, such as the amount of travel by Londoners and modal shares; and a comprehensive geographical analysis of travel behaviour and travel patterns. More information is available at <a href="http://www.tfl.gov.uk/corporate/about-tfl/publications/1482.aspx" target="_blank">http://www.tfl.gov.uk/corporate/about-tfl/publications/1482.aspx</a></p>
+<p><strong>Methods</strong></p>
+<p>Both programs used automatic traffic counters and automatic cycle counters. They also collected weekly bus patronage data from key routes. In addition an independent attitudinal survey took place every September which included 1500 telephone interviews of program area residents and 500 telephone interviews of residents in a nearby comparable control area. Mode share was calculated based on a travel diary survey of 1500 residents and control area residents. Changes in mode share were calculated against a baseline derived from the three year average of the London Travel Demand Survey results for the same locations.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td><strong>Results Level</strong></td>
+<td><strong>Sutton</strong></td>
+<td><strong>Richmond</strong></td>
+</tr>
+<tr>
+<td>Awareness</td>
+<td>
+<ul>
+<li>65% of residents had seen advertising about cycling, walking or public transport use.</li>
+<li>Awareness of Sutton’s car club increased from 13% in 2008 to 43% in 2009</li>
+</ul>
+</td>
+<td> </td>
+</tr>
+<tr>
+<td>Approval</td>
+<td>
+<ul>
+<li>The percentage of Sutton residents strongly agreeing that ‘there are bus routes close to me’ increased from 54% to 71%.</li>
+<li> Agreement with ‘the benefits of cycling and walking outweigh car use’ increased from 25% to 30% in Sutton.</li>
+<li> Agreement that ‘access to a car is essential for me’ has fallen from 69% to 63% in Sutton.</li>
+<li>In addition, the survey showed high levels of support for STS.</li>
+<li>81% of residents also said STS was an appropriate investment for TfL and Sutton council to make</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>35% of Richmond residents were “attracted to cycling in the next year and probably will cycle” – higher than the 2009 target of 33%</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Outputs</td>
+<td>
+<ul>
+<li>100% of schools developed School Travel Plans</li>
+<li>Work travel plans covered more than 16,000 employees</li>
+<li>300 Car Club members shared 16 vehicles with average utilization of about six hours per day per car</li>
+<li>Infrastructure improvements such as increased cycle parking</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>100% of schools developed School Travel Plans</li>
+<li>Three travel plan networks • Seventy workplaces engaged 2,000 employees • The number of car club vehicles tripled to 107 and membership more than doubled</li>
+<li>Upgraded pedestrian and cyclist infrastructure to improve access to 12 key tourist destinations</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Outcomes</td>
+<td>
+<ul>
+<li>Six percent decrease in car mode share (58% to 52%) compared to eight percent increase in control borough (48% to 56%)</li>
+<li>75% increase in cycle flows recorded at counters in Sutton, compared to a slight decrease in cycle flows in the control borough.</li>
+<li>16 percent increase in public transport use, compared to a 10 percent increase in the control area. The growth in Sutton was substantially steeper than that across Outer London, suggesting that STS may have built-on, and accelerated, an underlying trend.</li>
+<li>The steeper seasonal peaks suggest that Sutton was converting new people to cycling, as well as increasing the overall number of cycle trips.</li>
+<li>Across participating schools, there was an average 5 percentage point reduction in car use for trips to school, but there was actually a wide range, and at the upper end of the range, some schools were achieving as much as a 17 percentage point reduction in car trips.</li>
+<li>Across participating workplaces there was a 2% reduction in car use.</li>
+<li>Of those referred by their physicians, 52% reported reducing their car use.</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Seven percent relative reduction in car mode share s from 26.7 per cent to 24.8 per cent</li>
+<li>25 percent relative increase in the mode share for walking to school</li>
+<li>Consistently high mode share of cycling, at over 6.5 per cent</li>
+<li>The CO2 savings as a consequence of the Richmond upon Thames programme were predicted to be 23 tonnes per day.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Dan Johnson<br/>
+Transport for London<br/>
+<a href="mailto:danieljohnson@tfl.gov.uk?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">danieljohnson@tfl.gov.uk</a></p>
+<p>Stuart Reid<br/>
+Director of Sustainable Transport<br/>
+MVA Consultancy<br/>
+Dukes Court, Duke Street<br/>
+Woking England GU21 5BH <a href="mailto:sreid@mvaconsultancy.com?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">sreid@mvaconsultancy.com</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Among some of the factors identified by the team as contributing to its success in the effective delivery of projects and campaigns on time and within budget were:</p>
+<ul>
+<li>Using evidence-based planning consistently</li>
+<li>Identifying clear goals and objectives which contribute to strategic priorities</li>
+<li>Establishing tangible, time-specific milestones</li>
+<li>Using financial data as indicators for project performance</li>
+<li>Contracting through service agreements and memoranda of understanding</li>
+<li>Issuing performance related contracts for suppliers</li>
+<li>Integrating existing organizations and programs into a coordinated transportation demand management effort.</li>
+<li>Appealing directly to residents to make a specific switch from their car to more sustainable modes of travel for common lifestyle-related events for local journeys.</li>
+<li>Creating an environment of social support for both Smarter Travel choices and program partners.</li>
+<li>Implementing intensified travel planning programs in local schools and workplaces.</li>
+</ul>
+<p>Successful, sustainable, non-coercive TDM initiatives such as Smarter Travel require considerable planning, preparation, coordination and collaboration. When designed and delivered professionally, they can achieve significant benefits for the community. But program managers considering this approach should carefully assess their organization’s commitment and capabilities, as well as the political will to support the effort, before undertaking such a project.</p>
+<p>Keep in mind the amount of time required to do things right. For example, audience research and segmentation was key to the success of the program. But in Sutton, program organizers were given only three months to get themselves the information they needed and to move forward. In retrospect, they wish they had at least twice as much time.</p>
+<p>Also, consider carefully what needs to be measured before, during, and after the initial phase of a TDM program. For example, Sutton organizers wish they had measured how local traffic was affected by the program.</p>
+<p>Finally, consider measuring results so that the benefits of reducing car trips are “locked” in; for example make sure that they are not simply replaced by new journeys.</p>
+<p><strong>Travel Planning</strong></p>
+<p>Of the various tactic used, workplace travel planning was the most cost-effective, followed by school travel planning.</p>
+<p>The classic personalized travel plan approach for individuals is a bit of a broadly based approach which can be as crude as knocking on doors and seeing if people are interested. One of the learnings was that that’s not necessarily a very cost-effective way of getting to people. Some of that journey planning increasingly can be delivered through the Internet, and there were Personal Travel Planning websites set up as part of Smarter Travel Sutton.</p>
+<p><strong>Referrals</strong></p>
+<p>Physician referral was much more effective than promotion through health clubs. That may say something about the role of authority and possibly about the importance of need and motivation on the client’s side as well.</p>
+<p><strong>Landmark Designation</strong></p>
+<p>This case study was selected as a Tools of Change Landmark case study in 2010 by a peer selection panel consisting of</p>
+<ul>
+<li>Chuck Wilsker, U.S. Telework Coalition</li>
+<li>Daniel Coldrey, Transport Canada</li>
+<li>Elizabeth Allingham, Federation of Canadian Municipalities</li>
+<li>Geoff Noxon, Noxon and Associates</li>
+<li>Jacky Kennedy, Green Communities Canada</li>
+<li>JoAnn Woodhall, Translink</li>
+<li>Lorenzo Mele, Town of Markham</li>
+<li>Ryan Lanyon, Smart Commute</li>
+</ul>
+<p>This case study was written in 2012 by <a href="mailto:win@winthropmorgan.com?subject=I%20read%20one%20of%20your%20case%20studies%20on%20the%20Tools%20of%20Change%20website">Win Morgan</a>.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

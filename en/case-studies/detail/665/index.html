@@ -1,0 +1,227 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>University of Georgia</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Environmental Research and Education Foundation</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>The bins with feedback increased recycling rates significantly.</p>
+<p><em>Further Resources</em></p>
+<ul>
+<li><a href="/userfiles/File//UGA%20Recycling%20Bin%20Feedback.pdf">Case study PDF</a> </li>
+</ul>
+<ul>
+<li>Webinar materials (includes other presentations too): <a href="http://www.toolsofchange.com/userfiles/Handouts%20-%20May%209%20-2013.pdf" target="_blank">slide handouts</a> </li>
+</ul>
+<p>These case study materials have been developed in partnership with Keep America Beautiful.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>UGA Recycling Bin Feedback</h1>
+<p>The University of Georgia, funded by the Environmental Research and Education Foundation, designed and tested a recycling bin that lit up and displayed a count with the number of items that had been placed into the bin. The bins with feedback increased recycling rates significantly.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>In the Fall of 2011, the University of Georgia undertook a study in which they designed, utilized and measured the usage of a “smart-bin” with “eco-feedback”- a recycling bin that lit up and displayed a count with the number of items that had been placed into the bin. UGA ran two experiments (macro-social and micro-social) and collected both quantitative and qualitative data.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The objective of designing the smart-bin with eco-feedback was to create an interactive recycling bin that was low in cost, and that could be widely available to help increase recycling participation. The researchers aimed to find the minimum amount of feedback that would get people to engage with the bin and have a reaction to its feedback. They aimed to find this minimum amount of feedback necessary in order to keep the bin at a low cost compared to other initiatives and more expensive commercial bin models.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Various topics were part of the formative research reviewed by UGA before conducting the micro- and macro-social studies using the smart-bin. Theories such as feedback, stimuli, reward/penalty, human computer interaction and goal setting were researched extensively.</p>
+<p>Feedback can be defined as providing information about the level of success or need for improvement in response to a behavior (Kelly et al, 2012).  A summary of relevant feedback best management practices include:   (1)	Provide individual feedback in addition to group feedback when possible;  (2)	Give feedback frequently and immediately after the behavior is performed; (3)	Make feedback as personalized as possible; and  (4)	Make sure the feedback is clear and concrete (Kelly and Phelphs, 2013).</p>
+<p>The University also researched the fun theory and some of the current methods used/social experiments already conducted using this theory in order to inform their study. They noted that their goal was to provide immediate, positive, informative and “fun” feedback so people felt good about recycling in the eco-feedback bin in order to increase recycling participation and overall recycling rates.  Targeting the Audience  In both the experimental and baseline scenarios for the macro-social study, the audience that was exposed to the bins were students and other individuals who entered the student center where the bin was located. Most of these people were football game-day attendees. During the micro-social study, the audience exposed to the bins were also those who entered the student center (students, staff, etc.), however, the individuals exposed to the bin were not socializing in groups as they were during the football game-days in the macro-social study.</p>
+<p><strong>Targeting the Audience </strong></p>
+<p><strong> </strong>In both the experimental and baseline scenarios for the macro-social study, the audience that was exposed to the bins were students and other individuals who entered the student center where the bin was located. Most of these people were football game-day attendees. During the micro-social study, the audience exposed to the bins were also those who entered the student center (students, staff, etc.), however, the individuals exposed to the bin were not socializing in groups as they were during the football game-days in the macro-social study.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The University’s strategy was to not only provide a recycling bin, but one that was engaging and fun to help increase recycling participation. The bin was an outdoor style recycling bin with four holes in its top and a circuit board with a sensor that detected when an item was successfully dropped into the bin. Once the sensor was triggered, running lights that were around the top turned from red to green when an item was recycled, and a numerical display on the face of the bin changed with every item added to show a constant tally of the number of items in the bin. (Feedback)</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Funded by the Environmental Research and Education Foundation.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p><em>Macro-social:</em> UGA set up baseline and experimental scenarios by comparing the rate of recycling in a smart-bin with eco-feedback to the rate of recycling in the same exact bin without the eco-feedback mechanism during two separate football games. The location of the two different bins—inside the student center—was kept constant; the regular bin was simply replaced by the smart-bin in a subsequent football game. Because UGA was able to determine the number of people in the student center, the amount of material recycled in the bins was converted into a per-capita rate.</p>
+<p><em>Micro-social:</em> In the semester preceding the macro-social intervention, UGA studied recycling rates between bins in what they called a micro-social environment; the bins were placed in the student center, but for 28-day consecutive days. The first phase of the experiment began with a regular recycling bin. The second phase included a regular recycling bin with a recycling-related poster and a white-board whose message read, “What do you know about recycling?” The third phase of the experiment used the smart-bin in place of a regular bin, with no signage.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><em>Macro-social:</em> Quantitatively, for the macro-social study, the researchers at UGA saw a statistically significant greater number of items recycled in the eco-feedback bin than the regular bin (.30 kg recycling rate to .45 kg recycling rate). Qualitatively they observed group/collective recycling efforts around the smart-bin as well as intrigue/interest in the eco-feedback. They saw people observing and learning from others who were first willing to recycle items in the bin. At times, people in groups gathered around the bin and cheered when it lit up and updated its count of items that had been recycled. The researchers also observed instances in which people were initially opposed to using the bin, but later began using the bin after watching other groups of people using it.</p>
+<p>One notable incident that occurred involved one person who, upon seeing other people using the bin and observing its feedback mechanism, said “I’m not touching that”.  Moments later though, the individual went over to a table where he picked up an item that wasn’t his, walked over to the smart bin, recycled the item and watched the bin’s reaction. In the macro-social environment, the researchers saw people immediately interacting with each other about the bin.</p>
+<p><em>Micro-social:</em> Quantitatively, the researchers found no statistically significant difference in the amount of material recycled in the first and second phases (non-technical) of the experiment, but they did find a statistically significant increase in the amount of material recycled in the smart bin with eco-feedback compared to the amount of material recycled in the regular bin during the other two scenarios.</p>
+<p>Qualitatively, the researchers began to notice social interactions between students about the bin and it’s feedback within the vicinity of the bin, and while using it to recycle items. The researchers began to see people bringing others to the bin toward the end of the 28 days. This suggests that the socialization aspect of the collaborative/group recycling efforts around the smart bin was much slower in the micro-social environment than in the “macro-social” environment, but it was still present (Jambeck, 2012).     The data indicate that, in these scenarios, the bin was successful in increasing recycling rates in both environments.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Jenna Jambeck, PhD<br/>
+Assistant Professor of Environmental Engineering<br/>
+College of Engineering, University of Georgia<br/>
+<a href="mailto:jjambeck@uga.edu">jjambeck@uga.edu</a>    706-542-6454<br/>
+<a href="http://jambeck.engr.uga.edu/">http://jambeck.engr.uga.edu/</a></p>
+<p> </p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study was contributed in 2013 by Kelley Dennings of Keep America Beautiful. It was also published in “<em>Handbook of Persuasion and Social Marketing</em>” by David Stewart, PhD</p>
+<p><strong>References  </strong></p>
+<p>Kelly, M., Little, S., Phelps, K. &amp; Roble, C. (2012). Strategies for motivating watershed stewardship: A guide to research-based practices. School of Natural Resources and Environment, University of Michigan: Ann Arbor, MI. Retrieved from: <a href="http://www.environmentalmotivation.com/strategy-guide/">www.environmentalmotivation.com/strategy-guide/</a></p>
+<p>Kelly, M. and Phelps, K. (2013). A Literature Review with a Focus on Best Practices Fostering Recycling in Schools and Colleges.</p>
+<p>Based on interview conducted with Jenna Jambeck, PhD, Assistant Professor of Environmental Engineering, College of Engineering, University of Georgia. November 28, 2012.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

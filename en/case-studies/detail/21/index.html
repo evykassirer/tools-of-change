@@ -1,0 +1,234 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Sheffield Mills Community Association</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<p>Over three quarters of households were recycling all items accepted by the depot. Half of those households not practising the suggested waste reduction measures made a verbal commitment to do so.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Sheffield Mills Community Association</h1>
+<p>The organizing efforts of Sheffield Mills Community Association show what a small community can do to help its residents reduce waste. A collection depot, home visits and coaching helped people to start recycling and composting.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>In the spring of 1996, the Province of Nova Scotia instituted a ban on the disposal of Blue Box recyclables and yard waste from residential sources. A ban on compostable wastes had also been set for the following year. These events prompted representatives of the small agricultural community of Sheffield Mills (population 414) to take action to ensure that community members could conveniently comply with the ban.</p>
+<p>The local community association convened a workshop in February of 1996 to discuss waste management options, in which both private and government representatives were invited to participate. Workshop participants decided to promote three waste-related activities. The association wanted residents to separate their wastes at home, compost the organics, and bring the recyclables to a nearby depot. A concern raised was that the nearest recycling depot was to be located 10 kilometers outside of Sheffield Mills.</p>
+<p>At a later date, it was decided to promote four additional waste reduction activities as well: buying concentrates, choosing products with the least packaging, buying in bulk and using recyclable or durable goods.</p><!-- Background already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Recycling Depot</strong></p>
+<p>A utility trailer, for which no special permits were required, was acquired to serve as Sheffield Mills' recycling depot. A newsletter was mailed out to all members of the community with information about the depot. Conveniently located across from the community centre, the depot was fitted with three large bins to collect household recyclables. Arrangements were made for volunteers to empty the trailer occasionally at the nearest provincially run recycling depot.</p>
+<p><strong>Home Visits</strong></p>
+<p>In August, a summer student was hired to undertake 20 or 30 minute home visits by appointment in some of Sheffield Mills' homes (<a href="/en/tools-of-change/home-visits/">Home Visits</a>). All of the desired waster eduction activities were discussed during each visit and relevant literature was handed out. Questions and concerns raised by householders were addressed at this time. A four-minute video was made available, which could be played during the visit (<a href="/en/tools-of-change/communication/">Vivid,Personalized Communication</a>). The video conveyed four waste reduction tips: buy concentrates, choose products with the least packaging, buy in bulk, and use reusable or durable goods. If the video could not be played, the information was communicated orally.</p>
+<p>A request for a commitment was then made using the following statement, "Of the four waste reduction tips mentioned on the video, which do you feel you would be able to implement?" (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>).</p>
+<p><strong>Coaching</strong></p>
+<p>Some households receiving a home visit were also offered coaching (<a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighborhood Coachesand Block Leaders</a>). The coaches helped residents to work out a suitable strategy for composting and to make any arrangements necessary to implement their choice. For example, when coaches learned that many households had made their own composters, they began to offer assistance in building composters to others (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Every month, the depot generated $80 in bottle deposit returns, which was used to cover the cost to the program of $125 for hiring a summer student to undertake 38 of the home visits. This funding was matched by a federal student employment initiative. The remaining 50 home visits and coaching activities were undertaken by a volunteer, involving an estimated 50 hours of work.</p>
+<p>The deposit returns also covered $70 in printing and mailing costs, both for notices about the recycling depot, and for information on the waste reduction activities being promoted. Use of the trailer was donated.</p>
+<p>Finally, an option program for traffic fines enabled people to "pay" their fines through community service. This program covered time spent in program development and in helping residents build their composters.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>All households in the community were randomly assigned to one of three groups:</p>
+<ul>
+<li>a control group of 50 homes that received only the written information on waste reduction that had been mailed out to all households in the community</li>
+<li>a group of 38 households that received a home visit</li>
+<li>a group of 50 households that received a home visit and coaching</li>
+</ul>
+<p>At the time of the home visits, a questionnaire was used to collect information on waste reduction activities, including changes made since the introduction of the recycling depot.</p>
+<p>At the time of the writing of this Workbook, the community was planning to weigh the waste from each group while it is collected on a normal municipal garbage collection day.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Six months after the local recycling depot was introduced, the following results were recorded:</p>
+<ul>
+<li>recycling rates doubled from 40 percent to 80 percent for most items</li>
+<li>80 percent of households recycled at least some of the non-deposit items accepted by the depot</li>
+<li>50 percent of households donated deposit items (e.g., beverage bottles) at the depot</li>
+<li>on average, 50 percent of those who had not already undertaken the waste reduction measure being promoted, made an oral commitment to do so after the home visit</li>
+</ul>
+<p>As of February 1997, the coaching and evaluation phases of this program were still in progress.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Richard Hennigar 	<br/>
+R.R. 5 Canning 	<br/>
+Sheffield Mills, Nova Scotia 	<br/>
+B0P 1H0 	<br/>
+(902) 582-3044 	<br/>
+Fax: (902) 582-7173 	<br/>
+E-mail: <a href="mailto:hennigar@ns.sympatico.ca">hennigar@ns.sympatico.ca</a></p>
+<p>John Cline 	<br/>
+Amaranth and Associates 	<br/>
+P.O. Box 448 	<br/>
+Wolfville, Nova Scotia 	<br/>
+B0P 1X0 	<br/>
+(902) 542-4002 	<br/>
+Fax: (902) 542-4002</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study was originally published in 1998 in "Tools of Change: Proven Methods for Promoting Environmental Citizenship" by Jay Kassirer and Doug McKenzie-Mohr (Published by Canada's National Round Table on the Environment and the Economy)</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

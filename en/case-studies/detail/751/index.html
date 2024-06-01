@@ -1,0 +1,950 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>CitySmart</li>
+<li>Queensland University of Technology</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Australian Government</li>
+<li>Energex</li>
+<li>The Good Guys</li>
+<li>Queensland Council of Social Services</li>
+<li>BCM Group</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>12.3% reduction in annualized household energy consumption</li>
+<li>22.5% increase in energy habits adopted</li>
+</ul>
+<p>Case study <a href="/userfiles/Reduce Your Juice Case V6.pdf" target="_blank">PDF</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Reduce Your Juice: Meaningful Gamification Motivates and Empowers a Challenging Consumer Segment to Save Money and Energy</h1>
+<p><iframe height="auto" src=" https://www.youtube.com/embed/4EUQDz2EIGg" width="97%">
+</iframe></p>
+<p>This innovative social marketing approach changed the energy use behaviours of low-income renters in Brisbane, Australia, through meaningful gamification. The gamified experience promoted desired behaviours and reduced undesired ones, all carefully chosen using McKenzie-Mohr's cbsm guidelines for selecting behaviors. The Reduce Your Juice program was designed to be fun, easy and impactful. On the exterior, it appears as a simple, fun and easy experience of games and gamified activities, communications, community, and rewards. However, below the surface lies a sophisticated intervention developed through the application of formative research and theory and implemented by a team of multi-disciplinary experts from the energy, social marketing, behaviour change, digital insights &amp; technology, research, and social sectors. Designated a <em>Landmark</em> case study by our Building Energy peer review panel in 2022.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The Reduce Your Juice (RYJ) pilot program received funding from Australia’s Federal Department of Industry and Science as part of its Low-Income Energy Efficiency Program, that trialed different approaches in various locations to produce findings that could be used to inform future policies and programs to assist low-income households to become more energy efficient.</p>
+<p>Traditional energy reduction programs were high cost but low impact for this priority audience, who were sceptical of government programs and authority.  Service models were high touch, involving home visits making them expensive and complex to run for government, utilities and social service providers. Traditional learning approaches relied on heavy information provision to educate people to change their behaviour with limited success. </p>
+<p>RYJ sought to test and demonstrate the use of a digital approach to energy efficiency engagement combined with the provision of energy efficiency rewards to create real energy consumption behaviour change amongst a cohort who are traditionally difficult to reach and engage and least likely to take any action at all.  Once proven, this approach could be rolled out to a larger audience at relatively low cost, for example there are 1.7m low-income households in Australia, with 63.2% of this population renting or occupying public housing. (ABS) </p>
+<p><strong>Behaviour Selection</strong> </p>
+<p>A methodology adapted from Community-Based Social Marketing (CBSM) was used to ensure the intervention would be targeted towards the best areas for change for the priority audience. This involved analysing many potential behaviours and scoring them based on predicted impact (cost saving), ease of change (including barriers and benefits), and penetration within the target group. The complexity and nature of performing each behaviour were also considered (e.g. simple, short term, complex, repetitive, long term, or habitual). </p>
+<p>Behaviours were shortlisted based on their scores, with priority given to the cost benefit and ease or likelihood of performing the behaviour. Following this process, behaviours were logically grouped into three clusters which formed the primary focus for the program, as follows. </p>
+<p><em>Switch</em></p>
+<ul>
+<li>Switch off lights</li>
+<li>Switch off appliances to avoid standby</li>
+<li>Switch off the second fridge/freezer</li>
+</ul>
+<p><em>Cool</em></p>
+<ul>
+<li>Use a fan rather than the air conditioner</li>
+<li>Set your air conditioner to 24 degrees in summer</li>
+<li>Close curtains and blinds to keep the temperature down</li>
+<li>Close windows and doors if using the air conditioner</li>
+</ul>
+<p><em>Wash</em></p>
+<ul>
+<li>Use a clothesline or drying rack, rather than the dryer</li>
+<li>Wash full loads of washing</li>
+<li>Wash in cold water</li>
+<li>Take shorter showers (hot water use – target 4 minutes)</li>
+</ul><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Research revealed demographic and psychographic profiles of these young low-income renters that were pivotal in designing the intervention. </p>
+<p><strong>Inter-Generational Poverty</strong> </p>
+<p>Some of the target group had experienced generations of low income in their families, often being born into their situation. This could normalise aspects of stress and crisis (such as addiction, family, finances, relationships, or violence) in their lives and could mean a lack of positive role models that could help break the cycle. This could also affect their ability to prioritise the importance of energy reduction in their daily lives, as it may have been considered a ‘non-essential’ issue. </p>
+<p>The income status and occupational types of the target group meant they were often ‘underemployed’ in that despite their need for full-time wages, they only had part-time or casual work. There were high rates of unemployment within the target group, with large portions of stay-at-home parents performing home duties and raising families rather than being in full-time employment.  With a lack of full-time employment and discretionary income, the target group often spent a lot of time at home. This placed more emphasis on having household entertainment including televisions and gaming consoles as well as a connection to the internet. While the target group earned the lowest levels of income in the population, they did not see themselves as ‘low income’. Generally, they tended to overestimate their income position within the spread of income levels, perceiving themselves as middle class even though they sat in the lowest income deciles. </p>
+<p><strong>Generation Y Renters</strong> </p>
+<p>Most of the target group were part of Generation Y, known for ‘living in the now’, with a high level of instant gratification featuring in their daily lives. This also translated to an ability to change or try new things. </p>
+<p>They often lived in short-term rental housing and had a transient lifestyle.  These rental households on low, fixed, and unreliable incomes were particularly impacted by rising energy costs due to: </p>
+<ul>
+<li>Poor-quality housing</li>
+<li>A higher proportion of income spent on this essential service</li>
+<li>A lack of discretionary funds and limited ability to reduce energy use by upgrading existing appliances and fixtures </li>
+</ul>
+<p><strong>Inefficient Appliances, Many Gaming Consoles, Laptops and Air Conditioners</strong> </p>
+<p>The target households generally had essential appliances such as refrigerators, washing machines and electric ovens. The level of more discretionary entertainment devices such as televisions, laptops and gaming consoles was not limited by their low income; the number of gaming consoles and laptop computers was much higher than the Brisbane average. The high overall number of devices created a high energy dependency. Target households had high levels of communication devices, especially smartphones, tablets and computers provide access to a range of services, entertainment and resources through the internet. </p>
+<p>Along with the high number of appliances, the age of major household appliances also impacted energy consumption, with the older appliances using significantly more power. Many in the target group had appliances aged over 10 years old, especially refrigerators (20%) and standalone freezers (25%). The high cost of replacing these appliances created a real and perceived barrier. </p>
+<p>Two thirds of target households had air conditioners, only just below the Brisbane average. Many households had two or more of these, and many of the conditioners were over 10 years old. </p>
+<p><strong>High Energy Bills, Perceived as Beyond Their Control</strong> </p>
+<p>Despite having the lowest levels of income in the population, these households had 40% higher energy bills than an average (median) Southeast Queensland Household. </p>
+<p>The factors discussed above led to a perceived lack of control and stability, which in turn caused lower levels of intrinsic motivation to change behaviour and take action to lower energy use. In addition, this overall lack of control led to a lack of trust for authority and a level of skepticism, which meant the target group didn’t like being told what to do by positions of authority. </p>
+<p>Their younger age demographic was generally not motivated by traditional values such as the thriftiness of the baby boomers. While they didn’t like to waste energy, the fact that their bills were higher than average implied a certain amount of waste in their consumption. This may have been a symptom of their lack of knowledge around energy efficiency or the intangibility of electricity, which rendered the issue largely invisible. With a relatively modern standard of living at their fingertips, there was often little thought given to conserving energy resources. This was observed through behaviours such as leaving appliances on when not in the room and running a half empty dishwasher or washing machine. The impact of other people within multiple-person households was an additional factor that could push household energy consumption beyond their perceived control. </p>
+<p>There appeared to be limited awareness within the target group around the ‘average’ costs for household electricity and whether their bill was high or not. It was not always apparent to them that using more electricity would end up costing them more. They didn’t necessarily draw a connection between the number of appliances or the age and energy efficiency of their appliances in relation to the size of their energy bills. </p>
+<p>While they were generally aware of some of the appliances that used the most energy, they vastly underestimated the impact of high consumption appliances such as air conditioners, electric hot water, laundry appliances (dryers), and swimming pools on their energy bills. </p>
+<p>Large increases in energy prices led to an increased perception that energy costs were not within their realm of control and as such energy bills were difficult to change. There was sentiment that energy costs were inflicted on consumers, who were at the mercy of large energy organizations trying to make more money. However, the issue of increasing energy prices added more urgency and impetus for change as the target group felt the increasing impact of these costs on their standard of living. </p>
+<p>While the target group self-reported high interest in reducing their energy consumption, their low engagement with energy efficient behaviours saw the program focus on initiatives that involved limited effort or financial commitment such as turning off the lights. This may have been rationalized by the fact energy consumption had no direct personal impact on users and the implications of energy consumption were not directly seen or experienced by users until the quarterly electricity bills were received. While there was interest in reducing energy, and agreement that they could do more to save electricity, they were not confident in their ability to reduce their energy consumption. </p>
+<p><strong>Barriers</strong> </p>
+<p>Five barriers to energy efficiency amongst this group were identified using a systematic literature review, secondary and primary formative research. </p>
+<ol>
+<li>Low interest/Low involvement topic</li>
+<li>Information failure</li>
+<li>Capital constraint barriers to reduce their energy consumption</li>
+<li>Low self-efficacy</li>
+<li>Price concern.</li>
+</ol>
+<p>The nature of energy consumption itself was problematic in that the target group couldn’t visually see energy being consumed or didn’t interact with it until they received their quarterly bills, thus going into crisis mode which typically achieved very little change. For example, the target group vastly underestimated the impact of high consumption appliances such as air conditioners, electric hot water, and laundry appliances on their energy bills.</p>
+<p><strong>Benefits</strong></p>
+<p>The benefits for this audience were identified by primary data collection. </p>
+<ul>
+<li>Lower energy bills, which meant more money to spend on other necessities such as food</li>
+<li>Sense of pride in achieving mastery and control over seemingly uncontrollable household bills</li>
+<li>Socially responsible behaviour that protects the environment through reduced consumption </li>
+</ul>
+<p><strong>Prioritizing Audiences</strong></p>
+<p>RYJ was designed for low-income households. Pilot participants had to:</p>
+<ul>
+<li>Be 18–35 years old</li>
+<li>Have a low income (&lt;$41,500 individual or $50,700 household income; CRN or Job Seeker ID was used to validate income)</li>
+<li>Rent and pay electricity bills</li>
+<li>Live in the Brisbane, Moreton Bay, Logan or Redlands local government areas</li>
+<li>Be the only one in the household participating in the program.</li>
+</ul>
+<p>According to the Australian Bureau of Statistics, there were approximately 95,000 people that met this criterion in the Brisbane, Moreton Bay and Redlands local government areas (4% of the population of this region.) This pilot program was designed for 1,000 participants (1% of the larger target audience in the region.)</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>In stark contrast to traditional energy efficiency approaches, this program was delivered in a non-conventional manner using digital games, entertainment and social media to engage participants in an apparently simple yet highly relevant experience that made the achievement of cost-saving benefits easy and rewarding for participants. (<em>Vivid, Personalized, Credible, Empowering Communications</em>)</p>
+<p>A program brand - Reduce Your Juice - was developed that used fun characters called the Watt family (including a dog called Killer Watt).  The brand was developed to resonate with consumers and engage with them emotionally.</p>
+<p><strong>The Watt Family</strong></p>
+<p><img alt="" height="249" src="/userfiles/Image/The Watt Family.png" width="450"/></p>
+<p><span style='font-family: "Minion Pro", serif; font-size: 8pt;'>Images used with permission from CitySmart, Brisbane City Council’s Sustainability Agency</span></p>
+<p>Acknowledging the nature of energy efficiency as invisible, intangible and undervalued amongst low-income households, RYJ sought to make the invisible visible, the intangible tangible, and the unvalued valuable. Cohorts of participants progressed through a targeted, carefully designed experiential journey delivered via a multi-channel digital platform that incorporated a mobile app, email, SMS, rewards and a social media community. (<em>Building Motivation, Engagement and Habits Over Time; Incentives, Mass Media; Norm Appeals; Overcoming Specific Barriers; Word of Mouth</em>)</p>
+<p>The program was designed to progress participants through a journey in small achievable portions. This fractured approach was designed to fit seamlessly into participant’s lifestyle. Much like levels in a game, the program was designed to progress participants through stages using communications, incentives, feedback, reminders and rewards. Each major step was rewarded with both tangible and intangible rewards to provide feedback and a sense of accomplishment for participants as part of their overall journey. (<em>Feedback; Prompts</em>)</p>
+<p>By completing smaller, easier tasks first and increasingly working towards more challenging actions, participants progressively built their self-efficacy and developed a sense of control as they progressed through the program. Messages aimed to improve participants’ self-efficacy so they could build their knowledge and feel more confident and empowered in their actions, thus improving the likelihood of longer-term change. See image below for the customer journey and the elements of the program.</p>
+<p><strong>Customer Journey</strong></p>
+<p><img alt="" height="281" src="/userfiles/Image/Customer Journey.png" width="450"/></p>
+<p><b><span style="font-size: 11pt; font-family: Arial, sans-serif;">Elements of the Program</span></b></p>
+<p><b><span style="font-size: 11pt; font-family: Arial, sans-serif;"><img alt="" height="253" src="/userfiles/Image/Elements of the Progam.png" width="450"/></span></b></p>
+<p><span lang="EN-AU" style='font-size:8.0pt;font-family:
+"Minion Pro",serif;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-ansi-language:EN-AU;mso-fareast-language:EN-US;
+mso-bidi-language:#0400;mso-bidi-font-style:italic'>Images used with permission from CitySmart, Brisbane City Council’s Sustainability Agency</span></p>
+<p>Three digital games were developed (one for each of the three energy efficiency behaviours being targeted).  In each game there were incentives, calls to action and gaming elements. </p>
+<p>RYJ harnessed the power of gamified learning, which was a new learning  frontier. It focused on simple actions that everyone could take and weren’t dependent on whether the customer was a homeowner or renter, where a customer lived, or what they earned.  Customers could engage any time and place via their smartphone and their activity could be measured through  individual tracking via the app. </p>
+<p>The game badges played a major role in this strategy. Successfully unlocking a game badge was inherently rewarding. It also provided more chances to win tangible rewards (each badge served as one entry in the draw to win a prize). The badge element extended beyond the app games to emails and community discussion. This was more cost effective from a program perspective and helped build participant confidence and motivation. (<em>Incentives</em>) </p>
+<p>Incentives and rewards were used throughout the program to promote interest, motivate action, and shape behaviour by reinforcing positive outcomes. The rewards system was designed to provide participants with tangible benefits for completing program actions, and to inspire further action. </p>
+<p>To pique interest and drive involvement in the program, rewards products were used during recruitment as incentives for participants to take action and register. Providing an extrinsic motivator in combination with elements of fun and entertainment gave participants a reason to participate in a program that might otherwise have been considered of low interest. </p>
+<p>Tangible products were also used to reward participants for completing stages of the program. Rewards aligned with each game/ cluster of energy efficiency behaviours to further reinforce change. For example, by completing the stage focused on washing and drying behaviours, participants unlocked a “Fully Loaded” pack containing drying racks, pegs and basket to help them implement their learning and behaviours. </p>
+<p>Rewards were designed to progressively reinforce participants’ achievements over time to build a sense of achievement to motivate progression through the program towards the final goal. Earning rewards helped participants improve their self-efficacy in relation to associated behaviours and feel empowered in their actions. </p>
+<p>To create an element of surprise, the minor rewards packs were not communicated in advance so that when packs were received participants were delighted and rewarded for their efforts, to inspire further action and progression. Rewards products were accompanied by print materials which included a related “Powerhack” to further reinforce learning. Once installed and used, the rewards products served as in-situ prompts to remind participants of their achievement, learning and positive behaviours. (<em>Prompt</em><em>s</em>) </p>
+<p>One of the larger rewards involved earning new energy efficient white goods (refrigerators or washing machines) in exchange for surrendering their energy intensive appliances. The installed appliances were expected to deliver an additional (‘set-and-forget’) energy saving over and above the behavioural change savings. </p>
+<p>While extrinsic motivators were used throughout the program, the core focus remained on creating an intrinsically motivating experience for participants to ensure they found their own internal reasons to take action and maintain the behaviour. Using the principles of gamification for these elements helped make the program experience fun and motivating for participants. </p>
+<p>A reward fulfilment process was developed to administer and manage the rewards component of the program. The customer support resource used the CRM to manage reward fulfilment with external suppliers. With sizable final rewards on offer, the fulfilment of these major rewards was outsourced to The Good Guys, who provided expertise in this area as one of Australia’s largest suppliers of whitegoods. The Good Guys managed participants directly regarding their final rewards, ensuring expert advice was given in the administering of the like-for-like exchange of whitegoods for successful participants. Managing this process externally allowed RYJ resources to focus on core elements of the program and ensures a positive experience for participants.</p>
+<p align="center" class="MsoNormal" style="text-align:center"><b><span style="font-size: 11pt; font-family: Arial, sans-serif;">Addressing Key Barriers</span></b><o:p> </o:p></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:375.4pt;border-collapse:collapse;border:none;mso-border-alt:solid #A8D08D .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #A8D08D;mso-border-insidev:.5pt solid #A8D08D" width="501">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="width:80.7pt;border:solid #70AD47 1.0pt;
+  border-right:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-left-alt:
+  solid #70AD47 .5pt;mso-border-bottom-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal" style="margin-top:5.0pt;margin-right:0cm;margin-bottom:
+  5.0pt;margin-left:0cm"><span style='font-size:12.0pt;line-height:107%;
+  font-family:"Arial",sans-serif;color:white;mso-themecolor:background1'>Barrier<o:p></o:p></span></p>
+</td>
+<td style="width:294.7pt;border:solid #70AD47 1.0pt;
+  border-left:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-bottom-alt:
+  solid #70AD47 .5pt;mso-border-right-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="393">
+<p align="center" class="MsoNormal" style="margin-top:5.0pt;margin-right:0cm;
+  margin-bottom:5.0pt;margin-left:0cm;text-align:center"><span style='font-size:12.0pt;line-height:107%;font-family:"Arial",sans-serif;
+  color:white;mso-themecolor:background1'>How it was addressed</span><b><span style='font-size:12.0pt;line-height:107%;font-family:"Arial",sans-serif;
+  color:white;mso-themecolor:background1'><o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:19.75pt">
+<td style="width:80.7pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal">Low interest/Low   involvement topic<b><o:p></o:p></b></p>
+</td>
+<td style="width:294.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="393">
+<p class="MsoNormal" style="margin-left:20.65pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:list 20.65pt"><!--[if !supportLists]--><span style="font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>  </span></span><!--[endif]-->Acknowledging the nature of   energy efficiency as invisible, intangible and undervalued amongst low-income   households, RYJ sought to make the invisible visible, the intangible tangible   and unvalued valuable. <o:p></o:p></p>
+<p class="MsoNormal" style="margin-left:20.65pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:list 20.65pt"><!--[if !supportLists]--><span style="font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>  </span></span><!--[endif]-->Participants progressed through   a targeted, carefully designed experiential journey delivered via a   multi-channel digital platform that enabled households to come together and   play together.<o:p></o:p></p>
+<p class="MsoNormal" style="margin-left:20.65pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:list 20.65pt"><!--[if !supportLists]--><span style="font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>  </span></span><!--[endif]-->The behavioural learning   approach for RYJ was a combination of instrumental and experiential learning   done in a discrete way (stealthy learning) whereby participants did and   experienced (virtual world of game), reflected and analysed, conceptualised   and then applied and experimented (real world).<o:p></o:p></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:19.75pt">
+<td style="width:80.7pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal">Low   self-efficacy<b><o:p></o:p></b></p>
+</td>
+<td style="width:294.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="393">
+<p class="MsoNormal" style="margin-left:20.65pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:list 20.65pt"><!--[if !supportLists]--><span style="font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>  </span></span><!--[endif]-->Each major step was rewarded with   both tangible and intangible rewards to provide feedback and a sense of   accomplishment.<o:p></o:p></p>
+<p class="MsoNormal" style="margin-left:20.65pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:list 20.65pt"><!--[if !supportLists]--><span style="font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>  </span></span><!--[endif]-->Program elements were designed   to provide participants with continual feedback and recognition of their   achievements. This continuous, incremental progress built intrinsic   motivation and made change seem achievable for participants. <o:p></o:p></p>
+<p class="MsoNormal" style="margin-left:20.65pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:list 20.65pt"><!--[if !supportLists]--><span style="font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>  </span></span><!--[endif]-->By completing smaller, easier   tasks first and increasingly working towards more challenging actions,   participants progressively built their self-efficacy and developed a sense of   control as they progressed through the program.<o:p></o:p></p>
+<p class="MsoNormal" style="margin-left:20.65pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:list 20.65pt"><!--[if !supportLists]--><span style="font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>  </span></span><!--[endif]-->Messages were designed to   improve participants’ self-efficacy<o:p></o:p></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;height:19.75pt">
+<td style="width:80.7pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal">Information   failure<b><o:p></o:p></b></p>
+</td>
+<td style="width:294.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="393">
+<p class="MsoNormal" style="margin-left:20.65pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:list 20.65pt"><!--[if !supportLists]--><span style="font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>  </span></span><!--[endif]-->Underlying the program was a   custom behaviour change model which abandoned traditional single element   interventions such as once-off in-home consultations or informational   flyers.  <o:p></o:p></p>
+<p class="MsoNormal" style="margin-left:20.65pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:list 20.65pt"><!--[if !supportLists]--><span style="font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>  </span></span><!--[endif]-->RYJ was delivered in over 300   bite-sized digital interactions across multiple channels, allowing   participants to digest small portions of information through a continuous approach   to learning which easily melded into their digital lifestyle.<o:p></o:p></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4;mso-yfti-lastrow:yes;height:19.75pt">
+<td style="width:80.7pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="108">
+<p class="MsoNormal">Price   concerns / capital constraint barriers to reduce their energy consumption<b><o:p></o:p></b></p>
+</td>
+<td style="width:294.7pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="393">
+<p class="MsoNormal" style="margin-left:20.65pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:list 20.65pt"><!--[if !supportLists]--><span style="font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>  </span></span><!--[endif]-->Program participants earned a   new energy efficient white good (fridge and washing machine) in exchange for   surrendering their old energy intensive appliance by interacting with the   program and adopting the energy efficient behaviours. <o:p></o:p></p>
+<p class="MsoNormal" style="margin-left:20.65pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1;tab-stops:list 20.65pt"><!--[if !supportLists]--><span style="font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>  </span></span><!--[endif]-->Energy efficient products installed   were expected to deliver an additional (‘set-and-forget’) energy savings over   and above the behavioural change savings.<span style="text-indent: -18pt; font-family: Webdings; color: rgb(16, 109, 128);"><span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'> </span></span><o:p style="text-indent: -18pt;"> </o:p></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The following table shows the program’s budget.<span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:#0400'> </span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid #A8D08D .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #A8D08D;mso-border-insidev:.5pt solid #A8D08D">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="width:147.15pt;border:solid #70AD47 1.0pt;
+  border-right:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-left-alt:
+  solid #70AD47 .5pt;mso-border-bottom-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="196">
+<p class="MsoNormal"><b><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+  color:white'> </span></b><span style='font-size:11.0pt;
+  font-family:"Arial",sans-serif;color:white;mso-bidi-language:#0400'>Expenditure<o:p></o:p></span></p>
+</td>
+<td style="width:74.25pt;border:solid #70AD47 1.0pt;
+  border-left:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-bottom-alt:
+  solid #70AD47 .5pt;mso-border-right-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="99">
+<p align="center" class="MsoNormal" style="text-align:center"><span style='font-size:11.0pt;font-family:"Arial",sans-serif;color:white'>Actual Cost   (AUS$)</span><b><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+  color:white;mso-bidi-language:#0400'><o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:19.75pt">
+<td style="width:147.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="196">
+<p class="MsoNormal"><span lang="EN-CA">Project Management &amp; Staffing Costs</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+<td style="width:74.25pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="99">
+<p class="MsoNormal"><span lang="EN-CA">$2,122,133</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:19.75pt">
+<td style="width:147.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="196">
+<p class="MsoNormal"><span lang="EN-CA">Products and Rewards</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+<td style="width:74.25pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="99">
+<p class="MsoNormal"><span lang="EN-CA">$709,874</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;height:19.75pt">
+<td style="width:147.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="196">
+<p class="MsoNormal"><span lang="EN-CA">Support Materials</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+<td style="width:74.25pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="99">
+<p class="MsoNormal"><span lang="EN-CA">$256,058</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4;height:19.75pt">
+<td style="width:147.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="196">
+<p class="MsoNormal"><span lang="EN-CA">Online Engagement</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+<td style="width:74.25pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="99">
+<p class="MsoNormal"><span lang="EN-CA">$64,377</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:5;height:19.75pt">
+<td style="width:147.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="196">
+<p class="MsoNormal"><span lang="EN-CA">Customer Engagement</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+<td style="width:74.25pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="99">
+<p class="MsoNormal"><span lang="EN-CA">$60,929</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:6;height:19.75pt">
+<td style="width:147.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="196">
+<p class="MsoNormal"><span lang="EN-CA">Digital Interfaces</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+<td style="width:74.25pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="99">
+<p class="MsoNormal"><span lang="EN-CA">$288,089</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:7;height:19.75pt">
+<td style="width:147.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="196">
+<p class="MsoNormal"><span lang="EN-CA">Distribution and Installation</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+<td style="width:74.25pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="99">
+<p class="MsoNormal"><span lang="EN-CA">$36,067</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:8;height:19.75pt">
+<td style="width:147.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="196">
+<p class="MsoNormal"><span lang="EN-CA">IT Platform</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+<td style="width:74.25pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="99">
+<p class="MsoNormal"><span lang="EN-CA">$935,230</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:9;height:19.75pt">
+<td style="width:147.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="196">
+<p class="MsoNormal"><span lang="EN-CA">Community Engagement</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+<td style="width:74.25pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="99">
+<p class="MsoNormal"><span lang="EN-CA">$190,150</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:10;height:19.75pt">
+<td style="width:147.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="196">
+<p class="MsoNormal"><span lang="EN-CA">Professional Services</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+<td style="width:74.25pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="99">
+<p class="MsoNormal"><span lang="EN-CA">$118,502</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:11;height:19.75pt">
+<td style="width:147.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="196">
+<p class="MsoNormal"><span lang="EN-CA">Behavioural Research</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+<td style="width:74.25pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="99">
+<p class="MsoNormal"><span lang="EN-CA">$175,222</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:12;height:19.75pt">
+<td style="width:147.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="196">
+<p class="MsoNormal"><span lang="EN-CA">Project Evaluation</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+<td style="width:74.25pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="99">
+<p class="MsoNormal"><span lang="EN-CA">$354,668</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:13;height:19.75pt">
+<td style="width:147.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="196">
+<p class="MsoNormal"><span lang="EN-CA">Customer Support</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+<td style="width:74.25pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="99">
+<p class="MsoNormal"><span lang="EN-CA">$93,061</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:14;height:19.75pt">
+<td style="width:147.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="196">
+<p class="MsoNormal"><span lang="EN-CA">Project Office</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+<td style="width:74.25pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="99">
+<p class="MsoNormal"><span lang="EN-CA">$168,981</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:15;mso-yfti-lastrow:yes;height:19.75pt">
+<td style="width:147.15pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="196">
+<p class="MsoNormal"><b><span lang="EN-CA">TOTAL</span></b><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+<td style="width:74.25pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="99">
+<p class="MsoNormal"><span lang="EN-CA">$5,480,281</span><span style='font-size: 11pt; font-family: "Minion Pro", serif;'><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Cost-effectiveness was calculated at four levels, as described in the following table. </p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid #A8D08D .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #A8D08D;mso-border-insidev:.5pt solid #A8D08D">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="width:233.65pt;border:solid #70AD47 1.0pt;border-right:
+  none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-left-alt:solid #70AD47 .5pt;
+  mso-border-bottom-alt:solid #70AD47 .5pt;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" width="312">
+<p class="MsoNormal"><span style='font-size:9.0pt;line-height:107%;
+  font-family:"Arial",sans-serif;color:white;mso-bidi-language:#0400'>Cost   Level and Outcome Description</span> <o:p></o:p></p>
+</td>
+<td style="width:233.85pt;border:solid #70AD47 1.0pt;border-left:
+  none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-bottom-alt:solid #70AD47 .5pt;
+  mso-border-right-alt:solid #70AD47 .5pt;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" width="312">
+<p class="MsoNormal"><span style='font-size:9.0pt;line-height:107%;
+  font-family:"Arial",sans-serif;color:white;mso-bidi-language:#0400'>RYJ Cost   Inputs /Assumptions</span><b><span style='font-size:9.0pt;line-height:107%;
+  font-family:"Arial",sans-serif;color:white;mso-bidi-language:#0400'><br/>
+</span><o:p></o:p></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:19.75pt">
+<td style="width:233.65pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="312">
+<p class="MsoNormal" style="text-indent:-.1pt;page-break-after:avoid"><b><span style="font-size: 9pt; line-height: 107%;">Direct Intervention Level (Level   1)</span></b><span style="font-size:9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size: 9pt; line-height: 107%;">The delivery of an outcome for the cost of delivering   the intervention to a participant</span><b><o:p></o:p></b></p>
+</td>
+<td style="width:233.85pt;border-top:none;border-left:none;
+  border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" width="312">
+<p class="MsoNormal" style="text-indent:-.1pt;page-break-after:avoid"><span style="font-size: 9pt; line-height: 107%;">Allocation   of the follow costs as described in Budget Section on page 201 of the RYJ   Final Report:</span><span style="font-size:9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:20.4pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1;tab-stops:
+  list 20.65pt"><!--[if !supportLists]--><span style="font-size:9.0pt;line-height:
+  107%;font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>   </span></span><!--[endif]--><span style="font-size: 9pt; line-height: 107%;">Products   and Rewards</span><span style="font-size:9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:20.4pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1;tab-stops:
+  list 20.65pt"><!--[if !supportLists]--><span style="font-size:9.0pt;line-height:
+  107%;font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>   </span></span><!--[endif]--><span style="font-size: 9pt; line-height: 107%;">Distribution   and Installation</span><span style="font-size:9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:20.4pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1;tab-stops:
+  list 20.65pt"><!--[if !supportLists]--><span style="font-size:9.0pt;line-height:
+  107%;font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>   </span></span><!--[endif]--><span style="font-size: 9pt; line-height: 107%;">Support   Materials</span><span style="font-size:9.0pt;line-height:107%"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:19.75pt">
+<td style="width:233.65pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="312">
+<p class="MsoNormal" style="text-indent:-.1pt"><b><span style="font-size: 9pt; line-height: 107%;">Trial Component Level (Level 2)</span></b><span style="font-size:
+  9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size: 9pt; line-height: 107%;">The delivery of an outcome for the cost of delivering   the intervention to a participant, and costs associated with recruiting a participant   and maintaining a participant.</span><b><o:p></o:p></b></p>
+</td>
+<td style="width:233.85pt;border-top:none;border-left:none;
+  border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" width="312">
+<p class="MsoNormal" style="text-indent:-.1pt"><span style="font-size: 9pt; line-height: 107%;">Items described in   Direct trial approach (Level 1), and the follow costs items:</span><span style="font-size:9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:20.4pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1;tab-stops:
+  list 20.65pt"><!--[if !supportLists]--><span style="font-size:9.0pt;line-height:
+  107%;font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>   </span></span><!--[endif]--><span style="font-size: 9pt; line-height: 107%;">Online   engagement</span><span style="font-size:9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:20.4pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1;tab-stops:
+  list 20.65pt"><!--[if !supportLists]--><span style="font-size:9.0pt;line-height:
+  107%;font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>   </span></span><!--[endif]--><span style="font-size: 9pt; line-height: 107%;">Customer   Engagement</span><span style="font-size:9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:20.4pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1;tab-stops:
+  list 20.65pt"><!--[if !supportLists]--><span style="font-size:9.0pt;line-height:
+  107%;font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>   </span></span><!--[endif]--><span style="font-size: 9pt; line-height: 107%;">Community   Engagement</span><span style="font-size:9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:20.4pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1;tab-stops:
+  list 20.65pt"><!--[if !supportLists]--><span style="font-size:9.0pt;line-height:
+  107%;font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>   </span></span><!--[endif]--><span style="font-size: 9pt; line-height: 107%;">Project   Management &amp; Staffing Costs (1/3 Costs)</span><span style="font-size:
+  9.0pt;line-height:107%"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;height:19.75pt">
+<td style="width:233.65pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="312">
+<p class="MsoNormal" style="text-indent:-.1pt"><b><span style="font-size: 9pt; line-height: 107%;">Total Business Level (Level 3)</span></b><span style="font-size:
+  9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size: 9pt; line-height: 107%;">The delivery of an outcome for the cost of   delivering the intervention to a participant, direct costs associated with   recruiting a participant, and maintaining a participant, cost of running an   organisation to do the above</span><b><o:p></o:p></b></p>
+</td>
+<td style="width:233.85pt;border-top:none;border-left:none;
+  border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" width="312">
+<p class="MsoNormal" style="text-indent:-.1pt"><span style="font-size: 9pt; line-height: 107%;">Items described in   Trial Component (Level 2), and the follow costs items:</span><span style="font-size:9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:20.4pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1;tab-stops:
+  list 20.65pt"><!--[if !supportLists]--><span style="font-size:9.0pt;line-height:
+  107%;font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>   </span></span><!--[endif]--><span style="font-size: 9pt; line-height: 107%;">Digital   Interfaces</span><span style="font-size:9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:20.4pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1;tab-stops:
+  list 20.65pt"><!--[if !supportLists]--><span style="font-size:9.0pt;line-height:
+  107%;font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>   </span></span><!--[endif]--><span style="font-size: 9pt; line-height: 107%;">IT   Platform</span><span style="font-size:9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:20.4pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1;tab-stops:
+  list 20.65pt"><!--[if !supportLists]--><span style="font-size:9.0pt;line-height:
+  107%;font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>   </span></span><!--[endif]--><span style="font-size: 9pt; line-height: 107%;">Project   Office</span><span style="font-size:9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:20.4pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1;tab-stops:
+  list 20.65pt"><!--[if !supportLists]--><span style="font-size:9.0pt;line-height:
+  107%;font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>   </span></span><!--[endif]--><span style="font-size: 9pt; line-height: 107%;">Project   Management &amp; Staffing Costs (1/3 Costs)</span><span style="font-size:
+  9.0pt;line-height:107%"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4;mso-yfti-lastrow:yes;height:19.75pt">
+<td style="width:233.65pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="312">
+<p class="MsoNormal" style="text-indent:-.1pt"><b><span style="font-size: 9pt; line-height: 107%;">Total Trial Level (Level 4)</span></b><span style="font-size:
+  9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size: 9pt; line-height: 107%;">The delivery of an outcome for the cost of   delivering the intervention to a participant, direct costs associated with   recruiting a participant, and maintaining a participant, cost of running an   organisation to do the above and cost of participating in a government funded   trial</span><b><o:p></o:p></b></p>
+</td>
+<td style="width:233.85pt;border-top:none;border-left:none;
+  border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" width="312">
+<p class="MsoNormal" style="text-indent:-.1pt"><span style="font-size: 9pt; line-height: 107%;">Items described in   Total Business (Level 3), and the follow costs items:</span><span style="font-size:9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:20.4pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1;tab-stops:
+  list 20.65pt"><!--[if !supportLists]--><span style="font-size:9.0pt;line-height:
+  107%;font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>   </span></span><!--[endif]--><span style="font-size: 9pt; line-height: 107%;">Professional   Services</span><span style="font-size:9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:20.4pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1;tab-stops:
+  list 20.65pt"><!--[if !supportLists]--><span style="font-size:9.0pt;line-height:
+  107%;font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>   </span></span><!--[endif]--><span style="font-size: 9pt; line-height: 107%;">Behavioural   Research</span><span style="font-size:9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:20.4pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1;tab-stops:
+  list 20.65pt"><!--[if !supportLists]--><span style="font-size:9.0pt;line-height:
+  107%;font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>   </span></span><!--[endif]--><span style="font-size: 9pt; line-height: 107%;">Project   Evaluation</span><span style="font-size:9.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:20.4pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1;tab-stops:
+  list 20.65pt"><!--[if !supportLists]--><span style="font-size:9.0pt;line-height:
+  107%;font-family:Webdings;mso-fareast-font-family:Webdings;mso-bidi-font-family:
+  Webdings;color:#106D80;mso-color-alt:windowtext">4<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>   </span></span><!--[endif]--><span style="font-size: 9pt; line-height: 107%;">Project   Management &amp; Staffing Costs (1/3 Costs)</span><span style="font-size:
+  9.0pt;line-height:107%"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong>Cost-Benefit Analysis</strong></p>
+<p><img alt="Cost Benefit Analysis" height="187" src="/userfiles/Image/Cost-Benefit Analysis Table 1.png" width="450"/></p>
+<p><img alt="Cost-Benefit Analysis" height="357" src="/userfiles/Image/Cost-Benefit Analysis Table 2.png" width="450"/></p>
+<p>On a relatively small-scale basis of delivery to 1,000 participants, each dollar invested by the Federal Government yielded a dollar of benefit due largely to the high set-up cost.  The economic viability of a digital approach significantly improves at scale, for example delivery to 10,000 and 100,000 participants would deliver between $2.02 and $2.70 in benefits for each dollar invested, thus providing a strong economic case for future investment.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p><strong>Control Group</strong> </p>
+<p>A field experiment was conducted that compared the 1,000 household participants in the program with a control group of non-participants.  The control group (n = 734 households) shared the same demographic characteristics as the participant group. Data were collected before and after the program for both groups over the same time period. </p>
+<p><strong>Energy Use</strong></p>
+<p>Both the participant and control groups were asked to self-report their electricity bill size prior to and after the program intervention. </p>
+<p>While surveys were used to overtly collect data from participants, analytics were built into all aspects of the program to collect data in a non-intrusive manner designed to preserve the customer experience whilst gaining important information about the participant engagement with the intervention. These data sources were used to help overcome the effects of social desirability bias often encountered in the self-reported measurement of behaviour change. </p>
+<p>The use of a control group in the field experiment method provided a valid way of comparing results with a demographically comparable group of people who did not receive the program intervention at the same points in time. This allows for inferences of causality from the intervention. </p>
+<p>Each participant was allocated a unique participant number that allowed their self-reported data to be linked to the game analytics, billing data and consumption data. The collection of billing and energy data through participants’ energy meters was incorporated into the program to strengthen the self-reported behaviour change and bill savings measures. Permission was required to obtain this data from a participant’s meter via their National Meter Identifier (NMI). Through a relationship with the energy network supplier, the collection of this data was made somewhat less intrusive for participants as permission was built into the program’s terms and conditions and data were sourced by matching participants’ addresses with their NMI outside of the program experience. </p>
+<p>Household electricity consumption data was sourced directly from Energex (the energy distributor in Southeast Queensland). Data were supplied for participants’ home addresses for the 12 months prior to the intervention as well as for the following 12 months after the intervention. The project team compared self-reported electricity bill data with actual consumption data (kWh). The analysis showed a high level of correlation, which provides confidence in the accuracy of the electricity bill amount provided by participants.</p>
+<p> <strong>Habits</strong> </p>
+<p>The habit questions on the surveys measured nine behaviours. Participant responses were in Yes or No format, and changes were measured as the percentage of Yes answers relative to baseline. </p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Program elements were designed to provide participants with continual feedback and recognition of their achievements. This continuous, incremental progress built intrinsic motivation and made change seem achievable for participants.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Energy Savings</strong></p>
+<p>An annualized total of 470,583 kWh were saved compared with the previous year. The actual figure was likely to be higher as approximately 10% of participants had moved house, changed providers, timing issues in meter readings and the data was not available.</p>
+<ul>
+<li>12.3% reduction in annualized household energy consumption compared with the previous year (average savings of 783 kWh per household per year).</li>
+<li>10.95% reduction in household electricity bills (average saving of $219.28 per household per year.)</li>
+</ul>
+<p><strong>Behaviour</strong></p>
+<ul>
+<li>22.5% increase in energy habits adopted</li>
+<li>1001 registered to participate, only 770 registered participants started the program, 601 participants competed the program •	78% of starters completed the program  •	60% of registered participants completed the six-week program</li>
+<li>97.2% recommended RYJ to friends and family</li>
+<li>Participants played the games five times (500%) as much as was required to receive the rewards</li>
+<li>More than half (601) of participating households completed the program with an energy efficient appliance. The number of rewards distributed was:<br/>
+    o	Fridges – 246<br/>
+    o	BBQs – 207<br/>
+    o	Washing machines – 148</li>
+</ul>
+<p><strong>Attitude Change</strong></p>
+<ul>
+<li>Significant improvement in attitudes, bill control, self-efficacy.  Knowledge</li>
+</ul>
+<p><strong>Knowledge</strong></p>
+<ul>
+<li>Overall knowledge in both the participant and control groups was quite high, however the participant group showed significant improvement in 7 out of 10 questions after completing the intervention while the control group showed no significant change in knowledge for any of the questions over the same time. <br/>
+<br/>
+    The reason knowledge improvement was low was because the baseline knowledge was already high - people knew about energy efficiency behaviours.  This high knowledge but low behaviour profile of the target audience was the reason why a behavioural learning approach (do - feel - learn) rather than a standard learning approach (learn - feel - do) was selected as the underpinning theoretical approach to program design.</li>
+</ul>
+<p><strong>Other Co-benefits</strong></p>
+<ul>
+<li>Provided 51 jobs for long term unemployed youth, Queenslanders with disability and low risk female prisoners.</li>
+<li>Reconditioned or recycled old white goods collected from participants. (19.2t of scrap metal collected)</li>
+<li>Recycled all product packaging including Styrofoam to minimise impact on the environment. (900kgs of cardboard, 246kgs of polystyrene, and 92kg of plastic recycled.)</li>
+<li>Provided learning opportunities for three PHD candidates and four Masters Students.</li>
+<li>Achieved over $246,600 in advertising and PR media value through its promotion in several channels.</li>
+</ul>
+<p><img alt="Results Summary" height="237" src="/userfiles/Image/Summary.png" width="450"/></p>
+<p><span lang="EN-AU" style='font-size:8.0pt;font-family:"Minion Pro",serif;mso-ansi-language:
+EN-AU;mso-bidi-language:#0400;mso-bidi-font-style:italic'>Images used with permission from CitySmart, Brisbane City Council’s Sustainability Agency</span> </p>
+<p><strong><img alt="Program Inpacts Table" height="397" src="/userfiles/Image/Summary2.png" width="450"/></strong></p>
+<p><strong>Participant Verbatims</strong></p>
+<p>Many people liked the fun nature of the program and commented that whilst they already knew a lot of the information, the program helped them remember to apply their learnings and make changes. Some verbatims follow;</p>
+<ul>
+<li>“My daughter and I both played the game and read the tips together. She is only seven and gets up me if I leave more than 2 lights on in the house. It was a fantastic program, and we are now more confident when we receive a power bill.”</li>
+<li>“I followed the powerhacks! And got a very low electricity bill!”</li>
+<li>“Fun, and just so different. I really enjoyed the games especially temperature defender. Very enjoyable and entertaining.” </li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Professor Rebekah Russell-Bennett<br/>
+Queensland University of Technology<br/>
+<a href="mailto:rebekah.bennett@qut.edu.au?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">rebekah.bennett@qut.edu.au</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned</strong></p>
+<ul>
+<li>A learning hierarchy of do-feel-learn (change behaviour then attitudes) was successful. This is in contrast to the traditional approach of learn-feel-do (change attitudes then behaviour).</li>
+<li>Gamification can make a low-involvement, low interest topic interesting and exciting for consumers, by increasing their motivation, ability and opportunity to engage in energy behaviours.</li>
+<li>Our approach successfully reached an underserved audience segment – those households that are energy poor and hard-to-reach.</li>
+<li>The inclusion of a community as part of the intervention ended up being an important gamified component of the program which provided an essential element of collaboration for participants. Creating a shared experience for participants was an effective way of adding visibility, tangibility and value to energy behaviours through peer discussion and community comparison. The combination of community collaboration with a dash of fun competition from the app games improved social norming for participants, opening the door to further exploration in this area for behaviour change.</li>
+<li>RYJ demonstrated the effectiveness of interactive digital learning for energy efficiency, including the effectiveness of components such as community, rewards, and digital and social communications. The trial showed that a digital learning program can in fact change energy consumption behaviours, achieving the main program objective of helping the target group to reduce their energy consumption by changing their habits and providing a meaningful cost benefit for participants.</li>
+<li>The use of agile development techniques and adoption of an agile mindset amongst the team proved an effective way of managing multiple risks and uncertainty while working towards achieving the program goals. The agile approach, originally applied to software development, involves short periods of teamwork and frequent release cycles. From a marketing perspective, it proved effective in testing and refining content and messages with the target group to create a more relevant experience to resonate with participants. Holding the customer at the heart of all approaches proved beneficial for the outcomes of the program, with strong customer results achieved and positive feedback received.</li>
+<li>The following program elements made RYJ easy and cost-effective to replicate. <br/>
+<br/>
+<em>For Participants:<br/>
+</em>o	The digital gamified learning experience applied elements of game play to engage the audience in understanding electricity and makes learning fun. (rewards, leaderboard, alerts, reminders)<br/>
+    o	The use of a catchy brand and avatars was emotionally engaging and achieved cut-through. 90% of participants liked the program and would recommend it to friends and family (Households had fun)<br/>
+    o	The program engaged customers on channels they already loved to use - their mobile phones, email and social media (in their time, on their terms).<br/>
+    o	It rewarded desired behaviours to embed the learnings, creating lasting behaviour change. The on-line community created a shared social experience for participants which affected the adoption of social norms for the energy efficient behaviours. This is especially important for low involvement topics, in reaching people in a non-intrusive manner that fits in with their busy digital lifestyle.<br/>
+    o	Since every member of the household contributes to the size of their household’s energy bills, RYJ involved the whole family in the learning process and challenged participants to take the learnings from online to offline in the real-life environment thereby reducing energy use and bills. (a common goal) <br/>
+<br/>
+<em>For Sponsors (Government, Energy Retailers or Distributors)</em><br/>
+    o	Once built, digital assets were quick to implement and easy to scale. They were also easily and cost-effectively integrated into new and existing energy program.<br/>
+    o	RYJ took every participant on an eight-week, high touch learning journey - meaning 3 months from enrolment to completion report in any geographical area.<br/>
+    o	Real time analytics and customer feedback quickly and accurately measured results and provided deeper and more accurate insight. <br/>
+    o	The approach proved more cost effective and provided better results than traditional education programs such as in-home audits, workshops, and brochures.</li>
+</ul>
+<p><strong>Notes<br type="_moz"/>
+</strong></p>
+<p><em>Replication</em></p>
+<p>After the initial pilot program described above, RYJ was run an additional eight times to over 7,000 households across Australia. Examples demonstrating the replicability of RYJ include the following.</p>
+<ul>
+<li>RYJ was repurposed as part of the Queensland Government’s Energy Savvy Families program over a 24-month period, engaging 4,000 regional households to drive average savings of $165 over 6 months and $119 over 12 months.</li>
+<li>RYJ was run twice with a national energy retailer, an initial pilot program in 2017 attracted a cohort of more than 1,300 participants. During that pilot, households saved an average of $52 per quarter, and again, an overwhelming majority of participants said they would recommend the program to others. The second cohort ran from July through to September 2020, helping households reduce power bills and save money during a high-demand period.  Participants achieved an 8 to 10 per cent energy saving on average compared to other customers of the energy retailer during the COVID-19 pandemic, where industry experts estimate that residential energy consumption rose between 15% and 20% due to winter heating and more time spent at home.</li>
+<li>The approach has been used further in a consumer setting with customers of a major energy retailer in Brisbane.   A recent pilot of RYJ-lite, where one game was used over a one-week period with a $10 reward for participating, showed significant improvement in behaviour, demonstrating that the gamification approach can be replicated at a small scale.</li>
+</ul>
+<p><em>Adaptation to Other Behaviours</em></p>
+<ul>
+<li>Members of the research team used the findings of the program to design a gamified program for moderating alcohol consumption amongst teens.  The alcohol program was called GO:KA (game on, know alcohol) where high school students participated in a hybrid online/offline gamified social marketing program.  This program drew on the experience of the lead researcher on the RYJ team to design a video game that simulated differing levels of blood alcohol content with the aim for students of experiencing the effects of BAC. The principles of gamification (competition, leaderboard, alerts, challenges) were used successfully.</li>
+<li>Other environmental behaviours that could benefit from a gamified intervention focused on behaviour change are those where there is low involvement and when knowledge levels are high (where an awareness/campaign is unlikely to elicit change) and where the behaviours are within the control of the target audience.   Examples are recycling (sorting paper, glass, food scraps, and general waste), using seat belts, wearing helmets on bikes and e-scooters and putting rubbish in bins.</li>
+</ul>
+<p><strong>For More Information </strong></p>
+<ul>
+<li>Government website of final report: <a href="https://www.energy.gov.au/sites/default/files/citysmart_reduce_your_juice.pdf" target="_blank">https://www.energy.gov.au/sites/default/files/citysmart_reduce_your_juice.pdf</a></li>
+<li>Project information <a href="https://research.qut.edu.au/servicesocialmarketing/research-projects/reduce-your-juice/" target="_blank">https://research.qut.edu.au/servicesocialmarketing/research-projects/reduce-your-juice/</a></li>
+<li>Video overview of program outcomes <a href="https://www.youtube.com/watch?v=s4UAUaxXPSY" target="_blank">https://www.youtube.com/watch?v=s4UAUaxXPSY</a></li>
+<li><a href="http://www.macrobusiness.com.au/2013/05/what-is-the-typical-australian-income-in-2013/" target="_blank">http://www.macrobusiness.com.au/2013/05/what-is-the-typical-australian-income-in-2013/</a></li>
+</ul>
+<p><strong>Landmark Designation</strong></p>
+<p>The program described in this case study was designated in 2022. Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Arien Korteland, BC Hydro</li>
+<li>Kathy Kuntz, Kanndo Consulting</li>
+<li>Doug McKenzie-Mohr, McKenzie-Mohr Associates</li>
+<li>Sea Rotmann, Sustainable Energy Advice Ltd.</li>
+<li>Lester Sapitula, Pacific Gas and Electric Company</li>
+<li>Reuven Sussman, American Council for an Energy-Efficient Economy</li>
+<li>Marsha Walton, New York Energy Research and Development Authority </li>
+</ul>
+<p>This case study was written in 2022 by Tim Swinton, Reduce Your Juice Project Manager, Professor Rebekah Russell-Bennett, Lead Researcher, Queensland University of Technology, Dr Ryan McAndrew, Research Assistant, Queensland University of Technology, Dr Rory Mulcahy, (research assistant for the project) now Senior Lecturer University of the Sunshine Coast.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

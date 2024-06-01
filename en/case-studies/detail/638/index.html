@@ -1,0 +1,287 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Green Communities Canada</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Natural Resources Canada</li>
+<li>Ontario Ministry of Environment and Energy</li>
+<li>Many local governments and utilities</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>27,000,000 GJ per year</li>
+<li>Average saving was 32 to 45 GJ (9,000 to 13,000 kWh) per household per year</li>
+<li>New furnace adoption and wall insulation each reduced consumption by about 25%; these savings persisted for at least a decade.</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>GCC's Home Energy Retrofit Incentive and Home Visit Program</h1>
+<p>Making the housing stock more energy-efficient provides persistent and ongoing returns. However efforts to do so often run into obstacles that diminish program impacts. This program illustrates how to overcome many of these barriers, and how ongoing monitoring and evaluation can lead to program improvements over time.  It’s also a great illustration of combining home visits with incentives for doing desired behaviours. Revised in September 2015 and June 2023.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.<br/>
+</em></p>
+<p>Since 1993, Canada’s Green Communities have been leaders in the development and implementation of residential energy efficiency programs, helping homeowners reduce their energy consumption with progressively sophisticated tools.</p>
+<p>The home visit program was originally developed under the Ontario Government’s Green Communities Initiative. The network of participating communities was formed in 1995 and incorporated as the Green Communities Association in 1996. In early 2005, it became Green Communities Canada to better reflect its national scope. Case studies of some of these programs can be accessed from the notes section at the bottom of this case study.</p>
+<p>The home visits targeted the owners of older, less energy-efficient homes in Canada.</p>
+<p>Strengths of the program were as follows:</p>
+<ul>
+<li>Successfully tackled the difficult and important issue of making the housing stock more energy efficient</li>
+<li>Energy savings were high per household and ongoing energy savings persisted for decades</li>
+<li>Pre- and post- assessments quantified impacts on energy use and greenhouse gas emissions</li>
+<li>Cost-effective – each dollar of federal grants generated roughly $10 in local spending (cumulatively more than $8.15 billion between 1998 and 2011)</li>
+<li>Holistic; addressed multiple energy-savings measures, and targeted high savings measures</li>
+<li>Ongoing evaluation, and innovation led to program improvements over time and increased impact</li>
+<li>Served as a model for many other home visit programs throughout the world</li>
+</ul><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The objective was to reduce home energy use. The target amount varied by community.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The GCC Green Home Visits were based on pilot implementations of the home visit approach such as <a href="https://toolsofchange.com/en/case-studies/detail/18">Peterborough Green-Up</a> (starting in 1991) and  <a href="https://toolsofchange.com/en/case-studies/detail/114">Green$aver</a> (starting in 1994.)</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>From 1993 to 1997, Green Communities conducted free Green Home Visits which engaged Ontario homeowners in taking action to make their homes more energy-efficient conserve water and reduce waste (<em>Home Visits</em>).</p>
+<p>The home advisors were trained to use a range of community-based social marketing tools for improving program impact, such as:</p>
+<ul>
+<li>Customized advice and recommendations, based on an onsite inspection of the house. Advice was tailored to specific building and heating systems conditions and (of equal importance) the real world barriers and incentives of the homeowner, including concerns, issues, priorities and plans (e.g., renovation plans). Advisors were trained to identify and address homeowner ‘hot buttons’ such as bill savings, home performance and comfort issues, and environmental responsibility. (<em>Vivid, Personalized Communication</em>)</li>
+<li>Face to face interaction with the homeowner – a premium motivational tool. Advisors walked through each home with its owners, pointing out issues and opportunities, describing the total amount of air leakage in easy to grasp terms (e.g. a hole the size of a football), helping the owners to feel and/or see air leaks, and involving them in developing a written list of repair/retrofit priorities (<em>Vivid, Personalized Communication</em>)</li>
+<li>Raising the visibility of participation (<em>Norm Appeals</em>)</li>
+<li>Obtaining a commitment to take action (<em>Obtaining a Commitment</em>)</li>
+</ul>
+<p>To overcome a number of common barriers to taking action and ensure proper use, small modifications and repairs were made on the spot: hot water thermostats were adjusted, toilet leaks repaired, and faucet washers replaced. Free water and energy-saving devices were offered as well. These included faucet aerators and washers, hot water pipe insulation, low energy light bulbs and low-flow shower heads. Some were installed by the advisors to ensure proper use. (<em>Overcoming Specific Barriers</em>)</p>
+<p>At first, the energy efficiency portion of these assessments consisted only of a visual inspection of the house.  To improve accuracy, a blower door test was integrated, because air leakage was considered to be the most serious area of energy loss, and the most effective and noticeable way to improve comfort and savings on energy bills. In a blower door test, a plastic sheet covers an open exterior doorway. A fan is used to blow air out of the house through a hole in the sheet, reducing the air pressure inside to 50Pa, and creating a relative vacuum. As air rushed into the house through leaky areas, the assessor  used a smoke pencil to identify and demonstrate leaks in need of repair. The rate of leakage was measured, quantifying the need for air leakage control (pre-retrofit), and the success of draftproofing (post-retrofit).</p>
+<p>The brightly-coloured blower door with its noisy fan attracted attention (<em>Word of Mouth, Norm Appeals</em>) and both dramatized and quantified an otherwise invisible, obscure concept. It also lent technical credibility to the visit and the recommendations. (<em>Vivid, Credible Communications</em>)   EnerGuide for Houses Program</p>
+<p><strong>EnerGuide for Houses Program</strong></p>
+<p>Meanwhile, Natural Resources Canada (NRCan), a federal government department, developed an assessment tool with many of the features of Ontario’s Green Home Visit, but focusing exclusively on home energy. Further, the tool – which eventually became known as the EnerGuide Rating System (ERS) – featured a standardized national home energy efficiency rating on a scale of 1-100 that helped homeowners understand the energy performance of their house relative to others of a similar age and type. The report also indicated the new rating that could be achieved with implementation of recommendations such as draft proofing, insulation, and heating system upgrade.</p>
+<p>The EnerGuide Rating System was based on computerized modelling of the home, incorporating dimensional measurements and the blower door measurement. The computer-generated rating added credibility for homeowners. An optional post-retrofit B visit confirmed the retrofit work had been completed satisfactorily and measured the resulting improvement in energy efficiency.  In 1997, Green Communities were chosen by Natural Resources Canada (NRCan) to pilot test the Canadian Home Energy Efficiency Rating System (CHEERS). Almost 400 homes were evaluated under the new rating system. A successful pilot of almost 400 homes paved the way for the EnerGuide for Houses program.</p>
+<p>From 1998 to 2001, Green Communities were the exclusive delivery agent in Ontario for NRCan’s EnerGuide for Houses initiative.</p>
+<p>Although EnerGuide for Houses was a success, the level of program participation was relatively low despite a subsidy to keep down the cost of the service. Among participants, relatively few completed post-retrofit B visits. To increase participation and stimulate retrofits, Green Communities Canada introduced a cash incentive tied to achieved energy savings as measured by the EnerGuide Rating System, based on pre- and post-retrofit assessments .  The cost of the incentives was more than justified by the benefits, including bill savings, reduced emissions, increased home equity, and community economic development (direct and indirect business opportunities and job creation). <em>(Financial Incentives)</em></p>
+<p>In 2000, Green Communities, in partnership with Natural Resources Canada, Ontario Ministry of Environment, Enbridge Gas and Peterborough Green-Up piloted an incentive program in <a href="http://www.toolsofchange.com/en/case-studies/detail/18">Peterborough</a>, Ontario. The Home Performance Rating Rewards Programs provided grants to participants who improved the EnerGuide Rating of their house. It was the first project in Canada to use the EnerGuide for Houses home energy rating system to offer consumer incentives to complete whole house energy-efficiency ratings. Participants were required to have pre and post EnerGuide evaluations (A and B) to be eligible for grants. Rewards averaged $861 per household with an average increase on the EnerGuide rating scale of 14 points. Roughly half of the participants retrofitted their homes and requested B visits, demonstrating that the incentives worked in that regard.</p>
+<p>From 2001 to 2003, a Phase II pilot project for Green Communities’ Home Performance Rating Rewards Program was conducted in Toronto in partnership with <a href="http://www.toolsofchange.com/en/case-studies/detail/114">GreenSaver</a> and the Toronto Atmospheric Fund.</p>
+<p>The success of Green Communities’ pilot incentive programs led to NRCan’s 2003 launch of the national EnerGuide for Houses incentive program, which rewarded homeowners for improving the energy rating of their houses. This program ran unto 2006 when it was cancelled.</p>
+<p><strong>ecoENERGY Retrofit- Homes initiative</strong></p>
+<p>The EnerGuide for Houses retrofit incentive program was replaced by the ecoENERGY Retrofit- Homes initiative. Instead of using the rating system to calculated incentive, grants were tied to specific energy-efficiency measures. The rewards under this initiative were somewhat richer than under the previous EnerGuide for Houses incentive program, especially when, in 2009, incentives were increased by 25 per cent as part of the government’s economic stimulus program. In some regions of the country, e.g., Ontario, the grants were augmented by matching provincial contributions. </p>
+<p><strong>Greener Homes Program</strong></p>
+<p>The approach was continued under the Greener Homes Program.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Program participants paid to receive the home visit service. The cost was reduced through grants and incentives from the Ontario and Federal Governments, as well as local utilities and municipalities.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Impacts were calculated based on changes between the A and B visits as measured using the blower door test and EnerGuide Rating System described above. g, insulation, and heating system upgrade.</p>
+<p>Papineau, Rivers and Yassin (2022) provide an update on energy savings from this approach based on utility data and detailed energy audit records from homes in Medicine Hat, Alberta, Canada. Data from ecoEnergy rebate program 2008 to 2011 were analyzed using a difference-in-difference approach that compared energy consumption before and after retrofit, for a treatment group and a control group.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>With the introduction of the incentives in 2003 there was a marked increase in participation (households receiving pre-retrofit evaluations across Canada).</p>
+<ul>
+<li><strong>2003 to 2006 (EnerGuide for Houses program)</strong>: 93,000 homes were retrofitted for a savings of about 2,954,000 GJ (820,000,000,000 kWh) saved per year. Average saving was 31.8 GJ (8,833 kWh) per household per year.</li>
+<li><strong>2007 – 2010 (EcoENERGY Program)</strong>: 590,147 homes were retrofitted for a savings of 26,556,615 GJ (7,376,837,500 kWh) per year. Average saving was 45.3 GJ (12,583 kWh) per household per year. Papineau, Rivers and Yassin (2022) found that the retrofit program in Medicine Hat reduced natural gas consumption by an average of 21% - only 60% of predicted savings. While whole-envelope retrofits were predicted to lower gas consumption by 67%, they provided only half of those savings. Overall energy consumption fell 15% on average, natural gas consumption fell 21%, while electricity only fell 0-4%. The largest savings came from new furnace adoption and wall insulation, which each reduced consumption by about 25%; these savings persisted for at least a decade.  However, market transformation regulations in Canada and the U.S. have since stopped the sale of furnaces with efficiencies lower than 90%.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Green Communities Canada <br/>
+<a href="https://greencommunitiescanada.org/">https://greencommunitiescanada.org/</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>This is one of a number of Green Community case studies on this site. The others are:</p>
+<ul>
+<li>Home Energy Visit: The <a href="http://www.toolsofchange.com/en/case-studies/detail/7">Environment Network</a>   <a href="http://www.toolsofchange.com/en/case-studies/detail/114">Green$aver,</a> <a href="http://www.toolsofchange.com/en/case-studies/detail/12">Guelph 2000</a>, <a href="http://www.toolsofchange.com/en/case-studies/detail/18">Peterborough Green-Up</a>, and <a href="http://www.toolsofchange.com/en/case-studies/detail/20">ReCAP</a>.</li>
+<li>Active and Safe Routes to School: <a href="http://www.toolsofchange.com/en/case-studies/detail/97">1996 to 2005</a>   <a href="http://www.toolsofchange.com/en/case-studies/detail/635">2008 onwards</a></li>
+<li>Driver Education (<a href="http://www.toolsofchange.com/en/case-studies/detail/640/">EcoDriver</a>)</li>
+</ul>
+<p>This case study was  written in 2012 by Jay Kassirer.</p>
+<p><strong>Update June 2015, by Clifford Maynes, Executive Director</strong></p>
+<p>It’s 20 years ago since Green Communities Canada was founded as an extraordinary alliance of community organizations working to achieve practical environmental progress. It’s time to celebrate the accomplishments of our movement, and reflect on how far we’ve come over these past two decades.</p>
+<p>There is much to celebrate. We’ve grown from an unincorporated network of community-based non-profit organizations, all based in Ontario, to a national non-profit with members located in every region of the country.</p>
+<p>GCC has grown from one part-time coordinator working out of his home office (that would be me) to a staff complement of a dozen or more. We are based at multiple locations: our Peterborough headquarters (centre of the known universe), an office in Ottawa, and home offices in Toronto and Greater Minden.</p>
+<p>Annual consolidated revenues have grown from $35,000 in the first year to $2.3 million.</p>
+<p>We’ve sprouted a charitable affiliate, Green Communities Foundation, and a for-profit subsidiary, Green Communities, Inc. (This complicated structure was actually foreseen by our lawyers when we first incorporated as the Green Communities Association in July 1996.)</p>
+<p>We designed and piloted the home energy retrofit incentive, which was adopted nationally, resulting in over 700,000 retrofits and annual savings of close to 30 million GJ. With our members we have delivered over 100,000 professional home energy audits. And we have also been leaders in ensuring effective low-income energy efficiency program design and delivery.</p>
+<p>Much has changed in over two decades of Green Communities, but our basic approach remains much the same.</p>
+<p>While many environmental organizations work top-down for better government policies, we work bottom up, at the community level, by engaging people where they live, work, and play.</p>
+<p>And to maximize our impact we use a practical strategy known as community-based social marketing. CBSM addresses real world barriers and incentives to behaviour change.</p>
+<p>Based on CBSM principles we don’t waste time telling people what they ought to do, which is largely ineffectual. Instead, we start by exploring why they do what they do. Then we set about systematically reducing barriers and maximizing incentives. And guess what? It works.</p>
+<p>So, to use an example with a long history, we don’t just tell people they should invest in home energy efficiency, we deliver professional home energy audits.</p>
+<p>Our certified energy auditors, blower door test, and detailed reports are highly credible, which promotes action. Face-to-face interaction between the homeowner and the auditor is much more motivating than mass marketing.</p>
+<p>Further, recommendations are customized to address the homeowner’s personal priorities – e.g., a room that is too cold in winter and too hot in summer – which makes the experience more relevant and engaging than simply handing out a list of generic “tips”.</p>
+<p>Cash incentives can be very effective in overcoming all sorts of barriers, including the up-front costs of home energy retrofits. For this reason, Green Communities Canada came up with the idea for a retrofit incentive tied to measured improvements in home energy efficiency. The incentive system we developed and tested was adopted by the federal government and others, with massive results.</p>
+<p>Although CBSM often seems focused on individual action, it is ultimately about community-wide change. CBSM recognizes the need for market transformation so that the necessary goods and services are readily available and promoted in the marketplace.</p>
+<p>For example, as part of our RAIN program, we are helping to train contractors to construct and maintain infiltration landscaping, like permeable pavement and rain gardens, so that people have access to these services to reduce their contribution to run-off and stormwater pollution.</p>
+<p>Finally, CBSM also leverages social norms by working with respected community partners. Peer pressure also helps – the classic example is the recycling blue box, a visible reminder to join your neighbours in sorting your waste for curbside pick-up.</p>
+<p>CBSM is not a substitute for courageous government policy, but it helps to soften the ground so that serious action on the big issues – say, climate change – wins support as practical, positive, and the natural thing to do. And CBSM is also needed to maximize the impact of good policy, to hasten on-the-ground implementation and maximize uptake of opportunities for green action.</p>
+<p>Today, after more than two decades of on the ground experience, community-based social marketing principles continue to guide the way Green Communities design and deliver our programs. That’s not likely to change any time soon. It works.</p>
+<p>More on <a href="https://greencommunitiescanada.org/" target="_blank">Green Communities</a></p>
+<p> </p>
+<p><strong>Update, 2023</strong></p>
+<p>Papineau, Rivers and Yassin (2022) provide an update on energy savings from this approach based on utility data and detailed energy audit records from homes in Medicine Hat, Alberta, Canada. Data from ecoEnergy rebate program 2008 to 2011 were analyzed using a difference-in-difference approach that compared energy consumption before and after retrofit, for a treatment group and a control group. They found that the retrofit program in Medicine Hat reduced natural gas consumption by an average of 21% - only 60% of predicted savings. While whole-envelope retrofits were predicted to lower gas consumption by 67%, they provided only half of those savings. Overall energy consumption fell 15% on average, natural gas consumption fell 21%, while electricity only fell 0-4%. The largest savings came from new furnace adoption and wall insulation, which each reduced consumption by about 25%; these savings persisted for at least a decade.  However, market transformation regulations in Canada and the U.S. have since stopped the sale of furnaces with efficiencies lower than 90%.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

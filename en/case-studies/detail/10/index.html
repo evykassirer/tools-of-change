@@ -1,0 +1,252 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>City of Boulder</li>
+<li>City of Boulder's Alternative Transportation Centre</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>County, regional, state and federal governments</li>
+<li>Local businesses</li>
+<li>Schools and communities</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>A 6 percent modal shift, from single-occupant vehicles to other modes of transportation, was achieved between 1990 and 1994.</p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Go Boulder</h1>
+<p>To promote a shift from single-occupant vehicle use to more sustainable modes of transportation, the City of Boulder uses several synergistic approaches. It offers transit passes to entire workplaces, schools and neighbourhoods, with guaranteed rides home for workplace pass holders needing to stay late at work or in case of an emergency. The city has continually improved its physical system to be more supportive of alternative transportation methods, with high-profile monthly reminders and opportunities to try these alternative methods.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>In 1989, Boulder City Council developed the Go Boulder program to reduce traffic congestion and air pollution. The most effective way of achieving this was by inducing people to shift from single occupant vehicle use to alternative transportation such as bicycles, public transit and walking.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>In 1989 Boulder set a goal of achieving a 15 percent modal shift away from single-occupant vehicles by the year 2010. This goal was set as a result of the Transportation Master Plan developed in 1989, studies, consultant work, and the combined efforts of public process (Integrated Planning Process) and the City Advisory Committee.</p><!-- Objectives already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Transit Passes</strong></p>
+<p>Specific transit pass programs were introduced as incentives to increase bus ridership among various groups (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Discentives</a>). These programs worked much like a group insurance policy; individual members could only obtain reduced rates if passes were purchased for the entire group. The program was tailored to meet the needs of three target groups: businesses, students and community associations/organizations.</p>
+<p>For $40 per employee per year, businesses could provide free transit "ECO Passes" to their employees. The passes also gave employees a guaranteed free taxi ride home if they had to work late or in an emergency. This feature was designed to overcome concerns about the availability of transportation in unforeseen situations, a potential barrier to participation that was identified through public meetings (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). A folder advertising the program to businesses featured testimonials from several companies and the benefits for participating companies (e.g., an inexpensive employee benefit and a solution to parking concerns). As an added incentive to participate, companies were offered a 25 percent discount in the first year. Once on board, companies were unlikely to withdraw the employee benefit in subsequent years and would continue to participate at full price.</p>
+<p>Each company was also encouraged to choose a representative to act as an Employee Transportation Coordinator, who acted as liaison between the Go Boulder program and the workplace, distributing all communications and encouraging employees to choose alternative modes of transportation. As of 1995, Employee Transportation Coordinators were working with 22,000 Boulder employees.</p>
+<p>A similar program was designed to address the needs of the 25,000 students at the University of Colorado. For a fee of $12, students were provided with unlimited ridership when they presented their student ID cards.</p>
+<p>The Neighbourhood Pass and the Family ECO Pass were designed to encourage increased ridership among communities at large. Reduced-rate ID passes were available through homeowners' associations and other neighbourhood organizations. Attractive posters listing community activities and emphasizing alternative modes of transportation were placed in high visibility areas. In addition, households were given a directory of local businesses who delivered their goods, with the aim of reducing the number of trips needed to run errands. Additional discounts were offered to groups during their first year of the program, such as in Glendale, where for a year residents were offered a 50 percent discount on monthly bus passes.</p>
+<p>The transit pass programs provided norm appeal as people saw their co-workers, fellow students, or neighbours using the bus more (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>). While reduced cost was an incentive to try the bus system, research showed that most people who continued to use the buses did so because they found it convenient.</p>
+<p>To further enhance convenience, a "HOP" shuttle service was introduced at no additional cost to pass holders. It provided smaller buses running every 10 minutes on short, direct routes between key destinations in the city. The need for the HOP was identified by a community committee and the entire program was designed by its members.</p>
+<p><strong>Events</strong></p>
+<p>Community and school-based events, such as the "Non-Polluting Commuter Race" and the "Find Another Way Day," provided the opportunity to experience the availability, practicality, and benefits of non-habitual modes of travel (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>). These high-profile events also helped to increase awareness of the Go Boulder program through extensive media coverage.</p>
+<p>The "Non-Polluting Commuter Race" pitted cyclists against motorists in a cross-town competition, demonstrating the convenience of riding a bicycle. Three opponent pairs were given simple tasks or errands to run en route to the finish line. Both motorists and cyclists were required to park legally and obey all traffic laws. Every year the cyclists won.</p>
+<p>Once a month, residents were asked to "Find Another Way" to work, school or play. Breakfast stations were set up on busy routes throughout the community to reward participants. This event was discontinued because it was too staff-intensive and drained resources from other worthwhile projects.</p>
+<p><strong>Transportation Infrastructure</strong></p>
+<p>To make alternative modes of transportation safer and more convenient, Boulder built over 80 km of off-street and on-street bikeways and also 35 overpasses and underpasses for bicyclists and pedestrians. The transit system was also improved to accommodate increased demand (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>In 1995 the budget for the Go Boulder program was $2.9 million per year, as follows:</p>
+<ul>
+<li>$200,000 for advertising</li>
+<li>$75,000 for organizing events</li>
+<li>$900,000 for operating the HOP shuttle service, provided jointly by Go Boulder and the Regional Transit District</li>
+<li>$500,000 to study congestion relief and congestion pricing</li>
+<li>$900,000 for other program expenses like introductory discounts, organizing van pools and employee transportation coordinators</li>
+</ul>
+<p>In 1993 Go Boulder received a federal grant of $2 million to purchase HOP buses. Federal sources also provided the $500,000 to study congestion relief and congestion pricing.</p>
+<p>As part of the city's capital expenditures program, $2 million to $3 million was budgeted for bike and pedestrian paths each year.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Pilot testing, used for most of the Go Boulder programs, allowed the planners to evaluate each new program in a real setting at little risk and expense. As a result, they were able to identify strengths and shortcomings, make adjustments, and determine whether to implement the program permanently on a larger scale.</p>
+<p>For example, students at the University of Colorado were able to use their student ID cards as bus passes for a student fee of $10 during a one-year pilot. Annual student ridership increased from 300,000 to over one million. At the end of the year, the students voted for an increase from $10 to $12 in the student fee to make this a permanent program at the university.</p>
+<p>When the Guaranteed Ride Home program was first tested as a pilot program, there were no limits set on its use, so that any possible abuses to the system would quickly become evident. No abuse was experienced in the test time. The few occasions of abuse since are generally attributable to confusion about the purpose of the service. In the one or two cases where the abuse was intentional, the individuals were denied further service.</p>
+<p><strong>Ongoing Evaluation</strong></p>
+<p>Evaluation of the Go Boulder program was conducted through ongoing citizen surveys such as the Biennial Diary Study, for which 1,000 residents kept a log of their travel for a randomly assigned day in the second week of September. Six years of data on the progress of the program was accumulated by 1995. Similar studies were done with employees, who were asked to record their travel habits for one full week. Ongoing focus groups and community meetings were also conducted to uncover changes in attitudes, as well as concerns and opinions.</p>
+<p>These studies showed that although there had been a six percent shift away from single-occupant vehicle travel, this had not been enough to counteract a 20 percent increase in average trip distance. In response, the program added an objective of no increase in the average trip distance for the next 20 years. The studies also found that 70 percent of trips were non-work related, which led to an increased focus on promoting the Neighbourhood Passes. In addition, the public meetings and focus groups were instrumental in identifying the need for, and in developing, such programs as the HOP shuttle service and the Guaranteed Ride Home program.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Feedback to the community was a keystone to the success of the Go Boulder program (<a href="/en/tools-of-change/feedback/">Feedback</a>). An effective, inexpensive vehicle for providing positive feedback was the local newspaper. An average of two stories ran each month featuring <em>Go Boulder </em>successes and community participation. Five video presentations were run repeatedly on the community television channel. Additional feedback was provided through promotional literature, special events, and presentations to community organizations.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>A 6 percent shift in percentage daily trips from single-occupant vehicles to other modes was achieved between 1990 and 1994. There was also a total decrease of 2.3 percent in multiple-occupancy vehicle, truck and motorcycle traffic. In contrast, nearby regions and the U.S.A. as a whole have shifted towards increasing use of single occupant vehicles.</p>
+<ul>
+<li>Pedestrian trips increased by 3.5 percent.</li>
+<li>Bicycle trips increased by 2.2 percent.</li>
+<li>Transit trips increased by 1.7 percent.</li>
+<li>Among individual businesses using the ECO Pass, bus ridership increased by 59 percent to 400 percent. (Ridership was measured prior to participation and again six months later.)</li>
+<li>At the University of Colorado, bus ridership went from 300,000 to over one million in the first year.</li>
+</ul>
+<p>The return on investment has not been measured in terms of dollars. However, Go Boulder's significant contribution to making Boulder a better place to live has resulted in high interest from corporations to set up business in the area. In 1993, when AT&amp;T was looking for a location for its Advanced Technology Laboratory, Boulder was chosen from five alternatives because AT&amp;T believed they could easily attract its employees to Boulder. AT&amp;T referred specifically to Boulder's "clean" environment and well-planned transit system.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Bob Whitson <br/>
+Go Boulder <br/>
+City of Boulder <br/>
+P.O. Box 791 <br/>
+Boulder, Colorado 80306 <br/>
+U.S.A <br/>
+(303) 413-7304 <br/>
+Fax: (303) 443-8196 <br/>
+E-mail: <a href="mailto:whitsonb@ci.boulder.co.us">whitsonb@ci.boulder.co.us</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p> This case study was originally published in 1998 in "Tools of Change: Proven Methods for Promoting Environmental Citizneship" by Jay Kassirer and Doug McKenzie-Mohr (Published by Canada's National Round Table on the Environment and the Economy)</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

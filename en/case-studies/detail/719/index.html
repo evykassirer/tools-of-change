@@ -1,0 +1,613 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/work-programs-that-influence-the-home/">Work Programs that Influence the Home</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Action Research</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>The Urban Sustainability Directors Network</li>
+<li>Municipal governments</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Computer monitor shutdown rates nearly doubled</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Taking Off? Turn Us Off” Office Computer Pilot</h1>
+<p>This pilot program used personal communication, norms, commitments, and prompts to engage government employees to turn off both their computers and monitors at the end of the workday. A control group was included in the evaluation design. The results revealed significant increases in computer shutdown rates in two out of the three participating agencies (the third agency had a baseline shutdown rate of nearly 90%). The most impressive findings were for computer monitor shutdown rates which nearly doubled in all three agencies.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The Urban Sustainability Directors Network (USDN) is a peer-to-peer network of local government sustainability leaders formed to enable members to support and learn from each other so that they can more efficiently find solutions to their urban sustainability challenges.  In 2012, the USDN collaborated with Action Research to conduct a multi-region community-based social marketing (CBSM) program that would reduce energy use by motivating government employees to turn off both their computer and monitor at the end of the workday and provide a turnkey strategy that would be replicable and scalable to other government agencies across the nation.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Each participating government agency reviewed its own energy use profile, technical reports, and current levels of engagement in energy-saving actions.</p>
+<p>Shutting down computers and monitors at the end of the workday was selected as the target behavior because the aggregate impact of shutting down the thousands of computers and monitors across a municipality was deemed to be significant.  Calculations conducted at the time of the study indicated that the typical computer (CPU) used 100 watts/hour in “sleep” mode, and a 19” LCD monitor uses 25 watts/hour in sleep mode. Assuming 16 hours of inactivity per day (i.e., after an 8-hour workday), this translated to annual energy consumption of 582 kWh for the CPU and 146 kWh for the monitor—just for one computer, when not in use.</p>
+<p>Barriers and benefits associated with turning off computers and monitors were identified through three stages of foundational research.  First, participating sites scheduled meetings with Information Technology (IT) Managers to learn about technical and policy barriers to the behaviors and to gain project support.  Second, employees were invited to participate in focus group discussions on the topic of power management and shutdown procedures.  Finally, employees completed a web-based survey designed to gather quantitative information about the extent of the identified barriers and benefits in the target population. </p>
+<p><strong>Priority Audiences</strong></p>
+<p>The pilot focused on local government employees in three geographic areas:  Columbia, Missouri (midwestern US); Frederick County, Maryland (northeastern US); and Santa Clara County, California (southwestern US).</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The campaign involved removing the identified barriers, highlighting financial savings to the organization, personal contact, a public commitment, and a prompt.</p>
+<p>The program began with an initial email to employees communicating the existing IT policy for powering down at the end of the workday.  This communication was followed with an in-person visit from staff or peer volunteers within the organization.  The in-person communication included the following components (Personalized, Credible, Empowering Communication):</p>
+<ul>
+<li>A brief informational flyer (half-sheet)</li>
+<li>A commitment form for turning off computers and monitors at the end of the workday (<em>Obtaining a Commitment)</em></li>
+<li>The signed “Taking Off? Turn Us Off.” commitment was affixed to the lower left of the monitor serving as both a prompt and to make the commitment both public and durable.(<em>P</em><em>rompts; Building Motivation Over Time)</em>)</li>
+</ul>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:12.0pt;tab-stops:0in 12.0pt .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400">The following table summarizes the key barriers and how they were overcome. (<em>Overcoming Specific Barriers</em>)<br/>
+<br type="_moz"/>
+</span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:17.4pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt;
+ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtext">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="width:105.0pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:19.75pt" valign="top" width="140">
+<p class="MsoNormal"><b><span lang="EN-CA" style="font-size:11.0pt;
+  mso-bidi-language:#0400">Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="width:4.95in;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:19.75pt" valign="top" width="475">
+<p class="MsoNormal"><b><span lang="EN-CA" style="font-size:11.0pt;
+  mso-bidi-language:#0400">How it was addressed<o:p></o:p></span></b></p>
+<p class="MsoNormal"><b><span lang="EN-CA" style="font-size:11.0pt;
+  mso-bidi-language:#0400"> </span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:40.9pt">
+<td style="width:105.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:40.9pt" valign="top" width="140">
+<p class="MsoNormal"><span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400">Concerns over   long start-up times<o:p></o:p></span></p>
+</td>
+<td style="width:4.95in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:40.9pt" valign="top" width="475">
+<ul style="margin-top:0in" type="disc">
+<li class="MsoNormal"><span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400">Startup        times from a random sample of employee computers were collected to        demonstrate that startup time is shorter than one might perceive.  This information was displayed (in        seconds) on a half-page flyer.         Seconds were used in order to disrupt typical cognitive processes        and ensure that the participant paid attention to the material.<o:p></o:p></span></li>
+</ul>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:40.9pt">
+<td style="width:105.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:40.9pt" valign="top" width="140">
+<p class="MsoNormal"><span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400">Belief that   monitors shut down when the computer is turned off<o:p></o:p></span></p>
+</td>
+<td style="width:4.95in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:40.9pt" valign="top" width="475">
+<ul style="margin-top:0in" type="disc">
+<li class="MsoNormal"><span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400">Employees        were given clear instructions on shutdown that specifically addressed        both computers and monitors separately.<o:p></o:p></span></li>
+</ul>
+<p class="MsoNormal" style="margin-left:.5in;tab-stops:0in .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400"> </span></p>
+<ul style="margin-top:0in" type="disc">
+<li class="MsoNormal"><span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400">A        prompt/commitment card (business card size) that was strategically        placed on the computer monitor near the logoff menu to remind employees        of their commitment to shut down both the computer and monitor at the        end of the workday.<o:p></o:p></span></li>
+</ul>
+<p class="MsoNormal" style="margin-left:.5in;tab-stops:0in .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400"> </span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;mso-yfti-lastrow:yes;height:40.9pt">
+<td style="width:105.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:40.9pt" valign="top" width="140">
+<p class="MsoNormal"><span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400">Uncertainty about   agency shutdown policy<o:p></o:p></span></p>
+</td>
+<td style="width:4.95in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:40.9pt" valign="top" width="475">
+<ul style="margin-top:0in" type="disc">
+<li class="MsoNormal"><span lang="EN-CA" style="font-size:11.0pt;mso-bidi-language:#0400">Employees        were sent an email communication from IT that clearly stated the agency        policy and asked employees to participate in the behavior. <o:p></o:p></span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The program impacts were pilot tested using a field experiment. Within each agency, offices or departments were randomly assigned to control or treatment groups.  To evaluate impacts, we unobtrusively observed and counted the number of computers and monitors that were turned off at the end of the workday for both pilot (CBSM strategy) and control (informational email only) groups in each agency.  Observations were conducted over a baseline period and then again following the implementation of the program.  Pre-post shut down rates for the CBSM group were compared to those observed in the control groups who received only the email from IT.</p>
+<p><img alt="" height="225" src="/userfiles/Image/Pilot DesignV2.png" width="450"/></p>
+<p><b><span style='font-size:11.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+Calibri;color:black;mso-ansi-language:EN-US'>Number of pre- and posttest observations by municipality.</span></b><span style='font-family: "Times New Roman", serif; font-size: 11pt;'> </span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;mso-table-layout-alt:fixed;border:none;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:9.35pt">
+<td colspan="2" style="width:81.9pt;border:none;
+  background:#D6E3BC;padding:0in 5.4pt 0in 5.4pt;height:9.35pt" valign="top" width="109">
+<p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><b style="mso-bidi-font-weight:normal"><span style='font-size:11.0pt;font-family:
+  "Times New Roman","serif";mso-fareast-font-family:Calibri;color:black;
+  mso-ansi-language:EN-US'>Municipality <o:p></o:p></span></b></p>
+</td>
+<td colspan="2" style="width:2.25in;border:none;
+  background:#D6E3BC;padding:0in 5.4pt 0in 5.4pt;height:9.35pt" valign="top" width="216">
+<p align="center" class="MsoNormal" style="text-align:center;mso-layout-grid-align:
+  none;text-autospace:none"><b style="mso-bidi-font-weight:normal"><span style='font-size:11.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+  Calibri;color:black;mso-ansi-language:EN-US'>Pretest Observations<o:p></o:p></span></b></p>
+</td>
+<td colspan="2" style="width:160.6pt;border:none;
+  background:#D6E3BC;padding:0in 5.4pt 0in 5.4pt;height:9.35pt" valign="top" width="214">
+<p align="center" class="MsoNormal" style="text-align:center;mso-layout-grid-align:
+  none;text-autospace:none"><b style="mso-bidi-font-weight:normal"><span style='font-size:11.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+  Calibri;color:black;mso-ansi-language:EN-US'>Posttest Observations<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:4.9pt">
+<td colspan="2" style="width:81.9pt;border:none;
+  background:#D6E3BC;padding:0in 5.4pt 0in 5.4pt;height:4.9pt" valign="top" width="109">
+<p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style='font-size:11.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+  Calibri;color:black;mso-ansi-language:EN-US'><o:p> </o:p></span></p>
+</td>
+<td style="width:81.0pt;border:none;background:#D6E3BC;
+  padding:0in 5.4pt 0in 5.4pt;height:4.9pt" valign="top" width="108">
+<p align="center" class="MsoNormal" style="text-align:center;mso-layout-grid-align:
+  none;text-autospace:none"><b><span style='font-size:11.0pt;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:Calibri;color:black;mso-ansi-language:EN-US'>Treatment</span></b><span style='font-size:11.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+  Calibri;color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+</td>
+<td style="width:81.0pt;border:none;background:#D6E3BC;
+  padding:0in 5.4pt 0in 5.4pt;height:4.9pt" valign="top" width="108">
+<p align="center" class="MsoNormal" style="text-align:center;mso-layout-grid-align:
+  none;text-autospace:none"><b><span style='font-size:11.0pt;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:Calibri;color:black;mso-ansi-language:EN-US'>Control</span></b><span style='font-size:11.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+  Calibri;color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+</td>
+<td style="width:81.0pt;border:none;background:#D6E3BC;
+  padding:0in 5.4pt 0in 5.4pt;height:4.9pt" valign="top" width="108">
+<p align="center" class="MsoNormal" style="text-align:center;mso-layout-grid-align:
+  none;text-autospace:none"><b><span style='font-size:11.0pt;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:Calibri;color:black;mso-ansi-language:EN-US'>Treatment</span></b><span style='font-size:11.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+  Calibri;color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+</td>
+<td style="width:79.6pt;border:none;background:#D6E3BC;
+  padding:0in 5.4pt 0in 5.4pt;height:4.9pt" valign="top" width="106">
+<p align="center" class="MsoNormal" style="text-align:center;mso-layout-grid-align:
+  none;text-autospace:none"><b><span style='font-size:11.0pt;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:Calibri;color:black;mso-ansi-language:EN-US'>Control</span></b><span style='font-size:11.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+  Calibri;color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:16.75pt">
+<td style="width:80.9pt;border:none;background:#EAF1DD;
+  padding:0in 5.4pt 0in 5.4pt;height:16.75pt" valign="top" width="108">
+<p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style='font-size:11.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+  Calibri;color:black;mso-ansi-language:EN-US'>Columbia <o:p></o:p></span></p>
+</td>
+<td colspan="2" style="width:82.0pt;border:none;
+  background:#EAF1DD;padding:0in 5.4pt 0in 5.4pt;height:16.75pt" valign="top" width="109">
+<p align="center" class="MsoNormal" style="text-align:center;mso-layout-grid-align:
+  none;text-autospace:none"><span style='font-size:11.0pt;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:Calibri;color:black;mso-ansi-language:EN-US'>35<o:p></o:p></span></p>
+</td>
+<td style="width:81.0pt;border:none;background:#EAF1DD;
+  padding:0in 5.4pt 0in 5.4pt;height:16.75pt" valign="top" width="108">
+<p align="center" class="MsoNormal" style="text-align:center;mso-layout-grid-align:
+  none;text-autospace:none"><span style='font-size:11.0pt;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:Calibri;color:black;mso-ansi-language:EN-US'>48<o:p></o:p></span></p>
+</td>
+<td style="width:81.0pt;border:none;background:#EAF1DD;
+  padding:0in 5.4pt 0in 5.4pt;height:16.75pt" valign="top" width="108">
+<p align="center" class="MsoNormal" style="text-align:center;mso-layout-grid-align:
+  none;text-autospace:none"><span style='font-size:11.0pt;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:Calibri;color:black;mso-ansi-language:EN-US'>43<o:p></o:p></span></p>
+</td>
+<td style="width:79.6pt;border:none;background:#EAF1DD;
+  padding:0in 5.4pt 0in 5.4pt;height:16.75pt" valign="top" width="106">
+<p align="center" class="MsoNormal" style="text-align:center;mso-layout-grid-align:
+  none;text-autospace:none"><span style='font-size:11.0pt;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:Calibri;color:black;mso-ansi-language:EN-US'>44<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;height:5.0pt">
+<td style="width:80.9pt;border:none;background:#EAF1DD;
+  padding:0in 5.4pt 0in 5.4pt;height:5.0pt" valign="top" width="108">
+<p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style='font-size:11.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+  Calibri;color:black;mso-ansi-language:EN-US'>Frederick County <o:p></o:p></span></p>
+</td>
+<td colspan="2" style="width:82.0pt;border:none;
+  background:#EAF1DD;padding:0in 5.4pt 0in 5.4pt;height:5.0pt" valign="top" width="109">
+<p align="center" class="MsoNormal" style="text-align:center;mso-layout-grid-align:
+  none;text-autospace:none"><span style='font-size:11.0pt;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:Calibri;color:black;mso-ansi-language:EN-US'>39<o:p></o:p></span></p>
+</td>
+<td style="width:81.0pt;border:none;background:#EAF1DD;
+  padding:0in 5.4pt 0in 5.4pt;height:5.0pt" valign="top" width="108">
+<p align="center" class="MsoNormal" style="text-align:center;mso-layout-grid-align:
+  none;text-autospace:none"><span style='font-size:11.0pt;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:Calibri;color:black;mso-ansi-language:EN-US'>35<o:p></o:p></span></p>
+</td>
+<td style="width:81.0pt;border:none;background:#EAF1DD;
+  padding:0in 5.4pt 0in 5.4pt;height:5.0pt" valign="top" width="108">
+<p align="center" class="MsoNormal" style="text-align:center;mso-layout-grid-align:
+  none;text-autospace:none"><span style='font-size:11.0pt;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:Calibri;color:black;mso-ansi-language:EN-US'>36<o:p></o:p></span></p>
+</td>
+<td style="width:79.6pt;border:none;background:#EAF1DD;
+  padding:0in 5.4pt 0in 5.4pt;height:5.0pt" valign="top" width="106">
+<p align="center" class="MsoNormal" style="text-align:center;mso-layout-grid-align:
+  none;text-autospace:none"><span style='font-size:11.0pt;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:Calibri;color:black;mso-ansi-language:EN-US'>35<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4;mso-yfti-lastrow:yes;height:5.0pt">
+<td style="width:80.9pt;border:none;background:#EAF1DD;
+  padding:0in 5.4pt 0in 5.4pt;height:5.0pt" valign="top" width="108">
+<p class="MsoNormal" style="mso-layout-grid-align:none;text-autospace:none"><span style='font-size:11.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+  Calibri;color:black;mso-ansi-language:EN-US'>Santa Clara County <o:p></o:p></span></p>
+</td>
+<td colspan="2" style="width:82.0pt;border:none;
+  background:#EAF1DD;padding:0in 5.4pt 0in 5.4pt;height:5.0pt" valign="top" width="109">
+<p align="center" class="MsoNormal" style="text-align:center;mso-layout-grid-align:
+  none;text-autospace:none"><span style='font-size:11.0pt;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:Calibri;color:black;mso-ansi-language:EN-US'>39<o:p></o:p></span></p>
+</td>
+<td style="width:81.0pt;border:none;background:#EAF1DD;
+  padding:0in 5.4pt 0in 5.4pt;height:5.0pt" valign="top" width="108">
+<p align="center" class="MsoNormal" style="text-align:center;mso-layout-grid-align:
+  none;text-autospace:none"><span style='font-size:11.0pt;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:Calibri;color:black;mso-ansi-language:EN-US'>41<o:p></o:p></span></p>
+</td>
+<td style="width:81.0pt;border:none;background:#EAF1DD;
+  padding:0in 5.4pt 0in 5.4pt;height:5.0pt" valign="top" width="108">
+<p align="center" class="MsoNormal" style="text-align:center;mso-layout-grid-align:
+  none;text-autospace:none"><span style='font-size:11.0pt;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:Calibri;color:black;mso-ansi-language:EN-US'>38<o:p></o:p></span></p>
+</td>
+<td style="width:79.6pt;border:none;background:#EAF1DD;
+  padding:0in 5.4pt 0in 5.4pt;height:5.0pt" valign="top" width="106">
+<p align="center" class="MsoNormal" style="text-align:center;mso-layout-grid-align:
+  none;text-autospace:none"><span style='font-size:11.0pt;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:Calibri;color:black;mso-ansi-language:EN-US'>39<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Persistence was not measured as evaluation was limited to the initial field experiment. Participating agencies were provided with recommendations to continue to evaluate the program through observations, computer-usage logs from IT, or energy use reports as available.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Baseline observations showed that across all three organizations, 58% of computers and 21% of monitors were shutdown at the end of the day.  For employees in the control condition, who received only an informational email, there was a moderate increase in computer and monitor shutdown: 64% of computers and 23% of monitors in the control condition were shut down during the post-treatment period.  However, for employees who received the full program (email + commitment + prompt), observed shutdown rates were 72% for computers and 53% of monitors.  Overall, the results were most impressive for computer monitor shutdown. </p>
+<p>While the effect of shutting down one computer may be small, the combined effect of shutting down even half of a municipality’s computers and monitors can contribute significantly to municipal energy-saving initiatives.  The table below displays estimates for energy saving impacts per 1,000 employees.</p>
+<p><strong>Estimates of energy savings impacts</strong><o:p> </o:p></p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:452.15pt;border-collapse:collapse;mso-yfti-tbllook:1184;
+ mso-padding-alt:0in 0in 0in 0in" width="603">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:17.0pt">
+<td style="width: 72.95pt; border-width: 1pt; border-style: solid; border-color: rgb(0, 51, 0); background: rgb(215, 227, 188); padding: 0.75pt 0.75pt 0in; height: 17pt;" width="97">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">Workstation </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width: 63.2pt; border-top: 1pt solid rgb(0, 51, 0); border-right: 1pt solid rgb(0, 51, 0); border-bottom: 1pt solid rgb(0, 51, 0); border-left: none; background: rgb(215, 227, 188); padding: 0.75pt 0.75pt 0in; height: 17pt;" width="84">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">Average Watts   (Inactive) </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width: 54.2pt; border-top: 1pt solid rgb(0, 51, 0); border-right: 1pt solid rgb(0, 51, 0); border-bottom: 1pt solid rgb(0, 51, 0); border-left: none; background: rgb(215, 227, 188); padding: 0.75pt 0.75pt 0in; height: 17pt;" width="72">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">Hours/Day (Inactive) </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width: 58.7pt; border-top: 1pt solid rgb(0, 51, 0); border-right: 1pt solid rgb(0, 51, 0); border-bottom: 1pt solid rgb(0, 51, 0); border-left: none; background: rgb(215, 227, 188); padding: 0.75pt 0.75pt 0in; height: 17pt;" width="78">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">Hours/Year<o:p></o:p></span></p>
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">(Inactive) </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width: 63.2pt; border-top: 1pt solid rgb(0, 51, 0); border-right: 1pt solid rgb(0, 51, 0); border-bottom: 1pt solid rgb(0, 51, 0); border-left: none; background: rgb(215, 227, 188); padding: 0.75pt 0.75pt 0in; height: 17pt;" width="84">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">kWh/Year</span><span lang="EN-CA"><o:p></o:p></span></p>
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">(Inactive) </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width: 67.7pt; border-top: 1pt solid rgb(0, 51, 0); border-right: 1pt solid rgb(0, 51, 0); border-bottom: 1pt solid rgb(0, 51, 0); border-left: none; background: rgb(215, 227, 188); padding: 0.75pt 0.75pt 0in; height: 17pt;" width="90">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">Per 1,000 Employees</span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width: 72.2pt; border-top: 1pt solid rgb(0, 51, 0); border-right: 1pt solid rgb(0, 51, 0); border-bottom: 1pt solid rgb(0, 51, 0); border-left: none; background: rgb(215, 227, 188); padding: 0.75pt 0.75pt 0in; height: 17pt;" width="96">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">Assume 50% </span><span lang="EN-CA"><o:p></o:p></span></p>
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">Left On </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:11.35pt">
+<td style="width: 72.95pt; border-right: 1pt solid rgb(0, 51, 0); border-bottom: 1pt solid rgb(0, 51, 0); border-left: 1pt solid rgb(0, 51, 0); border-top: none; padding: 0.75pt 0.75pt 0in; height: 11.35pt;" width="97">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">Desktop Computer (CPU)   </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width:63.2pt;border-top:none;border-left:none;border-bottom:
+  solid #003300 1.0pt;border-right:solid #003300 1.0pt;mso-border-top-alt:solid #003300 1.0pt;
+  mso-border-left-alt:solid #003300 1.0pt;padding:.75pt .75pt 0in .75pt;
+  height:11.35pt" width="84">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">100 </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width:54.2pt;border-top:none;border-left:none;border-bottom:
+  solid #003300 1.0pt;border-right:solid #003300 1.0pt;mso-border-top-alt:solid #003300 1.0pt;
+  mso-border-left-alt:solid #003300 1.0pt;padding:.75pt .75pt 0in .75pt;
+  height:11.35pt" width="72">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">16 </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width:58.7pt;border-top:none;border-left:none;border-bottom:
+  solid #003300 1.0pt;border-right:solid #003300 1.0pt;mso-border-top-alt:solid #003300 1.0pt;
+  mso-border-left-alt:solid #003300 1.0pt;padding:.75pt .75pt 0in .75pt;
+  height:11.35pt" width="78">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">5,824 </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width:63.2pt;border-top:none;border-left:none;border-bottom:
+  solid #003300 1.0pt;border-right:solid #003300 1.0pt;mso-border-top-alt:solid #003300 1.0pt;
+  mso-border-left-alt:solid #003300 1.0pt;padding:.75pt .75pt 0in .75pt;
+  height:11.35pt" width="84">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">582.4 kWh/ computer </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width:67.7pt;border-top:none;border-left:none;border-bottom:
+  solid #003300 1.0pt;border-right:solid #003300 1.0pt;mso-border-top-alt:solid #003300 1.0pt;
+  mso-border-left-alt:solid #003300 1.0pt;padding:.75pt .75pt 0in .75pt;
+  height:11.35pt" width="90">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">582,400 kWh </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width:72.2pt;border-top:none;border-left:none;border-bottom:
+  solid #003300 1.0pt;border-right:solid #003300 1.0pt;mso-border-top-alt:solid #003300 1.0pt;
+  mso-border-left-alt:solid #003300 1.0pt;padding:.75pt .75pt 0in .75pt;
+  height:11.35pt" width="96">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">291,200 kWh </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:11.35pt">
+<td style="width: 72.95pt; border-right: 1pt solid rgb(0, 51, 0); border-bottom: 1pt solid rgb(0, 51, 0); border-left: 1pt solid rgb(0, 51, 0); border-top: none; padding: 0.75pt 0.75pt 0in; height: 11.35pt;" width="97">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">19” LCD </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width:63.2pt;border-top:none;border-left:none;border-bottom:
+  solid #003300 1.0pt;border-right:solid #003300 1.0pt;mso-border-top-alt:solid #003300 1.0pt;
+  mso-border-left-alt:solid #003300 1.0pt;padding:.75pt .75pt 0in .75pt;
+  height:11.35pt" width="84">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">25 </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width:54.2pt;border-top:none;border-left:none;border-bottom:
+  solid #003300 1.0pt;border-right:solid #003300 1.0pt;mso-border-top-alt:solid #003300 1.0pt;
+  mso-border-left-alt:solid #003300 1.0pt;padding:.75pt .75pt 0in .75pt;
+  height:11.35pt" width="72">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">16 </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width:58.7pt;border-top:none;border-left:none;border-bottom:
+  solid #003300 1.0pt;border-right:solid #003300 1.0pt;mso-border-top-alt:solid #003300 1.0pt;
+  mso-border-left-alt:solid #003300 1.0pt;padding:.75pt .75pt 0in .75pt;
+  height:11.35pt" width="78">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">5,824 </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width:63.2pt;border-top:none;border-left:none;border-bottom:
+  solid #003300 1.0pt;border-right:solid #003300 1.0pt;mso-border-top-alt:solid #003300 1.0pt;
+  mso-border-left-alt:solid #003300 1.0pt;padding:.75pt .75pt 0in .75pt;
+  height:11.35pt" width="84">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">145.6 kWh/ monitor </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width:67.7pt;border-top:none;border-left:none;border-bottom:
+  solid #003300 1.0pt;border-right:solid #003300 1.0pt;mso-border-top-alt:solid #003300 1.0pt;
+  mso-border-left-alt:solid #003300 1.0pt;padding:.75pt .75pt 0in .75pt;
+  height:11.35pt" width="90">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">145,600 kWh </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width:72.2pt;border-top:none;border-left:none;border-bottom:
+  solid #003300 1.0pt;border-right:solid #003300 1.0pt;mso-border-top-alt:solid #003300 1.0pt;
+  mso-border-left-alt:solid #003300 1.0pt;padding:.75pt .75pt 0in .75pt;
+  height:11.35pt" width="96">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">72,800 kWh </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;mso-yfti-lastrow:yes;height:8.6pt">
+<td style="width: 72.95pt; border-right: 1pt solid rgb(0, 51, 0); border-bottom: 1pt solid rgb(0, 51, 0); border-left: 1pt solid rgb(0, 51, 0); border-top: none; padding: 0.75pt 0.75pt 0in; height: 8.6pt;" width="97">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><b><span lang="EN-CA">TOTAL </span></b><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width:63.2pt;border-top:none;border-left:none;border-bottom:
+  solid #003300 1.0pt;border-right:solid #003300 1.0pt;mso-border-top-alt:solid #003300 1.0pt;
+  mso-border-left-alt:solid #003300 1.0pt;padding:.75pt .75pt 0in .75pt;
+  height:8.6pt" width="84">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">125 </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width:54.2pt;border-top:none;border-left:none;border-bottom:
+  solid #003300 1.0pt;border-right:solid #003300 1.0pt;mso-border-top-alt:solid #003300 1.0pt;
+  mso-border-left-alt:solid #003300 1.0pt;padding:.75pt .75pt 0in .75pt;
+  height:8.6pt" width="72">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">16 </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width:58.7pt;border-top:none;border-left:none;border-bottom:
+  solid #003300 1.0pt;border-right:solid #003300 1.0pt;mso-border-top-alt:solid #003300 1.0pt;
+  mso-border-left-alt:solid #003300 1.0pt;padding:.75pt .75pt 0in .75pt;
+  height:8.6pt" width="78">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">5,824 </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width:63.2pt;border-top:none;border-left:none;border-bottom:
+  solid #003300 1.0pt;border-right:solid #003300 1.0pt;mso-border-top-alt:solid #003300 1.0pt;
+  mso-border-left-alt:solid #003300 1.0pt;padding:.75pt .75pt 0in .75pt;
+  height:8.6pt" width="84">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">728 kWh per   workstation </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width:67.7pt;border-top:none;border-left:none;border-bottom:
+  solid #003300 1.0pt;border-right:solid #003300 1.0pt;mso-border-top-alt:solid #003300 1.0pt;
+  mso-border-left-alt:solid #003300 1.0pt;padding:.75pt .75pt 0in .75pt;
+  height:8.6pt" width="90">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">728,000 kWh </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="width:72.2pt;border-top:none;border-left:none;border-bottom:
+  solid #003300 1.0pt;border-right:solid #003300 1.0pt;mso-border-top-alt:solid #003300 1.0pt;
+  mso-border-left-alt:solid #003300 1.0pt;padding:.75pt .75pt 0in .75pt;
+  height:8.6pt" width="96">
+<p align="center" class="MsoNormal" style="text-align:center;vertical-align:bottom"><span lang="EN-CA">364,000 kWh </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Jennifer Tabanico<br/>
+President, Action Research<br/>
+760-722-4001</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>This project developed a turnkey outreach strategy that has demonstrated efficacy across a wide range of contexts. Through the USDN, the final program strategy is available to program planners across North America who may want to deploy the program in their communities.</p>
+<p>As this was a pilot study, it only involved a few hundred people. While the effect of shutting down their computers may be small, the combined effect of shutting down even half of a municipality’s computers and monitors can contribute significantly to municipal energy-saving initiatives.  For a small city the size of Columbia, Missouri (assuming 1,000 employees are shutting down) these savings translate to: 257 Metric tons CO2; the annual GHG from 54 passenger vehicles; or, the CO2 emissions from electricity use of 38 homes for one year. The aggregate impacts are even more impressive.  If 20 small cities were to successfully implement this program (assuming 20,000 employees are shutting down), this would translate to a savings of: 5,136 Metric tons CO2; the annual GHG from 1,070 passenger vehicles; or, the CO2 emissions from electricity use of 769 homes for one year (see EPA GHG Equivalency Calculator at <a href="https://www.usdn.org../../../../public/page/31/Energy#EmployeeCampaign" target="_blank">http://www.epa.gov/cleanenergy/energy-resources/calculator.html</a>).</p>
+<p>Additional impacts associated with this program would come through implementation of the turnkey strategy that could be applied in other regions.  The quality of programs delivered by governmental agencies is often contingent on the time and financial resources that they can bring to the task.  In many cases, lack of knowledge, staff time and financial resources result in agencies delivering programs that are far from optimal.</p>
+<p>Through the USDN, the final program strategy is available to program planners across North America who may want to deploy the program in their communities.   An implementation manual was developed which includes all of the program templates, research and evaluation tools, scripts, and other instructions for effectively implementing and evaluating the “Taking Off? Turn Us Off.” Program.  The materials are available through the USDN:  <a href="https://www.usdn.org../../../../public/page/31/Energy#EmployeeCampaign" target="_blank">https://www.usdn.org../../../../public/page/31/Energy#EmployeeCampaign</a></p>
+<p> </p>
+<p>This case study was written in 2018 by Jennifer Tabanico and Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

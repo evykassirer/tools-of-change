@@ -1,0 +1,271 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/peer-support-groups/">Peer Support Groups</a></li>
+<li><a href="/en/tools-of-change/school-programs-that-involve-the-family/">School Programs that Involve the Family</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>U.S.-based non-profit organization founded by David Gershon</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>President's Council of Sustainable Development</li>
+<li>United Nations Environment Program (UNEP)</li>
+<li>Others</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Achieved averages of:</p>
+<ul>
+<li>42 percent less garbage sent to landfill</li>
+<li>25 percent less water used</li>
+<li>16 percent less CO 2 produced</li>
+<li>16 percent less transportation fuel used</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Global Action Plan for the Earth (GAP)</h1>
+<p>As of 1996, over 8,000 households in 15 countries had participated in GAP's EcoTeam program which revolves around an easy-to-use workbook and peer support groups. The program focuses on waste reduction, water and energy efficiency, sustainable transportation, and other sustainable consumer habits.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Founded in 1989 as a non-profit organization to preserve the earth's environment, GAP provided a structured program to help people adopt "green" behaviours and allow them to see that their changes were making a global difference. Two separate programs were available: Journey for the Planet was offered to school children and the Community Lifestyles Program was aimed at adults.</p>
+<p>GAP learned to target innovator communities that had expressed interest and a willingness to provide financial support. Within participating communities, information on recycling participation rates was one of the criteria that enabled GAP to focus on neighbourhoods where "early adopters" resided. GAP estimated that such neighbourhoods represented about 15 percent of the population. It believed that by building enough momentum within these neighbourhoods, the behavioural changes that GAP brought about would diffuse throughout the rest of the community's population.</p><!-- Background already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>GAP identified that people were generally concerned about the environment and wanted to help, but did not know where to start with their conservation efforts. They also tended to believe that they could not effect change, given the enormous scope of environmental problems.</p>
+<p>GAP surmounted these barriers by taking participants though a step-by-step process for living more environmentally sustainable lives. Feedback at the individual and group levels showed participants that they were making a difference both locally and globally.</p>
+<p><strong>The Community Lifestyles Campaign</strong></p>
+<p>The Community Lifestyles Campaign, aimed at households, involved groups of 8 to 12 neighbours (<a href="/en/tools-of-change/peer-support-groups/">Peer Support Groups</a>). Members of these "EcoTeams" met eight times over four months. At each meeting they worked through one chapter of the easy-to-use Household EcoTeam Workbook.</p>
+<p>Each chapter in the workbook covered one of the following areas: waste reduction, water, energy and transportation efficiency, being an eco-wise consumer, and empowerment. Each chapter contained 7 to 12 activities that participants could choose to undertake.</p>
+<p>An example of one of the activities, "Energy x Mass = A Healthier Earth," is reproduced below.</p>
+<p>Using an Action Log at the beginning of each chapter, participants identified when they planned to do their chosen activities. At each meeting, group members reviewed the actions taken and shared their plans for the next two weeks (<a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a>). Members of the group helped each other fine-tune plans, and provided support and inspiration. This helped overcome barriers to action and strengthened the development of group norms (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a> and <a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>).</p>
+<p>Members of the EcoTeam took turns facilitating the meetings with support from a GAP-trained volunteer coach who had already been through the program. The coach attended the group's first and last meetings, and provided telephone support in between for the leader of each meeting. This helped to further motivate these leaders (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</p>
+<p>GAP provided a "Topic Leader's Guide" for each meeting.</p>
+<p><strong>Journey for the Planet Program</strong></p>
+<p>The five-week long Journey for the Planet program, aimed at children 9 to 12 years old, had modules on waste reduction, water and energy efficiency, consumption and empowering others. Often, Journey for the Planet was administered in the classroom with the teacher acting as the coach (<a href="/en/tools-of-change/school-programs/">School Programs that Involve the Family</a>). Says John Barron, a grade 6 teacher from Sturbridge, Massachusetts, "Kids loved the program. They loved the sense of empowerment. They loved that they had choices. They loved that they were on their honour. They loved that they were in the driver's seat and had control. This was the best thing we did all year."</p>
+<p><strong>Recruiting</strong></p>
+<p>To maximize word-of-mouth promotion (<a href="/en/tools-of-change/word-of-mouth/">Word-of-mouth</a>), an effective member recruitment process had been developed. In the final sections of the Community Lifestyles Campaign, members were encouraged to initiate at least two more EcoTeams and were provided with a standard recruiting script used to invite their neighbours to an informal introductory meeting at their homes.</p>
+<p>Participants were prepared for this recruiting stage early in their involvement when GAP was described as a program for developing sustainable lifestyles and then helping others to do the same. At the first EcoTeam meeting, participants were asked, "Are you up to attempting to create two more teams at the end of the program?"</p>
+<p>In the U.S.A. about 40 percent to 50 percent of neighbours approached to attend an introductory event agreed to do so;</p>
+<p>85 percent of individuals who attended the introductory event joined EcoTeams. "Each person you help to start on his or her journey can have similar savings to yours. In this way, you can double your savings for the earth just by helping one extra person live a more sustainable lifestyle." (EcoTeam Workbook, 1995.)</p>
+<p>Journey for the Planet also had a recruitment section in the final module. Children were taught how to encourage other children and adults to participate in the GAP program.</p>
+<p><strong>Working with Municipalities</strong></p>
+<p>Municipalities contracted GAP to launch and manage the start-up GAP program. Working closely with municipal resource managers, GAP customized the campaign to fit local conditions and the specific resource conservation needs of the community. Local staff were hired and supervised by GAP. A two-day training seminar for the community officially launched the local campaign, providing coaching support for five to ten EcoTeams. Recruitment then began the process of replication throughout the community.</p>
+<p>GAP also offered participating municipalities the following:</p>
+<ul>
+<li>help in strategic plan development for community mobilization</li>
+<li>consultation to project potential financial savings</li>
+<li>household and school program materials</li>
+<li>assistance in the development of local promotional materials</li>
+<li>ongoing consultation in managing recruiting and monitoring program quality</li>
+</ul>
+<p><strong>Other Partners</strong></p>
+<p>The President's Council on Sustainable Development (PCSD) helped promote GAP and recruited communities to participate in the GAP program.</p>
+<p>The United Nations Environment Program (UNEP) provided a "Global Hero Award Program" to motivate children participating in Journey for the Planet. This program acknowledged children's success stories, and provided certificates and patches for taking a certain number of actions.</p>
+<p>UNEP partnered with GAP to promote the international campaign called, "The North Puts Its House In Order ... Household by Household." This campaign focused on empowering citizens in industrialized countries to adopt environmentally sustainable lifestyles, with the goal of helping the North work with the South on preservation. "We (the North) cut back the demand, they (the South) preserve the supply. A workable global bargain and the initiation of a Global Action Plan for the Earth." (America Puts Its House in Order ... Household by Household, 1995)</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Each household participating in the Community Lifestyles Campaign paid a $35 membership fee which included program materials, access to the volunteer coach who supported the team, and a subscription to the GAP newsletter Stewardship. The Journey for the Planet cost $12.95 and included a UNEP patch and certificate.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The success of the GAP Community Lifestyle Campaign was evaluated on several factors:</p>
+<ul>
+<li>average resource savings, based on self-reported data from the participants</li>
+<li>number of neighbour campaigns started</li>
+<li>each EcoTeam recruiting two or more new EcoTeams</li>
+<li>getting sufficient volunteer coaches to lead new teams</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>GAP's feedback mechanisms enabled each participant to see the positive impacts of his or her actions on the environment. The activities of each EcoTeam were recorded and sent to a central and community database. This information, translated into the amount of realized savings that each member of the EcoTeam had achieved, was fed back to each EcoTeam at the end of its program. Information on the collective accomplishments of all EcoTeams was also tabulated and distributed through the EcoTeam newsletter, Stewardship.</p>
+<p>Feedback was also provided through a GAP Web site. Other feedback mechanisms within each community included newspapers, TV, bulletin boards, computer networks and awards.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>United States Average U.S. results from participating in the program:</p>
+<ul>
+<li>42 percent less garbage sent to landfills</li>
+<li>25 percent less water used</li>
+<li>16 percent less CO 2 produced</li>
+<li>16 percent less fuel used for transportation</li>
+<li>an annual average savings to participants of $400 per household</li>
+</ul>
+<p><strong>The Netherlands</strong></p>
+<p>A two-year study funded by The Netherlands' Ministry of the Environment found that 46 out of a possible 93 environmentally relevant behaviours were adopted by 205 EcoTeam participants following completion of the program. Participants not only maintained these practices six to nine months later but in some cases continued to improve on them. Such areas of improvement included increased car-pooling and the installation of water-saving devices in the bathroom. Ex-participants also showed a desire to remain involved in GAP, with nearly 33 percent still attending team meetings, volunteering as team coaches or remaining active in some other way. Forty percent of people indicated that they had also changed behaviour at work, and 26 percent had become more active on environmental issues in the community.</p>
+<p>More profound results were seen when the GAP Community Lifestyles Campaign was introduced to a neighbourhood of 2,500 households in Den Haag, The Netherlands. The resulting behavioural change redirected consumer demand and encouraged shopkeepers to offer products with less packaging. In turn, these shopkeepers placed greater demands for less packaging at the manufacturing level. "This is our first case study of how sustainable consumption practices start to catalyze sustainable production." (America Puts Its House in Order ... Household by Household, 1995)</p>
+<p>This case has been adapted from: "America Puts Its House in Order ... Household by Household," by Global Action Plan, 1995; "The EcoTeam Program in the Netherlands: A longitudinal study on the effects of the EcoTeam Program on environmental behaviour and its psychological backgrounds," by H.J. Staats &amp; P. Harland, 1995; "EcoTeam: A Program Empowering Americans to Create Earth-Friendly Lifestyles" by David Gershon with Andrea Barrist Stern, 1995; "Household EcoTeam Workbook," by David Gershon and Robert Gilman, 1992; "The Market Potential for the Household EcoTeam Program," by Market Street Research, Inc. 1996; "Stewardship, A Newsletter of Global Action Plan for the Earth," Summer 1996.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>David Gershon <br/>
+Global Action Plan for the Earth <br/>
+P.O Box 428 <br/>
+Woodstock, New York 12498 <br/>
+U.S.A. <br/>
+(845) 657-7788 <br/>
+Fax: (845) 657-7786 <br/>
+E-mail: <a href="mailto:dgershon@empowermentinstitute.net">dgershon@empowermentinstitute.net</a> <br/>
+Web site: <a href="http://www.empowermentinstitute.net">www.empowermentinstitute.net</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study was originally published in 1998 in "Tools of Change: Proven Methods for Promoting Environmental Citizneship" by Jay Kassirer and Doug McKenzie-Mohr (Published by Canada's National Round Table on the Environment and the Economy)</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

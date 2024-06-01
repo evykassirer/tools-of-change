@@ -1,0 +1,232 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>King County Commission for Marketing Recyclable Materials</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Local retailers and manufacturers</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Compared to the previous year, sales of recycled content products increased by over 50 percent in participating grocery stores and by a third overall.</p>
+<table cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" complete="complete" height="26" src="/images/lightbulb.gif" width="27"/> Tip: Click on an image to enlarge it. Click your back button to return to this page. <hr color="#ffcc00"/>
+<p><a href="/images/documentimages/GetInLoop/GetInLoop-1.jpg" target=""><img alt="Get in the Loop Image" border="0" complete="complete" height="94" src="/images/documentimages/GetInLoop/GetInLoop-1.jpg" width="177"/></a> <br/>
+            These shelf talkers, placed near products on the shelves, identified those items with recycled content and prompted people to buy them.</p>
+<p><a href="/images/documentimages/GetInLoop/GetInLoop-2.jpg"><img alt="Get in the Loop Image" border="0" complete="complete" height="189" src="/images/documentimages/GetInLoop/GetInLoop-2.jpg" width="120"/></a> <br/>
+            A Get in the Loop store sign reminded people to look for the shelf talkers. <br/>
+<strong><br/>
+</strong></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Get in the Loop -- Buy Recycled</h1>
+<p>To encourage people to buy more recycled-content products, an annual, month-long <em>Get in the Loop </em>campaign reminds shoppers in rural and urban areas of western Washington State to buy recycled through in-store promotional materials, and identifies specific recycled-product choices right on the store shelf. This is supported by a print and radio advertising campaign conducted cooperatively with product manufacturers and local retailers.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The program was developed in 1993, when King County Commission staff in Washington State conceived of a partnership approach with retailers to boost sales of recycled products. Market research indicated five main barriers to the purchase of these products. The market development agency could have little effect on two of these: price and quality. However, the Commission thought it could help overcome the remaining three barriers: low consumer awareness of the availability of recycled content products; consumer cynicism about environmental claims; and unwillingness to put much effort into locating recycled products (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>). By 1996, Get in the Loop was the largest and one of the most effective programs in the U.S.A. to increase consumer purchasing of recycled content products.</p><!-- Background already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Every element of the campaign strategy was designed to do one of three things: show consumers the importance of buying recycled, tell them where they could buy recycled content products, and show them actual product choices.</p>
+<p>According to Dave Herrick, campaign project manager, "the crucial element of the promotion was the 'shelf talker' - a simple marker placed on the edge of a standard retail shelf, below the product." The shelf talker provided a reminder where the purchasing decision was made, lent credibility to the manufacturers' recycled content claims, and demonstrated actual product availability (<a href="/en/tools-of-change/prompts/">Prompts</a>).</p>
+<p>In addition to the shelf talkers, self-stick door decals announced that the store "proudly offer(ed) recycled products." Posters reminded shoppers to look for the Get in the Loop symbol, and buttons worn by store employees encouraged dialogue with customers about recycled products. The Commission provided these in-store promotional materials to all participating retailers free of charge.</p>
+<p>Says Herrick, "If the link between a direct consumer benefit and a specific product is not clear to consumers, promotional efforts are ineffective. That's why general 'buy recycled' messages seldom have an effect on behaviour: there's no clear connection to actual product choices."</p>
+<p>According to the Commission's 1996 Annual Report, "nearly every major retail chain retailer in King County and western Washington State participated. When shoppers went to the grocery store they saw the Get in the Loop message. When they went to the drug store, they saw the same message. When they did their shopping, they saw poster after poster in store windows. The Get in the Loop campaign created a common identity and shared benefits across a wide spectrum of retailers."</p>
+<p>The campaign purchased print and radio advertising that identified participating stores for consumers and emphasized the connection between recycling programs and the purchase of recycled products. During 1994-95, additional ads placed by local retailers that featured the Get in the Loop logo exceeded US$600,000, appearing in publications with a combined circulation of 12 million people (<a href="/en/tools-of-change/mass-media/">Mass Media</a>).</p>
+<p>The four-week promotion began on a Wednesday, a major advertising day for grocers. It was scheduled for mid-October to avoid competition with back-to-school and holiday promotions.</p>
+<p><strong>Working with Local Retailers</strong></p>
+<p>Get in the Loop offered retailers recognition in media advertising and a track record of sales success in exchange for promoting recycled products on store shelves. Retailers were provided with the varied marketing materials free of charge and were given a choice of three levels of participation: "Associate," "Partner," and "Presenting."</p>
+<p>Retailers at the "Partner" and "Presenting" levels received mention in the program's paid advertising and public relations materials. In return, they agreed to provide sales data and to use the program's logo in advertising and in-store circulars during the promotional period. "Presenting"-level retailers also received recognition as principal sponsors in the campaign's advertising.</p>
+<p>Initially, there was resistance from retailers to become partners with government in a marketing campaign. A blue ribbon panel was convened for two meetings during 1993 to provide input to the program planning and lend a private sector "stamp of approval." Panel members became the first participants and enabled the eventual recruitment of 620 retail stores during the first year of the campaign. Smaller retailers were recruited through direct mail, while larger retailers with multiple locations were approached personally.</p>
+<p>Organizers sent "shoppers" to monitor a sampling of participating stores early in the campaign, and feedback was provided to the stores on their campaign compliance. Feedback on sales results, copies of news stories, and recognition were also provided over the course of the campaign. Soon after its end, retailers were asked to commit to participate in the coming year's campaign.</p>
+<p><strong>Working with Manufacturers</strong></p>
+<p>Manufacturers viewed Get in the Loop as a good way to link their product with a large community event while getting valuable advertising. James River, Carlisle Plastics, and Tom's of Maine contributed a total of US$25,000 to the marketing effort in 1994-95.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The 1994-95 budget for the program was US$275,000. Of this, $155,000 came from solid waste tipping fees at King County's landfill, $95,000 was contributed by the State of Washington, and $25,000 came from three participating recycled product manufacturers. In addition, an in-kind contribution of $600,000 in advertising was provided by participating retailers.</p><!-- Financing already contains P tags.-->
+<h2>Results</h2>
+<p>During the 1994-95 program year, sales of recycled products increased by 58 percent in participating grocery stores and 27 percent overall, compared to the previous year. There were 863 retail locations and one million consumers in western Washington State participating, over one quarter of that state's population. Sales of recycled paper towels, napkins, and toilet tissue, items with which consumer choices were highly flexible at the time of purchase, increased by 74 percent.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>David J. Herrick <br/>
+Marketing Specialist <br/>
+King County Commission for Marketing Recyclable Materials <br/>
+400 Yesler Way Room 200 <br/>
+Seattle, Washington 98104 <br/>
+U.S.A. <br/>
+(206) 296-4439 <br/>
+Fax: (206) 296-4366</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p> This case study was originally published in 1998 in "Tools of Change: Proven Methods for Promoting Environmental Citizneship" by Jay Kassirer and Doug McKenzie-Mohr (Published by Canada's National Round Table on the Environment and the Economy)</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

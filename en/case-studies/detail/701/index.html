@@ -1,0 +1,500 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>UK Department for Transport</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Local transport authorities</li>
+</ul><!-- Partners already contains li tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Bikeability Safety Training in the UK </h1>
+<p>This large scale bicycle safety training program from the UK has been particularly well evaluated and shows impressive results, adding to the evidence of the value of such trainings. Designated a Landmark case study in 2016.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em> </p>
+<p>Bicycle safety was one of the key barriers to parents allowing their children to cycle to school and other destinations, while cycle-related injuries are one of the most common physical injuries in the UK and many of these “accidents” could have been prevented through proper training. In the UK, 40% of children aged 12 have participated in the Department of Transport’s Bikeability program, conducted by local authorities.</p>
+<p>As early as the 1930’s, cycling organizations were pressing the British Government to put cycle training into the school curriculum, however World War Two postponed action. In 1947, the Royal Society for the Prevention of Accidents (RoSPA) organized its first Cycling Proficiency Test and in 1958 it was funded to introduce its National Cycle Proficiency Scheme (NCPS). Statutory responsibility for road safety, including the delivery safety training, shifted to local authorities in 1974, however the RoSPA remained active in course development. In 1993 it published its first code of practice for cycling safety instruction.</p>
+<p>A 2001 review of program impact studies (RoSPA, 2001) found that some of the programs led to safer cycling behaviors and increased the rate of riding to school in the short run.  The review noted the need for a national standard of training / accreditation scheme for instructors. By this time, between 200,000 and 250,000 children were receiving some kind of cycle training each year.</p>
+<p>The organization’s cycle training program was rebranded ‘Bikeability’ in 2007. In 2015, 40 % of children in the UK had participated in Bikeability by their twelfth birthday. At that time, 10–15 year-olds had the second greatest risk of having a cycling accident (those over 60 had the greatest risk.)</p>
+<p>The immediate goal of the Bikeability scheme is to give children the skills and confidence to cycle safely on the road. Longer term goals are to reduce cycling injuries and increase cycling frequency.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The Department for Transport (DOT) had conducted periodic research since 1947 to help national and school organizers plan and fine-tune their cyclist training activities. This research focused on branding, perceptions and experiences of both parents and children, barriers and benefits, and levels of cycling to school. It helped identify, for example, that providing road-training in addition to playground-training led to observably safer cycling in real life situations.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Bikeability and all NCPS courses since 1974, have been the responsibility of Local Authorities. The trainings, which were generally conducted during the final years of elementary school, consisted of 4–8 sessions each lasting between 1 and 1.5 hours and took place in school playgrounds and on the road. Each of the trainings ended with a Cycle Proficiency Test.</p>
+<p>Over time, trainer training became more structured. Bikeability trainers were all regular road cyclists, 18 years or older, who had successfully completed a four-day training program and a positive assessment within six months of taking that course.</p>
+<p>While content and delivery varied to some degree by area, all trainings followed the same guidelines and had the same over-arching aim to “enable people to cycle safely and to promote cycling by improving skills, knowledge, attitudes, behaviour and hazard awareness.”</p>
+<p>Bikeability offered three levels of training to suit all abilities, from beginner to experienced commuter or rider. </p>
+<p><img alt="" height="166" src="/userfiles/Image/123.jpg" width="292"/></p>
+<p><em>Level 1</em></p>
+<p>Children could take Bikeability Level 1 as soon as they could ride a bike without training wheels. Most children took Level 1 training when they were in Years 4 or 5 of school (aged 8-10). It was delivered in a traffic-free environment, where participants learned basic bike handling skills and improved their riding confidence. Group size was typically 3-12 students. Once they had completed Level 1 and had received their red badges, they were able to:</p>
+<ul>
+<li>Fit their helmets correctly.</li>
+<li>Check that their bikes were ready to ride.</li>
+<li>Get on and off their bikes safely.</li>
+<li>Ride their bikes and make them go where they want them to.</li>
+<li>Avoid objects through good bike control.</li>
+<li>Use their gears effectively.</li>
+<li>Control the bikes with one hand.</li>
+<li>Observe all around them whilst cycling.</li>
+<li>Stop safely and quickly if they needed to.</li>
+</ul>
+<p>Level 2</p>
+<p>Most children took Level 2 training when they were in Years 5 or 6 (aged 9-11), before they left primary school. It was delivered on quiet residential streets close to the home or school. Participants learned how to cycle confidently on-road, amongst real traffic. Group size was typically 3-6 students. Once they had completed Level 2 and received their orange badges, they were able to:</p>
+<ul>
+<li>Start and finish an on-road journey.</li>
+<li>Pass parked cars or slower moving vehicles and side roads.</li>
+<li>Make a u-turn.</li>
+<li>Identify and react to potential hazards.</li>
+<li>Communicate their intentions with other road users and pedestrians as appropriate.</li>
+<li>Use road positioning effectively.</li>
+<li>Use junctions, including turning left and right in and out of minor roads.</li>
+<li>Use the Highway Code and make decisions on safe riding strategy.</li>
+</ul>
+<p>Level 3</p>
+<p>Bikeability Level 3 was delivered on roads with larger volumes of traffic travelling at higher speeds. It was typically delivered one-on-one or in groups of three or less.  Participants learned how to negotiate more complex junctions on a route of their choice, usually their journeys to school. Once they had completed Level 3 and received their green badges, they were able to:</p>
+<ul>
+<li>Cycle almost anywhere using complex road junctions and features such as roundabouts, multi-lane roads and traffic lights.</li>
+<li>Plan their routes using any road. •	Understand driver blind spots and how to avoid them.</li>
+<li>Filer through queuing or slower moving traffic.</li>
+<li>Identify and react to hazardous road surfaces.</li>
+</ul>
+<p>Most Bikeability training delivered to school children was free or at minimal cost, thanks to DOT funding. Local authorities and School Games Organiser Host Schools were invited to apply for funds from the DOT to help them deliver Bikeability every year. In 2015/2016, organizing schools could receive40 pounds Sterling per participating student. In some cases parents were asked to make a small contribution towards the cost of the training, depending on the area in which they lived.</p>
+<p><em>Overcoming Barriers</em></p>
+<ul>
+<li>The cycling training helps overcome one of the main barriers to cycling – cycling safety.</li>
+<li>Because it was done in groups at school, it helped replace negative peer norms with positive ones regarding cycling to school.</li>
+<li>Children were asked to bring their own bikes to the lessons, however not all children had access to bikes. Some program providers loaned bikes to the children that did not have one.</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p><em>1. NCPS Study (Teyhan et al, 2015)</em></p>
+<p>A longitudinal, population-based cohort was used to examine whether the NCPS training was associated with (1) cycling to school, (2) use of cycle helmets or high-visibility clothing, and (3) cycle accidents. The sample included 5,415 children in grade six (mean age of 13.9 years), who lived in and around Bristol, UK and who were part of the Avon Longitudinal Study of Parents and Children (ALSPAC). ALSPAC recruited 13,988 children born between April1, 1991 and December 31, 1992.  The children were studied using clinic visits, and both maternal and child questionnaires.</p>
+<p>Self-Reported (Survey) Measures</p>
+<p>These outcomes were self-reported at 14 and 16 years of age:</p>
+<ul>
+<li>Own a cycle helmet (no, yes)</li>
+<li>Wore a cycle helmet last time they rode a bike (no/can’t remember, yes)</li>
+<li>Wore reflective/fluorescent clothing last time they rode a bike (no/can’t remember, yes)</li>
+<li>Ever currently cycle as part of school commute (no, yes)</li>
+<li>Been in a road accident as a cyclist in past year (no, yes).</li>
+</ul>
+<p>The evaluators employed multiple imputation using chained equations to replace any missing information with predictions that were based on the sample data.</p>
+<p>Hospital Attendance</p>
+<p>A sub-sample of 2,222 children came from families who explicitly consented to allow access to their children’s’ data in the Hospital Episode Statistics (HES) dataset compiled by the NHS Health and Social Care Information Centre. These data indicated if any of the children had been admitted to hospital as a “pedal cyclist injured in transport accident.”</p>
+<p> </p>
+<p><em>2. Bikeability Study A (Ipsos MORI, 2010)</em></p>
+<p>A total of 940 face-to-face interviews were conducted in March 2010, half with children and half with parents.</p>
+<p> </p>
+<p><em>3. Bikeability Study B (Steer Davies Gleave, 2012)</em></p>
+<p>Schools in England and Wales had to report to the Department of Education at least yearly as part of a school census, which includes questions about how their students commute to school. The data usually come from hands-up surveys at the classroom level. This study compared the data from the Hertfordshire area with the proportion of trainings conducted in Hertfordshire’s feeder schools.  The study also compared mode share data from the school census for 11-15 year olds in England with (a) the length of time the local authorities had received cycle training grants and (b) the amounts they received - both proxies for the number of children that had been trained. Data were not available for the schools in London so they were excluded. </p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><em>1. NCPS Study (Teyhan et al, 2015)  </em></p>
+<p>The NCPS trainings had a lasting positive effect on cycling behaviours and some related safety behaviours, some of which persisted well into adolescence.</p>
+<p>Those who had participated in a training were more likely to:</p>
+<ul>
+<li>Own a cycle helmet in adolescence at both 14 and 16 years</li>
+<li>Have used a helmet the last time they cycled (at age 14)</li>
+<li>Have worn reflective or fluorescent clothing, particularly at 16 years.</li>
+</ul>
+<p>The total number of accidents was too small to perform detailed analyses.</p>
+<p>Those who had participated in a training were significantly more likely to report cycling as part of their school commute at both 14 and 16 years. The trainings were associated with an increase of cycling mode share, from 6.7% to 8.7% at age 14, and from 8.2% to 10.9% at age 16. Those who participated in the trainings were 30% more likely to have been riding to school at age 14, and 33% more likely by age 16.<span lang="EN-CA" style='font-size:11.0pt;font-family:"Minion Pro","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:windowtext;mso-bidi-language:#0400'> </span><span style='font-size:8.5pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US'> </span></p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:-1.15pt;background:white;border-collapse:collapse;
+ mso-table-layout-alt:fixed;mso-yfti-tbllook:1184" width="100%">
+<thead>
+<tr>
+<td style="border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid rgb(212, 212, 212);" width="0%">
+<p class="MsoNormal"> </p>
+</td>
+<td style="width: 32.44%; border-width: 1pt; border-style: solid; border-color: rgb(212, 212, 212); background: rgb(236, 236, 236); padding: 2.15pt 4.3pt;" width="32%">
+<p class="MsoNormal"><b><span style='font-size:11.0pt;font-family:"Open Sans";
+   color:#333333;mso-ansi-language:EN-US'>Outcome<o:p></o:p></span></b></p>
+</td>
+<td style="width: 9.92%; border-top: 1pt solid rgb(212, 212, 212); border-right: 1pt solid rgb(212, 212, 212); border-bottom: 1pt solid rgb(212, 212, 212); border-left: none; background: rgb(236, 236, 236); padding: 2.15pt 4.3pt;" width="9%">
+<p class="MsoNormal"><b><span style='font-size:11.0pt;font-family:"Open Sans";
+   color:#333333;mso-ansi-language:EN-US'>Age<o:p></o:p></span></b></p>
+</td>
+<td style="width: 13.52%; border-top: 1pt solid rgb(212, 212, 212); border-right: 1pt solid rgb(212, 212, 212); border-bottom: 1pt solid rgb(212, 212, 212); border-left: none; background: rgb(236, 236, 236); padding: 2.15pt 4.3pt;" width="13%">
+<p class="MsoNormal"><b><span style='font-size:11.0pt;font-family:"Open Sans";
+   color:#333333;mso-ansi-language:EN-US'>Attended cycle proficiency training?<o:p></o:p></span></b></p>
+</td>
+<td style="width: 15.34%; border-top: 1pt solid rgb(212, 212, 212); border-right: 1pt solid rgb(212, 212, 212); border-bottom: 1pt solid rgb(212, 212, 212); border-left: none; background: rgb(236, 236, 236); padding: 2.15pt 4.3pt;" width="15%">
+<p class="MsoNormal"><b><i><span style='font-size:11.0pt;font-family:"Open Sans";
+   color:#333333;mso-ansi-language:EN-US'>n</span></i></b><b><span style='font-size:11.0pt;font-family:"Open Sans";color:#333333;mso-ansi-language:
+   EN-US'><o:p></o:p></span></b></p>
+</td>
+<td style="width: 28.34%; border-top: 1pt solid rgb(212, 212, 212); border-right: 1pt solid rgb(212, 212, 212); border-bottom: 1pt solid rgb(212, 212, 212); border-left: none; background: rgb(236, 236, 236); padding: 2.15pt 4.3pt;" width="28%">
+<p class="MsoNormal"><b><span style='font-size:11.0pt;font-family:"Open Sans";
+   color:#333333;mso-ansi-language:EN-US'>% (95 % CI) reporting outcome<o:p></o:p></span></b></p>
+</td>
+<td style="border-top: none; border-right: none; border-left: none; border-bottom: 1pt solid rgb(212, 212, 212);" width="0%">
+<p class="MsoNormal"> </p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2" style="width: 32.68%; border-right: 1pt solid rgb(212, 212, 212); border-bottom: 1pt solid rgb(212, 212, 212); border-left: 1pt solid rgb(212, 212, 212); border-top: none; padding: 2.7pt 5.45pt;" width="32%">
+<p class="MsoNormal" style="line-height:18.0pt"><span style='font-size:10.0pt;
+  font-family:"Open Sans";color:#666666;mso-ansi-language:EN-US'>Cycled to   school<o:p></o:p></span></p>
+</td>
+<td style="width:9.92%;border-top:none;border-left:none;
+  border-bottom:solid #D4D4D4 1.0pt;border-right:solid #D4D4D4 1.0pt;
+  mso-border-top-alt:solid #D4D4D4 .75pt;mso-border-left-alt:solid #D4D4D4 .75pt;
+  mso-border-alt:solid #D4D4D4 .75pt;padding:2.7pt 5.45pt 2.7pt 5.45pt" width="9%">
+<p class="MsoNormal" style="line-height:18.0pt"><span style='font-size:10.0pt;
+  font-family:"Open Sans";color:#666666;mso-ansi-language:EN-US'>14<o:p></o:p></span></p>
+</td>
+<td style="width:13.52%;border-top:none;border-left:none;
+  border-bottom:solid #D4D4D4 1.0pt;border-right:solid #D4D4D4 1.0pt;
+  mso-border-top-alt:solid #D4D4D4 .75pt;mso-border-left-alt:solid #D4D4D4 .75pt;
+  mso-border-alt:solid #D4D4D4 .75pt;padding:2.7pt 5.45pt 2.7pt 5.45pt" width="13%">
+<p class="MsoNormal" style="line-height:18.0pt"><span style='font-size:10.0pt;
+  font-family:"Open Sans";color:#666666;mso-ansi-language:EN-US'>No<o:p></o:p></span></p>
+</td>
+<td style="width:15.34%;border-top:none;border-left:none;
+  border-bottom:solid #D4D4D4 1.0pt;border-right:solid #D4D4D4 1.0pt;
+  mso-border-top-alt:solid #D4D4D4 .75pt;mso-border-left-alt:solid #D4D4D4 .75pt;
+  mso-border-alt:solid #D4D4D4 .75pt;padding:2.7pt 5.45pt 2.7pt 5.45pt" width="15%">
+<p class="MsoNormal" style="line-height:18.0pt"><span style='font-size:10.0pt;
+  font-family:"Open Sans";color:#666666;mso-ansi-language:EN-US'>2881<o:p></o:p></span></p>
+</td>
+<td colspan="2" style="width:28.56%;border-top:none;border-left:
+  none;border-bottom:solid #D4D4D4 1.0pt;border-right:solid #D4D4D4 1.0pt;
+  mso-border-top-alt:solid #D4D4D4 .75pt;mso-border-left-alt:solid #D4D4D4 .75pt;
+  mso-border-alt:solid #D4D4D4 .75pt;padding:2.7pt 5.45pt 2.7pt 5.45pt" width="28%">
+<p class="MsoNormal" style="line-height:18.0pt"><span style='font-size:10.0pt;
+  font-family:"Open Sans";color:#666666;mso-ansi-language:EN-US'>6.7 (5.8–7.6)<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="width: 32.68%; border-right: 1pt solid rgb(212, 212, 212); border-bottom: 1pt solid rgb(212, 212, 212); border-left: 1pt solid rgb(212, 212, 212); border-top: none; padding: 2.7pt 5.45pt;" width="32%">
+<p class="MsoNormal"><span style='font-size:10.0pt;font-family:"Open Sans";
+  color:#666666;mso-ansi-language:EN-US'> <o:p></o:p></span></p>
+</td>
+<td style="width:9.92%;border-top:none;border-left:none;
+  border-bottom:solid #D4D4D4 1.0pt;border-right:solid #D4D4D4 1.0pt;
+  mso-border-top-alt:solid #D4D4D4 .75pt;mso-border-left-alt:solid #D4D4D4 .75pt;
+  mso-border-alt:solid #D4D4D4 .75pt;padding:2.7pt 5.45pt 2.7pt 5.45pt" width="9%">
+<p class="MsoNormal"><span style='font-size:10.0pt;font-family:"Open Sans";
+  color:#666666;mso-ansi-language:EN-US'> <o:p></o:p></span></p>
+</td>
+<td style="width:13.52%;border-top:none;border-left:none;
+  border-bottom:solid #D4D4D4 1.0pt;border-right:solid #D4D4D4 1.0pt;
+  mso-border-top-alt:solid #D4D4D4 .75pt;mso-border-left-alt:solid #D4D4D4 .75pt;
+  mso-border-alt:solid #D4D4D4 .75pt;padding:2.7pt 5.45pt 2.7pt 5.45pt" width="13%">
+<p class="MsoNormal" style="line-height:18.0pt"><span style='font-size:10.0pt;
+  font-family:"Open Sans";color:#666666;mso-ansi-language:EN-US'>Yes<o:p></o:p></span></p>
+</td>
+<td style="width:15.34%;border-top:none;border-left:none;
+  border-bottom:solid #D4D4D4 1.0pt;border-right:solid #D4D4D4 1.0pt;
+  mso-border-top-alt:solid #D4D4D4 .75pt;mso-border-left-alt:solid #D4D4D4 .75pt;
+  mso-border-alt:solid #D4D4D4 .75pt;padding:2.7pt 5.45pt 2.7pt 5.45pt" width="15%">
+<p class="MsoNormal" style="line-height:18.0pt"><span style='font-size:10.0pt;
+  font-family:"Open Sans";color:#666666;mso-ansi-language:EN-US'>2041<o:p></o:p></span></p>
+</td>
+<td colspan="2" style="width:28.56%;border-top:none;border-left:
+  none;border-bottom:solid #D4D4D4 1.0pt;border-right:solid #D4D4D4 1.0pt;
+  mso-border-top-alt:solid #D4D4D4 .75pt;mso-border-left-alt:solid #D4D4D4 .75pt;
+  mso-border-alt:solid #D4D4D4 .75pt;padding:2.7pt 5.45pt 2.7pt 5.45pt" width="28%">
+<p class="MsoNormal" style="line-height:18.0pt"><span style='font-size:10.0pt;
+  font-family:"Open Sans";color:#666666;mso-ansi-language:EN-US'>8.7 (7.5–9.9)<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="width: 32.68%; border-right: 1pt solid rgb(212, 212, 212); border-bottom: 1pt solid rgb(212, 212, 212); border-left: 1pt solid rgb(212, 212, 212); border-top: none; padding: 2.7pt 5.45pt;" width="32%">
+<p class="MsoNormal"><span style='font-size:10.0pt;font-family:"Open Sans";
+  color:#666666;mso-ansi-language:EN-US'> <o:p></o:p></span></p>
+</td>
+<td style="width:9.92%;border-top:none;border-left:none;
+  border-bottom:solid #D4D4D4 1.0pt;border-right:solid #D4D4D4 1.0pt;
+  mso-border-top-alt:solid #D4D4D4 .75pt;mso-border-left-alt:solid #D4D4D4 .75pt;
+  mso-border-alt:solid #D4D4D4 .75pt;padding:2.7pt 5.45pt 2.7pt 5.45pt" width="9%">
+<p class="MsoNormal" style="line-height:18.0pt"><span style='font-size:10.0pt;
+  font-family:"Open Sans";color:#666666;mso-ansi-language:EN-US'>16<o:p></o:p></span></p>
+</td>
+<td style="width:13.52%;border-top:none;border-left:none;
+  border-bottom:solid #D4D4D4 1.0pt;border-right:solid #D4D4D4 1.0pt;
+  mso-border-top-alt:solid #D4D4D4 .75pt;mso-border-left-alt:solid #D4D4D4 .75pt;
+  mso-border-alt:solid #D4D4D4 .75pt;padding:2.7pt 5.45pt 2.7pt 5.45pt" width="13%">
+<p class="MsoNormal" style="line-height:18.0pt"><span style='font-size:10.0pt;
+  font-family:"Open Sans";color:#666666;mso-ansi-language:EN-US'>No<o:p></o:p></span></p>
+</td>
+<td style="width:15.34%;border-top:none;border-left:none;
+  border-bottom:solid #D4D4D4 1.0pt;border-right:solid #D4D4D4 1.0pt;
+  mso-border-top-alt:solid #D4D4D4 .75pt;mso-border-left-alt:solid #D4D4D4 .75pt;
+  mso-border-alt:solid #D4D4D4 .75pt;padding:2.7pt 5.45pt 2.7pt 5.45pt" width="15%">
+<p class="MsoNormal" style="line-height:18.0pt"><span style='font-size:10.0pt;
+  font-family:"Open Sans";color:#666666;mso-ansi-language:EN-US'>2347<o:p></o:p></span></p>
+</td>
+<td colspan="2" style="width:28.56%;border-top:none;border-left:
+  none;border-bottom:solid #D4D4D4 1.0pt;border-right:solid #D4D4D4 1.0pt;
+  mso-border-top-alt:solid #D4D4D4 .75pt;mso-border-left-alt:solid #D4D4D4 .75pt;
+  mso-border-alt:solid #D4D4D4 .75pt;padding:2.7pt 5.45pt 2.7pt 5.45pt" width="28%">
+<p class="MsoNormal" style="line-height:18.0pt"><span style='font-size:10.0pt;
+  font-family:"Open Sans";color:#666666;mso-ansi-language:EN-US'>8.2 (6.8–9.7)<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="width: 32.68%; border-right: 1pt solid rgb(212, 212, 212); border-bottom: 1pt solid rgb(212, 212, 212); border-left: 1pt solid rgb(212, 212, 212); border-top: none; padding: 2.7pt 5.45pt;" width="32%">
+<p class="MsoNormal"><span style='font-size:10.0pt;font-family:"Open Sans";
+  color:#666666;mso-ansi-language:EN-US'> <o:p></o:p></span></p>
+</td>
+<td style="width:9.92%;border-top:none;border-left:none;
+  border-bottom:solid #D4D4D4 1.0pt;border-right:solid #D4D4D4 1.0pt;
+  mso-border-top-alt:solid #D4D4D4 .75pt;mso-border-left-alt:solid #D4D4D4 .75pt;
+  mso-border-alt:solid #D4D4D4 .75pt;padding:2.7pt 5.45pt 2.7pt 5.45pt" width="9%">
+<p class="MsoNormal"><span style='font-size:10.0pt;font-family:"Open Sans";
+  color:#666666;mso-ansi-language:EN-US'> <o:p></o:p></span></p>
+</td>
+<td style="width:13.52%;border-top:none;border-left:none;
+  border-bottom:solid #D4D4D4 1.0pt;border-right:solid #D4D4D4 1.0pt;
+  mso-border-top-alt:solid #D4D4D4 .75pt;mso-border-left-alt:solid #D4D4D4 .75pt;
+  mso-border-alt:solid #D4D4D4 .75pt;padding:2.7pt 5.45pt 2.7pt 5.45pt" width="13%">
+<p class="MsoNormal" style="line-height:18.0pt"><span style='font-size:10.0pt;
+  font-family:"Open Sans";color:#666666;mso-ansi-language:EN-US'>Yes<o:p></o:p></span></p>
+</td>
+<td style="width:15.34%;border-top:none;border-left:none;
+  border-bottom:solid #D4D4D4 1.0pt;border-right:solid #D4D4D4 1.0pt;
+  mso-border-top-alt:solid #D4D4D4 .75pt;mso-border-left-alt:solid #D4D4D4 .75pt;
+  mso-border-alt:solid #D4D4D4 .75pt;padding:2.7pt 5.45pt 2.7pt 5.45pt" width="15%">
+<p class="MsoNormal" style="line-height:18.0pt"><span style='font-size:10.0pt;
+  font-family:"Open Sans";color:#666666;mso-ansi-language:EN-US'>1779<o:p></o:p></span></p>
+</td>
+<td colspan="2" style="width:28.56%;border-top:none;border-left:
+  none;border-bottom:solid #D4D4D4 1.0pt;border-right:solid #D4D4D4 1.0pt;
+  mso-border-top-alt:solid #D4D4D4 .75pt;mso-border-left-alt:solid #D4D4D4 .75pt;
+  mso-border-alt:solid #D4D4D4 .75pt;padding:2.7pt 5.45pt 2.7pt 5.45pt" width="28%">
+<p class="MsoNormal" style="line-height:18.0pt"><span style='font-size:10.0pt;
+  font-family:"Open Sans";color:#666666;mso-ansi-language:EN-US'>10.9   (9.2–12.6)<o:p></o:p></span></p>
+</td>
+</tr>
+<!--[if !supportMisalignedColumns]-->
+<tr height="0">
+<td style="border-width: initial; border-style: none; border-color: initial;" width="2"> </td>
+<td style="border-width: initial; border-style: none; border-color: initial;" width="243"> </td>
+<td style="border-width: initial; border-style: none; border-color: initial;" width="74"> </td>
+<td style="border-width: initial; border-style: none; border-color: initial;" width="101"> </td>
+<td style="border-width: initial; border-style: none; border-color: initial;" width="115"> </td>
+<td style="border-width: initial; border-style: none; border-color: initial;" width="213"> </td>
+<td style="border-width: initial; border-style: none; border-color: initial;" width="2"> </td>
+</tr>
+<!--[endif]-->
+</tbody>
+</table>
+<p><span lang="EN" style='font-size:11.0pt;font-family:"Minion Pro","serif";
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Calibri;
+color:windowtext;mso-ansi-language:EN;mso-fareast-language:EN-US'>From Teyhan et al, 2015<o:p></o:p></span></p>
+<p> </p>
+<p><em>2. Bikeability Study A (Ipsos MORI, 2010)</em></p>
+<p>Children who had taken part in the trainings said they felt safer and more confident when riding on the road (86%) and their parents said they were confident in letting them to do so (87%).  Half (51%) of the children said that they rode more because of their participation in Bikeability and about the same number (49%) of parents reported an increase in the frequency of their children’s rides. Participants were also more likely to have said that they used their bicycles for new types of journeys and journeys to friends’ houses and shops, and they were also more likely to say that they had always or sometimes cycled on the road.</p>
+<p> </p>
+<p><em>3. Bikeability Study B (Steer Davies Gleave, 2012)</em></p>
+<p>There was a clear correlation between students taking safety training and students cycling to school.</p>
+<p>The Hertfordshire data showed an increase in the number of children cycling to secondary schools where all the feeder primaries had delivered Bikeability training. In contrast, there was a decrease in levels of cycling to secondary school where none of the feeder primaries offered Bikeability.</p>
+<p><img alt="Bike safety Program Impacts" height="293" src="/userfiles/Image/Impacts1.png" width="450"/></p>
+<p>The data from England showed that local authorities that had run the program for more years and those that had received the most program funding (both of which are proxies for the number of students trained) tended to have the greatest increases in cycling to school during the study period. Note that the study only found that there were these correlations between the two sets of data. Causal relationships could not be determined conclusively as there was no robust comparison group.</p>
+<p><img alt="Cycling Safety Program Impacts" height="314" src="/userfiles/Image/Impactse.png" width="450"/></p><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<ul>
+<li>The program approach has been replicated by many independent local authorities across the UK. The impact evaluation approaches are ones that could be used to evaluate other transportation programs, particularly where some of the necessary data are already being collected.    Notes</li>
+<li>Few girls cycled to school. They may have faced additional safety concerns or other barriers. They may also have been less motivated than the boys by the physicality involved in cycling.</li>
+<li>It is important for safety programs to highlight hazard relevance, not just hazard awareness. Some students were unrealistically optimistic about avoiding accidents while cycling, or overestimated their skill levels. They considered the safety knowledge they had learned to be irrelevant and did not apply it to themselves.</li>
+<li>Participants were less likely to wear their helmets if they (1) cycled more frequently or (2) were out for a shorter trip. </li>
+</ul>
+<p><strong>Landmark Designation</strong></p>
+<p>The panel that designated this case study consisted of:</p>
+<ul>
+<li>David Levinger from The Mobility Education Foundation</li>
+<li>Geoff Noxon from Noxon Associates</li>
+<li>JoAnn Woodhall from Translink</li>
+<li>Nathalie Lapointe from the Federation of Canadian Municipalities</li>
+<li>Phil Winters from the University of South Florida</li>
+<li>Ryan Lanyon from the City of Toronto. </li>
+</ul>
+<p><strong>Data Sources<br type="_moz"/>
+</strong></p>
+<p>This case study was written by Jay Kassirer in 2016, based on information from the following sources.</p>
+<p><a href="https://bikeability.org.uk/" target="_blank">https://bikeability.org.uk/</a></p>
+<p><a href="https://www.britishcycling.org.uk/cycletraining/article/ct20110111-cycletraining-What-is-Bikeability-0" target="_blank">https://www.britishcycling.org.uk/cycletraining/article/ct20110111-cycletraining-What-is-Bikeability-0</a></p>
+<p><a href="http://www.tabs-uk.org.uk/case-studies/" target="_blank">http://www.tabs-uk.org.uk/case-studies/</a></p>
+<p>Ipsos MORI, 2010. Research to explore perceptions and experiences of Bikeability training amongst parents and children. <a href="http://webarchive.nationalarchives.gov.uk/20110119211124/http://www.dft.gov.uk/pgr/sustainable/cycling/bikeabilitytraining/pdf/bikeabilitytraining.pdf" target="_blank">http://webarchive.nationalarchives.gov.uk</a>/20110119211124/ http://www.dft.gov.uk/pgr/sustainable/cycling/bikeabilitytraining/pdf/bikeabilitytraining.pdf  Accessed August 17, 2016.</p>
+<p>Royal Society for the Prevention of Accidents, 2011. The Effectiveness of Cyclist Training. <a href="http://www.rospa.com/rospaweb/docs/advice-services/road-safety/cyclists/cyclist-training-effectiveness.pdf" target="_blank">http://www.rospa.com/rospaweb/docs/advice-services/road-safety/cyclists/cyclist-training-effectiveness.pdf</a>,     Last Accessed August 17, 2016.</p>
+<p>Steer Davies Gleave, 2012. Cycling to School: A review of school census and Bikeability delivery data. Prepared for the U.K.’s Department for Transport. <a href="http://bikeability.org.uk/download/567/" target="_self">http://bikeability.org.uk/download/567/</a>   Accessed on August 17, 2016.</p>
+<p>Teyhan, A., R. Cornish.,A.  Boyd, M. Sissons Joshi &amp; J. Macleod. The impact of cycle proficiency training on cycle-related behaviours and accidents in adolescence: findings from ALSPAC, a UK longitudinal cohort. BMC Public Health. 2016; 16: 469. Published online 2016 Jun 9. doi:  <a href="http://dx.doi.org/10.1186%2Fs12889-016-3138-2" target="_blank">10.1186/s12889-016-3138-2</a></p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

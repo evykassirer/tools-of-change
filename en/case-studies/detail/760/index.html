@@ -1,0 +1,386 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>Ali Clabburn</p><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Individual commuters saved £1,000 per year</li>
+<li>Individual corprorate clients saved up to £1 million</li>
+<li>Eliminated 402 million kilometers of commuter travel and avoided the release of 300,000 tonnes of carbon emissions</li>
+</ul><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Liftshare and Mobilityways, U.K.</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="150" src="https://www.youtube.com/embed/mZYwPJSenlA" title="Liftshare and Mobilityways awarded Landmark designation" width="97%"></iframe></p>
+<p><em>Liftshare </em>is a social enterprise that has worked with over 700 of the UK’s largest employers to reduce the number of single occupancy vehicle trips using carsharing, active transportation and public transit when commuting for work. With an online community of over 1 million members, it is estimated that Liftshare members have avoided the release of 300 million kg / 300,000 tonnes of commuter carbon emissions (averaging 50 million kg / 50,000 tonnes per year). In 2020, Liftshare launched Mobilityways, a sister platform that enables employers to evidence, track, plan and change their commuter emissions via a set of tools / modules that work seamlessly together.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>In 1996, Ali Clabburn was a student at Bristol University. He couldn’t afford the train fare back home, so he used a student notice board to ask for a lift. He had three offers within a day, which gave him the idea of starting Liftshare. In 1998, He set up his first office in his parent’s home.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Ali’s first audience was festivalgoers and students, and he planned to have 10,000 members within a year, each paying £10 to make the website sustainable. Response to his offer was tepid, so he rapidly reworked his business model. Initially, he tried and tested many different approaches, and learned many lessons quickly.</p>
+<p>A <em>Scoping Smart Mobility</em> module and <em>Travel Survey </em>tool (both described below) were later built into the platform for corporate clients, enabling them to collect data about the local travel options available to staff, their staff’s barriers to commuting, and their receptivity to different travel options.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><em>Liftshare </em>was launched as a social enterprise (mission-driven rather than profit-driven.) It was the first car sharing system provider in the UK and has remained the largest.</p>
+<p>In 2000, it started offering businesses, communities, hospitals, and universities custom-branded lift-sharing schemes, with access to its entire network of UK users. The revenues from these offerings helped fund its consumer offerings, which have always been provided free to individual members. The paying organizations were attracted by the following benefits (<em>Building Motivation Over Time; Financial Incentives</em>).</p>
+<ul>
+<li>Being employers of choice, in part by providing valued staff benefits that saved staff money; saved staff time and stress, from not having to fight for a parking spot, and from being able to share the commute driving; and enabled staff to connect with likeminded car sharers, have more fun while commuting, and make new friends.</li>
+<li>Broadening their potential talent pool by providing access from areas poorly serviced by public transport and sharing time spent driving.</li>
+<li>Accessing the best talent.</li>
+</ul>
+<p>Liftshare was the only car sharing company in the UK with a dedicated customer support team providing training and guidance to both corporate clients and individual users. In addition, it offered its corporate clients a marketing tool kit with free customizable promotional materials, and an annual awareness week event. Many members offered a <em>Guaranteed Ride Home</em> for staff who were not able to arrange a car share. By 2003, Liftshare had 100,000 members. (<em>Overcoming Specific Barriers; </em><em>Vivid, Personalized, Credible, Empowering Communication</em>)</p>
+<p><strong>Growth in the Number of Users and Support Tools Offered to Them</strong></p>
+<p>In 2008, Liftshare launched its <em>myPTP </em>module (my <strong>Personal Trip Planner</strong>) with its business clients - the only journey planner in the UK to provide trip options for car sharing, public transport, walking and cycling in one place. This enabled its users to make informed, independent commuting decisions, based on a wide range of options. (<em>Vivid, Personalized, Credible, Empowering Communication)</em></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="150" src="https://www.youtube.com/embed/WhojkJIcNjo" title="Launch of Personal Travel Plans" width="437"></iframe></p>
+<p><em>Personal Trip Planner</em></p>
+<p>Over time, Liftshare’s focus shifted towards running its own operations rather than marketing. However, according to the organization, “without a clear marketing strategy for each new service, we unsurprisingly found some were not as successful as we had hoped. We learnt our lesson and we now rewrite our marketing strategy every year to keep up with the changes in the demands of our various audiences and the variations in the ways they access information.”</p>
+<p>By 2015 one if its business members, Jaguar Land Rover, had saved over £1 million using the car-sharing service. Demand for Liftshare’s services began growing more quickly.</p>
+<p>By 2016, Liftshare had 700 corporate clients.</p>
+<ul>
+<li>That year, it launched a <strong>Parking Permits module</strong> for organizations with dedicated carshare stalls. The module enables member organizations to print and display a parking permit for their teams.</li>
+<li>In addition, in collaboration with Essex County Council, <em>myPTP</em> travel plans were offered directly to consumers for the first time, targeting residents of new housing developments.</li>
+</ul>
+<p>By 2017, Liftshare had eliminated 500 million miles of driving since its launch in 1998. Two additional modules were launched that year for its corporate clients.</p>
+<ul>
+<li>The <strong>Trip Authenticatio</strong>n <strong>module </strong>enabled these organizations to see each day who was validating their journeys.</li>
+<li>The <strong>Scoping Smart Mobility module</strong> used anonymized staff postal codes to generate a detailed report and interactive map showing potential walking, cycling, public transit, and car-sharing options for each person. This provided wide visibility of commuting barriers and options, calculated potential savings to be had, and helped the organizations with travel planning at scale.  As one example of the benefits of this approach, Cheshire Constabulary found that minor adaptations to local transit routes would allow substantial increases in use by police staff, and enabled the Constabulary to negotiate corresponding changes to transit routes.(<em>Overcomng Specific Barriers</em>)</li>
+</ul>
+<p>In 2018, <strong>Smart Parking </strong>was launched. This module helped clients manage parking more efficiently, tracked who was carsharing, and incentivised carsharing through priority parking and other rewards. It also facilitated monitoring of vehicles that were parked in the priority parking areas, that should not be there. (<em>Overcoming Specific Barriers</em>)</p>
+<p>These tools provided the following additional benefits for corporate clients.</p>
+<ul>
+<li>Monitoring and reducing their carbon footprints related to transportation (decarbonizing the commutes)</li>
+<li>Developing, implementing, monitoring, and achieving sustainable travel plans and their targets</li>
+<li>Reducing parking issues by optimizing use of parking facilities</li>
+</ul>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="150" src="https://www.youtube.com/embed/2FII9i0gTt8" title="Sustainabkle Car Park Management" width="437"></iframe></p>
+<p><em>Sustainable Car Park Management</em> </p>
+<p>By 2019, a dozen corporate clients had 30-40% of their staff ridesharing within a year of joining. Then the COVID epidemic hit and organizations were reluctant to promote carsharing to their staff. The number of carsharing trips per year dropped dramatically.</p>
+<p>From 2020 to 2022, the COVID19 crisis significantly reduced participation in the program, but organizers anticipated a gradual increase in program participation once local shelter-in-place orders were eased.</p>
+<p><strong>Launch of Mobilityways</strong></p>
+<p>In response, during 2020 Liftshare launched a sister brand called <em>Mobilityways</em>, to engage and support larger businesses in encouraging green commuting options to staff returning to the office after the pandemic. <em>Mobilityways </em>enabled employers to evidence, track, plan and change their commuter emissions via a set of tools / modules that worked seamlessly together.</p>
+<ul>
+<li>The <strong>Scoping Smart Mobility module</strong> is described above.</li>
+<li>A new <strong>Travel Survey tool</strong>, enabled corporate clients to build, send and analyse staff travel surveys. These surveys collected data about their staff’s current commuting choices, the barriers staff faced when considering alternative travel options, their receptivity to different options, and what it would take to encourage them to change their travel modes. At launch, these data were used to track modal shifts from pre-COVID, and the commute mode options most likely to be used when returning to the office. The Travel Survey data were automatically transferred into the ACEL module. (<em>Overcoming Specific Barriers</em>)</li>
+<li><strong>Average Commuter Emissions Level (ACEL) </strong>was at the heart of Mobilityways. ACEL is a metric that could be calculated using real-time ‘travel to work’ data from workers via their cell phones. Alternatively, it could be estimated using existing emissions averages for different modes of transport published by the UK’s Department for Environment, Food &amp; Rural Affairs (DEFRA.) ACEL provided a standardized method for benchmarking, setting targets, measuring progress, and comparing emissions over time, across a range of commuting modes, within an organization, between organizations, and compared to industry averages. The Mobilityways’s ACEL module did all this on an ongoing basis, as staff made new travel choices.</li>
+</ul>
+<p>ACEL Certification recognized continuous reductions in commuter emissions towards a net zero goal. Employers who reduced their ACEL by at least 5% in any given year were given tools to help them celebrate and promote their accomplishments internally. (<em>Building Motivation and Engagement Over Time</em>; <em>Feedback; Word of Mouth; Vivid, Personalized, Credible, Empowering Communication</em>)</p>
+<p>The<strong> Personalized Travel Plans tool </strong>enabled corporate clients to send Personalized Travel Plans to their staff, as described above for myPTP. This module tracked their individual barriers and changes in travel mode. (<em>Overcoming Specific Barriers</em>)</p>
+<p>Each Personalized Travel Plan provided individualized recommendations for commute mode, followed up with an incentive and encouragement for switching to a more sustainable mode. (<em>Financial Incentives;</em> <em>Vivid, Personalized, Credible, Empowering Communication)</em></p>
+<p>Stakeholder workshops guided corporate clients through the analysis of their data and provided tailored recommendations. At the workshops, participants were connected with Mobilityways’s network of trusted operators and solution providers. (<em>Vivid, Personalized, Credible, Empowering Communication</em>)</p>
+<p>Small employers located in the same area could share branding and promotion. One example involved 40 employers with about 10 staff each. Their collective data showed enough demand for a new bus route serving their area; the local travel authority agreed and introduced the new route.</p>
+<p>In 2021, Mobilityways began sending an annual travel survey to over 350,000 commuters using its mobile app. Mobilityway promotion focused on the directors, senior managers, and sustainability chiefs of medium and large-sized public and private sector enterprises. It also made use of testimonials from early adopter clients. (<em>Norm Appeals; Vivid, Personalized, Credible, Empowering Communication</em>)</p>
+<p>In 2022, new Mobilityways corporate clients found the system paying for itself within 1.5 months of use. (<em>Financial Incentives</em>)</p>
+<p>As of 2023, Liftshare and Mobilityways had replicated its program at over 700 organizations across the UK.</p>
+<p><strong>Addressing Key Barriers for Corporate Clients</strong><span lang="EN-CA"> </span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid #A8D08D .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #A8D08D;mso-border-insidev:.5pt solid #A8D08D">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="border:solid #70AD47 1.0pt;border-right:none;
+  mso-border-top-alt:solid #70AD47 .5pt;mso-border-left-alt:solid #70AD47 .5pt;
+  mso-border-bottom-alt:solid #70AD47 .5pt;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm"><b><span lang="EN-CA" style='font-family:"Arial",sans-serif;
+  color:white'>Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="border:solid #70AD47 1.0pt;border-left:none;mso-border-top-alt:
+  solid #70AD47 .5pt;mso-border-bottom-alt:solid #70AD47 .5pt;mso-border-right-alt:
+  solid #70AD47 .5pt;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:
+  19.75pt" valign="top">
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm"><b><span lang="EN-CA" style='font-family:"Arial",sans-serif;
+  color:white'>How it was addressed<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:40.9pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;
+  padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top">
+<p class="MsoNormal"><span lang="EN-CA">No   incentive to focus on decarbonizing their staff's commutes</span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-family:
+  Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]--><span lang="EN-CA">Case studies and testimonials demonstrating the profitability   of doing so, and the short payback period</span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:40.9pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top">
+<p class="MsoNormal"><span lang="EN-CA">Lack of knowledge and experience relating   to decarbonizing their staff’s commutes<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-family:
+  Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]--><span lang="EN-CA">Dedicated customer support   team<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;height:40.9pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;
+  padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top">
+<p class="MsoNormal"><span lang="EN-CA">Lack   of knowledge about their staff’s commuting habits, options, and preferences<br/>
+<!--[endif]--></span><span lang="EN-CA"><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-CA">Time,   effort, and cost to find out about their staff’s commuting habits, options,   and preferences</span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-family:
+  Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]--><span lang="EN-CA">Scoping and survey tools</span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4;height:40.9pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top">
+<p class="MsoNormal"><span lang="EN-CA">No standardized method for benchmarking,   setting targets, measuring progress, and comparing emissions over time, across   a range of commuting modes, within an organization, between organizations,   and compared to industry averages.<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-family:
+  Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span lang="EN-CA">ACEL<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:5;mso-yfti-lastrow:yes;height:40.9pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;
+  padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top">
+<p class="MsoNormal"><span lang="EN-CA">Time,   effort and cost required to track and report on greenhouse gas reductions from   changes in their staff’s commuting behavior </span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-CA" style="font-family:
+  Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span lang="EN-CA">ACEL module</span><span lang="EN-CA"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Businesses, communities, hospitals, and universities paid for the lift-sharing services and access to an entire network of UK users. These clients could save money and gain additional benefits, as described above. The revenues from these offerings helped fund the consumer services, which have always been provided free to individual members.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Liftshare tracked the number of journeys and carpoolers and estimated key savings. Mobilityways also tracked CO2 emissions, survey response metrics and key travel mode data.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>ACEL Certification recognized continuous reductions in commuter emissions towards a net zero goal. Employers who reduced their ACEL by at least 5% in any given year were given tools to help them celebrate and promote their accomplishments internally. </p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p> <strong>Individual Commuters</strong></p>
+<ul>
+<li>Individual commuters reported saving an average of £1,000 per year.</li>
+</ul>
+<p><strong>Individual Corporate Clients</strong></p>
+<ul>
+<li>By 2018, one client - Prologis Green Travel - had saved 543 metric tonnes of CO2 and 2.7 million miles of travel</li>
+<li>By 2020, another client - ARUP - had reduced its ACEL from 838 kg CO2/commuter to 602 kg CO2/commuter. Within three months of implementation, 50% of its staff were lift-sharing, resulting in a 28% drop in commuter CO2 emissions and 30% fewer cars parking on-site.</li>
+</ul>
+<p><strong>Overall</strong></p>
+<ul>
+<li>By 2022, Liftshare and Mobilityways was generating 1 million shared trips per month. They had helped over 700 organisations eliminate 250 million miles / 402 million kilometers of commuter travel and avoid the release of 300 million kg / 300,000 tonnes of commuter carbon emissions (averaging 50 million kg / 50,000 tonnes per year).</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p class="MsoNormal"><b><span lang="EN-CA">Author and Landmark Designation<o:p></o:p></span></b></p>
+<p>This case study was written by Jay Kassirer in November 2023. The program described in this case study was designated as a Landmark (best practice) case study by our climate change peer review and selection panel in 2023. Designation recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The Climate Change panel that designated this program consisted of:</p>
+<ul>
+<li>Amjad Abdulaziz Alghamdi, George Mason University Department of Communication</li>
+<li>Madelaine Lemaire and Britta Ng, City of Coquitlam</li>
+<li>Doug McKenzie-Mohr, consultant</li>
+<li>Susan Schneider, consultant</li>
+<li>Brooke Tully, consultant</li>
+</ul>
+<p><strong>Further Reading</strong></p>
+<p class="MsoNormal"><span lang="EN-CA"><a href="http://liftshare.com/uk/about-us">http://liftshare.com/uk/about-us</a><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-CA"><a href="http://www.mobilityways.com/">http://www.mobilityways.com/</a><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-CA"><a href="http://content.mobilityways.com/en/knowledge/mobilityways-admin-user-guide">http://content.mobilityways.com/en/knowledge/mobilityways-admin-user-guide</a><u><o:p></o:p></u></span></p>
+<p class="MsoNormal"><span lang="EN-CA"><a href="http://blog.liftshare.com/reduces-demand-for-parking/mobilityways-the-platform-to-survey-collect-mobility-insights-and-promote-and-incentivise-behaviour-change">http://blog.liftshare.com/reduces-demand-for-parking/mobilityways-the-platform-to-survey-collect-mobility-insights-and-promote-and-incentivise-behaviour-change</a><u><o:p></o:p></u></span></p>
+<p class="MsoNormal"><span lang="EN-CA"><a href="http://myjourneysouthampton.com/media/3321/2021-06-22-making-zero-carbon-commuting-a-reality.pdf">http://myjourneysouthampton.com/media/3321/2021-06-22-making-zero-carbon-commuting-a-reality.pdf</a><u><o:p></o:p></u></span></p>
+<p class="MsoNormal"><span lang="EN-CA"><a href="http://www.zemo.org.uk/news-events/news,postcodes-analysis-shows-potential-of-sustainable-commuting_4248.htm">http://www.zemo.org.uk/news-events/news,postcodes-analysis-shows-potential-of-sustainable-commuting_4248.htm</a><o:p></o:p></span></p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

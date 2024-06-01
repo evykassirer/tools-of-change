@@ -1,0 +1,266 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a></li>
+<li><a href="/en/tools-of-change/peer-support-groups/">Peer Support Groups</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>Donald Kelley, BrainShift Foundation</p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Kendall Foundation</li>
+<li>MassSave</li>
+<li>Mirant Northeast</li>
+<li>National Grid</li>
+<li>NSTAR</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>The majority of second year participants reported reducing hot water temperature, replacing light fixtures and bulbs with more efficient models, and improving insulation and air-sealing. Two in five households said they had purchased green power and replaced a major appliance with a more efficient one.</p>
+<p><strong>Case Study </strong><a href="/userfiles/Energy Smackdown Landmark Case Study June 2012-v2.pdf" target="_blank"><strong>PDF</strong></a></p>
+<p><strong>Webinar </strong><a href="/userfiles/Energy Smackdown TranscriptV2.pdf" target="_blank"><strong>Transcript</strong> </a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Energy Smackdown Uses Game Play to Involve Community Members</h1>
+<p>The Energy Smackdown uses engaging game playing to involve community members in energy conservation, and television and webcasts to make visible the energy-saving efforts of teams of households. The Smackdown is organized into two broad challenges. In the household challenge, participants are evaluated based on their percent reduction in per person CO2 emissions as well as per person carbon footprint. For the team challenge, members of a community or organization work together to expand their impact and organize special challenge events that highlight key issues and raise awareness in the community. This program was designated as a Landmark (best practice) case study by a Tools of Change selection panel in 2010.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program. </em></p>
+<p>Energy Smackdown was developed by Donald Kelley, an expert in interactive technology and game-based approaches, and the founder of the BrainShift Foundation. BrainShift was founded in 2007 to provide educational activities that empower people and organizations to transform their lives and their communities.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The first year of piloting tested the approach with three households over five months. The second year of piloting engaged 120 households in three communities through all four seasons. The third season involved 5,000 households in five communities.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>In October 2007, Kelley launched a five-month pilot program with three households in Medford, Massachusetts. The concept was simple: each household would compete against each other to reduce energy use. </p>
+<p>Households were provided with information and tools to cut their energy use, and were also able to compare their household energy use with those of their competitors. (<em>Norm Appeals</em>) The idea was to help families and communities think about energy use in a holistic way, taking into account personal behaviours as well as their physical living spaces.</p>
+<p>“It’s about learning by doing,” Kelley explained. “Some people think they know this stuff already but it’s not until they actually do it, that they learn.”</p>
+<p>In 2009, BrainShift organized a second pilot involving approximately 120 households from three Boston area communities—Medford, Arlington and Cambridge—and the competition was broadcast on a local cable station as a reality TV series. Episodes of show profiled the competitors, featured home energy audits, and showcased the community events and festivities that took place over the year-long competition. (<em>Mass Media</em>)</p>
+<p>A leadership council—typically consisting of the mayor, other elected officials, volunteer team captains, and representatives from community organizations—was formed in each of the three participating communities. These councils helped identify and recruit participants, guide challenge events and provide teams with support, ranging from public meeting spaces to publicity and outreach.</p>
+<p>The first set of participants chosen was given two weeks to invite friends and neighbors to join them as part of the team challenge. “In two weeks, one household had brought in 25 other households,” Kelley noted. (<em>Norm Appeals; Obtaining a Commitment; Word of Mouth</em>)</p>
+<p>Each participating household received an energy audit to provide a baseline of its energy use and these audits were conducted by MassSave (an initiative sponsored by Massachusetts’ gas and electric utilities and energy service providers) in cooperation with BrainShift’s partner utilities, National Grid and NSTAR. These visits also acted as “energy guides,” educating participants about home energy upgrades and existing incentive and rebate programs. (<em>Home Visit; Vivid, Personalized, Credible, Empowering Communication</em>)</p>
+<p>Households were then given information, energy-saving tips, tools to reduce energy use, prompts and coaching assistance to ensure that teams stayed motivated. (<em>Building Motivation Over Time, Overcoming Specific Barriers, Prompts</em>)</p>
+<p>The household teams competed in both a household challenge and a team challenge. In the household challenge, the object of the game was to cut GHG emissions as much as possible on a per person basis. Six areas were tracked: electricity, heating fuel, pounds of waste produced (not recycling or organics), car use, air travel, and servings of meat (meat is more carbon-intensive than vegetarian food choices).</p>
+<p>“We specifically asked participants to choose changes that they felt they could sustain for a year. We didn’t want people picking something just to ‘game’ the system,” said Kelley. (<em>Obtaining a Commitment</em>)</p>
+<p>The object of the team competition was to earn points based on specific energy-saving actions taken in the home. Teams also worked together within their communities on special challenge events to earn even more points. (<em>Building Motivation Over Time, Norm Appeal</em>s)</p>
+<p>Team challenges included a travel challenge where participants were asked to travel 25 miles using a low-energy method; a light bulb challenge where teams helped their community switch out nearly 1,000 incandescent lights for CFLs; and a Locavore Banquet, where teams prepared and served full-course meals using only locally sourced food. Challenge winners received prizes and awards for their actions. (<em>Incentives</em>)</p>
+<p><strong>Participant Engagement </strong><br/>
+<br/>
+What made Energy Smackdown different from other energy-efficiency initiatives was the use of a game-based model.</p>
+<p>Engaging people in competition and creating a contest had an instant and broad appeal. “Viewers were drawn in by the excitement of competition and learned from their neighbours what steps to take to reduce energy use,” said Kelley. “Watching people saving electricity, that’s like watching moss grow. But entire teams in a head-to-head competition? Now that’s exciting television!” (<em>Mass media, Norm Appeals</em>)</p>
+<p>Kelley wanted Energy Smackdown to create ‘raving fans’ while retaining a spirit of friendly competition. “We didn’t want the kind of intrigue and negativity that you see in shows like The Apprentice. Setting it up in a fun way was the key to helping people make changes.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The budget for the second pilot phase was about $200,000 USD, the bulk of which came from the Kendall Foundation, an anonymous foundation, and the utilities National Grid, NSTAR and Mirant Northeast.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>All actions were recorded on the Energy Smackdown website, allowing participants to track their own personal progress as well as how their competition was doing. (Feedback) </p>
+<p>“The results were tracked for teams and individuals and were confirmed by National Grid and NSTAR,” said Kelley. “We calculated the data as points, which were equivalent to pounds of CO2 reduced. If you saved 10 pounds of CO2, you earned 10 points.”</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>See immediately above</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>In the initial 2007 pilot (three households), the winning household reduced their pounds of CO2 by 63%. “One of the other families involved lived in a 4,000 square foot house and were above the U.S. average in terms of energy use,” said Kelley. “They didn’t think they were doing well at all, yet they still reduced their energy use by 36%.” </p>
+<p>For the 2009 pilot, the results from 10 households in each of the three communities were tracked and analyzed.</p>
+<p>Energy reductions were measured against the baseline taken at the beginning of the measured the baseline based on the previous year’s history and compared the actual figures against that baseline.”</p>
+<p>For example, at the end of Season 2 of the TV show, participants had reduced energy from an average of 14,600 pounds/CO2/year to about 11,000 pounds/CO2/year (a 17% reduction in GHG emissions). By comparison, the U.S. average is 18,880 pounds.</p>
+<p>“Participants gave us examples of how they did it,” said Kelley, “and they also told us that it wasn’t hard. Some participants initially felt that they were doing all they could to reduce energy, but once they got going, they learned that they had underestimated the opportunities.”</p>
+<p>More than 77% of participants reduced the temperature on their hot water heater; 69% replaced light fixtures and bulbs; 54% improved insulation and air sealing; 46% installed aerators and other low-flow fixtures; 38% purchased green power; 38% replaced major appliances for more energy-efficient ones; and 27% air dried their laundry. Average electricity and natural gas use declined by 14% and 17% respectively. On average, car use declined by 10%.</p>
+<p>Team challenges were very popular, with 65% of all participants taking part in at least one of the challenges.</p>
+<p>The program had three corporate partners (the utilities listed above) and 18 local prize sponsors. Energy Smackdown also caught the attention of the media, with 16 print or web articles published, and two television news stories. pilot. “We</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Donald Kelley<br/>
+BrainShift Foundation<br/>
+<a href="mailto:info@brainfound.org?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">info@brainfound.org</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><b>Lessons Learned</b></p>
+<ul>
+<li><strong>Streamline data collection.</strong> “We had glitches with the web-based tool we used for tracking usage and people were very forgiving and went along with our requests to get their data entered properly,” said Kelley. “It’s something we’re working on to make it easier for people to participate.”</li>
+<li><strong>Build organizational capacity.</strong> Kelley admitted that, although many organizations wanted to be involved in the second pilot, the BrainShift Foundation did not have the capacity to support their involvement. Kelley said that future phases of the program will be scaled up to involve more communities and more participants and that they will work with more local environmental committees and utilities so that Energy Smackdown can act as a complementary initiative alongside local efficiency programs.</li>
+<li><strong>Keep community leaders engaged</strong>. Kelley said that one of the key success factors was the engagement of community leaders. “We supported them to organize the competition, which kept it fun for people.”</li>
+<li><strong>Provide incentives and rewards</strong>. Participants in the team challenges had the opportunity to win prizes (e.g., dinner at a local restaurant, bicycles, etc.) but Kelley was quick to point out that big prizes are often not necessary. “People think you need to offer a trip to Hawaii or a car but we didn’t have the resources for that. We did, however, make a big deal out of the prizes that we did offer.”</li>
+<li><strong>Let participants set the tone.</strong> “We listened and responded to participants. Team members had their own ideas of what would make a challenge fun, so we took their ideas and incorporated them.”</li>
+</ul>
+<p> </p>
+<p><strong>Landmark Designation</strong></p>
+<p>The program described in this case study was designated in 2010. Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff, and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Melissa Klein, US EPA’s ENERGY STAR® Program</li>
+<li>Arien Kortland, BC Hydro</li>
+<li>Clifford Maynes, Green Communities Canada</li>
+<li>Stephanie Thorson, Summerhill</li>
+<li>Edward Vine, Lawrence Berkeley National Laboratory</li>
+<li>Dan York, ACEEE</li>
+</ul>
+<p> </p>
+<p>This case study was written in 2012 by Sharon Boddy and Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

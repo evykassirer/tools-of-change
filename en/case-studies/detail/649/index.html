@@ -1,0 +1,322 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>BC Hydro</p><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Significant changes in 25 target behaviours</li>
+<li>46 GWh electricity consumption over six fiscal years.</li>
+</ul>
+<p> </p>
+<p>Webinar<strong> </strong><a href="/userfiles/PowerSmart transcript.pdf" target="_blank">Transcript</a> and <a href="/userfiles/Q&amp;A.pdf" target="_blank">Post-Webinar Q&amp;A</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Power Smart Residential Behavioural Program</h1>
+<p>This program is a great example of applying a “loyalty group” approach to progressively engage participants in changing behaviours. Because electricity and electricity conservation tend to be a low priority for many British Columbians, BC Hydro has connected energy conservation to the things that people care about through an opt-in loyalty model and a focus on story-telling, co-creation, challenges and individualized feedback. Regular communications repeatedly drive participants back to their Members’ Tool Box, which serves as a ‘hub’. Ultimately, the product mix is designed to increase participant engagement levels on three dimensions: affiliation, (“this is who I am”), resonance (“this is right for me”) and enjoyment (“I like this”). Multi-year impact data.  Designated a Landmark case study in 2011.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Low-priority, repetitive behaviours are particularly difficult to promote. People are less interested in doing the behaviours because they are a low priority, and the actions must be developed into new habits that last over time. For these reasons, utilities have traditionally focused on one-time, product-focused actions that residential customers can take – for example, getting rid of a second fridge, insulating a home, or buying more energy efficient appliances.</p>
+<p>BC Hydro, the public utility that provides electricity throughout British Columbia, has a long track record of leadership in evidence-based residential energy conservation programs. In 2007, it conducted a Conservation Potential Review identifying potential electricity savings over a 20 year time horizon, in the residential, commercial and industrial sectors. Repetitive, ongoing behaviours that people could take to habitually save energy within their daily routines without sacrificing their “lifestyle quality” were included for the first time. Examples of these opportunities include maintaining weather-stripping, setting heating and appliance temperatures appropriately, hanging out laundry to dry rather than using an electric dryer, and turning devices off when they are not being used.</p>
+<p>Opportunities for behavioural energy savings were estimated to be between 720 GWh/yr and 1,377 GWh/yr by F2026. As a result of this report BC Hydro started developing a ‘behavioural’ strategy. BC Hydro also assessed the relative importance of key motivators and barriers for targeted energy conservation behaviours and carried out a psychographic customer segmentation analysis.</p>
+<p>As part of the behavioural strategy, the Power Smart Residential Behavioural Program was launched in October of 2008 under the Team Power Smart banner.</p>
+<p>Early program research indicated a strong correlation between a participant household’s recent energy savings and its level of engagement. The program therefore focused on first getting customers to join, and then establishing long-term relationships with participants and deepening their engagement with the program and energy conservation over time. </p>
+<p><img alt="" height="369" src="/userfiles/Image/Map from NRCan.JPG" width="240"/> </p>
+<p><em>Map courtesy of Natural Resources Canada</em></p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>Team Power Smart prioritized its target behaviours based on impact, probability of adoption, and penetration, as articulated by McKenzie-Mohr’s cbsm model (2011). The conservation potential (realistic target) for each behaviour was calculated for each year.</p>
+<p>However, formative research revealed some high-priority shared motivators and barriers across the 25 targeted behaviors. BC Hydro thought these could be addressed cost-effectively together, whereas many of the unique barriers would be harder to overcome and better left until the program was established. It also thought that engaging participants in a range of behaviors would help frame and build momentum for energy conservation and a culture of energy efficiency. Accordingly, BC Hydro first focused its efforts on all 25 targeted behaviours.</p>
+<p><em>Example </em><em>– lowering the heat at night.</em>  For example, BC Hydro wanted more of its residential clients to lower the heat at night – manually or using a programmable thermostat.</p>
+<p>While the program did not set specific measurable objectives for each behaviour, it did set annual targets for the energy reduction to be cumulatively achieved through all of the behaviours, starting at 1.8 GWh for fiscal 2009 (which was a partial year), and rising to 4.9 GWh by 2013.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>BC Hydro has a strong track record of designing its programs based on customer-focused research, which involves province-wide surveys as well as focus groups and contextual customer interviews. For example, surveys with similar wording were used to track motivators and barriers every year from 2007 to 2010, then again in 2012. </p>
+<p><img alt="" height="623" src="/userfiles/Image/Preserve BC FC copy.jpg" width="450"/> </p>
+<p><em>Communications focused on a number of key benefits identified from the research, one of which is pride of province and its natural heritage</em></p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Electricity and electricity conservation tend to be a low priority for many British Columbians, partially because of B.C.’s abundance of resources (hydro) and relatively low electricity rates (among the lowest in North America). BC Hydro therefore connected the topic of energy conservation (low involvement) to the things that people cared about (high involvement) through an opt-in loyalty model as the vehicle to drive long term behaviour change. This model allowed BC Hydro to apply permissive marketing and communicate with participants on a regular basis. It also made billing and actual consumption analysis possible on a participant basis.</p>
+<p>The ultimate ‘product’ of the Behavioural Program was changed behaviours that provide participants with the following benefits:</p>
+<ul>
+<li><em>Tangible benefits</em>, including access to the Members’ Tool Box, challenge participation, special offers, contests, member publications and all other exclusive member perks (i.e. the membership “vehicle”), lower bill</li>
+<li><em>Intangible benefits</em>, incl. protecting the environment/Beautiful B.C., being part of a large unified effort to reduce energy footprint, making home more efficient/comfortable, etc.</li>
+<li><em>Hidden” motives</em>, incl. norm appeal (“doing the right thing”), admiration, comfort, convenience, entertainment, excitement, fun, happiness, health, peace of mind, pleasure, popularity, recognition, romance, sympathy, etc.</li>
+</ul>
+<p>The Team Power Smart membership program was the vehicle to deliver those benefits and help overcome barriers to taking action. Membership had its privileges, including the following product components :</p>
+<ul>
+<li>Convenient access to a Members’ Tool Box on bchydro.com with exclusive online tools and consumption tracking graphs</li>
+<li>Members-only special offers and contests</li>
+<li>Opportunity to participate in 12-month challenges and earn a $75 reward when reducing consumption by 10% or more during each period. In 2014 this was changed to a $50 reward when reducing consumption by 10% or more and a $25 for maintaining a reduced consumption level over the period.</li>
+<li>Regular communications by mail and email</li>
+<li>Free subscription to a member magazine and complimentary consumer magazines with newsstand value</li>
+<li>Invitations to occasional members-only events</li>
+<li>Miscellaneous exclusive offers (“Earthopoly”, Sears Home Tune-up, Blue Box sticker, etc.)</li>
+</ul>
+<p><img alt="" height="354" src="/userfiles/Image/Join TPS Take Challenge FC copy(1).jpg" width="450"/></p>
+<p><img alt="" height="376" src="/userfiles/Image/Earthopoly1.jpg" width="450"/></p>
+<p>Regular communications repeatedly drove participants back to their Members’ Tool Box, which served as a ‘hub’. Ultimately, the product mix was designed to increase participant engagement levels on three dimensions: Affiliation (“This is who I am”), Resonance (“This is right for me”) and Enjoyment (“I like this”). Besides tangible value added member perks, the element of storytelling was strongly anchored in the product mix strategy; it helped make an emotional connection between energy conservation (low involvement) and the things that people cared about (high involvement). It also helped create a “group feeling”.</p>
+<p><img alt="" height="491" src="/userfiles/Image/Engagement.jpg" width="450"/></p>
+<p>The program accepted that for most people energy efficiency is low-involvement, so it connected specific energy-efficiency behaviors with topics people were already passionate about, including health and wellness, food and drink,  life and leisure, family and relationships, home and garden, and gadgets and technology.</p>
+<p><img alt="" height="282" src="/userfiles/Image/Recipes and magazines.JPG" width="450"/></p>
+<p>Below are a few examples of some strategic elements that were applied to the Behaviour Program (Team Power Smart):<span style='font-family: "Garamond","serif"; font-size: 11pt;'> </span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border: currentColor; width: 486pt; margin-left: 5.4pt; border-collapse: collapse; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 480; mso-padding-alt: 0pt 5.4pt 0pt 5.4pt; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext;" width="810">
+<tbody>
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+<td style="padding: 0pt 5.4pt; border: 1pt solid windowtext; width: 63.7pt; mso-border-alt: solid windowtext .5pt;" valign="top" width="106">
+<p class="MsoNormal" style="mso-pagination: none;"><span style='font-family: "Times New Roman","serif"; font-size: 8pt;'>Storytelling</span></p>
+</td>
+<td style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0pt 5.4pt; width: 422.3pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="704">
+<p class="MsoNormal" style="text-indent: -7.2pt; margin-left: 7.2pt; mso-pagination: none; mso-list: l0 level1 lfo1;"><span style='font-family: "Tunga","sans-serif"; font-size: 8pt; mso-fareast-font-family: Tunga;'><span style="mso-list: Ignore;">•<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>  </span></span></span><span style='font-family: "Times New Roman","serif"; font-size: 8pt;'>Because electricity conservation is a “low involvement” product, program design and messaging emphasized connections with people and things that participants already cared about: celebrity spokespersons, home comfort, saving money, British Columbia’s natural heritage, food and cooking, family and friends, etc. A planning grid was developed to highlight, for each behaviour change targeted, the opportunities for making these “high involvement” connections, as well as the key barriers to taking action. This grid was used for developing stories for newsletters, magazines, etc.</span></p>
+<p class="MsoNormal" style="text-indent: -7.2pt; margin-left: 7.2pt; mso-pagination: none; mso-list: l0 level1 lfo1;"><span style='font-family: "Tunga","sans-serif"; font-size: 8pt; mso-fareast-font-family: Tunga;'><span style="mso-list: Ignore;">•<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>  </span></span></span><span style='font-family: "Times New Roman","serif"; font-size: 8pt;'>For similar reasons, and also to provide feedback and strengthen norm appeal, the program emphasized the sharing of personal energy conservation stories – from both average participants as well as celebrity members. These stories were used in testimonial campaigns, collateral and various publications.</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 1;">
+<td style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0pt 5.4pt; width: 63.7pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="106">
+<p class="MsoNormal" style="mso-pagination: none;"><span style='font-family: "Times New Roman","serif"; font-size: 8pt;'>Regular communications</span></p>
+</td>
+<td style="border-width: medium 1pt 1pt medium; border-style: none solid solid none; border-color: currentColor windowtext windowtext currentColor; padding: 0pt 5.4pt; width: 422.3pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="704">
+<p class="MsoNormal" style="text-indent: -7.2pt; margin-left: 7.2pt; mso-pagination: none; mso-list: l0 level1 lfo1;"><span lang="EN-US" style='font-family: "Tunga","sans-serif"; font-size: 8pt; mso-fareast-font-family: Tunga; mso-ansi-language: EN-US;'><span style="mso-list: Ignore;">•<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>  </span></span></span><span style='font-family: "Times New Roman","serif"; font-size: 8pt;'>Prompts/reminders and challenge correspondence were sent to participants by mail and email</span></p>
+<p class="MsoNormal" style="text-indent: -7.2pt; margin-left: 7.2pt; mso-pagination: none; mso-list: l0 level1 lfo1;"><span style='font-family: "Tunga","sans-serif"; font-size: 8pt; mso-fareast-font-family: Tunga;'><span style="mso-list: Ignore;">•<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>  </span></span></span><span style='font-family: "Times New Roman","serif"; font-size: 8pt;'>Besides a popular monthly eNewsletter, Team Power Smart members also received a member magazine three times a year; this member magazine was inserted in well-known consumer magazines to provide additional member value. The member magazine allowed for different “consumption time” of the information (sometimes behind a computer, sometimes leaning back on the couch). Because the selected magazines have coffee-table functionality and high pass-along rates, the inserts helped to increase the visibility of participation (norm appeal) and word of mouth communication. The magazines were selected based on high involvement topics (for example <i style="mso-bidi-font-style: normal;">British Columbia Magazine</i> to tap into existing interests in enjoying and preserving B.C.’s natural heritage and <i style="mso-bidi-font-style: normal;">BC Home</i> to tap into interests in interior design) and contained ‘lifestyle’ stories with built-in energy efficiency components.</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 2;">
+<td style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0pt 5.4pt; width: 63.7pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="106">
+<p class="MsoNormal" style="mso-pagination: none;"><span style='font-family: "Times New Roman","serif"; font-size: 8pt;'>Feedback</span></p>
+</td>
+<td style="border-width: medium 1pt 1pt medium; border-style: none solid solid none; border-color: currentColor windowtext windowtext currentColor; padding: 0pt 5.4pt; width: 422.3pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="704">
+<p class="MsoNormal" style="text-indent: -7.2pt; margin-left: 7.2pt; mso-pagination: none; mso-list: l0 level1 lfo1;"><span lang="EN-US" style='font-family: "Tunga","sans-serif"; font-size: 8pt; mso-fareast-font-family: Tunga; mso-ansi-language: EN-US;'><span style="mso-list: Ignore;">•<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>  </span></span></span><span style='font-family: "Times New Roman","serif"; font-size: 8pt;'>Feedback on consumption and how they’re moving toward their reduction target was available in their Members’ Tool Box (as Smart Meters and In-Home Feedback were deployed, more timely and richer consumption feedback information became available)</span></p>
+<p class="MsoNormal" style="text-indent: -7.2pt; margin-left: 7.2pt; mso-pagination: none; mso-list: l0 level1 lfo1;"><span lang="EN-US" style='font-family: "Tunga","sans-serif"; font-size: 8pt; mso-fareast-font-family: Tunga; mso-ansi-language: EN-US;'><span style="mso-list: Ignore;">•<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>  </span></span></span><span style='font-family: "Times New Roman","serif"; font-size: 8pt;'>Prompts/reminders and challenge correspondence were sent to participants by mail and email</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 3;">
+<td style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0pt 5.4pt; width: 63.7pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="106">
+<p class="MsoNormal" style="mso-pagination: none;"><span style='font-family: "Times New Roman","serif"; font-size: 8pt;'>Exclusivity</span></p>
+</td>
+<td style="border-width: medium 1pt 1pt medium; border-style: none solid solid none; border-color: currentColor windowtext windowtext currentColor; padding: 0pt 5.4pt; width: 422.3pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="704">
+<p class="MsoNormal" style="text-indent: -7.2pt; margin-left: 7.2pt; mso-pagination: none; mso-list: l0 level1 lfo1;"><span lang="EN-US" style='font-family: "Tunga","sans-serif"; font-size: 8pt; mso-fareast-font-family: Tunga; mso-ansi-language: EN-US;'><span style="mso-list: Ignore;">•<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>  </span></span></span><span style='font-family: "Times New Roman","serif"; font-size: 8pt;'>Members-only perks provided exclusive value to members</span></p>
+<p class="MsoNormal" style="text-indent: -7.2pt; margin-left: 7.2pt; mso-pagination: none; mso-list: l0 level1 lfo1;"><span lang="EN-US" style='font-family: "Tunga","sans-serif"; font-size: 8pt; mso-fareast-font-family: Tunga; mso-ansi-language: EN-US;'><span style="mso-list: Ignore;">•<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>  </span></span></span><span style='font-family: "Times New Roman","serif"; font-size: 8pt;'>A limited edition of “Earthopoly” (based on Monopoly) was developed exclusively for Team Power Smart (with B.C. properties, customized tokens and “Energy Waster” and “Energy Saver” cards instead of the well-known “Chance” and “Community Chest” cards). The Board game was made available to members at a discounted price.</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 4;">
+<td style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0pt 5.4pt; width: 63.7pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="106">
+<p class="MsoNormal" style="mso-pagination: none;"><span style='font-family: "Times New Roman","serif"; font-size: 8pt;'>Co-creation</span></p>
+</td>
+<td style="border-width: medium 1pt 1pt medium; border-style: none solid solid none; border-color: currentColor windowtext windowtext currentColor; padding: 0pt 5.4pt; width: 422.3pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="704">
+<p class="MsoNormal" style="text-indent: -7.2pt; margin-left: 7.2pt; mso-pagination: none; mso-list: l0 level1 lfo1;"><span style='font-family: "Tunga","sans-serif"; font-size: 8pt; mso-fareast-font-family: Tunga;'><span style="mso-list: Ignore;">•<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>  </span></span></span><span style='font-family: "Times New Roman","serif"; font-size: 8pt;'>Co-creation opportunities were offered at varying degrees of effort required. An example is the annual members-only photo contest generating motivational photographs illustrating why members joined Team Power Smart and that are used in collateral, member publications, advertising, exhibitions, etc. By participating, members were saying both that they were willing to get personally involved with conservation as a cause (resonance) and that they were willing to have their images associated with the product (affiliation). Co-creation was also applied when creating stories for member publications and in testimonial advertising campaigns.</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 5; mso-yfti-lastrow: yes;">
+<td style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0pt 5.4pt; width: 63.7pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="106">
+<p class="MsoNormal" style="mso-pagination: none;"><span style='font-family: "Times New Roman","serif"; font-size: 8pt;'>Endorsements</span></p>
+</td>
+<td style="border-width: medium 1pt 1pt medium; border-style: none solid solid none; border-color: currentColor windowtext windowtext currentColor; padding: 0pt 5.4pt; width: 422.3pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="704">
+<p class="MsoNormal" style="text-indent: -7.2pt; margin-left: 7.2pt; mso-pagination: none; mso-list: l0 level1 lfo1;"><a name="_Toc292962704"><span style='font-family: "Tunga","sans-serif"; font-size: 8pt; mso-fareast-font-family: Tunga;'><span style="mso-list: Ignore;">•<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>  </span></span></span><span style='font-family: "Times New Roman","serif"; font-size: 8pt;'>The marketing tool of celebrity endorsements was applied by utilizing a roster of local celebrities that supported Team Power Smart (unpaid)</span></a></p>
+<p class="MsoNormal" style="text-indent: -7.2pt; margin-left: 7.2pt; mso-pagination: none; mso-list: l0 level1 lfo1;"><span style="mso-bookmark: _Toc292962704;"><span style='font-family: "Tunga","sans-serif"; font-size: 8pt; mso-fareast-font-family: Tunga;'><span style="mso-list: Ignore;">•<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>  </span></span></span><span style='font-family: "Times New Roman","serif"; font-size: 8pt;'>Word-of-mouth was encouraged, where members acted as ambassadors and recommended the program to their friends and neighbours</span></span></p>
+<p class="MsoNormal" style="text-indent: -7.2pt; margin-left: 7.2pt; mso-pagination: none; mso-list: l0 level1 lfo1;"><span style="mso-bookmark: _Toc292962704;"><span style='font-family: "Tunga","sans-serif"; font-size: 8pt; mso-fareast-font-family: Tunga;'><span style="mso-list: Ignore;">•<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>  </span></span></span><span style='font-family: "Times New Roman","serif"; font-size: 8pt;'>The program was executed with the help of many different partners, including manufacturers, retailers, Royal B.C. Museum, Science World, etc. By collaborating (incl. providing prizing for contests, discounts, venue, joint promotions, etc.) these partners identified themselves with Team Power Smart and thus endorsed the program</span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal" style="mso-pagination: none;"><span style='font-family: "Times New Roman","serif";'> </span></p>
+<p class="MsoNormal" style="mso-pagination: none;"><span style='font-family: "Times New Roman","serif";'><img alt="" height="300" src="/userfiles/Image/Clothes Pegs New(1).jpg" width="450"/></span></p>
+<p class="MsoNormal" style="mso-pagination: none;"><em>Picture of branded clothespegs submitted by a Team Power Smart member</em></p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Each month, program management reviewed an updated dashboard of key performance metrics including membership growth, challenge participation and performance, energy savings, financial performance, engagement levels, and member satisfaction. A trend report was created every quarter.</p>
+<p>BC Hydro conducted formal program impact evaluations for each fiscal year. To estimate energy savings, it compared the amount of energy used in participating households before and after the fiscal year using a quasi-experimental design. Participant and comparison households are pair matched on region, dwelling type, main space heating fuel, and rate group before being matched on annual consumption in the pre-program year. About 50,000 participating households were successfully pair matched each year. Changes in consumption for the participating households are compared with changes in consumption for the comparison households. This evaluation approach used only consumption and customer information in the Corporation’s billing system; it did not use surveys, thereby avoiding the possibility of self reporting and selection bias. </p>
+<p>BC Hydro monitored behaviour changes through surveys, with separate samples of participants and non-participants. Such surveys introduce the likelihood of some self- reporting and selection bias. However, these data were triangulated with energy savings data from BC Hydro’s formal program impact evaluations.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Program participants could track progress towards their challenge goals, using the Member Toolbox.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>The following diagram shows the increasing number of people who undertook challenges in each year of the program including 2nd and 3d challenges (shown in light green and blue).</p>
+<p><img alt="" height="228" src="/userfiles/Image/2014 challenges to date.jpg" width="450"/></p>
+<p>Participants got more successful at saving energy in their challenges, as shown by the following pie charts. The chart on the left is for fiscal 2009 and the pie chart on the right  is for fiscal 2014/2015. The dark green pie segment show the percentage of people who were successful with their 10% challenges, while the light green segments are those who had some savings but less than 10%.</p>
+<p><img alt="" height="134" src="/userfiles/Image/2014 challenge success.JPG" width="450"/></p>
+<p>Survey data suggest that participants gained the bulk of their evaluated savings through changes in four main groups of behaviors: space heating, space cooling, laundry, and dishwashing. Team Power Smart members tended to outperform non-members across the full spectrum of in-home conservation behaviours. Although some differences are relatively small in percentage points, nearly all are statistically significant.</p>
+<p><em>Example – lowering the heat at night. </em> For example, at the 2009 baseline only 63% of households always or usually turned down the temperature at night manually or using a programmable thermostat. By 2012 that had increased to 71% for non-members and to 79% for members (about twice the increase as for non-members.)</p>
+<p>As a result of these behaviour changes, Team Power Smart reduced electricity consumption by 46 GWh from fiscal 2009 to the end of fiscal 2015. Further, average energy savings per year increased, with the share of completed challenges resulting in savings rising from 41% in October 2008 to ~65% in fiscal 2014. Although the largest savings came from households undertaking their first challenges, significant savings were also been realized by those in their second and third challenges and these savings also increased each year.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>For questions about this program please send an email to: <a href="mailto:teampowersmart@bchydro.com?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website">teampowersmart@bchydro.com</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Landmark Designation</strong></p>
+<p>The program described in this case study was designated in 2011.</p>
+<p>Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are scored by a peer selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Devin Causely, Federation of Canadian Municipalities</li>
+<li>Melissa Klein, US EPA’s ENERGY STAR® Program</li>
+<li>Arien Kortland, BC Hydro</li>
+<li>Doug Mckenzie-Mohr, McKenzie-Mohr Associates</li>
+<li>Edward Vine, Lawrence Berkeley National Laboratory</li>
+<li>Dan York, ACEEE</li>
+</ul><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

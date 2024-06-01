@@ -1,0 +1,355 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/peer-support-groups/">Peer Support Groups</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>CDP</li>
+<li>The Climate Group</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>We Mean Business Coalition</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>2019: 211 member companies purchasing 87 TWh of renewable energy annually</li>
+</ul>
+<p> </p>
+<p><strong>Case Study PDF</strong></p>
+<ul>
+<li><a href="/userfiles/RE-100 V3.pdf">PDF</a></li>
+</ul>
+<p><strong>Reports</strong></p>
+<ul>
+<li><a href="http://there100.org/" target="_blank">http://there100.org/</a></li>
+<li><a href="http://media.virbcdn.com/files/5c/aa8193f038934840-Dec2019RE100ProgressandInsightsAnnualReport.pdf   " target="_blank">http://media.virbcdn.com/files/5c/aa8193f038934840-Dec2019RE100ProgressandInsightsAnnualReport.pdf </a></li>
+</ul>
+<p><a href="http://media.virbcdn.com/files/5c/aa8193f038934840-Dec2019RE100ProgressandInsightsAnnualReport.pdf   " target="_blank"> </a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>RE100</h1>
+<p> <iframe height="auto" src="https://www.youtube.com/embed/zLpUJqnEHE0" width="97%">
+</iframe></p>
+<p>RE100 is a global, collaborative initiative that is accelerating a shift in corporate energy purchasing to reduce global carbon emissions and buy energy from renewable sources.  Members commit to public disclosure of progress, with third-party verification providing social proof and accountability. Participation also involves inter-company comparisons and norming to a common goal of 100% renewable electricity. High-profile external public relations events enhance value for membership and sustain pressure for member companies to keep commitments, thereby ensuring persistence of campaign impacts. Designated a Landmark Case Study in 2019.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em><strong>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</strong></em></p>
+<p>RE100 brought together influential businesses committed to using 100% renewable electricity. It was led by two international not-for-profit organizations, the Climate Group and CDP, as part of the We Mean Business coalition. RE100 was created to accelerate the transformation of the global electricity market and the transition to a cleaner economy. It was launched at Climate Week NYC 2014, with founding members IKEA Group and Swiss Re. The initiative expanded quickly, first across Europe and into North America, then India and China, and then Japan, Taiwan, South Korea and Australia. Members had operations all over the world and in a wide range of industries, from telecommunications and IT to cement and automobile manufacturing</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>Member companies committed to sourcing 100% renewable electricity globally in the shortest possible timeline (by 2050 at the latest.) By December 2019, three quarters of members targeted 2030 at the latest.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Companies in the commercial and industrial sector account for approximately two thirds of the world’s end-of-use of electricity. To make a big shift towards renewably sourced energy, the largest electricity users had to be engaged. This led to the concept of a membership-based group of large, influential companies from a wide range of sectors.</p>
+<p>Member surveys indicated that the main drivers for participation were:</p>
+<ol>
+<li>Need to manage greenhouse gas emissions</li>
+<li>Corporate social responsibility</li>
+<li>Economics of renewable energy (cost savings and managing long-term risks)</li>
+</ol>
+<p>In 2019, two additional drivers emerged – 87% of members said they were responding to customer expectations and 76% percent said they were responding to stakeholder requests.</p>
+<p><strong>Targeting the Audience </strong></p>
+<p><strong> </strong>The program’s primary audience was large, influential businesses. Its secondary audiences included policy makers, investors and suppliers.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The Climate Group focused on switching electricity demand to renewables and leveraging the voice of committed companies to transform the global energy market and accelerate the transition to a clean economy. The RE100 initiative increased corporate demand for, and in turn supply of, renewable energy, using the following approaches.</p>
+<ul>
+<li>Pushing companies to make ambitious and influential public commitments towards sourcing 100% renewable electricity over the shortest possible timeline and by 2050 at the latest (<em>Goal Setting; Norm Appeals; Obtaining a Commitment</em>)</li>
+<li>Bringing together corporate leaders of companies committed to sourcing 100% renewable electricity to share tactics and influence faster pace and ambition in peers globally (<em>Building Motivation and Engagement Over Time; Peer Support Groups; Word of Mouth</em>)</li>
+<li>Setting the bar for corporate leadership on renewable electricity, holding members to account, and celebrating their achievements encouraging others to follow (<em>Feedback and Recognition, Norm Appeals</em>)</li>
+<li>Communicating the compelling business case for renewables to companies, utilities, market operators, policymakers, and other key influencers (<em>Vivid, Personalized, Credible, Empowering Communication</em>)</li>
+<li>Highlighting any barriers to realizing the business and economic benefits of renewable electricity as reported by RE100 members; and working with RE100 members, in partnership with others, to target and address policy and market barriers to corporate sourcing of renewable electricity (<em>Overcoming Specific Barriers</em>)</li>
+</ul>
+<p>Member companies in RE100 set a public goal to source 100% of their global electricity consumption from renewable sources by a specified year. They also disclosed their electricity data annually, and The Climate Group and CDP (a third-party verification NGO) reported on their progress.  Through RE100, members shared lessons learned and best practices, identified collaboration opportunities, and called for faster market change. The Climate Group also encouraged member companies to explore other business commitments (e.g. EV100 on electric transport and EP100 on smart energy use).  (<em>Building Motivation and Engagement Over Time; Feedback</em>)</p>
+<p>RE100 member companies had to progress towards their 100% commitment in line with the program’s Technical Criteria. Companies were also encouraged to take part in the campaign activities, to share knowledge with peers, inspire others to follow, and publicly advocate for the clean energy revolution.  The initial goal of RE100 was that by 2020, 100 of the world’s largest businesses would have committed to 100% renewable power.  Once that was achieved, the goal became accelerating change towards zero carbon grids, at a global scale. Electricity generated from biomass (including biogas), geothermal, solar, water and wind were all considered to be renewable energy sources.</p>
+<p>The Climate Group and CDP highlighted the business and reputational benefits enjoyed by companies who made the commitment to use power exclusively from renewable energy sources.  Together they helped companies who wished to switch to renewable power by providing guidance on selecting and implementing the best approaches, and information on the financial implications, risks and rewards of different options.</p>
+<ul>
+<li>Technical and market reports on renewable energy</li>
+<li>Press releases</li>
+<li>Case Studies</li>
+<li>Annual reports</li>
+<li>Member Webinar Series, with archives. The following are some examples of topics covered.
+    <ul>
+<li>Sustainability Leadership Standard for Solar PV Modules  o	Risk management for corporate renewable energy PPAs</li>
+<li>How to Go Renewable in your Australian Operations</li>
+<li>The RE-Source Corporate Buyers' Toolkit  o	How to optimize on-site energy across your commercial building portfolio</li>
+</ul>
+</li>
+<li>Members’ meetings, often held as part of conferences and other events, provided an opportunity to network, learn from peers and identify collaboration opportunities, including Climate Week NYC, Europe’s annual Re-Source events, and the Renewable Energy Buyers’ Association summits.</li>
+</ul>
+<p><strong>Overcoming Barriers to Action</strong></p>
+<p>Survey responses provided by members showed that external factors were the main barriers to progressing toward their RE100 commitments.</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:17.4pt;border-collapse:collapse;mso-table-layout-alt:fixed;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:1184;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:.5pt solid windowtext;
+ mso-border-insidev:.5pt solid windowtext">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;page-break-inside:avoid">
+<td style="width:51.0pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="68">
+<p class="MsoNormal" style="mso-pagination:widow-orphan lines-together;
+  page-break-after:avoid;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-family:"Minion Pro",serif;
+  mso-bidi-font-family:Arial;mso-bidi-language:#0400'>Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="width:158.4pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="211">
+<p class="MsoNormal" style="mso-pagination:widow-orphan lines-together;
+  page-break-after:avoid;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-family:"Minion Pro",serif;
+  mso-bidi-font-family:Arial;mso-bidi-language:#0400'>Detail and Solution<o:p></o:p></span></b></p>
+<p class="MsoNormal" style="mso-pagination:widow-orphan lines-together;
+  page-break-after:avoid;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-family:"Minion Pro",serif;
+  mso-bidi-font-family:Arial;mso-bidi-language:#0400'> </span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;page-break-inside:avoid">
+<td style="width:51.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="68">
+<p style="margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+  0cm;text-align:justify"><span style='font-size:10.0pt;
+  font-family:"Minion Pro",serif;mso-bidi-font-family:Arial'>Cost<o:p></o:p></span></p>
+</td>
+<td style="width:158.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="211">
+<p style="margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+  0cm;text-align:justify"><span style='font-size:10.0pt;
+  font-family:"Minion Pro",serif;mso-bidi-font-family:Arial'>According to the   2019 Progress and Insights Reports, the high cost of renewably-sourced energy   was the top barrier – about 85% of respondents said this was “important” or   “very important.” As renewable energy costs fell, the business case for   making the switch strengthened. Over time, while some RE100 companies still   reported cost as a barrier in some locations, many were sharing actual and   anticipated cost savings. The RE100 initiative collected such stories which   were then amplified to global audiences by The Climate Group.<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;mso-yfti-lastrow:yes;page-break-inside:avoid">
+<td style="width:51.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="68">
+<p style="margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+  0cm;text-align:justify;mso-pagination:widow-orphan lines-together;page-break-after:
+  avoid"><span style='font-size:10.0pt;font-family:"Minion Pro",serif;
+  mso-bidi-font-family:Arial'>Gov’t Policy and market structure<o:p></o:p></span></p>
+</td>
+<td style="width:158.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="211">
+<p style="margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+  0cm;text-align:justify;mso-pagination:widow-orphan lines-together;page-break-after:
+  avoid"><span style='font-size:10.0pt;font-family:"Minion Pro",serif;
+  mso-bidi-font-family:Arial'>Lack of necessary government support, and market   structure were also key barriers. Examples of how RE100 members addressed   these issues are provided immediately below.<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong><br/>
+Influencing Suppliers</strong></p>
+<p>Members demonstrated leadership through their value chains. 44% of responding companies were engaging with their suppliers in 2018 (up from 36% the year before), with an additional 17% planning to do so in the next two years. As well as encouraging more companies to switch to renewable power, this also helped to bring the initiative to new geographies and new types of companies.</p>
+<p><strong>Addressing Policy Barriers</strong></p>
+<p>RE100 also helped its members to influence related local government policies.  For example, in June 2019, 20 major RE100 companies (19 Japanese companies in addition to Apple) signed a ground-breaking call to action to their policy makers to accelerate the switch to renewable electricity. They called on the government to make renewable energy competitively priced to reach 50% of electricity use by 2030 (rather than 22-24%, which was the country’s target at that time.)</p>
+<p>In the EU, in partnership with RE-Source, RE100 secured two key clauses in the EU Clean Energy Package specifically requiring the removal of barriers to power purchase agreements in all European states and improving consideration of Guarantees of Origin. The RE100 team helped roll these out in all EU states in 2019. In addition, 11 RE100 members scrutinized the draft National Energy and Climate Plans submitted by member states, to make sure that they removed barriers to corporate renewable energy sourcing.</p>
+<p>The Republic of Korea cited RE100 as a reason contributing to its introduction of a new certification system to enable companies to buy and track renewable energy.    </p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Reported program impacts were based on the quantity of energy purchased, according to member reporting. The RE100 reporting process was managed by CDP through its flagship disclosure platform which allowed CDP to verify submitted data against RE100’s technical criteria. Members reported on their progress to CDP on an annual basis via a reporting spreadsheet and questionnaire. They also provided information on their renewable energy sourcing strategies, options and technologies.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Annual public reporting and promotion activities provided feedback on group achievements and enabled inter-company comparisons.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Individual Participants</strong></p>
+<p>According to the 2019 RE100 annual report, at that point one in three members were already sourcing over 75% renewable electricity, and almost half of those over 50%. As noted in the 2018 annual report, this put them far ahead of the global average of 26.5% and ahead of leading countries such as Spain (33.7%) or the UK (26%). By December 2019, more than 30 members had already met their 100% goals.</p>
+<p>The average amount of electricity used per year per company in 2018 was 1.2 TWh (188 TWh/155 companies) with renewable consumption of 0.46 TWh per year per company on average. That is 460,000,000 kWh per year per company on average.</p>
+<p><strong>Overall</strong></p>
+<p>As of December 2019, 211 companies had joined RE100 representing $5.4 trillion in combined revenue. Members’ operations spanned more than 140 markets. They came from all sectors, from telecommunications and IT, to cement and automobile manufacturing.</p>
+<p>The amount of electricity purchased / used by member companies in 2018 was 228 TWh - comparable to total electricity demand for the countries of Indonesia or South Africa. Their consumption of renewable energy was 87 TWh (87,000,000,000 kWh), 72 TWh in 2017, and 51 TWh in 2016.</p>
+<p>Since the Climate Group launched RE100 at Climate Week NYC 2014, the initiative expanded first in the US, Western and Northern Europe. Then membership grew in new regions where the renewables market was less mature, such as Japan and Australia. Those new commitments sent out a strong market demand signal that encouraged more companies with operations in these countries to also decarbonize their electricity consumption.</p>
+<p>The Climate Group’s activities in South Korea with US and EU based companies prompted the government to launch a new renewable electricity market instrument (Green Price), which allowed companies access to renewable energy. RE100 was named specifically in the government announcement (NOTE: this article is in Korean, but Google translate provides an accurate translation to English.)</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Kristin Hanczor <br/>
+The Climate Group<br/>
+<a href="mailto:khanczor@theclimategroup.org?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> khanczor@theclimategroup.org </a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><em>The Climate Group</em> is an independent, not-for-profit organization working to inspire and catalyze leadership for a Clean Revolution: a low carbon future that is smarter, better and more prosperous for all. Launched by Rt Hon Tony Blair and 20 CEOs/VIPs in 2004, we work internationally with a coalition of member companies, states, regions, cities and public figures. We inspire leaders by communicating a compelling narrative for change; we equip them by delivering evidence of success; and work in partnership with them in driving transformative change. For more information please see: www.theclimategroup.org For more information about RE100 in the US contact Kristin Hanczor, The Climate Group. khanczor@theclimategroup.org</p>
+<p><em>CDP</em> is an international, not-for-profit organization providing the only global system for companies and cities to measure, disclose, manage and share vital environmental information. CDP works with market forces, including 722 institutional investors with assets of US $87 trillion, to motivate companies to disclose their impacts on the environment and natural resources and take action to reduce them. CDP now holds the world’s largest collection of primary climate change, water and forest risk commodities information and puts these insights at the heart of strategic business, investment and policy decisions. For more information please see:  www.cdp.net</p>
+<p><strong>Landmark Designation</strong></p>
+<p>The program described in this case study was designated in 2019.</p>
+<p>Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Arien Korteland, BC Hydro</li>
+<li>Kathy Kuntz, Kanndo Consulting</li>
+<li>Doug McKenzie-Mohr, McKenzie-Mohr Associates</li>
+<li>Sea Rotmann, Sustainable Energy Advice Ltd.</li>
+<li>Brian Smith, Pacific Gas and Electric Company</li>
+<li>Reuven Sussman, American Council for an Energy-Efficient Economy</li>
+<li>Marsha Walton, New York Energy Research and Development Authority</li>
+</ul>
+<p> </p>
+<p> </p>
+<p>This case study was written in 2020 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

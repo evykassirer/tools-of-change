@@ -1,0 +1,269 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/school-programs-that-involve-the-family/">School Programs that Involve the Family</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Natural Resources Canada</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Young Drivers of Canada</li>
+<li>The Canadian Safety council</li>
+<li>Transport Canada</li>
+<li>Health Canada</li>
+<li>Environment Canada</li>
+<li>Canadian Automobile Association</li>
+<li>General Motors</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Key fuel-efficient driving practices increased by more than 20%</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Auto$mart Program for Canada's Novice Drivers</h1>
+<p>The Auto$mart Student Driver Education Program provides driving educators across Canada with a classroom kit that helps them teach student drivers how to drive more safely while saving money and protecting the environment. The kit includes a video, an interactive CD-ROM and driver instructor materials. The course materials explain how informed decisions regarding car purchases (e.g., what type and model), operating habits (e.g., following posted speed limits), and maintenance (e.g., regular tune-ups) can improve fuel economy while reducing greenhouse gas emissions.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>Natural Resources Canada (NRCan) has recognized that driving depletes Canada's natural resources and increases pollution. With a population of 30 million people, automobile ownership in Canada had risen from 13 million vehicles to 17 million between 1996 and 2001. These cars were also being driven more frequently and for farther distances, elevating the amount of fuel used and the pollution caused by vehicles, even though manufacturers had increased fuel efficiency and reduced waste byproducts of combustion.</p>
+<p>The 1997 Kyoto Protocol heightened international pressure on industrialized nations, like Canada, to reduce their per capita contribution to global pollution. The Canadian government, therefore, committed itself to reducing carbon dioxide levels in the atmosphere.</p>
+<p>NRCan's Office of Energy Efficiency began a public information campaign called Auto$mart in 1996. Auto$mart encouraged the public to make sound decisions about vehicle purchases, driving habits and vehicle maintenance and its educational materials were distributed free of charge to the general public.</p>
+<p>In 1997, Auto$mart implemented a Student Driver Program to teach the Auto$mart content to novice drivers through driver education programs. At the time, approximately one-half of Canadian student drivers (approximately 300,000 students annually) were paying to take some form of driver education.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The course materials provided in the Auto$mart Student Driver Kit were designed and tested using focus groups with driver educators and student drivers from across Canada. In addition, representatives from Young Drivers of Canada, the Canadian Safety Council, Transport Canada, Health Canada, Environment Canada and the Canadian Automobile Association participated in a National Task Force that was actively involved in the development of the kit.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong><em>The Auto$mart Student Driver Kit</em></strong></p>
+<p>The Auto$mart Student Driver Program was delivered through fee-based student driver education programs, and its Driver Kit was only available to driver educators. The kit included a 40-minute video, an interactive CD-ROM (content same as the video), and instructor materials. Results from a random survey showed that driver educators spent around 30-60 minutes covering the materials in the classroom during their driver education programs.</p>
+<p>The kit was geared to a young audience, although older student drivers taking the programs also received the instruction. Driver educators were able to obtain free publications to distribute as handouts to students through NRCans toll-free energy publications line (1-800-387-2000). Three publications were particularly helpful: the Auto$mart Guide, the annual Fuel Consumption Guide, and a Car Economy Calculator.</p>
+<p><strong><em>Distributing the Student Driver Kits</em></strong></p>
+<p>NRCan began by seeking provincial champions and stakeholders who had direct links to driver educators, and who were prepared to help promote the availability of the kit. These intermediaries included government agencies responsible for student driver education programs, driver educator associations, and related interest groups. To generate additional awareness of the kit, government representatives attended driver educators conferences and workshops. Early feedback from focus group sessions reported that most driver educators were eager to incorporate the materials into their existing programs. Driver educators found that the material was value-added information that helped teach young drivers how to stay safe on the road, and showed drivers how to save money and play a role in reducing the impact of vehicles on the environment.</p>
+<p>By 2001, the Auto$mart Student Driver Kit was being used by more than 1,000 driver educators, and more than 270,000 students had participated. NRCan required participating driver educators to provide ongoing data on their program enrollments.</p>
+<p><strong><em>Messages</em></strong></p>
+<p>The Driver Program informed users:</p>
+<ul>
+<li>how to drive efficiently,</li>
+<li>when to drive (when you cannot walk or use public transit),</li>
+<li>how to buy and maintain a vehicle with fuel efficiency in mind, and</li>
+<li>that what's good for your car is also good for your wallet, the environment and clean, healthy air. However, for some students, cost savings were not a motivator because their parents paid for the gasoline (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives</a>).</li>
+</ul>
+<p>Most of the fuel-efficient driving techniques taught through the Auto$mart program also contributed to safer driving, and were therefore consistent with the existing course curricula (<a href="/en/tools-of-change/school-programs/">School Programs that Influence the Home</a>).</p>
+<p>The key information provided is summarized below.</p>
+<p>Car Purchases</p>
+<ul>
+<li>NRCan's Fuel Consumption Guide provides fuel consumption information and allows consumers to compare makes and models in order to choose the most fuel-efficient vehicle to meet their needs.</li>
+<li>The choice of options, such as power windows and seats and manual versus automatic transmission, can affect fuel consumption.</li>
+</ul>
+<p>Operating Habits</p>
+<ul>
+<li>Speeding, rapid starts and stops, idling, air conditioning, and loaded roof racks all increase fuel use. The first two are also safety hazards.</li>
+</ul>
+<p>Vehicle Maintenance</p>
+<ul>
+<li>Keeping tire pressure to recommended levels, and adhering closely to the Motor Vehicle Manufacturers Recommended Maintenance Schedule, reduces fuel used and improves car reliability, vehicle life and safety.</li>
+<li>The average persons car emits three times its weight in carbon dioxide each year. The same vehicle, poorly maintained, produces even more (<a href="/en/tools-of-change/communication/">Vivid, Personalized Communication</a>).</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>NRCan spent $800,000 to conduct national qualitative, quantitative and technical research, and to develop the interactive CD-ROM, video, and instructor materials. This amount did not include any funding for marketing the program or for program staff salaries at NRCan. General Motors contributed $20,000 towards final production costs of the kit.</p>
+<p>Second and third year funding for the program dropped significantly due to the fact that development and production of the kit had already taken place related costs represented the bulk of the initial years budget. In the two subsequent years, the budget covered warehousing and mail out costs. The focus shifted to securing provincial partners who acted as champions for the program and agreed to promote the kit to the network of driver educators.</p>
+<p>In 2001-2002, NRCan allocated $175,000 as well as more staff time to the project. This allowed for additional research (see Getting Informed) and promotion to driver educators (particularly through NRCan's participation at regional and provincial workshops.)</p>
+<p>An educational resource of this type would have been market valued at $75-$100 at the time. The kit, however, was provided for free to underline the importance of promoting knowledge about the issue of fuel efficiency and climate change.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>At the end of 1997, an evaluation of the program was completed by the Traffic Injury Research Foundation (TIRF) (Evaluation of the Auto$mart Student Driving Program: Impact on Knowledge, Attitudes and Behaviour). Over 450 students participated in the evaluation. Students who received the training were tested to determine the degree of change in their knowledge, attitudes, and self-reported behavior. Their results were compared to a control group of students who did not receive the kits coursework.</p>
+<p>In 2001-2002, NRCan planned to carry out new survey work with student drivers to measure retention of the information provided, and the degree of understanding about the link between fuel consumption and vehicle use (i.e., buying, driving and maintenance practices). A second survey was to be administered to driver educators that had used the kit between 1999-2000, to determine the amount of time they had spent teaching the subject of fuel efficiency in the classroom.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>On average, participants reported that fuel-efficient driving behaviours had increased by 5-10%, and by more than 20% for the key practices that were stressed. Knowledge of fuel economy improved by 13%. Key attitudes towards fuel efficient and fuel-efficient driving improved by 20%.</p>
+<p>Students were very interested in the information about how to identify fuel-efficient vehicles for purchase. Female students seemed to be the most concerned and motivated.</p>
+<p>Some unanticipated results of the program were the use of the curriculum by other youth educators. For example, the Canadian Department of National Defense used the kit in their in-house training of their young recruits.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Catherine Ray, Natural Resources CanadaEmail: <a href="mailto:cray@nrcan.gc.ca">cray@nrcan.gc.ca</a></p>
+<p>This case study was written by Christine McKay, formerly with the United States Department of Energy. Ms. McKay has worked on energy efficiency, renewable energy and sustainable development issues for more than ten years. As a freelance consultant and project/program developer, her work focuses on developing partnerships that create synergistic solutions to complex problems, particularly those related to climate change. She can be reached at her office in Atlanta, GA at (404) 255-2696. Her email is <a href="mailto:chrstnmckay@aol.com">chrstnmckay@aol.com</a>.</p>
+<p>Funding for the addition of this case study was generously provided by the Government of Canada's Climate Change Action Fund, Suncor, Syncrude, Enbridge Consumers Gas and TetraPak Canada.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Notes:</strong> <br/>
+The interactive CD ROM had not been used to the degree anticipated due to a lack of computer equipment and classroom time.</p>
+<p>Kits have been provided to student driver school associations in other countries, on a case-by-case basis.</p>
+<p><strong>Tools and Additional Information available through the Auto$mart Program</strong></p>
+<p>(Note: Publications are also available in French.)</p>
+<ul>
+<li>Car Economy Calculator is a tool that helps car owners keep track of their vehicle's fuel consumption. The calculator helps motorists figure out fuel savings and alerts them to maintenance problems associated with increased fuel consumption.</li>
+<li>EnerGuide Label for Vehicles appears on its own or is combined with the vehicle options and price label on the side window of each new vehicle. The fuel consumption ratings and estimated annual fuel costs allow consumers to effectively compare vehicles as they make their purchase decision and choose the most fuel-efficient vehicle for their needs.</li>
+<li>The Fuel Consumption Guide complements the EnerGuide Label for Vehicles. It provides a complete listing of fuel consumption ratings, making it easier to compare the efficiency of new cars, vans, light-duty trucks and special-purpose vehicles.</li>
+<li>Auto$mart Guide is a 72-page booklet that provides simple tips on how to shop, drive and keep a car in top shape to minimize fuel consumption costs and reduce its impact on the environment.</li>
+<li>NRCans toll-free energy publications line 1-800-387-2000</li>
+</ul>
+<p>Internet Sites include: <br/>
+<a href="http://www.oee.nrcan.gc.ca/vehicles">www.oee.nrcan.gc.ca/vehicles</a> <br/>
+<a href="http://www.oee.nrcan.gc.ca/energuide%20%3Ewww.oee.nrcan.gc.ca/energuide%3C/a%3E%3Cbr%3E%3Ca%20href=">www.sasked.gov.sk.ca/curr_inst/iru/bibs/update00/drivered.html#autosmart</a> <br/>
+<a href="http://www.solutions.ca/thechangestartshere/english/auto_e.htm">www.solutions.ca/thechangestartshere/english/auto_e.htm</a> <br/>
+<a href="http://www.nrcan.gc.ca/css/imb/hqlib/9803b.htm">www.nrcan.gc.ca/css/imb/hqlib/9803b.htm</a> <br/>
+<a href="http://autosmart.nrcan.gc.ca/home_E.htm%20%3Ehttp://autosmart.nrcan.gc.ca/home_E.htm%3C/a%3E%20%3Cbr%3E%3Ca%20href=">http://autosmart.nrcan.gc.ca/pubs/autoeng.htm</a></p>
+<p><strong>The Future of the Program</strong></p>
+<p>As of 2001, NRCan was researching the possibility of putting its main messages in the basic operators handbooks provided by each province to driving candidates, and of having corresponding questions in the provincial driver licensing exams. It was also investigating how to incorporate the Student Driver Kit into secondary school environmental science or life skill curriculums. NRCan planned to place the Auto$mart Student Driver Education Program market research and evaluations, once completed, on their web site (<a href="http://%20www.oee.nrcan.gc.ca/vehicles">www.oee.nrcan.gc.ca/vehicles</a>).</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

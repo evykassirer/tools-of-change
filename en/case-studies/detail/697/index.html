@@ -1,0 +1,295 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>ETH Zurich (Department of Management, Technology, and Economics)</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Amphiro AG (an ETH Zurich spin-off company)</li>
+<li>ewz</li>
+<li>Swiss Federal Office of Energy</li>
+<li>University of Lausanne (Faculty of Business and Economics)</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Shower times, energy consumption and water consumption all dropped by 20-22%</li>
+</ul>
+<p> </p>
+<p><strong>Handouts</strong> </p>
+<p><a href="/userfiles/Shower Feedback case study.pdf" target="_blank">PDF</a> of this case study</p>
+<p>Webinar <a href="/userfiles/Shower_Conservation_Transcript.pdf" target="_blank">Transcript</a>   </p>
+<p><a href="http://cocoa.ethz.ch/downloads/2013/07/1611_Contrasting the effects of real-time feedback SSES Neuchatel 2013.pdf" target="_blank">Research paper</a>: Contrasting the effects of real-time feedback on resource consumption between single- and multi-person households</p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Shower Feedback in Switzerland </h1>
+<p>The Shower Feedback program provides households with real-time feedback on one specific, energy-intensive behaviour: showering.  Participants receive smart shower meters that display feedback on the individual’s energy and water consumption in the shower in real time.  On average, participants cut their shower time by an average of roughly 20%, which reduced related water and energy consumption by about the same amount. This program was designated a Tools of Change Landmark case study in 2016. </p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing <em><u><strong>as is the case with this particular program.</strong></u></em></p>
+<p>In Switzerland, in 2012, water heating was the second largest residential energy end use (after space heating), and showering accounted for more than 80% of hot water demand. Other feedback programs, which provided information about one's own or other people's behaviour, had not focused on hot water conservation in general, and shower behaviour in particular, where the majority of hot water was consumed.</p>
+<p>The Shower Feedback pilot program was designed to promote showering behaviour that reduced energy and water use by providing engaging, non-judgmental feedback. Using smart shower meters, the program gave people real-time information on energy and water consumption.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>ETH Zurich reviewed other feedback programs, to understand the barriers, benefits, and drawbacks, and determine what lessons could be applied in future energy conservation programs. It found that individuals:</p>
+<ul>
+<li>Had a poor understanding of how much energy and water they used</li>
+<li>Had comfort concerns over low-flow showerheads</li>
+<li>Were often not very responsive to price increases for electricity because it was usually a small part of their budget.</li>
+</ul>
+<p>ETH Zurich found that most feedback programs consisted of monthly or quarterly reports that were mailed to households, leading to substantial time lags in collecting data. While these types of interventions did influence consumer behaviour on a large scale, programs worked best when feedback was delivered frequently, in a timely and clear manner, and when it focused on specific actions.</p>
+<p>It also found that programs that required or encouraged a specific conservation goal, or ones that provided an overwhelming number of energy reduction tips, were less effective than programs that simply provided real-time feedback.</p>
+<p>The ewz-Amphiro-study was carried out under the lead of researchers of ETH Zurich's Department of Management, Technology, and Economics, in close collaboration with ewz, researchers from the University of Lausanne's Faculty of Business and Economics, and the ETH Zurich spin-off company Amphiro AG.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>In 2012, ETH Zurich recruited 697 households from the utility company, ewz. Participants were chosen from a larger sample of 5,000 customers who had previously completed the ewz Study on Smart Metering.</p>
+<p>A survey was first conducted to characterize the sample population. It included questions about environmental attitudes and habits.</p>
+<p>"It was an opt-in program," explained Dr. Verena Tiefenbeck, Department of Computer Science, Bits to Energy lab, ETH Zurich. (<em>Obtaining a Commitment</em>) "We limited the program to one- and two-person households because, back in 2012, the devices had a smaller memory and we were afraid they might not be able to store all the shower data for the entire study."</p>
+<p>Since all of the households chosen had already participated in a previous smart metering study, they received the smart shower meter as a 'thank you' gift.</p>
+<p>The households then installed the devices. "It was very simple to install in any shower with a handheld showerhead, which most people have in Switzerland," said Tiefenbeck. "You could do it without any tools." The shower meter hung at eye level, providing easy to read information. (<em>Prompts, Overcoming Specific Barriers</em>)</p>
+<p><img alt="Shower Installation Diagram" height="438" src="/userfiles/Image/Shower Installartion Diagram.jpg" width="350"/></p>
+<p><em><span style="font-size:8.0pt">The devices were simple to install at home.</span></em><span style="font-size:8.0pt"><o:p></o:p></span></p>
+<p>During the baseline period (first ten showers), all of the shower meters displayed water temperature only. Post-baseline, the three device versions displayed different feedback content.</p>
+<p>For both treatment groups, the shower meter displayed the current water temperature, and how much water and energy had been used since the water was turned on. One of the treatment groups was also given information on the previous shower. Meters used by the control group displayed only water temperature throughout the two-month study (to indicate that the device was working), but did not receive feedback on resource consumption. All data were stored on the devices.</p>
+<p><img alt="Shower Meter" height="476" src="/userfiles/Image/Device.jpg" width="350"/></p>
+<p class="MsoNormal" style="text-align:justify"><em><span style="font-size:8.0pt">For both treatment groups, the shower meter displayed the current water temperature, how much water and energy had been used since the water was turned on, and a short animation of a polar bear standing on an ice flow.</span></em></p>
+<p>One of the treatment groups also got additional information on energy efficiency ratings. In Europe, equipment energy efficiency is rated A through G. "When they started their shower, they usually started out in energy efficiency class A+ and then, as the shower took longer, they moved towards B, then C and so on," said Tiefenbeck. (<em>Feedback</em>)</p>
+<p>In both treatment groups, meters also showed a short animation of a polar bear standing on an ice flow. "It might have been more controversial in other countries but most people responded positively," said Tiefenbeck. "If you took a really long shower, the ice flow shrank and eventually the animation would disappear." (<em>Vivid Communications)</em></p>
+<p>By targeting showering as a single activity, ETH Zurich was able to provide concrete and actionable information on that activity. "We provided the information in real time so that people saw that feedback as they took their showers, while they could still do something about it," said Tiefenbeck. (<em>Building Motivation Over Time</em>)</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The Swiss Federal Office of Energy supported the research activities of this study, while ewz funded the study devices.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>ETH Zurich recruited 697 households from a larger sample of 5,000 customers who had previously opted-in to complete the ewz Study on Smart Metering. To verify if these opt-in customers might be more environmentally concerned than an average customer, ETH Zurich surveyed participants before and after the study and compared their environmental attitudes with a representative group from Switzerland.</p>
+<p>Households were randomly assigned to three experimental conditions—two treatment groups and one control group—each of which received a different version of the smart shower meter.</p>
+<p>During the baseline period (first ten showers), all of the shower meters displayed water temperature only. Post-baseline, the three device versions displayed different feedback content.</p>
+<p>"We assigned households to different groups randomly and compared how the different groups did, over time," said Tiefenbeck.  "For the first 10 showers, people in all three groups only saw water temperature. They didn’t get any feedback, yet, on energy or water consumption."</p>
+<p>After the tenth shower, ETH Zurich began the intervention phase. Two-thirds of the households saw how much energy and water they were using in their current showers (both treatment groups); one-third continued to see only water temperature (control group). This enabled the researchers to tell what changes were driven by seasonal factors and which were driven by the feedback itself.</p>
+<p>The device doesn’t need a battery; from the water flow it harvests the energy needed to power the screen and on-board computer.</p>
+<p>The meters were water-powered. "From the water flow, the meter harvested the energy needed to power the screen and on-board computer," Tiefenbeck explained. "You could use it for years without having to replace any batteries. It also meant that as soon as you turned on the water, the screen automatically activated ... people don’t need to press a button. It is there every time they take a shower." (<em>Overcoming Specific Barriers, Prompts</em>)</p>
+<p><img alt="Water powers the Shower Meter" height="528" src="/userfiles/Image/Water Flows Through.jpg" width="450"/></p>
+<p><em><span style="font-size:8.0pt">The devices were powered by water so they were always on when people took their showers.</span></em><span style="font-size:8.0pt"><o:p></o:p></span></p>
+<p>"Data collection was the most cumbersome part of the study because back then we had to ask the participants to ship back the devices to us after the study so that we could read the data," said Tiefenbeck. "The new generation of devices can now transfer the data to the participant’s smartphone via Bluetooth connection. From there, it is easy to send to us."</p>
+<p><img alt="Phone app " height="227" src="/userfiles/Image/Phone App.jpg" width="450"/></p>
+<p><em><span style="font-size:8.0pt">The new generation of devices can now transfer the data to the participant’s smartphone via Bluetooth connection. </span></em><span style="font-size:8.0pt"><o:p></o:p></span></p>
+<p>The study collected survey data (before and after the intervention), and resource consumption measurements in the shower. The meters stored data from every shower taken throughout the two-month study period.</p>
+<p>At the end of the study, participants shipped their devices back (postage paid) for the data readout and to complete the final survey.</p>
+<p>Almost all participants (98.3%) shipped their devices back and 636 of the devices (95.5%) were read successfully. The resulting dataset was 45,664 showers. Nearly as many households (666, or 95.5%) filled out the final survey. In all, 626 households (90%) provided all of the required information.</p>
+<p>The individual datasets were merged, anonymized, analyzed, and prepared for dissemination in peer-reviewed journals, international conferences, and local workshops.</p>
+<p>The first shower taken by each household was excluded from the study, because preliminary analysis of the data found that these first showers deviated significantly from typical patterns for temperature and volume.</p>
+<p>"A rather large fraction of participants simply turned on the water after the installation of the device to check its functionality and display content, without taking an actual shower," Tiefenbeck explained.</p>
+<p>Regression analysis showed little difference in shower energy use at baseline between the three groups. This indicated that the sample had been successfully randomized.</p>
+<p>Outside temperatures remained relatively stable throughout the study period and there was no particular trend (up or down) that might have explained a drift towards higher or lower water consumption or temperature over time. The treatment groups’ energy and water consumption was compared to the control group to adjust for seasonal effects and ensure internal validity of the study.</p>
+<p>Since the meters measured and stored water consumption and average water temperature, the minimum amount of energy was calculated by multiplying the amount of water used with the temperature gradient. The difference between the cold-water temperature and the average shower temperature was the minimum temperature.</p>
+<p>"Essentially, that gave us the energy consumption if the heating system was 100% efficient," explained Tiefenbeck. "To calculate realistic values we asked the participants what kind of heating system they had and we took average values on a country level. In Switzerland, we knew exactly what percent of households used gas, electricity, or oil to heat their water and the average efficiency for each of these fuel sources. We plugged those numbers into the calculation of the actual, average energy being consumed per shower."</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>ETH Zurich found that participants barely adjusted the flow rate or the water temperature once they received feedback. Instead, they cut their shower time by an average of roughly 20%, which reduced water consumption by 21%.</p>
+<p><img alt="Effect of Real Time Feedback on Shower Behavior" height="362" src="/userfiles/Image/Graph.png" width="450"/></p>
+<p>Relative to the control group, both treatment groups reduced energy consumption in the shower by 22%, a yearly savings of 452 kWh for the average 2.1-person household. As noted earlier, participants came from the same pool of households that had previously taken part in an electricity smart metering study. In that program, participants had reduced electricity use by only 86 kWh per year, one fifth as much as in the shower intervention.</p>
+<p>In addition to its direct impact on behaviour, real-time consumption feedback also appeared to substantially increase knowledge about resource consumption.</p>
+<p>"Information on shower energy and water use among the general population was not readily available," said Tiefenbeck. "In fact, this study is one of the first ones to quantify that in detail. But the results show that the intervention was particularly effective for participants with a high baseline level of water consumption."</p>
+<p>For an average household, the device paid for itself within nine months from savings on the energy and water bill. For the case of a large-scale rollout by a utility company, there was a negative abatement cost of $234 (USD) per ton of CO2 abated. Furthermore, by targeting households with above-average baseline consumption, ETH Zurich believed that the treatment effect could be doubled to further raise the cost-effectiveness of future deployments.</p>
+<p>"Our fixed-effects model does not indicate any evidence of a weakening of the effect size over the two-month study period," said Tiefenbeck. She also noted that other studies with the same devices and longer time spans (usually 3-6 months) showed similar results.</p>
+<p>One 16-month study with 50 households in Singapore indicated that the effects were still stable in the longer run. The impact evaluations also showed that the savings were not driven by a small group of environmentalists; the net conservation effect was independent of environmental attitudes.</p>
+<p>"We have replicated the studies in The Netherlands, Germany, Switzerland, and Singapore," said Tiefenbeck. "Across countries and different cultural settings, the effects were almost always as large as in the first study. That gave us reassurance that this would work in very different settings."</p>
+<p><img alt="Map of replicated studies" height="251" src="/userfiles/Image/Map.png" width="450"/></p>
+<p>If the savings observed in the study were applied to all of the 40,000 Swiss households that were given the devices, annual energy savings would be about 80 gigawatt hours, and annual water savings would be almost 300 million litres.</p>
+<p>In terms of public acceptance, "The response we have had has been quite positive," said Tiefenbeck. "You may say that those who opted-in might be particularly receptive, but we have run the study now in nine hotels in Switzerland and in Germany. There, we did not have opt-in participants. People just came to the hotel room and the device was there. Yet, even in these situations, the savings were almost as large as in households, and the vast majority of people really liked having the devices."</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Dr. Verena Tiefenbeck<br/>
+Department of Computer Science<br/>
+ETH Zurich<br/>
+<a href="mailto:vtiefenbeck@ethz.ch?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> vtiefenbeck@ethz.ch</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons learned </strong></p>
+<p><em>Focused interventions</em></p>
+<p>This study focused on a single behaviour, showering. "The study shows that this narrow focus on a specific activity can have a much larger impact than a typical smart-metering program," said Tiefenbeck.</p>
+<p><em>Have a control group</em></p>
+<p>In the first showers, the control group (the people who only saw water temperature throughout the entire study) slightly increased their consumption at first. The same was true for the treatment groups.</p>
+<p>"We think that’s because participants at the beginning of the study knew they were being observed. After a while, their behaviour stabilized at what we think was their usual behaviour, whereas at the beginning they took shorter showers," said Tiefenbeck. "This highlights that it’s really important to have a control group."</p>
+<p><em>Specific conservation goals don't always work</em></p>
+<p>In follow-up studies in other jurisdictions, ETH Zurich gave participants a specific conservation goal, i.e., so many litres of water or a certain amount of energy to reduce.</p>
+<p>"A lot of people do respond quite well to these savings goals, but it can also create some negative reactions," said Tiefenbeck. She explained that, for example, some people balked at being told what to do. In addition, people who washed their hair one day and not the next would need to use different amounts of water on different days.</p>
+<p>"It’s hard to come up with a particular number, and most participants came up with their goals on their own," she said. "We asked people after this study if they had set a goal for themselves and the vast majority of them did that automatically."</p>
+<p> </p>
+<p><strong>Landmark Designation</strong></p>
+<p>The panel that designated this case study consisted of:</p>
+<ul>
+<li>Arien Korteland from BC Hydro</li>
+<li>Doug McKenzie-Mohr of McKenzie-Mohr Associates</li>
+<li>Brian Smith from the Pacific Gas and Electric Company</li>
+<li>Marsha Walton from the New York State Energy, Research and Development Authority</li>
+<li>Dan York of ACEEE</li>
+</ul>
+<p> </p>
+<p>This case study was wrtitten in 2018 by Jay Kassirer and Sharon Boddy.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

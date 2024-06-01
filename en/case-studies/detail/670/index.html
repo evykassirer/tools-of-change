@@ -1,0 +1,636 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>Swedish Road Administration, national authority responsible for road transport system in Sweden</p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Stockholm County Council regional planning and traffic unit</li>
+<li>Stockholm Transport</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Traffic decreased by 20 % across the toll cordon</li>
+<li>Congestion was reduced by 30-50% on  arterials</li>
+<li>About half of the “disappearing” drivers  changed to transit</li>
+<li>Emissions in the  inner city decreased by 10-14%</li>
+<li>Net social benefit of 65 million €/year</li>
+</ul>
+<p> </p>
+<p>Case Study <a href="/userfiles/Stockholm Congestion Pricing - FINAL 2014.pdf" target="_blank">Handout</a></p>
+<p>Webinar <a href="/userfiles/Stockholm Transcript.pdf" target="_blank">Transcript</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Stockholm Congestion Pricing</h1>
+<p>The Stockholm congestion charge is a tax levied on vehicles entering and exiting the inner city. After a seven-month trial, followed by a referendum, the charges were made permanent and the traffic reductions of 20% have held constant ever since. This case study features strong, ongoing impact data.  It is a rare example of introducing then removing and then reintroducing an intervention. It speaks to the importance of timing referendums after rather than before trials or pilots, and to the dynamics of shifting public opinion. It also shows that congestion pricing can be popular, work well, and generate significant additional funds for municipalities. Designated a Landmark case study in 2013.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The City of Stockholm is the largest of the municipalities within Stockholm County, an area consisting of 25 municipalities with a total population of about two million.</p>
+<p>Stockholm was built on a harbour, bordered on all sides by lakes, which meant that most commuters into the city had to cross very congested bridges. Despite a good public transportation system and a relatively small population, Stockholm's traffic congestion was on par with that of London or Paris.</p>
+<p>In 2006, the county of Stockholm had nearly 2,000,000 residents, of which almost half a million lived in the inner city. Of the approximately 320,000 people employed in the inner city, more than 210,000 of them commuted from outside the inner city.</p>
+<p>Prior to the congestion charges, the cordon around the inner city was crossed by 530,000 vehicles and 800,000 transit passengers each day. </p>
+<p><img alt="Map of Sweden showing Stockholm" height="581" src="/userfiles/Image/Sweden map2.PNG" width="450"/></p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The primary objectives of the system were to reduce congestion, increase accessibility and improve the environment.</p>
+<p>The purpose of the trial period (see below) was to test whether the overall efficiency of the city's traffic system could be enhanced by congestion charges. Its objectives were to:</p>
+<ul>
+<li>Reduce traffic volumes on the busiest roads by 10-15%</li>
+<li>Improve traffic flow on streets and roads</li>
+<li>Reduce emissions harmful to human health</li>
+<li>Improve the urban environment</li>
+<li>Provide more resources for public transport.</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The theoretical case for congestion charging had been established many years before and the idea had been hotly debated in Stockholm since the early 1990s.</p>
+<p><strong>Barriers</strong></p>
+<p>The main barriers to congestion charging were public and political opposition. The Mayor of Stockholm, for example, made a campaign promise not to introduce congestion charges; one political leader said at the time that  congestion charging was "the most expensive way ever devised to commit political suicide."</p>
+<p>Many feared that:</p>
+<ul>
+<li>License plate numbers would be misidentified</li>
+<li>People would not know of the need to pay or how to pay the charge, resulting in court appeals or refusals to pay.</li>
+<li>The system would favor wealthier, inner city residents and punish lower-income people living outside the city.</li>
+</ul>
+<p>Despite these objections, a trial period was demanded by Sweden's Green Party during the 2002 federal election in exchange for its support for a national social-democratic government.</p>
+<p><strong>Segmenting by primary motivation</strong></p>
+<p>Stockholm used regression analysis to study survey responses regarding people’s attitudes towards climate, congestion and congestion pricing. It found two main groups of citizens. One group (the environmental group) primarily wanted to decrease traffic for environmental reasons – to mitigate climate change and improve local air quality. The other group (the transport efficiency group) focused more on congestion reduction, increased allocation efficiency, and so on. These seemed to be two distinct groups, so the key to getting public support was making sure that there was support from both of these groups.</p>
+<p><strong>Traffic Forecasting </strong></p>
+<p>Between March 2003 and February 2004, Transek, a small research consultancy hired by the Swedish Road Administration, researched, designed and planned the system. Transek tested multiple traffic forecasting models to determine how such charges would impact, among other things, public transit, traffic congestion and air quality. Most models predicted a traffic decrease of about 16%.</p>
+<p>There was no room on any of the city's bridges to build toll booths, so the idea of individual vehicle transponders linked directly to bank accounts was proposed.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The system design was simple. It would consist of a single charging cordon around the inner city with various control points. The same amount of money would be charged at all points of entry, in both directions, and for both morning and afternoon peak periods. (<em>Financial incentives / disincentives</em>)</p>
+<p><strong>Trial period (pilot)</strong></p>
+<p>The system was tested from January to July 2006. The year before—to accommodate an expected increase in public transit use—the city had extended its public transit services, purchased new buses and increased its park-and-ride capacity.</p>
+<p>On the very first day, the impact was obvious—20% of Stockholm's inner city traffic simply "disappeared." People had switched their travel habits—either choosing different times, destinations or modes, or opting not to make those trips at all. That same reduction would continue and remain steady throughout the seven-month trial.</p>
+<p>Once the trial was completed, the charges were temporarily abolished and traffic congestion returned to almost pre-trial levels.  Referenda to keep or abolish the charges were held in Stockholm and 14 of the 25 neighbouring municipalities, resulting in a narrow majority (53%) in favour of keeping the charges.</p>
+<p><strong>Full-scale system</strong></p>
+<p>The permanent system was restarted in August 2007. The Stockholm congestion charging system consisted of a toll cordon around the inner city, thereby reducing traffic through the bottlenecks located at the arterials leading into the inner city. The area encompasses the entire Stockholm city centre.</p>
+<p>Eighteen unmanned electronic control points were established at all entrances into the cordon and the tax was applied on both the entry and exit of the area.</p>
+<p><img alt="" height="305" src="/userfiles/Image/Central_Toll_Area(1).JPG" width="450"/></p>
+<p>The cost of passing the cordon, in any direction, on weekdays was:</p>
+<ul>
+<li>€2 (~$2.90 CAD) during peak hours (7:30-8:30 am / 4-5:30 pm)</li>
+<li>€1.5 (~$2.20 CAD) 30 minutes before and after the peak periods, and</li>
+<li>€1 ($1.45 CAD) during the rest of the period  6:30 am to 6:30 pm.</li>
+</ul>
+<p>The total charge per day was capped at €6 (~$8.70 CAD).  There was no charge for evenings, weekends or holidays, and exemptions were given for emergency, transit and other government vehicles, as well as for those with disabled parking permits. (<em>Financial incentives / disincentives</em>)</p>
+<p>A tag and beacon system was initially used. Each vehicle was equipped with a transponder that registered the vehicle's passing. For vehicles without a transponder, license plates were photographed using automatic number plate recognition (ANPR) technology and cross-referenced with Sweden's National Vehicle Registry to record the charge.</p>
+<p>It had been anticipated that the ANPR identification rate would be about 50-60%, but after making some improvements to the system, the identification rate was actually about 97%. Due to this high degree of efficiency, the transponder system was abolished in 2008.</p>
+<p>Thanks to the successful trial period public support for the charges increased, eventually reaching about 70% support in 2011. (<em>Building motivation over time</em>) </p>
+<p><img alt="" height="350" src="/userfiles/Image/400px-1_4_18_(Swedish_road_sign)_svg.png" width="350"/></p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Funding was provided by the National Transportation Agency. The system cost roughly $215 million CAD to install, although the National Transportation Agency says that if it had to do it a second time they probably could build it for less than half that cost. It takes $10 million CAD a year to operate.  Average annual revenues are about $107 million CAD, giving the system a simple payback of about two years.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The evaluation was divided into three different levels:</p>
+<ol>
+<li>A comprehensive evaluation, consisting of more than 30 different evaluation projects. This level was designed as a comparison between the before (spring and autumn 2005) and during (spring 2006) periods.</li>
+<li>Selected monthly indicators to monitor changes over time.</li>
+<li>The "go live" evaluation, which showed the effects directly after the introduction of the congestion charges.</li>
+</ol>
+<p>The comprehensive evaluation included a data analysis of travel patterns and road traffic, as well as the system's quantitative effects on:  public transport, pedestrian and bicycling traffic, parking, road safety, air quality, noise, trade, regional economy, Stockholm citizens’ experience of the urban environment, distribution hauling, impact for taxis and courier services, and attitudes towards congestion taxes.</p>
+<p>Attribution of the observed impacts to the pricing policy was strengthened because the congestion charges were introduced, then abolished right before the referendum, then later reintroduced (Reversal Design.)</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>During the trial, the results of the pricing system were immediately apparent. Photographs of one of the most congested arterials appeared in Stockholm's major media showing traffic the day before the trial and the first day of the trial. Thousands of vehicles had "disappeared" from the roads. Such a vivid example helped negate the opposition's assertions that the system wouldn't work and helped to turn people's opinions in favour of keeping the charges.</p>
+<p><img alt="" height="319" src="/userfiles/Image/Less traffic.PNG" width="450"/></p>
+<p><em>The program used vivid images in mass media to highlight the congestion reductions.</em></p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Traffic decreased by about 20% across the toll cordon and congestion decreased by 30 – 50%.</p>
+<p><strong>Traffic Changes</strong></p>
+<p>Traffic decreased by about 20% across the toll cordon, or the equivalent of 100,000 passages over the charge cordon during the congestion period each day. The decrease led to congestion reductions of about 30-50% on the arterials, and inner city emission decreases of between 10% and 14%.  Travel time variability also decreased significantly. For example, if you need to choose your departure time in order to be on time for an important meeting, then you need to choose your departure time with respect to the maximum travel time rather than the mean one. The decrease in travel time variability was as much appreciated by the population as the reduced average travel times.</p>
+<p>About half of the “disappearing” drivers changed to transit, the rest to other alternatives such as different departure times and destinations, fewer trips, etc.</p>
+<p>Attribution of the observed impacts to the pricing policy was strengthened because the congestion charges were introduced, abolished right before the referendum, then later reintroduced (Reversal Design.) In the following table, the red bars represent the time periods during which congestion pricing was in place, and the blue bars indicate when it wasn’t in place. Traffic levels dropped immediately during the trial period, returned towards initial levels once the pricing was abolished, then dropped again and stayed roughly level once congestion pricing was reintroduced. </p>
+<p><img alt="" height="255" src="/userfiles/Image/Decrease in traffic.JPG" width="450"/></p>
+<p><em>Reversal Design: traffic levels dropped immediately during the trial period, returned towards initial levels once congestion pricing was abolished, then dropped again and stayed roughly level once congestion pricing was reintroduced.</em></p>
+<p><strong>Public Support</strong></p>
+<p>The Royal Institute of Technology conducted repeated surveys of public attitudes. Public support for the charges was lowest just before the trial, increased dramatically once the trial began and has remained consistently high at roughly 70% thereafter. This is pattern that has also been seen in London, Oslo, Singapore, Milan and Rome.  People are very negative at first, but that shifts once they see the benefits and get used to things.</p>
+<p><img alt="Support for Congestion Charges" height="296" src="/userfiles/Image/Support.PNG" width="450"/></p>
+<p><em>Public support for the charges was lowest just before the trial, increased dramatically once the trial began and has remained consistently high since.</em></p>
+<p><img alt="" height="276" src="/userfiles/Image/Support.JPG" width="450"/> </p>
+<p>All driver categories supported the congestion charges after the trial period.</p>
+<p>The net social benefit of the congestion charges was pegged at about €65 million/year (~$94 million CAD). Beyond the revenues provided by the charges, social benefits were also measured in terms of the value of</p>
+<ul>
+<li>Shorter and more reliable travel times</li>
+<li>Lower GHG emissions</li>
+<li>Improved health and environmental impacts</li>
+<li>Increased traffic safety, and</li>
+<li>Increased public transit revenues.</li>
+</ul>
+<p>None of the objections that people had to the system materialized. ANPR technology eliminated false plate identifications and people understood how to pay the charges. Calculations also showed that lower income people were not disproportionately affected; in fact, just the opposite was true.  Wealthier people living in the inner city paid more in congestion charges than residents in any other geographic area.</p>
+<p>Further details: A cost-benefit analysis is available in  Eliasson, J. (2009) A cost-benefit analysis of the Stockholm congestion charging system. Transportation Research A 43(4), pp. 468-480. doi:10.1016/j.tra.2008.11.014.  </p><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p>Drivers responded to the congestion charge roughly as predicted by transport forecasting models. The main barrier was public and political opposition. There were several reasons for the huge swing in opinion. Some the more commonly mentioned are:</p>
+<ul>
+<li><em>The technical system worked.</em> That the system worked from the start was of course a key factor. The number of misidentifications was extremely low, and from users’ perspectives, everything worked seamlessly. Further, the Road Administration made great efforts to develop a customer-friendly system.</li>
+<li><em>The information campaign worked. </em>Apparently, people knew what to do. Anticipated problems with people who did not know that they should pay, or did not know how to pay, did not materialise. Moreover, the anticipated problem of protests in the form of large number of court appeals or refusals to pay was never a problem. in spite of a lot of talk before the trial about “civil disobedience” in the form of refusal to pay or appealing to court.</li>
+<li><em>Visible congestion reduction.</em> The improvements in travel times and the urban environment were visible right from the start. The astonishment of seeing almost empty streets during rush hours, in particular during the first months, cannot be stressed enough. After that, the potency of road pricing had been overwhelmingly proved, and the negative arguments shifted from “it won’t work” to other, often more constructive, arguments.</li>
+<li><em>Extensive and scientific evaluation.</em> Even if effects were visible, one should stress the importance of being able to supply media with hard figures about the reduction of traffic volumes and congestion. Especially when the debate recovered somewhat from the initial shock caused by the enormous initial effects, it was extremely important to have professional, independent researchers and experts, coming from different backgrounds and organisations, being able to explain and evaluate what was happening. The size of the evaluation was itself an important factor: so many experts and researchers were involved in one way or another that it was impossible to wave it away.</li>
+<li><em>Clear objectives. </em>The system had clear and measurable objectives – reducing congestion and improving the environment in the inner city – and the system was visibly designed with these objectives in mind. Moreover, the objectives were fulfilled.<!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:TrackMoves />
+<w:TrackFormatting />
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF />
+<w:LidThemeOther>EN-CA</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+<w:SplitPgBreakAndParaMark />
+<w:DontVertAlignCellWithSp />
+<w:DontBreakConstrainedForcedTables />
+<w:DontVertAlignInTxbx />
+<w:Word11KerningPairs />
+<w:CachedColBalance />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math" />
+<m:brkBin m:val="before" />
+<m:brkBinSub m:val="&#45;-" />
+<m:smallFrac m:val="off" />
+<m:dispDef />
+<m:lMargin m:val="0" />
+<m:rMargin m:val="0" />
+<m:defJc m:val="centerGroup" />
+<m:wrapIndent m:val="1440" />
+<m:intLim m:val="subSup" />
+<m:naryLim m:val="undOvr" />
+</m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" Priority="34" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-qformat:yes;
+mso-style-parent:"";
+mso-padding-alt:0pt 5.4pt 0pt 5.4pt;
+mso-para-margin:0pt;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Calibri","sans-serif";
+mso-fareast-font-family:Calibri;}
+</style>
+<![endif]--></li>
+<li><span lang="EN-US">Having to pay for something that used to be free is never popular, and some people will be worse off – especially in the short term, until new travelling habits become gradually adopted. These sacrifices have to be weighed against the positive effects of the charges on the environment and accessibility, and the possibility to use the revenues for necessary investments. Among transport researchers, it is probably not a controversial opinion that congestion charging, all things considered, is a useful and probably even necessary way of ensuring that a big city’s transport systems continue to work reasonably efficiently. What is unique about the Stockholm trial is that this view appears to have taken root outside this relatively small circle as well.</span><!-- A quick and accessible introduction to the effects and an interpretation of them, and what can be learnt more generally, can be found on <a href="http://www.ted.com/talks/jonas_eliasson_how_to_solve_traffic_jams.html " target="_blank">http://www.ted.com/talks/jonas_eliasson_how_to_solve_traffic_jams.html </a> --> </li>
+</ul>
+<p>The congestion charges have been subject to extensive scientific analyses. A comprehensive evaluation program with over 30 different projects were carried out, covering all kinds of effects.</p>
+<p>Good overviews include:</p>
+<p>Eliasson, J., Hultkrantz, L., Nerhagen, L., Smidfelt-Rosqvist, L. (2009) The Stockholm congestion-charging trial 2006: Overview of the effects. Transportation Research A 43, p. 240-250. doi:10.1016/j.tra.2008.09.007</p>
+<p>Börjesson, M., Eliasson, J., Hugosson, M. B., &amp; Brundell-Freij, K. (2012). The Stockholm congestion charges — 5 years on. Effects, acceptability and lessons learnt. Transport Policy, 20(0), 1-12. doi:10.1016/j.tranpol.2011.11.001</p>
+<p>Eliasson, J. (2008) Lessons from the Stockholm congestion charging trial. Transport Policy 15(6), p. 395-404. doi:10.1016/j.tranpol.2008.12.004</p>
+<p> </p>
+<p><strong>Landmark Designation</strong></p>
+<p>The program described in this case study was designated in 2013.</p>
+<p>Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated through an open nomination process and by our peer-selection panels and Tools of Change staff, and then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Mark Dessauer, Blue Cross Blue Shield of NC Foundation</li>
+<li>Jacky Kennedy, Green Communities Canada</li>
+<li>Ryan Lanyon, City of Toronto</li>
+<li>Nathalie Lapointe, Federation of Canadian Municipalities</li>
+<li>Patricia Lucy, Translink</li>
+<li>David Levinger, Mobility Education Foundation</li>
+<li>Geoff Noxon, Noxon Associates</li>
+<li>Chuck Wilsker, U.S. Telework Coalition</li>
+<li>Phil Winters, CUTR and the University of South Florida</li>
+</ul>
+<p>This case study was written in 2014 by Jay Kassirer and Sharon Boddy.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

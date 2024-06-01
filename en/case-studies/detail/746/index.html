@@ -1,0 +1,624 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/neighbourhood-coaches-and-block-leaders/">Neighbourhood Coaches and Block Leaders</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Various local governments and community groups across U.S.A.</li>
+<li>First implemented by Southeast Uplift and the Energy Trust of Oregon</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Various local governments, community groups, banks, and credit unions</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>By 2021, resulting installations were generating 62,000,000 kWh each year</li>
+</ul>
+<p> Download the Case Study <a href="/userfiles/Solarize Boosts Installations and Transforms Solar Markets Across America.pdf">PDF</a></p>
+<p><strong>For More Information</strong></p>
+<ul>
+<li><a href="https://www.nrel.gov/docs/fy12osti/54738.pdf" target="_blank">https://www.nrel.gov/docs/fy12osti/54738.pdf</a></li>
+<li><a href="https://www.motherearthnews.com/renewable-energy/what-is-solarize-zbcz1508" target="_blank">https://www.motherearthnews.com/renewable-energy/what-is-solarize-zbcz1508</a></li>
+<li><a href="https://rmi.org/solarize-campaigns-helping-communities-of-color-access-rooftop-solar/" target="_blank">https://rmi.org/solarize-campaigns-helping-communities-of-color-access-rooftop-solar/</a></li>
+<li><a href="https://cbey.yale.edu/our-stories/lessons-learned-from-solarize-campaigns-in-connecticut" target="_blank">https://cbey.yale.edu/our-stories/lessons-learned-from-solarize-campaigns-in-connecticut</a></li>
+</ul><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Solarize Boosts Installations and Transforms Solar Markets Across America </h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="150" src="https://www.youtube.com/embed/26eX1zn-Keg" title="Solarize bulk solar panel purchasing" width="97%"></iframe></p>
+<p>Solarize is a group purchase program designed to simplify and reduce the cost of investing in solar energy. The campaign organizes a volunteer committee of residents to competitively select a solar installer who agrees to set pricing. At a series of free educational workshops participants can learn about the technology, incentives, and financing options. Interested, participants can then sign up for a free site assessment and are guaranteed the Solarize price, if they sign a contract within the campaign timeline. Customers can save as much as 25% of the total cost of installation. This approach enables grassroot and other solar advocates to build motivation and engagement over time, reduce key barriers to action, convert “interest” into “action”, and permanently transform the market for solar installations in their communities. Resulting installations generated 62,000,000 kWh of clean energy supply each year. Designated a <em>Landmark </em>case study by our Building Energy peer review panel in 2021.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>Solarize began in Portland in 2009, when one person who wanted to install solar power organized neighbors to “go solar”, make an informed purchase and get a volume discount together. They turned to their local neighborhood coalition, Southeast Uplift, for assistance. Southeast Uplift approached Energy Trust of Oregon for technical and program planning support. By coincidence, Energy Trust had developed a solar PV volume purchasing program and was eager to test the model. Within six months of starting their campaign, solar electric photovoltaic (PV) systems were installed at 120 homes, adding 350 kW of new capacity and saving roughly 360,000 kWh of conventional electricity per year.</p>
+<p>Additional Solarize campaigns were initiated and replicated by Portland’s Neighborhood Coalition network with help from the Energy Trust of Oregon, the City of Portland’s Bureau of Planning and Sustainability, and Solar Oregon. Over two years and multiple campaigns, over 600 PV systems were installed. By the end of year three, Portland had added 1.7 MW of additional solar generation.</p>
+<p>While there was no set process for how a Solarize campaign is created or organized, the National Renewable Energy Laboratory and the City of Portland developed a Solarize Guidebook in February 2011 for communities wanting to replicate the model. This helped spread the approach throughout Oregon to include over 25 Solarize projects and over 4 MW of newly installed solar energy. The following year, an updated Guidebook was funded by the US Department of Energy.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>While the first campaign appears to have been conducted with little prior audience research, this was corrected over the following years. Each successive project contributed additional information. For example, researchers from Yale University performed multiple waves of randomized field trials specifically tailored for Solarize programs in conjunction with the 2013 and 2014 Solarize Connecticut programs. The SEEDS II team found that messages that focused on individual benefits like energy cost savings were up to 50% more effective than messages that focused on community benefits and social norms.</p>
+<p>In 2017, a team from Portland State University and the National Renewable Energy Laboratory examined residential PV adoption and non-adoption, the varieties of adopters and non-adopters, and the roles of policies and marketing in shaping these segments. The survey data were collected from nearly 3,600 single-family, owner-occupied households across four different states: Arizona, California, New Jersey, and New York.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Solarize programs have been offered in various forms over time, but they all include the following defining elements of this approach. (<em>Financial Incentives; Norm Appeals; Overcoming Specific Barriers; Word-of-Mouth</em>) </p>
+<p><strong>1.	Competitive Contractor Pre-selection </strong></p>
+<ul>
+<li>A municipality, employer or other local community group chooses one company in the area to serve as the solar installer for their community’s Solarize program.</li>
+<li>Transparent process that both the customer and the contractor can trust</li>
+<li>Increases confidence in the selected contractor</li>
+<li>Simplifies the purchasing process</li>
+<li>Limits choices and makes purchasing decisions easier</li>
+<li>Lowers risk by acting as a group</li>
+</ul>
+<p><strong>2.	Limited Time Offer</strong></p>
+<ul>
+<li>Creates urgency</li>
+<li>Limits the “monopoly” awarded to the selected contractor</li>
+</ul>
+<p><strong>3.	Reduced Price through Bulk Purchasing</strong></p>
+<p><strong>4.	The Involvement of a Local Community Group </strong></p>
+<ul>
+<li>Amplifies the scope and scale of the outreach, and neighbors are more responsive to appeals</li>
+<li>Community-led outreach and lead generation reduces contractors’ marketing costs, and helps them focus on site assessments and installations </li>
+</ul>
+<p><img alt="" height="283" src="/userfiles/Image/Typical Process.png" width="450"/></p>
+<p><img alt="" height="287" src="/userfiles/Image/Simplified Process.png" width="450"/></p>
+<p><span style='font-family: "Minion Pro", serif; font-size: 8pt;'>Photo images supplied by Spark Northwest</span></p>
+<p>In 2015, Mother Earth News summarized the pros and cons of the Solarize approach as follows.</p>
+<p><strong>Pros</strong></p>
+<ul>
+<li>Great way to be involved in community action</li>
+<li>Reputation boost for chosen installer</li>
+<li>Good way to accomplish a shared environmental goal quickly</li>
+<li>Lower risk by acting as a group</li>
+<li>Limited Choice Makes Decisions Easier</li>
+</ul>
+<p><strong>Cons </strong></p>
+<ul>
+<li>Unnecessary restriction on consumer choice.</li>
+<li>Discourages competition</li>
+<li>Time intensive to find the right installer</li>
+<li>The price you’re quoted isn’t always the actual price; it is usually for the installer’s most basic solar energy system</li>
+<li>A backlog of new home installations can build up and, while waiting, the price of the solar installation can drop below the agreed-upon price</li>
+<li>Having a ‘boom and bust’ cycle for installations can force installers to hire and fire staff at inconvenient times.</li>
+</ul>
+<p>Mother Earth suggested that the Solarize approach had been particularly helpful in the early days of solar when there were fewer trained contactors and tools. It advised that now, “Online solar marketplaces offer much more choice and transparency to solar shoppers, and $0-down solar leases can provide an alternative for cash-strapped homeowners."</p>
+<p>However, others noted that it had mostly been affluent white people who had first benefitted from Solarize programs, and that the approach was still relevant to less affluent communities and communities of color. According to RMI, while Black and Hispanic Americans were more likely to be concerned or alarmed about climate change than White Americans, they had installed significantly fewer solar systems. “Communities of color have been shown to have a 24–27 percent higher energy burden than White Americans when controlling across income levels, and low-income residents experience an energy burden up to three times higher than high-income residents.”</p>
+<p><strong>Example One: First Portland Campaign</strong></p>
+<p>The first Solarize program took place in Portland, Oregon and was designed to lead the customer from awareness to installation over six months and six steps.</p>
+<ol>
+<li><em>Awareness</em>: The campaign was advertised in flyers, emails, newsletters, blogs and by word of mouth. TV and radio media coverage began late in the program. (Mass Media)</li>
+<li><em>Education</em>: The campaign ran workshops and Q&amp;A sessions throughout the community so neighbors could ask questions in a supportive environment.</li>
+<li><em>Enrollment</em>: Residents enrolled in the first project by email; an on-line application was used after that. Some projects used a short questionnaire to enable self-screening for solar suitability.</li>
+<li><em>Site Assessment:</em> The selected installer presented a site assessment and bid to each enrollee. The Energy Trust also provided an optional Solar Energy Review for those wanting a consultation before deciding about getting a contractor bid.</li>
+<li><em>Decision:</em> Each customer decided whether to accept the contractor’s bid at the Solarize program price. The price was reduced as the number of installations increased, which encouraged the community to promote the program.</li>
+<li><em>Installation</em>: The contractor not only installed the systems, but also helped each customer with paperwork for the Energy Trust cash incentive, and state and federal tax credits. (Overcoming Specific Barriers)</li>
+</ol>
+<p><strong>Example Two: Mercer Island Campaigns (2014 and 2018) </strong></p>
+<p>The City of Mercer Island, Washington conducted a Solarize campaign in 2014 and again in 2018. The City contracted with Northwest SEED (now Spark Northwest) to provide program management, technical assistance, database management, marketing collateral, and workshop delivery. Funding came from a variety of sources, including grants and utility sponsorships.</p>
+<p>The City partnered with local citizens' groups such as Sustainable Mercer Island to enhance promotion and lead generation for the selected solar installer. These local community volunteers also assisted with key campaign tasks, including selecting the solar installer and promoting the campaign through all their networks.</p>
+<p><img alt="" height="427" src="/userfiles/Image/Billboard.png" width="450"/> <span style='font-family: "Minion Pro", serif; font-size: 8pt;'>Photo image supplied by </span><span lang="EN-CA" style='font-size: 8pt; font-family: "Minion Pro", serif;'>City of Mercer Island</span></p>
+<p class="MsoNormal"><span lang="EN-CA" style='font-size:8.0pt;font-family:"Minion Pro",serif;mso-ansi-language:
+EN-CA;mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></p>
+<p><em>2014</em></p>
+<p>Sources of Funding &amp; Amount:</p>
+<ul>
+<li>NW Solar Communities Mini-Grant +$10,000</li>
+<li>King Conservation District - Jurisdiction Grant +$10,000</li>
+<li>Puget Sound Energy Sponsorship +1,000</li>
+<li>Enthusiastic &amp; Engaged Volunteers Priceless</li>
+</ul>
+<p>Volunteers: 14<br/>
+Workshop Attendees: 204<br/>
+Workshops &amp; Webinars: 5 Site Assessments: 147<br/>
+Total New Solar Installs: 47<br/>
+Total kW Installed: 331<br/>
+Total $ spent locally: $1,336,295<br/>
+Solarize Discount: 12%</p>
+<p><em>2018</em></p>
+<p>By 2018, with a 30% federal tax rebate plus WA state incentives ongoing, typical payback was still good at approximately 7-8 years. This persuaded the City to run a second campaign. A typical system in 2014 averaged about 7 kW, whereas by 2018, it had increased to 10.5 kW as customers began to power Electric Vehicles. To help residents with up-front costs, local banks and credit unions offered low-interest solar loans. The 2018 campaign ultimately led to 45 more installations.</p>
+<p><strong>Example Three: SEEDS II (2017 -2018) </strong></p>
+<p>Yale University’s Solar Energy Evolution and Diffusion Studies (SEEDS) II team designed, implemented, and studied Solarize campaigns as a series of randomized field trials in 2017 and 2018.</p>
+<p>The following table summarizes the key barriers to action and how each was addressed.<span lang="EN-CA" style='font-size:11.0pt;font-family:"Minion Pro",serif;
+color:black;mso-ansi-language:EN-CA;mso-bidi-language:#0400'><o:p> </o:p></span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid #A8D08D .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #A8D08D;mso-border-insidev:.5pt solid #A8D08D">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="border:solid #70AD47 1.0pt;border-right:none;
+  mso-border-top-alt:solid #70AD47 .5pt;mso-border-left-alt:solid #70AD47 .5pt;
+  mso-border-bottom-alt:solid #70AD47 .5pt;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top">
+<p class="MsoNormal" style="tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:white;mso-bidi-language:
+  #0400'>Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="border:solid #70AD47 1.0pt;border-left:none;mso-border-top-alt:
+  solid #70AD47 .5pt;mso-border-bottom-alt:solid #70AD47 .5pt;mso-border-right-alt:
+  solid #70AD47 .5pt;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:
+  19.75pt" valign="top">
+<p class="MsoNormal" style="tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:white;mso-bidi-language:
+  #0400'>How it was addressed<o:p></o:p></span></b></p>
+<p class="MsoNormal" style="tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:white;mso-bidi-language:
+  #0400'><o:p> </o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:19.75pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:Calibri;
+  color:black;mso-color-alt:windowtext'>Up-front costs (the top barrier)</span><b><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'><o:p></o:p></span></b></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:18.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo2;mso-layout-grid-align:none;text-autospace:none"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>           </span></span></span><!--[endif]--><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri;color:black;mso-color-alt:windowtext'>Reduced   solar costs by 20-25%, through group purchasing and reduced installer marketing   costs.</span><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:
+  Calibri'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:18.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo2;mso-layout-grid-align:none;text-autospace:none"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>           </span></span></span><!--[endif]--><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri;color:black;mso-color-alt:windowtext'>For example,   before the first Solarize campaign launched, it cost about $27,000 to install   a 3-kW system in Portland. A typical system installed the first year of the program   cost only about $2,000 after tax credits and incentives</span><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:Calibri'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.7pt;text-indent:-18.7pt;mso-list:
+  l1 level1 lfo1;tab-stops:0cm 20.15pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-bidi-language:#0400"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>            </span></span></span><!--[endif]--><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri;color:black;mso-color-alt:windowtext'>As another   example, Connecticut’s <i><a href="https://sustainablect.org/no-cost-assistance-programs/solar-for-all-campaign/"><span style="color:black;mso-color-alt:windowtext;text-decoration:none;text-underline:
+  none">Solar for All Campaign</span></a></i>, created new incentives   specifically for low and middle-income residents, paired solar with energy efficiency   upgrades, instituted “no money down, no credit required” offerings, and recruited   contractors with experience reaching underserved markets. In three years, this   multifaceted approach increased solar penetration in Connecticut’s low-income   communities<a href="https://www.cesa.org/connecticut-green-bank-and-posigen-solar-for-all-partnership/"><span style="color:black;mso-color-alt:windowtext;text-decoration:none;text-underline:
+  none"> by 188%</span></a> and helped over 900 low-income households   go solar<br style="mso-special-character:line-break"/>
+<!--[if !supportLineBreakNewLine]--><br style="mso-special-character:line-break"/>
+<!--[endif]--></span><span style='font-family:"Arial",sans-serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:19.75pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:Calibri;
+  color:black;mso-color-alt:windowtext'>Lengthy installation</span><b><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'><o:p></o:p></span></b></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-left:18.7pt;text-indent:-18.7pt;mso-list:
+  l1 level1 lfo1;tab-stops:0cm 20.15pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-bidi-language:#0400"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>            </span></span></span><!--[endif]--><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri;color:black;mso-color-alt:windowtext'>Turned   the 18 month (on average) process into just 3 to 6 months</span><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.7pt;tab-stops:0cm 20.15pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><span style='font-family:"Arial",sans-serif;mso-bidi-language:#0400'><o:p> </o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;mso-yfti-lastrow:yes;height:19.75pt">
+<td style="border:solid #A8D08D 1.0pt;border-top:none;mso-border-top-alt:
+  solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-top:6.0pt;mso-layout-grid-align:none;
+  text-autospace:none"><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:
+  Calibri;color:black;mso-color-alt:windowtext'>Daunting technicalities: process   can be overwhelming; analysis paralysis</span><b><span style='font-family:
+  "Arial",sans-serif;mso-bidi-language:#0400'><o:p></o:p></span></b></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;mso-border-top-alt:solid #A8D08D .5pt;
+  mso-border-left-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top">
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:18.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo2;mso-layout-grid-align:none;text-autospace:none"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>           </span></span></span><!--[endif]--><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri;color:black;mso-color-alt:windowtext'>Built supportive   community norms and connections, coupled with easy access to experts</span><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:Calibri'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:18.7pt;text-indent:-18.7pt;mso-list:
+  l1 level1 lfo1;tab-stops:0cm 20.15pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-bidi-language:#0400"><span style="mso-list:Ignore">·<span style='font:7.0pt "Times New Roman"'>            </span></span></span><!--[endif]--><span style='font-family:"Arial",sans-serif;
+  mso-fareast-font-family:Calibri;color:black;mso-color-alt:windowtext'>Provided   free troubleshooting support<br style="mso-special-character:line-break"/>
+<!--[if !supportLineBreakNewLine]--><br style="mso-special-character:line-break"/>
+<!--[endif]--></span><span style='font-family:"Arial",sans-serif;mso-bidi-language:
+  #0400'><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Solarize program achievements have most often been noted in terms of new solar capacity (in kW or MW) from systems installed through the program by the selected contractor. However, this does not account for the fact that some of these purchasers would have installed a solar system even without the program. Nor does it account for any non-selected contractors who also installed more solar systems because of the increased promotion.</p>
+<p>Yale University’s SEEDS II team designed, implemented, and studied Solarize campaigns as a series of randomized field trials in 2017 and 2018. That team studied two effects: the rates at which households of various income levels adopted solar, and how different types of messaging interacted with adoption among these groups.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Overall</strong></p>
+<p>Based on individual reporting by the organizations involved, the cumulative solar capacity installed through Solarize programs in the U.S.A. by 2021 had a capacity of at least 56,500 kW, or roughly 62,000,000 kWh each year.</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:246.4pt;border-collapse:collapse;border:none;mso-border-alt:solid #A8D08D .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #A8D08D;mso-border-insidev:.5pt solid #A8D08D" width="329">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="width:203.85pt;border:solid #70AD47 1.0pt;
+  border-right:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-left-alt:
+  solid #70AD47 .5pt;mso-border-bottom-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="272">
+<p class="MsoNormal" style="page-break-after:avoid;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b>Location and Proponent</b><b><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+<td style="width:42.55pt;border:solid #70AD47 1.0pt;
+  border-left:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-bottom-alt:
+  solid #70AD47 .5pt;mso-border-right-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="57">
+<p align="center" class="MsoNormal" style="text-align:center;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><b>MW</b><b><span style='font-size:11.0pt;font-family:"Minion Pro",serif;
+  mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;height:19.75pt">
+<td style="width:203.85pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="272">
+<p class="MsoNormal">California (Community Environmental Council – Central Coast)<b><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+<td style="width:42.55pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="57">
+<p align="center" class="MsoNormal" style="text-align:center;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt">3.5<b><span style='font-size:11.0pt;font-family:"Minion Pro",serif;
+  mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2;height:19.75pt">
+<td style="width:203.85pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="272">
+<p class="MsoNormal">Connecticut <b><span style='font-size:11.0pt;font-family:
+  "Minion Pro",serif;mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+<td style="width:42.55pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="57">
+<p align="center" class="MsoNormal" style="text-align:center;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt">8.2<b><span style='font-size:11.0pt;font-family:"Minion Pro",serif;
+  mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3;height:19.75pt">
+<td style="width:203.85pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="272">
+<p class="MsoNormal">Georgia<b><span style='font-size:11.0pt;font-family:"Minion Pro",serif;
+  mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+<td style="width:42.55pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="57">
+<p align="center" class="MsoNormal" style="text-align:center;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt">5<b><span style='font-size:11.0pt;font-family:"Minion Pro",serif;
+  mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4;height:19.75pt">
+<td style="width:203.85pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="272">
+<p class="MsoNormal">Midwest Renewable Energy Association’s Grow Solar <b><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+<td style="width:42.55pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="57">
+<p align="center" class="MsoNormal" style="text-align:center;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt">14<b><span style='font-size:11.0pt;font-family:"Minion Pro",serif;
+  mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:5;height:19.75pt">
+<td style="width:203.85pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="272">
+<p class="MsoNormal">Massachusetts<b><span style='font-size:11.0pt;font-family:
+  "Minion Pro",serif;mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+<td style="width:42.55pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="57">
+<p align="center" class="MsoNormal" style="text-align:center;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt">16<b><span style='font-size:11.0pt;font-family:"Minion Pro",serif;
+  mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:6;height:19.75pt">
+<td style="width:203.85pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="272">
+<p class="MsoNormal">Pennsylvania (Philadelphia)<b><span style='font-size:11.0pt;
+  font-family:"Minion Pro",serif;mso-bidi-language:#0400;mso-bidi-font-style:
+  italic'><o:p></o:p></span></b></p>
+</td>
+<td style="width:42.55pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="57">
+<p align="center" class="MsoNormal" style="text-align:center;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt">1.6<b><span style='font-size:11.0pt;font-family:"Minion Pro",serif;
+  mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:7;height:19.75pt">
+<td style="width:203.85pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="272">
+<p class="MsoNormal">Rhode Island<b><span style='font-size:11.0pt;font-family:
+  "Minion Pro",serif;mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+<td style="width:42.55pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="57">
+<p align="center" class="MsoNormal" style="text-align:center;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt">2.7<b><span style='font-size:11.0pt;font-family:"Minion Pro",serif;
+  mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:8;height:19.75pt">
+<td style="width:203.85pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="272">
+<p class="MsoNormal">Solarize Northwest (Washington and Oregon)<b><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+<td style="width:42.55pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="57">
+<p align="center" class="MsoNormal" style="text-align:center;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt">5.5<b><span style='font-size:11.0pt;font-family:"Minion Pro",serif;
+  mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:9;mso-yfti-lastrow:yes;height:19.75pt">
+<td style="width:203.85pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="272">
+<p class="MsoNormal"><b>TOTAL</b><b><span style='font-size:11.0pt;font-family:
+  "Minion Pro",serif;mso-bidi-language:#0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+<td style="width:42.55pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:19.75pt" valign="top" width="57">
+<p align="center" class="MsoNormal" style="text-align:center;tab-stops:0cm 36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt right 431.8pt"><!--[if supportFields]><b><span
+            style='mso-fareast-font-family:Wingdings-Regular;color:black;mso-color-alt:
+            windowtext'><span style='mso-element:field-begin'></span><span
+            style='mso-spacerun:yes'>&#160;</span>=SUM(ABOVE) <span style='mso-element:field-separator'></span></span></b><![endif]--><b>56.5</b><!--[if supportFields]><b><span
+            style='mso-fareast-font-family:Wingdings-Regular;color:black;mso-color-alt:
+            windowtext'><span style='mso-element:field-end'></span></span></b><![endif]--><b><span style='font-size:11.0pt;font-family:"Minion Pro",serif;mso-bidi-language:
+  #0400;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example One: First Portland Campaign </strong></p>
+<p>Within six months of starting the first Solarize campaign in Portland, solar electric photovoltaic (PV) systems had been installed at 120 homes, adding 350 kW of new capacity, and saving roughly 360,000 kWh of conventional electricity per year. The project also helped provide 18 professional wage jobs for site assessors, engineers, project managers, journeyman electricians, and roofers.</p>
+<p><strong>Example Two: Mercer Island Campaigns (2014 and 2018)</strong></p>
+<p>The Mercer Island 2014 campaign:</p>
+<ul>
+<li>Led to the installation of panels at 47 sites, increasing the City’s solar capacity nearly three-fold</li>
+<li>Generated 331 kW (roughly 338,000 kWh) per year</li>
+<li>Avoided 205 metric tons of carbon emissions, equivalent to eliminating 43 passenger cars a year</li>
+<li>Provided a high-profile program that enabled the city to engage citizens on an issue of importance</li>
+<li>Led to a community solar installation on City property.</li>
+</ul>
+<p>The Mercer Island 2018 campaign:</p>
+<ul>
+<li>Led to the installation of panels at 45 additional sites</li>
+<li>Generated an additional 470 kW (480,000 kWh) per year</li>
+<li>Avoided an additional 205 metric tons of carbon emissions</li>
+</ul>
+<p><img alt="Installing Solar on Roof" height="352" src="/userfiles/Image/Installing Solar.png" width="450"/></p>
+<p><span lang="EN-CA" style='font-size:8.0pt;font-family:"Minion Pro",serif;mso-ansi-language:
+EN-CA;mso-bidi-language:#0400;mso-bidi-font-style:italic'>Photo image supplied by Spark Northwest<o:p></o:p></span></p>
+<p><strong>Example Three: SEEDS II (2017 -2018)</strong></p>
+<p>Note: The average peak capacity of a 1kW solar panel in the USA during the time reported was between 2.8 and 4.5 kWh per day (1,022 and 1,643 kWh per year), depending on location. The following analysis assumes a value of only 3 kWh per day (1,095per year), so likely understates the benefits.</p>
+<p>The SEEDS II team compared cumulative installations for all Round 8-10 towns (combined) to control towns (combined).</p>
+<ul>
+<li>Before the campaigns began (April 2017), the towns in both groups had a similar trend in solar growth and they started at similar installed capacity. The Solarize towns had cumulative installations of 17.41 per thousand households and the control towns had cumulative installations of 16.51 per thousand households.</li>
+<li>By the end of Round 10 (September 2018), Solarize Round 8-10 towns had cumulative installations of 32.3 per thousand households (an 85% increase over the campaign period) while control towns had cumulative installations of only 24.59 per thousand households (a 49% increase). Relative to the control towns, the Solarize towns increased installations by an additional 36 percentage points.</li>
+<li>The Solarize towns added an additional 2,980 kW, which converts to roughly  3,263,100 kWh per year.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Ross Freeman, Sustainability Manager<br/>
+City of Mercer Island, WA <a href="mailto:Ross.freeman@mercerisland.gov?subject=I%20saw%20your%20case%20study%20on%20Tools%20of%20Change">Ross.freeman@mercerisland.gov</a> <a href="http://www.mercerisland.gov/solarpower" target="_blank">www.mercerisland.gov/solarpower</a></p>
+<p>Andrea Axel, Executive Director<br/>
+Spark Northwest<br/>
+<a href="mailto:andrea@sparknorthwest.org?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> andrea@sparknorthwest.org</a> <a href="http://www.sparknorthwest.org/" target="_blank">http://www.sparknorthwest.org/ </a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<ul>
+<li>The Solarize approach has spread to other countries, such as Canada and India (Solarise Safdarjung’ and ‘Solarise Karkardooma). That said, this case study is focused on the spread of Solarize throughout the USA.</li>
+<li>This is a great example of a market transformation approach, and of an approach that is community-focused, locally led, and supported with regional (state) and national resources.</li>
+<li>While this program emphasized energy conservation, the approach taken could easily be modified to speed adoption of other new big-ticket technologies and related purchasing behaviors as well.</li>
+</ul>
+<p><strong>Landmark Designation </strong></p>
+<p>The program described in this case study was designated in 2021.  Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Arien Korteland, BC Hydro</li>
+<li>Kathy Kuntz, Dane County Office of Energy &amp; Climate Change, Wisconsin</li>
+<li>Doug McKenzie-Mohr, McKenzie-Mohr Associates</li>
+<li>Sea Rotmann, Sustainable Energy Advice Ltd.</li>
+<li>Lester Sapitula, Pacific Gas and Electric Company</li>
+<li>Marsha Walton, New York Energy Research and Development Authority</li>
+</ul>
+<p>This case study was written by Jay Kassirer in 2021, based on the information in the linked articles, and a review by Ross Freeman and Andrea Axel.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

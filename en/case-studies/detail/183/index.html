@@ -1,0 +1,264 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Stop It Now!</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>118 cases of abuser self-disclosure of sexual abuse in first four years</li>
+<li>the ability to talk about child sexual abuse increased by 40 percent</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Stop It Now! Vermont</h1>
+<p>The purpose of this project was to introduce a public health approach to child sexual abuse prevention. Previous prevention programs focused on children and how to prevent their victimization, or how to report the abuse after the abuse occurred. This program introduced a new approach that focused on adults and how to prevent the perpetration of child sexual abuse.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Since the early 1980s, activists primarily survivors have raised awareness of child sexual abuse through sharing personal stories of trauma. By the mid-80s, research studies indicated that one in four to five girls, and one in seven to ten boys will be sexually abused before the age of eighteen. In response, innovative prevention programs were developed for children, and coordinated response teams were piloted throughout the United States to address the increased reporting of child sexual abuse. By the mid-90s legislation was introduced that focused on increased tracking, control and punishment of the sex offender. However, it was not until 1995 that the American Medical Association called sexual abuse a silent violent epidemic. The AMA's press conference announce-ment provided the framework for a new public health approach to child sexual abuse prevention.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>For abusers and people at risk for abusing, the target behaviors were:</p>
+<ul>
+<li>Increased self-identification</li>
+<li>Calling a toll-free helpline for information and referrals</li>
+<li>Using existing treatment programs</li>
+<li>Accessing support systems for abusers and their families</li>
+</ul>
+<p>For friends and families of abusers, for friends and families of those at risk for abusing, and for parents of youth with sexual behavior problems, the target behaviors were:</p>
+<ul>
+<li>Questioning sexualized behaviors or inappropriate boundaries within the family</li>
+<li>Increased efficacy in confronting abusing behaviors</li>
+<li>Calling a toll-free helpline for information and referrals</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>From 1992 to 1995, researchers held focus groups, administered in-depth interviews/questionnaires, and engaged in dialogues with abusers who were in prisonand in treatment programs. Socio-demographic characteristics, psychological profiles, and behavior characteristics of the target audiences were collected.</p>
+<p>In doing their research, Stop It Now! asked their target audiences traditional marketing questions, and the following:</p>
+<ul>
+<li>
+<p>What would they want to know or hear in order to stop their abusive behaviorsor intervene in a potential abuse situation</p>
+</li>
+<li>When would they listen to such a message</li>
+<li>From whom they would have most likely heard and accepted this kind ofmessage</li>
+</ul>
+<p>Formative research with imprisoned sex abusers proved invaluable to the program design. These findings included:</p>
+<ul>
+<li>Targeted focus groups indicated they would listen to someone like themselves who had similar experiences. Spokes people should include abusers, those atrisk to abuse, their families, and the parents of youth with sexual behavior problems.</li>
+<li>Everyone wanted a message of hope from someone who had learned how to control these destructive behaviors. They wanted to know that healing was possible for those who experienced the trauma of sexual abuse. They said that they needed to understand that their lives would be forever changed by confronting the situation...but it would also be a better life for everyone in the long run.</li>
+<li>Respondents continually described the need to talk specifically and directly about the subject. They wanted someone to speak about what was really happening in their lives and to say out loud the words that no one, including themselves, were able to say.</li>
+<li>Most revealed that they could not find adequate constructive information in the public sphere about this issue. They wanted to know why no one ever talked about the stuff that made them uncomfortable. Much of what was discussed by the focus groups and interviews with target audiences became the basis for new information generated about the warning signs or risk factors for abusing behaviors.</li>
+</ul>
+<p><strong>Target Audience(s)</strong></p>
+<p>Previous research indicated children were abused by people they knew and trusted thus it was determined that adults are responsible parties and should be the audience.</p>
+<p>With the prevention focus of Stop It Now!, the target audiences were identified as:</p>
+<ul>
+<li>Adult sexual abusers</li>
+<li>People at risk for abusing</li>
+<li>Friends and families of each of these groups</li>
+<li>The parents of youth with sexual behavior problems</li>
+</ul><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Product(s)</strong></p>
+<p>Stop It Now! initiated the first helpline (888-PREVENT) in the country for abusers, those at risk to abuse, their friends and families as well as the parents of youth with sexual behavior problems. To do so, the organization created a referral system and resource manual for treatment providers who specialize in this issue, as well as the protocol to interface with the legal system if a crime had taken place.</p>
+<p><strong>Price</strong></p>
+<p>Price was considered to be one of the major issues of the campaign. The Price for reporting a family member, especially if you are unsure whether abuse has occurred was considered too high for most families. Therapists and physicians are mandated to report child sexual abuse. As a result, Price issues were linked with social stigma and fear of punishment. Without confidentiality and resources to help, the cost to the abuser or to the family member seeking helpwere extremely high. The Price included his or her familys ability to stay together, maintaining individual or family reputation, securing or keeping a job or other sources of family income, and holding any position in their community. Conversely, abusers who self-reported believed the costs of ignoring the problem were too high (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p><strong>Place</strong></p>
+<p>Based on formative research, the information gathered from victim families indicated that police or child protective services were particularly frightening points of access. Stop It Now! created an easier point of access through the toll free helpline and other information sources (e.g., Web site, brochures, etc.). The confidential helpline addressed the issue of Place to the extent that it eliminated or reduced the risk to individuals and families seeking information and referrals.The ease of access to phone and in-person mental health assistance is a good example of using the Place factor to make a behavior easy to access and perform (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>For the abuser audience, the Place factor for getting help and hearing from others like me (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>, <a herf="/en/tools-of-change/word-of-mouth/" href="/en/tools-of-change/word-of-mouth/">Word of Mouth</a>) was also addressed through the hotline, confidential mental health help, and the Web site. The program staff spent over two years developing a protocol to help abusers step forward into the legal system and seek help without the threat of mandatory reporting and prosecution. Protocol development included examination and approval by all district attorneys and Vermont's Attorney General. This policy strategy introduced innovation and created key changes in the Place factor that made it easier and less restrictive for abusers to seek help on their own.</p>
+<p><strong>Promotion</strong></p>
+<p>The program used a combination of media and community action strategies to reach the public. Media was used to increase awareness and knowledge of the issue. The tools included radio and television public service announcements, bus transportation signs, posters, radio talk shows, press conferences and press releases, op-ed pieces, feature stories, and letter-to-the-editor campaigns.</p>
+<p>Community action strategies were utilized to bring the messages in the form of one-on-one interactions to families with members at risk to abuse. The most effective forums were public dialogues between recovering sexual abusers, survivors of abuse, and family members, about the need for prevention. These community events served multiple purposes, such as empowering those who experienced trauma to voice what they have learned, putting a human face on the issue so that others can see that this could happen in any family, and modeling how families can talk about this very difficult issue. Although the stories were about situations where abuse had occurred, their focus was to emphasize the multiple opportunities for adult intervention prior to the abuse occurring.</p>
+<p>These dialogues were supported by brochures that depicted simple, easy-to-understand warning signs or risk factors for perpetration, which were not available in anyother literature at the time (<a herf="/en/tools-of-change/word-of-mouth/" href="/en/tools-of-change/word-of-mouth/">Word of Mouth</a>; <a href="/en/tools-of-change/communication/">Vivid, Personalized, Credible, Empowering Communication</a>).</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The program was funded by individual donors and private foundation support and piloted in the state of Vermont. No government funds were used in the development of this public health approach. Funding for the entire project in Vermont was approximately $60,000 per year in direct costs, with additional in-kind contributions from the media for ads and public service announcements, and from Market Street Research, an independent evaluation firm, for an additional $120,000 per year. The entire budget was close to $180,000 annually.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>To evaluate the program, Stop It Now! commissioned Market Street Research (MSR) of Northampton, Massachusetts, to conduct a random digit-dial telephone survey of knowledge, attitudes, and beliefs toward child sexual abuse. Surveys of 200 Vermonters were conducted in 1995, 1997, and 1999 with a margin of error of 4.2 percent to 6.9 percent. MSR also monitored public opinions through a survey of key stakeholders in Vermont. These data points were supplemented by data collected through helpline tracking, a survey of clinicians working with sex offenders (coordinated by the Vermont Center for the Prevention and Treatment of Sexual Abusers), and through tracking coverage in the media, newsletters, the Internet, and other outlets.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Process Evaluation</strong></p>
+<p>The MSR evaluation measured the program's efficiency- the ability of staff to get the information and messages out to the target audiences. Staff secured approximately $100,000 of in-kind contributions for the media campaign. These donations included the development of free television public service announcements and free air time as well, free radio public service announcements, and free placement of posters on the buses in the largest city in Vermont. Staff contacted media outlets to secure free airtime and to approximate the amount of airtime during which the messages were delivered. The process evaluation also tracked the contributions and credibility offered by an active collaborative of key individuals and organizations throughout Vermont. Much of what was accomplished could not have been done without the support of these key organizations and national leaders. The organizations included the OUR House, the Pre-Sentence AlternativeProgram, Prevent Child Abuse Vermont, the Safer Society Foundation, Inc., theVermont Center for the Prevention and Treatment of Sexual Abuse, and Vermont Educational Associates.</p>
+<p><strong>Impact/Outcome Evaluation</strong></p>
+<p>Amazingly, the program documented 118 cases of abuser self-disclosure of sexual abuse (e.g., a report by an abuser with no similar report made by the victim) in the first four years of the program. The majority of these were from adolescents with parental support provided. Prior to the Stop It Now! pilot, there were virtually no incidences of abusers self-disclosing their abuse in Vermont.</p>
+<p>Evaluation also measured changes in attitudes and behaviors; what staff considered the program effectiveness. Due to the difficulty in measuring the impact of prevention programming, Stop It Now! utilized key indicators to measure success. After four years, the program demonstrated four indicators of awareness and change: the ability to talk about child sexual abuse increased by 40 percent (from 44.5 percent in 1995 to 84.8 percent in 1999); Vermonters' awareness of child sexual abuse as a problem reached a peak of 78 percent; and an increase in the number of Vermonters who recognized that abusers live in their communities (67 percent in 1995 to 73.7 percent in 1999).</p>
+<p>The campaign also found that adults will call for help. During the first four years, the helpline received 657 calls. Of those who called, 15 percent were abusers; 50 percent were calls from people who knew the abuser and/or the victim; and 32 percent of callers were men (much more than the average of 10 percent male callers reported by other helplines in Vermont). Of the calls from friends and family, 72.3 percent were from immediate family members of the abuser and/or the victim.</p>
+<p><strong>The 5th P: Policy</strong></p>
+<p>Policy had a significant role in Stop It Now! Program success. The program staff spent more than two years developing a protocol to help abusers step forward into the legal system and seek help without the threat of mandatory reporting and prosecution. Protocol development included examination and approval by all district attorneys and Vermonts attorney general. This policy strategy introduced innovation and created key changes in the system that were necessary in orderfor the project to proceed.</p>
+<p>More recent Stop It Now! programs evaluate the potential implications for primary prevention. In retrospect, the original Stop It Now! staff (traditional MBA-trained marketers) reported feeling as though they did not adequately consider the impact of emerging policies and particularly the impact of policy as a source of competition for their product. New legislation during the first four years of the Stop It Now! program included initiatives such as community notification, chemical castration, and civil commitment (only the first actuallybecame law).</p>
+<p>Publicity surrounding all of these legislative initiatives added significant costs and little benefit to those who might consider seeking help for themselves or someone in their family. This issue of policy as competition was particularly evident during the first six months of the program. The number of callers to the helpline who identified themselves as abusers, or at risk to abuse, dropped from a high of 65 percent in fall 1995 down to zero in spring 1996 after the publicity of Megan's Law (the national community notification statute) hit Vermont. The Stop It Now! program's response was to be patient, and in time, the percentage of self-identifying abuser calls to the helpline recovered to a steady 15 percent.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Peter Pollard, Director of Public Education <br/>
+413-587-3500 <br/>
+www.stopitnow.org <br/>
+HELPLINE: 1-888-PREVENT (M-F 9-6 EST)</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>All concepts created by Stop It Now! are the property of Stop It Now! All materials are copyrighted. All rights reserved.</p>
+<p>This case study has been adapted from Case Study 12, in "Social Marketing and Public Health, Lessons From the Field", published by the Turning Point Collaborative in May 2003. We thank the Turning Point Collaborative for allowing us to do so.</p>
+<p><strong>Secondary Target Audiences:</strong></p>
+<p>Although the primary audiences were clearly identified and considerable formative research done, the non-profit Stop It Now! program had secondary audiences that were not researched. For example, by relying on in-kind media donations of PSA time, the PSA spots had to appeal to TV and radio stations and periodicals marketing standards. The first Stop It Now! advertisement, which was directed at and tested very well with abusers, read: Two years ago, I would have been turned on by this picture, with a picture of two children in the ad. The radio stations and magazines refused to give any free space for a number of reasons, one of which was that they did not want their listeners or readers to think that sex offenders liked the programs. However, advertisements directed at bystanders (families, friends, etc.) were openly accepted by these same media outlets, even the harsher slogans developed by ad agencies, Mommy told me to save myself for someone special. Daddy told me he was...</p>
+<p>References: Tabachnick, J. (1997). An innovative social marketing approach to preventing child sexual abuse. Innovations in Social Marketing 97 Conference Proceedings, 87-92. Tabachnick, J. &amp; Dawson, E. (2000, November/December). Stop It Now! Vermont: A Four Year Program Evaluation, 1995-1999. Offender Programs Report, 1(4), 49.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

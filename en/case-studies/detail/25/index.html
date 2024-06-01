@@ -1,0 +1,250 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/school-programs-that-involve-the-family/">School Programs that Involve the Family</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Whitney Public School (Rick Hay)</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<p>A quarter of the families added new materials to their recycling following the assignment.</p>
+<table cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" height="26" src="/images/lightbulb.gif" width="27"/> Tip: Click on an image to enlarge it. Click your back button to return to this page.  			<hr color="#ffcc00"/>
+<p><a href="/images/documentimages/whitney/Whitney-1.jpg" target=""><img alt="Whitney Public School image" border="0" height="428" src="/images/documentimages/whitney/Whitney-1.jpg" width="121"/></a> <br/>
+            A portion of the Metro Works flyer listing the kinds of materials that could be recycled.</p>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Whitney Public School</h1>
+<p>Students at Whitney Public School were given a homework assignment to take responsibility for their home's Blue Box recycling for one week. The assignment was to be carried out by the students with parent participation. Information was provided to each home on new materials that were being accepted in the Blue Box.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>In June of 1996, the administration at Whitney Public School in Toronto initiated a project to make Earth Week personally meaningful for the students and their families. There had recently been an increase in the range of items that residents could put in their Blue Boxes for recycling. The project was designed to increase awareness of recycling and the new recyclable materials introduced to the Blue Box program, and to promote greater recycling rates among the students at Whitney Public School and their families.</p><!-- Background already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Every child at the school received special homework for one week during Earth Week - students were instructed to take responsibility for the recycling program in each of their homes for that week. They were each given a kit which included a letter from the school outlining the assignment and a flier from Metro Works listing recyclable materials and how they were to be sorted (<a href="/en/tools-of-change/prompts/">Prompts</a>).</p>
+<p>Parents were instructed in the letter to monitor their child's recycling efforts, to help him/her count the number of items recycled during the week, and to indicate on the sheet provided if their child had satisfactorily completed the assignment. In order to actively participate in their child's assignment, parents needed to read the Metro Works flyer, thereby increasing the parents' awareness of which materials could be recycled.</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Following the one-week assignment, a questionnaire was sent home with the children to their parents, who were asked about their awareness of which materials could be recycled prior to Earth Week and whether there had been any change in awareness as a result of the project. A total of 390 questionnaires were sent home and 86 families responded. While it is not possible to generalize with confidence from such a low response rate, the results provide some indication of what can be achieved by such an approach.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<ul>
+<li>one quarter of the families made changes in their recycling habits to include new recyclable materials as a result of the assignment</li>
+<li>20 percent of the families indicated that they increased the amount of material they recycled by 21 percent to 40 percent</li>
+<li>4 percent of the families increased the amount of material they recycled by more than 40 percent</li>
+<li>half of the families stated that their awareness of which materials could be placed in the Blue Boxes increased</li>
+<li>the other half were already recycling the newly accepted items - fine paper, boxboard, and aluminum containers</li>
+</ul>
+<p>All of the respondents had used their Blue Boxes prior to the Earth Week homework assignment. These results indicate that there was already a high level of awareness and participation in Blue Box recycling among the parents who responded to this questionnaire. Even with 100 percent previous participation, the assignment did serve to increase awareness of recyclable products in over half the families and increased recycling of new materials among a quarter of the respondents.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Rick Hay 	<br/>
+Whitney Public School 	<br/>
+119 Rosedale Heights Drive 	<br/>
+Toronto, Ontario 	<br/>
+M4T 1C7 	<br/>
+(416) 393-9380 	<br/>
+Fax: (416) 393-9377 	<br/>
+E-mail: <a href="mailto:whitney@interlog.com">whitney@interlog.com</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<table bgcolor="#c0c0c0" border="3" width="100%">
+<tbody>
+<tr>
+<td width="100%"><strong>Sample letter that helped to involve the students parents.</strong>
+<p><font face="Courier">Dear Parents,</font></p>
+<p><font face="Courier"><font face="Courier"><font face="Courier">Today, all Whitney students have been assigned Homework for the Planet. Your grade 1-6 children are to take control of your family's recycling program for one week. On Thursday evening evaluate whether they have met the criteria below. They should complete the accompanying graph Thursday night (based on the Blue Box contents at that time). If you have a sensitive scale for measuring metric mass, please use that method to measure the amount of recyclable materials. Otherwise your children should count the number of items of each type. Help them come up with a way of labelling the axis.</font></font></font></p>
+<p><font face="Courier"><font face="Courier"><font face="Courier"><font face="Courier"><font face="Courier"><font face="Courier">(child's name)</font></font></font></font></font></font></p>
+<table border="0" cellpadding="8" cellspacing="8" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="80%"><font face="Courier">She/he took charge of the family's recycling program and ensured that all of the recyclable materials were put into the proper containers</font></td>
+<td valign="top" width="20%"><font face="Courier"><strong>__ Yes 								<br/>
+                        __ No</strong></font></td>
+</tr>
+<tr>
+<td valign="top" width="80%"><font face="Courier">She/he saw that Blue Boxes were taken to the curbside on pickup day (if the container was full)</font></td>
+<td valign="top" width="20%"><font face="Courier"><strong>__ Yes 								<br/>
+                        __ No</strong></font></td>
+</tr>
+<tr>
+<td valign="top" width="80%"><font face="Courier">By the end of the week, she/he knew which materials can be put in the Blue Box (without looking at the We Recycle bulletin)</font></td>
+<td valign="top" width="20%"><font face="Courier"><strong>__ Yes 								<br/>
+                        __ No</strong></font></td>
+</tr>
+</tbody>
+</table>
+<p><font face="Courier"><font face="Courier"><font face="Courier"><font face="Courier"><font face="Courier"><font face="Courier"><font face="Courier"><font face="Courier"><font face="Courier"><font face="Courier">parent's signature</font></font></font></font></font></font></font></font></font></font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>This case study was originally published in 1998 in "Tools of Change: Proven Methods for Promoting Environmental Citizneship" by Jay Kassirer and Doug McKenzie-Mohr (Published by Canada's National Round Table on the Environment and the Economy)</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

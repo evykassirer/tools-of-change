@@ -1,0 +1,345 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/peer-support-groups/">Peer Support Groups</a></li>
+<li><a href="/en/tools-of-change/work-programs-that-influence-the-home/">Work Programs that Influence the Home</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p> Love to Ride</p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<p> Local Municipalities</p><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>In 2013, Love to Ride had 113,000 participants, 34,400 of whom were originally non-cyclists.</li>
+<li>After three months, 54% of self-identified non-cyclists had cycled at least once a month and 35% cycled to work at least once a week</li>
+<li>3,200 companies involved</li>
+</ul>
+<p> </p>
+<ul>
+<li><a href="/userfiles/Love to Ride case study.pdf" target="_blank">Case Study</a> (PDF format)</li>
+<li><a href="/userfiles/Love_to_Ride_transcript.pdf" target="_blank">Webinar Transcript</a></li>
+</ul><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Love to Ride</h1>
+<p>Love to Ride provides tailored resources and support for increasing commuter cycling, staff fitness, and reducing traffic congestion at work. It uses 'stage of change' to segment participants and cost-effectively tailor communications to them, helping them move along a personal journey of change. A web-based platform and GPS app reach people through their computers, cell phones and tablets, with tailored and timely information. Originally developed in New Zealand, Love to Ride has now been replicated in continental Europe, the UK, US and Australia.  It was designated a Landmark case study in 2014.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The idea behind Love to Ride was originally developed in New Zealand as a part of a national health promotion strategy that included sustainable transportation. Thomas Stokell worked on the cycling strategy, then later developed Challenge for Change when he moved to the UK. Challenge for Change was then rebranded as Love to Ride. </p>
+<p>Between 2007 and 2014, Love to Ride delivered 120 Workplace Cycle Challenge programs and encouraged more than 110,000 people and 3,000 businesses to participate. It was effective in encouraging 34,000+ non-cyclists to try cycling and see how easy and fun it can be.</p>
+<p>“That was very much our mission—to get more people riding bikes,” said Stokell. “Love to Ride brought all our work under one cool, fun umbrella and spread the love of riding.”</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The main objectives of the programme were as follows:</p>
+<ol>
+<li>Encourage more people to take up cycling</li>
+<li>Encourage people who are already cycling to cycle more often</li>
+<li>Encourage people to cycle for transportation purposes (first in their communities, then eventually to work).</li>
+</ol><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Love to Ride studied how leading behaviour change theories could be applied to cycling. These theories included: the Fogg Behaviour Model (behavior = motivation, ability, trigger); gamification theory; the use of reinforcement and incentives; social norming; and making the change process easy, popular and fun. </p>
+<p>Love to Ride worked with four central principles.</p>
+<ol>
+<li>Understand the user journey, from non-cyclist to regular cyclist, eventually biking to work</li>
+<li>Identify and address key barriers and benefits</li>
+<li>Monitor</li>
+<li>Make it fun and self-reinforcing through technology</li>
+</ol>
+<p> </p>
+<p>Based on Stages of Change Theory and its prior experience, six stages of change were recognized as follows.</p>
+<ol>
+<li>Pre-contemplation (Non-cyclist): not riding and not considering participation in the program</li>
+<li>Contemplation (Non- cyclist): not riding yet, but considering participation in the program</li>
+<li>Preparation (Non- cyclist): not riding yet, but had joined our program</li>
+<li>Occasional cyclist - cycled occasionally for errands and/or recreation</li>
+<li>Regular cyclist - cycled regularly for errands and/or recreation</li>
+<li>Regular commuter - cycled regularly to work</li>
+</ol>
+<p> </p>
+<p>Love to Ride collected information about participants’ barriers, benefits and stages of change on an ongoing basis, as new people registered on the Love to Ride website. The brief registration / baseline survey asked them how often they currently rode, what barriers they faced and what benefits they wanted to gain from cycling, as will be described in further details below.</p>
+<p><strong>Identifying motivators and barriers</strong></p>
+<p>The most common benefits and motivators identified by survey participants were that cycling was an enjoyable, healthy activity that improved fitness, and that it saved time and money.</p>
+<p>The barriers depended on the stage of change. For example, a self-identified non-cyclist might not have the money to buy a bike, or not know what type of bike to buy; an occasional cyclist might not know the best bike routes to take to work, or how to maintain or fix their bike. Barriers for many also included not having a place to shower, or to safely park their bike once they arrived at work.</p>
+<p> <img alt="The barriers to cycling vary by stage of change (case study example)" height="322" src="/userfiles/Image/Get a Bike.png" width="450"/></p>
+<p><em>Non-cyclists might not have the money to buy a bike or not know what type of bike to buy, or their bike may be buried in the shed or be in poor repair.</em></p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Love to Ride provided a web platform and GPS app that made it fun and easy to participate in the program, with plenty of recognition and personalized invitations for taking next steps. It also organized workplace Cycle Challenges. </p>
+<p>Love to Ride website, smartphone apps and e-communications automatically tailored information to participants that addressed their motivators and helped them overcome their barriers. </p>
+<p><strong>Workplace Cycle Challenge </strong></p>
+<p>The Workplace Cycle Challenges, were three-week challenges to get more people to cycle more often and to work. Challenge scores were based on participation, not the distance cycled. </p>
+<p>Stokell explained that distance-based challenges tend to motivate existing and regular riders, but not other categories of cyclists. (<em>Challenges)</em> </p>
+<p>“If you just tell people to ride to work because it’s good for them, the environment, and that they’ll save money, they will just list all the reasons they can’t,” said Stokell. “Instead of asking them to climb a mountain, we asked them to take a small, first step: ride a bike for just 10 minutes.” </p>
+<p>Love to Ride worked with cities and stakeholder organizations in those cities to engage local businesses to participate in the Challenge.</p>
+<p>Registered businesses were divided by size so that companies competed against similarly-sized companies; employees within those companies then registered as part of their workplace. <em>(Obtaining a commitment)</em></p>
+<p>“We asked each company to select its own team champions and then we provided them with posters and draft texts that they could e-mail out to their colleagues and mention in staff meetings.” Love to Ride also phoned the team champions with tips and ideas for engaging their colleagues. <em>(Building Motivation and Engagement Over Time)</em></p>
+<p><strong>Segmenting the Audience</strong></p>
+<p>Love to Ride’s use of personalized web-based communications was, as one Landmark panellist put it “similar to the sophistication of online advertisers.” The program’s website, smart phone apps and e-communications automatically tailored messaging so that participants got the prompts and heard about the rewards, incentives and prizes that would most appeal to them and most help them overcome their particular barriers. (<em>Incentives; Building Motivation and Engagement over Time, Overcoming Specific Barriers; Prompts; Vivid, Personalized, Empowering Communication</em>)</p>
+<p><img alt="Identifying participant motivators and barriers for cycling (case study example)" height="313" src="/userfiles/Image/Identifying Stage of Change(1).png" width="450"/></p>
+<p><img alt="Identifying participant barriers and benefits to cycling (case study example) " height="388" src="/userfiles/Image/ID Benefits and Barriers.png" width="450"/></p>
+<p><em>Each time participants registered for the program, they indicated what stage they were at. Participants were also asked to check off their own barriers and benefits; the survey options they got to choose from were determined by the stage they said they were at.</em></p>
+<p>Participants were encouraged to fill in an online trip log. Whenever they logged their trips, they received a personalized pop-up message with fun and interesting facts or reminders. For example, if a cyclist regularly used a busy road to ride to work, the system could generate safety tips or links to videos that showed how to safely ride in traffic. People received special messages when they reached their goals and could also ‘high five’ others when they reached theirs.  (<em>Feedback</em>) </p>
+<p><img alt="" height="831" src="/userfiles/Image/Swansea.jpg" width="450"/></p>
+<p><em>The system showed participants how they were doing, both numerically and using a journey image. It also recognized success, encouraged participants to recognize each other’s contributions, developed team spirit, and linked to sponsor / local events.</em></p>
+<p>As another example, since those who rode only occasionally might not know how to change a flat tire and maintain their bikes, the system encouraged them to watch a brief video on how to do it. These videos were available on handheld computers and tablets too – which could be taken right to the bicycle when doing the repairs. The program also connected participants with local bicycle maintenance workshops and discounts on bike servicing. (<em>Overcoming Specific Barriers</em>)</p>
+<p> </p>
+<div style="text-align: center;"><img alt="" height="333" src="/userfiles/Image/Deflated.png" width="170"/>
+<p> </p>
+</div>
+<p>“We asked different questions of the regular cyclists, questions that we used to help them encourage their colleagues,” explained Stokell. Depending on their responses, follow up questions were sent. “This got them to make a small commitment and identified a next step as well.” (<em>Building Motivation over Time, Obtaining a Commitment</em>)</p>
+<p>Other messages encouraged regular cyclists to offer to ride with a non-cyclist or occasional cyclist, lend a bicycle to someone who wanted to give it a try, help their department or company compete against another, etc. (<em>Norm Appeals, Peer Support, Word of Mouth</em>)</p>
+<p>Tailored messages also provided participants with the best cycling routes, safety information (if the weather was bad that day in London, England, the system reminded participants about how to cycle safely in the rain), bicycle repair and maintenance tips, or offered discounts at local shops. </p>
+<p>The next illustration provides a “behind the scenes” perspective on the system from the system’s administrative or “back end”. You can see the entry page that program managers used to customize prompts and other messages so they were automatically targeted at those who indicated different stages, motivators and benefits, and who are at different program locations or using different languages. The system provided some global, standardized messages that could quickly and easily be taken to scale, as well as the ability to easily create new messages for specific groups and locations.</p>
+<p><img alt="Targeting cycling messages (case study example) " height="450" src="/userfiles/Image/Message Targeting.png" width="450"/> </p>
+<p>Monitoring, feedback and “next step” messages could be set up to reach specified groups of participants at specified intervals. When non-cyclists said they didn’t own a bike, for example, Love to Ride later asked whether or not they’d bought a bike. If they answered yes, they’d get a response such as ‘That’s great. Happy riding!’ If they answered no, they might receive information about a local bicycle shop. (Building Motivation over Time, Feedback, Prompts)</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Love to Ride was a fee-based social enterprise, set up as a business with a social mission. It offered varying levels of service. “We wanted to make Love to Ride available for organizations of different budgets,” said Stokell. </p>
+<p>A key variable was how “do-it-yourself” (DIY) a participating community wanted to be. For example, did it just need to use the platform and some guidance on how to use it? Or did the community also want to hire a contractor to run the Workplace Cycle Challenge? At the higher end of the spectrum, Love to Ride was doing a project in Sydney, Australia in 2015 involving 200 companies, 5,000 people and 1,500 new riders. Sydney needed to get more people in a particular area on bikes fairly quickly, before a light rail construction slowed down local traffic. That was about an $US 80,000 project. However, $2,000 to $4,000 provided the platform (only) for smaller cities or regions that did not require further support.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>For the Workplace Cycle Challenges, percentage uptake was measured, rather than distance covered, as well as cycling frequency, journey type and other key data. </p>
+<p>Organizers used short, high-response surveys to measure program effectiveness to assess uptake: </p>
+<ol>
+<li>Participants were first surveyed when they registered (baseline)</li>
+<li>They self-reported their participation throughout both the Challenge lead-in and Challenge activity periods</li>
+<li>They received short follow-up surveys three weeks and again at three months after the Challenge.</li>
+</ol><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>Of the 113,000 Workplace Cycle Challenge participants in September 2014, 30% were non-cyclists, 19% were occasional cyclists and 51% were regular cyclists. </p>
+<p>The three-month survey results showed that: </p>
+<ul>
+<li>54% of those who were non-cyclists at baseline, were cycling at least once a month, and 35% of them were cycling to work at least once a week</li>
+<li>42% of those who were occasional-cyclists at baseline were now cycling regularly, and 24% were commuting by bike regularly (increased from 1-4 times a month to 2-5 days a week)</li>
+<li>28% of driving commuters were driving to work at least two days fewer per week</li>
+<li>Three months after the Challenge, about 8% of those who had tended to drive to work said that they cycled to work more than they commuted by car. In some locations this figure was as high as 17%. </li>
+</ul>
+<p><strong>Longer Term Impacts </strong></p>
+<p>For the 2011 Workplace Cycle Challenge in York, England, 292 non-cyclists registered. At the start of the 2012 Challenge, 83 of them had re-registered; 20% of these registrants had been cycling occasionally and 27% had been cycling regularly. At the start of the 2013 Challenge, 39 of them had registered again; of these registrants, 28% had been cycling occasionally and 31% had been cycling regularly. </p>
+<p><strong>Overall Impacts</strong></p>
+<p>A typical Workplace Cycle Challenge involved between 600 and 3,000 people.  On average, 30% of the participants were non-cyclists; three months after the program, an average of 82% of those non-cyclists were still cycling (54% weekly). On average, about one-quarter of all participants became new riders.</p>
+<p>Between 2013 and 2014, 1.1 million trips and 11.8 million miles cycled were logged. Estimated emission reductions totaled about 1,550 tonnes.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Thomas Stockell<br/>
+Love to Ride<br/>
+<a href="mailto:thomas@lovetoride.net?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> thomas@lovetoride.net</a><br/>
+1 310 906 7897</p>
+<p>Sam Robinson<br/>
+Love to Ride<br/>
+<a href="mailto:sam@lovetoride.net?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20Website"> sam@lovetoride.net</a><br/>
++447734 833451</p>
+<p>Website:  <a href="http://www.lovetoride.org" target="_blank">www.lovetoride.org</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned</strong></p>
+<p><em>Segmentation by Stage of Change</em></p>
+<p>For transportation-related behaviors, stage of change / current travel habits can be a helpful way to segment one’s audience.</p>
+<p><em>Barriers are different at each stage</em></p>
+<p>For cycling promotion, the barriers tend to be different at each stage, so different interventions are needed for each group.</p>
+<p><em>Automated personalization</em></p>
+<p>Web-based communications are making it increasingly practical to personalize communications</p>
+<p><em>A focus on participation</em></p>
+<p>The Workplace Cycle Challenge invited businesses in a participating city to compete against each other to see which could encourage the most staff to ride a bike for just 10 minutes.</p>
+<p>Measuring percentage uptake, rather than distance covered, made the Challenge more open and appealing to new cyclists and helped to motivate regular cyclists to encourage their non-cycling colleagues. It showed that riding was a fun, enjoyable activity for everyone, not just a few people.</p>
+<p><em>Baby steps</em></p>
+<p>Stokell said that it’s critical to break down a big behaviour change into smaller steps.</p>
+<p>“Giving people a fun 10-minute cycling experience can quickly break down negative perceptions about cycling and replace them with new, positive attitudes,” he said. “When people experience what cycling is really like (opposed to what they assume it to be like) they often find themselves saying: ‘Hey, this isn’t so bad after all.’ This is an ideal first step to encouraging more people to start cycling.”</p>
+<p><em>Small Incentives work</em></p>
+<p>Sometimes people teeter on the edge of a behaviour change but have more or less made the decision that they want to get involved. “A small incentive helps them justify it in their own head,” said Stokell. “It helps them overcome their barriers.”</p>
+<p><em>Keep in contact</em></p>
+<p>Love to Ride generated many different messages for every type of cyclist—at each stage of change and in different cities—to overcome their specific barriers. Love to Ride conducted three surveys and also kept in regular contact with team champions and participants during Challenges.</p>
+<p> </p>
+<p><strong>Landmark Designation</strong></p>
+<p>The program described in this case study was designated in 2014.</p>
+<p>Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated through an open nomination process and by our peer-selection panels and Tools of Change staff, and then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Mark Dessauer, Blue Cross Blue Shield of North Carolina Foundation</li>
+<li>Ryan Lanyon, City of Toronto</li>
+<li>David Levinger, Mobility Education Foundation</li>
+<li>Patricia Lucy, Translink</li>
+<li>Jacky Kennedy, Green Communities Canada</li>
+<li>Nathalie Lapointe, Federation of Canadian Municipalities</li>
+<li>Geoff Noxon, Noxon Associates</li>
+<li>Chuck Wilsker, U.S. Telework Coalition</li>
+<li>Phil Winters, University of South Florida </li>
+</ul>
+<p>Selected Comments from the Landmark Panel</p>
+<ul>
+<li>Replicability and adaptability are sky high!</li>
+<li>Pragmatic, focused, innovative, creative.</li>
+<li>Good use of electronic media to personalize messages and tools. Bringing in technology is a very exciting piece of this work as you are able to reach over 100,000 people in a tailored way without the resources of face-to-face.</li>
+<li>Works within the set structure of existing communication networks – the workplace.</li>
+<li>Has good short term impact at the individual level, as the data bear out.</li>
+<li>A good way to help get people back on their bikes and out of their cars.</li>
+<li>A very nice implementation of the stages of change model and using tailored messaging through a web-based platform; similar to the sophistication of online advertisers.</li>
+<li>Builds engagement over time. Sets the bar low enough to enable success, and then provides support and follow up to re-engage. Most challenges lack this follow-up and support.</li>
+<li>Great monitoring and follow-up to see if behaviour change is sustained; good results</li>
+</ul>
+<p>This case study was wrtitten in 2015 by Sharon Boddy and Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

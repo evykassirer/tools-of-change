@@ -1,0 +1,311 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Government of British Columbia</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>B.C. Hydro</li>
+<li>B.C. Gas</li>
+<li>Pacific Northern Gas</li>
+<li>West Kootenay Power</li>
+<li>Centra Gas</li>
+<li>B.C. Credit Unions</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Results Estimates suggest that 21 Gwh of electrical energy were saved; natural gas consumption was reduced by 140,000 GJ; and water consumption declined by 3.5 million m3</p>
+<p>
+<table width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" complete="complete" height="26" src="/images/lightbulb.gif" width="27"/> <small><font face="Verdana">Tip: Click on an image to enlarge it. Click your back button to return to this page.</font></small><hr color="#ffcc00"/>
+<p><font face="Verdana"><a href="/images/documentimages/BC21/BC21-1.jpg"><small><img alt="BC21 Image" border="0" complete="complete" height="112" src="/images/documentimages/BC21/BC21-1.jpg" width="167"/></small></a></font><font face="Verdana" size="1"><b><br/>
+            A First Nations staff person installing weather stripping in the Okanagan First Nations Community Project.</b></font><font face="Verdana"><br/>
+<br/>
+<a href="/images/documentimages/BC21/BC21-2.jpg"><img alt="BC21 Image" border="0" complete="complete" height="159" src="/images/documentimages/BC21/BC21-2.jpg" width="117"/></a><small><br/>
+</small></font><font face="Verdana" size="1"><b>A home visit team using a blower door test to measure home air leakage in the Okanagan First Nations Community Project.</b></font></p>
+</td>
+</tr>
+</tbody>
+</table>
+</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>BC21 PowerSmart</h1>
+<p>BC21 PowerSmart is a province wide project to conserve resources and create jobs. Residential energy efficiency audits are conducted, and incentives are offered to encourage residents to take steps to improve energy and water efficiency.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>In April, 1995, the British Columbia Government joined forces with the province's electric and gas utilities and credit unions to implement BC21 PowerSmart. Rather than focusing on efficiency improvements for either gas or electricity, as past programs had tended to do, a comprehensive approach was taken that addressed both.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>BC21 PowerSmart gave itself goals of:</p>
+<ul>
+<li>reducing water consumption by 3.8 m 3</li>
+<li>achieving a 21.7 Gwh reduction in electrical energy consumption</li>
+<li>reducing natural gas consumption by 145,000 GJ</li>
+<li>creating 488 person years of employment</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Four contractors were retained to carry out one-hour energy efficiency audits in their regions (<a href="/en/tools-of-change/home-visits/">Home Visits</a>). They, in turn, hired and trained the home audit teams, each of which was usually made up of one woman and one man. Once the audit was completed, the team offered to install any energy-saving products which were needed, with a limit of one of each product per home. The products included a hot water tank blanket, pipe insulation, weather-stripping, caulking, gasket plugs, faucet aerators, flush reducers, and low-flow shower heads. As an incentive to participate, both the audit and the products were provided free of charge (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a>).</p>
+<p>At the end of the home visit, recommendations for further action were made. Information brochures were left behind, along with discount coupons for additional products such as compact fluorescent light bulbs, gas fireplaces, energy-efficient windows and set-back thermostats. Less than 1 percent of the coupons were redeemed.</p>
+<p>Several weeks after the installation was complete, utility employees returned to the homes to verify that the products had been installed correctly and that the householders were satisfied.</p>
+<p>To promote the program, advertisements were aired on television and radio, and several radio talk shows featured the program (<a href="/en/tools-of-change/mass-media/">Mass Media</a>). Newspaper and magazine advertisements invited residents to enrol for a home audit. Municipal representatives were invited to visit selected homes in each community to "observe" local installations, and these events were publicized. Ads were also placed on the sides of buses and included as inserts in utility bills. The program was promoted by staffing booths at shopping malls, special events and home shows; these approaches were found to be too labour intensive.</p>
+<p>While the communications campaign was instrumental in informing the public about BC21 PowerSmart, word-of-mouth was found to be the catalyst which prompted most people to enrol in the program (<a href="/en/tools-of-change/word-of-mouth/">Word-of-mouth</a>). Of all calls for appointments, 60 percent to 80 percent were made by people who had spoken to a relative or neighbour who had received a home visit and was very satisfied with the experience.</p>
+<h3>Okanagan First Nations Community Project</h3>
+<p>An extended version of the BC21 PowerSmart project was introduced in the Okanagan Valley - one of four community-based PowerSmart projects. In addition to creating jobs and conserving resources, this program also focused on training First Nations members and improving their housing stock. The home visits were similar to those described above.</p>
+<p>A BC21 PowerSmart Okanagan First Nations Committee, made up of representatives from each of the six participating bands, was established to provide input about the specific needs of the community. This was essential for the program's success, as there were some very sensitive issues which needed to be addressed, including political friction between band chiefs and the government, and a general mistrust of the government within the community. It was important to introduce the program as being neutral. To help achieve this, the project manager's office was set up in his home in the Okanagan Valley, rather than in a government or band council facility. To help overcome skepticism about the project by householders, First Nations members were hired as staff (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>).</p>
+<p>Staff who conducted the home visits received on-the-job training from professional installers in basic building technology, product installation, customer service, and documentation and reporting. This helped them to provide related services to their own community, and to compete for utility and government contracts.</p>
+<p>Project participants reported being very satisfied with the products and the level of service they received. They were happy that the project provided a service from which they could benefit. Some reported that they did not often see where and how monetary aid was spent for the benefit of the community.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>p&gt;Twenty million dollars was budgeted for this program. At the end of 1996 about $15 million had been spent on the following:</p>
+<table width="75%">
+<tbody>
+<tr>
+<td>Salaries</td>
+<td align="right">$ 1,240,000</td>
+</tr>
+<tr>
+<td>Special projects</td>
+<td align="right">$ 1,005,000</td>
+</tr>
+<tr>
+<td>Advertising and promotion</td>
+<td align="right">$ 900,000</td>
+</tr>
+<tr>
+<td>Overhead</td>
+<td align="right">$ 580,000</td>
+</tr>
+<tr>
+<td>Training</td>
+<td align="right">$ 37,000</td>
+</tr>
+<tr>
+<td>Credit facility set up</td>
+<td align="right">$ 25,000</td>
+</tr>
+<tr>
+<td>Other</td>
+<td align="right">$ 125,000</td>
+</tr>
+<tr>
+<td align="center">*   *   *</td>
+<td align="right"> </td>
+</tr>
+<tr>
+<td colspan="2">Funding was provided by:</td>
+</tr>
+<tr>
+<td>B.C. Government</td>
+<td align="right">$ 15 million</td>
+</tr>
+<tr>
+<td>B.C. Hydro</td>
+<td align="right">$ 3 million</td>
+</tr>
+<tr>
+<td>Utilities, Credit Unions and Greater Vancouver Regional District</td>
+<td align="right">$ 2 million</td>
+</tr>
+</tbody>
+</table><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>At the conclusion of each home audit, the installer completed a form indicating what products had been installed. This information was used to estimate the resulting savings in water and energy consumption from the program.</p>
+<p>A follow-up survey was conducted with 5,000 participants to measure satisfaction with the installations and to determine how many additional products were purchased by residents after their home visits. Most of the interviews were carried out by telephone, but a portion were completed during the quality assurance visits. As of March 1997, the results of this survey were not yet available.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>A letter of thanks was published in local newspapers and announcements were made on the radio. People across the province were thanked for their participation and were informed of how much energy and water had been saved.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Mike Tanner <br/>
+B.C. Hydro <br/>
+6911 Southpoint Drive (E 14) <br/>
+Burnaby, British Columbia <br/>
+V3N 4X8 <br/>
+(604) 528-1410 <br/>
+Fax: (604) 528-7781 <br/>
+E-mail: <a href="mailto:mike.tanner@bchydro.bc.ca">mike.tanner@bchydro.bc.ca</a> </p>
+<p>Warren Bell <br/>
+B.C. Ministry of Employment and Investment <br/>
+1810 Blanshard Street <br/>
+Victoria, British Columbia <br/>
+(604) 952-0244 <br/>
+Fax: (604) 952-0241 <br/>
+E-mail: <a href="mailto:wbell@galexi.gov.bc.ca">wbell@galexi.gov.bc.ca</a> </p>
+<p>Don Cromarty <br/>
+1975 Springfield Road <br/>
+Kelowna, British Columbia <br/>
+V1Y 7V7 <br/>
+(604) 868-4517 <br/>
+Fax: (604) 868-4524</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study was originally published in 1998 in "Tools of Change: Proven Methods for Promoting Environmental Citizneship" by Jay Kassirer and Doug McKenzie-Mohr (Published by Canada's National Round Table on the Environment and the Economy)</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

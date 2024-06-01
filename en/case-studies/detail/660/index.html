@@ -1,0 +1,340 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>PBSC Urban Solutions / Le Societé en commandite stationnement de Montréal (Montreal's parking authority)</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>TELUS (telecommunications)</li>
+<li>Rio Tinto Alcan (mining)</li>
+<li>Desjardins (financial cooperative)</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>By 2013, the Montreal system had 5,120 bikes and 411 stations, and more than 13 million trips had been made</li>
+<li>On a typical day, 21,000 BIXI trips were made in Montreal, each bike making an average of 6 trips, and BIXI users cycled more than 48,000 km</li>
+<li>90%+ trips were made by BIXI members.</li>
+</ul>
+<p> </p>
+<p><a href="http://www.citylab.com/city-makers-connections/bike-share/?utm_source=nl__link3_081715" target="_blank">History of Bikesharing</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Bixi_(company)" target="_blank">Wikipedia on BIXI</a></p>
+<p><a href="/userfiles/BIXI Case Study(1).pdf" target="_blank">Case Study PDF</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>BIXI Bicycle Sharing </h1>
+<p>BIXI Montreal is a great example of how to make  urban cycling a more practical and attractive transportation option. BIXI makes it convenient for commuters to cycle rather than drive, especially for frequent, short trips. The system was specifically developed to augment Montreal’s existing transit system and between 2009 and 2013 Montrealers made more than 13 million trips with BIXI. It is a turn-key service that is inexpensive and replicable across many countries and cultures. In addition, by making cycling more chic and attractive, BIXI has had a major impact on cycling in North America. Revised in September 2015.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>A bike-sharing system first came to the attention of the City of Montreal in 2007 when it was working on a new transportation master plan. The city gave the original mandate for the program to Montreal's parking authority (Societé en commandite stationnement de Montréal) because they had the expertise with wireless technologies that would be needed to implement the system. The authority was also used to dealing with municipal infrastructure and street furniture, which would also be factors in implementation.</p>
+<p>As the system was being developed, the parking authority created the Public Bike System Company (PBSC) to manage, operate and further develop the system in Montreal. PBSC has since become a private company, offering its bike-sharing expertise to cities around the world.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Before launching BIXI in 2009, PBSC created a blog and held a contest to name the system. BIXI was ultimate chosen for its combination of the words "bicycle" and "taxi."</p>
+<p>Surveys were used to identify the target audience - predominantly young adults aged 25 to 34 who were white collar workers with median incomes of about $35,000 and regular users of transit. This information helped PBSC decide where to site its first bike stations.</p>
+<p><em>Location of Audience</em></p>
+<p><img alt="" height="245" src="/userfiles/Image/AudienceClusters(1).jpg" width="369"/></p>
+<p><em>Location of Bike Stations</em></p>
+<p><img alt="" height="293" src="/userfiles/Image/Station locations.jpg" width="371"/></p>
+<p><em> </em>PBSC also made presentations to local businesses and at conferences to explain the system to potential sponsors and supporters and to ask for their input.</p>
+<p>Says Nicolas Blain, planning and development analyst with PBSC, "By knowing what people wanted, we were able to give them a better service. We created kind of a family spirit between everybody to make sure that the system would be viable."</p>
+<p>PBSC developed design criteria for the system. BIXI had to:</p>
+<ul>
+<li>Enhance the urban landscape, not be an impediment</li>
+<li>Be practical and aesthetic, with sturdy and sleek, modern-looking bikes</li>
+<li>Ensure that all components were easily transferred to different locations and that the technology platform was easy to set up.</li>
+</ul><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>PBSC hired Quebec-based Michel Dallaire, an award-winning industrial designer, to design the bikes and docking stations. Dallaire's personal experience with Paris's Vélib bike-sharing system helped him design the BIXI Montreal system, keeping in mind Montreal's climate.</p>
+<p><strong>Bikes and Docking Stations<br/>
+</strong></p>
+<p><em>Solar Powered Docking Station</em></p>
+<p><em><img alt="" height="576" src="/userfiles/Image/Station.jpg" width="332"/></em></p>
+<p> </p>
+<p>Each BIXI station consisted of a pay station, bikes, and bike docks, which were fitted into modular technical platforms powered by solar energy. The platforms served as the base and electronic ports for the wireless communication system that operated the pay stations and bike docks. Stations could be installed, expanded, configured and removed in about 30 minutes, and were monitored by a real-time management system.</p>
+<p>The bikes were made of rust-proof aluminum instead of steel.  "I like to compare the bike to a tank because it's almost indestructible, can go everywhere and it is fast," says Blain. "The bike design is curved to represent a boomerang, which is the main principle of the bike-sharing system: you throw it and it will always come back to the same point."</p>
+<p><em>Sleek and Trendy Design</em> </p>
+<p><img alt="" height="636" src="/userfiles/Image/woman on bike.jpg" width="331"/></p>
+<p> </p>
+<p>The docking station was designed to use the same amount of space a car does on the street, so the stations could be easily installed on main plazas or directly on sidewalks.</p>
+<p><em>On-Street Station</em></p>
+<p><img alt="" height="249" src="/userfiles/Image/Street.jpg" width="333"/></p>
+<p><em>On-Sidewalk Station</em></p>
+<p><em><img alt="" height="273" src="/userfiles/Image/Sidewalk.jpg" width="334"/></em></p>
+<p>The stations were entirely modular; they could be mounted and removed quickly without any alterations to streets or sidewalks. Almost all of the components for the Montreal BIXI system were made in Quebec—the bikes were built in Chicoutimi, and one of BIXI's sponsors, Rio Tinto Alcan, provided the aluminum.</p>
+<p>"The stations are entirely powered by solar energy," says Blain. "Everything's wireless, we have almost no impact on the environment, and can install a station pretty much anywhere in the city."</p>
+<p>The stations and the bikes were sleek and sturdy, making them a trendy option for people, as well as a low-cost transportation option. (Norm Appeals)</p>
+<p><em>Program Launch  </em></p>
+<p>BIXI Montreal was launched in May 2009. Due to the city's harsh winter climate, BIXI operated as a seasonal service from mid-April to mid-November. (Some BIXI systems in other cities operate year-round.)</p>
+<p>Based on the data gathered from the surveys, BIXI erected the first stations in areas nearest the target audience's home and work, including major transportation hubs and was soon fielding requests for new stations throughout the city (in 2012 alone, PBSC received 800 requests).</p>
+<p>"In our first year, everybody would come into the downtown area by bike but wouldn't go back home by bike because of the hills," says Blain. "Now that we're in our fifth season, people take the bike and go pretty much everywhere.  They've gotten used to it, they've learned how to bike in the city and they love it." (Overcoming Specific Barriers; Building Motivation over Time)</p>
+<p><em>How BIXI Works </em></p>
+<p>The BIXI system made it easy for even the most casual user to choose cycling as a transportation option. In particular, BIXI offered excellent connections between transportation modes.</p>
+<p>"With BIXI, a lot of people start from their home, take a bike and go to a major bus or subway train stop, to then take them to work," says Blain.  "We've got stations everywhere to create that inter-modality."</p>
+<p>To get a bike, users:</p>
+<ol>
+<li>Went to the pay station and inserted a credit card. The system provided an unlocking code, which was valid for 5 minutes.</li>
+<li>Entered the code on the keypad of the bike dock of their choice, which released the bike. The 30-minute allotted time began.</li>
+<li>Returned the bike to any BIXI station in the city when they were done.</li>
+</ol>
+<p>Pricing for the Montreal BIXI system fostered use for short trips. A BIXI user could purchase online a year-round membership ($82.50), a monthly membership ($31.25) or an occasional membership ($5.00) with unlimited trips of 45 minutes or less (i.e., the user had to dock the bike at a station within the 45 minute allotted time or was charged extra), or could choose to purchase a 1-day or 3-day access at the station.</p>
+<p>Although the City of Montreal had no bicycle helmet law, PBSC did recommend that users wear one. "It's one of the reasons we made deals with local shops to get bike helmets at a discount for BIXI members," says Blain.</p>
+<p>PBSC was in the process of developing a helmet vending machine. Users would be able to pick up and return both the bike and helmet at the station.</p>
+<p><em>Security </em></p>
+<p>During the first summer of operation, about 50 bikes were stolen or vandalized, so PBSC modified its security system. Since then, Blain reported that there had been very few incidents "We might find some flat tires, but nothing major," he says.  "No graffiti at all.  Nothing has been destroyed.  Our bikes are so sturdy that it's almost impossible."</p>
+<p><em>Permits </em></p>
+<p>To site each station, PBSC obtained a standard permit for temporary occupancy, issued by the City of Montreal. "For each permit, we ask for the specific road and location," explained Blain. "Before the season even starts, we have 400+ permits that cover locations on streets, sidewalks, and some that are in paid parking lots."</p>
+<p><em>BIXI's Future </em></p>
+<p>In 2012, PBSC estimated that there were approximately 500 bike-sharing systems worldwide. "There are also tons of requests for proposals to add systems, so the future is pretty bright," said Blain.</p>
+<p>"Regardless of the city, in my experience, everybody thinks at first that a bike-sharing system is mainly used by tourists and for casual users, but then they discover that people use the system as their principle means of transport to get to work," said Blain. With 20,000+ trips per day in Montreal, other cities were starting to see that BIXI as a low-cost and is an easy way to implement active transportation.</p>
+<p><em>Partnerships </em></p>
+<p>Primary sponsors included TELUS, Desjardins and Rio Tinto Alcan; the bikes and docking stations carried the logos of these companies.</p>
+<p><img alt="" height="242" src="/userfiles/Image/Sponsors.jpg" width="362"/></p>
+<p>Since inter-modality connectivity was an important consideration for the Montreal BIXI system, PBSC also partnered with local shops and other organizations, like Communauto (car sharing) and the Societé de Transport de Montreal (STM), to offer discounts to BIXI members.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>BIXI Montreal members and users were the main financial revenue stream for the system. The three sponsors contributed about 50% of PBSC's revenue.</p>
+<p>Blain estimated the total infrastructure cost per bike at between $4,000 and $4,500, but noted that because the system is customized, the price can vary.</p>
+<p>For other BIXI systems, Blain says that most financing fell into one of three categories, which were often combined: subsidies from the city where the system was installed; subsidies from other government programs; and user revenues.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>BIXI had a wireless communications network that PBSC used to track real-time data on the:</p>
+<ul>
+<li>Number of bikes at any given station</li>
+<li>Functional status of each bike, the solar panels, and the electronic components of the system</li>
+<li>Traffic and usage patterns of stations and bikes, and</li>
+<li>Location of every station and bikes in docking points throughout the system.</li>
+</ul>
+<p>PBSC also used a number of other data sources to learn more about its target audiences. For example, using a GIS (geographic information system) database from Statistics Canada allowed BIXI to see who their members were, their lifestyle, etc. "We also use a segmentation database to cluster the target populations we develop and have used some databases about family incomes and expenditures."</p>
+<p>Each year, at the end of the season, BIXI also surveyed its members to measure satisfaction levels and canvassed them for their ideas on improving the service.</p>
+<p>In an independent study, University of Montreal researchers examined what impact exposure to BIXI had on the likelihood of cycling.  Telephone surveys with about 7,000 people were conducted three times: when the program was first launched in 2009, later in the first season, and again in the second season.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>By 2013, BIXI Montreal had 5,120 bikes and 411 stations, and more than 13 million trips had been made since its 2009 launch.</p>
+<p>Typical daily BIXI Montreal usage was as follows.</p>
+<ul>
+<li>21,000 trips per day (27,000 on sunny days)</li>
+<li>Average use time: 13 minutes per day</li>
+<li>Average distance: 2.5 km (1.6 miles)</li>
+<li>Each bike made an average of 6 trips per day</li>
+<li>Each day, BIXI users cycled more than 48,000 km (more than the circumference of the Earth!)</li>
+<li>90%+ trips were made by BIXI members.</li>
+</ul>
+<p>"BIXI really changed the behavior of the population," says Blain.  "Before BIXI, 25% of bike trips were made to go to work.  Two years after BIXI was implemented in Montreal, it increased to 53%, so we've been able to reduce the number of cars on the road." In surveys, users said that without BIXI, only 3% of them would have used a bike, whereas 14% would have taken a car.</p>
+<p>Data from the wireless communications network revealed that peak hours (am and pm) for BIXI lined up with vehicle peak hours. "That’s a good indication that people are using BIXI exactly the way they would use a car, a subway or a bus," says Blain.</p>
+<p>"The other interesting thing that we found out by surveying our members is that going to work is the main reason they use BIXI. More than 40% of them use it on a daily basis to go to work."</p>
+<p>Results from the <a href="http://www.walkabilly.net/Publications_files/AJPH_revision2_Final.pdf">University of Montreal study</a>, published in the March 2013 issue of the American Journal of Public Health, showed that people who lived close to BIXI stations were more likely to use the system. Once weather, environment and other variables were factored in, the researchers found that exposure to BIXI significantly increased the likelihood of cycling.</p>
+<p>Worldwide, the BIXI bike-sharing system had more than 37,000 bikes in 2013 and operated in 15 cities and 2 University campuses, including Montreal, Toronto, Melbourne, Australia, London, England and New York.</p>
+<p>The BIXI system won several awards, including being named on the best innovations of the year (2008) by Time Magazine, an Edison Award (Gold) for best new product, and the 2009 Transportation Association Canada's Sustainable Urban Transportation Award, among others.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p><img alt="" height="155" src="/userfiles/Image/Nicolas.jpg" width="216"/></p>
+<p>Nicolas Blain<br/>
+Planning and Development Analyst<br/>
+PBSC Urban Solutions<br/>
+<a href="mailto:nblain@publicbikesystem.com ?subject=I%20saw%20your%20case%20study%20on%20Tools%20of%20Change">nblain@publicbikesystem.com</a></p>
+<p><span style="color: rgb(0, 0, 238); text-decoration-line: underline;"><a href="http://www.pbsc.com/" target="_blank">https://www.pbsc.com/</a></span></p>
+<p>Montreal BIXI: <a href="https://montreal.bixi.com/" target="_blank">https://montreal.bixi.com/</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>See also our <a href="http://www.toolsofchange.com/en/case-studies/detail/690">Citi Bike</a> (New York) case study.</p>
+<p><strong>Update (September 2015)</strong></p>
+<p>The company sold a record number of season passes in 2015 with 52,000 bikes at 460 sites in Montreal, Westmount and Longueuil. In addition, the number of people who occasionally used the bike-sharing service jumped by 83 per cent. The increases were due in large part to adding one-way ride for $2.75 and price drop for season pass to $85. There were 150,000 occasional rides between January 1 and the end of August 2015, up from 84,400 in 2014.</p>
+<p>BIXI had <a href="http://www.forbes.com/sites/michelinemaynard/2014/01/21/5-big-debts-in-the-bixi-bike-sharing-bankruptcy/" target="_blank">filed for bankruptcy in 2014 </a>and had been <a href="http://www.nytimes.com/2015/01/11/business/pedaling-uphill-to-save-a-bike-share-pioneer.html?_r=0" target="_blank">purchased by Bruno Rodi in 2015</a>. </p>
+<p><strong>Lessons Learned </strong></p>
+<p><em>Know your audience   </em></p>
+<p>Before launching BIXI Montreal, PBSC conducted surveys, and market and data research on their target audience in order to design a system that would meet their needs. "By knowing what people want, you're able to give them a better service," says Blain.</p>
+<p>In any BIXI system, Blain says that you will always have "early adopters," those people who are likely already cycling and will use the system immediately.   "Early adopters are in every city," says Blain, "so you need to target them first and, after a while, membership will grow through the population."</p>
+<p>As the Montreal BIXI system matured, PBSC  identified other target audiences, such as seniors and tourists.</p>
+<p>"Older people are now starting to use the system and we've seen an increase in memberships from them," says Blain.</p>
+<p>Although BIXI Montreal was aimed at short commuter trips, PBSC also began targeting the tourist market in Montreal as a result of what it learned from Ottawa's BIXI system.</p>
+<p>"The first season we only had ten stations in Ottawa, so we targeted the main tourist areas and added stations there," explains Blain.  "We did the same thing in Montreal and those stations are really working well."</p>
+<p><em>Site selection </em></p>
+<p>Blain says that site selection for the first docking stations was key as they needed them to be close to their future members.</p>
+<p>"Once you find where those people are living, and in relatively high density, it's a good indicator of where you will find future members and a site to install a station," says Blain. PBSC received hundreds of calls a year requesting new station locations. "Those requests are also a good indicator of where we need to put stations."</p>
+<p><em>Bike distribution </em></p>
+<p>One of the biggest challenges for any new BIXI system is redistributing the bikes to ensure that all stations are well-stocked. In the case of Montreal, however, this became less of an issue over time.</p>
+<p>"At first, we needed to empty the stations in the downtown area and physically bring the bikes back to the local stations to make bikes available to the population," says Blain.  Over time, more bikes were being returned to their original stations so there was far less redistribution required.</p>
+<p><em>Make it sustainable </em></p>
+<p>BIXI Montreal was financed through a combination of revenues from users and sponsors. Blain says that the system could become sustainable over time because PBSC planned their network so carefully.</p>
+<p>"We developed some mathematical models to evaluate the potential of each city," says Blain.  "We are able to see, just by a quick look throughout our system, how many potential members there are, how many casual users there are, and where the potential is for the best sites. By knowing that, you can plan a system that will be financially sustainable."</p>
+<p>Using social media was also a low-cost way to keep in touch with users. "Our users are the social media generation, so it's a huge part of our system and our marketing," said Blain. "Everything goes through Facebook: changes in the network [of stations], announcements, and to obtain direct feedback from users."</p>
+<p><strong>Landmark Designation  </strong></p>
+<p>The program described in this case study was designated in 2011. The case study was written by Jay Kassirer in 2013.</p>
+<p>Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff, and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Ben Campbell and Lisa Goodlet, Transport Canada</li>
+<li>Mark Dessauer, Active Living by Design</li>
+<li>Ryan Lanyon, Metrolinx</li>
+<li>Nathalie Lapointe, Federation of Canadian Municipalities</li>
+<li>Jacky Kennedy, Green Communities Canada</li>
+<li>Lorenzo Mele, Town of Markham</li>
+<li>Geoff Noxon, Noxon Associates</li>
+<li>Chuck Wilsker, U.S. Telework Coalition</li>
+<li>JoAnn Woodhall, Translink</li>
+</ul><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,520 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li> Fort Collins</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>CLEAResult</li>
+<li>Rocky Mountain Institute</li>
+<li>Platte River Power Authority</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Doubled home visit enrollment rates</li>
+<li>Converted 44% of energy efficiency assessments to comprehensive upgrades</li>
+<li>Doubled average project energy savings</li>
+</ul>
+<p> </p>
+<p><a href="/userfiles/Tools of Change- Fort Collins Case Study(2).pdf" target="_blank"><strong>Case Study PDF</strong></a></p>
+<p><a href="https://youtu.be/ECC62YE_4lg" target="_blank"><strong>Five Minute Video Summary</strong></a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Fort Collins Efficiency Works (Neighborhoods). </h1>
+<p><iframe height="auto" src="https://www.youtube.com/embed/ECC62YE_4lg" width="97%">
+</iframe></p>
+<p>In a pilot from the fall of 2015 to the fall of 2016, Fort Collins Utilities doubled enrollment rates, converted 44% of energy efficiency assessments to comprehensive upgrades, and doubled average project energy savings.  In 2017, this pilot received both Landmark designation and the American Public Power Association Energy Innovator award. The pilot offered a streamlined, turn-key service for homeowners that overcame key barriers to participation such as lack of time to select and meet with contractors, too many complex technical scope of work decisions, homeowner distrust of contractor proposals, and concerns about paying for improvements. The campaign also used a propensity model to target the neighborhoods with the highest potential for saving, and then direct mail marketing to neighborhoods with the highest propensity to participate.  This case study was designated Landmark in 2017. </p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em> </p>
+<p>Fort Collins Utilities provides electricity, water, and waste water and storm water services over a 55 square mile area and sells over 1,500 gigawatt-hours of electricity annually to 70,500 residential and business customers. Natural gas is by far the main fuel used to heat homes in this region. The utility operates a distribution grid (99% underground) and substations. Power is purchased from the Platte River Power Authority of which Fort Collins is an equity owner, along with the cities of Loveland, Longmont and Estes Park. There are approximately 36,000 attached (duplex, townhomes) and detached single family homes that qualify for the Efficiency Works Homes Program and this Pilot. The utility operates 20 different conservation programs involving 250 measures in all. </p>
+<p>In 2016, Fort Collins created the Efficiency Works Neighborhoods pilot program to increase the scale and comprehensiveness of energy efficiency and renewables projects needed to meet its Climate Action Plan in the existing home sector. The pilot aimed to increase the rates of participation, achieve higher energy savings, and make the upgrade process as simple as possible for homeowners.</p>
+<p><img alt="Map showing Fort Collins" height="306" src="/userfiles/Image/Map.JPG" width="450"/></p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>Fort Collins wanted to:</p>
+<ul>
+<li>increase contact rates from 2.5%</li>
+<li>increase average mid- 40% conversion rate</li>
+<li>increase the number of measures per project from an average of 2, to 4 - 5 measures recommended per audit</li>
+<li>increase savings per project</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>The utility chose to promote the purchase of whole home upgrades, due to its high potential impact on energy use and the high number of residents that had not yet implemented an upgrade. </p>
+<p>Fort Collins used focus groups, segmentation studies, and customer surveys to identify barriers that had prevented or discouraged homeowners from implementing upgrades in the past. The key barriers included the following. </p>
+<ul>
+<li>Complex, technical decisions about scope of work</li>
+<li>Lack of time to meet with and select contractors</li>
+<li>Lack of trust in contractor proposals</li>
+<li>Lack of an easy, affordable way to pay for improvements</li>
+</ul>
+<p>The utility also identified the benefits of whole home upgrades that would motivate community members to complete home upgrades. These motivations included the following.</p>
+<ul>
+<li>Improved health outcomes</li>
+<li>Higher level of comfort</li>
+<li>Increased property value</li>
+<li>Reduced energy costs</li>
+</ul>
+<p>Fort Collins conducted a detailed analysis of customers that had participated in its Home Efficiency program from 2010 to 2015. It plotted participation as a function of household income and education level and determined that the greatest participation had been with customers having an average household income of $75,000, which was slightly above the area household median income.  Customers with higher education levels (Bachelor degree and above) were found to participate more frequently than those with lower levels of education.</p>
+<p><strong>Prioritizing Audiences</strong></p>
+<p>The utility then carefully targeted neighborhoods using two main factors.</p>
+<ol>
+<li><em>Potential energy savings</em> - based on year of construction, average monthly energy use, energy use intensity and monthly base loads.</li>
+<li><em>Propensity for participation</em> – based on
+    <ul>
+<li>Household income (average household income at least the area median income)</li>
+<li>Education level  (average household education level of at least a Bachelor's degree)</li>
+<li>History of participation in other City programs.</li>
+</ul>
+</li>
+</ol>
+<p>Using the above criteria, Fort Collins scored and ranked neighborhoods, and used color coded dots that corresponded to the rankings to plot these ratings on a Google map of the City. Red dots indicated the neighborhoods with the greatest propensity to participate, then orange, and green indicated the lowest propensity. Once a decision was made to target a particular neighborhood, the dots in that neighborhood were changed to black. This enabled the program to visually determine clusters of neighborhoods to target and to track those previously and currently targeted. Each dot representing a neighborhood could also be clicked on to see the average household income, building age, and education level used to rank that neighborhood. </p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>To overcome the barriers related to time, complexity and trust, the utility developed a new, streamlined implementation path for home energy upgrades, as shown in the following diagram and table. (Overcoming Specific Barriers)</p>
+<p><img alt="" height="279" src="/userfiles/Image/Simplification chart.png" width="450"/><i style="mso-bidi-font-style:normal"><span lang="EN-CA" style='font-size:8.0pt;
+font-family:"Minion Pro","serif";mso-ansi-language:EN-CA;mso-bidi-language:
+#0400'>The new, streamlined implementation path reduced the number of site visits from 6 to 2, time to project completion from 119 to 76 days, and time to rebate from 88 to 43 days. <o:p></o:p></span></i></p>
+<p><strong>Recruiting Participants  </strong></p>
+<p>The program contacted potential participants three times, using carefully targeted and tailored communications that were timed to control the enrollment rate so as to not overwhelm staff and contractors.</p>
+<ol>
+<li>Customers were first sent a letter with a brochure announcing their neighborhood had been selected to participate in this new program.  The program tried using a post card for the first mailing; it was two times cheaper, but four times less effective.</li>
+<li>Two weeks later a follow up reminder post card was sent with a scarcity call to action.</li>
+</ol>
+<p><img alt="" height="320" src="/userfiles/Image/Postcard side one.JPG" width="450"/></p>
+<p> </p>
+<p><img alt="" height="320" src="/userfiles/Image/Postcard side two.JPG" width="450"/><i><span style='font-size:8.0pt;font-family:
+"Minion Pro","serif"'>The follow up reminder post card had a scarcity call to action. Front side (top) and back / address side (bottom)</span></i></p>
+<p> </p>
+<p><i><span style='font-size:8.0pt;font-family:
+"Minion Pro","serif"'><o:p></o:p></span></i></p>
+<p>The program tried and evaluated a number of communication methods for the third touch point, including a door-to-door porch light campaign, digital ads, NextDoor app, and neighborhood homeowner association newsletters. In addition, the energy advisors encouraged homeowners to tell their friends and neighbors about the program and offered a gift card for referrals.</p>
+<p>The most effective approaches leveraged social norms and peer diffusion. For example,organizers received permission from the City Public information office for homeowners that did a project to put up a yard sign telling neighbors, “My house is now more comfortable and efficient thanks to Efficiency Works. Join your neighbors, call… to sign up”. The program also installed brochure boxes on the signs and the brochures were replaced weekly. In addition, in the targeted neighborhoods, Open Houses were arranged that featured neighbor-to-neighbor presentations and an opportunity to show off work that had been done. These approaches proved very successful in creating neighborhood buzz about the program / word-of-mouth promotion. (Vivid, Credible, Empowering Communication; Word of Mouth)</p>
+<p><img alt="" height="254" src="/userfiles/Image/Yard sign and house.jpg" width="450"/> </p>
+<p><img alt="" height="337" src="/userfiles/Image/Yard sign.JPG" width="450"/></p>
+<p><i style="mso-bidi-font-style:normal"><span style='font-size:8.0pt;font-family:
+"Minion Pro","serif";mso-bidi-language:#0400'>The program put up yard signs with brochures that were replaced weekly. <o:p></o:p></span></i></p>
+<p>In contrast, having participants post their experience on the “Next door app” to create a buzz didn’t gain any traction in the targeted neighborhoods, and was determined to be inconsistent with City communications policies. Organizers also tried enlisting neighborhood association leaders; but it was difficult to determine the contact people and many were run by property managers. Fort Collins also tried going door to door replacing incandescent porch lights with LED’s while at the same time advertising the pilot and the City’s “Lose-a-Watt” campaign. While this labor-intensive and costly approach yielded enthusiasm from those contacted, no one followed through and enrolled for a home audit.</p>
+<p>Neighborhood newsletters (where available) and geo-fenced digital ads were also found to be effective (although the later were considered expensive).</p>
+<p>Communications were tailored to the concerns and motivators shared by different demographic groups. For example, messaging for higher income households stressed comfort, health, safety and savings while messaging for lower income households emphasized affordability and cost savings. (Vivid, Personalized, Credible, Empowering Communication)</p>
+<p><strong>The Home Assessment and Contractor Relations</strong></p>
+<p>Fort Collins offered pilot participants a free three-hour energy efficiency home assessment followed by a recommendations package presentation that usually lasted another hour with questions and explanations. Outside of the pilot, the utility had been pricing the home assessments at a subsidized rate of $60. (Home Visits)</p>
+<p>Pilot participants first contacted the program’s Energy Advisor, who handled program enrollment (including documenting customer interests and barriers) and assessment scheduling, final scope of work creation, contract routing, quality assurance scheduling, and rebate processing.</p>
+<p>The Energy Advisor then scheduled an appointment for the Home Performance Auditor to visit the participant at home. </p>
+<p>After the recommendations presentation, the participant could decide immediately to proceed with a selected package option, at which point the package scope of work and pricing would be forwarded to the Energy Advisor. However, getting to the final scope of work was usually an iterative process between the customer and the Home Energy Advisor. </p>
+<p>Participants usually investigated pricing for HVAC or windows (if recommended) before they selected a package. This was done separately with one to three contractors, as there was no standardized pricing for HVAC and windows projects. Once the additional HVAC or windows work was added, and/or the scope of work was revised to the customer’s satisfaction, the final scope of work for each specialty contractor was sent to the next contractor in rotation. That contractor had 48 hours to accept the job. Once accepted, the contractor created a proposal that was then sent to the Energy Advisor, who reviewed the proposal for accuracy with the original scope of work. </p>
+<p>The Energy Advisor then sent each proposal to the customer via DocuSign for signature. Each signed contract was returned to the specialty contractor, who then scheduled the work directly with the customer. </p>
+<p>The pilot expanded on and streamlined Fort Collins’ traditional home energy audit program model as follows.</p>
+<ul>
+<li><em>Reshaping its traditional audit.</em> Fort Collins had traditionally created and sent out Energy audit reports about a week after the audit –to the customer who would forward to the contractors bidding on the work. In the new model, packages of improvement recommendations were created by and bundled into packages by the program’s unbiased Home Performance Specialist, not a contractor. The options were presented to the customer in the home after the assessment. The measures had standardized pricing agreed to by the participating contractors. This streamlined the process for the customer and eliminated the often confusing shopping of bids, and the complexity of deciphering which bid was best to meet the customer’s outcome expectations.</li>
+</ul>
+<p><img alt="" height="442" src="/userfiles/Image/Report-benefits.JPG" width="450"/></p>
+<p class="MsoNormal"><i><span lang="EN-CA" style='font-size:8.0pt;
+font-family:"Minion Pro","serif";mso-ansi-language:EN-CA;mso-bidi-language:
+#0400'>The new reports used photographs to vividly explain the reasons for and benefits from each recommendation.<o:p></o:p></span></i></p>
+<ul>
+<li><em>New Role for the Advisors.</em> Since recommendations for improvement were now made by an independent Home Performance Specialist, the Advisors no longer had to review contractor bids with the customer to help decide who would perform the work. The Advisors now helped the customer customize and refine the final package selection, and sent the contract request for the customer to the next contractor up in rotation.</li>
+<li><em>Simplification of Choices:</em> Recommendations were bundled into three custom packages (Good, Better, Best). This increased the conversion rate from assessment to project, and the savings per household.
+    <ul>
+<li>Good:  comprehensive envelope (base package)</li>
+<li>Better: base + HVAC or windows</li>
+<li>Best: base + HVAC and windows, and/or solar PV<br/>
+<br/>
+        Most (52%) of the resulting retrofits were for the Best packages (higher than expected), 24% were for Better and 24% were for good. Those with a “do-it-yourself” mind-set or wanting more involved options could use the utility’s already existing home energy efficiency retrofit program instead.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" height="227" src="/userfiles/Image/Good-Better-Best.JPG" width="450"/></p>
+<p><i><span lang="EN-CA" style='font-size:8.0pt;
+font-family:"Minion Pro","serif";mso-ansi-language:EN-CA;mso-bidi-language:
+#0400'>This example from a recommendations report illustrates how the recommendations were grouped into three options – Good, Better, Best)</span></i><span style='font-size:11.0pt;font-family:"Minion Pro","serif";mso-bidi-language:
+#0400'><o:p></o:p></span></p>
+<ul>
+<li><em>Standardized Pricing</em>: Standardized pricing was the most difficult piece of this new model to create and implement. However it was also one of the most critical parts of streamlining the process and gaining trust with the customer. It eliminated customers having to meet with and then decipher proposals from multiple contractors to obtain a scope of work that was in their best interests. Customers could review pricing and discuss it with the independent auditors while they were still in the home.<br/>
+<br/>
+    Initially, organizers tried to create a standardized package price for each house type, since they knew more or less what each type needed. This proved impractical as even within fairly uniform house types there were too many assembly variables to create a single package price that the contractors would agree to.  Instead, the program’s standard prices were based on assemblies, such as air sealing and insulating a flat attic; insulating and air sealing attic knee walls, foundation walls, and rim-joists; and installing moisture soil gas barriers in crawl spaces. Standardized pricing was also developed for whole house ventilation and bath fans. Interested contractors that agreed to work at the standardized pricing were put on a rotation of contractors. <br/>
+<br/>
+    Some assemblies, like vaulted ceilings, which are complicated and expensive to properly insulate without creating a condensing surface inside the rafter space, were experimented with in sample homes. These were found to be too complicated to come up with a standardized price. So when a customer wanted to re-insulate the vault, the contractor came out and provided a customized proposal which was then included in the package.<br/>
+<br/>
+    HVAC and window work also involved so many variables that the program’s preferred contractors would not agree to standard pricing.  This eventually led to some concerns about fair pricing because of the non-competitive bid scenario (simple rotation of contractors). Starting in 2017, all packages where windows or HVAC pricing were requested were referred to multiple Tier 1 contractors - as many as the customer wanted bids from. The Home Advisor reviewed the bids with the customer, and if accepted added the chosen bid to the package.</li>
+</ul>
+<ul>
+<li><em>On-Bill Financing and Payment:</em>  On-bill financing and payment was provided through the Home Efficiency Loan Program. With HELP financing, customers could fund projects with no money down and receive financing for up to 100% of the project cost (up to $25,000) at rates of 2.5% (initially) to 4% (later in the program) for a term of up to 20 years. It was very fast and easy for customers to qualify for the loans (FICO&gt; 640 and 6 months good Utility bill payment history) which were repaid each month on their utility bill. The recommended package options report charted the estimated monthly savings from each of the three upgrade options as well as the monthly cost of using the HELP loan to finance them. Giving customers this low cost way to finance their project proved to be critical to achieving the level of success this pilot produced. Seeing the net cost helped ensure the homeowner’s expectations of savings would be met.</li>
+</ul>
+<ul>
+<li>In all, 64% of Pilot customers used the HELP loan, which was significantly higher than in the traditional path. <br/>
+<br/>
+<img alt="" height="355" src="/userfiles/Image/Financing options.JPG" width="450"/>
+<p class="MsoNormal" style="margin-left:.25in;tab-stops:0in .25in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><i><span style='font-size:8.0pt;font-family:
+"Minion Pro","serif";mso-bidi-language:#0400'>On-bill financing and payment, with fast and easy access to low-interest loans.</span></i></p>
+    When city funds for HELP loans were no longer available (starting in October 2016) the program partnered with a local credit union. However interest rates and the monthly payment at longer terms were not as attractive and the loan qualifications were not as quick and easy. Use of the HELP loan fell from 64% of projects in the pilot (through October 2016) to 13% of the streamlined projects as of May 2017, more customers paid cash, and the scopes of work were less comprehensive. </li>
+</ul>
+<ul>
+<li><em>Quality Assurance Using Photo Documentation:</em> The pilot also developed a new 100% Quality Assurance process using photo documentation on all major improvements for every project, without the time and expense of a site visit. A picture of the assembly needing improvement was taken and uploaded in the "cloud", and the technician uploaded a picture of the completed work for program QA manager review. It proved very successful and  reduced program and contractor expenses significantly due to fewer callbacks.</li>
+</ul>
+<p><img alt="" height="493" src="/userfiles/Image/Photo-documentation.png" width="450"/></p>
+<p class="MsoNormal"><i><span style='font-size:8.0pt;font-family:
+"Minion Pro","serif"'>Photo documentation reduced program and contractor expenses significantly due to fewer callbacks.<o:p></o:p></span></i></p>
+<p><strong>Overcoming Barriers </strong></p>
+<p>The following table shows the key barriers to action and how they were overcome.<i><span style='font-size:11.0pt;font-family:
+"Minion Pro","serif";mso-bidi-language:#0400'> </span></i><span style="font-size:11.0pt;mso-bidi-language:#0400"> </span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-top-alt:solid #4F81BD 1.0pt;
+ mso-border-bottom-alt:solid #4F81BD 1.0pt;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0in 5.4pt 0in 5.4pt">
+<tbody>
+<tr>
+<td style="border-top:solid #4F81BD 1.0pt;border-left:none;
+  border-bottom:solid #4F81BD 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt" valign="top">
+<p class="MsoNoSpacing"><b><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639">Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="border-top:solid #4F81BD 1.0pt;border-left:none;
+  border-bottom:solid #4F81BD 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt" valign="top">
+<p class="MsoNoSpacing"><b><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639">Solution<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr>
+<td style="border:none;background:#D3DFEE;padding:0in 5.4pt 0in 5.4pt" valign="top">
+<p class="MsoNoSpacing"><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639">Homeowner lack of time to select and meet with   contractors</span><b><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639"><o:p></o:p></span></b></p>
+</td>
+<td style="border:none;background:#D3DFEE;padding:0in 5.4pt 0in 5.4pt" valign="top">
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:-.25in;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;
+  color:#363639">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639">Streamlined implementation path<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:none;padding:0in 5.4pt 0in 5.4pt" valign="top">
+<p class="MsoNoSpacing"><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639">Complex decision making for choosing the right   scope of work</span><b><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639"><o:p></o:p></span></b></p>
+</td>
+<td style="border:none;padding:0in 5.4pt 0in 5.4pt" valign="top">
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:-.25in;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;
+  color:#363639">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]--><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639">Impartial Home Performance assessors provide   recommendations<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:none;background:#D3DFEE;padding:0in 5.4pt 0in 5.4pt" valign="top">
+<p class="MsoNoSpacing"><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639">Gaps in the comprehensiveness of efficiency   upgrades</span><b><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639"><o:p></o:p></span></b></p>
+</td>
+<td style="border:none;background:#D3DFEE;padding:0in 5.4pt 0in 5.4pt" valign="top">
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:-.25in;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;
+  color:#363639">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639">The basic level (“Good”) option includes a   comprehensive list of measures<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:none;padding:0in 5.4pt 0in 5.4pt" valign="top">
+<p class="MsoNoSpacing"><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639">Inconsistent quality of workmanship</span><b><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639"><o:p></o:p></span></b></p>
+</td>
+<td style="border:none;padding:0in 5.4pt 0in 5.4pt" valign="top">
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:-.25in;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;
+  color:#363639">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639">100% quality assurance process using photo   documentation <o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:none;background:#D3DFEE;padding:0in 5.4pt 0in 5.4pt" valign="top">
+<p class="MsoNoSpacing"><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639">Homeowner distrust of contractors</span><b><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639"><o:p></o:p></span></b></p>
+</td>
+<td style="border:none;background:#D3DFEE;padding:0in 5.4pt 0in 5.4pt" valign="top">
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:-.25in;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;
+  color:#363639">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639">Impartial Home Performance assessors  recommend the three packages</span></p>
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:-.25in;mso-list:
+  l0 level1 lfo1"><span style="text-indent: -0.25in; font-size: 10pt; font-family: Symbol; color: rgb(54, 54, 57);">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><span style="text-indent: -0.25in; font-size: 10pt; color: rgb(54, 54, 57);">Contractors for the pilot were selected from   the top performers in an existing home energy retrofit program. Starting in   2017 on they must meet rigorous top tier qualifications, based on QA and   customer-service scores.</span></p>
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:-.25in;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;
+  color:#363639">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><!--[endif]--><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639">Providing 100% QA on every job<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:none;border-bottom:solid #4F81BD 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt" valign="top">
+<p class="MsoNoSpacing"><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639">Access to affordable and convenient financing</span><b><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639"><o:p></o:p></span></b></p>
+</td>
+<td style="border:none;border-bottom:solid #4F81BD 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt" valign="top">
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:-.25in;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-size:10.0pt;
+  font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;
+  color:#363639">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>        </span></span><span style="font-size:10.0pt;mso-bidi-font-family:
+  NimbusSanL-Regu;color:#363639">On-bill financing with attractive terms<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>  </p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The costs for the pilot were as follows.</p>
+<ol>
+<li><em>Marketing and Outreach Development:</em>(Caros Consulting): $17,250</li>
+<li><em>Marketing Costs:</em> (program material mailings): $15,000</li>
+<li><em>Third Party Program Administration:</em>(CLEAResult): $142,000</li>
+<li><em>Rebates to Contractors:</em> $222,000 Total Cost: $396,250 This new approach, while requiring a more complex role for the Home Performance assessor, with extra time needed to measure work assemblies and create packages of recommendations for an in-home presentation, did not increase program administration costs. While there was a higher level of time commitment by the energy advisors on a daily/weekly basis, overall the time commitment was less than the traditional audit path because the project time was 2-4 months instead of 4-8 months.</li>
+</ol><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The data provided below are deemed savings based on the renovations that were actually carried out.  As of 2018, the program had approval from the gas Utility to release EWH participants’ gas use data post-improvement, going forward on a quarterly basis. Rocky Mountain Institute  agreed to analyse the actual energy use impact from EWN participants, and 1118 EWH customer’s gas use data from 2015.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>In 2018, Fort Collins began a benchmarking and building scoring effort as a part of the City’s Climate Action Plan. The residential component of this initiative included providing EWN project participants with an energy performance improvement certificate (EPIC) that displayed a pre- and post-improvement Home Energy Score (HES), energy use intensity, estimated annual savings, and a list of the energy efficient measures that contributed to the home’s improvement.</p>
+<p>Partnerships with local realtors and appraisers were in progress to create a methodology for the energy efficiency improvement measures to be shown in a Green Features pop-up box in a property’s listing, with a copy of the EPIC Certificate as a searchable document.  This information box and Certificate in the MLS would be used by realtors, buyers, and appraisers; they were intended to give more detail to the energy efficient features in listings, and provide additional value to the energy efficiency investments made by the owner.</p>
+<p>This made efficiency a direct value-added feature without a time-based return on investment analysis. It also helped overcome customer objections when measures or projects had a long payback period or there was a short time frame before the sale of the property.</p>
+<p>The EPIC was planned to be used not only a post improvement completion certificate but also as an annual energy performance scorecard, a marketing contact to encourage work on incomplete recommended actions, and an  opportunity to open a dialog with customers when expectations were not being met.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>The average deemed savings per home that had a project was 750 kWh of electricity plus 300 Therms of natural gas (equivalent to 8793 kWh), for a total savings of 9,543 kWh / year / household. </p>
+<p>This represented a 70% increase in natural gas savings and a 50% increase in electricity savings per home, compared with the utility’s standard home energy program (EW-Homes).</p>
+<p>There were 64 homes participating in the pilot. At 9,543 kWh per family that amounts to 610,752 kWh.</p>
+<p>Compared with the utility’s usual home energy conservation program, the pilot</p>
+<ul>
+<li>Enrolled twice as many participants (with 44% of those who received the home visit purchasing a package)</li>
+<li>Increased Therm savings per home by 70% and kWh saving per home by 50%</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Kim S. DeVoe<br/>
+Energy Services Engineer<br/>
+Fort Collins Utilities<br/>
+(970) 221-6749<br/>
+<a href="mailto:kdevoe@fcgov.com?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> kdevoe@fcgov.com </a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Innovations</strong></p>
+<p>The program improved on the home energy visit models used to-date across North America by incorporating the following components.</p>
+<ul>
+<li><em>Simplification of Choices:</em>  Recommendations were narrowed down to only three custom packages (Good, Better, Best) and focused specifically on whole home retrofits. This increased participation and also savings per household. Those with a “do-it-yourself” mind-set or wanting more options could use the utility’s already existing home retrofit program instead.</li>
+<li><em>Standardized Pricing:</em> Standardized pricing was the most difficult piece of this new model to create and implement. However it was also one of the most critical parts of streamlining the process and gaining trust with the customer. It eliminated customers having to meet with and then decipher proposals from multiple contractors to obtain a scope of work that was in their best interests. The customer could review pricing and discuss it with the independent auditor while the Home Advisor was still in the home.</li>
+<li><em>Quality Assurance Using Photo Documentation:</em> The pilot also developed a new 100% Quality Assurance process using photo documentation on all major improvements for every project, without the time and expense of a site visit.</li>
+<li><em>Performance Improvement Certificates, Real Estate Listings:</em>  Fort Collins’s discussions with the local MLS to provide home efficiency information to realtors, buyers, and appraisers makes efficiency a direct value-added feature, not just a possible time-based return on investment.</li>
+</ul>
+<p><strong>Promotion Channels and Conversion Rates </strong></p>
+<p>This pilot tested three promotion channels against conventional low cost channels like utility bill stuffers: (1) direct mail, (2) norms appeals and word of mouth / peer diffusion, and (3) social media. Together, the first and third cost 35% more in the pilot than using the conventional low cost strategies like utility bill stuffers in the Homes program. However, in conjunction with the other outreach channels used they also produced more than a 50% higher response rate.  Of those people who responded to the promotions, 70% enrolled in the program and booked a home assessment. The conversation rate from assessment to project was slightly less than 50%.</p>
+<ol>
+<li><em>Direct Mail</em> was the primary reason people gave for booking their home visits.  It consisted of a direct mail letter (first touch), followed up with a post card (second touch).  The direct mail letters with a brochure inside, cost $2.97 each, and the postcards were $0.99 each. We sent out 150 letters and post cards per week, 600 per month, at an approximate cost of $4 total each or about $2,400 per month. At a response rate of 5.4%, this translated to 33 acquisitions for a cost of $72.72 per lead, which is expensive. But the conversion from lead to program audit participant was 77%, which is high. This high participation conversion rate led to a steady on-going number of projects; enough to keep contractors busy and happy, which was very important to their accepting projects with standardized pricing, which they were initially apprehensive about. The program continued to use this promotion channel. In some neighbourhoods, the pilot also tested the use of postcards for both the first and second touches. However, postcard-only neighborhoods had a response rate 75% less than neighborhoods that had a letter and follow-up postcard. We felt the program brochures inside made the difference.</li>
+<li><em>Norm Appeals and Word of Mouth / Peer Diffusion were key to the next most effective approaches, open houses and yard signs with brochure boxes.  In contrast, the “Next door app”, porchlight campaign, and enlisting local community association leaders did not gain traction.</em></li>
+<em>
+<ul>
+<li>Social Media was the least effective.  Geo Fenced digital ads cost $500 per month to target a specific neighborhood, which was about $0.83/ click. While they generated a significant number of clicks, they were seldom the reason given for booking a home visit. They were eventually discontinued.</li>
+</ul>
+</em></ol>
+<p><em> </em></p>
+<p><em> </em></p>
+<p><em> </em></p>
+<p><em><strong>Landmark Designation</strong></em></p>
+<p><em> </em></p>
+<p><em>The program described in this case study was designated in 2017.</em></p>
+<p><em> </em></p>
+<p><em>Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff, and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</em></p>
+<p><em> </em></p>
+<p><em>The panel that designated this program consisted of:</em></p>
+<p><em> </em></p>
+<ul><em>
+<ul>
+<li>Arien Korteland, BC Hydro</li>
+<li>Kathy Kuntz, Cool Choices</li>
+<li>Doug McKenzie-Mohr</li>
+<li>Brian Smith, Pacific Gas and Electric Company</li>
+<li>Reuven Sussman, American Council for an Energy-Efficient Economy</li>
+<li>Marsha Walton, New York Energy Research and Development Authority</li>
+</ul>
+</em></ul>
+<p><em> </em></p>
+<p>This case stdy was written by Jay Kassirer in 2018. </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

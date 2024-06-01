@@ -1,0 +1,278 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="/en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+<li><a href="/en/tools-of-change/work-programs-that-influence-the-home/">Work Programs that Influence the Home</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>The GreenCommute Program is the result of the association with its partners.</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Nortel Networks</li>
+<li>The City of Ottawa</li>
+<li>OC Transpo</li>
+<li>The National Capital Commission</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>15 percent of the approximately 5,200 employees were taking non-auto transportation (transit, telecommuting and cycling) to work in 2000, a 3 percent increase from 12 percent in 1998</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Nortel Networks' GreenCommute</h1>
+<p>In 1998, Nortel Networks initiated GreenCommute, a Transportation Demand Management (TDM) program for its campus expansion in Ottawa, Ontario, that has grown into one of the most comprehensive TDM programs in Canada. Nortel Networks has since expanded the program to other sites in Canada and United States. This case study shows how key partnerships, pedestrian-oriented site design, and a strong commitment to green commuting can successfully engage employee participation. Replicability: high</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>When Nortel Networks, the global internet and communications corporation, decided to expand their Carling Avenue campus, one of the municipality's approval conditions was that the company initiate a Transportation Demand Management (TDM) program at the site. The Carling Avenue site was located in a suburban area of Ottawa, Canadas capital. With a population of over one million, Ottawa was the country's fourth largest metropolitan area and a hub of its growing high technology sector.</p>
+<p>In response, Nortel Networks designed GreenCommute and teamed up with the Regional Municipality of Ottawa-Carleton, the City of Nepean, OC Transpo (Ottawa's transit system), and the National Capital Commission. (Note that as of January 2001, the Regional Municipality of Ottawa-Carleton, the City of Nepean, and old City of Ottawa and the City of Kanata no longer exist and have been replaced by the amalgamated City of Ottawa. The remainder of this case study will refer to the City of Ottawa as the amalgamated City, recognizing that partnerships formed at the outset of the GreenCommute program have continued on with the amalgamated City of Ottawa.) Together, these partners initiated a wide-ranging TDM program that provided incentives for and decreased barriers to green commuting for the 8000 people who would ultimately work at the site.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The overall goal of the GreenCommute program was to enhance and promote alternative commuting practices in an effort to proactively confront environmental issues facing our communities.</p>
+<p>The programs specific measurable objectives for fulfilling this goal were as follows.</p>
+<ol>
+<li>To increase the percentage of non-auto trips from 12 percent to 15 percent by the year 2000, and to 25 percent by the year 2005.</li>
+<li>To increase average auto occupancy from 1.12 to 1.3 persons per car by the year 2000, and to1.5 persons per car by the year 2005.</li>
+</ol><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>In May 1998, the City of Ottawa conducted a traffic count to gather information on how people arrived at the existing Carling campus. This information provided a benchmark on which to base objectives for improvement. Average auto occupancy was 1.12 persons per car, and only 12% percent used alternative transportation methods to get to work (e.g., transit, cycling, teleworking, walking/in-line skating).</p>
+<p>At the same time, Nortel Networks conducted a comprehensive on-line survey of the 11,500 employees at its existing Ottawa campus. That survey consisted of about 50 questions on topics such as: home location, distance traveled to work, regular transportation habits, opinions on various alternatives, receptivity to trying alternative commuting methods, potential barriers and motivating factors.</p>
+<p>According to the survey, 87 percent of employees were interested in trying alternative transportation. The key barriers identified were:</p>
+<ul>
+<li>Transit - travel time / indirect transit routes, lack of convenience, and lack of flexibility.</li>
+<li>Carpooling - finding compatible people.</li>
+<li>Bicycling/Walking - unsafe bicycle routes, lack of route information, inconvenient shower and locker facilities, inconvenient and/or non-secure parking for bikes.</li>
+<li>Telecommuting - Manager disapproval, available technology.</li>
+</ul>
+<p>In March 1999, a joint promotion with the City and OC Transpo provided employees at the Carling campus with a coupon redeemable for a free transit pass. Approximately 30 percent (1,300) of people working at the Carling campus took advantage of this offer. Each pass recipient had to fill out a mini-questionnaire on existing commuting habits. According to that survey, 55 percent of the respondents usually commuted by car, 31 percent rode the bus regularly, 39 percent rode the bus occasionally, 20 percent hardly ever did, and 10 percent said they never rode the bus.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Infrastructure Elements</strong></p>
+<p>Prior to developing the formal TDM program, several fundamental elements were integrated into the sites design to make access by pedestrians, cyclists, and transit users safer and easier. An extensive network of tree-lined pathways and sidewalks throughout the campus made for pleasant and safe walking, and stop signs at on-site intersections gave priority to pedestrians. Nortel Networks also significantly improved the existing cycling routes leading to its Carling site.</p>
+<p>In addition, the company worked with the City and OC Transpo to develop a centrally located transit hub that provided a focal point where people could wait for buses and obtain information on routes and scheduling. A television screen at the hub displayed continuously updated bus arrival times. OC Transpo also doubled transit service to the site, increased peak period bus service and provided midday trips to key travel destinations. With these infrastructure elements in place, the stage was set for the initiation of the companys TDM communications.</p>
+<p><strong>The Launch</strong></p>
+<p>Nortel Networks kicked off GreenCommute internally by hiring a full-time TDM Coordinator in March 1998, demonstrating their ongoing commitment to the programs success. In addition, having a Coordinator on-site ensured program consistency and leadership; having a single point of contact facilitated employee and partner participation.</p>
+<p>Once the program identity and strategy were developed, an initial on-line survey (see <a href="#informed">Getting Informed</a>) introduced GreenCommute to people working at the Carling Campus (<a href="/English/ToolsofChange/default.asp?Section=Work">Work Programs that Influence the Home</a>). The survey provided basic information on the GreenCommute program, why it was being introduced, what its goals were, and told people that the program would be developed based on their needs and priorities. Information was requested on existing commuting habits and people were asked their opinion on the various alternative modes. By the time the GreenCommute program was formally launched a year later, on March 22, 1999, people were starting to move into the new buildings and were already taking advantage of the available infrastructure at the site a key element of the programs resources.</p>
+<p><strong>On-Line Ride-Matching System, and Dedicated Carpooling Areas</strong></p>
+<p>The on-line survey had identified that finding compatible carpool partners was a key barrier to on-site carpooling. After some background research, Nortel Networks developed its own custom intranet-based ride-matching system, which it launched in December 1998. This self-serve program allowed registered members to search for compatible carpool partners based on a variety of selected criteria.</p>
+<p>As an incentive to carpool, specific parking areas (11 percent of all parking) were dedicated for carpoolers with two or more occupants. These areas were preferentially located (closer to the main building.) One of the three reserved lots, which provided underground parking, was originally reserved for carpoolers with three or more occupants; that was downgraded to two or more because of parking demand. In order to park in these areas, drivers had to obtain a special GreenCommute sticker through the custom developed carpool registration system and place it on their windshield. This windshield sticker later evolved into a hangtag (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives</a>, <a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>).</p>
+<p><strong>Ongoing Events</strong></p>
+<p>With the participation and support of their local partners, Nortel Networks GreenCommute program provided numerous activities and opportunities for the people working at their sites to learn more about and try alternative transportation methods and related resources.</p>
+<ul>
+<li><strong>Test Ride Transit</strong> - In March 1999, a formal media event was held to promote Test Ride Transit, a joint promotion with the City of Ottawa, OC Transpo, and Nortel Networks (<a href="/en/tools-of-change/mass-media/">Mass Media</a>). This event formally introduced the GreenCommute program, and inaugurated the new Transit Hub and passenger waiting area. On the day of the media event, people working at the Carling campus found kit folders enclosed in a reusable lunch bag waiting on their desks with information on alternative commuting specific to the Carling campus, along with a coupon redeemable for a free April transit pass (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives</a>). The pass was aimed at enticing those who had never tried or seldom used transit, to ride the bus for one month. An outstanding 29 percent (1,300 people) of Carling employees took advantage of this pass, and filled out a pre-trial questionnaire to gauge commuting habits (see <a href="#informed">Getting Informed</a>). As a result of the promotion, OC Transpo had a 25 percent increase in transit ridership for the month of April.</li>
+<li><strong>Cycling Promotion Week</strong> - Held in May 1999, in association with the Nortel Networks Bicycle Users Group (NORBUG) and Citizens for Safe Cycling, GreenCommute sponsored an event to promote cycling as a viable form of commuting. This event included demonstrations on safe cycling and different bicycle designs, and resulted in a 50 percent increase in NORBUG's Carling membership (<a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>, <a href="/en/tools-of-change/word-of-mouth/">Word of Mouth</a>). As an additional benefit, GreenCommute engaged NORBUG, an employee-owned interest group, to become an active participant in company cycling issues.</li>
+<li><strong>Commuter Challenge</strong> The Commuter Challenge, a national grassroots event aimed at promoting environmental citizenship through green commuting practices, was an incredible success for the GreenCommute program in 1999, 2000 and 2001. Although Nortel Networks had participated in previous years, there had been no centralized corporate promotion and participation had been negligible. However, in 1999 and 2000, participation increased significantly. In 1999, Nortel Networks accounted for a phenomenal 29 percent of the entire National Capital Region's participants and in 2000, 20 percent more Carling employees signed up compared to the previous year. In all three years, the company came first in its class (employers with over 1,000 employees) with the most participants. This clearly articulated the success of the GreenCommute initiative in building awareness and greater interest in alternative commuting.</li>
+<li><strong>What Moves You - Transportation Fair 2000</strong> - Held in May, 2000, this daylong on-site event was attended by 45 percent of employees at the Carling site. With the participation of all their partners and companies like Ford Motor Company, Health Canada, Environment Canada, Natural Resources Canada, the event was designed to provide information on a variety of commuting alternatives and included demonstrations and/or information on:
+    <ul>
+<li>OC Transpo Rack &amp; Roll bus, routes, schedules and future plans (free day passes were distributed)</li>
+<li>Light rail in Ottawa</li>
+<li>Bicycle maps and safety</li>
+<li>Active living</li>
+<li>Environment, health and climate change</li>
+<li>Fords Th!nk model electric and fuel cell vehicles and bicycles</li>
+</ul>
+</li>
+<li><strong>Climate Change: The Scientific Basis for Concern</strong> - In recognition of Canadian Environment Week and Clean Air Day Canada 2000, GreenCommute offered the opportunity to learn more about global climate change through a presentation by a leading scientist in the field. The event, held in an open area to attract pass-by traffic (<a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>), captured the interest of over 175 people. OC Transpo brought interested people via shuttle bus to Carling from other Nortel Networks sites in Ottawa. Running concurrently with the presentation, a working demonstration of the Wireless Internet was displayed to allow people to register for the Commuter Challenge (<a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a>).</li>
+</ul>
+<p><strong>Communications and Promotion</strong></p>
+<p>GreenCommute offered people working at Nortel Networks a dynamic intranet Web site with information and support on alternative commuting methods. The site was updated regularly with alerts and related articles to keep employees current on events, and remind them of upcoming activities. In addition, survey results were posted so that employees could gauge their own performance and rethink their commuting options, as was information on levels of participation at various events (<a href="/en/tools-of-change/feedback/">Feedback</a>, <a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a>, <a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation over Time</a>).</p>
+<p>Promotion of the GreenCommute program was primarily email- driven, through e-mail web alerts describing each upcoming event or commuting-related issue, why Nortel Networks was initiating it, and what the benefits were. Additionally, random draw prizes were occasionally offered to encourage participation (<a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives</a>). Posters were also used, when necessary.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>As of June 1999, Nortel Networks had invested over eight million Canadian Dollars to construct underground parking facilities; to protect building links; improve transit facilities, pedestrian and cycling paths to and through the site; and to maintain the GreenCommute program.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>High attendance levels at all events indicated a keen awareness of the GreenCommute program, but it was the survey of June 2000 that provided the quantitative proof. That survey was administered, two years after the baseline survey and traffic count, to gauge the programs penetration and impact at the Carling campus. It consisted of approximately 25 questions conducted by telephone and received 358 responses. Employees were asked if they were aware of the GreenCommute program; whether or not the program had caused them to think more about the impacts of commuting on the environment, health and the community; if the program provided a meaningful benefit; and if the GreenCommute program made it easier to get to work without a car. Additionally, employees were asked if they had carpooled, telecommuted, taken transit, or cycled to work in the last 12 months; how many of the alternatives had each respondent used; and how often they used each mode during the summer versus the winter months.</p>
+<p>Along with the survey, annual traffic counts were in order to make a comparison with the 1998 counts.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>The intranet website provided survey results and updates on participation at various events.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>The GreenCommute program achieved its Year 2000 objectives. Awareness of the impact personal commuting choices have on the environment, community and lifestyle was on the rise.</p>
+<p>Traffic count data showed that 15 percent of the approximately 5,200 employees were taking non-auto transportation (transit, telecommuting and cycling) to work in 2000, a 3 percent increase from 12 percent in 1998.</p>
+<p>Outstanding employee participation in the numerous on-site events provided evidence of increased awareness and engagement. The Transportation Fair 2000 attracted 45 percent of Carling employees; Nortel Networks won the Commuter Challenge in their class three years in a row, and the Carling campus participation increased 20 percent from 1999-2000; NORBUG increased its Carling campus membership by 50 percent with the addition of 135 new members.</p>
+<p>In addition, the GreenCommute Awareness Survey of 2000 found that almost all (96 percent) of staff had heard of GreenCommute, and 73 percent had tried at least one mode of alternative transportation during the past year. 90 percent of respondents thought the GreenCommute program provided a meaningful benefit, 79 percent said that it made it easier to get to work without a car, and 70 percent thought that the program caused them to think more about the impacts of commuting on the environment, health and the community.</p>
+<p>The partners themselves also received benefits. Improved transit facilities, better routes, and faster travel times resulted in higher ridership for OC Transpo. Additionally, other associations such as Citizens for Safe Cycling benefited from the opportunities to spread their safety message on-site to Nortel Networks employees, and NORBUG increased its membership at the Carling campus.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Sharon Lewinson, P.Eng 	<br/>
+TDM Program Manager 	<br/>
+Commuting Solutions 	<br/>
+Address: 	<br/>
+Nortel Networks 	<br/>
+3500 Carling Ave 	<br/>
+Ottawa, ON K2H 8E9 	<br/>
+Telephone: (613) 763-6677 	<br/>
+Fax: (613) 723-8275 	<br/>
+Email: <a href="mailto:lewinson@nortelnetworks.com">lewinson@nortelnetworks.com</a> or <a href="mailto:commutingsolutions@home.com">commutingsolutions@home.com</a> <br/>
+Website: <a href="http://www.nortelnetworks.com/corporate/community/environment/initiatives/commute_alt.html">http://www.nortelnetworks.com/corporate/community/ 		<br/>
+environment/initiatives/commute_alt.html</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Lessons Learned</strong></p>
+<p>The most important lesson learned from the GreenCommute program was that it takes time to change commuting behaviour in a free-choice environment. Along with behavioural changes, the sustained support of the Nortel Networks partnership (specifically transit route improvements) would be essential to meet future modal split objectives.</p>
+<p> </p>
+<p>Case study written in 2001 by Jill Kruse.</p>
+<p>Funding for the addition of this case study was generously provided by the Government of Canadas Climate Change Action Fund, Suncor, Syncrude, Enbridge Consumers Gas and TetraPak Canada.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

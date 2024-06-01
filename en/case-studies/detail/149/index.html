@@ -1,0 +1,318 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Town of Okotoks</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Okotoks Rotary Club</li>
+<li>Local neighbourhood groups</li>
+<li>TransAlta Utilities</li>
+<li>Alberta's Ministry of the Environment</li>
+<li>Alberta Municipal Affairs</li>
+<li>Faculty of Environmental Design (EVDS), University of Calgary</li>
+<li>Pembina Institute of Appropriate Development</li>
+<li>Natural Resources Canada</li>
+<li>Prairie Farm Rehabilitation Administration</li>
+<li>QC Data</li>
+<li>Le Bureau Geo Info</li>
+</ul><!-- Partners already contains li tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Sustainable Okotoks</h1>
+<p>Unprecedented steps were taken by the Town of Okotoks, Alberta to ensure its long-term sustainability. The community devised a sustainable development plan that rests on four guiding principles: environmental stewardship, economic opportunity, social conscience and fiscal responsibility.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>In September of 1998, Okotoks became one of the first communities in Canada to recognize its environmental limits to growth were restricted by the carrying capacity of the local watershed. Dependent on the Sheep River for its water, the town faced two possible courses of action. The first course would see a continuation of growth without limits, where the local infrastructure would exceed local carrying capacity and create the need for a larger, regional infrastructure system. The second course would see the town function within the limits of the watershed's carrying capacity. The community chose the latter, focusing on quality of life and the environment, rather than on quantity of growth and standard practices.</p>
+<p>Critical to the success of the Okotoks Sustainable Development Plan was the political will to continue with the programs implemented under its umbrella. The towns council had a good understanding of sustainable development as a viable strategy for its community.</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>Okotoks adopted a number of key objectives:</p>
+<ul>
+<li>Live within the carrying capacity of the Sheep River Watershed (25,000 to 30,000 residents). This carrying capacity was determined by setting sewage limits in accordance with water quality standards.</li>
+<li>Cap growth and urban boundaries at the carrying capacity.</li>
+<li>Create an infrastructure that supports the carrying capacity of Okotoks. This includes building an underground infrastructure (for water, sewers and storm sewers) that is not oversized.</li>
+<li>Modify urban design. Implement mixed-land-use neighbourhoods, increase employment opportunities within neighbourhoods, create home-based businesses, expand the network of off-street pedestrian pathways and open space systems and induce more robust and ecological landscaping.</li>
+<li>Incorporate eco-efficiency measures such as recycling, water conservation, architectural regulations and urban forest policies for urban renewal and expansion.</li>
+<li>Implement a Sheep River watershed management plan, regional plan and transportation plan.</li>
+</ul>
+<p>Within the overall program, the objectives of the water/waste conservation education program were to:</p>
+<ul>
+<li>reduce per capita water consumption</li>
+<li>reduce per capita waste</li>
+<li>increase recycling revenue and sell 100 per cent of yearly compost. The town generates significant revenue from the sale of cardboard, paper, glass, plastics, aluminum and compost.</li>
+</ul>
+<p>The goal of the Water Treatment project was to have the quality of the discharge of effluent into the Sheep River equal to or better than the upstream water quality of the river.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>In the fall of 1997, the Town of Okotoks was ready to renew its Master Plan. Town planners sent a survey to residents about the future oftheir community. Two issues were at the top of the list. First, Okotoks was fast becoming a bedroom community for commuters to Calgary and therefore the residents felt a disintegration of their community and a declining sense of social cohesion. Second, the community was known for its environmental consciousness and wanted this reflected in the town planning.</p>
+<p>Residents returned about 1,000 community surveys out of the 3,000 that were mailed. According to the surveys, citizens wanted to preserve the small town way of life and stimulate an increased respect for the environment. Respondents said that a successful life is measured notby how much one has but how well one lives.</p>
+<p>Extensive public and stakeholder consultation, including five open houses, resulted in the development of four guiding principles, fiveintentions and the policies and procedures that enable their implementation. The four principles are:</p>
+<ul>
+<li>environmental stewardship</li>
+<li>economic opportunity</li>
+<li>social conscience</li>
+<li>fiscal responsibility</li>
+</ul>
+<p>The five intentions are:</p>
+<ol>
+<li>Create a balance between economic opportunity, social consciousness and environmental stewardship.</li>
+<li>Live within the carrying capacity of the natural environment, i.e., the Sheep River Watershed.</li>
+<li>Leave the land in good shape for future generations to enjoy.</li>
+<li>Look beyond traditional municipal, urban and rural boundaries and recognize the regional ecosystems boundary.</li>
+<li>Recognize that successful sustainability in a community must be supported and led by the community.</li>
+</ol><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p><strong>Sustainable Neighbourhood Design</strong> <br/>
+As an alternative to urban sprawl, in 1999 Okotoks, asked the University of Calgary's Faculty of Environmental Design and a local real estate developer (Prominence Realty) to design a sustainable neighbourhood on Prominence lands in Okotoks. The partners produced a comprehensive sustainable neighbourhood concept that included:</p>
+<ul>
+<li>mixed commercial, residential and recreational land use within neighbourhoods, to aid in decreasing automobile use</li>
+<li>pedestrian trails as a link between neighbourhoods</li>
+<li>above-ground storm water management in the form of filtration systems</li>
+<li>xeriscaping (planting of drought-tolerant native plants) in private and public spaces</li>
+<li>use of new technologies for gray water recycling, low-flow toilets, tap aerators and passive energy (e.g., solar) in homes and businesses</li>
+</ul>
+<p>This partnership between the Town of Okotoks and the University of Calgary was financially sponsored by TransAlta Utilities and included faculty and student research. The initial work in the multi-year partnership focused on two activities: sustainable neighbourhood design and Sheep River regional watershed management.</p>
+<p><strong>Municipal Waste Management</strong> <br/>
+An upgraded waste treatment system was constructed. Based on Finnish technology, the process separates solid from liquid waste and generates an inert solid material that can then be mixed with residential compost and sold.</p>
+<p><strong>Water and Waste Water Education Program</strong> <br/>
+Natural Resources Canada chose the Town of Okotoks as one of eight case studies used for evaluating best practices in drinking water use and wastewater reduction. The Healthy Okotoks Coalition agreed to undertake parts of the proposed awareness program. The water/waste awareness program was publicized in various ways, including:</p>
+<ul>
+<li>For Futures Sake, a regular column in the local newspaper</li>
+<li>bi-annual state of the environment progress report, The Green Machine, distributed to every household in the community</li>
+<li>As the Soil Turns, a brochure on composting</li>
+<li>Water Ways, a water conservation brochure</li>
+<li>Naturally Okotoks (2001), a comprehensive conservation guide..</li>
+</ul>
+<p><strong>Recycling and Composting</strong> <br/>
+A voluntary recycling and composting program began in 1992 and expanded in 1998, with the addition of processing facilities. The compost was marketed under the name of Okotoks Gold. The town also partnered with TransAlta utilities for an annual Christmas tree chipping program. The chips were used in urban parks as mulch for tree plantings. The towns regular promotion and awareness initiatives increased per capita recycling tonnage by 400 percent from 1992 to 2000.</p>
+<p><strong>Community Garden</strong> <br/>
+The Healthy Okotoks Coalition constructed 30 community garden plots on land donated by the town. Three plots were donated to the local food bank.</p>
+<p><strong>Urban Forest Renewal</strong> <br/>
+The Okotoks Rotary Club helped raise funds and install pathways along the Sheep River. Neighbourhood groups donated their time to revitalize parks (e.g., tree planting and playground equipment installation). As well, land was purchased or donated along the Sheep RiverValley and escarpment for conservation. To aid in forest preservation, the town created an urban forest lifecycle management plan that includes a planting demonstration of drought-tolerant native species.</p>
+<p><strong>Green Buildings</strong> <br/>
+In 1998-2000, a partnership with Alberta Municipal Affairs and the Pembina Institute of Appropriate Development facilitated a retrofit of all municipal buildings. New, higher-efficiency mechanical and lighting equipment was installed to reduce energy consumption and decrease CO2 emissions. The cost savings achieved through decreased energy consumption were placed in a revolving fund for other energy efficiency projects.</p>
+<p><strong>Intermunicipal Development Plan</strong> <br/>
+An Intermunicipal Development Plan was negotiated with the Municipal District of Foothills that will ensure preservation of natural and heritage aesthetics as well as further protection of the rural/urban transition zone. Based on Okotoks principles of sustainable development, it included:</p>
+<ul>
+<li>a minor adjustment to the municipal boundary (500 acres) with no future request for annexation</li>
+<li>preservation of the aesthetics along highway corridors</li>
+<li>protection of an urban/rural transition zone</li>
+<li>no allowance for the extension of the Town of Okotoks infrastructure beyond its corporate limits i.e. no utility services will be provided outside the towns municipal boundary</li>
+</ul>
+<p><strong>Regional Economic Development Initiative</strong> <br/>
+The Town of Okotoks lowered its commuter ratio by creating more local employment opportunities, attracting commercial and industrial development and encouraging home-based and remote technology businesses. To support home-based and remote technology businesses, Okotoks had high-speed Internet connections brought into the community.</p>
+<p><strong>Sheep River Regional Watershed Management</strong> <br/>
+The management of the Sheep River Watershed, the water source for approximately 20,000 regional residents, was critical to the successful implementation of the Okotoks Initiative.</p>
+<p>Okotoks established partnerships to merge a variety of related databases, facilitate a greater understanding of the watershed ecosystem and provide a management plan for the future. This project was used as a prototype for other watershed management programs across Canada.</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The town of Okotoks estimated the following breakdown of financial support. The majority of partner support was in-kind donationof personnel.</p>
+<p><strong>1998</strong></p>
+<ul>
+<li>total budget: $35,000</li>
+<li>creation of Sustainable Okotoks development model</li>
+</ul>
+<p><strong>1999</strong></p>
+<ul>
+<li>total budget: $450,000</li>
+<li>contributions from the province of Alberta: 40 percent</li>
+<li>Municipal 2000 grant funds for town building eco-efficiency project: $150,000</li>
+<li>grants from TransAlta Utilities: $100,000 per year</li>
+<li>Eco-Action 2000 Funds from Environment Canada (grant for a three-year water/waste conservation awareness program): $45,000 for a three-year program. This was augmented by approximately $15,000 per year from utility revenues.</li>
+</ul><!-- Financing already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Water consumption</strong> <br/>
+Within the first year (April 1999-2000) of the Water and Waste Education Program there was a one percent decrease in water consumption. The town estimated a further 30 per cent reduction over 15 years, or a decrease from 450 to 300 litres/day/person.</p>
+<p><strong>Waste Production</strong> <br/>
+The town predicted a two percent reduction in landfill tonnage by April 2000 and a 35 percent reduction over 15-20 years. In 1997, 800tons of compostable materials sent to landfill sites were made into 80 tons of compost. In 1999, the collection program collected 1,000 tonnes of paper, plastic and glass recyclables, a 700 percent increase over 1992. Recycling revenues increased by two percent in 1999-2000.</p>
+<p><strong>Pesticide Use</strong> <br/>
+There was an 85 percent reduction of pesticide and herbicide use on public lands.</p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Chris Fields 	<br/>
+Community Development Officer 	<br/>
+P.O. Box 220 	<br/>
+Okotoks, Alberta T0L 1T0 	<br/>
+Tel.: 403-938-4404 	<br/>
+E-mail: <a href="mailto:fieldsc@fclc.com">fieldsc@fclc.com</a> <br/>
+Web site: <a href="http://www.town.okotoks.ab.ca/oksust.htm">www.town.okotoks.ab.ca/oksust.htm</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Partnerships</strong> <br/>
+Many partnerships were formed over the course of the initiative.</p>
+<ul>
+<li>Okotoks Rotary Club helped raise funds and install pathways along the Sheep River.</li>
+<li>Local neighbourhood groups donated labour and time for revitalizing local parks.</li>
+<li>TransAlta Utilities conducted an annual Christmas tree chipping program and funding for the sustainable neighbourhood project.</li>
+<li>The province of Alberta provided funding for the expansion of the recycling program.</li>
+<li>Alberta Municipal Affairs provided grants for retrofitting municipal buildings with energy saving devices.</li>
+<li>Faculty of Environmental Design (EVDS), University of Calgary implemented a comprehensive sustainable development model that respected environmental limitations. Formed in January 1999, it was financially sponsored by TransAlta Utilities and included faculty and student research.</li>
+<li>Pembina Institute of Appropriate Development identified ways of reducing CO2 emissions in accordance with the Kyoto Protocol.</li>
+</ul>
+<p>Okotoks established partnerships with Natural Resources Canada, Albertas Ministry of the Environment, the University of Calgary, the PrairieFarm Rehabilitation Administration, QC Data and Le Bureau Geo Info. These alliances allowed for a merger of a variety of databases and provided expert advice on the management of the Sheep River Watershed. Analysis of the data was expected to facilitate a greater under-standingof the watershed ecosystem and will be used as a management tool in the future. Natural Resources Canada has used this project.</p>
+<p> </p>
+<p>This case study was written in 2002 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

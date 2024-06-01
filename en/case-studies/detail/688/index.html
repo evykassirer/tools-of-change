@@ -1,0 +1,323 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/prompts/">Prompts</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p>King County Metro Transit</p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<p>Local community organizations, non-profits, businesses and other community stakeholders</p><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>During the program, each participant reduced, on average, 10.7 car trips, 243 kilometres travelled, saved 28 litres of gas, and avoided 65 kg of CO2.</li>
+<li>Based on legacy survey findings, the impacts were sustained (though reduced) 1.5 years after the program ended.</li>
+<li>By the summer of 2015, about 23,000 people had participated in 36 In Motion campaigns, reducing as many as 900,000 car trips and saving as much as two million litres of gasoline. </li>
+</ul>
+<p> </p>
+<h2><strong>Resources</strong> </h2>
+<p>4.5 Minute<strong> </strong><em><strong><a href="https://www.youtube.com/watch?v=4L_Ihi9OzWI&amp;t=13s" target="_blank">You Tube Video</a> </strong>(old format)</em></p>
+<p>Case Study <a href="/userfiles/King County In Motion case study-2017.pdf" target="_blank">PDF</a></p>
+<p>Webinar <a href="/userfiles/King County transcript.doc" target="_blank">Transcript</a></p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>King County In Motion </h1>
+<p>In Motion participants pledge to shift two drive-alone trips per week to transit, ridesharing, biking or walking. The program uses motivational interviewing, commitments, rewards, engaging materials and norm appeals tailored to each target community. It has been called into action during or in anticipation of major construction, transit restructures or new transit service such as light rail or bus rapid transit. Since creating In Motion in 2004, King County Metro Transit has applied a growing toolkit of community-based social marketing techniques to persuade about 23,000 Seattle-area travelers to drive less.  Designated a <em><a href="http://www.toolsofchange.com/en/topic-resources/transportation/landmark-case-studies-(transportation)/">Landmark</a></em> case study in 2015. Access the 4.5 minute <a href="https://www.youtube.com/watch?v=4L_Ihi9OzWI&amp;t=13s" target="_blank">You Tube video</a> summary using the link near the bottom of the left hand taupe-colored column.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><strong>Note:</strong> <em>To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em> </p>
+<p>For many years, Metro Transit had offered programs aimed at reducing drive-alone traffic, and increasing ridership, for daily commuters. This focus was, in part, due to the State of Washington's Commute Trip Reduction law, passed in 1991, which called on employers to encourage employees to drive alone less often.</p>
+<p>"We began looking at the data and saw that 80% of trips were non-work trips," said Sunny Knott, a transportation planner with King County's Department of Transportation. She explained that the County would not meet its goals if they continued to focus solely on commute trips. "We wanted to create a program that would focus on other, non-work trips. In Motion became that program."</p>
+<p><img alt="" height="387" src="/userfiles/Image/Mapcruzin.JPG" width="450"/></p>
+<p><em>Map courtesy of Mapcruzin.com</em></p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The program was designed to reduce drive alone travel among participants.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>To understand neighborhood needs, King County Metro Transit researched, identified and interviewed local stakeholders and business leaders in each of its targeted neighbourhoods.  </p>
+<p>In each community, a guided group discussion with residents and community leaders helped the organizers to:</p>
+<ul>
+<li>Learn how best to reach the community</li>
+<li>Understand their concerns and suggestions for the program</li>
+<li>Solicit partners for the program</li>
+<li>Identify specific motivations, barriers and benefits to using alternative modes of transportation</li>
+<li>Identify the best communication channels to reach members of the community</li>
+</ul>
+<p>This research helped them understand some of the most common barriers, including a real and perceived lack of travel choices, inconvenience, safety, geography (e.g., hills for cyclists / pedestrians), or cultural norms, and helped identify the most promising messaging for each neighborhood.</p>
+<p>"We targeted areas where people identified as belonging," said Knott. “We wanted areas with a good sense of community and an available travel network."</p>
+<p>Certain neighborhoods were targeted if changes to transit services or major construction projects, which would impact travel, were planned for those areas.</p>
+<p>"Large construction projects really impact people's travel behaviour, so that's a good moment to reach out to them and ask them to change," said Knott.</p>
+<p>Once neighborhoods were identified and stakeholders consulted, the program was then customized for each project area. Local partners indicated what services or support they could offer; incentives, prompts and rewards were identified; and the program’s messages were tailored to fit the audience. </p>
+<p><img alt="In Motion sustainable transportation cbsm program" height="245" src="/userfiles/Image/In Motion Final Logo_noborder-horizontal.jpg" width="450"/></p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Each neighborhood In Motion program lasted between 10 and 16 weeks. Direct mail communications were first sent to each household in the neighborhood (populations ranged from 5,000 to 10,000 households). The mailer included messages specific to the neighborhood, a neighborhood map, and a sign-up card that participants could mail back. They also had the option to sign up online. </p>
+<p><img alt="Drive less. Live More. Earn Rewards (TDM program)" height="291" src="/userfiles/Image/Capitol Hill.png" width="450"/></p>
+<p>The maps showed local transit routes how long it took to walk from the neighborhood to surrounding locations. This helped overcome misconceptions about how long it would take to walk and take transit to these places. (<em>Vivid, Personalized, Credible, Empowering Communication</em>) </p>
+<p><img alt="Vivid, personalized, empowering communication. Transportation program." height="599" src="/userfiles/Image/Mercer Island.jpg" width="450"/></p>
+<p>"The mailer is where we asked them to make their pledge to drive less," Knott explained.  Participants were asked to reduce two of their vehicle trips per week. (<em>Obtaining a Commitment</em>) Participants could also request additional information be sent to them, such as transit or cycling information. </p>
+<p>Once participants pledged they were asked baseline information about their current travel behaviour and what modes of travel they used most regularly (pre-program survey). </p>
+<p><img alt="Pledge / signup form for In Motion travel social marketing program" height="577" src="/userfiles/Image/Signup.png" width="450"/></p>
+<p>Participants logged their trips by postcard or online. "We still offer a paper version for people because this was really important in certain communities," said Knott. (<em>Overcoming Specific Barriers</em>)</p>
+<p>The program was supported by local businesses with posters and window slicks and other information materials that helped local leaders promote the program. In neighborhoods with mostly single family homes, participants were given yard signs to display their commitment to the program. (<em>Norm Appeals, Obtaining a Commitment, Prompts, Word of Mouth</em>) </p>
+<p><img alt="" height="691" src="/userfiles/Image/Walk More Poster.png" width="450"/></p>
+<p><img alt="Posters for In Motion transportation cbsm program" height="600" src="/userfiles/Image/Posters - MI.JPG" width="450"/></p>
+<p><em>Local business posters</em></p>
+<p>In Motion staff also participated in many community events to meet face-to-face with residents and let them know about the program. "We participate at a lot of local farmers' markets but we've also set up tables at libraries and grocery stores," said Knott. "It all depends on where that community's gathering spaces are."</p>
+<p><img alt="Community outreach event for the In Motion travel social marketing program" height="397" src="/userfiles/Image/Community_Table.png" width="450"/></p>
+<p><em>Rentin In Motion outreach event</em></p>
+<p>Rewards and incentives were offered for those who participated. The most popular was the ORCA transit card (smart card), pre-loaded with two weeks of unlimited travel. (I<em>ncentives</em>)</p>
+<p>In Motion encouraged participants to continue with their travel changes through weekly email bulletins. (Feedback, Building Motivation Over Time) At the end of the program, participants were asked the same travel questions as when they pledged, as well as additional questions about their impressions of the program (post-program survey).</p><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Metro Transit budgeted $25/household in each of the target areas. Target areas ranged in size from 5,000 to 10,000 households.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The program used four key ways to measure program impacts:</p>
+<ol>
+<li>Pre and post Surveys. At the start and end of the program, participants were surveyed about their travel habits. The post-program survey also asked about changes in mode use, barriers and motivators to participate.</li>
+<li>Trip Tracking. Participants logged trips by mode and day. This reinforced their behavior changes and provided information for tracking personal and program progress in reducing car trips, vehicle miles, CO2, and fuel.</li>
+<li>Legacy Survey -To assess sustained changes in travel behavior, the program re-surveyed participants from two programs about 18 months after the programs ended.</li>
+<li>Transit Data – Participants received pre-loaded transit cards, which enabled program managers to directly collect aggregate program data on participant transit boardings, fare re-loading value, and whether the rider had added a pass. Baseline information was not available for data collected this way.</li>
+</ol>
+<p> <img alt="" height="261" src="/userfiles/Image/ORCA transit card.jpg" width="350"/></p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>A comparison of pre- and post- survey data showed significant reductions in drive alone travel among participants.</p>
+<p><strong>Participant Level</strong></p>
+<p>On average, during the 12 week program each participant:</p>
+<ul>
+<li>Reduced 10.7 car trips relative to the original project baseline</li>
+<li>Reduced 151 vehicle miles traveled</li>
+<li>Saved 7.5 gallons of gas</li>
+<li>Helped avoid 143 lbs. of CO2 from being released into the atmosphere</li>
+</ul>
+<p><img alt="Impacts from In Motion travel social marketing program" height="391" src="/userfiles/Image/Post-program_Survey_Findings.png" width="450"/></p>
+<p>During the 12 week sampling period that began 18 months after the intervention, on average each participant:</p>
+<ul>
+<li>Reduced 6.4 car trips, relative to the original project baseline</li>
+<li>Reduced 90.6 vehicle miles traveled</li>
+<li>Saved 4.5 gallons of gas during a program</li>
+<li>Helped avoid 86 lbs. of CO2 from being released into the atmosphere during a program</li>
+</ul>
+<p>On an annual basis, during the first year and half of the program, on average each participant therefore:</p>
+<ul>
+<li>Reduced between 28 and 46 car trips, relative to the original project baseline</li>
+<li>Reduced between 392 and 654 vehicle miles traveled</li>
+<li>Saved between 19 and 32 gallons of gas during a program</li>
+<li>Helped avoid between 372 and 621lbs. of CO2 from being released into the atmosphere during a program</li>
+</ul>
+<p><img alt="Legacy survey shows long term impacts of In Motion transportation cbsm program" height="248" src="/userfiles/Image/Legacy_Survey_Findings.png" width="450"/></p>
+<p>According to the legacy survey, there was a sustained decrease in drive-alone rates and a sustained increase in other modes of transportation, with some changes persisting a year and a half after the program ended.</p>
+<p>The legacy survey results were really powerful for program management, who had already seen the pre- and post- survey data. Considering that most people can’t remember answers they made 18 months beforehand, it was sstriking to see them continuing to report that they drove less than they had before In Motion.</p>
+<p>In addition, roughly half of participants did not previously have a transit fare card (ORCA card), which has increased on-going transit use among previous non-transit users, especially for non-work trips. Based on ridership analysis, approximately 24% of the promotional ORCA cards continue to be used after the campaign ends.</p>
+<p><strong>Overall Impact</strong></p>
+<p>Population size of the program’s audience: 19,814 participants (10% of target households)</p>
+<p>By the summer of 2015, In Motion participants had:</p>
+<ul>
+<li>Reduced between 555,000 and 911,000 car trips, relative to the original project baseline</li>
+<li>Reduced between 7.8 and 13 million vehicle miles traveled (13-21 million km)</li>
+</ul>
+<p>In Motion’s strategies also helped remove vehicles from the road and manage traffic congestion and infrastructure costs. For example, King County Metro Transit used In Motion to mitigate traffic impacts during major highway construction; the program was also used to educate residents about major changes in transit service, including when transit service was added, reduced or restructured, to help people find alternatives to driving.</p>
+<p>In Motion also raised awareness that the vast majority of trips were non-work trips and for less than three miles. This knowledge helped motivate program participants to adopt active transportation choices for short personal trips, such as errands and school trips. </p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Ms. Sunny Knott<br/>
+Senior Transportation Planner, Department of Transportation<br/>
+King County, Washington, USA<br/>
+<a href="mailto:sunny.knott@kingcounty.gov?subject=I%20saw%20your%20case%20study%20on%20the%20Tools%20of%20Change%20website"> sunny.knott@kingcounty.gov</a>  206-477-5812<br/>
+<a href="http://www.kingcounty.gov/inmotion" target="_blank"> http://www.kingcounty.gov/inmotion</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Program Planning and Evaluation Toolkit</strong></p>
+<p>A program planning and evaluation toolkit is available at <a href="http://kingcounty.gov/depts/transportation/metro/programs-projects/in-motion/toolkit.aspx" target="_blank">kingcounty.gov/depts/transportation/metro/programs-projects/in-motion/toolkit.aspx</a></p>
+<p><strong>Lessons Learned</strong></p>
+<ul>
+<li><em>Know your audience: </em>In Motion customized its messages for each neighborhood and offered tools for the tech and social media-savvy markets, while also attending to issues of social equity, including cultural and language barriers. Knott explained, for example, how paper mailers and postcards continued to be used because it was important to certain communities.</li>
+<li><em>Establish beneficial and realistic partnerships:</em>  In Motion partnered with many different organizations that had similar goals, including public health agencies, other departments of transportation, active transportation organizations, schools, employers, and neighborhood groups.  "Some of our partnerships with small non-profits were also very successful," said Knott. "They don't have a lot of capacity but they helped with getting messages out through their own communication channels. It met their need to get out to the community and it also met our goals."</li>
+<li><em>Know when to ask for help:</em>  Metro Transit did not have enough employees to fully staff In Motion and hired consultants during project implementation. "They bring different perspectives to our campaigns," said Knott. "This helps push us along and gets us to try new things."  Knott pointed to one neighborhood that had a significant proportion of Spanish speakers. "We worked with a consultant to go beyond translation. We didn’t directly translate the words; we recreated the phrasing and used words that really communicated the message to that audience." (<em>Vivid, Personalized, Credible Communication</em>)</li>
+<li><em>Take advantage of change moments:</em>  In Motion was used during major construction projects and transit services changes to mitigate the impact on commuters.  "Those are good times to ask people to change," said Knott. "They have a good reason to consider making a change because of the impact of the construction that's going on."</li>
+</ul>
+<p><img alt="Door hangers for In Motion travel social marketing program" height="351" src="/userfiles/Image/Door_hangers.png" width="450"/></p>
+<p><em>In Motion went door-to-door with motivational interviewing</em></p>
+<ul>
+<li><em>Keep evolving.</em>   In Motion evolved, adding or expanding its tools to include direct motivational interviewing, translated materials, and geo-based social media. As a result, In Motion continued to be effective across a wide range of communities: urban, suburban and rural; transit-rich or with limited access; neighborhoods with mostly single-family homes or multi-family units; and with participants who were from diverse incomes, cultures and languages.</li>
+</ul>
+<p><strong>Designation</strong></p>
+<p>Designation as a Landmark (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff, and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Jacky Kennedy, Green Communities Canada</li>
+<li>Ryan Lanyon, City of Toronto</li>
+<li>Nathalie Lapointe, Federation of Canadian Municipalities</li>
+<li>Patricia Lucy, Translink</li>
+<li>David Levinger, Mobility Education Foundation</li>
+<li>Geoff Noxon, Noxon Associates</li>
+<li>Chuck Wilsker, U.S. Telework Coalition</li>
+<li>Phil Winters, CUTR and the University of South Florida</li>
+</ul>
+<p>This case study ws written in 2019 by Jay Kassirer and Sharon Boddy.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="/en/tools-of-change/mass-media/">Mass Media</a></li>
+</ul>
+<h5>Initiated By</h5>
+<p> King County, WA, USA</p><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<p> Local businesses, library</p><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>16% average reduction in drive-alone trips </li>
+</ul>
+<p><br/>
+<strong>Case study </strong><a href="/userfiles/Capitol Hill In Motion.pdf" target="_blank"><strong>PDF</strong></a></p>
+<p><strong>Five Minute Summary </strong><a href="https://www.youtube.com/watch?v=95SSI900iww&amp;t=47s" target="_blank"><strong>Video</strong></a></p>
+<p> </p><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Capitol Hill In Motion</h1>
+<p><iframe height="auto" src="https://www.youtube.com/embed/95SSI900iww" width="97%">
+</iframe></p>
+<p>Capitol Hill <em>In Motion</em> is a recent evolution of the individualized marketing approach used by King County, Washington State, USA. It illustrates how to further engage communities where most trips are already not drive-alone. With remarkably high signup rates, this campaign also delivered a solid 16% average reduction in drive-alone trips (surpassing the campaign goal and King County’s overall goal of a 10% reduction).  Designated in 2017. </p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>Since creating In Motion in 2004, King County Metro Transit has applied a growing toolkit of community-based social marketing techniques to persuade Seattle-area travelers to drive less. Capitol Hill is a densely populated residential district, well-served by transit. With easy access to trains, buses, and car sharing, 70 percent of people were already commuting using transportation options other than driving alone - transit, biking, walking, carpooling, vanpooling, and teleworking. So, how do you reduce the small number of remaining drive-alone trips?</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>The program objectives were:</p>
+<ol>
+<li>Enroll 1,000 car-owners in the In Motion program – representing ten percent of the 10,000-household project area.</li>
+<li>Motivate 75 percent of participants to pledge to reduce their drive-alone trips.</li>
+<li>Motivate participants to reduce drive-alone trips by ten percent and encourage them to maintain that commitment.</li>
+</ol><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>To understand neighborhood needs, King County Metro Transit researched, identified and interviewed local stakeholders and business leaders in each of its targeted neighbourhoods. The approach used is outlined in a separate case study <a href="https://toolsofchange.com/en/case-studies/detail/688">here</a>.</p>
+<p>For this community, King County and consultant C+C conducted in-depth stakeholder interviews and focus groups with six trusted community organizations. The team discovered that while the Capitol Hill neighborhood has a high walkability, the hills are seen as a barrier to biking and walking by some – especially in inclement weather. Capitol Hill was also experiencing an influx of newcomers who had not tried transit, biking, or car sharing. These new residents could use the program as an opportunity to try a new mode for getting around.</p>
+<p>Key motivators included convenience of transit, the upcoming opening of a new Capitol Hill light rail station, and the disincentive of dwindling parking. Gift cards to popular businesses and transit passes were the most attractive incentives to offer. Digital outreach (online news outlets and social media) was cited as one of the best ways to reach these residents.</p>
+<p>The planning team also reviewed Capitol Hill demographic and travel information from Commute Seattle and EMC Research’s 2014 Center City Commute Mode Split Survey, Downtown Seattle Association’s Neighborhood Profile, and other sources. Even though Capitol Hill had one of the lowest car-ownership rates in the city of Seattle, the influx of young professionals had contributed to a faster-than-expected rise in car ownership rates. Capitol Hill was also among the youngest and most educated downtown neighborhoods, with a median age of 35, and nearly two thirds of the population possessing an Associate’s Degree or higher.</p>
+<p>To further engage a community where most trips were already not drive-alone, Capitol Hill In Motion focused on car users and car-owning households. </p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Capitol Hill’s <em>In Motion</em> program was based on the research described above and on King County’s existing In Motion program model. The campaign aimed to encourage people who drive alone to change their travel behavior to riding transit, joining a carpool or vanpool, bicycling, or walking. The12-week outreach campaign took place from May – August 2016, timed to follow the rollout of a much-anticipated Link light rail route opening after seven years of construction. The tag line, “Less Driving, More Living. Earn Rewards.” was developed, based on neighborhood motivators and barriers. Campaign materials were designed to showcase young urbanites using transportation options, and highlighted popular incentives, from transit passes to a FitBit, to weekly prizes from neighborhood hotspots. (Financial Incentives) </p>
+<p>With campaign creative in-hand, organizers employed a variety of tactics to meet the campaign objectives.</p>
+<p><strong>Gas station advertising</strong><em>.</em> Since 85 percent of people fill up their gas tank within a mile of home, the team paid for ads at gas pumps and convenience stores to reach neighborhood car owners. These ads generated a total 510,750 impressions.</p>
+<p><img alt="Gas pump ads reached car owners" height="300" src="/userfiles/Image/gas station ad.jpg" width="450"/></p>
+<p><i><span lang="EN-CA" style='font-size:10.0pt;font-family:"Minion Pro","serif";mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";mso-ansi-language:
+EN-CA;mso-fareast-language:EN-US;mso-bidi-language:#0400'>Program ads on gas pumps reached car owners</span></i></p>
+<p> </p>
+<p><strong>Chalk street stencils</strong> were also used to reach residents in a creative, unexpected way, and keep the campaign top-of-mind as residents went about their daily routines.</p>
+<p><img alt="Chalk messages kept the campaign top-of-mind" height="600" src="/userfiles/Image/1_Street Stencil 2.JPG" width="450"/></p>
+<p class="MsoNormal"><i><span lang="EN-CA" style='font-family:"Minion Pro","serif";
+mso-ansi-language:EN-CA;mso-bidi-language:#0400'>Chalk messages kept the campaign top-of-mind</span></i><i><span lang="EN-CA" style='font-size:11.0pt;font-family:"Minion Pro","serif";mso-ansi-language:
+EN-CA;mso-bidi-language:#0400'><o:p></o:p></span></i></p>
+<p> </p>
+<p><strong>Guerilla Street Teaming</strong>. This campaign broke out of the traditional “two-staffers-at-a-table” event outreach structure, with roving guerilla street teams signing up residents who were playing Pokémon Go in popular parks or queuing up for ice cream at a neighborhood hotspot. For the largest one-day event during the project period, Capitol Hill Pride, an 11-person In Motion street team covered carefully mapped zones, engaged over 1,350 people face-to-face, and collected over 250 pledges – an In Motion one-day record. Throughout the summer, the team garnered staggering 724 signups, with more than a quarter of participants citing events as their referral source.</p>
+<p><img alt="Guerilla street teams" height="300" src="/userfiles/Image/2_Street Teamers.JPG" width="450"/></p>
+<p><i style="mso-bidi-font-style:normal"><span lang="EN-CA" style='font-family:"Minion Pro","serif";
+mso-ansi-language:EN-CA;mso-bidi-language:#0400'>Roving guerilla street teams signed up residents<o:p></o:p></span></i></p>
+<p> </p>
+<p><strong>Direct Mail and Travel Incentives.</strong> Organizers devised a mailing list of 10,000 target households within a walkable half mile of the new light rail station, prioritizing households with a registered vehicle. They then sent a series of three targeted mailers to those in the project area – a pre-program postcard, a robust enrollment packet with a neighborhood travel map and program information, and a reminder postcard. Those who enrolled in the program were sent a customized packet of travel information and bus schedules, and their choice of two incentives: a two-week unlimited transit pass, or a tote bag. A full 70 percent of participants requested information on travel options, and nearly all participants (92 percent) requested a transit pass.  (Building Engagement Over Time; Vivid, Personalized, Credible, Empowering Communication)</p>
+<p><img alt="Three  mailers were sent to 10,000 households within a walkable half mile of the new light rail station. " height="600" src="/userfiles/Image/CH map(2).jpg" width="450"/><i><span lang="EN-CA" style='font-family:"Minion Pro","serif";
+mso-ansi-language:EN-CA;mso-bidi-language:#0400'>Three  mailers were sent to 10,000 households within a walkable half mile of the new light rail station. </span></i> </p>
+<p><strong>Social Media Cartoon</strong>. To take advantage of neighborhood pride and elicit social sharing, organizers enlisted a Capitol Hill artist to draw a “5 Best Things About Capitol Hill” cartoon that emphasized the neighborhood’s improved transportation network. The cartoon proved to be a hit, with 359 “Shares” on Facebook, and a second round of media coverage for the campaign. (Mass Media)</p>
+<p><img alt="A cartoon by a local artist tapped into community pride to generate social sharing" height="632" src="/userfiles/Image/InkedGraphic_print(2).jpg" width="450"/></p>
+<p class="MsoNormal" style="tab-stops:0in .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><i style="mso-bidi-font-style:normal"><span lang="EN-CA" style='font-family:"Minion Pro","serif";
+mso-ansi-language:EN-CA;mso-bidi-language:#0400'>A cartoon by a local artist tapped into community pride to generate social sharing</span></i></p>
+<p class="MsoNormal" style="tab-stops:0in .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in right 431.8pt"><i style="mso-bidi-font-style:normal"><span lang="EN-CA" style='font-family:"Minion Pro","serif";
+mso-ansi-language:EN-CA;mso-bidi-language:#0400'><o:p></o:p></span></i></p>
+<p><strong>Facebook Ad Campaign. </strong>A robust, geo-targeted Facebook ad campaign with three rounds of creative kept the campaign fresh, despite high saturation in the neighborhood. The ads expressed the notion that using travel options was the social norm, with text like, “Join 1,500 of your neighbors who pledged to get In Motion." When the team had heard from the community that they had “seen the ads a million times,” the popular “5 Best Things about Capitol Hill” program cartoon was rotated in. From an advertising budget of $10,526, the Facebook ads generated 1.3 million impressions, 25,176 clicks to the campaign website, and 1,040 post engagements. The ads worked, with 24 percent of participants citing Facebook when asked how they had heard about the program. (Mass Media)</p>
+<p><img alt="Three rounds of geo-targeted Facebook ads kept the campaign fresh" height="800" src="/userfiles/Image/IMG_5493.png" width="450"/></p>
+<p><i style="mso-bidi-font-style:normal"><span lang="EN-CA" style='font-family:"Minion Pro","serif";
+mso-ansi-language:EN-CA;mso-bidi-language:#0400'>Three rounds of geo-targeted Facebook ads kept the campaign fresh</span></i> </p>
+<p><strong>Partnerships with Local Influencers. </strong>To help spread the word, C+C partnered with influential neighborhood organizations, from grocery and coffee shops, to the local library and the Capitol Hill Blog. Partners hosted events, provided gift cards for weekly drawings, and promoted the program by displaying posters, window clings, bag stuffers, ads, and table toppers.</p>
+<p> <strong>Overcoming Barrier</strong><strong>s</strong><strong>. </strong>Here’s how the program helped reduce key barriers to taking action. (Overcoming Specific Barriers)</p>
+<p><em>Inconvenience, including hills/ topography and inclement weather</em></p>
+<ul>
+<li>Program tag line and messaging highlighted ease of use</li>
+<li>Ran program during good-weather season, making it easier to have a positive first experience trying travel options</li>
+<li>Branded umbrellas were offered as an incentive at events</li>
+</ul>
+<p><em>Influx of new residents unfamiliar with transportation options perceived options as inconvenient<br type="_moz"/>
+</em></p>
+<ul>
+<li>Provided neighborhood map highlighting close, convenient options for transit, bicycling, and walking</li>
+<li>At registration, participants were offered customized travel information on transit schedules, ride sharing, car sharing, bicycling, and more.</li>
+<li>Social norming (Norm Appeals): Highlighted stories and photos of neighbors using travel options, sharing ease of use; mid-program messaging such as “Join 1,500 Capitol Hill neighbors …”; mid-program participation update in popular neighborhood news outlets; created a strong visual presence in the community through the use of branded posters, window slicks, sidewalk stencils, gas station ads, and events outreach.</li>
+</ul>
+<p><em>Some residents believed they were already “doing all they can” by limiting drive-alone trips</em> (conditions included a robust existing transportation network, high walkability to amenities/employers, low car ownership, and a variety of longstanding commuter programs and laws stipulating employer-provided bus passes).</p>
+<ul>
+<li>Program call-to-action emphasized reducing a few more trips: pledge to shift just two (or more) round trips per week from driving alone to another option.</li>
+<li>Materials highlighted the variety of popular, non-work neighborhood destinations accessible by transit, including museums, parks, local businesses, and classes.</li>
+<li>Program offered and highlighted non-transit-pass incentives, so those already using an employer-provided transit pass were still incentivized to reduce drive alone trips.</li>
+<li>Reached car owners through gas station ads and by targeting mailings to car-owning households.</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>The budget for Capitol Hill In Motion was         $220,000 (US), funded by a federal CMAQ-Congestion Mitigation and Air Quality grant.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<ul>
+<li><strong>Pre-Program Survey</strong>: As a required part of the enrollment process, all 1,874 participants completed an in-depth travel behavior survey at the start of the program (online or on paper). Of the 1,874 participants, 91% (1,707) pledged to reduce their drive-alone trips.</li>
+<li><strong>Post-Program Survey</strong>: A post-program survey asking the same set of travel questions administered at the start of the program was sent to participants via email and traditional mail, with prize drawing incentives to encourage participation. A total of 396 participants (21%) completed the post-program survey.</li>
+<li><strong>Trip Logging</strong>: Throughout the program, participants were encouraged by email and mail to log their weekly trips (online or on mailed cards) and incentivized with entry into weekly prize drawings for 1-2 $50 gift cards to popular local businesses. In total, 427 participants (22.7%) logged their trips, reporting shifting 4,049 round trips to modes other than driving alone.</li>
+<li><strong>Transit Data</strong>: Participants received pre-loaded transit cards, from which Metro collected aggregate program data to measure participants’ transit boardings, fare re-loading value, and whether the rider had added a pass.  These metrics indicated shifting non-riders to riders, and occasional riders to frequent riders.</li>
+</ul>
+<p><img alt="Transit card data measured boardings, fare re-loading value, and passes added" height="230" src="/userfiles/Image/ORCA transit card(1).jpg" width="308"/></p>
+<p><i><span lang="EN-CA" style='font-size:10.0pt;font-family:"Minion Pro","serif";mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";mso-ansi-language:
+EN-CA;mso-fareast-language:EN-US;mso-bidi-language:#0400'>Transit card data measured boardings, fare re-loading value, and passes added</span></i></p>
+<ul>
+<li><strong>Legacy Survey:</strong> One year after the program ended, a legacy survey was distributed to participants who had also responded to the pre- and post-program surveys to gauge how effective the program had been at changing residents’ travel behavior over the long term. Among the 144 participants who completed the legacy survey, results showed the continued travel mode shift to non-drive alone modes. In total, drive-alone mode share continued to decrease, moving from the program’s initial 16% reduction to 17%.  This reduction was accompanied by corresponding increases in transit and walking proving the program had a long-term effect on travel behavior in Capitol Hill. </li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Emails and social media posts throughout the program shared neighborhood progress with participants. At the end of the program, participants were also emailed final overall results.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Impacts – Individual Participants</strong></p>
+<ul>
+<li>On average, participants cut drive alone trips by 16%.</li>
+<li>58% of survey respondents reported a weekly reduction in driving of two or more trips.</li>
+<li>A full 84 percent of survey respondents reported increasing their bus rides by 1-6 trips per week after signing up for the program. Additionally, 65 percent of participants said that they continued to use their transit pass past the end of the campaign, showing adoption of ongoing travel behavior change.</li>
+<li>One year later, proof of long term travel behavior changes continued, with legacy survey results showing drive-alone mode share had continued to decrease after the program had ended – moving from the program’s initial 16% reduction to 17%. This decrease was accompanied by corresponding increases in transit and walking.</li>
+</ul>
+<p><img alt="" height="327" src="/userfiles/Image/Trips Logged.jpg" width="450"/></p>
+<p> </p>
+<p><strong>Impacts - Overall</strong></p>
+<p><em>Population size</em>: The project area had 10,000 households. 1,874 individuals (representing 18% of these households) enrolled in the program. That was the third-highest participation percentage of all 46 In Motion neighborhood programs to date. The top-three cited referral sources were social media, events, and direct mail, demonstrating that the campaign’s mix of traditional and innovative tactics worked.</p>
+<p>Nearly all participants (91 percent) pledged to reduce their drive-alone trips by two or more trips per week. 1,692 transit cards were sent to participants; transit boarding data showed that 73 percent of the cards were utilized for 25,129 total transit trips during the program period.</p>
+<p>The subset of 427 program participants who tracked their trips over the 12-week program documented shifting 4,049 round trips from driving alone to another option. These avoided trips resulted in reductions of 42,441 single-occupancy vehicle miles driven, 1,965 gallons of gasoline, and 38,590 pounds of CO2 emissions. Extrapolating to a full year, if just those 427 trip-loggers maintained their same behavior for a year, they would reduce approximately  169,764 miles per year.</p>
+<p>Extrapolating now from the 427 trip-trackers to all 1,874 participants, one would expect the reduction to grow to up to 1,874 /427 x 169,764 = 745,053 miles per year. </p>
+<p><strong>Triangulation Data </strong></p>
+<p>Extrapolating to a full year and to the entire population of participants involves a number of uncertainties. For example, travel volumes and patterns may change by the season. As another example, those participants that tracked their trips might be more engaged than those that didn’t. Therefore, additional data are presented below to provide additional perspectives on and certainty regarding program impacts. We believe that overall, they corroborate the above extrapolations.\</p>
+<p><em>Transit Card Use</em>:</p>
+<ul>
+<li>1,692 transit cards were sent to participants and transit boarding data showed that 73 percent of these cards were utilized</li>
+<li>Almost three times as many participants used their transit cards at least once during the program, as compared with the number that logged their trips (1,240 vs 427)</li>
+<li>During the three-month program, the participants that logged their trips reported only 4,049 trips in all that were NOT drive-alone (i.e. including all other modes of transportation such as walking and cycling in addition to transit). However, card use data shows that there were actually six times that many transit trips (25,129 trips, not counting trips using other alternative modes) made by program participants during the 3-month program period</li>
+<li>Transit card use continued after the program, but at reduced levels. There were 16,238 trips during the following six-month period</li>
+</ul>
+<p><em>Trip Logs</em></p>
+<ul>
+<li>Of the logged trips, 43% of non-drive-alone trips were by transit. Extrapolating with that ratio, if the 41,367 documented transit trips were to represent 43% of all non-drive-alone trips, then that would total 96,202 non-drive-alone trips in three months. If those trips were the same average length documented by the trip loggers (5.24 miles round-trip), that would be 504,098 miles reduced over just the three-month period.</li>
+</ul>
+<p><em>Participant Panel </em></p>
+<ul>
+<li>A panel analysis, which only included the mode share and shift of 396 participants who responded to both the pre- and post-program surveys, showed that drive-alone mode share decreased significantly (16%), with corresponding increases in transit (9%) and walking (5%). Bicycling and carpooling mode share increased 5% and 4% respectively. Not all of these respondents logged their trips.</li>
+</ul>
+<p><img alt="" height="260" src="/userfiles/Image/Mode Shift.jpg" width="450"/></p>
+<p><em>Legacy Survey</em></p>
+<ul>
+<li>Results from the 144 participants who completed the legacy survey showed the continued travel mode shift to non-drive alone modes. In total, drive-alone mode share continued to decrease, moving from the program’s inital 16% reduction to 17%. </li>
+</ul>
+<p><img alt="" height="247" src="/userfiles/Image/Mode Shirt.png" width="450"/></p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Sunny Knott, Senior Transportation Planner,<br/>
+King County Metro<br/>
+Email: <a href="mailto:Sunny.Knott@kingcounty.gov?subject=I%20saw%20your%20case%20on%20the%20Tools%20of%20Change%20website">Sunny.Knott@kingcounty.gov</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>The successful <em>In Motion</em> program model has been implemented in dozens of neighborhoods. The Capitol Hill program combined tried-and-true In Motion TDM program tactics (leveraging stakeholder feedback, direct mail, postering, business partnerships, etc) with new tactics tailored to this urban neighborhood, including:</p>
+<ul>
+<li>A viral cartoon by a neighborhood artist that connected with the arts-driven neighborhood and was shared 359 times</li>
+<li>Unconventional program reminders such as chalk stenciling on sidewalks, and gas station advertising to reach car-owners</li>
+<li>Guerilla street teams that broke out of the traditional “2-people-at-a-table” events approach, canvassing neighborhood events and hotspots to enroll 700+ residents (including Pokémon Go players in popular parks)</li>
+<li>Digital ads that used social norming and reinforced messaging to target households in a forum where they could instantly click through to sign up</li>
+</ul>
+<p>Nearly two out of three program participants cited these innovative tactics as their referral sources, demonstrating that these tactics helped the program connect with residents and ultimately reduce drive-alone trips. </p>
+<p>This case study was compiled in 2018 by Jay Kassirer based on information provided by Sunny Knott, Senior Transportation Planner, King County Metro and Erin Cawley-Morse, Director, C+C.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

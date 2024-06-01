@@ -1,0 +1,220 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="/en/tools-of-change/home-visits/">Home Visits</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>FortisBC PowerSense</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Savings of 7,689 kWh of electricity per house per year, and 16.4 GJ of natural gas per year. Note that the community had higher than average energy use before the program.</li>
+<li>Savings of 6,700 kWh of electricity per business per year.</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Rossland Energy Diet</h1>
+<p>This is a great example of a home energy efficiency retrofit incentive campaign for smalller communities. It achieved 257 energy efficiency assessments, or 22% of the single-family homes in Rossland. Of those households, 95%+  made some energy efficiency improvements and substantial reductions in energy consumption were achieved . One year later, the program was then extensively replicated within the FortisBC Electrical area and also BC Hydro Electrical areas. </p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p>The 2011/12 Rossland Energy Diet was a type of home energy efficiency retrofit incentive campaign aimed at the single-family residential sector. It achieved 257 energy efficiency assessments, or 22% of the single-family homes in Rossland. 95%+ of those households made some energy efficiency improvements, from extensive insulation and heating system upgrades to changing to CFL lighting. The Rossland Energy Diet also distributed free home energy saving kits, and provided free lighting retrofits to businesses. Substantial reductions in energy consumption were achieved.</p>
+<p>One year after this pilot,  the program was extensively replicated within the FortisBC Electrical and BC Hydro electrical service areas.</p>
+<p>Rossland is a community of about 3,500 people. It is located 389 miles / 626 km east of Vancouver, BC, Canada, near the Canada /USA border.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>FortisBC PowerSense arranged the Rossland Energy Diet. As the local electricity and gas utility, it knew the community well. FortisBC has helped customers conserve energy since 1989 and regularly conducts and follows research on the barriers to energy efficiency.</p>
+<p>FortisBC conducted focus groups and a survey in Rossland prior to the start of the Rossland Energy Diet, to confirm the local barriers to energy efficiency.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The program offered free energy efficiency assessments. This was achieved by a combination of a “bulk purchase” of EnerGuide energy assessments which FortisBC further subsidized. In addition, free energy efficiency products were distributed to encourage uptake of assessments.</p>
+<p>The program used community-based social marketing and other behavior change and marketing theories including theories of scarcity, reciprocity, community norms, personal contact, pledges and financial incentives. Marketing was achieved through multiple channels, including radio, newspapers, website, local events, advance presentations to contractors, presentations to community organisations, and through buy-in from the City of Rossland.</p>
+<p><strong>Overcoming Barriers to Action</strong></p>
+<ul>
+<li>The barrier of lack of high quality information on home energy efficiency was removed by connecting people with an expert home energy assessor and providing information sessions with industry experts.(<em>Home Visits; Personalized, Credible, Empowering Communication</em>), </li>
+<li>The barrier of difficulty understanding and navigating the complex utility and provincial incentive programs was removed by connecting people with an expert home energy assessor, and handholding them through the process with a dedicated program coordinator. (<em>Overcoming Specific Barriers</em>)</li>
+<li>The barrier of the formerly high cost of a home energy efficiency assessment was reduced by offering free home energy assessments and significant rebates from the utilities and the provincial and federal governments. (<em>Financial Incentives</em>)</li>
+<li>The barrier of fear or misunderstanding some new technologies (e.g. compact fluorescent light bulbs), was overcome through provision of impartial information. (<em>Personalized, Credible, Empowering Communication</em>),</li>
+</ul>
+<p>Free lighting retrofits were offered to businesses.</p><!-- Delivering already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>The program used a Quasi-Experimental Design (with a comparison group that was not randomly selected), and pre- and post-program surveys. Homes that conducted retrofits needed to conduct post-retrofit energy assessments in order to receive incentives, and therefore it was known what retrofit improvements the homes had made. Additional energy savings were estimated for the free energy saving products that had been distributed.</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Participants were encouraged to conduct post-retrofit energy assessments in order to receive incentives. These provided feedback on the impacts of the home improvements.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p>On average, the 135 homes that conducted post-retrofit assessments saved an estimated 7,689 kWh of electricity per house per year, and 16.4 GJ of natural gas per year.</p>
+<p>Note that the community's high energy savings per household is partly because it had higher than average energy use before the program. Many of the homes were also heated electrically.</p>
+<p>The 22% of low-rise homes in the city of Rossland that undertook pre-retrofit energy assessments (257 participating homes) was far above the BC average of 3.5%. Of these, approximately 75% made significant energy efficiency improvements, for example to building heating systems, insulations, windows and doors. Additionalhomes (95%+ in all)  made improvements that were either not captured in final home energy evaluations or were simple lighting switch-outs.</p>
+<p>1,000 free Energy Saving Kits were also distributed, each of which could save an estimated 192 kWh per year.</p>
+<p>100% of the community's small businesses participated, which would also have been far above the BC average. The 35 small businesses received lighting retrofits, saving 6,700 kWh of electricity per business per year. </p><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+<p>Peter Robinson<br/>
+<a href="mailto:probinson@communityenergy.bc.ca?subject=I%20saw%20your%20cases%20study%20on%20the%20Tools%20of%20Change%20website%20">probinson@communityenergy.bc.ca</a><br/>
+(778) 755-1778</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p> This case study was written in 2014 by Jay Kassirer.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

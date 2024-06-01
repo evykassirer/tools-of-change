@@ -1,0 +1,217 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="/en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/case-studies/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+
+<h5>Tools Used</h5>
+<ul>
+<li><a href="/en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="/en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Metrolinx</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Municipalities and transit authorities in the Greater Toronto and Hamilton area</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<p>Between April 2005 and March 2010, kilometers travelled (VKT) were reduced by 105 million, and the number of trips was reduced by 1.8 million. As of March 31, 2009, more than 24,000 tonnes (24,000,000) of greenhouse gas emissions had been prevented, saving close to 8 million litres of gasoline.</p>
+<p><a href="/userfiles/Smart Commute Q4 Report print.pdf">Quarterly Report</a> January to March, 2011</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Smart Commute - GTA</h1>
+<p>Smart Commute is a multi-pronged commuter options program in the Greater Toronto, Oshawa and Hamilton Area (GTHA). Two levels of government (municipal and provincial) fund local delivery agents (Boards of Trade, Chambers of Commerce and NGOs).</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>An initiative of Metrolinx and municipalities in the Greater Toronto and Hamilton area, the Smart Commute program seeks to address several challenges: to relieve traffic congestion, improve air quality and health, and reduce emissions that cause climate change. The Greater Toronto, Oshawa and Hamilton Area (GTHA) had a population of 6.7 million in 2009.</p>
+<p>The program began in 2001 with the launch of the ‘Black Creek Regional Transportation Management Association’, which served in and around York University in Toronto and neighbouring Vaughan. The number of TMAs had since increased to ten, expanding across the GTHA.</p>
+<p>A regional coordinating body and single online ridematching system, the Carpool Zone, were launched by 2005.</p>
+<p>Smart Commute was unusual in that two levels of government (municipal and provincial) funded local delivery agents (Boards of Trade, Chambers of Commerce and NGOs). Diligent planning and marketing have allowed Smart Commute to increase in geographic coverage, number and types of programs as well as impact.</p><!-- Background already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>More than 170 organizations with 430,000 employees and post-secondary students are active with Smart Commute, making it easier to walk, cycle, take transit, carpool, and telework.</p>
+<p>Services include:</p>
+<ul>
+<li>Carpooling and vanpooling: exclusive ridematching programs for employers</li>
+<li> Site assessments and surveys to understand employee commute behavior</li>
+<li>Shuttle programs\</li>
+<li>Emergency Ride programs</li>
+<li>Employee Work Arrangement Solutions: telework, compressed work weeks and flex hours, workshops</li>
+<li>“Lunch and learns” and seminars</li>
+<li>Incentives and promotions</li>
+<li>Clean Air Commute and other fun events</li>
+<li>SteppingItUp videos and Teachers’ Guide for elementary schools</li>
+</ul>
+<p>The Carpool Zone system automatically matched commuters who lived and worked near each other, or along the way, and suggested that they carpool together.</p>
+<p>In addition to the Carpool Zone, the Smart Commute program offered a variety of incentives, tools and services to make sustainable commuting a more attractive option. Exclusive discounts on transit passes for local transit service providers were offered. Employees could receive up to 40% off of their monthly pass, when their employer provided a 25% discount which was then matched with a 15% discount from the local transit provider. <em>(Financial Incentives)</em> </p><!-- Delivering already contains P tags.-->
+<h2>Results</h2>
+<ul>
+<li>Black Creek TMA decreased the modal share for driving alone from 70% in 1999 to 40% by 2008, resulting in a savings of approximately 12,000 tonnes (12,000,000 kg) of greenhouse gases per academic year (York University Campus).</li>
+<li>Between 2004 and 2007, Smart Commute helped reduce the number of vehicle kilometers traveled in the region by 75 million and GHG emissions by 17,400 tonnes (17,4000,000 kg).</li>
+<li>More than 7,000 people use Carpool Zone to arrange carpooling, resulting in GHG reduction of 220,000 kg per month. Between November 2005 and the end of March 2010, the system eliminated 26 million vehicle kilometers (VKT) and 380,000 trips.</li>
+<li>Combined with other initiatives that encourage cycling, telework and more, the program has had a significant impact on reducing emissions in the Greater Toronto and Hamilton Area. Between April 2005 and March 2010, kilometers travelled (VKT) were reduced by 105 million, and the number of trips was reduced by 1.8 million. As of March 31, 2009, more than 24,000 tonnes (24,000,000) of greenhouse gas emissions had been prevented, saving close to 8 million litres of gasoline.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<p>This case study was written in 2016 by Robert Rowell.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+<form action="/en/case-studies/case-studies-search/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="/en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
