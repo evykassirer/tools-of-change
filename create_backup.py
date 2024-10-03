@@ -5,8 +5,6 @@ import urllib.request
 import re
 
 # TODO
-# - make a proper homepage
-# - change /en/home/ redirect to just go to the homepage
 # - add planning guide
 # - support french --- add quicknav back, but only with the language option
 # - search:
@@ -20,8 +18,7 @@ def generate_page(f, url, page_text, path_to_root, soup_adjuster=None, remove_in
 
   page_text = page_text.replace("/public/", f"{path_to_root}/public/")
   page_text = page_text.replace("/userfiles/", f"{path_to_root}/userfiles/")
-  # TODO: this might be temporary, but for now the home link goes to the case studies page
-  page_text = page_text.replace("/en/home/", f"{path_to_root}/en/case-studies/")
+  page_text = page_text.replace("/en/home/", f"{path_to_root}/en/home/")
 
   page_text = page_text.replace('href="/en/', f'href="{path_to_root}/en/')
 
