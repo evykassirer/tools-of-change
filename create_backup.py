@@ -15,7 +15,7 @@ import re
 # - case study pages: remove footer_left wrapper and put footer in parent wider div
 
 
-def generate_page(f, url, page_text, path_to_root, soup_adjuster=None):
+def generate_page(f, url, page_text, path_to_root, soup_adjuster=None, remove_intro_cap=True):
   scrape_images(page_text)
 
   page_text = page_text.replace("/public/", f"{path_to_root}/public/")
@@ -32,7 +32,11 @@ def generate_page(f, url, page_text, path_to_root, soup_adjuster=None):
       div.decompose()
     else:
       print(f"couldn't find #{remove_id} to remove for {url}")
-  for remove_class in ["sponsor_box", "intro_cap_top", "intro_cap_bottom", "sidebar_body"]:
+
+  remove_classes = ["sponsor_box", "sidebar_body"]
+  if (remove_intro_cap):
+    remove_classes += ["intro_cap_top", "intro_cap_bottom"]
+  for remove_class in remove_classes:
     div = soup.find('div', class_=remove_class)
     if div:
       div.decompose()
@@ -200,14 +204,45 @@ def generate_simple_pages():
     with open(url + "index.html", "x") as f:
       generate_page(f, url, page.text, "../..")
 
-URL = "https://toolsofchange.com/en/case-studies/?max=1000"
-homepage = requests.get(URL)
+def generate_homepage():
+  url = "en/home/"
+  page = requests.get("https://toolsofchange.com/" + url)
+
+  if not os.path.exists(url):
+      os.makedirs(url)
+  with open(url + "index.html", "x") as f:
+    def soup_adjuster(soup):
+      # Remove "Planning Guide" focus box for now (it's the first one)
+      soup.find('div', class_="focus_box").decompose()
+      # TODO: Ask dad about if the news section is important,
+      # since it seems nontrivial to add.
+      soup.find('div', class_="latest_news_area").decompose()
+      # Remove left margin now that the news is gone
+      soup.find(attrs={'class':'webinar_area_wrap'})['style'] = "margin: 0;"
+      for link in soup.find_all('a'):
+        if "https://clicky.com" in link['href']:
+          link.decompose()
+    generate_page(f, url, page.text, "../..", soup_adjuster, False)
+
+  homepage_soup = BeautifulSoup(page.content, "html.parser")
+  for intro_link in homepage_soup.find('div', class_="intro_box").find_all('a'):
+    url = intro_link['href']
+    if url[0] == "/":
+      url = url[1:]
+    page = requests.get("https://toolsofchange.com/" + url)
+    if not os.path.exists(url):
+        os.makedirs(url)
+    with open(url + "index.html", "x") as f:
+      generate_page(f, url, page.text, "../../..")
+
+case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
 
 # os.makedirs("./public/images/")
 # os.makedirs("./userfiles/Image")
 # generate_stylesheets()
-generate_case_studies_homepage(homepage)
-# generate_case_study_pages(homepage)
+# generate_case_studies_homepage(case_studies_homepage)
+# generate_case_study_pages(case_studies_homepage)
 # generate_tools_of_change()
 # generate_topic_resources()
 # generate_simple_pages()
+generate_homepage()
