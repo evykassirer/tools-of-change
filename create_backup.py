@@ -5,7 +5,7 @@ import urllib.request
 import re
 
 # TODO
-# - add the "tools of change" linked from the case study
+# - topic resources
 # - make a proper homepage? after tools maybe
 # - support french
 # - search:
@@ -14,7 +14,7 @@ import re
 # - case study pages: remove footer_left wrapper and put footer in parent wider div
 
 
-def generate_page(f, url, page_text, path_to_root):
+def generate_page(f, url, page_text, path_to_root, soup_adjuster=None):
   scrape_images(page_text)
 
   page_text = page_text.replace("/public/", f"{path_to_root}/public/")
@@ -38,6 +38,10 @@ def generate_page(f, url, page_text, path_to_root):
     else:
       print(f"couldn't find .{remove_class} to remove for {url}")
 
+  if (soup_adjuster):
+    soup_adjuster(soup)
+
+  # TODO: I can add this again after adding topic resources
   topic_ad = soup.find('img', class_="topic_ad")
   if topic_ad:
     topic_ad.parent.parent.decompose()
@@ -93,7 +97,7 @@ def generate_case_studies_homepage(page):
     page_text = page_text.replace("/en/case-studies/", "./")
     generate_page(f, case_studies_home_url, page_text, "../..")
 
-def generate_tools_pages():
+def generate_tools_of_change():
   url = "en/tools-of-change/"
   page = requests.get("https://toolsofchange.com/" + url)
   if not os.path.exists(url):
@@ -101,29 +105,30 @@ def generate_tools_pages():
   with open(url + "index.html", "x") as f:
     generate_page(f, "en/tools-of-change/", page.text, "../..")
 
-  for tool in [
-    "building-motivation-over-time/",
-    "feedback/",
-    "financial-incentives-and-disincentives/",
-    "norm-appeals/",
-    # TODO add the rest
-  ]:
-    url = "en/tools-of-change/" + tool
+  tools_soup = BeautifulSoup(page.content, "html.parser")
+  tool_links = tools_soup.find('div', class_="left_content").find_all('a')
+  for tool in tool_links:
+    url = tool['href']
+    if url[0] == "/":
+      url = url[1:]
     page = requests.get("https://toolsofchange.com/" + url)
     if not os.path.exists(url):
         os.makedirs(url)
     with open(url + "index.html", "x") as f:
-      generate_page(f, url, page.text, "../../..")
+      def soup_adjuster(soup):
+        # Remove right column that's only relevant when logged in
+        for tag in soup.findAll(attrs={'class':'plan_col_right'}):
+            tag['style'] = "display: none;"
+        for tag in soup.findAll(attrs={'class':'left_content_2col'}):
+            tag['style'] = "background: #e5edee;"
+        for tag in soup.findAll(attrs={'class':'plan_col_left'}):
+            tag['style'] = "width: 90%;"
+        # Remove "login to save plans" thing (top and bottom of page)
+        for bar in soup.find_all('div', class_="bar"):
+          bar.decompose()
 
-      # TODO:
-      # (1) remove .bar
-      # (2) add two styles
-      # left_content_2col {
-      #   background: #e5edee;
-      # }
-      # .plan_col_right {
-      #   display: none;
-      # }
+      generate_page(f, url, page.text, "../../..", soup_adjuster)
+
 
 def generate_case_study_pages(page):
   soup = BeautifulSoup(page.content, "html.parser")
@@ -145,12 +150,12 @@ def generate_case_study_pages(page):
       generate_page(f, url, page.text, "../../../..")
 
 
-os.makedirs("./public/images/")
-os.makedirs("./userfiles/Image")
 URL = "https://toolsofchange.com/en/case-studies/?max=1000"
 homepage = requests.get(URL)
 
-generate_stylesheets()
-generate_case_studies_homepage(homepage)
-# generate_tools_pages()
-generate_case_study_pages(homepage)
+# os.makedirs("./public/images/")
+# os.makedirs("./userfiles/Image")
+# generate_stylesheets()
+# generate_case_studies_homepage(homepage)
+generate_tools_of_change()
+# generate_case_study_pages(homepage)
