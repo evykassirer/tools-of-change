@@ -1,0 +1,160 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change  - About Us</title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship.  - About Us" name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior,  - About Us" name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="../../en/case-studies/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+ <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<div class="left_content">
+<h1>About Us</h1>
+<p>The concept for this site was born when a group of us at West End Community Ventures were launching Ottawa-Carleton's first <a href="http://greencommunitiescanada.org/">Green Communities</a> initiative. We wanted to better our understanding of how to improve our own program's impact. In securing funding from the Ontario and Canadian governments, we were encouraged - and enabled - to step back from the day-to-day urgencies of our particular program and to take a broader and longer view.</p>
+<p><img alt="maple leaf" class="rt_image" complete="complete" height="262" src="../../public/images/maple_leaf.jpg" width="280"/>We published a workbook on what we found. It included 25 residential case studies of communities from across North America whose programs we had studied. It built on the community-based social marketing framework that had been developed by Doug McKenzie-Mohr, and published by NRTEE in "Promoting a Sustainable Future: An Introduction to Community-Based Social Marketing". We are grateful to the many <a href="../../en/about-us/workbook-acknowledgements/">people</a> who helped with the preparation of the original workbook.</p>
+<p>Jay Kassirer of Cullbridge spearheaded the effort and co-authored the workbook along with Doug McKenzie-Mohr. The workbook was subsequently re-edited and published by Canada's National Round Table on the Environment and the Economy (NRTEE) .   <a href="http://www.cullbridge.com/Projects/TOOLSE.pdf" target="_blank">Free download</a>.</p>
+<p>The workbook had been designed so that it could eventually evolve into an interactive web site. With generous funding from both Health Canada and Natural Resources Canada, we were able to build that website and  expand the scope to include health and safety promotion. We invite others to join with us in further developing and promoting the site, so that it can become an even better resource for program planners and implementers across the globe.</p>
+</div>
+<p><font size="1"> <!--/left_content--></font></p>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="news_cap_top"></div>
+<div class="news_body">
+<form action="/en/planning-guide/advanced-search/advanced-search-results" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="planning_guide"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="18" type="text" value="Search"/></td>
+<td class="go_area"><input id="submit2" src="../../public/images/go_button.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p><a href="../../en/planning-guide/advanced-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="news_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

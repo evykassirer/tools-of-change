@@ -182,6 +182,23 @@ def generate_case_study_pages(page):
       generate_page(f, url, page.text, "../../../..")
 
 
+def generate_simple_pages():
+  for url in [
+    "en/contact-us/",
+    "en/workshops/",
+    "en/workshops/face-to-face/",
+    "en/about-us/",
+    "en/landmark/",
+    "en/help/", # TODO: remove thing about creating an account
+    "en/terms/",
+  ]:
+    page = requests.get("https://toolsofchange.com/" + url)
+    if not os.path.exists(url):
+        os.makedirs(url)
+    with open(url + "index.html", "x") as f:
+      generate_page(f, url, page.text, "../..")
+
+
 URL = "https://toolsofchange.com/en/case-studies/?max=1000"
 homepage = requests.get(URL)
 
@@ -189,6 +206,7 @@ homepage = requests.get(URL)
 # os.makedirs("./userfiles/Image")
 # generate_stylesheets()
 # generate_case_studies_homepage(homepage)
-# generate_tools_of_change()
-generate_topic_resources()
 # generate_case_study_pages(homepage)
+# generate_tools_of_change()
+# generate_topic_resources()
+generate_simple_pages()
