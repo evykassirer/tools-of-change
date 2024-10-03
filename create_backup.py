@@ -5,12 +5,10 @@ import urllib.request
 import re
 
 # TODO
-# - topic resources
-# - some simple pages
-# - add navbar back, remove planning guide
-# - make a proper homepage? after tools maybe
-# - support french
+# - make a proper homepage
+# - change /en/home/ redirect to just go to the homepage
 # - add planning guide
+# - support french --- add quicknav back, but only with the language option
 # - search:
 #     - topic, location, tool, landmark -- can scrape
 #     - keyword -- this might be harder, but still important, can search the page content
@@ -28,29 +26,32 @@ def generate_page(f, url, page_text, path_to_root, soup_adjuster=None):
   page_text = page_text.replace('href="/en/', f'href="{path_to_root}/en/')
 
   soup = BeautifulSoup(page_text,"html.parser")
-  for remove_id in ["qnav", "nav_container"]:
+  for remove_id in ["qnav"]:
     div = soup.find('div', id=remove_id)
     if div:
       div.decompose()
     else:
       print(f"couldn't find #{remove_id} to remove for {url}")
-  # TODO: Add footer_right back, but remove search and account pieces
-  for remove_class in ["sponsor_box", "intro_cap_top", "intro_cap_bottom", "footer_right", "sidebar_body"]:
+  for remove_class in ["sponsor_box", "intro_cap_top", "intro_cap_bottom", "sidebar_body"]:
     div = soup.find('div', class_=remove_class)
     if div:
       div.decompose()
     else:
       print(f"couldn't find .{remove_class} to remove for {url}")
 
+  footer_right = soup.find('div', class_="footer_right")
+  for item in footer_right.find_all('li'):
+    if item.find('a').contents[0] in ["Search", "My Account"]:
+      item.decompose()
+
+  main_nav = soup.find('div', id="nav_container")
+  for item in main_nav.find_all('li'):
+    if item.find('a').contents[0] in ["Planning Guide"]:
+      item.decompose()
+
   if (soup_adjuster):
     soup_adjuster(soup)
 
-  # TODO: I can add this again after adding topic resources
-  topic_ad = soup.find('img', class_="topic_ad")
-  if topic_ad:
-    topic_ad.parent.parent.decompose()
-  else:
-    print(f"couldn't find topic_ad for {url}")
   f.write(str(soup))
 
 
@@ -95,7 +96,8 @@ def download_image(image_path):
 
 def generate_case_studies_homepage(page):
   case_studies_home_url = "en/case-studies/"
-  os.makedirs(case_studies_home_url)
+  if not os.path.exists(case_studies_home_url):
+    os.makedirs(case_studies_home_url)
   with open(case_studies_home_url + "index.html", "x") as f:
     page_text = page.text
     page_text = page_text.replace("/en/case-studies/", "./")
@@ -198,15 +200,14 @@ def generate_simple_pages():
     with open(url + "index.html", "x") as f:
       generate_page(f, url, page.text, "../..")
 
-
 URL = "https://toolsofchange.com/en/case-studies/?max=1000"
 homepage = requests.get(URL)
 
 # os.makedirs("./public/images/")
 # os.makedirs("./userfiles/Image")
 # generate_stylesheets()
-# generate_case_studies_homepage(homepage)
+generate_case_studies_homepage(homepage)
 # generate_case_study_pages(homepage)
 # generate_tools_of_change()
 # generate_topic_resources()
-generate_simple_pages()
+# generate_simple_pages()
