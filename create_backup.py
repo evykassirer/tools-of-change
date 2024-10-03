@@ -6,8 +6,11 @@ import re
 
 # TODO
 # - topic resources
+# - some simple pages
+# - add navbar back, remove planning guide
 # - make a proper homepage? after tools maybe
 # - support french
+# - add planning guide
 # - search:
 #     - topic, location, tool, landmark -- can scrape
 #     - keyword -- this might be harder, but still important, can search the page content
@@ -31,6 +34,7 @@ def generate_page(f, url, page_text, path_to_root, soup_adjuster=None):
       div.decompose()
     else:
       print(f"couldn't find #{remove_id} to remove for {url}")
+  # TODO: Add footer_right back, but remove search and account pieces
   for remove_class in ["sponsor_box", "intro_cap_top", "intro_cap_bottom", "footer_right", "sidebar_body"]:
     div = soup.find('div', class_=remove_class)
     if div:
@@ -130,6 +134,34 @@ def generate_tools_of_change():
       generate_page(f, url, page.text, "../../..", soup_adjuster)
 
 
+def generate_topic_resources():
+  download_image("/userfiles/Web-based social marketing resources-2023-V2.pdf")
+
+  url = "en/topic-resources/"
+  page = requests.get("https://toolsofchange.com/" + url)
+  if not os.path.exists(url):
+      os.makedirs(url)
+  with open(url + "index.html", "x") as f:
+    generate_page(f, url, page.text, "../..")
+
+
+  resource_soup = BeautifulSoup(page.content, "html.parser")
+  resource_links = resource_soup.find('div', class_="topic_resources_detail").find_all('a')
+  for section in resource_soup.find_all('div', class_="topic_resources_detail_pad"):
+    resource_links = resource_links + section.find_all('a')
+
+  for resource in resource_links:
+    url = resource['href']
+    if url[0] == "/":
+      url = url[1:]
+    page = requests.get("https://toolsofchange.com/" + url)
+    if not os.path.exists(url):
+        os.makedirs(url)
+    with open(url + "index.html", "x") as f:
+      # maybe remove the two advanced search boxes?
+      generate_page(f, url, page.text, "../../..")
+
+
 def generate_case_study_pages(page):
   soup = BeautifulSoup(page.content, "html.parser")
 
@@ -157,5 +189,6 @@ homepage = requests.get(URL)
 # os.makedirs("./userfiles/Image")
 # generate_stylesheets()
 # generate_case_studies_homepage(homepage)
-generate_tools_of_change()
+# generate_tools_of_change()
+generate_topic_resources()
 # generate_case_study_pages(homepage)
