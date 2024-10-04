@@ -272,7 +272,7 @@ def generate_simple_pages():
       "fr/contactez-nous/",
       "fr/ateliers/",
       "fr/ateliers/présentations-personnalisé-par-webinaire/",
-      "fr/au-sujet-de-nous/", # TODO: tell dad this isn't translated
+      "fr/au-sujet-de-nous/", # TELL_DAD: tell dad this isn't translated
       # Seems like landmark just isn't a thing in french..?
       "fr/aide/",
       "fr/modalités-d'utilisation/",
@@ -295,7 +295,7 @@ def generate_homepage():
   os.makedirs(url)
   with open(url + "index.html", "x") as f:
     def soup_adjuster(soup):
-      # TODO: Ask dad about if the news section is important,
+      # TELL_DAD: Ask dad about if the news section is important,
       # since it seems nontrivial to add.
       soup.find('div', class_="latest_news_area").decompose()
       # Remove left margin now that the news is gone
