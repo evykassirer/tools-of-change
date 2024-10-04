@@ -1,0 +1,405 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+  - Definir des objectifs</title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship.  - Definir des objectifs" name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior,  - Definir des objectifs" name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul> <li><a class="menu_class_current" href="../../../fr/guide-de-planification/" id="hb_2">Planification</a> </li> <li><a class="menu_class" href="../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class" href="../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/guide-de-planification/definir-des-objectifs/?id=&amp;do=update_plan" id="update_plan" method="post"> <div id="steps_nav">
+<ul>
+<li class="selected"><a class="firstnav" href="../../../fr/guide-de-planification/definir-des-objectifs/">1 <span>Établir des objectifs</span> </a></li>
+<li><a href="../../../fr/guide-de-planification/associes-se-developpants/">2 <span>Trouver des partenaires</span> </a></li>
+<li><a href="../../../fr/guide-de-planification/obtenir-informe/">3 <span>Bien s'informer</span> </a></li>
+<li><a href="../../../fr/guide-de-planification/optimisation-des-assistances/">4 <span>Définir la clientèle cible</span> </a></li>
+<li><a href="../../../fr/guide-de-planification/outils-de-choix-de-changement/">5 <span>Choisir les bons outils de changement</span> </a></li>
+<li><a href="../../../fr/guide-de-planification/financement-le-programme/">6 <span>Financer le programme</span> </a></li>
+<li><a class="lastnav" href="../../../fr/guide-de-planification/accomplissements-de-mesure/">7 <span>Évaluer les résultats</span> </a></li>
+</ul>
+</div>
+<!--/steps_nav-->
+<div class="clear"> </div>
+
+<!--/bar-->
+<div class="left_content2">
+<h1>Étape 1: Fixer des objectifs</h1>
+<p>Dans cette section vous identifierez les objectifs que vous voulez que votre programme réalise. Vous :</p>
+<ul>
+<li>Décrivez la situation que vous voulez changer ou le problème vous voulez résoudre.</li>
+<li>Identifiez les actions spécifiques que vous voulez que les personnes prennent pour aider à résoudre le problème.</li>
+<li>Objectifs mesurables réglés qui peuvent vous aider à surveiller et évaluer votre progrès.</li>
+<li>Décidez comment vous mesurerez l'accomplissement de ces objectifs.</li>
+</ul>
+</div>
+<!--/left_content-->
+<div class="left_content_my_plan"> </div>
+<div class="yellow_headers">1. Déterminer le(s) problème(s) que vous voulez régler ou la situation que vous voulez changer.</div>
+<div class="left_content_2col"><!--/left_content_2col-->
+<div class="plan_col_left"><!--/plan_col_left-->
+<h1>Exemples</h1>
+<p><em><a href="../../../fr/etudes-de-cas/detail/10">Get in the Loop -- Buy Recycled</a></em> a été conçu en vue de renflouer les
+    ventes chancelantes de produits contenant des matières recyclées. </p><p><em><a href="../../../fr/etudes-de-cas/detail/12">Go Boulder</a> </em>a été conçu en vue de réduire les embouteillages et le degré de pollution de l'air à la ville de Boulder.</p><p><em><a href="../../../fr/etudes-de-cas/detail/21">Quinte Regional Recycling</a> </em>a été conçu en vue de contrer le taux de
+    remplissage rapide des sites d'enfouissement dans la région de Quinte.</p><p>Le <a href="../../../fr/etudes-de-cas/detail/35">Dispensaire diététique de Montréal</a> a été conçu en vue d'empêcher le faible poids à la naissance chez les bébés.</p>
+<p class="tip_example"><strong>Conseil:</strong> The more specific the problem, the easier it will be to work on.</p>
+</div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Votre Programme</h1>
+<table class="setting_styles">
+<tbody>
+<tr>
+<td>Décrire le problème que vous voulez régler ou la situation que vous voulez changer.</td>
+</tr>
+
+<tr>
+<td>Comment est-ce que ceci associe à vos mandats et buts d'organismes?</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_headers">2. Déterminer les gestes concrets que vous aimeriez voir les gens poser en vue de régler le problème.</div>
+<div class="left_content_2col">
+<div class="plan_col_left">
+<h1>Exemples</h1>
+<p><em><a href="../../../fr/etudes-de-cas/detail/10">Get in the Loop -- Buy Recycled</a></em> incitait les gens à acheter plus de produits contenant des matières recyclées.</p><p><em><a href="../../../fr/etudes-de-cas/detail/12">Go Boulder</a> </em>encourageait la transition du transport en voiture à passager unique vers des modes de transport plus durables comme la bicyclette, les transports en commun ou la marche.</p><p><em><a href="../../../fr/etudes-de-cas/detail/21">Quinte Regional Recycling</a> </em>demandait aux gens de composter davantage à la maison et de produire moins de déchets jetables.</p><p>Le <a href="../../../fr/etudes-de-cas/detail/30">PEP: Formation par les pairs sur les MTS et le SIDA</a> a voulu augmenter l'abstinence et l'utilisation de condom parmi des adolescents. </p></div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Votre Programme</h1>
+<p>Inscrire les gestes spécifiques que vous aimeriez voir les gens poser.</p>
+<table class="setting_styles">
+<tbody>
+<tr>
+<td>Action 1</td>
+</tr>
+
+<tr>
+<td>Action 2</td>
+</tr>
+
+<tr>
+<td>Action 3</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_headers">3. Fixer des balises pour vous aider à comparer et mesurer vos progrès.</div>
+<div class="left_content_2col">
+<div class="plan_col_left"><p>En 1989, la ville de <a href="../../../fr/etudes-de-cas/detail/12">Boulder</a> estimait que 73 pour cent des déplacements quotidiens s'effectuaient dans des voitures à passager unique alors que seulement 27 pour cent des déplacements quotidiens s'effectuaient au moyen de modes de transport autres.</p><p><em><a href="../../../fr/etudes-de-cas/detail/17">JEEP</a> </em>a noté une hausse de demande en puissance de 6,3 mW en 1981 à 11,9 mW en 1991.</p><p>En 1992, 34 pour cent des habitants de <a href="../../../fr/etudes-de-cas/detail/21">Quinte</a> participaient aux programmes de
+    compostage résidentiel. </p><p>Une revue de littérature conduite par le <a href="../../../fr/etudes-de-cas/detail/30">PEP: Formation par les pairs sur les MTS et le SIDA</a> a indiqué que bien que 50% à 75% des adolescents au Québec ont utilisé des condoms pendant leur première rencontre sexuelle, seulement 13% à 48% les ont utilisés uniformément. Entre 2,0% et 6,4% de ces adolescents se sont engagés dans des rapports sexuels avec un utilisateur de drogue intraveineuse.</p>
+<p class="tip_example"><strong>Conseil:</strong> For suggestions on answering these questions, see <a href="/en/planning-guide/getting-informed/">Getting Informed</a></p>
+</div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Votre Programme</h1>
+<table class="setting_styles">
+<tbody>
+<tr>
+<td>Quel est le taux actuel de participation á l'activité?</td>
+</tr>
+
+<tr>
+<td>Quel est le taux actuel d'utilisation des ressources connexes?</td>
+</tr>
+
+<tr>
+<td>Quels sont les niveaux actuels des caractéristiques connexes et mesurables de santé?</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_headers">4. Établir des objectifs mesurables qui peuvent vous aider à suivre et à évaluer vos progrès.</div>
+<div class="left_content_2col">
+<div class="plan_col_left">
+<h1>Exemples</h1>
+<p><em><a href="../../../fr/etudes-de-cas/detail/17">JEEP</a> </em>voulait contrer la tendance vers la hausse de puissance et réduire de 0,5
+    mW la demande en puissance.<p><a href="../../../fr/etudes-de-cas/detail/12">Boulder</a> voulait convertir 15 pour cent des déplacements en voiture à passager unique en déplacements par voie d'autres modes de transport d'ici l'an 2010.</p><p><a href="../../../fr/etudes-de-cas/detail/21">Quinte</a> voulait, d'ici l'an 2000, réduire de 71 pour cent la quantité de déchets résidentiels acheminés vers les sites d'enfouissement, et accroître jusqu'à 80 pour cent la participation aux programmes de compostage résidentiel.</p><p>La ville de <a href="../../../fr/etudes-de-cas/detail/91">Portland</a> a comme objectif de réduire les émissions de COV de 2 % de façon permanente, d'ici l'an 2006, compte tenu de la population.</p>
+<p class="tip_example"><strong>Conseil:</strong> A Quality of Life Index incorporating social, health, economic, and environmental indicators was recently developed in Ontario (<a href="http://www.lks.net/~cdc/spno/qli/">http://www.lks.net/~cdc/spno/qli/</a>)</p>
+</p></div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Votre Programme</h1>
+<table class="setting_styles">
+<tbody>
+<tr>
+<td>Quels changements est-ce que de participation, d'utilisation de ressource, et/ou de caractéristiques de santé d'autres ont réalisés?</td>
+</tr>
+
+<tr>
+<td>Quelles circonstances dans votre communauté affecteront votre capacité de réaliser les résultats semblables?</td>
+</tr>
+
+<tr>
+<td>Quelle est une cible réaliste à placer? Indiquez quelle quantité de changement vous espérez réaliser, et en combien d'années vous espérez le réaliser.</td>
+</tr>
+<tr>
+<td><strong>Action 1</strong></td>
+</tr>
+<tr>
+<td>Ce qui?</td>
+</tr>
+
+<tr>
+<td>par combien?</td>
+</tr>
+
+<tr>
+<td>à quelle date?</td>
+</tr>
+
+<tr>
+<td><strong>Action 2</strong></td>
+</tr>
+<tr>
+<td>Ce qui?</td>
+</tr>
+
+<tr>
+<td>par combien?</td>
+</tr>
+
+<tr>
+<td>à quelle date?</td>
+</tr>
+
+<tr>
+<td><strong>Action 3</strong></td>
+</tr>
+<tr>
+<td>Ce qui?</td>
+</tr>
+
+<tr>
+<td>par combien?</td>
+</tr>
+
+<tr>
+<td>à quelle date?</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_headers">5. Décider quoi faire pour mesurer l'atteinte de ces objectifs. Votre programme</div>
+<div class="left_content_2col">
+<div class="plan_col_left">
+<h1>Exemples</h1>
+<p>Le <a href="../../../fr/etudes-de-cas/detail/30">PEP: Formation par les pairs sur les MTS et le SIDA</a> a utilisé un questionnaire individu-géré rempli par 70 étudiants (70% des participants) avant et ensuite l'interposition.</p><p>On a demandé aux élèves des écoles <a href="../../../fr/etudes-de-cas/detail/18">Norway</a>, <a href="../../../fr/etudes-de-cas/detail/27">Whitney</a> et Lochside (<em><a href="../../../fr/etudes-de-cas/detail/5">Bike Smarts</a></em>) de remettre à leurs parents un questionnaire à remplir. Cette démarche a permis d'établir en un clin d'oeil l'effet de ces programmes.</p><p>En vue de remercier les commerçants qui acceptaient de fournir des données sur la vente de produits étiquetés contenant des matières recyclées, <em><a href="../../../fr/etudes-de-cas/detail/10">Get in the Loop -- Buy Recycled</a></em> garantissait à ses partenaires commerciaux une mention dans la publicité payée du programme et dans tous ses documents de relations publiques.</p><p>Chaque groupe écologique membre du programme <em><a href="../../../fr/etudes-de-cas/detail/11">Global Action Plan</a> </em>glanait des renseignements sur les activités de ses participants et les acheminaient à une base de données centralisée. Ces données offraient un aperçu des économies en ressources réalisées par chaque participant et étaient ensuite disséminées aux individus et aux équipes à l'échelle du programme et du pays.</p>
+<p class="tip_example"><strong>Conseil:</strong> Autant que possible, mesurez directement les actions engagées et leurs résultats. Vous obtiendrez ainsi des renseignements davantage appropriés qu'en ayant recours à des méthodes moins directes comme celles qui sont mentionnées en <a href="../../../fr/guide-de-planification/obtenir-informe/">Comment bien s'informer.</a>.</p>
+<p class="tip_example"><strong>Conseil:</strong> Dans la mesure du possible, ne demandez pas aux participants d'estimer quels résultats ils ont atteints, puisque les estimations ne fournissent pas de données fiables. Dans la même veine, ne demandez pas aux gens de spéculer sur les mesures et les résultats escomptés. S'il faut vous fier à des estimations, procédez à des vérifications régulières à l'aide de méthodes directes.</p>
+</div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Votre Programme</h1>
+<table class="setting_styles">
+<tbody>
+<tr>
+<td>Que pourriez-vous faire pour mesurer de façon directe les actions engagées et leurs résultats?</td>
+</tr>
+
+<tr>
+<td>Que pourriez-vous faire pour inciter les participants á mesurer leurs gestes et résultats, et á vous en faire part (moins direct)?</td>
+</tr>
+
+<tr>
+<td>Pouvez-vous obtenir des renseignements utiles en demandant aux participants d'évaluer leurs propres gestes et résultats?</td>
+</tr>
+
+<tr>
+<td>Si vous n'arrivez pas á mesurer les résultats directement ou á convaincre les participants de le faire, comment évaluer vos réalisations (moins direct)? Comment composer avec d'inévitables imprécisions?</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_footer">
+<p><strong>Renseignements additionnels</strong></p>
+<ul>
+<li>ERIC/AE La série Comment<br/>
+<a href="http://ericae.net/ft/tamu">http://ericae.net/ft/tamu</a><br/>
+    Une série de documents et livrets textuels en direct qui traitent de lévaluation pratique, de la recherche et de la programmétrie.</li>
+<!--     <li>Ontario Public Health Mandatory Program and Service Guidelines <a href="http://www.gov.on.ca/health/english/pub../../../public/manprog/index.html">http://www.gov.on.ca/health/english/pub../../../public/manprog/index.html</a><br /> -->     Contient des exemples dobjectifs de promotion de la santé.  </ul>
+</div>
+<div class="clear"> </div>
+
+<!--/Bar--> <!--/bar-->
+<p></p></form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="news_cap_top"></div>
+<div class="news_body">
+<form action="/fr/guide-de-planification/recherche-avance/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="planning_guide"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="18" type="text" value="Recherche"/></td>
+<td class="go_area"><input id="submit2" src="../../../public/images/go_button.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p><a href="../../../fr/guide-de-planification/recherche-avance/">	Cliquez pour la Recherche avancée  »</a></p>
+</div>
+<!--/news_body-->
+<div class="news_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../fr/aide/">Aide</a></li>
+<li><a href="../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

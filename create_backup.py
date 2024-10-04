@@ -5,11 +5,10 @@ import urllib.request
 import re
 
 # TODO
-# - support french
-# - add planning guide
 # - search:
-#     - topic, location, tool, landmark -- can scrape
-#     - keyword -- this might be harder, but still important, can search the page content
+#     - topic, location, tool, landmark -- start by scraping metadata
+#     - keyword search -- try adding tools -- maybe i can add the metadata into the page itself
+#                                             and have the tool index into that!
 
 lang = "en"
 
@@ -57,19 +56,6 @@ def generate_page(f, url, page_text, path_to_root, soup_adjuster=None, remove_in
         item.decompose()
   else:
     print(f"no corner nav found!! for {url}")
-
-
-  main_nav = soup.find('div', id="nav_container")
-  if lang == "en":
-    nav_exclusions = ["Planning Guide"]
-  if lang == "fr":
-    nav_exclusions = ["Planification"]
-  if main_nav:
-    for item in main_nav.find_all('li'):
-      if item.find('a').contents[0] in nav_exclusions:
-        item.decompose()
-  else:
-    print(f"no main nav found!! for {url}")
 
   if (soup_adjuster):
     soup_adjuster(soup)
@@ -127,6 +113,49 @@ def generate_case_studies_homepage(page):
     page_text = page.text
     page_text = page_text.replace(f"/{case_studies_home_url}", "./")
     generate_page(f, case_studies_home_url, page_text, "../..")
+
+def generate_planning_guide():
+  if lang == "en":
+    url = "en/planning-guide/"
+  else:
+    url = "fr/guide-de-planification/"
+
+  page = requests.get("https://toolsofchange.com/" + url)
+  if not os.path.exists(url):
+      os.makedirs(url)
+  with open(url + "index.html", "x") as f:
+    def soup_adjuster(soup):
+      # "Login to save plans"
+      if lang == "en":
+        soup.find('div', class_="bar_tall").decompose()
+      else:
+        soup.find('div', class_="bar").decompose()
+      # now that that's gone, we should add a bit more padding here
+      soup.find('div', id="steps_nav")['style'] = "margin-top: 20px;"
+    generate_page(f, url, page.text, "../..", soup_adjuster)
+
+  guide_soup = BeautifulSoup(page.content, "html.parser")
+  steps = guide_soup.find('div', id="steps_nav").find_all('a')
+  for step in steps:
+    url = step['href']
+    if url[0] == "/":
+      url = url[1:]
+    page = requests.get("https://toolsofchange.com/" + url)
+    if not os.path.exists(url):
+        os.makedirs(url)
+    with open(url + "index.html", "x") as f:
+      def soup_adjuster(soup):
+        # Remove "login to save plans" thing (top and bottom of page)
+        for bar in soup.find_all('div', class_="bar"):
+          bar.decompose()
+        # This is where the user input would go if there were accounts
+        for your_program_box in soup.find_all(class_="thickbox"):
+          if your_program_box.find_previous("tr"):
+            your_program_box.find_previous("tr").decompose();
+          else:
+            your_program_box.decompose()
+
+      generate_page(f, url, page.text, "../../..", soup_adjuster)
 
 def generate_tools_of_change():
   if lang == "en":
@@ -263,8 +292,6 @@ def generate_homepage():
       os.makedirs(url)
   with open(url + "index.html", "x") as f:
     def soup_adjuster(soup):
-      # Remove "Planning Guide" focus box for now (it's the first one)
-      soup.find('div', class_="focus_box").decompose()
       # TODO: Ask dad about if the news section is important,
       # since it seems nontrivial to add.
       soup.find('div', class_="latest_news_area").decompose()
@@ -298,12 +325,14 @@ def generate_homepage():
 # case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
 # generate_case_studies_homepage(case_studies_homepage)
 # generate_case_study_pages(case_studies_homepage)
+# generate_planning_guide()
 
 lang = "fr"
-generate_homepage()
-generate_simple_pages()
-generate_topic_resources()
-generate_tools_of_change()
-case_studies_homepage = requests.get("https://toolsofchange.com/fr/etudes-de-cas/?max=1000")
-generate_case_studies_homepage(case_studies_homepage)
-generate_case_study_pages(case_studies_homepage)
+# generate_homepage()
+# generate_simple_pages()
+# generate_topic_resources()
+# generate_tools_of_change()
+# case_studies_homepage = requests.get("https://toolsofchange.com/fr/etudes-de-cas/?max=1000")
+# generate_case_studies_homepage(case_studies_homepage)
+# generate_case_study_pages(case_studies_homepage)
+generate_planning_guide()

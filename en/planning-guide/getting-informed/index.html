@@ -1,0 +1,401 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change  - Getting Informed</title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship.  - Getting Informed" name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior,  - Getting Informed" name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="../../../en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="/fr/guide-de-planification/outils-de-choix-de-changement/" title="left=16-rgt=17">Français</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul> <li><a class="menu_class_current" href="../../../en/planning-guide/" id="hb_2">Planning Guide</a> </li> <li><a class="menu_class" href="../../../en/tools-of-change/" id="hb_3">Tools of Change</a> </li> <li><a class="menu_class" href="../../../en/case-studies/" id="hb_4">Case Studies</a> </li> <li><a class="menu_class" href="../../../en/topic-resources/" id="hb_5">Topic Resources</a> </li> <li><a class="menu_class" href="../../../en/workshops/" id="hb_6">Webinars &amp; Workshops</a> </li> <li><a class="menu_class" href="../../../en/about-us/" id="hb_7">About Us</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/planning-guide/getting-informed/?id=&amp;do=update_plan" id="update_plan" method="post"> <div id="steps_nav">
+<ul>
+<li><a class="firstnav" href="../../../en/planning-guide/setting-objectives/">1 <span>Setting Objectives</span> </a></li>
+<li><a href="../../../en/planning-guide/developing-partners/">2 <span>Developing partners</span> </a></li>
+<li class="selected"><a href="../../../en/planning-guide/getting-informed/">3 <span>Getting Informed</span> </a></li>
+<li><a href="../../../en/planning-guide/targeting-audience/">4 <span>Targeting the Audience</span> </a></li>
+<li><a href="../../../en/planning-guide/choosing-tools/">5 <span>Choosing the Tools of Change</span> </a></li>
+<li><a href="../../../en/planning-guide/financing-the-program/">6 <span>Financing the program</span> </a></li>
+<li><a class="lastnav" href="../../../en/planning-guide/measuring-achievements/">7 <span>Measuring Achievments</span> </a></li>
+</ul>
+</div>
+<!--/steps_nav-->
+<div class="clear"> </div>
+
+<!--/bar-->
+<div class="left_content2">
+<h1>STEP 3: Getting Informed</h1>
+<p>In this section you will be mapping out potential partners for your program.</p>
+<p>You will:</p>
+<ul>
+<li>Identify the areas you want to be more informed about.</li>
+<li>Decide about contacting others in your field and conducting a literature review.</li>
+<li>Determine whether to arrange focus groups.</li>
+<li>Consider conducting telephone surveys.</li>
+</ul>
+</div>
+<!--/left_content-->
+<div class="left_content_my_plan"> </div>
+<div class="yellow_headers">1. Decide what information you will need in order to base your program on a solid foundation.</div>
+<div class="left_content_2col">
+<div class="plan_col_left">
+<h1>Examples</h1>
+<p> <a href="../../../en/case-studies/detail/8">Get in the Loop - Buy Recycled</a> found that far fewer people were actually buying recycled-content products than had been predicted on the basis of purchasing intentions. A telephone survey identified five main barriers that were preventing people from taking action: price, quality, low consumer awareness of product availability, consumer cynicism about environmental claims, and an unwillingness to put much effort into locating the products.</p> <p>In 1989 <a href="../../../en/case-studies/detail/10">Boulder</a> estimated that only 27 percent of daily trips involved alternative transportation modes while 73 percent involved single-occupant vehicles.</p>
+<p><a href="../../../en/case-studies/detail/10">Go Boulder</a> identified potential barriers for specific target audiences. For example, one of the key factors discouraging business people from taking the bus was their concern about how they would get home if they had to work late or were in an emergency situation.</p><p> <a href="../../../en/case-studies/detail/15">JEEP</a> had seen demand for power increase from 6.3 MW in 1981 to 11.9 MW in 1991.	<br/> </p> <p> <a href="../../../en/case-studies/detail/15">JEEP</a> wanted people to purchase and install energy saving devices. Research had revealed that in the short run residents were unlikely to make the purchases without some sort of incentive.</p> <p> <a href="../../../en/case-studies/detail/19">Quinte's</a> participation in residential composting was 34 percent in 1992.</p>
+<p class="tip_example"><strong>Tip:</strong> You may need to cut corners if you are limited by time or other resources. Tips are provided to help you do this. However, we strongly advise you to include this critical stage in your planning process, so you can identify the key barriers to change. Otherwise you may find that you are unable to achieve your desired results.</p>
+<p class="tip_example"><strong>Tip:</strong> Use your hunches to help come up with potential areas worth looking into. Then collect objective data.</p>
+<p class="tip_example"><strong>Tip:</strong> Once you have determined your target audience, you may want to re-visit this section and further tighten the focus of your information search. (see <a href="../../../en/planning-guide/targeting-audience/">Targeting the Audience</a>)</p>
+</div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Your Program</h1>
+<p>Type in the key information for as many of the following as you can. Then use the check boxes to identify the remaining information gaps you want to fill. Once you have found the missing information, enter it here.</p>
+<table border="0" width="306">
+<tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tbody>
+</table>
+<p>Factors that commonly motivate people to do the activity. List the three most important factors first, preferably in order of importance.</p>
+<table class="getting_styles">
+<tbody>
+<tr>
+<td class="text_area_getting">Motivator 1:</td>
+</tr>
+
+<tr>
+<td class="text_area_getting">Motivator 2:</td>
+</tr>
+<tr>
+</tr>
+
+<tr>
+<td class="text_area_getting">Motivator 3:</td>
+</tr>
+
+<tr>
+<td class="text_area_getting">Other motivators:</td>
+</tr>
+
+</tbody>
+</table>
+<table class="getting_styles">
+<tbody>
+<tr>
+<td style="font-style: italic"> </td>
+</tr>
+
+
+
+<tr>
+<td>Barrier 1:</td>
+</tr>
+
+<tr>
+<td>Solution:</td>
+</tr>
+
+<tr>
+<td>Barrier 2:</td>
+</tr>
+
+<tr>
+<td>Solution:</td>
+</tr>
+
+<tr>
+<td>Barrier 3:</td>
+</tr>
+
+<tr>
+<td>Solution:</td>
+</tr>
+
+<tr>
+<td>Other barriers:</td>
+</tr>
+
+<tr>
+<td>Solutions:</td>
+</tr>
+
+</tbody>
+</table>
+<br/>
+<p>(For a definition, examples and further help see the Tool <a href="../../../en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a>.)</p>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_headers">2. Contact others working in your field and conduct a literature search of relevant articles and reports. For information on recommended sources, <a href="#yellow_footer_link">click here</a>.</div>
+<div class="left_content_2col">
+<div class="plan_col_left">
+<h1>Examples</h1>
+<p> <a href="../../../en/case-studies/detail/8">Get in the Loop - Buy Recycled</a> found that far fewer people were actually buying recycled-content products than past surveys had predicted. They identified approaches that others had tried in the past to make the products easier to find; none seemed to have had much effect on purchases. This information helped them design a survey that got to the root of the issue, probing why people were not buying more of the products. They also obtained detailed information on how people needed to be informed about product availability.</p> <p> <a href="../../../en/case-studies/detail/15">JEEP</a> wanted people to use power saver cords for car block heaters. They learned that a program in the Yukon had been successful in selling the cords but that most of the cords had not been installed or had been installed incorrectly - apparently because customers had been expected to perform the installation themselves.</p> <p>A literature review conducted by the <a href="../../../en/case-studies/detail/622/">AIDS Peer Education Program </a>revealed that although 50% to 75% of adolescents in Quebec used condoms during their first sexual encounter, only 13% to 48% used them consistently. Between 2.0% and 6.4% of these teenagers engaged in sexual intercourse with an IV drug user.</p><p>	Previous to the <a href="../../../en/case-studies/detail/35">Marley Station Mall</a> pilot, two studies had shown that a simple low-cost sign could result in statistically significant increases in stair use by adults. However, the effects lasted for only one month after the signs were removed, and returned to baseline levels three months after the signs were removed.</p>
+<p class="tip_example"><strong>Tip:</strong> If you do not have the resources to do an extensive literature search, ask others working in your field to recommend the articles and reports they have found most helpful.</p>
+<p class="tip_example"><strong>Tip:</strong> Once you have assimilated all this information, contact the authors of studies that are of particular interest, to inquire about more current information.</p>
+<p class="tip_example"><strong>Tip:</strong> The Case Studies on this Web site will give you a good start in your literature search.</p>
+<p class="tip_example"><strong>Tip:</strong> Do not forget to draw on the collective experience of your planning group.</p>
+<p>An excellent summary of academic articles covering community-based social marketing approaches can be found at: <a href="http://www.cbsm.com">http://www.cbsm.com</a> (Note: go to the Articles section)</p>
+</div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Your Program</h1>
+<table class="getting_styles">
+<tbody>
+<tr>
+<td>Note other individuals and organizations working in your field that might be worth contacting.</td>
+</tr>
+
+<tr>
+<td>List some of the key words to use when searching databases or the Internet, and when asking others for help.</td>
+</tr>
+
+<tr>
+<td>Jot down some of the libraries and databases that might be worth checking.</td>
+</tr>
+
+</tbody>
+</table>
+<p> </p>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_headers">3. Explore the attitudes and behaviours of your community regarding the activity.</div>
+<div class="left_content_2col">
+<div class="plan_col_left">
+<h1>Examples</h1>
+<p> <a href="../../../en/case-studies/detail/8">Get in the Loop - Buy Recycled</a> decided that they had enough information to go directly to the telephone survey (step 4). Then, one year later, they ran focus groups to get more detail on the attitudes and concerns underlying people's responses to the telephone survey. At the same time, they were able to gauge reactions to aspects of the program they had been putting in place.</p> <p><a href='/"English/CaseStudies/default.asp?ID=138"'>Turn It Off</a> was designed on the basis of previous focus group and telephone research. In addition, it held three focus groups to explore awareness and knowledge levels and to obtain feedback on the proposed strategies and communications materials for the program.</p><p> <a href="../../../en/case-studies/detail/147">Nortel Networks</a> conducted a comprehensive on-line survey of the employees at its existing Ottawa campus. That survey consisted of about 50 questions on topics such as: home location, distance traveled to work, regular transportation habits, opinions on various alternatives, receptivity to trying alternative commuting methods, potential barriers and motivating factors.</p> <p>	A promotion, a year later, provided employees with a coupon redeemable for a free transit pass and a mini-questionnaire for gauging commuting habits.</p> <p><a href="http://en/case-studies/detail/162/">Bert the Salmon </a>conducted focus groups after a survey, to explore its target audience in greater detail. The research showed that while the target group was interested in behaving in a responsible way, it was not receptive to learning complex lawn care techniques, nor to doom and gloom messages.</p>
+<p class="tip_example"><strong>Tip:</strong> If resource limitations force you to make a choice between using focus groups or a survey, it is often best to use the survey. Surveys provide less biased results and can help you better determine the relative importance of various barriers and motivators.</p>
+<p class="tip_example"><strong>Tip:</strong> If you don't have the resources to conduct formal focus groups, check the findings of your literature review with several people who work in your field.</p>
+<p class="tip_example"><strong>Tip:</strong> For further information on organizing focus groups, refer to chapter 7 in <a href="http://www.cbsm.com/pages/guide/preface">Promoting a Sustainable Future: An Introduction to Community- Based Social Marketing</a> (Ottawa: NRTEE) by Doug McKenzie- Mohr.</p>
+</div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Your Program</h1>
+<table class="getting_styles">
+<tbody>
+<tr>
+<td>Consider having focus groups organized. What resourcing options are available to you? Staff? Volunteers? A consultant?</td>
+</tr>
+
+</tbody>
+</table>
+<p>Alternatively, check your findings with some of the people you contacted in step 2.</p>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_headers">4. Conduct a telephone survey with a random sample from your target population.</div>
+<div class="left_content_2col">
+<div class="plan_col_left">
+<h1>Examples</h1>
+<p> <a href="../../../en/case-studies/detail/8">Get in the Loop - Buy Recycled</a> had a consulting firm call the primary shopper in 800 households. This survey identified five main barriers that were preventing people from taking action: price, quality, consumer awareness of product availability, consumer cynicism about environmental claims, and an unwillingness to put effort into locating the products.</p> <p>	The survey also revealed that most consumers wanted to learn about product availability at the store - not through other methods such as 1-800 numbers and directories.</p> <p> <a href="../../../en/case-studies/detail/36">The Roach Coach Project</a> used thirty-minute (pretest) telephone interviews with participating tenants to assess the relevance of the barriers uncovered by their background research.</p> <p> <a href="../../../en/case-studies/detail/101">Portland</a> used surveys, delivered to random households over the telephone, to ask questions regarding consumer spending habits, use of automobiles and lawnmowers, and awareness of air quality issues in the Portland metro area.</p> <p>Before implementing its work-based outreach program, <a href="../../../en/case-studies/detail/117">Enviros / RIS</a> staff interviewed 25 senior executives at companies across Canada to test the strategy; it was essential that the program have private sector support. The interviews identified a short, 2-hour workshop as the best method to access Canadians and raise awareness on the climate change issue. The endorsement of the employer was considered an important message to give to employees.</p>
+<p class="tip_example"><strong>Tip:</strong> You may only need to phone as few as 40 households if you select a random sample, so this step is not necessarily costly or time-consuming. However, you are strongly advised to involve someone with a strong background in survey design and statistics.</p>
+<p class="tip_example"><strong>Tip:</strong> For further information on designing and carrying out telephone surveys, refer to chapter 7 in <a href="http://www.cbsm.com/pages/guide/preface">Promoting a Sustainable Future: An Introduction to Community- Based Social Marketing</a> (Ottawa: NRTEE) by Doug McKenzie- Mohr.</p>
+<p class="tip_example"><strong>Tip:</strong> If you want descriptive statistics (e.g. 10% of survey participants did xyz in the first year; 30% did it in the third year) and cross tabulations (e.g. did the women respond differently than the men?), and you don't need to know the statistical significance (e.g. p &lt; .05 ), you can easily do the survey yourself using <a href="http://www.surveygold.com/">Survey Gold</a>. Easy to learn because it handles like a word processor, it is inexpensive and features web-based data entry, automatic data compilation, and one-click reports with pie charts and/or tables.</p>
+</div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Your Program</h1>
+<p>Arrange for someone with a strong background in survey design to help draw up the survey, arrange for people to make the phone calls and provide them with clear instructions, and arrange for someone with a strong background in statistics to analyze the data,</p>
+<p>OR</p>
+<p>arrange for a consultant to prepare, conduct and analyze the survey.</p>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_footer" id="yellow_footer_link">
+<p><strong>More on Getting Informed, and other research methods</strong></p>
+<p>This Planning Guide offers a simple, tried and proven, two-step method involving focus groups and surveys. Focus groups are qualitative approaches to gathering data and information - they are useful for raising questions, surfacing diverse points of view, examining social dialogue around an issue, digging under the surface of the issue, and seeing the range of responses. However, like all qualitative research methods, they are limited in what they can tell you about the relative importance, frequency, and consistency of the factors you are researching.</p>
+<p>Such methods just involve too few people, and the samples of people who participate are not necessarily representative of your broader audience.</p>
+<p>That is why surveys are suggested as a follow-up step. They are often used to confirm and quantify suggested findings or directions from focus groups or other qualitative research approaches. Surveys come in many shapes and sizes - they can be done face-to-face, by mail, by phone, or electronically. We recommend random-sample telephone surveys because 1) they usually get a high response rate, 2) they allow you to do a short "refusal survey" with those who do not agree to participate, 3) they are likely to provide a representative sample, and 4) they are likely to yield statistically relevant results (i.e. ones you can have confidence in) if administered properly. They also tend to be quite cost-effective.</p>
+<p>In addition to this two-step approach to audience research there are other methods you might consider.</p>
+<p>In-depth interviews enable you to probe in great depth, explore emotional or sensitive issues, understand "hard to reach" audiences, and work with those with limited reading/writing skills. On the other hand, in-depth interviews are time-consuming to conduct and analyze and therefore expensive. They also share the limitations of all qualitative methods (see the note on focus groups, above).</p>
+<p>Central location intercept interviews are generally short structured questionnaires administered to passers by in a public place selected at random by the interviewer. Being quick, a large number can often be completed quite affordably. However, there is some selection bias in the sample, since only those willing to cooperate at first attempt are interviewed, and any public place will attract some groups more than others.</p>
+<p>Self-administered questionnaires are not recommended in most situations. They can be completed by mail and, increasingly, by touch-tone telephone or computer. Thus they can be quick, anonymous, and reach difficult to access groups. On the other hand, getting a good response rate from such surveys can be onerous, there is a significant self-selection bias, and they may not work well for those with limited reading skills.</p>
+<p><strong>Yet More on Getting Informed</strong></p>
+<ul>
+<li>Guide to Fostering Sustainable Behavior <a href="http://www.cbsm.com/pages/guide/preface">http://www.cbsm.com</a> (Note: go to the Guide, then select the section on Uncovering Barriers to Behavior) An introduction to literature reviews, focus groups and survey design, specifically geared for community-based social marketers.</li>
+<li>National Social Marketing Centre (United Kingdom). (Note: their planning guide section called "Scoping" includes additional considerations for Getting Informed. <a href="https://www.thensmc.com/content/scoping-1" target="_blank">https://www.thensmc.com/content/scoping-1</a></li>
+</ul>
+</div>
+<div class="clear"> </div>
+
+<!--/Bar-->
+<p> <!--/bar--></p></form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="news_cap_top"></div>
+<div class="news_body">
+<form action="/en/planning-guide/advanced-search/advanced-search-results" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="planning_guide"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="18" type="text" value="Search"/></td>
+<td class="go_area"><input id="submit2" src="../../../public/images/go_button.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p><a href="../../../en/planning-guide/advanced-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="news_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../en/help/">Help</a></li>
+<li><a href="../../../en/terms/">Terms of Use</a></li>
+
+<li class="lastnav"><a href="../../../en/contact-us/">Contact Us</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change  - Choosing Tools</title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship.  - Choosing Tools" name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior,  - Choosing Tools" name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="../../../en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="/fr/guide-de-planification/accomplissements-de-mesure/" title="left=20-rgt=21">Français</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul> <li><a class="menu_class_current" href="../../../en/planning-guide/" id="hb_2">Planning Guide</a> </li> <li><a class="menu_class" href="../../../en/tools-of-change/" id="hb_3">Tools of Change</a> </li> <li><a class="menu_class" href="../../../en/case-studies/" id="hb_4">Case Studies</a> </li> <li><a class="menu_class" href="../../../en/topic-resources/" id="hb_5">Topic Resources</a> </li> <li><a class="menu_class" href="../../../en/workshops/" id="hb_6">Webinars &amp; Workshops</a> </li> <li><a class="menu_class" href="../../../en/about-us/" id="hb_7">About Us</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/planning-guide/choosing-tools/?id=&amp;do=update_plan" id="update_plan" method="post"> <div id="steps_nav">
+<ul>
+<li><a class="firstnav" href="../../../en/planning-guide/setting-objectives/">1             <span>Setting Objectives</span> </a></li>
+<li><a href="../../../en/planning-guide/developing-partners/">2             <span>Developing partners</span> </a></li>
+<li><a href="../../../en/planning-guide/getting-informed/">3             <span>Getting Informed</span> </a></li>
+<li><a href="../../../en/planning-guide/targeting-audience/">4             <span>Targeting the Audience</span> </a></li>
+<li class="selected"><a href="../../../en/planning-guide/choosing-tools/">5             <span>Choosing the Tools of Change</span> </a></li>
+<li><a href="../../../en/planning-guide/financing-the-program/">6             <span>Financing the program</span> </a></li>
+<li><a class="lastnav" href="../../../en/planning-guide/measuring-achievements/">7             <span>Measuring Achievments</span> </a></li>
+</ul>
+</div>
+<!--/steps_nav-->
+<div class="clear"> </div>
+
+<!--/bar-->
+<div class="left_content2">
+<h1>STEP 5: Choosing Tools of Change</h1>
+<p>In this section you will identify Tools of Change that might assist your program in achieving its objectives.</p>
+<p>You will:</p>
+<ul>
+<li>Consider how to motivate people to make the desired changes.</li>
+<li>Choose ways to help them remember to do the new actions.</li>
+<li>Find ways of making it easier for people to take each next step.</li>
+<li>Decide how you will build motivation and social momentum over time.</li>
+<li>Create an effective marketing mix by carefully choosing appropriate combinations and sequences of the tools.</li>
+</ul>
+<p>For a definition of each tool and tips on when to use it, see the Tools of Change referred to below.<br/>
+<em><a href="#health_promoters">Note for Health Promoters</a></em></p>
+</div>
+<!--/left_content-->
+<div class="left_content_my_plan"> </div>
+<div class="yellow_headers">1. Decide how you will motivate people to start doing the activity.</div>
+<div class="left_content_2col">
+<div class="plan_col_left">
+<h1>Examples</h1>
+<p> <a href="../../../en/case-studies/detail/7">The Environment Network</a> pilot tested the use of starter kits designed to reduce the use of household hazardous wastes and promote sustainable landscaping practices. About one quarter of the participants with the sustainable gardening kit reported using the discount coupons provided, saying that the coupons had strongly influenced their decision to buy the alternatives.</p> <p><a href="../../../en/case-studies/detail/10">Go Boulder</a> arranged with local businesses to buy transit "eco passes" to give to their employees.</p><p> <a href="../../../en/case-studies/detail/17">Pacific Gas and Electric</a> trained home assessors to appeal to concerns about heat loss, energy costs and comfort, as follows:</p> <p>	You know, if you were to add up all the cracks around these doors here, you'd have the equivalent of a hole the size of a football in your living room wall. Think for a moment about all the heat that would escape from a hole that size. That's why I recommend you install weather-stripping. And your attic totally lacks insulation. We professionals call that a naked attic. It's as if your home is facing winter not just without an overcoat, but without any clothing at all.</p> <p> <a href="../../../en/case-studies/detail/18">Peterborough GreenUp</a> used a blower door test to estimate the total combined size of all the gaps in a home. They also asked the residents to feel the air rushing in at several trouble spots.</p> </div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Your Program</h1>
+<p>Check on the appropriate box below</p>
+<table class="choosing_styles">
+<tbody>
+
+
+
+
+
+
+</tbody>
+</table>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_headers">2. Choose ways to help people remember to do the action.</div>
+<div class="left_content_2col">
+<div class="plan_col_left">
+<h1>Examples</h1>
+<p>	The <a href="../../../en/case-studies/detail/8">Get in the Loop - Buy Recycled</a> campaign used "shelf talkers" to identify specific recycled-product choices on the store shelf. A "shelf talker" is a simple marker placed on the edge of a standard retail shelf, below the product.</p> <p>	Many waste reduction programs have successfully promoted recycling by making it easy to put recyclables at the curb for collection at the same time as garbage. In addition, <a href="../../../en/case-studies/detail/19">Quinte Regional Recycling</a> linked composting with recycling by putting decals on people's Blue Boxes that said, "We compost too."</p> <p>	The <a href="../../../en/case-studies/detail/37">Montreal Dietary Dispensary</a> encouraged clients to drink sufficient milk to feed their baby. To reinforce this habit, women were encouraged to write B for baby on bottles of milk.</p> <p>	At <a href="../../../en/case-studies/detail/35">Marley Station Mall</a>, a sign was placed on an easel beside the escalators, to remind people to take the stairs.</p> </div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Your Program</h1>
+<p>Check on the appropriate box below</p>
+<table class="choosing_styles">
+<tbody>
+
+
+</tbody>
+</table>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_headers">3. Find ways to make it easier for people in your target groups to take each next step.</div>
+<div class="left_content_2col">
+<div class="plan_col_left">
+<h1>Examples</h1>
+<p> <a href="../../../en/case-studies/detail/7">The Environment Network</a>s starter kit for household hazardous wastes (HHW) contained samples of non-toxic cleaning products - a toilet bowl cleaner, dishwashing soap and cream cleanser. It also included an information card and reminder decals provided by the Environmental Hazards Management Institute. The decals - to be placed on hazardous waste products in the home - suggested what to do with them ("use up," "recycle" or "save" for proper disposal at the HHW depot). During the visits, several decals were placed on products in the home.</p> <p><a href="../../../en/case-studies/detail/10">Go Boulder</a> decided that it was cost effective and critical to build more bikeways, as well as overpasses and underpasses for bikes and pedestrians, gradually over a number of years. To make their business transit pass more attractive, a Guaranteed Ride Home program was devised.</p><p> <a href="../../../en/case-studies/detail/18">Peterborough GreenUp</a> provided ongoing workshops on sustainable gardening, and left residents with a list of repair and retrofit priorities.</p> <p>	The <a href="../../../en/case-studies/detail/37">Montreal Dietary Dispensary</a> provided financially disadvantaged clients with vouchers for home-delivered milk along with one dozen eggs and a supply of minerals every two weeks. All clients received personalized nutritional counseling. Child care and transit passes were also made available on an as needed basis.</p> </div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Your Program</h1>
+<p>Check on the appropriate box below</p>
+<table class="choosing_styles">
+<tbody>
+
+
+</tbody>
+</table>
+<p> </p>
+<p> </p>
+<p> </p>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_headers">4. Decide how you will build motivation for continuing the action, and sustain momentum over time.</div>
+<div class="left_content_2col">
+<div class="plan_col_left">
+<h1>Examples</h1>
+<p>	Those employees participating in <a href="../../../en/case-studies/detail/5">The Clean Air Commute</a> pilot, who had undertaken an activity that they were already accustomed to doing, were asked to commit to an additional activity for the three-month period. Those who had undertaken a new activity were asked if they would be willing to extend this behavior for the same period.</p> <p><a href="../../../en/case-studies/detail/10">Go Boulder</a> arranged for an average of two stories each month in the local newspaper, featuring stories of individual success and community participation. Five video presentations were run repeatedly on the community television channel. Additional feedback was provided through promotions, special events and presentations to community organizations.</p><p>	Many waste reduction programs have successfully promoted recycling by making it easy to put recyclables at the curb for collection at the same time as garbage. In addition, <a href="../../../en/case-studies/detail/19">Quinte Regional Recycling</a> linked composting with recycling by putting decals on people's Blue Boxes that said, "We compost too."</p> <p> <a href="../../../en/case-studies/detail/20">ReCAP</a> asked residents to make an oral commitment to carrying out the list of repair and retrofit priorities residents had helped prepare.</p> <p>	People receiving home visits from <a href="../../../en/case-studies/detail/20">ReCAP</a> were simply asked: "If you are happy with the service you received, please tell others about it." This request was made orally at the end of the visit and was repeated on the recommendation sheet left with the residents.</p> </div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Your Program</h1>
+<p>Check on the appropriate box below</p>
+<table class="choosing_styles">
+<tbody>
+
+
+
+
+
+
+
+</tbody>
+</table>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_headers">5. Select the communication channels and vehicles you will use to reach your audience</div>
+<div class="left_content_2col">
+<div class="plan_col_left">
+<h1>Examples</h1>
+</div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Your Program</h1>
+<table class="choosing_styles">
+<tbody>
+
+
+
+
+
+
+</tbody>
+</table>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_footer">
+<p id="health_promoters"><strong>Note for Health Promoters</strong></p>
+<p>These tools support the development of Personal Skills, Healthy Public Policy, Community Action, and Supportive Environments. They are closely tied to theories of individual and social change which social marketers draw upon.</p>
+</div>
+<div class="clear"> </div>
+
+<!--/Bar-->
+<p> <!--/bar--></p></form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="news_cap_top"></div>
+<div class="news_body">
+<form action="/en/planning-guide/advanced-search/advanced-search-results" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="planning_guide"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="18" type="text" value="Search"/></td>
+<td class="go_area"><input id="submit2" src="../../../public/images/go_button.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p><a href="../../../en/planning-guide/advanced-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="news_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../en/help/">Help</a></li>
+<li><a href="../../../en/terms/">Terms of Use</a></li>
+
+<li class="lastnav"><a href="../../../en/contact-us/">Contact Us</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,406 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change  - Setting Objectives</title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship.  - Setting Objectives" name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior,  - Setting Objectives" name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="../../../en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="/fr/guide-de-planification/obtenir-informe/" title="left=12-rgt=13">Français</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul> <li><a class="menu_class_current" href="../../../en/planning-guide/" id="hb_2">Planning Guide</a> </li> <li><a class="menu_class" href="../../../en/tools-of-change/" id="hb_3">Tools of Change</a> </li> <li><a class="menu_class" href="../../../en/case-studies/" id="hb_4">Case Studies</a> </li> <li><a class="menu_class" href="../../../en/topic-resources/" id="hb_5">Topic Resources</a> </li> <li><a class="menu_class" href="../../../en/workshops/" id="hb_6">Webinars &amp; Workshops</a> </li> <li><a class="menu_class" href="../../../en/about-us/" id="hb_7">About Us</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/en/planning-guide/setting-objectives/?id=&amp;do=update_plan" id="update_plan" method="post"> <div id="steps_nav">
+<ul>
+<li class="selected"><a class="firstnav" href="../../../en/planning-guide/setting-objectives/">1 <span>Setting Objectives</span> </a></li>
+<li><a href="../../../en/planning-guide/developing-partners/">2 <span>Developing partners</span> </a></li>
+<li><a href="../../../en/planning-guide/getting-informed/">3 <span>Getting Informed</span> </a></li>
+<li><a href="../../../en/planning-guide/targeting-audience/">4 <span>Targeting the Audience</span> </a></li>
+<li><a href="../../../en/planning-guide/choosing-tools/">5 <span>Choosing the Tools of Change</span> </a></li>
+<li><a href="../../../en/planning-guide/financing-the-program/">6 <span>Financing the program</span> </a></li>
+<li><a class="lastnav" href="../../../en/planning-guide/measuring-achievements/">7 <span>Measuring Achievments</span> </a></li>
+</ul>
+</div>
+<!--/steps_nav-->
+<div class="clear"> </div>
+
+<!--/bar-->
+<div class="left_content2">
+<h1>STEP 1: Setting Objectives</h1>
+<p>In this section you will be identifying the objectives that you want your program to achieve.<br/>
+You will:</p>
+<ul>
+<li>Describe the situation you want to change or the problem you want to solve.</li>
+<li>Identify the specific actions you want people to take to help solve the problem.</li>
+<li>Set measurable objectives that can help you monitor and evaluate your progress.</li>
+<li>Decide how you will measure the achievement of these objectives</li>
+</ul>
+</div>
+<!--/left_content-->
+<div class="left_content_my_plan"> </div>
+<div class="yellow_headers">1. Identify the problem(s) you want to solve or the situation you want to change.</div>
+<div class="left_content_2col"><!--/left_content_2col-->
+<div class="plan_col_left"><!--/plan_col_left-->
+<h1>Examples</h1>
+<p> <a href="../../../en/case-studies/detail/8">Get in the Loop - Buy Recycled</a> was developed to overcome languishing retail sales of products with recycled content.</p> <p><a href="../../../en/case-studies/detail/10">Go Boulder</a> was developed to reduce traffic congestion and air pollution in Boulder City, Colorado.</p><p> <a href="../../../en/case-studies/detail/19">Quinte Regional Recycling</a> was developed to address the high rate at which landfill space was being consumed in the Quinte Region.</p> <p>	The <a href="../../../en/case-studies/detail/37">Montreal Dietary Dispensary</a> was established to prevent low birth weight in babies.</p>
+<p class="tip_example"><strong>Tip:</strong> The more specific the problem, the easier it will be to work on.</p>
+</div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Your Program</h1>
+<table class="setting_styles">
+<tbody>
+<tr>
+<td>Describe the problem you want to solve or the situation you want to change.</td>
+</tr>
+
+<tr>
+<td>How does this relate to your organization's mandates and goals?</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_headers">2. Decide on the specific actions you want people to take to help solve the problem.</div>
+<div class="left_content_2col">
+<div class="plan_col_left">
+<h1>Examples</h1>
+<p> <a href="../../../en/case-studies/detail/8">Get in the Loop - Buy Recycled</a> wanted people to buy more recycled-content products.</p> <p><a href="../../../en/case-studies/detail/10">Go Boulder</a> promoted a shift from single-occupant vehicle use to alternative modes of transportation such as bicycles, public transit and walking.</p><p><a href="../../../en/case-studies/detail/19">Quinte Regional Recycling</a> put stickers on participants' Blue Boxes that read: "We Compost Too."</p><p>	The <a href="../../../en/case-studies/detail/37">Montreal Dietary Dispensary</a> wanted at-risk pregnant women to include nutritional supplements in their diets.</p> </div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Your Program</h1>
+<p>Write out the specific actions you want people to take.</p>
+<table class="setting_styles">
+<tbody>
+<tr>
+<td>Action 1</td>
+</tr>
+
+<tr>
+<td>Action 2</td>
+</tr>
+
+<tr>
+<td>Action 3</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_headers">3. Determine baselines against which you can measure your achievements.</div>
+<div class="left_content_2col">
+<div class="plan_col_left">
+<h1>Examples</h1>
+<p>In 1989 <a href="../../../en/case-studies/detail/10">Boulder</a> estimated that only 27 percent of daily trips involved alternative transportation modes while 730 percent involved single-occupant vehicles.</p><p> <a href="../../../en/case-studies/detail/15">JEEP</a> had seen demand for power increase from 6.3 MW in 1981 to 11.9 MW in 1991.</p> <p> <a href="../../../en/case-studies/detail/19">Quinte's</a> participation in residential composting was 34 percent in 1992.</p> <p>A literature review conducted by the <a href="../../../en/case-studies/detail/622/">AIDS Peer Education Program </a>revealed that although 50% to 75% of adolescents in Quebec used condoms during their first sexual encounter, only 13% to 48% used them consistently. Between 2.0% and 6.4% of these teenagers engaged in sexual intercourse with an IV drug user.</p>
+<p class="tip_example"><strong>Tip:</strong> For suggestions on answering these questions, see <a href="../../../en/planning-guide/getting-informed/">Getting Informed</a></p>
+</div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Your Program</h1>
+<table class="setting_styles">
+<tbody>
+<tr>
+<td>What is the current level of participation in the activity?</td>
+</tr>
+
+<tr>
+<td>What is the current rate at which related resources are being used?</td>
+</tr>
+
+<tr>
+<td>What are the current levels of related and measurable health characteristics?</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_headers">4. Set measurable objectives that can help you monitor and evaluate your progress.</div>
+<div class="left_content_2col">
+<div class="plan_col_left">
+<h1>Examples</h1>
+<p><a href="../../../en/case-studies/detail/10">Boulder</a> wanted to shift 15 percent of the trips from single-occupant vehicles to the alternative forms of transportation by the year 2010.</p><p> <a href="../../../en/case-studies/detail/15">JEEP</a> wanted to overcome the trend toward increases and reduce demand for power by 0.5 MW.</p> <p>	By the year 2000, <a href="../../../en/case-studies/detail/19">Quinte</a> wanted to be diverting 71 percent of its residential waste stream from landfill. It also wanted to increase participation in residential composting to 80 percent by the year 2000.</p> <p> <a href="../../../en/case-studies/detail/101">The City of Portland</a> decided to reduce VOC emissions by 2% permanently by 2006, factoring in population growth.</p> </div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Your Program</h1>
+<table class="setting_styles">
+<tbody>
+<tr>
+<td>What changes in participation, resource use, and/or health characteristics have others achieved?</td>
+</tr>
+
+<tr>
+<td>What circumstances in your community will affect your ability to achieve similar results?</td>
+</tr>
+
+<tr>
+<td>What is a realistic target to set? Specify how much of a change you hope to achieve, and in how many years you hope to achieve it.</td>
+</tr>
+<tr>
+<td><strong>Action 1</strong></td>
+</tr>
+<tr>
+<td>What?</td>
+</tr>
+
+<tr>
+<td>by how much?</td>
+</tr>
+
+<tr>
+<td>by what date?</td>
+</tr>
+
+<tr>
+<td><strong>Action 2</strong></td>
+</tr>
+<tr>
+<td>What?</td>
+</tr>
+
+<tr>
+<td>by how much?</td>
+</tr>
+
+<tr>
+<td>by what date?</td>
+</tr>
+
+<tr>
+<td><strong>Action 3</strong></td>
+</tr>
+<tr>
+<td>What?</td>
+</tr>
+
+<tr>
+<td>by how much?</td>
+</tr>
+
+<tr>
+<td>by what date?</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_headers">5. Decide how you will measure the achievement of these objectives.</div>
+<div class="left_content_2col">
+<div class="plan_col_left">
+<h1>Examples</h1>
+<p>Students at <a href="../../../en/case-studies/detail/16/">Norway</a>, <a href="../../../en/case-studies/detail/25/">Whitney</a> and Lochside (<a href="../../../en/case-studies/detail/3/">Bike Smarts</a>) schools took surveys home for their parents to complete. This provided a "quick and dirty" estimate of the impact of these programs.</p>
+<p><a href="../../../en/case-studies/detail/36/">The Roach Coach Project</a> used a close-ended questionnaire administered over the phone at the beginning of the pilot, and about six weeks after the educational intervention.</p>
+<p>In exchange for data on the sales of labelled products with recycled content, <a href="../../../en/case-studies/detail/8/">Get in the Loop - Buy Recycled</a> provided retail partners with mention in the program's paid advertising and public relations materials.</p>
+<p>Each EcoTeam in the <a href="../../../en/case-studies/detail/9/">Global Action Plan</a> program collected information on the activities of its participants and then provided it to a central database. This information was used to estimate the resource savings that each participant had achieved. The data were then available on an individual, team, country-wide and program-wide basis.</p>
+<p><a href="../../../en/case-studies/detail/10/">Go Boulder</a> was able to directly count the number of people who bought transit passes.</p>
+<p><a href="../../../en/case-studies/detail/10/">Go Boulder</a> had survey participants record their transportation patterns using logbooks.</p>
+<p><a href="../../../en/case-studies/detail/19/">Quinte Regional Recycling</a> tracked curbside lift counts, the weight of waste going to landfill, the weight of Blue Box materials, and savings in landfill costs, among other variables.</p>
+<p class="tip_example"><strong>Tip:</strong> Whenever practical, measure actions and their results directly. You will get more accurate information than if you use the less direct methods discussed in <a href="../../../en/planning-guide/getting-informed/">Getting Informed</a>.</p>
+<p class="tip_example"><strong>Tip:</strong> Where possible, avoid having participants estimate their actions or results, as estimates provide unreliable information. Similarly, avoid asking people to speculate on intended actions and results. If you must rely on such estimates, verify them periodically using direct methods.</p>
+</div>
+<!--/plan_col_left-->
+<div class="plan_col_right">
+<h1>Your Program</h1>
+<table class="setting_styles">
+<tbody>
+<tr>
+<td>How can you measure the actions and their results directly?</td>
+</tr>
+
+<tr>
+<td>How might you get participants to measure their actions and results, and report them to you (less direct)?</td>
+</tr>
+
+<tr>
+<td>Can you get useful information by asking participants to estimate their actions or results?</td>
+</tr>
+
+<tr>
+<td>If you cannot measure results directly and are not able to have participants do it, how might you estimate your achievements (least direct)? How will you compensate for, or otherwise deal with, the expected inaccuracy?</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<div class="yellow_footer">
+<p><strong>More on Setting Objectives</strong></p>
+<ul>
+<li><a href="https://instituteforpr.org/wp-content/uploads/IPR-Guide-to-Measurement-v13-1.pdf" target="_blank">https://instituteforpr.org/wp-content/uploads/IPR-Guide-to-Measurement-v13-1.pdf</a>, Pages 13 to 16 differentiate between Outputs, Outtakes and Outcomes.</li>
+</ul>
+</div>
+<div class="clear"> </div>
+
+<!--/Bar--><!--/bar-->
+<p></p></form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="news_cap_top"></div>
+<div class="news_body">
+<form action="/en/planning-guide/advanced-search/advanced-search-results" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="planning_guide"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="18" type="text" value="Search"/></td>
+<td class="go_area"><input id="submit2" src="../../../public/images/go_button.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p><a href="../../../en/planning-guide/advanced-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="news_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2024 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../en/help/">Help</a></li>
+<li><a href="../../../en/terms/">Terms of Use</a></li>
+
+<li class="lastnav"><a href="../../../en/contact-us/">Contact Us</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
