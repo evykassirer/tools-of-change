@@ -66,8 +66,7 @@ def generate_page(f, url, page_text, path_to_root, soup_adjuster=None, remove_in
 
 def generate_stylesheets():
   stylesheet_path = "public/stylesheets/"
-  if not os.path.exists(stylesheet_path):
-      os.makedirs(stylesheet_path)
+  os.makedirs(stylesheet_path)
   for sheet in ["default", "tables", "print", "thickbox", "sortmenu"]:
     page = requests.get(f"https://toolsofchange.com/public/stylesheets/{sheet}.css")
     scrape_images(page.text)
@@ -108,8 +107,7 @@ def generate_case_studies_homepage(page):
     case_studies_home_url = "en/case-studies/"
   else:
     case_studies_home_url = "fr/etudes-de-cas/"
-  if not os.path.exists(case_studies_home_url):
-    os.makedirs(case_studies_home_url)
+  os.makedirs(case_studies_home_url)
   with open(case_studies_home_url + "index.html", "x") as f:
     page_text = page.text
     page_text = page_text.replace(f"/{case_studies_home_url}", "./")
@@ -122,8 +120,7 @@ def generate_planning_guide():
     url = "fr/guide-de-planification/"
 
   page = requests.get("https://toolsofchange.com/" + url)
-  if not os.path.exists(url):
-      os.makedirs(url)
+  os.makedirs(url)
   with open(url + "index.html", "x") as f:
     def soup_adjuster(soup):
       # "Login to save plans"
@@ -138,12 +135,9 @@ def generate_planning_guide():
   guide_soup = BeautifulSoup(page.content, "html.parser")
   steps = guide_soup.find('div', id="steps_nav").find_all('a')
   for step in steps:
-    url = step['href']
-    if url[0] == "/":
-      url = url[1:]
+    url = cleanup_url(step['href'])
     page = requests.get("https://toolsofchange.com/" + url)
-    if not os.path.exists(url):
-        os.makedirs(url)
+    os.makedirs(url)
     with open(url + "index.html", "x") as f:
       def soup_adjuster(soup):
         # Remove "login to save plans" thing (top and bottom of page)
@@ -165,8 +159,7 @@ def generate_tools_of_change():
     url = "fr/outils-de-changement/"
 
   page = requests.get("https://toolsofchange.com/" + url)
-  if not os.path.exists(url):
-      os.makedirs(url)
+  os.makedirs(url)
   with open(url + "index.html", "x") as f:
     generate_page(f, url, page.text, "../..")
 
@@ -177,8 +170,7 @@ def generate_tools_of_change():
     if url[0] == "/":
       url = url[1:]
     page = requests.get("https://toolsofchange.com/" + url)
-    if not os.path.exists(url):
-        os.makedirs(url)
+    os.makedirs(url)
     with open(url + "index.html", "x") as f:
       def soup_adjuster(soup):
         # Remove "login to save plans" thing (top and bottom of page)
@@ -194,41 +186,56 @@ def generate_tools_of_change():
       generate_page(f, url, page.text, "../../..", soup_adjuster)
 
 
+def cleanup_url(url):
+  if url[0] == "/":
+    url = url[1:]
+  if url.startswith("http://www.toolsofchange.com/"):
+    url = url[len("http://www.toolsofchange.com/"):]
+  if url[-1] != "/":
+    url += "/"
+  return url
+
 def generate_topic_resources():
   # (only relevant for english)
   download_image("/userfiles/Web-based social marketing resources-2023-V2.pdf")
 
   if lang == "en":
-    url = "en/topic-resources/"
+    topic_resource_url = "en/topic-resources/"
   else:
-    url = "fr/ressources-de-sujets/"
-  page = requests.get("https://toolsofchange.com/" + url)
-  if not os.path.exists(url):
-      os.makedirs(url)
-  with open(url + "index.html", "x") as f:
-    generate_page(f, url, page.text, "../..")
+    topic_resource_url = "fr/ressources-de-sujets/"
 
+  # Generate homepage
+  page = requests.get("https://toolsofchange.com/" + topic_resource_url)
+  os.makedirs(topic_resource_url)
+  with open(topic_resource_url + "index.html", "x") as f:
+    generate_page(f, topic_resource_url, page.text, "../..")
 
-  resource_soup = BeautifulSoup(page.content, "html.parser")
-  resource_links = resource_soup.find('div', class_="topic_resources_detail").find_all('a')
-  for section in resource_soup.find_all('div', class_="topic_resources_detail_pad"):
-    resource_links = resource_links + section.find_all('a')
+  # Generate pages for each of the topics
+  homepage_soup = BeautifulSoup(page.content, "html.parser")
+  resource_page_links = homepage_soup.find('div', class_="topic_resources_detail").find_all('a')
+  for section in homepage_soup.find_all('div', class_="topic_resources_detail_pad"):
+    resource_page_links = resource_page_links + section.find_all('a')
 
-  for resource in resource_links:
-    url = resource['href']
-    if url[0] == "/":
-      url = url[1:]
-    if url.startswith("http://www.toolsofchange.com/"):
-      url = url[len("http://www.toolsofchange.com/"):]
-    if url[-1] != "/":
-      url += "/"
-
+  for resource_page in resource_page_links:
+    url = cleanup_url(resource_page['href'])
     page = requests.get("https://toolsofchange.com/" + url)
-    if not os.path.exists(url):
-        os.makedirs(url)
+    os.makedirs(url)
     with open(url + "index.html", "x") as f:
       # maybe remove the two advanced search boxes?
       generate_page(f, url, page.text, "../../..")
+
+    # Now generate the pages for each resource
+    soup = BeautifulSoup(page.content, "html.parser")
+
+    for link in soup.find_all('a'):
+      if topic_resource_url + "detail" in link['href']:
+        url = cleanup_url(link['href'])
+        if os.path.exists(url):
+          continue
+        os.makedirs(url)
+        page = requests.get("https://toolsofchange.com/" + url)
+        with open(url + "index.html", "x") as f:
+          generate_page(f, url, page.text, "../../../..")
 
 
 def generate_case_study_pages(page):
@@ -242,10 +249,8 @@ def generate_case_study_pages(page):
   ]
 
   for url in urls:
-    if url[0] == "/":
-      url = url[1:]
-    if not os.path.exists(url):
-        os.makedirs(url)
+    url = cleanup_url(url)
+    os.makedirs(url)
     with open(url + "index.html", "x") as f:
       page = requests.get("https://toolsofchange.com/" + url)
       generate_page(f, url, page.text, "../../../..")
@@ -275,8 +280,7 @@ def generate_simple_pages():
 
   for url in urls:
     page = requests.get("https://toolsofchange.com/" + url)
-    if not os.path.exists(url):
-        os.makedirs(url)
+    os.makedirs(url)
     with open(url + "index.html", "x") as f:
       generate_page(f, url, page.text, "../..")
 
@@ -288,8 +292,7 @@ def generate_homepage():
 
   page = requests.get("https://toolsofchange.com/" + url)
 
-  if not os.path.exists(url):
-      os.makedirs(url)
+  os.makedirs(url)
   with open(url + "index.html", "x") as f:
     def soup_adjuster(soup):
       # TODO: Ask dad about if the news section is important,
@@ -304,12 +307,9 @@ def generate_homepage():
 
   homepage_soup = BeautifulSoup(page.content, "html.parser")
   for intro_link in homepage_soup.find('div', class_="intro_box").find_all('a'):
-    url = intro_link['href']
-    if url[0] == "/":
-      url = url[1:]
+    url = cleanup_url(intro_link['href'])
     page = requests.get("https://toolsofchange.com/" + url)
-    if not os.path.exists(url):
-        os.makedirs(url)
+    os.makedirs(url)
     with open(url + "index.html", "x") as f:
       generate_page(f, url, page.text, "../../..")
 
@@ -318,21 +318,21 @@ def generate_homepage():
 # os.makedirs("./userfiles/Image")
 # generate_stylesheets()
 
-generate_homepage()
-generate_simple_pages()
+# generate_homepage()
+# generate_simple_pages()
 generate_topic_resources()
-generate_tools_of_change()
-case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
-generate_case_studies_homepage(case_studies_homepage)
-generate_case_study_pages(case_studies_homepage)
-generate_planning_guide()
+# generate_tools_of_change()
+# case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
+# generate_case_studies_homepage(case_studies_homepage)
+# generate_case_study_pages(case_studies_homepage)
+# generate_planning_guide()
 
 lang = "fr"
-generate_homepage()
-generate_simple_pages()
+# generate_homepage()
+# generate_simple_pages()
 generate_topic_resources()
-generate_tools_of_change()
-case_studies_homepage = requests.get("https://toolsofchange.com/fr/etudes-de-cas/?max=1000")
-generate_case_studies_homepage(case_studies_homepage)
-generate_case_study_pages(case_studies_homepage)
-generate_planning_guide()
+# generate_tools_of_change()
+# case_studies_homepage = requests.get("https://toolsofchange.com/fr/etudes-de-cas/?max=1000")
+# generate_case_studies_homepage(case_studies_homepage)
+# generate_case_study_pages(case_studies_homepage)
+# generate_planning_guide()
