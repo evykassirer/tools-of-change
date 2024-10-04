@@ -23,7 +23,8 @@ def generate_page(f, url, page_text, path_to_root, soup_adjuster=None, remove_in
   page_text = page_text.replace(french_home_path, f"{path_to_root}{french_home_path}")
   page_text = page_text.replace(english_home_path, f"{path_to_root}{english_home_path}")
 
-  page_text = page_text.replace(f'href="/{lang}/', f'href="{path_to_root}/{lang}/')
+  page_text = page_text.replace(f'href="/en/', f'href="{path_to_root}/en/')
+  page_text = page_text.replace(f'href="/fr/', f'href="{path_to_root}/fr/')
 
   soup = BeautifulSoup(page_text,"html.parser")
 
@@ -180,16 +181,15 @@ def generate_tools_of_change():
         os.makedirs(url)
     with open(url + "index.html", "x") as f:
       def soup_adjuster(soup):
-        # Remove right column that's only relevant when logged in
-        for tag in soup.findAll(attrs={'class':'plan_col_right'}):
-            tag['style'] = "display: none;"
-        for tag in soup.findAll(attrs={'class':'left_content_2col'}):
-            tag['style'] = "background: #e5edee;"
-        for tag in soup.findAll(attrs={'class':'plan_col_left'}):
-            tag['style'] = "width: 90%;"
         # Remove "login to save plans" thing (top and bottom of page)
         for bar in soup.find_all('div', class_="bar"):
           bar.decompose()
+        # This is where the user input would go if there were accounts
+        for your_program_box in soup.find_all(class_="thickbox"):
+          if your_program_box.find_previous("tr"):
+            your_program_box.find_previous("tr").decompose();
+          else:
+            your_program_box.decompose()
 
       generate_page(f, url, page.text, "../../..", soup_adjuster)
 
@@ -318,21 +318,21 @@ def generate_homepage():
 # os.makedirs("./userfiles/Image")
 # generate_stylesheets()
 
-# generate_homepage()
-# generate_simple_pages()
-# generate_topic_resources()
-# generate_tools_of_change()
-# case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
-# generate_case_studies_homepage(case_studies_homepage)
-# generate_case_study_pages(case_studies_homepage)
-# generate_planning_guide()
+generate_homepage()
+generate_simple_pages()
+generate_topic_resources()
+generate_tools_of_change()
+case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
+generate_case_studies_homepage(case_studies_homepage)
+generate_case_study_pages(case_studies_homepage)
+generate_planning_guide()
 
 lang = "fr"
-# generate_homepage()
-# generate_simple_pages()
-# generate_topic_resources()
-# generate_tools_of_change()
-# case_studies_homepage = requests.get("https://toolsofchange.com/fr/etudes-de-cas/?max=1000")
-# generate_case_studies_homepage(case_studies_homepage)
-# generate_case_study_pages(case_studies_homepage)
+generate_homepage()
+generate_simple_pages()
+generate_topic_resources()
+generate_tools_of_change()
+case_studies_homepage = requests.get("https://toolsofchange.com/fr/etudes-de-cas/?max=1000")
+generate_case_studies_homepage(case_studies_homepage)
+generate_case_study_pages(case_studies_homepage)
 generate_planning_guide()
