@@ -1,0 +1,320 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a></li>
+<li><a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/communications-personnalisées-percutantes/">Communications personnalisées percutantes</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Centre local des services communautaires (CLSC) Longueuil-Ouest</li>
+<li>Commission scolaire Riverside</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Université du Québec à Montréal</li>
+<li>Université Laval</li>
+<li>Conseil québécois de la recherche sociale</li>
+<li>Direction de la santé publique, de la planification et de l'évaluation, Régie régionale de la santé et des services sociaux, Montérégie</li>
+<li>Direction de la santé publique, Régie régionale de la santé et des services sociaux, Outaouais</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p><font face="verdana" size="2">Les élèves exposés au programme ont une attitude plus positive envers le report de la première relation sexuelle et envers l'utilisation du condom. Ils ont d'avantage l'intention d'utiliser le condom même lorsque la fille prend des contraceptifs oraux. Les agents multiplicateurs ont rapporté qu'ils se sentent plus responsables, plus matures et plus confiants. Ils peuvent plus facilement s'affirmer auprès de leurs pairs. Ils ont aussi éprouvé beaucoup de satisfaction personnelle dans le cadre de ce programme.</font></p>
+<table border="1" cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" complete="complete" height="26" src="/images/lightbulb.gif" width="27"/> <small><font face="Verdana">Conseil: Cliquez sur cette image pour l'agrandir. Cliquez votre bouton "Back" pour retourner à ce page.</font></small><br/>
+<br/>
+<a href="/images/documentimages/AIDS/PEP.gif" target=""><img alt="Cover of AIDSPEP Workbook" border="0" complete="complete" height="159" src="/images/documentimages/AIDS/PEPsmall.gif" width="150"/></a><br/>
+<br/>
+<small><font face="Verdana">Un guide pédagogique a été développé pour ce programme. </font></small></td>
+</tr>
+</tbody>
+</table><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>PEP: Formation par les pairs sur les MTS et le SIDA</h1>
+<p>Ce programme de formation par les pairs vise à diminuer l'incidence des maladies transmissibles sexuellement (MTS) et le sida chez les élèves en milieu scolaire secondaire par le report de la première relation sexuelle, ou encore, par l'utilisation du condom lorsque les élèves sont actifs sexuellement. Des élèves de 4e secondaire (âgés de 15 à 16 ans), sont amenés à préparer des activités éducatives (des sketches, des vidéos, des jeux et des affiches) qu'ils présentent ensuite à des élèves plus jeunes (âgés de 12 à 15 ans).</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>Ce programme de formation par les pairs en prévention des MTS et du sida a été développé en 1987 dans une petite école secondaire multi-ethnique située en Montérégie au Québec (région au sud de Montréal). Conçu par l'infirmière scolaire et un enseignant (Biologie), le programme a eu tellement de succès qu'en 1990, il est devenu un événement annuel. En 1991, le programme a été remanié par l'infirmière et comprenait alors une formation de 40 heures donnée après l'école à des élèves volontaires. Dans le cadre de ce programme les agents multiplicateurs ont préparé deux présentations : une sur le report de la première relation sexuelle et une sur l'utilisation du condom.</p>
+<p>Après une évaluation positive (1996), le programme a été amélioré avec le soutien d'une équipe de recherche provinciale et d'un conseillé pédagogique de la Commission scolaire Riverside. Ce programme (le Programme Express Protection) a été implanté dans onze écoles secondaires situées dans deux régions du Québec (1999). L'évaluation de l'impact du Programme Express Protection sur les comportements sexuels des jeunes est en cours (1999 à 2001).</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p>Le programme vise à diminuer l'incidence des MTS/ sida chez les jeunes en milieu scolaire par le report de la première relation sexuelle ou par l'utilisation du condom lorsque les jeunes sont actifs sexuellement.</p><!-- Objectives already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>Une revue de la littérature scientifique a révélé que 50% à 75% des jeunes québécois utilisent le condom lors de leur première relation sexuelle, mais que seulement 13% à 48% l'utilisent régulièrement. Entre 2,0% et 6,4% de ces jeunes ont des rapports sexuels avec un utilisateur de drogues injectables. Un jugement affaibli par la consommation abusive de la drogue ou de l'alcool peut conduire à une activité sexuelle non protégée. De plus, beaucoup de jeunes n'ont pas encore développé les compétences nécessaires pour évaluer correctement les risques, planifier et éviter les situations à risque élevé, prendre des décisions et s'affirmer (ex : résister à la pression des pairs).</p>
+<p>L'examen de la littérature a aussi dévoilé deux facteurs reliés aux programmes efficaces en prévention des MTS et du sida: ils sont basés sur des modèles théoriques (la recherche) et ils utilisent des stratégies d'enseignement actives et adaptées aux jeunes visés par le programme.</p>
+<p>Les activités éducatives préparées par les élèves de 4e secondaire se basent sur la théorie du comportement planifié. Selon cette théorie, trois sources d'influences déterminent l'intention d'adopter un comportement donné, soit, l'attitude, la perception de contrôle sur le comportement et la norme subjective. En général, plus le jeune croit que le report de la première relation sexuelle ou l'utilisation du condom entraîne des conséquences positives, plus il aura une attitude positive envers le comportement en question. Au cours de leur présentation, les élèves de 4e secondaire font valoir les avantages de reporter à plus tard la première relation sexuelle ou d'utiliser le condom. Le report de la première relation sexuelle est présenté comme un choix valable et responsable qui permet aux partenaires de se respecter mutuellement, de savoir s'ils s'aiment vraiment, de se découvrir à leur propre rythme et de se protéger contre la grossesse, les MTS et le sida. L'utilisation du condom est également présenté comme un choix valable et responsable qui permet de prolonger le plaisir sexuel en retardant le moment de l'éjaculation tout en assurant une bonne protection contre la grossesse, les MTS et le sida.</p>
+<p>La seconde source d'influence est la perception de contrôle sur le comportement. Dans l'ensemble, plus le jeune se sent capable de surmonter les obstacles qui rendent difficile le report de la première relation sexuelle ou l'utilisation du condom, plus il aura une perception de contrôle sur le comportement en question. Pendant leur présentation, les élèves de 4e secondaire ont discuté des obstacles reliés au report de la première relation sexuelle tels que : se retrouver seul avec son partenaire dans un endroit romantique, consommer de la drogue ou de l'alcool, se caresser passionnément, subir la pression des pairs, être confronté par la demande de son partenaire pour une relation sexuelle. Les obstacles reliés à l'utilisation du condom sont également abordés, c'est à dire: la gêne reliée à l'achat des condoms, le manque d'argent et l'ignorance concernant les points de vente pour en acheter, l'incapacité d'en parler ouvertement ou de convaincre son partenaire de l'utiliser, la consommation de la drogue ou de l'alcool, l'absence d'un condom sur soi au moment de la relation sexuelle, l'utilisation des contraceptifs oraux, et l'oubli d'utiliser le condom dans un moment de passion.</p>
+<p>Finalement, la norme subjective est la troisième source d'influence. Plus le jeune croit que les personnes significatives sont en accord avec le fait qu'il reporte à plus tard sa première relation sexuelle ou qu'il utilise le condom, plus il valoriserait la norme sociale perçue reliée à ces comportements. Dans le cadre des activités présentées par les élèves de 4e secondaire, le report de la première relation sexuelle et l'utilisation du condom sont présentés comme des choix valables pour les jeunes et valorisés par ces derniers.</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>La description suivante concerne le programme tel qu'il était au moment de la première évaluation effectuée en 1996. Seize élèves âgés de 15 à 16 ans ont reçu une formation de 40 heures dispensée après l'école par l'infirmière et un enseignant (Enseignement moral). Les élèves ont été choisis par un comité de sélection composé de l'infirmière scolaire et de quelques enseignants. Les formateurs ont utilisé un guide pédagogique conçu spécifiquement pour soutenir la formation des élèves.</p>
+<p>Dans l'ensemble, des stratégies d'enseignement interactives ont été utilisées au cours de la formation. Cette dernière a porté sur plusieurs sujets : les MTS et le sida, vivre avec le sida, l'homosexualité et l'homophobie, les dimensions de la sexualité : physique, affective, spirituelle et sociale, les valeurs reliées à la sexualité, la prise de décision, les habiletés de communication et d'affirmation de soi, la planification des activités éducatives, les techniques d'animation de groupes. Les jeunes agents multiplicateurs ont aussi rencontré une personne infectée par le VIH et ils ont visité une boutique spécialisée dans la vente de condoms.</p>
+<p>Deux unités de crédits ont été accordées aux agents multiplicateurs pour les motiver à réussir le programme. De plus, les agents multiplicateurs et leurs parents ont été invités à une réception organisée à la fin du programme. À cette occasion une plaque reconnaissant leur contribution dans la lutte contre les MTS et le sida a été remise aux jeunes par un médecin spécialisé dans ce domaine. Enfin, pour qu'ils soient identifiés en tant que personnes ressources auprès des autres élèves de l'école, les agents multiplicateurs ont porté un t-shirt sur lequel on peut voir le logo du programme (<a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a>).</p>
+<p>Au cours de leur formation, les agents multiplicateurs ont formé des équipes de quatre ou de cinq personnes. Chaque équipe a préparé deux présentations à l'aide de sketches, de vidéos et de jeux basés le plus souvent sur leurs propres expériences des relations amoureuses, mais répondant aussi à un ensemble d'objectifs et de critères pré-établis. La plupart du temps, les agents multiplicateurs ont présenté leurs activités dans leur propre école pour favoriser une meilleure correspondance entre les caractéristiques socioculturelles des élèves, qui peuvent varier d'une école à l'autre, avec celles des agents multiplicateurs (<a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications personnalisées percutantes</a>).</p>
+<p>Lors des présentations, les agents multiplicateurs ont exprimé ouvertement leur accord avec le fait de reporter à plus tard la première relation sexuelle et avec le fait d'utiliser le condom. Ils ont donc livré le message aux autres jeunes que ces choix sont importants et socialement acceptables (<a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a>).</p>
+<p>Chaque équipe a présenté une activité éducative sur le report de la première relation sexuelle dans le cadre d'un cours d'Enseignement moral et une activité sur l'utilisation du condom dans le cadre d'un cours de Biologie. Pour préparer les élèves à recevoir les interventions des agents multiplicateurs, les enseignants ont annoncé les présentations, expliqué le rôle des agents multiplicateurs, insisté sur la bonne conduite des élèves et encouragé leur participation au cours des activités. Les promoteurs du programme ont aussi consulté les enseignants dans le but de s'assurer que les élèves de la classe soient réceptifs et capables de fonctionner dans ce type d'intervention (ex : capables de participer à des jeux de rôle).</p>
+<p>Pendant chaque présentation, les agents multiplicateurs ont présenté les avantages reliées au report de la première relation sexuelle et à l'utilisation du condom. Ils ont aussi présenté les obstacles reliés à l'adoption de ces comportements. Enfin, ils ont donné des conseils aux élèves pour les aider à surmonter ces obstacles (<a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications personnalisées percutantes</a>, <a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>).</p>
+<p>Parmi les moyens suggérés par les agents multiplicateurs pour surmonter les obstacles reliés au report de la première relation sexuelle, mentionnons : le fait d'éviter d'être seul à la maison avec son partenaire (ex: trouver des activités agréables à faire ensemble avec des amis), d'éviter la consommation de la drogue et de l'alcool, d'être conscient de son niveau d'excitation sexuelle et de s'arrêter au bon moment (ex: déterminer à l'avance le degré d'intimité sexuel désiré), d'exprimer ses désirs à son partenaire et de résister à la pression des pairs.</p>
+<p>Pour surmonter les obstacles reliés à l'utilisation du condom, les agents multiplicateurs ont suggéré de partager le coût des condoms, d'aller à la pharmacie avec des amis, de refuser de s'engager dans des relations sexuelles sans condom, d'éviter la consommation de la drogue et de l'alcool, d'avoir un condom à la portée de la main en tout temps, de pratiquer seul la pose du condom avant d'avoir une relation sexuelle, et d'utiliser le condom même si la fille prend "la pilule".</p>
+<p>À la fin de chaque présentation, les agents multiplicateurs ont donné de l'information aux élèves concernant les ressources disponibles aux jeunes (par exemple: les endroits où ils peuvent obtenir des conseils sur la sexualité, de la contraception, un dépistage pour les MTS). Les agents multiplicateurs ont aussi incité les élèves à discuter avec leurs parents (<a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/"> Soutenir la motivation au fil du temps</a>). Les jeunes agents multiplicateurs ont organisé un concours d'affiches sur la prévention des MTS/sida. Pour montrer leur solidarité envers les personnes vivants avec le VIH/sida, les agents multiplicateurs ont distribué des rubans rouges aux élèves de l'école. De plus, les élèves ont tracé les contours de leurs mains sur des grandes feuilles de papier que les agents multiplicateurs ont affichées par la suite à la cafétéria.</p>
+<p>Pour promouvoir le programme ailleurs, les agents multiplicateurs ont fait leur présentation devant des visiteurs (parents et élèves) à l'occasion d'une journée d'accueil à l'école. Deux vidéos montrant les agents multiplicateurs à l'oeuvre ont été produites. Ces vidéos ont été présentées à des équipes de direction et des enseignants dans d'autres écoles secondaires au Québec. Les fondements théoriques et l'approche novatrice du PEP, reconnus comme étant des facteurs importants pour le milieu scolaire, ont été soulignés.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>La ventilation budgétaire suivante est sur cinq ans (1996 2001)</p>
+<table>
+<tbody>
+<tr>
+<td>Dépenses</td>
+<td>Montant</td>
+</tr>
+<tr>
+<td>Production d'un guide pédagogique, soutien et valuation du processus d'implantation du programme dans huit écoles - coordonnatrice plein temps pendant deux ans</td>
+<td>$128,000</td>
+</tr>
+<tr>
+<td>Fournitures (ex: t-shirts, guide pédagogique et cahier de l'élève, vidéocassettes, condoms), conférenciers et autres ressources</td>
+<td>$7,000</td>
+</tr>
+<tr>
+<td>Évaluation du programme Express Protection (1999-2001)</td>
+<td>$144,573</td>
+</tr>
+<tr>
+<td>Sous-total</td>
+<td>$279,573</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Recettes</td>
+<td>Montant</td>
+</tr>
+<tr>
+<td>Contribution de l'équipe subventionnée par le Conseil québécois de la recherche sociale (CQRS)</td>
+<td>$30,000</td>
+</tr>
+<tr>
+<td>Direction de la santé publique, de la planification et de l'évaluation, Régie régionale de la santé et des services sociaux, Montérégie [en partie grâce à une subvention du Centre québécois de coordination sur le SIDA (CQCS)]</td>
+<td>$105,000</td>
+</tr>
+<tr>
+<td>Conseil québécois de la recherche sociale (CQRS)</td>
+<td>$144,573</td>
+</tr>
+<tr>
+<td>Sous-total</td>
+<td>$279,573</td>
+</tr>
+</tbody>
+</table><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Un questionnaire a été complété par 70 étudiants (70 % des participants) avant et après l'intervention des agents multiplicateurs. Ce questionnaire portaient sur les éléments suivants: l'intention des élèves face au report de la première relation sexuelle et face à l'utilisation de condom : leurs croyances concernant les avantages et les inconvénients reliées au report de la première relation sexuelle et à l'utilisation du condom (ces croyances sont reliées à l'attitude de l'élève), les obstacles reliés au report de la première relation sexuelle et à l'utilisation du condom (éléments rattachés à la perception de contrôle sur le comportement). Ce questionnaire a été adapté d'un instrument de mesure déjà validé et basé sur la théorie du comportement planifié. Tous les questionnaires ont été codés pour assurer la confidentialité des répondants. Un groupe témoin composé de 74 élèves d'une autre école secondaire située dans une autre ville a aussi participé à l'étude. Le groupe témoin a répondu au même questionnaire mais n'a pas reçu l'intervention des agents multiplicateurs. Cependant, pour des raisons éthiques, le programme a été présenté à ces élèves à la fin de la période d'évaluation.</p>
+<p>De plus, trois instruments de mesure ont été utilisés pour apprécier le processus d'implantation du programme.</p>
+<p>1. L'un est une grille d'observation constituée à partir du tableau de contenu relié à l'intervention des agents multiplicateurs. Cet instrument a été utilisé pour vérifier la concordance entre les éléments de contenu prévus au programme et les éléments de contenu enseignés, dans les faits, par les agents multiplicateurs.</p>
+<p>2. L'autre instrument de mesure est un questionnaire qui a pour fonction d'évaluer le niveau d'appréciation des élèves, des agents multiplicateurs et des enseignants face au programme. Ce questionnaire a été complété à la fin du programme et portait sur les éléments suivants : l'attrait et la crédibilité des agents multiplicateurs, la clarté et la pertinence du message laissé par eux, les stratégies d'enseignement utilisées, les apprentissages réalisés, les éléments du programme qu'ils ont aimés et moins aimés, les suggestions et les commentaires des répondants.</p>
+<p>3. Les commentaires des agents multiplicateurs ont été recueillis à la fin du programme au cours d'une rencontre qui a durée 50 minutes. Ces commentaires portaient sur les apprentissages qu'ils ont réalisés et sur les changements qu'ils ont observés en eux suite à leur participation au programme.</p><!-- Results_B already contains P tags.-->
+<h2>Réaction</h2>
+<p>N/A</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>Les résultats de l'évaluation (1996) suggèrent que comparativement au groupe témoin, les élèves exposés au programme ont modifié de façon positive leur attitude face au report de la première relation sexuelle et face à l'utilisation du condom. Les élèves ont davantage tendance à croire que le report de la première relation sexuelle permet aux partenaires de se respecter et de découvrir s'ils s'aiment vraiment. Ils perçoivent davantage que l'utilisation du condom est excitante et protège contre les MTS. Les élèves ont aussi une intention plus forte d'utiliser le condom même si la fille prend des contraceptifs oraux.</p>
+<p>Les résultats de l'évaluation indiquent que les éléments de contenu ont été présentés tel que prévu selon un taux variant de 62% à 89%. Le niveau de satisfaction envers le programme est très élevé (moyenne: 3,25 sur une échelle de 1 à 4). À la suite de leur participation au programme, les agents multiplicateurs ont rapporté qu'ils se sont sentis plus responsables, plus matures et plus confiants. Ils peuvent plus facilement s'affirmer auprès de leurs pairs. Ils ont aussi éprouvé beaucoup de satisfaction personnelle dans le cadre de ce programme.</p>
+<p>Une analyse de l'implantation de ce programme a été effectuée pour identifier les conditions favorisant son adoption et sa mise en oeuvre en milieu scolaire (1999). Pour la phase de l'adoption du programme, la confiance envers les promoteurs, les mécanismes de soutien accordés et l'approche pédagogique valide et novatrice rattachée au programme ont été des facteurs déterminants. De plus, les enseignants ont observé les effets suivants chez les élèves de 4e secondaire: le développement des compétences telles que la capacité de planifier, de s'organiser, de s'exprimer devant un groupe, de prendre des responsabilités et de s'entraider. Selon les enseignants, le PEP a permis une meilleure intégration des connaissances parce que les élèves étaient actifs dans l'apprentissage. Il a permis aussi d'améliorer le climat de la classe.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Françoise Caron <br/>
+Module maladies transmissibles <br/>
+Direction de la santé publique, de la planification et de l'évaluation <br/>
+Régie régionale de la santé et des services sociaux Montérégie <br/>
+1255, Beauregard <br/>
+Longueuil (Qubec) <br/>
+J4K 2M3</p>
+<p>Tel: (450) 928-6777 ext. 3129 <br/>
+Fax: (450) 928-3023</p>
+<p>Courrier lectronique: <a href="mailto:f.caron@rrsss16.gouv.qc.ca">f.caron@rrsss16.gouv.qc.ca</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Dernière révision: 10 novembre, 1999</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a></li>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+</ul>
+<h5>Initiative de</h5>
+<p>Manitoba Heavy Construction Association</p><!-- Initiated already contains li tags.-->
+<h5>Résultats</h5>
+<p> </p>
+<ul>
+<li>Redoublement de la demande d'ateliers de formation menant au CR</li>
+<li>Hausse de 75 % de la demande de conseils sur l'entreposage sécuritaire des produits pétroliers</li>
+<li>Plus grande satisfaction générale au sein de l'industrie</li>
+</ul>
+<p> </p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Programme de santé, de sécurité et d'environnement de la Manitoba Heavy Construction Association</h1>
+<p>Les entreprises de construction lourde du Manitoba sont plus désireuses que jamais d'acquérir des compétences en santé, en sécurité et en environnement depuis que l'association professionnelle représentant leur industrie a lancé un programme de soutien renouvelé et convivial. Les concepteurs du Programme de santé, de sécurité et d'environnement de la Manitoba Heavy Construction Association espèrent que cet intérêt aura pour effet de réduire les accidents du travail et de l'environnement. Le financement de la rédaction de cette étude de cas provient du <a href="http://www.ec.gc.ca/nopp" target="new">Bureau national de la prévention de la pollution</a> d'Environnement Canada.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>La Manitoba Heavy Construction Association (MHCA) est une organisation professionnelle à but non lucratif qui, depuis 1943, a représenté 700 entrepreneurs dans le secteur de la construction lourde et les secteurs apparentés. Ces entrepreneurs sont notamment spécialisés dans la construction de routes et de ponts, de systèmes d’égout et d’aqueduc, ainsi que dans la production d’agrégats, l’approvisionnement en produits pétroliers et la vente d’équipements lourds.</p>
+<p>Avant les années 1990, les entrepreneurs en construction lourde du Manitoba s’occupaient un peu n’importe comment de la formation relative à la sécurité et à l’environnement. Certains employeurs envoyaient des travailleurs suivre des cours à l’université, dans des collèges communautaires ou chez des experts-conseils privés. La formation reçue n’était cependant pas propre à l’industrie de la construction lourde.</p>
+<p>« Les programmes n’étaient généralement pas destinés aux entrepreneurs en construction lourde », affirme Dave Gylywoychuk, codirecteur du Programme de sécurité, de santé et d’environnement de la MHCA. « Toutes les formations qu’ils suivaient étaient trop générales. Nos membres voulaient savoir en détail ce qu’il fallait faire dans telle ou telle situation où il y avait un problème de sécurité ou d’environnement. »</p>
+<p>L’industrie de la construction lourde devait donc centraliser la formation des travailleurs à la sécurité, à la santé et à l’environnement.</p>
+<p>En 1990, la MHCA a conçu un programme de formation en santé et sécurité visant à réduire les accidents chez les travailleurs. En 1997, la MHCA a obtenu suffisamment de fonds gouvernementaux pour élaborer un programme distinct en sécurité environnementale. Grâce à ces deux programmes, la MHCA proposait une reconnaissance globale en sécurité et en environnement à toute entreprise acceptant de suivre ce processus. Cette reconnaissance était valable partout au Canada.</p>
+<p>En 1999, des représentants de l’industrie ont fait part à la MHCA de leur déception par rapport aux programmes.</p>
+<p>« C’était de bons programmes, mais les entrepreneurs passaient trop de temps dans les ateliers et se faisaient bombarder d’informations inutiles, affirme M. Gylywoychuk. L’industrie nous disait que notre approche était inefficace. Nous avons constaté que le fait d’avoir deux programmes parallèles était contraire au bon sens. »</p>
+<p>Au début de 2000, la MHCA a décidé de fusionner les deux programmes pour en faire le Programme de santé, de sécurité et d’environnement (SHEP).</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p>En créant le SHEP, la MHCA avait comme objectif principal de simplifier l’offre de programmes de sécurité et d’environnement. La MHCA espérait que cette réorganisation signifierait une hausse de la participation aux ateliers de formation, donc une baisse des accidents du travail et de l’environnement. La MHCA était également d’avis que la participation accrue à son programme du Certificat de reconnaissance (CR) rendrait les entreprises de construction lourde du Manitoba plus compétitives dans leur propre province et dans tout le Canada.</p><!-- Objectives already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>Les programmes de sécurité et d'environnement du début et du milieu des années 1990 ont constitué un modèle efficace pour le SHEP. La MHCA s'en est beaucoup inspirée pour concevoir le nouveau programme.</p>
+<p>" Nous avons constaté que l'industrie était à l'aise avec les principes de base des programmes existants, comme les conseils techniques, les visites de chantier et la formation, déclare M. Gylywoychuk. Le défi consistait à faire en sorte que l'industrie en ait davantage pour son argent, avec plus d'informations fournies en moins de temps. " (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>)</p>
+<p>La MHCA a également reconnu que de plus en plus, les acheteurs de services de construction exigeaient des entrepreneurs soumissionnaires qu'ils détiennent une certification officielle relative à la sécurité et à l'environnement.</p>
+<p>Selon M. Gylywoychuk, " ces acheteurs veulent vérifier si les entreprises ont un système de gestion qui prouve leur sérieux par rapport à la santé, à la sécurité et à l'environnement. La certification facilite donc l'obtention de contrats. " (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>)</p>
+<p><em><strong>Certificat de reconnaissance</strong></em> <br/>
+Le SHEP a conçu le Certificat de reconnaissance en tant que pierre d'assise de son programme de formation. Même si ce n'était pas obligatoire, la MHCA a recommandé à toutes les entreprises de construction lourde du Manitoba d'obtenir leur CR. Ce programme unifié représente une amélioration considérable par rapport au programme à deux volets qu'il remplaçait car le temps requis était réduit de moitié. Pour obtenir le Certificat, les entreprises doivent inscrire un de leurs employés à temps plein à un atelier d'une durée de sept jours. Avant le SHEP, les entreprises devaient envoyer un employé à deux séries d'ateliers. Le SHEP a fait la promotion de ce nouveau programme allégé dans presque tous les bulletins mensuels ou hebdomadaires envoyés en nombre aux intervenants de l'industrie. De plus, il a sollicité activement les entreprises par téléphone pour qu'elles participent aux ateliers de certification (<a href="../../../../fr/outils-de-changement/medias/">Médias</a>).</p>
+<p>" Ce sera de plus en plus difficile d'avoir des contrats sans le CR, et c'est pourquoi nous demandons aux entreprises d'obtenir leur certificat, déclare M. Gylywoychuk. Le CR est reconnu et accepté réciproquement à l'échelle du Canada, ce qui veut dire que les entreprises accréditées du Manitoba peuvent soumissionner pour des contrats dans d'autres provinces où le CR est obligatoire. " Les entreprises de construction lourde actives au Manitoba ne sont pas tenues d'avoir le CR, mais la plupart des autres provinces l'exigent.</p>
+<p>Les concepteurs du SHEP ont fait en sorte que le programme fonctionne d'octobre à avril, ce qui correspond à la saison morte des entreprises de construction. Diverses cases horaires sont proposées pour la tenue d'ateliers, ce qui donne aux entreprises la possibilité de choisir le moment qui leur convient le mieux (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>). Le cours est composé des éléments suivants :</p>
+<ul>
+<li>deux jours de formation en gestion de la sécurité, de la santé et de l'environnement</li>
+<li>deux jours de formation de dirigeants dans les domaines de la sécurité et de l'environnement</li>
+<li>un jour de formation en premiers soins</li>
+<li>un jour de formation adaptée à la spécialité de l'entreprise (p. ex., carrières et sablières, aqueduc et égouts)</li>
+<li>un jour de formation en vérification, ce qui permettra à l'entreprise de vérifier elle-même son programme de CR.</li>
+</ul>
+<p>Dans le cadre de ses ateliers, le SHEP montre aux candidats au CR comment intégrer un programme de sécurité, de santé et d'environnement en 14 points à leurs tâches de gestion quotidiennes (pour de plus amples renseignements, voir la section des notes, ci-dessous). Après la formation en atelier, les entreprises devront normalement élaborer le programme et le mettre en application.</p>
+<p> </p>
+<p>" L'une des forces du CR, c'est qu'il s'agit d'un système de gestion volontaire et interne, affirme M. Gylywoychuk. Nous aidons les entreprises à l'élaborer et à le mettre en application, puis elles le gèrent elles-mêmes. "</p>
+<p>Après avoir suivi la formation et revu ses pratiques de gestion, l'entreprise candidate fera l'objet d'une vérification d'essai effectuée sur place par la MHCA. Ensuite, la MHCA fera appel à un expert-conseil de l'extérieur pour certifier l'entreprise. Le consultant employé par la MHCA a plus de 30 ans d'expérience en tant que vérificateur en santé et sécurité dans l'industrie de la construction. Pendant les deux ans qui suivent la première certification, les entreprises effectuent leurs propres vérifications, puis au cours de la quatrième année, le vérificateur de l'extérieur revient pour confirmer la mise en application du programme par l'entreprise (<a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a>; <a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a>).</p>
+<p><em><strong>Autres activités du SHEP</strong></em><br/>
+Avec ses bulletins mensuels et hebdomadaires, le SHEP met les entreprises au courant des prochaines séances de formation non liées au CR, leur donne des renseignements généraux sur la santé, la sécurité et l'environnement, et les avertit de changements réglementaires qui pourraient avoir une influence sur l'industrie (<a href="../../../../fr/outils-de-changement/medias/">Médias</a>).</p>
+<p>Le Programme prévoit des visites de chantier pour toute entreprise qui en fait la demande. En 2001, plus de 160 visites ont été effectuées partout dans la province. Le Programme fait également des visites ponctuelles, mais toujours dans un esprit d'aide plutôt que de coercition. Si un risque est remarqué dans un milieu de travail donné, il est signalé au superviseur ou aux gestionnaires qui, normalement, devront collaborer. Souvent, il arrive que ces visites donnent lieu à des séances de formation informelles.</p>
+<p>" Par exemple, explique M. Gylywoychuk, une entreprise pourrait demander : "Venez à ma carrière me montrer ce qui est correct et ce qui l'est moins." On leur accorderait cette visite et eux, de leur côté, devront présenter un plan d'action avec des échéances. " (<a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a>)</p>
+<p>Les employés du SHEP reçoivent également de six à dix appels téléphoniques par jour, sans compter les visites au bureau, d'entrepreneurs ayant besoin de renseignements. Les renseignements sont généralement des demandes d'aide relatives à un problème de sécurité ou d'environnement précis, ou à l'interprétation d'un règlement donné.</p>
+<p>" Nous avons élaboré ce programme pour que nous puissions l'appliquer tout en répondant aux besoins et aux demandes de l'industrie, affirme M. Gylywoychuck. En fait, il n'y a pas d'étape à franchir, sauf avec le programme du CR. "</p>
+<p>Le SHEP offre des programmes de formation non liés au CR, généralement sous forme de classes pré-organisées. Des instructeurs diplômés font des exposés magistraux, montrent des vidéos et dispensent une formation pratique. Des spécialistes de l'industrie et des gouvernements sont également invités. Souvent, le SHEP répond aux demandes de formation structurée en donnant ses cours directement sur les chantiers ou en louant des locaux non loin des bureaux d'une entreprise (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>). Des séances de formation sont données à la Manitoba Construction Conference, qui se tient tous les ans à Winnipeg, ainsi qu'à la Western Canada Construction Conference, à Brandon.</p>
+<p>Le SHEP agit également à titre d'intermédiaire entre les autorités réglementaires fédérales et provinciales d'une part, et les entreprises de construction lourde d'autre part.</p>
+<p>" Nous sommes un peu comme un tampon entre les entrepreneurs et les autorités réglementaires, affirme M. Gylywoychuk. Si les entrepreneurs se sentent dépassés par les demandes réglementaires, nous pouvons les aider. "</p>
+<p>Maurice Mazerolle, agent environnemental auprès du programme pétrolier de Manitoba Conservation, dit recevoir régulièrement des appels du SHEP à propos d'entreprises ayant besoin de renseignements sur l'entreposage sécuritaire des produits pétroliers.</p>
+<p>" Avec le SHEP, les entrepreneurs en construction lourde collaborent beaucoup plus, déclare M. Mazerolle. Il n'y a pas de doute que l'industrie fait ses devoirs environnementaux. " L'entreposage des produits pétroliers est une préoccupation majeure car de nombreuses entreprises gardent sur leurs terrains de grands réservoirs hors sol pour alimenter leurs véhicules. En règle générale, les déversements se produisent au moment de faire le plein des véhicules et lorsque les raccords de boyau se mettent à fuir. M. Mazerolle affirme que l'intérêt accru de l'industrie à la mise aux normes environnementales se traduira assurément par une réduction des déversements.</p>
+<p>" Les appels ont augmenté de 75 %, soutient-il. Le SHEP est un autre canal qui nous permet de faire passer le message aux entreprises qui ont besoin de nos conseils. "</p>
+<p>En 2001, le SHEP a formé 1 392 travailleurs appartenant à 93 entreprises, et ce, dans 32 spécialités différentes. Quarante entreprises du Manitoba détiennent déjà leur CR et 12 autres l'obtiendront en 2002.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>Les 350 000 $ qui constituent le budget annuel du SHEP couvrent ce qui suit :</p>
+<ul>
+<li>Quatre employés à temps plein : un coordonnateur, deux gestionnaires adjoints et un commis à l'administration.</li>
+<li>Des bulletins mensuels et hebdomadaires.</li>
+<li>Des séminaires de formation continue selon les demandes des entreprises et, chaque année, une série complète d'ateliers menant au CR.</li>
+<li>Des visites de chantiers et d'installations d'entrepreneurs partout au Manitoba.</li>
+<li>Des consultations en continu avec tous les paliers gouvernementaux sur les questions de santé, de sécurité et d'environnement.</li>
+<li>Deux conférences annuelles sur la construction, l'une urbaine et l'autre rurale.</li>
+</ul>
+<p>Le budget provient entièrement de l'industrie, qui a cotisé la Commission des accidents du travail. Toute entreprise qui a payé des primes la CAT est admissible au SHEP, qu'elle soit ou non membre de la MHCA.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>La MHCA emploie des statistiques compilées par la Commission des accidents du travail pour suivre les taux d’accidents dans l’industrie.</p>
+<p>En 2001, le SHEP a commencé à appeler au hasard des entreprises de construction lourde pour leur demander ce qu’elles pensaient du programme. Un suivi téléphonique est effectué quatre fois par an auprès de ces entreprises pour savoir si elles ont des problèmes à résoudre et pour obtenir leurs commentaires sur le programme en général.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>Les demandes d'obtention du CR ont doublé en 2001, année qui a suivi le lancement du SHEP. La MHCA précise également que les entreprises de construction lourde sont davantage intéressées par les autres ateliers de formation et le réseautage. En 2001, la conférence annuelle de la MHCA a attiré 100 participants de plus que l'année précédente.</p>
+<p>Après le lancement du SHEP, les entreprises de construction lourde sont devenues beaucoup plus respectueuses des règles d'entreposage des produits pétroliers. Manitoba Conservation rapporte une hausse de 75 % des demandes d'information venant de l'industrie. Par contre, au moment de mettre sous presse, cet organisme n'avait pas encore compilé de statistiques sur la réduction des déversements.</p>
+<p>En effet, les statistiques les plus récentes sur les accidents dont dispose la MHCA sont valables pour la période ayant pris fin en 2000. Ces statistiques, compilées à partir des chiffres de la Commission des accidents du travail, montrent que le total des accidents est passé de 244 en 1998 à 219 en 2000.</p>
+<p>Après avoir recueilli les commentaires de l'industrie, la MHCA a conclu que les avantages du SHEP étaient les suivants :</p>
+<ul>
+<li>Amélioration du moral des travailleurs</li>
+<li>Meilleure image d'entreprise</li>
+<li>Plus grande rentabilité et avantage concurrentiel pour la présentation des soumissions</li>
+<li>Meilleure compréhension des règlements relatifs à la santé, à la sécurité et à l'environnement</li>
+<li>Sécurité accrue du grand public, des biens et de l'environnement</li>
+<li>Meilleure accessibilité aux ressources et aux recherches de matériel de formation de pointe.</li>
+</ul>
+<p> </p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Dave Gylywoychuk, B.Sc., M.N.R.M, C.A.E. <br/>
+Manitoba Heavy Construction Association <br/>
+Codirecteur, Programme de sécurité, de santé et d'environnement <br/>
+1236, avenue Ellice <br/>
+Winnipeg (Manitoba) R3G 0E7 <br/>
+Canada <br/>
+Téléphone : (204) 947-1379 <br/>
+Télécopieur : (204) 943-2279 <br/>
+Courriel : <a href="mailto:dave@manitobaheavy.com">dave@manitobaheavy.com</a> <br/>
+Site Web : <a href="http://www.mhca.mb.ca" target="new">http://www.mhca.mb.ca</a></p>
+<p>Le financement de la rédaction de cette étude de cas provient du <a href="http://www.ec.gc.ca/nopp" target="new">Bureau national de la prévention de la pollution</a> d'Environnement Canada. Pour de plus amples renseignements sur cet exemple ou d'autres réussites en prévention de la pollution, visitez <a href="http://www.ec.gc.ca/pp/" target="new">le site Web des Réussites canadiennes en prévention de la pollution</a>.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>La formation menant au Certificat de reconnaissance de la MHCA est axée sur un programme de santé, de sécurité et d'environnement en 14 points que les entreprises devront normalement intégrer à leurs tâches de gestion quotidiennes. Voici les 14 points du programme :</p>
+<ol>
+<li>Une politique d'entreprise de la santé, de la sécurité et de l'environnement - dans la pratique, un énoncé de mission sur la sécurité et l'environnement</li>
+<li>Une liste de vérification des risques</li>
+<li>Un guide des pratiques de travail avec des normes spécifiques incorporées</li>
+<li>Des procédures de travail, dont des procédures étape par étape pour des tâches particulières, les risques associés à ces tâches et les méthodes de contrôle de ces risques</li>
+<li>Des règles de santé, de sécurité et d'environnement - par exemple, des politiques concernant l'alcool et la drogue, ainsi que des politiques visant un comportement attendu</li>
+<li>Des règles relatives aux équipements de protection personnelle - par exemple, utilisation de bottes, de tenues de protection contre les matières dangereuses</li>
+<li>Des politiques de maintenance préventive, par exemple le maintien des outils à main, des outils motorisés et des équipements lourds dans un état sécuritaire pour tous les employés</li>
+<li>Des comités de sécurité et des représentants des travailleurs - Il s'agit de faire en sorte que toutes les entreprises disposent d'une personne sur les chantiers qui sait communiquer les préoccupations des employés aux gestionnaires</li>
+<li>Des plans d'action en cas d'urgence</li>
+<li>Des plans d'inspection - Les entreprises sont censées procéder quotidiennement à des inspections informelles sur les chantiers</li>
+<li>Des plans d'enquête sur les accidents - Les lois du Manitoba exigent des entreprises de procéder à une enquête interne en cas d'accident grave en milieu de travail. Un quasi-accident doit également être documenté et faire l'objet d'une enquête.</li>
+<li>La gestion des matériaux et des déchets environnementaux, y compris la conformité aux règlements provinciaux et fédéraux</li>
+<li>Des registres et des statistiques - Les entreprises doivent conserver des documents et des registres sur la formation des employés et les taux d'accidents. Elles doivent être en mesure de repérer les secteurs à risque élevé pour ensuite leur accorder plus d'attention.</li>
+<li>Les lois et règlements - les employés comme les superviseurs doivent être au courant de la réglementation.</li>
+</ol>
+<p> </p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

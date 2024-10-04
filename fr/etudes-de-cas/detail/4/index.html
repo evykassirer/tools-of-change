@@ -1,0 +1,327 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a></li>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a></li>
+<li><a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/visites-à-domicile/">Visites à domicile</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>The Clean Nova Scotia Foundation</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Environnement Canada</li>
+<li>Chapitre de l'Atlantique du American Water Works Association</li>
+<li>Canada Water Works Agreement</li>
+<li>Comté de Halifax</li>
+<li>Ville de New Glasgow</li>
+<li>Crane</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p>Aucun résultat important jusqu'à maintenant.</p>
+<table border="1" cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" complete="complete" height="26" src="/images/lightbulb.gif" width="27"/> <small><font face="Verdana">Conseil: Cliquez sur cette image pour l'agrandir. Cliquez votre bouton "Back" pour retourner à ce page.</font></small><hr color="#FFCC00"/>
+<p><font face="Verdana" size="1"><b>The Be Water Wise commitment form, judged as too long and complicated by participants.</b></font></p>
+<p><br/>
+<font face="Verdana"><small><a href="/images/documentimages/BeWaterWise/BeWaterWise-1.jpg" target=""><img alt="Be Water Wise Image" border="0" complete="complete" height="134" src="/images/documentimages/BeWaterWise/BeWaterWise-1.jpg" width="102"/></a></small></font><br/>
+<small><strong><font face="Verdana">Page 1</font></strong></small><font face="Verdana" size="1"><b><br/>
+</b></font><font face="Verdana"><br/>
+<br/>
+<a href="/images/documentimages/BeWaterWise/BeWaterWise-2.jpg" target=""><img alt="Be Water Wise Image" border="0" complete="complete" height="147" src="/images/documentimages/BeWaterWise/BeWaterWise-2.jpg" width="103"/></a><br/>
+<small><strong>Page 2</strong><br/>
+</small></font></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Be Water Wise. It Makes Cents.</h1>
+<p>En vue de promouvoir l'efficacité et d'encourager les gens à réduire leur consommation en eau, le programme a fait appel à des bénévoles dûment formés pour effectuer des visites à domicile et pour remettre aux résidants des coupons rabais remboursables à l'achat de produits ménageant l'eau.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>Au mois d'avril 1996, le groupe The Clean Nova Scotia Foundation a lancé son programme <em>Be Water Wise ... It Makes Cents </em>en réponse aux préoccupations engendrées par la diminution des réserves d'eau potable. Ce programme était mis sur pied dans trois municipalités, soit Sackville, Bedford (urbaine) et New Glasgow (rurale), et touchait une population totale de 55 000 habitants.</p><!-- Background already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>En vue de vérifier leur hypothèse selon laquelle le coût et la commodité constituaient des obstacles à la participation aux programmes de conservation de l'eau, les responsables de la Clean Nova Scotia Foundation ont effectué des recherches préliminaires sur l'Internet pour se familiariser avec d'autres programmes de conservation de l'eau en vigueur au Canada et aux États-Unis. Cette recherche ayant confirmé leur hypothèse, ils ont conçu un programme pour réduire ou éliminer ces obstacles.</p>
+<p> </p>
+<p>À l'origine, le programme <em>Be Water Wise ... It Makes Cents </em>prévoyait la distribution de trousses contenant des pommes de douche ménageant l'eau et des aérateurs de robinet. Néanmoins, lorsque les recherches ont révélé que les toilettes faible débit d'eau permettaient de réduire de 20 pour cent la consommation en eau par foyer, on a modifié le programme pour inclure ce type de toilette.</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>Le lancement de la campagne a eu lieu dans le cadre d'une conférence de presse organisée en l'honneur de la Journée de la Terre, le 22 avril 1996. Les responsables en ont profité pour présenter et décrire les appareils de conservation d'eau. Les stations locales de radio et de télévision ont diffusé des communiqués, des messages d'intérêt public, des entrevues et des jeux questionnaires. Les journaux locaux ont publié des articles portant sur des familles « aquanergétiques » et ont repris la plupart des sujets abordés à la radio et à la télévision. Le programme a également fait l'objet d'une promo tion dans les bulletins d'information des trois municipalités participantes. En outre, des encarts ont été joints aux factures de téléphone et de services publics.</p>
+<p>Les responsables ont établi un site Web sur l'Internet en vue de diffuser électroniquement des données sur le programme. Ils ont également profité de divers événements pour transmettre leur message, entre autres les Bedford Days, Arbor Bay, la Fête du Canada et divers salons de l'habitation. Des renseignements ont été acheminés aux centres communautaires, aux bibliothèques publiques, aux musées et aux associés de la Clean Nova Scotia Foundation (programmes Bedford et New Glasgow EnviroTown).</p>
+<p>Dans chacune des trois collectivités participantes, des bénévoles dûment formés ont effectué cent visites de 10 minutes (<a href="../../../../fr/outils-de-changement/visites-a-domicile/">Visites à domicile</a>) Ces visites leur donnaient l'occasion de présenter le programme et de remettre aux résidants une trousse d'information portant sur la conservation de l'eau. Cette trousse contenait une description du programme, un feuillet d'information sur la réduction des déchets, une brochure sur les motifs et les modes de conservation de l'eau et une pancarte sur le programme à afficher dans la fenêtre (<a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a> et <a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a>).</p>
+<p>En guise de suivi à cette rencontre, les bénévoles demandaient aux participants de signer un formulaire d'engagement par lequel ils acceptaient de réduire leur consommation en eau pendant un an. Du même coup, on leur précisait que les noms de tous les participants qui s'étaient engagés à réduire leur consommation en eau seraient publiés dans les journaux locaux et annoncés lors d'une conférence de presse prévue pour l'année suivante (<a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a>).</p>
+<p>De ce groupe, 92 participants ont accepté de signer le formulaire d'engagement. Les gens se sont plaints du fait que ce formulaire était beaucoup trop long et compliqué à remplir.</p>
+<p>Un second groupe de résidants représentant 300 foyers (100 dans chaque collectivité) s'est vu offrir une trousse pour les rénovations, une trousse d'information et une visite de 20 minutes à domicile. La trousse pour les rénovations offrait des rabais de 9 $ sur le prix d'achat des pommes de douche ménageant l'eau, de 5 $ sur le prix des aérateurs de robinet, de 177 $ sur le prix des toilettes à faible débit ménageant l'eau et de 30 $ sur le prix d'installation de la toilette (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>). Le coût d'achat total de ces trois produits s'élevait à 219 $ sans le rabais, et à 75 $ plus les taxes avec le rabais. Depuis le début du programme, la Clean Nova Scotia Foundation a établi qu'il était plus rentable d'offrir des rabais sous forme de remise sur la facture d'eau. Ceci permettrait de réduire les frais de comptabilité et de gestion afférents à la distribution des rabais en les intégrant au système de facturation en place.</p>
+<p>Les responsables du programme ont eu recours aux rabais pour surmonter l'obstacle du coût identifié au cours de la recherche préliminaire. On a contré l'obstacle de la commodité en abordant la question lors des visites à domicile et en remettant aux gens une liste de plombiers approuvés prêts à installer la toilette (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>). Une fois la visite à domicile terminée, les responsables demandaient une fois encore aux participants de s'engager publiquement à réduire leur consommation en eau pendant une période d'un an.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>Le budget alloué au programme <em>Be Water Wise ... It Makes Cents</em> s'établissait à 45 000 $. Les frais de fonctionnement de 30 000 $ étaient répartis comme suit :</p>
+<table width="100%">
+<tbody>
+<tr>
+<td>Salaires</td>
+<td>15 000 $</td>
+</tr>
+<tr>
+<td>Documents imprimés</td>
+<td>600 $</td>
+</tr>
+<tr>
+<td>Publicité</td>
+<td>4 400 $</td>
+</tr>
+<tr>
+<td>Autres</td>
+<td>10 000 $</td>
+</tr>
+</tbody>
+</table>
+<p>Le coût de financement des appareils de conservation d'eau était de 15 000 $.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Les responsables ont mesuré les taux de consommation en eau au cours des deux mois qui ont précédé le lancement du programme et à intervalles réguliers pendant toute sa durée.</p>
+<p>Les participants des trois municipalités ont été choisis au hasard. Un troisième groupe de 300 résidants également choisis au hasard a servi de groupe témoin, puisque ses membres ne profitaient pas de visites à domicile et n'avaient aucun engagement à prendre. Dans leur cas, la campagne de sensibilisation populaire lancée par les organisateurs constituait la seule source d'information sur le programme <em>Be Water Wise</em>.</p>
+<p>Un sondage téléphonique a été mené auprès de tous les participants à la fin de l'été 1996.  Ce sondage permettait de mesurer les changements survenus au niveau des attitudes et des havitudes en rapport avec la consommation d'eau.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>La réaction des gens à la trousse pour les rénovations a été décevante. De toute évidence, la campagne de sensibilisation n'avait pas réussi à convaincre les résidants ayant profité d'une visite à domicile d'acheter les appareils ménageant l'eau proposés. Lorsqu'on a offert ces appareils à tous les résidents des trois collectivités au moyen d'un message imprimé sur la facture d'eau, on a réussi à vendre les trousses qui restaient.</p>
+<p>La Clean Nova Scotia Foundation croit qu'une campagne de sensibilisation plus forte pourrait générer un plus grand intérêt envers la conservation de l'eau et l'installation d'appareils pour ménager l'eau. C'est pourquoi les responsables ont précisé qu'à l'avenir, il faudrait investir plus d'argent pour bien éduquer le public.</p>
+<p>Au moment d'aller sous presse, ce projet était encore en cours. Jusqu'à maintenant, les résultats n'ont pas révélé de réduction significative du taux de consommation d'eau parmi les groupes ciblés par rapport au groupe témoin.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Meinhard Doelle<br/>
+Executive Director<br/>
+Clean Nova Scotia<br/>
+126 Portland Street<br/>
+Dartmouth, NS<br/>
+B2Y 1H8<br/>
+(902) 420 3476</p>
+<p>Courrier électronique: <a href="mailto:CNS@clean.ns.ca">CNS@clean.ns.ca</a><br/>
+Web Site: <a href="http://www.clean.ns.ca">www.clean.ns.ca</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p> </p>
+<p>
+<table border="1" cellpadding="5" cellspacing="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><b>Engagez-vous ... à épargner l'eau </b>
+<p>Lorsque les temps sont durs, il n'est pas toujours facile de convaincre les gens d'adopter une cause. Nous sollicitons néanmoins votre engagement. Nous vous demandons de vous engager à épargner l'eau. Cet engagement comporte moins de pressions que les autres... moins de pressions sur l'approvisionnement en eau de votre municipalité et sur votre usine d'épuration des eaux usées. Moins de pressions aussi sur votre porte monnaie et sur les fonds de votre municipalité car lorsqu'on épargne l'eau, on épargne aussi de l'argent!</p>
+<p>Votre nouvel engagement en faveur d'un usage éclairé de l'eau peut comprendre certaines des suggestions suivantes ou les englober toutes! Vous pouvez aussi y aller de vos propres idées sur la façon de conserver l'eau. Chose certaine, nous sollicitons votre engagement ferme pour une période d'un an. (Évidemment, nous souhaitons que cet intérêt se transforme en un engagement à vie!)</p>
+<p>Nous sommes conscients que tout engagement exige une bonne dose d'efforts et de réflexion. C'est pourquoi nous voulons célébrer publiquement vos démarches. Ainsi, nous rendrons hommage à toutes les personnes qui se sont engagées à économiser l'eau dans le journal local et lors d'une conférence de presse/ célébration organisée l'an prochain. Chaque foyer recevra un collant <b>Be Water-wise ... It Makes Cents </b>à afficher dans la fenêtre.</p>
+<p><b>Voici quelques trucs pour économiser l'eau ... </b></p>
+<p><b>Dans la salle de bain </b></p>
+<ul>
+<li>Tirez la chasse d'eau uniquement lorsque c'est nécessaire.</li>
+<li>Ne restez pas longtemps dans la douche et fermez l'eau pendant que vous vous savonnez.</li>
+<li>Ne faites pas couler l'eau inutilement lorsque vous brossez vos dents ou que vous vous rasez.</li>
+</ul>
+<p><b>Dans la cuisine </b></p>
+<ul>
+<li>Ne lavez la vaisselle que lorsque le lave-vaisselle est plein.</li>
+<li>Compostez la nourriture au lieu de la jeter dans un broyeur d'aliments qui consomme de grandes quantités d'eau.</li>
+<li>Mettez une petite quantité d'eau dans l'évier lorsque vous lavez et pelez les légumes.</li>
+<li>Faites un lavage seulement si vous avez une pleine brassée ou ajustez le niveau d'eau en conséquent.</li>
+</ul>
+<p><b>À l'extérieur </b></p>
+<ul>
+<li>N'arrosez la pelouse que si nécessaire, à l'aide de la méthode de «l'eau profonde».</li>
+<li>Installez des barils pour recueillir l'eau de pluie et servez-vous en pour laver la voiture et pour arroser les plantes.</li>
+<li>Lorsque vous aménagez votre terrain, optez pour des plantes et des arbustes indigènes à la région. En général, ils s'accommodent très bien du climat et exigent peu d'entretien.</li>
+<li>Lorsque vous lavez votre voiture, utilisez une chaudière et une éponge, ainsi qu'un boyau d'arrosage avec embouchure à gâchette plutôt qu'un boyau qui fonctionne constamment.</li>
+</ul>
+<p><b>VOTRE ENGAGEMENT </b>Nous, les ____________________________________________, sommes f iers d'annoncer que nous nous sommes engagés à conserver l'eau tout au long de la prochaine année. Pour ce faire, nous prendrons les dispositions suivantes :</p>
+<p>Signature                                                      Date</p>
+<p>________________________________ ________________________________</p>
+<p>Si vous n'avez pas remis ce formulaire au bénévole Water-wise de votre quartier, vous pouvez nous faire part de votre engagement en composant le 420 3474, en expédiant le tout par télécopieur au 424-5334 ou en le postant à l'adresse suivante : The Clean Air Nova Scotia Foundation, 1395, Bedford Row, C. P. 2528, succursale Central, Halifax (N.-É.) B3J 3N5.</p>
+<p><small><strong>Les participants ont trouvé le formulaire d'en-gagement Be Water Wise ci-dessus trop long et trop compliqué à remplir (deuxième feuillet du formulaire à la page suivante). </strong></small></p>
+<p><small><strong>Voici le second feuillet du formulaire d'engage-ment Be Water Wise que les participants ont trouvé trop long compliqué à remplir (premier feuillet du formulaire à la page précédente).</strong></small></p>
+</td>
+</tr>
+</tbody>
+</table>
+</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

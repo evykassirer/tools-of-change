@@ -1,0 +1,254 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>King County Commission for Marketing Recyclable Materials</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Commerçants et fabricants de la région</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p>La vente de produits à contenu recyclé a augmenté de plus de 50 pour cent dans les magasins d'alimentation participants et d'un tiers en général, par rapport aux années précédentes.</p>
+<table border="1" cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" complete="complete" height="26" src="/images/lightbulb.gif" width="27"/> <small><font face="Verdana">Conseil: Cliquez sur cette image pour l'agrandir. Cliquez votre bouton "Back" pour retourner à ce page. </font></small><hr color="#FFCC00"/>
+<p><a href="/images/documentimages/EnviroNet/EnviroNet-3.jpg" target=""><img alt="The Environment Network Image" border="0" complete="complete" height="158" src="/images/documentimages/EnviroNet/EnviroNet-3.jpg" width="165"/></a><br/>
+<small><font face="Verdana">Green Home Tune-Up promotional brochures used financial incentives.</font></small></p>
+<p><font face="Verdana"><a href="/images/documentimages/EnviroNet/EnviroNet-4.jpg"><img alt="The Environment Network Image" border="0" complete="complete" height="117" src="/images/documentimages/EnviroNet/EnviroNet-4.jpg" width="158"/></a><br/>
+<small>Portion of a "sliding window" waste management card advising householders on care and disposal of hazardous waste.</small><br/>
+</font><br/>
+<font face="Verdana"><small><a href="/images/documentimages/EnviroNet/EnviroNet-1.jpg"><img alt="The Environment Network Image" border="0" complete="complete" height="221" src="/images/documentimages/EnviroNet/EnviroNet-1.jpg" width="158"/></a></small></font><br/>
+<small><font face="Verdana">Self-adhesive decals served as prompts when affixed to products.</font></small><font face="Verdana" size="1"><b><br/>
+</b></font><font face="Verdana"><br/>
+<br/>
+<small><br/>
+</small></font></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Get in the Loop -- Buy Recycled</h1>
+<p>D'une durée d'un mois, la campagne annuelle <em>Get in the Loop- Buy Recycled</em> encourage les gens des régions rurales et urbaines de l'ouest de l'état de Washington à acheter plus de produits à contenu recyclé grâce à des promotions en magasin, et identifie les produits à contenu recyclé directement sur les rayons des magasins. Cette campagne, qui s'accompagne de promotions dans les imprimés et à la radio, est organisée en collaboration avec les fabricants des produits et les commerçants locaux.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>Le programme a pris forme en 1993, lorsque les employés de la King County Commission de Washington ont eut l'idée d'un projet pour promouvoir la vente de produits à contenu recyclé en partenariat avec les commerçants. L'étude de marché révélait la présence de cingrands obstacles qui nui saient à la vente de tels produits. L'agence de développement du marché avait peu d'influence sur deux de ces obstacles, soit la qualité et le prix. Néanmoins, la Commission croyait être en mesure de surmonter les trois autres obstacles, soit l'ignorance des consommateurs face à la disponibilité des produits à contenu recyclé; le cynisme des consommateurs quant aux réclames environnementales; et le manque de volonté des consommateurs pour chercher les produits à contenu recyclé sur les rayons des magasins (Surmonter <em>des obstacles spécifiques). </em>En 1996, <em>Get in the Loop </em>- <em>Buy Recycled </em>était devenu le plus important programme d'incitation à l'achat de produits à contenu recyclé aux États-Unis. Il s'agissait aussi d'un des plus réussis.</p><!-- Background already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>Chaque élément stratégique de la campagne visait un des trois objectifs suivants : préciser aux consommateurs l'importance d'acheter des produits à contenu recyclé; leur indiquer oû se procurer des produits à contenu recyclé; et leur montrer les choix qui s'offrent à eux.</p>
+<p>Selon le responsable du projet, Dave Herrick, « le plus important élément de la campagne était le repère, soit un petit indicateur placé au bord d'un rayon ordinaire, juste en-dessous du produit ». En plus de constituer un rappel immédiat au point de vente, la présence du repère donnait de la crédibilité aux réclames du fabricant quant aux vertus du produit à contenu recyclé, et démontrait que le produit était bel et bien disponible (<a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a>).</p>
+<p>En plus des repères en magasin, les collants affichés sur les portes indiquaient clairement que ces commerçants « étaient fiers de vendre des produits à contenu recyclé. Les affiches rappelaient aux acheteurs de rechercher le sigle de « <em>Get in the Loop </em>» et les macarons qu'arboraient les vendeurs incitaient les clients à poser des questions sur les produits. Tous les articles de promotion étaient offerts gratuitement aux commerçants par la Commission.</p>
+<p>Selon M. Herrick, « si le lien entre un produit spécifique et ses avantages propres n'est pas clair aux yeux du consommateur, les efforts de promotion ne seront pas efficaces. C'est pourquoi la plupart des messages génériques en faveur des produits à contenu recyclé affectent peu les comportements des gens : ils n'établissent aucun lien concret avec les choix réels de produits. »</p>
+<p>Le Rapport annuel de la Commission pour 1996 indique que « quasiment tous les grands détaillants du comté de King et de l'ouest de l'état de Washington ont participé. Chaque fois que les consommateurs se rendaient à l'épicerie, ils pouvaient lire le message <em>Get in the Loop. </em>Chaque fois qu'ils allaient à la pharmacie, le même message était affiché. Chaque fois qu'ils fai saient des emplettes, ils voyaient ces mêmes affiches dans toutes les vitri nes. La campagne <em>Get in the Loop </em>a engendré une identité et des avantages communs parmi une large gamme de commerçants. »</p>
+<p>Les responsables de la campagne ont acheté de l'espace publicitaire dans les journaux et à la radio. Leurs annonces identifiaient les commerces partici pants et précisaient les liens entre les programmes de recyclage et l'achat de produits recyclés. Au cours de 1994-1995, les commerçants locaux ont investi plus de 600 000 $ US en annonces dans des publications dont la circulation totale touchait 12 millions de personnes. Toutes ces annonces affichaient le logo de <em>Get in the Loop. </em></p>
+<p>La campagne de promotion de quatre semaines s'amorçait un mercredi, soit la journée de promotion par excellence pour les chaînes alimentaires. Elle était lancée vers la mi-octobre pour éviter tout conflit avec les grandes pro motions du retour à l'école et du temps des Fêtes.</p>
+<p><strong>Collaboration avec les détaillants locaux </strong></p>
+<p>En vue de remercier les détaillants qui acceptaient de promouvoir les produits à contenu recyclé dans leur magasin, <em>Get in the Loop </em>diffusait leur nom dans les médias et préparait un inventaire démontrant le succès de leurs ventes de produits recyclés. On remettait gratuitement aux commerçants un ensemble de produits publicitaires et on leur proposait trois types de participation à divers titres, soit « partenaires », « associés » ou « présentateurs ».</p>
+<p>Les commerçants qui choisissaient d'être « partenaires » et « présentateurs » obtenaient une mention dans les annonces publicitaires payées et dans le matériel de promotion du programme. En retour, ils acceptaient de fournir des données sur leurs ventes et d'utiliser le logo du programme dans leurs promotions et dans leurs circulaires en magasin pendant toute la durée de la campagne. Les commerçants « présentateurs » recevaient également une mention à titre de principaux commanditaires dans le cadre de la campagne.</p>
+<p>Au départ, on notait une certaine réticence de la part des commerçants à s'engager comme partenaires du gouvernement dans une campagne de promotion. En 1993, un comité de hauts placés a donc été formé pour tenir deux réunions, pour aider à planifier la campagne et lui donner un ton plus « secteur privé » qui saurait plaire aux commerçants. Les membres du comité sont devenus les premiers participants et ont éventuellement permis de recruter 260 autres détaillants au cours de la première année de la cam pagne. Le recrutement des détaillants majeurs ayant plusieurs magasins a nécessité une approche personnelle. Le recrutement des plus petits commerçants s'est effectué par la poste.</p>
+<p>Les organisateurs ont demandé à des « consommateurs » d'évaluer la qualité de la participation des commerces engagés en effectuant quelques visites en début de campagne. Ils ont ensuite transmis aux commerçants des commentaires sur leur conformité aux critères de la campagne. Les commerçants ont également obtenu des données sur les résultats des ventes et les copies d'articles parus dans les médias. De plus, on leur a rendu hommage à diverses reprises au cours de la campagne. Peu de temps après la fin de la campagne, les organisateurs ont demandé aux détaillants de s'engager à y participer à nouveau l'année d'après.</p>
+<p><strong>Collaboration avec les fabricants </strong></p>
+<p>Les fabricants étaient heureux que <em>Get in the Loop </em>leur permette de s'associer à un grand événement communautaire tout en jouissant d'une bonne publicité. Les entreprises James River, Carlisle Plastics et Tom's of Maine ont contribué 25 000 $ US pour financer les efforts de promotion du programme en 1994-1995.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>Le budget alloué au projet pour 1994-1995 s'élevait à 275 000 $ US. De cette somme, 155 000 $ provenaient des cachets afférents au traitement des déchets solides au site d'enfouissement du comté de King, 95 000 $ provenaient de l'état de Washington et 25 000 $ provenaient des trois fabricants de produits à contenu recyclé participants. De plus, les commerçants contribuaient l'équivalent de 600 000 $ en publicité.</p><!-- Financing already contains P tags.-->
+<h2>Résultats</h2>
+<p>Au cours de la campagne de 1994-1995, les ventes de produits à contenu recyclé ont augmenté de 58 pour cent dans les chaînes alimentaires participantes et de 27 pour cent en général, par rapport aux données de l'année précédente. Dans l'ouest de l'état de Washington, 863 détaillants et un mil lion de consommateurs, soit plus du quart de la population de l'état, ont participé à la campagne. Les ventes de papier hygiénique, d'essuie-tout et de serviettes en papier recyclés, soit des articles dont le choix tenait souvent aux caprices changeants des consommateurs, augmentaient de 74 pour cent.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>David J. Herrick <br/>
+Marketing Specialist <br/>
+King County Commission for Marketing Recyclable Materials <br/>
+400 Yesler Way Room 200 <br/>
+Seattle, Washington 98104 <br/>
+U.S.A. <br/>
+(206) 296-4439 <br/>
+télécopieur : (206) 296-4366</p><!-- Contacts already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

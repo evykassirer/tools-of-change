@@ -1,0 +1,268 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/rétroaction/">Rétroaction</a></li>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/communications-personnalisées-percutantes/">Communications personnalisées percutantes</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Ville de Boulder</li>
+<li>Alternative Transportation Centre de la ville de Boulder</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Gouvernement de comté, gou vernement régional, gouverne ment de l'état et gouvernement fédéral</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p>Entre 1990 et 1994, le programme a entraîné une transition de la voiture à occupant seul vers d'autres modes de transport qui s'établissait à 6 pour cent.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Go Boulder</h1>
+<p>En vue de favoriser la transition de la voiture à occupant seul vers des modes de transport plus durables, la ville de Boulder a recours à diverses approches synergiques. Elle offre des laissez-passer pour les transports en commun à diverses entreprises, à diverses écoles et aux habitants de divers quartiers. En outre, elle garantit le retour à domicile aux détenteurs de laissez-passer qui ont une urgence ou qui doivent travailler tard. La ville ne cesse d'améliorer ses infrastructures physiques pour accommoder les modes de transport durables. Elle fait des rappels mensuels et crée des occasions qui encouragent les gens à découvrir ces nouveaux modes de transport.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>En 1989, le conseil municipal de Boulder a lancé le programme <em>Go Boulder </em>en vue de réduire les taux d'embouteillage et de pollution de l'air. La façon la plus efficace de ce faire consistait à encourager les gens à délaisser la voiture à occupant seul en faveur de modes de transport plus durables tels que la bicyclette, les transports en commun et la marche.</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p>En 1989, Boulder s'est donné pour objectif d'effectuer, d'ici l'an 2010, un virage modal dans le cadre duquel 15 pour cent des navetteurs délaisseraient la voiture à occupant seul. Cet objectif reflétait la philosophie du Transportation Master Plan de 1989 ainsi que les recherches, les rapports d'experts-conseils et les efforts conjoints du processus public (Intregrated Planning Process) et du comité consultatif de la ville.</p><!-- Objectives already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p><strong>Laissez-passer pour les transports en commun </strong></p>
+<p>Les responsables de <em>Go Boulder </em>ont mis sur pied des programmes de laissez-passer en vue d'encourager divers groupes cibles à prendre plus souvent l'autobus (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>). Ces programmes fonctionnaient de la même façon qu'un régime d'assurance collective, puisque le groupe entier devait s'engager à prendre l'autobus avant que les laissez-passer à tarif réduit ne soient émis. Ce programme sur mesure devait répondre aux besoins particuliers de trois groupes, soit les gens d'affaires, les étudiants et les associations et organisations communautaires.</p>
+<p>Pour la modeste somme de 40 $ par année, les entreprises pouvaient acheter des « laissez-passer écologiques » pour leurs employés. Ces laissez-passer donnaient également droit à des trajets en taxi gratuits si l'employé devait travailler tard ou répondre à une urgence. Cet aspect du programme visait à contrer un obstacle précis identifié lors des consultations populaires, soit le manque d'accessibilité des transports en commun en cas d'imprévus (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>). La trousse de promotion remise aux entreprises comprenait les témoignages de diverses compagnies et décrivait tous les bénéfices qu'elles retiraient du programme (p. ex., un avantage social peu coûteux et une solution aux problèmes de stationnement). En vue d'inciter davantage les entreprises à emboîter le pas, on leur offrait un rabais additionnel de 25 pour cent pour la première année. Une fois que les entreprises avaient commencé à participer au programme, il était peu probable qu'elles retirent cet avantage aux employés au cours des années subséquentes. Elles avaient plutôt tendance à maintenir leur participation au plein tarif.</p>
+<p><em>Go Boulder </em>encourageait aussi chaque entreprise à nommer un membre de son personnel « coordonnateur du transport des employés ». En plus d'assurer le lien entre le programme et le lieu de travail, cette personne voyait à la bonne distribution des documents d'information et encourageait les employés à opter pour des modes de transport durables. En 1995, ces coordonnateurs faisaient affaire avec 22 000 employés de la région de Boulder.</p>
+<p>Un programme semblable a été lancé pour répondre aux besoins des 25 000 étudiants de l'université du Colorado. Un investissement de 12 $ garantissait aux détenteurs d'une carte d'identité d'étudiant un accès illimité aux transports en commun.</p>
+<p>Le laissez-passer de quartier et « l'éco-passe » pour les familles incitaient la population en général à emprunter les transports en commun. Les personnes intéressées pouvaient se procurer des cartes d'identité pour des laissez passer à prix réduit par le biais des associations de propriétaires et autres organisations de quartier. Les responsables de <em>Go Boulder </em>installaient également, dans des endroits hautement visibles, de jolies affiches décrivant les activités communautaires et mettant l'accent sur les transports en commun. D'autre part, en vue de réduire le nombre de trajets pour les courses, ils remettaient aux foyers des annuaires contenant les noms des commerçants locaux qui faisaient la livraison. <em>Go Boulder </em>offrait également aux groupes des rabais spéciaux pour la première année de participation au programme. À Glendale par exemple, les résidants avaient la chance de se procurer des laissez-passer d'autobus mensuels à moitié prix pendant toute une année.</p>
+<p>Les divers programmes de laissez-passer rendaient les normes attrayantes puisque les gens voyaient leurs collègues de travail, leurs copains étudiants ou leurs voisins prendre l'autobus plus souvent (<a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a>). Même si les coûts réduits incitaient les gens à essayer l'autobus, la recherche indique que la plupart continuaient de prendre l'autobus parce qu'il s'agissait d'un mode de transport pratique.</p>
+<p>Afin de rendre le système des transports en commun plus pratique encore, les responsables ont mis sur pied un service de navette « HOP » qui n'imposait aucun coût additionnel aux détenteurs de laissez-passer. Il s'agissait d'autobus plus petits qui assuraient la navette directe entre divers points clés de la ville toutes les dix minutes. Ce besoin avait été identifié par un comité communautaire qui avait également assuré l'entière conception de « HOP ».</p>
+<p><strong>Événements </strong></p>
+<p>L'organisation d'événements communautaires et scolaires tels que la « course sans pollution des navetteurs » et la « journée nouvelles options » permettaient à la population de découvrir en quoi les modes de transport non habituels s'avéraient accessibles, pratiques et avantageux (<a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications personnalisées percutantes</a>). Ces activités hautement médiatisées contribuaient également à sensibiliser les gens au programme <em>Go Boulder. </em></p>
+<p>La « course sans pollution des navetteurs », qui opposait les automobilistes aux cyclistes, visait à démontrer l'efficacité de la bicyclette. On demandait à trois équipes adverses d'effectuer diverses courses le long du trajet, jusqu'à la ligne d'arrivée. Automobilistes et cyclises devaient tous obéir aux règlements routiers et stationner légalement. Chaque année, ce sont les cyclistes qui remportaient la palme.</p>
+<p>Une fois par mois, on demandait aux résidants de trouver de « nouvelles options de transport » pour se rendre au travail, à l'école ou à leurs activités. Afin d'encourager les participants, les responsables installaient des tables de petits déjeuners à divers endroits le long des trajets occupés. Cette portion du programme a été annulée car elle nécessitait trop d'efforts de la part du personnel et épuisait des sommes qui pouvaient mieux servir ailleurs.</p>
+<p><strong>Infrastructure des transports </strong></p>
+<p>Afin de rendre les modes de transport durables plus sécuritaires et pratiques, la ville de <em>Boulder </em>a construit plus de 80 km de pistes cyclables aux abords des routes et à d'autres endroits, de même que des autoponts et des passages souterrains à l'intention des cyclistes et des piétons. Elle a également amélioré son réseau routier pour accommoder une demande croissante (<a href="../../../../fr/outils-de-changement/groupes-de-soutien-par-les-pairs/">Surmonter des obstacles spécifiques</a>).</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>En 1995, le budget alloué au programme <em>Go Boulder</em> s'élevait à 2,9 millions de dollars répartis comme suit :</p>
+<ul>
+<li>200 000 $ en coûts publicitaires</li>
+<li>75 000 $ pour l'organisation d'évènements</li>
+<li>900 000 $ pour le fonctionnement du service de navette HOP offert conjointement par <em>Go Boulder</em> et par le Regional Transit District</li>
+<li>500 000 $ pour établir le coût des embouteillages et le mode de résolution des embouteillages</li>
+<li>900 000 $ pour d'autres frais reliés au programme comme les rabais d'introduction, l'organisation du covoiturage par fourgonnette et les coordonnateurs du transport des employés</li>
+</ul>
+<p>En 1993, <em>Go Boulder</em> obtenait une subvention fédérale de 2 millions $ pour acheter les autobus HOP . Le gouvernement fédéral assurait aussi le financement de l'étude de 500 000 $ portant sur le coût et la résolution des embouteillages.</p>
+<p>Dans le cadre du programme de dépenses en capital de la ville, les responsables allouaient chaque année de 2 à 3 millions $ pour le maintien des pistes cyclables et des sentiers pédestres.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p><strong>Projets pilotes </strong></p>
+<p>La tenue de projets pilotes pour la majorité des programmes a permis aux planificateurs de <em>Go Boulder </em>d'évaluer chaque nouveau programme dans son contexte réel, à peu de risques et de frais. Par conséquent, ils ont pu déterminer les forces et lacunes de chacun, faire les ajustements nécessaires et établir s'il y avait lieu ou non d'instaurer le programme à grande échelle, de façon permanente.</p>
+<p>Pendant un an, par exemple, les étudiants de l'université du Colorado ont eu le droit d'utiliser leur carte d'identité d'étudiant comme laissez-passer d'au tobus pour la somme de 10 $ par année à titre de projet pilote. Le nombre d'étudiants qui utilisaient les transports en commun a grimpé de 300 000 à plus d'un million au cours de l'année. À la fin de l'année, les étudiants ont opté pour une augmentation des coûts de 10 $ à 12 $ en vue de faire du pro jet un programme universitaire permanent.</p>
+<p>Lorsque les responsables ont introduit le programme de retour garanti à domicile à titre de projet pilote, ils n'ont imposé aucune limite de manière à déceler facilement les situations d'abus. Ils n'ont noté aucun abus au cours du projet pilote. Depuis, les rares cas d'abus tiennent surtout au fait que les gens comprennent mal les objectifs du programme. En ce qui a trait à un ou deux cas oû l'abus s'est avéré intentionnel, on a interdit aux coupables tout accès au service.</p>
+<p><strong>Évaluation constante </strong></p>
+<p>Dans le but d'évaluer le programme <em>Go Boulder, </em>les responsables ont mené des sondages continuels auprès des citoyens, entre autres dans le cadre de l'étude bi-annuelle des carnets, oû ils demandaient à 1 000 résidants d'ins crire dans un carnet tous leurs déplacements au cours d'une journée de la deuxième semaine de septembre choisie au hasard. En 1995, ils avaient réus si à accumuler six années de données sur l'évolution du programme. Des études semblables ont été menées auprès d'employés à qui ils demandaient de tenir compte de leurs modes de déplacement pendant toute une semaine. En outre, ils organisaient constamment des groupes de consultation et tenaient des rencontres communautaires pour déceler tout changement d'at titude et pour connaître les opinions et les préoccupations de la population.</p>
+<p>Ces études indiquaient que malgré un délaissement de la voiture à occupant seul de l'ordre de 6 pour cent, la transition n'avait pas été assez forte pour contrebalancer une hausse de 20 pour cent de la distance moyenne parcou rue lors des déplacements. En vue de réagir à cette situation, le programme s'est donné un nouvel objectif, soit de contrer toute hausse de la distance moyenne parcourue lors des déplacements pendant les 20 prochaines années. Les études ont aussi révélé que 70 pour cent des déplacements n'étaient pas afférents au travail. On a donc multiplié les efforts en vue de promouvoir les laissez-passer de quartier. De plus, les groupes de consul tation et les rencontres communautaires ont permis de confirmer l'utilité de programmes tels que le service de navette « HOP » et le retour garanti à domicile, et ont guidé leur mise en oeuvre.</p><!-- Results_B already contains P tags.-->
+<h2>Réaction</h2>
+<p>La rétroaction de la collectivité s'est avérée essentielle au succès du programme <em>Go Boulder</em> (R<em>troaction).</em> Le journal local constituait un moyen économique et efficace de fournir une rétroaction positive. Chaque mois, ce journal publiait environ deux articles qui vantaient les succès de <em>Go Boulder</em> et soulignaient la participation populaire. Le poste de télévision communautaire présentait à maintes reprises cinq vidéos sur le programme. Les responsables profitaient d'autres occasions pour offrir une rétroaction à la population, soit au sein des documents de promotion ou lors d'évènements spéciaux ou de présentations aux organisations communautaires.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>Entre 1990 et 1994, le programme a entraîné une transition de 6 pour cent de la voiture à occupant seul vers d'autres modes de transport. On notait également une réduction totale de 2,3 pour cent du taux de circulation des voitures à plusieurs occupants, des camions et des motocyclettes. Par contre, les régions avoisinantes et l'ensemble des États-Unis ont de plus en plus tendance à favoriser le recours aux voitures à occupant seul.</p>
+<ul>
+<li>hausse de 3 à 5 pour cent des trajets à pied</li>
+<li>hausse de 2,2, pour cent des trajets à bicyclette</li>
+<li>hausse de 1,7 pour cent des trajets au moyen des transports en commun</li>
+<li>parmi les entreprises qui utilisent le laissez-passer, hausse de 59 pour cent du taux de recours aux transports en commun (et nouvelle hausse six mois plus tard)</li>
+<li>à l'université du Colorado, le nombre d'étudiants qui prennent l'autobus grimpe de 300 000 à plus d'un million au cours de la première année</li>
+</ul>
+<p>Les responsables n'ont pas calculé la valeur monétaire réelle du retour sur l'investissement. Néanmoins, l'importante contribution de <i>Go Boulder </i>à la qualité de vie de la région a incité plusieurs entreprises majeures à s'y installer. En 1993, alors que AT&amp;T cherchait à établir un nouveau laboratoire de technologies avancées, elle a choisi <i>Boulder </i>parmi cinvilles candidates parce que l'entreprise croyait qu'elle n'aurait aucun mal à attirer des employés à <i>Boulder. </i>De fait, AT&amp;T faisait référence de façon particulière à « l'environnement sain de <i>Boulder </i>et à son système de transports en commun bien planifié ».</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Bob Whitson <br/>
+Go Boulder <br/>
+City of Boulder <br/>
+P.O. Box 791 <br/>
+Boulder, Colorado 80306 <br/>
+U.S.A. <br/>
+(303) 413-7304 <br/>
+télécopieur : (303) 443-8196 <br/>
+courrier électronique : <a href="mailto:whitsonb@ci-boulder.co.us">whitsonb@ci-boulder.co.us</a>  </p><!-- Contacts already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

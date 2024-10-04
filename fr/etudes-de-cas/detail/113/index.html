@@ -1,0 +1,318 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a></li>
+<li><a href="../../../../fr/outils-de-changement/rétroaction/">Rétroaction</a></li>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a></li>
+<li><a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+<li><a href="../../../../fr/outils-de-changement/de-bouche-à-oreille/">De bouche à oreille</a></li>
+<li><a href="../../../../fr/outils-de-changement/programmes-en-milieu-de-travail-qui-affectent-le-foyer/">Programmes en milieu de travail qui affectent le foyer</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Auto Free Ottawa</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Environnement Canada</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p>Les employés participants ont parcouru plus d'un million de kilomètres en utilisant des moyens de transport autres que des véhicules à passager unique. Comparativement à un nombre égal de kilomètres parcourus par des véhicules à passager unique, cela représente une réduction possible d'émissions d'environ 258,9 tonnes métriques.</p>
+<p>42 % des employés ont participé</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Défi transport : la participation d'Environnement Canada</h1>
+<p>Cette étude de cas met en évidence l'engagement fructueux d'un important ministère (Environnement Canada) dans un programme de participation générale de ses employés. Ce programme, le Défi transport, est un événement pancanadien sous la direction d'un ONG qui met les voyageurs au défi de réduire le nombre de véhicules à passager unique au cours d'une période de référence spécifique. On s'en est servi comme initiative pour hausser le niveau de sensibilisation et promouvoir une activité pilote, et non comme une vérification scientifique ou un outil d'enquête.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p><em>Nota : Pour minimiser les coûts de maintenance du site, toutes les études de cas sont écrites au passé, même si elles sont en cours, comme dans le cas de ce programme.</em></p>
+<p>Les émissions produites par les modes de transport contribuent en grande partie à la pollution de l'air et au changement climatique. En effet, le transport est l'une des plus grandes sources de pollution de l'air au Canada et dans certaines régions urbaines il est la cause de quelque deux tiers des polluants générateurs de smog. Dans l'ensemble, selon les données de 1998, ce secteur est responsable de 27 % des émissions de gaz à effet de serre au Canada. Une voiture ordinaire produit plus de 40 % de son poids en polluants de l'air en un an et quatre fois son poids en gaz à effet de serre. Des études ont révélé que le trafic quotidien est responsable en grande partie de ces statistiques.</p>
+<p>Depuis 1999, certaines villes du Canada ont utilisé un logiciel de collecte de données pour organiser des défis transport interurbains à l'échelle nationale. Le <a href="/francais/CaseStudies/default.asp?ID=97">Défi transport RCN 2000 (région de la capitale nationale)</a>, organisé par Auto Free Ottawa (AFO), était un événement multisectoriel qui s'adressait à toutes les communautés de la RCN de l'Ontario et du Québec. Lancé en 1991 en tant que défi d'un jour appelé « Pédalez au travail », cet événement est devenu au cours des ans un événement qui s'échelonnait sur une semaine qui coïncidait avec la Semaine canadienne de l'environnement et depuis 1999, la Journée de l'air pur. Les employés du gouvernement fédéral (environ 90 000) constituaient une partie importante du trafic quotidien de la RCN. AFO s'est activement employé à aider tous les ministères et agences intéressés à coordonner leur participation.</p>
+<p>Environnement Canada (EC) a identifié le Défi transport comme un événement utile destiné à relever le niveau de sensibilisation de deux de ses priorités, l'air pur et le changement climatique. Ce faisant, EC a activement encouragé la participation de ses employés au Défi transport de la région de la capitale nationale (RCN). EC-NCR a été inscrit dans la catégorie des « 1 000 employés et plus ». EC a mis l'accent sur la participation à la Journée de l'air pur, le mercredi de la Semaine de l'environnement, afin de profiter des liens étroits avec d'autres initiatives de portée publique. La Journée de l'air pur 2000 se voulait aussi la date limite de la campagne sur le transport durable à l'échelle nationale, rendue possible grâce à un partenariat entre l'Association canadienne du transport urbain, le gouvernement fédéral et le secteur privé.</p><!-- Background already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p><strong>Mettre en œuvre la participation d'Environnement Canada</strong></p>
+<p>La participation de toutes les organisations, incluant Environnement Canada, était volontaire (<a href="../../../../fr/outils-de-changement/programmes-en-milieu-de-travail-qui-affectent-le-foyer/Programs">Programmes en milieu de travail qui affectent le foyer</a>). Dans toutes les étapes de la planification, tous les efforts étaient déployés pour minimiser les besoins en ressources et pour créer une atmosphère amicale.</p>
+<p>Environnement Canada a élaboré un programme à trois volets pour encourager la participation :</p>
+<p><strong><em>1. Le coordonnateur principal d'Environnement Canada :</em></strong></p>
+<ul>
+<li>a identifié une personne-ressource (chef d'équipe)/champion dans chacun des six immeubles d'Environnement Canada de la RCN;</li>
+<li>s'est assuré qu'Environnement Canada et ses immeubles étaient inscrits comme participants auprès d'AFO;</li>
+<li>a agi comme personne-ressource entre Environnement Canada et AFO;</li>
+<li>a organisé et supervisé la collecte de données et la tenue d'événements spéciaux;</li>
+<li>a renseigné la haute direction;</li>
+<li>a rédigé des textes (pour des courriels, notes, banderoles, etc.);</li>
+<li>a dressé une liste de tous les bénévoles (des personnes reconnues pour leur engagement face au transport écolo, p. ex. des membres de groupes de cyclistes ou des gens impliqués dans un système de gestion de l'environnement, ont été ciblés comme bénévoles possibles).</li>
+</ul>
+<p><strong><em>2. A défini une stratégie pour la collecte de données et suscité la motivation à la participation :</em></strong></p>
+<ul>
+<li>sur la base d'encouragement actif et par des contacts personnels avec les employés durant l'étape de la collecte des données (les courriels seuls étaient insuffisants);</li>
+<li>a employé des étudiants qui ont travaillé bénévolement durant l'été (lorsque c'était possible) à collecter manuellement les données et à les enregistrer;</li>
+<li>a développé des mesures incitatives (des T-shirts remis en prix, des certificats remis en reconnaissance de la participation, l'accent mis sur le fait d'être écolo plutôt que de gagner un gros prix);</li>
+<li>les inscriptions étaient faites manuellement par cartes tout au long de l'événement pour les gens qui n'avaient pas accès à l'Internet ou qui étaient impliqués dans des défis internes non reconnus par le logiciel de base. Le chef d'équipe devait s'assurer que les données étaient enregistrées correctement et retransmises à AFO;</li>
+<li>a créé une attitude positive pour tous les employés. C'était particulièrement important pour les gens qui pouvaient un peu ou pas du tout. Personne ne devait se sentir coupable de ses besoins ou de ses choix en matière de transport. Cette attitude positive était capitale pour la collecte des données individuelles et, il est à espérer, qu'elle encouragera les gens à répondre de façon positive au cours des prochaines années;</li>
+<li>a rédigé des messages spéciaux à l'intention des participants qui étaient déjà des usagers du transport écolo au cours de l'année (p. ex. des utilisateurs réguliers du transport en commun et du covoiturage);</li>
+<li>a instauré une atmosphère de compétition amicale. Même si les compétitions internes chez Environnement Canada semblent ne pas avoir suscité beaucoup d'intérêt, le défi inter-ministères dans la RCN a, pour sa part, donné lieu à des compétitions dans la bonne humeur.</li>
+</ul>
+<p><strong><em>3. Élaboré une stratégie visant à encourager la participation d'autres ministères fédéraux de la RCN :</em></strong></p>
+<ul>
+<li>a distribué de l'information aux coordonnateurs des autres ministères (environ 35 ministères et agences du gouvernement fédéral de la RCN);</li>
+<li>a profité de l'avantage que lui procurait le comité de coordination inter-ministériel mis en place pour la Semaine de l'environnement, ce qui réduisait les besoins en temps-personne et les ressources.</li>
+</ul>
+<p><strong>Communication avec les employés </strong></p>
+<p><strong><em>Campagne d'affiches/exposition dans les halls d'entrée </em></strong><br/>
+Des affiches annonçant le Défi transport ont été placées dans des endroits très achalandés deux semaines avant la tenue de l'événement. Un petit kiosque a aussi été érigé dans le hall d'entrée de la Place Vincent Massey (l'immeuble principal d'Environnement Canada) comprenant des dépliants publicitaires sur l'air pur et le changement climatique, une boîte de dépôt pour les cartes d'inscription, des affiches sur le Défi transport et un ordinateur avec accès à l'Internet. Une direction générale d'Environnement Canada a étendu des banderoles dans le hall d'entrée de son immeuble pour promouvoir le Défi transport et la Semaine de l'environnement. Les banderoles étaient changées à tous les jours et contenaient des messages positifs tels que « Ce sera une grande semaine. » ou « Merci. Beau travail! »</p>
+<p><strong><em>Courriels</em></strong><br/>
+Des courriels ont été envoyés à tous les employés d'Environnement Canada par le biais du système interne. Des messages du ministre et du sous-ministre adjoint ont incité les gestionnaires à libérer les bénévoles et à encourager la participation (<a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications personnalisées percutantes</a>). De façon générale, la teneur des messages visait à donner de l'information sur le Défi transport et d'autres événements connexes (Journée de l'air pur et Semaine de l'environnement) et expliquait les procédures techniques d'enregistrement des données. Toutefois, l'envoi de courriels seulement ne s'est pas avéré suffisant pour motiver les employés à participer.</p>
+<p><strong><em>Contacts personnels/événements concrets</em></strong><br/>
+Les chefs d'équipe/bénévoles ont essayé de visiter la plupart des gens dans leur immeuble pour leur rappeler personnellement la tenue de l'événement et/ou les inscrire dans la banque de données (<a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a>).</p>
+<p>D'autres contacts personnels ont été faits par le biais d'événements sur le lieu du travail, tels que la tenue d'un atelier gratuit sur la mise au point d'une bicyclette et d'une clinique volante. Ces événements ont eu lieu pour la plupart la Journée de l'air pur qui tombait le mercredi et devenait ainsi un pôle d'attraction naturel.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>Le Défi transport RCN 2000 n'était pas un événement coûteux en termes de dollars réels mais sa tenue nécessitait un important engagement en matière de ressources humaines pour obtenir de bons résultats. Certaines dépenses ont été facilement épongées par l'organisation telle l'utilisation d'ordinateurs, de salles de réunion et d'autres équipements de bureau. Un petit budget était nécessaire pour les prix, d'autres matériels promotionnels et/ou événements (p. ex. banderoles, frais de la tenue d'une session d'information sur la mise au point d'une bicyclette, T-shirts).</p>
+<p>Quoi qu'il en soit, la demande élevée en ressources humaines et en bénévoles demeurait un aspect important à ne pas négliger.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Bien qu'un défi transport ne consiste pas un outil de mesure ou de sondage précis, les chiffres qui en ont découlé ont été pris en considération dans la campagne de sensibilisation menée par Environnement Canada et qui comprenait la Journée de l'air pur et la Semaine de l'environnement.</p>
+<p>Suivant les traces d'AFO, Environnement Canada a utilisé les pourcentages de taux de participation comme les seuls critères de sélection des gagnants. Bien qu'il ait été possible de comparer les kilomètres ainsi parcourus ou les émissions réduites (kg), cette façon de faire aurait contribué à donner des résultats « gagnants » aux gens qui conduisaient le plus durant les 51 autres semaines de l'année. À la place, un simple taux de participation s'imposait comme moyen le plus juste de faire des comparaisons.</p>
+<p>De plus, il faudrait remarquer que ce ne sont pas tous les employés qui ont participé qui ont changé leurs habitudes de transport. Plusieurs employés utilisaient déjà le transport en commun, pratiquaient le covoiturage, la marche ou utilisaient d'autres modes de transport durable en cours d'année.</p>
+<p>Parce qu'Environnement Canada avait privilégié les contacts personnels avec ses employés durant la collecte des données, le Défi transport RCN 2000 a créé une occasion unique pour sensibiliser davantage ses employés aux questions et aux événements reliés à l'air pur et au changement climatique. Environnement Canada a aussi utilisé l'événement comme une bonne occasion de partager de l'information avec d'autres ministères et agences du gouvernement. En 2000, 35 ministères fédéraux se sont inscrits à la banque de données de la RCN. De plus, avec un taux de 42 % de ses employés de la RCN inscrits à la banque de données, Environnement Canada a terminé en deuxième place de sa catégorie (1 000 employés et plus). Avec tous ces facteurs combinés, le Défi transport RCN 2000 été considéré comme une campagne de sensibilisation réussie.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>Les employés participants ont parcouru plus d'un million de kilomètres en utilisant des moyens de transport autres que des véhicules à passager unique. Comparativement à un nombre égal de kilomètres parcourus par des véhicules à passager unique, cela représente une réduction possible d'émissions d'environ 258,9 tonnes métriques.</p>
+<p>Le tableau ci-dessous indique les réductions globales de certains polluants atmosphériques obtenues lors du Défi transport RCN 2000 et par les employés fédéraux de la NCR. Les kilométrages parcourus par d'autres moyens de transport durable (p. ex. pas de véhicules à passager unique) sont également indiqués.</p>
+<p>Réductions de la pollution atmosphérique : Défi transport RCN 2000</p>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<td> </td>
+<th colspan="2">Réduction de la pollution en tonnes métriques</th>
+</tr>
+<tr>
+<td> </td>
+<td>Total RCN</td>
+<td>Gouvernement fédéral</td>
+</tr>
+<tr>
+<td>Pollution par le dioxyde de carbone</td>
+<td>241,962</td>
+<td>139,563</td>
+</tr>
+<tr>
+<td>Pollution par monoxyde de carbone</td>
+<td>14,257</td>
+<td>8,223</td>
+</tr>
+<tr>
+<td>Pollution par hydrocarbures</td>
+<td>1,686</td>
+<td>0,972</td>
+</tr>
+<tr>
+<td>Pollution par oxydes nitreux</td>
+<td>0,994</td>
+<td>0,573</td>
+</tr>
+<tr>
+<td><strong>Réduction totale de la pollution</strong></td>
+<td><strong>258,900</strong></td>
+<td><strong>149,333</strong></td>
+</tr>
+<tr>
+<td><strong>Distance parcourue libre de VPU en kilomètres </strong></td>
+<td><strong>1 060 306</strong></td>
+<td><strong>611 583</strong></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>Au total, trente-cinq ministères et agences du gouvernement fédéral ont participé au Défi transport RCN 2000, soit plus du double de l'année précédente. Santé Canada, avec un taux de participation de 47 %, s'est mérité les honneurs de la compétition parmi les ministères fédéraux, tandis que Transports Canada et Environnement Canada sont arrivés ex-aequo en deuxième place avec un taux de participation de 42 %. Un total de 6 250 employés du gouvernement fédéral ont participé à l'événement.</p>
+<p>Dans l'ensemble, plus de 10 000 personnes de tous les secteurs (public, privé et de l'éducation) ont participé au Défi transport RCN 2000.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p><a href="http://ottawa.commuterchallenge.net">http://ottawa.commuterchallenge.net</a><br/>
+<a href="http://www.commuterchallenge.net">www.commuterchallenge.net </a><br/>
+<a href="http://www.commuterchallenge.com/french/home.html">www.commuterchallenge.com/french/home.html</a></p>
+<p>Cette étude de cas a été écrite par Bjorn Surborg, un intern auprès de “The Tools of Change Case Study Writing Program“, sponsorisée par le Fonds d’action pour le changement climatique du Gouvernement du Canada, Tetrapak Canada Inc., Enbridge Consumers Gas, Syncrude et Suncor .</p>
+<p>La traduction vers le français de cette étude de cas a été faite par Louise Rioux. Aimant beaucoup les mots et surtout leur rôle dans l'expression d'une idée, la traduction est un défi des plus intéressants. Disponible pour effectuer vos travaux de traduction. Vous pouvez la joindre par courriel à : <a href="mailto:michelg@9bit.qc.ca">michelg@9bit.qc.ca</a></p>
+<p>Rénald Gagnon a édité la version française de cette étude de cas. Rénald possède de nombreuses années d'expérience de traduction et de révision dans des domaines très variés. Vous pouvez le joindre par courriel à : <a href="mailto:relimax@magma.ca">relimax@magma.ca</a></p><!-- Contacts already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

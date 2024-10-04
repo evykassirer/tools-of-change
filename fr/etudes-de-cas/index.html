@@ -1,0 +1,1501 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+  - Etudes de Cas</title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship.  - Etudes de Cas" name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior,  - Etudes de Cas" name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="./" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<div class="left_content">
+<h1>Études de cas</h1>
+<p>Cette section comprend des études de cas portant sur des programmes locaux réalisés dans diverses régions de l'Amérique du Nord. Elle inclut une grande variété d'approches, d'outils, d'endroits, de types d'organisme et de profil de participants, d'activités visées et de problèmes à traiter. La majorité de ces études de cas illustrent des approches fructueuses. Toutefois, des exemples d'échec potentiel sont aussi inclus pour vous présenter une image réaliste de ce qui vous attend sur le terrain.<br/>
+<br/>
+Nous sommes toujours à la recherche de nouvelles études de cas pour ce site. Si vous en connaissez, faites-le nous savoir. <a href="../../fr/contactez-nous/">faites-le nous savoir</a>.<br/>
+<br/>
+Toutes les études de cas et les exemples sont décrits au passé, y compris les programmes toujours en cour. Par contre, le résumé de l'étude de cas d'un programme en cour est rédigé au présent.<br/>
+<br/>
+Voici une liste alphabétique des études de cas sur ce site. Pour rechercher une étude de cas par sujet, par lieu ou selon d'autres critères, cliquez sur le bouton de Recherche jaune.</p>
+</div>
+<!--/left_content-->
+<div class="bar">
+<div class="bar_rt_float">
+<h6> </h6>
+</div>
+<div id="" style="float:left">
+<div class="bar_left_float_sort">
+<h6>Classer par : </h6>
+</div>
+<div id="menu_container">
+<ul id="pmenu">
+<li class="drop"><a href="?SortOrder=ascending&amp;max=1000">Plus récents</a>
+<ul>
+<li><a class="enclose" href="?SortOrder=descending&amp;max=1000">Plus ancien</a></li>
+<li><a class="enclose" href="?SortOrder=ascending&amp;sortfield=casestudyname&amp;max=1000">Titre A-Z</a></li>
+<li><a class="enclose" href="?SortOrder=descending&amp;sortfield=casestudyname&amp;max=1000">Titre Z-A</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="bar_left_float_show2">
+<h6>  Afficher 
+         <a href="?SortOrder=descending&amp;max=5&amp;sortfield=">5</a>  
+         <a href="?SortOrder=descending&amp;max=10&amp;sortfield=">10</a>  
+         <a href="?SortOrder=descending&amp;max=30&amp;sortfield=">30</a></h6>
+</div>
+</div>
+</div>
+<!--/bar-->
+<div class="content_wrap_plain">
+<h1 class="sub_header_2col">
+<img alt="Landmark Case Study" class="landmark_div" height="27" src="../../public/images/landmark_white.gif"/>
+<a href="./detail/476/">Day Zero: Le Cap inclut un appel à la peur pour éviter de manquer d'eau</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Les appels à la peur doivent être soigneusement examinés car ils peuvent trop facilement se retourner contre eux et décourager les gens de prendre en compte nos messages et d'agir en conséquence. Et pourquoi répandre la peur inutilement ? Cette étude de cas illustre une utilisation appropriée et efficace d'un appel à la peur pour réduire la consommation d'eau au Cap en Afrique du Sud. Il retrace 30 ans, depuis le moment où la ville a prédit de graves pénuries d'eau jusqu'au point où les robinets se sont presque asséchés et où cette ville de quatre millions d'habitants a suffisamment réduit sa consommation d'eau pour éviter une catastrophe. Désigné une étude de cas <em>Landmark</em> en 2021.</p> <strong><a href="./detail/476/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/475/">C'est une question de respect - Réduire la violence sexuelle à Washington</a>  <img alt="Safety" height="15" src="../../public/images/small_cone_icon.gif" width="13"/></h1>
+<p>It’s About Respect (C'est une question de respect) est un programme de prévention des violences sexuelles chez les collégiens. Cette étude de cas rend compte du projet pilote initial du programme dans une école, par rapport à une école témoin.</p> <strong><a href="./detail/475/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/474/">Le programme de prévention de l'intimidation</a>  <img alt="Safety" height="15" src="../../public/images/small_cone_icon.gif" width="13"/></h1>
+<p>Le programme de prévention de l'intimidation (The Bullying Prevention Program, ou BPP) a réduit les problèmes d'intimidation dans les écoles norvégiennes jusqu'à 50 %. L'implication active des élèves, du personnel scolaire et des parents dans la restructuration de leur environnement scolaire a créé un environnement sûr et propice à l'apprentissage, et a réduit le nombre d'opportunités et de récompenses pour l'intimidation. Le BPP a été reproduit dans des écoles américaines, canadiennes et européennes avec des résultats positifs, bien que moins spectaculaires.</p> <strong><a href="./detail/474/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/473/"> Cure Violence (Guérir de la violence)</a>  <img alt="Safety" height="15" src="../../public/images/small_cone_icon.gif" width="13"/></h1>
+<p>Cure Violence montre qu'il peut être efficace de traiter la violence en utilisant une approche de santé - c'est-à-dire de la traiter comme une contagion plutôt que comme un problème de mauvaises personnes. L'intervention s'appuie fortement sur les influenceurs des pairs et les appels aux normes. Il a fait l'objet de plusieurs évaluations indépendantes - toutes montrant d'importantes réductions statistiquement significatives de la violence.</p> <strong><a href="./detail/473/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/472/"> Défi de dix jours</a>  <img alt="Safety" height="15" src="../../public/images/small_cone_icon.gif" width="13"/></h1>
+<p>Le défi de dix jours est une approche novatrice qui aide les parents et les enseignants à travailler en étroite collaboration pour réduire la violence chez les enfants et les adolescents. Depuis 2003, il a été mis en oeuvre dans plus de 60 écoles à travers l'Ontario et le Québec, Canada. Les évaluations par les parents, les élèves et les enseignants ont montré des impacts significatifs sur la vie quotidienne des participants : plus de temps pour lire et faire de l'activité physique, des relations plus harmonieuses, une meilleure attention en classe, un langage et un comportement plus respectueux à la maison et à l'école, et moins de violence.</p> <strong><a href="./detail/472/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/470/">Stop it Now! (Arrêter maintenant!) Vermont</a>  <img alt="Safety" height="15" src="../../public/images/small_cone_icon.gif" width="13"/></h1>
+<p>Le but de ce projet était d'introduire une approche de santé publique à la prévention des abus sexuels envers les enfants. Les programmes de prévention antérieurs étaient axés sur les enfants et sur la manière de prévenir leur victimisation ou sur la manière de signaler les abus une fois qu'ils se sont produits. Ce programme a introduit une nouvelle approche axée sur les adultes et sur la manière de prévenir la perpétration d'abus sexuels sur des enfants.</p> <strong><a href="./detail/470/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/458/">Too Good to Go (Trop bon pour être gaspillé)</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Environ 75 % des déchets alimentaires sont mis en décharge, où ils deviennent l'une des plus grandes sources d'émissions de gaz à effet de serre avec 10 % des émissions totales. Too Good to Go transforme le gaspillage alimentaire en une situation gagnant-gagnant pour tout le monde, en créant des emplois, en générant des revenus, en réduisant le gaspillage alimentaire et en diminuant les impacts environnementaux. À la base, l'application est une place de marché pour les surplus de nourriture. Il vous permet de voir quelle nourriture supplémentaire est susceptible d'être disponible ce jour-là dans les boulangeries, magasins et restaurants à proximité - des aliments frais qui seraient autrement jetés à la fin de la journée car ils ne seraient plus considérés comme frais et vendables. En utilisant l'application, vous pouvez acheter un repas "sac magique" pour environ un tiers de ce que vous paieriez normalement, puis le récupérer à l'heure de fermeture du vendeur. En juin 2022, un total de 141 millions de sacs avaient été vendus, éliminant 775 millions de livres (environ 387 500 tonnes américaines) d'émissions de CO2. Au cours des six premiers mois de 2022 seulement, 88,5 millions de sacs ont été vendus, éliminant l'équivalent de 973,5 millions de livres (environ 486 800 tonnes US) d'émissions de CO2 par an. </p> <strong><a href="./detail/458/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/469/">Interdiction pancanadienne des cigarettes au menthol</a>  <img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>L'interdiction des cigarettes au menthol au Canada de 2015 à 2017 a entraîné une augmentation significative du nombre de fumeurs qui ont tenté d'arrêter de fumer et qui ont réussi à arrêter, tout en réduisant les taux de rechute chez les anciens fumeurs. Le Canada a été l'un des premiers pays à mettre en place une interdiction des cigarettes mentholées et le premier pays où une telle interdiction a été évaluée.</p> <strong><a href="./detail/469/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/468/"> Bob et Martin ont arrêté de fumer</a>  <img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Cette campagne efficace d'arrêt du tabac a utilisé huit publicités télévisées basées sur la théorie du changement de comportement de Prochaska, pour faire passer les fumeurs de la phase de pré-contemplation à l'étape d'entretien de l'arrêt du tabac. Les publicités mettaient en vedette un fumeur moyen passant par les étapes de l'arrêt du tabac.</p> <strong><a href="./detail/468/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/467/">La récompense et le rappel réduisent les ventes illégales de cigarettes</a>  <img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Reward and Reminder (La récompense et le rappel), en quelques mois, a considérablement réduit les ventes illégales de cigarettes aux mineurs dans un certain nombre d'États américains, et est facilement reproductible. Cette étude de cas est une excellente illustration de l'utilisation d'une conception à lignes de base multiples au lieu de groupes de contrôle.</p> <strong><a href="./detail/467/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/466/">Le SCIP améliore l'utilisation des contraceptifs au Mozambique</a>  <img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>De 2009 à 2015, Pathfinder International et ses partenaires ont mis en œuvre le projet de renforcement des communautés par la programmation intégrée (SCIP) financé par l'USAID dans la province de Nampula, au Mozambique. Dans le cadre du mandat global du SCIP d'améliorer la qualité de vie au niveau des ménages et de la communauté, le projet s'est efforcé d'accroître l'accès aux services de contraception en renforçant et en intégrant mieux les systèmes de santé et communautaires. Il y a eu une augmentation de 400 % du couple d'années de protection pour toutes les méthodes contraceptives incluses dans la combinaison de méthodes mozambicaines, ce qui suggère un meilleur choix de méthode et une réduction des biais des prestataires de santé.</p> <strong><a href="./detail/466/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/465/">Drama Downunder</a>  <img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>La légère campagne Drama Downunder (Drame Downunder) a accru l'accès au diagnostic, au traitement et aux soins des infections sexuellement transmissibles (IST), amélioré la sensibilisation et les connaissances sur le VIH/IST et minimisé la transmission et la morbidité des IST chez les homosexuels et les autres hommes homosexuels actifs.</p> <strong><a href="./detail/465/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/464/">HoMBReS</a>  <img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>HoMBRes—Hombres Manteniendo Bienestar y Relaciones Saludables (Des hommes maintenant le bien-être et une relation saine) est une intervention de réduction des risques sexuels conçue pour réduire l'infection par le VIH et les MST chez les hommes latinos non anglophones récemment arrivés dans le centre rural de la Caroline du Nord. Développé à l'aide de la recherche participative communautaire (CBPR), HoMBReS comprend la sélection systématique, la formation et le soutien continu des hommes latinos pour servir de conseillers de santé non professionnels.</p> <strong><a href="./detail/464/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/463/">Campus sans cage</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>En 2005, la Humane Society des États-Unis (la HSUS) a élaboré un plan visant à remplacer les œufs produits de manière conventionnelle servis sur les campus universitaires par des alternatives sans cage, en faisant appel à l'intérêt des étudiants pour les questions sociales et en répondant aux préoccupations pratiques des administrateurs. Désormais dirigée par la Humane League (THL) aux États-Unis et par d'autres organisations internationales, la campagne a abouti à des millions d'œufs provenant désormais d'installations sans cage plutôt que d'« élevages industriels ». Un manuel étape par étape montrant comment obtenir un soutien à l'échelle du campus et engager les responsables des services de restauration guide les étudiants leaders dans la mise en œuvre de la campagne dans leurs écoles.</p> <strong><a href="./detail/463/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/462/">Fork It Over! (Fourchez-le !)</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Fork It Over! (Fourchez-le !) est une initiative entre pairs qui aide les entreprises alimentaires de Portland, dans l'Oregon, à faire don d'aliments périssables préparés en surplus qui n'ont pas été servis, en montrant que c'est sûr, simple et la bonne chose à faire. Il recrute des entreprises alimentaires pour qu'elles s'engagent publiquement par écrit à donner régulièrement de la nourriture, renforce et publie ces engagements et incite à agir au moment où les dons sont disponibles. Il s'appuie également sur le soutien de partenariats de leaders et d'associations clés de l'industrie pour renforcer la valeur sociale et culturelle du don de nourriture, et fournit un renforcement régulier de la participation par le biais de publicités gratuites.</p> <strong><a href="./detail/462/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/461/">Dispensaire diététique de Montréal</a>  <img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Ce programme primé a été créé pour aider les femmes défavorisées à donner naissance à des bébés de poids santé, en offrant des conseils nutritionnels et un soutien aux femmes enceintes à risque.</p> <strong><a href="./detail/461/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<img alt="Landmark Case Study" class="landmark_div" height="27" src="../../public/images/landmark_white.gif"/>
+<a href="./detail/459/">Programme Water Smart Landscapes de la Southern Nevada Water Authority</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Étant donné que le changement climatique entraîne davantage de situations de sécheresse, il sera important de comprendre comment promouvoir au mieux la conservation de l'eau. Le programme Water Smart Landscapes (WSL) de la Southern Nevada Water Authority paie les propriétaires pour qu'ils remplacent leurs pelouses ornementales non indigènes par des plantes et des paysages qui utilisent moins d'eau parce qu'ils sont mieux adaptés à leur climat sec. Il s'agit de l'une des politiques de « cash for grass » les plus anciennes. Désigné comme étude de cas historique par notre comité d'examen par les pairs sur le changement climatique en 2022. Désigné comme étude de cas Landmark par notre comité de pairs pour changements climatiques en 2022.</p> <strong><a href="./detail/459/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<img alt="Landmark Case Study" class="landmark_div" height="27" src="../../public/images/landmark_white.gif"/>
+<a href="./detail/452/">Réduisez votre jus (Reduce Your Juice)</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Cette approche innovante de marketing social a changé les comportements d'utilisation de l'énergie des locataires à faible revenu à Brisbane, en Australie, grâce à une gamification significative. L'expérience gamifiée a favorisé les comportements souhaités et réduit les comportements indésirables, tous soigneusement choisis en utilisant les directives cbsm de McKenzie-Mohr pour la sélection des comportements. Le programme "Reduce Your Juice" a été conçu pour être amusant, facile et percutant. À l'extérieur, il apparaît comme une expérience simple, amusante et facile de jeux et d'activités ludiques, de communications, de communauté et de récompenses. Cependant, sous la surface se trouve une intervention sophistiquée développée grâce à l'application de la recherche formative et de la théorie et mise en œuvre par une équipe d'experts multidisciplinaires des secteurs de l'énergie, du marketing social, du changement de comportement, des connaissances et technologies numériques, de la recherche et des secteurs sociaux. Désigné comme étude de cas <em>Landmark</em> par notre panel Building Energy en 2022.</p> <strong><a href="./detail/452/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<img alt="Landmark Case Study" class="landmark_div" height="27" src="../../public/images/landmark_white.gif"/>
+<a href="./detail/457/"> Système d'évaluation énergétique des bâtiments de Chicago</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Chicago a été la première ville des États-Unis à exiger des propriétaires d'immeubles qu'ils affichent en évidence la cote de performance énergétique d'un bâtiment et qu'ils partagent cette cote avec les acheteurs et/ou les locataires potentiels. Pendant l'introduction du système de notation, ComEd et Peoples Gas ont mis en place de vastes programmes complémentaires d'incitation et de remise qui ont permis aux propriétaires et aux gestionnaires d'immeubles d'apporter des améliorations énergétiques à peu ou pas de frais. Désigné une étude de cas Landmark en 2022 par notre comité d'examen par les pairs sur le changement climatique. Désigné comme étude de cas Landmark par notre comité de pairs pour changements climatiques en 2022.</p> <strong><a href="./detail/457/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<img alt="Landmark Case Study" class="landmark_div" height="27" src="../../public/images/landmark_white.gif"/>
+<a href="./detail/451/">Opting Out en Allemagne pour les énergies non renouvelables</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Bien que de nombreuses personnes en Allemagne disent qu'elles utiliseraient de l'énergie verte si elles avaient le choix, très peu de consommateurs le font. En revanche, la plupart des gens ont utilisé de l'énergie verte dans quelques municipalités allemandes où les citoyens ont dû se retirer des approvisionnements en énergie non renouvelable plutôt que d'avoir à s'inscrire pour obtenir des énergies renouvelables. Cette étude de cas présente leurs expériences et illustre la valeur des essais contrôlés randomisés (ECR) pour mesurer les impacts des programmes. Désigné comme étude de cas <em>Landmark </em>par notre panel Building Energy en 2022.   </p> <strong><a href="./detail/451/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<img alt="Landmark Case Study" class="landmark_div" height="27" src="../../public/images/landmark_white.gif"/>
+<a href="./detail/453/">Paris réduit l'utilisation de la voiture, stimule la marche et le vélo</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/><img alt="Safety" height="15" src="../../public/images/small_cone_icon.gif" width="13"/></h1>
+<p>Paris est une source d'inspiration pour les grandes villes du monde, ayant réduit le trafic automobile dans son cœur (l'Ile de France) d'une part modale de 12,8 % en 2010 à 6 % en 2020. Comment Paris est-elle devenue l'une des villes du monde avec la part de mode la plus faible pour les véhicules à un seul occupant ? La ville est relativement dense et possède l'un des meilleurs métros du monde. Mais ce qui frappe le plus dans sa transformation, c'est l'augmentation du vélo et de la marche au cours de cette période - ils sont passés de 55,4% en 2010 à 68% en 2020. Changer les habitudes de transport de tant de personnes a impliqué l'introduction de nombreux programmes offerts par trois niveaux de gouvernement. Ces changements ont explicitement donné la priorité aux vélos sur les voitures sur l'île et réduit le stationnement des voitures dans la rue pour faire place aux pistes cyclables. Ils ont également taxé et restreint les véhicules les plus polluants, et les ont progressivement supprimés, tout en accordant une prime à la conversion pour l'achat ou la location de vélos à assistance électrique et de vélos cargo. De plus, les annonces de voitures devaient inclure des messages faisant la promotion de méthodes de transport plus écologiques, et des incitatifs étaient offerts pour la réparation et la mise au point des vélos. Le maire de Paris, Hidalgo, a a dirigé les plans d'une «ville de 15 minutes», où chacun pourrait répondre à la plupart, sinon à tous, de ses besoins à une courte distance à pied ou à vélo de chez lui. Désigné comme étude de cas Landmark par notre panel de pairs écotransport en 2022.</p> <strong><a href="./detail/453/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<img alt="Landmark Case Study" class="landmark_div" height="27" src="../../public/images/landmark_white.gif"/>
+<a href="./detail/454/">Comment Copenhague est devenue une ville cyclable</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/><img alt="Safety" height="15" src="../../public/images/small_cone_icon.gif" width="13"/></h1>
+<p>Qu'est-ce qui rend une ville formidable en tant que ville cyclable ? Comment la ville de taille moyenne de Copenhague a-t-elle fait en sorte que ses citoyens se rendent au travail/à l'école à vélo 49 % du temps ? Alors que la topographie et le climat sont des influenceurs importants, la sécurité, les infrastructures de soutien et la promotion ont également joué un rôle clé. Copenhague a augmenté le cyclisme en le rendant plus sûr, plus facile et plus pratique. Ce cas illustre le pouvoir de piloter des améliorations alternatives sur une base continue pour réduire davantage les obstacles et augmenter les avantages, sur la base d'enquêtes régulières, de données sur le trafic et de données sur la sécurité. Il comprend également un processus de planification transparent - le compte vélo - un outil de recherche, d'évaluation, de promotion et d'engagement des citoyens qui a été utilisé treize fois de 1996 à 2018. Désigné comme étude de cas Landmark par notre panel de pairs écotransport en 2022.</p> <strong><a href="./detail/454/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/456/">Covoiturage et Vanpooling dans le comté de San Mateo</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Ce programme a utilisé la publicité (en ligne, vidéo et display), des défis et des campagnes basées sur des prix pour attirer et fidéliser son public cible. Il a également facilité l'utilisation de son système standard de retour à la maison garanti. Cette étude de cas illustre le calendrier des incitations à promouvoir la formation d'habitudes. Il illustre également comment les avantages peuvent être augmentés en intégrant certains des aspects auxquels les participants sont confrontés de plusieurs programmes indépendants dans les régions voisines.En l'espace d'environ six mois, de l'automne 2018 au printemps 2019, le programme Carpool 2.0 de Commute.org a quadruplé covoiturages enregistrés dans le comté de San Mateo via sa plate-forme de banlieue Star chaque mois, de 6 400 à près de 30 000. Entre octobre 2018 et décembre 2019, le programme a récompensé 1 961 covoitureurs, effectuant 218 453 allers simples, parcouru 4 708 310 milles et économisé 1 325 860 $. Environ 40 % des participants au programme conduisaient seuls avant le programme, et 33 % ont déclaré que les économies de coûts étaient leur principale motivation pour faire du covoiturage. Il y a eu une réduction associée de 955 tonnes d'émissions de CO2 (environ 819 tonnes par an).</p> <strong><a href="./detail/456/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/455/">Smart Trips Austin</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Smart Trips Austin encourage les résidents d'Austin au Texas, aux États-Unis, à utiliser plus souvent les options de transport multimodal (marche, vélo, transport en commun et covoiturage) plutôt que de conduire seuls. Le programme met l'accent sur les interactions personnelles - éduquer les individus sur leurs options et surmonter les obstacles aux déplacements multimodaux. Smart Trips renforce ces nouvelles informations en utilisant des programmes communautaires tels que des cours d'apprentissage de la conduite, des instructions sur les transports en commun et des activités de marche en groupe. Initialement, le programme ciblait les quartiers résidentiels d'Austin au Texas ; chaque année, une zone différente était ciblée. En 2020, le programme s'est étendu à l'ensemble de la ville et a commencé à se segmenter en utilisant une approche par étapes de changement. En 2021, il a commencé à cibler les résidents qui avaient récemment déménagé à ou autour d'Austin. Smart Trips Austin a enregistré en moyenne un taux de participation de 5 à 10 % des ménages contactés, une réduction de 5 à 10 % des trajets en voiture parmi les participants (environ 41 000 trajets en véhicule par an) et une augmentation correspondante de 5 à 10 % des trajets actifs et voyages partagés.</p> <strong><a href="./detail/455/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/471/">Road Crew ( Équipage de route) réduit l'alcool au volant</a>  <img alt="Safety" height="15" src="../../public/images/small_cone_icon.gif" width="13"/></h1>
+<p>Road Crew aide les communautés du Wisconsin à proposer des trajets alternatifs aux personnes qui ont trop bu et qui rentrent chez elles en voiture. Dans la recherche formative, les clients du bar ont indiqué qu'ils ne rentreraient pas chez eux si leurs voitures étaient au bar, mais qu'ils rentreraient chez eux si le programme venait également les chercher à la maison afin que leurs voitures ne soient pas disponibles. Road Crew est positionné pour permettre aux gens de ne pas se soucier de rentrer chez eux en voiture, et donc de pouvoir profiter pleinement de la soirée. Le programme a donné plus de 85 000 trajets et est autonome sans utiliser les revenus du gouvernement dans 6 comtés du Wisconsin. Road Crew est bien adapté à la reproduction dans les petites villes et exceptionnellement bien documenté et documenté. Il fournit une boîte à outils en ligne gratuite et une consultation payante pour soutenir ceux qui suivent son approche.</p> <strong><a href="./detail/471/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<img alt="Landmark Case Study" class="landmark_div" height="27" src="../../public/images/landmark_white.gif"/>
+<a href="./detail/460/">LEED</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Leadership in Energy and Environmental Design (LEED) est un programme extrêmement réussi qui engage les constructeurs et les propriétaires dans la conception, la construction, la vente / l'achat et l'exploitation de bâtiments plus éconergétiques. Il attribue des points pour l'atteinte des objectifs et l'adoption de comportements ciblés tels que l'analyse comparative et le suivi de la consommation d'énergie et d'eau, l'utilisation de types de matériaux spécifiques et le recyclage des déchets. Il est devenu le système d'évaluation des bâtiments écologiques le plus utilisé, adopté dans plus de 150 pays et territoires à travers le monde. Le programme a reçu la désignation Landmark en 2015.</p> <strong><a href="./detail/460/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/3/">BC21 PowerSmart</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>BC21 PowerSmart est un projet d'envergure provinciale ayant pour objet la sauvegarde des ressources et la création d'emploi. Les responsables effectuent des évaluations résidentielles pour mesurer l'efficacité énergétique et encouragent les résidants à prendre les mesures nécessaires pour mieux conserver l'énergie et l'eau. </p> <strong><a href="./detail/3/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/4/">Be Water Wise. It Makes Cents.</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>En vue de promouvoir l'efficacité et d'encourager les gens à réduire leur consommation en eau, le programme a fait appel à des bénévoles dûment formés pour effectuer des visites à domicile et pour remettre aux résidants des coupons rabais remboursables à l'achat de produits ménageant l'eau.</p> <strong><a href="./detail/4/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/5/">Bike Smarts</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Le programme Bike Smarts de l'école élémentaire Lochside a été conçu dans le but de sensibiliser les élèves à la sécurité à bicyclette et de les encourager à se déplacer en bicyclette. Dans le cadre de ce programme, on a demandé aux parents d'appuyer les efforts des élèves en se rendant à l'école à bicyclette avec leurs enfants et en participant à une grande randonnée à bicyclette.</p> <strong><a href="./detail/5/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/6/">Claremont</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Deux études ont eu lieu dans la ville de Claremont pour trouver des façons efficaces d'inciter la population à recycler davantage. Dans chaque cas, des bénévoles dûment formés ont mené une campagne de porte à porte auprès des foyers dont les membres ne recyclaient pas. Les responsables ont tenté deux types d'approches pour transmettre leur message : une à l'aide des Scouts et l'autre, à l'aide de voisins volontaires.</p> <strong><a href="./detail/6/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/7/">The Clean Air Commute</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Chaque année, Pollution Probe organise une campagne d'un mois sur la lutte contre la pollution atmosphèrique pour sensibiliser la population aux dangers du smog, des émissions de véhicules et des problèmes respiratoires afférents. Le Clean Air Commuteconstitue l'événement marquant de cette campagne. Au cours de cette activité d'un jour, les employés s'engagent à recourir à des modes de transport plus viables pour effectuer la navette domicile-travail. En 1996, les responsables ont lancé un projet pilote en vue de prolonger cet événement d'un jour et de mesurer les changements résultants sur une période de trois mois.</p> <strong><a href="./detail/7/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/8/">Earth-Works</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Le programme Earth-Works a été conçu pour aider à réduire la quantité de déchets organiques acheminés aux sites d'enfouissement à Port Colborne. Ce programme de promotion exhaustif intégrant des visites à domicile et la distribution de composteurs gratuits, encourageait les résidants à composter leurs déchets organiques dans leur propre cour.</p> <strong><a href="./detail/8/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/9/">The Environment Network</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Ce programme englobant exploitait diverses stratégies, y compris les visites à domicile, les mesures incitatives et les trousses de débutant, pour inciter les gens à réduire leur consommation en énergie et en eau, à diminuer la quantité de déchets acheminés aux sites d'enfouissement et à baisser le taux de pollution.</p> <strong><a href="./detail/9/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/10/">Get in the Loop -- Buy Recycled</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>D'une durée d'un mois, la campagne annuelle <em>Get in the Loop- Buy Recycled</em> encourage les gens des régions rurales et urbaines de l'ouest de l'état de Washington à acheter plus de produits à contenu recyclé grâce à des promotions en magasin, et identifie les produits à contenu recyclé directement sur les rayons des magasins. Cette campagne, qui s'accompagne de promotions dans les imprimés et à la radio, est organisée en collaboration avec les fabricants des produits et les commerçants locaux.</p> <strong><a href="./detail/10/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/11/">Global Action Plan for the Earth (GAP)</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>En 1996, plus de 8 000 foyers dans 15 pays du monde avaient choisi de participer au programme des équipes écologiques de GAP qui comprend un guide de travail simple à utiliser et la création de groupes de soutien par les pairs. Le programme vise surtout la réduction des déchets, la consommation efficace en énergie et en eau, le développement durable des transports et autres habitudes de consommation viables.</p> <strong><a href="./detail/11/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/12/">Go Boulder</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>En vue de favoriser la transition de la voiture à occupant seul vers des modes de transport plus durables, la ville de Boulder a recours à diverses approches synergiques. Elle offre des laissez-passer pour les transports en commun à diverses entreprises, à diverses écoles et aux habitants de divers quartiers. En outre, elle garantit le retour à domicile aux détenteurs de laissez-passer qui ont une urgence ou qui doivent travailler tard. La ville ne cesse d'améliorer ses infrastructures physiques pour accommoder les modes de transport durables. Elle fait des rappels mensuels et crée des occasions qui encouragent les gens à découvrir ces nouveaux modes de transport.</p> <strong><a href="./detail/12/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/13/">The Great Strathcona Exchange</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Le comté de Strathcona organise chaque année un grand échange d'articles mis au rebut. Organisée avant tout par des bénévoles, cette activité gratuite permet de prolonger la vie d'appareils ménagers, de meubles et d'autres gros articles domestiques en encourageant les gens qui ne s'en servent plus à les mettre à la disposition de personnes qui en ont besoin.</p> <strong><a href="./detail/13/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/14/">Guelph 2000</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Lancé en 1993 dans le cadre de l'Initiative sur les collectivités écologiques de l'Ontario, le service de visites à domicile de Guelph 2000 encourageait les résidants de la ville de Guelph à adopter de nouvelles habitudes pour protéger l'environnement à la maison, dont des pratiques plus durables en aménagement paysager.</p> <strong><a href="./detail/14/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/15/">In Concert with the Environment</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>In Concert With The Environment ® (In Concert) est un programme éducatif et adaptable, développé par EcoGroup. Il est vendu aux utilités d'électrique, du gaz, et d'eau, aux États-Unis qui fournissent le programme aux écoles locales sans coût. In Concert enseigne l'usage soigneux des ressources, en particulier l'usage d'énergie et d'eau, en donnant une expérience réelle aux étudiants de niveaux 6-12, et leurs familles.</p> <strong><a href="./detail/15/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/16/">Ville d'Iowa</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>En vue d'inciter les foyers à réduire leur consommation en gaz naturel et en électricité, des visites à domicile d'une durée de 20 minutes ont été organisées. Dans le cadre de ces visites, les responsables sensibilisaient les occupants à diverses stratégies de conservation. Ils leur demandaient ensuite de participer au programme et de s'engager publiquement à agir.</p> <strong><a href="./detail/16/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/17/">Projet d'efficacité énergétique de Jasper (JEEP)</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Afin d'inciter les résidants de Jasper à mieux conserver l'énergie, des visites à domicile ont été organisées. Ces visites permettaient aux responsables de sensibiliser les personnes à diverses stratégies de conservation et de leur expliquer le fonctionnement du programme d'incitation aux rénovations. On leur offrait égale ment des produits pour économiser de l'énergie et on en assuraient l'installation. Le programme JEEP a rem porté cinprix, dont deux de l'Association internationale des professionnels de la communication.</p> <strong><a href="./detail/17/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/18/">École publique Norway</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Les élèves de l'école publique Norway qui dînaient à l'école étaient constamment exposés au programme de repas sans déchets Litterless Lunch. Ce programme engageait la participation des parents et des élèves chargés de surveiller les repas. De plus, il permettait de canaliser l'attention des jeunes vers le recyclage et le compostage partout dans l'école.</p> <strong><a href="./detail/18/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/19/">Pacific Gas and Electric</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Pacific Gas and Electric avait recours aux évaluations à domicile pour encourager les résidants à rendre leurs maisons plus éconergétiques. Pour que ces visites soient plus efficaces, la compagnie de services publics offrait à ses évaluateurs une formation particulière. Ceci leur permettait d'obtenir plus facilement un engagement ferme de la part des résidants, de présenter leurs recommandations comme des <nobr>« pertes » </nobr>et non des <nobr>« gains » </nobr>et de formuler ces recommandations de façon dynamique et percutante.</p> <strong><a href="./detail/19/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/20/">Peterborough Green-Up</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Peterborough Green-Up est une organisation environnementale communautaire sans but lucratif qui vise à sensibiliser les gens à la conservation des ressources grâce à un programme de visites à domicile. Elle gère également un projet de démonstration, soit un parc écologique (Ecology Parc), en plus d'offrir des ateliers et des cliniques.</p> <strong><a href="./detail/20/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/21/">Quinte Regional Recycling</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>En vue d'encourager les gens à réduire la quantité de déchets mis au bord du chemin pour acheminement aux sites d'enfouissement, une gamme de mesures de détournement ont été introduites dans la région de Centre and South Hastings, en Ontario, y compris le compostage des déchets de cour, un recyclage élargi au niveau des boîtes bleues, la réduction et l'élimination sécuritaire des déchets domestiques dangereux et un système d'utilisateur-payeur.</p> <strong><a href="./detail/21/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/22/">The Residential Conservation Assistance Program (ReCAP)</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Intitulé The Residential Conservation Assistance Program (ReCAP), ce programme offrait aux résidants de la ville d'Oshawa, en Ontario, un service de visites gratuites à domicile pour les aider à réduire leur consommation en énergie et en eau et pour les inciter à respecter les principes des « 3R ». Des conseillers à domicile dûment formés fournissaient une aide personnalisée aux occupants en vue d'identifier diverses possibilités de conservation et d'économie d'énergie dans la maison. En 1996, le programme a été renommé Green CAP et les résidants ont dû commencer à payer pour les visites à domicile.</p> <strong><a href="./detail/22/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/23/">Sheffield Mills Community Association</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Les efforts organisationnels de la <em>Sheffield Mills Community Association </em>démontrent ce qu'une petite collectivité peut accomplir lorsqu'elle décide d'aider ses résidants à réduire leurs déchets. L'établissement d'un site de dépôt, ainsi que l'organisation de visites à domicile et de services d'aide ont permis aux gens d'apprendre à recycler et à composter.</p> <strong><a href="./detail/23/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/24/">The Toxic Challenge</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>En vue d'encourager les gens à utiliser moins de produits de consommation contenant des substances toxiques, une campagne de porte à porte était organisée dans deux quartiers du Toronto métropolitain. Ce sont des étudiants d'été qui assuraient la bonne marche de cette campagne qui invitait les résidants à faire l'essai de produits non toxiques ou moins toxiques.</p> <strong><a href="./detail/24/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/25/">WaterSmart</a>  </h1>
+ <strong><a href="./detail/25/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/26/">We're Toxic Free</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>La ville de Peterborough a organisé une campagne pilote de porte à porte en vue d'influencer des habitudes d'achat et d'élimination des produits domestiques dangereux des résidants. Les responsables ont fait appel à des étudiants d'été pour mener cette campagne, qui incitait les résidants à opter pour des produits de rechange moins toxiques.</p> <strong><a href="./detail/26/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/27/">Whitney Public School</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>En guise de devoir, les responsables du programme ont demandé aux élèves de l'école publique Whitney d'assumer l'entière responsabilité du recyclage avec les boîtes bleues pendant toute une semaine. Les parents devaient prêter main forte aux jeunes. Des informations sur les nouveaux produits à inclure dans la boîte étaient aussi acheminées à la maison.</p> <strong><a href="./detail/27/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/28/">Zehr's</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>À Kitchener, en Ontario, la chaîne de magasins <em>Zehr's </em>rappelait aux clients d'acheter des produits moins emballés, plus concentrés et plus sécuritaires pour l'environnement. On demandait à certains clients de s'engager à acheter des produits plus écologiques et de regarder une présentation sur vidéo offerte dans le magasin mettant en vedette des personnes qui favorisaient les « achats écologiques ».</p> <strong><a href="./detail/28/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/30/">PEP: Formation par les pairs sur les MTS et le SIDA</a>  <img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Ce programme de formation par les pairs vise à diminuer l'incidence des maladies transmissibles sexuellement (MTS) et le sida chez les élèves en milieu scolaire secondaire par le report de la première relation sexuelle, ou encore, par l'utilisation du condom lorsque les élèves sont actifs sexuellement. Des élèves de 4e secondaire (âgés de 15 à 16 ans), sont amenés à préparer des activités éducatives (des sketches, des vidéos, des jeux et des affiches) qu'ils présentent ensuite à des élèves plus jeunes (âgés de 12 à 15 ans).</p> <strong><a href="./detail/30/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/33/">Le Club Millezinc</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Des étudiants bénévoles sont enrôlés et formés pour présenter de l'information aux étudiants plus jeunes concernant les changements de mode de vie favorables à l'environnement et la relation entre la protection de l'environnement et la santé humaine. Les bénévoles produisent des vidéos et des documents, et ils se rendent dans les écoles locales pour offrir les présentations.</p> <strong><a href="./detail/33/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/34/">Marley Station Mall</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Ce projet pilote a utilisé des affiches simples pour promouvoir la santé et le contrôle du poids en encourageant l'utilisation de l'escalier ordinaire plutôt que de l'escalier mécanique.</p> <strong><a href="./detail/34/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/35/">Projet véhicules électriques Montréal 2000</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Le projet véhicules électriques Montréal 2000 a démontré que l’ajout de véhicules électriques (VÉ) à des parcs commerciaux et institutionnels est une option viable au Canada. Ce partenariat public-privé, qui consistait à intégrer des VÉ aux parcs de 10 organisations, visait à soutenir l’introduction des VÉ et à vérifier si ces véhicules pouvaient contribuer à réduire le smog urbain et les émissions de gaz à effet de serre dans la région du Grand Montréal.  Le projet a aidé les organisations participantes à acquérir des VÉ et à recueillir de l’information au sujet de la performance technique et de la satisfaction des utilisateurs.</p> <strong><a href="./detail/35/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/60/">Réduction des déplacements des employés de Vancouver</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Le Programme de réduction des déplacements des employés du District régional de Vancouver (DRV) est un bel exemple de l'effet de catalyseur que peuvent produire les programmes de marketing social fondé sur la collectivité. Le programme du DRV repose sur une approche intégrée faisant appel à des formules multiples, et c'est à cette approche qu'est attribuée le succès du programme. En favorisant l'utilisation de tous les différents moyens de transport de remplacement il a été possible de gagner l'appui d'une plus grande proportion des employés.</p>
+<p>Nous voyons également dans la présente étude de cas comment une municipalité a commencé par développer un programme pour ses propres employés, pour devenir par la suite, un modèle pour d'autres employeurs. Bien que le DRV dispose de plus de ressources que la majorité des municipalités, un bon nombre des éléments du programme peuvent être appliqués de façon rentable dans n'importe quelle collectivité.</p> <strong><a href="./detail/60/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/72/">Une émission télévisée enseigne la conservation de l'énergie</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Une émission télévisée de 20 minutes, diffusée à Roanoke, Virginie, en 1982, a suggéré aux téléspectateurs des stratégies simples et peu coûteuses pour réduire leur consommation d'énergie domestique durant la saison estivale. Les résidents qui ont regardé l'émission une fois ont adopté certaines de ses stratégies. Même si en tout, l'économie globale d'électricité approchait 10 %, les participants ne sentaient pas leur niveau de confort diminué. Malgré le fait que ce programme traitait principalement de la conservation de l'énergie, cette approche peut être utilisée dans tous les domaines où un changement de comportement est désiré.</p> <strong><a href="./detail/72/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/81/">Green$aver</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>En plus d'offrir des services d'améliorations éconergétiques, Green$aver procède à des évaluations de l'efficacité énergétique de maisons dans l'agglomération torontoise, lesquelles sont réalisées à l'aide du système canadien ÉnerGuide pour les maisons. Ce système évalue l'efficacité énergétique globale des habitations, détermine les améliorations à apporter en priorité et mesure les économies d'énergie que les améliorations éconergétiques permettront de réaliser. Green$aver, qui essaie de devenir une entreprise autonome, facture ses clients pour les services rendus. L'organisme a mis à l'essai des approches professionnelles en matière de marketing en vue de faire connaître ses services auprès des employés des organismes partenaires de la région.</p> <strong><a href="./detail/81/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<img alt="Landmark Case Study" class="landmark_div" height="27" src="../../public/images/landmark_white.gif"/>
+<a href="./detail/446/">Fondaction et les institutions du Carrefour gagnent des points en transport durable</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:TrackMoves />
+<w:TrackFormatting />
+<w:DoNotShowComments />
+<w:DoNotShowPropertyChanges />
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF />
+<w:LidThemeOther>EN-CA</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+<w:SplitPgBreakAndParaMark />
+<w:DontVertAlignCellWithSp />
+<w:DontBreakConstrainedForcedTables />
+<w:DontVertAlignInTxbx />
+<w:Word11KerningPairs />
+<w:CachedColBalance />
+</w:Compatibility>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math" />
+<m:brkBin m:val="before" />
+<m:brkBinSub m:val="&#45;-" />
+<m:smallFrac m:val="off" />
+<m:dispDef />
+<m:lMargin m:val="0" />
+<m:rMargin m:val="0" />
+<m:defJc m:val="centerGroup" />
+<m:wrapIndent m:val="1440" />
+<m:intLim m:val="subSup" />
+<m:naryLim m:val="undOvr" />
+</m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" Priority="34" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-qformat:yes;
+mso-style-parent:"";
+mso-padding-alt:0pt 5.4pt 0pt 5.4pt;
+mso-para-margin:0pt;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:11.0pt;
+font-family:"Calibri","sans-serif";
+mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:TrackMoves />
+<w:TrackFormatting />
+<w:DoNotShowComments />
+<w:DoNotShowPropertyChanges />
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF />
+<w:LidThemeOther>EN-CA</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+<w:SplitPgBreakAndParaMark />
+<w:DontVertAlignCellWithSp />
+<w:DontBreakConstrainedForcedTables />
+<w:DontVertAlignInTxbx />
+<w:Word11KerningPairs />
+<w:CachedColBalance />
+</w:Compatibility>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math" />
+<m:brkBin m:val="before" />
+<m:brkBinSub m:val="&#45;-" />
+<m:smallFrac m:val="off" />
+<m:dispDef />
+<m:lMargin m:val="0" />
+<m:rMargin m:val="0" />
+<m:defJc m:val="centerGroup" />
+<m:wrapIndent m:val="1440" />
+<m:intLim m:val="subSup" />
+<m:naryLim m:val="undOvr" />
+</m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" Priority="34" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-qformat:yes;
+mso-style-parent:"";
+mso-padding-alt:0pt 5.4pt 0pt 5.4pt;
+mso-para-margin:0pt;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:11.0pt;
+font-family:"Calibri","sans-serif";
+mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:TrackMoves />
+<w:TrackFormatting />
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF />
+<w:LidThemeOther>EN-CA</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+<w:SplitPgBreakAndParaMark />
+<w:DontVertAlignCellWithSp />
+<w:DontBreakConstrainedForcedTables />
+<w:DontVertAlignInTxbx />
+<w:Word11KerningPairs />
+<w:CachedColBalance />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math" />
+<m:brkBin m:val="before" />
+<m:brkBinSub m:val="&#45;-" />
+<m:smallFrac m:val="off" />
+<m:dispDef />
+<m:lMargin m:val="0" />
+<m:rMargin m:val="0" />
+<m:defJc m:val="centerGroup" />
+<m:wrapIndent m:val="1440" />
+<m:intLim m:val="subSup" />
+<m:naryLim m:val="undOvr" />
+</m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" Priority="34" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Table Normal";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-qformat:yes;
+mso-style-parent:"";
+mso-padding-alt:0pt 5.4pt 0pt 5.4pt;
+mso-para-margin:0pt;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:11.0pt;
+font-family:"Calibri","sans-serif";
+mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;}
+</style>
+<![endif]--></p>
+<p class="MsoNormal" style="margin-bottom:6.0pt;text-autospace:none"><span lang="FR-CA" style="mso-bidi-font-family:Calibri;mso-ansi-language:FR-CA">Nombreux ont été les prix remportés par Fondaction et les autres institutions du Carrefour financier solidaire pour leurs bonnes pratiques en transport durable. </span><span lang="FR-CA" style=""> </span></p> <strong><a href="./detail/446/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/91/">Programme de sensibilisation sur la qualité de l'air en Oregon</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Ce programme en cours éduque le public et l'encourage à améliorer la qualité de l'air à Portland. Il utilise des approches non réglementaires qui ciblent les véhicules, les tondeuses à gazon, les peintures et certains produits de consommation, afin de réduire l'émission de composés organiques volatils (COV).</p> <strong><a href="./detail/91/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/92/">Le consortium du corridor de Cambie</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Le Consortium du corridor de Cambie (CCC) a été la première association de gestion du transport (ADT) à s'établir au Canada. Une ADT est une alliance d'industries, de gouvernements et d'autres groupes visant à réduire la circulation dans un endroit sélectionné par un regroupement de ressources et d'expertises. La ville de Cambie tente de réduire le nombre de véhicules à passager unique parcourant le trajet Cambie/Broadway dans la région de Vancouver et d'améliorer la qualité de l'air en offrant des solutions de rechange pour le transport et de l'information. Environ 25 000 employés sont représentés par les 21 membres du CCC.</p> <strong><a href="./detail/92/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/95/">off ramp</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p><strong>Off ramp</strong> est une initiative en dehors de la classe qui incite les étudiants du secondaire à marcher, faire de la bicyclette ou prendre plus souvent le transport en commun pour aller à l'école, de façon à réduire l'utilisation de la voiture. Elle accroît la prise de conscience des problèmes de transport et de changement du climat, fournit des motivations et réduit les obstacles aux autres modes de transport. En gros, elle améliore la disponibilité et la popularité du transport durable au sein des écoles et de leurs communautés. Son manuel de l'étudiant est disponible à un coût nominal.</p> <strong><a href="./detail/95/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/96/">U-PASS: Programme de gestion du transport de l'Université de Washington</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>U-PASS est un programme complet et flexible conçu aux fins d'inciter les étudiants de l'Université de Washington, ainsi que le personnel administratif et enseignant, à utiliser des moyens de transport de remplacement réduisant le niveau de circulation dans le secteur de l'Université de Seattle. Le programme offre aux participants plusieurs options comme moyens de déplacement et de mesures incitatives peu coûteuses, incluant un service de transport amélioré et subventionné, un service de navette et de covoiturage en auto et en fourgonnette, un service de coordination des moyens de déplacement, des mesures encourageant l'usage de la bicyclette, des retours au domicile remboursés, des permis quotidiens flexibles et des rabais commerciaux.</p> <strong><a href="./detail/96/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/97/">Défi transport d'Ottawa</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Le Défi transport d'Ottawa est un événement d'une semaine, qui encourage les gens d'âge légal pour la conduite (16 ans et plus) à réduire la pollution de l'air en utilisant un moyen de transport actif et durable pour se rendre au travail ou à l'école et en revenir. Les gens pouvaient marcher, utiliser le vélo, prendre l'autobus, faire du télétravail, utiliser le co-voiturage, ou une combinaison de tous ces moyens, plutôt que de conduire seul dans leur voiture.</p> <strong><a href="./detail/97/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/102/">Turn it Off</a>  </h1>
+ <strong><a href="./detail/102/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/106/">Programme « Vente d'ampoules fluorescentes compactes »</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Pour contrer le principal obstacle à l'utilisation, par ses clients résidentiels et commerciaux, d'ampoules fluorescentes compactes (AFC) plutôt que d'ampoules incandescentes moins éconergétiques, Southern California Edison, un service public d'électricité américain, en a diminué le prix. À la différence des programmes de rabais traditionnels offrant des rabais directement au consommateur, le service public a offert des rabais de 5 $ par ampoule aux fabricants d'ampoules fluorescentes compactes. Le rabais augmentait au détail avec la marge sur coût de revient, pour être encore plus important au moment d'atteindre le consommateur. Ce programme a par la suite été adopté par d'autres services publics du pays qui l'ont utilisé comme modèle.</p> <strong><a href="./detail/106/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/107/">Projet multi-universitaire de co-voiturage</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>Le projet multi-universitaire de co-voiturage donne aux universités et aux collèges du Canada de l'information, de la formation, des outils et l'encouragement nécessaire afin de mettre sur pied facilement un programme de co-voiturage gratuit.</p> <strong><a href="./detail/107/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/108/">Programme de conservation de l'eau de la ville de Barrie</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>La ville de Barrie en Ontario, par son programme de modernisation pour la conservation de l'eau, a pu reporter des dépenses en capital de plusieurs millions de dollars reliées à ses systèmes d'approvisionnement et de traitement de l'eau. Sur deux ans, la ville a subventionné pour ses résidents des toilettes à débit d'eau restreint, des pommes de douche à débit réduit et des aérateurs.</p> <strong><a href="./detail/108/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/109/">Programme « Le bon $ens au volant » pour les élèves automobilistes canadiens</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Safety" height="15" src="../../public/images/small_cone_icon.gif" width="13"/></h1>
+<p>Le programme <em>Le bon $ens au volant</em> pour élèves automobilistes fournit aux instructeurs de conduite partout au Canada une trousse qui les aide dans l'enseignement de la conduite éconergétique aux conducteurs débutants sur la façon de conduire en toute sécurité tout en économisant de l'argent et en protégeant l'environnement. La trousse comprend un vidéo, un cédérom interactif et le matériel didactique. Ce matériel explique comment des décisions éclairées en matière d'achat de voitures (p. ex.. catégorie et modèle), de bonnes pratiques de conduite (p. ex. le respect des vitesses permises) et un bon entretien (p. ex. mises au point régulières) peuvent améliorer l'économie de carburant tout en réduisant les émissions de gaz à effet de serre.</p> <strong><a href="./detail/109/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/112/">Le programme GreenCommute de Nortel Networks</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>En 1998, Nortel Networks a lancé <em>GreenCommute</em>, un programme de gestion de la demande en transport (GDT) pour l'agrandissement de son complexe à Ottawa (Ontario), qui est devenu l'un des programmes GDT les plus complets au Canada. Nortel Networks a depuis étendu son programme à d'autres sites au Canada et aux États-Unis. Cette étude de cas démontre comment des partenariats-clés, la conception de réseaux piétonniers et un engagement solide envers le transport écolo peuvent assurer avec succès la participation des employés. Possibilité de répétition : élevée.</p> <strong><a href="./detail/112/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/113/">Défi transport : la participation d'Environnement Canada</a>  </h1>
+<p>Cette étude de cas met en évidence l'engagement fructueux d'un important ministère (Environnement Canada) dans un programme de participation générale de ses employés. Ce programme, le Défi transport, est un événement pancanadien sous la direction d'un ONG qui met les voyageurs au défi de réduire le nombre de véhicules à passager unique au cours d'une période de référence spécifique. On s'en est servi comme initiative pour hausser le niveau de sensibilisation et promouvoir une activité pilote, et non comme une vérification scientifique ou un outil d'enquête.</p> <strong><a href="./detail/113/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<img alt="Landmark Case Study" class="landmark_div" height="27" src="../../public/images/landmark_white.gif"/>
+<a href="./detail/115/">Programme Aller-retour actif et sécuritaire pour l'école de Greenest City</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/><img alt="Safety" height="15" src="../../public/images/small_cone_icon.gif" width="13"/></h1>
+<p>Ce programme vise à encourager les familles à réduire l'utilisation de la voiture et à augmenter l'activité physique chez les enfants alors qu'ils vont à l'école et en reviennent. Une étude de cas plus récente est disponible en anglais à <a href="../../en/case-studies/detail/635">http://www.toolsofchange.com/en/case-studies/detail/635</a>. Notez que le programme est maintenant appelé Écoliers actifs et en sécurité, et qu'elle opère partout au Canada en anglais et en français.</p> <strong><a href="./detail/115/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/116/">Partir du bon pied! en Colombie-Britannique</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/><img alt="Safety" height="15" src="../../public/images/small_cone_icon.gif" width="13"/></h1>
+<p>Dans le District régional de Vancouver (DRV), un minuscule projet pilote, qui a fait sortir les familles de leurs voitures pour aller dans la rue, est devenu un programme florissant de transport actif à la grandeur de la province. Entre décembre 1998 et le printemps 2001, 350 écoles en Colombie-Britannique se sentent impliquées dans le projet de réduction du transport scolaire « Partir du bon pied! ».</p> <strong><a href="./detail/116/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/117/">Spare the Air</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Lorsque la concentration d'air pollué approche des niveaux malsains, les gens vivant et travaillant dans la région de la Baie de San Francisco sont avertis et encouragés à éviter les activités qui polluent l'air. Des partenariats avec les entreprises locales et les agences publiques permettent au programme de cibler les banlieusards au travail et d'offrir de l'information, des mesures persuasives (incitatifs) et des services afin d'aider ceux qui optent pour des choix moins polluants.</p> <strong><a href="./detail/117/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/118/">Halifax — Gestion intégrée des déchets et des ressources</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>La Municipalité régionale de Halifax (MRH), en collaboration avec des partenaires du secteur public et privé, a mis en place une stratégie innovatrice pour le tri à la source des déchets humides, secs et recyclables de sources résidentielles et commerciales. En vigueur depuis 1999, la méthode de Halifax offre une alternative écologique à l'incinération et à l'enfouissement de déchets bruts, et continue de susciter de l'intérêt à l'échelle nationale et internationale.</p> <strong><a href="./detail/118/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/123/">WalktheTalk</a>  </h1>
+ <strong><a href="./detail/123/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/125/">PROGRAMME DE TÉLÉTRAVAIL POUR LES EMPLOYÉS D'AT&amp;T</a>  </h1>
+<p>Le programme de télétravail pour les employés d'AT&amp;T fournit, à l'échelle de l'entreprise, information et assistance aux membres du personnel et de la direction qui souhaiteraient télétravailler à temps partiel ou à temps plein. Depuis 1992, AT&amp;T a non seulement réussi à élaborer une politique normative et un programme de télétravail à l'intention de ses employés, mais aussi un portail Internet qui sert de modèle et de guide pour d'autres entreprises intéressées au télétravail. AT&amp;T croit que son programme de télétravail peut être mis en application par à peu près n'importe quelle entreprise.</p> <strong><a href="./detail/125/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/126/">Dodo Sur Le Dos - Campagne de Marketing Social de Santé Canada Sur le SMSN</a>  <img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>À l'aide de stratégies de communications de masse ciblées, <em>Dodo sur le dos</em> apprend aux parents et aux autres fournisseurs de soins au Canada comment éviter les facteurs de risque associés au Syndrome de mort subite du nourrisson (SMSN). Grâce à des résultats prometteurs au cours de ses deux premières années, la campagne Dodo sur le dos a fait de grand progrès en vue d'atteindre l'objectif qui consiste à réduire sur cinq ans le risque de SMSN de 10 % au Canada. (rédigé en 2001)</p> <strong><a href="./detail/126/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/128/">Hébert le Saumon: Promouvoir une saine gestion des pelouses dans la région de Seattle</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>La campagne d'Herbert le Saumon a su convaincre des centaines de milliers de propriétaires de la région de Seattle de tourner le dos aux pratiques nocives et d'opter pour des méthodes plus naturelles pour l'entretien de leur pelouse. Cette campagne de relations publiques reposait à la fois sur les médias de masse et sur la diffusion d'une trousse de conversion munie d'un écriteau à planter sur son terrain.</p> <strong><a href="./detail/128/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/130/">Économiser l'eau chez soi</a>  </h1>
+<p><em>ALERTE SUR LA RECHERCHE ET LES RESSOURCES POUR LES CANADIENS :</em> les municipalités et les autres agences peuvent acheter en grande quantité ce guide à sur l'économie des ressources en eau à l'intention des propriétaires canadiens. Vous pouvez faire imprimer le logo de votre agence sur la page couverture, et l'information sur la personne à contacter et l'identification de votre entreprise à l'endos du document.</p> <strong><a href="./detail/130/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/135/">Projet véhicules électriques Montréal 2000</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Le projet véhicules électriques Montréal 2000 a démontré que l'ajout de véhicules électriques (VÉ) à des parcs commerciaux et institutionnels est une option viable au Canada. Ce partenariat public-privé, qui consistait à intégrer des VÉ aux parcs de 10 organisations, visait à soutenir l'introduction des VÉ et à vérifier si ces véhicules pouvaient contribuer à réduire le smog urbain et les émissions de gaz à effet de serre dans la région du Grand Montréal.</p>
+<p>Le financement de la rédaction de cette étude de cas provient du <a href="http://www.ec.gc.ca/nopp" target="_blank">Bureau national de la prévention de la pollution</a> d'Environnement Canada.</p> <strong><a href="./detail/135/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/136/">Programme de protection des végétaux de Waterloo</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>La ville de Waterloo a considérablement réduit son utilisation de pesticides sur les terrains municipaux grâce à des pratiques favorisant un gazon vigoureux et un sol en santé. Le Plant Health Care Program (Programme de protection des végétaux [PPV]), qui a vu le jour il y a plus de 20 ans, est devenu avec le temps la méthode privilégiée d'entretien des pelouses à Waterloo. Le financement de la rédaction de cette étude de cas provient du <a href="http://www.ec.gc.ca/nopp" target="new">Bureau national de la prévention de la pollution</a> d'Environnement Canada.</p> <strong><a href="./detail/136/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/137/">Programme de santé, de sécurité et d'environnement de la Manitoba Heavy Construction Association</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/><img alt="Safety" height="15" src="../../public/images/small_cone_icon.gif" width="13"/></h1>
+<p>Les entreprises de construction lourde du Manitoba sont plus désireuses que jamais d'acquérir des compétences en santé, en sécurité et en environnement depuis que l'association professionnelle représentant leur industrie a lancé un programme de soutien renouvelé et convivial. Les concepteurs du Programme de santé, de sécurité et d'environnement de la Manitoba Heavy Construction Association espèrent que cet intérêt aura pour effet de réduire les accidents du travail et de l'environnement. Le financement de la rédaction de cette étude de cas provient du <a href="http://www.ec.gc.ca/nopp" target="new">Bureau national de la prévention de la pollution</a> d'Environnement Canada.</p> <strong><a href="./detail/137/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/139/">Programme de conservation des ressources de la municipalité d'Ashland, Oregon</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>La municipalité d'Ashland offre un éventail de programmes d'encouragement à la conservation visant principalement la promotion de l'efficacité énergétique mais comprenant aussi la conservation de l'eau, la qualité de l'air de la région, le recyclage et le compostage, ainsi que la planification de l'utilisation des terres. Les programmes sont conçus pour relever le niveau de sensibilisation des citoyens à l'accès à des mesures de conservation lors de nouveaux projets de construction et de rénovation comprenant l'intempérisation des résidences, le remplacement des toilettes et des pommes de douches, le compostage, les mesures incitatives à l'intention des constructeurs ainsi que les ordonnances d'utilisation des terres.</p> <strong><a href="./detail/139/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/441/">Le projet Roach Coach</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/><img alt="Health" height="15" src="../../public/images/small_apple_icon.gif" width="13"/></h1>
+<p>Ce programme pilote a démontré comment une brève intervention éducative sur place accompagnée de documentation peut amener les locataires à adopter des méthodes moins dangereuses de contrôle des parasites. Les documents ont été élaborés pour utilisation par d'autres.</p> <strong><a href="./detail/441/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/443/">AutoShare</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>AutoShare, une compagnie de partage de véhicules à Toronto, offre aux personnes, la liberté de conduire sans problème et sans les coûts exorbitants liés à la possession d’une voiture. La compagnie a fait ses débuts en 1998, avec 16 membres se partageant l’utilisation de 3 voitures, et elle a grandi à plus de 500 membres; elle comptait 28 voitures en juillet 2001.</p> <strong><a href="./detail/443/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/444/">Les citoyens à l’œuvre / Comptez sur moi!</a>  </h1>
+ <strong><a href="./detail/444/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<a href="./detail/445/">Valorisation de l'eau à Durham</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>La Municipalité régionale de Durham a trouvé un moyen relativement peu coûteux et remarquablement efficace d’empêcher les propriétaires de trop arroser leur pelouse. En un an, les employés municipaux ont convaincu les résidents de signer un engagement écrit à respecter les directives municipales en matière d’arrosage des pelouses.</p> <strong><a href="./detail/445/">Suite »</a></strong>
+<h1 class="sub_header_2col">
+<img alt="Landmark Case Study" class="landmark_div" height="27" src="../../public/images/landmark_white.gif"/>
+<a href="./detail/447/">Télétravail pour la région de Calgary</a>  <img alt="Environment" height="15" src="../../public/images/small_leaf_icon.gif" width="13"/></h1>
+<p>WORKshift est un initiative régionale visant à promouvoir, à former et à accélérer l'adoption du télétravail. WORKshift travaille avec les entreprises pour mettre en œuvre des programmes de télétravail pour leurs employés.</p> <strong><a href="./detail/447/">Suite »</a></strong>
+</div>
+<div class="bar">
+<div class="bar_rt_float">
+<h6> </h6>
+</div>
+<div id="" style="float:left">
+<div class="bar_left_float_sort">
+<h6>classés par: </h6>
+</div>
+<div id="menu_container">
+<ul id="pmenu">
+<li class="drop"><a href="?SortOrder=ascending&amp;max=1000">plus récents</a>
+<ul>
+<li><a class="enclose" href="?SortOrder=descending&amp;max=1000">plus ancien</a></li>
+<li><a class="enclose" href="?SortOrder=ascending&amp;sortfield=casestudyname&amp;max=1000">Titre A-Z</a></li>
+<li><a class="enclose" href="?SortOrder=descending&amp;sortfield=casestudyname&amp;max=1000">Titre Z-A</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="bar_left_float_show2">
+<h6>  Show  
+         <a href="?sortDir=descending&amp;max=5">5</a>  
+         <a href="?sortDir=descending&amp;max=10">10</a>  
+         <a href="?sortDir=descending&amp;max=30">30</a></h6>
+</div>
+</div>
+</div>
+<!--/bar-->
+
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="./recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="./recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../fr/aide/">Aide</a></li>
+<li><a href="../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

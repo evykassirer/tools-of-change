@@ -1,0 +1,323 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a></li>
+<li><a href="../../../../fr/outils-de-changement/visites-à-domicile/">Visites à domicile</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+<li><a href="../../../../fr/outils-de-changement/de-bouche-à-oreille/">De bouche à oreille</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>The Environment Network</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Canada Trust</li>
+<li>Collingwood Public Utilities Commission</li>
+<li>Consumers Gas</li>
+<li>Environnement Canada</li>
+<li>Hydro Ontario</li>
+<li>Comté de Simcoe</li>
+<li>Ville de Collingwood</li>
+<li>Ministère de l'Environnement et de l'Énergie de l'Ontario</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p>Les responsables sont parvenus à réduire d'un tiers la consommation en électricité et en eau. Ils ont aussi réussi à diminuer la quantité de déchets domestiques dangereux et à accroître le recours aux pratiques durables en aménagement paysager.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>The Environment Network</h1>
+<p>Ce programme englobant exploitait diverses stratégies, y compris les visites à domicile, les mesures incitatives et les trousses de débutant, pour inciter les gens à réduire leur consommation en énergie et en eau, à diminuer la quantité de déchets acheminés aux sites d'enfouissement et à baisser le taux de pollution.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>Le programme a été lancé en septembre 1994 au sein du « triangle géorgien ». Cette région, qui englobe Collingwood, le canton de Collingwood, Meaford, Thornbury et Wasaga Beach, compte quelque 53 000 habitants.</p>
+<p>Mis sur pied dans le cadre de l'Initiative sur les collectivités écologiques du ministère de l'Environnement et de l'Énergie de l'Ontario, le projet voulait rendre inutile la construction d'un nouveau poste de transformation pour Collingwood et la région, en réduisant la demande en énergie électrique. Une diminution parallèle de la consommation en eau devait permettre de prolonger l'existence de l'usine de traitement des eaux usées, et la baisse de quantité des déchets acheminés aux sites d'enfouissement devait réduire l'urgence de construire un nouveau site d'enfouissement.</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p>L'établissement des objectifs s'inscrivait dans un processus de planification stratégique de six mois. Ces objectifs tenaient compte des informations glanées lors de consultations auprès des collectivités et des sociétés de services publics, ainsi que des objectifs préalables adoptés par le ministère de l'Environnement et de l'Énergie de l'Ontario.</p>
+<p>Les objectifs spécifiques visaient à :</p>
+<ul>
+<li>réduire le taux de consommation en eau à Collingwood de 10 pour cent d'ici l'an 2000;</li>
+<li>réduire le taux de consommation en énergie à Collingwood de 10 pour cent d'ici 1996 et de 25 pour cent d'ici l'an 2000;</li>
+<li>réduire le taux de déchets acheminés aux sites d'enfouissement de 10 pour cent d'ici 1996 et de 25 pour cent d'ici l'an 2000;</li>
+<li>procéder à la « remise en état écologique » de 1 500 foyers en un an;</li>
+<li>faire la preuve qu'une demande accrue en faveur de produits et services favorables à l'environnement entraînerait la création d'emplois directs et indirects.</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>Un examen des programmes environnementaux en vigueur dans d'autres collectivités canadiennes a révélé que le coût afférent à la remise en état écologique des foyers pourrait constituer un obstacle à la participation. Par conséquent, le programme a choisi d'offrir ce service gratuitement.</p>
+<p>En vue d'établir leurs objectifs quant à la consommation en énergie et en eau et à la réduction des déchets, les responsables ont interviewé divers représentants communautaires et municipaux.</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>Dans le cadre des remises en état écologiques du foyer, des équipes de deux employés dûment formés étaient chargées d'effectuer des vérifications environnementales gratuites. Il revenait aux résidants de téléphoner pour prendre rendez-vous. Au cours de ces visites (<a href="../../../../fr/outils-de-changement/visites-a-domicile/">Visites à domicile</a>), les évaluateurs incitaient les gens à adopter des comportements plus favorables à l'environnement et leur offraient les services suivants :</p>
+<ul>
+<li>En vue de trouver des façons de réduire la consommation en énergie, ils procédaient à un examen minutieux du foyer portant sur les pertes de chaleur et sur l'efficacité de l'isolation et de la ventilation. Ils examinaient les réservoirs à eau chaude et apportaient les correctifs nécessaires au besoin. Ils proposaient également aux gens des modes d'éclairage moins énergivores.</li>
+<li>En ce qui touche la conservation de l'eau, ils vérifiaient si les robinets et les toilettes comportaient des fuites. Ils installaient aussi des aérateurs de robinet, des pommes de douche ménageant l'eau, des joints d'étanchéité en mousse et appareils pour ménager l'eau des toilettes. Ils expliquaient aux gens comment économiser de l'eau en arrosant différemment leur jardin, et comment choisir des plantes indigènes exigeant moins d'eau.</li>
+<li>Ils indiquaient aussi aux résidants comment réduire la quantité de déchets domestiques dangereux et de déchets solides acheminés aux sites d'enfouissement. Ils leur montraient à bien utiliser leur boîte bleue et les encourageaient à composter, à faire un jardin organique et à acheter des produits de nettoyage non toxiques.</li>
+</ul>
+<p>En outre, les équipes proposaient aux résidants des mesures additionnelles pour rendre leur foyer plus éconergétique dont l'ajout d'isolant, le calfeutrage et le remplacement des portes et fenêtres. Afin d'encourager les résidants à entreprendre ces travaux, Canada Trust leur offrait des « enviro prêts » et la Banque Toronto-Dominion des « prêts verts » à faible taux d'intérêt (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>).</p>
+<p>Au cours du programme, les responsables ont identifié divers autres obstacles. D'une part, les résidants croyaient qu'il fallait investir trop de temps et d'efforts détruire correctement les produits domestiques dangereux parce que le site d'enfouissement était éloigné de chez eux. Pour remédier au problème, ils ont établi un centre local de dépôt des produits dangereux au printemps 1996.</p>
+<p>D'autre part, certaines personnes hésitaient à utiliser des produits de nettoyage plus écologiques par crainte qu'ils ne « tuent pas bien les microbes ». Pour alléger cette crainte, les évaluateurs leur fournissaient des renseigne ments sur l'efficacité des produits écologiques. Ils demandaient aussi aux résidants qui étaient préoccupés par des questions de santé et de propreté de faire des liens entre les produits jetés dans les toilettes et la qualité de l'eau du robinet.</p>
+<p><strong>Trousses du débutant </strong></p>
+<p>À l'été 1996, les responsables du programme inauguraient un projet pilote à Collingwood afin de voir si les trousses du débutant s'avéraient efficaces pour réduire le nombre de produits domestiques dangereux et pour promouvoir des pratiques d'aménagement paysager plus viables. Pour ce faire, ils remettaient une trousse à toutes les personnes qui avaient profité d'une visite initiale à domicile. Ils organisaient une seconde visite de 10 minutes pour expliquer aux participants le contenu et l'utilité de la trousse.</p>
+<p>La trousse sur les produits domestiques dangereux contenait des échantillons de produits de nettoyage non toxiques, soit du nettoyant pour les toilettes, du savon à vaisselle et un nettoyeur en crème. Elle comprenait aussi une carte à fenêtres éducative et des aide-mémoire autocollants fournis par l'Environmental Hazards Management Institute. Les collants, qui devaient être placés sur les déchets dangereux au foyer (<a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a>), précisaient quoi faire avec (les utiliser en entier, les recycler ou les conserver pour en disposer correctement au centre de dépôt des déchets dangereux). Lors des visites, plusieurs collants étaient placés sur des produits dans la maison.</p>
+<p>La trousse sur l'aménagement paysager comprenait des contenants de vers de terre, de la terre diatomée, du savon insecticide, ainsi que des graines de tournesol et de fleurs sauvages et des coupons-rabais pour d'autres produits du genre. Les deux trousses comprenaient des directives sur le mode d'utilisation des produits et une liste de détaillants de la région oû s'adresser pour en obtenir d'autres.</p>
+<p><strong>Promotion du programme </strong></p>
+<p>L'outil qui s'est avéré le plus efficace pour organiser les visites à domicile est le bouche à oreille (<a href="../../../../fr/outils-de-changement/de-bouche-a-oreille/">De bouche à oreille</a>). Les personnes qui étaient satisfaites de la « remise en état écologique » de leur maison s'assuraient de transmettre la bonne nouvelle à leurs parents et voisins. La distribution d'encarts avec les factures de services publics s'est également avérée fort efficace pour inciter les gens à prendre rendez-vous. Ensemble, ces deux modes de promotion sont responsables de 44 pour cent des visites effectuées.</p>
+<p>Les responsables ont également fait la promotion du programme à l'aide d'annonces et d'éditoriaux dans les journaux, de publicités dans les revues, de vidéos à l'antenne des stations de télévision par câble et de couvertures radiophoniques. Ils ont transmis leur message grâce aux bulletins d'information, aux affiches placées dans des lieux hautement visibles, aux banques locales, aux événements spéciaux, aux présentations communautaires et à la Commission des services publics. En outre, les responsables ont eu recours à la télévente et à la vente directe dans le cadre d'une campagne de porte à porte.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>Le budget total alloué au programme s'élevait à 266 475 $. Les coûts étaient répartis de la façon suivante : <br/>
+ </p>
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td>Salaires</td>
+<td>163 200 $</td>
+</tr>
+<tr>
+<td>Subventions pour les produits</td>
+<td>50 175 $</td>
+</tr>
+<tr>
+<td>Frais généraux</td>
+<td>23 600 $</td>
+</tr>
+<tr>
+<td>Formation et manuels</td>
+<td>13 500 $</td>
+</tr>
+<tr>
+<td>Publicité</td>
+<td>9 000 $</td>
+</tr>
+<tr>
+<td>Gestion du projet</td>
+<td>5 000 $</td>
+</tr>
+<tr>
+<td>Autres</td>
+<td>2 000 $</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>266 475 $</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Le coût des subventions accordées pour les produits écologiques s'élevait à 50 175 $.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Tous les jours, les conseillers à domicile prenaient note du nombre et du type de produits installés dans chaque foyer et acheminaient les renseigne ments au <em>Environment Network. </em>Ces données permettaient à la Commission des services publics de Collingwood de calculer les économies réalisées au niveau de la consommation en énergie et en eau. On effectuait ensuite un sondage téléphonique auprès de 100 participants choisis au hasard. Ce sondage visait à déterminer si les gens avaient donné suite aux recomman dations des conseillers à domicile, les sommes d'argent investies, et s'ils avaient l'intention de procéder à d'autres rénovations.</p>
+<p>On demandait également à tous les participants de remplir un formulaire de commentaires pour connaître leurs opinions et leur taux de satisfaction face aux remises en état écologiques et au programme en général. Cinquante deux formulaires ont été remplis et retournés.</p>
+<p>Cent foyers ayant déjà profité d'une remise en état écologique ont été choisis au hasard, soit 50 pour recevoir la trousse sur les pratiques d'aménage ment paysager durables et 50 pour recevoir la trousse sur les produits domestiques dangereux. Un troisième groupe de participants a été choisi comme groupe témoin et aucune trousse ne lui a été remise. À l'automne 1996, les responsables ont mené un sondage téléphonique pour comparer les taux d'utilisation et les bonnes intentions des gens face aux pesticides, aux fertilisants chimiques synthétiques et aux produits de nettoyage toxiques.</p><!-- Results_B already contains P tags.-->
+<h2>Réaction</h2>
+<p>Les responsables ont favorisé les articles dans les journaux, les bulletins d'information et la publicité aux stations de radio et de télévision locales pour faire part aux participants des résultats du programme. C'est ainsi que les résidants de Collingwood ont appris combien d'énergie ils avaient épargné, en quoi leur participation aux remises en état avait permis des économies et combien la collectivité avait profité de la pousse économique résultant des rénovations plus nombreuses du foyer.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p><b>Visites </b><b>à domicile </b></p>
+<p>On a noté une réduction de 33 pour cent dans la quantité d'eau traitée et acheminée aux foyers des participants (83 632 m 3 ). Ceci a entraîné des économies de 21 839 $.</p>
+<p>La consommation en énergie électrique dans ces mêmes foyers a été réduite de 30 pour cent environ (533 364 kWh) par rapport aux taux de 1993. Ceci a entraîné des économies de 42 653 $.</p>
+<p>En septembre 1995, 67 600 $ avaient été alloués sous forme de prêts environnementaux pour financer des rénovations.</p>
+<p>En novembre 1996, les responsables avaient effectué 1 578 remises en état écologiques. Et même si les chiffres exacts n'étaient pas encore connus, les responsables savaient que le programme avait permis d'accroître le recyclage, de décroître le traitement des eaux d'égout et de réduire la consommation de gaz naturel et de taux de déchets acheminés aux sites d'en fouissement.</p>
+<p><b>Trousse du débutant </b></p>
+<p>Les résidants qui avaient reçu la trousse de jardinage avaient nettement plus tendance que les membres du groupe témoin à s'en être servis et à avoir continué d'acheter des produits organiques pour fertiliser la pelouse et contrôler les espèces nuisibles. Par contre, les membres de ce groupe n'avaient pas cessé pour autant d'utiliser des produits dangereux. Ceci indiquait qu'ils n'avaient pas modifié leurs vieilles habitudes et qu'ils n'avaient pas l'intention de les modifier à l'avenir. Ils avaient simplement décidé d'utiliser des produits écologiques en plus des autres produits.</p>
+<p>Les personnes qui avaient reçu la trousse sur les produits toxiques avaient nettement moins tendance à se servir d'herbicides et de fertilisants chimiques synthétiques que les membres du groupe témoin. En outre, ils précisaient qu'ils n'utiliseraient pas autant ces produits à l'avenir. En ce qui a trait aux bonnes intentions futures, il semblait qu'ils auraient nettement moins tendance à utiliser des insecticides et seraient plus enclins à composter et à utiliser les fertilisants à diffusion lente. Les documents contenus dans la trousse offerte à ce groupe comprenaient des renseignements sur les herbicides et les pesticides.</p>
+<p>Les membres des deux groupes ayant reçu des trousses avaient utilisé nettement moins de piles jetables et de nettoyants à base de chlore ou d'ammoniaque que les membres du groupe témoin au cours de l'été passé, et indiquaient qu'ils auraient également moins tendance à s'en servir à l'avenir. Ils ont affirmé avoir apporté plus souvent des produits dangereux au centre de dépôt, même s'ils avaient tout autant tendance à conserver ces produits pour les y apporter plus tard (tous les groupes ont dit faire cela fréquemment).</p>
+<p>Aucun groupe n'a dit avoir considérablement modifié son recours à l'eau de Javel et aux nettoyeurs de tuyaux par rapport au groupe témoin, même si ces produits étaient décrits dans la documentation de la trousse sur les produits nettoyants dangereux.</p>
+<p>Un quart environ des participants ayant reçu la trousse sur le jardinage écologique ont dit avoir utilisé les coupons-rabais inclus dans la trousse. Ils ont indiqué que ces coupons-rabais les avaient fortement incités à essayer d'autres types de produits.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Michele Rich <br/>
+The Environment Network <br/>
+275, First Street, unité 6 <br/>
+Collingwood (Ontario) <br/>
+L9Y 1C1 (705) 446-0551 <br/>
+télécopieur : (705) 446-0561</p>
+<p>Jennifer Smalley Kaufman <br/>
+Manager of Environmental Programs <br/>
+Environmental Hazards Management Institute <br/>
+10 Newmarket Road <br/>
+P.O. Box 932 <br/>
+Durham, New Hampshire 03824 <br/>
+U.S.A. <br/>
+(603) 868-1496 <br/>
+télécopieur : (603) 868-1547</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Autres mots-clés: prévention de la pollution</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

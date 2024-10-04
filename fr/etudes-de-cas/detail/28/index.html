@@ -1,0 +1,234 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a></li>
+<li><a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Nancy Gallant et Doug McKenzie-Mohr, PhD, Université St. Thomas</li>
+<li>Vivian De Giovanni, ville de Waterloo.</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Succursale locale de la chaîne Zehr's</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p>Aucun changement n'a été observé au niveau des habitudes d'achat.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Zehr's</h1>
+<p>À Kitchener, en Ontario, la chaîne de magasins <em>Zehr's </em>rappelait aux clients d'acheter des produits moins emballés, plus concentrés et plus sécuritaires pour l'environnement. On demandait à certains clients de s'engager à acheter des produits plus écologiques et de regarder une présentation sur vidéo offerte dans le magasin mettant en vedette des personnes qui favorisaient les « achats écologiques ».</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>En 1995, M. McKenzie-Mohr et Mme De Giovanni lançaient cette campagne pour favoriser la réduction des déchets, parce qu'ils s'inquiétaient de la capacité de plus en plus réduite des sites d'enfouissement et des effets des déchets solides sur l'environnement.</p><!-- Background already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>En 1995, M. McKenzie-Mohr et Mme De Giovanni lançaient cette campagne pour favoriser la réduction des déchets, parce qu'ils s'inquiétaient de la capacité de plus en plus réduite des sites d'enfouissement et des effets des déchets solides sur l'environnement.</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>La campagne a été lancée dans un magasin <em>Zehr's </em>de Kitchener pendant une période de deux semaines, au début de 1995. Avant le début de cette campagne, 168 produits avaient été sélectionnés parce qu'ils étaient peu emballés, qu'ils étaient concentrés ou qu'ils ne présentaient aucun danger pour l'environnement. Ces produits étaient identifiés partout en magasin à l'aide de repères colorés placés juste en-dessous des produits, sur les rayons. Chaque repère comprenait une courte description des attributs « écologiques » du produit (<a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a>).</p>
+<p>Cent dix clients de la chaîne alimentaire ont été sélectionnés au hasard pour participer au programme. Ils devaient :</p>
+<ul>
+<li>signer un formulaire d'engagement indiquant qu'ils songeraient à acheter les produits écologiques identifiés au moyen des repères (<a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a>);</li>
+<li>regarder une présentation sur vidéo présentant des gens en train d'acheter les produits écologiques identifiés au moyen des repères.</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Un second magasin Zehr's de Kitchener qui ne participait pas au programme a été choisi comme magasin témoin. Les responsables ont pu suivre les ventes effectuées dans les deux magasins à l'aide des système électroniques d'inventaire. Les données sur les ventes ont été analysées pendant deux semaines avant le début de la campagne, de manière à fournir un point de comparaison zéro par rapport à chacun des 168 produits. Les ventes de ces produits ont ensuite été vérifiées pour ces deux magasins tout au long de la campagne. Finalement, on a comparé les résultats.</p>
+<p>Les responsables ont choisi 41 clients au hasard pour signer le formulaire d'engagement seulement, 35 autres pour regarder la présentation sur vidéo seulement, et 34 encore pour faire les deux, soit signer le formulaire d'en gagement et regarder la vidéo. Les 67 clients choisis au hasard au magasin témoin ont été sélectionnés seulement après avoir terminé leurs emplettes. Ils n'ont pas signé de formulaire d'engagement et n'ont pas vu la présentation sur vidéo. On a demandé à tous les participants de fournir leurs reçus d'épicerie. Ces reçus ont permis d'établir des comparaisons entre les achats effectués par les membres des quatre groupes.</p>
+<p>Des 168 produits choisis, 77 ont été exclus de l'analyse parce que leur prix avait changé au fil des semaines, que les données électroniques sur le prix et la quantité n'étaient pas disponibles ou que les produits n'avaient pas été offerts par les deux magasins au cours des quatre semaines. Par conséquent, seulement 91 articles ont été retenus pour l'analyse.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>Contrairement aux résultats spectaculaires enregistrés dans le cadre du programme <em>Get in the Loop </em>- <em>Buy Recycled, </em>les responsables n'ont noté aucune différence dans les choix d'achat parmi les quatre groupes. Ils en ont tiré de plusieurs leçons.</p>
+<p>D'une part, les gens n'étaient pas sensibilisés à la campagne. L'organisation d'une campagne de promotion plus forte, semblable à celle de <em>Get in the Loop, </em>aurait certainement amélioré l'efficacité du programme Zehr's.</p>
+<p>De l'autre, environ un tiers des repères placés sur les rayons sont tombés au cours des deux semaines. Les clients n'étaient donc pas en mesure d'identifier les produits ciblés. Il aurait été préférable d'utiliser des repères plus petits et de les installer plus solidement afin que les paniers à provisions ne les arrachent pas au passage.</p>
+<p>Par ailleurs, la sélection de produits était trop restreinte pour permettre aux clients de constamment faire des choix plus écologiques. Il serait donc important d'identifier beaucoup plus de produits sur les rayons.</p>
+<p>Finalement, les organisateurs ont choisi le jour le plus occupé de la semaine, soit le samedi, pour demander aux clients de signer le formulaire d'engagement et de regarder la vidéo, parce qu'ils croyaient ainsi toucher plus de monde. Néanmoins, il s'est avéré difficile de recruter des participants dans l'entrée achalandée d'une grosse épicerie.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Doug McKenzie-Mohr, Ph.D. <br/>
+Université St. Thomas <br/>
+Fredericton (Nouveau-Brunswick) <br/>
+E3B 2E4 <br/>
+(506) 452-0634 <br/>
+télécopieur : (506) 450-9615 <br/>
+courrier électronique : <a href="mailto:mckenzie@stthomasu.ca">mckenzie@stthomasu.ca</a></p><!-- Contacts already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

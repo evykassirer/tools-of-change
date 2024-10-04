@@ -1,0 +1,396 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>L’Université de Washington</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Université de Washington</li>
+<li>Ville de Seattle</li>
+<li>Metro</li>
+<li>Community Transit</li>
+<li>Sound Transit</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p>Les déplacements du matin sur le campus ont diminué de 16 % tandis que la circulation d’après-midi a diminué de 10 %. Les véhicules à passager unique quant à eux sont passés de 33 % à 23 % et l’usage du transport en commun a augmenté de 21 % à 33 %.</p>
+<table border="1" cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" complete="complete" height="26" src="/images/lightbulb.gif" width="27"/> <small><font face="Verdana">Conseil: Cliquez sur cette image pour l'agrandir. Cliquez votre bouton "Back" pour retourner à ce page. </font></small><hr color="#FFCC00"/>
+<p><a href="/images/documentimages/U-PASS/generalad.gif" target=""><img alt="U-Pass Image" border="0" complete="complete" height="150" src="/images/documentimages/U-PASS/generalad1.gif" width="100"/></a><br/>
+<small><font face="Verdana">Publicité sur le programme U-PASS.</font></small><br/>
+             </p>
+<p><a href="/images/documentimages/U-PASS/nightride.gif" target=""><img alt="U-Pass Image" border="0" complete="complete" height="247" src="/images/documentimages/U-PASS/nightride1.gif" width="100"/></a><br/>
+<small><font face="Verdana">Publicité et carte sur le programme Déplacements en soirée.</font></small></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>U-PASS: Programme de gestion du transport de l'Université de Washington</h1>
+<p>U-PASS est un programme complet et flexible conçu aux fins d'inciter les étudiants de l'Université de Washington, ainsi que le personnel administratif et enseignant, à utiliser des moyens de transport de remplacement réduisant le niveau de circulation dans le secteur de l'Université de Seattle. Le programme offre aux participants plusieurs options comme moyens de déplacement et de mesures incitatives peu coûteuses, incluant un service de transport amélioré et subventionné, un service de navette et de covoiturage en auto et en fourgonnette, un service de coordination des moyens de déplacement, des mesures encourageant l'usage de la bicyclette, des retours au domicile remboursés, des permis quotidiens flexibles et des rabais commerciaux.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>En 1983, l’Université de Washington s’est engagée envers la ville de Seattle à maintenir le niveau de circulation automobile aux abords du campus à son même niveau (c’est-à-dire à environ 7 800 déplacements à l’heure de pointe du matin et 9 400 déplacements à l’heure de pointe de l’après-midi et à limiter son parc de stationnement à 12 terrains (chacun comptant 300 places environ). Son plan de 1983 prévoyait le maintien de ce même niveau de circulation pour le reste de la décennie ; cependant, à la fin des années ‘80, la participation au programme avait diminué graduellement et de façon marquée.</p>
+<p>En 1989, deux facteurs ont mené au développement d’un nouveau plan de gestion du transport (PGT) pour l’Université. Le premier a été la préparation d’un nouveau programme d’expansion qui engendrerait une augmentation du nombre d’étudiants et du personnel de même qu’une diminution du nombre d’espaces de stationnement. Le deuxième a été attribué au centre hospitalier de l’Université de Washington, un hôpital totalement intégré sur le campus même; compte tenu de la tendance vers des soins médicaux ambulatoires, l’hôpital prévoyait un achalandage accrû du nombre de véhicules transportant des patients.</p>
+<p>L’Université a formé un groupe de travail composé d’étudiants, d’employés des facultés et du personnel administratif, pour concevoir et implanter un nouveau PGT à l’intention de ses 33 000 étudiants et 17 000 membres du personnel. Un comité consultatif sur le transport (CCT) a été institué. Il était composé de membres du personnel administratif et enseignant de même que d’étudiants et de deux représentants des compagnies de transport en commun (King County Metro et Community Transit). Le groupe de travail fit face au défi de développer un PGT qui limiterait la circulation aux niveaux de 1983 et n’augmenterait aucunement le stationnement dans le voisinage.</p><!-- Background already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>Dans le cadre de sa recherche pour identifier les divers volets que pourrait contenir le programme U-PASS, le groupe de travail a découvert que des universités américaines avaient réussi à jumeler une passe de transport à la carte étudiante. Toutefois, ces succès s’observaient dans des quartiers à faible densité de population et aucun des plans n’incluait les employés des facultés ni du personnel administratif. De plus, ils n’offraient qu’une passe d’autobus plutôt qu’un programme complet comprenant de nombreuses solutions de rechange en matière de moyens de déplacement. Un sondage téléphonique mené par l’Université a révélé que souvent les usagers n’utilisaient pas constamment le même moyen de transport. Le programme U-PASS a alors été conçu pour répondre aux besoins variés des usagers en offrant des options de moyens de déplacement des plus flexibles. L’Université voulait un programme dont la qualité première serait la souplesse et qui s’adresserait à toute sa clientèle, tant les étudiants que les employés afin de réduire à sa plus simple expression le nombre de véhicules à passager unique (VPU) dans chacun de ses trois campus, et qui lui servirait d’outil pour mesurer la réduction de la circulation dans le voisinage.</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>Après approbation du programme par le CCT, l’Université a lançé une campagne de promotion à l’intention de toute la communauté universitaire l’informant des avantages du programme et l’invitant à lui communiquer ses commentaires quant à l’acceptation éventuelle du programme. Le thème de la campagne initiale a été : « U-PASS : Pour Vous et l’U ». Le matériel promotionnel comprenant des affiches, des brochures de même que de la publicité dans le journal du campus, a mis l’accent sur les avantages du programme : de meilleurs prix et un plus grand choix de moyens de déplacement. L’Université a consulté ses étudiants par sondage, demandant leur avis au sujet du programme; après moultes discussions, on en est venu à la conclusion que le programme serait facultatif plutôt qu’obligatoire et ce, dans l’espoir de gagner éventuellement un plus grand appui.</p>
+<p>Le programme a été implanté en septembre 1991. L’Université a augmenté de façon significative ses tarifs de stationnement en guise de <a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">mesure financière dissuasive</a> à l’intention du passager unique et pour obtenir le financement nécessaire à l’administration du programme.Toute personne qui se procurait un permis de stationnement mensuel se voyait remettre une passe U-PASS à titre gratuit et comme mesure l’incitant à essayer l’un des modes de transport proposés.</p>
+<p>La passe U-PASS a été offerte à prix abordable soit 9 $ par mois pour le personnel administratif et enseignant, et 6,67 $ par mois pour les étudiants (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives</a>). Préalablement à leur inscription, les étudiants ont reçu par courrier un autocollant et un Guide de l’usager de la passe U-PASS. S’ils souhaitaient participer au programme U-PASS, ils n’avaient qu’à apposer l’autocollant sur leur carte d’étudiant et les frais s’ajoutaient automatiquement à leurs frais universitaires. Ceux qui ne souhaitaient pas y participer n’avaient qu’à retourner l’autocollant dans l’enveloppe à cet effet et aucuns frais ne leur étaient imposés. Les membres du personnel administratif et enseignant ont reçu également ce Guide de l’usager. Pour participer au programme, ils n’avaient qu’à se procurer une passe U-PASS aux différents bureaux répartis à travers le campus.</p>
+<p>Le programme U-PASS comprenait plusieurs éléments, lesquels offraient aux participants une vaste gamme de moyens de transport de remplacement à celui du VPU. Ces élémemts incluaient :</p>
+<p>TRANSORT EN COMMUN :<br/>
+Le volet de la passe U-PASS le plus fréquemment utilisé était la passe d’autobus. Les étudiants, le personnel administratif et enseignant pouvaient utiliser leur passe U-PASS sans restriction de moyens de déplacement ni d’horaires avec l’une ou l’autre des compagnies de transport en commun : Metro et Community Transit. Des services d’autobus express et de train de banlieue ont été ajoutés en 1999 et 2000 respectivement.</p>
+<p>DÉPLACEMENTS EN SOIRÉE :<br/>
+Pour les personnes résidant dans un rayon d’un mille du campus, une navette DÉPLACEMENTS EN SOIRÉE les ramenait à domicile. Les détenteurs de la passe U-PASS y avaient accès gratuitement; les autres pouvaient en faire l’usage pour la modique somme de 1 $. Cette mesure se voulait avant tout d’ordre sécuritaire et pour fins de relations publiques.</p>
+<p>COVOITURAGE :<br/>
+Le stationnement était gratuit pour le personnel pratiquant le covoiturage, si l’un des passagers et le conducteur détenaient une passe U-PASS. Ce même privilège était accordé au covoiturage étudiant si le véhicule transportait trois étudiants et plus, et si le conducteur et les passagers étaient tous détenteurs de la passe U-PASS. Tous les occupants du véhicule devaient résider à l’extérieur d’un rayon d’un mille du campus pour y participer.</p>
+<p>COVOITURAGE EN FOURGONNETTE :<br/>
+Le principe de fonctionnement du covoiturage en fourgonnette était semblable au circuit d’autobus, excepté qu’il n’y avait que de 8 à 15 passagers et que la fourgonnette faisait monter et descendre ses passagers à leur domicile ou à proximité. Les détenteurs de la passe U-PASS recevaient une subvention mensuelle de 40 $ pour le covoiturage en fourgonnette par Metro et CT, versant le reste du tarif (le cas échéant) directement au responsable de la fourgonnette.</p>
+<p>COORDINATION DES MOYENS DE DÉPLACEMENT :<br/>
+Le volet Coordination des moyens de déplacement consistait en une banque de données maintenue par la compagnie King County Metro et s’étendant sur trois comtés dont le but était de jumeler les gens pour le covoiturage en auto et en fourgonnette, aidant les individus à identifier d’autres personnes dont les horaires à l’Université étaient semblables. Au début de l’année, les étudiants et le personnel ont reçu un formulaire de coordination des moyens de déplacement afin de faciliter leur participation (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>).</p>
+<p>BICYCLETTES:<br/>
+Les cyclistes ont bénéficié de nouvelles pistes cyclables sur le campus, de même que de cadenas et de supports pour bicyclette, le tout financé à même les revenus générés par la passe U-PASS. De plus, les étudiants cyclistes détenteurs de la passe U-PASS ont reçu gratuitement un casque de sécurité (5 $ pour le personnel administratif et enseignant) à l’achat d’une mise au point à la boutique de réparations du campus. (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>).</p>
+<p>REMBOURSEMENT DES RETOURS AU DOMICILE :<br/>
+Cette mesure a été spécifiquement conçue à l’intention des membres du personnel dans le but de surmonter leur inquiétude quant à la possibilité de manquer un autobus ou le covoiturage, ou de devoir partir subitement en raison d’une urgence à la maison. On leur remboursait 90 % du prix de la course en taxi si leur moyen de transport habituel n’était pas disponible au moment où ils devaient quitter l’Université. On leur allouait égament jusqu’à 50 milles par trimestre (3 mois) comme remboursement des retours au domicile. Moins de 1% des employés ont utilisé cette mesure mais 34 % étaient d’avis que c’était une mesure des plus valables (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>).</p>
+<p>PERMIS QUOTIDIENS FLEXIBLES (anciennement connu sous le vocable de billets de transport individuels) :<br/>
+Les membres du personnel détenteurs d’une passe U-PASS pouvaient se procurer jusqu’à 26 billets à tous les trois mois, au coût de 1,93 $ chacun (c.à.d. à presque la moitié du prix régulier). Un permis flexible fonctionnait sur le même principe qu’une passe de stationnement quotidien : le conducteur suspendait le permis à son rétroviseur et pouvait stationner légalement dans les aires de stationnement du campus universitaire (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>).</p>
+<p>RABAIS COMMERCIAUX :<br/>
+Les détenteurs de la passe U-PASS ont reçu des rabais chez un certain nombre de magasins, à distance de marche du campus. Des rabais sur la nourriture, les livres, les accessoires pour bicyclettes, les vêtements, les services de buanderie et même sur des services d’optométrie et de massage leur ont été accordés (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives</a>).</p>
+<p>Les adminisitrateurs du programme ont reconnu la nécessité d’établir un programme qui serait très flexible et très facile d’accès, ce qui encouragerait les participants qui, autrement, continueraient d’utiliser une voiture. Si les membres du personnel détenteurs d’un permis de stationnement pour VPU décidaient d’essayer leur passe U-PASS, ils pouvaient, pour une période de six mois, bénéficier du maintien de leur place de stationnement réservée et ce, afin d’atténuer leur inquiétude face au risque qu’ils appréhendaient d’essayer divers autres moyens de transport (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>).</p>
+<p>Le programme s’est assuré que toute la communauté universitaire du campus pouvait facilement accéder à l’information relativement à la passe U-PASS. Neuf bureaux de renseignement ont été mis en place et fonctionnaient à l’année; ces bureaux étaient des kiosques (quelques-uns étaient dotés de personnel) qui distribuaient des renseignements complets sur le programme U-PASS et ses éléments. Au début de la session d’automne, en septembre, du matériel promotionnel comprenant une lettre et un Guide de l’usager, a été posté à tous les étudiants. Quant aux étudiants dont l’année scolaire commençait plus tard dans l’année, ce même matériel leur était envoyé, ainsi qu’à tous les nouveaux membres du personnel. À chaque automne se tenait une « foire du transport » par laquelle le personnel du programme U-PASS faisait la promotion des différents aspects du programme à la communauté du campus. Les administrateurs du programme annonçaient aussi la passe U-PASS dans le journal du campus (<a href="../../../../fr/outils-de-changement/medias/">Médias</a>), de même que dans les publications universitaires (i.e. Catalogue d’inscriptions, Cartable du nouvel étudiant, Annuaire téléphonique des étudiants et Répertoire des étudiants, Manuel des avantages offerts aux membres du personnel, un vaste site Web et la documentation des avantages sociaux offerts par le département).</p>
+<p>Au fil de la progression du programme, les administrateurs ont constaté que le volet passe d’autobus était de loin la caractéristique la plus populaire de la passe U-PASS. Les campagnes de publicité ont évolué pour promouvoir les autres modes de transport offerts par la passe U-PASS. Le thème est devenu « U-PASS et beaucoup plus » et les campagnes ont mis l’accent sur des éléments particuliers du programme (i.e. le covoiturage).</p>
+<p>De plus, on a publié bulletin trimestriel destiné à tous les membres du personnel et mettant en vedette les différents éléments du programme, traçant même un profil des membres de la haute direction de l’Université qui utilisaient le programme (<a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a>). Par exemple, le profil d’un vice-président a été tracé parce qu’il utilisait sa passe U-PASS pour effectuer ses déplacements aller-retour à l’Université. Au fur et à mesure que le programme évoluait, les administrateurs ont créé une liste spéciale de services pour les participants leur fournissant des trucs et des renseignements sur les transports (par exemple, la liste de services informait les usagers de tout changement d’horaire dans le transport).</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>Le plan de financement initial du projet pilote U-PASS était composé d'une subvention de l'Université, de l'augmentation des tarifs de stationnement et de la vente de permis. Le coût en a été estimé à 17 471 000 $ sur une période de trois ans (1991-1994).</p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td width="150">Élément de U-Pass</td>
+<td width="100">Coût total</td>
+<td width="50">Pourcentage</td>
+</tr>
+<tr>
+<td>DÉPENSES D'OPÉRATION</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Administration</td>
+<td>644 000 $</td>
+<td>3,7</td>
+</tr>
+<tr>
+<td>Supervision et évaluation</td>
+<td>127 000 $</td>
+<td>0,7</td>
+</tr>
+<tr>
+<td>Information et Marketing</td>
+<td>692 000 $</td>
+<td>4,0</td>
+</tr>
+<tr>
+<td>L'Express des sciences de la santé</td>
+<td>1 504 000 $</td>
+<td>8,6</td>
+</tr>
+<tr>
+<td>Navette pour personnes handicapées</td>
+<td>362 000 $</td>
+<td>2,1</td>
+</tr>
+<tr>
+<td>Déplacements en soirée</td>
+<td>769 000 $</td>
+<td>4,4</td>
+</tr>
+<tr>
+<td>Services de transport en commun</td>
+<td>12 766 000 $</td>
+<td>73,0</td>
+</tr>
+<tr>
+<td>Covoiturage en fourgonnette</td>
+<td>376 000 $</td>
+<td>2,2</td>
+</tr>
+<tr>
+<td>Covoiturage en auto</td>
+<td>128 000 $</td>
+<td>0,7</td>
+</tr>
+<tr>
+<td>Permis quotidiens flexibles</td>
+<td>6 000 $</td>
+<td>0,0</td>
+</tr>
+<tr>
+<td>Remboursement des retours au domicile</td>
+<td>34 000 $</td>
+<td>0,2</td>
+</tr>
+<tr>
+<td>Opération Bicyclettes</td>
+<td>63 000 $</td>
+<td>0,4</td>
+</tr>
+<tr>
+<td>Dépenses totales</td>
+<td>17 471 000 $</td>
+<td>100,0</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>FINANCEMENT DES OPÉRATIONS &amp; REVENUS</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Université</td>
+<td>5 646 000 $</td>
+<td>32,3</td>
+</tr>
+<tr>
+<td>Stationnement</td>
+<td>4 962 000 $</td>
+<td>28,4</td>
+</tr>
+<tr>
+<td>Frais payés par les usagers</td>
+<td>6 863 000 $</td>
+<td>39,3</td>
+</tr>
+<tr>
+<td>Financement total(Revenus)</td>
+<td>17 471 000 $</td>
+<td>100,0</td>
+</tr>
+</tbody>
+</table><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>L’Université a utilisé plusieurs outils pour mesurer les résultats de volets spécifiques du programme U-PASS. Chaque année, à l’automne, elle plaçait aux entrées du campus, de l’équipement pour compter les véhicules.</p>
+<p>De plus, l’Université a voulu savoir si le programme U-PASS aurait un effet continu sur les habitudes de déplacements durant toute l’année scolaire. Elle a donc procédé, en avril 1991, à un comptage de la circulation spécial (données servant de base à l’implantation du programme U-PASS) et à un comptage post-implantation en avril 1992.</p>
+<p>L’Université a effectué un sondage téléphonique aux deux ans pour connaître le choix des modes de transport de la communauté universitaire et recueillir leur opinion sur le programme U-PASS afin de procéder aux réaménagements souhaités.</p>
+<p>Le site Web de U-PASS fournissait des statistiques mensuelles sur la fréquence d’utilisation de chaque service. De plus, la phonothèque, un système de renseignements téléphoniques, indiquait le nombre de fois où un service particulier était sélectionné.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>De façon générale, l’Université de Washington a rencontré les objectifs de son plan de gestion du transport initial, remis à jour en 1991. Au cours de l’année scolaire 1991-1992, entre 72 à 74 % des étudiants et 68 % des membres du personnel ont participé au programme, comparativement à l’objectif de 75 % de taux de participation.</p>
+<p>Selon les statistiques obtenues suite au comptage annuel de la circulation, après seulement trois semaines d’opération du programme, les voyages sur le campus en matinée avaient diminué de 15 % tandis que ceux de l’après-midi ont diminué de 9 %, comparativement à l’année précédente.</p>
+<p>Les résultats du comptage d’avril ont clairement démontré que le programme a contribué à la diminution des déplacements à l’Université et ce, à un niveau plus élevé que celui rapporté à l’automne (soit une diminution de 16 % le matin et près de 10 % en après-midi).</p>
+<p>Les changements les plus remarquables de comportement en matière de transport ont été constatés dans les catégories de véhicule à passager unique et des déplacements par autobus. Avant la mise en application du programme U-PASS, le moyen de transport prédominant était les véhicules à passager unique (33 %), suivi du transport en commun (21 %). En 1992, les chiffres étaint inversés : 33 % des voyageurs utilisaient l’autobus et seulement 23% un véhicule à passager unique.</p>
+<p>Le programme U-PASS a connu un immense succès et a rencontré ses objectifs en 2000, dix ans après l’implantation du plan de gestion du transport (instauré en 1991).</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Peter Dewey<br/>
+Transportation Systems Manager<br/>
+Transportation Services, University of Washington<br/>
+1127 NE Boat Street<br/>
+Seattle, WA 98105-6709<br/>
+Tél. : (206) 616-2050<br/>
+Téléc. : (206) 616-0478<br/>
+<a href="mailto:pdewey@u.washington.edu">pdewey@u.washington.edu</a><br/>
+<a href="http://www.washington.edu/upass">www.washington.edu/upass</a></p>
+<p>L’auteure de cette étude de cas est Deanna Yerichuk. Travaillant à Toronto, Canada, Deanna rédige et édite des articles pour de nouveaux projets. Elle est toujours à l’affût de possibilités qui lui permettront de mettre à profit sa grande expérience dans le domaine du développement communautaire et des communications. Vous pouvez contacter Deanna par courriel à : <a href="mailto:yerichuk@canoemail.com">yerichuk@canoemail.com</a>.</p>
+<p>La traduction vers le français a été faite par Louise Rioux. Aimant beaucoup les mots, et surtout leur rôle dans l’expression d’une idée, la traduction est un défi des plus intéressants. Disponible pour effectuer vos travaux de traduction, vous pouvez la contacter par courriel à <a href="mailto:michelg@9bit.qc.ca">michelg@9bit.qc.ca</a>.</p>
+<p>Rénald Gagnon a édité la version française de cette étude de cas. Rénald possède de nombreuses années d’expérience de traduction et de révision dans des domaines très variés. Vous pouvez le joindre par courriel à : <a href="mailto:relimax@magma.ca">relimax@magma.ca</a>.</p>
+<p>Le financement pour l’ajout de cette étude de cas a été généreusement fourni par le Fonds d’action pour le changement climatique du Gouvernement du Canada, Suncor, Syncrude, Enbridge Consumers Gas et TetraPak Canada.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><b>Leçons à retenir</b> ( pour aider les autres ) :</p>
+<p>L’heureuse combinaison des mesures financières incitatives et dissuasives, soit l’augmentation du tarif de stationnement et l’offre de modes de transport à prix abordable, s’est avérée un moyen fructueux pour stimuler la participation accrue au programme.</p>
+<p>Reconnaissant la difficulté de modifier les habitudes de transport, le programme U-PASS a été conçu pour être aussi flexible et adaptable que possible. La philosophie du programme : si une personne conduit pour se rendre au travail, le fait de réduire le nombre de ses déplacements seul a un impact positif.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

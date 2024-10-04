@@ -1,0 +1,585 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/rétroaction/">Rétroaction</a></li>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/communications-personnalisées-percutantes/">Communications personnalisées percutantes</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Better Environmentally Sound Transportation (B.E.S.T)</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<p><strong>Écoles pilotes pendant la deuxième année :</strong></p>
+<ul>
+<li>Burnaby North (Burnaby)</li>
+<li>Central Junior (Victoria)</li>
+<li>Churchill (Vancouver)</li>
+<li>Gladstone (Vancouver)</li>
+<li>Johnston Heights (Surrey)</li>
+<li>Killarney (Vancouver)</li>
+<li>Mt Douglas Senior (Victoria)</li>
+<li>North Surrey (Surrey)</li>
+<li>Terry Fox (Port Coquitlam)</li>
+<li>University Hill (Vancouver)</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<ul>
+<li>Réduction importante (de 9 à 16 %) dans l’utilisation d’une voiture personnelle avec un seul étudiant à bord (comparée aux résultats d'enquête de référence) dans trois des quatre écoles participantes;</li>
+<li>Le pourcentage des étudiants qui marchaient, allaient à bicyclette, prenaient le transport en commun et faisaient du covoiturage (deux étudiants ou plus par véhicule) est resté le même que le résultat des enquêtes de base (dans l’ordre de 1 à 3 %.)</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>off ramp</h1>
+<p><strong>Off ramp</strong> est une initiative en dehors de la classe qui incite les étudiants du secondaire à marcher, faire de la bicyclette ou prendre plus souvent le transport en commun pour aller à l'école, de façon à réduire l'utilisation de la voiture. Elle accroît la prise de conscience des problèmes de transport et de changement du climat, fournit des motivations et réduit les obstacles aux autres modes de transport. En gros, elle améliore la disponibilité et la popularité du transport durable au sein des écoles et de leurs communautés. Son manuel de l'étudiant est disponible à un coût nominal.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p><strong>Note :</strong> Pour minimiser les coûts de maintenance du site, toutes les études de cas sont écrites au passé, même si elles sont en cours - comme dans le cas de ce programme.</p>
+<p>Le Vancouver Go Green Challenge était un événement annuel tenu la Journée de l’air pur qui mettait en compétition les écoles, dans une tentative d'accroître l'utilisation des autres modes de transport durable. Bien que 18 écoles secondaires aient participé en 1999, il n'y avait aucun précédent ou suivi pouvant inciter les étudiants du secondaire à marcher, faire de la bicyclette ou prendre l’autobus pour aller à l'école et en revenir.</p>
+<p>B.E.S.T (Better Environmentally Sustainable Transportation - Meilleur transport durable) était une organisation non gouvernementale dans la région de Vancouver, dont la mission était de promouvoir l'utilisation du transport durable. B.E.S.T était inquiet de la culture populaire qui entoure l'utilisation de la voiture; le manque d’information au sujet des impacts de l'automobile sur la qualité de l’air, la santé et la qualité de la vie étaient des préoccupations supplémentaires. Une enquête régionale avait mis en lumière une augmentation de 53 % du nombre d'étudiants qui étaient conduits en voiture à l'école, au cours des dix dernières années.</p>
+<p>Pour aborder ces problèmes, B.E.S.T. avait conçu un programme pilote destiné aux étudiants du secondaire, qui est devenu le programme <strong>off ramp</strong>. La phase pilote a commencé en 1999 dans cinq écoles secondaires de Vancouver et dans deux écoles secondaires de Victoria situées dans les zones urbaines et suburbaines. Dès sa deuxième année (2000-2001) <strong>off ramp</strong> était en marche dans dix écoles au total, dont huit à Vancouver et deux à Victoria.</p>
+<p>Vancouver est une ville portuaire prospère sur la Côte Ouest de la Colombie-Britannique, au Canada, renommée pour son paysage montagneux, sa proximité du centre de ski Whistler et ses liens étroits avec les marchés asiatiques. La Lower Mainland autour de Vancouver a une population d’environ deux millions d’habitants dans la large vallée et la plaine d’inondation du fleuve Fraser. La croissance de la population de cette ville a congestionné les autoroutes avec les véhicules des banlieusards et réduit la qualité de l’air partout dans la vallée.</p>
+<p>Située sur une grande île à environ deux heures de traversier de Vancouver, Victoria est connue pour son climat doux de la Côte Ouest. Sa popularité s’est accrue ces dernières années auprès de ceux qui souhaitent vivre dans une petite ville de culture diverse, avec un accès à plusieurs activités de plein air. Suite aux contraintes spatiales posées par l'océan, le nombre croissant de véhicules a réduit l’efficacité du transport dans la région.</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p><strong>Off ramp</strong> était destiné à :</p>
+<ul>
+<li>réduire de 20 % les voyages en voiture des étudiants après deux années</li>
+<li>lancer un programme de réduction des voyages dans deux écoles secondaires au cours des deux années du projet pilote.</li>
+</ul>
+<p> </p>
+<p>Pour plus de détails sur l'évolution des buts et objectifs de leur programme, voir la section <a href="#notes">Notes</a> ci-dessous.</p><!-- Objectives already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>Les étudiants du secondaire étaient ciblés par ce programme pour plusieurs raisons : l'importance de commencer par :</p>
+<ul>
+<li>déterminer le temps qu'un groupe d’étudiants (et d’enseignants) pourrait consacrer au programme, en plus de toutes les autres activités scolaires et extra-scolaires déjà en place;</li>
+<li>déterminer quelles composantes du programme pourraient constituer des devoirs donnés par les enseignants en classe;</li>
+<li>incorporer au programme les demandes d’aide a
+    <ul>
+<li>les jeunes de cet âge peuvent fixer leurs propres horaires et prendre leurs propres décisions de manière indépendante;</li>
+<li>beaucoup d'étudiants sont à l'âge de conduire une voiture (16 ans);</li>
+<li>il n y avait aucun programme destiné aux jeunes et faisant la promotion de l'utilisation du transport durable, particulièrement pour aller à l'école et en revenir.</li>
+</ul>
+<p> </p>
+<p>Les informations sur d’autres programmes ont fait ressortir uprès des commerces locaux, en termes d’octroi de prix et de publicité.</p>
+</li>
+</ul>
+<p> </p>
+<p>Les motivations clés identifiées pour l'intégration réussie du projet <strong>off ramp</strong> dans le système des écoles secondaires comprenait :</p>
+<ul>
+<li><em>pour les enseignants</em> : le besoin d’activités environnementales qui pourraient être intégrées aux cours;</li>
+<li><em>pour les étudiants</em> : comprendre, s’impliquer et faire la différence dans les problèmes qui se posent dans la vie réelle et qui sont d’intérêt pour leurs communautés.</li>
+</ul>
+<p> </p>
+<p>Les motivations et les difficultés particulières à chaque école étaient identifiées par des enquêtes au niveau des écoles (voir la section <a href="#delivering">Mettre en oeuvre le programme</a> ci-dessous).</p>
+<p>Les défis identifiés pour l'intégration réussie du projet et la manière selon laquelle <strong>off ramp</strong> avait relevé ces défis, à la fois dans la conception initiale du projet pilote et lorsque le programme a évolué, sont présentés dans le tableau ci-dessous :
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<td width="75"><strong>Défis</strong></td>
+<td><strong>Comment off ramp a relevé les défis</strong></td>
+</tr>
+<tr>
+<td>Attitude (que chacun conduit une voiture)</td>
+<td>Statistiques publiées sur le nombre élevé d’étudiants qui déjà marchaient, allaient à bicyclette et prenaient le transport en commun.</td>
+</tr>
+<tr>
+<td>Créer un nouveau programme/club au sein de l’école</td>
+<td>Consolidation des acquis d’autres programmes et clubs - p. ex. club écologique, programme de leadership, classe de marketing, club de bicyclette. Ressources pour enseignants afin d’aider à accroître la prise de conscience des problèmes connexes en classe.</td>
+</tr>
+<tr>
+<td>Temps requis pour les enseignants (en dehors de la classe)</td>
+<td>Encouragement des qualités de chef de la part des étudiants et, organisation des ateliers pour étudiants auxquels les enseignants n'ont pas pris part.</td>
+</tr>
+<tr>
+<td>Manque de temps libre pour les étudiants pour des buts non académiques.</td>
+<td>Au cours de l’année scolaire 2000-2001, les écoles ont été jumelées pour améliorer le côté social du programme et échanger des idées.</td>
+</tr>
+<tr>
+<td>Les étudiants chefs de file qui devaient promouvoir le programme étaient initialement timides et n’avaient pas les aptitudes pour jouer de tels rôles.</td>
+<td>Un atelier d'un jour dirigé par un professionnel du théâtre a été offert pour améliorer les aptitudes de leadership des étudiants.</td>
+</tr>
+<tr>
+<td>Manque d’infrastructure communautaire (p. ex. abri d’autobus et horaires, abri et verrouillage pour bicyclettes, trottoirs, passages pour bicyclettes, passages pour piétons.</td>
+<td>Des campagnes de rédaction de lettres ont été entreprises par les étudiants impliqués dans le projet <strong>off ramp</strong> pour demander aux organismes dirigeants de la ville et aux gouvernements locaux d’accroître l'infrastructure.</td>
+</tr>
+<tr>
+<td>Lancement d’un « nouveau » programme (problèmes initiaux)</td>
+<td>L’appui externe à cette question était l’élément catalyseur dont avaient besoin plusieurs enseignants pour agir. L’appui et le soutien fournis par B.E.S.T. ont aidé à réduire le temps dont avaient besoin les enseignants pour rencontrer et coordonner l’implication des étudiants.</td>
+</tr>
+</tbody>
+</table>
+</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p><strong><a name="delivering">Planification initiale </a><a href="../../../../fr/outils-de-changement/medias/">Médias</a>, <a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>, <a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications personnalisées percutantes</a>). L'École secondaire Killarney a installé un labyrinthe sur ses terrains de basket-ball (Journée de la marche mondiale à l’école pour commémorer le nombre de piétons tués dans les accidents d'auto. De plus, des kiosques ou tables d'information ont été périodiquement installés pour exposer le projet lors des activités scolaires. </strong></p>
+<p>En planifiant le projet <strong>off ramp</strong>, les organisateurs (c.-à-d. B.E.S.T et chacun des groupes scolaires participant) ont pensé qu'un minimum de trois mois serait nécessaire pour planifier, mettre en oeuvre et évaluer un programme de réduction des voyages dans chaque école. Les sessions de remue-méninges tenues dans les étapes de planification du programme ont couvert les questions cruciales du temps nécessaire et des horaires des étudiants, des possibilités en classe et des éléments incitatifs de la part des commerces locaux. En réponse, B.E.S.T a développé un calendrier des événements qui augmentait les journées d’activités spéciales et diminuait les examens et les congés. Les devoirs en classe étaient conçus de manière à intégrer les enqêtes, faire des affiches, planifier les événements, générer la publicité et rédiger des lettres. Le groupe avait contacté aussi les commerces locaux pour qu’ils donnent des prix afin de récompenser les étudiants qui avaient essayé des moyens de transport plus durables.</p>
+<p>Pendant cette étape, on a également décidé de la manière selon laquelle le programme serait lancé dans chacune des écoles. Pour certains, c’était par un club écologique existant, une classe d'études sociales ou une classe consacrée aux aptitudes de leadership. Dans beaucoup de cas, c'était par des étudiants chefs de file ou les membres d’exécutif des comités consultatifs des étudiants, dont certains étaient les initiateurs des clubs <strong>off ramp</strong>.</p>
+<p>Durant l’étape de planification, trois enquêtes ont été conçues pour déterminer les buts particuliers que chaque école essaierait d’atteindre au moyen du programme.</p>
+<p><strong>Conduire des enquêtes</strong></p>
+<p>Pour lancer le programme, il fallait un point de départ pour chaque école. La première enquête dans toute l'école a déterminé comment les étudiants venaient à l'école chaque jour. L'inclusion des enseignants dans cette enquête a été décidée par l’école même, ce qui s’est avérée être une question litigieuse.</p>
+<p>La seconde enquête était un questionnaire distribué à 10-15 % des étudiants, qui a révélé des moyens et des éléments possiblement incitatifs visant l’utilisation d’autres modes de transport. Les questions de cette enquête visaient à savoir pourquoi les étudiants venaient à l'école de telle ou telle façon, et ce qui les encouragerait à essayer les autres modes de transport.</p>
+<p>La troisième enquête était un questionnaire pour les parents/tuteurs qui déposaient et/ou venaient prendre les étudiants à l'école. Les questions figurant sur cette enquête étaient semblables à celles de la seconde enquête, mais elles étaient adressées aux parents et/ou tuteurs. Cette enquête a aussi aidé à faire connaître le programme à la communauté en général.</p>
+<p>Une fois les résultats enregistrés, chaque école déterminait quels aspects du transport durable elle voulait aborder. Par exemple, une école a fait la promotion de l'utilisation de la bicyclette après avoir constaté que le nombre d’utilisateurs était très bas (seulement environ 2 %) mais que ceux qui allaient à l'école à bicyclette appréciaient la liberté de cette activité. Les réponses de l'enquête ont aidé à déterminer les obstacles au changement et à définir des thèmes particuliers qui ont alors été utilisés pour promouvoir le transport durable.</p>
+<p><strong>Démarrage et mise au point</strong></p>
+<p>Les réunions de planification ont rassemblé des étudiants en provenance de différentes écoles impliquées dans le programme (des groupes d’appui homologues.) Les étudiants ont choisi le nom <strong>off ramp</strong> pour sa signification ( « Hors des chemins battus, solution de rechange ».)</p>
+<p>Les écoles ont essayé de faire coïncider leur date de lancement avec un événement existant, telle la Journée de la terre, la Semaine de la jeunesse, ou avec un événement environnemental particulier. Des t-shirts, des autocollants, des épinglettes (pour la plupart conçus par les étudiants), des courses de bicyclette, des ateliers, des groupes de discussions et des journées pour aller à bicyclette à l'école, ont rendu plus visible la participation, accru la prise de conscience et encouragé la participation. À l'École secondaire Gladstone, une affiche précisant « les effets des désastres écologiques » a été préparée par les étudiants pour montrer les effets de la sous-utilisation des modes de transport durable. Les étudiants avaient choisi ce titre parce qu'ils croyaient que le « changement climatique » ne rendait pas compte de la gravité de la situation.</p>
+<p>Chaque école a entrepris des activités permanentes (telles que la Journée de la bicyclette sous la pluie et le défilé de mode sur les vêtements de bicyclette, dans le cadre d'autres événements, pour expliquer clairement des façons de faire face à la pluie et aux autres obstacles à la participation)</p>
+<p>Un à un, les obstacles particuliers à la participation ont été surmontés. Par exemple, pour combler le manque de connaissances sur les horaires d’autobus, les itinéraires et horaires ont été affichés aux arrêts près des écoles. Dans d’autres cas, des pétitions et/ou des demandes de financement ont été faites pour obtenir des supports et des abris à bicyclettes. (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>).</p>
+<p><strong>Motivations</strong></p>
+<p>Des prix tels que des gourdes, des autocollants et des macarons ont été remis à ceux qui adoptaient de nouvelles formes de transport (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>). Un jour, à l'École secondaire Terry Fox, on a donné du chocolat chaud à tous les étudiants et enseignants qui avaient marché pour venir à l'école. À une autre école, des dispositifs de sécurité pour bicyclette ont été donnés comme prix, pour encourager l'utilisation de la bicyclette.</p>
+<p><strong>Manuel disponible</strong></p>
+<p>Un manuel de l'étudiant de 95 pages est disponible auprès de B.E.S.T à un coût nominal; il traite des rubriques suivantes :</p>
+<ul>
+<li>contexte - la relation entre le transport et l'environnement et pourquoi nous devrions nous en soucier;</li>
+<li>évaluation des problèmes et comment les résoudre - questions et réponses conçues pour aider à changer les comportements;</li>
+<li>événements (cette section pourrait être retirée à l'avenir et placée sur le site Internet de B.E.S.T.) - une liste des activités connexes tenues dans les régions de Vancouver et Victoria;</li>
+<li>outils - questions de leadership et de communications et les obstacles à l'intégration des autres moyens de transport durable dans le mode de vie de la population en général.</li>
+</ul>
+<p> </p>
+<p>Le manuel pourrait être disponible plus tard sur l'Internet</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>Les subventions fournies pour exécuter le projet pilote de deux ans (<strong>off ramp</strong>) sont inscrites dans le tableau ci-dessous.</p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td><strong><em>Organisation</em></strong></td>
+<td><strong><em>Montant du don <br/>
+            (en $ canadiens)</em></strong></td>
+</tr>
+<tr>
+<td>Fonds pour l'action sur le changement climatique (FACC)</td>
+<td>98 208 $ sur deux années</td>
+</tr>
+<tr>
+<td>VanCity (une coopérative de crédit basée à Vancouver)</td>
+<td>2 000 $ en 1999</td>
+</tr>
+<tr>
+<td>ICBC RoadSense Team, Lower Mainland North Brokers</td>
+<td>valeur inconnue</td>
+</tr>
+<tr>
+<td>BC Transit, Victoria Regional Transit System</td>
+<td>valeur inconnue</td>
+</tr>
+</tbody>
+</table>
+<p>Le coût approximatif annuel pour exécuter le projet <strong>off ramp</strong> tel que décrit ci-dessus, comprenait :</p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td><em>Budget annuel détaillé</em></td>
+<td><em>Coût (en $ canadiens)</em></td>
+</tr>
+<tr>
+<td>COORDONNATEUR</td>
+<td> </td>
+</tr>
+<tr>
+<td>salaire du coordonnateur <br/>
+            environ 30 heures par semaine</td>
+<td>variable</td>
+</tr>
+<tr>
+<td>Développement professionnel <br/>
+            cours de formation</td>
+<td>500</td>
+</tr>
+<tr>
+<td>Dépenses du coordonnateur <br/>
+            voyages aux réunions</td>
+<td>700</td>
+</tr>
+<tr>
+<td><strong><em>Total des dépenses du coordonnateur</em></strong></td>
+<td><strong><em>Salaire plus supplément de <br/>
+            1 200 $</em></strong></td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td><strong>FRAIS GÉNÉRAUX</strong></td>
+<td> </td>
+</tr>
+<tr>
+<td>Location de bureau</td>
+<td>4 000</td>
+</tr>
+<tr>
+<td>Fournitures de bureau, ligne téléphonique, accès Internet, papeterie</td>
+<td>700</td>
+</tr>
+<tr>
+<td>Frais de poste</td>
+<td>300</td>
+</tr>
+<tr>
+<td>Assurance</td>
+<td>500</td>
+</tr>
+<tr>
+<td>Événements spéciaux</td>
+<td>700</td>
+</tr>
+<tr>
+<td>Articles promotionnels <br/>
+            t-shirts, macarons, affiches</td>
+<td>2 000</td>
+</tr>
+<tr>
+<td><strong><em>Total des dépenses au titre des frais généraux</em></strong></td>
+<td><strong><em>8 200 $</em></strong></td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td><strong>BÉNÉVOLES</strong></td>
+<td> </td>
+</tr>
+<tr>
+<td>Dépenses des bénévoles, nourriture lors des réunions</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Articles promotionnels <br/>
+            t-shirts, macarons, affiches</td>
+<td>200</td>
+</tr>
+<tr>
+<td><strong><em>Total des dépenses des bénévoles</em></strong></td>
+<td><strong><em>400 $</em></strong></td>
+</tr>
+<tr>
+<td><strong>TOTAL DES COÛTS ANNUELS</strong></td>
+<td>Salaire du coordonnateur et <br/>
+            9 800 $</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td><em>Budget annuel du temps des bénévoles</em></td>
+<td><em>Coût (horaire)</em></td>
+</tr>
+<tr>
+<td>Temps des enseignants : <br/>
+            soit 1 professeur par école, 1 heure/2 semaines pendant l'année scolaire, en dehors de la classe</td>
+<td>18/année par enseignant</td>
+</tr>
+<tr>
+<td>Temps des étudiants (exigé pour chaque étudiant chef de file et par école) : <br/>
+            1 heure/semaine pendant l'année scolaire, en dehors de la classe</td>
+<td>35/année par étudiant chef de file</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td><em>Autres coûts</em></td>
+<td><em>Coût (en $ canadiens)</em></td>
+</tr>
+<tr>
+<td>Manuel de l'étudiant : <br/>
+            coût pour la production une fois (env. 100 copies)</td>
+<td>6 000 $</td>
+</tr>
+<tr>
+<td>Dons des commerçants locaux</td>
+<td>aucun coût</td>
+</tr>
+</tbody>
+</table><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Les enseignants ont périodiquement effectué dans les classes ou en périodes de consultations, des enquêtes à mains levées. Le groupe de <strong>off ramp</strong> à chaque école enregistrait les résultats et faisait un tableau montrant le nombre total d'étudiants utilisant chacun un mode de transport ce jour-là. Ils ont converti les résultats en pourcentages (du nombre total d'étudiants sondés ce jour-là). Ces pourcentages étaient alors comparés aux enquêtes antérieures.</p><!-- Results_B already contains P tags.-->
+<h2>Réaction</h2>
+<p>Le groupe <strong>off ramp</strong> a créé dans chaque école des affiches montrant les résultats de leurs enquêtes et une comparaison avec les résultats des enquêtes de référence. Ils ont aussi annoncé les résultats dans des bulletins d'information de l'école et les circulaires, ce qui a encouragé les participants à augmenter le pourcentage de ceux qui étaient impliqués dans le changement et réduire le nombre des véhicules allant à l'école et en revenant, avec un seul étudiant à bord.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>Pendant la première année du projet, les résultats suivants ont été enregistrés lors des enquêtes à main levée :</p>
+<ul>
+<li>Trois des quatre écoles qui avaient soumis les résultats d'enquêtes multiples (chaque mois, en avril, mai et juin) ont enregistré une réduction importante (de 9 à16 %) dans l'utilisation d'une voiture personnelle avec un seul étudiant à bord (comparée aux résultats d'enquêtes de référence).</li>
+<li>Pendant la même période, le pourcentage des étudiants qui marchaient, allaient à bicyclette, prenaient le transport en commun et faisaient du covoiturage (deux étudiants ou plus par véhicule) est resté le même que le résultat des enquêtes de base (dans l?ordre de 1 à 3 %.)</li>
+</ul>
+<p> </p>
+<p>D'autres succès incluent :</p>
+<ul>
+<li>un intérêt marqué de la part des enseignants;</li>
+<li>le placement de deux (2) étudiants internes dans le bureau du B.E.S.T. pendant la semaine de placement professionnel;</li>
+<li>l'attention de la presse :
+    <ul>
+<li>17 articles ont été publiés dans diverses publications, y compris un article de fond dans le Vancouver Sun (le principal quotidien de Vancouver)</li>
+<li>mention des événements du programme dans sept publications</li>
+<li>des articles dans l'Orion Afield (une publication du Massachusetts,) et dans le Green Teacher (une revue de Toronto) ainsi que dans TEACHER (le bulletin de la BC Teachers Federation).</li>
+</ul>
+</li>
+</ul>
+<p> </p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Arthur Orsini<br/>
+<b>off ramp</b> Program Manager<br/>
+Better Environmentally Sound Transportation (B.E.S.T)<br/>
+822 - 510 W. Hastings St.<br/>
+Vancouver, BC<br/>
+V6B 1L8<br/>
+Téléphone : (604) 669-2860<br/>
+Télécopieur : (604) 669-2869<br/>
+Internet : www.best.bc.ca<br/>
+Courriel : B.E.S.T. E : <a href="mailto:best@best.bc.ca">best@best.bc.ca</a></p>
+<p>Cette étude de cas a été écrite par Tania Millen. Tania est disponible pour d’autres travaux de rédaction; on peut la joindre à l’adresse suivante : <a href="mailto:Tania_Millen@morrowenv.com">Tania_Millen@morrowenv.com</a>, ou : <br/>
+P.O. Box 822<br/>
+Terrace, BC<br/>
+Canada <br/>
+V8G 4R2</p>
+<p>La traduction française de cette étude de cas a été faite par Monsieur Emmanuel Gabriel Moutondo, ancien fonctionnaire du Programme des Nations Unies pour l’Environnement, - (Bureau Afrique du PNUE à Nairobi Kenya). Monsieur Moutondo est disponible pour d’autres travaux de traduction, et peut être contacté à l’adresse suivante : <br/>
+<a href="mailto:egmoutondo@excite.com">egmoutondo@excite.com</a><br/>
+ou bien<br/>
+P.O. Box 5187 <br/>
+Nairobi KENYA.<br/>
+Tel. (254) 2 532208<br/>
+Fax. (254) 2 623928<br/>
+Email: <a href="maito:egmoutondo@yahoo.com">egmoutondo@yahoo.com</a></p>
+<p>Rénald Gagnon a édité la version française de cette étude de cas. Rénald possède de nombreuses années d’expérience de traduction et de révision dans des domaines très variés. Vous pouvez le joindre par courrier à : <a href="mailto:relimax@magma.ca">relimax@magma.ca</a>.</p>
+<p>Le financement pour l'ajout de cette étude de cas a été généreusement fourni par le Fonds d’action pour le changement climatique du Gouvernement du Canada, Suncor, Syncrude, Enbridge Consumers Gas et TetraPak Canada Inc.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><a name="notes">Les leçons tirées de la première année du projet pilote <b>off ramp</b> incluaient: </a></p>
+<ul>
+<li>Forcer la note! - Les jeunes s’attendent à recevoir des prix et des articles promotionnels durant les événements. Les dons des hommes d'affaires locaux peuvent constituer la majeure partie de ces cadeaux.</li>
+<li>Accroître la prise de conscience des relations entre le transport durable et des préoccupations environnementales est une tâche ardue. Les activités menées en classe par les enseignants sont prépondérantes pour garantir la réussite dans l’accroissement de la prise de conscience de ces problèmes. Les étudiants chefs de file n’avaient simplement pas de temps pour cela, bien qu'ils étaient très soucieux de tenir les événements.</li>
+<li>Le contact avec le conseil des étudiants est important - l'administration de l’école avait encouragé les activités communautaires telles que le projet <b>off ramp</b>, issu des conseils des étudiants. Dans certains cas, des avantages financiers étaient offerts aux étudiants chefs de file, afin de faire la promotion du projet.</li>
+<li>Le placement professionnel est un avantage : cela a créé une motivation supplémentaire pour les étudiants intéressés à analyser les éléments qui leur étaient d'un intérêt particulier.</li>
+<li>Il peut survenir des grèves dans les districts scolaires - soyez prêts.</li>
+</ul>
+<p> </p>
+<p>Les objectifs de départ du projet <b>off ramp</b> incluaient :</p>
+<ul>
+<li>une réduction de 20 % des voyages en voiture par les étudiants, près deux années;</li>
+<li>le développement d’un programme pour les étudiants des écoles secondaires qui aborderait les préoccupations particulières du transport dans la communauté étudiante;</li>
+<li>l’information des étudiants sur les problèmes de transport et sur le lien entre le transport, la qualité de l’air et le changement du climat augmentant ainsi la prise de conscience des liens entre les habitudes personnelles de la conduite automobile et les impacts environnementaux;</li>
+<li>le lancement d’un programme de réduction des voyages (<b>off ramp</b>) dans 12 écoles secondaires pour la période de deux ans du projet pilote.</li>
+</ul>
+<p> </p>
+<p>En plus des objectifs de départ du projet soulignés ci-dessus, les objectifs révisés pendant la seconde année de <b>off ramp</b> (2000-2001) incluaient :</p>
+<ul>
+<li>la tenue d’activités amusantes offrant des possibilités et des motivations aux étudiants pour essayer les autres modes de transport;</li>
+<li>la conception des améliorations de l'infrastructure dans les communautés scolaires pour aider aux changements dans le comportement en vue du transport durable.</li>
+</ul>
+<p> </p>
+<p>Pour atteindre les buts fixés dans le cadre du projet, des objectifs ont été établis chaque année. Les objectifs pendant la première année du projet (1999-2000) incluaient :</p>
+<ul>
+<li>le développement d’un manuel de formation du coordonnateur des étudiants;</li>
+<li>la fourniture des manuels et une formation aux coordonnateurs des étudiants dans les sept écoles participantes;</li>
+<li>une aide au développement d'un programme de réduction des voyages dans chaque école.</li>
+</ul>
+<p> </p>
+<p>Considérant que les objectifs de la première année du projet ont été atteints, les résultats escomptés de la première année de <b>off ramp</b> devraient inclure :</p>
+<ul>
+<li>la création d’un comité consultatif pour fournir des conseils et une orientation stratégique au projet;</li>
+<li>la production et la diffusion d’un manuel de l'étudiant sur le projet <b>off ramp</b>;</li>
+<li>la tenue de trois ateliers de formation des coordonnateurs du projet <b>off ramp</b>;</li>
+<li>la formation des coordonnateurs des étudiants dans sept écoles;</li>
+<li>un plan de réduction des voyages lancé dans chaque école participante.</li>
+</ul>
+<p> </p>
+<p>Suite aux leçons tirées de la première année du projet, les objectifs révisés pendant la seconde année incluaient :</p>
+<ul>
+<li>le développement des programmes d'activités spécifiques à chaque thème, de telle sorte que les enseignants pouvaient inclure les buts du programme <b>off ramp</b> dans leurs activités en classe;</li>
+<li>la révision du manuel de l'étudiant;</li>
+<li>l’amélioration du développement des programmes de réduction des voyages dans les écoles participantes.</li>
+</ul>
+<p> </p>
+<p>Les résultats escomptés de la seconde année du programme (à être évalué en juillet 2001) incluaient :</p>
+<ul>
+<li>la facilitation des ateliers d’un jour sur le développement professionnel des enseignants dans les écoles pilote du projet <b>off ramp</b>;</li>
+<li>la formation des coordonnateurs des étudiants dans dix écoles;</li>
+<li>un engagement permanent de chaque école qui a participé, pour assurer la réduction des voyages en voiture.</li>
+</ul>
+<p> </p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

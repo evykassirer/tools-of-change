@@ -1,0 +1,284 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/communications-personnalisées-percutantes/">Communications personnalisées percutantes</a></li>
+<li><a href="../../../../fr/outils-de-changement/visites-à-domicile/">Visites à domicile</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Toronto Environmental Alliance</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Environmental Youth Corps</li>
+<li>Canada Trust</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p>Dès les trois premiers mois, on a noté une baisse moyenne de 18 pour cent entre le taux d'usage antérieur des produits de consommation toxiques et les intentions d'usage futur. Les trois quarts des gens qui avaient essayé les produits écologiques n'avaient pas l'intention de réutiliser des produits toxiques. Après deux ans, sans aucun autre effort promotionnel, il n'était pas possible de déterminer l'impact du programme.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>The Toxic Challenge</h1>
+<p>En vue d'encourager les gens à utiliser moins de produits de consommation contenant des substances toxiques, une campagne de porte à porte était organisée dans deux quartiers du Toronto métropolitain. Ce sont des étudiants d'été qui assuraient la bonne marche de cette campagne qui invitait les résidants à faire l'essai de produits non toxiques ou moins toxiques.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>La Toronto Environmental Alliance (TEA) s'intéressait aux effets de l'utilisation de produits de consommation contenant des matières toxiques sur la santé et sur l'environnement, de même qu'aux déchets domestiques dangereux qu'ils généraient.</p>
+<p>TEA doutait de l'efficacité des solutions de bout de ligne comme les centres de collecte municipaux, parce que moins de 5 pour cent des gens en faisaient usage et que ces centres s'avéraient coûteux à administrer. L'organisation voulait plutôt favoriser l'adoption de mesures préventives qui engageraient la participation de la collectivité entière. C'est pourquoi TEA lançait une campagne de porte à porte en 1993.</p>
+<p>En raison du succès de cette première campagne, une seconde était amorcée en 1994. En guise de suivi, on y intégrait des sondages téléphoniques qui devaient permettre de mesurer l'impact des changements de comportement à court, moyen et long terme.</p><!-- Background already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>Pendant sept semaines, à l'été 1994, des étudiants formés en tant que solliciteurs se sont rendus sans préavis dans 5 809 foyers dans le cadre de la campagne. Leur but était de sensibiliser les résidants aux dangers des produits toxiques pour la santé et pour l'environnement.</p>
+<p>Ils demandaient ensuite aux résidants de remplir un petit « bulletin », en indiquant tous les produits toxiques qu'ils avaient achetés au cours des six derniers mois (<a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications personnalisées percutantes</a>). Une « note » leur était ensuite attribuée en fonction des réponses. S'ils avaient acheté peu ou pas de produits toxiques, ils méritaient un « A » et des félicitations pour leur engagement environnemental. Par contre, s'ils avaient acheté 4 produits toxiques ou plus, ils méritaient un « D » et un avertissement touchant leur prédilection pour des produits dangereux.</p>
+<p>Lorsque les résidants avaient fini de remplir le bulletin, les étudiants les invitaient à participer au <em>Toxic Challenge, </em>en acceptant de réduire ou d'éliminer leur usage de produits toxiques (<a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a>). Parmi les gens abordés de la sorte, 1 154 foyers (22 pour cent) ont choisi de relever ce défi.</p>
+<p>Les étudiants remettaient à ces résidants une trousse d'information portant sur les effets possibles de l'utilisation et de l'élimination des produits toxiques sur la santé humaine et sur l'environnement. La trousse contenait aussi des renseignements sur des produits de rechange moins dangereux. La campagne visait plusieurs produits toxiques : les pesticides chimiques manufacturés, les herbicides, les fertilisants, les nettoyants au chlore, l'eau de Javel, les nettoyeurs à tuyaux et les piles jetables. Afin d'aider les gens à respecter leur engagement, TEA mettait sur pied une ligne d'entraide téléphonique.</p>
+<p><strong>Recherche initiale et formation </strong></p>
+<p>En vue d'assurer la formation des solliciteurs, TEA offrait cinq ateliers portant sur la santé et sur l'environnement, l'étiquetage des produits, les règlements sur les pesticides, les modes d'élimination des produits toxiques, l'entretien organique des pelouses et les pratiques d'aménagement durables. Ils participaient également à un atelier qui les renseignait sur les méthodes de sollicitation efficaces et sécuritaires.</p>
+<p>TEA établissait aussi une équipe d'intervenants, soit des activistes préoccupés par les questions de pesticides et de déchets, des groupes environnementaux et des porte-parole gouvernementaux. Toutes ces personnes collaboraient pour établir une liste de produits de rechange efficaces à inclure dans la trousse.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>L'Enviromental Youth Corps (EYC) a payé le salaire d'un coordonnateur de projet pendant 16 semaines et de 12 solliciteurs pendant 12 semaines. Les salaires des 12 solliciteurs s'élevaient à 35 000 $ environ.</p>
+<p>Le chapitre d'Etobicoke du Fonds des amis de l'environnement de Canada Trust a assumé les coûts de production de la trousse, y compris l'élaboration et l'impression. Ces coûts s'élevaient à 2 000 $. Certains documents additionnels compris dans la trousse ont été donnés au groupe. Par ailleurs, les animateurs des ateliers offerts aux solliciteurs étaient membres de diverses organisations et ils acceptaient de travailler gratuitement.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Trois mois après la rencontre, TEA effectuait un sondage téléphonique auprès du tiers des foyers participants pour mesurer les changements de comportement à court terme. Les répondants devaient alors indiquer s'ils avaient acheté des produits toxiques depuis la rencontre et s'ils avaient essayé des produits de rechange.</p>
+<p>Afin de mesurer les changements à long terme, TEA effectuait un autre sondage téléphonique deux ans après la visite des solliciteurs. Ce sondage visait les groupes suivants :</p>
+<ul>
+<li>les foyers oû les gens avaient accepté de modifier leurs habitudes (36 répondants)</li>
+<li>les foyers abordés dans le cadre de la campagne, mais oû les gens n'avaient pas accepté de faire des changements (50 répondants)</li>
+<li>un groupe témoin de foyers où les solliciteurs n'étaient pas allés lors de la campagne mais qui étaient situés à côté des foyers visités (50 répondants)</li>
+</ul>
+<p>Le même questionnaire servait pour les trois groupes. Les répondants devaient indiquer combien de fois ils avaient acheté les produits toxiques visés par la campagne au cours des deux dernières années. Ils devaient aussi indiquer combien de fois ils avaient essayé des produits de rechange ou s'étaient rendus à un centre de dépôt de produits toxiques. Les répondants qualifiaient leurs réponses selon un barème qui variait entre « jamais » et « très souvent ».</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p><b>Sondage de suivi après trois mois </b></p>
+<p>Parmi les foyers qui avaient accepté de faire des changements, les résultats de la campagne <i>The Toxic Challenge </i>indiquent ce qui suit :</p>
+<ul>
+<li>une réduction moyenne de 18 pour cent entre les intentions passées et futures de recourir aux produits toxiques</li>
+<li>la décision de 73 pour cent des gens qui ont essayé les produits de rechange de ne pas réutiliser de produits toxiques</li>
+</ul>
+<p>Les gens n'ont pas tous essayé les produits de rechange au même rythme car les occasions ne se présentaient pas toujours de la même façon. La plupart des participants (72 pour cent) ont dit avoir essayé des nettoyants sans chlore, 52 pour cent ont essayé des types d'herbicides non chimiques, 20 pour cent ont essayé d'autres sortes d'insecticides et 98 pour cent ont essayé des produits de rechange au lieu de l'eau de Javel. Environ 27 pour cent ont apporté leurs produits toxiques dans un centre de dépôt comparativement à moins de 5 pour cent chez le grand public. Quelques personnes (3,3 pour cent) ont annulé leur service d'entretien de la pelouse ou ont commencé à faire affaire avec une compagnie offrant des traitements organiques.</p>
+<p><b>Sondage de suivi après deux ans </b></p>
+<p>Deux ans plus tard, en l'absence de toute forme de promotion, les gains réalisés par le programme semblaient avoir grandement diminué. En ce qui touche l'achat de produits toxiques, les groupes qui avaient fait l'objet d'une visite à domicile agissaient de façon très semblable au groupe témoin. En outre, quatre foyers sur dix ayant accepté de faire des changements ne se rappelaient même pas d'avoir pris cet engagement. Les foyers qui se rappelaient de leur engagement achetaient beaucoup plus de produits de rechange comme des nettoyants sans chlore et des pesticides non chimiques. Néanmoins, on ne notait aucune baisse dans le taux d'achat de produits toxiques que ces produits de rechange devaient remplacer. C'est pourquoi les résultats fournis s'avèrent très imprécis.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Janet May <br/>
+Directrice générale <br/>
+Toronto Environmental Alliance <br/>
+122, rue St-Patrick <br/>
+Pièce 209 <br/>
+Toronto (Ontario) <br/>
+M5T 2X8 <br/>
+(416) 596-0660 <br/>
+télécopieur : (416) 585-2700 <br/>
+courrier électronique : <a href="mailto:tea@web.net">tea@web.net</a> </p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><br/>
+ </p>
+<p>Parmi les foyers abordés sans préavis et qui ont rempli ce « bulletin », un sur cinq a choisi de relever le défi du Toxic Challenge. Par comparaison, We're Toxic Free a réussi à engager la participation d'un foyer sur deux en utilisant un formulaire moins agressif.</p>
+<table border="1" cellpadding="5" cellspacing="5" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="25%"><b>Étape 1 </b>
+<p><b>Félicitations! </b>Vous venez de faire un pas dans la bonne direction.</p>
+<p>Conservez cette carte pour mesurer votre succès.</p>
+</td>
+<td valign="top" width="75%"><b>Admettre qu'il y a un problème </b>
+<p><b>Quelqu'un a-t-il acheté ou utilisé un des produits domestiques dangereux suivants au cours des six derniers mois au sein de votre foyer? </b></p>
+<p>        Oui     Non</p>
+<p>1     (10)     (0)     Des herbicides chimiques ou des produits chimiques visant à détruire les plantes indésirables comme « Killex » ou « Roundup »?</p>
+<p>2     (10)     (0)     Des insecticides chimiques ou des produits chimiques visant à détruire des insectes indésirables comme « Diazinon ».</p>
+<p>3     (10)     (0)     Des fertilisants chimiques synthétiques.</p>
+<p>4     (10)     (0) Des produits nettoyants à base de chlore comme « Ajax » ou « Comet ».</p>
+<p>5     (10)     (0) De l'eau de Javel pour laver les vêtements.</p>
+<p>6     (10)     (0) Des nettoyeurs de tuyaux comme « Dranoª ».</p>
+<p>7     (10)     (0) Des piles jetables.</p>
+<p><b>Vos résultats </b></p>
+<p>  0-10     « A »    Félicitations! Votre foyer respecte bien l'environnement.</p>
+<p>20-30     « B »    Vous êtes sur la bonne voie mais il y a place à l'amélioration.</p>
+<p>40-50     « C »    Vous utilisez autant de produits chimiques que la famille canadienne moyenne.</p>
+<p>60          « F »      Vous êtes entièrement dépendant des produits toxiques!</p>
+<p>TEA vous invite à relever le défi du « Toxic Challenge ». Signez le formulaire d'en gagement à l'endos et dites adieu aux produits toxiques <b>pour le bien de votre santé, de votre famille, de votre collectivité et de la TERRE entière! </b></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Autres mots-clés: prévention de la pollution</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

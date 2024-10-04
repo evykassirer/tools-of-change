@@ -1,0 +1,285 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a></li>
+<li><a href="../../../../fr/outils-de-changement/communications-personnalisées-percutantes/">Communications personnalisées percutantes</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Chercheurs du John Hopkins Bayview Medical Center</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Marley Station Mall</li>
+<li>American Heart Association, Chesapeake</li>
+<li>Hartford Foundation</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p>Dans l’ensemble, l’utilisation de l’escalier ordinaire a augmenté considérablement, de 4,8 % à environ 7 %.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Marley Station Mall</h1>
+<p>Ce projet pilote a utilisé des affiches simples pour promouvoir la santé et le contrôle du poids en encourageant l'utilisation de l'escalier ordinaire plutôt que de l'escalier mécanique.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>Selon l'American Heart Association, un mode de vie sédentaire – et l'excès de poids qui y est souvent associé – représente un risque pour la santé important et évitable. Toutefois, malgré l'attention soutenue des médias et les efforts constants de la santé publique pour encourager plus d'activité physique dans la population américaine, la plupart des Américains continuent d'être inactifs physiquement – 25 % sont complètement sédentaires et seulement 22 % sont assez actifs pour tirer de leur activité physique des avantages pour la santé. Ces statistiques s'expliquent en partie par le fait que le tiers des Américains ont un poids excessif.</p>
+<p>On sait que pour réduire les taux de mortalité des maladies associées, y compris les maladies cardio-vasculaires, un minimum de 30 minutes d'activité physique modérée à intense est nécessaire chaque jour. Parce que les avantages des petites quantités d'activité physique sont cumulatifs, l'introduction de telles activités dans son mode de vie pourrait offrir des résultats semblables à ceux obtenus par des périodes plus longues d'activité physique ininterrompue.</p>
+<p>Prendre l'escalier ordinaire plutôt que l'escalier mécanique est considéré comme un moyen facile d'introduire une activité physique modérée à intense dans ses activités quotidiennes. En plus des avantages directs de cet exercice, cela pourrait conduire à des programmes d'exercice plus traditionnels chez les adultes inactifs physiquement.</p>
+<p>Pour vérifier l'efficacité des affiches encourageant l'utilisation de l'escalier ordinaire, on a entrepris un programme pilote en 1997 pendant une période de trois mois au Marley Station Mall. Ce centre commercial, situé à Glenburnie, une banlieue située entre Baltimore (Maryland) et Washington (D.C.), reçoit 8 millions de personnes par année. Les adultes du Maryland sont moins actifs que la plupart des Américains, et les adultes de Washington sont les Américains les moins actifs.</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p>Accroître l’utilisation de l'escalier ordinaire plutôt que de l'escalier mécanique afin de promouvoir la santé et le contrôle du poids.</p><!-- Objectives already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>Deux études antérieures ont permis d’examiner les effets d’une affiche au bas d’un escalier mécanique adjacent à un d’escalier ordinaire pour encourager l’utilisation de ce dernier. Elles ont révélé qu’une simple affiche peu coûteuse peut, du point de vue statistique, accroître considérablement l’utilisation de l'escalier ordinaire par les adultes. Toutefois, les effets ne durent qu’un mois après qu’on enlève les affiches, et ils reviennent aux niveaux de base trois mois après que les affiches sont enlevées.</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>Le programme a été établi dans le centre commercial où un escalier mécanique est adjacent à un escalier ordinaire, conduisant tous les deux du rez-de-chaussée au deuxième étage. L'escalier ordinaire compte 10 marches, un palier de 6 pieds et encore 10 marches.</p>
+<p>Le projet pilote comprenait une phase préliminaire et deux phases d'intervention subséquentes à l'aide des affiches. Chaque phase a duré un mois. Au cours de la phase préliminaire, au n'a placé aucune affiche. Au cours de la deuxième phase, on a placé une affiche sur un chevalet près de l'escalier mécanique. L'affiche communiquait les avantages de l'exercice pour la santé. Elle présentait une caricature d'un coeur en haut d'un escalier ordinaire, accompagné du message « Votre coeur a besoin d'exercice, prenez l'escalier ». Pour la troisième et dernière phase, l'affiche a été remplacée par une autre portant sur le contrôle du poids, sans période d'arrêt entre les deux. Elle présentait une caricature d'une femme à la taille mince en haut d'un escalier ordinaire, portant un pantalon qui était devenu trop grand. Le message se lisait « Améliorez votre taille, prenez l'escalier ». (<a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications personnalisées percutantes</a>).</p>
+<p>Ce programme illustre un certain nombre d'étapes clés pour l'utilisation efficace d'invitations. Les messages portaient sur les facteurs de motivation les plus courants pour l'exercice (avantages pour la santé et contrôle du poids) – sur lesquels beaucoup de personnes sont vraisemblablement prédisposées à agir. De plus, les messages décrivaient dans des termes positifs clairs l'action spécifique proposée (prendre l'escalier ordinaire). Enfin, les affiches ont été placées dans un endroit facile à remarquer, au moment et là où l'activité se déroule.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>N/A</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Pendant chaque phase du projet, la fréquence d'utilisation de l'escalier ordinaire a été comparée à celle de l'escalier mécanique. Les observations ont été faites de 10 h 30 à 21 h tous les jours de la semaine par une personne assise dans l'endroit le moins en évidence au pied de l'escalier qui permettait une bonne observation. Les participants ne savaient pas qu'ils étaient observés. En tout, les choix de 17 901 personnes ont été consignés.</p>
+<p>Le sexe et l'origine ethnique (américain africain, caucasien, autre) était noté. De plus, chaque personne était classée comme ayant plus de 40 ans ou moins et comme ayant un poids maigre à normal ou excessif. Les moins de 18 ans ont été exclus ou les personnes qui portaient un enfant ou des articles plus gros qu'un porte-documents. Dans les préparatifs du projet, une journée a été consacrée à la pratique de la façon de classifier les gens correctement.</p>
+<p>L'impact à long terme des affiches n'a pas pu être déterminé parce que, vraisemblablement, les mêmes personnes ne sont pas retournées au centre commercial chaque jour. De plus, les employés du centre ou les visiteurs fréquents peuvent avoir été codés plus d'une fois. Les résultats peuvent donc refléter une augmentation importante de l'activité physique parmi seulement un petit pourcentage de personnes qui ont changé leur comportement. Enfin, comme il n'y a pas eu de « temps mort » entre l'utilisation des affiches sur les avantages pour la santé et celles sur le contrôle du poids, il peut y avoir eu un certain effet de report entre la deuxième et la troisième phase.</p><!-- Results_B already contains P tags.-->
+<h2>Réaction</h2>
+<p>N/A</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>Dans l'ensemble, l'utilisation de l'escalier ordinaire a augmenté considérablement, de 4,8 % à 6,9 % et à 7,2 % avec les affiches sur les avantages pour la santé et sur le contrôle du poids, respectivement.</p>
+<p>Les résultats de l'utilisation de l'escalier ordinaire ont été répartis comme suit :</p>
+<table border="1">
+<tbody>
+<tr>
+<td><strong>Participants</strong></td>
+<td><strong>Usage de base</strong></td>
+<td><strong>Affiche santé</strong></td>
+<td><strong>Affiche poids</strong></td>
+</tr>
+<tr>
+<td>Moins de 40 ans</td>
+<td>4,6 %</td>
+<td>6,0 %</td>
+<td>6,1 %</td>
+</tr>
+<tr>
+<td>Plus de 40 ans</td>
+<td>5,1 %</td>
+<td>8,1 %</td>
+<td>8,7 %</td>
+</tr>
+<tr>
+<td>Caucasiens</td>
+<td>5,1 %</td>
+<td>7,5 %</td>
+<td>7,8 %</td>
+</tr>
+<tr>
+<td>Américains africains</td>
+<td>4,1 %</td>
+<td>3,4 %</td>
+<td>5,0 %</td>
+</tr>
+<tr>
+<td>Maigre à normal</td>
+<td>5,4 %</td>
+<td>7,2 %</td>
+<td>6,9 %</td>
+</tr>
+<tr>
+<td>Surpoids</td>
+<td>3,8 %</td>
+<td>6,3 %</td>
+<td>7,8 %</td>
+</tr>
+</tbody>
+</table>
+<p>Comme ces résultats l'indiquent, les différences statistiques sur l'utilisation de l'escalier ordinaire ont été constatées d'après l'âge et la race. Toutefois, aucune différence statistiquement significative n'a été constatée entre les hommes et les femmes, ou entre l'utilisation de l'affiche sur la santé et l'utilisation de l'affiche sur le contrôle du poids.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Ross E. Andersen, Ph.D. <br/>
+John Hopkins Bayview Medical Center <br/>
+5501 Hopkins Bayview Circle, Suite 5B81 <br/>
+Baltimore, Maryland <br/>
+21224</p>
+<p>Téléphone: (410) 550-3540 <br/>
+andersen@jimi.edu</p><!-- Contacts already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

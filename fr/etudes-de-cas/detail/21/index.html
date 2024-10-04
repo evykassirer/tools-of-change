@@ -1,0 +1,356 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Quinte Regional Recycling</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Centre and South Hastings Recycling Board</li>
+<li>Ministère de l'Environnement et de l'Énergie de l'Ontario</li>
+<li>Bailleurs de fonds de l'industrie</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p>Les réussites du programme englobent ce qui suit :</p>
+<ul>
+<li>un retour sur l'investissement de 50 pour cent dans le cas du programme de compostage</li>
+<li>le tonnage des déchets détournés des sites d'enfouissement a presque doublé entre 1989 et 1994, alors que les coûts du programme de recyclage ont chuté de plus de la moitié entre 1991 et 1995</li>
+<li>en 1996, les taux de détourne ment des déchets s'établissaient à 66 pour cent dans toutes les municipalités</li>
+</ul>
+<p> </p>
+<table border="1" cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" complete="complete" height="26" src="/images/lightbulb.gif" width="27"/> <small><font face="Verdana">Conseil: Cliquez sur cette image pour l'agrandir. Cliquez votre bouton "Back" pour retourner à ce page.</font></small><hr color="#FFCC00"/>
+<p><a href="/images/documentimages/Quinte/Quinte-1.jpg" target=""><img alt="Quinte image" border="0" complete="complete" height="176" src="/images/documentimages/Quinte/Quinte-1.jpg" width="113"/></a><br/>
+<small><font face="Verdana">A householder displays her free backyard composter.</font></small></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Quinte Regional Recycling</h1>
+<p>En vue d'encourager les gens à réduire la quantité de déchets mis au bord du chemin pour acheminement aux sites d'enfouissement, une gamme de mesures de détournement ont été introduites dans la région de Centre and South Hastings, en Ontario, y compris le compostage des déchets de cour, un recyclage élargi au niveau des boîtes bleues, la réduction et l'élimination sécuritaire des déchets domestiques dangereux et un système d'utilisateur-payeur.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>Le programme <em>Quinte Regional Recycling </em>a été lancé par le Centre and South Hastings Recycling Board, une association de 15 municipalités du sud est de l'Ontario regroupant une population totale de 95 000 habitants. En 1991, grâce au soutien du ministère de l'Environnement et de l'Énergie de l'Ontario, l'association a inauguré son programme Blue Box 2000. Ce projet de démonstration d'un an tentait d'illustrer en quoi un programme municipal de détournement des déchets pouvait être étendu pour atteindre son plein potentiel. Pour ce faire, on a eu recours à diverses mesures, soit un programme intensif de compostage des détritus de cour, un système d'utilisateur-payeur et un programme élargi de recyclage au moyen des boîtes bleues.</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p>Tenant compte des données disponibles sur le mode d'acheminement des déchets dans la région, <em>Quinte </em>et ses partenaires ont établi les objectifs suivants :</p>
+<ul>
+<li>taux de détournement de 71 pour cent au niveau des déchets résidentiels d'ici l'an 2000;</li>
+<li>bon rapport efficacité-coût;</li>
+<li>activités de compostage chez 80 pour cent des propriétaires de maisons unifamiliales.</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>Le programme Blue Box 2000 visait trois grands résultats, soit un meilleur compostage des déchets de cour, l'élargissement du programme de recyclage des boîtes bleues et l'introduction d'un système d'utilisateur-payeur. Le programme a été lancé et suivi séparément dans chacune des six municipalités participantes. Un club de service local était chargé d'assurer sa bonne marche dans chaque cas. Des ateliers étaient offerts dans les écoles en vue de faciliter la mise en oeuvre des trois volets du programme. En outre, des visites étaient organisées dans les usines de recyclage de la région. Selon les estimations de <em>Quinte, </em>ces initiatives ont mis environ 15 000 élèves en contact direct avec des représentants du programme.</p>
+<p><strong>Compostage des déchets de cour </strong></p>
+<p>Le programme de compostage des déchets de cour, qui portait sur la récupération des déchets organiques résidentiels, s'intitulait YIMBY (Yes, In My Back Yard). Lancé en 1992, il favorisait une approche en trois étapes. Les responsables ont d'abord mené une importante campagne de promotion pour informer les résidants du programme et le rendre plus acceptable à leurs yeux. La deuxième étape consistait à distribuer des composteurs gratuits de porte à porte (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>) pour éviter aux résidants un achat coûteux et leur épargner des tracas (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>).</p>
+<p>Finalement, on plaçait sur les boîtes bleues des propriétaires des collants indiquant « We compost too », ce qui permettait d'identifier clairement qui s'adonnait au compostage au sein de la collectivité (<a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a>).</p>
+<p>Il fallait également contrer un autre obstacle, soit le « facteur yeuck! », en expliquant aux gens que le compostage était une activité propre et facile. De fait, plusieurs semblaient croire que le composteur serait sale, qu'il sentirait mauvais et qu'il attirerait des insectes et animaux nuisibles. Pour alléger leurs craintes, les responsables distribuaient des brochures, établissaient une ligne d'information téléphonique et un site de démonstration du com postage, et organisaient la tenue d'ateliers.</p>
+<p>En outre, ils plaçaient, chez un épicier participant, de petits « repères » près des fruits et légumes pour rappeler aux clients qu'il fallait composter (<a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a>). Des repères apparaissaient aussi sur divers rayons pour identifier les produits et les emballages qui étaient recyclables ou faits de produits recyclés.</p>
+<p><strong>Boîtes bleues </strong></p>
+<p>Le programme des boîtes bleues a été lancé en 1990 et élargi en 1991 dans le cadre du programme Blue Box 2000. Les boîtes bleues s'étaient déjà avérées pratiques et efficaces pour inciter les gens à recycler. En vue de mousser davantage la participation, d'autres boîtes bleues ont été distribuées. Une campagne de promotion a été menée pour expliquer aux gens quels produits pouvaient être recyclés et comment les préparer pour la collecte. La campagne comprenait la distribution de porte à porte d'affiches « Beside and Inside », soit de petites pancartes rigides à deux couleurs de 8,5" X 14" imprimées des deux côtés, qui énuméraient tous les produits à placer dans la boîte bleue et tous les produits à mettre à côté. Selon les sondages, ces pancartes se sont avérées les outils de promotion les plus efficaces de tout, car les gens les trouvaient assez petites, attrayantes et solides pour être mises sur le réfrigérateur (<a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a>).</p>
+<p>De temps à autre, les responsables plaçaient aussi de petits rappels dans les boîtes bleues. Il s'agissait généralement de petites cartes à deux couleurs de 4,25" X 5,5" en carton rigide qui abordaient divers sujets dont des problèmes de recyclage spécifiques, des directives sur la façon de recycler de nouveaux matériaux et de petits rappels de Noël. Ainsi, les résidants étaient constamment motivés à utiliser leur boîte bleue. En outre, lorsque des produits non recyclables étaient mis dehors avec les autres, les éboueurs en refusaient la collecte et plaçaient parfois une petite note explicative dans la boîte. Finalement, chaque boîte arborait le message « We recycle ». À certains endroits, on collait également sur les boîtes des affiches énumérant les produits recyclables à y mettre (<a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a>).</p>
+<p>Les boîtes bleues se sont avérées des motivateurs efficaces et permanents pour inciter les gens à recycler, puisqu'on les apercevait facilement au bord de la route chaque jour de collecte. La haute visibilité de la participation contribuait aussi à rendre la norme plus attrayante.</p>
+<p><strong>Produits domestiques dangereux </strong></p>
+<p>En 1994, <em>Quinte </em>a lancé son programme « Clean and Green ». Ce dernier encourageait les citoyens à opter pour des produits domestiques moins dommageables pour l'environnement. Pour ce faire, on avait recours à des expositions mobiles et à de nombreuses « rencontres amicales » organisées par des membres de la collectivité et auxquelles assistait un membre du personnel de <em>Quinte. </em>Ces événements permettaient au personnel de discuter face à face avec les résidants pour leur présenter les nombreux produits et recettes écologiques disponibles sur le marché (<a href="../../../../fr/outils-de-changement/visites-a-domicile/">Visites à domicile</a>). Tous les conseils, trucs et suggestions pour remplacer les produits domestiques dangereux par des choix plus écologiques étaient contenus dans un petit livret intitulé « Clean and Green » qui était distribué gratuitement aux personnes intéressées.</p>
+<p>Le programme de collecte visait surtout la récupération des produits. La peinture encore bonne, qui constituait une grosse part des produits dangereux recueillis, était offerte gratuitement à d'autres résidants, un jour par semaine. C'est ainsi que la plupart des contenants de peinture récupérés pouvaient servir à nouveau.</p>
+<p>Un autre obstacle à la participation touchait l'aspect pratique. En vue de desservir un large secteur géographique, un « taxi toxique » (Toxic Taxi) faisait la tournée des nombreux quartiers tout au long de l'année. Ceci donnait aux résidants un meilleur accès au site d'enfouissement pour les produits dangereux (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>).</p>
+<p><strong>Utilisateur-payeur </strong></p>
+<p>En 1994, Sidney Township, la deuxième plus grande municipalité de Centre and South Hastings, a lancé un programme d'utilisateur-payeur au volume au niveau des déchets, en vue d'inciter la population à réduire la quantité de déchets produits (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>). La première année, les responsables ont distribué à chaque foyer 52 étiquettes « gratuites » (on ne ramassait que les sacs étiquetés). Il était possible de se procurer des étiquettes additionnelles au coût de 1,50 $ l'unité. Les sacs à poubelles ne devaient pas peser plus de 40 livres chacun et ne pas mesurer plus de 30" X 38". On établissait une limite supérieure de 10 sacs par foyer et on imposait des amendes aux personnes et sociétés qui ne se conformaient pas aux règlements. Le montant de ces amendes variait de 10 000 $ à 25 000 $ pour les personnes et de 50 000 $ à 100 000 $ pour les entreprises (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>). En 1996, aucune amende n'avait encore été imposée.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p><strong>Compostage</strong></p>
+<ul>
+<li>Les composteurs gratuits ont coûté 500 000 $ (23 $ l'unité). Le ministre de l'Environnement et de l'énergie de l'Ontario a assuré les deux tiers du financement et les municipalités locales ont assumé le restant des coûts.</li>
+<li>Les coûts de publicité et de promotion afférents au lancement du programme s'élevaient 40 000 $.</li>
+<li>Les coûts de distribution des composteurs s'élevaient 100 000 $.</li>
+<li>Les frais de gestion du programme de compostage se situaient entre 25 000 $ et 30 000 $; en 1996, ces coûts avaient diminué pour se situer entre 15 000 $ et 20 000 $.</li>
+<li>Les coûts de publicité, de promotion et d'éducation représentaient 25 000 $ par année. En 1996, la région de Quinte espérait que ces coûts puissent être couverts grâce aux commandites publicitaires et aux entreprises participantes.</li>
+</ul>
+<p><strong>Boîtes bleues</strong></p>
+<ul>
+<li>Selon les estimations, le coût total en capital pour les boîtes bleues gratuites s'élevait à 170 000 $ (4,20 $ l'unité)</li>
+<li>Les coûts de publicité et de promotion afférents au lancement du programme s'élevaient 40 000 $, dont 15 000 $ pour la production des affiches Inside and Beside .</li>
+<li>Chaque municipalité assurait sa propre distribution des boîtes bleues par l'entremise de son service de travaux publics, au coût approximatif de 5 000 $.</li>
+</ul>
+<p><strong>Utilisateur-payeur</strong></p>
+<ul>
+<li>La municipalité de Sidney a organisé et financé le programme de l'utilisateur-payeur.</li>
+<li>Les coûts de promotion et de publicité afférents au lancement du programme s'élevaient à 5 500 $.</li>
+<li>Il a fallu investir environ 120 heures-personnes pour mettre en oeuvre le programme de l'utilisateur-payeur, et maintenir un investissement annuel de 175 heures-personnes pour continuer de l'offrir.</li>
+<li>Les étiquettes ont coûté 3 000 $ à produire et 3 000 $ à distribuer.</li>
+</ul><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Les facteurs suivants ont fait l'objet d'un constant suivi : comptabilisation des collectes au bord du chemin, études sur la composition des déchets, poids des déchets acheminés aux sites d'enfouissement, poids des produits placés dans les boîtes bleues, cas de déversement illégal, épargnes sur les cachets, effets sur la collecte et le traitement des produits recyclables, études sur l'utilisation des composteurs pour les déchets de cour, de même qu'une étude portant sur les attitudes et les réactions des citoyens face au programme.</p>
+<p><em>Quinte Regional Recycling </em>donnait une rétroaction positive aux résidants au moyen d'annonces à la radio, de présentations aux postes de télévision locaux, d'articles dans les journaux et d'un calendrier annuel ayant pour thème la réduction des déchets. Ces éléments de promotion mettaient en vedette des résidants et des entreprises locales qui s'étaient démarqués par une participation exceptionnelle au programme Blue Box 2000 et qui avaient fait une différence dans leur milieu. On érigeait également des affiches dans les six municipalités participantes en vue d'illustrer les progrès accomplis.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p><strong>En général </strong></p>
+<p>La quantité moyenne de déchets détournés des sites d'enfouissement parmi les municipalités participantes s'établissait ainsi :</p>
+<p align="center">1991     26 %          1994     46 % <br/>
+1992     27 %         1995      51 % <br/>
+1993     36 %         1996      66 %</p>
+<p><strong>Compostage </strong></p>
+<ul>
+<li>Le taux moyen de retour sur l'investissement s'établissait à 65 pour cent environ.</li>
+<li>Le nombre de foyers qui compostaient est passé de 34 pour cent, avant l'introduction du programme YIMBY, à 65 pour cent. Un tiers des foyers participants possédaient deux composteurs ou plus.</li>
+<li>Parmi les foyers qui s'adonnaient au compostage, le nombre qui com postaient efficacement est passé de 53 pour cent en 1994 à 65 pour cent en 1996.</li>
+<li>La quantité approximative de produits détournés par composteur s'établissait à 170 kg par année (ce chiffre tenait compte des foyers qui n'util isaient pas leur composteur à pleine capacité).</li>
+<li>Au total, 5 000 tonnes de produits étaient détournées des sites d'en fouissement chaque année.</li>
+<li>On estime que sur une période de dix ans, les épargnes nettes en frais de collecte et en cachets aux municipalités liées au compostage s'élèvent à 150 $ l'unité.</li>
+</ul>
+<p><strong>Boîtes bleues </strong></p>
+<ul>
+<li>Le tonnage de produits recyclés ramassés a augmenté de 56 pour cent entre 1991 et 1994.</li>
+<li>Le coût net du programme de recyclage par tonne a diminué de 56 pour cent en raison des économies d'échelle réalisées au fur et à mesure qu'augmentait le tonnage des produits ramassés et traités.</li>
+<li>Les revenus du recyclage ont rapidement grimpé (150 pour cent) entre 1991 et 1994, et ils ont continué d'augmenter après cette période. En 1995, on notait une augmentation de 100 pour cent par rapport au taux de 1994. Cette augmentation était attribuable à un tonnage plus élevé des produits en aluminium et au prix généralement plus élevé de tous les matériaux recyclables.</li>
+<li>En 1996, presque tous les résidants de la région utilisaient les boîtes bleues et le taux de captation s'établissait à près de 85 pour cent.</li>
+</ul>
+<p><strong>Utilisateur-payeur </strong></p>
+<ul>
+<li>Le nombre de tonnes de déchets acheminés aux sites d'enfouissement a diminué de 46 pour cent l'année oû l'on a introduit le règlement de l'utilisateur-payeur (1994), comparativement à une réduction moyenne de 3,5 pour cent pour cette même période dans les municipalités oû cette mesure n'était pas en vigueur.</li>
+<li>En 1994, la réduction des coûts engagés par les entrepreneurs pour assurer la collecte, le traitement et les cachets s'élevait à plus de 180 000 $ à Sidney.</li>
+<li>Le nombre moyen de sacs à déchets par foyer placés au bord de la route pour la collecte était de 0,75, soit une baisse de 59 pour cent par rapport à 1,83 sac avant l'adoption du règlement. De fait, 93 pour cent des foyers produisaient régulièrement un sac à déchets ou moins par semaine. En 1996, la quantité de sacs à déchets par foyer s'élevait encore à 1,5 sac par semaine dans les autres municipalités.</li>
+<li>À Sidney, le taux de captation des boîtes bleues a augmenté de 18 pour cent entre 1993 et 1994, comparativement à une augmentation de 8 pour cent là oû le règlement de l'utilisateur-payeur n'était pas en vigueur. À Sidney, le poids des produits placés dans les boîtes bleues pour la collecte a augmenté de 26 pour cent.</li>
+<li>En 1994, à Sidney, 54 pour cent des déchets de cuisine ont été déposés dans les composteurs, comparativement à 35 pour cent dans les municipalités oû le règlement de l'utilisateur-payeur n'était pas en vigueur.</li>
+<li>Cent pour cent des détritus de cour ont été détournés et majoritairement déposés dans les composteurs; seulement 2 pour cent ont été réacheminés à des centres de dépôt.</li>
+<li>Le taux de produits domestiques dangereux mis aux poubelles a diminué de 50 pour cent. Le taux de captation pour les aérosols et les contenants de peinture était plus que le double du taux affiché par les autres municipalités.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Bob Argue <br/>
+Coordonnateur des dmonstrations <br/>
+Blue Box 2000 <br/>
+83, rue Gore est <br/>
+Perth (Ontario) <br/>
+K7H 1J1 <br/>
+(613) 267-1128 <br/>
+télécopieur : (613) 267-6696</p>
+<p>Rick Clow <br/>
+Coordonnateur du recyclage <br/>
+270, rue <br/>
+West Trenton (Ontario) <br/>
+K8V 2N3 <br/>
+(613) 394-6266 <br/>
+télécopieur : (613) 394-6850</p>
+<p>Marvin Tucker <br/>
+Coordonnateur du compostage <br/>
+270, rue <br/>
+West Trenton (Ontario) <br/>
+K8V 2N3 <br/>
+(613) 394-6266 <br/>
+télécopieur : (613) 394-6850</p>
+<p>Sandy Smith <br/>
+Coordonnateur des dchets rsidentiels et industriels <br/>
+270, rue <br/>
+West Trenton (Ontario) <br/>
+K8V 2N3 <br/>
+(613) 394-6266 <br/>
+télécopieur : (613) 394-6850</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><br/>
+ </p>
+<table border="0" cellpadding="5" cellspacing="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><strong>L'expansion rapide du recyclage au moyen des boîtes bleues</strong>
+<p>Le recours aux boîtes bleues pour favoriser le recyclage a connu un énorme succès. En Ontario seulement, trois millions de boîtes bleues avaient été distribuées en 1996 et le taux de participation dépassait 90 pour cent. Aujourd'hui, cinquante millions de personnes participent à des programmes de recyclage et de collecte en bordure de la route identiques ou semblables à l'échelle de l'Amérique du Nord. La grande majorité de ces programmes s'inspirent de celui des boîtes bleues qui a d'abord été mis sur pied en Ontario.</p>
+<p>A quoi attribuer la grande réussite de ce programme? D'une part, il se fondait sur des réussites passées. Jack McGinnis, alors lié au groupe Is Five, a parcouru le pays pour voir ce qui se faisait ailleurs. Is Five a aussi tiré des leçons de sa propre expérience, puisque le groupe organisait des collectes en bordure du chemin depuis 1974. Cette recherche a permis de définir quatre grands facteurs de succès. Premièrement, il devait être aussi facile de recycler les produits que de les jeter. Deuxièmement, il fallait trouver un article quelconque pour concrétiser la notion de recyclage aux yeux des gens. Troisièmement, il fallait utiliser un contenant à recyclage visible pour que les personnes qui assurent la collecte puissent distinguer facilement les ordures des produits recyclables. Quatrièmement, toute démarche devait accorder une grande importance à l'attrait des normes.</p>
+<p>Is Five a d'abord laboré et testé l'approche des boîtes bleues en 1977, sur la base militaire des Forces armées canadiennes de Borden, près de Barrie, en Ontario. Plusieurs matériaux ont été mis à l'essai avant de finalement opter pour des boîtes bleues colorées, résistantes et légères. Le groupe a alors formé une solide alliance avec Nyle Ludolph de Laidlaw. Ensemble, ils ont lancé un projet pilote à Kitchener, en 1981, pour vérifier diverses approches. Six mois plus tard, ils avaient déjà convenu que la méthode la plus efficace s'avérait la boîte bleue accompagnée d'un dépliant explicatif. On s'attendait alors à des taux de participation de l'ordre de 30 pour cent. Dès le dpart, ce taux a grimpé à 70 pour cent. Même si les visites à domicile ont contribué à accroître ce pourcentage, on a délaissé cette approche, jugeant les coûts trop élevés par rapport aux résultats.</p>
+<p>En 1983, le projet pilote de Kitchener a été élargi à l'ensemble de la municipalit, de façon à rejoindre l'ensemble des 33 000 foyers. En moins de trois mois, le taux de participation avait grimpé à 83 pour cent. Grâce aux divers outils de changement qu'on y avait intgré, il continuait de croître au cours des mois suivants pour atteindre plus 90 pour cent.</p>
+<p>Le programme rendait le recyclage facile et la participation hautement visible. Chacun voyait son voisin mettre sa boîte bleue au bord de la route le jour de collecte. Les résidants considéraient les boîtes bleues comme une preuve de leur engagement envers la sauvegarde de l'environnement (Attrait <em>des normes).</em> Les boîtes bleues des voisins servaient également de motivateurs (Motivateurs) lorsqu'ils oubliaient eux-mêmes de sortir leur boîte bleue. Par ailleurs, cette démarche permettait aux gens de faire des liens avec une autre activité courante, puisqu'ils plaçaient leurs produits recyclables au bord de la route en même temps que leurs déchets. En plus de rendre le recyclage encore plus facile, ceci servait de motivateur additionnel et aidait à soutenir cette motivation au fil du temps (Soutenir <em>la motivation au fil du temps).</em></p>
+<p>L'année suivante, soit en 1984, le contrat de recyclage pour la ville de Kitchener devait être renouvelé et les autorités ont publié un appel d'offre. La soumission d'un concurrent de Laidlaw était plus basse de 600 000 $. Néanmoins, suivant les pressions exercées sur le conseil municipal de Kitchener par les conseils scolaires locaux et les citoyens en faveur du maintien des boîtes bleues, il a été décidé de garder le programme malgré son coût élevé. Mississauga a été la prochaine ville à emboîter le pas à Kitchener. Par la suite, le programme a vite pris de l'expansion en raison des commanditaires importants qui lui accordaient leur appui.</p>
+<p>Les fabricants de boissons gazeuses et de canettes réclamaient des quotas moins élevés sur les bouteilles consignées. La Société Alcan voulait modifier les règlements ontariens sur les boissons gazeuses qui bannissaient, toutes fins pratiques, les canettes en aluminium. En 1985, ces entreprises réussissaient</p>
+</td>
+</tr>
+</tbody>
+</table><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

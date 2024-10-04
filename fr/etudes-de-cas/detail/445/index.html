@@ -1,0 +1,282 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a></li>
+<li><a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a></li>
+<li><a href="../../../../fr/outils-de-changement/communications-personnalisées-percutantes/">Communications personnalisées percutantes</a></li>
+<li><a href="../../../../fr/outils-de-changement/visites-à-domicile/">Visites à domicile</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+<li><a href="../../../../fr/outils-de-changement/animateurs-de-quartier/-meneurs-populaires/">Animateurs de quartier/ meneurs populaires</a></li>
+<li><a href="../../../../fr/outils-de-changement/de-bouche-à-oreille/">De bouche à oreille</a></li>
+</ul>
+<h5>Initiative de</h5>
+<p>Durham Works<br/>
+Department</p><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<p>Société canadienne d’hypothèques et de logement</p><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<ul>
+<li>2000 : les secteurs d’étude ont utilisé 32 pour cent moins d’eau que le secteur de contrôle, à 45 $ par foyer.</li>
+<li>2001 : durabilité testée suite aux résultats obtenus l’été précédent (mesure générale des compteurs des résidences des secteurs d’étude et de contrôle de l’année 2000 sans contacter les propriétaires des secteurs visés). Les résultats obtenus ont démontré que la réduction de 32 pour cent de l’année 2000 avait été maintenue – mais les fins de semaine seulement.</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Valorisation de l'eau à Durham</h1>
+<p>La Municipalité régionale de Durham a trouvé un moyen relativement peu coûteux et remarquablement efficace d’empêcher les propriétaires de trop arroser leur pelouse. En un an, les employés municipaux ont convaincu les résidents de signer un engagement écrit à respecter les directives municipales en matière d’arrosage des pelouses.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>En 1995, la Municipalité régionale de Durham a commencé à reconnaître qu’elle avait un problème d’approvisionnement en eau qui pourrait être très coûteux. Sa population constituée de 430 000 habitants augmentait à un taux annuel moyen de trois pour cent, pendant que la consommation d’eau annuelle allait, elle, en augmentant de six pour cent. Comme la consommation résidentielle représentait 65 pour cent de la consommation totale de la région, Durham a décidé de faire en sorte de réduire la demande auprès de ses 110 000 clients munis de compteurs. Il en est résulté un programme visant l’économie des ressources en eau appelé Water Efficient Durham Valorisation de l’eau à Durham).</p>
+<p>En 1995, Water Efficient Durham a lancé un programme de remplacement des toilettes partout dans la région, ce qui a permis de remplacer 8200 toilettes sur une période de six ans. Bien que ce programme a permis de réduire la consommation en eau de 20 pour cent en moyenne par ménage, il n’abordait toutefois pas une des autres préoccupations majeures visées par Water Efficient Durham: la consommation d’eau pendant les jours de canicule.</p>
+<p>Pendant environ 20 jours par année – suivant habituellement une période de sécheresse – Durham a vu la consommation d’eau atteindre des sommets. Durant ces journées, le système de l’usine fonctionnait à pleine capacité ou presque, principalement parce que les gens arrosaient leur pelouse. Afin d’éviter une expansion coûteuse de l’usine, Durham a décidé de tenter de convaincre les résidents de réduire leur consommation d’eau au cours de ces journées en arrosant un peu moins.</p>
+<p>Selon Glen Pleasance, le coordonnateur du programme d’économie des ressources en eau de la région de Durham, l’arrosage de la pelouse était la première habitude qu’il fallait modifier. Selon lui, les gens avaient besoin qu’on leur démontre qu’ils pouvaient aider à éviter des expansions coûteuses de l’usine en modifiant leurs habitudes.</p>
+<p>Le travail de la région était particulièrement difficile étant donné la situation géographique de Durham, située sur les berges du Lac Ontario. Cela portait les gens à croire qu’il existait un approvisionnement abondant en eau fraîche. Durham devait donc démontrer aux résidents que malgré leur proximité au lac, l’eau potable qui se rendait chez eux nécessitait des traitements coûteux et que la consommation excessive d’eau durant la période estivale menaçait de surtaxer l’usine de traitement.</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p>Le but de Durham était donc de développer un programme qui allait convaincre les propriétaires de limiter leur consommation d’eau pour l’arrosage de leur pelouse à un pouce par semaine, averses de pluie comprises.</p><!-- Objectives already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>Durham a décidé dès le début d’opter pour une technique non coercitive pour modifier les habitudes des propriétaires. Pendant des années, Glen Pleasance a pris part à des séminaires tenus par Doug MacKenzie-Mohr sur l’efficacité du marketing social communautaire (<a href="http://www.cbsm.com../../../../public/world.lasso">www.cbsm.com</a>), tantôt comme conférencier, tantôt comme participant. M. Pleasance reconnaissait que la méthode de Mohr, laquelle relève du contact personnel avec les propriétaires, permettrait aux employés régionaux d’expliquer aux propriétaires les objectifs d’économie des ressources en eau de la région. De plus, les employés seraient capables de montrer aux propriétaires comment faire pousser des pelouses en meilleure santé.</p>
+<p>« Nous avons réalisé que nous avions été capables de développer des relations avec les propriétaires et de leur monter qu’ils pouvaient économiser de l’argent en réduisant leur consommation d’eau », a dit Pleasance.</p>
+<p>La région a donc embauché Ambrose Samulski, un consultant de Maple Durham, pour implanter pour la période estivale un programme d’étudiants salariés afin de réduire la consommation d’eau durant l’été. Samulski était un enseignant au College de Durham. Il a choisi lui-même les étudiants qui travailleraient à ce programme en fonction de leurs aptitudes pour les communications et leur compatibilité générale pour le marketing social communautaire.</p>
+<p>« Le fait que nous ne faisions pas passer des entrevues d’une heure a produit ses dividendes dès que ces étudiants ont commencé à parler aux résidents » a dit Pleasance. « Ils étaient des personnalités sociables, intelligentes, dotées d’aptitudes extraordinaires pour les relations interpersonnelles, ce qui a été un facteur vital à leur succès. »</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p><strong>Le projet pilote</strong></p>
+<p>En 1997, Durham a lancé un projet pilote dans la ville d’Ajax pour comparer la valeur du programme d’emploi pour les étudiants avec des méthodes plus traditionnelles d’éducation des masses. La région a étudié quatre secteurs séparés en utilisant une approche différente pour chacun d’entre eux. Un secteur servait de secteur de contrôle. Dans un autre, la région a utilisé la méthode d’envois postaux pour faire parvenir aux propriétaires quatre brochures traitant de l’économie des ressources en eau (<a href="../../../../fr/outils-de-changement/Medias/">Médias</a>). Dans un troisième secteur, la région a désigné des maîtres-jardiniers bénévoles (<a href="../../../../fr/outils-de-changement/animateurs-de-quartier---meneurs-populaires/">Animateurs de quartier/meneurs populaires</a>) travaillant sur le terrain pour fournir aux propriétaires des évaluations de paysagement. Un quatrième secteur visait à tester l’approche de l’étudiant envers le marketing social communautaire.</p>
+<p>Sur une période s’échelonnant sur 10 semaines, les étudiants, voyageant à bicyclette ou à pied, ont procédé à six interventions sur le terrain à chacune des 200 maisons (<a href="../../../../fr/outils-de-changement/Visites-a-domicile/">Visites à domicile</a>). Pendant la première intervention, les étudiants ont suivi la formule suivante :</p>
+<ul>
+<li>En travaillant en équipe de deux, ils se présentaient aux propriétaires lorsque ces derniers n’étaient pas occupés. Ils n’approchaient jamais les résidents sur leur départ. (La région considérait qu’il était vital de ne pas déranger les résidents ou interrompre leurs activités de quelque façon que ce soit.)</li>
+<li>Ils remettaient aux propriétaires des brochures d’information sur l’économie des ressources en eau – les mêmes brochures postées aux propriétaires des secteurs de contrôle – et les amenaient à parler de la conservation de l’eau.(Soutenir la motivation au fil du temps)</li>
+<li>Ils ont établi le lien entre une irrigation modérée et une pelouse en meilleur santé en insistant sur le fait que les pelouses n’avaient besoin qu’une moyenne d’un pouce d’arrosage et d’averses de pluie par semaine pour demeurer en santé (Communications personnalisées percutantes).</li>
+</ul>
+<p>Les étudiants ont effectué des suivis à chacune des maisons visitées en procédant à cinq autres interventions, permettant à chaque fois d’approfondir la relation de confiance avec les propriétaires.(<a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a>)</p>
+<p>Les étudiants ont surveillé et pris en note les habitudes d’arrosage des propriétaires des quatre secteurs d’étude, et ce pendant 14 heures par jour durant la période test. Leurs observations ont démontré que la méthode de loin la plus efficace était celle du programme d’emploi pour les étudiants, fondée sur le marketing social communautaire. Il a permis une réduction de 26 pour cent de l’arrosage des pelouses. Cette réduction a entraîné l’approvisionnement potentiel en eau de 250 nouvelles résidences; sans même que la consommation d’eau soit accrue durant les jours de canicule.</p>
+<p><strong>L’étude de 1998</strong></p>
+<p>En 1998, la région a procédé à son envoi postal traditionnel et dispensé ses programmes de maîtres-jardiniers. Elle a aussi augmenté à 900 le nombre de résidences visitées dans le cadre du programme d’emploi pour étudiants dans six communautés, soit celles de Pickering, Ajax, Whitby, Port Perry et Uxbridge, communautés choisies en raison de leur historique de consommation d’eau élevée durant la période estivale. Six étudiants ont répété l’approche utilisée l’été précédant en y apportant une amélioration importante : leur but était de convaincre les propriétaires de signer une entente publique écrite les engageant à n’arroser qu’à raison d’un pouce par semaine au maximum, averses de pluie comprises.(<a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a>)</p>
+<p>« Quand les gens acceptent de signer quelque chose, ils deviennent par le fait même beaucoup plus enclins à respecter leur promesse », selon Pleasance. « C’est une méthode psychologique sociale éprouvée encore plus efficace que l’engagement verbal. »</p>
+<p>Quatre-vingt-huit pour cent des propriétaires des secteurs d’étude ont signé le document. Le programme a coûté 88 $ par foyer, pour un total de 80 000 $, et il a permis d’obtenir à nouveau les résultats de l’étude de 1997, lesquels avaient démontré une réduction de 26 pour cent de la consommation d’eau.</p>
+<p>« Le programme a atteint ses objectifs en donnant aux résidents l’information dont ils avaient besoin pour comprendre la nécessité de réduire l’arrosage des pelouses tout en leur fournissant les moyens pour y arriver » a dit Pleasance. C’était la première saison où les étudiants remettaient aux propriétaires le guide <a href="../../../../fr/ressources-de-sujets/detail/62">Économiser l’eau chez soi</a>, lequel suggérait plusieurs trucs reliés à la réduction de la consommation d’eau sur une base quotidienne. Le guide de 60 pages a été produit par la ville de Durham comme outil de référence à l’intention des propriétaires souhaitant réduire leur consommation d’eau.(<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter les obstacles spécifiques</a>)</p>
+<p>En 1999, la région a lancé plusieurs nouvelles initiatives visant l’économie des ressources en eau et n’a donc pas eu recours à son programme d’emploi pour les étudiants cette année-là.</p>
+<p><strong>L’étude de l’an 2000</strong></p>
+<p>À l’été 2000, Durham a réduit ses dépenses en raffinant davantage le système, soit en agrandissant son secteur d’étude et en ne faisant faire par ses étudiants que quatre interventions par foyer. Ils ont travaillé dans les quartiers de Whitby (350 résidences) et Oshawa (700 résidences). Les quatre interventions se déroulaient comme suit :</p>
+<ul>
+<li>Travaillant en équipe de deux, ils se présentaient aux propriétaires et leur remettaient deux brochures : une au sujet du Jardin de démonstration d’économie des ressources en eau de Durham et l’autre énonçant les objectifs du programme visant à limiter l’arrosage des pelouses à un maximum d’un pouce d’eau par semaine, incluant les averses de pluie.</li>
+<li>Durant leur deuxième visite, les étudiants donnaient aux propriétaires des jauges pour mesurer le niveau des précipitations d’eau et distribuaient des brochures sur les soins à apporter aux pelouses.</li>
+<li>À leur troisième visite, les propriétaires recevaient le guide intitulé : <a href="../../../../fr/ressources-de-sujets/detail/62">Économiser l’eau chez soi</a>(lien à l’Alerte sur la recherche) ainsi que des étiquettes à attacher à leurs robinets extérieurs. Ces étiquettes avaient pour but de rappeler aux propriétaires les trois choses suivantes : soit de porter attention aux averses de pluie de la semaine, s’abstenir d’arroser si leur pelouse avait déjà reçu le pouce d’eaux en provenance de ces précipitations, et s’assurer qu’il s’agisse bien du jour qui leur était désigné pour l’arrosage. (Les propriétaires étaient classés en deux groupes correspondant aux numéros pairs ou impairs de l’adresse de leur résidence, selon le calendrier. Certains résidents arrosaient donc les jours pairs, les autres les jours impairs).</li>
+<li>Au cours de leur quatrième intervention, les étudiants demandaient aux propriétaires de signer le formulaire d’engagement avait obtenu tellement de succès en 1998, dans lequel ils s’engageaient à respecter la limite de consommation d’eau permise pour l’arrosage des pelouses, soit un maximum d’un pouce incluant les averses de pluie (<a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a>). Le facteur de réussite le plus déterminant à cette étape-ci était le niveau de confiance que les étudiants avaient réussi à établir avec les propriétaires. Les étudiants se sont tout particulièrement efforcés d’éviter l’utilisation d’une approche coercitive ou d’un discours moralisateur lorsqu’ils s’adressaient aux propriétaires. Ils s’en sont spécifiquement tenus à entreprendre avec ceux-ci des conversations amicales sur la consommation d’eau.</li>
+</ul>
+<p>« Les étudiants offraient gratuitement aux propriétaires des brochures d’information et des jauges de précipitations d’eau en espérant que, en échange, ceux-ci s’engageraient à modifier leur habitudes. » a dit Pleasance.</p>
+<p>Dans les deux secteurs d’étude, 82 pour cent des propriétaires ont signé les formulaires d’engagement. La région a embauché la firme Veritec Consulting Inc. pour surveiller la consommation d’eau durant cette phase à l’aide de la mesure générale des compteurs. Les résultats obtenus ont démontré que les secteurs d’étude avaient consommé 32 pour cent moins d’eau que le secteur de contrôle. Cette méthode de mesure offrait la première preuve quantitative que les efforts des étudiants avaient permis de réduire l’irrigation. De plus, Water Efficient Durham permettait de réduire les coûts du programme de près de la moitié, soit à 45 $ par foyer.</p>
+<p><strong>L’étude de 2001</strong></p>
+<p>Durant l’été 2001, Water Efficient Durham a changé son approche de deux façons. Premièrement, afin de réduire davabtage les coûts du programme, la région a demandé aux étudiants d’été d’essayer une approche qui combinait deux outils : (<a href="../../../../fr/outils-de-changement/de-bouche-a-oreille/">De bouche à oreille</a>)et (<a href="../../../../fr/outils-de-changement/animateurs-de-quartier---meneurs-populaires/">Animateurs de quartier/meneurs populaires</a>). Cela exigeait des étudiants qu’ils recrutent des bénévoles à l’intérieur du secteur d’étude pour effectuer des interventions personnelles auprès des propriétaires. L’idée était d’éclairer un groupe de bénévoles sur le sujet et de les envoyer en parler à leurs amis et connaissances. Encore une fois, la région a embauché six étudiants qui devaient cette fois-ci couvrir un secteur de 3000 résidences au lieu des 950 résidences de l’année précédente. Le secteur d’étude était encore une fois Whitby mais n’incluait pas le secteur d’étude de l’été 2000. Les étudiants ont recruté des bénévoles dans les clubs de jardinage, les associations de contribuables et les groupes partageant visiblement les mêmes intérêts au sein de la communauté.</p>
+<p>Deux facteurs ont contribué à l’échec de cette approche. Premièrement, les étudiants ont été incapables de recruter un nombre suffisant de bénévoles. De plus, il leur avait fallu plus d’efforts pour motiver les bénévoles qu’il leur en aurait fallu pour faire tout le travail eux-mêmes. Les étudiants sont donc retournés au contact initial avec les propriétaires appartenant au sous-groupe des 300 résidences pour lesquelles on mesurait la consommation d’eau par les compteurs cette année-là.</p>
+<p>La deuxième chose que les organisateurs ont fait différemment en 2001 était de tester la durabilité du succès obtenu l’été précédent. Ils ont procédé au mesurage général des compteurs pour obtenir des lectures de la consommation d’eau des secteurs d’étude et de contrôle de l’année 2000 sans contacter aucun des propriétaires. Les résultats ont démontré que la réduction de consommation d’eau de 32 pour cent obtenue en 2000 n’avait été maintenue en 2001 que les fins de semaine, sans réduction apparente pour les jours de semaine. La région a été incapable de découvrir la source de cette incongruité. Toutefois, l’été 2001 fut beaucoup plus sec et beaucoup plus chaud que l’avait été l’été 2000. En août 2001, les précipitations totalisaient trois millimètres comparativement à onze millimètres en 2000. La température avait été de deux degrés plus chaude en 2001. Néanmoins, Durham planifie pour l’été 2002 de revenir aux méthodes utilisées à l’été 2000 sur une plus grande échelle.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>Le programme d’emploi pour les étudiants a coûté environ 58 000 $ en 2000. Le financement provenait du budget annuel de Water Efficient Durham, qui est de l’ordre de 320 000 $. La région a versé 49 848 $ à la firme de consultants Maple Durham, ou 38,35 $ par foyer, dont plus de 82 pour cent ont servi à payer les étudiants. Une somme de 8563 $, ou 6,65 $ par foyer, a été consacrée aux matériel fourni aux propriétaires et aux étudiants, ce qui amena le total à 45 $ par foyer.</p>
+<p>La réduction de consommation de 32 pour cent du programme a résulté en des économies de 215 litres d’eau par foyer les jours de grande canicule. Il est important de remarquer que les jours de grande irrigation sont les plus dispendieux pour le fournisseur de l’eau consommée. Le programme n’a pas affecté la demande des foyers en eau lors des journées normales.</p>
+<p>Les économies de 215 litres d’eau réalisées les jours de grande canicule se sont traduites pour la région par des économie de 6 $ par foyer par année, calculs fondés sur approximativement 20 jours de grande demande pendant la période estivale. Avec ces données à l’esprit, le programme a permis d’accomplir deux choses : il a répondu à l’objectif de la région soit de réduire la demande et de protéger les revenus en se concentrant sur la réduction de la demande lors des jours les moins payants de l’année – les jours d’irrigation élevée.</p>
+<p>Selon les calculs de Veritec, si le programme d’emploi pour les étudiants était implanté à travers toute la région, il coûterait environ 20 $ par foyer. En combinant ce montant au 6 $ de perte de revenu par foyer, Durham dépenserait en fait 26 $ par foyer pour réduire la demande en eau lors des jours d’irrigation élevée. La région a calculé qu’il lui en coûterait approximativement 86 $ par jour pour fournir à une propriété 215 litres d’eau, si elle devait augmenter la capacité de ses usines de traitement.</p>
+<p>De plus, la région a investi une portion de ses revenus provenant de sa facturation d’eau dans un fonds servant à accroître ses capitaux futurs. En remettant l’expansion à plus tard, la région a pu tirer de ce fonds des gains encore plus significatifs.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Durant les premières années du programme, la région devait se fier aux informations anecdotiques que lui fournissaient les étudiants qui observaient et chronométraient les habitudes d’arrosage de pelouse des propriétaires des secteurs d’étude. Les étudiants posaient aussi aux propriétaires des questions détaillées sur leurs méthodes d’irrigation et cherchaient aussi à savoir si leurs contacts avec les étudiants les avaient aidés à modifier leurs habitudes.</p>
+<p>Durant l’été 2000, Veritec a effectué la mesure générale des compteurs de 400 résidences dans le secteur d’étude. Pour ce faire, Veritec a fermé quelques valves afin d’isoler la distribution d’eau dans le quartier et installa un capteur de données dans la conduite d’eau principale pour mesurer la consommation d’eau. Le capteur de données permettait de prendre une lecture de la consommation toutes les cinq minutes, 24 heures par jour. La mesure a commençé au début du mois de juillet pour se poursuivre jusqu’en octobre. Étant donné que l’arrosage a pris fin à la fin de septembre, les données d’octobre ont fournit plusieurs semaines de données de base, sur une période de non-irrigation, sur la consommation d’eau type d’un quartier donné. Les infrastructures ont déterminé la taille du secteur étudié. (La mesure générale des compteurs n’a pas été effectuée dans les plus vieux quartiers non munis de systèmes de valves fiables.)</p>
+<p>Water Efficient Durham a procédé à une mesure générale des compteurs pour deux raisons. Premièrement, la mesure des résultats du programme d’arrosage de pelouses n’était pas aussi simple que l’avait été le programme de remplacement des toilettes à cause, notamment, qu’elle ne s’appuyait sur rien de concret. Pour que le programme réussisse, la région avait dû faire en sorte que les gens modifient leurs habitudes, et la mesure générale des compteurs était la seule façon de mesurer ce changement dans les habitudes. Deuxièmement, cette méthode permettait à la région de surveiller les propriétaires sans qu’ils s’en rendent compte. Cela a fait échouer le Hawthorne Effect selon lequel les gens ont tendance à modifier leurs habitudes lorsqu’ils savent qu’ils sont surveillés.</p>
+<p>La région a procédé à la mesure générale des compteurs des résidences de son étude de 2000, ainsi que celles des secteurs de contrôle à nouveau au cours de l’été 2001. L’objectif dans ce cas-ci était de déterminer quelle portion de la réduction de l’irrigation connue en 2000 allait se poursuivre pour une deuxième saison. Ni les étudiants, ni la région n’ont contacté les propriétaires en 2001.</p>
+<p>Après l’introduction de la méthode de mesure générale des compteurs, les programmes des étés 2000 et 2001 de Water Efficient Durham ont inclus un groupe d’étude et un groupe de contrôle. Ceci a permis à la région d’établir une différence entre les changements de demande d’approvisionnement en eau motivés par la température ou faisant suite à la couverture médiatique consacrée aux problèmes de conservation et ceux résultant des efforts des étudiants. Pour que ces comparaisons soient les plus précises possibles, la région s’est assurée que les deux groupes, soit le groupe d’étude et le groupe de contrôle, comportent des caractéristiques semblables quand à la démographie, à l’âge des propriétés et à la grandeur des terrains. Chacun des secteurs d’étude et de contrôle incluait environ 300 maisons.</p><!-- Results_B already contains P tags.-->
+<h2>Réaction</h2>
+<p>Au printemps et à l’automne de chaque année, le service des Travaux publics de Durham distribua un bulletin aux propriétaires. Le bulletin faisait ainsi part, en novembre 2000 des résultats obtenus l’été de cette même année. Comme le programme avait obtenu le succès espéré, les réactions des propriétaires font été positives.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<ul>
+<li>2000 : les secteurs d’étude ont utilisé 32 pour cent moins d’eau que le secteur de contrôle, à 45 $ par foyer.</li>
+<li>2001 : durabilité testée suite aux résultats obtenus l’été précédent (mesure générale des compteurs des résidences des secteurs d’étude et de contrôle de l’année 2000 sans contacter les propriétaires des secteurs visés). Les résultats obtenus ont démontré que la réduction de 32 pour cent de l’année 2000 avait été maintenue – mais les fins de semaine seulement.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Glen Pleasance<br/>
+Coordonnateur, Water Efficiency<br/>
+Service des travaux publics, <br/>
+Municipalité régionale de Durham <br/>
+Boîte postale 623, <br/>
+105, promenade Consumers Whitby (Ontario) <br/>
+L1N 6A3<br/>
+Téléphone : (905) 668-7721 <br/>
+Télécopieur : (905) 668-2051 <a href="http://www.durham.ca/">www.region.durham.on.ca</a><a href="http://www.outilsdechangement.com/francais/CaseStudies/%C2%AB"> glen.pleasance@region.durham.on.ca</a></p><!-- Contacts already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

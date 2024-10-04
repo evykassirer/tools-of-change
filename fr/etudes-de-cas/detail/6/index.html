@@ -1,0 +1,254 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a></li>
+<li><a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a></li>
+<li><a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a></li>
+<li><a href="../../../../fr/outils-de-changement/communications-personnalisées-percutantes/">Communications personnalisées percutantes</a></li>
+<li><a href="../../../../fr/outils-de-changement/visites-à-domicile/">Visites à domicile</a></li>
+<li><a href="../../../../fr/outils-de-changement/animateurs-de-quartier/-meneurs-populaires/">Animateurs de quartier/ meneurs populaires</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Shawn Burn et Stuart Oskamp (chercheurs)</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Ville de Claremont</li>
+<li>Scouts</li>
+<li>Bénévoles du milieu</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p>Les visites des Scouts ont entraîné un taux de recyclage de 40 pour cent et celles des meneurs populaires, un taux de recyclage de 60 pour cent au sein des foyers qui ne recyclaient pas auparavant.</p>
+<table border="1" cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" complete="complete" height="26" src="/images/lightbulb.gif" width="27"/> <small><font face="Verdana">Conseil: Cliquez sur cette image pour l'agrandir. Cliquez votre bouton "Back" pour retourner à ce page.</font></small><hr color="#FFCC00"/>
+<p><br/>
+<font face="Verdana"><small><a href="/images/documentimages/Claremont/claremont-1.jpg" target=""><img alt="Claremont Image" border="0" complete="complete" height="75" src="/images/documentimages/Claremont/claremont-1.jpg" width="203"/></a></small></font><br/>
+<small><strong><font face="Verdana" size="1">In one approach, Boy Scouts asked householders to sign this pledge card.</font></strong></small><font face="Verdana" size="1"><b><br/>
+</b></font><font face="Verdana"><br/>
+<br/>
+<a href="/images/documentimages/Claremont/claremont-2.jpg" target=""><img alt="Claremont Image" border="0" complete="complete" height="117" src="/images/documentimages/Claremont/claremont-2.jpg" width="191"/></a><br/>
+<small><font size="1"><strong>The script provided to block leaders and Boy Scouts graphically described the amount of waste generated and linked recycling to accepted beliefs (patriotism) and practices (taking out the trash).</strong></font><br/>
+</small></font></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Claremont</h1>
+<p>Deux études ont eu lieu dans la ville de Claremont pour trouver des façons efficaces d'inciter la population à recycler davantage. Dans chaque cas, des bénévoles dûment formés ont mené une campagne de porte à porte auprès des foyers dont les membres ne recyclaient pas. Les responsables ont tenté deux types d'approches pour transmettre leur message : une à l'aide des Scouts et l'autre, à l'aide de voisins volontaires.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>Dans les années 80, moins de 30 pour cent des résidants de la ville de <em>Claremont, </em>en Californie, mettaient leurs produits recyclables au bord de la rue pour la collecte. Un examen de la documentation sur le sujet a révélé que le taux de participation des gens augmentait lorsqu'on adoptait des mesures incitatives, mais qu'il déclinait dès que ces mesures étaient retirées. Les responsables du programme en ont conclu qu'une communication persuasive, jumelée à des engagements verbaux et écrits, constituaient des moyens efficaces pour modifier les comportements à long terme.</p><!-- Background already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p><strong>Étude portant sur les meneurs populaires </strong></p>
+<p>Les meneurs populaires ont été recrutés auprès des résidants de foyers oû les gens recyclaient déjà de façon régulière (<a href="../../../../fr/outils-de-changement/animateurs-de-quartier---meneurs-populaires/">Animateurs de quartier/meneurs populaires</a>). Les responsables du programme leur lançaient une invitation en ces termes : « Nous avons remarqué que vous mettiez toujours vos produits recyclables au bord de la route les jours de collecte et nous aimerions encourager d'autres personnes à agir comme vous. Notre nouvelle stratégie pour ce faire consiste à demander à des recycleurs comme vous d'expliquer à leurs voisins combien il est important et facile de recycler. J'ai une liste de 10 voisins qui ne recyclent pas. Seriez-vous prêt à agir comme meneur populaire afin d'encourager le recyclage dans votre quartier? » Des treize personnes abordées, huit ont relevé le défi et accepté d'agir comme meneurs dans leur propre quartier.</p>
+<p>Les meneurs populaires ont reçu une formation spéciale en préparation de leur visite chez une dizaine de voisins pré-identifiés qui ne recyclaient pas (<a href="../../../../fr/outils-de-changement/visites-a-domicile/">Visites à domicile</a>). Après s'être présentés et avoir expliqué qu'ils avaient été nommés par un comité municipal, ils remettaient aux résidants une feuille de renseignements sur le recyclage.</p>
+<p>S'ensuivait une conversation animée (<a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications personnalisées percutantes)</a> enrichie de descriptions évocatrices sur la quantité de déchets générés. Les meneurs faisaient aussi des liens avec diverses valeurs (le patriotisme) et pratiques (sortir les déchets) fortement ancrées (<a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a> et <a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a>).</p>
+<p>Les meneurs populaires parvenaient à abolir les obstacles à la participation en expliquant clairement aux résidants combien il était facile et pratique de recycler, et en quoi leur contribution personnelle pouvait aider à résoudre le problème global de l'accumulation des déchets. Ils fournissaient également à chaque foyer trois sacs à recyclage en filet. Afin de les motiver encore plus, les meneurs terminaient leur échange ainsi : « J'espère bien voir vos sacs à recyclage au bord de la rue d'ici quelques semaines! »</p>
+<p>Aux fins de comparaison, les responsables ont aussi mené une campagne d'information auprès d'un second groupe de foyers. Cette fois, ils laissaient simplement à la porte des gens un feuillet d'information, des sacs à recyclage et une version écrite du texte d'encouragement. Un troisième groupe de foyers, soit le groupe témoin, ne recevait aucune documentation ni visite relativement au programme.</p>
+<p><strong>« Étude portant sur les Scouts »</strong></p>
+<p>Les responsables du programme ont également offert une formation aux Scouts et leur ont demandé de rendre visite à des personnes qui ne recyclaient pas. Il s'agissait d'un excellent choix en raison de l'association naturelle entre les Scouts, l'honnêteté et le respect de la nature. Après s'être présentés aux résidants, les jeunes garçons décrivaient les avantages du recyclage et expliquaient aux gens en quoi consistait le programme de recyclage de la ville.</p>
+<p>Ils optaient ensuite pour une des trois démarches prévues. La première approche consistait à demander aux résidants de lire des documents con vaincants, essentiellement les mêmes qui avaient servi aux meneurs populaires.</p>
+<p>Dans le deuxième cas, les Scouts demandaient aux résidants de signer une carte d'engagement (<a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a>). Ils leur remettaient aussi un collant affichant un logo coloré et les mots suivants : « I Recycle to Win the War on Waste » (Je recycle pour faire la guerre aux déchets).</p>
+<p>La troisième approche intégrait tous les éléments, soit une communication percutante, une carte d'engagement et un collant. Dans les trois cas, la rencontre s'achevait par la remise aux personnes des sacs à recyclage en filet.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>Le recours aux meneurs populaires s'est avéré légèrement plus coûteux à administrer que le recours aux Scouts, en raison du temps additionnel nécessaire au recrutement des bénévoles. Il a fallu entre trois et quatre heures pour recruter les huit meneurs populaires utilisés dans le cadre du projet. Néanmoins, il serait possible de demander à des groupes communautaires ou environnementaux locaux, des étudiants ou d'autres bénévoles d'assurer le recrutement des meneurs populaires.</p><!-- Financing already contains P tags.-->
+<h2>Résultats</h2>
+<p>Les visites des Scouts ont suscité un taux de recyclage de 40 pour cent au sein des foyers non recycleurs, d'après le suivi de six semaines effectué. Dans le cas des meneurs populaires, 60 pour cent des foyers non recycleurs ayant fait l'objet d'une visite personnelle ont recyclé leurs déchets au moins une fois au cours des dix semaines du suivi, et 28 pour cent ont commencé à recycler toutes les semaines. En ce qui concerne le groupe ayant reçu uniquement les renseignements à la porte, 38 pour cent ont recyclé leurs déchets au moins une fois et 12 pour cent ont commencé à recycler toutes les semaines. Pour ce qui est du groupe témoin, 20 pour cent ont recyclé leurs déchets au moins une fois, et 3 pour cent les ont recyclés une fois par semaine.</p>
+<p>Dans le cas des trois approches adoptées par les Scouts, toutes se sont avérées efficaces pour motiver les gens à recycler. Dans chaque groupe, environ 40 pour cent des foyers contactés ont recyclé au moins une fois au cours de la période de suivi de six semaines. Par comparaison, seulement 11 pour cent des foyers du groupe témoin ont recyclé au moins une fois.</p>
+<p>Pris ensemble, les résultats des deux études révèlent qu'un message per suasif livré à domicile peut faire grandement augmenter le taux de recyclage, et qu'une visite à domicile peut faire croître encore plus le taux de participation. L'échec apparent des Scouts à rehausser le taux de participation en sollicitant un engagement confirme l'importance de réclamer un engagement public (plutôt qu'anonyme).</p>
+<p>Dans le cas des deux études, les taux de participation aux activités de recyclage sont demeurés relativement stables tout au long de la période d'observation, ce qui porte à croire que les outils de changement utilisés ont permis d'instaurer des modifications de comportement à long terme.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Le Dr Shawn Burn <br/>
+California Polytechnic University <br/>
+San Luis Obispo, California 93407 <br/>
+U.S.A. <br/>
+(805) 756-2934 <br/>
+courriel : <a href="mailto:sburn@cymbal.aix.calpoly.edu">sburn@cymbal.aix.calpoly.edu</a>  </p><!-- Contacts already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

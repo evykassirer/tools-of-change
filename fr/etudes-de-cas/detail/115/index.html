@@ -1,0 +1,510 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a></li>
+<li><a href="../../../../fr/outils-de-changement/rétroaction/">Rétroaction</a></li>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a></li>
+<li><a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/programmes-scolaires-qui-engagent-la-famille/">Programmes scolaires qui engagent la famille</a></li>
+<li><a href="../../../../fr/outils-de-changement/de-bouche-à-oreille/">De bouche à oreille</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Greenest City</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Toronto Community Foundation</li>
+<li>Go for Green</li>
+<li>The Laidlaw Foundation</li>
+<li>Great Lakes Health Effects Program</li>
+<li>Ontario Trillium Foundation</li>
+<li>Toronto Atmospheric Fund</li>
+<li>Toronto District School Board</li>
+<li>Toronto Catholic District School Board</li>
+<li>Toronto Public Health</li>
+<li>Toronto Police Service</li>
+<li>Transportation Options</li>
+<li>FoodShare</li>
+</ul><!-- Partners already contains li tags.-->
+<h6>Borne limite Études de cas</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Programme Aller-retour actif et sécuritaire pour l'école de Greenest City</h1>
+<p>Ce programme vise à encourager les familles à réduire l'utilisation de la voiture et à augmenter l'activité physique chez les enfants alors qu'ils vont à l'école et en reviennent. Une étude de cas plus récente est disponible en anglais à <a href="../../../../en/case-studies/detail/635">http://www.toolsofchange.com/en/case-studies/detail/635</a>. Notez que le programme est maintenant appelé Écoliers actifs et en sécurité, et qu'elle opère partout au Canada en anglais et en français.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p><em>Nota : Pour minimiser les coûts de maintenance du site, toutes les études de cas sont écrites au passé, même si elles sont en cours, comme dans le cas de ce programme.</em></p>
+<p>Greenest City est un organisme sans but lucratif de Toronto qui s'est penché sur un grand nombre de questions environnementales avec des initiatives novatrices et locales. Au début de 1996, les autorités de Greenest City ont présenté auToronto District School Board un programme offrant des allers-retours actifs et sécuritaires pour l'école. Ravis de la possibilité qui lui était offerte de rendre les zones scolaires moins dangereuses pour les élèves, la conseil a appuyé le programme Aller-retour actif et sécuritaire pour l'école (ARASPÉ) et grâce au financement provenant du Fonds atmosphérique de Toronto, la vision de Greenest City est devenue réalité.</p>
+<p>En se concentrant sur les écoles et leur environnement, Greenest City a pu aborder plusieurs problèmes urbains reliés à l'augmentation de la circulation telle une plus grande fréquence d'accidents mortels et de blessures reliés à la circulation automobile, une diminution de l'activité physique chez les enfants, de même qu'une augmentation des émissions de gaz à effet de serre. Greenest City souhaitait également promouvoir la diversité culturelle de Toronto en rassemblant les familles d'un même voisinage. Essentiellement, le programme ARASPÉ offrait aux communautés l'occasion de créer des réseaux qui feraient des allers et retours pour l'école une activité saine et agréable, en toute sécurité.</p><!-- Background already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>Les recherches entreprises par les agences de santé publique et de transport ont révélé un certain nombre de points en commun. Par exemple, une augmentation du nombre de propriétaires de véhicules contribuait à la hausse du taux de pollution de l'air (une des causes premières des maladies respiratoires auxquelles les enfants sont particulièrement sensibles). Elles soulevaient également la question d'une moins bonne forme physique chez les enfants. Leur sécurité était aussi une inquiétude à cause de l'augmentation du nombre d'accidents de la route causant la mort et des blessures, de même que des menaces d'intimidation, de harcèlement et d'enlèvement. Sur une plus grande échelle, le programme pourrait aussi aider la réduction des émissions de gaz à effet de serre qui contribuent aux changements climatiques.</p>
+<p>Les recherches ont aussi démontré que Greenest City pourrait rencontrer plusieurs obstacles majeurs lorsqu'ils présenteraient le programme aux parents et aux autorités scolaires. Premièrement, les Nord-Américains dépendent de l'automobile mais la plupart des conducteurs ne se considèrent pas comme étant partie du problème. Deuxièmement, avec l'augmentation du nombre de propriétaires de véhicules, les infrastructures des zones scolaires sont dangereuses. Dans ces secteurs, il est souvent moins dangereux de se déplacer en voiture ou en autobus. Le temps était un autre obstacle. Plusieurs parents ne permettraient pas à leurs enfants de marcher par temps froid ou pluvieux. Il y avait aussi la perception du temps limité pour les déplacements à pied étant donné que les parents croyaient que la marche prenait beaucoup plus de temps que la conduite automobile. En réalité, accompagner un enfant à l'école peut souvent prendre moins de temps et être moins frustrant. Finalement, on a remarqué un manque de sensibilisation à la santé en Amérique du Nord.</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p><strong>INFORMATION GÉNÉRALE</strong></p>
+<p>À l'automne 1996, Greenest City de Toronto a répondu à cette préoccupation croissante envers la santé et la sécurité des élèves de niveau primaire en présentant le programme Aller-retour actif et sécuritaire pour l'école au cours de rencontres avec les parents et par le biais de kiosques d'information lors de la tenue d'événements scolaires. Les écoles publiques Maurice Cody et John Wanless au nord de Toronto, de même que l'école publique Howard à l'ouest de Toronto, ont été les premières à joindre le programme. Chacune d'elles a implanté tous les volets du programme ARASPÉ incluant : l'autobus scolaire pédestre, les sentiers marqués dans la jungle urbaine, et moteur au ralenti interdit à l'école. Greenest City a plus tard introduit deux nouveaux volets à son programme ARASPÉ : groupe de marcheurs dans le voisinage et la Journée internationale de la marche à l'école (<a href="../../../../fr/outils-de-changement/programmes-scolaires-qui-engagent-la-famille/">Programmes scolaires qui engagent la famille</a>).</p>
+<p><strong>L'autobus scolaire pédestre (ASP)</strong></p>
+<p>Le volet Autobus scolaire pédestre (ASP) du programme s'adressait aux élèves de niveau primaire qui marchaient à l'école sous la surveillance des parents ou de voisins fiables. De cette manière, les communautés pouvaient se partager la responsabilité de la protection des enfants, stimuler leur esprit par la conversation et leur corps par l'activité physique. Finalement, le programme ARASPÉ était basé sur l'idée de l'autobus scolaire pédestre pour impliquer les autorités scolaires dans la mise en place de moyens de transport sains. Toutefois, le volet ASP du programme ARASPÉ était étroitement lié aux autres volets du programme. Par exemple, le volet Groupe de marcheurs dans le voisinage a servi à l'établissement d'itinéraires sans danger ASP pour aller à l'école.</p>
+<p>Le volet ASP existait sous plusieurs formes. Certains autobus ne comptaient que quelques familles alors que d'autres en comptaient jusqu'à seize. Souvent, les autobus se composaient de Compagnons de marche (simplement des enfants plus âgés qui allaient à l'école à pied et qui se déplaçaient en compagnie de leurs amis.) Le volet Marcher un coin de rue fonctionnait sur le même principe que l'ASP mais s'adressait aux enfants qui demeuraient trop loin pour marcher jusqu'à l'école. Les parents étaient plutôt invités à stationner en toute sécurité dans un endroit légal et à distance de marche de l'école, et à accompagner leurs enfants à l'école à pied. De la même façon, l'Autobus scolaire pédestre vers l'autobus permettait aux parents de se partager la supervision des enfants en se rendant à un arrêt d'autobus désigné du transport urbain. Des Autobus scolaires cyclistes ont été mis sur pied pour permettre des déplacements d'élèves en toute sécurité à bicyclette. Les parents ont été invités à initier leurs enfants à la sécurité à bicyclette et à les accompagner lors de leurs randonnées à vélo pour aller à l'école. Ce programme incitait aussi à établir des pistes cyclables le long des trajets vers l'école.</p>
+<p>Le programme des ASP a d'abord commencé par tracer les aires de recrutement de l'école et marquer les maisons des familles participantes. Les Autobus scolaires pédestres ont été identifiés tout le long du parcours vers l'école par le port de chapeaux, sacs à dos, foulards et vestes de couleur par tous les participants. Des journées thématiques gérées par les responsables des autobus ont également connu du succès. Greenest City a aussi suggéré que les parcours soient identifiés par des affiches permanentes ou temporaires pour indiquer l'utilisation du parcours par les écoliers et leur famille.</p>
+<p>Greenest City a indiqué qu'en novembre 1996, les trois écoles avaient au moins un ASP en fonction. La Community Foundation of Greater Toronto a rendu possible l'expansion du programme aux communautés multiculturelles. À l'école publique Topcliff, par exemple, des dépliants et des bulletins d'information en chinois, vietnamien, tamoul et anglais ont été distribués.</p>
+<p>Des organismes de santé publique locaux (de Toronto et Scarborough) de même que des agences nationales ont contacté Greenest City parce que le programme correspondait à leur mandat à savoir la santé cardiaque, un mode de vie sain, la prévention des blessures et un environnement sain. Ces nouveaux partenariats ont permis à Greenest City d'élargir sa base de partenaires.</p>
+<p><strong>Sentiers marqués dans la jungle urbaine</strong></p>
+<p>Le volet Sentiers marqués dans la jungle urbaine était un travail scolaire qui consistait à produire une cartographie complémentaire au programme de l'Ontario School Board en sciences sociales, en mathématiques et en sciences. En répertoriant les noms de rues, les points de repère et les endroits sécuritaires, par exemple, les enfants se sentaient plus en sécurité et plus en confiance de se déplacer dans leur communauté.</p>
+<p><strong>Moteur au ralenti interdit à l'école</strong></p>
+<p>La campagne Moteur au ralenti interdit à l'école a réduit les émissions de gaz des véhicules dans les zones scolaires, amélioré la qualité de l'air, haussé le niveau de connaissance des conséquences des moteurs tournant au ralenti, encouragé les automobilistes à adhérer au règlement municipal de Toronto Contrôle des moteurs au ralenti. Le programme incluait des bannières étudiantes rappelant aux parents de couper le moteur de leur véhicule lorsqu'ils étaient stationnés près d'une école ou une campagne visant à obtenir l'engagement de la communauté locale.</p>
+<p><strong>Groupe de marcheurs du voisinage</strong></p>
+<p>Le volet Groupe de marcheurs du voisinage a identifié des problèmes de circulation et de sécurité propres à chaque communauté scolaire. L'analyse de ces problèmes a fourni une base à partir de laquelle un plan d'intervention a pu être élaboré. La description des inquiétudes soulevées par cet outil, jumelée aux cartes, a suscité plusieurs changements concrets à être apportés dans les zones scolaires participantes.</p>
+<p>Le Guide de ressources du programme ARASPÉ de Greenest City a identifié plusieurs points (adaptés du Parent Safety Patrol Information Package, Whitby Community Police Office), qui doivent être pris en considération quand on organise un Groupe de marcheurs du voisinage :</p>
+<p>Observations faites près des écoles</p>
+<ul>
+<li>stationnement des enseignants et des visiteurs</li>
+<li>sentiers pédestres</li>
+<li>installations cyclistes</li>
+<li>endroit des aires d'embarquement des autobus scolaires</li>
+<li>nombre d'autobus, de fourgonnettes et de véhicules adaptés pour les handicapés</li>
+<li>accès des véhicules d'urgence</li>
+</ul>
+<p> </p>
+<p>Observations faites dans les secteurs avoisinant les écoles</p>
+<ul>
+<li>flot de circulation et vitesse dans les rues avoisinantes</li>
+<li>y a-t-il des trottoirs?</li>
+<li>nombre et endroits où il y a surveillance adulte aux intersections</li>
+<li>synchronisation des feux de circulation</li>
+</ul>
+<p> </p>
+<p>Autres observations</p>
+<ul>
+<li>genre d'édifices autour de l'école : résidentiel, commercial, industriel</li>
+<li>localisation des autres espaces publics près de l'école</li>
+<li>communauté où il y a de la surveillance par les parents ou les voisins</li>
+<li>graffitis sur les édifices</li>
+<li>trottoirs obstrués</li>
+</ul>
+<p> </p>
+<p>L'école publique Allenby de Toronto a mis l'accent sur la sécurité routière pour son programme de Groupe de marcheurs du voisinage. En fait, la participation de l'école a fait que son secteur a été inclus dans le projet pilote Community Safety Zone de l'Ontario. Une autre école publique, l'école catholique St. Roch de North York, a pu effectuer des changements pour faciliter l'utilisation pour les piétons dans sa communauté scolaire. D'après le succès remporté par le programme, l'école a introduit les Mercredis de marche - le premier mercredi de chaque mois étant désigné Journée de marche à l'école, de même que le Prix du soulier doré en reconnaissance d'une participation mensuelle. Apparemment, « les enfants suppliaient leurs parents de marcher avec eux à l'école plutôt que de les y conduire en auto ».</p>
+<p><em>Leçons apprises du programme Groupe de marcheurs du voisinage :</em><br/>
+Il y a eu plusieurs changements positifs dans les communautés scolaires basés sur les projets de Groupe de marcheurs du voisinage. Quelques-uns seulement sont énumérés ici.</p>
+<p>Selon les constatations faites par le Comité de sécurité de l'école publique d'Allenby (composé de parents inquiets), les changements suivants ont été apportés :</p>
+<ul>
+<li>abaisser la vitesse sur l'avenue Road de 50 km/h à 40 km/h durant les heures de débarquement et d'embarquement;</li>
+<li>déplacer les traverses piétonnières dans des endroits moins dangereux;</li>
+<li>allonger le temps alloué aux piétons pour traverser aux feux de circulation des avenues Road et St. Clements;</li>
+<li>améliorer la signalisation autour de l'école;</li>
+<li>réduire le nombre de stationnements risqués;</li>
+<li>installer des aires de débarquement seulement des deux côtés de l'école.</li>
+</ul>
+<p> </p>
+<p>L'école catholique St. Michael's de Toronto a pu prendre des mesures à l'égard des sans-abri, des trafiquants de drogues, du manque d'éclairage, de la sécurité dans les stationnements souterrains, de la restauration des structures des terrains de jeu pour se conformer aux normes CSA et de l'implantation d'une aire d'embarquement pour les autobus scolaires.</p>
+<p><strong>Journée internationale de la marche à l'école </strong><br/>
+Le volet Journée internationale de la marche à l'école a favorisé la sensibilisation au transport des enfants à l'école et au retour. Les familles ont été encouragées à marcher à l'école ensemble afin de profiter de l'activité physique, de promouvoir une meilleure qualité de l'air, et jouir de leur voisinage sans les dangers et la congestion de la circulation. En 1998, la première année du programme au Canada, 50 écoles de Toronto ont pris part à cette journée. En 1999, 250 y ont participé; en 2000, c'est 400 écoles de l'Ontario qui y ont adhéré.</p>
+<p><strong>Promotion et Communication</strong><br/>
+Greenest City a appuyé avec succès les rapports entre les écoles par le biais de groupes de discussion et un bulletin ARASPÉ. En 1998, elle a tenu une rencontre entre les représentants de chacune des écoles participantes et les partenaires de ARASPÉ. La rencontre a permis d'aborder les problèmes et de répondre aux inquiétudes évoquées en apportant des améliorations au programme. Avec l'appui Go for Green sur le plan national, le bulletin ARASPÉ de Greenest City a été distribué aux écoles participantes et aux partenaires, dans l'intention de regrouper tous les participants et leur procurer ainsi une façon d'exprimer leurs succès et d'autres commentaires.</p>
+<p>Les programmes ARASPÉ de Greenest City ont également fait l'objet de reportages dans les médias suivants :</p>
+<ul>
+<li>City Pulse News and Breakfast Television, City TV</li>
+<li>CBC Evening News</li>
+<li>CBC Marketplace</li>
+<li>CBC Radio - Metro Morning</li>
+<li>Talk 640, Energy 108, CFRB News</li>
+<li>CFTO News</li>
+<li>Global TV</li>
+<li>CTV</li>
+<li>Vision Television- Skylight</li>
+<li>de même que des articles dans Time magazine, Today's Parent, Canadian Living, The Globe and Mail, The Toronto Star, L'Express, Alternatives, et plusieurs journaux communautaires.</li>
+</ul>
+<p> </p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>Le programme ARASP a initialement été financé par le Fonds atmosphérique de Toronto. Maintenant, l'appui financier est assuré par le Fonds atmosphérique de Toronto, la Toronto Community Foundation, et l'Ontario Trillium Foundation. Des portions du programme sont financées par Laidlaw, le Canada Trust Friends of the Environment, de même que par d'autres commanditaires. La recherche pour l'évaluation du programme ARASP est appuyée par l'Ontario Trillium Foundation, Transports Canada, et le ministre de l'Environnement.</p>
+<p>Les dépenses du programme comprennent : les coûts de maintenance du programme, les fonds pour les salaires et postes des employés à contrat, les rétributions aux écoles et les coûts du matériel.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Greenest City a demandé à chaque école de lui faire un rapport du nombre d'enfants impliqués dans chaque activité, et de la distance moyenne parcourue par les participants. En utilisant une simple feuille de calcul Excel, cette information a ensuite été convertie en réductions dans les distances parcourues en auto et des émissions de gaz à effet de serre afférentes. Par cette conversion, on a pu constater que sur la moyenne, environ 30 %des participants sont passés de l'automobile à la marche ou au cyclisme.</p><!-- Results_B already contains P tags.-->
+<h2>Réaction</h2>
+<p>Des résultats plus détaillés quant aux évaluations du programme TSSTS sont attendus sous peu et seront disponibles. Des rapports individualiss seront partagés avec chacune des écoles participantes et un rapport général le sera avec toutes les écoles, les commanditaires et partenaires. Les résultats seront également disponibles sur le site Web de Greenest City à l'adresse : www.greenestcity.org.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>Selon l'information fournie par les écoles participantes, le volet Autobus scolaire pédestre a eu le plus grand impact mesuré alors qu'on s'attendait à ce que ce soit l'élément Moteur au ralenti qui progresse le plus rapidement. Le tableau ci-après résume les résultats des premières années du programme.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<table border="1" cellpadding="0" cellspacing="0" style="border-bottom: medium none; border-left: medium none; border-collapse: collapse; border-top: medium none; border-right: medium none; mso-table-layout-alt: fixed; mso-border-alt: solid windowtext .5pt; mso-padding-alt: 0in 4.0pt 0in 4.0pt">
+<tbody>
+<tr>
+<td style="border-bottom: medium none; border-left: windowtext 0.5pt solid; padding-bottom: 0in; padding-left: 4pt; width: 130.6pt; padding-right: 4pt; background: #f2f2f2; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-shading: white; mso-pattern: gray-5 auto" valign="top" width="100">
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal">Élément du programme <o:p></o:p></b></p>
+</td>
+<td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 70.05pt; padding-right: 4pt; background: #f2f2f2; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-shading: white; mso-pattern: gray-5 auto; mso-border-left-alt: solid windowtext .5pt" valign="top" width="50">
+<h6><span style="font-size: 10pt">Année <o:p></o:p></span></h6>
+</td>
+<td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 99.95pt; padding-right: 4pt; background: #f2f2f2; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-shading: white; mso-pattern: gray-5 auto; mso-border-left-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal">Taux de participation <o:p></o:p></b></p>
+</td>
+<td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; background: #f2f2f2; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-shading: white; mso-pattern: gray-5 auto; mso-border-left-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal">Réduction des distances parcourues en auto (km) <o:p></o:p></b></p>
+</td>
+<td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; background: #f2f2f2; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-shading: white; mso-pattern: gray-5 auto; mso-border-left-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal">Gaz à effet de serre eCO2 en tonnes <o:p></o:p></b></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; padding-bottom: 0in; padding-left: 4pt; width: 130.6pt; padding-right: 4pt; background: #f2f2f2; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-shading: white; mso-pattern: gray-5 auto" valign="top" width="100">
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal">Autobus scolaire pédestre <o:p></o:p></b></p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 70.05pt; padding-right: 4pt; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">1999</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 99.95pt; padding-right: 4pt; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">33 écoles<br/>
+            278 familles</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">36 830</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">11,27</p>
+</td>
+</tr>
+<tr>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 70.05pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">2000</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 99.95pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">44 écoles</p>
+<p class="MsoNormal">422 familles</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">51 242</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">15,68</p>
+<p class="MsoNormal"><o:p></o:p></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; padding-bottom: 0in; padding-left: 4pt; width: 130.6pt; padding-right: 4pt; background: #f2f2f2; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-shading: white; mso-pattern: gray-5 auto; mso-border-top-alt: solid windowtext .5pt" valign="top" width="100">
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal">Mercredi de marche <o:p></o:p></b></p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 70.05pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">1999</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 99.95pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">1 475 participants</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal"><o:p></o:p></p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">?</p>
+</td>
+</tr>
+<tr style="height: 14.35pt">
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 70.05pt; padding-right: 4pt; height: 14.35pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">2000</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 99.95pt; padding-right: 4pt; height: 14.35pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">4 567 participants</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; height: 14.35pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">9 020</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; height: 14.35pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">2,76</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; padding-bottom: 0in; padding-left: 4pt; width: 130.6pt; padding-right: 4pt; background: #f2f2f2; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-shading: white; mso-pattern: gray-5 auto; mso-border-top-alt: solid windowtext .5pt" valign="top" width="100">
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal">Moteur au ralenti <o:p></o:p></b></p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 70.05pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">1999</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 99.95pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">59 abandons</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">7 092</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">2,17</p>
+</td>
+</tr>
+<tr>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 70.05pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">2000</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 99.95pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">124 abandons</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">14 869</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">4,55</p>
+</td>
+</tr>
+<tr>
+<td rowspan="3" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; padding-bottom: 0in; padding-left: 4pt; width: 130.6pt; padding-right: 4pt; background: #f2f2f2; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-shading: white; mso-pattern: gray-5 auto; mso-border-top-alt: solid windowtext .5pt" valign="top" width="100">
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal">Journée internationale De la marche à l'école <o:p></o:p></b></p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 70.05pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">1998</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 99.95pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">75 écoles</p>
+<p class="MsoNormal">14 000 participants</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal"><o:p></o:p></p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">?</p>
+</td>
+</tr>
+<tr>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 70.05pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">1999</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 99.95pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">197 écoles</p>
+<p class="MsoNormal">44 325 partipants</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">7 320</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">2,24</p>
+</td>
+</tr>
+<tr>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 70.05pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">2000</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 99.95pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">400 écoles</p>
+<p class="MsoNormal">90 000 participants</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">20 000</p>
+</td>
+<td style="border-bottom: windowtext 0.5pt solid; border-left: medium none; padding-bottom: 0in; padding-left: 4pt; width: 89.1pt; padding-right: 4pt; border-top: medium none; border-right: windowtext 0.5pt solid; padding-top: 0in; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" valign="top" width="50">
+<p class="MsoNormal">6,12</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal"><o:p></o:p></p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Jacky Kennedy<br/>
+Coordonnatrice<br/>
+Active &amp; Safe Routes to School<br/>
+Greenest City<br/>
+57, avenue Douglas<br/>
+Toronto, Ontario<br/>
+M5M 1G4<br/>
+Tél. : (416) 488-7263<br/>
+Téléc. : (416) 488-2296<br/>
+Courriel : <a href="mailto:ntgc@web.net">ntgc@web.net</a><br/>
+Web : <a href="http://www.greenestcity.org">www.greenestcity.org</a></p>
+<p>Pour plus de statistiques, visitez :<br/>
+<a href="www.greenestcity.org/indexasrts.html">www.greenestcity.org/indexasrts.html</a></p>
+<p>Pour plus de renseignements à propos du programme Way to Go et d'autres semblables, visitez aussi le site Web <a href="http://www.goforgreen.ca/araspe/tools_f.html">www.goforgreen.ca/araspe/tools_f.html</a>.</p>
+<p>Cette étude cas a été écrite par Quenby Barris.</p>
+<p>La traduction vers le français a été faite par Louise Rioux. Aimant beaucoup les mots, et surtout leur rôle dans l'expression d'une idée, la traduction est un défi des plus intéressants. Disponible pour effectuer vos travaux de traduction, vous pouvez la contacter par courriel à : <a href="mailto:michelg@9bit.qc.ca">michelg@9bit.qc.ca</a>.</p>
+<p>Rénald Gagnon a édité la version française de cette étude de cas. Rénald possède de nombreuses années d'expérience de traduction et de révision dans des domaines très variés. Vous pouvez le joindre par courriel à : <a href="mailto:relimax@magma.ca">relimax@magma.ca</a>.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><b>Leçons apprises du programme Autobus scolaire pédestre :</b> </p>
+<ul>
+<li>Les écoles sont des endroits très occupés. Les parents et le personnel n'ont pas tout le temps qu'ils voudraient consacrer à l'implantation d'un tel programme; vous devrez alors prévoir une année scolaire entière pour la réussir.</li>
+<li>Officieusement, jusqu'à un certain point, des ASP non reconnus existent déjà dans les écoles. Alors au début du projet, c'est donc une bonne idée de repérer ces familles. Avec leur permission, vous pouvez créer « des héros locaux » et les utiliser comme modèles. Cette façon de faire est très efficace pour élargir le programme.</li>
+<li>Le fait d'établir un volet Groupe de marcheurs du voisinage au tout début du programme est essentiel pour identifier les dangers pour les piétons et travailler à trouver des solutions. Les parents répondent positivement à ce processus et sont confiants que le sujet de la sécurité est abordé de façon officielle et systématique.</li>
+<li>Le programme fonctionne au mieux quand il a une base à l'école. Cette base est souvent sous la bannière d'un comité de sécurité, de circulation ou d'environnement, mais parfois un comité spécial ASP est formé par le conseil des parents.</li>
+<li>Une promotion continue à l'intérieur de l'école est la clé du succès, spécialement pour le volet ASP. Des « mises à jour » régulières publiées dans le bulletin de l'école et envoyées aux parents se sont révélées très efficaces.</li>
+<li>Des campagnes de promotion du programme ASP lors de la tenue d'événements scolaires tout au long de l'année sont aussi très efficaces. Elles comprennent l'inscription à la maternelle, des soirées d'information sur le programme, des foires sur la sécurité, et des rencontres d'associations parents-enseignants.</li>
+<li>Plusieurs parents croient que leur participation à un ASP nécessite beaucoup d'organisation et de temps. Ces personnes doivent savoir que les participants expérimentés trouvent qu'un investissement modeste en temps au tout début mène à une économie permanente une fois le programme bien enclenché.</li>
+<li>Chaque école et chaque communauté est unique. Il est important d'être sensible aux besoins individuels telles la diversité de la langue, les questions de sécurité propres à chacun, et les situations socio-économiques.</li>
+<li>À cette époque-là, l'Ontario finançait deux systèmes majeurs à même les fonds publics. Impliquer le petit Catholic School Board représentait un beau défi parce qu'il comptait moins d'écoles et de plus grandes aires de recrutement. Toutefois, l'importance d'inclure ces écoles a prôné à cause de leur pourcentage plus grand d'enfants empruntant les autobus.</li>
+</ul>
+<p> </p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

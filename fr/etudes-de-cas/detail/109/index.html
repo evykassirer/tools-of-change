@@ -1,0 +1,287 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/communications-personnalisées-percutantes/">Communications personnalisées percutantes</a></li>
+<li><a href="../../../../fr/outils-de-changement/programmes-scolaires-qui-engagent-la-famille/">Programmes scolaires qui engagent la famille</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Ressources naturelles Canada</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Jeunes conducteurs du Canada</li>
+<li>le Conseil de sécurité canadien</li>
+<li>Transports Canada</li>
+<li>Santé Canada</li>
+<li>Environnement Canada</li>
+<li>l'Association canadienne des automobilistes</li>
+<li>General Motors</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<ul>
+<li>les habitudes de conduite préconisées avaient augmenté de plus de 20 %</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Programme « Le bon $ens au volant » pour les élèves automobilistes canadiens</h1>
+<p>Le programme <em>Le bon $ens au volant</em> pour élèves automobilistes fournit aux instructeurs de conduite partout au Canada une trousse qui les aide dans l'enseignement de la conduite éconergétique aux conducteurs débutants sur la façon de conduire en toute sécurité tout en économisant de l'argent et en protégeant l'environnement. La trousse comprend un vidéo, un cédérom interactif et le matériel didactique. Ce matériel explique comment des décisions éclairées en matière d'achat de voitures (p. ex.. catégorie et modèle), de bonnes pratiques de conduite (p. ex. le respect des vitesses permises) et un bon entretien (p. ex. mises au point régulières) peuvent améliorer l'économie de carburant tout en réduisant les émissions de gaz à effet de serre.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p><em>Nota : Pour minimiser les coûts de maintenance du site, toutes les études de cas sont écrites au passé, même si elles sont en cours, comme dans le cas de ce programme. </em></p>
+<p>Ressources naturelles Canada (RNCan) a reconnu que la conduite automobile épuise les ressources naturelles du Canada et augmente la pollution. Avec une population de 30 millions d'habitants, le nombre de propriétaires d'automobiles au Canada est passé de 13 à 17 millions entre 1996 et 2001. Ces véhicules étaient aussi utilisés plus fréquemment et sur de plus longues distances, haussant la quantité d'essence utilisée et la pollution causée, même si les constructeurs d'automobiles ont amélioré l'efficience énergétique de leurs véhicules et diminué les rejets des sous-produits de combustion.</p>
+<p>Le Protocole de Kyoto de 1997 a fait grimper la pression internationale sur les nations industrialisées, tel le Canada, les invitant à réduire leur contribution per capita à la pollution planétaire. Le gouvernement canadien s'est donc engagé à diminuer ses niveaux d'émission de dioxyde de carbone dans l'atmosphère.</p>
+<p>Le Bureau d'efficience énergétique de RNCan a lancé en 1996 une campagne d'information appelée « <em>Le bon $ens au volant</em> ». Ce programme incitait la population à prendre des décisions réfléchies lors de l'achat de véhicules, à acquérir de bonnes habitudes au volant et à se soucier du bon entretien des véhicules; son matériel éducatif était distribué gratuitement à la population en général.</p>
+<p>En 1997, le Programme <em>Le bon $ens au volant</em> a implanté un programme d'enseignement aux élèves automobilistes pour diffuser le contenu de <em>Bon $ens au volant</em> aux conducteurs débutants par le biais de programmes d'enseignement. À ce moment-là, environ la moitié des élèves automobilistes canadiens (soit quelque 300 000 élèves annuellement) devaient défrayer leur formation d'apprenti conducteur.</p><!-- Background already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p><a name="informed"></a>Le matériel didactique compris dans la trousse <em>d'enseignement Le bon $ens au volant</em> a été conçu et testé par des groupes cibles composés d'instructeurs de conduite et d'élèves automobilistes de tout le Canada. De plus, des représentants d'organismes tels Jeunes conducteurs du Canada, le Conseil de sécurité canadien, Transports Canada, Santé Canada, Environnement Canada et l'Association canadienne des automobilistes, ont participé au groupe de travail national qui a participé à la préparation de la trousse.</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p><strong><em>La trousse Le bon $ens au volant pour élèves automobilistes</em></strong></p>
+<p>Lors de la mise en oeuvre du Programme <em>Le bon $ens au volant</em> pour élèves automobilistes, ces derniers devaient défrayer le programme d'enseignement et seuls les instructeurs de conduite disposaient de la trousse qui contenait un vidéo de 40 minutes, un cédérom interactif (dont le contenu était le même que le vidéo) de même que le matériel didactique. Les résultats d'une étude faite au hasard ont révélé que les instructeurs de conduite consacraient de 30 à 60 minutes en classe pour revoir le matériel lors de leurs programmes d'enseignement.</p>
+<p>Même si la trousse avait été destinée à un jeune auditoire, des élèves automobilistes plus âgés qui suivaient ces programmes ont reçu le même enseignement. Les instructeurs de conduite ont réussi à obtenir de la documentation gratuitement grâce à la ligne sans frais des Publications Éconergie de RNCan (1-800-387-2000) qu'ils ont pu ensuite distribuer aux élèves. Les publications suivantes ont été particulièrement utiles : <em>le Guide du Bon $ens au volant</em>, le <em>Guide de consommation de carburant</em> annuel et le <em>Calculateur des économies au volant.</em></p>
+<p><strong><em>Diffusion de la trousse pour élèves automobilistes</em></strong></p>
+<p>La première démarche de RNCan a été de rechercher dans les provinces des parrains et intervenants ayant des liens directs avec les instructeurs de conduite prêts à faire connaître la disponibilité de la trousse. Ces intermédiaires comprenaient des agences gouvernementales responsables de programmes d'enseignement aux élèves automobilistes, des associations d'instructeurs de conduite ainsi que d'autres groupes d'intérêts. Afin de bien faire connaître l'existence de cette trousse, des représentants du gouvernement ont assisté aux conférences et ateliers à l'intention des instructeurs de conduite. Les premières réactions de la part des groupes types ont révélé que la plupart des instructeurs de conduite étaient impatients de pouvoir incorporer ce matériel à leurs programmes existants. Les instructeurs de conduite ont reconnu que le matériel représentait une valeur ajoutée à leur contenu, ce qui les aidait à mieux enseigner aux jeunes automobilistes à conduire prudemment et comment économiser de l'argent et contribuer à réduire l'impact des véhicules sur l'environnement.</p>
+<p>En 2001, la Trousse pour élèves automobilistes <em>Le bon $ens au volant</em> a été utilisée par plus de 1 000 instructeurs de conduite, et au-delà de 270 000 élèves ont participé au programme. RNCan a demandé aux instructeurs de leur fournir, sur une base continue, des statistiques sur les inscriptions à leur programme.</p>
+<p><strong><em>Messages</em></strong></p>
+<p>Le programme élèves automobilistes informait les utilisateurs sur divers points :</p>
+<ul>
+<li>comment conduire de façon efficiente;</li>
+<li>quand conduire (lorsque vous n'êtes pas à distance de marche ou que vous ne pouvez utiliser le transport public);</li>
+<li>comment acheter et entretenir un véhicule en ayant en tête la faible consommation d'essence, et</li>
+<li>ce qui est bon pour votre véhicule l'est aussi pour votre portefeuille, l'environnement et l'air pur et salubre. Cependant, pour certains élèves, les économies anticipées ne représentaient pas un facteur de motivation puisque leurs parents payaient l'essence (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives</a>).</li>
+</ul>
+<p>La plupart des techniques enseignées par le biais du Programme Le bon $ens au volant en matière de conduite éconergétique ont aussi mené à des habitudes de conduite plus sécuritaires et conformes au contenu du cours existant (<a href="../../../../fr/outils-de-changement/programmes-scolaires-qui-engagent-la-famille/">Programmes scolaires qui engagent la famille</a>).</p>
+<p>L'information privilégiée transmise se résume comme suit.</p>
+<p>L'achat d'une voiture</p>
+<ul>
+<li>Le <em>Guide de consommation de carburant</em> de RNCan donne de l'information sur la consommation de carburant et permet aux consommateurs de comparer différentes catégories et modèles de voiture afin de choisir le véhicule le plus économique répondant le mieux à leurs besoins.</li>
+<li>Le choix d'options telles que lève-vitre ou siège électrique et boîte de vitesses manuelle ou automatique, peuvent influencer la consommation de carburant.</li>
+</ul>
+<p>Habitudes de conduite</p>
+<ul>
+<li>La vitesse, les démarrages rapides et les arrêts brusques, la marche au ralenti, la climatisation, des fixes-au-toit chargés, sont tous des éléments qui augmentent la consommation de carburant. Quant aux deux premiers, ils représentent en plus des dangers.</li>
+</ul>
+<p>L'entretien du véhicule</p>
+<ul>
+<li>Maintenir la pression des pneus aux niveaux recommandés et respecter rigoureusement le calendrier d'entretien recommandé par le constructeur du véhicule sont deux éléments qui réduisent la consommation de carburant et augmentent la fiabilité, la vie et la sécurité du véhicule.</li>
+<li>Un véhicule moyen émet trois fois son poids en dioxyde de carbone annuellement. Le même véhicule, mal entretenu, en produit encore plus (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Communications personnalisées percutantes</a>).</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>À la fin de 1997, la Fondation de recherches sur les blessures de la route au Canada (FRBR) a réalisé une évaluation du programme intitulée « Évaluation du Programme <em>Le bon $ens au volant</em> pour élèves automobilistes : Impact sur la connaissance, les attitudes et le comportement. » Plus de 450 élèves ont participé à l'évaluation. Les élèves qui avaient reçu cette formation ont passé un examen pour connaître le niveau de changement dans leurs connaissances, leurs attitudes et leurs comportements. Leurs résultats ont été comparés à ceux d'un groupe contrôle qui n'avaient pas reçu l'enseignement contenu dans la trousse.</p>
+<p>En 2001-2002, RNCan prévoyait procéder à une nouvelle étude auprès des élèves automobilistes afin de mesurer le niveau de rétention de l'enseignement reçu et le niveau de compréhension du lien entre la consommation de carburant et l'utilisation du véhicule (c.a.d. l'achat, la conduite et l'entretien). Une deuxième étude serait effectuée auprès des instructeurs de conduite qui ont utilisé la trousse entre 1999-2000, afin de déterminer le temps alloué en classe au sujet de la faible consommation d'essence.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>De façon générale , les participants ont déclaré que les comportements en matière de conduite à faible consommation de carburant avaient augmenté de 5 % à 10 % et de plus de 20 % en ce qui concerne les habitudes de conduite préconisées. Les connaissances quant à la réduction de la consommation de carburant se sont améliorées de 13 %. Pour ce qui des principaux comportements envers la faible consommation d'essence et les habitudes de conduite économique, ils se sont améliorés de 20 %.</p>
+<p>Les élèves se sont montrés très intéressés par l'information relative à la manière d'identifier les véhicules à faible consommation de carburant avant l'achat. Les élèves de sexe féminin ont semblé plus préoccupées et motivées.</p>
+<p>Quelques résultats inattendus du programme ont été l'utilisation du contenu de la formation par d'autres instructeurs. Par exemple, le ministère de la Défense nationale a utilisé la trousse dans la formation interne de leurs recrues.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Catherine Ray, Ressources naturelles Canada Courriel : <a href="mailto:cray@nrcan.gc.ca">cray@nrcan.gc.ca</a></p>
+<p>Cette étude de cas a été écrite par Christine McKay, anciennement du United States Department of Energy. Depuis plus de dix ans, Mme McKay a travaillé sur l'efficacité énergétique, l'énergie et le développement renouvelables. En sa qualité de consultante pigiste et initiatrice de projet/programme, son travail consiste surtout à développer des partenariats qui apportent des solutions synergétiques à des problèmes complexes, particulièrement aux problèmes reliés au changement climatique. Elle peut être jointe à son bureau à Atlanta, GA au (404) 255-2696. Son courriel est <a href="mailto:chrstnmckay@aol.com">chrstnmckay@aol.com</a>.</p>
+<p>La traduction vers le français a été faite par Louise Rioux. Aimant beaucoup les mots, et surtout leur rôle dans l'expression d'une idée, la traduction est un défi des plus intéressants. Disponible pour effectuer vos travaux de traduction, vous pouvez la contacter par courriel à <a href="mailto:michelg@9bit.qc.ca">michelg@9bit.qc.ca</a>.</p>
+<p>Rénald Gagnon a édité la version française de cette étude de cas. Rénald possède de nombreuses années d'expérience de traduction et de révision dans des domaines très variés. Vous pouvez le joindre par courriel à : <a href="mailto:relimax@magma.ca">relimax@magma.ca</a>.</p>
+<p>Le financement pour l'ajout de cette étude de cas a été généreusement fourni par le Fonds d’action pour le changement climatique du Gouvernement du Canada, Suncor, Syncrude, Enbridge Consumers Gas et TetraPak Canada Inc.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><b>Notes :</b> Le cédérom interactif n'a pas été utilisé autant que prévu en raison du manque de matériel informatique et de temps de classe.</p>
+<p>Des trousses ont été fournies à des associations d'instructeurs de conduite d'autres pays de façon ponctuelle.</p>
+<p>Outils et autres informations disponibles par l'entremise du Programme <i>Le bon $ens au volant</i></p>
+<p>(Nota : Les publications sont aussi disponibles en français.)</p>
+<ul>
+<li>Le <i>Calculateur des économies au volant</i> est un outil qui permet aux propriétaires de véhicules de mesurer la consommation de carburant de leur véhicule. Il aide les automobilistes à figurer leurs économies en carburant et les avertit des problèmes d'entretien reliés à l'augmentation de la consommation de carburant.</li>
+<li>L'Étiquette ÉnerGuide pour les véhicules peut être affichée séparément ou combinée à l'étiquette indiquant les options et le prix du véhicule apposée sur la vitre latérale d'un véhicule neuf. Les taux de consommation d'essence et les coûts approximatifs de carburant par année permettent aux consommateurs de comparer les catégories de véhicules de façon efficace avant d'arrêter leur décision et de choisir le véhicule le plus éconergétique pour leurs besoins.</li>
+<li>Le <i>Guide sur la consommation de carburant</i> complète l'étiquette ÉnerGuide pour les véhicules. Il contient la liste complète des taux de consommation de carburant, ce qui rend plus facile la comparaison de l'efficacité des voitures neuves, fourgonnettes, camions légers et autres véhicules spécialisés.</li>
+<li>Le <i>Guide Le bon $ens au volant</i> est une brochure de 72 pages qui donne des trucs simples concernant l'achat, la conduite et l'entretien d'un véhicule pour le maintenir en parfaite condition ce qui minimisera les coûts de consommation de carburant et réduira son impact sur l'environnement.</li>
+<li>La ligne sans frais de Publications Éconergie de RNCan est le 1-800-387-2000.</li>
+</ul>
+<p> </p>
+<p>Les sites Internet sont : <a href="http://www.oee.nrcan.gc.ca/vehicles">www.oee.nrcan.gc.ca/vehicles</a><br/>
+<a href="http://www.oee.nrcan.gc.ca/energuide">www.oee.nrcan.gc.ca/energuide</a><br/>
+<a href="http://www.sasked.gov.sk.ca/curr_inst/iru/bibs/update00/drivered.html#autosmart">www.sasked.gov.sk.ca/curr_inst/iru/bibs/update00/drivered.html#autosmart</a><br/>
+<a href="http://www.solutions.ca/thechangestartshere/english/auto_e.htm">www.solutions.ca/thechangestartshere/english/auto_e.htm</a><br/>
+<a href="http://www.nrcan.gc.ca/css/imb/hqlib/9803b.htm">www.nrcan.gc.ca/css/imb/hqlib/9803b.htm</a><br/>
+<a href="http://.autosmart.nrcan.gc.ca/home_f.htm">http://autosmart.nrcan.gc.ca/home_f.htm</a><br/>
+<a href="http://autosmart.nrcan.gc.ca/pubs/autofra.htm">http://autosmart.nrcan.gc.ca/pubs/autofra.htm</a></p>
+<p><b>L'avenir du programme</b></p>
+<p>En 2001, RNCan projetait d'inclure ses principaux messages dans le guide de l'utilisateur fourni à tous les élèves automobilistes par toutes les provinces, et de faire ajouter des questions correspondantes dans l'examen provincial menant à l'obtention du permis. On cherchait également comment intégrer la Trousse pour élèves automobilistes dans les contenus des cours de sciences environnementales ou d'initiation à la vie des écoles secondaires. RNCan planifiait également d'inclure les études de marché et les évaluations du programme de formation <i>Le bon $ens au volant</i> pour élèves automobilistes lorsque complétées. (<a href="http://www.oee.nrcan.gc.ca/vehicles">www.oee.nrcan.gc.ca/vehicles</a>)</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

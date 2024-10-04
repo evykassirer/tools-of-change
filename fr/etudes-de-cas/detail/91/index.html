@@ -1,0 +1,310 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a></li>
+<li><a href="../../../../fr/outils-de-changement/rétroaction/">Rétroaction</a></li>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a></li>
+<li><a href="../../../../fr/outils-de-changement/communications-personnalisées-percutantes/">Communications personnalisées percutantes</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+<li><a href="../../../../fr/outils-de-changement/de-bouche-à-oreille/">De bouche à oreille</a></li>
+<li><a href="../../../../fr/outils-de-changement/programmes-en-milieu-de-travail-qui-affectent-le-foyer/">Programmes en milieu de travail qui affectent le foyer</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>L'Oregon Department of Environmental Quality</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Fred Meyer</li>
+<li>Miller Paint</li>
+<li>Rodda Paint</li>
+<li>Sherwin Williams Paint</li>
+<li>Les Schwab Tire Dealership</li>
+<li>Walmart</li>
+<li>Portland General Electric</li>
+<li>Metro</li>
+<li>Blockbuster</li>
+<li>Autres détaillants locaux</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p>L’Oregon a été reclassé comme atteignant les normes pour le monoxyde de carbone et l’ozone</p>
+<table border="1" cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" complete="complete" height="26" src="/images/lightbulb.gif" width="27"/> <small><font face="Verdana">Conseil: Cliquez sur cette image pour l'agrandir. Cliquez votre bouton "Back" pour retourner à ce page.</font></small><hr color="#FFCC00"/>
+<p><a href="/images/documentimages/AQPortland/cartips.gif" target=""><img alt="Car care tips fact sheet" border="0" complete="complete" height="129" src="/images/documentimages/AQPortland/cartips1.gif" width="100"/></a><br/>
+<small><font face="Verdana">These fact sheets provided tips for preventing air pollution caused by cars.</font></small></p>
+<p><a href="/images/documentimages/AQPortland/prizedraw" target=""><img alt="Prize draw entry form" border="0" complete="complete" height="74" src="/images/documentimages/AQPortland/prizedraw1.gif" width="100"/></a><br/>
+<small><font face="Verdana">Prize draws were used as an incentive to participate in Clean Air Action Days.</font></small></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Programme de sensibilisation sur la qualité de l'air en Oregon</h1>
+<p>Ce programme en cours éduque le public et l'encourage à améliorer la qualité de l'air à Portland. Il utilise des approches non réglementaires qui ciblent les véhicules, les tondeuses à gazon, les peintures et certains produits de consommation, afin de réduire l'émission de composés organiques volatils (COV).</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>L’ Environmental Protection Agency (EPA), un organisme fédéral américain, a fourni les normes environnementales auxquelles tous les États doivent se conformer en vertu du Clean Air Act. En 1995, Portland métropolitain était classé comme n'atteignant pas les normes pour le monoxyde de carbone et l’ozone au niveau du sol (smog). Le Department of Environmental Quality (DEQ) de l’Oregon a lancé le programme de sensibilisation et d’information du public sur la qualité de l’air dans le cadre d’un plan stratégique pour réduire la pollution de l’air, et atteindre le niveau des normes de l’EPA. Le projet a été piloté sur une période de trois ans, de 1995 à 1998.</p>
+<p>Le programme ciblait le Portland métropolitain, incluant des employés et entreprises, ainsi que les quartiers résidentiels. Au total, environ un million de personnes ont été ciblées et près de 500 000 se sont impliquées d’une façon quelconque. Ce programme a été le premier du genre à être approuvé par le gouvernement fédéral dans le cadre d’un programme d’état à être implanté dans l’Oregon.</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p>Voici les objectifs de ce programme :</p>
+<ul>
+<li>Changer positivement les comportements des résidents de Portland, ce qui pourrait « réduire l’émission de COV ».</li>
+<li>Réduire l’émission de COV de 2 % de façon permanente, d’ici l’an 2006, compte tenu de la population.</li>
+<li>Fixer des objectifs mesurables de participation pour chaque programme individuel dans le cadre du programme de sensibilisation et d’information du public sur la qualité de l’air, déterminant dans quelle mesure l’émission de COV a été réduite.</li>
+</ul>
+<p> </p><!-- Objectives already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>N/A</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>Le programme de sensibilisation et d’information du public sur la qualité de l’air consistait en plusieurs programmes non réglementaires opérant simultanément. Dans tous les cas, les programmes ont utilisé le partenariat communautaire avec les entreprises pour une distribution efficace. (<a href="../../../../fr/outils-de-changement/programmes-en-milieu-de-travail-qui-affectent-le-foyer/">Programmes en milieu de travail qui affectent le foyer</a>) Les partenariats ont fonctionné parce que tous les participants ont bénéficié de leur implication. Particulièrement, les entreprises ont bénéficié en augmentant leur profil en tant que membres conscientisés de la collectivité, et tous les incitatifs étaient rachetables seulement chez les entreprises participantes, assurant un certain montant de vente pour ces partenaires.</p>
+<p><strong>Journées de l’air pur : </strong></p>
+<p>Le DEQ a procédé à des consultations les jours où le niveau de smog menaçait d’atteindre un niveau malsain, recommandant des actions volontaires afin de maintenir sain l'air respiré (<a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a>). Environ 400 employeurs participaient au programme à la fin de 1997; il y en avait plus de 500 en 1999. Les employeurs participaient en véhiculant des idées pour la prévention de la pollution auprès de leurs employés et des consommateurs. Toutes les entreprises participantes étaient éligibles à recevoir des incitatifs à distribuer aux consommateurs et aux employés (pour en savoir davantage, voir le « 2000 Incentive Order Form »).</p>
+<p>Plusieurs messages étaient véhiculés durant la Journée de l’air pur. Les trois principaux étaient :</p>
+<ul>
+<li>Réduire la conduite automobile ou utiliser d'autres moyens</li>
+<li>Réduire l’utilisation de vaporisateurs en aérosol</li>
+<li>Ne pas utiliser de tondeuses à essence.</li>
+</ul>
+<p> </p>
+<p>Le poste d’essence Chevron, « Les Schwab Tire Dealership » et « Fred Meyer » (un magasin de vente au détail et une épicerie dont le siège social est à Portland) ont aussi aidé aux Journées de l’air pur avec des affiches et en faisant des annonces dans leurs magasins, sensibilisant les consommateurs aux principaux messages des Journées de l’air pur. Les messages véhiculés incluaient des choses simples que les résidents pouvaient faire afin de réduire la pollution de l’air, comme ne pas utiliser des vaporisateurs atomiseurs ou ne pas utiliser de tondeuses à essence cette journée-là. Au cours de l’été 1997, les magasins Walmart ont diffusé des messages publicitaires de 60 secondes, chaque heure, suggérant aux consommateurs des idées simples pour leur voiture, par exemple, garder les voitures en bon état de marche et les pneus bien gonflés. Six détaillants automobiles ont participé à deux commerciaux télévisés diffusés sur le câble. Une fois de plus, les spots publicitaires mettaient en vedette les gérants et les propriétaires, qui insistaient sur des idées simples, comme le covoiturage, la combinaison des emplettes, et même l'achat de nouvelles voitures avec faible émission de COV. (<a href="../../../../fr/outils-de-changement/medias/">Médias</a>)</p>
+<p>Le <em>Portland Business Journal</em> a remercié les employeurs en offrant une publicité d’une page complète supplémentaire pour leur entreprise à la fin de chaque saison. Les employeurs ont également reçu un certificat du Gouverneur de l’Oregon les remerciant de leur participation.</p>
+<p><strong>Déplacements autres que pour le travail : </strong></p>
+<p>En association avec la Portland General Electric (PGE) et les Blockbuster Video, ce programme ciblait les résidents afin qu’ils réduisent leurs déplacements à des fins autres que le travail durant la saison estivale. Des coupons et des formulaires d'engagement (<a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a>) ont été envoyés à 600 000 consommateurs de la PGE, leur demandant de remplir la carte les engageant à utiliser d’autres moyens que de conduire seul pour se rendre à leur club vidéo Blockbuster. Chaque client qui respectait son engagement durant le mois de juillet recevait un rabais de 1 $ sur chaque location de film par voyage au club vidéo. (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>).</p>
+<p>Une autre initiative a lancé un programme de covoiturage - une location de voiture à court terme dans le voisinage. Cette organisation permettait aux individus de payer seulement la distance qu’ils parcouraient (kilométrage et temps) (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>). Les voitures étaient situées à une distance de marche de quelques minutes. Le DEQ a fourni les fonds nécessaires à la mise en place du programme.</p>
+<p><strong>PRODUITS ADAPTÉS AU CONSOMMATEUR : </strong></p>
+<p>En association avec Fred Meyer, ce programme moussait la vente de produits émettant peu de COV et par le fait même contribuant à de l’air plus sain. Fred Meyer a accepté de faire des annonces, « l’art » sur les sacs d’épicerie et les macarons pour le personnel du magasin qui offraient aux consommateurs des suggestions simples sur les façons de garder l’air sain, par exemple utiliser un vaporisateur non en aérosol ou garder les pneus bien gonflés. Le programme donnait également de l’information environnementale sur certains produits sur les tablettes, comme les fixatifs et la peinture, incitant les consommateurs à choisir les produits qui étaient plus faibles en émissions de COV (<a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a>).</p>
+<p>Par exemple, la peinture « Miller Paint’s zero VOC » était en promotion dans tous les magasins de Portland et Vancouver en 1998 par le biais d’annonces publicitaires dans les journaux, et vendue à un prix réduit afin de promouvoir son achat.</p>
+<p><strong>Programme de rachat de tondeuses à gazon</strong></p>
+<p>La Portland General Electric (PGE), le DEQ et Metro (l’agence de déchets solides de la région de Portland) ont parrainé un programme de rachat de tondeuses durant les mois d’été. Le programme était destiné à encourager la population locale à échanger les tondeuses à essence en bon état contre des tondeuses électriques ou poussées, réduisant par le fait même les émissions de COV. Les résidents se sont fait offrir des incitatifs financiers (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>) pour amener leur tondeuse à essence en bon état dans un poste de transbordement Metro; en échange, ils recevaient un rabais de 50 $ sur une tondeuse électrique ou de 15 $ sur une tondeuse poussée. La PGEa aidé financièrement le programme en offrant les rabais aux consommateurs.</p>
+<p>Durant la première année du programme, le rabais était limité à deux modèles Black and Decker et un modèle Husqvarna. Par contre, durant la deuxième année, le rabais était applicable à tous les types de tondeuses électriques et poussées; le programme a connu un plus grand succès.</p>
+<p>Le programme de rachat des tondeuses à gazon a été publicisé par le biais d’encarts avec la facture de la Portland General Electric. De plus, les annonces publicitaires télévisées ont été utilisées pour vanter le programme, de même que des affiches dans les magasins locaux, la publicité imprimée, les promotions de fin de semaine dans le magasin de rénovation domiciliaire Home Depot et des événements dans le voisinage. Un exemple de ces promotions était un « tondeuse-o-ton » tenu à l'intersection Sud-Est, qui a testé différentes sortes de tondeuses à gazon et qui vantait l’utilisation d’une tondeuse électrique ou poussée plutôt qu'une tondeuse à essence (<a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communication personnalisée percutante</a>).</p>
+<p><strong>PARTENAIRES PEINTURE : </strong></p>
+<p>Un partenariat pour la prévention de la pollution a été formé par trois détaillants de peinture (Rodda Paint, Miller Paint et Sherwin-Williams Paint). Les trois entreprises ont remis de la documentation au DEQ concernant certains produits contenant moins de COV. Les peintures à faible teneur en COVont été publicisées par le biais des fabricants. En 1998, Miller Paint a fait un pas de plus en offrant un rabais de 30 % à l’achat d’un de ses produits à faible teneur en COV. (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>). Les coupons ont été distribués à tous les employeurs participant à la Journée de l’air pur et étaient encaissables dans tous les magasins de détail Fred Meyer dans la région de Portland.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>Le budget exact du programme est difficile à estimer, parce qu'il dépendait énormément des partenariats communautaires et des dons provenant des entreprises partenaires (par exemple, la Portland General Electric a fourni une subvention de 20 000 $ pour des rabais sur les tondeuses à gazon).</p>
+<p>Le DEQ a payé le salaire d'un gestionnaire de projet à temps plein du programme de sensibilisation et d'information du public sur la qualité de l'air et l'EPA a également donné des bourses pour plusieurs sous-programmes faisant partie du programme principal. Au total, le programme a nécessité un budget d'environ 25 000 $EU par année.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Les enquêtes de référence et de suivi ont aidé à identifier les améliorations dans le changement de comportement des résidents, surtout dans l’utilisation des tondeuses à essence. L’enquête de référence, effectuée au hasard auprès des ménages, par téléphone, posait des questions sur les habitudes de dépenses des consommateurs, leur utilisation de l’automobile et d'une tondeuse à essence, et leur connaissance des problèmes de la qualité de l’air dans la région métropolitaine de Portland. L’enquête de suivi a posé des questions semblables, en plus de demander aux résidents ce qu'ils connaissaient des programmes dans le cadre du programme de sensibilisation et d’information du public sur la qualité de l’air.</p>
+<p>Les résultats ont été mesurés avant la saison de l’ozone en 1996 et en septembre 1997. Les résultats ont par la suite été mesurés deux fois par année et le seront jusqu’en 2005 afin de déterminer la durée des changements dans le comportement des participants.</p><!-- Results_B already contains P tags.-->
+<h2>Réaction</h2>
+<p>Il a été difficile pour le DEQ de fournir des rétroactions aux résidents. Même s'il y avait une diminution corrélationnelle de la pollution de l'air grâce à la création du programme de sensibilisation et d'information du public sur la qualité de l'air, les organisateurs ne pouvaient garantir que le programme avait directement entraîné une diminution de la pollution de l'air.</p>
+<p>Par contre, le DEQ a publié un communiqué de presse avec les résultats encourageants de l'évaluation de l'EPA de 1997, en plus d'annoncer les succès relatifs dans le journal pour les partenaires de la Journée de l'air pur.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>À la fin de 1998, l'Oregon a été reclassé comme atteignant les normes pour le monoxyde de carbone et l'ozone. Durant les deux premières années, un nombre accru de résidents ont utilisé des solutions de rechange au déplacement quotidien effectué seul et plus de personnes étaient conscientes des dangers liés à l'utilisation des tondeuses à essence et des aérosols, bien que leur utilisation n'ait pas diminué de façon significative. La sensibilisation à la Journée de l'air pur a passé du tiers à pratiquement la moitié des résidents de Portland. Au moins un million de personnes ont été contactées durant le programme, par les médias, les encarts avec les factures et les programmes d'entreprises. Environ 500 employeurs et plus de 100 000 employés ont participé à la Journée de l'air pur.</p>
+<p><b>Déplacements autres que pour le travail</b></p>
+<p>Curieusement, le programme de covoiturage n'a pas donné les résultats escomptés : une réduction des kilomètres par véhicule. Au contraire, les organisateurs du programme ont découvert que les participants se sont impliqués dans le programme dans le but de retarder l'achat d'une voiture ou parce qu'ils vendaient leur voiture.</p>
+<p>La vente des produits de consommation et de peinture avait aussi pour objet de servir d'indicateur de changements de comportements et de réduction des émissions de COV; néanmoins, en dehors des produits réglementés, aucune augmentation des ventes n'a été notée. Abstraction faite des mesures de certains programmes, les organisateurs ont été incapables d'attribuer la vente de tous les produits faibles en COV au programme de sensibilisation et d?information du public sur la qualité de l'air. Cependant, les ventes ont généralement augmenté pour la peinture ne contenant pas de COV, et plusieurs fabricants ont arrêté leur production de peinture à forte émission de COV.</p>
+<p><b>Programme de rachat de tondeuses à gazon</b></p>
+<p>En 1995, seulement 144 tondeuses ont été mises au rancart, mais à la fin de la deuxième année, 481 tondeuses avaient été remises. Les années 3 et 4, 500 tondeuses l'ont été chaque année, le maximum permis par le financement. Le programme a continué à porter fruit, mais s'est terminé en 2000, avec la décision de la Portland General Electric d'arrêter le financement.</p>
+<p>Les effets à long terme du programme n'étaient pas connus quand cette étude de cas a été rédigée, malgré le fait que le DEQ prévoyait mesurer le comportement des citoyens jusqu'à 2005 afin de déterminer la durabilité des programmes offerts. En l'an 2000, plus de la moitié de la population locale de Portland savait ce qu'était la Journée de l'air pur, connaissaient le contenu des messages principaux et quelles mesures devaient être prises lorsqu'un avis aux médias était émis pour la Journée de l'air pur.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Pour des informations sur des programmes passés ou présents :<br/>
+<br/>
+Nina DeConcini<br/>
+Air Quality Public Education Manager<br/>
+Oregon Department of Environmental Quality<br/>
+811 SW 6th Avenue<br/>
+Portland, OR<br/>
+97204<br/>
+Téléphone : (503) 229-6788<br/>
+Télécopieur : (503) 229-5675<br/>
+Courriel : <a href="mailto:deconcini.nina@deq.state.or.us">deconcini.nina@deq.state.or.us</a><br/>
+Site Internet : <a href="http://www.deq.state.or.us">www.deq.state.or.us</a></p>
+<p>L’auteure de cette étude de cas est Deanna Yerichuk. Travaillant à Toronto, Canada, Deanna rédige et édite des articles pour de nouveaux projets. Elle est toujours à l’affût de possibilités qui lui permettront de mettre à profit sa grande expérience dans le domaine du développement communautaire et des communications. Vous pouvez contacter Deanna par courriel à : <a href="mailto:yerichuk@canoemail.com">yerichuk@canoemail.com</a>.</p>
+<p>La traduction vers le français a été faite par Loreli Berthiaume. Elle serait disponible pour traduire des textes, de l'anglais au français. Si vous désirez de plus amples informations, prière de la contacter à son adresse courriel <a href="mailto:lorelib@videotron.ca">lorelib@videotron.ca</a>.</p>
+<p>Rénald Gagnon a édité la version française de cette étude de cas. Rénald possède de nombreuses années d’expérience de traduction et de révision dans des domaines très variés. Vous pouvez le joindre par courrier à : <a href="mailto:relimax@magma.ca">relimax@magma.ca</a>.</p>
+<p>Le financement pour l'ajout de cette étude de cas a été généreusement fourni par le Fonds d’action pour le changement climatique du Gouvernement du Canada, Suncor, Syncrude, Enbridge Consumers Gas et TetraPak Canada Inc.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><b>LEÇONS APPRISES :</b></p>
+<p>Les changements durables peuvent uniquement se produire sur une longue période - ne pas s’attendre à trop, trop rapidement.</p>
+<p>L'entretien des rapports et des partenariats avec le secteur privé est un élément clé pour un programme réussi. Ces rapports fournissent plus de messagers pour véhiculer le message à un nombre plus élevé de personnes dans une grande variété de secteurs. En entretenant ces rapports avec les entreprises, l’organisation doit comprendre comment un partenariat fonctionne dans l’intérêt de l’entreprise et le promouvoir. En fait, l’organisation doit présenter aux entreprises une situation gagnante pour tout le monde.</p>
+<p>L’expérience du DEQ a révélé qu’aucun outil de communication n’était nécessairement plus puissant qu’un autre, que c’était la combinaison de plusieurs outils de communication qui rendait le programme si efficace. Par exemple, une personne pouvait entendre une annonce en route pour le travail, avoir de l’information de son employeur, recevoir avec sa facture de gaz un coupon incitatif et voir une annonce à la télévision. Le même message répété par différents moyens créait un solide fondement pour la connaissance et la participation aux programmes. Même si le regroupement de tous les outils était plus efficace, parmi les méthodes de commercialisation utilisées, la plus efficace s'est avéré la mise en place d'incitatifs financiers. Les gens étaient beaucoup plus enclins à se débarrasser de leur tondeuse à gazon sachant qu’ils recevraient un coupon de 50 $ pour une tondeuse électrique ou poussée.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

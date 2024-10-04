@@ -1,0 +1,385 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a></li>
+<li><a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+</ul>
+<h5>Initiative de</h5>
+<p>Les services publics de Seattle et les autorités de King County</p><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<p>PRR, The Frause Group et Brumley Communications</p><!-- Partners already contains li tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Hébert le Saumon: Promouvoir une saine gestion des pelouses dans la région de Seattle</h1>
+<p>La campagne d'Herbert le Saumon a su convaincre des centaines de milliers de propriétaires de la région de Seattle de tourner le dos aux pratiques nocives et d'opter pour des méthodes plus naturelles pour l'entretien de leur pelouse. Cette campagne de relations publiques reposait à la fois sur les médias de masse et sur la diffusion d'une trousse de conversion munie d'un écriteau à planter sur son terrain.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>Vers le milieu des années 1990, on estime que les propriétaires, commerçants et fonctionnaires de King County (qui englobe les régions de Puget Sound et de Seattle dans l’État de Washington, aux États-Unis) utilisaient environ 1,1 million de livres de pesticides chaque année. Cette région qui comptait un peu plus d’un million d’habitants générait presque 550 000 tonnes de tontes de gazon dont il fallait disposer. La qualité de l’eau et des ruisseaux et, en bout de ligne, la faune, souffraient de tous ces pesticides tandis que les mécanismes mis en place pour composter les tontes de gazon menaçaient de ne plus suffire à la tâche. Par ailleurs, les propriétaires utilisaient presque deux fois plus d’eau en été qu’en hiver ce qui mettait sérieusement en péril les réserves d’eau de la région. La plus grande partie de cette d’eau servait à arroser les pelouses et à d’autre usages extérieurs. En 1996, un consortium d’organismes publics chapeauté par les services publics de Seattle et les autorités de King County décidait de faire appel à un groupe d’experts-conseils en relations publiques PRR, The Frause Group et Brumley Communications pour élaborer et assurer la mise en oeuvre d’un programme qui arriverait à convaincre la population de faire les choses autrement.</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p>Dans l’ensemble, le programme devait contribuer à changer la norme en matière d’entretien des pelouses et inciter les propriétaires de toute la région à opter pour des pratiques plus respectueuses de l’environnement. Voici les principaux comportements initialement recherchés:</p>
+<ul>
+<li>Augmenter le nombre de personnes qui recyclent leurs tontes de gazon</li>
+<li>Réduire le nombre de personnes qui utilisent des formules synthétiques du commerce sur leur pelouse</li>
+<li>Réduire les arrosages de pelouses</li>
+</ul>
+<p>Aucun groupe cible n’avait été identifié au moment d’établir ces objectifs.</p>
+<p> </p><!-- Objectives already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>Le groupe cible visé par le programme a été identifié par le biais d’un sondage mené auprès de 400 habitants de la région de Seattle. Le sondage avait révélé que le propriétaire masculin de 25 à 54 ans gagnant plus de 30 000 $ par année était le plus susceptible d’être propriétaire et d’avoir la responsabilité d’entretenir sa pelouse. Les recherches qui ont suivi sur des segments du groupe cibles ont ajouté que même si le groupe cible était bel et bien désireux d’agir de façon responsable, il ne fallait pas non plus que cela devienne trop compliqué d’avoir une belle pelouse.</p>
+<p>« Nous avons appris que le message devait rester le plus simple possible, » d’expliquer Julie Colehour, directrice du marketing chez PRR. « De plus, ces segments du groupe cible nous ont révélé que notre public cible serait beaucoup plus réceptif aux messages positifs qu’aux messages négatifs. »</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>L’équipe prépara donc un message tout simple pour la campagne qui allait pouvoir s’adapter à la fois aux médias et à tous les événements. Le slogan <em>When it comes to your lawn, act naturally</em> qu’on peut traduire ici, pour les besoins de la cause, par <strong><em>Quand il est question de gazon, soyons</em></strong> éco<strong><em>logiques</em></strong>. Pour renforcer cette phrase, l’équipe a voulu lui ajouter un personnage familier. Herbert le Saumon allait devenir le poisson-parole qui saurait convaincre d’opter pour l’éco<em>logique</em> avec une touche d’humour bien dosée.</p>
+<p>Herbert n’était pas votre saumon habituel. « Il fut pensé en fonction d’attirer l’attention de notre clientèle cible autant par son image que par son style et son ton, » de dire Madame Colehour. « Casquette de baseball bien posée sur la tête, gilet sport, Herbert avait aussi de l’humour. Le seul fait d’être un saumon venait aussi mettre plus d’emphase sur l’importance des pratiques écologiques ».</p>
+<p>Au fil de ses recherches, l’équipe de communication a pu déceler qu’une approche intégrée qui arriverait à rejoindre les gens dans leur communauté était le meilleur moyen d’atteindre le groupe cible visé. On savait que l’écologie était en soi un concept difficile à saisir par la population. Il fut donc décidé d’opter pour une approche très personnalisée. La campagne promotionnelle allait comprendre les activités suivantes:</p>
+<ul>
+<li>Publicité à la radio et à la télévision autour des parties des Mariners, l’équipe de baseball de Seattle</li>
+<li>Contacts avec les médias, événements promotionnels qui susciteraient l’intérêt des médias d’information</li>
+<li>Matériel de soutien, trousse de conversion, dépliants sur l’entretien écologique des pelouses, vidéo promotionnel</li>
+<li>Participation à divers événements spéciaux comme, par exemple, l’expo habitat, l’expo jardins, etc. On y distribuait des dépliants d’information en sensibilisant les gens intéressés sur une base individuelle.</li>
+</ul>
+<p><strong>Publicité</strong><br/>
+La pierre angulaire de cette campagne fut sans contredit la publicité télévisée pendant les matches de baseball des Mariners de Seattle (<a href="../../../../fr/outils-de-changement/medias/">média de masse</a>). Parce que la cible était masculine, l’équipe de communication s’était dit que le baseball était certainement une bonne avenue pour attirer l’attention des hommes visés. Cette publicité de 30 secondes a coûté 25 000 $ en frais de production et fut diffusée en 1998 (260 000 $ déboursés pour le temps d’antenne) et en 2000 (230 000 $ en temps d’antenne).</p>
+<p> </p>
+<p>« Les deux années où les publicités ont été diffusées à la télé pour le public des Mariners étaient celles où nous avons enregistré le plus de changement au niveau des comportements, » selon Madame Colehour. Pendant que les sondages révélaient continuellement une progression au niveau des trois comportements recherchés pendant les quatre ans qu’ont duré le projet, les progrès les plus marquants furent néanmoins là où nous avions diffusé les annonces à la télé pendant les matches des Mariners.</p>
+<p>Le programme avait aussi prévu des annonces sur les vertus de l’entretien écologique de la pelouse en 1997 et en 1999 pendant les matches de Mariners mais cette fois à la radio. L’équipe opta pour une rotation de messages sur neuf semaines du mois d’avril au mois d’août qui coïncidait d’ailleurs avec la saison d’entretien des pelouses. En avril et juin, on avait mis l’accent sur les avantages de laisser les tontes de gazon au sol et du mois de juin au mois d’août, période où on utilisait le plus d’eau, on visait plutôt à réduire les arrosages. Cette année-là, l’équipe de communication embaucha les Mariners pour produire 19 trucs écolos à diffuser pendant les matches. Dans chacun des spots de 15 secondes, Herbert le Saumon s’entretenait avec un ou l’autre des joueurs de l’équipe. Les frais de publicité s’élevèrent à 210 000 $ en 1997 et à 128 000 en 1999.</p>
+<p><strong>La mise à contribution des médias d’information</strong><br/>
+Arriver à impliquer les médias d’information de manière efficace était l’un des autres éléments critiques visés par la campagne des médias de masse. « Nous avons organisé de nombreux événements hautement médiatisés et avons ainsi bénéficié d’un grand intérêt de la part de la presse », explique Madame Colehour. « Parce que nous nous sommes servis de nombreux véhicules pour diffuser l’information, les gens ont pu entendre le message plusieurs fois. »</p>
+<p>Chaque année, l’équipe de communications développait une nouvelle approche publicitaire pour maintenir l’intérêt du public.</p>
+<ul>
+<li>En 1997, l’équipe invita les médias chez un propriétaire converti. Après avoir échangé sur le sujet avec le propriétaire, les médias ont montré les résultats obtenus – une superbe pelouse. Les autorités de la région étaient sur place pour discuter du programme avec les journalistes.</li>
+<li>En 1998, un étudiant du secondaire écrivit au maire de Seattle, Paul Schell, pour se plaindre qu’il craignait pour la santé de ses animaux en raison de l’utilisation des pesticides dans son quartier. De nombreux journaux locaux publièrent sa lettre qui mena à la tenue d’un forum communautaire sur la propriété de l’adolescent. Le Maire Schell avait accepté de diriger l’événement et les bulletins de nouvelles ont répondu massivement au rendez-vous. Toutes les chaînes locales de télé y étaient et l’événement fit la manchette des deux principaux quotidiens de Seattle. Les journaux locaux on couvert l’événement de long en large tandis que les postes de radio accordèrent de nombreuses entrevues. L’équipe de communication a considéré cet événement comme l’un des événements de relations publiques les plus réussies de toutes la campagne.</li>
+<li>En 1999, l’équipe chargée de la campagne émettait un communiqué de presse sur l’impact que pouvait avoir une augmentation du pesticide diazinon en août et septembre sur les oiseaux et les poissons, notamment sur le saumon du Pacifique. Le communiqué avait aussi signalé qu’il était impossible d’éliminer les moustiques avec du diazinon. Le communiqué de presse reçut énormément d’attention de la part des médias. On avait invité les gens à considérer l’approche écologique comme solution de rechange. La même année, pour une seconde poussée médiatique, l’équipe invita toutes les bibliothèques municipales de Seattle à cesser d’utiliser des pesticides sur leurs terrains. Le Maire Schell fit l’annonce officielle du projet dans l’une des bibliothèques et invita ses concitoyens à suivre leur exemple à la maison.</li>
+<li>En 2000, l’équipe invita tout un quartier, celui de Renton Hill, à se passer de produits chimiques de synthèse et à recycler leurs tontes de gazon pour la saison. On offrit gratuitement à chacune des 19 familles participantes une tondeuse déchiqueteuse de Black and Decker, des conseils gratuits pour l’entretien écologique de leur pelouse et des produits alternatifs comme des engrais naturels (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">incitatifs financiers</a>, <a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">élimination des barrières</a>). En contrepartie, l’équipe demanda aux résidents de retirer les mauvaises herbes à la main, de réduire leurs arrosages au lieu d’arroser systématiquement tous les jours et de se passer de pesticides chimiques pour six mois (<a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">engagement</a>). L’équipe invita les médias à assister au lancement du programme.</li>
+</ul>
+<p>« Le programme Renton Hill eut un succès monstre,” confirma Colehour. « Nous avons eu droit à des images de vieilles dames qui rangeaient leur tondeuse à essence et de gens qui se débarrassaient de leurs pesticides dans des brouettes. L’intérêt des médias fut très utile dans la promotion des pratiques écologiques. » À l’exception de deux d’entre eux, tous les voisins de Renton Hill ont promis à la fin de l’été de continuer à entretenir leurs terrains naturellement. L’équipe chargée de la campagne demanda aux médias de revenir pour faire le point sur l’expérience avec les résidents. L’événement souleva autant d’intérêt qu’au moment du lancement et eut droit à une autre couverture substantielle. D’autres voisins voulaient maintenant participer.</p>
+<p> </p>
+<p>« Ce que nous souhaitons de toute cette couverture médiatique et autres éléments de la campagne, c’est de voir la pression exercée par les voisins à l’égard des pelouses parfaites prennent une direction inverse, » conclut Madame Colehour. « Nous voulons que les gens se sentent gênés d’utiliser des pesticides et pressés d’adopter des méthodes écologiques pour l’entretien de leur pelouse. »</p>
+<p><strong>Matériel de soutien</strong><br/>
+Avant de lancer la campagne en 1997, l’équipe de communication avait préparé un dépliant de base sur les pratiques écologiques. Ce dépliant avait été distribué dans de nombreux événements et lors de conférences, notamment les salons de l’habitation et du jardin, les rencontres communautaires, etc. Ce dépliant était aussi distribué par les services publics de Seattle, les bureaux de King County et on pouvait se le procurer par le biais d’une ligne sans frais (<a href="../../../../fr/outils-de-changement/medias/">médias de masse</a>). Le dépliant mettait en vedette Herbert le Saumon sur presque toutes les pages et prônait l’entretien écologique en six étapes (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">élimination des barrières</a>):</p>
+<ul>
+<li>Tondez haut, souvent, et laissez vos tontes de gazon au sol</li>
+<li>Fertilisez modérément de mai à septembre à l’aide d’engrais entièrement naturels ou de granules naturels à action lente</li>
+<li>Arrosez en profondeur pour bien humidifier les racines mais espacez les arrosages</li>
+<li>Rehaussez les pelouses en mauvais état en aérant et en réensemençant. Envisagez de rééquilibrer le sol et de planter des espèces plus appropriées</li>
+<li>Pensez-y deux fois avant d’utiliser les formules de pesticides ou mélanges d’engrais et de pesticides synthétiques proposées sur le commerce</li>
+<li>Envisagez de remplacer les pelouses par des couvre-sols appropriés sur des buttes escarpées, des espaces ombragés et autour des ruisseaux et des lacs</li>
+</ul>
+<p>En 1999, l’équipe de communication identifia le besoin d’ajouter des outils à la campagne pour soutenir la couverture médiatique importante donnée à l’approche écologique. C’est ainsi qu’une trousse d’action remplie de conseils d’usage et de renseignements spécifiques fut élaborée. En plus du dépliant initial, on y avait ajouté d’autres dépliants regorgeant d’information pratique sur les alternatives aux pesticides, les moyens de réduire sa consommation d’eau par des arrosages moins fréquents mais plus efficaces. Finalement, des moyens d’entretenir sa pelouse sans pesticides ni trop d’eau. Un écriteau affichant Herbert le Saumon avait été inséré à la trousse pour que les participants puissent s’identifier auprès des voisins comme des adeptes des méthodes écologiques (<a href="../../../../fr/outils-de-changement/attrait-des-normes/">approbation des pairs</a>). Ces trousses étaient distribuées lors d’événements spéciaux et par le biais de la ligne sans frais.</p>
+<p> </p>
+<p>Le programme se servait aussi de l’envoi des factures de services publics pour diffuser son message. Ces insertions étaient principalement axées sur la réduction de la consommation d’eau et l’impact de nos habitudes sur les lacs et les ruisseaux et, au bout du compte, sur les saumons. Pendant toute la durée du programme, les services publics de Seattle ont distribué des centaines de milliers d’insertion à leurs clients (<a href="../../../../fr/outils-de-changement/medias/">média de masse</a>; <a href="../../../../fr/outils-de-changement/motivateurs/">messages guides</a>).</p>
+<p>Un vidéo de 9 ½ minutes fut produit aux fins de servir pendant les conférences communautaires et une copie était remise gratuitement à toutes les personnes qui faisaient l’achat d’une tondeuse déchiqueteuse par le biais du programme d’escompte mis sur pied par le groupe. Ce vidéo était aussi remis à tous les organismes communautaires qui en faisaient la demande ou on pouvait l’obtenir gratuitement par le biais du site Internet de King County et celui du Département des ressources naturelles de King County. En tout, la production du vidéo a coûté 24 000 $.</p>
+<p>« La raison pour laquelle notre campagne a remporté tant de succès était que nous nous sommes servis d’une approche intégrée, » d’affirmer Madame Colehour.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<table>
+<tbody>
+<tr>
+<td><b>Variables de la campagne</b></td>
+<td align="center"><b>1997</b></td>
+<td align="center"><b>1998</b></td>
+<td align="center"><b>1999</b></td>
+<td align="center"><b>2000</b></td>
+</tr>
+<tr>
+<td>Stratégie/planification</td>
+<td align="right">8,544</td>
+<td align="right">5,190</td>
+<td align="right">25,061</td>
+<td align="right">10,000</td>
+</tr>
+<tr>
+<td>Travail de création et<br/>
+            frais de production <br/>
+            des annonces, dépliants, etc.</td>
+<td align="right">70,800</td>
+<td align="right">44,668</td>
+<td align="right">28,000</td>
+<td align="right">40,000</td>
+</tr>
+<tr>
+<td>Relations<br/>
+            publiques/événements</td>
+<td align="right">17,751</td>
+<td align="right">28,005</td>
+<td align="right">41,000</td>
+<td align="right">40,000</td>
+</tr>
+<tr>
+<td>Planification médiatique,<br/>
+            coût du temps d’antenne</td>
+<td align="right">210,542</td>
+<td align="right">260,000</td>
+<td align="right">128,000</td>
+<td align="right">236,000</td>
+</tr>
+<tr>
+<td>Essais pilotes (groupes cibles)</td>
+<td align="right">0</td>
+<td align="right">11,405</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>Réunions de voisinage</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">45,000</td>
+<td align="right">10,000</td>
+</tr>
+<tr>
+<td>Trousse de conversion</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">20,500</td>
+<td align="right">5,000</td>
+</tr>
+<tr>
+<td>Outils pour rejoindre la<br/>
+            clientèle cible (inclus <br/>
+            vidéo promotionnel)</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">29,500</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>Formation sur le<br/>
+            recyclage des tontes (présence<br/>
+            lors de ventes<br/>
+            de tondeuses déchiqueteuses)</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">3,000</td>
+<td align="right">3,000</td>
+</tr>
+<tr>
+<td>Évaluation (sondage)</td>
+<td align="right">5,992</td>
+<td align="right">14,077</td>
+<td align="right">33,000</td>
+<td align="right">10,000</td>
+</tr>
+<tr>
+<td>Gestion de projet</td>
+<td align="right">0</td>
+<td align="right">4,543</td>
+<td align="right">12,088</td>
+<td align="right">6,000</td>
+</tr>
+<tr>
+<td><b>TOTAL</b></td>
+<td align="right">313,629</td>
+<td align="right">367,888</td>
+<td align="right">365,149</td>
+<td align="right">360,000</td>
+</tr>
+</tbody>
+</table><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Au cours des quatre ans de la campagne, l’équipe de communication a effectué huit sondages auprès des consommateurs. Soit un sondage avant l’été suivi d’un sondage à l’automne. 400 résidants furent questionnés sur chacun des trois comportements recherchés. La fréquence des sondages a permis de mesurer l’impact de chacune des étapes de la stratégie promotionnelle.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>Entre 1997 et 2001, des sondages ponctuels ont permis de documenter les changements de comportement suivants:</p>
+<ul>
+<li>Le pourcentage de la population qui laisse les tontes de gazon au sol « la plupart du temps » a augmenté de 27,7 pour cent à 41 pour cent (146 300 foyers).</li>
+<li>Le pourcentage de la population qui n'utilise plus de formules synthétiques du commerce sur leurs pelouses a augmenté de 46,8 pour cent à 60 pour cent (145 200 foyers)</li>
+<li>Le pourcentage de la population qui n'arrose pas sa pelouse a augmenté de 18,4 pour cent à 34 pour cent (171 600 foyers)</li>
+</ul>
+<p> </p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Julie Colehour (en anglais) <br/>
+PRR <br/>
+1109 First Ave. - Suite 300 <br/>
+Seattle, Washington 98101 <br/>
+Tlphone: (206) 623-0232 poste 250 <br/>
+Tlcopieur: (206) 623-0781 <br/>
+Courriel: <a href="mailto:jcolehour@prrbiz.com">jcolehour@prrbiz.com</a> <br/>
+Site Internet: <a href="http://www.prrbiz.com" target="new">www.prrbiz.com</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Du 22 au 24 mars 2002, Vert l’action, en collaboration avec Environnement Canada, Home Depot et Outils de changement, a tenu un Forum national sur les stratégies de sensibilisation publique en faveur du Jardinage pour la vie à Toronto dans le but d’élaborer un modèle de sensibilisation en faveur de pratiques écologiques d’entretien des pelouses et de jardinage. À la suite du forum, un plan directeur "Jardinage pour la vie" et une étude de cas "Hébert le saumon" ont été diffusés pour fournir aux municipalités des stratégies leur permettant d’encourager leurs citoyens à prendre une part plus active dans l’entretien de leurs pelouses en utilisant des outils non motorisés et des approches sans pesticides. Pour en savoir davantage ou pour obtenir ces documents, veuillez <a href="http://www.goforgreen.ca/jardinage/index_f.html" target="_parent">cliquez ici!</a></p>
+<p> </p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a></li>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a></li>
+<li><a href="../../../../fr/outils-de-changement/communications-personnalisées-percutantes/">Communications personnalisées percutantes</a></li>
+<li><a href="../../../../fr/outils-de-changement/de-bouche-à-oreille/">De bouche à oreille</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Guelph 2000</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Guelph Hydro (Shade Tree Program)</li>
+<li>Commerçants locaux (Alternative Garden Tour)</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<ul>
+<li>taux d'intérêt de 65 pour cent quant aux principales mesures d'efficacité énergétique</li>
+<li>taux d'intérêt de 25 pour cent pour réduire la consommation de produits domestiques toxiques</li>
+<li>Shade Tree Program, 1995 : plan tation de 600 arbres ombreux et prise de 489 rendez-vous pour les visites à domicile, entraînant 1 365 000 $ en rénovations et en remises en état du domicile liées à la conservation.</li>
+</ul>
+<table border="1" cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" complete="complete" height="26" src="/images/lightbulb.gif" width="27"/> <small><font face="Verdana">Conseil: Cliquez sur cette image pour l'agrandir. Cliquez votre bouton "Back" pour retourner à ce page.</font></small><hr color="#FFCC00"/>
+<p><a href="/images/documentimages/Guelph2000/Guelph2000-1.jpg" target=""><img alt="Guelph 2000 image" border="0" complete="complete" height="163" src="/images/documentimages/Guelph2000/Guelph2000-1.jpg" width="89"/></a><br/>
+<small><font face="Verdana">Cover of the Shade Trees for Guelph brochure.</font></small></p>
+<p><font face="Verdana"><a href="/images/documentimages/Guelph2000/Guelph2000-2.jpg"><img alt="Guelph 2000 image" border="0" complete="complete" height="121" src="/images/documentimages/Guelph2000/Guelph2000-2.jpg" width="145"/></a><br/>
+<small>Guelph 2000 used the nostalgic images of dreams and childhood memories to achieve vivid, personalized communication for their Shade Trees Program.</small></font></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Guelph 2000</h1>
+<p>Lancé en 1993 dans le cadre de l'Initiative sur les collectivités écologiques de l'Ontario, le service de visites à domicile de Guelph 2000 encourageait les résidants de la ville de Guelph à adopter de nouvelles habitudes pour protéger l'environnement à la maison, dont des pratiques plus durables en aménagement paysager.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>Le programme <em>Guelph 2000 </em>a été lancé en 1993 à titre de projet pilote dans le cadre de l'Initiative sur les collectivités écologiques de l'Ontario. Le programme modèle de visites à domicile qu'il a mis sur pied est devenu la norme au sein des autres collectivités écologiques de l'Ontario (voir l'Étude de cas sur <em>ReCAP). </em></p>
+<p>Après deux ans, <em>Guelph 2000 </em>avait effectué plus de 2 100 visites à domicile. Les responsables devaient concevoir de nouvelles approches centrées sur d'autres centres d'intérêt et aptes à attirer plus de participants.</p>
+<p>En 1995, ils lançaient deux nouveaux programmes pour intéresser les jar diniers et pour promouvoir des pratiques d'aménagement paysager plus respectueuses des ressources. Mis sur pied grâce à un don de Guelph Hydro, le Shade Tree Program offrait aux résidants un arbre ombreux gra tuit lors de chaque visite à domicile. On organisait aussi une tournée annuelle des jardins qui mettait en valeur les jardins privés de résidants ayant déjà adopté des pratiques de jardinage durables.</p><!-- Background already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>Les visites effectuées dans le cadre du programme <em>Guelph 2000 </em>étaient semblables aux visites des autres groupes écologiques décrites dans ce site (voir les Études de cas portant sur <em>ReCAP </em>et <em>The Environment Network). </em></p>
+<p><strong>Organisation des visites </strong></p>
+<p>Quelque 1 400 visites ont été effectuées en 1995, dont 35 pour cent en rapport avec le programme des arbres ombreux. Ce programme particulier a suscité un très vif intérêt chez les propriétaires de maisons neuves. De fait, puisque ces maisons étaient plus éconergétiques que des bâtisses plus âgées, elles avaient moins besoin d'autres types d'améliorations.</p>
+<p>La communication de bouche à oreille s'est avérée le deuxième outil le plus efficace (<a href="../../../../fr/outils-de-changement/de-bouche-a-oreille/">De bouche à oreille</a>), puisque 30 pour cent des visites domicile en ont résulté. Dix pour cent des rendez-vous tenaient à la promotion par téléphone.</p>
+<p>Un pour cent des rendez-vous pris suivait l'expédition d'encarts joints aux factures d'électricité de Guelph Hydro au printemps. L'envoi de nouveaux encarts à l'automne a généré un taux de réponse de 0,6 pour cent.</p>
+<p>En vue de favoriser la promotion de bouche à oreille, les responsables de <em>Guelph 2000 </em>ont organisé le tirage d'un vélo de montagne d'une valeur de 800 $. Les conseillers à domicile invitaient les gens à remplir un bon de participation lors de la visite à domicile et laissaient aux résidants un carnet d'invitations à distribuer à leurs parents et amis. Si ces personnes prenaient rendez-vous pour une visite à domicile, les conseillers retournaient prendre le bon de participation chez le premier participant et l'inscrivaient au concours.</p>
+<p>Les organisateurs ont eu de la difficulté à mesurer le succès de ce concours. Même si les gens indiquaient que les bons les avaient incités à téléphoner à leurs proches, plusieurs ont été perdus. En tout, seulement 80 bons de participation ont été recueillis.</p>
+<p><strong>Programme des arbres ombreux</strong></p>
+<p>Afin d'inciter les gens à participer au projet des visites à domicile de <em>Guelph 2000, </em>on offrait aux résidants un arbre gratuit pour les remercier de leur participation (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>). Les arbres offerts mesuraient au moins 12 pieds de haut et, dans certains cas, jusqu'à 21 pieds de haut. Il s'agissait donc d'une offre alléchante.</p>
+<p>L'offre était liée à d'autres motivateurs tels qu'une économie d'argent et une amélioration du degré de confort et de bien-être. Les responsables faisaient grandement état de ces éléments dans le cadre d'échanges et de promotions dynamiques (<a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications personnelles percutantes</a>).</p>
+<p>Le gros de la promotion du Shade Tree Program s'est fait par le biais d'en vois joints aux factures de Guelph Hydro. En 1995, 60 000 brochures ont été expédiées, une moitié au printemps et l'autre moitié à l'automne.</p>
+<p>Le programme tentait de motiver et d'engager les résidants en les incitant à participer à toutes les étapes du programme. On les invitait à choisir parmi cinq espèces d'arbres à feuilles caduques propres à la région de Guelph lors des visites à domicile. Les conseillers leur présentaient alors une trousse en couleur comprenant une illustration de l'arbre à pleine maturité et des ren seignements sur sa hauteur, la forme de sa voûte et le type de graines ou de fruits qu'il produisait. Les conseillers se rendaient ensuite dans la cour des gens pour les aider à sélectionner l'arbre qui convenait le mieux et le meilleur endroit oû le planter. On établissait des liens entre les goûts du résidant et l'emplacement prévu de l'arbre. Il revenait aux résidants de planter l'arbre ou d'embaucher quelqu'un pour le faire. Finalement, le site était identifié à l'aide d'un pieux vert arborant le nom de <em>Guelph 2000, </em>ce qui permettait d'attirer l'attention des voisins (<a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a> et <a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait de normes</a>).</p>
+<p><strong>Tournée des jardins écologiques</strong></p>
+<p>Chaque année, <em>Guelph 2000 </em>organisait une tournée libre des jardins qui mettait en lumière des pratiques de jardinage écologiques. Cette tournée per mettait aux résidants de Guelph d'apprécier de visu tous les avantages de tels aménagements (<a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications personnelles percutantes</a>) et de communiquer aux autres les pratiques de jardinage durables qu'ils avaient découvertes (<a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a>). Selon le responsable de <em>Guelph 2000, </em>Evan Ferrari, « beaucoup de personnes qui participaient à la tournée disaient qu'elles voulaient depuis longtemps explorer les techniques du jardinage écologique mais qu'elles avaient toujours hésité parce que personne d'autre ne semblait s'y adonner dans la région ».</p>
+<p>Les responsables ont surtout eu recours aux médias pour faire connaître la tournée, avant et après l'événement. Ils ont également eu recours à la publicité payée. Les responsables demandaient 5 $ en frais d'inscription aux personnes qui effectuaient la tournée et leur remettaient une carte indiquant l'emplacement des jardins. Les jardins à l'honneur permettaient de démontrer les effets de fertilisants non synthétiques, de méthodes de contrôle non chimiques des insectes nuisibles, du choix de plantes indigènes, de l'utilisation de pare-vents naturels et d'arbres ombreux, ainsi que des méthodes durables pour faire pousser les légumes et fines herbes.</p>
+<p>Un guide imprimé mettait en relief certains motivateurs communs tels qu'un entretien minimum, une grande valeur esthétique et un aspect plus privé. Le guide de 1995 décrivait un des jardins comme « un lieu de retraite ombragé et tranquille », un autre comme « une oasis résidentielle ... libre de pesticides », et un autre encore comme « une explosion de vivaces éclatantes et faciles à entretenir ».</p>
+<p>Dans chaque jardin, une personne était sur place pour répondre aux questions des visiteurs (<a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications personnalisées percutantes</a>). Il s'agissait généralement des occupants ou de bénévoles, soit des étudiants en aménagement paysager.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>La société Guelph Hydro désirait réduire la consommation en électricité liée à l'utilisation des systèmes de climatisation pendant les périodes de pointe en été. C'est pourquoi elle avait déjà adopté un budget de plantation d'arbres en vue de remplacer les arbres coupés pour permettre l'accès des services publics.</p>
+<p>En 1995, la société s'est engagée à donner jusqu'à 1 200 arbres, ce qui représentait la somme de 20 000 $ environ, de même que 50 000 $ en sou tien administratif. Dans les faits, les 600 arbres qui ont été commandés par les résidants de Guelph ont coûté 10 000 $. Les responsables ont également investi 300 $ en frais publicitaires pour annoncer la tournée des jardins.</p>
+<p>Les coûts administratifs afférents au programme des arbres ombreux et à la tournée des jardins ne sont pas connus.</p><!-- Financing already contains P tags.-->
+<h2>Résultats</h2>
+<p><b>Visites à domicile </b></p>
+<p>En trois ans, <i>Guelph 2000 </i>a effectué plus de 3 300 visites à domicile, ce qui a donné les résultats suivants parmi les foyers participants :</p>
+<ul>
+<li>25 pour cent des foyers ont adopté des pratiques plus écologiques en vue de réduire la quantité de déchets domestiques dangereux qu'ils produisaient;</li>
+<li>65 pour cent ont effectué d'importantes rénovations en vue de conserver davantage l'énergie, soit en remplaçant les fenêtres ou la fournaise et en ajoutant de l'isolant;</li>
+<li>plus de 50 pour cent ont pris certaines mesures pour bloquer les fuites d'air.</li>
+</ul>
+<p>En 1995, le Shade Tree Program a généré les résultats suivants :</p>
+<ul>
+<li>600 arbres</li>
+<li>489 inscriptions pour les visites à domicile, ce qui a entraîné des améliorations ou des rénovations évaluées à 1,3 millions $ environ à l'échelle locale.</li>
+</ul>
+<p>Un suivi a révélé que le taux de survie des arbres était un peu plus élevé lorsque ces derniers avaient été plantés par un entrepreneur. Le taux de survie total des arbres s'élevait à 85 pour cent.</p>
+<p>La tournée des jardins écologiques de 1996 mettait en vedette 16 jardins et donnait les résultats suivants :</p>
+<ul>
+<li>200 résidants participaient à la tournée;</li>
+<li>15 visites à domicile étaient organisées et la tournée entraînait des améliorations et des rénovations évaluées à 42 000 $ environ à l'échelle locale.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Coordonnateur <br/>
+Guelph 2000 <br/>
+C.P. 30058 <br/>
+Guelph (Ontario) <br/>
+N1H 8J5 <br/>
+(519) 823-0860 <br/>
+télécopieur : (519) 823-8777</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Autres mots-clés: prévention de la pollution</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

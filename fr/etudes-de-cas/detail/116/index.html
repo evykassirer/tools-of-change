@@ -1,0 +1,289 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+<li><a href="../../../../fr/outils-de-changement/programmes-scolaires-qui-engagent-la-famille/">Programmes scolaires qui engagent la famille</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Greater Vancouver Regional District</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Insurance Corporation of British Columbia</li>
+<li>The RoadSense Team</li>
+<li>Parents</li>
+<li>Elementary School staff</li>
+</ul><!-- Partners already contains li tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Partir du bon pied! en Colombie-Britannique</h1>
+<p>Dans le District régional de Vancouver (DRV), un minuscule projet pilote, qui a fait sortir les familles de leurs voitures pour aller dans la rue, est devenu un programme florissant de transport actif à la grandeur de la province. Entre décembre 1998 et le printemps 2001, 350 écoles en Colombie-Britannique se sentent impliquées dans le projet de réduction du transport scolaire « Partir du bon pied! ».</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>Note : Afin de minimiser les frais de mise à jour du site, toutes les études de cas sont écrites au passé, même si elles sont en cours – comme c’est le cas pour ce programme en particulier.</p>
+<p>Tous les 10 ans, le DRV mène un sondage de type journal de bord pour déterminer les habitudes de transport de ses résidents. En 1994, le DRV était étonné de découvrir que la moitié des étudiants se rendait à l’école en voiture. Ce nombre représentait une augmentation de 50 pour cent par rapport au sondage de 1984, où on dénombrait qu’un étudiant sur trois voyageait en voiture.</p>
+<p>Autrement dit, sur la route, aux heures de pointe, une automobile sur cinq transportait un enfant qui allait à l’école ou en revenait, en dépit du fait que plusieurs étudiants vivaient à quelques coins de rue seulement de l’école.</p>
+<p>Le DRV était inquiet à propos des dangers que représentait cette tendance par rapport à la qualité de l’air et à la sécurité routière, et par rapport aux effets à long terme que cela pourrait avoir sur la santé physique et l’attitude des jeunes face à l’utilisation de la voiture : les familles modernes élevaient toute une génération qui serait dépendante des voitures, même pour de très courts déplacements.</p>
+<p>À l’automne 1997, le DRV commandait un projet de réduction du transport scolaire afin d’aborder le problème. Ce projet est par la suite devenu le programme scolaire « Partir du bon pied! ».</p><!-- Background already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>Pour commencer, l’équipe de recherche a rassemblé de l’information par rapport aux programmes de réduction du transport scolaire existant déjà au Canada ou dans d’autres pays. Elle a identifié les intervenants pertinents dans les municipalités du DRV, tels que les départements d’ingénierie et les agents de sécurité routière. Ces intervenants ont aidé à la recherche sur l’éducation routière et au recrutement des écoles pilotes.</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>L’équipe a alors sélectionné six écoles pilotes parmi 30 candidates. Ces écoles couvraient une large étendue géographique et représentaient divers milieux socio-économiques. Étant donné que le programme « Partir du bon pied! » comportait des inquiétudes face à la sécurité routière, le projet pilote a été financé par l’Insurance Corporation of British Columbia (ICBC).</p>
+<p>Le programme « Partir du bon pied! » a été développé sous forme d’une approche qui incluait un manuel de fonctionnement détaillé et un ensemble de ressources pour les écoles (voir : <a href="http://www.waytogo.icbc.bc.ca">www.waytogo.icbc.bc.ca</a>). Cette trousse était essentielle au succès du projet : une trousse d’information complète représentait, pour les écoles, moins de recherche à faire pour le lancement du programme de réduction du transport scolaire (<a href="../../../../fr/outils-de-changement/programmes-scolaires-qui-engagent-la-famille/">Programmes scolaires qui engagent la famille</a>).</p>
+<p>Le manuel de fonctionnement démontrait à chaque groupe scolaire comment il pouvait :</p>
+<ul>
+<li>ramasser des données par des sondages et des exercices sur carte</li>
+<li>déterminer les meilleurs parcours jusqu’à l’école</li>
+<li>intégrer l’éducation de la sécurité des piétons et des cyclistes à l’école</li>
+<li>établir un emplacement plus sécuritaire pour l’école</li>
+<li>implanter d’autres stratégies de transport</li>
+</ul>
+<p> </p>
+<p>La trousse de ressources incluait :</p>
+<ul>
+<li>de la documentation de référence et les raisons d’un programme de réduction de la circulation routière</li>
+<li>de l’information sur la sécurité routière</li>
+<li>des idées provenant de programmes similaires</li>
+<li>les ressources humaines et matérielles de la communauté</li>
+<li>des suggestions d’activités pour générer une participation enthousiaste et durable</li>
+<li>les formes et modèles à utiliser lorsque le programme était implanté</li>
+</ul>
+<p> </p>
+<p>Le personnel du programme « Partir du bon pied! » a conçu le matériel en fonction des parents. Bien que la trousse incluait des ressources à l’intention des enseignants et administrateurs, s’ils le souhaitaient, le personnel du programme voulait fournir aux groupes de parents des outils pour aborder les problèmes entourant leur propre école.</p>
+<p>« C’est ce qui rend le programme complètement innovateur », disait Bernadette Kowey, coordonnatrice provinciale du programme « Partir du bon pied! ». Ce n’était pas basé sur un programme. Il appartenait vraiment aux comités de parents.</p>
+<p>Le personnel du programme « Partir du bon pied! » offrait une formation et du soutien aux groupes scolaires, ce que Mme Kowey considérait essentiel au succès du programme. Le support fourni aux groupes scolaires incluait les éléments suivants :</p>
+<ul>
+<li>une introduction au programme « Partir du bon pied! » et à ses ressources</li>
+<li>les dates des événements spéciaux pertinents, comme le « Jour de la Terre » et la « Journée de marche à l’école », ce qui aidait les écoles à faire le lien entre leurs programmes et d’autres initiatives largement reconnues telles que la santé, la condition physique, la sécurité routière et l’environnement (<a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a>)</li>
+<li>un lien permanent avec des nouvelles idées pour les programmes « Partir du bon pied! », ce qui aidait les écoles à maintenir leur élan</li>
+<li>un bulletin semestriel d’échange d’idées</li>
+</ul>
+<p> </p>
+<p>Étant donné que les heures de bénévolat des parents étaient limitées, les écoles étaient libres de procéder à leur propre rythme. Certaines écoles ont commencé lentement en organisant une journée spéciale de transport actif comme une journée « À l’école à pieds ou en bicyclette ». Le personnel du programme « Partir du bon pied! » a dit qu’il s’agissait d’une stratégie positive : ce n’était pas un franc succès, les écoles en ont fait un succès à la longue et les familles ont lentement brisé leurs vieilles habitudes de conduite automobile (<a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a>).</p>
+<p>Le projet pilote a porté fruits : les écoles ont mentionné que le programme « Partir du bon pied! » a réduit de façon significative la circulation dans le voisinage. Quatre des six programmes scolaires pilotes étaient toujours en place en 2001. (Un programme s’est terminé lorsque l’école a perdu un des parents bénévole clé et une école pilote participait occasionnellement au programme.)</p>
+<p>Les médias d’information ont publié plusieurs histoires sur le projet pilote et le programme « Partir du bon pied! » a été inondé de demandes de manuels de fonctionnement et de trousses de ressources. (<a href="../../../../fr/outils-de-changement/medias/">Médias</a>).</p>
+<p>« Le projet pilote finissait, notre budget finissait et mon téléphone continuait de sonner » a dit Mme Kowey. En décembre 1998, le personnel du programme a obtenu du financement afin de poursuivre le programme. L’équipe RoadSense , un partenariat entre les courtiers d’autoplan en Colombie-Britannique et l’Insurance Corporation of British Columbia, a admis que le programme correspond bien à son engagement de fournir aux communautés des outils pour débuter et maintenir des progammes et des habitudes de sécurité routière. L’équipe RoadSense a financé le personnel et les ressources nécessaires afin de rendre le programme « Partir du bon pied! » disponible à toutes les écoles primaires et intermédiaires de la province de la Colombie-Britannique.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>Le comité du programme provincial de l'équipe RoadSense a financé le programme Partir du bon pied! sur tout le territoire de la Colombie-Britannique. L'équipe RoadSense apporte son appui aux communautés qui veulent développer des programmes de sécurité routière. Elle a dépensé 180 000 $ par année pour le personnel, les frais de déplacement, la mise sur pied et le développement des ressources, la distribution de l'information et des ressources, ainsi que pour tous les coûts reliés à l'administration et aux communications pour élargir le programme Partir du bon pied! à la grandeur de la province. Les équipes régionales RoadSense en Colombie-Britannique fournissaient à certaines écoles des subventions pour des projets spéciaux et des fournitures. Les subventions ont servi à payer les équipements de sécurité routière tels que des gilets réflecteurs et des cônes oranges ainsi que les dépenses de communication telles que les photocopies et les cartes plastifiées. Les équipes RoadSense ont aussi apporté une contribution matérielle telle que l'imprimerie, la plastification et les photocopies. L'approvisionnement en ressources a été déterminé au cas par cas par chaque équipe régionale RoadSense.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Les écoles surveillaient leurs propres réussites, comme elles jugeaient bon de le faire, par des sondages et des relevés de trafic puisque le personnel du programme « Partir du bon pied! » croyait que les sondages obligatoires représentaient un obstacle important.</p><!-- Results_B already contains P tags.-->
+<h2>Réaction</h2>
+<p>Le fait de fournir une rétroaction était un élément essentiel de l'approche Partir du bon pied! . Le succès du programme Partir du bon pied! reposait sur la participation des familles et ces familles avaient besoin de savoir que leurs actions faisaient une différence. Habituellement, les écoles fournissaient une rétroaction directement aux étudiants, au personnel, aux professeurs, aux parents et aux directeurs par le biais du journal scolaire, des affiches sur les babillards et en visitant les classes une à une pour diffuser l'information. Par exemple, l'école primaire Maple Lane, Richmond, le Student Leadership Club est allé dans chaque classe pour dire aux étudiants que leur école avait eu un taux de participation de presque 100 % à la Journée internationale de marche à l'école .</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>Voici certains des résultats les plus impressionnants :</p>
+<ul>
+<li>À l’école primaire Willows, à Oak Bay, on a remarqué une diminution de 10 à 15 pour cent des véhicules les jours ordinaires et un taux de participation plus élevé lors des événements spéciaux.</li>
+<li>À Victoria, l’école primaire Frank Hobbs encourageait les étudiants à choisir le transport actif une fois par mois, la responsabilité de promouvoir l’événement revenant à une classe différente chaque fois. Une enquête a relevé une participation étudiante de plus de 90 pour cent en janvier 2001 et à la « Journée internationale de marche à l’école » en octobre 2000.</li>
+<li>À l’école primaire RJ. Tait de Richmond, on a assisté à une énorme augmentation d’enfants qui marchaient et à une diminution marquée de voitures stationnées à l’école, à la suite de son programme « À l’école à pieds ou en autobus » très bien organisé. Sur deux journées d’événements spéciaux, l’école a obtenu un taux de participation de 100 pour cent.</li>
+<li>À l’école primaire Hawthorne, qui était une des écoles pilotes, l’usage quotidien de la bicyclette pour se rendre à l’école a doublé avec le programme « Partir du bon pied!». Il arrivait souvent de compter de 60 à 80 bicyclettes dans le support à bicyclettes. Les élèves de l’école Hawthorne qui vont maintenant à la nouvelle école primaire Neilson Grove continuent de s’y rendre à bicyclette.</li>
+</ul>
+<p> </p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Bernadette Kowey<br/>
+Coordonnatrice provinciale<br/>
+Programme scolaire « Way to Go! » <br/>
+(604) 732-1511<br/>
+sans frais : 1-877-325-3636<br/>
+télécopieur : (604) 733-0711<br/>
+courriel : <a href="mailto:waytogo@telus.net">waytogo@telus.net</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><b>Apprentissages</b></p>
+<ul>
+<li>Les problèmes rencontrés par les écoles rurales sont souvent différents de ceux rencontrés par les écoles urbaines. Dans les régions rurales, les familles qui vont à l’école à pieds risquent de rencontrer des couguars, des ours et des routes à grande circulation. Dans ces régions, le co-voiturage, le partage d’un véhicule et l’autobus sont souvent la stratégie la plus efficace pour réduire l’utilisation de la voiture.</li>
+<li>Les programmes de réduction du transport scolaire sont rentables. Les parents ont un intérêt personnel à protéger la santé et la sécurité de leurs enfants et plusieurs d’entre eux vont offrir de leur temps pour y arriver.</li>
+<li>Les écoles ont exigé un délai de production suffisant pour formuler et mettre en application des plans de transport actif et traiter les demandes. Mettre le programme en marche à l’automne est la stratégie qui réussit le mieux.</li>
+<li>Les écoles apprennent beaucoup l’une de l’autre. Les idées qui fonctionnent dans une communauté, comme « La semaine de la marche », ont été empruntées et adaptées à leurs propres besoins par les autres communautés. À tour de rôle, ces idées inspirent d’autres écoles.</li>
+<li>L’appui à long terme est important pour le succès du programme « Partir du bon pied! ». Les groupes scolaires ont besoin de savoir qu’ils ne sont pas seuls, qu’ils peuvent apprendre des autres et qu’ils peuvent compter sur les intervenants pour leur fournir du soutien.</li>
+<li>Les écoles ont indiqué que les étudiants apprécient l’étape de collecte des données du programme. Les étudiants peuvent aider à diriger la circulation routière, à faire le décompte des piétons et noter les résultats.</li>
+<li>La signalisation qui identifie les écoles au programme « Partir du bon pied! » aide à mettre en place un appui au programme et à bâtir une forte identité liée au programme.</li>
+<li>La traduction des messages essentiels, des affiches, des questionnaires adressés aux parents et des invitations aux réunions de planification est cruciale dans les écoles où il y a une forte population pour qui l’anglais est la langue seconde.</li>
+<li>La mesure des résultats peut être problématique. Recueillir l’information et produire un rapport peut prendre beaucoup de temps.</li>
+<li>Les intervenants, comme les policiers, les ingénieurs et les employés du district scolaire ont vu que le programme « Partir du bon pied! » a été un succès. Ils ont réalisé que c’était un outil qu’ils pouvaient utiliser pour aborder la question de la sécurité routière aux alentours des écoles. Le programme « Partir du bon pied! » a utilisé leur appui pour inviter d’autres d’écoles à essayer cette option.</li>
+</ul>
+<p> </p>
+<p>Texte traduit par Caroline Gingras; revu et corrigé par Rénald Gagnon.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a></li>
+<li><a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a></li>
+<li><a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a></li>
+<li><a href="../../../../fr/outils-de-changement/communications-personnalisées-percutantes/">Communications personnalisées percutantes</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+<li><a href="../../../../fr/outils-de-changement/de-bouche-à-oreille/">De bouche à oreille</a></li>
+</ul>
+<h5>Initiative de</h5>
+<p>La ville de Waterloo et de citoyens préoccupés par leur environnement.</p><!-- Initiated already contains li tags.-->
+<h5>Résultats</h5>
+<p> </p>
+<ul>
+<li>À Waterloo, la pulvérisation des pesticides, qui concernait 73 % des espaces verts, ne touche désormais plus qu'un dixième de un pour cent des espaces verts.</li>
+<li>Grâce aux pratiques horticoles sans pesticides, les espaces verts sont devenus plus attrayants.</li>
+<li>Réduire l'utilisation des pesticides fait économiser de l'argent.</li>
+</ul>
+<p> </p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Programme de protection des végétaux de Waterloo</h1>
+<p>La ville de Waterloo a considérablement réduit son utilisation de pesticides sur les terrains municipaux grâce à des pratiques favorisant un gazon vigoureux et un sol en santé. Le Plant Health Care Program (Programme de protection des végétaux [PPV]), qui a vu le jour il y a plus de 20 ans, est devenu avec le temps la méthode privilégiée d'entretien des pelouses à Waterloo. Le financement de la rédaction de cette étude de cas provient du <a href="http://www.ec.gc.ca/nopp" target="new">Bureau national de la prévention de la pollution</a> d'Environnement Canada.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>À la fin des années 1970, au moins 73 % des terrains municipaux de Waterloo étaient pulvérisés de pesticides. En 1979, Waterloo a commencé à expérimenter des plans de fertilisation réduisant l’emploi des pesticides et des engrais chimiques. La motivation de ce changement était qu’un gazon vigoureux avec des racines profondes devait être en excellente santé. Autrement dit, les mauvaises herbes et les maladies n’auraient tout simplement aucune possibilité de se manifester. À l’époque, cette approche était avant-gardiste.</p>
+<p>« Si notre équipe consacrait du temps à surveiller l’état des gazons et portait attention aux agents stressants dans un secteur particulier comme un terrain de sports, nous savions qu’il était possible de maintenir ce secteur en très bonne santé grâce à de bonnes pratiques horticoles », affirme Karen Richter, chef d’organisation de l’entretien des parcs à la ville de Waterloo.</p>
+<p>En appliquant de façon soutenue ces pratiques horticoles, Waterloo a réduit son utilisation de pesticides à un rythme régulier au cours des années 1980. Au milieu des années 1980, la ville avait mis fin à la pulvérisation généralisée. En 1990, Waterloo effectuait des pulvérisations par points sur moins de 10 % de ses espaces verts.</p>
+<p>Selon Mme Richter, « il n’y a pas eu de lancement d’un programme de protection des végétaux en tant que tel. C’était un processus graduel qui évoluait avec le temps. Nous apprenions par essai et erreur, et grâce aux progrès des équipements et des produits ».</p><!-- Background already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>Au milieu des années 1980, un groupe de citoyennes a entrepris des démarches auprès de la ville pour que la réduction des pesticides soit prise encore plus au sérieux. Le Pesticide Action Group (groupe d’action sur les pesticides) était dirigé par cinq femmes de Waterloo qui disaient avoir souffert de problèmes de santé graves à cause de l’exposition aux pesticides à Waterloo et dans d’autres municipalités. Ce groupe a passé plusieurs années à rédiger, pour les médias locaux, des lettres et des articles sur les risques que représentent les pesticides pour la santé (<a href="../../../../fr/outils-de-changement/medias/">Médias</a>). Pour faire campagne en faveur d’une utilisation réduite des pesticides sur les terrains publics, elles ont tenu une série de réunions avec des responsables municipaux et se sont adressées au conseil municipal à plusieurs reprises. Elles ont également tenu des séances d’information à Waterloo et dans les environs afin d’accroître la sensibilisation et de recueillir des appuis (<a href="../../../../fr/outils-de-changement/de-bouche-a-oreille/">De bouche à oreille</a>, <a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a>).</p>
+<p>En 1990, le groupe a convaincu le conseil municipal de Waterloo de mettre sur pied un groupe de travail qui examinerait les solutions de rechange à l’épandage de pesticides et qui en déterminerait le coût (<a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a>, <a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a>).</p>
+<p>Composé de 19 personnes, le groupe de travail cherchait à prendre en compte les préoccupations de deux grands groupes : ceux qui demandaient l’interdiction de l’usage des pesticides, et ceux qui préconisaient l’utilisation limitée des pesticides (<a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications vivantes, crédibles et personnalisées</a>). Pour ce faire, le groupe de travail était composé d’une grande diversité de participants, dont :</p>
+<ul>
+<li>des spécialistes universitaires</li>
+<li>des groupes écologistes</li>
+<li>des associations horticoles</li>
+<li>des commissions scolaires</li>
+<li>des paysagistes privés</li>
+<li>des spécialistes des eaux souterraines</li>
+<li>des associations sportives</li>
+<li>le Guelph Turf Grass Institute</li>
+<li>des élus</li>
+<li>des employés municipaux</li>
+<li>des représentants du monde médical</li>
+</ul>
+<p>Pendant plus de quatre mois, le groupe de travail a tenu huit réunions officielles et trois rencontres publiques informelles où des citoyens ont fait part de leurs préoccupations. Le groupe de travail a entendu 11 délégations de simples citoyens et reçu 27 propositions écrites. Il a entendu le témoignage d’un expert sur les risques de contamination des eaux souterraines par les pesticides. (Waterloo est la plus grande ville au Canada où la totalité de l’approvisionnement en eau provient de nappes souterraines.) Il a entendu différents points de vue sur les possibles effets nocifs des produits chimiques pour pelouses. Toutefois, le groupe de travail ne se considérait pas habilité à évaluer des données scientifiques ou à émettre un avis définitif sur les risques pour la santé des produits chimiques pour pelouses.</p>
+<p> </p>
+<p>Le groupe de travail a formulé 15 recommandations sur la gestion des pelouses orientées vers l’élimination des traitements aux pesticides. Il a également fait sept recommandations à caractère éducatif pour sensibiliser la collectivité et promouvoir les solutions de rechange aux pesticides. Les recommandations portaient spécifiquement sur les produits chimiques pour pelouses et ne concernaient pas les produits destinés à l’agriculture, aux jardins et aux cultures fruitières et maraîchères.</p>
+<p>En 1991, ces recommandations étaient incorporées au Programme de protection des végétaux (PPV) de Waterloo.</p>
+<p>Le PPV applique un ensemble de pratiques horticoles destinées à améliorer la santé du gazon et du sol, tout en limitant l’application de pesticides aux endroits envahis par des herbes nocives, par exemple les bords de sentiers où pousse de l’herbe à puce. Voici quelques-unes des pratiques employées par l’équipe du PPV :</p>
+<ul>
+<li>Tondre la pelouse à une hauteur minimale de trois pouces (la hauteur de l’herbe est proportionnelle à la profondeur de la racine) et sans enlever plus du tiers de la limbe des feuilles à chaque passe.</li>
+<li>Aérer régulièrement les zones de grande circulation pour éviter le compactage, et aérer avant l’application d’engrais afin de faciliter son absorption par la rhizosphère. (Waterloo emploie des engrais organiques ou chimiques, et parfois une combinaison des deux, selon les besoins spécifiques d’une pelouse donnée.)</li>
+<li>Terreauter avec du compost et/ou de la terre végétale pour préparer le sol au réensemencement et améliorer la structure du sol.</li>
+<li>Réensemencer avec des variétés de gazon qui conviennent à la zone d’intervention</li>
+<li>Irriguer si nécessaire; par exemple, arroser généreusement au petit matin pour éviter l’évaporation. (Bien que Waterloo ne suive pas de formule précise de gestion de l’eau, le personnel surveille toutes les zones gazonnées et arrose celles qui montrent des signes de sécheresse).</li>
+<li>Déchaumer si nécessaire pour favoriser une croissance vigoureuse.</li>
+<li>Surveiller régulièrement les terrains de sport et les espaces verts pour s’assurer qu’ils reçoivent les soins adéquats.</li>
+<li>Si une zone semble en mauvaise santé, évaluer le problème et prendre des mesures correctives.</li>
+</ul>
+<p>Le personnel des parcs de la ville surveille les espaces verts par ordre de priorités. Par exemple, la priorité la plus haute est accordée aux terrains de sport, à cause de leur utilisation intensive, et aux espaces publics à grande visibilité, à cause de leur importance en tant que symboles de la ville. Les autres espaces verts des parcs occupent une place moins élevée dans l’échelle des priorités car ils sont moins utilisés et subissent ainsi moins de stress. Les boulevards et les culs-de-sac sont au bas de l’échelle des priorités.</p>
+<p> </p>
+<p>Mme Richter explique que le PPV emploie une approche proactive où les pesticides ou les engrais chimiques sont rarement nécessaires pour obtenir un gazon vigoureux. Cette approche a apporté des avantages environnementaux et sociaux pour Waterloo.</p>
+<p>Contrairement à de nombreux systèmes de lutte antiparasitaire intégrée, qui combattent les maladies et les parasites une fois qu’ils sont présents, le PPV cherche à prévenir les problèmes avant qu’ils n’apparaissent. En effet, étant donné que le personnel tient des registres d’entretien exhaustifs et que l’expérience leur a montré à partager des informations et des idées, l’équipe du PPV est en mesure de planifier longtemps à l’avance et de garder sous contrôle le problème des organismes nuisibles. L’expérience, la motivation et le partage de l’information sont des aspects fondamentaux du programme.</p>
+<p>Pour informer le public sur le PPV et inciter les propriétaires d’habitations à limiter l’usage de pesticides sur leurs terrains, le service des parcs a produit un bulletin d’information, des brochures et des écriteaux pour pelouse « sans pesticides » à distribuer aux propriétaires d’habitations (<a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des norms</a>).</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>En 1991, la ville a affecté 32 000 $ pour promouvoir le PPV, évaluer les pratiques horticoles et établir les horaires du personnel. La ville a également versé 10 000 $ supplémentaires pour appliquer certaines des recommandations faites par le groupe de travail.</p>
+<p>Des demandes de crédits budgétaires devaient être faites au cours des années suivantes pour améliorer les recommandations du groupe de travail qui ont été approuvées. Environ 2 100 heures-personnes ont été consacrées jusqu'ici à ce projet et il n'a pas été nécessaire de procéder à des embauches supplémentaires.</p><!-- Financing already contains P tags.-->
+<h2>Résultats</h2>
+<p>Lorsque le PPV est appliqué de façon systématique, il n'est à peu près plus nécessaire d'utiliser des pesticides sur une pelouse normale. Le programme, auquel s'ajoutent les recommandations du groupe de travail, a produit des résultats environnementaux et sociaux impressionnants :</p>
+<ul>
+<li>En 1979, Waterloo appliquait des pesticides chimiques sur 73 % de ses espaces verts. Même si les espaces verts entretenus se sont multipliés par cinq au cours des 20 années suivantes, la pulvérisation de pesticides a décru constamment pour finir par ne représenter qu'un dixième de un pour cent du total des espaces verts.</li>
+<li>Le PPV a rapporté des économies après que le groupe de travail eut terminé ses travaux en 1991.</li>
+<li>Puisque les pratiques culturales consacrées par le PPV ont été créées sur le tas, le personnel montre une certaine fierté pour le travail qu'il a accompli.</li>
+<li>Les clubs sportifs disent préférer les terrains de Waterloo à ceux des autres municipalités parce qu'ils sont en meilleur état.</li>
+</ul>
+<p> </p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Ville de Waterloo, Service des parcs, <br/>
+265, Lexington Court <br/>
+Waterloo, ON N2J 4A8 <br/>
+Canada <br/>
+Téléphone : (519) 747-8601 <br/>
+Télécopieur : (519) 886-5788 <br/>
+Courriel : <a href="mailto:parks@city.waterloo.on.ca">parks@city.waterloo.on.ca</a></p>
+<p>Le financement de la rédaction de cette étude de cas provient du <a href="http://www.ec.gc.ca/nopp" target="new">Bureau national de la prévention de la pollution</a> d'Environnement Canada. Pour de plus amples renseignements sur cet exemple ou d'autres réussites en prévention de la pollution, visitez <a href="http://www.ec.gc.ca/pp/" target="new">le site Web des Réussites canadiennes en prévention de la pollution</a>.</p><!-- Contacts already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

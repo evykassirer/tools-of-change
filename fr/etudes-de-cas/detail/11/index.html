@@ -1,0 +1,347 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a></li>
+<li><a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a></li>
+<li><a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/groupes-de-soutien-par-les-pairs/">Groupes de soutien par les pairs</a></li>
+<li><a href="../../../../fr/outils-de-changement/programmes-scolaires-qui-engagent-la-famille/">Programmes scolaires qui engagent la famille</a></li>
+<li><a href="../../../../fr/outils-de-changement/de-bouche-à-oreille/">De bouche à oreille</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Une organisation sans but lucratif établie aux États-Unis et fondée par David Gershon</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>President's Council of Sustainable Development</li>
+<li>Programme des Nations unies pour l'environnement (PNUE)</li>
+<li>Autres</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p>Les résultats moyens atteints s'énoncent comme suit :</p>
+<ul>
+<li>réduction de 42 pour cent dans la quantité de déchets acheminés aux sites d'enfouissement</li>
+<li>réduction de 25 pour cent dans la consommation d'eau</li>
+<li>réduction de 16 pour cent dans la production de CO 2</li>
+<li>réduction de 16 pour cent dans la quantité de carburant utilisé</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Global Action Plan for the Earth (GAP)</h1>
+<p>En 1996, plus de 8 000 foyers dans 15 pays du monde avaient choisi de participer au programme des équipes écologiques de GAP qui comprend un guide de travail simple à utiliser et la création de groupes de soutien par les pairs. Le programme vise surtout la réduction des déchets, la consommation efficace en énergie et en eau, le développement durable des transports et autres habitudes de consommation viables.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p><em>GAP </em>a été créé en 1989 dans le but de protéger l'environnement de la planète. Cette organisation sans but lucratif offrait un programme structuré pour inciter les gens à adopter des habitudes plus écologiques et pour leur faire comprendre en quoi ces changements affectaient la terre entière. Deux programmes distincts ont été mis sur pied : Journey for the Planet, à l'inten tion des jeunes dans les écoles, et Community Lifestyles, à l'intention des adultes.</p>
+<p><em>GAP </em>a trouvé la façon de cibler des collectivités innovatrices intéressées qui manifestaient le désir de fournir un appui financier. La cueillette de données sur les taux de participation au recyclage dans ces collectivités constituait un élément clé qui permettait à <em>GAP </em>de cibler les quartiers où résidaient les « adopteurs précoces ». Selon les estimations de <em>GAP, </em>ces quartiers constituaient 15 pour cent environ de la population totale. Les responsables étaient d'avis qu'en stimulant la participation dans ces quartiers, les modifications de comportement envisagées par <em>GAP </em>s'étendraient éventuellement aux autres membres de la collectivité.</p><!-- Background already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p><em>GAP </em>a d'abord identifié les personnes qui se souciaient habituellement de l'environnement et voulaient aider, mais qui ne savaient pas où orienter leurs efforts de préservation. Ces gens avaient aussi tendance à croire qu'ils ne pourraient provoquer de changements significatifs, compte tenu de l'immense envergure des problèmes environnementaux.</p>
+<p>Afin de surmonter ces obstacles, <em>GAP </em>a engagé une démarche par étapes auprès de ces personnes pour leur enseigner des façons de vivre plus écologiques et plus favorables à l'environnement. Les responsables ont fourni des rétroactions aux personnes et aux groupes en vue de leur démontrer que leurs gestes faisaient vraiment une différence, tant à l'échelle locale que globale.</p>
+<p><strong>Campagne communautaire sur les modes de vie </strong></p>
+<p>La campagne communautaire sur les modes de vie visait les foyers et engageait la participation de groupes de 8 à 12 voisins (<a href="../../../../fr/outils-de-changement/groupes-de-soutien-par-les-pairs/">Groupes de soutien par les pairs</a>). Les membres de ces équipes écologiques se réunissaient huit fois en quatre mois. À chaque rencontre, ils parcouraient un chapitre du guide à l'intention des foyers et des équipes écologiques.</p>
+<p>Chaque chapitre du guide portait sur l'un des sujets suivants : la réduction des déchets, l'efficacité au niveau de l'eau, de l'énergie et des transports, la consommation écologique et la responsabilisation. Chaque chapitre proposait également aux participants 12 activités intéressantes.</p>
+<p>L'illustration ci-contre présente une de ces activités, soit « Energy X Mass = A Healthier Earth ».</p>
+<p>Grâce aux carnets de route en début de chapitre, les participants pouvaient indiquer quand ils seraient prêts à amorcer une activité quelconque. Lors de chaque rencontre, les participants examinaient les actions engagées et faisaient part des projets envisagés au cours des deux prochaines semaines (<a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a>). Tous les membres du groupe s'appuyaient et s'entraidaient pour améliorer les projets, ce qui leur permettait de franchir divers obstacles à l'action et de concevoir des normes applicables au groupe (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a> et <a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a>).</p>
+<p>Chaque membre d'une équipe écologique était appelé à présider une réunion avec l'aide d'un animateur bénévole dûment formé de <em>GAP </em>ayant déjà franchi toutes les étapes du programme. Ce bénévole assistait à la première et à la dernière réunion. Entre-temps, il offrait une aide téléphonique au président de chaque rencontre, ce qui contribuait à le motiver davantage (<a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a>).</p>
+<p><em>GAP </em>fournissait un guide portant sur le sujet abordé à chaque réunion. Des portions du guide sur les transports a été reproduit en page 106.</p>
+<p><strong>Programme Journey for the Planet </strong></p>
+<p>Ce programme d'une durée de cinq semaines s'adressait aux enfants de 9 à 12 ans. Il comprenait des modules sur la réduction des déchets, l'efficacité en énergie et en eau, la consommation et la responsabilisation des autres. Souvent, le programme était présenté en salle de classe et c'est l'enseignant qui agissait à titre d'animateur (<a href="../../../../fr/outils-de-changement/programmes-scolaires-qui-engagent-la-famille/">Programmes scolaires qui engagent la famille</a>). Un enseignant de sixième année de l'école Sturbridge, au Massachusetts, affirmait : « Les enfants ont adoré le programme. Ils ont aimé se sentir responsables. Ils ont aimé avoir des choix. Ils ont aimé qu'on mise sur leur honneur. Ils ont aimé avoir le plein contrôle et prendre eux-mêmes des décisions. Ils ont dit que c'était la meilleure activité de l'année. »</p>
+<p><strong>Recrutement </strong></p>
+<p>En vue de tirer le meilleur profit possible de la publicité de bouche à oreille (<a href="../../../../fr/outils-de-changement/de-bouche-a-oreille/">De bouche à oreille</a>), les organisateurs ont mis au point un processus de recrutement des membres fort efficace. Dans les derniers temps de la campagne communautaire sur les modes de vie, on demandait aux membres de mettre sur pied au moins deux autres équipes écologiques et on leur four nissait un texte d'invitation standard à lire pour inciter leurs voisins à participer à une rencontre d'introduction informelle dans leur propre demeure.</p>
+<p>Les participants savaient depuis le début du programme qu'ils seraient appelés à recruter d'autres membres puisque les responsables de <em>GAP </em>leur avaient déjà précisé que le programme visait à concevoir des modes de vie durable et à inciter les autres à faire de même. Ainsi, dès la première ren contre des équipes écologiques, on demandait aux participants s'ils avaient l'intention de mettre sur pied deux équipes écologiques ou plus à la fin du programme.</p>
+<p>Aux États-Unis, entre 40 et 50 pour cent des voisins conviés à une rencontre d'introduction ont accepté l'invitation; 85 pour cent des personnes qui ont assisté à une telle rencontre se sont jointes aux équipes écologiques. Le guide explique que « chaque personne qui se lance dans cette grande aventure peut contribuer autant que vous à sauvegarder la planète. Ainsi, vous pouvez doubler vos contributions à la Terre en aidait simplement une autre personne à opter pour un mode de vie plus durable. » (EcoTeam <em>Workbook, </em>1995 - traduction libre)</p>
+<p>Journey for the Planet intégrait également un volet de recrutement au sein du dernier module. On y expliquait aux enfants comment encourager d'autres enfants et adultes à participer au programme du <em>GAP. </em></p>
+<p><strong>Collaboration avec les municipalités </strong></p>
+<p>Les municipalités demandaient aux responsables de <em>GAP </em>d'organiser et de gérer le lancement du programme <em>GAP </em>dans leur milieu. Oeuvrant en collaboration étroite avec les gestionnaires municipaux des ressources, <em>GAP </em>ajustait la campagne en fonction des conditions locales et des besoins particuliers de la collectivité en matière de conservation des ressources. Ils procédaient à l'embauche du personnel local et assuraient sa supervision. En guise de lancement communautaire, un atelier de formation de deux jours était organisé, ce qui permettait de lancer de cinq à dix équipes écologiques. On amorçait ensuite le processus de recrutement en vue d'orienter l'action vers d'autres secteurs de la collectivité.</p>
+<p><em>GAP </em>offrait également aux municipalités participantes le soutien suivant :</p>
+<ul>
+<li>de l'aide en vue d'élaborer un plan stratégique pour mobiliser les efforts communautaires;</li>
+<li>des consultations pour établir les épargnes financières possibles;</li>
+<li>de la documentation au niveau des programmes destinés aux foyers et aux écoles;</li>
+<li>de l'aide pour préparer le matériel de promotion à l'échelle locale;</li>
+<li>des consultations suivies pour mieux gérer les activités de recrutement et pour assurer la qualité du programme.</li>
+</ul>
+<p><strong>Autres partenaires </strong></p>
+<p>Le President's Council on Sustainable Development (PCSD) a aidé à promouvoir <em>GAP </em>et a sollicité la participation des collectivités au programme.</p>
+<p>Le Programme des Nations unies pour l'environnement (PNUE) a créé le « Programme de prix au héros global » en vue de motiver les enfants à participer à Journey for the Planet. Ce programme célébrait les grandes réus sites des enfants et permettait de remettre aux jeunes des certificats et des badges pour les récompenser d'avoir entrepris certaines actions.</p>
+<p>Le PNUE a joint ses efforts à ceux de <em>GAP </em>pour mener une campagne de promotion internationale intitulée « The North Puts Its House In Order ... Household by Household ». Cette campagne visait à responsabiliser les habitants des pays industrialisés et à les inciter à opter pour des modes de vie plus durables, encourageant ainsi le Nord à collaborer avec le Sud sur le plan de la préservation. « Nous (les gens du Nord) réduisons la demande et eux (les gens du Sud) préservent les ressources. Il s'agit d'une aubaine glo bale réalisable et le début d'un Plan d'action global en faveur de la Terre ». (America <em>Puts Its House In Order... Household by Household, </em>1995)</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>Chaque foyer qui participait à la campagne communautaire sur les modes de vie versait des frais d'adhésion de 35 $, ce qui lui donnait droit à toute la documentation du programme, à l'aide de l'animateur bénévole chargé d'appuyer l'équipe et à un abonnement au bulletin d'information de <i>GAP, Stewardship. </i>L'inscription au programme Journey for the Planet coûtait 12,95 $ et comprenait un certificat et un badge du PNUE.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Les responsables de <em>GAP </em>ont tenu compte de plusieurs facteurs pour évaluer le succès des campagnes communautaires portant sur les modes de vie, dont les suivants :</p>
+<ul>
+<li>épargnes moyennes en ressources selon les données fournies par les participants eux-mêmes;</li>
+<li>nombre de campagnes de quartier mises sur pied;</li>
+<li>recrutement de deux nouvelles équipes écologiques ou plus par les équipes en place;</li>
+<li>recrutement d'un nombre suffisant d'animateurs bénévoles pour diriger les nouvelles équipes.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Réaction</h2>
+<p>Grâce aux mécanismes de rétroaction en place au sein du <em>GAP,</em> chaque participant pouvait constater les effets positifs de ses gestes sur l'environnement. Les activités de chaque équipe écologique étaient compilées et acheminées à une base de données communautaire centrale. Ces renseignements étaient ensuite convertis en valeur monétaire, ce qui permettait d'apprcier les épargnes réalisées par chaque membre de l'équipe. Cette information était transmise à tous les membres des équipes à la fin du programme. Les données portant sur les réalisations collectives de toutes les équipes étaient aussi compilées et retransmises aux membres dans le cadre du bulletind'information des équipes écologiques, <em>Stewardship.</em></p>
+<p>En outre, <em>GAP</em> mettait sur pied un site Web qui lui permettait de fournir des rétroactions. Il existait aussi divers mécanismes de rétroaction au sein même des collectivités, soit les journaux locaux, les stations de télévision, les babillards communautaires, les réseaux informatisés et les cérémonies de remises de prix.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p><strong>États-Unis </strong></p>
+<p>Les résultats moyens de la participation des États-Unis au programme se résument comme suit :</p>
+<ul>
+<li>réduction de 42 pour cent de la quantité de déchets acheminés aux sites d'enfouissement</li>
+<li>réduction de 25 pour cent de la consommation d'eau</li>
+<li>réduction de 16 pour cent de la production de CO 2</li>
+<li>réduction de 16 pour cent de la quantité de carburant utilisé</li>
+<li>épargnes annuelles moyennes réalisées par chaque participant de 400 $ par foyer</li>
+</ul>
+<p><strong>Pays-Bas </strong></p>
+<p>Une étude de deux ans financée par le ministère de l'Environnement des Pays-Bas a révélé que suivant la fin du programme, les membres des 205 équipes environnementales avaient adopté 46 comportements favorables à l'environnement sur un total possible de 93. Par ailleurs, les participants ont maintenu ces habitudes au cours des six à neuf mois qui ont suivi le programme, certains allant même jusqu'à les renforcer de diverses façons, soit en optant pour le covoiturage ou en installant des appareils pour ménager l'eau dans la salle de bain. Les anciens participants voulaient aussi maintenir leur engagement au niveau de <em>GAP. </em>En effet, près de 33 pour cent assistaient encore aux réunions des équipes, travaillaient à titre bénévole ou demeuraient actifs d'une façon quelconque. Quarante pour cent des gens indiquaient qu'ils avaient également modifié leurs comportements au travail et 26 pour cent étaient devenus plus actifs au niveau des dossiers environ nementaux communautaires.</p>
+<p>Les responsables de <em>GAP </em>ont constaté des résultats plus percutants encore lorsqu'ils ont lancé leur campagne communautaire sur les modes de vie dans un quartier de Den Haag, aux Pays-Bas, qui comptait 2 500 habitants. Les modifications de comportement subséquentes ont affecté la demande, puisque les consommateurs incitaient les commerçants à offrir des produits moins emballés. En retour, les commerçants ont alimenté la demande en faveur de produits moins emballés au niveau des manufacturiers. « Il s'agit de la première étude de cas qui démontre en quoi les pratiques de consom mation durables peuvent servir de catalyseur pour favoriser la production durable ». (America <em>Puts Its House In Order... Household by Household, </em>1995)</p>
+<p>Ce cas est tiré des documents suivants : « America Puts Its House In Order ... Household by Household », produit par le <em>Global Action Plan, </em>1995; « The EcoTeam Program in the Netherlands: A longitudinal study on the effects of the EcoTeam Program on environmental behaviour and its psychological backgrounds », par H. J. Staats &amp; P. Harland, 1995; « EcoTeam: A Program Empowering Americans to Create Earth-Friendly Lifestyles », par David Gershon, en collaboration avec Andrea Barrist Stern, 1995; « Household EcoTeam Workbook », par David Gershon et Robert Gilman, 1992; « The Market Potential for the Household EcoTeam Program », par Market Street Research Inc., 1996; et « Stewardship, A Newsletter of <em>Global Action Plan </em>for Earth », été 1996.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>David Gershon <br/>
+Global Action Plan for the Earth <br/>
+P.O. Box 428 <br/>
+Woodstock, New York 12498 <br/>
+U.S.A. <br/>
+(914) 679-4830 <br/>
+télécopieur : (914) 679-4834 <br/>
+courrier électronique : <a href="mailto:GAPUSA@mhv.net">GAPUSA@mhv.net</a> <br/>
+site Web : <a href="http://www.globalactionplan.org">www.globalactionplan.org</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Cette page et la suivante contiennent des extraits du Guide à l'intention des animateurs. Veuillez noter en quoi l'animateur de la rencon-tre précédente sur l'énergie a fait un suivi pour vérifier ce que les gens avaient fait. L'animateur de la rencontre sur les transports a fait de même, revenant à la charge lors de la prochaine rencontre pour savoir ce que les gens avaient accompli.</p>
+<p>Cette page et la suivante contiennent des extraits du Guide à l'intention des animateurs. Veuillez noter en quoi l'animateur de la rencon-tre précédente sur l'énergie a fait un suivi pour vérifier ce que les gens avaient fait. L'animateur de la rencontre sur les transports a fait de même, revenant à la charge lors de la prochaine rencontre pour savoir ce que les gens avaient accompli.</p>
+<table width="100%">
+<tbody>
+<tr>
+<td width="100%"><b>LES TRANSPORTS GUIDE DU MENEUR </b>
+<p><b>Survol </b>Merci d'avoir relevé le défi d'animer un groupe! <br/>
+            Ce guide utile vous permettra de :</p>
+<p>1. Organiser une séance sur les transports avec l'aide de votre animateur. <br/>
+            2. Mener efficacement la séance. <br/>
+            3. Effectuer un suivi auprès de chaque membre de l'équipe après la séance en vue d'appuyer leurs efforts. <br/>
+            4. Voir quelles initiatives ont été entreprises au niveau des transports et f aire rapport à votre meneur.</p>
+<p><b>Comment préparer la séance sur les transports </b></p>
+<p>Veuillez cocher la boîte lorsque vous aurez franchi chacune des étapes ci-dessous :</p>
+<p>Fixer la date de la rencontre de 30 minutes avec l'animateur une dizaine de jours avant la séance sur les transports, afin d'avoir suffisamment de temps pour bien vous préparer. <br/>
+            Date et heure de la rencontre avec l'animateur_____. <br/>
+            Nom et numéro de téléphone de l'animateur_____.</p>
+<p>Avant votre rencontre avec l'animateur :</p>
+<p>Voir ce dont vous avez besoin pour concrétiser les projets sur les transports décrits dans le guide, par exemple des pistes cyclables sécuritaires, des tarifs et des circuits raisonnables au niveau des transports en commun.</p>
+<p>Prendre connaissance du présent guide et indiquer : <br/>
+            - de quelle façon vous comptez franchir les étapes 1, 5 et 9 au moment de la séance; <br/>
+            - toute section du projet qui aurait été délaissée lors des séances écologiques précédentes en vue d'établir avec l'animateur comment les remettre à l'ordre du jour; <br/>
+            - toute question à l'intention de l'animateur.</p>
+<p>Procéder à la rencontre avec l'animateur en vue d'organiser la séance. <br/>
+            Engager certaines mesures relatives aux transports dans votre propre demeure avant la séance avec les équipes écologiques. Plus vous serez familier avec les actions à entre prendre, plus vous serez utile aux membres de l'équipe.</p>
+</td>
+</tr>
+<tr>
+<td width="100%">
+<p><b>Comment mener une séance sur les transports </b></p>
+<p><b>1. Période de motivation (5 minutes) </b></p>
+<p>Commencer la séance en beauté en lisant un court poème, en chantant, en récitant une prière, en racontant une anecdote personnelle ou toute autre chose qui communique au groupe le sens des gestes à poser. Indiquer ce que vous comptez faire :</p>
+<p><b>2. Remplir les formulaires de résultats sur l'énergie (10 minutes) </b></p>
+<p>Demander au responsable de l'énergie de distribuer aux membres de l'équipe les formulaires à remplir et à remettre.</p>
+<p><b>3. Échanger en groupe sur les projets engagés en matière d'énergie (30 minutes). </b></p>
+<p>Demander au responsable du dossier de l'énergie d'animer cette partie de la rencontre, tenant compte des directives suivantes.</p>
+</td>
+</tr>
+<tr>
+<td width="100%">
+<p><b>7. Réserver un moment pour faire les appels de suivi (5 minutes) </b></p>
+<p>Une semaine environ après la séance, il incombe au meneur de téléphoner aux membres de l'équipe pour les inciter à concrétiser leurs plans d'action. Laissés à eux mêmes, les gens ont souvent tendance à se démotiver. Ces appels s'avèrent fort utiles pour encourager les membres de l'équipe à donner suite aux projets. Fixer le jour et l'heure des appels et les inscrire au tableau fourni à la page suivante.</p>
+<p><b>8. Revoir avec les membres de l'équipe les choses à faire avant la tenue de la prochaine séance (5 minutes). </b></p>
+<p>1. Prendre les mesures convenues au niveau des transports. <br/>
+            2. Compléter les projets amorcés, remplir les formulaires. <br/>
+            3. Faire le plan d'action sur la consommation (prochain sujet) :</p>
+<ul>
+<li>revoir les mesures à prendre, en discuter avec vos proches et établir quoi faire;</li>
+<li>dresser la liste des actions à poser pour concrétiser ces mesures - qui appeler, quoi acheter, etc.</li>
+<li>préparer vos questions et commentaires, ainsi que vos suggestions pour obtenir de l'aide;</li>
+<li>fixer une journée et une heure pour engager chaque action.</li>
+</ul>
+<p><b>9. Célébrer les réalisations de l'équipe (5 minutes). </b></p>
+<p>Célébrer tout ce que l'équipe a réussi à accomplir. Une bonne f açon de faire consisterait à :</p>
+</td>
+</tr>
+</tbody>
+</table><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

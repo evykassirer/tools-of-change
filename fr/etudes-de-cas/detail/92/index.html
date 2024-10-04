@@ -1,0 +1,283 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/communications-personnalisées-percutantes/">Communications personnalisées percutantes</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Vancouver General Hospital</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>B.C. Cancer Agency</li>
+<li>Fédération des enseignantes et des enseignants de la Colombie-Britannique</li>
+<li>B.C. Rehab Hospital</li>
+<li>B.C. Center for Disease Control</li>
+<li>Children’s and Women’s Health Center of B.C.</li>
+<li>City of Vancouver</li>
+<li>Insurance Corporation of British Columbia</li>
+<li>Providence Health Care Society (includes</li>
+<li>Brock Fahrni</li>
+<li>Holy Family Hospital</li>
+<li>Mt. St. Joseph Hospital</li>
+<li>St. Paul’s Hospital</li>
+<li>St. Vincent’s Hospitals – Heather, Arbutus, Langara and Youville Residences</li>
+<li>VanCity Savings</li>
+<li>Vancouver Hospital and Health Sciences Center</li>
+<li>Vancouver Police Department</li>
+<li>Vancouver School Board</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p>Le pourcentage de véhicules à passager unique a diminué de 1.6 %, l’utilisation du transport en commun a augmenté de 25 % et l’utilisation de la bicyclette est passé de 4.5% à 5.5%.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Le consortium du corridor de Cambie</h1>
+<p>Le Consortium du corridor de Cambie (CCC) a été la première association de gestion du transport (ADT) à s'établir au Canada. Une ADT est une alliance d'industries, de gouvernements et d'autres groupes visant à réduire la circulation dans un endroit sélectionné par un regroupement de ressources et d'expertises. La ville de Cambie tente de réduire le nombre de véhicules à passager unique parcourant le trajet Cambie/Broadway dans la région de Vancouver et d'améliorer la qualité de l'air en offrant des solutions de rechange pour le transport et de l'information. Environ 25 000 employés sont représentés par les 21 membres du CCC.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>Durant les dix dernières années, le secteur de Cambie, du pont de Cambie à la 33e Avenue et de la rue Main à la rue Granville, est devenu le deuxième plus grand secteur industriel de Vancouver, incluant industries, centres commerciaux et quartiers résidentiels. La région inclut aussi plusieurs hôpitaux et centres médicaux. Au début des années 1990, la Fédération des enseignants et des enseignantes de Colombie- Britannique et un des postes de police de Vancouver se sont installés dans le secteur, augmentant ainsi la circulation. À cause du genre d’entreprises dans cette région, simplement se stationner devenait un défi d’envergure car des employés de l’hôpital travaillent 24 heures par jour.</p>
+<p>Un conseiller en gestion du transport et des employés du Vancouver General Hospital se rencontraient en compagnie de quelques partenaires depuis plusieurs années afin de discuter de la situation. En 1995, ils ont décidé de former le Consortium du corridor de Cambie afin de s’attaquer problèmes de transport. À partir de ces rencontres, un expert en voyagement élaboré un plan de transport qui a été utilisé comme plan de base pour les programmes et services du CCC.</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p>Les objectifs du CCC était de :</p>
+<ul>
+<li>Réduire de 20 % des véhicules à passager unique</li>
+<li>Rétablir l’habitabilité dans le secteur</li>
+<li>Améliorer la qualité de l’air</li>
+</ul>
+<p> </p><!-- Objectives already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>En 1994, un sondage a été fait auprès des employés du Vancouver General Hospital et de la University British Columbia. Le CCC a également eu accès à des rapports d’analyse sur la circulation dans le secteur, rapports faits par la ville de Vancouver. Parmi les employés qui avaient complété le sondage, plus de la moitié voyageait seul tandis que les autres utilisaient le transport en commun, la bicyclette, le co-voiturage ou marchaient. D’après Bett Lauridsen, coordonatrice en gestion du transport pour le CCC, la majorité des employés parcours en moyenne une distance de dix kilomètres pour se rendre au travail.</p>
+<p>Les résultats du sondage concluaient que le 3/4 des répondants affirmaient que la voiture était le moyen de transport le plus rapide pour se rendre au travail et le 1/3 croyait que le transport en commun prenait beaucoup trop de temps. La moitié du personnel qui avait répondu au sondage ne voudrait pas prendre le transport en commun même s’il était offert gratuitement. Les principales raisons de cette attitude était que le personnel trouvait que l’utilisation du transport en commun leur enlevait du temps passé en famille et ceux qui travaillaient sur les quarts n’aimaient pas prendre l’autobus tard le soir. Par contre, le sondage a démontré que plusieurs employés étaient prêts à considérer le transport en commun comme moyen de transport si des améliorations au niveau des horaires étaient apportées.</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>Le Vancouver General Hospital employait déjà à temps partiel Mme Lauridsen comme conseillère en gestion du transport. Une expansion planifiée de l’hôpital aurait signifié une augmentation du nombre d’espaces de stationnement. En moyenne, chaque espace coûte entre 15 000 $ et 25 000 $, montant qui inclut la construction, l’entretien et l’administration. Le CCC a plutôt embauché Mme Lauridsen comme coordonatrice en gestion du transport à temps partiel, faisant d’elle le point de contact entre ses membres et leurs employés. Des kiosques sur le transport en commun ont été érigés à chaque poste de travail où les employés pouvaient obtenir facilement de l’information concernant le prix des billets d’autobus, l’horaire des navettes et autres informations (<a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications personnalisées percutantes</a>).</p>
+<p>Un service de navette a été mis en place pour transporter le personnel de l’hôpital entre les différents sites. Aujourd’hui, l’autobus fait environ 2 100 voyages par mois, transportant 9 000 passagers. Le CCC utilise également la navette pour transporter de l’équipement, des fournitures et des documents entre les sites, ce qui représente une économie d’environ 200 000 $ par année en services de messagerie.</p>
+<p>Des services de co-voiturage ont été offerts par l’intermédiaire de la Jack Bell Foundation (<a href="http://www.ride-share.com">www.ride-share.com</a>) et sont utilisés par environ 200 employés. Environ 500 employés font du co-voiturage.</p>
+<p>Le CCC a travaillé avec le transport en commun de la Colombie-Britannique sur un projet pilote de 18 mois qui permettait aux employés de l’entreprise de bénéficier d’un rabais de 15 % à l’achat d’une passe d’autobus (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>).</p>
+<p>En réponse aux besoins des employés et en raison de certaines barrières mentionnées dans les sondages initiaux, un système d’urgence pour le retour à la maison a été implanté. Le CCC a signé un contrat avec une compagnie de taxi locale; les employés reçoivent des coupons de taxi à utiliser en cas d’urgence ou de maladie. Afin d’éviter tout abus, les employés ont le droit d’utiliser seulement quatre transports d’urgence par année (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>).</p>
+<p>De plus, en réponse aux demandes des employés, des douches et des vestiaires additionnels ainsi que des casiers sécuritaires pour vélos ont été installés dans certains lieux de travail (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>).</p>
+<p>Le conseil d’administration se rencontre toutes les six semaines pour discuter des politiques, établir les buts et projets pour le futur, ainsi qu’évaluer les programmes et services sur une base régulière.</p>
+<p><strong>Promotion </strong></p>
+<p>Des étudiants d’été ont distribué des brochures aux membres et aux autres industries intéressées dans le secteur. Cinq brochures, chacune expliquant en détail différents moyens de transport et leurs avantages, sont disponibles (<a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications personnalisées percutantes</a>).</p>
+<p>Régulièrement, des salons du transport sont tenus à différents endroits pour promouvoir des méthodes actives et durables de transport quotidien; des articles promotionnels tels que des tasses et des chandails sont offerts (<a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications personnalisées percutantes</a>).</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>Environnement Canada a remis une subvention de 60 000 $ à la condition que les membres du CCC contribuent le même montant en dons en nature. Chaque nouveau membre a bénéficié d'un an sans paiements, mais le CCC prévoyait demander des cotisations annuelles en tenant compte du nombre d'employés actuels et futurs.</p>
+<p>Le Consortium du corridor de Cambie a initié le service de navette. Avant que le service ne soit implanté, les hôpitaux payaient les frais de stationnement et de kilométrage des employés qui utilisaient leur voiture pour se déplacer d'un site de travail à l'autre. Ces économies ont servi à défrayer le nouveau service de navette pour les employés.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Deux sondages, (en 1994 et 1998) ont été faits. Ils représentent les opinions des employés du Vancouver General Hospital et de la University British Columbia. Le pourcentage moyen de réponse pour les deux organisations était d’environ 30 %, ce qui représente environ 1 500 personnes; à noter que le faible taux remet en question la représentativité des données recueillies. Les sondages ont mesuré les attitudes, les habitudes, les barrières et autres opinions face aux programmes et services offerts par le CCC.</p>
+<p>Dans le cas des hôpitaux membres, le personnel utilisant le service de navette s’enregistrait dans un journal de bord. Le CCC vérifiait régulièrement le nombre de personnes utilisant la navette pour voyager d’un site à l’autre.</p><!-- Results_B already contains P tags.-->
+<h2>Réaction</h2>
+<p>Les kiosques du transport érigés à chaque lieu de travail étaient une façon efficace pour les employés de faire connaître leurs réactions face aux programmes et services. Le principal kiosque, situé au Vancouver General Hospital, avait du personnel sur place sept heures par jour.</p>
+<p>Un rapport annuel portant sur le plan de gestion du transport fait par le Vancouver General Hospital rapportait les changements de comportement, les changements aux résultats du sondage, au nombre d'employés, au nombre de membres et d'autres détails. Le rapport était disponible pour les membres et les autres personnes intressées.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>Les résultats du second sondage fait en 1998 ont démontré que l'utilisation d'autres moyens de transport ont connu une augmentation. Depuis le premier sondage en 1994, le pourcentage de personnes voyageant seuls a connu une baisse de 1.6 %, l'utilisation du transport en commun a augmenté d'environ 25 % et l'utilisation de la bicyclette est passé de 4.5 % à 5.5 %.</p>
+<p>Le nombre de personnes marchant au travail a grandement augmenté depuis 1994. Auparavant, les employés demeurant près de leur travail y allaient en voiture pour être capables de se déplacer d'un site à l'autre pendant le jour. Près de 10 % de tous les répondants au sondage ont dit marcher régulièrement au travail. De plus, parmi les répondants au sondage de 1998, 85 % ont dit qu'ils n'utilisaient plus leur voiture pour se rendre au travail car la navette leur permettait de voyager entre les sites (Overcoming Specific Barriers).</p>
+<p>En 1998, huit cents employés des membres du CCC utilisaient le programme de transport en commun à tarif réduit. Le transport en commun a depuis étendu le programme à plus d'employeurs où les employés peuvent acheter une passe d'autobus à rabais par des retenues sur leur paie.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Madame Bett Lauridsen<br/>
+Coordonatrice en gestion du transport<br/>
+Consortium du corridor de Cambie<br/>
+855, 12e Avenue ouest<br/>
+Vancouver, Colombie-Britannique<br/>
+V5Z 1M9<br/>
+Tél. : 604-875-4118<br/>
+Fax : 604-875-4608<br/>
+Courriel : <a href="mailto:blaurids@vanhops.bc.ca">blaurids@vanhops.bc.ca</a></p>
+<p>Cette étude de cas a été écrite par Sharon Boddy, et traduite en français par Julie Boisvert.</p>
+<p>Rénald Gagnon a édité la version française de cette étude de cas. Rénald possède de nombreuses années d’expérience de traduction et de révision dans des domaines très variés. Vous pouvez le joindre par courrier à : <a href="mailto:relimax@magma.ca">relimax@magma.ca</a>.</p>
+<p>Le financement pour l'ajout de cette étude de cas a été généreusement fourni par le Fonds d’action pour le changement climatique du Gouvernement du Canada, Suncor, Syncrude, Enbridge Consumers Gas et TetraPak Canada Inc.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><b>Leçons apprises</b></p>
+<p>Dans son dernier rapport annuel, le CCC a offert différentes suggestions dans le but de surmonter les barrières au transport quotidien actif et durable. Certaines suggestions sont spécifiques au secteur de Cambie, tandis que d’autres sont d’ordre général et auraient besoin d’appui de la part de tous les paliers du gouvernement afin d’apporter des changements. Les ADT peuvent exercer des pressions uniquement auprès des gouvernements municipaux et provinciaux pour faire apporter des changements parce qu’elles représentent un plus grand nombre de personnes qu’une seule organisation.</p>
+<ul>
+<li>Des mesures législatives sont nécessaires afin d’exiger que les employeurs mettent en place des programmes visant à réduire le coût du transport. Ceci rendrait les associations de gestion du transport plus attrayantes car elles réduiraient les frais généraux d’implantation des programmes de réduction du coût de transport.</li>
+<li>Le transport en commun dans cette région a besoin d’améliorer la fiabilité et les correspondances. Dans le cas de Cambie, les travailleurs de quarts bénéficieraient du transport en commun 24 heures par jour.</li>
+<li>Des voies de co-voiturage pour les véhicules à plusieurs occupants devraient être créées et régulièrement contrôlées afin d’éviter l’utilisation abusive de ces voies.</li>
+<li>Les taux d’assurance-automobile devraient être amendés modifiés afin d’encourager les gens à laisser leur voiture à la maison pour une partie de la semaine.</li>
+<li>Les frais de stationnement devraient être augmentés, et il devrait y avoir des ponts et des autoroutes à péage.</li>
+</ul>
+<p> </p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

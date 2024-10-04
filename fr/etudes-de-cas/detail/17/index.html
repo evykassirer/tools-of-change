@@ -1,0 +1,291 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/visites-à-domicile/">Visites à domicile</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+<li><a href="../../../../fr/outils-de-changement/programmes-scolaires-qui-engagent-la-famille/">Programmes scolaires qui engagent la famille</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Alberta Power Limited</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Ressources naturelles Canada</li>
+<li>Détaillants locaux</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p>Le projet a entraîné un taux de retour sur l'investissement de 95 pour cent réparti sur cinq ans et une période de remboursement d'un an. La demande générale en alimentation électrique a diminué de près de 10 pour cent en quatre ans, par opposition à la demande provinciale qui a <i>augmenté </i>de 17 pour cent.</p>
+<table border="1" cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" complete="complete" height="26" src="/images/lightbulb.gif" width="27"/> <small><font face="Verdana">Conseil: Cliquez sur cette image pour l'agrandir. Cliquez votre bouton "Back" pour retourner à ce page.</font></small><hr color="#FFCC00"/>
+<p><a href="/images/documentimages/JEEP/Jeep-1.jpg" target=""><img alt="JEEP image" border="0" complete="complete" height="106" src="/images/documentimages/JEEP/Jeep-1.jpg" width="164"/></a><br/>
+<small><font face="Verdana">A JEEP home visit team reviewing utility bills with a householder.</font></small></p>
+<p><a href="/images/documentimages/JEEP/Jeep-2.jpg" target=""><img alt="JEEP image" border="0" complete="complete" height="163" src="/images/documentimages/JEEP/Jeep-2.jpg" width="102"/></a><br/>
+<small><font face="Verdana">A progress sign tracked community savings.</font></small></p>
+<p><a href="/images/documentimages/JEEP/Jeep-3.jpg" target=""><img alt="JEEP image" border="0" complete="complete" height="100" src="/images/documentimages/JEEP/Jeep-3.jpg" width="162"/></a><br/>
+<small><font face="Verdana">A road sign helped maintain awareness about the JEEP program.</font></small></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Projet d'efficacité énergétique de Jasper (JEEP)</h1>
+<p>Afin d'inciter les résidants de Jasper à mieux conserver l'énergie, des visites à domicile ont été organisées. Ces visites permettaient aux responsables de sensibiliser les personnes à diverses stratégies de conservation et de leur expliquer le fonctionnement du programme d'incitation aux rénovations. On leur offrait égale ment des produits pour économiser de l'énergie et on en assuraient l'installation. Le programme JEEP a rem porté cinprix, dont deux de l'Association internationale des professionnels de la communication.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>Nichée au coeur du Parc national de Jasper, la ville de Jasper n'est pas alimentée en électricité par le grand réseau électrique de l'Alberta. Dans cette ville de 4 500 habitants, la demande en énergie a presque doublé de 1981 à 1991. Cette situation tient surtout à la forte croissance des secteurs commerciaux et industriels. La ville était alimentée en énergie par une centrale électrique de 14 MW fonctionnant au gaz naturel et par une centrale hydro-électrique de 1,3 MW. Les deux systèmes fonctionnaient presque à pleine capacité.</p>
+<p>Le volet résidentiel du <em>Projet d'efficacité énergétique de Jasper </em>(JEEP) a été en vigueur en 1991 et en 1992. En réduisant la demande en énergie, Alberta Power souhaitait retarder la construction d'une nouvelle ligne de transmission ou l'expansion de la centrale électrique en place.</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p>L'objectif de <em>JEEP </em>consistait à réduire de 500 kW la demande en énergie et d'engager la participation de 75 pour cent des résidants de Jasper.</p><!-- Objectives already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>Du 7 août au 27 septembre 1991, <em>JEEP </em>a mené une campagne porte à porte résidentielle. Ce sondage visait à définir les options les plus prometteuses pour réduire la consommation en énergie et à établir quels programmes Power Smart devaient être mis en oeuvre. Pour mener la recherche, on a fait appel à deux employés d'Alberta Power qui habitaient la région, et on leur a donné une formation spéciale. Ces derniers ont distribué des questionnaires dans 911 foyers et ont répondu aux questions des gens. Ils ont ensuite invité les résidants à remplir le questionnaire et à le retourner à Alberta Power dans une enveloppe pré-affranchie spéciale. Près de 500 questionnaires ont été retournés. Les résultats ont révélé qu'une bonne façon de réduire la consommation en énergie consisterait à inciter les résidants de Jasper à utiliser plus d'ampoules fluorescentes compactes et à chauffer leur eau au gaz naturel.</p>
+<p>En plus du sondage, les responsables ont examiné la documentation exis tante. La recherche indiquait qu'au Yukon, les ventes de cordons d'alimentation éconergétiques pour réchauffer le bloc-moteur avaient été nombreuses mais que la plupart des cordons n'avaient pas été installés ou avaient été mal mis. Cette situation tenait surtout au fait que les clients devaient les installer eux-mêmes.</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>En vue de bien orienter le projet et d'assurer la participation des gens de la région, Alberta Power a mis sur pied un comité d'information du public. Ce dernier réunissait des représentants du public et de diverses organisations comme les conseils scolaires, les groupes environnementaux, la Chambre de commerce et les conseils d'hôpitaux. Un bureau <em>JEEP </em>a été créé dans l'édifice régional d'Alberta Power, ce qui a permis de centraliser toutes les communications et de réduire les coûts administratifs.</p>
+<p>Les démarches suivantes ont été engagées pour sensibiliser efficacement le public :</p>
+<ul>
+<li>le projet <em>JEEP </em>a profité d'un lancement public qui a attiré l'attention des médias provinciaux et auquel 300 membres du public ont assisté. Ressources naturelles Canada a profité de l'événement pour attribuer à <em>JEEP </em>le premier Prix dans le cadre de l'Initiative des innovateurs énergétiques.</li>
+<li>les responsables de <em>JEEP </em>ont distribué aux résidants de Jasper divers articles de promotion dont des stylos, des casquettes, des tee-shirts et des porte-clés arborant le logo de Power Smart;</li>
+<li>on a distribué des brochures, inséré des encarts avec les factures de services publics et publié une édition spéciale du bulletin d'information Alberta Power Smart Report;</li>
+<li>les journaux locaux ont continuellement publié des articles sur le programme, reflétant ainsi les nombreux efforts déployés par Alberta Power pour cultiver de bonnes relations avec les médias. Les journalistes publiaient aussi des articles sur divers aspects du projet et mettaient en valeur les contributions particulières de certains résidants (<a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a>);</li>
+<li>les annonces publiées dans les journaux comprenaient deux volets. D'une part, on mettait l'accent sur les habitudes de vie; de l'autre, on donnait des renseignements sur le programme et on expliquait aux gens comment prendre rendez-vous avec une équipe de <em>JEEP; </em></li>
+<li>on a embauché des gens de la région pour constituer deux équipes d'employés dûment formés (Équipes <em>JEEP). </em>Selon Alberta Power, il importait que les employés connaissent bien la population de Jasper pour mieux saisir les besoins de la collectivité et pour garantir un haut niveau de crédibilité. La grande confiance qui régnait déjà entre Alberta Power et sa clientèle a vite fait d'étouffer toute pointe de scepticisme entourant le programme.</li>
+</ul>
+<p>Les Équipes <em>JEEP </em>ont effectué une campagne de porte à porte en vue d'ex pliquer, de vendre et d'installer leurs appareils éconergétiques. Les responsables ont opté pour les visites à domicile puisque cette approche s'avérait la plus pratique pour expliquer tous les détails complexes du programme et pour garantir la participation de la population (<a href="../../../../fr/outils-de-changement/visites-a-domicile/">Visites à domicile</a>).</p>
+<p>Afin d'encourager les résidants à installer dans leur maison des appareils pour économiser l'énergie, <em>JEEP </em>a eu recours à divers incitatifs financiers (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>). Le programme couvrait jusqu'à 80 pour cent du coût des rénovations et jusqu'à 450 $ par kW épargné. Pour ce faire, <em>JEEP </em>offrait les produits et appareils suivants :</p>
+<ol>
+<li>Les équipes <em>JEEP </em>vendaient des coupons-rabais pour des cordons d'alimentation éconergétiques pour le bloc-moteur au coût de 7,50 $. Afin de garantir la bonne installation des cordons, les coupons devaient être échangés à une station-service de Jasper capable d'exécuter le travail. Alberta Power donnait 5 $ aux stations-service pour chaque cordon installé (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>).</li>
+<li>On proposait aux résidants un assortiment d'ampoules fluorescentes compactes de 11 à 18 watts au coût de 3$ ou 5 $. Après deux jours, il a fallu imposer une limite de huit ampoules par maison et de cinq ampoules par appartement, parce que les gens avaient tendance à en acheter de grandes quantités pour donner en cadeau à des personnes qui n'habitaient pas à Jasper.</li>
+<li>Jusqu'à deux minuteurs pour l'éclairage intérieur et deux minuteurs pour l'éclairage extérieur par résidence. L'appareil intérieur se vendait 4 $ et l'appareil extérieur 9 $. Les équipes de <em>JEEP </em>expliquaient aux gens comment se servir de ces minuteurs, surtout ceux servant au contrôle des lumières de Noël.</li>
+</ol>
+<p>En outre, on offrait aux résidants un incitatif de 400 $ pour convertir leur chauffe-eau électrique en chauffe-eau au gaz naturel. Au départ, il revenait aux individus d'embaucher un entrepreneur pour effectuer les travaux. Ils devaient payer 800 $ en moyenne, y compris le rabais. Cette somme élevée constituait un obstacle puisque seulement trois conversions ont eu lieu. Par la suite, Alberta Power a embauché un entrepreneur pour faire les rénovations (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>). Cette entente, qui s'avérait plus pratique et moins coûteuse (300 $ par rapport à 800 $), a permis d'effectuer 26 autres conversions de chauffe-eau de l'électricité au gaz naturel.</p>
+<p><strong>Collaboration avec les détaillants locaux </strong></p>
+<p>Les ampoules et les minuteurs ont été achetés par l'entremise d'un fournisseur local de Home Hardware Limited, Saito Sports &amp; Hardware Limited. En vue de bien intégrer le commerçant au programme, Alberta Power a offert une formation spéciale d'une semaine à l'un de ses employés pour le familiariser avec les produits.</p>
+<p>En centralisant le procédé d'achat chez un seul détaillant, les responsables espéraient régler le problème de disponibilité des produits. Au début, certains produits éconergétiques n'ont pas été livrés à temps car les distributeurs habituels n'étaient pas habitués à répondre à une telle demande et à expédier de si grandes quantités au même détaillant. En vue de régler ce problème, Saito Sports &amp; Hardware a contourné le réseau de distribution normal et a transigé directement avec les manufacturiers. Le fait de collaborer avec un commerçant local présentait aussi d'autres avantages puisqu'on pouvait garantir localement les produits et s'assurer qu'ils seraient encore disponibles à Jasper après le programme.</p>
+<p><em>JEEP </em>a aussi engagé la participation des écoles. En effet, un élève de 11e année et un directeur d'école faisaient partie du comité d'information du public. On a rénové les écoles pour réduire leur consommation en énergie. Les équipes de <em>JEEP </em>se sont rendues sur place pour initier les élèves aux principes de la conservation d'énergie et pour discuter du programme.</p>
+<p>En plus de sensibiliser la génération montante aux enjeux de la conservation d'énergie, ces visites ont poussé les jeunes à discuter du programme avec leurs parents et à les convaincre de prendre rendez-vous pour une visite à domicile <em>JEEP. </em></p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<ul>
+<li>Le budget pour la partie rsidentielle du programme <em>JEEP</em> s'élevait à 345 000 $, dont 113 000 $ étaient alloués au programme d'incitatifs et 232 000 $ servaient à couvrir les coûts de promotion, de publicité, de planification et d'administration.</li>
+<li>Ressources naturelles Canada accordait une subvention de 100 000 $ pour financer les activités de planification du programme.</li>
+<li>Les résidants investissaient 70 000 $ environ dans l'achat de produits et dans la rénovation des systèmes de chauffe-eau.</li>
+</ul>
+<p>Une affiche illustrait clairement les résultats de la campagne.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Les équipes de <em>JEEP </em>préparaient un rapport sur chaque visite à domicile. Ils notaient, pour chaque résidence, le nombre d'appareils installés, le nombre de watts, et si les produits servaient aux heures de pointe. Ces données, ainsi que les taux d'alimentation à la centrale d'Alberta Power, leur permet taient de calculer les économies d'énergie réalisées.</p>
+<p>En guise de suivi au projet, on a fait appel, en juin 1993, à une agence de recherche indépendante pour effectuer un sondage téléphonique. Les chercheurs ont communiqué avec plus de 350 résidents ayant profité d'une visite à domicile de <em>JEEP </em>pour connaître leur point de vue sur le programme. En outre, un sondage par la poste a été effectué auprès de 76 rési dants qui avaient refusé de participer au programme, pour connaître leurs motifs.</p><!-- Results_B already contains P tags.-->
+<h2>Réaction</h2>
+<p>Les responsables ont installé, en plein centre de Jasper, une grande pancarte affichant les progrès accomplis (<em>Rétroaction).</em> En indiquant clairement à la collectivité combien de kilowatts électriques avaient été épargnés, cette affiche illustrait en quoi la participation au programme <em>JEEP</em> réduisait la consommation en énergie à Jasper. On offrait aussi une rétroaction à la population dans le cadre d'articles et d'annonces dans les journaux et du Alberta Power Smart Report.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<ul>
+<li>Entre 1991 et 1994, <i>JEEP </i>permettait de réduire la demande globale en énergie de 9,6 pour cent alors que partout ailleurs en Alberta, cette demande augmentait de 17,5 pour cent.</li>
+<li>La réduction de la demande résidentielle en énergie électrique s'établis sait à 490 kW, ce qui était très près de l'objectif de 500 kW.</li>
+<li>En 1991 et 1992, les coûts attribuables à Alberta Power pour la portion résidentielle du programme <i>JEEP </i>s'établissaient à 705 $ par kW épargné, comparativement au coût anticipé du nouvel équipement d'alimentation en énergie qui aurait atteint 1 400 $ par kW.</li>
+<li>Le projet a entraîné un taux de retour sur l'investissement de 95 pour cent réparti sur cinq ans et une période de remboursement d'un an (tenant pour acquis une demande et des épargnes constantes).</li>
+<li>Une demande plus faible a permis à la centrale de réduire de 730 tonnes ses émissions de CO 2 et de 1,5 tonne ses émissions d'oxyde d'azote.</li>
+<li>Trente-huit pour cent des participants au sondage disaient avoir engagé d'autres mesures de conservation de l'énergie par suite des efforts de sensibilisation de <i>JEEP. </i></li>
+<li>Trente-quatre pour cent des non participants au programme <i>JEEP </i>disaient avoir agi ainsi parce qu'ils ne connaissaient pas <i>JEEP </i>ou ne savaient pas comment prendre rendez-vous pour une visite à domicile.</li>
+<li>Le taux de participation des foyers au programme <i>JEEP </i>s'élevait à 75 pour cent (900 foyers sur un total de 1 200).</li>
+<li>Parmi les personnes ayant participé au sondage téléphonique de suivi, 96 pour cent se disaient « très satisfaites » du travail des équipes de <i>JEEP. </i></li>
+<li>Seulement 24 pour cent des participants de Jasper n'avaient pas installé leurs cordons d'alimentation éconergétiques, comparativement à 60 pour cent des participants du Yukon qui n'avaient pas même pas mis leurs cordons ou qui les avaient mal installés.</li>
+</ul>
+<p>En 1995, la demande en énergie électrique était revenue à son taux de 1991, soit 11,9 MW, ce qui était bien en-deça du niveau projeté de 13,3 MW. Cette augmentation était largement due à la forte expansion des secteurs commerciaux et industriels de Jasper.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Wilf Golbeck <br/>
+Superviseur des services à la clientèle <br/>
+Alberta Power <br/>
+C.P. 1450 <br/>
+Drumheller (Alberta) <br/>
+T0J 0Y0 <br/>
+(403) 823-1446 <br/>
+télécopieur : (403) 823-1470 <br/>
+courrier électronique : <a href="mailto:wilfg@csd.apl.cul.ca">wilfg@csd.apl.cul.ca</a>  </p><!-- Contacts already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

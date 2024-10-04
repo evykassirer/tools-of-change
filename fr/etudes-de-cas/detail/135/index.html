@@ -1,0 +1,323 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a></li>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/communications-personnalisées-percutantes/">Communications personnalisées percutantes</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+<li><a href="../../../../fr/outils-de-changement/groupes-de-soutien-par-les-pairs/">Groupes de soutien par les pairs</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Gouvernement du Canada</li>
+<li>Gouvernement du Québec</li>
+<li>Hydro-Québec</li>
+<li>Centre d'expérimentation des véhicules électriques du Québec</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Hydro-Québec</li>
+<li>Gouvernement du Canada</li>
+<li>Gouvernement du Québec</li>
+<li>Centre d'expérimentation des véhicules électriques du Québec</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<ul>
+<li>Intérêt accru par rapport aux VÉ chez les entreprises et les institutions montréalaises.</li>
+<li>Soutien à l'hypothèse voulant que les VÉ soient une option viable dans les villes nordiques.</li>
+<li>Plan à long terme d'achat en vrac de VÉ pour les entreprises et les institutions montréalaises.</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Projet véhicules électriques Montréal 2000</h1>
+<p>Le projet véhicules électriques Montréal 2000 a démontré que l'ajout de véhicules électriques (VÉ) à des parcs commerciaux et institutionnels est une option viable au Canada. Ce partenariat public-privé, qui consistait à intégrer des VÉ aux parcs de 10 organisations, visait à soutenir l'introduction des VÉ et à vérifier si ces véhicules pouvaient contribuer à réduire le smog urbain et les émissions de gaz à effet de serre dans la région du Grand Montréal.</p>
+<p>Le financement de la rédaction de cette étude de cas provient du <a href="http://www.ec.gc.ca/nopp" target="_blank">Bureau national de la prévention de la pollution</a> d'Environnement Canada.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>Avec la hausse du débit de la circulation et les migrations journalières de nombreux banlieusards, certaines parties du Canada se sont retrouvées avec des problèmes de qualité de l'air, sans compter que le réchauffement de la planète est devenu une préoccupation majeure. Au Québec, plus de 40 % des émissions de gaz à effet de serre sont attribuables au transport routier. Des études ont démontré que si l'on remplaçait chaque véhicule conventionnel par un VÉ, on éviterait d'émettre plus de 3,8 tonnes de dioxyde de carbone. De plus, les VÉ pourraient contribuer à la lutte contre le smog urbain grâce à des réductions d'émissions polluantes comme les oxydes d'azote, les oxydes de soufre et les composés organiques volatils.</p>
+<p>Les gouvernements du Canada et du Québec, Hydro-Québec et le Centre d'expérimentation des véhicules électriques du Québec sont les quatre partenaires qui ont lancé Montréal 2000 afin de déterminer si les VÉ pouvaient réduire les émissions de gaz à effet de serre tout en satisfaisant aux besoins en mobilité des gens en milieu urbain. Ce projet vise également à soutenir les premiers acheteurs de VÉ canadiens.</p>
+<p>Le Québec était un choix logique pour ce programme car on le considère comme l'une des provinces où les conditions météorologiques sont les plus difficiles. En effet, les chercheurs devaient connaître les performances des véhicules par temps froid. Un autre argument militant en faveur du Québec est celui de l'électricité, abondante et bon marché : au Québec, recharger un VÉ coûte environ le cinquième de ce qu'il en coûterait avec des carburants traditionnels. Le Québec est d'ailleurs l'endroit en Amérique du Nord où la différence entre les prix de l'électricité et des carburants pétroliers est la plus grande. De plus, le Québec est le deuxième marché en importance au Canada pour ce qui est des véhicules légers avec 3,5 millions d'unités, dont 400 000 font partie de parcs commerciaux et institutionnels. Enfin, les deux concessionnaires canadiens de VÉ sont installés à Montréal.</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p>Ce projet étalé sur deux ans a été mis sur pied afin d’évaluer la faisabilité d’adopter les VÉ en tant que véhicules commerciaux ou institutionnels. En des termes plus précis, le programme visait à démontrer qu’avec la présence d’une infrastructure de rechargement, les VÉ alimentés par batteries pouvaient représenter une solution rentable et attrayante pour les parcs de véhicules commerciaux et institutionnels exploités dans les villes canadiennes, et ce, même pendant l’hiver.</p><!-- Objectives already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>Les frais de lancement sont un des principaux obstacles à l’intégration des VÉ au Canada. Les véhicules coûtent 2,5 fois plus cher que leurs équivalents à combustion interne. De plus, on croit généralement que le climat rigoureux du Canada réduit l’autonomie des véhicules. En effet, les batteries du VÉ doivent faire fonctionner les systèmes de chauffage et de climatisation, en plus du moteur principal. Puisqu’il faut davantage d’énergie à –30 °C pour chauffer le véhicule, l’énergie disponible pour propulser le véhicule s’en trouve réduite. L’absence d’une infrastructure de rechargement est également considérée comme un obstacle.</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>Le projet s'est déroulé entre le 1er août 1999 et le 31 mars 2001. Au début, le projet a été reçu assez favorablement à cause de la nouveauté des véhicules et de leur disponibilité. En outre, l'engagement des gouvernements fédéral, provincial et municipaux, auxquels s'ajoutent des entreprises, a contribué à faire accepter ce programme (<a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications personnalisées percutantes</a>). Ce projet a été considéré comme la première percée réelle en marketing des VÉ au Canada.</p>
+<p> </p>
+<p>Le premier volet du programme avait pour objet de motiver d'éventuels participants à prendre part au projet. Le programme offrait une contribution de 10 %, ou 10 000 $, applicable à l'achat de VÉ, avec une limite de deux véhicules par organisation (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>; <a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>). La participation était limitée aux organisations commerciales ou institutionnelles qui exploitaient un parc de véhicules et qui étaient intéressées à ajouter au moins un VÉ à leur parc.</p>
+<p> </p>
+<p>Le projet encourageait les participants à évaluer pendant deux ans l'usage qu'ils faisaient de leurs véhicules, puis à envisager la conversion de leurs parcs aux VÉ (<a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a>; <a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a>). Les 10 participants, qui étaient des ministères fédéraux et provinciaux, des administrations municipales, des sociétés d'État et des entreprises privées, ont acquis et intégré un total de 23 VÉ à leurs parcs. Voici la liste des participants :</p>
+<ul>
+<li>Bell Canada</li>
+<li>Ministère de la Défense nationale</li>
+<li>Environnement Canada</li>
+<li>Hydro-Québec</li>
+<li>Les Services électriques Blanchette</li>
+<li>Ministère des Transports du Québec</li>
+<li>Postes Canada</li>
+<li>Transports Canada</li>
+<li>Ville de Montréal</li>
+<li>Ville de Saint-Jérôme</li>
+</ul>
+<p>Ford du Canada et Solectria Corporation étaient les fournisseurs officiels de VÉ du projet. Ford proposait sa camionnette compacte Ranger et sa microvoiture citadine à deux places, la TH!NK City. Cette dernière a été intégrée au programme après la première année, au printemps 2001. Les modèles Solectria étaient la berline Force et le fourgon CitiVan.</p>
+<p> </p>
+<p>Les organisateurs ont admis que la réussite du programme dépendait de la mise en place d'une infrastructure de rechargement (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>). La société Norvik Traction, de Mississauga (Ontario), a conçu des chargeurs rapides et Hydro-Québec a conçu et développé l'infrastructure de rechargement. Il s'agit du premier réseau de rechargement des VÉ au pays. Vingt postes privés et publics ont été installés partout dans le Montréal métropolitain.</p>
+<p> </p>
+<p>Environ quatre mois après le début du projet, des défaillances ont refroidi l'enthousiasme des utilisateurs. Mais une fois les VÉ réparés ou remplacés, l'intérêt s'est renouvelé (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>). L'autonomie des VÉ est moins grande que celle de leurs équivalents à combustion interne, mais dans ce cas précis, elle satisfaisait aux exigences minimales de la plupart des parcs commerciaux et institutionnels. De toute façon, l'autonomie est censée s'améliorer avec les batteries de la prochaine génération. Comme les périodes où les températures se maintenaient sous les -10 °C étaient rares et de courte durée, il était possible de composer avec ce facteur.</p>
+<p> </p>
+<p>Un groupe de soutien par les pairs a été créé pour mettre en commun les informations des utilisateurs de VÉ et promouvoir le réseautage parmi ces derniers (<a href="../../../../fr/outils-de-changement/groupes-de-soutien-par-les-pairs/">Groupes de soutien par les pairs</a>). Ce groupe constitue pour les personnes et les organisations membres un lieu d'échange sur leurs expériences avec les VÉ.</p>
+<p> </p>
+<p>Un programme de communications a été organisé afin de promouvoir le projet et de tenir les utilisateurs et le public au courant de son évolution. Les événements médiatiques, les conférences de presse, le site Web et le bulletin d'informations trimestriel comptent parmi les outils de communication employés (<a href="../../../../fr/outils-de-changement/medias/">Médias</a>).</p>
+<p> </p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>Le budget total du projet était de 3 045 000 $. Voici quelques-unes des contributions :</p>
+<ul>
+<li>Hydro-Québec a versé 753 000 $, ce qui comprend le prêt et l'installation d'un chargeur pour chaque véhicule électrique acheté ou loué dans le cadre du projet. Hydro-Québec a fourni gratuitement ces éléments pendant la durée du projet (<a href="/Francais/ToolsofChange/default.asp?Section=Financial">Mesures financières incitatives et dissuasives</a>).</li>
+<li>Le gouvernement fédéral a injecté 500 000 $ dans le cadre de sa contribution à la réduction des missions canadiennes aux niveaux prescrits par le Protocole de Kyoto. De ce montant, 400 000 $ proviennent de l'initiative Mesures d'action précoce en matière de technologie, qui fait partie du Fonds d'action pour le changement climatique, alors que 100 000 $ proviennent de Développement économique Canada.</li>
+<li>Le gouvernement du Québec a versé 200 000 $ et a également intégré des VÉ à ses parcs de véhicules.</li>
+<li>Norvik Traction a versé 300 000 $.</li>
+<li>ISAAC Motor Sports Inc. a versé 25 000 $.</li>
+<li>Le Centre d'expérimentation des véhicules électriques du Québec, Saint-Jérôme, a contribué à la promotion et la mise à l'essai des VÉ.</li>
+</ul>
+<p>Le coût d'achat estimé pour la totalité des VÉ s'élevait à 1 267 000 $ et ce montant a été assumé par les utilisateurs.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>La faisabilité de l'intégration des VÉ a été évaluée en fonction des considérations suivantes :</p>
+<ol>
+<li>Coûts d'ensemble relatifs au VÉ, par exemple :
+    <ul>
+<li>achat des véhicules et des chargeurs</li>
+<li>consommation d'énergie</li>
+<li>maintenance curative et préventive</li>
+<li>pannes</li>
+<li>formation donnée aux conducteurs de VÉ</li>
+</ul>
+</li>
+<li>Fiabilité des véhicules et des systèmes de rechargement en conditions réelles, par exemple :
+    <ul>
+<li>utilisation des VÉ faisant partie du parc</li>
+<li>kilométrage journalier</li>
+<li>distance parcourue entre les rechargements</li>
+<li>taux de défectuosité des véhicules et des systèmes de rechargement</li>
+<li>influence des changements de saison et de température sur la conduite</li>
+<li>utilisation d'énergie (chauffage/climatisation)</li>
+</ul>
+    Le rendement était évalué à l'aide d'un livre de bord de l'utilisateur et d'un système de cueillette de données installé à bord de chaque VÉ. Ce système, relié à divers senseurs installés à bord du véhicule, consignait des données pertinentes au projet. Le fournisseur de ces systèmes de cueillette de données était Isaac Instruments, de Chambly, au Québec.
+    <p> </p>
+</li>
+<li>Satisfaction de la clientèle, autant chez les conducteurs de VÉ que chez les gestionnaires de parcs. Ont été pris en compte :
+    <ul>
+<li>les changements d'itinéraires et les problèmes que ces changements auraient pu causer aux conducteurs</li>
+<li>la gestion de la durée utile des batteries</li>
+<li>les opinions des conducteurs</li>
+<li>les problèmes rencontrés et leurs solutions</li>
+<li>l'évolution de la perception des VÉ.</li>
+</ul>
+    Les renseignements sur la perception des utilisateurs et leur niveau de satisfaction proviennent des livres de bord, des sondages et du réseau des utilisateurs.
+    <p> </p>
+</li>
+<li>Impacts environnementaux de l'utilisation des VÉ, dont :
+    <ul>
+<li>la pollution atmosphérique</li>
+<li>les possibilités de recyclage des batteries et des véhicules, etc.</li>
+</ul>
+</li>
+</ol>
+<p> </p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>Au moment de mettre sous presse, le projet Montréal 2000 a convaincu de nombreuses entreprises à prendre des dispositions en vue de l'achat de VÉ. Malgré l'enthousiasme de certaines entreprises, la disponibilité des VÉ reste un problème de taille au Canada. Les organisateurs ont pour objectif de regrouper un minimum de 50 commandes afin de les présenter aux constructeurs de véhicules. Ils ont, à cet effet, entrepris des démarches auprès d'entreprises associées à Montréal 2000, ainsi qu'auprès d'autres entreprises.</p>
+<p>Selon Pierre Sylvestre, d'Environnement Canada, « les constructeurs d'automobiles ne sont pas intéressés à ne construire qu'un petit nombre de VÉ. Dès que les entreprises feront preuve d'une volonté réelle d'en acheter, nous serons alors en mesure de créer une certaine concurrence parmi les constructeurs pour répondre à cette demande. »</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Pierre Sylvestre, P. Eng., M.A.Sc. , <br/>
+Environnement Canada, Saint-Laurent Vision 2000 <br/>
+105, avenue McGill, 2e étage <br/>
+Montréal, Québec H2Y 2E7 <br/>
+Canada <br/>
+Téléphone : (514) 496-2657 <br/>
+Télécopieur : (514) 283-5836 <br/>
+Courriel : <a href="mailto:pierre.sylvestre@ec.gc.ca">pierre.sylvestre@ec.gc.ca</a> <br/>
+Site Web : <a href="http://www.ve-montreal2000.com" target="_blank">http://www.ve-montreal2000.com</a> Le financement de la rédaction de cette étude de cas provient du <a href="http://www.ec.gc.ca/nopp" target="_blank">Bureau national de la prévention de la pollution</a> d'Environnement Canada. Pour de plus amples renseignements sur cet exemple ou d'autres réussites en prévention de la pollution, visitez le site <a href="http://www.ec.gc.ca/pp/" target="_blank">Web des Réussites canadiennes en prévention de la pollution</a>.</p><!-- Contacts already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

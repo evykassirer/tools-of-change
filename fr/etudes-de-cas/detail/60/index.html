@@ -1,0 +1,389 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a></li>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a></li>
+<li><a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/communications-personnalisées-percutantes/">Communications personnalisées percutantes</a></li>
+<li><a href="../../../../fr/outils-de-changement/programmes-en-milieu-de-travail-qui-affectent-le-foyer/">Programmes en milieu de travail qui affectent le foyer</a></li>
+</ul>
+<h5>Initiative de</h5>
+<p>Comité de sensibilisation des employés à l’environnement du District régional de Vancouver</p><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>DRV</li>
+<li>BC Transit</li>
+<li>Fondation Jack Bell</li>
+<li>Better Environmentally Sound Transportation (BEST)</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<ul>
+<li>limination de 42 déplacements à bord de VOU par jour, soit 210 par semaine</li>
+<li>une augmentation du NMPV, qui est passé de 1,56 à 1,78</li>
+<li>La réduction de 63 031 kg de CO2 et 4 728 kg de smog et dautres contaminants présents au niveau du sol</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Réduction des déplacements des employés de Vancouver</h1>
+<p>Le Programme de réduction des déplacements des employés du District régional de Vancouver (DRV) est un bel exemple de l'effet de catalyseur que peuvent produire les programmes de marketing social fondé sur la collectivité. Le programme du DRV repose sur une approche intégrée faisant appel à des formules multiples, et c'est à cette approche qu'est attribuée le succès du programme. En favorisant l'utilisation de tous les différents moyens de transport de remplacement il a été possible de gagner l'appui d'une plus grande proportion des employés.</p>
+<p>Nous voyons également dans la présente étude de cas comment une municipalité a commencé par développer un programme pour ses propres employés, pour devenir par la suite, un modèle pour d'autres employeurs. Bien que le DRV dispose de plus de ressources que la majorité des municipalités, un bon nombre des éléments du programme peuvent être appliqués de façon rentable dans n'importe quelle collectivité.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>Lancé le 1er mai 1996, le Programme de réduction des déplacements des employés constitue l’engagement du DRV de s’occuper de la question des transports et de la qualité de l’air en favorisant la réduction du nombre de ses employés qui se rendent au travail seuls dans leur véhicule (véhicule à occupant unique –VOU).</p>
+<p>Le Programme de réduction des déplacements des employés du District régional de Vancouver a été mis de l’avant par le Comité de sensibilisation des employés à l’environnement du DRV. Le programme a été adopté à titre de projet de l’organisation, et appuyé par tous les services du DRV. Par contre le service des Communications et de l’Éducation, et le service de la Qualité de l’air, avec l’aide de BC Transit, se sont principalement occupés de sa mise en oeuvre.</p>
+<p>Les bureaux du DRV sont situés à Burnaby, municipalité très urbanisée, bien desservie par le réseau de transport en commun. Située dans la région métropolitaine de Vancouver, Burnaby compte une population de 1,7 million d’habitants.</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p><b>1.</b> De 1996 à 1998, modifier le pourcentage des déplacements effectués selon les modes de transport suivantes :</p>
+<ul>
+<li>déplacements dans un véhicule à occupant unique : de 57 % à 40 %</li>
+<li>covoiturage : de 15 % à 20 %</li>
+<li>transport en commun : de 19 % à 30 %</li>
+<li>bicyclette : stable à 3 %</li>
+<li>marche ou jogging : de 6 % à 8 %; et</li>
+<li>télétravail, de 0 % à 3 %.</li>
+</ul>
+<p><b>2.</b> Augmenter le nombre moyen de passager par véhicule (NMPV), pour que le rapport employés-véhicules dans le cas des destinations travail quotidiennes passe de 1,56 à 2.</p>
+<p> </p><!-- Objectives already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>Dans le cadre de ses travaux de recherche, le DRV s'est fondé sur une enquête interne menée il y a deux ans auprès des employés. Cette enquête portait sur les modèles de déplacement établis, mesurait les écarts entre les différents modes de transport (pourcentage d’employés qui utilisaient un mode de transport plutôt qu’un autre), et comportait des données sur les attitudes relatives aux types de mesures incitatives que souhaitaient les gens.</p>
+<p>On a procédé à un examen d’autres programmes de réduction des déplacements des employés déjà mis de l’avant afin de découvrir les obstacles à l’implantation de formules de transport efficaces sur le plan de l’utilisation des ressources et comment ils avaient été surmontés, de même que sur les mesures incitatives utilisées et leur degré de succès.</p>
+<p>Voici les principales objections avancées :</p>
+<ul>
+<li>transport en commun : prend trop de temps</li>
+<li>besoin d’une voiture à des fins personnelles après le travail, ou horaire de travail irrégulier (solution : assouplissement de la formule de participation – par exemple, possibilité d’utiliser d’autres moyens de transport à l’occasion); et</li>
+<li>marche/jogging/bicyclette : trop loin; pas de douches et de cases, pas d’endroit approprié où stationner les bicyclettes (solutions : amélioration des installations)</li>
+</ul>
+<p>Le principal stimulant utilisé :</p>
+<ul>
+<li>rabais sur les cartes de transport</li>
+</ul>
+<p>Un sondage de base effectué auprès des employés par le DRV a confirmé qu’il s’agissait d’obstacles importants. Le sondage a également porté sur le NMPV et sur les écarts dans l’utilisation des différents modes de transport. La majorité des employés se rendaient au travail seuls au volant de leur voiture, bien qu’un grand nombre utilisaient également les transports en commun. Le télétravail était presque inexistant, et peu de gens étaient sensibilisés à cette formule. Pour ce qui est du covoiturage, la plupart des groupes formés ne comptaient que deux personnes. On a également déterminé les distances à parcourir : 46 % des employés vivaient entre 10 et 25 km de leur lieu de travail, ce qui convenait très bien au transport en commun et au covoiturage. On a également établi que 28 % des employés vivaient à 10 km ou moins de leur lieu de travail, ce qui pouvait très bien se faire à bicyclette ou à pied (marche ou jogging).</p>
+<p> </p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>Au cours de la première année, un coordonnateur à temps plein a été affecté au développement et à la mise en oeuvre du Programme de réduction des déplacements des employés. Compte tenu de l’envergure du projet, on a jugé qu’il était essentiel à sa réussite de créer un poste de coordonnateur pour l’aiguiller sur la bonne voie dès le départ. Après la première année, le poste de coordonnateur a été transformé en poste à temps partiel, et les responsabilités ont été réparties entre plusieurs employés.</p>
+<p>L’une des pierres angulaires de la stratégie du DRV a été la réduction progressive d’une subvention au stationnement accordée aux employés – qui couvrait 60 % des coûts — (<a href="/francais/ToolsofChange/default.asp?Section=Financial">Mesures financières incitatives et dissuasives</a>). Six mois après le début du programme, on commença l’élimination progressive des subventions, un processus qui devait s’étaler sur cinq ans. La suppression de la subvention et l’affectation des économies à d’autres avantages destinés aux employés ont été négociées dans le cadre d’un nouveau contrat de travail entre la direction du DRV et le syndicat des employés.</p>
+<p>Pour s’inscrire au Programme de réduction des déplacements, les employés ont rempli une formule par laquelle ils s’engageaient à utiliser, au moins une fois par semaine, un moyen de déplacement respectueux des ressources et à ne pas se rendre au travail seul dans leur voiture (<a href="/francais/ToolsofChange/default.asp?Section=commitment">Obtenir un engagement</a>). Ce minimum d’une fois par semaine donnait aux participants une grande souplesse et, dans un premier temps, l’impression d’être capables de faire ce qu’on leur demandait, tous éléments susceptibles de mener à un engagement plus soutenu (<a href="/francais/ToolsofChange/default.asp?Section=motivation">Soutenir la motivation au fil du temps</a>).</p>
+<p>Le programme comportait six mesures de base, soit :</p>
+<p><b>1. <i>Covoiturage – Programme de jumelage</i></b><br/>
+Un programme de jumelage a été mis en oeuvre afin de mettre en contact les gens qui partent du même quartier ou du même grand secteur, pour leur permettre de fin s’organiser afin de se déplacer à bord d’un seul véhicule (<a href="/francais/ToolsofChange/default.asp?Section=Barriers">outils : surmonter des obstacles spécifiques</a>). On a donc demandé aux employés de remplir des formules de jumelage sur lesquelles ils indiquaient des données telle l’intersection de deux grandes artères la plus près de chez eux, leur horaire habituel de travail, et s’ils préféraient être conducteur, passager, ou alterner. Un coordonnateur du transport des employés a fourni de l’information au sujet du programme et a traité les formules.<br/>
+<br/>
+On proposa une période d’essai de deux mois, pendant laquelle les employés n’avaient pas à se départir de leurs places de stationnement, pour lesquelles il y avait des listes d’attente de cinq ans (<a href="/francais/ToolsofChange/default.asp?Section=Barriers">Surmonter des obstacles spécifiques</a>, <a href="/francais/ToolsofChange/default.asp?Section=Commitment">Obtenir un engagement </a>). Au cours de cette période, on leur remboursait les sommes retenues à la source chaque mois pour leur stationnement.<br/>
+<br/>
+L’organisation a créé un parc de voitures affectées au covoiturage, qu’elle a louées à 0,26 $ le kilomètre pour couvrir la totalité des frais d’assurance, de stationnement, d’essence et d’entretien. Ces voitures ont permis de créer des groupes de covoiturage avec des employés qui n’avaient pas accès à un véhicule (<a href="/francais/ToolsofChange/default.asp?Section=Barriers">Surmonter des obstacles spécifiques</a>). Les employés devaient s’engager par écrit à utiliser le véhicule uniquement pour aller au travail et en revenir.<br/>
+<br/>
+Lorsque les subventions au stationnement ont été supprimées, des stimulants ont été ajoutés pour encourager le covoiturage (<a href="/francais/ToolsofChange/default.asp?Section=Financial">Mesures financières incitatives et dissuasives</a>). Les groupes de covoiturage de deux employés pouvaient réclamer le remboursement de 50 % des montants retenus à la source pour leur stationnement. Les groupes de trois ou plus pouvaient en réclamer la totalité.</p>
+<p><b>2. <i>Assurance « place vacante » pour le covoiturage </i></b><br/>
+Quand tous les travailleurs de Vancouver avaient accès à un service de covoiturage en fourgonnette grâce à la Fondation Jack Bell, les groupes étaient parfois obligés de se démanteler parce qu’un membre quittait et qu’il n’était pas toujours possible de le remplacer immédiatement, ce qui augmentait les coûts de chacun des autres passagers. Le DRV a par conséquent décidé d’offrir une assurance « place vacante » pour couvrir le prix du passage d’une personne, et ce, pendant une période maximale de deux mois par année (<a href="/francais/ToolsofChange/default.asp?Section=Financial">Surmonter des obstacles spécifiques</a>). On a évalué qu’une période de deux mois constituait un laps de temps raisonnable pour trouver un remplaçant.</p>
+<p><b>3. <i>Ateliers sur la sécurité à bicyclette et amélioration des installations sur les lieux de travail</i></b><br/>
+Ces ateliers ont été organisés à l’intention des employés qui étaient prêts à se rendre au travail à bicyclette mais qui ne savaient pas exactement quels seraient les meilleurs itinéraires ou qui s’inquiétaient de leur sécurité en raison de la circulation automobile. Des moniteurs cyclistes – qui travaillent pour un groupe privé appelé Better Environmentally Sound Transportation (BEST) – ont indiqué sur une carte l’itinéraire de chacun des participants et ont accompagné ceux-ci pour un trajet d’essai. En outre, des ateliers d’entretien des bicyclettes ont été offerts gratuitement (<a href="/francais/ToolsofChange/default.asp?Section=Barriers">Surmonter des obstacles spécifiques</a>) <br/>
+<br/>
+Des améliorations ont également été apportées aux salles de douches sur les lieux de travail, et un plus grand nombre de supports à bicyclettes ont été installés (<a href="/francais/ToolsofChange/default.asp?Section=Barriers">Surmonter des obstacles spécifiques</a>). Afin d’accroître la visibilité du projet, on a installé l’un des supports à l’entrée de l’immeuble (<a href="/francais/ToolsofChange/default.asp?Section=Norm">Attrait des normes</a>). De plus, une resserre pouvant contenir jusqu’à 50 bicyclettes a été installée dans un stationnement souterrain, sur l’emplacement de certaines aires autrefois réservées aux voitures.</p>
+<p><b>4. <i>Service de retour à la maison garanti </i></b><br/>
+On a mis sur pied un Service garanti de retour à la maison gratuit, afin de rassurer les employés inscrits au Programme de réduction des déplacements qu’ils ne se retrouveraient pas bloqués au bureau en cas d’urgence, de temps supplémentaire non prévu, ou parce qu’ils auraient raté leur moyen de transport habituel (<a href="/francais/ToolsofChange/default.asp?Section=Barriers">Surmonter des obstacles spécifiques</a>). Ce service était offert aux participants jusqu’à quatre fois par année, pour les jours où ils ne s’étaient pas rendus au travail seuls dans leur véhicule. En pareil cas, la réceptionniste prenait des mesures pour procurer à l’employé une voiture de l’organisation, ou elle appelait un taxi et remettait à l’employé un bon de paiement.</p>
+<p><b>5. <i>Horaire variable</i></b><br/>
+Si cela ne nuisait pas au respect des exigences opérationnelles du service, les participants pouvaient faire varier d’une demi-heure leur heure d’arrivée et de départ, afin d’avoir un horaire de travail qui leur facilitait la tâche pour se rendre au travail grâce au covoiturage, ou au transport en commun, ou encore à bicyclette, en marchant ou en courant.</p>
+<p><b>6. <i>Programme de transport subventionné </i></b><br/>
+Les représentants de BC Transit ont organisé des ateliers dans les bureaux du DRV. Les participants se sont vu indiquer les itinéraires les plus directs, qu’ils pouvaient visualiser sur un écran d’ordinateur. La durée approximative des déplacements était calculée, puis chaque participant recevait l’imprimé de son propre itinéraire (<a href="/francais/ToolsofChange/default.asp?Section=Communication">Communications personnalisées percutantes</a>).<br/>
+<br/>
+Afin d’encourager l’utilisation du transport en commun pour se rendre au travail, les employés pouvaient se procurer des billets gratuitement auprès des responsables de chaque service. Les employés pouvaient également acheter des cartes de transport mensuelles en adoptant la formule des retenues à la source et avoir ainsi droit à un rabais de 15 % (<a href="/francais/ToolsofChange/default.asp?Section=Financial">Mesures financières incitatives et dissuasives</a>). Pour avoir droit au rabais, les employés devaient signer avec BC Transit un contrat par lequel ils s’engageaient à acheter la carte pendant au moins 12 mois consécutifs (<a href="/francais/ToolsofChange/default.asp?Section=Commitment">Obtenir un engagement</a>).Le DRV favorise aussi l’utilisation du transport en commun en émettant des billets de transport gratuits à chaque département.</p>
+<p><b>Promotion</b></p>
+<p>Le courrier électronique et les affiches étaient les deux principaux véhicules de promotion de ces six mesures. Les messages mettaient l’accent sur les liens entre le choix des modes de transport d’une part et la qualité de l’air et la congestion automobile d’autre part. – deux questions qui tiennent énormément à coeur aux membres de la collectivité. D’autres éléments de motivation étaient aussi présentés, telles les économies de temps et d’argent, et la réduction du stress (<a href="/francais/ToolsofChange/default.asp?Section=Motivation">Soutenir la motivation au fil du temps</a>).<br/>
+<br/>
+Les employés pouvaient aussi se renseigner sur le programme grâce à une ligne info à laquelle était affecté un coordonnateur du Transport des employés, ou en se rendant à l’un des trois centres d’information sur les transports (<a href="/francais/ToolsofChange/default.asp?Section=Communication">Communications personnalisées percutantes</a>). Ces centres comportent les cartes et les horaires des transports en commun, les formules de demande de cartes de transport, une carte des itinéraires pour cyclistes, un tableau d’affichage où figurent différents éléments d’information sur le transport, et des données à jour sur les groupes de covoiturage existants.<br/>
+<br/>
+Pour renforcer la motivation des participants et inciter le personnel qui ne participe pas encore à le faire, la participation a fait l’objet de diverses mesures destinées à en accroître la visibilité (<a href="/francais/ToolsofChange/default.asp?Section=Norm">Attrait des normes</a>). Par exemple, un bulletin d’information mensuel destiné aux employés montrait des photos de personnes se rendant au travail grâce à l’un des moyens de remplacement mis de l’avant; on indiquait également bien en évidence les espaces de stationnement réservés aux véhicules du programme de covoiturage. En outre, des prix étaient décernés pour la participation aux journées mensuelles de l’assainissement de l’air (Clean Air Days) (billets tirés de boîtes installées bien en vue près des bureaux des réceptionnistes).<br/>
+<br/>
+D’autres bulletins de communication encourageaient les employés à participer à diverses activités pour « l’air pur », telles la plantation d’arbres, l’utilisation d’une tondeuse manuelle au lieu d’une tondeuse à essence et la réduction au maximum des déplacements seul à bord d’un véhicule, même pour d’autres destinations que le travail.</p>
+<p><b>Service régional de réduction des déplacements </b></p>
+<p>Afin de favoriser la mise en place de moyens de transport de remplacement sur l’ensemble du territoire du DRV, le District a donné à contrat le développement d’un programme d’action (Go Green Choices) conçu d’après le modèle du Programme de réduction des déplacements des employés. Voici certaines des mesures mises de l’avant dans le cadre de ce programme :<br/>
+<br/>
+ </p>
+<ul>
+<li>distribuer une brochure (It’s Your Business : Commuting Alternatives for your Workplace - « C’est votre affaire : moyens de transport de remplacement pour se rendre au travail »), afin de gagner à cette idée les décideurs clés dans chaque lieu de travail;</li>
+<li>donner à un employé de chaque lieu de travail une formation de coordonnateur du programme Go Green Choices, afin qu’il puisse implanter et gérer le programme dans son milieu;</li>
+<li>fournir, aux coordonnateurs, une trousse contenant une marche à suivre détaillée et des listes de contrôle, des modèles pour les courriers électroniques, les notes de service, et des sondages sur les modes transport des employés; fournir en outre une brochure, une affiche et une carte postale à utiliser avec les employés;</li>
+<li>faciliter le jumelage des employés pour le covoiturage; et</li>
+<li>offrir une aide permanente gratuite.</li>
+</ul>
+<p> </p>
+<p>Le programme Go Green Choices a été présenté aux employeurs comme une formule qui améliorerait leur milieu de travail et leurs marges de profit. Les liens suivants ont été établis avec des stimulants courants pour les employeurs (<a href="/francais/ToolsofChange/default.asp?Section=Motivation">Soutenir la motivation au fil du temps</a>).<br/>
+<br/>
+ </p>
+<ul>
+<li>économies d’argent grâce à la gestion des espaces de stationnement;</li>
+<li>besoin réduit d’espace de bureau grâce à l’introduction des programmes de télétravail;</li>
+<li>main-d’oeuvre plus en santé et plus productive, et absentéisme réduit, puisqu'un plus grand nombre d’employés se rendront au travail à bicyclette ou à pied (course ou marche); et</li>
+<li>augmentation de la compétitivité de l’organisation grâce à une valorisation de l’image publique et à une amélioration du moral des employés.</li>
+</ul>
+<p> </p>
+<p><b>Obstacles à la mise en oeuvre</b></p>
+<p>Les principaux obstacles s’opposant à la mise en oeuvre du programme étaient les suivants :<br/>
+<br/>
+ </p>
+<ul>
+<li>gagner l’appui de tous les gestionnaires;</li>
+<li>obtenir du financement pour le lancement du programme;</li>
+<li>sensibiliser les employés à l’importance d’avoir un programme corporatif de réduction des déplacements des employés;</li>
+<li>structurer une formule de retenues à la source pour l’achat des cartes de transport; et</li>
+<li>négocier l’apport de changements aux contrats de travail des employés syndiqués pour tenir compte de la suppression progressive des subventions au stationnement.</li>
+</ul>
+<p> </p><!-- Delivering already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Une enquête a été menée auprès d’employés du DRV un an après le lancement du Programme de réduction des déplacements des employés afin de déterminer si les objectifs ciblés avaient été atteints. D’autres sondages ont été effectués selon les besoins. On a également eu recours à un système de surveillance permanent de la participation : l’information était recueillie grâce aux formules d’inscription puis saisie dans une base de données.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<ul>
+<li>élimination de 42 déplacements à bord de VOU par jour, soit 210 par semaine; et</li>
+<li>une augmentation du NMPV, qui est passé de 1,56 à 1,78 (l'objectif était 2)</li>
+</ul>
+<p>Le pourcentage des déplacements effectués selon chacun des modes suivants s'est transformé de 1996 à 1997, comme ceci :<br/>
+<br/>
+ </p>
+<ul>
+<li>VOU, de 57 % à 46 % (1'objectif pour 1998 était de 40 %);</li>
+<li>covoiturage, de15 % à 21 % (1'objectif pour 1998 était de 20 %);</li>
+<li>transport en commun, de 19 % à 22 % (1'objectif pour 1998 était de 30 %);</li>
+<li>bicyclette, de 3 % à 5 %;(l'objectif pour 1998 était de 3 %);</li>
+<li>marche/jogging, stables à 6 %; (1'objectif pour 1998 était de 8 %); et</li>
+<li>télétravail, stable à 0 % (l'objectif pour 1998 était de 3 %).</li>
+</ul>
+<p> </p>
+<p>Le nombre total de participants au programme a été en progression constante, passant de 177 en 1996 à 213 en 1999. De ce nombre, 10 ont marché, 96 ont utilisé le transport en commun, 13 la bicyclette et 92 ont eu recours au covoiturage.</p>
+<p>La réduction des émissions de gaz à effet de serre découlant du programme a été calculée comme suit :<br/>
+<br/>
+ </p>
+<ul>
+<li>63 031 kg de CO2 (soit l'équivalent d'avoir planté de 1 300 à 1 400 arbres); et</li>
+<li>4 728 kg de smog et d'autres contaminants présents au niveau du sol.</li>
+</ul>
+<p> </p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Les employeurs qui désirent mettre sur pied un programme de réduction des déplacements d'employés et recevoir une trousse complète de matériel d'appui n'ont qu'à communiquer avec :<br/>
+<br/>
+Michele Kingdon<br/>
+Coordonnatrice, Programme de réduction des déplacements du personnel du DRV<br/>
+Tél. : (604) 451-6199</p>
+<p>Pour obtenir de l’information supplémentaire au sujet du Programme de réduction des déplacements des employés du DRV, veuillez communiquer avec :<br/>
+<br/>
+Jennie Moore<br/>
+Coordonnatrice du transport des employés<br/>
+District régional de Vancouver <br/>
+Service de la qualité de l’air<br/>
+4330 Kingsway, 17e étage<br/>
+Burnaby, C.-B.<br/>
+V5H 4G8<br/>
+Tél. : (604) 451-6683<br/>
+Téléc. : (604) 436-6707<br/>
+Courriel : <a href="jennie.moore@gvrd.bc.ca">jennie.moore@gvrd.bc.ca</a></p>
+<p>Louise Comeau, Gestionnaire, <br/>
+Possibilités énergétiques <br/>
+dans les collectivités<br/>
+Fédération canadienne des municipalités<br/>
+24, rue Clarence, Ottawa (Ontario)<br/>
+K1N 5P3<br/>
+Tél. : (613) 244-6017<br/>
+Téléc. : (613) 241-7440<br/>
+Courriel : <a href="lcomeau@fcm.ca">lcomeau@fcm.ca</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p>Communication</p>
+<p>La première année, un coordonnateur à temps complet était responsable de la promotion et de la prestation du programme, ce qui était essentiel à sa réussite. Plus tard, le coordonnateur travaillait à temps partiel et partage certaines tâches avec d’autres membres du personnel. La promotion du programme était poursuit au moyen de diverses approches:</p>
+<ul>
+<li>La célébration de la « Journée de l’air pur » le premier mercredi de tous les mois afin d’inciter le personnel à utiliser un autre mode de transport au moins une fois par mois</li>
+<li>La participation à la « Journée de l’air pur » nationale en juin</li>
+<li>L’envoi de courriels au personnel visant à les informer sur le programme (p. ex. activités) et à annoncer les gagnants des tirages (les employés sont encouragés à participer à des tirages de prix mensuels) Lors du lancement initial du programme, un dépliant était distribué au personnel. Bien que ce dépliant ait été un bon outil, il n’a pas été mis à jour et n’est donc plus distribué.</li>
+</ul>
+<p>Leçons retenues Certains facteurs ont contribué au succès de ce programme:<br/>
+ </p>
+<ul>
+<li>Un coordonnateur à temps plein la première année pour lancer le programme.</li>
+<li>L’abandon progressif de 60 % des subventions de stationnement pour les employés.</li>
+<li>La conception d’un programme flexible qui répond aux besoins des divers types de modes de vie et de personnes.</li>
+<li>L’approbation écrite de tous ceux qui souhaitent participer au programme.</li>
+<li>L’utilisation d’une partie des revenus provenant du stationnement pour financer partiellement le programme.</li>
+<li>Compte tenu de l’importance de la « dynamique » entre les membres d’un groupe de covoiturage au succès du programme, il faut déployer des efforts pour assurer la compatibilité des employés jumelés.</li>
+<li>À l’origine, l’initiative du laissez-passer de transport en commun était fondée sur une retenue sur la paie mensuelle (avec escompte de 15 %). Toutefois, cette approche a été changée à une retenue sur la paie annuelle puisque les frais administratifs liés à la retenue sur la paie mensuelle se sont avérés trop élevés. Cette approche est plus rentable et elle allège le fardeau administratif des coordonnateurs du programme Go Green Choices. Elle est toutefois moins flexible pour l’employé.</li>
+</ul><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

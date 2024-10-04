@@ -1,0 +1,385 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a></li>
+<li><a href="../../../../fr/outils-de-changement/rétroaction/">Rétroaction</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a></li>
+<li><a href="../../../../fr/outils-de-changement/communications-personnalisées-percutantes/">Communications personnalisées percutantes</a></li>
+<li><a href="../../../../fr/outils-de-changement/visites-à-domicile/">Visites à domicile</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+<li><a href="../../../../fr/outils-de-changement/animateurs-de-quartier/-meneurs-populaires/">Animateurs de quartier/ meneurs populaires</a></li>
+<li><a href="../../../../fr/outils-de-changement/programmes-scolaires-qui-engagent-la-famille/">Programmes scolaires qui engagent la famille</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>La Municipalité régionale de Halifax</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>MIRROR Nova Scotia a fourni l’emplacement, a effectué la conception et la construction, et a permis la poursuite des activités courantes de l’installation d’élimination des résidus d’Otter Lake unique en son genre, qui comprend une installation de traitement préliminaire, une installation de stabilisation des déchets et une installation d’élimination des résidus.</li>
+<li>Miller Waste Systems et New Era Farms ont élaboré et exploité des usines de compostage modernes séparées qui traitent de 20 000 à 30 000 tonnes de compost chaque année.</li>
+<li>Miller Waste Systems exploite aussi l’installation de récupération de matériaux expansés.</li>
+<li>Les écoles de la région ont mis sur pied le Programme EcoSchool pour éduquer les élèves sur les nouvelles exigences provinciales concernant le tri des matières organiques à la source, y compris dans les écoles.</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<ul>
+<li>Les résidants et les entreprises de la MRH ont racheminé 43 p. 100 des déchets qui auraient normalement été acheminés au site d'enfouissement, totalisant ainsi 36 000 tonnes de déchets organiques et 22 000 tonnes de matières recyclables</li>
+<li>La stratégie a permis de réduire le taux annuel d'émissions de gaz à effet de serre (surtout du méthane) d'environ 1,4 tonne par résidant</li>
+<li>Les taux de participation ont été d'environ 90 p. 100</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Halifax — Gestion intégrée des déchets et des ressources</h1>
+<p>La Municipalité régionale de Halifax (MRH), en collaboration avec des partenaires du secteur public et privé, a mis en place une stratégie innovatrice pour le tri à la source des déchets humides, secs et recyclables de sources résidentielles et commerciales. En vigueur depuis 1999, la méthode de Halifax offre une alternative écologique à l'incinération et à l'enfouissement de déchets bruts, et continue de susciter de l'intérêt à l'échelle nationale et internationale.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>La Municipalité régionale de Halifax en Nouvelle-Écosse comprend quatre collectivités :</p>
+<p>Halifax, Dartmouth, Bedford et le comté de Halifax. Sa population de 350 000 habitants est répartie sur un territoire de 2 224 milles carrés et varie entre des établissements urbains à grande densité et collectivités rurales. La quête d’une nouvelle stratégie de gestion des déchets solides a commencé au début des années 1990, quand le site d’enfouissement de déchets bruts de la région est arrivée à pleine capacité et a commencé à dégager des odeurs et à créer d’autres problèmes. Les problèmes ont été tels qu’ils ont forcé la municipalité à reprendre certaines maisons et à dédommager d’autres résidants du secteur. Cette situation a rendu les résidants méfiants envers les méthodes traditionnelles de gestion des déchets et moins confiants envers les employés municipaux et les politiciens qui élaborent des nouvelles méthodes de gestion viable. En 1994, après de nombreux débats, le ministre provincial de l’Environnement a rejeté une proposition visant à remplacer le centre d’enfouissement des déchets par un nouvel incinérateur. En même temps, le gouvernement provincial a annoncé la mise en place de nouvelles mesures législatives qui exigeaient le tri à la source et le réacheminement des déchets.</p>
+<p>Afin d’élaborer une nouvelle approche, la MRH a invité le public à s’engager dans un nouveau comité d’intérêt communautaire par le biais d’un processus de concertation d’une durée d’un an. Les résidants ont bien accueilli le principe des réunions publiques. Un groupe régulier de 300 personnes a assisté à chaque réunion et a finalement formé le comité.</p>
+<p>Quand le comité a proposé une nouvelle stratégie de gestion intégrée des déchets et des ressources en mars 1995, les quatre collectivités et finalement la MRH ont utilisé des éléments clés de la stratégie comme base du nouveau système de gestion des déchets solides. Le choix du calendrier était crucial pour coordonner tous les aspects de la stratégie, qui comprenait entre autres la sensibilisation, la construction, la négociation de contrats et les demandes de proposition pour les différentes installations.</p>
+<p>La MRH s’était engagée envers la collectivité à fermer l’ancien centre d’enfouissement des déchets et avait signé un contrat avec le comté de Cumberland pour orienter tous les déchets vers son installation pour une durée d’un an, avec l’option de prolonger cette période de six mois ou d’une année complète. Durant cette période, la MRH a réussi à mettre en vigueur sa nouvelle stratégie de gestion de déchets.</p>
+<p>La mise en place définitive est venue après la construction de deux nouvelles usines de compostage et d’une nouvelle installation de stabilisation et d’évacuation des déchets.</p>
+<p>Tout le processus fut de grande envergure en raison de l’étendue même de la région. Il n’y avait aucun projet comparable en Amérique du Nord.</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p>La stratégie de gestion intégrée des déchets et des ressources de la MRH a été conçue de façon à pouvoir atteindre trois objectifs à long terme et plusieurs objectifs à court terme.</p>
+<p>Les objectifs à long terme de la stratégie étaient :</p>
+<ol>
+<li>Maximiser le concept des 3 R (réduire, réutiliser et recycler);</li>
+<li>Maximiser la durabilité de l’environnement et réduire les coûts;</li>
+<li>Favoriser la bonne gestion et les valeurs d’une société de conservation.</li>
+</ol>
+<p> </p>
+<p>À court terme, la MRH a assuré à la collectivité que l’ancien centre d’enfouissement serait fermé avant janvier 1997. De plus, les employés de la MRH ont proposé de distribuer 95 000 chariots verts aux résidants et de créer en moins d’un à deux ans deux nouvelles usines de compostage, une installation de récupération de matériaux expansés, un lieu d’entreposage des déchets ménagers dangereux et la remise en opération de l’installation de traitement et d’évacuation des déchets d’Otter Lake grâce à huit nouveaux contrats de collecte.</p><!-- Objectives already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p><strong>Recherche initiale</strong><br/>
+Un consultant du secteur privé a été embauché pour étudier des alternatives de types d’installations et de technologies de gestion des déchets qui permettraient de trier les déchets à la source, de décharger seulement les matériaux inertes et stables et de réacheminer la plus grande quantité possible de déchets des sites d’enfouissement, et qui respecteraient les contraintes budgétaires du projet. La MRH, le comité d’intérêt communautaire et le comité consultatif sur la gestion des déchets solides du conseil régional ont examiné les résultats des travaux du consultant.</p>
+<p><strong>Étude pilote</strong><br/>
+À partir de 1996, un projet pilote du système d’une durée de deux ans a été mené dans 2 000 foyers qui ont été choisis dans chacune des quatre collectivités participantes. Des chariots et des mini-bacs fabriqués par trois entreprises préselectionnées ont été utilisés pendant la durée du projet pilote afin de pouvoir comparer leurs performances. La MRH a souhaité la bienvenue dans le projet pilote aux résidants des foyers choisis en leur donnant un chariot vert et en leur expliquant comment utiliser le système, et a souligné leur contribution particulière en tant que collectivité pilote. Des horaires de collecte ont été examinés à l’aide d’un calendrier à laisser sur place et de l’information sur la bonne façon de trier les déchets leur a été donnée. De plus, le numéro de téléphone de la ligne d’aide de la MRH a été imprimé sur un autocollant apposé sur le couvercle de chaque mini-bac.</p>
+<p>On a demandé à des résidants d’un groupe représentatif de maisons individuelles et jumelées, de maisons en rangée et de bâtiments à logements multiples (six unités ou moins) de trier leurs déchets et de donner leurs commentaires sur le modèle de chariot et de mini-bac qu’on leur avait attribué. Un sondage alléatoire téléphonique effectué auprès des résidants a permis d’évaluer chaque style de chariot et de mini-bac pour chacune des quatre collectivités. Les participants ont été invités à donner leur opinion sur les chariots, leur facilité d’utilisation selon les différentes saisons et conditions météorologiques (y compris la neige), leur commodité, leur durabilité et la présence d’odeurs. On leur a aussi demandé de comparer la facilité avec laquelle les chariots pouvaient être transportés de la maison au bord du trottoir et inversement. Ces renseignements ont été analysés selon l’emplacement du lieu d’habitation (zone urbaine ou rurale) et selon la taille de l’entrée (longue ou courte). Enfin, on demandait dans le sondage d’indiquer une préférence quant à la couleur, et de dire si les couvercles se fermaient de façon sûre et si l’information fournie avec les chariots était claire.</p>
+<p>À partir des renseignements recueillis, l’autocollant a été modifié de façon à le rendre plus durable et un modèle de chariot et de mini-bac a été choisi pour les 95 000 foyers participants lorsque le système a été mis en oeuvre à grande échelle.</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p><strong>Consultation publique</strong><br/>
+La MRH a embauché Clean Nova Scotia, un organisme provincial sans but lucratif dont les contacts et les programmes scolaires sont établis, pour créer un réseau à l’échelle de la collectivité et inciter les résidants à participer à des discussions dans le cadre des rencontres publiques. Clean Nova Scotia a organisé et facilité ces rencontres qui étaient annoncées dans les journaux locaux. Le personnel de la MRH a aussi rencontré les conseils éditoriaux des journaux locaux et leur a remis des trousses d’information. Ces rencontres ont permis aux journaux locaux de mieux comprendre les enjeux, et ont mené à la publication d’éditoriaux précis et instructifs.</p>
+<p>Un comité de surveillance communautaire indépendant constitué en société a le pouvoir de surveiller le nouveau système, et a reçu un financement municipal pour la tenue d’une consultation publique et la création d’un programme d’information. Ses premières communications ont été faites au moyen d’un bulletin d’information et d’articles dans le journal local. Le comité a par la suite distribué des mises à jour et des compte-rendus des réunions aux résidants qui ont choisi de devenir membres (il est possible de devenir membre à peu de frais). La collectivité qui au début se méfiait des autorités s’est engagée peu à peu dans une prise en charge des étapes subséquentes de surveillance de la stratégie.</p>
+<p>Le conseil régional a aussi créé un sous-comité formé de membres du conseil, dénommé le comité consultatif sur la gestion intégrée des déchets solides et des ressources pour établir un forum public servant à promouvoir le nouveau système et à s’occuper de la question de démarrage ainsi que d’autres questions.</p>
+<p>Mise en place<br/>
+La mise en place des chariots verts a commencé en juillet 1998 et, le 1er janvier 1999, la stratégie a été mise en oeuvre dans son ensemble. Les employés de la MRH ont distribué le matériel à chaque résidence. Ce matériel comprenait un mini-bac pour la cuisine (un petit contenant fermé avec couvercle servant à entreposer temporairement les déchets liquides dans la cuisine) et un chariot vert (un grand bac sur roues percé de trous pour laisser passer l’air et entamer le processus de compostage). Le chariot vert était gardé à l’extérieur et transporté au bord de la route les jours de collecte des ordures. En plus de l’information concernant l’horaire et le tri fournie pendant la durée du projet pilote, les résidants ont aussi reçu des aimants à placer sur le réfrigérateur pour leur rappeler d’utiliser le nouveau système. Les équipes de quartiers de la MRH ont fait du porte à porte pour expliquer à la population comment faire le tri et où conserver le chariot et le mini-bac.</p>
+<p>Même si l’unité d’entreprise de gestion intégrée des déchets solides et des ressources de la MRH a été le principal responsable de la mise en place du nouveau système, d’autres services ont offert leur appui. Par exemple, les agents chargés de faire appliquer les règlements ont continué de soutenir et d’encourager la participation au programme de tri à la source.</p>
+<p>La collecte a alterné une semaine sur deux entre les ordures ménagères et les chariots de déchets organiques, et les véhicules ont été adaptés pour pouvoir soulever les chariots verts. La MRH a fixé une limite initiale de 10 sacs d’ordures toutes les deux semaines et a planifié de réduire graduellement cette limite à deux sacs à la fois.</p>
+<p>Au milieu de la première année, la MRH a commencé à prendre contact avec des entreprises pour obtenir leur aide en ce qui concerne le matériel éducatif sur l’établissement d’un programme de tri à la source. La MRH a d’abord contacté les épiceries et les restaurants et la plupart ont accepté de collaborer. La Municipalité s’est alors centrée sur les propriétaires d’immeubles à logements. Elle leur a fourni de l’information et une expertise en ce qui a trait à la mise en oeuvre de la stratégie de gestion des déchets dans leurs immeubles, laissant ainsi le soin aux propriétaires d’éduquer leurs locataires et d’encourager leur participation.</p>
+<p>La MRH, en collaboration avec le ministère de l’Environnement de la Nouvelle-Écosse, a travaillé activement à l’élaboration de programmes de gestion industrielle, grâce auxquels les producteurs de déchets assumeraient la responsabilité de réduire et de réacheminer leurs propres déchets. Après quelques années de négociation, les industries comme celle des producteurs de produits laitiers ont commencé à défrayer les coûts rattachés au recyclage des emballages de produits laitiers.</p>
+<p>Promotion<br/>
+Les employés de la MRH ont installé des kiosques d’information dans les centre commerciaux, lors d’activités communautaires, lors de foires régionales et d’événements de l’industrie comme la rencontre annuelle de l’Association des restaurants. Les chariots verts se sont révélés être de véritables sources d’attraction pour attirer le public vers les kiosques. Les membres du comité d’intérêt communautaire et les employés de la MRH présents dans ces kiosques ont été d’inestimables ambassadeurs de la stratégie.</p>
+<p>Clean Nova Scotia a produit des émissions de télévision sur le réseau de câblodistribution local, dans le cadre de son travail pour la province, afin de renforcer les messages portant sur la nouvelle loi provinciale sur le tri des déchets à la source et le réacheminement. Les émissions comprenaient des entrevues avec des membres du personnel de la MRH qui parlaient de gestion de déchets dangereux, de sites d’enfouissement, de recyclage et de compostage. Les câblodistributeurs ont diffusé ces émissions gratuitement en 1997 et 1998. En 2000, la MRH a créé des annonces télévisées de 15 secondes pour sensibiliser le public sur des questions précises (p.ex., le contrôle des problèmes de nuisance).</p>
+<p>Un bulletin trimestriel intitulé Wasteless Exchange a été distribué par la poste à partir du milieu de l’année 1998. Il soulignait le caractère communautaire de la stratégie de gestion des déchets, les avantages environnementaux, le sens de la stratégie pour les résidants et la façon dont ceux-ci pouvaient contribuer. Il contenait aussi des renseignements relativement aux demandes d’information reçues sur la ligne d’aide, y compris une série de réponses à des questions fréquentes. Comme la ligne d’aide servait à recevoir tous les types de demandes faites à la MRH (et non seulement les demandes liées aux déchets), le personnel des centres d’appels a reçu un manuel et une formation qui leur ont permis de répondre précisément aux demandes d’information relatives à la gestion des déchets.</p>
+<p>Le programme scolaire de la MRH a consisté en des jeux et des concours sur le thème du tri à la source, donnant droit à des prix tels que des visites guidée des nouvelles installations de gestion des déchets. Les élèves ont utilisé des images représentant des légumes, des sacs de chips et d’autres déchets pour indiquer « quoi mettre à quel endroit » et ont reçu de la documentation à apporter à la maison. La MRH a aussi produit une bande vidéo, en collaboration avec une firme de relations publiques, qui décrit au complet la stratégie de gestion des déchets. Cette vidéo qui a été distribuée par la MRH à toutes les bibliothèques et écoles de la municipalité, a été reconnue à l’échelle nationale grâce à sa qualité et sa valeur pédagogique.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>La Municipalité a signé une entente avec le comté de Cumberland pour qu’il déplace tous les déchets vers leur installation durant une période de deux ans, à un coût de 16 millions de dollars par année.</p>
+<p>La MRH a financé la majeure partie de la stratégie de gestion intégrée des déchets et des ressources à l’aide d’une combinaison de finance-ments par emprunt de capital, partenariats privés (capital de l’usine de compostage), redevances de déversement pour les utilisateurs commerciaux et impôt foncier. Plus de 400 personnes ont fait un don inestimable de leur temps et de leurs commentaires au fil des années durant lesquelles la stratégie de gestion des déchets a été élaborée.</p>
+<p>Les coûts des investissements qui ont été couverts en grande partie par des obligations municipales de 20 ans, sont répartis comme suit :
+<table>
+<tbody>
+<tr>
+<td>installation de traitement préliminaire d’Otter Lake et installation de stabilisation des déchets</td>
+<td>24 M$</td>
+</tr>
+<tr>
+<td>Site d’enfouissement d’Otter Lake (portion 1 sur 20) et route d’accès</td>
+<td>20 M$</td>
+</tr>
+<tr>
+<td>100 000 chariots verts pour déchets organiques et mini-bacs de cuisine</td>
+<td>8,5 M$</td>
+</tr>
+<tr>
+<td>usine de compostage de Burnside</td>
+<td>9 M$</td>
+</tr>
+<tr>
+<td>usine de compostage de Ragged Lake</td>
+<td>9 M$</td>
+</tr>
+<tr>
+<td>installation de recyclage des matériaux (existait déjà)</td>
+<td>4,5 M$</td>
+</tr>
+<tr>
+<td>lieu de stockage permanent des déchets ménagers dangereux</td>
+<td>125 000$</td>
+</tr>
+<tr>
+<td>Total du capital</td>
+<td>75 M$</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p>Les coûts annuels d’exploitation du système de gestion intégrée des déchets et des ressources sont d’environ 37 millions de dollars, y compris un montant de trois millions de dollars servant à couvrir la dette et d’autres coûts liés à l’ancien site d’enfouissement de l’autoroute 101. Les redevances de déversement commerciales permettent de récupérer environ 10 millions de dollars sur l’ensemble des frais d’exploitation, et les subventions provinciales pour le réacheminement des déchets ainsi que d’autres revenus permettent de récupérer jusqu’à 12 millions de dollars. Le coût net de 25 millions de dollars par année est imputé à l’impôt foncier municipal.</p>
+<p>Au cours de la première année d’exploitation, la MRH a aussi déboursé 450 000 $ en frais de promotion et de sensibilisation.</p>
+<p>Puisque les coûts de réacheminement ont augmenté de façon substantielle, la MRH a obtenu un ajustement proportionnel de son revenu par le biais d’un plan de financement provincial préétabli pour la gestion des déchets solides fondé sur la comparaison du taux d’évacuation des déchets par personne de 1989 et du taux d’évacuation des déchets par personne actuel.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Corporate Research Associates Inc. (CRA) a effectué, en novembre 1998, un sondage par téléphone auprès de 505 résidants choisis de façon semi-aléatoire afin de déterminer si le système des chariots verts était pratique, jusqu’à quel point les résidants approuvaient la nouvelle stratégie et quels types de problèmes s’étaient produits. Des sondages du même genre ont été effectués plus tard pour évaluer le taux de participation.</p>
+<p>La quantité d’ordures réacheminées du site d’enfouissement et la réduction correspondante du taux d’émissions de méthane ont été calculés en comparant le poids des déchets traités avec le nouveau système à celui des déchets traités à l’ancien site d’enfouissement. Des appareils de pesage situés à chaque installation ont permis de transmettre automatiquement l’information concernant le poids déchets organiques et recyclables qui étaient traités. De façon similaire, de l’information provenant de chacun des huit lieux de collecte et concernant le taux de participation par secteur a été envoyée quotidiennement à la MRH. Les renseignements obtenus ont servi à élaborer des documents d’infor-mation ciblée et à établir des prévisions budgétaires.</p><!-- Results_B already contains P tags.-->
+<h2>Réaction</h2>
+<p>La Municipalité a signé une entente avec le comté de Cumberland pour qu’il déplace tous les déchets vers leur installation durant une période de deux ans, à un coût de 16 millions de dollars par année.</p>
+<p>La MRH a financé la majeure partie de la stratégie de gestion intégrée des déchets et des ressources à l’aide d’une combinaison de financements par emprunt de capital, partenariats privés (capital de l’usine de compostage), redevances de déversement pour les utilisateurs commerciaux et impôt foncier. Plus de 400 personnes ont fait un don inestimable de leur temps et de leurs commentaires au fil des années durant lesquelles la stratégie de gestion des déchets a été élaborée.</p>
+<p>Les coûts des investissements qui ont été couverts en grande partie par des obligations municipales de 20 ans, sont répartis comme suit :</p>
+<table>
+<tbody>
+<tr>
+<td>installation de traitement préliminaire d’Otter Lake et<br/>
+            installation de stabilisation des déchets</td>
+<td>24 M$</td>
+</tr>
+<tr>
+<td>Site d’enfouissement d’Otter Lake (portion 1 sur 20) et route d’accès</td>
+<td>20 M$</td>
+</tr>
+<tr>
+<td>100 000 chariots verts pour déchets organiques et mini-bacs de cuisine</td>
+<td>8,5 M$</td>
+</tr>
+<tr>
+<td>usine de compostage de Burnside</td>
+<td>9 M$</td>
+</tr>
+<tr>
+<td>usine de compostage de Ragged Lake</td>
+<td>9 M$</td>
+</tr>
+<tr>
+<td>installation de recyclage des matériaux (existait déjà)</td>
+<td>4,5 M$</td>
+</tr>
+<tr>
+<td>lieu de stockage permanent des déchets ménagers dangereux</td>
+<td>125 000$ Total du capital</td>
+<td>75 M$</td>
+</tr>
+</tbody>
+</table>
+<p>Les coûts annuels d’exploitation du système de gestion intégrée des déchets et des ressources sont d’environ 37 millions de dollars, y compris un montant de trois millions de dollars servant à couvrir la dette et d’autres coûts liés à l’ancien site d’enfouissement de l’autoroute 101. Les redevances de déversement commerciales permettent de récupérer environ 10 millions de dollars sur l’ensemble des frais d’exploitation, et les subventions provinciales pour le réacheminement des déchets ainsi que d’autres revenus permettent de récupérer jusqu’à 12 millions de dollars. Le coût net de 25 millions de dollars par année est imputé à l’impôt foncier municipal.</p>
+<p>Au cours de la première année d’exploitation, la MRH a aussi déboursé 450 000 $ en frais de promotion et de sensibilisation.</p>
+<p>Puisque les coûts de réacheminement ont augmenté de façon substantielle, la MRH a obtenu un ajustement proportionnel de son revenu par le biais d’un plan de financement provincial préétabli pour la gestion des déchets solides fondé sur la comparaison du taux d’évacuation des déchets par personne de 1989 et du taux d’évacuation des déchets par personne actuel.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>La MRH a atteint ses objectifs clés à court terme au cours de la première année d'exploitation et elle est en bonne voie d'atteindre ses objectifs à long terme.</p>
+<ol>
+<li>Maximiser le concept des trois R (réduire, réutiliser et recycler) <br/>
+<br/>
+    En 1999-2000, les résidants et les entreprises de la MRH ont réacheminé 43 p. 100 des déchets qui auraient normalement été acheminés au site d'enfouissement, totalisant ainsi 36 000 tonnes de déchets organiques et 22 000 tonnes de matières recyclables, y compris des produits blancs (des appareils ménagers en métal tels que des cuisinières, des réfrigérateurs, des laveuses et des sécheuses).</li>
+<li>Maximiser la durabilité de l'environnement et réduire les coûts<br/>
+<br/>
+    Le nouveau système s'est avéré respecteux de l'environnement et la MRH a fermé son seul site d'enfouissement de déchets bruts. La stratégie a permis de réduire le taux annuel d'émissions de gaz à effet de serre (surtout du méthane) d'environ 1,4 tonne par résidant selon la quantité de matières organiques réacheminée du site d'enfouissement à deux nouvelles usines de compostage et par l'utilisation d'une installation de stabilisation des déchets (un genre d'usine de compostage) pour les matériaux non inertes. Le fonctionnement de cette installation est similaire à la méthode de collecte sous vide des matériaux, ce qui élimine les problèmes de fuite de liquides toxiques. <br/>
+<br/>
+    Le système était aussi économique. La MRH a introduit le nouveau système sans avoir à augmenter l'impôt foncier en conséquence ou même à augmenter de façon très substantielle les redevances de déversement. L'ensemble des coûts étaient comparables aux estimations précédentes des coûts liés à l'incinération pour une exploitation au même niveau. Le nouveau système a aussi permis de créer 125 nouveaux emplois permanents dans une vaste gamme de domaines pour les différentes installations (c.-à-d., trieurs de déchets, personnel administratif des bâtiments de pesage, conducteurs de matériel et techniciens de laboratoire au site d'enfouissement).</li>
+<li>Favoriser la bonne gestion et les valeurs d'une société de conservation <br/>
+<br/>
+    Les taux de participation ont été d'environ 90 p. 100 après la première année et la vaste majorité des gens ont été fiers de participer à un projet d'une si grande envergure et couronné de tant de succès. Un nombre croissant d'entreprises et d'institutions ont aussi adopté le concept de tri des déchets organiques et recyclables. Ce qui auparavant était un problème environnemental et politique majeur pour la collectivité était devenu une source importante de fierté collective.</li>
+</ol>
+<p> </p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Mark Bernard <br/>
+Gestionnaire des dchets solides <br/>
+Municipalit rgionale de Halifax <br/>
+Case postale 1749 <br/>
+Halifax (Nouvelle-cosse) B3J 3A5 <br/>
+Tl. : (902) 490-6716 <br/>
+Tlc. : (902) 490-6690 <br/>
+Courriel : <a href="mailto:bernarm@region.halifax.ns.ca">bernarm@region.halifax.ns.ca</a> <br/>
+Site Web : <a href="http://www.region.halifax.ns.ca/wrms/mainpage.html">www.region.halifax.ns.ca/wrms/mainpage.html</a></p>
+<p>La MRH fournit des adaptations sur mesure de son système aux groupes intéressés et accepte aussi, sur invitation, de participer à des conférences pour faire part de sa stratégie.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><b>Ce qui a fonctionné et pour quelle raison</b><br/>
+Grâce au dévouement et à la collaboration du comité d’intérêt communautaire bénévole, la MRH a appris qu’il était possible de mettre en place un nouveau service municipal avec un taux considérable de participation communautaire et de tirer profit de cette même participation pour mettre en oeuvre et surveiller le nouveau système.</p>
+<p><b>Ce qui n’a pas fonctionné</b><br/>
+Même si la plupart des éléments du nouveau système ont bien fonctionné, la MRH a eu des problèmes avec la capacité de production prévue de l’installation de traitement préliminaire d’Otter Lake qui n’a pas été en mesure de traiter une quantité de déchets suffisante comparativement au volume produit dans la Ville. Cette incapacité était surtout attribuable aux variations quotidiennes et saisonnières ainsi qu’à l’économie active de la région. Même s’il a été nécessaire d’exporter une partie des déchets vers un autre site d’enfouissement municipal au cours de la première année d’exploitation, une expansion de deux millions de dollars a finalement permis de résoudre ce problème de capacité. La MRH s’attendait à réduire les problèmes de nuisance du premier été associés à l’utilisation des chariots verts (surtout les mouches à fruits) grâce à l’expérience et à la sensibilisation du public.</p>
+<p>Le projet de sensibilisation par la mise en place d’ateliers informels de quartier n’a pas fonctionné comme prévu. Dans une région de la taille de la MRH, propager l’information de bouche à oreille s’est avérée inefficace.</p>
+<p><b>Ce qui aurait pu être fait différemment</b><br/>
+En rétrospective, il aurait été préférable que les usines de compostage aient été fonctionnelles bien avant l’achèvement de la nouvelle installation de traitement préliminaire et des installations d’élimination des résidus connexes. Ceci aurait donné plus de temps pour permettre aux résidants et aux entreprises de s’habituer au tri des matières organiques avant la mise en service de l’installation de traitement et de stabilisation des déchets provenant du site d’enfouissement sans déchets organiques. Les problèmes de capacité survenus la première année auraient été moindres et les taux de participation auraient été plus élevés, surtout parmi les entreprises et les institutions.</p>
+<p>Il aurait été avantageux aussi d’investir plus de temps et d’argent dès le départ afin d’éduquer les résidants sur les types d’installations et le choix des emplacements, ainsi que sur des préoccupations comme celle des odeurs dégagées par les usines de compostage.</p>
+<p><b>Quelles leçons peuvent être utiles à d’autres</b><br/>
+Si l’on juge par le nombre de visites et de demandes reçues de la part d’autres collectivités canadiennes et étrangères, plusieurs leçons peuvent êtres tirées de l’expérience de Halifax. La MRH a prouvé qu’un système communautaire de réacheminement des déchets en quatre étapes peut fonctionner dans un environnement urbain et elle a montré une nouvelle approche pour établir un site d’enfouissement sans déchets organiques. Son système démontre un progrès significatif par rapport aux technologies existantes liées à l’enfouissement des déchets bruts ou à l’incinération des déchets, et il a été mis en oeuvre selon des contraintes financières raisonnables pour une ville de 350 000 habitants.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

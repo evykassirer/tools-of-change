@@ -1,0 +1,332 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+  - Retroaction</title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship.  - Retroaction" name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior,  - Retroaction" name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class_current" href="../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class" href="../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<!-- START page wrapper TOP -->
+<p></p>
+<form action="/fr/outils-de-changement/Retroaction/?id=&amp;do=update_toc" id="update_toc" method="post">
+<!-- END page wrapper TOP -->
+<div class="left_content">
+<h1>Rétroaction</h1>
+<h3>Quel est cet outil?</h3>
+<ul>
+<li>Processus qui permet de fournir aux participants des renseignements sur les actions qu'ils ont posées.</li>
+<li>Rétroaction personnalisée permet de fournir à un individu des renseignements précis sur l'effet de sa propre participation.</li>
+<li>Rétroaction communautaire permet de connaître les résultats des efforts globaux d'un groupe entier.</li>
+</ul>
+<h3>Pourquoi l'utiliseriez-vous?</h3>
+<ul>
+<li>Gráce à la rétroaction, les personnes peuvent tirer des leçons de leur participation et ainsi s'améliorer.</li>
+<li>Il permet aux gens de voir en quoi leurs gestes font une différence et constitue, de ce fait, un motivateur important.</li>
+<li>Il aide à concevoir des normes communautaires en faisant la preuve que beaucoup d'autres personnes participent aux efforts.</li>
+</ul>
+<h3>Quand l'utiliseriez-vous?</h3>
+<ul>
+<li>Il importe de fournir une rétroaction chaque fois qu'une méthode pratique le permet.</li>
+<li>Il faut toujours fournir une rétroaction à un groupe; le meilleur moment pour ce faire est lorsque les résultats à partager sont suffisamment inspirants.</li>
+</ul>
+<p>Les principaux utilisés ici sont ceux du <a href="../../../fr/etudes-de-cas/detail/11"><i>Global Action Plan</i></a>, qui incitait les gens á opter pour des modes de vie plus durables gráce á un programme de soutien par les pairs et <a href="../../../fr/etudes-de-cas/detail/17"><i>JEEP</i></a>, qui était centré sur les visites á domicile et sur un programme d'encouragement aux rénovations.</p>
+<h3>Comment l'utiliseriez-vous?</h3>
+</div>
+<div class="clear"> </div>
+<!--/clear_the_area-->
+
+<!--/Bar-->
+<div class="yellow_headers">1.  Définir les éléments qui feront l'objet d'une rétroaction.</div>
+<!--/yellow_headers-->
+<div class="left_content_2col" style="background: #e5edee;">
+<div class="plan_col_left" style="width: 90%;">
+<h1>Exemples</h1>
+<p>On a fourni aux participants du <em><a href="../../../fr/etudes-de-cas/detail/11">Global Action Plan (GAP) </a></em>des renseignements sur les résultats individuels et de groupe par rapport aux objectifs du programme. Ces objectifs comprenaient le réacheminement des déchets destinés aux sites d'enfouissement et une baisse du taux de consommation en électricité, en gaz naturel et en pétrole pour le transport. <em><a href="../../../fr/etudes-de-cas/detail/9">GAP </a></em>a aussi annoncé publiquement la somme d'argent épargnée par les participants, puisque la réduction des coûts constituait un facteur clé motivant les gens à agir.</p><p><em><a href="../../../fr/etudes-de-cas/detail/17">JEEP </a></em>a fait part des progrès accomplis vers l'atteinte de son objectif principal, soit une réduction précise du taux de consommation d'électricité.</p></div>
+<!--/plan_col_left-->
+<div class="plan_col_right" style="display: none;">
+<h1>Votre Programme</h1>
+<p>Dresser la liste des grands objectifs mesurables de (<a href="../../../fr/guide-de-planification/">Guide de planification</a>).</p>
+<p>1. <a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="27" src="../../../public/images/loginlock_form.gif" width="234"/></a></p>
+<p class="indent"><a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="20" src="../../../public/images/loginlock.gif" width="20"/></a> Individual     <a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="20" src="../../../public/images/loginlock.gif" width="20"/></a> Group</p>
+<p>2. <a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="27" src="../../../public/images/loginlock_form.gif" width="234"/></a></p>
+<p class="indent"><a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="20" src="../../../public/images/loginlock.gif" width="20"/></a> Individual     <a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="20" src="../../../public/images/loginlock.gif" width="20"/></a> Group</p>
+<p>3. <a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="27" src="../../../public/images/loginlock_form.gif" width="234"/></a></p>
+<p class="indent"><a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="20" src="../../../public/images/loginlock.gif" width="20"/></a> Individual     <a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="20" src="../../../public/images/loginlock.gif" width="20"/></a> Group</p>
+<p>Dresser aussi la liste des facteurs clés qui motivent les gens à participer à l'activité. La rétroaction sur ces facteurs peut s'avérer particulièrement utile et inspirante pour les participants et pour les personnes qui aimeraient s'engager.</p>
+<p>1. <a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="27" src="../../../public/images/loginlock_form.gif" width="234"/></a></p>
+<p class="indent"><a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="20" src="../../../public/images/loginlock.gif" width="20"/></a> Individual 	  	<a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="20" src="../../../public/images/loginlock.gif" width="20"/></a> Group</p>
+<p>2. <a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="27" src="../../../public/images/loginlock_form.gif" width="234"/></a></p>
+<p class="indent"><a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="20" src="../../../public/images/loginlock.gif" width="20"/></a> Individual 	  <a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="20" src="../../../public/images/loginlock.gif" width="20"/></a> Group</p>
+<p>3. <a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="27" src="../../../public/images/loginlock_form.gif" width="234"/></a></p>
+<p class="indent"><a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="20" src="../../../public/images/loginlock.gif" width="20"/></a> Individual 	  <a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="20" src="../../../public/images/loginlock.gif" width="20"/></a> Group</p>
+<p class="t_and_c_p">Cochez ceux que vous pouvez de manière rentable dépister sur une base individuelle et sur une base de groupe.</p>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<!--/clear_the_area-->
+<div class="yellow_headers">2.  Fournir une rétroaction individuelle s'il est pratique de ce faire.</div>
+<!--/yellow_headers-->
+<div class="left_content_2col" style="background: #e5edee;">
+<div class="plan_col_left" style="width: 90%;">
+<h1>Exemples</h1>
+<p>En aidant les participants à mieux déchiffrer leurs factures de services publics, des programmes de vérification au foyer comme <a href="../../../fr/etudes-de-cas/detail/3">BC21 PowerSmart</a>, <a href="../../../fr/etudes-de-cas/detail/17">JEEP</a> et les <a href="http://www.gca.ca/">collectivités écologiques</a> (voyez <a href="../../../fr/etudes-de-cas/detail/22">ReCAP</a>, <a href="../../../fr/etudes-de-cas/detail/14">Guelph 2000</a>, <a href="../../../fr/etudes-de-cas/detail/9">The Environment Network</a> et <a href="../../../fr/etudes-de-cas/detail/20">Peterborough GreenUp</a>) encourageaient chaque foyer à évaluer ses progrès.</p><p>Les équipes écologiques de <em><a href="../../../fr/etudes-de-cas/detail/11">GAP</a> </em>ont acheminé des renseignements sur les réalisations de chaque membre du groupe entre les réunions à une base de données communautaire centrale. Ces renseignements ont été convertis de manière à établir le montant des épargnes réalisées par chaque personne et ces informations ont été transmises au groupe à la fin du programme.</p><p><em>Flash d'information sur les ressources disponibles pour le Canada</em> :<br/>
+Le programme <a href="../../../fr/etudes-de-cas/detail/82">ÉnerGuide pour les maisons</a> prévoit une deuxième visite de la maison, dans le cadre de laquelle un test d'infiltrométrie est réalisé, qui permet de confirmer les avantages des mesures prises et de vérifier si le travail a été bien fait.</p>
+<p class="tip_example"><strong>Conseil:</strong> Cliquez sur une image pour l'agrandir. Cliquez votre bouton <em>Back</em> pour retourner à cette page.<br/>
+<a href="/images/documentimages/jeep/jeep-1.jpg"><img alt="JEEP image" border="0" height="92" src="/images/documentimages/jeep/jeep-1.jpg" width="149"/></a><br/>
+    Une équipe de visite a domicile de <a href="../../../fr/etudes-de-cas/detail/17/"><em>JEEP</em></a> examine les factures de service pour déterminer des économies potentielles disponibles aux propriétaires d'une maison. Les futures factures fourniront le rétroaction  individuel.</p>
+</div>
+<!--/plan_col_left-->
+<div class="plan_col_right" style="display: none;">
+<h1>Votre Programme</h1>
+<p>Parmi les éléments (s'il en est) que vous avez identifiés comme &lt;&gt; á l'étape 1, lesquels seraient pratiques à transmettre aux individus?</p>
+<p>Comment faire pour fournir cette rétroaction?</p>
+<p><a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="27" src="../../../public/images/loginlock_form.gif" width="234"/></a></p>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<!--/clear_the_area-->
+<div class="yellow_headers">3.  Trouver une façon rentable de fournir une rétroaction communautaire.</div>
+<!--/yellow_headers-->
+<div class="left_content_2col" style="background: #e5edee;">
+<div class="plan_col_left" style="width: 90%;">
+<h1>Exemples</h1>
+<p>Les données sur les réalisations collectives de toutes les équipes écologiques de <em><a href="../../../fr/etudes-de-cas/detail/11">GAP</a> </em>étaient regroupées et distribuées tous les trois mois aux participants actuels et passés, dans le cadre d'un bulletin d'information. <em><a href="../../../fr/etudes-de-cas/detail/11">GAP</a> </em>faisait également appel aux journaux, à la télévision, aux réseaux informatisés et aux systèmes de récompenses en place dans chaque collectivité.</p><p><em><a href="../../../fr/etudes-de-cas/detail/12">Go Boulder</a> </em>s'est organisé pour que la presse locale publie deux articles par mois environ mettant en vedette des individus et des groupes locaux. On a présenté, à maintes reprises, cinq vidéos différents à la chaîne de télévision communautaire. Les organisateurs ont aussi fourni des rétroactions dans le cadre de documents publicitaires, d'événements spéciaux et de présentations à des organisations communautaires.</p><p><em><a href="../../../fr/etudes-de-cas/detail/17">JEEP</a> </em>renseignait les collectivités sur la quantité de kilowatts épargnés à l'aide d'une grande affiche en forme d'ampoule compacte fluorescente installée au centre-ville. Ces renseignements étaient aussi diffusés au moyen d'articles de journaux, de publicités et de rapports de projet.</p><p><em><a href="../../../fr/etudes-de-cas/detail/21">Quinte Regional Recycling</a> </em>offrait une rétroaction positive aux citoyens grâce à des messages radiophoniques, des présentations à la télévision, des articles de journaux et la production d'un calendrier annuel centré sur la réduction des déchets. On y présentait les cas de personnes et de commerces locaux qui avaient activement participé au programme Boîte bleue 2000 et qui avaient amélioré la qualité de vie de leurs collectivités en recyclant ou en compostant.</p>
+<p class="tip_example"><strong>Conseil:</strong> En général, limitez vos rétroactions communautaires à quelques éléments     seulement.</p>
+<p class="tip_example"><strong>Conseil:</strong> Pour savoir comment offrir des rétroactions que les gens remarqueront, dont     ils se souviendront et qui les inciteront à agir, voir l'Outil <a href="../../../fr/outils-de-changement/Communications-personnalisees-percutantes/">Communications personnalisées percutantes</a></p>
+<p class="tip_example"><strong>Conseil:</strong> Cliquez sur une image pour l'agrandir. Cliquez votre bouton <em>Back</em> pour retourner à cette page.<br/>
+<a href="/images/documentimages/jeep/Jeep-2.jpg"><img alt="JEEP image" border="0" height="153" src="/images/documentimages/jeep/Jeep-2.jpg" width="96"/></a><br/>
+    Le signe de rétroaction communautaire de <a href="../../../fr/etudes-de-cas/detail/17/"><em>JEEP</em></a></p>
+</div>
+<!--/plan_col_left-->
+<div class="plan_col_right" style="display: none;">
+<h1>Votre Programme</h1>
+<p>Énumérez les éléments pour lesquels vous pouvez fournir le rétroaction communautaire:</p>
+<p> </p>
+<p>1. <a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="27" src="../../../public/images/loginlock_form.gif" width="234"/></a></p>
+<p>2. <a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="27" src="../../../public/images/loginlock_form.gif" width="234"/></a></p>
+<p>3. <a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="27" src="../../../public/images/loginlock_form.gif" width="234"/></a></p>
+<p>Comment pourriez-vous le fournir?</p>
+<br/>
+<a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="20" src="../../../public/images/loginlock.gif" width="20"/></a> Progrès de cheminement de signes  <br/>
+<a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="20" src="../../../public/images/loginlock.gif" width="20"/></a> Médias  <br/>
+<a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="20" src="../../../public/images/loginlock.gif" width="20"/></a> Calendriers muraux  <br/>
+<a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="20" src="../../../public/images/loginlock.gif" width="20"/></a> Littérature / bulletins  <br/>
+<a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="20" src="../../../public/images/loginlock.gif" width="20"/></a> Spéciaux événements  <br/>
+<a class="thickbox" href="/app/views/login/form_thick_reg_fr.lasso?height=270&amp;width=340&amp;modal=true" title="Veuillez ouvrir une session"><img alt="Veuillez ouvrir une session" height="20" src="../../../public/images/loginlock.gif" width="20"/></a> Présentations
+    <p> </p>
+</div>
+<!--/plan_col_right--></div>
+<!--/left_content_2col-->
+<div class="clear"> </div>
+<!--/clear_the_area-->
+<div class="yellow_footer">
+<h3>Apprendre des autres</h3>
+<table cellspacing="2" width="100%">
+<tbody>
+<tr>
+<td align="center" bgcolor="#d0dfe2" valign="top" width="50%">Façons d'offrir une rétroaction</td>
+<td align="center" bgcolor="#d0dfe2" valign="top" width="50%">Études de cas comprises dans ce Guide</td>
+</tr>
+<tr>
+<td valign="top" width="50%">Articles et annonces dans les journaux, publicités radio et     télé, vidéos</td>
+<td valign="top" width="50%">Plusieurs (p. ex., <a href="../../../fr/etudes-de-cas/detail/12"><i>Go Boulder</i></a>, <a href="../../../fr/etudes-de-cas/detail/21"><i>Quinte Regional Recycling</i></a>)</td>
+</tr>
+<tr>
+<td valign="top" width="50%">Calendriers muraux</td>
+<td valign="top" width="50%"><a href="../../../fr/etudes-de-cas/detail/21"><i>Quinte Regional Recycling</i></a></td>
+</tr>
+<tr>
+<td valign="top" width="50%">Bulletins d'information</td>
+<td valign="top" width="50%"><a href="../../../fr/etudes-de-cas/detail/11"><i>Global Action Plan</i></a>, <a href="../../../fr/etudes-de-cas/detail/9"><i>The Environment Network</i></a>, <a href="../../../fr/etudes-de-cas/detail/95"><b>off ramp</b></a></td>
+</tr>
+<tr>
+<td valign="top" width="50%">Groupes de soutien par les pairs</td>
+<td valign="top" width="50%"><a href="../../../fr/etudes-de-cas/detail/11"><i>Global Action Plan</i></a> (voir la carte ci-dessous) </td>
+</tr>
+<tr>
+<td valign="top" width="50%">Affichage des progrès</td>
+<td valign="top" width="50%"><a href="../../../fr/etudes-de-cas/detail/17"><i>JEEP</i></a>, <a href="../../../fr/etudes-de-cas/detail/95"><b>off ramp</b></a></td>
+</tr>
+<tr>
+<td valign="top" width="50%">Présentations aux organisations communautaires</td>
+<td valign="top" width="50%"><a href="../../../fr/etudes-de-cas/detail/12"><i>Go Boulder</i></a></td>
+</tr>
+<tr>
+<td valign="top" width="50%">Événements spéciaux</td>
+<td valign="top" width="50%"><a href="../../../fr/etudes-de-cas/detail/12"><i>Go Boulder</i></a></td>
+</tr>
+</tbody>
+</table>
+<p align="center"><img alt="" src="/images/documentimages/tools/feedback-1.jpg"/></p>
+<p>En 1996, <em>GAP</em> a fourni cette carte aux participants passés, montrant le nombre d'EcoTeams et de leurs accomplissements.</p>
+</div>
+<div class="clear"> </div>
+<!--/clear_the_area-->
+
+<!--/Bar--> <!-- START page wrapper bottom -->
+</form>
+<p> <!-- END page wrapper bottom --></p>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="news_cap_top"></div>
+<div class="news_body">
+<form action="/fr/guide-de-planification/recherche-avance/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="planning_guide"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="18" type="text" value="Recherche"/></td>
+<td class="go_area"><input id="submit2" src="../../../public/images/go_button.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p><a href="../../../fr/guide-de-planification/recherche-avance/">	Cliquez pour la Recherche avancée  »</a></p>
+</div>
+<!--/news_body-->
+<div class="news_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../fr/aide/">Aide</a></li>
+<li><a href="../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

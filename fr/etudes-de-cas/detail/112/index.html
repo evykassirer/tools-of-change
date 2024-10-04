@@ -1,0 +1,302 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a></li>
+<li><a href="../../../../fr/outils-de-changement/rétroaction/">Rétroaction</a></li>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+<li><a href="../../../../fr/outils-de-changement/de-bouche-à-oreille/">De bouche à oreille</a></li>
+<li><a href="../../../../fr/outils-de-changement/programmes-en-milieu-de-travail-qui-affectent-le-foyer/">Programmes en milieu de travail qui affectent le foyer</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Le programme <em>GreenCommute</em> résulte de son association avec ses partenaires.</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Nortel Networks</li>
+<li>La ville d'Ottawa</li>
+<li>OC Transpo</li>
+<li>La Commission de la capitale nationale</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p>En 2000, c'est 15 % des quelques 5 200 employés qui utilisaient des moyens de transport autres que la voiture pour aller au travail (transport en commun, télétravail et bicyclette), soit une augmentation de 3 % par rapport au 12 % de 1998.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Le programme GreenCommute de Nortel Networks</h1>
+<p>En 1998, Nortel Networks a lancé <em>GreenCommute</em>, un programme de gestion de la demande en transport (GDT) pour l'agrandissement de son complexe à Ottawa (Ontario), qui est devenu l'un des programmes GDT les plus complets au Canada. Nortel Networks a depuis étendu son programme à d'autres sites au Canada et aux États-Unis. Cette étude de cas démontre comment des partenariats-clés, la conception de réseaux piétonniers et un engagement solide envers le transport écolo peuvent assurer avec succès la participation des employés. Possibilité de répétition : élevée.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p><em>Nota : Pour minimiser les coûts de maintenance du site, toutes les études de cas sont écrites au passé, même si elles sont en cours, comme dans le cas de ce programme. </em></p>
+<p>Quand Nortel Networks, une entreprise mondiale de communications et de l'Internet, a décidé d'agrandir son complexe de l'avenue Carling, la municipalité a exigé comme l'une des conditions pour l'approbation du projet, que la compagnie implante un programme de gestion de la demande en transport (GDT) sur le site. Le complexe de l'avenue Carling se situait en banlieue d'Ottawa, la capitale du Canada. Avec sa population de plus d'un million d'habitants, Ottawa était la quatrième région métropolitaine en importance au pays et la plaque tournante de son secteur de haute technologie en plein essor.</p>
+<p>En guise de réponse, Nortel Networks a conçu <em>GreenCommute</em> et s'est alliée la Municipalité régionale d'Ottawa-Carleton, la ville de Nepean, OC Transpo (la Commission de transport régionale d'Ottawa-Carleton) et la Commission de la capitale nationale. (Prenez note qu'à compter de janvier 2001, la Municipalité régionale d'Ottawa-Carleton, la ville de Nepean, la vieille ville d'Ottawa et la ville de Kanata n'existent plus, ayant été fusionnées pour devenir la nouvelle ville d'Ottawa. La suite de cette étude de cas référera à la ville d'Ottawa nouvellement fusionnée reconnaissant que les partenariats formés au début du programme <em>GreenCommute</em> se sont poursuivis avec la ville fusionnée d'Ottawa.) Ensemble, ces partenaires ont mis en place un vaste programme GDT qui comprenait des mesures incitant à la participation au programme et visant la réduction des obstacles au transport écolo pour les quelque 8 000 personnes qui travailleront éventuellement au complexe.</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p><a name="informed">Le but général du programme <em>GreenCommute</em> était de « mettre en valeur et de promouvoir d'autres solutions de transport dans un effort pour confronter proactivement les enjeux environnementaux auxquels font face nos communautés. » </a></p>
+<p>Les objectifs spécifiques et mesurables du programme pour atteindre ce but étaient :</p>
+<ol>
+<li>augmenter le pourcentage des déplacements autres qu'en auto de 12 % à 15 % dès l'an 2000, et à 25 % en 2005;</li>
+<li>augmenter le taux d'occupation moyen des véhicules de 1,12 à 1,3 personne par véhicule dès l'an 2000, et à 1,5 personne par véhicule en 2005.</li>
+</ol>
+<p> </p><!-- Objectives already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>En mai 1998, la ville d'Ottawa a effectué un comptage de la circulation pour recueillir des renseignements sur les moyens de transport utilisés par les gens qui se rendaient au complexe actuel, avenue Carling. Ces renseignements ont fourni un point de référence sur lequel fonder les objectifs d'amélioration. Le taux d'occupation moyen par véhicule était de 1,12 personne, et seulement 12 % utilisaient d'autres moyens de transport pour se rendre au travail (p. ex. le transport en commun, le vélo, le télétravail, la marche ou le patin à roues alignées.)</p>
+<p>Au même moment, Nortel Networks a effectué un vaste sondage en ligne auprès des 11 500 employés de son complexe d'Ottawa. Il comprenait 50 questions qui portaient sur des sujets tels que le lieu de résidence, la distance à parcourir pour aller au travail, les habitudes de transport, leur opinion sur diverses solutions de rechange, leur réceptivité à essayer d'autres moyens de transport, les obstacles potentiels et les facteurs incitatifs.</p>
+<p>Selon le sondage, 87 % des employés étaient intéressés à essayer d'autres moyens de transport. Les principaux obstacles identifiés étaient :</p>
+<ul>
+<li><em>Transport en commun</em> - temps de déplacement/itinéraires indirects, manque de commodité et manque de souplesse.</li>
+<li><em>Covoiturage</em> - trouver des personnes compatibles.</li>
+<li><em>Cyclisme/marche</em> - trajets pour les cyclistes dangereux, manque de renseignements sur les trajets, installations pour les casiers/douches difficiles d'accès, stationnements pour bicyclettes difficiles d'accès et/ou dangereux.</li>
+<li><em>Télétravail</em> - désapprobation de la direction, technologie disponible.</li>
+</ul>
+<p> </p>
+<p>En mars 1999, une campagne de promotion conjointe de la ville et d'OC Transpo accordait aux employés du complexe Carling un coupon échangeable contre une passe d'autobus gratuite. Environ 30 % des personnes (1 300) travaillant au complexe Carling se sont prévalues de cette offre. Chaque récipiendaire devait remplir un mini-questionnaire sur ses habitudes de transport actuelles. Selon cette enquête, 55 % des répondants se déplaçaient en voiture, 31 % prenaient l'autobus régulièrement, 39 % à l'occasion, 20 % à peu près jamais et 10 % disaient ne jamais le prendre.</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p><strong>Éléments d'infrastructure</strong></p>
+<p>Avant l'élaboration du programme final GDT, plusieurs éléments fondamentaux ont été intégrés à la conception du site pour en rendre l'accès plus sécuritaire et plus facile pour les piétons, les cyclistes et les usagers du transport en commun. Un vaste réseau de sentiers et de trottoirs bordés d'arbres sur tout le territoire du complexe a été construit pour rendre la marche agréable et sécuritaire, et des panneaux d'arrêt aux intersections du complexe donnaient la priorité aux piétons. Nortel Networks a aussi beaucoup amélioré les trajets pour les cyclistes existants menant à son complexe Carling.</p>
+<p>De plus, la compagnie a travaillé avec la ville et OC Transpo pour développer un point central de transbordement où les gens pouvaient attendre l'autobus et obtenir de l'information sur les itinéraires et les horaires. Un écran de télévision installé au point de transbordement central affichait de façon continue les heures d'arrivée des autobus. OC Transpo a aussi doublé son service de transport en commun vers le complexe, augmenté le service aux périodes de pointe et offert des déplacements à l'heure du midi vers des destinations clés. Avec ces éléments d'infrastructure en place, tout était prêt pour le début des communications sur le programme GDT de la compagnie.</p>
+<p><strong>Le lancement</strong></p>
+<p>Nortel Networks a donné le coup d'envoi de <em>GreenCommute</em> à l'interne en embauchant un coordinateur GDT à temps plein en mars 1998,démontrant son engagement continu vis-à-vis la réussite du programme. De plus, le fait d'avoir un coordinateur sur place permettait d'assurer la constance et le leadership; de même qu'un point de contact unique qui facilitait la participation des employés et des partenaires.</p>
+<p>Une fois l'identité et la stratégie du programme définies, un premier sondage en ligne (voir <a href="#informed">Obtenir de l'information</a>) a présenté <em>GreenCommute</em> aux personnes travaillant au complexe de l'avenue Carling (<a href="../../../../fr/outils-de-changement/programmes-en-milieu-de-travail-qui-affectent-le-foyer/">Programmes en milieu de travail qui affectent le foyer</a>). Le sondage donnait de l'information de base sur le programme, sur les motifs pour lesquels il était instauré, sur ses objectifs, et il disait aux gens que le programme serait élaboré en fonction de leurs besoins et leurs priorités. On leur demandait aussi quelIes étaient leurs habitudes de transport actuelles et ce qu'ils pensaient des divers autres modes de transport. Un an plus tard, le 22 mars 1999, date où le programme <em>GreenCommute</em> a été officiellement lancé, les gens ont commencé à déménager dans les nouveaux édifices, profitant déjà des infrastructures disponibles sur le complexe – un élément clé des ressources du programme.</p>
+<p><strong>Système de jumelage d'itinéraires en ligne et aires de covoiturage désignées</strong></p>
+<p>Le sondage en ligne avait indiqué que la difficulté à identifier des partenaires de covoiturage représentait un obstacle majeur au covoiturage vers le complexe. Après quelques recherches, Nortel Networks a élaboré son propre système personnalisé de jumelage d'itinéraires par intranet, qui a été inauguré en décembre 1998. Ce programme libre-service permettait aux membres inscrits de rechercher des partenaires de covoiturage compatibles selon certains critères.</p>
+<p>Une des mesures incitatives au covoiturage a été de réserver des aires de stationnement (11 % de tous les espaces de stationnement) au covoiturage, avec deux occupants ou plus. Ces aires jouissaient d'un emplacement privilégié (plus près du bâtiment principal) Une des trois aires réservées, qui fournissait du stationnement souterrain, avait tout d'abord été prévue pour le covoiturage à trois occupants ou plus; ce nombre a été réduit à deux occupants ou plus à cause de la forte demande. Pour pouvoir stationner dans ces aires, les conducteurs devaient se procurer une vignette spéciale <em>GreenCommute</em> par le biais du système d'inscription personnalisé qui avait été élaboré et la placer dans le pare-brise. Cet autocollant est devenu une carte suspendue au rétroviseur. (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatifs</a>, <a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a>).</p>
+<p><strong>Événements continus</strong></p>
+<p>Grâce à la participation et au soutien de leurs partenaires locaux, le programme <em>GreenCommute</em> de Nortel Networks offrait de nombreuses activités et possibilités aux personnes travaillant à ses complexes pour en apprendre davantage sur d'autres modes de transport et les ressources connexes, et de les essayer.</p>
+<ul>
+<li><strong><em>Itinéraire pilote</em></strong> - En mars 1999, la ville d'Ottawa, OC Transpo et Nortel Networks (<a href="../../../../fr/outils-de-changement/medias/">Médias</a>) ont conjointement organisé la tenue d'un événement médiatique officiel pour promouvoir l'tinéraire pilote. Cet événement a présenté officiellement le programme <em>GreenCommute</em> et souligné l'inauguration du nouveau point central de transbordement et de l'abribus. Le jour de l'événement, les personnes qui travaillaient au complexe Carling ont trouvé, sur leur bureau, un sac-repas réutilisable contenant des trousses d'information sur les autres moyens de transport offerts spécifiquement pour le complexe Carling, de même qu'un coupon échangeable contre une passe de transport gratuite pour le mois d'avril (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives</a>). Cette passe visait à inciter ceux qui n'avaient jamais essayé ou qui avaient rarement utilisé le transport en commun à voyager par autobus durant un mois. Un pourcentage exceptionnel de 29 % (soit 1 300 personnes) des employés du complexe Carling se sont prévalus de l'avantage de cette passe et ont rempli un questionnaire préliminaire destiné à évaluer les habitudes de transport (voir <a href="#informed">Obtenir de l'information</a>). Cette promotion a donné lieu à une augmentation de 25 % de l'achalandage d'OC Transpo durant le mois d'avril.</li>
+<li><strong><em>Semaine de promotion de la bicyclette</em></strong> - <em>GreenCommute</em> a commandité, en mai 1999, en collaboration avec Nortel Networks Bicycle Users Group (NORBUG) et Citizens for Safe Cycling, une activité destinée à promouvoir la bicyclette comme moyen de transport viable. Cette activité comprenait des démonstrations sur la pratique sécuritaire de la bicyclette et sur les différents modèles de bicyclettes, ce qui a donné lieu à une augmentation de 50 % des adhésions à NORBUG's de l'avenue Carling (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>, <a href="../../../../fr/outils-de-changement/de-bouche-a-oreille/">Bouche à oreille</a>). En guise d'avantage supplémentaire, <em>GreenCommute</em> a invité NORBUG, un groupe d'intérêts propriété des employés, à devenir un participant actif aux questions reliées au cyclisme.</li>
+<li><strong><em>Défi transport</em></strong> –Le Défi transport, une activité nationale populaire vouée à la promotion d'une citoyenneté environnementale par le biais de pratiques de transport écolo, s'est avérée un succès retentissant pour le programme <em>GreenCommute</em> en 1999, 2000 et 2001. Même si Nortel Networks y avait participé au cours des années précédentes, il n'y avait pas eu de campagne de promotion corporative centralisée et la participation avait été négligeable. Par contre, en 1999 et 2000 la participation a augmenté de façon significative. En 1999, Nortel Networks enregistrait un résultat phénoménal de 29 % de toute la participation de la région de la Capitale et en 2000, 20 % plus d'employés du complexe Carling ont participé comparativement à l'année précédente. Au cours des trois années, la compagnie s'est classée première de sa catégorie (entreprises comptant 1 000 employés et plus) avec le plus grand nombre de participants. Ce facteur a clairement contribué à la réussite de l'initiative de <em>GreenCommute</em> en sensibilisant davantage et en suscitant un plus grand intérêt dans d'autres moyens de transport.</li>
+<li><strong><em>Comment vous déplacez-vous - Salon du transport 2000</em></strong> - Cette activité d'un jour tenue en mai 2000 sur le complexe a intéressé 45 % des employés du complexe Carling. Avec la collaboration de tous ses partenaires et d'autres compagnies telles que Ford du Canada, Santé Canada, Environnement Canada, Ressources naturelles Canada, cette activité avait été conçue pour fournir des renseignements sur une variété d'options en matière de transport et comprenait des démonstrations et/ou de l'information sur :
+    <ul>
+<li>les supports à bicyclettes des autobus OC Transpo, les itinéraires, horaires et plans futurs (des passes d'un jour gratuites ont été distribuées)</li>
+<li>le train léger à Ottawa</li>
+<li>les cartes et la sécurité à bicyclette</li>
+<li>la vie active</li>
+<li>l'environnement, la santé et le changement climatique</li>
+<li>les véhicules électriques et véhicules à hydrogène de Ford, et les bicyclettes</li>
+</ul>
+</li>
+<li><strong><em>Changement climatique : La base scientifique d'intérêt</em></strong> - En reconnaissance de la Semaine canadienne de l'environnement et de la Journée canadienne de l'air pur 2000, <em>GreenCommute</em> a offert la possibilité d'en apprendre davantage sur le changement climatique à l'échelle planétaire par le biais d'un exposé par un scientifique chevronné en la matière. L'activité qui s'est déroulée dans une aire ouverte afin d'y intéresser les passants (<a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a>) a capté l'intérêt de plus de 175 personnes. OC Transpo a amené par navette au complexe Carling les personnes intéressées en provenance des autres sites de Nortel Networks d'Ottawa. Une démonstration de l'Internet sans fil se déroulait en même temps que l'exposé pour permettre aux gens de s'inscrire au Défi transport (<a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a>).</li>
+</ul>
+<p> </p>
+<p><strong>Communications et promotion</strong></p>
+<p><em>GreenCommute</em> offrait aux gens travaillant chez Nortel Networks un site Web intranet dynamique contenant toute l'information et l'appui concernant les autres moyens de transport. Le site était mis à jour régulièrement par des flash infos et des articles pertinents afin de bien renseigner les employés sur les activités et leur rappeler celles à venir. De plus, les résultats des sondages étaient affichés pour que les employés puissent mesurer leur propre rendement et repenser leurs options de transport, de même que de l'information sur les niveaux de participation aux différentes activités (<a href="../../../../fr/outils-de-changement/retroaction/">Rétroaction</a>, <a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a>, <a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a>).</p>
+<p>La promotion du programme <em>GreenCommute</em> a d'abord été faite par courrier électronique, par des bulletins sur le Web décrivant chacune des activités à venir ou une question reliée au transport, les motifs de Nortel Networks pour l'instaurer et les avantages. De plus, des prix tirés au hasard étaient offerts occasionnellement pour encourager la participation. (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/"> Mesures financières incitatives</a>) Des affiches étaient aussi utilisées si nécessaires.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>Dès juin 1999, Nortel Networks avait investi plus de huit millions de dollars canadiens pour construire des installations de stationnement souterraines, protéger les moyens de liaison entre les édifices, améliorer le transport, les sentiers pédestres et les pistes cyclables sur le complexe, et maintenir le programme <em>GreenCommute</em>.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Des niveaux de participation élevés à toutes les activités ont démontré une meilleure connaissance du programme <em>GreenCommute</em>, mais c'est le sondage de juin 2000 qui s'est avéré la preuve quantitative. Ce sondage téléphonique a été effectué deux ans après le sondage de lancement et le comptage de la circulation pour mesurer le niveau de pénétration et son impact sur le complexe Carling. Il comprenait environ 25 questions, qui a recueilli 358 réponses. On demandait aux employés s'ils connaissaient le programme <em>GreenCommute</em>; si le programme les avait amenés à réfléchir davantage sur les impacts du transport en commun sur l'environnement, la santé et la communauté, si le programme leur avait apporté des bienfaits significatifs et si le programme <em>GreenCommute</em> avait contribué à faciliter leurs déplacements au travail autrement qu'en voiture. De plus, on demandait aux employés s'ils avaient utilisé le covoiturage, le télétravail, s'ils avaient pris le transport en commun ou utilisé la bicyclette pour se rendre au travail au cours des 12 derniers mois; combien de ces options les répondants avaient utilisées et à quelle fréquence ils avaient utilisé chaque mode de transport au cours des mois d'été par comparaison aux mois d'hiver.</p>
+<p>Au même titre que le sondage, des comptages de la circulation s'imposaient pour fins de comparaison avec les comptages de 1998.</p><!-- Results_B already contains P tags.-->
+<h2>Réaction</h2>
+<p>Le site Web intranet publiait les résultats du sondage et des mises jour sur les niveaux de participation aux différentes activités.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>Le programme <i>GreenCommute</i> a atteint ses objectifs 2000. La connaissance de l'impact que les choix personnels des moyens de transport ont sur l'environnement, la communauté et le mode de vie était à la hausse.</p>
+<p>Les données sur le comptage de la circulation ont démontré que 15 % des quelque 5 200 employés utilisaient d'autres moyens de transport que la voiture (transport en commun, télétravail et bicyclette) pour leurs déplacements au travail en 2000, soit une augmentation de 3 % par rapport aux 12 % de 1998.</p>
+<p>La participation exceptionnelle des employés aux nombreuses activités tenues sur le site a prouvé qu'ils étaient plus sensibilisés et engagés. Le Salon transport 2000 a attiré 45 % des employés du complexe Carling, Nortel Networks a gagné le Défi transport dans sa classe trois années de suite, et la participation du complexe Carling a augmenté de 20 % en 1999-2000, NORBUG a augmenté le nombre de ses membres au complexe Carling de 50 % (135 nouveaux membres.)</p>
+<p>De plus, le sondage 2000 sur la connaissance du programme <i>GreenCommute</i> a révélé que presque tous les employés ( 96 %) avaient entendu parler de <i>GreenCommute</i> et que 73 % avaient essayé au moins un autre moyen de transport durant l'année écoulée. Parmi les répondants, 90 % pensaient que le programme <i>GreenCommute</i> procurait un avantage significatif, 79 % ont dit qu'il leur était plus facile d'aller au travail autrement qu'en voiture et 70 % ont avoué que le programme les avait incités à réfléchir davantage sur les impacts du transport en commun sur l'environnement, la santé et la communauté.</p>
+<p>Même les partenaires en ont retiré des avantages. Des installations de transport améliorées, de meilleurs itinéraires et des temps de déplacement plus courts ont entraîné plus d'achalandage pour OC Transpo. De plus, d'autres associations telles que Citizens for Safe Cycling en ont profité pour transmettre leurs messages sur la sécurité sur le site aux employés de Nortel Networks, et NORBUG a augmenté le nombre de ses membres au complexe Carling.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Sharon Lewinson, ing.<br/>
+Directrice du programme GDT<br/>
+Solutions au transport <br/>
+À l'adresse suivante :<br/>
+Nortel Networks <br/>
+3500, avenue Carling<br/>
+Ottawa, ON K2H 8E9<br/>
+Téléphone : (613) 763-6677<br/>
+Télécopieur : (613) 723-8275</p>
+<p>Courriel : <a href="mailto:lewinson@nortelnetworks.com">lewinson@nortelnetworks.com</a> ou <a href="mailto:commutingsolutions@home.com">commutingsolutions@home.com</a><br/>
+Site Web : <a href="http://www.nortelnetworks.com/corporate/community/environment/initiatives/commute_alt.html">www.nortelnetworks.com/corporate/community/<br/>
+environment/initiatives/commute_alt.html</a></p>
+<p>Étude de cas écrite par Jill Kruse, auteure pigiste détenant une maîtrise en planification municipale et régionale, un certificat en planification de l'American Institute of Certified Planners (AICP), et des connaissances en politique du transport et de l'environnement. Elle peut être jointe par courriel à : <a href="mailto:jkruse@softhome.net">jkruse@softhome.net</a></p>
+<p>La traduction vers le français a été faite par Louise Rioux. Aimant beaucoup les mots, et surtout leur rôle dans l'expression d'une idée, la traduction est un défi des plus intéressants. Disponible pour effectuer vos travaux de traduction. Vous pouvez la contacter par courriel à : <a href="mailto:michelg@9bit.qc.ca">michelg@9bit.qc.ca</a></p>
+<p>Rénald Gagnon a édité la version française de cette étude de cas. Rénald possède de nombreuses années d'expérience de traduction et de révision dans des domaines très variés. Vous pouvez le joindre par courriel à : <a href="mailto:relimax@magma.ca">relimax@magma.ca</a>.</p>
+<p>Le financement pour l'ajout de cette étude de cas a été généreusement fourni par le Fonds d’action pour le changement climatique du Gouvernement du Canada, Suncor, Syncrude, Enbridge Consumers Gas et TetraPak Canada Inc.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><b>Leçons apprises</b><br/>
+La leçon la plus importante apprise du programme <i>GreenCommute</i> a été qu'il faut du temps pour modifier les comportements en matière de transport dans un environnement de libre choix. Au même titre que les changements de comportement, l'appui soutenu de la part du partenariat Nortel Networks (spécialement l'amélioration des itinéraires de transport) serait essentiel pour répondre aux objectifs futurs de la répartition modale.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

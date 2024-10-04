@@ -1,0 +1,311 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a></li>
+<li><a href="../../../../fr/outils-de-changement/visites-à-domicile/">Visites à domicile</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+<li><a href="../../../../fr/outils-de-changement/de-bouche-à-oreille/">De bouche à oreille</a></li>
+</ul>
+<h5>Initiative de</h5>
+<p>Administration municipale d’Ashland</p><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Bonneville Power Administration</li>
+<li>C.P. National Gas Company</li>
+<li>Oregon Department of Energy</li>
+<li>Oregon Municipal Electric and Conservation Agency (composed of Ashland and six other Oregon municipal utilities)</li>
+<li>Valley of the Rogue Bank</li>
+</ul>
+<p> </p><!-- Partners already contains li tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Programme de conservation des ressources de la municipalité d'Ashland, Oregon</h1>
+<p>La municipalité d'Ashland offre un éventail de programmes d'encouragement à la conservation visant principalement la promotion de l'efficacité énergétique mais comprenant aussi la conservation de l'eau, la qualité de l'air de la région, le recyclage et le compostage, ainsi que la planification de l'utilisation des terres. Les programmes sont conçus pour relever le niveau de sensibilisation des citoyens à l'accès à des mesures de conservation lors de nouveaux projets de construction et de rénovation comprenant l'intempérisation des résidences, le remplacement des toilettes et des pommes de douches, le compostage, les mesures incitatives à l'intention des constructeurs ainsi que les ordonnances d'utilisation des terres.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>La municipalité d’Ashland en Oregon est une petite communauté américaine d’environ 20 000 habitants (en 2001), qui a initié ses programmes de conservation en 1980, comprenant des politiques d’utilisation des terres. Ses premiers programmes d’efficacité énergétique ont été implantés en 1982 et les programmes de conservation de l’eau ont été ajoutés en 1992.</p>
+<p>Trois facteurs clés ont contribué au développement des programmes : un leadership fort, un solide sens communautaire et l’accessibilité à du soutien extérieur. Dick Wanderscheid s’est joint au service de la Division de planification municipale en 1979. En collaboration avec d’autres gestionnaires de la ville, ils ont fait la promotion de la nécessité de développer la communauté tout en respectant ses ressources et son environnement. Ces leaders ont réussi à stimuler l’énergie de la communauté pour le développement et le soutien d’un solide sens éthique en matière de conservation à Ashland. Lors de la création de la Division de conservation en 1982, Wanderscheid en a été nommé gestionnaire et il a continué à inspirer et à diriger les activités de conservation de la municipalité d’Ashland.</p>
+<p>En 1982, ses efforts ont été encouragés de façon substantielle lorsque Ashland est devenue une cliente de Bonneville Power Administration (BPA), le grossiste en énergie de la région. En conformité avec la Pacific Northwest Electric Power Plant and Conservation Act de 1980, BPA a reçu le mandat d’investir dans des mesures d’efficacité énergétique à l’intention de ses clients. En conséquence, ils ont élaboré et parrainé une multitude de programmes de gestion axée sur la demande (GAD), dans lesquels Ashland a pu puiser et intégrer ses propres efforts de conservation.</p>
+<p>En 1992, la ville a aussi soumis à BPA un plan décennal de conservation de l’énergie qui exigeait des investissements de quelque 10,7 M $ US et qui générerait des économies d’énergie estimées à 22 704 mWh. Ce plan n’a toutefois jamais reçu l’appui nécessaire de la part de BPA.</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p>Aucun objectif quantifiable n’avait été fixé, sauf un. Lors de l’instauration du programme de conservation des eaux en 1992, un objectif d’économie d’eau de 500 000 gallons par jour avait été fixé.</p><!-- Objectives already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>La plupart des premières initiatives de conservation d’énergie d’Ashland étaient des programmes à l’échelle régionale parrainés par BPA plutôt que par des institutions municipales indépendantes. BPA a conçu les programmes et réalisé les recherches de base nécessaires, et la municipalité d’Ashland a implanté les programmes tels qu’ils avaient été conçus.</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>Les efforts de conservation de la municipalité d’Ashland ont débuté en 1980 avec l’adoption d’ordonnances de planification de l’utilisation des terres orientées vers des politiques d’efficacité énergétique et d’utilisation des terres respectueuses des ressources. Ces politiques accordaient des primes aux promoteurs pour la construction de maisons efficaces au plan énergétique (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives</a>), définissaient des normes de rendement énergétique pour les nouvelles constructions, allouaient des constructions à plus forte densité et protégeaient les droits des propriétaires fonciers à un ensoleillement raisonnable de leurs propriétés.</p>
+<p>La municipalité a énergiquement donné suite aux possibilités présentées par BPA en y ajoutant de nouveaux programmes au fur et à mesure de leur disponibilité, et en y étendant ses efforts au- delà des programmes parrainés par BPA dans d’autres ressources.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>Entre 1980 et 1994, BPA a investi un total de 5 120 626 $US dans ses programmes d'efficacité énergétique. Tel qu'indiqué dans le tableau ci-dessous, c'est environ 90 % de cette somme qui est allé aux programmes pour les maisons, principalement le programme d'intempérisation. La municipalité dAshland a investi environ 100 000 $ US par année provenant des revenus d'électricité de la ville.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>APERÇU DES COÛTS PAR PROGRAMME 1980-1994</strong></td>
+<td><strong>TOTAL DES COÛTS ($ US)</strong></td>
+</tr>
+<tr>
+<td><strong>PROGRAMMES POUR LES RÉSIDENCES</strong></td>
+</tr>
+<tr>
+<td>Intempérisation des résidences</td>
+<td>3 596 162 $ US</td>
+</tr>
+<tr>
+<td>Super Good Cents Homes</td>
+<td>994 740 $ US</td>
+</tr>
+<tr>
+<td>Efficacité des appareils</td>
+<td>10 186 $ US</td>
+</tr>
+<tr>
+<td>Pommes de douches et aérateurs de robinets</td>
+<td>15 896 $ US</td>
+</tr>
+<tr>
+<td><strong>Coût total pour les résidences</strong></td>
+<td><strong>4 616 984 $</strong></td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td><strong>PROGRAMMES POUR LES ENTREPRISES COMMERCIALES</strong></td>
+</tr>
+<tr>
+<td>Energy Smart Design</td>
+<td>204 463 $ US</td>
+</tr>
+<tr>
+<td>Éclairage des voies publiques</td>
+<td>295 469 $ US</td>
+</tr>
+<tr>
+<td>Gestionnaire du programme de conservation des ressources</td>
+<td>3 710 $ US</td>
+</tr>
+<tr>
+<td><strong>Coût total pour les entreprises commercialess</strong></td>
+<td><strong>503 642 $ US</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Après la décision de BPA de ne plus apporter de soutien financier au plan de conservation 1992 projet, la municipalité a dû chercher d'autres sources de financement. En 1994, elle s'est jointe à six autres municipalités pour former l'Oregon Municipal Electric and Conservation Agency (OMECA). OMECA a conclu une entente de deux ans avec BPA comprenant l'émission d'obligations municipales, dont le capital et les intérêts seraient payés par BPA, pour constituer un capital pour les programmes de conservation. Cette entente a procuré à la municipalité d'Ashland environ 410 000 $ US en 1995 et 510 000 $ US en 1996. À l'échéance de l'entente à la fin de 1996, les programmes de conservation d'Ashland étaient financés par les services municipaux. Malgré tous les changements survenus dans le financement au cours des ans, les programmes et les services sont demeurés, aux yeux des consommateurs, les mêmes que lorsqu'ils étaient financés par BPA.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>La municipalité ne s’était pas fixé d’objectifs quantifiables en ce qui concerne plusieurs de ses programmes de conservation et de ce fait, n’était pas tenue d’en vérifier les économies pour le compte d’un organisme de contrôle supérieur. Par conséquent, il y avait très peu de suivi, de vérification et d’évaluation des programmes qui se faisait, excepté dans le cas des programmes parrainés par le BPA. Pour ces programmes, la municipalité devait soumettre des rapports mensuels à BPA qui détaillaient les taux de participation, la sorte de mesures qui étaient installées dans les bâtiments participants et les coûts. Les résultats du programme Super Good Cents Homes étaient vérifiés au moyen d’inspections sur place effectuées conjointement par BPA et des employés municipaux.</p><!-- Results_B already contains P tags.-->
+<h2>Réaction</h2>
+<p>Les leaders des programmes rédigeaient des rapports qui étaient remis au conseil municipal, et occasionnellement, les médias locaux traitaient des succès obtenus. Les participants recevaient peu de rétroaction directe bien qu'indirectement, quand ils recevaient leurs factures d'électricité, ils étaient à même de constater qu'elles avaient baissé et qu'ils jouissaient d'un meilleur confort dans leurs maisons.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>De 1980 à 1994, les programmes d'éfficacité énergétique financés par BPA ont généré des économies d'électricité cumulatives de près de 65 805 mWh, résultant en des économies cumulatives de capacité de production d'un peu plus de 1aMW; environ 73 % de ces économies étaient reliées au secteur résidentiel. À lui seul, le Programme d'intempérisation des résidences était responsable d'économies annuelles de 5 046 mWh, soit plus de la moitié du financement total des programmes par BPA au cours de cette période. Le programme Super Good Cents Homes a généré les deuxièmes économies les plus élevées soit 1 747 mWh par année. Le principal programme pour le secteur commercial d'Ashland, Energy Smart Design, a généré des économies annuelles de 1 643 mWh.</p>
+<p>À la fin de 1994, des économies quotidiennes en eau de 290 000 gallons avaient été réalisées grâce aux programmes de conservation de l'eau, reportant ainsi à 2021 la nécessité d'un réseau amélioré d'approvisionnement en eau. Le plan de conservation des eaux n'avait pas encore été complètement mis en oeuvre à ce moment-là, ce qui fait que ces résultats étaient en deçà de l'objectif de 500 000 gallons économisés quotidiennement. Les programmes de conservation des eaux ont aussi généré des économies en électricité estimées à 514 mWh annuellement et ce, à cause du chauffage à l'eau et d'une diminution du volume des eaux usées de 43 millions de gallons par année.</p>
+<p>Les avantages économiques des programmes de conservation de la municipalité d'Ashland dépassaient, pour les contribuables, la dimension des comptes moins élevés pour les services et retardaient du même coup les dépenses inhérentes à la construction d'un nouveau barrage. La mise en oeuvre de certains aspects du programme a nécessité de la main-d'oeuvre et des matériaux, ce qui a créé des occasions d'affaires dans la communauté et ouvert un marché aux entrepreneurs créatifs.</p>
+<p>La municipalité d'Ashland était bien reconnue pour ses hauts taux de participation aux activités de conservation, mais le niveau de participation générale ne pouvait pas être quantifié à cause du chevauchement possible des différents projets. Le programme d'intempérisation des résidences a connu le meilleur taux de participation, avec 2 378 ménages entre 1982 et 1994. Le programme a connu son plus haut taux d'activité au cours de ses premières années d'existence et a plafonné après 1987. Le programme Super Good Cents a aussi eu un impact substantiel alors que près de 1 000 projets de construction réalisés par 69 constructeurs locaux étaient conformes aux normes du programme dès 1994. La participation à ce programme s'est accrue de façon régulière au cours de cette période, puisque le marché immobilier d'Ashland tendait à favoriser les maisons accréditées SGC. En réalité, l'évaluation du programme Super Good Cents faite par BPA à l'échelle régionale a révélé qu'une majorité de consommateurs envisageraient de dépenser quelque 4 000 $ US de plus pour une nouvelle maison contenant les caractéristiques d'efficacité énergétique. Energy Smart Design, le principal programme de la municipalité pour les entreprises commerciales, comptait 59 participants entre 1991 et 1994. D'autres programmes ont contribué au remplacement de 75 chauffe-eau, de presque 800 pommes de douches et de 1 263 poteaux de lumière. On estimait la durée de vie problable à 30 ans en ce qui concerne les mesures des programmes d'intempérisation des résidences et Super Good Cents, à 16 ans pour les mesures à l'intention du secteur commercial et 10 ans pour les programmes d'efficacité des appareils.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Director of Administrative Services, Department of Community Development<br/>
+City of Ashland<br/>
+20 East Main St.<br/>
+Ashland, OR 97520<br/>
+Téléphone : (541) 552-2061<br/>
+Fax : (541) 488-5311<br/>
+Courriel : <a href="«mailto:wandersd@Ashland.or.us»wandersd@Ashland.or.us&lt;/a"><br/>
+</a><a href="»http://www.ashland.or.us»">www.ashland.or.us</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><b>Programmes d’efficacité énergétique</b></p>
+<p>En 1982, la municipalité d’Ashland a implanté le Programme d’éclairage des voies publiques de BPA, en remplacement des poteaux d’éclairage à lumière de sodium à haute pression efficace et le Programme d’intempérisation des résidences. Dans le cadre de cette dernière initiative, la ville offrait des vérifications énergétiques gratuites pour les résidences (<a href="/Francais/ToolsofChange/default.asp?Section=Home">Visites à domicile</a>) afin d’identifier les mesures d’intempérisation nécessaires incluant l’isolation, le remplacement de la fenestration, des couvertures pour chauffe-eau, de même que le calfeutrage et la pose de coupe-froid. Les vérifications duraient entre une et trois heures; elles étaient effectués par des employés municipaux dûment formés et reconnus pour les programmes de BPA. Les participants se voyaient offrir des subventions en espèces allant jusqu’à 60 % du coût total d’installation des mesures identifiées lors des vérifications, ou jusqu’à 100 % pour les résidants à faible revenu (<a href="/Francais/ToolsofChange/default.asp?Section=Financial">Mesures financières incitatives</a>). Pour ce qui est de tous les autres programmes parrainés par BPA, les niveaux d’encouragement ont été déterminés par BPA basés sur l’efficacité des coûts au plan régional comparativement aux coûts pour ajouter à la capacité de production d’électricité. Un programme de prêts, fourni conjointement avec la Valley of the Rogue Bank, avait été rendu disponible pour financer les coûts d’installation. En 1991, BPA a ajouté le programme Energy Smart Design (conception économiseur d’énergie), un programme semblable aux programmes de vérifications énergétiques gratuites et aux subventions en espèces pour les propriétaires d’immeubles commerciaux.</p>
+<p>Bien que le Programme d’intempérisation des résidences de BPA était exclusivement axé sur l’électricité, la municipalité d’Ashland était à la recherche d’appui de la part d’autres partenaires afin d’étendre ses efforts pour inclure des solutions de rechange au chauffage au mazout. C.P. National Gas Company, fournisseur de gaz naturel d’Ashland, a effectué des vérifications énergétiques gratuites dans les résidences chauffées au gaz naturel et offrait de l’aide financière pour la réalisation de projets d’intempérisation. La municipalité effectuait aussi des vérifications énergétiques dans les foyers chauffés par des poêles à bois, et l’Oregon Department of Energy (ODOE) contribuait au financement des mesures d’intempérisation de ces foyers, tout comme ceux chauffés au mazout, au gaz propane, au butane et au kérosène.</p>
+<p>Les clients résidentiels étaient aussi admissibles à des remises en espèces à l’achat de chauffe-eau éconergétiques. (<a href="/Francais/ToolsofChange/default.asp?Section=Financial">Mesures financières incitatives</a>). Pour les clients qui envisageaient de changer leur système de chauffage, la ville procédait à des analyses et calculs de perte thermique ainsi qu’à des comparaisons de coûts opérationnels. Des prêts personnels étaient aussi disponibles à la Valley of the Rogue Bank pour compléter l’amélioration des systèmes de chauffage (<a href="/Francais/ToolsofChange/default.asp?Section=Barriers">Surmonter les obstacles spécifiques</a>).</p>
+<p>Le projet Super Good Cents New Homes, mis en oeuvre en 1985, incitait par des mesures financières les constructeurs à dépasser les normes d’efficacité énergétique du Oregon Building Code pour les nouveaux projets de construction résidentielle (<a href="/Francais/ToolsofChange/default.asp?Section=Financial">Mesures financières incitatives</a>). Les maisons participantes étaient accréditées, ce qui en augmentait la valeur sur le marché immobilier d’Ashland, lequel était axé sur la conservation, et une enseigne portant le logo du programme était installée sur la pelouse pour indiquer que le propriétaire participait au programme (<a href="/Francais/ToolsofChange/default.asp?Section=Norm">Attrait des normes</a>). La ville offrait aussi de l’aide technique aux constructeurs pour qu’ils respectent les normes du programme.</p>
+<p><b>Programmes de conservation de l’eau, de la qualité de l’air et de recyclage</b></p>
+<p>L’initiative de Ashland a évolué pour inclure des politiques et des programmes de conservation de l’eau, de la qualité de l’air, de recyclage et de compostage. Les efforts de la ville en matière d’efficacité énergétique ont servi de modèle pour ces derniers ajouts, et des comités consultatifs de citoyens ont été formés afin de permettre à la communauté de participer à la conception des programmes de conservation. Le comité pour la conservation des eaux a été formé par des bénévoles ayant répondu à une annonce, tandis que les membres des comités sur la qualité de l’air, le recyclage et le transport ont été nommés par le maire et le conseil municipal.</p>
+<p>Les clients résidentiels étaient admissibles à des vérifications gratuites de leur système d’alimentation en eau comprenant la détection des fuites et l’inspection des toilettes et des pommes de douches. Les vérifications duraient entre une demi-heure et une heure et demie, et elles étaient effectuées par l’analyste des eaux de la ville qui avait été formé en visitant ces mêmes services en Californie. American Waterworks fournissait de la formation supplémentaire. Le programme de conservation des eaux comprenait aussi le remplacement gratuit des pommes de douches, des rabais sur le remplacement des toilettes, de même qu’une restructuration de la taxe d’eau vers un système de tarification renversée où les tarifs augmentent selon l’usage (<a href="/Francais/ToolsofChange/default.asp?Section=Financial">Mesures financières incitatives et dissuasives</a>).</p>
+<p>Le programme d’amélioration de la qualité de l’air offrait des prêts à faible taux d’intérêt, de même que des récompenses en espèces pour l’intempérisation des maisons et le remplacement des poêles à bois. La ville a adopté des ordonnances en matière de qualité de l’air qui exigeaient que les poêles soient munis de systèmes de brûlage sans résidu et qui réglementaient ce qui pouvait être brûlé, de même que la densité de la fumée.</p>
+<p>Un centre de recyclage a été établi pour coordonner les activités de recyclage d’Ashland. Le centre parrainait aussi des colloques sur le compostage et offrait des rabais aux participants pour l’achat d’équipement de compostage. Le State's Department of Environmental Quality parrainait des présentations sur la lombriculture dans les écoles participantes. Le conseil scolaire a aussi embauché un gestionnaire pour le programme de conservation des ressources qui serait responsable des programmes de conservation de l’électricité et de l’eau dans les écoles.</p>
+<p><b>Mise en marché des programmes</b></p>
+<p>La ville a utilisé toute une série de techniques de marketing pour promouvoir ses programmes de conservation axés sur des économies d’énergie et d’argent, et sur l’amélioration du confort des maisons. Les vérifications énergétiques de même que l’implantation de mesures de modernisation ont été annoncées au moyen d’encarts envoyés avec les factures d’électricité postées à l’automne alors que les gens commencent à penser au chauffage. Ce moyen de publicité faisait en sorte que la presque totalité des ménages étaient rejoints. Les encarts comportaient suffisamment de renseignements de base concernant les programmes et les économies possibles pour inciter les gens à appeler la municipalité pour obtenir de plus amples renseignements, tout en étant simples à consulter de façon à ce que les gens soient portés à les lire. La municipalité a aussi annoncé ses programmes dans le cahier « Améliorations domiciliaires » du journal local et dans des émissions d’intérêt public sur les ondes de la radio locale tels les matches de football de l’école; elle a fait des présentations à des groupes locaux et a mis en ondes des vidéos sur les réseaux de la télévision communautaire (<a href="/Francais/ToolsofChange/default.asp?Section=Media">Médias</a>). Le programme Super Good Cents a aussi été publicisé par un kiosque au salon des constructeurs d’habitations du comté.</p>
+<p>Le bouche à oreille (<a href="/Francais/ToolsofChange/default.asp?Section=Word">De bouche à oreille</a>) est l’outil de marketing qui s’est avéré, et de loin, le plus efficace dans la promotion des programmes. Bien qu’il n’y ait eu aucun moyen formel d’encourager les participants à partager l’information relativement aux programmes, la municipalité comptait sur le fait que les participants parlent des économies qu’ils réalisent à leurs amis et voisins. Les employés municipaux constituaient aussi un instrument de publicité pour diffuser l’information par le bouche à oreille. Les inspecteurs en bâtiments ainsi que d’autres personnes du Planning and Building Department connaissaient les programmes tels que Super Good Cents et aidaient à cibler les nouveaux projets de construction en s’assurant que les constructeurs les connaissaient. Les constructeurs accrédités encourageaient leurs clients éventuels à communiquer avec la municipalité afin de connaître les options disponibles en ce qui concernait les mesures d’intempérisation telles l’isolation et la fenestration.</p>
+<p><b>Notes</b></p>
+<p>Les initiatives de conservation de la municipalité d’Ashland démontrent ce qui peut être accompli par le biais de l’action communautaire. Un leadership fort de même que la participation enthousiaste de la population progressive d’Ashland ont permis à la municipalité de se mériter le rôle de leader pour les divers programmes de conservation de la région Nord-Ouest du Pacifique.</p>
+<p>Il serait très difficile d’appliquer intégralement le programme de conservation des ressources de la municipalité d’Ashland puisqu’il est composé d’un grand nombre de programmes plus petits, et aussi parce que le soutien financier de même que les compétences en matière de conception de programmes de BPA ont contribué pour une large part à l’élaboration précoce de ces initiatives. Par contre, des composantes individuelles peuvent et ont été transférées à d’autres municipalités. La municipalité d’Ashland a fourni de la formation à d’autres communautés désireuses d’implanter des programmes similaires, en particulier les initiatives de conservation des eaux, puisque Ashland a été la première de la région à entreprendre de tels programmes.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

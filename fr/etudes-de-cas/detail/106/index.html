@@ -1,0 +1,327 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a></li>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Southern California Edison</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Fabricants et détaillants participants</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p>Au-delà de 2 millions d'ampoules fluorescentes compactes ont été vendues par le biais du programme résidentiel, résultant en des économies d'électricité cumulatives de plus de 200 000 mWh de 1992 à 1994, et des économies anticipées sur la durée de vie de plus de 650 000 mWh. Le programme commercial a produit des résultats semblables. Les programmes ont amené huit fois plus de détaillants à offrir des ampoules fluorescentes compactes.</p><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Programme « Vente d'ampoules fluorescentes compactes »</h1>
+<p>Pour contrer le principal obstacle à l'utilisation, par ses clients résidentiels et commerciaux, d'ampoules fluorescentes compactes (AFC) plutôt que d'ampoules incandescentes moins éconergétiques, Southern California Edison, un service public d'électricité américain, en a diminué le prix. À la différence des programmes de rabais traditionnels offrant des rabais directement au consommateur, le service public a offert des rabais de 5 $ par ampoule aux fabricants d'ampoules fluorescentes compactes. Le rabais augmentait au détail avec la marge sur coût de revient, pour être encore plus important au moment d'atteindre le consommateur. Ce programme a par la suite été adopté par d'autres services publics du pays qui l'ont utilisé comme modèle.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>Southern California Edison (SCE), une filiale de SCEcorp., était le deuxième service public d'électricité en importance aux États-Unis au moment de l'implantation du programme, desservant au-delà de 4,1 millions de clients du centre et du sud de la Californie. Son territoire comptait plus de 11 millions de personnes. Entre 1973 et 1994, SCE se classait parmi les chefs de file en matière de gestion axée sur la demande (GAD), dont les activités visaient à encourager les clients à modifier leur niveau de consommation et leur façon d'utiliser l'électricité. Durant cette période, la SCE a dépensé presque 1,2 milliard de dollars sur des programmes GAD.</p>
+<p>À l'intérieur du territoire desservi par la SCE, c'est plus de 100 millions de douilles d'ampoules qui ont été ciblées par les programmes de gestion axée sur la demande en vue de la fourniture d'éclairage plus efficace. Une étude effectuée en 1994 par l'American Council for an Energy-Efficient Economy a démontré que même si les ampoules fluorescentes compactes (AFC) consommaient d'un tiers à un quart de l'énergie exigée par les ampoules incandescentes, elles n'étaient utilisées que dans moins de 2 % de toutes les douilles au pays. Ce peu d'utilisation s'expliquait principalement par le prix, puisque à cette époque, les ampoules fluorescentes compactes (AFC) coûtaient de 10 à 30 fois le prix des ampoules incandescentes. Les approches antérieures visant à encourager l'utilisation des ampoules fluorescentes compactes, telle l'installation directe, n'ont pas réussi à transformer le marché de façon durable et ont forcé la SCE à rechercher de nouvelles approches.</p>
+<p>Après avoir mené un programme pilote pour essayer différentes méthodes de réduction des prix des AFC pour sa clientèle résidentielle, le SCE a décidé que l'approche la plus efficace était d'offrir ces rabais aux fabricants des ampoules. Ce programme, intitulé « Lumières fluorescentes compactes (LFC) », a été lancé à grande échelle en juillet 1992. Cette approche a ensuite été étendue à la clientèle commerciale en 1993, dans un programme séparé appelé « Ampoules fluorescentes compactes (AFC) ». Les deux programmes se sont poursuivis jusqu'à la fin de 1994 alors qu'ils ont été annulés suite à d'importantes compressions budgétaires appliquées au programme GAD du service.</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p><strong>Programme résidentiel</strong></p>
+<ul>
+<li>950 000 LFC vendues grâce au programme en 1992, 467 000 en 1993, 613 000 en 1994</li>
+</ul>
+<p> </p>
+<p>Comme le rabais par LFC est demeuré constant à 5 $, le nombre de lumières à être remplacées par le programme a été établi en fonction des prévisions budgétaires annuelles. En 1992, l'objectif initial du programme LFC a été fixé à 518 000 unités, pour être plus tard relevé à 950 000. À cause des restrictions budgétaires, les montants affectés aux rabais ont été revus à la baisse pour 1993 et 1994 pour se situer à 467 000 et 613 000 lumières respectivement.</p>
+<p><strong>Programme commercial</strong></p>
+<ul>
+<li>455 000 AFL en 1993 et 321 000 en 1994.</li>
+</ul>
+<p> </p><!-- Objectives already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>En 1991, le SCE a lancé un programme pilote comprenant trois phases afin d'essayer différentes manières d'abaisser le prix de détail des AFL pour stimuler la demande du marché résidentiel. La première phase du programme consistait en des coupons-rabais détachables de 5 $ distribués directement aux consommateurs par le biais des journaux locaux. Dans la deuxième phase, les coupons-rabais de 5 $ ont été distribués par courrier et dans les présentoirs des points de vente. Ces deux stratégies combinées ont entraîné le remplacement de quelque 29 000 ampoules en 8 mois, dont les frais généraux permanents comptaient pour 70 % du coût total. Ces stratégies ne se sont pas avérées fructueuses ou rentables, c'est pourquoi d'autres approches ont été évaluées.</p>
+<p>Dans la troisième phase du programme pilote, le rabais de 5 $ par ampoule a été offert à trois fabricants plutôt qu'aux consommateurs. Le rabais était appliqué au prix de gros et augmentait au détail avec la marge sur coût de revient, pour être encore plus important au moment d'atteindre le consommateur. Durant la période d'essai de trois semaines, 170 000 unités ont été vendues. Les frais généraux permanents ne comptaient que pour 29 % coût total. Compte tenu de ces résultats, cette troisième méthode a été retenue pour implantation à grande échelle.</p>
+<p>Lorsque le programme commercial a été élaboré, on a supposé que la même démarche du rabais au fabricant serait le moyen le plus efficace d'encourager l'utilisation des AFL. Le programme a fait l'objet d'un marché-test en 1993 dans la région de Palm Springs et on a vendu 455 139 ampoules. En raison des résultats du marché-test, le programme a été implanté à grande échelle au début de 1994.</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>Le programme résidentiel AFC a débuté sur une grande échelle en juillet 1992. Des demandes de propositions ont été faites à trente-cinq fabricants de AFC. Seize ont répondu à la demande et neuf ont choisi de signer des ententes avec la SCE. Deux autres fabricants se sont joints au programme en 1993.</p>
+<p>Le montant total de l'ensemble des rabais a été déterminé en fonction du budget alloué au programme pour l'année. Les fabricants participants se sont vus attribuer une part de l'ensemble du programme basée sur plusieurs éléments incluant leurs capacités de distribution, leur apport au marché, leurs critères de rendement et leur propre contribution à la réduction des prix. Le système de pointage a contribué à maximiser les rabais au consommateur tout en réduisant les coûts de mise en marché et de distribution pour le programme. De plus, cela a aidé la SCE à orienter le marché des AFC vers les fabricants produisant des ampoules à haut facteur de puissance, à basse distorsion harmonique, à hauts lumens par watt et à haut rendu de couleur.</p>
+<p>Les fabricants ont reçu des rabais de 5 $ par AFC pour la portion de leur inventaire devant être vendue sur le territoire desservi par le service public d'électricité. Le service public d'électricité a stipulé que les économies seraient transmises vers le bas, tirant avantage de la marche normale du procédé de vente au détail pour augmenter le rabais au client (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives / Dissuasives</a>). La marge bénéficiaire sur les produits d'éclairage au détail était généralement de l'ordre de 67 % de son prix de gros; ainsi la réduction de 5 $ accordée sur le prix de gros et découlant des rabais s'est concrétisée par une réduction de 8,35 $ pour le client (soit 5 $ de rabais sur le prix de gros plus la marge bénéficiaire de 67 % équivalant à 3,35 $). Les fabricants ont bénéficié d'un certain niveau de flexibilité en ce qui concerne la façon de disposer de l'argent provenant de leurs rabais. Le dollar de réduction par modèle pouvait être redistribué de façon à donner des rabais plus élevés sur les produits plus coûteux au détriment des moins chers, du moment que le rabais moyen demeurait à 5 $ par ampoule.</p>
+<p>Les fabricants étaient invités à accorder des réductions supplémentaires sur les prix afin d'abaisser davantage le coût des ampoules, et ils en étaient récompensés par le système de pointage. La plupart des fabricants acceptaient de le faire puisqu'ils étaient susceptibles de se mériter une plus grande part du marché des AFC. Les contributions des fabricants se sont situées en moyenne à 1,50 $ par AFC, augmentant à environ 9,85 $ le rabais total accordé au consommateur (soit presque deux fois l'investissement initial du SCE!).</p>
+<p>On demandait aux fabricants d'écouler 30 % de l'inventaire prévu pour le programme de rabais en trois semaines, 60 % en huit semaines et 100 % en douze semaines. Si un fabricant ne respectait pas ses échéanciers ou critères de rendement, ses rabais étaient redistribués à d'autres.</p>
+<p>En se basant sur le succès obtenu par le programme résidentiel, un programme commercial a fait l'objet d'un marché-test en 1993 et a été mis en ?ìuvre sur une grande échelle en 1994. Le programme commercial, intitulé le Programme AFL a élargi les rabais pour comprendre non seulement les ampoules fluorescentes compactes à douille filetée mais aussi les luminaires câblés et les trousses d'installation après coup. Les rabais étaient assignés par catégorie de produit et variaient de 5 $ pour les trousses d'installation après coup et les ampoules à douille filetée, et à 10 $ pour les luminaires.</p>
+<p><strong>Marketing</strong></p>
+<p>Les fabricants participants ont mené l'ensemble des activités de marketing pour les deux programmes. Ils étaient responsables de la publicité sur les produits, de la fourniture d'affiches et de présentoirs dans les allées chez les détaillants, d'une meilleure connaissance du produit chez leurs marchands et de la livraison des produits dans des emballages spéciaux ou portant des étiquettes aux couleurs vives indiquant que le produit était disponible à un prix spécial grâce à la collaboration de la SCE (<a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a>).</p>
+<p>La SCE a commercialisé ses programmes à la foire commerciale ECO EXPO de Los Angeles et a invité les services publics avoisinants à y participer. Elle a aussi mis sur pied une tribune téléphonique sans frais afin de fournir aux clients tous les renseignements et les dépliants au sujet des produits et des programmes en général, ainsi que sur les marchands participants.</p>
+<p><strong>Surmonter des obstacles spécifiques</strong></p>
+<p>Certains fabricants étaient opposés au programme et ont refusé d'y participer, particulièrement les détenteurs de larges parts du marché des ampoules incandescentes qui ne voulaient en aucun cas voir leur marché passer aux ampoules fluorescentes compactes. Quelques-uns ont même opté pour des produits autres que les AFC à l'intérieur du territoire de la SCE. Cependant, la SCE a découvert que plusieurs autres fabricants n'attendaient que l'occasion de les remplacer, voyant dans le programme la possibilité intéressante de s'accaparer une part de marché.</p>
+<p>Une autre difficulté rencontrée a été l'écoulement des produits à prix réduits à l'extérieur du territoire de la SCE puisqu'il n'y avait aucun moyen de s'assurer de l'endroit où les ampoules achetées étaient utilisées. La SCE a résolu ce problème en encourageant les services publics avoisinants à mettre en ?ìuvre des programmes semblables, dans certains cas essentiellement en administrant le programme à leur place, puis leur facturant des frais pour l'administration et le matériel.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td>Aperçu des coûts</td>
+<td>Frais d'administration</td>
+<td>Coûts des mesures incitatives</td>
+<td>Coût total du programme</td>
+</tr>
+<tr>
+<td>LFC</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>1992</td>
+<td>407 496 $</td>
+<td>4 413 144 $</td>
+<td>4 820 639 $</td>
+</tr>
+<tr>
+<td>1993</td>
+<td>203 146 $</td>
+<td>2 090 676 $</td>
+<td>2 293 822 $</td>
+</tr>
+<tr>
+<td>1994</td>
+<td>267 673 $</td>
+<td>2 726 700 $</td>
+<td>2 994 373 $</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>878 315 $</td>
+<td>9 230 519 $</td>
+<td>10 108 834 $</td>
+</tr>
+<tr>
+<td>AFC</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>1993</td>
+<td>14 691 $</td>
+<td>2 469 029 $</td>
+<td>2 483 720 $</td>
+</tr>
+<tr>
+<td>1994</td>
+<td>113 462 $</td>
+<td>1 719 413 $</td>
+<td>1 832 876 $</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>128 153 $</td>
+<td>4 188 442 $</td>
+<td>4 316 595 $</td>
+</tr>
+</tbody>
+</table>
+<p>Le fait de refiler la responsabilité de la mise en marché et du suivi aux fabricants participants a permis à la SCE de réduire ses frais d'administration. En ce qui concerne le programme résidentiel, les frais d'administration représentaient moins de 9 % du coût total, le reste étant alloué aux rabais sur les produits. Quant au programme commercial, ce pourcentage était même plus bas, soit plus ou moins 6 % du coût total, puisque la structure du programme était déjà en place au moment de son implantation.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Le nombre d'ampoules vendues par le biais du programme était facilement suivi puisque, par sa conception, le programme avait prévu un dispositif d'auto surveillance qui confiait la responsabilité du suivi du service public au fabricant. Les fabricants devaient présenter une « Preuve de rendement » comprenant tous les documents d'approvisionnement et d'expédition, et le rabais était émis après vérification des ventes des produits alloués. L'exigence de vérifier qu'un pourcentage spécifique d'ampoules avaient été vendues dans des limites de temps préétablies faisait en sorte que la SCE savait exactement combien d'ampoules avaient été vendues tout au long du programme.</p>
+<p>Le personnel de la SCE a, tout au long de l'année, effectué des inspections sur place chez ses détaillants participants, recueillant des données sur les numéros modèle et les inventaires afin de définir les modèles de distribution et les parts de marché, ainsi que s'assurer que les produits étaient correctement marqués d'un prix et l'approvisionnement suffisant. Les inspecteurs vérifiaient aussi l'espace d'étalage des produits à rabais de même que les présentoirs des produits spéciaux.</p>
+<p>Afin d'évaluer les économies d'énergie générées par le programme AFC, la SCE a effectué en 1993, une Étude sur l'éclairage résidentiel pour se constituer une mesure de base des types d'éclairage résidentiel. L'Étude a nécessité des relevés sur place de plusieurs centaines de résidences de la région pour recueillir des données quant au nombre de luminaires, quantité et genres d'ampoules et pièces où elles étaient utilisées, le nombre d'heures utilisées et à quel moment. Au cours de l'étude de suivi menée en 1994, la SCE a effectué des entrevues téléphoniques auprès de plus 500 clients qui avaient acheté des AFC au prix réduit du programme. Les données recueillies ont servi à établir le pourcentage d'ampoules installées et leur utilisation, de même qu'à définir le pourcentage d'ampoules achetées par le biais du programme et utilisées à l'extérieur du territoire desservi par la SCE. La SCE a aussi comparé ces données sur les modèles d'utilisation finale en éclairage résidentiel avec celles des services publics avoisinants afin de confirmer ses propres constatations.</p><!-- Results_B already contains P tags.-->
+<h2>Réaction</h2>
+<p>Aucune rétroaction directe n'a été donnée aux participants, quoique les clients ont reçu une certaine rétroaction indirecte grâce à une plus longue durée de vie des ampoules fluorescentes compactes comparativement aux ampoules incandescentes et des factures d'électricité moins élevées, grâce à l'utilisation d'ampoules conergétiques. (<a href="/Francais/ToolsofChange/default.asp?Section=Motivation">Soutenir la motivation au fil du temps</a>).</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>Durant ses trois années d'existence, le programme résidentiel AFC a vu le changement de plus de 2 millions d'ampoules dont 950 000 unités vendues en 1992, 466 374 unités vendues en 1993 et 613 417 unités vendues en 1994. On évalue à 13 % le nombre d'ampoules vendues aux consommateurs et utilisées dans des résidences en dehors du territoire desservi par la SCE. Par le biais du programme commercial AFC, 455 139 unités ont été vendues en 1993 et 321 058 unités en 1994. Dans le cas des deux programmes, la totalité du quota d'ampoules prévues au budget pour chaque année a été vendue.</p>
+<p>Le programme résidentiel a résulté en des économies d'électricité de 47 382 mWh pour la durée du programme pilote et la première année complète du programme, suivies d'économies de 22 800 mWh et 30 875 mWh en 1993 et 1994, respectivement, s'élevant à des économies cumulatives de 202 114 mWh de 1992 à 1994 et des économies anticipées de durée de vie de plus de 650 000 mWh. Le programme commercial a même produit des économies d'électricité plus importantes, l'éclairage comptant pour une plus grande proportion dans la consommation électrique que l'utilisation résidentielle. Les économies totales du programme commercial se sont élevées à 70 416 mWh pour 1993 et 48 563 mWh pour 1994, totalisant des économies cumulatives de 237 958 mWh et des économies anticipées de durée de vie de 773 365 mWh dans l'hypothèse de 1 000 heures d'utilisation par année par ampoule et une durée de vie moyenne de 6 500 heures d'éclairage pour une AFC (les ampoules vendues par le biais du programme ayant une durée de 6,5 années.)</p>
+<p>La participation des fabricants au programme AFC est passée de 3 durant la phase pilote en 1991 à 11 en 1994. La participation des détaillants a pour sa part beaucoup plus progressé tout au long du programme. Avant le programme, environ 100 magasins dans le territoire desservi par la SCE tenaient des AFL en inventaire et ces produits n'avaient que peu d'espace d'étalage ou de publicité. En 1994, plus de 800 détaillants offraient des AFC. Cette augmentation s'accompagnait de plus d'espace d'étalage pour les produits, de présentoirs spéciaux pour en faire la promotion et d'une meilleure connaissance des produits de la part des commis vendeurs. Dans le même ordre d'idées pour le programme commercial, la participation des fabricants s'est multipliée par 3, passant de 6 fabricants en 1993 à 18 en 1994, et le nombre de détaillants participants passant de 13 à 148.</p>
+<p>Les pressions de la compétition engendrées par les programmes ont incité plusieurs détaillants en rupture de stock des produits à rabais ou ne tenant pas lesdits produits, à baisser le prix de leurs unités AFC. Cette tendance s'est poursuivie sur huit semaines après la distribution des marchandises à rabais. Il est de plus évident que les programmes ont suscité la transformation à long terme du marché puisque les détaillants de la région ont déplacé le groupe de produits vers une marge réduite, menant à un prix de base moins élevé.</p>
+<p>Les programmes de rabais sur les ampoules fluorescentes compactes du SCE ont servi de modèle pour d'autres technologies et d'autres services publics. Le même modèle a été appliqué en 1993 pour le programme Moteur à haut rendement énergétique de la SCE et en 1994, pour le programme Moteurs à pompe à haut rendement énergétique pour piscines résidentielles. D'autres services publics se sont aussi servi du modèle des rabais aux fabricants dans leur portefeuille de gestion axée sur la demande (GAD.) En 1993, le Consortium for Energy Efficiency, conjointement avec un certain nombre d'organismes sans but lucratif, ont commencé à élaborer une initiative à l'échelle nationale pour promouvoir l'éclairage éconergétique des résidences et petits commerces, d'après le programme de la SCE pour servir d'exemple à d'autres services publics désirant implanter un tel programme.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Pas de contact disponible<br/>
+Southern California Edison <br/>
+(626) 302-8795<br/>
+<a href="http://www.sce.com">www.sce.com</a></p>
+<p>Le financement pour l'ajout de cette étude de cas a été généreusement fourni par le Fonds d’action pour le changement climatique du Gouvernement du Canada, Suncor, Syncrude, Enbridge Consumers Gas et TetraPak Canada Inc.</p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><b>Leçons apprises</b></p>
+<p>Les essais de différents modèles d'application de réduction du prix de détail des AFC au cours de la phase expérimentale ont permis à SCE d'identifier quelle méthode était fructueuse et rentable.</p>
+<p>En refilant l'ensemble de la responsabilité de la mise en marché et du suivi des produits aux fabricants, la SCE a pu réduire de façon marquée ses frais d'administration et maximiser la rentabilité du programme.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

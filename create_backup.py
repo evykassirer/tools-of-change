@@ -5,30 +5,28 @@ import urllib.request
 import re
 
 # TODO
+# - support french
 # - add planning guide
-# - support french --- add quicknav back, but only with the language option
 # - search:
 #     - topic, location, tool, landmark -- can scrape
 #     - keyword -- this might be harder, but still important, can search the page content
-# - case study pages: remove footer_left wrapper and put footer in parent wider div
 
+lang = "en"
 
 def generate_page(f, url, page_text, path_to_root, soup_adjuster=None, remove_intro_cap=True):
   scrape_images(page_text)
 
+  page_text = page_text.replace('href="http://www.toolsofchange.com/', f'href="{path_to_root}/')
   page_text = page_text.replace("/public/", f"{path_to_root}/public/")
   page_text = page_text.replace("/userfiles/", f"{path_to_root}/userfiles/")
-  page_text = page_text.replace("/en/home/", f"{path_to_root}/en/home/")
+  french_home_path = "/fr/accueil"
+  english_home_path = "/en/home/"
+  page_text = page_text.replace(french_home_path, f"{path_to_root}{french_home_path}")
+  page_text = page_text.replace(english_home_path, f"{path_to_root}{english_home_path}")
 
-  page_text = page_text.replace('href="/en/', f'href="{path_to_root}/en/')
+  page_text = page_text.replace(f'href="/{lang}/', f'href="{path_to_root}/{lang}/')
 
   soup = BeautifulSoup(page_text,"html.parser")
-  for remove_id in ["qnav"]:
-    div = soup.find('div', id=remove_id)
-    if div:
-      div.decompose()
-    else:
-      print(f"couldn't find #{remove_id} to remove for {url}")
 
   remove_classes = ["sponsor_box", "sidebar_body"]
   if (remove_intro_cap):
@@ -41,14 +39,37 @@ def generate_page(f, url, page_text, path_to_root, soup_adjuster=None, remove_in
       print(f"couldn't find .{remove_class} to remove for {url}")
 
   footer_right = soup.find('div', class_="footer_right")
-  for item in footer_right.find_all('li'):
-    if item.find('a').contents[0] in ["Search", "My Account"]:
-      item.decompose()
+  if lang == "en":
+    footer_exclusions = ["Search", "My Account"]
+  if lang == "fr":
+    footer_exclusions = ["Recherche", "Mon dossier"]
+  if footer_right:
+    for item in footer_right.find_all('li'):
+      if item.find('a').contents[0] in footer_exclusions:
+        item.decompose()
+  else:
+    print(f"no footer found!! for {url}")
+
+  corner_nav = soup.find('ul', id="quicknav")
+  if corner_nav:
+    for item in corner_nav.find_all('li'):
+      if not item.find('a').contents[0] in ["Français", "English"]:
+        item.decompose()
+  else:
+    print(f"no corner nav found!! for {url}")
+
 
   main_nav = soup.find('div', id="nav_container")
-  for item in main_nav.find_all('li'):
-    if item.find('a').contents[0] in ["Planning Guide"]:
-      item.decompose()
+  if lang == "en":
+    nav_exclusions = ["Planning Guide"]
+  if lang == "fr":
+    nav_exclusions = ["Planification"]
+  if main_nav:
+    for item in main_nav.find_all('li'):
+      if item.find('a').contents[0] in nav_exclusions:
+        item.decompose()
+  else:
+    print(f"no main nav found!! for {url}")
 
   if (soup_adjuster):
     soup_adjuster(soup)
@@ -96,21 +117,28 @@ def download_image(image_path):
 
 
 def generate_case_studies_homepage(page):
-  case_studies_home_url = "en/case-studies/"
+  if lang == "en":
+    case_studies_home_url = "en/case-studies/"
+  else:
+    case_studies_home_url = "fr/etudes-de-cas/"
   if not os.path.exists(case_studies_home_url):
     os.makedirs(case_studies_home_url)
   with open(case_studies_home_url + "index.html", "x") as f:
     page_text = page.text
-    page_text = page_text.replace("/en/case-studies/", "./")
+    page_text = page_text.replace(f"/{case_studies_home_url}", "./")
     generate_page(f, case_studies_home_url, page_text, "../..")
 
 def generate_tools_of_change():
-  url = "en/tools-of-change/"
+  if lang == "en":
+    url = "en/tools-of-change/"
+  else:
+    url = "fr/outils-de-changement/"
+
   page = requests.get("https://toolsofchange.com/" + url)
   if not os.path.exists(url):
       os.makedirs(url)
   with open(url + "index.html", "x") as f:
-    generate_page(f, "en/tools-of-change/", page.text, "../..")
+    generate_page(f, url, page.text, "../..")
 
   tools_soup = BeautifulSoup(page.content, "html.parser")
   tool_links = tools_soup.find('div', class_="left_content").find_all('a')
@@ -138,9 +166,13 @@ def generate_tools_of_change():
 
 
 def generate_topic_resources():
+  # (only relevant for english)
   download_image("/userfiles/Web-based social marketing resources-2023-V2.pdf")
 
-  url = "en/topic-resources/"
+  if lang == "en":
+    url = "en/topic-resources/"
+  else:
+    url = "fr/ressources-de-sujets/"
   page = requests.get("https://toolsofchange.com/" + url)
   if not os.path.exists(url):
       os.makedirs(url)
@@ -157,6 +189,11 @@ def generate_topic_resources():
     url = resource['href']
     if url[0] == "/":
       url = url[1:]
+    if url.startswith("http://www.toolsofchange.com/"):
+      url = url[len("http://www.toolsofchange.com/"):]
+    if url[-1] != "/":
+      url += "/"
+
     page = requests.get("https://toolsofchange.com/" + url)
     if not os.path.exists(url):
         os.makedirs(url)
@@ -186,15 +223,28 @@ def generate_case_study_pages(page):
 
 
 def generate_simple_pages():
-  for url in [
-    "en/contact-us/",
-    "en/workshops/",
-    "en/workshops/face-to-face/",
-    "en/about-us/",
-    "en/landmark/",
-    "en/help/", # TODO: remove thing about creating an account
-    "en/terms/",
-  ]:
+  if lang == "en":
+    urls = [
+      "en/contact-us/",
+      "en/workshops/",
+      "en/workshops/face-to-face/",
+      "en/about-us/",
+      "en/landmark/",
+      "en/help/", # TODO: remove thing about creating an account
+      "en/terms/",
+    ]
+  else:
+    urls = [
+      "fr/contactez-nous/",
+      "fr/ateliers/",
+      "fr/ateliers/présentations-personnalisé-par-webinaire/",
+      "fr/au-sujet-de-nous/", # TODO: tell dad this isn't translated
+      # Seems like landmark just isn't a thing in french..?
+      "fr/aide/",
+      "fr/modalités-d'utilisation/",
+    ]
+
+  for url in urls:
     page = requests.get("https://toolsofchange.com/" + url)
     if not os.path.exists(url):
         os.makedirs(url)
@@ -202,7 +252,11 @@ def generate_simple_pages():
       generate_page(f, url, page.text, "../..")
 
 def generate_homepage():
-  url = "en/home/"
+  if lang == "en":
+    url = "en/home/"
+  else:
+    url = "fr/accueil/"
+
   page = requests.get("https://toolsofchange.com/" + url)
 
   if not os.path.exists(url):
@@ -232,14 +286,24 @@ def generate_homepage():
     with open(url + "index.html", "x") as f:
       generate_page(f, url, page.text, "../../..")
 
-case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
 
 # os.makedirs("./public/images/")
 # os.makedirs("./userfiles/Image")
 # generate_stylesheets()
+
+# generate_homepage()
+# generate_simple_pages()
+# generate_topic_resources()
+# generate_tools_of_change()
+# case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
 # generate_case_studies_homepage(case_studies_homepage)
 # generate_case_study_pages(case_studies_homepage)
-# generate_tools_of_change()
-# generate_topic_resources()
-# generate_simple_pages()
+
+lang = "fr"
 generate_homepage()
+generate_simple_pages()
+generate_topic_resources()
+generate_tools_of_change()
+case_studies_homepage = requests.get("https://toolsofchange.com/fr/etudes-de-cas/?max=1000")
+generate_case_studies_homepage(case_studies_homepage)
+generate_case_study_pages(case_studies_homepage)

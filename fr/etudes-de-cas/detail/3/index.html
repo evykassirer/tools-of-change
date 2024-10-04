@@ -1,0 +1,342 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/visites-à-domicile/">Visites à domicile</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+<li><a href="../../../../fr/outils-de-changement/de-bouche-à-oreille/">De bouche à oreille</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Gouvernement de la Colombie Britannique</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>B.C. Hydro</li>
+<li>B.C. Gas</li>
+<li>Pacific Northern Gas</li>
+<li>West Kootenay Power</li>
+<li>Central Gas</li>
+<li>B.C. Credit Unions</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<p>Selon les estimations, il a été possible d'épargner 21 Gwh en énergie électrique; la consommation en gaz naturel a été réduite de 140 000 Gj; et la consommation en eau a décliné de 3,5 millions m<sup>3</sup> .</p>
+<table border="1" cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" complete="complete" height="26" src="/images/lightbulb.gif" width="27"/> <small><font face="Verdana">Conseil: Cliquez sur cette image pour l'agrandir. Cliquez votre bouton "Back" pour retourner à ce page.</font></small><hr color="#FFCC00"/>
+<p><font face="Verdana"><a href="/images/documentimages/BC21/BC21-1.jpg"><small><img alt="BC21 Image" border="0" complete="complete" height="112" src="/images/documentimages/BC21/BC21-1.jpg" width="167"/></small></a></font><font face="Verdana" size="1"><b><br/>
+            A First Nations staff person installing weather stripping in the Okanagan First Nations Community Project.</b></font><font face="Verdana"><br/>
+<br/>
+<a href="/images/documentimages/BC21/BC21-2.jpg"><img alt="BC21 Image" border="0" complete="complete" height="159" src="/images/documentimages/BC21/BC21-2.jpg" width="117"/></a><small><br/>
+</small></font><font face="Verdana" size="1"><b>A home visit team using a blower door test to measure home air leakage in the Okanagan First Nations Community Project.</b></font></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>BC21 PowerSmart</h1>
+<p>BC21 PowerSmart est un projet d'envergure provinciale ayant pour objet la sauvegarde des ressources et la création d'emploi. Les responsables effectuent des évaluations résidentielles pour mesurer l'efficacité énergétique et encouragent les résidants à prendre les mesures nécessaires pour mieux conserver l'énergie et l'eau. </p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>Au mois d'avril 1995, le gouvernement de la Colombie-Britannique a choisi d'appuyer les efforts des grandes sociétés d'électricité et de gaz, ainsi que des caisses populaires, en vue de lancer le programme <em>BC21 PowerSmart. </em>Au lieu de miser exclusivement sur la réduction de la consommation en gaz ou de la consommation en électricité, à l'instar de divers programmes préalables, les responsables ont opté pour une démarche intégrée qui englobait ce double objectif.</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p><em>BC21 PowerSmart </em>s'est fixé plusieurs objectifs :</p>
+<ul>
+<li>réduire de 3,8 m 3 la consommation en eau</li>
+<li>arriver à réduire de 21,7 Gwh la consommation en énergie électrique</li>
+<li>réduire de 145 000 Gj la consommation en gaz</li>
+<li>créer des emplois équivalant à 488 années-personnes</li>
+</ul><!-- Objectives already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>Les responsables ont retenu les services de quatre entrepreneurs pour mener des évaluations d'une heure sur l'efficacité énergétique dans leur région (<a href="../../../../fr/outils-de-changement/visites-a-domicile/">Visites à domicile</a>). À leur tour, ces entrepreneurs ont embauché et formé des équipes d'évaluation à domicile regroupant généralement un homme et une femme chacune. Une fois l'évaluation terminée, l'équipe offrait d'installer tout équipement de conservation d'énergie qui s'avérait nécessaire, en imposant une limite d'un produit de chaque catégorie par foyer. Ces produits comprenaient des articles tels que des enveloppes pour les réservoirs à eau chaude, de l'isolant pour les tuyaux, de l'isolant pour les portes et fenêtres, des pâtes, des bouchons de joints, des aérateurs de robinet, des réducteurs de chasse d'eau et des pommes de douche ménageant l'eau. En vue d'encourager les gens à participer au programme, l'évaluation et les produits étaient fournis gratuitement (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>).</p>
+<p>À la fin de chaque visite à domicile, les membres de l'équipe formulaient des recommandations sur d'autres mesures de conservation d'énergie à prendre. Ils remettaient aux occupants des dépliants d'information ainsi que des coupons rabais pour l'achat d'autres produits de conservation d'énergie comme des ampoules fluorescentes compactes, des foyers au gaz naturel, des fenêtres éconergétiques et des thermostats réglables. Moins de 1 pour cent des coupons rabais ont été encaissés.</p>
+<p>Plusieurs semaines après l'installation des produits, des employés des services publics se rendaient au domicile des participants pour s'assurer que les produits avaient été bien installés et que les occupants étaient satisfaits.</p>
+<p>Afin de promouvoir le programme, les responsables ont fait paraître des annonces à la télévision et à la radio, et plusieurs émissions radiophoniques ont présenté le projet (<a href="../../../../fr/outils-de-changement/medias/">Médias</a>). Des annonces placées dans les journaux et les revues invitaient les résidants à prendre rendez-vous pour une évaluation à domicile. Dans chaque collectivité, on a invité des représentants municipaux à visiter certaines résidences pour « assister » à l'installation des produits et ces événements ont fait l'objet de publicités. En outre, des pancartes publi citaires ont été affichées sur les autobus et des dépliants ont été expédiés en même temps que les factures de services publics. On a installé des stands pour faire la promotion du programme dans les centres commerciaux et lors d'événements spéciaux et de salons thématiques. Néanmoins, ces approches ont été jugées trop coûteuses et trop laborieuses.</p>
+<p>Même si la campagne publicitaire s'est avérée essentielle pour sensibiliser le public au programme <em>BC21 PowerSmart, </em>c'est surtout la communication de bouche à oreille qui a incité la plupart des gens à souscrire au programme (<a href="../../../../fr/outils-de-changement/de-bouche-a-oreille/">De bouche à oreille </a>). Entre 60 et 80 pour cent des personnes qui appelaient pour prendre rendez-vous avaient déjà parlé à un parent ou à un voisin ayant profité d'une visite à domicile et s'étant dit très satisfait des résultats.</p>
+<h3>Projet communautaire des Premières nations de l'Okanagan</h3>
+<p>Une version élargie du programme <em>BC21 PowerSmart </em>a été offerte dans la vallée de l'Okanagan. Il s'agissait d'un des quatre grands projets communautaires mis sur pied dans le cadre de <em>PowerSmart. </em>En plus de favoriser la con servation d'énergie et la création d'emploi, ce programme visait à former les membres des Premières nations et à améliorer la qualité du logement. Les visites à domicile étaient semblables à celles décrites ci-dessus.</p>
+<p>Un comité <em>BC21 PowerSmart </em>des Premières nations de l'Okanagan a été formé. Ce dernier, qui réunissait des représentants de chacune des six bandes participantes, devait permettre de glaner des renseignements sur les besoins particuliers de cette collectivité. Cet élément s'avérait essentiel au succès du programme, puisqu'il fallait tenir compte de plusieurs questions très délicates, y compris les frictions politiques entre les chefs de bandes et le gouvernement, de même qu'une méfiance généralisée envers le gouvernement. Il importait donc de présenter le projet comme étant tout à fait neutre. C'est pourquoi le gestionnaire du programme a choisi d'établir son bureau dans sa propre demeure, dans la vallée de l'Okanagan, plutôt que dans un édifice du gouvernement ou du conseil de bande. Afin de vaincre le scepticisme des occupants, on a embauché des membres des Premières nations dans le cadre du programme (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>).</p>
+<p>Des installateurs professionnels ont offert aux membres du personnel chargé d'effectuer les visites à domicile une formation sur place. Cette formation touchait divers domaines dont la technologie de base en construction, l'installation des produits, les services à la clientèle, la documentation et le rapport. Ceci leur permettait également d'offrir des services semblables aux membres de leur collectivité et de soumissionner sur des contrats émanant du gouvernement et des sociétés de services publics.</p>
+<p>Les participants au programme ont indiqué qu'ils étaient très satisfaits de la qualité des produits et services offerts. De plus, ils étaient heureux que le type de services fournis dans le cadre du projet leur soit profitable. Certains ont précisé qu'ils ne voyaient pas toujours à quoi servait l'aide monétaire allouée à leur collectivité et de quelle façon on la dépensait.</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>Vingt millions de dollars ont été investis au niveau du programme. À la fin de 1996, 15 millions de dollars avaient été dépensés au niveau des éléments suivants :</p>
+<table width="100%">
+<tbody>
+<tr>
+<td>Installations</td>
+<td>11 600 000 $</td>
+</tr>
+<tr>
+<td>Salaires</td>
+<td>1 240 000 $</td>
+</tr>
+<tr>
+<td>Projets spéciaux</td>
+<td>1 005 000 $</td>
+</tr>
+<tr>
+<td>Publicité et promotion</td>
+<td>900 000 $</td>
+</tr>
+<tr>
+<td>Frais généraux</td>
+<td>580 000 $</td>
+</tr>
+<tr>
+<td>Formation</td>
+<td>37 000 $</td>
+</tr>
+<tr>
+<td>Établissement du crédit</td>
+<td>25 000 $</td>
+</tr>
+<tr>
+<td>Autres</td>
+<td>125 000 $</td>
+</tr>
+<tr>
+<td>Sources de financement : Gouvernement de la C.-B.</td>
+<td>15 millions $</td>
+</tr>
+<tr>
+<td>B.C. Hydro</td>
+<td>3 millions $</td>
+</tr>
+<tr>
+<td>Services publics, caisses populaires et Greater Vancouver Regional District</td>
+<td>2 millions $</td>
+</tr>
+</tbody>
+</table>
+<p>Les participants au programme ont indiqué qu'ils étaient très satisfaits de la qualité des produits et des services offerts. De plus, ils étaient heureux que le type de services fournis dans le cadre du projet leur soit profitable. Certains ont précisé qu'ils ne voyaient pas toujours à quoi servait l'aide monétaire allouée à leur collectivité et de quelle façon on la dépensait.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>À la fin de chaque évaluation du domicile, l'installateur remplissait un formulaire décrivant les produits installés. Ces informations permettaient d'évaluer les économies réalisées au niveau de la consommation en eau et en énergie par suite du programme.</p>
+<p>En guise de suivi, un sondage était mené auprès de 5 000 participants pour connaître leur taux de satisfaction face à l'installation des produits et pour déterminer combien de produits additionnels les résidants avaient acheté suivant la visite à domicile. Même s'il s'agissait surtout d'entrevues téléphoniques, certaines avaient lieu lors des visites de vérification de la qualité. Les résultats de ce sondage n'étaient pas encore connus au mois de mars 1997.</p><!-- Results_B already contains P tags.-->
+<h2>Réaction</h2>
+<p>Les responsables du programme ont publié une lettre de remerciements dans les journaux locaux et diffusé des annonces la radio. Ces messages visaient à remercier tous les participants de la province de leur collaboration et leur indiquer combien d'eau et d'énergie ils avaient réussi à épargner.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>Au mois de juin 1996, les responsables estimaient que les épargnes réalisées se chiffraient ainsi :</p>
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td>Électricité</td>
+<td>21,2 Gwh</td>
+</tr>
+<tr>
+<td>Gaz naturel</td>
+<td>139 520 Gj</td>
+</tr>
+<tr>
+<td>Eau</td>
+<td>3 520 856 m<sup>3 </sup></td>
+</tr>
+</tbody>
+</table>
+<p>En tout, le programme avait réussi à créer 493,7 emplois-personnes au 30 juin 1996. De plus, 81 345 vérifications avaient eu lieu et les 27 caisses populaires avaient accordé 56 prêts (somme de 6 059 $ en moyenne) dans le cadre du programme de prêts.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Mike Tanner <br/>
+B.C. Hydro <br/>
+6911, Southpoint Drive (E 14) <br/>
+Burnaby (Colombie-Britannique) <br/>
+V3N 4X8 <br/>
+(604) 528-1410 <br/>
+télécopieur : (604) 528-7781 <br/>
+courrier électronique : <a href="mailto:mike.tanner@bchydro.bc.ca">mike.tanner@bchydro.bc.ca</a>  </p>
+<p>Warren Bell <br/>
+B.C. Ministry of Employment and Investment <br/>
+1810, rue Blanshard <br/>
+Victoria (Colombie-Britannique) <br/>
+(604) 952-0244 <br/>
+télécopieur : (604) 952-0241 <br/>
+courrier électronique : <a href="mailto:wbell@galexi.gov.bc.ca">wbell@galexi.gov.bc.ca</a>  </p>
+<p>Don Cromarty <br/>
+1975, Springfield Road <br/>
+Kelowna (Colombie-Britannique) <br/>
+V1Y 7V7 (604) 868-4517 <br/>
+télécopieur : (604) 868-4524</p><!-- Contacts already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

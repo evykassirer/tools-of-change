@@ -1,0 +1,373 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+</ul>
+<h5>Initiative de</h5>
+<p> Liz Reynolds et Kevin McLaughlin</p><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>Co-op Housing Federation of Toronto (CHFT)<o:p></o:p></li>
+<li>Metro Credit Union<o:p></o:p></li>
+<li>Toronto Transportation Commission (TTC)<o:p></o:p></li>
+<li><span lang="FR-CA" style="mso-ansi-language: FR-CA">Toronto Atmospheric Fund<o:p></o:p></span></li>
+<li><span lang="FR-CA" style="mso-ansi-language: FR-CA">VIA Rail<o:p></o:p></span></li>
+<li><span lang="FR-CA" style="mso-ansi-language: FR-CA">Des agences de location de voitures locales<o:p></o:p></span></li>
+<li><span lang="FR-CA" style="mso-ansi-language: FR-CA">Des magasins de bicyclettes et marchandises sportive<o:p></o:p></span></li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<ul>
+<li>40 % des membres ont dit avoir délaissé la voiture ou ne pas en avoir acheté une neuve en raison de leur adhésion. Une voiture partagée remplace 6 voitures individuelles.</li>
+<li>27 % ont indiqué une plus grande utilisation des transports en commun après avoir été membres d’AutoShare durant une année</li>
+<li>25 % ont dit qu’ils avaient pris la bicyclette ou utilisé les patins à roues alignées plus souvent après être devenu membre</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>AutoShare</h1>
+<p>AutoShare, une compagnie de partage de véhicules à Toronto, offre aux personnes, la liberté de conduire sans problème et sans les coûts exorbitants liés à la possession d’une voiture. La compagnie a fait ses débuts en 1998, avec 16 membres se partageant l’utilisation de 3 voitures, et elle a grandi à plus de 500 membres; elle comptait 28 voitures en juillet 2001.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>Le partage de véhicules a commencé en Europe il y a une décennie. Il a aidé à réduire les problèmes liés aux automobiles, tels que les embouteillages, les difficultés de stationnement et le smog. Par exemple, à Brème en Allemagne, ceux qui se partagent une voiture ont retiré 500 véhicules des rues de la ville. En Suisse, où le partage de véhicules est le plus populaire, près de 30 000 personnes font partie des organisations de partage de véhicules. Même le président du conseil de la compagnie Ford Motor, M. William Clay Ford Jr., a annoncé aux délégués à une conférence d’affaires de Greenpeace tenue à Londres en octobre 2000 que Ford envisageait de développer un programme de partage de véhicules.</p><!-- Background already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>La recherche a montré que pour les personnes qui conduisaient moins de 12 000 km par an, le partage de véhicules était une alternative rentable par rapport à la possession d’une voiture. En 1998, l’Association canadienne des automobilistes a estimé que le coût moyen d’utilisation d’une petite voiture compacte chaque année était de 8 000 $ CAN. Les plus grosses voitures coûtaient en moyenne 12 000 $ CAN et plus (<a href="../../../../fr/outils-de-changement/Mesures-financieres-incitatives-et-dissuasives/"><font color="#008000">Mesures financières incitatives et dissuasives</font></a>)</p>
+<p>AutoShare avait appris à partir des expériences d’autres villes que le partage de véhicules se prêtait mieux à un environnement urbain avec un centre-ville très peuplé, où les gens ont accès à toutes les infrastructures, y compris un système de transport en commun bien intégré. Toronto répondait parfaitement à ce profil.</p>
+<p>AutoShare a reçu une subvention de Jobs Ontario Community Action (JOCA) pour effectuer 70 entrevues auprès des personnes choisies au hasard, qui avaient déjà exprimé un intérêt dans le partage de véhicules. Cette information a servi à déterminer comment le partage de véhicules serait accepté à Toronto, quels groupes de gens en particulier devraient utiliser ce service, et quel effet un tel service aurait sur la réduction des gaz à effet de serre.</p>
+<p>L’étude a d’abord porté sur l’âge, le sexe, la situation géographique, la langue et le revenu du ménage. Neuf secteurs ou quartiers de Toronto étaient représentés, dont deux, Riverdale et Annexe, avaient le plus de participants, soit 23 % chacun. Les habitudes de conduite et de travail ont également été étudiées. L’étude a démontré que:</p>
+<ul>
+<li>86 % des gens enquêtés travaillaient en dehors de leur domicile</li>
+<li>57 % utilisaient le transport en commun pour aller à leur travail, 29 % allaient à bicyclette, 14 % conduisaient une voiture et 2 % faisaient du co-voiturage. Tous les autres marchaient (10 %), prenaient des taxis (1 %), ou utilisaient certains autres moyens de transport tels que le GO Train de Toronto et l’autobus régional (6 %). Presque 25 % ont dit que leur choix des moyens de transport variait avec les saisons.</li>
+<li>Le kilométrage moyen par an était de 6 770 km (avec le plus bas à 0 km et le plus élevé à 20 000 km). Presque 50 % ont dit qu’ils avaient loué une voiture 1 à 4 fois par année, avec 56 % de toutes les locations de voitures pour les vacances et les loisirs, et 17 % pour les obligations d’affaires.</li>
+</ul>
+<p> L’étude a aidé à déterminer les audiences cibles suivantes :</p>
+<ol>
+<li>Les jeunes familles qui étaient capables d’acheter une maison ou une voiture, mais pas les deux.</li>
+<li>Les personnes sensibilisées à l’environnement, qui comptaient sur la bicyclette comme moyen principal de transport.</li>
+<li>Les gens travaillant à leur propre compte et ceux qui travaillaient à la maison.</li>
+<li>Les gens qui utilisaient le transport en commun comme leur principal moyen de transport.</li>
+<li>Les professionnels urbains qui vivaient et travaillaient en ville.</li>
+</ol><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p> En dehors des dépenses initiales de démarrage, les adhérents d’AutoShare payaient seulement pour la durée et la distance de conduite, et ils avaient accès 24 heures sur 24 à un parc de voitures stationnées partout dans la ville. La compagnie payait tous les coûts d’assurance, d’entretien et d’essence. Contrairement aux agences de location de voitures traditionnelles, les participants d’AutoShare avaient la possibilité d’utiliser le véhicule pour une durée aussi courte que 30 minutes ou aussi longtemps qu’ils en avaient besoin. Cependant, puisque les agences de location des voitures étaient la meilleure option pour les longs voyages, AutoShare a développé aussi des partenariats avec les compagnies locales de location de voitures pour accorder des remises à ses membres (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacl<font color="#008000">es spécifiques</font></a>).</p>
+<p>Les membres appelaient le bureau de la compagnie pour réserver une voiture à une date, une heure et pour une durée pendant laquelle ils avaient besoin du véhicule. Les réservations pouvaient être faites sur-le-champ ou trois mois à l’avance. Avec 15 membres pour chaque voiture, la compagnie maintenait un taux d’accessibilité de 95 %. Près de la moitié de la flotte était utilisée pendant les heures de pointe. Les voitures étaient garées près des stations de transport en commun afin que, même si tous les véhicules les plus proches du domicile d’un membre étaient utilisés, ce dernier pouvait prendre le transport en commun vers une autre voiture qui était disponible.</p>
+<p>Les membres d’AutoShare allaient directement là où la voiture était garée, à une heure convenue. Ils avaient une clé du système de sécurité de la compagnie, ce qui leur évitait de devoir se rendre au bureau principal. Pour assurer l’entretien des véhicules, les conducteurs utilisaient un bordereau de voyage dans chaque automobile pour noter les égratignures ou tout autre point spécial sur la condition de la voiture. Le bordereau de voyage était également utilisé pour inscrire le temps et le kilométrage, après que la voiture eut été ramenée à l’heure convenue, pour être juste envers les autres membres. Tout manquement pouvait résulter en des frais supplémentaires, mais AutoShare a rapporté que peu de gens avaient abusé du service de cette manière.</p>
+<p>Les membres faisaient le plein si le réservoir avait baissé en dessous de la moitié pendant que la voiture était en leur possession; on leur en remboursait le coût. AutoShare assurait l’entretien de tous les véhicules et le lavage étaient facturés à la compagnie lorsque le client voulait que la voiture soit extrêmement propre.</p>
+<p>Chaque mois, les membres recevaient un relevé détaillé montrant tous leurs frais. Toutes les dépenses d’essence ou autre dépense payée de leur poche étaient portés à leur crédit. AutoShare envisageait également d'offrir une option de transaction bancaire par téléphone ou par Internet pour les participants qui souhaitaient payer leur compte de cette façon.</p>
+<p><b>Coûts</b></p>
+<p>Une adhésion à AutoShare coûte 20 $CAN. Les adhérents admissibles doivent avoir au moins 25 ans avec un bon dossier de conduite (3 billets ou moins, en moins de 3 ans) et un permis de conduire de pleine catégorie « G ». Si les critères étaient remplis, les membres potentiels payaient un droit initial d'adhésion de 500 $CAN remboursables et un dépôt pour clé de 10 $CAN remboursable. Les participants choisissaient une option qui répondait à leurs besoins, sur la base d'un kilométrage approximatif. Le tableau ci-dessous montre les divers tarifs et options qui étaient offerts aux membres.</p>
+<p>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<td align="center"><b>1er janvier 2001</b></td>
+<td align="center"><b>Plan régulier (pour ceux qui conduisaient plus de 1 000 km/an) </b></td>
+<td align="center"><b>Plan facultatif (pour ceux qui conduisaient moins de 1 000 km/an) </b></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td align="center">Droit d’accès</td>
+<td align="center">20 $CAN/mois</td>
+<td align="center">10 $CAN/mois</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td align="center">Taux pour voyage normal</td>
+<td align="center">0,25 $CAN/km<br/>
+            +<br/>
+            2,50 $CAN /heure<br/>
+            (jour de semaine)<br/>
+            ou<br/>
+            3 $CAN/heure(fin de semaine)</td>
+<td align="center">0,33 $CAN/km<br/>
+            +<br/>
+            3 $CAN/heure<br/>
+            (jour de semaine)<br/>
+            ou<br/>
+            3,50 $CAN/heure<br/>
+            (fin de semaine)</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td align="center">Taux fixe « journalier » (24 heures)</td>
+<td align="center">35 $CAN<br/>
+            (jour de semaine) <br/>
+            ou<br/>
+            40 $CAN<br/>
+            (fin de semaine)<br/>
+            + essence à 0,075 $CAN/km<br/>
+            + voyage de plus de 300 km<br/>
+            à 0,11 $CAN/km</td>
+<td align="center">38 $CAN/(jour de semaine)<br/>
+            ou<br/>
+            43 $CAN<br/>
+            (fin de semaine)<br/>
+            + essence à 0,075 $CAN/km<br/>
+            + voyage de plus de 300 km<br/>
+            à 0,11 $CAN/km</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td align="center">Taux pour jour de travail (10 heures, retour avant 18 heures)</td>
+<td align="center">25 $CAN<br/>
+            (lundi-vendredi)<br/>
+            +<br/>
+            0,14 $CAN/km<br/>
+            voyage de plus de 300 km<br/>
+            à 0,11 $CAN/km</td>
+<td align="center">Pas disponible</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td align="center">Taux pour « longue fin de semaine » (72 heures)</td>
+<td align="center">115 $CAN<br/>
+            +<br/>
+            essence à 0,075 $CAN/km<br/>
+            +<br/>
+            voyage de plus de 900 km<br/>
+            à 0,11 $CAN/km</td>
+<td align="center">120 $CAN<br/>
+            +<br/>
+            essence à 0,075 $CAN/km<br/>
+            +<br/>
+            voyage de plus de 900 km<br/>
+            à 0,11 $CAN/km</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p><b>Tarifs spéciaux</b></p>
+<p>AutoShare offrait des tarifs spéciaux aux compagnies et organisations à but non lucratif. Pour ce programme, les frais d'adhésion remboursables étaient basés sur le nombre de voitures disponibles dont avait besoin une compagnie à un moment donné. Si une organisation voulait deux voitures à la disposition de ses employés 24 heures par jour, le paiement initial était de 1 000 $CAN.</p>
+<p><b>Assurance</b></p>
+<p>L'assurance était offerte par le Co-operative Insurance Group, sur la base d'une police d'assurance pour tout le parc automobile ainsi qu’AutoShare, et non les membres individuellement, qui jouissaient de cette couverture. En cas d'accident avec responsabilité, le chauffeur devait payer 500 $CAN déductibles et 30 $CAN pour chaque jour où le véhicule n’était pas disponible. (Si le membre n'était pas responsable, le montant déductible n’avait pas à être payé). L’assurance couvrait également l’assistance routière.</p>
+<p>Parce que certaines compagnies d'assurances appliquent un taux plus élevé pour les personnes sans assurance pendant une longue période, AutoShare s'assurait que les membres qui quittaient l'organisation et acquéraient leur propre voiture, étaient considérés comme étant assurés durant le temps qu’il faisaient partie d’AutoShare (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/"><font color="#008000">Surmonter des obstacles spécifiques</font></a>).</p>
+<p><b>Surmonter d'autres obstacles</b></p>
+<p>Les 500 $CAN de frais d'adhésion remboursables se sont révélés une barrière économique pour certains membres potentiels d'AutoShare. En décembre 2000, la compagnie a adhéré au programme Co-op Cost Cutters, un projet qui aidait les résidents des coopératives d’habitation à obtenir des biens et services autour de Toronto à un taux économiquement plus abordable. La Co-op Housing Federation of Toronto (CHFT) a travaillé étroitement avec AutoShare et la Metro Credit Union pour accorder un programme de micro-prêt qui reportait le coût initial d'adhésion aux résidents des co-opératives d’habitations (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/"><font color="#008000">Surmonter des obstacles spécifiques</font></a>). AutoShare considérait offrir à l’avenir ce programme de prêts à l’ensemble de ses membres (également par l’entremise de Metro Credit Union).</p>
+<p>L'espace de stationnement pour AutoShare devrait répondre à des critères spécifiques, ce qui constituait aussi une barrière pour l'expansion de la compagnie dans les autres quartiers de Toronto. Les membres actuels et potentiels étaient encouragés par un prix de 50 $CAN à aviser la compagnie de la disponibilité d’un espace sur le site Internet (<a href="http://www.weneedparking.com/"><font color="#008000">www.weneedparking.com</font></a>). Les participants recevaient leur prix chaque fois qu'un espace était trouvé. Les espaces de stationnement devaient être des endroits bien éclairés, faciles d’accès le jour comme la nuit, près des transports en commun, déneigés durant les mois hiver, et facturés à prix raisonnable.</p>
+<p><b>Promotion</b></p>
+<p>Parce que le concept de partage de véhicules était nouveau à Toronto et que la compagnie avait un budget limité, AutoShare a préféré l'approche « face à face » pour la publicité. On a mis en place des comptoirs d'information durant les festivals et événements en plein air dans le centre-ville, pendant les mois plus chauds. Cette stratégie de marketing était peu coûteuse et permettait d'expliquer l'idée plus en détail que ne l'aurait fait un journal ou une revue. Pour garder le contact avec les résidents qui s’étaient montré intéressés, une base de données était maintenue, indiquant les noms et adresses des personnes qui s'étaient arrêtées aux comptoirs d'information. Beaucoup de gens étaient impressionnés par l’idée de partager une voiture et demandaient: « Pourquoi quelqu’un n’y a jamais pensé auparavant? ». Cette phrase est devenue un slogan sur les brochures et les envois postaux.</p>
+<p>La compagnie a placé des affiches dans divers lieux de la ville, tels que les cafés et les librairies, indiquant les divers éléments de motivation du service, avec le numéro du téléphone et l’adresse du site Web (<a href="http://autoshare.com/"><font color="#008000">www.autoshare.com</font></a>).</p>
+<p>Plusieurs articles de journaux et de revues ont aussi été publiés sur AutoShare, dans les publications de Toronto et du Canada, y compris : <i>The Toronto News, The Toronto Star, The National Port, The Financial Post, The Vancouver Sun</i> et <i>The Toronto Voice </i><a href="../../../../fr/outils-de-changement/Medias/"><font color="#008000">Médias</font></a>.</p>
+<p><b>Partenariats</b></p>
+<p>Les partenariats avec quelques autres moyens de transport à Toronto ont fourni aux participants d’AutoShare des réductions sur la location de bicyclettes et de patins à roues alignées, Via Rail et auprès d’agences de location de voitures locales.</p>
+<p>En mai 2000, un effort mutuel d’AutoShare et de la Toronto Transportation Commission (TTC) a permis d’offrir une réduction de 100 $CAN sur les frais d’adhésion à AutoShare pour les utilisateurs du transport en commun qui avaient souscrit au Metropolitan Discount Plan de la TTC. Les détenteurs de billets (ou laissez-passer) de la MDP ont reçu l’information sur AutoShare dans des envois postaux, y compris une carte du métro montrant les arrêts du transport en commun et les stationnements des voitures d’AutoShare. Le lien entre le transport en commun et le partage de véhicules est une composante clé dans la réduction de la pollution et des problèmes de transport à Toronto.</p>
+<p>AutoShare a rencontré les planificateurs de la ville de Toronto pour discuter de la manière selon laquelle le co-voiturage s’adapterait au programme du transport durable de la ville. La ville a aidé AutoShare en facilitant le partenariat avec la TTC. Elle a fourni des prêts de démarrage grâce au Toronto Atmospheric Fund, et a reconnu le besoin de stationnement des voitures de la compagnie. AutoShare et d’autres programmes de partage de véhicules sont inclus dans l’initiative de la ville de Toronto Moving the Economy destinée à développer des systèmes de transport personnel en tant qu’élément du programme de transport durable pour l’avenir.</p><!-- Delivering already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>AutoShare a demandé aux membres de remplir un questionnaire accompagnant leur formulaire d’adhésion et par la suite quelques fois dans l’année. Il contenait des informations telles que : le nombre de kilomètres parcourus chaque année, le nombre de voyages en train ou en autobus par année, et le pourcentage de voyages faits par chaque moyen de transport.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<ul>
+<li>40 % des membres ont dit avoir délaissé la voiture ou ne pas en avoir acheté une neuve en raison de leur adhésion. Selon les normes de l’industrie, une voiture partagée remplace 6 voitures individuelles.</li>
+<li>27 % ont indiqué une plus grande utilisation des transports en commun après avoir été membres d’AutoShare durant une année, tandis que seulement 7 % disaient qu’ils les utilisaient moins. (La recherche menée par S. Shabeen de l’université de Californie à Berkeley a révélé que les membres changent de moyen de transport, effectuant de 35 % à 53 % des voyages par autobus, au lieu de conduire un véhicule).</li>
+<li>25 % ont dit qu’ils avaient pris la bicyclette ou utilisé les patins à roues alignées plus souvent après être devenu membre, tandis que 8 % ont dit qu’ils le faisaient moins souvent.</li>
+<li>Même les participants qui utilisaient ce service le plus, ne payaient pas plus de 3 500 $CAN chaque année.</li>
+</ul>
+<p>AutoShare a atteint rapidement 500 participants à la mi-2001. Les données de recherche rassemblées à partir des études effectuées en Europe démontrent que pour 500 personnes faisant partie d’une organisation de partage de véhicules, plus de 500 tonnes de dioxyde de carbone ne sont pas émises chaque année. En général, les membres ont tendance à conduire 30 % moins souvent après une adhésion d’une année. Les compagnies de partage de véhicules ont également tendance à choisir des véhicules plus économiques pour leur parc.</p>
+<p>AutoShare est devenue populaire parmi ceux qui peuvent facilement s’offrir une voiture, faisant du partage de véhicules une question de convenance plutôt que de choix personnel. Par exemple, Brent Pearlman, un agent d’immeuble commercial a joint AutoShare en décembre 1998. Il vit et travaille au centre-ville de Toronto et a facilement accès aux autres moyens de transport tels que la TTC, mais il a choisi ce service parce qu’il n’a besoin d’une voiture seulement quelques fois par semaine. « Si je n’ai pas une voiture dans mon entrée, je ne serai pas tenté de l’utiliser, a dit M. Pearlman. Je sais que je préférerais conduire une voiture plutôt que marcher si j’en possédais une, mais j’ai choisi ce mode de vie ».</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Liz Reynolds, Présidente<br/>
+AutoShare<br/>
+24, rue Mercer Toronto, Canada M5V IH3<br/>
+Téléphone : (416) 340-7888<br/>
+FAX : (416) 340-0080 <br/>
+Courriel: <a href="mailto:liz@autoshare.com" style="color: rgb(0,128,0)">liz@autoshare.com<br/>
+</a>Site Web : <a href="http://www.autoshare.com/">www.autoshare.com</a></p>
+<p>Cette étude de cas a été écrite par Brian Baraszu, un intern auprès de “The Tools of Change Case Study Writing Program“, sponsorisée par le Fonds d’action pour le changement climatique du Gouvernement du Canada, Tetrapak Canada Inc., Enbridge Consumers Gas, Syncrude et Suncor .</p>
+<p>La traduction française de cette étude de cas a été faite par M. Moutondo Emmanuel Gabriel , Conseiller technique auprès du Réseau Environnement et Développement Durable en Afrique (REDDA). M. Moutondo est un ancien fonctionnaire du Programme des Nations Unies pour l’Environnement (Bureau Afrique à Nairobi Kenya); il est toujours disponible pour tous travaux de traduction. On peut le joindre aux adresses suivantes:</p>
+<p>Par courriel :<br/>
+<a href="mailto:E.MOUTONDO@AFDB.ORG" style="color: rgb(0,128,0)">E.MOUTONDO@AFDB.ORG<br/>
+</a><a href="mailto:egmoutondo@yahoo.com" style="color: rgb(0,128,0)">egmoutondo@yahoo.com</a></p>
+<p>Par téléphone ou par fax :<br/>
+Téléphone : (254) 72529141 (Cellulaire Nairobi) <br/>
+Fax : (254) 2 623928 (à Nairobi) <br/>
+ou bien<br/>
+Téléphone : (225) 2020 5625 (Bureau d’Abidjan) (225) 07612913 (Cellulaire à Abidjan)<br/>
+<br/>
+Rénald Gagnon a édité la version française de cette étude de cas. Rénald possède de nombreuses années d’expérience de traduction et de révision dans des domaines très variés. Vous pouvez le joindre par courriel à : <a href="mailto:relimax@magma.ca" style="color: rgb(0,128,0)">relimax@magma.ca</a></p><!-- Contacts already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

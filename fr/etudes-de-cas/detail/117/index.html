@@ -1,0 +1,468 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/mesures-financières-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a></li>
+<li><a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a></li>
+<li><a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a></li>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a></li>
+<li><a href="../../../../fr/outils-de-changement/communications-personnalisées-percutantes/">Communications personnalisées percutantes</a></li>
+<li><a href="../../../../fr/outils-de-changement/médias/">Médias</a></li>
+<li><a href="../../../../fr/outils-de-changement/de-bouche-à-oreille/">De bouche à oreille</a></li>
+<li><a href="../../../../fr/outils-de-changement/programmes-en-milieu-de-travail-qui-affectent-le-foyer/">Programmes en milieu de travail qui affectent le foyer</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>Bay Area Air Quality Management District (BAAQMD)</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partenaires</h5>
+<ul>
+<li>BayCAP</li>
+<li>RIDES for Bay Area Commuters, Inc.</li>
+<li>Metropolitan Transportation Commission</li>
+<li>Employeurs, agences publiques et entreprises locales</li>
+<li>Médias locaux</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Résultats</h5>
+<ul>
+<li>258 656 voyages de moins en 1999</li>
+<li>3,36 tonnes d'émissions responsables de la formation d'ozone de moins en 1999</li>
+<li>29,7-49,2 % des participants et 11,3 % de l'échantillon aléatoire du public a conduit moins durant les journées Spare the Air en 2000</li>
+<li>82 % du public général connaissait le programme en 2000</li>
+</ul><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Spare the Air</h1>
+<p>Lorsque la concentration d'air pollué approche des niveaux malsains, les gens vivant et travaillant dans la région de la Baie de San Francisco sont avertis et encouragés à éviter les activités qui polluent l'air. Des partenariats avec les entreprises locales et les agences publiques permettent au programme de cibler les banlieusards au travail et d'offrir de l'information, des mesures persuasives (incitatifs) et des services afin d'aider ceux qui optent pour des choix moins polluants.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>Entre juillet et octobre chaque année, le niveau d’ozone au sol dans la région de la Baie de San Francisco atteignait occasionnellement des niveaux malsains. Durant la période hivernale, de novembre à février, le polluant d’intérêt spécial est les petites particules de 10 microns ou moins en taille. La région compte 6,1 millions de résidents, avec cinq millions de véhicules enregistrés, et un grand nombre de banlieusards des régions avoisinantes qui travaillent dans la région de la Baie; tous ces éléments contribuent à la pollution de l’air.</p>
+<p>Au début des années 1990, lorsqu’il est devenu évident que les voitures étaient la principale cause de pollution de l’air, le Bay Area Air Quality Management District (BAAQMD) a décidé de développer une approche pour freiner les émissions des véhicules automobiles dans la région. Il a résulté le lancement de la campagne Spare the Air (Notre air, pensons-y) par le BAAQMD, un programme volontaire, durant l’été 1991. Étant donné que l’ozone au sol est le problème de pollution le plus persistant dans la région de la Baie, cette étude de cas se concentre sur le programme estival Spare the Air.</p><!-- Background already contains P tags.-->
+<h2>Établir les objectifs</h2>
+<p>Les objectifs de Spare the Air, en ordre de priorité, étaient :</p>
+<ul>
+<li>Des avantages pour la santé résultant de l’amélioration de la qualité de l’air</li>
+<li>Le maintien du statut de qualité de l’air d’après les règlements fédéraux. Dans la région de la Baie, pour maintenir le niveau de réalisation il a fallu réduire les émissions d’ozone, puisque la région avait déjà atteint les normes pour d’autres polluants, incluant le monoxyde de carbone, le plomb et le dioxyde de soufre.</li>
+<li>L’éducation publique sur les problèmes de santé reliés à l’ozone au sol, ses causes et ses effets sur la santé, ainsi que les gestes que les gens pourraient poser afin d’éviter d’aggraver la situation.</li>
+</ul>
+<p> </p>
+<p>Le principal objectif du programme était de promouvoir les mesures volontaires parmi les banlieusards et le public général. Lorsqu’on prévoyait une piètre qualité de l’air, Spare the Air encourageait les participants à réduire leurs activités polluantes, spécialement l’usage de leur voiture, en faveur d’options moins polluantes.</p>
+<p>Chaque année, Spare the Air tentait de sensibiliser et d’impliquer plus de participants et d’employeurs que l’année précédente. En l’an 2000, les responsables du programme visaient 6 000 participants et 1 500 employeurs, et l’établissement d’une composante jeunesse à leur campagne.</p><!-- Objectives already contains P tags.-->
+<h2>Bien s'informer</h2>
+<p>Un sondage d’opinion publique a été effectué afin de déterminer la connaissance de la population face aux questions de la pollution de l’air local. Un autre sondage a examiné les choix de transport des banlieusards.</p>
+<p>Des groupes de discussion ont été créés pour examiner comment les gens percevaient le transport en commun, le BAAQMD et les messages promotionnels en plus de savoir si la population prendrait la question des hautes concentrations d’ozone au sérieux. Ces groupes étaient animés en espagnol, en chinois ainsi qu’en anglais. À partir de l’expérience du programme de recyclage de Californie, les organisateurs de Spare the Air ont appris que les enfants étaient efficaces pour transmettre de l’information aux parents et influencer leur comportement.</p><!-- Informed already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>La première année de Spare the Air a été consacrée à l’implication des partenaires. Durant la deuxième année, le programme lui-même a été établi. Beaucoup d’effort a été déployé pour travailler avec les employeurs, d’autres partenaires et les médias, afin de coordonner les événements promotionnels et développer des incitatifs, particulièrement au début du programme. Les problèmes de partenariat se sont réglés au fur et à mesure que les composantes du programme ont pris forme et que les participants ont pris conscience de ce qu’ils devaient faire durant les jours Spare the Air. En 2000, la priorité a été mise sur la diffusion – développer un programme Youth Outreach, traduire l’information en espagnol et en chinois, et continuer d’augmenter la sensibilisation du public au programme.</p>
+<p>Afin de motiver les gens à participer à Spare the Air, le message du programme informait la population que l’ozone au niveau du sol était dommageable pour la santé humaine puisqu’elle causait du dommage aux tissus des poumons, spécialement chez les enfants, les personnes âgées et ceux qui souffrent de problèmes respiratoires. Le problème de l’ozone au niveau du sol était local et bien réel; les gens étaient informés qu’ils pouvaient aider à le prévenir (<a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications personnalisées percutantes</a>, <a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a>).</p>
+<p>Les météorologues du BAAQMD ont utilisé des stations de contrôle et des modèles prévisionnels afin d’analyser les modèles de pollution et de température, incluant le vent, la température et les précurseurs d’ozone, et de prédire les concentrations d’ozone pour le lendemain. Lorsque la concentration prédite d’ozone était supérieure à la norme fédérale qui est de 84 parties par milliard, ou lorsque l’indice de qualité de l’air se situait au-dessus de 100, une journée Spare the Air était décrétée. Depuis le début du programme, le nombre de jours Spare the Air se situe entre trois et 25 chaque saison (visitez le site <a href="http://www.sparetheair.org">www.sparetheair.org</a> afin d’obtenir un tableau du nombre de jours Spare the Air et/ou les violations fédérales survenues dans la région de la Baie).</p>
+<p>Les publicités Spare the Air étaient diffusées par le BAAQMD peu après 13 heures le jour même. Les stations de radio et de télévision, les journaux, les employeurs participants et les personnes inscrites avec le réseau étaient avisés par téléphone, télécopie ou courriel. Les prévisions mises à jour étaient affichées sur le site Internet de Spare the Air (<a href="../../../../fr/outils-de-changement/medias/">Médias</a>).</p>
+<p>Un formulaire d’inscription était disponible sur l’Internet pour les personnes qui voulaient recevoir un avertissement par courriel pour les jours Spare the Air. Les individus qui s’inscrivaient pouvaient gagner des prix dans un tirage à la fin de l’année (<a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement </a>, <a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives</a>). Afin d’améliorer la visibilité du programme, les gens pouvaient nommer quelqu’un qui aidait à améliorer la qualité de l’air, un champion de l’air pur. Le gagnant était honoré durant une présentation lors d’une réunion du conseil d’administration du BAAQMD. Le but de cette nomination d’un champion de l’air pur était de reconnaître les individus soucieux de l’environnement et dont les actions étaient une inspiration pour les autres (<a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a>, <a href="../../../../fr/outils-de-changement/de-bouche-a-oreille/">Bouche à oreille</a>).</p>
+<p>Les stations de télévision annonçaient les jours Spare the Air durant leurs bulletins de nouvelles et de météo. Les stations de radio les mentionnaient durant leurs bulletins de nouvelles, alors que les animateurs les annonçaient durant leur émission. Les journaux locaux incluaient les publicités Spare the Air dans leurs rapports Indice de qualité de l’air, publiaient des articles à propos du programme et affichaient le slogan Spare the Air au haut de leur page couverture (<a href="../../../../fr/outils-de-changement/medias/">Médias</a>). Au moment où les gens se préparaient à quitter le travail, ces annonces leur rappelaient d’éviter de contribuer au problème de l’ozone (<a href="../../../../fr/outils-de-changement/motivateurs/">Motivateurs</a>).</p>
+<p>Le public a entendu parler du programme et des actions qu’ils pouvaient prendre par :</p>
+<ul>
+<li>la télévision, la radio et la publicité dans les journaux (<a href="../../../../fr/outils-de-changement/medias/">Médias</a>);</li>
+<li>le site Internet du programme (<a href="http://www.sparetheair.org">www.sparetheair.org</a>), qui incluait des cartes d’ozone qui démontraient les changements de l’ozone au niveau du sol au-dessus de la région de la Baie. (<a href="../../../../fr/outils-de-changement/medias/">Médias</a>, <a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications personnalisées percutantes</a>);</li>
+<li>un numéro sans frais (1-800-HELP-AIR);</li>
+<li>des partenariats qui rejoignaient les consommateurs (par exemple, certains partenaires annonçaient le programme Spare the Air dans leur lettre d’information aux consommateurs. La laiterie Clover a apposé des messages sur les cartons de lait et la Ville de San Francisco a placé une grande bannière « Spare the Air this Summer » (L’air, c’est important cet été) sur le pont de la Baie, là où ceux qui traversent vers la ville en venant de l’est ne pouvaient s’empêcher de la lire en entrant dans San Francisco) (<a href="../../../../fr/outils-de-changement/medias/">Médias</a>);</li>
+<li>le programme employeurs de Spare the Air (<a href="../../../../fr/outils-de-changement/programmes-en-milieu-de-travail-qui-affectent-le-foyer/">Programmes en milieu de travail qui affectent le foyer</a>);</li>
+<li>kiosques d’informations lors d’événements communautaires;</li>
+<li>ateliers (pour les écoles, l’industrie et le public);</li>
+<li>conférenciers;</li>
+<li>foires du transport.</li>
+</ul>
+<p> </p>
+<p>Les entreprises locales et les agences publiques, incluant les villes et neuf comtés de la région de la Baie, ont publicisé le programme à l’intention du public et de leurs employés. Le «Bay Area Clean Air Partnership » (BayCAP) était un partenariat public/privé lancé en 1996 afin de promouvoir les actions volontaires pour améliorer la qualité de l’air dans la région de la Baie, en appuyant et améliorant la campagne Spare the Air. Avec l’aide de RIDES pour les banlieusards de la région de la Baie, le BAAQMD et BayCAP ont développé du matériel d’information durant les ateliers mensuels a href="/fr/outils-de-changement/surmonter-des-obstacles-specifiques/"&gt;Surmonter des obstacles spécifiques). Ces ateliers ont mené à la formation d’équipes-ressources qui fournissaient un appui promotionnel additionnel et des incitatifs, incluant des rabais sur le transport en commun, des billets gratuits, des rabais sur les réparations ou entretiens de voiture, et des récompenses monétaires (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>).</p>
+<p>Afin de promouvoir d’autres moyens que la conduite seul dans sa voiture, les villes et les comtés de la région de la Baie ont fourni des incitatifs et des services pour les banlieusards et les employeurs. Les incitatifs consistaient en des billets de transport en commun à prix réduit ou gratuits, du financement pour un stationnement pour bicyclettes, un stationnement gratuit pour le co-voiturage et des prix (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>). Ceux qui utilisaient d’autres moyens de transport étaient assurés d’avoir un transport pour retourner à la maison en cas d’urgence (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>).</p>
+<p>Durant les journées Spare the Air, les participants étaient encouragés à :</p>
+<ul>
+<li>laisser leur voiture à la maison et utiliser un autre moyen de transport;</li>
+<li>ne pas utiliser les tondeuses à gazon et les souffleuses à feuilles fonctionnant à l’essence;</li>
+<li>éviter d’utiliser des produits de consommation en aérosol comme du fixatif à cheveux et des produits nettoyants pour la maison;</li>
+<li>partir le barbecue avec un démarreur électrique ou un démarreur pour foyer seulement (pas d’allume-barbecue liquide);</li>
+<li>faire le plein d’essence seulement après le coucher du soleil, et ne pas remplir le réservoir;</li>
+<li>éviter les activités d’entretien ménager qui produisent des émissions de composés organiques volatils (peinture, décapant, dégraisseur, etc.).</li>
+</ul>
+<p> </p>
+<p><strong>RIDES FOR BAY AREA COMMUTERS</strong></p>
+<p>RIDES for Bay Area Commuters, Inc. était une compagnie privée, à but non-lucratif, financée par la Metropolitan Transportation Commission (MTC) et le BAAQMD. RIDES offrait des services de transport gratuits (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>) aux résidents de la région de la Baie, incluant :</p>
+<ul>
+<li>des consultations afin de déterminer la meilleure solution de transport pour les banlieusards;</li>
+<li>des références pour le co-voiturage en automobile et en fourgonnette dans une base de données de plus de 12 000 banlieusards;</li>
+<li>de l’information et des références sur le vélo;</li>
+<li>de l’assistance pour le transport en commun ou le télétravail;</li>
+<li>de l’information sur les voies réservées, les stationnements incitatifs, Commuter Check, et plus;</li>
+<li>l’assistance dans la création d’un réseau de co-voiturage en automobile et en fourgonnette;</li>
+<li>des services de co-voiturage par fourgonnette et des services de soutien.</li>
+</ul>
+<p> </p>
+<p>Ses messages étaient « Nous pouvons vous aider à vous y rendre plus rapidement, plus facilement et de façon économique », et « Utiliser un autre moyen de transport que la conduite seul, et vous épargnerez argent, temps et stress. »</p>
+<p>RIDES recommandait les solutions de transport suivantes :</p>
+<ul>
+<li>utiliser d’autres moyens de transport (co-voiturage, transport en commun, etc.) plutôt que la conduite seul;</li>
+<li>garder les voitures en bon état de marche;</li>
+<li>combiner plusieurs déplacements automobiles durant la même journée;</li>
+<li>travailler à distance (télétravail);</li>
+<li>garder la vitesse à l’intérieur des limites du code de la route et une vitesse constante;</li>
+<li>marcher ou utiliser le vélo pour aller travailler.</li>
+</ul>
+<p> </p>
+<p><strong>Programme des employeurs</strong></p>
+<p>Jusqu’en l’an 2000, la composante employeurs du programme Spare the Air était dirigée par le BAAQMD, par l’entremise de Community Focus, une entreprise générale à but non-lucratif. Lorsqu’une importante subvention a été allouée pour aider à la croissance du programme en 2000, Community Focus s’est associé à RIDES, une entreprise plus importante, pour diriger le projet efficacement.</p>
+<p>Les employeurs se sont inscrits via l’Internet afin de participer au programme Spare the Air, et ont été ajoutés à une liste qui pouvait être consultée par les visiteurs du site Internet du programme (<a href="../../../../fr/outils-de-changement/obtenir-un-engagement/">Obtenir un engagement</a>, <a href="../../../../fr/outils-de-changement/attrait-des-normes/">Attrait des normes</a>). Les partenaires participants se sont vu offrir du matériel de travail gratuit et de l’information sur la façon de gérer un programme Spare the Air en milieu de travail. Un coffre à outils pour employeur était également disponible, contenant des articles de bulletins d’information et des graphiques qui pouvaient être adaptés à chacun des ensembles de matériel promotionnel (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>).</p>
+<p>Par leurs bulletins d’information, l’Intranet, le courriel et d’autres moyens de communication interne, les employeurs ont informé leurs employés des journées Spare the Air et leur ont enseigné les différentes façons d’améliorer la qualité de l’air (<a href="../../../../fr/outils-de-changement/medias/">Médias</a>, <a href="../../../../fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/">Soutenir la motivation au fil du temps</a>). Ils les ont motivé à faire leur part en offrant des billets de transport en commun à prix réduit ou gratuits, en permettant le télétravail lors des journées Spare the Air, des stationnements réservés pour ceux qui faisaient du co-voiturage, la recherche d’un transporteur pour le co-voiturage, des tirages au sort pour des prix (<a href="../../../../fr/outils-de-changement/mesures-financieres-incitatives-et-dissuasives/">Mesures financières incitatives et dissuasives</a>) et ils garantissaient un transport pour le retour à la maison pour ceux qui utilisaient le transport en commun, en cas d’urgence (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>, <a href="../../../../fr/outils-de-changement/programmes-en-milieu-de-travail-qui-affectent-le-foyer/">Programmes en milieu de travail qui affectent le foyer</a>).</p>
+<p>Les journées Spare the Air, on demandait aux entreprises de réduire ou d’éviter la production à forte émission, l’entretien et les activités d’aménagement paysager, ainsi que le fonctionnement des moteurs de camions lors de périodes d’attente. La participation des entreprises et des agences publiques était volontaire. Les compagnies ont participé au programme grâce à la publicité positive, puisqu’elles étaient partiellement responsables des longs trajets de leurs employés qui demeuraient loin de l’entreprise, et parce que s’ils n’aidaient pas la région de la Baie à atteindre les normes fédérales pour la qualité de l’air, des règlements obligatoires devraient être mis en place.</p>
+<p><strong>Youth Outreach Program</strong></p>
+<p>Youth Outreach était appliqué dans les écoles, la télévision et les stations de radio. Des ensembles gratuits, présentant un personnage de dessin animé nommé Kaila le Champion de l’air pur étaient distribués aux enfants qui appelaient la ligne sans frais 1-800-HELP AIR. Ces ensembles contenaient également des livres d’activités, des signets, des règles, des cartes de membre et des tatouages temporaires. Les bandes dessinées décrivaient des trucs pour garder l’air pur et expliquaient aux enfants pourquoi ils devaient s’inquiéter de l’air. Les enfants se renseignaient à propos des petites particules et de la pollution au niveau du sol due à l’ozone, ses causes et ses effets sur la santé, ainsi que tout ce que les humains pouvaient faire afin de prendre des décisions écologiques. Des publicités sur le programme Spare the Air étaient diffusées à la télévision et dans les stations de radio qui étaient populaires auprès des enfants, Nickelodeon, le Cartoon Channel et Disney Radio (<a href="../../../../fr/outils-de-changement/communications-personnalisees-percutantes/">Communications personnalisées percutantes</a>, <a href="../../../../fr/outils-de-changement/medias/">Médias</a>).</p><!-- Delivering already contains P tags.-->
+<h2>Obtenir le financement pour le programme</h2>
+<p>En 2000, Spare the Air était financé par une subvention de 1 044 45 $ de la Metropolitan Transportation Commission par le Department of Transportation. Cette subvention a permis au BAAQMD d'acheter plus de temps d'antenne pour les publicités radiophoniques et télévisées afin d'améliorer la visibilité du programme.</p>
+<table cellpadding="5">
+<tbody>
+<tr>
+<td><strong>Dépenses pour 2000</strong></td>
+<td><strong>Montant (US$)</strong></td>
+</tr>
+<tr>
+<td>Publicité et commercialisation</td>
+<td>494 000 $</td>
+</tr>
+<tr>
+<td>Réduction volontaire et sensibilisation</td>
+<td>225 000 $</td>
+</tr>
+<tr>
+<td>Approche communautaire</td>
+<td>212 285 $</td>
+</tr>
+<tr>
+<td>Approche jeunesse</td>
+<td>37 700 $</td>
+</tr>
+<tr>
+<td>Mesure et sondage</td>
+<td>75 430 $</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>1 044 415 $</td>
+</tr>
+</tbody>
+</table>
+<p>Durant la première année du programme (1991), le budget était de 250 000 $, dont 150 000 $ provenait d'une subvention de l'Environmental Protection Agency. Les autres 100 000 $ étaient fournis par le BAAQMD. De plus, les associés de Spare the Air ont fourni les ressources en publicité et les prix.</p><!-- Financing already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>Des sondages sur la connaissance du programme et la participation ont été effectués durant certaines journées Spare the Air. Les participants devaient répondre à de courtes questions à propos de leur connaissance et compréhension du programme Spare the Air, des mesures qu’ils ont prises durant cette journée et pourquoi. Les méthodes suivantes de sondage ont été utilisées :</p>
+<ul>
+<li>Des sondages téléphoniques aléatoires auprès du grand public (400 entrevues par journée Spare the Air en 1998, 600 en 1999 et 2000)</li>
+<li>Des données sur la participation des employés, rassemblées par les employeurs participants qui remplissaient un sondage soit par courriel, sur le site Internet ou « sondages sur papier ». (912 sondages sur papier analysés en 1998)</li>
+<li>Les sondages par courriel des participants qui s’inscrivaient en ligne. Lorsque les participants s’inscrivaient, ils fournissaient des informations sur les distances qu’ils devaient normalement parcourir pour aller au travail. Un repère d’authentification codée sur chaque sondage identifiait le répondant, pour que les distances de transport réduites soient connues, et que les réductions d’émissions puissent être calculées. (1187 sondages analysés en 1998)</li>
+<li>Des sondages en ligne qui étaient disponibles tout au long de la saison de l’ozone. Seuls les sondages complétés durant une journée Spare the Air ou jusqu’à deux jours suivant cette date étaient utilisés dans l’évaluation du programme. (610 sondages analysés en 1998)</li>
+</ul>
+<p> </p>
+<p>Les mêmes 12 questions de base étaient posées dans tous les sondages, et dans certains sondages des informations supplémentaires étaient demandées, à propos des choix des répondants et des caractéristiques démographiques. Les résultats des sondages téléphoniques aléatoires étaient considérés comme étant représentatifs de l’opinion et de la participation du public en général, vu que les autres sondages étaient complétés par des individus qui avaient choisi de participer et s’étaient engagés envers le programme Spare the Air.</p><!-- Results_B already contains P tags.-->
+<h2>Réaction</h2>
+<p>Ce programme comportait des rétroactions internes. Lorsque des niveaux d'ozone élevés étaient prédits, et que les gens se devaient de modifier leur comportement, ils étaient informés par les différents modes de communication du programme s'ils avaient réussi ou non à garder le niveau d'ozone à l'intérieur des limites sécuritaires. Cette rétroaction était immédiate (le jour même où il posait un geste) et représentait une conséquence naturelle à leurs actions.</p>
+<p>À plusieurs occasions durant l'été, un bulletin pour les employeurs Spare the Air était diffusé en ligne et faxé aux employeurs. Sur ce bulletin, des commentaires quotidiens sur la condition de l'ozone, des notes à propos de la couverture médiatique des journées Spare the Air, et un message de remerciement pour les employeurs participants fournissaient une rétroaction à court terme sur la plupart des activités récentes.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<p>L’impact du programme prenait de l’ampleur chaque année. Parce que les sondages par courriel, en ligne et sur papier étaient complétés par ceux qui choisissaient de participer au programme Spare the Air, leurs résultats étaient plus positifs que ceux des sondages téléphoniques aléatoires. Les résultats des sondages par courriel étaient semblables à ceux des sondages en ligne.</p>
+<p><b>Réduction des déplacements</b><br/>
+Le nombre réduit de déplacements était de 209 760 en 1998 et 258 656 en 1999.</p>
+<p><b>Réduction des émissions</b><br/>
+Résultant de la diminution des déplacements, les émissions de formation d’ozone par épisode Spare the Air ont été réduites de 2,92 tonnes en 1998, et de 3,36 tonnes en 1999.</p>
+<p><b>Changements des comportements</b><br/>
+<i>Conduite</i><br/>
+Le pourcentage de ceux qui savaient que c’était une journée Spare the Air et qui conduisaient moins pour des raisons de qualité de l’air :</p>
+<ul>
+<li>sondages publics aléatoires – 5,6 % en 1998 et 11,3 % en 2000,</li>
+<li>sondages par courriel (et en ligne) (1998) – 49,2 %,</li>
+<li>sondages sur papier (1998) – 29,7 %.</li>
+</ul>
+<p> </p>
+<p><i>Produits de consommation</i><br/>
+Le pourcentage de ceux qui savaient que c’était une journée Spare the Air et qui utilisaient moins les produits de consommation en aérosol (p. ex. fixatifs pour cheveux et nettoyants) (tout en 1998):</p>
+<ul>
+<li>sondages publics aléatoires – 5,9 %,</li>
+<li>sondages par courriel (et en ligne) – 19,4 %,</li>
+<li>sondages sur papier – 29,7 %.</li>
+</ul>
+<p> </p>
+<p><i>Jardinage</i><br/>
+Le pourcentage de ceux qui savaient que c’était une journée Spare the Air et qui réduisaient leur utilisation d’équipement de jardin fonctionnant à l’essence (tout en 1998) :</p>
+<ul>
+<li>sondages publics aléatoires – 6,5 %,</li>
+<li>sondages par courriel (et en ligne) – 15 %,</li>
+<li>sondages sur papier – 22,3 %.</li>
+</ul>
+<p> </p>
+<p><b>Sensibilisation par jour-épisode</b><br/>
+Le pourcentage de ceux qui savaient que c’était une journée Spare the Air :</p>
+<ul>
+<li>sondages publics aléatoires – 38 % en 1998, 42 % en 1999 et 53,8 % en 2000,</li>
+<li>sondages par courriel (et en ligne) (1998) – 95,7 %,</li>
+<li>sondages sur papier auprès des employés (1998) – 77,6 %.</li>
+</ul>
+<p> </p>
+<p>En 1998, environ 45 % de ceux qui savaient que c’étaient des journées Spare the Air l’avaient appris d’une publicité télévisée, 29-37 % l’avaient entendu à la radio, 6-10 % des panneaux publicitaires sur l’autoroute, 4-6 % des journaux et 4-5 % dans leur milieu de travail.</p>
+<p><b>Connaissance du programme</b><br/>
+La connaissance du programme avait augmenté, surtout grâce à la promotion médiatique.</p>
+<p>Le pourcentage de gens qui avaient entendu parler de Spare the Air :</p>
+<ul>
+<li>sondages téléphoniques aléatoires – 67 % en 1996, 75 % en 1998, 80 % en 1999 et 82 % en 2000,</li>
+<li>sondages par courriel (et en ligne) (1998) – 97,3 %,</li>
+<li>sondages sur papier (1998) – 81,7 %.</li>
+</ul>
+<p> </p>
+<p><b>Participation</b><br/>
+Il y a eu 250 employeurs qui ont participé au programme Spare the Air en 1992, 400 en 1994 et 650 en 1995. À la fin du mois d’août 2000, 1 612 employeurs participaient, au-delà d’un million d’employés avaient été informés du programme, avec 22 % de participants, et 8 300 personnes étaient inscrites afin de recevoir une alerte par courriel.</p><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Spare the Air <br/>
+Bay Area Air Quality Management District<br/>
+939 Ellis St <br/>
+San Francisco, CA 94109<br/>
+<a href="http://www.sparetheair.org">www.sparetheair.org</a></p>
+<p>Teresa Lee <br/>
+Coordonnatrice de programme<br/>
+(415) 749-4905 <br/>
+Télécopie: (415) 956-1811</p>
+<p>Will Taylor<br/>
+Responsable du site Internet<br/>
+(415) 749-4783<br/>
+<a href="mailto:wtaylor@baaqmd.gov">wtaylor@baaqmd.gov</a></p>
+<p>Luna Salaver<br/>
+Agente d’information publique<br/>
+(415) 749-5196<br/>
+<a href="mailto:lsalaver@baaqmd.gov">lsalaver@baaqmd.gov</a></p><!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><b>Leçons apprises</b></p>
+<ul>
+<li>Invitez le public à commenter, spécialement lorsque vous traitez d’un problème scientifique ou technique, pour vous assurer que vous n’inondez pas les gens avec de l’information qu’ils ne sont pas en mesure de comprendre.</li>
+<li>Les associations avec les médias, les agences de transport en commun, les employeurs et les agences publiques ont été essentielles au succès du programme.</li>
+<li>Le temps nécessaire afin de mettre sur pied un programme semblable dépend de la dépendance des gens à l’égard de leur voiture pour leurs déplacements, et le niveau de sensibilisation environnementale du public et des employeurs. Si le transport en commun est bien établi, et que les gens ont d’autres options que la conduite de leur voiture, il sera ainsi plus facile de mettre sur pied un tel programme.</li>
+</ul>
+<p> </p>
+<p><b>Programmes reliés (venant du site Internet de RIDES)</b><br/>
+Commuter Check permettait aux employeurs d’offrir à leurs employés un avantage financier lorsqu’ils utilisaient d’autres options de transport. Commuter Checks pouvait être utilisé afin d’acheter une carte de transport en commun, ou payer les frais sur les réseaux de co-voiturage/transport en autobus enregistrés. Commuter Checks étaient achetés par l’employeur, ou l’employé (avec une déduction salariale avant-taxe) ou une combinaison des deux fonds. Plus de 1 500 employeurs de la région de la Baie ont participé à Commuter Check en 2000. Commuter Check représentait une façon par laquelle les employeurs pouvaient implanter un programme fédéral d’économie de taxes Commuter Choice. Les employés pouvaient profiter de ce programme, ou de tout autre avantage du Commuter Choice seulement si leur employeur mettait en place ce programme dans leur milieu de travail.</p>
+<p>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<td><b>Avantages pour les employés :</b></td>
+<td valign="top"><b>Avantages pour les employeurs : </b></td>
+<td><b>Avantages pour la région de la Baie :</b></td>
+</tr>
+<tr>
+<td>
+<ul>
+<li>Recevoir jusqu’à 780 $ par année de revenus libre d’impôt</li>
+<li>Économiser l’argent relié au coût de la conduite seule pour aller au travail</li>
+<li>Réduire le stress associé à la conduite automobile dans la circulation</li>
+<li>Lire, dormir, travailler ou relaxer en se rendant au travail</li>
+<li>Améliorer l’environnement</li>
+<li>Réduire davantage les coûts de transport si l’employé utilisait déjà le transport en commun ou le co-voiturage</li>
+</ul>
+</td>
+<td valign="top">
+<ul>
+<li>Éviter de payer des taxes sur la masse salariale tout en améliorant les systèmes de rémunération des employés</li>
+<li>Réduire les changements d’employés et améliorer le recrutement des nouveaux travailleurs</li>
+<li>Améliorer le moral et la productivité des employés</li>
+<li>Réduire les embouteillages et la pollution de l’air</li>
+<li>Mettre en valeur l’image de l’entreprise</li>
+<li>Réduire le capital et les coûts d’opération du stationnement pour les employés</li>
+</ul>
+</td>
+<td valign="top">
+<ul>
+<li>Réduction des embouteillages</li>
+<li>Amélioration la qualité de l’air</li>
+<li>Conservation des ressources énergétiques non renouvelables</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p>RIDES a effectué une enquête téléphonique annuelle auprès des résidents de la région sur les habitudes de déplacement et a publié les résultats dans Commute Profiles. Le Commute Profiles de 1999 rapportait une diminution de près de 5 % dans la conduite seule comparativement à 1998. Par contre, il n’y a eu aucun avantage net puisque la conduite seule avait augmenté du même pourcentage l’année précédente. L’utilisation du transport en commun avait augmenté de façon la plus marquée de 1998 à 1999, plus de 3 %. De plus petites augmentations pour le co-voiturage et autres moyens ont été enregistrées. Dans les autres moyens, le télétravail a augmenté de façon notable, alors que le vélo et la marche ont subi une baisse en raison du mauvais temps en 1998. D’après ce rapport, certains de ces changements étaient assez minimes pour n’être peut-être que « rumeurs ». Plus d’information est disponible à propos de RIDES et de Commute Profiles sur le site Internet www.rides.org</p>
+<p><b>BayCAP</b><br/>
+BayCAP a été créé par le Air District, le Bay Area Council (entreprises) et le Silicon Valley Manufacturing Group. L’effort principal de BayCAP était de soutenir et améliorer la campagne Spare the Air. En plus de se concentrer sur la réduction du nombre de jours où la région de la Baie viole les normes de qualité de l’air, BayCAP a deux autres buts : vérifier les efforts pour réduire les émissions et explorer de nouvelles stratégies bénévoles pour réduire les émissions. De grosses entreprises basées dans la région de la Baie, comme Pacific Bell, Chevron, Mervyn’s California, la Metropolitan Transportation Commission, Hewlett Packard, Gap, et Kaiser Permanente ont participé à BayCAP.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Outils de changement
+ </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_fr.gif) no-repeat 0 0;">
+<a href="../../../../fr/accueil/" title="Outils de changement = Accueil">Outils de changement</a>
+</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../en/home/" title="">English</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul>  <li><a class="menu_class" href="../../../../fr/outils-de-changement/" id="hb_3">Outils de changement</a> </li> <li><a class="menu_class_current" href="../../../../fr/etudes-de-cas/" id="hb_4">Études de cas</a> </li> <li><a class="menu_class" href="../../../../fr/ressources-de-sujets/" id="hb_5">Ressources thématiques</a> </li> <li><a class="menu_class" href="../../../../fr/ateliers/" id="hb_6">Webinaires et ateliers</a> </li> <li><a class="menu_class" href="../../../../fr/au-sujet-de-nous/" id="hb_7">Au sujet de nous</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap">
+<form action="/fr/etudes-de-cas/detail/?id=&amp;do=update_plan" id="update_plan" method="post">
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../fr/ressources-de-sujets/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad_fr.gif" width="182"/> </a> </p>
+<h5>Outils utilisés</h5>
+<ul>
+<li><a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-spécifiques/">Surmonter des obstacles spécifiques</a></li>
+<li><a href="../../../../fr/outils-de-changement/programmes-scolaires-qui-engagent-la-famille/">Programmes scolaires qui engagent la famille</a></li>
+</ul>
+<h5>Initiative de</h5>
+<ul>
+<li>École élémentaire Lochside</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Résultats</h5>
+<p>À la fin du programme, les parents permettaient plus souvent à leurs enfants de se rendre à l'école à bicyclette et certains parents s'adonnaient davantage au cyclisme. Tous les parents étaient d'avis que depuis leur participation au programme, les enfants étaient plus motivés qu'avant à faire de la bicyclette.</p>
+<table border="1" cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="100%"><img alt="Tip" complete="complete" height="26" src="/images/lightbulb.gif" width="27"/> <small><font face="Verdana">Conseil: Cliquez sur cette image pour l'agrandir. Cliquez votre bouton "Back" pour retourner à ce page. this page.</font></small><hr color="#FFCC00"/>
+<p><font face="Verdana"><small><a href="/images/documentimages/BikeSmart/BikeSmart-1.jpg"><img alt="Bike Smart Image" border="0" complete="complete" height="115" src="/images/documentimages/BikeSmart/BikeSmart-1.jpg" width="189"/></a></small></font><br/>
+<font face="Verdana"><small><strong><small>As safe cycling incentives, participants received brightly coloured skill achievement stickers for completion of each step, to be placed on personal, wallet-sized "I have Bike Smarts" cards.</small></strong></small><br/>
+<br/>
+<a href="/images/documentimages/BikeSmart/BikeSmart-2.jpg"><img alt="Bike Smart Image" border="0" complete="complete" height="168" src="/images/documentimages/BikeSmart/BikeSmart-2.jpg" width="103"/></a><br/>
+<small><strong><small>Bike Smarts certificate.</small></strong></small></font></p>
+<p><font face="Verdana"><small><br/>
+<font face="Verdana"><small><a href="/images/documentimages/BikeSmart/BikeSmart-3.jpg"><img alt="Bike Smart Image" border="0" complete="complete" height="151" src="/images/documentimages/BikeSmart/BikeSmart-3.jpg" width="96"/></a></small></font> </small><br/>
+<small><strong><small>The back of the Bike Smarts card.</small></strong></small></font></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Results_A already contains p tags.-->
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1>Bike Smarts</h1>
+<p>Le programme Bike Smarts de l'école élémentaire Lochside a été conçu dans le but de sensibiliser les élèves à la sécurité à bicyclette et de les encourager à se déplacer en bicyclette. Dans le cadre de ce programme, on a demandé aux parents d'appuyer les efforts des élèves en se rendant à l'école à bicyclette avec leurs enfants et en participant à une grande randonnée à bicyclette.</p><!-- Header already contains P tags.-->
+<h2>Historique</h2>
+<p>En 1996, l'école élémentaire Lochside de Victoria, en Colombie Britanique, a décidé d'implanter le programme de sensibilisation populaire Bike Smarts. Mis au point par le <i>B.C. Ministry of Transport and Highways</i>, ce programme visait à fournir aux enseignants et aux instructeurs en cyclisme les outils nécessaires pour enseigner aux enfants comment faire de la bicyclette en toute sécurité et pour promouvoir l'usage de la bicyclette chez les jeunes.</p><!-- Background already contains P tags.-->
+<h2>Mettre en oeuvre le programme</h2>
+<p>Le programme provincial <em>Bike Smarts </em>visait à sensibiliser les enfants de sept à treize ans aux principes de la sécurité à bicyclette. Lancé en février 1996, <em>Bike Smarts </em>a suscité de l'intérêt en renseignant toutes les écoles, en organisant des séances d'information lors des conférences d'enseignants et en servant de point d'information et de contact hautement accessible aux instructeurs. La trousse acheminée aux écoles inscrites au programme comprenait :</p>
+<ul>
+<li>un petit guide</li>
+<li>une vidéocassette sur le port du casque de sécurité</li>
+<li>une affiche <em>Bike Smarts </em></li>
+<li>des documents additionnels</li>
+<li>un sondage à mener auprès des instructeurs</li>
+</ul>
+<p>Vingt-huit élèves de quatrième année de l'école élémentaire <em>Lochside </em>ont participé au programme de sécurité à bicyclette de six semaines offert en mai et en juin 1996. Afin de bien renseigner les parents et de les sensibiliser à l'importance de la sécurité à bicyclette, l'école leur a fait parvenir, par l'entremise des enfants, des brochures d'information sur <em>Bike Smarts, </em>des formulaires de consentement et des formulaires sur le bon entretien des bicyclettes.</p>
+<p>En classe, les enfants ont suivi des cours sur la sécurité à bicyclette et ont fait sorties à bicyclette pour mettre à l'épreuve leurs nouvelles compétences (<a href="../../../../fr/outils-de-changement/programmes-scolaires-qui-engagent-la-famille/">Programmes scolaires qui engagent la famille</a>). On encourageait également les élèves et leurs parents à effectuer le trajet aller-retour domicile-école à bicyclette. En vue de terminer le programme, les jeunes devaient faire un examen écrit et passer un test « au volant » pour vérifier leurs talents de cyclistes. Le point culminant du programme consistait en une randonnée à bicyclette de 30 km jusqu'à Saltspring Island (15 km chaque direction) en vue d'assister à un grand barbecue et à diverses activités champêtres. Pour avoir le droit de participer à la grande randonnée, les élèves devaient avoir parcouru 100 km au cours des six semaines du programme et avoir inscrit les détails de chaque trajet dans un carnet. Les responsables incitaient fortement les parents à participer aux sorties de quartier et à la grande randonnée.</p>
+<p>Les enfants étaient très motivés à participer au programme en raison de la grande randonnée prévue. Le projet leur plaisait d'autant plus que les sorties de quartier et la randonnée finale avaient toutes lieux pendant les heures de classe.</p>
+<p>Le fait que les enfants n'aillent pas à l'école à bicyclette ne reflétait pas un manque d'intérêt de leur part mais le peu de soutien des parents, qui s'inquiétaient de la sécurité du projet. Pour surmonter cet obstacle, les organisateurs ont bien renseigné les parents, en mettant l'accent sur la sécurité. Ils les ont incité à participer et à constater d'eux-mêmes les nouvelles compétences que leurs enfants étaient en voie d'acquérir (<a href="../../../../fr/outils-de-changement/surmonter-des-obstacles-specifiques/">Surmonter des obstacles spécifiques</a>). Les responsables souhaitaient qu'une fois le programme terminé, les parents continuent de faire de la bicyclette avec leurs enfants.</p><!-- Delivering already contains P tags.-->
+<h2>Mesurer les Résultats</h2>
+<p>À l'automne 1996, les responsables ont fait parvenir un questionnaire aux parents de tous les participants. Ils voulaient connaître le point de vue des parents quant au succès du programme en vue de rendre le cyclisme plus sécuritaire pour les enfants. Ce questionnaire leur permettait aussi d'établir à quelle fréquence les parents et les enfants faisaient de la bicyclette ensemble avant, pendant et après le programme. Seize questionnaires ont été remplis et retournés à l'école.</p><!-- Results_B already contains P tags.-->
+<h2>Résultats</h2>
+<ul>
+<li>La plupart des parents ont permis à leurs enfants de se rendre plus souvent à l'école à bicyclette après le programme. Ceci tenait apparemment au fait que les enfants pouvaient faire de la bicyclette de façon plus sécuritaire qu'avant.</li>
+<li>Le programme a eu un effet direct sur les parents, puisque 4 des 16 parents interrogés ont dit faire au moins 20 pour cent de plus de bicyclette qu'avant, dont deux qui ont avoué en faire 50 pour cent de plus.</li>
+<li>Tous les parents étaient d'avis que leurs enfants étaient plus motivés à faire de la bicyclette depuis qu'ils avaient participé au programme.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacter</h2>
+<p>Warren Hamm <br/>
+1145, Royal Oak Drive <br/>
+Victoria (Colombie-Britannique) <br/>
+V8X 3T7 <br/>
+(604) 658-5238 <br/>
+télécopieur : (604) 658-4982</p>
+<p>Adrienne Parsons <br/>
+JW Sporta - Bike Smarts <br/>
+1367, West Broadway, pièce 228 <br/>
+Vancouver (Colombie-Britannique) <br/>
+V6H 4A0 (604) 738-2468 <br/>
+télécopieur : (604) 737-6043 <br/>
+courrier électronique : <a href="mailto:jwsporta@mindlink.bc.ca">jwsporta@mindlink.bc.ca</a>  </p><!-- Contacts already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+</form>
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Recherche les Ressources de sujets
+        </strong></p>
+<form action="/fr/etudes-de-cas/recherche-de-etudes-de-cas/advanced-search-results/" method="post">
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Recherche':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Recherche"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+</form>
+<p>
+<a href="../../../../fr/etudes-de-cas/recherche-de-etudes-de-cas/">	Cliquez pour la Recherche avancée »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© Jay Kassirer, 1996-2024. Tous droits réservés. Il est interdit de reproduire toute partie de ce site ou de l'utiliser de quelque façon que ce soit sans l’autorisation préalable de l'auteur. Veuillez <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">communiquer avec moi</a>. Habituellement, je donne la permission pour les utilisations crédités avec les liens.</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../fr/aide/">Aide</a></li>
+<li><a href="../../../../fr/modalités-d'utilisation/">Conditions d'utilisation</a></li>
+
+<li class="lastnav"><a href="../../../../fr/contactez-nous/">Contactez-nous</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
