@@ -3,12 +3,10 @@ import requests
 from bs4 import BeautifulSoup
 import urllib.request
 import re
+import json
 
-# TODO
-# - search:
-#     - topic, location, tool, landmark -- start by scraping metadata
-#     - keyword search -- try adding tools -- maybe i can add the metadata into the page itself
-#                                             and have the tool index into that!
+with open('case_study_data.json', 'r') as file:
+    case_study_data = json.load(file)
 
 lang = "en"
 
@@ -251,9 +249,22 @@ def generate_case_study_pages(page):
   for url in urls:
     url = cleanup_url(url)
     os.makedirs(url)
+    case_study_id = url[len('en/case-studies/detail/'):-1]
+    metadata = case_study_data[case_study_id]
+    def soup_adjuster(soup):
+      # soup.find("body")["data-pagefind-body"] = None
+      # soup.find("div", id="content_wrap")["data-pagefind-body"] = None
+      # soup.find("div", class_="right_column")["data-pagefind-ignore"] = None
+      soup.find(class_="case_studies_content").find('h1')["data-pagefind-meta"] = "title"
+      for key, value_list in metadata.items():
+        for value in value_list:
+          new_tag = soup.new_tag("span")
+          new_tag['style'] = "display: none;"
+          new_tag['data-pagefind-filter'] = f"{key}: {value}"
+          soup.find("body").append(new_tag)
+    page = requests.get("https://toolsofchange.com/" + url)
     with open(url + "index.html", "x") as f:
-      page = requests.get("https://toolsofchange.com/" + url)
-      generate_page(f, url, page.text, "../../../..")
+      generate_page(f, url, page.text, "../../../..", soup_adjuster)
 
 
 def generate_simple_pages():
@@ -282,7 +293,9 @@ def generate_simple_pages():
     page = requests.get("https://toolsofchange.com/" + url)
     os.makedirs(url)
     with open(url + "index.html", "x") as f:
-      generate_page(f, url, page.text, "../..")
+      # TODO: i can just calculate this in the generate_page function, which would be better
+      path_to_root = "../.." if url.count("/") == 2 else "../../.."
+      generate_page(f, url, page.text, path_to_root)
 
 def generate_homepage():
   if lang == "en":
@@ -320,17 +333,17 @@ def generate_homepage():
 
 # generate_homepage()
 # generate_simple_pages()
-generate_topic_resources()
+# generate_topic_resources()
 # generate_tools_of_change()
-# case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
+case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
 # generate_case_studies_homepage(case_studies_homepage)
-# generate_case_study_pages(case_studies_homepage)
+generate_case_study_pages(case_studies_homepage)
 # generate_planning_guide()
 
 lang = "fr"
 # generate_homepage()
 # generate_simple_pages()
-generate_topic_resources()
+# generate_topic_resources()
 # generate_tools_of_change()
 # case_studies_homepage = requests.get("https://toolsofchange.com/fr/etudes-de-cas/?max=1000")
 # generate_case_studies_homepage(case_studies_homepage)
