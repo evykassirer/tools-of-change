@@ -96,8 +96,8 @@ theForm.elements[i].checked = status;
 </div> <!-- end #nav_container -->
 <div id="content_cap"></div>
 <div id="content_wrap">
-<div class="left_wrap">
-<form action="/fr/ressources-de-sujets/detail/?id=&amp;do=update_plan" id="update_plan" method="post"> <div class="left_wrap">
+<div class="left_wrap" data-pagefind-body>
+ <div class="left_wrap">
 <div class="left_content">
 <!-- modified 8-20-2007 Brian Loomis  <p><a href="topic_resources.htm">Topic Resources</a> &raquo; <a href="clean_air.htm">Clean Air</a> &raquo; <a href="topic_list.htm">Iowa City</a></p>
   
@@ -105,7 +105,7 @@ theForm.elements[i].checked = status;
 <table class="topics">
 <tr>
 <td class="highlight_box">Titre:</td>
-<td class="rt_text_box"><h2>Un examen des évaluations des campagnes de marketing social dans la prévention des accidents du travail, des maladies ou des incapacités</h2></td>
+<td class="rt_text_box"><h2 data-pagefind-meta="title">Un examen des évaluations des campagnes de marketing social dans la prévention des accidents du travail, des maladies ou des incapacités</h2></td>
 </tr>
 <tr>
 <td class="highlight_box">l'adresse URL:</td>
@@ -141,14 +141,14 @@ theForm.elements[i].checked = status;
 </tr>
 </table>
 </div><!--/left_content-->
-</div><!--/left_wrap--></form>
+</div><!--/left_wrap-->
 </div><!--/left_main-->
 <div class="right_column">
 <div class="advanced_side_cap_top"></div>
 <div class="advanced_side_body">
 <p><strong>Recherche ressources de sujets
         </strong></p>
-<form action="/fr/ressources-de-sujets/recherche-de-ressources-de-sujets/advanced-search-results/" method="post">
+
 <input name="special" type="hidden" value="mood"/>
 <input name="do" type="hidden" value="topic_resources"/>
 <table class="search_sidebar_styles">
@@ -157,7 +157,7 @@ theForm.elements[i].checked = status;
 <td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
 </tr>
 </table>
-</form>
+
 <p>
 <a href="../../../../fr/ressources-de-sujets/recherche-de-ressources-de-sujets/">	Cliquez pour la Recherche avancée  »</a>
 </p>
@@ -215,5 +215,5 @@ try {
 var pageTracker = _gat._getTracker("UA-300660-23");
 pageTracker._trackPageview();
 } catch(err) {}</script>
-</body>
+<img data-pagefind-meta="image[src]" src="../../../../public/images/leaf_icon.gif" style="display: none;"/></body>
 </html>

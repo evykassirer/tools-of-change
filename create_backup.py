@@ -8,9 +8,12 @@ import json
 with open('case_study_data.json', 'r') as file:
     case_study_data = json.load(file)
 
+with open('case_study_data_fr.json', 'r') as file:
+    case_study_data_fr = json.load(file)
+
 lang = "en"
 
-def generate_page(f, url, page_text, path_to_root, soup_adjuster=None, remove_intro_cap=True):
+def generate_page(f, url, page_text, path_to_root, soup_adjuster=None):
   scrape_images(page_text)
 
   page_text = page_text.replace('href="http://www.toolsofchange.com/', f'href="{path_to_root}/')
@@ -26,8 +29,41 @@ def generate_page(f, url, page_text, path_to_root, soup_adjuster=None, remove_in
 
   soup = BeautifulSoup(page_text,"html.parser")
 
+  # forms get in the way of search working, and aren't needed since we got rid of accounts
+  while True:
+    form = soup.find("form")
+    if not form:
+      break
+    form.unwrap()
+
+  # metadata for search
+  content_wrapper = soup.find(id="content_wrap")
+  if not content_wrapper:
+    print(url + " has no content wrap")
+  else:
+    if content_wrapper.find('div', class_="left_wrap"):
+      content_wrapper.find('div', class_="left_wrap")["data-pagefind-body"] = None
+    else:
+      print(url + " has no left wrap in the content wrapper")
+
+    if content_wrapper.find('h1'):
+      content_wrapper.find('h1')["data-pagefind-meta"] = "title"
+    elif content_wrapper.find('h2'):
+      content_wrapper.find('h2')["data-pagefind-meta"] = "title"
+      if "/topic-resources/detail" not in url and '/ressources-de-sujets/detail' not in url:
+        print(url + " had an h2, but go check")
+    else:
+      print(url + " has no headers in content wrapper?")
+
+
+  image_tag = soup.new_tag("img")
+  image_tag['style'] = "display: none;"
+  image_tag['src'] = f"{path_to_root}/public/images/leaf_icon.gif"
+  image_tag["data-pagefind-meta"] = "image[src]"
+  soup.find("body").append(image_tag)
+
   remove_classes = ["sponsor_box", "sidebar_body"]
-  if (remove_intro_cap):
+  if not soup.find("div", class_="intro_box"):
     remove_classes += ["intro_cap_top", "intro_cap_bottom"]
   for remove_class in remove_classes:
     div = soup.find('div', class_=remove_class)
@@ -51,6 +87,8 @@ def generate_page(f, url, page_text, path_to_root, soup_adjuster=None, remove_in
   corner_nav = soup.find('ul', id="quicknav")
   if corner_nav:
     for item in corner_nav.find_all('li'):
+      # TELL_DAD: what the language change links to is really random
+      # e.g. https://toolsofchange.com/fr/etudes-de-cas/recherche-de-etudes-de-cas/
       if not item.find('a').contents[0] in ["Français", "English"]:
         item.decompose()
   else:
@@ -249,13 +287,18 @@ def generate_case_study_pages(page):
   for url in urls:
     url = cleanup_url(url)
     os.makedirs(url)
-    case_study_id = url[len('en/case-studies/detail/'):-1]
-    metadata = case_study_data[case_study_id]
+    if lang == "en":
+      case_study_id = url[len('en/case-studies/detail/'):-1]
+      metadata = case_study_data[case_study_id]
+    else:
+      case_study_id = url[len('fr/etudes-de-cas/detail/'):-1]
+      if case_study_id not in case_study_data_fr:
+        print("can't find id " + case_study_id)
+        metadata = {}
+      else:
+        metadata = case_study_data_fr[case_study_id]
+
     def soup_adjuster(soup):
-      # soup.find("body")["data-pagefind-body"] = None
-      # soup.find("div", id="content_wrap")["data-pagefind-body"] = None
-      # soup.find("div", class_="right_column")["data-pagefind-ignore"] = None
-      soup.find(class_="case_studies_content").find('h1')["data-pagefind-meta"] = "title"
       for key, value_list in metadata.items():
         for value in value_list:
           new_tag = soup.new_tag("span")
@@ -283,7 +326,7 @@ def generate_simple_pages():
       "fr/contactez-nous/",
       "fr/ateliers/",
       "fr/ateliers/présentations-personnalisé-par-webinaire/",
-      "fr/au-sujet-de-nous/", # TELL_DAD: tell dad this isn't translated
+      "fr/au-sujet-de-nous/", # TELL_DAD: this isn't translated
       # Seems like landmark just isn't a thing in french..?
       "fr/aide/",
       "fr/modalités-d'utilisation/",
@@ -316,7 +359,7 @@ def generate_homepage():
       for link in soup.find_all('a'):
         if "https://clicky.com" in link['href']:
           link.decompose()
-    generate_page(f, url, page.text, "../..", soup_adjuster, False)
+    generate_page(f, url, page.text, "../..", soup_adjuster)
 
   homepage_soup = BeautifulSoup(page.content, "html.parser")
   for intro_link in homepage_soup.find('div', class_="intro_box").find_all('a'):
@@ -335,9 +378,9 @@ def generate_homepage():
 # generate_simple_pages()
 # generate_topic_resources()
 # generate_tools_of_change()
-case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
+# case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
 # generate_case_studies_homepage(case_studies_homepage)
-generate_case_study_pages(case_studies_homepage)
+# generate_case_study_pages(case_studies_homepage)
 # generate_planning_guide()
 
 lang = "fr"
@@ -345,7 +388,9 @@ lang = "fr"
 # generate_simple_pages()
 # generate_topic_resources()
 # generate_tools_of_change()
-# case_studies_homepage = requests.get("https://toolsofchange.com/fr/etudes-de-cas/?max=1000")
-# generate_case_studies_homepage(case_studies_homepage)
-# generate_case_study_pages(case_studies_homepage)
-# generate_planning_guide()
+case_studies_homepage = requests.get("https://toolsofchange.com/fr/etudes-de-cas/?max=1000")
+generate_case_studies_homepage(case_studies_homepage)
+generate_case_study_pages(case_studies_homepage)
+generate_planning_guide()
+
+# TODO: why are there so many fewer french pages? and case studies with ids with no tags?

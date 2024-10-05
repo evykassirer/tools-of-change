@@ -154,6 +154,8 @@ def scrape_en_topic_resources():
     f.write(json.dumps(results_map))
 
 # scrape_en_case_studies()
-scrape_fr_case_studies() # TODO this isn't working yet
+scrape_fr_case_studies()
+
+# TODO: topic resource scrape
 
 # TODO: tell dad french results for topic resources are broken, links don't work (missing id)

@@ -96,10 +96,10 @@ theForm.elements[i].checked = status;
 </div> <!-- end #nav_container -->
 <div id="content_cap"></div>
 <div id="content_wrap">
-<div class="left_wrap">
+<div class="left_wrap" data-pagefind-body>
 <div class="left_wrap">
 <div class="left_content">
-<h1>Ressources thématiques</h1>
+<h1 data-pagefind-meta="title">Ressources thématiques</h1>
 <p>Cette section du site offre un accès rapide à des ressources en ligne utiles qui ont trait à l'environnement, la santé et la sécurité.</p>
 <h3>Rechercher les Ressources parmi les sujets suivants :</h3>
 </div>
@@ -152,7 +152,7 @@ theForm.elements[i].checked = status;
 <div class="advanced_side_body">
 <p><strong>Recherche ressources de sujets
         </strong></p>
-<form action="/fr/ressources-de-sujets/recherche-de-ressources-de-sujets/advanced-search-results/" method="post">
+
 <input name="special" type="hidden" value="mood"/>
 <input name="do" type="hidden" value="topic_resources"/>
 <table class="search_sidebar_styles">
@@ -161,7 +161,7 @@ theForm.elements[i].checked = status;
 <td class="go_area"><input src="../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
 </tr>
 </table>
-</form>
+
 <p>
 <a href="../../fr/ressources-de-sujets/recherche-de-ressources-de-sujets/">	Cliquez pour la Recherche avancée  »</a>
 </p>
@@ -219,5 +219,5 @@ try {
 var pageTracker = _gat._getTracker("UA-300660-23");
 pageTracker._trackPageview();
 } catch(err) {}</script>
-</body>
+<img data-pagefind-meta="image[src]" src="../../public/images/leaf_icon.gif" style="display: none;"/></body>
 </html>
