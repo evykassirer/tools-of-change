@@ -5,6 +5,14 @@ import urllib.request
 import re
 import json
 
+# TODO:
+# - replace every link to toolsofchange.com
+# - case studies have pdfs
+# - case studies search # bar is showing up
+# - tools links are broken in french
+# - add a hardcoded latest news box and news page
+# - figure out git on windows for dad
+
 with open('case_study_data.json', 'r') as file:
     case_study_data = json.load(file)
 
@@ -370,24 +378,24 @@ def generate_homepage():
       generate_page(f, url, page.text, "../../..")
 
 
-# os.makedirs("./public/images/")
-# os.makedirs("./userfiles/Image")
-# generate_stylesheets()
+os.makedirs("./public/images/")
+os.makedirs("./userfiles/Image")
+generate_stylesheets()
 
-# generate_homepage()
-# generate_simple_pages()
-# generate_topic_resources()
-# generate_tools_of_change()
-# case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
-# generate_case_studies_homepage(case_studies_homepage)
-# generate_case_study_pages(case_studies_homepage)
-# generate_planning_guide()
+generate_homepage()
+generate_simple_pages()
+generate_topic_resources()
+generate_tools_of_change()
+case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
+generate_case_studies_homepage(case_studies_homepage)
+generate_case_study_pages(case_studies_homepage)
+generate_planning_guide()
 
 lang = "fr"
-# generate_homepage()
-# generate_simple_pages()
-# generate_topic_resources()
-# generate_tools_of_change()
+generate_homepage()
+generate_simple_pages()
+generate_topic_resources()
+generate_tools_of_change()
 case_studies_homepage = requests.get("https://toolsofchange.com/fr/etudes-de-cas/?max=1000")
 generate_case_studies_homepage(case_studies_homepage)
 generate_case_study_pages(case_studies_homepage)

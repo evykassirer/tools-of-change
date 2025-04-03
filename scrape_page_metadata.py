@@ -79,7 +79,6 @@ def scrape_en_case_studies():
   scrape_topics(url, scrape_case_study_search_result)
   scrape_locations(url, scrape_case_study_search_result)
   scrape_toc(url, scrape_case_study_search_result)
-  # TELL_DAD: i didn't do date, and the website doesn't go more recent than 2010 anyways
   scrape_case_study_search_result("Landmark_designation", "1", "Landmark designation?", "Yes")
   scrape_case_study_search_result("Landmark_designation", "0", "Landmark designation?", "No")
   scrape_case_study_search_result("widespread_use", "yes", "Available for widespread use?", "Yes")
