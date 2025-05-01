@@ -11,7 +11,6 @@ import json
 # - case studies search # bar is showing up
 # - tools links are broken in french
 # - add a hardcoded latest news box and news page
-# - figure out git on windows for dad
 
 with open('case_study_data.json', 'r') as file:
     case_study_data = json.load(file)
@@ -297,11 +296,15 @@ def generate_case_study_pages(page):
     os.makedirs(url)
     if lang == "en":
       case_study_id = url[len('en/case-studies/detail/'):-1]
-      metadata = case_study_data[case_study_id]
+      if case_study_id not in case_study_data_fr:
+        print("can't find id in search results (en) " + case_study_id)
+        metadata = {}
+      else:
+        metadata = case_study_data[case_study_id]
     else:
       case_study_id = url[len('fr/etudes-de-cas/detail/'):-1]
       if case_study_id not in case_study_data_fr:
-        print("can't find id " + case_study_id)
+        print("can't find id in search results (fr) " + case_study_id)
         metadata = {}
       else:
         metadata = case_study_data_fr[case_study_id]
@@ -378,27 +381,33 @@ def generate_homepage():
       generate_page(f, url, page.text, "../../..")
 
 
-os.makedirs("./public/images/")
-os.makedirs("./userfiles/Image")
-generate_stylesheets()
+def setup():
+  os.makedirs("./public/images/")
+  os.makedirs("./userfiles/Image")
+  generate_stylesheets()
 
-generate_homepage()
-generate_simple_pages()
-generate_topic_resources()
-generate_tools_of_change()
-case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
-generate_case_studies_homepage(case_studies_homepage)
-generate_case_study_pages(case_studies_homepage)
-generate_planning_guide()
+def generate_english_site():
+  generate_homepage()
+  generate_simple_pages()
+  generate_topic_resources()
+  generate_tools_of_change()
+  case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
+  generate_case_studies_homepage(case_studies_homepage)
+  generate_case_study_pages(case_studies_homepage)
+  generate_planning_guide()
 
-lang = "fr"
-generate_homepage()
-generate_simple_pages()
-generate_topic_resources()
-generate_tools_of_change()
-case_studies_homepage = requests.get("https://toolsofchange.com/fr/etudes-de-cas/?max=1000")
-generate_case_studies_homepage(case_studies_homepage)
-generate_case_study_pages(case_studies_homepage)
-generate_planning_guide()
+def generate_french_site():
+  generate_homepage()
+  generate_simple_pages()
+  generate_topic_resources()
+  generate_tools_of_change()
+  case_studies_homepage = requests.get("https://toolsofchange.com/fr/etudes-de-cas/?max=1000")
+  generate_case_studies_homepage(case_studies_homepage)
+  generate_case_study_pages(case_studies_homepage)
+  generate_planning_guide()
+  # TODO: why are there so many fewer french pages? and case studies with ids with no tags?
 
-# TODO: why are there so many fewer french pages? and case studies with ids with no tags?
+# setup()
+# generate_english_site()
+lang = "fr" # global variables in python ....? would ideally put this in generate_
+generate_french_site()

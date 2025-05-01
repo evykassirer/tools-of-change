@@ -1,0 +1,360 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="../../../../en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../fr/accueil/" title="left=-rgt=">Français</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul> <li><a class="menu_class" href="../../../../en/planning-guide/" id="hb_2">Planning Guide</a> </li> <li><a class="menu_class" href="../../../../en/tools-of-change/" id="hb_3">Tools of Change</a> </li> <li><a class="menu_class_current" href="../../../../en/case-studies/" id="hb_4">Case Studies</a> </li> <li><a class="menu_class" href="../../../../en/topic-resources/" id="hb_5">Topic Resources</a> </li> <li><a class="menu_class" href="../../../../en/workshops/" id="hb_6">Webinars &amp; Workshops</a> </li> <li><a class="menu_class" href="../../../../en/about-us/" id="hb_7">About Us</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap" data-pagefind-body>
+
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../en/topic-resources/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad.gif" width="182"/> </a> </p>
+<h5>Tools Used</h5>
+<ul>
+<li><a href="../../../../en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="../../../../en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>Portland City Council</li>
+<li>Portland Bureau of Transportation</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>TriMET</li>
+<li>Biketown</li>
+<li>Lime</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Reduced participants’ drive-alone rates to 10% in 2023, from 24% in 2021.  In contrast, the drive-alone rate for non-participants was 29% in 2023.</li>
+<li>Decreased parking permit purchase</li>
+<li>Increased use of public transit and other modes of transportation</li>
+</ul><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1 data-pagefind-meta="title">Portland’s Transportation Wallet</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="150" src="https://www.youtube.com/embed/7_7n4lGW2lA" title="Google Maps" width="97%"></iframe></p>
+<p>Portland’s Transportation Wallet is a demand management strategy that encourages people to drive less and try alternative travel modes, while reducing the use of single-occupant vehicles, the demand for on-street parking, and the burdens of transportation costs for people with low-incomes. Users see it as a package of valuable travel options at a deep discount, or at no cost when trading in a parking permit or meeting income criteria. The program reduced participants’ drive-alone rates to 10% in 2023, from 24% in 2021. It is funded by charging for choosing the ‘competition’ (i.e. making it more expensive to drive / park a car.) Designated a <em>Landmark</em> case study by our transportation panel in 2024.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>The City of Portland’s parking management strategy had three main tactics: eliminate free parking, decrease parking permits, and expand permit and metered parking areas for visitors. Revenues from permit and metered parking funded the following:</p>
+<ol>
+<li>Discounted access to transit, bike-share and scooter-share (wallets)</li>
+<li>Low-cost transit/bike/ pedestrian infrastructure improvements</li>
+<li>Marketing and encouragement campaigns</li>
+</ol>
+<p>Portland had many parking districts. City Council approved parking management plans for these districts in 2012 and 2013, then formed parking stakeholder committees to help make decisions. In the busier districts, free parking was eliminated, and a permit was required to park for more than four hours at a time.</p>
+<p>In addition, two of the denser districts - the Northwest and Central Eastside Parking Districts - wanted to add a surcharge to permit costs, to be used to manage parking demand, limit permit sales, and fund district projects. These two districts were growing quickly. Between 2015 and 2020 the number of people in the Northwest and Central Eastside Parking Districts had grown by 28% and 49% respectively. The Slabtown area in the Northwest Parking District was growing the fastest. By the end of 2023, it had 850 residential units (93% rented) up from almost 500 in 2020, with 716 additional units under construction. In addition, about 1,100 people worked in this 16-block area.</p>
+<p>Portland adopted City Ordinances by 2015/2016 enabling the parking districts to institute these surcharges. On top of the city’s base permit charge of $90.75 a year per parking spot, one district instituted a $120 surcharge and the other a $295 surcharge.</p>
+<p>The base parking permit fee covered administration costs such as permit processing, customer service, and parking enforcement. The surcharge supported local transportation projects like the Transportation Wallet.</p><!-- Background already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Portland Bureau of Transportation (PBOT) conducted a Randomized Control Trial with existing parking permit holders. The promotional materials used lots of pictures, and people had to act within a certain period. This resulted in a 40% email open rate. Of those who opened the materials, 35% opted in. This demonstrated strong demand for transportation wallets.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>The program was launched in the fall of 2017, giving participating residents and employees a deep discount on a collection of passes and credits (“wallet”) for use on transit, streetcars, bikeshare, and eventually also e-scooters and carshare. (<em>Financial Incentives and Disincentives</em>) Program participants had to reapply each year.</p>
+<p>Parking permits in the Northwest and Central Eastside Parking Districts were only available to those who lived and/or worked in those districts. The program specifically targeted those individuals who held parking permits in those districts, as they were the most significant driving populations in those zones.</p>
+<p>Although gas prices and other costs of driving had increased since 2017, the cost of a Transportation Wallet stayed at $99 for qualified people in the Northwest and Central Eastside Parking Districts, and free to those with low incomes or those trading in their parking permits. At the same time, the full retail value of the wallets had generally increased each year, based on what passes and credits were available. The original wallet offered a $634 value – a $50 Hop transit card, an annual BIKETOWN membership that normally cost $144, and an annual streetcar pass that normally cost $440. </p>
+<p><strong>Promotion</strong><strong><br/>
+</strong><strong><br/>
+</strong>The program was promoted using direct mail, email, e-newsletters, a full color insert sent along with parking permits on renewal, print ads, and social media using geolocation.</p>
+<p><strong>Additional Transportation Wallet Offerings</strong></p>
+<p>Once it started offering Transportation Wallets for free to low-income participants, PBOT started exploring if a similar approach could be used with low-income residents across Portland. It piloted a “Golden Transportation Wallet” program in partnership with trusted community organizations. The pilot gave residents of affordable housing developments a free Transportation Wallet with transit passes, shared micromobility memberships, and credits for both rideshare and carshare services.</p>
+<p>The pilot was successful, and the program expanded. In 2023, the program’s name was changed to “Access to All”, as Portland embraced the concept of Universal Basic Mobility – which says everyone has a right to a basic level of mobility to meet transportation needs, regardless of income or location. Portland hoped this would better connect people to jobs and services, thereby stimulating the economy. In 2023, the wallets covered transit fare, bike or scooter-share ride credit, and ride-share (Uber/Lyft) or taxi ride credit.</p>
+<p>To take advantage of the increased receptivity to changing travel behaviors when people moved to a new home, PBOT also created a Transportation Wallet Program for New Movers.  That program provided incentives and information to new residents of some of Portland's new multi-unit buildings, funded by a fee paid by the developers of those buildings. (<em>Overcoming Specific Barriers</em> – inertia)</p>
+<p><strong>Overcoming Barriers</strong></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid #A8D08D .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid #A8D08D;mso-border-insidev:.5pt solid #A8D08D">
+<tbody>
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+<td style="width:310.2pt;border:solid #70AD47 1.0pt;
+  border-right:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-left-alt:
+  solid #70AD47 .5pt;mso-border-bottom-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="414">
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm"><b><span style='font-family:"Arial",sans-serif;
+  color:white'>Barrier<o:p></o:p></span></b></p>
+</td>
+<td style="width:188.8pt;border:solid #70AD47 1.0pt;
+  border-left:none;mso-border-top-alt:solid #70AD47 .5pt;mso-border-bottom-alt:
+  solid #70AD47 .5pt;mso-border-right-alt:solid #70AD47 .5pt;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="252">
+<p class="MsoNormal" style="margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm"><b><span style='font-family:"Arial",sans-serif;
+  color:white'>How it was addressed<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes;height:40.9pt">
+<td style="width:310.2pt;border:solid #A8D08D 1.0pt;
+  border-top:none;mso-border-top-alt:solid #A8D08D .5pt;mso-border-alt:solid #A8D08D .5pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:40.9pt" valign="top" width="414">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Cost<o:p></o:p></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Lack of knowledge and experience   relating to alternative modes.<o:p></o:p></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Other priorities.<o:p></o:p></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>           </span></span><!--[endif]-->Inertia<br/>
+<o:p></o:p></p>
+</td>
+<td style="width:188.8pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  mso-border-top-alt:solid #A8D08D .5pt;mso-border-left-alt:solid #A8D08D .5pt;
+  mso-border-alt:solid #A8D08D .5pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:40.9pt" valign="top" width="252">
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+  l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]-->Deep   discounts coupled with information on the alternatives being promoted<o:p></o:p></p>
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+  margin-left:17.85pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol">·<span style='font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: "Times New Roman";'>       </span></span><!--[endif]-->Program   for New Movers<o:p></o:p></p>
+</td>
+</tr>
+</tbody>
+</table><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Portland’s programs in the Northwest and Central Eastside Parking Districts funded its sustainable transportation incentives by charging for choosing the ‘competition’ (i.e. making it more expensive to drive / park a car.)</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Three transportation surveys (N=1,000) were conducted by PBOT in 2019, 2021, and 2023 in the Central Eastside and Northwest Parking Districts. These surveys asked respondents “how they got to work or school last week.” The surveys were sent out via the district e-newsletters, direct mail postcards to addresses in both districts, and via targeted social media adds – therefore a wide range of people could participate in the surveys, not just Wallet holders.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Switching from Driving Alone to Other Modes of Travel</strong></p>
+<ul>
+<li>Participants (those with transportation wallets) reduced their drive alone rates to 10% in 2023, from 23% in 2022 and 24% in 2021.  In contrast, the drive-alone rate for non-participants was 29% in 2023. </li>
+<li>According to the fall 2021 survey, participants were 30% less likely than non-participants to drive and 40% less likely to use a cab or ride-hailing service. In contrast, they were three times more likely to commute by public transit and bike than by driving. In 2023, participants were still using transit more than non-participants (28% vs 17%).</li>
+</ul>
+<p><strong>Parking Management</strong></p>
+<ul>
+<li>The program helped manage demand for parking spaces in both parking districts.</li>
+<li>In 2023, Portland sold 75% fewer parking permits in the Central Eastside and 41% fewer permits in the Northwest than it would have without the Transportation Wallet program.</li>
+<li>Between the fall of 2017 and the end of 2023, 4,000 parking permits were exchanged for Transportation Wallets, accounting for 48% of all Transportation Wallets issued in the two parking districts combined.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Contacts</h2>
+        Dylan Rivera 
+Transportation Public Information Officer
+Portland Bureau of Transportation
+1120 SW Fifth Ave., Suite 1331  
+Portland, OR 97204  
+Dylan.Rivera@portlandoregon.org
+503-577-7534 (Cell)<!-- Contacts already contains P tags.-->
+<h2>Notes</h2>
+<p><strong>Landmark Designation</strong></p>
+<p>The program described in this case study was designated in 2024 by our transportation panel.</p>
+<p>Designation as a <em>Landmark</em> (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff and are then scored by the selection panels based on impact, innovation, replicability, and adaptability.</p>
+<p>The panel that designated this program consisted of:</p>
+<ul>
+<li>Aaron Gaul, UrbanTrans</li>
+<li>Nathalie Lapointe, Federation of Canadian Municipalities</li>
+<li>David Levinger, Mobility Education Foundation</li>
+<li>Nicole Roach and Charlotte Estey, Green Communities Canada</li>
+<li>Jessica Roberts, Alta Planning + Design</li>
+<li>Lisa Kay Schweyer, Foursquare ITP</li>
+<li>Phil Winters, CUTR and the University of South Florida</li>
+</ul>
+<p><strong>Lessons Learned</strong></p>
+<ul>
+<li>The elimination of free parking and addition of a parking surcharge can fund transportation demand management projects like the Transportation Wallet.</li>
+<li>Starting a project off small (e.g. in only one or two districts) and then scaling up, helps keep it manageable and more likely to succeed.</li>
+<li>Having an integrative app for transportation demand is ideal so that transportation credits can be both distributed and used through the app, if the technology can be funded.</li>
+<li>Developing partnerships early on with community members helps ensure success by increasing the likelihood of buy-in.</li>
+<li>Advertising cleverly, and in a myriad of ways and channels helps spread knowledge of the program.</li>
+<li>The Transportation Wallet in Parking District Program can be staff intensive to fulfill, therefore efficiencies, digital or otherwise, are important for expansion.</li>
+</ul>
+<p><strong>Replicability and Adaptability<br type="_moz"/>
+</strong></p>
+<ul>
+<li>This approach is replicable in other large cities with areas that are dense and growing quickly. You can access a guide to Parking Benefit Districts (BPD - where a city charges drivers for parking on the street and spends some of or all the rathttps://parkingreforesulting revenue to fund added public services) at <a href="http://parkingreform.org/playbook/pbd/#intro" target="_blank">http://parkingreform.org/playbook/pbd/#intro</a>. This guide lists over 20 cities around the world (mostly American) with BPD in operation. </li>
+</ul>
+<p>The idea of paying for incentives through charges on the cost of the “competition” could be adaptable to other behaviors. The following are some examples.</p>
+<ul>
+<li>If food waste and compost were not allowed to be put in regular garbage, and if people paid by volume of food waste/compost put out for collection, those funds could be used to help feed low-income people in need.</li>
+<li>Organizations with higher-than-average occupational health and safety incidents could be charged a fee that could fund incentives for improving health and safety conditions.</li>
+<li>Organizations that pollute more could pay for the privilege (fines or surcharges) and that money could fund incentives for reducing pollution.</li>
+<li>Organizations and households that reduce wildlife significantly could pay for the privilege (fines or surcharges) and that money could fund incentives for wildlife preservation.</li>
+</ul>
+<p><strong>Reports</strong></p>
+<ul>
+<li><a href="http://www.portland.gov/transportation/wallet/documents/2023-transportation-wallet-parking-districts-report/download" target="_blank">  http://www.portland.gov/transportation/wallet/documents/2023-transportation-wallet-parking-districts-report/download</a></li>
+<li><a href="http://content.govdelivery.com/accounts/ORPORTLAND/bulletins/31f44a6" target="_blank">  http://content.govdelivery.com/accounts/ORPORTLAND/bulletins/31f44a6</a></li>
+<li>Ridesharing Institute Video:  <a href="http://youtu.be/-nOEbWVGhHQ" target="_blank">http://youtu.be/-nOEbWVGhHQ</a>.</li>
+</ul>
+<p><strong>Case Study Development Credits</strong></p>
+<p>This case study was developed in 2024 and 2025 by Jay Kassirer and Mitchell Luttermoser, based on information provided in Project Manager Sarah Goforth’s presentation through the Ridesharing Institute, the city of Portland’s website, and by Portland’s Bureau of Transportation Public Information Officer, Dylan Rivera.</p><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+
+<p>
+<a href="../../../../en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2025 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../en/help/">Help</a></li>
+<li><a href="../../../../en/terms/">Terms of Use</a></li>
+
+<li class="lastnav"><a href="../../../../en/contact-us/">Contact Us</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<img data-pagefind-meta="image[src]" src="../../../../public/images/leaf_icon.gif" style="display: none;"/></body>
+</html>

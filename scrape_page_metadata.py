@@ -101,7 +101,7 @@ def scrape_fr_case_studies():
   scrape_case_study_search_result("widespread_use", "yes", "Afficher seulement les études de cas des programmes qui font l'objet d'une diffusion générale", "Yes")
   scrape_case_study_search_result("widespread_use", "no", "Afficher seulement les études de cas des programmes qui font l'objet d'une diffusion générale", "No")
 
-  print(json.dumps(results_map))
+  # print(json.dumps(results_map))
   with open("case_study_data_fr.json", "x") as f:
     f.write(json.dumps(results_map))
 
@@ -152,7 +152,7 @@ def scrape_en_topic_resources():
   with open("topic_resource_data.json", "x") as f:
     f.write(json.dumps(results_map))
 
-# scrape_en_case_studies()
+scrape_en_case_studies()
 scrape_fr_case_studies()
 
 # TODO: topic resource scrape

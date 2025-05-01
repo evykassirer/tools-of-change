@@ -1,0 +1,660 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.1.4.4.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.expose").click(function () {
+				$("p.hideme").slideToggle("slow");
+			});
+			$("a.expose2").click(function () {
+				$("p.hideme2").slideToggle("slow");
+			});
+
+			$("a.expose3").click(function () {
+				$("ul.hideme3").slideToggle("slow");
+			});
+  				$("a.expose3").toggle(function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_collapse.gif" width="12" height="11" alt="Collapse" />');
+							},function(){
+						$("a.expose3").html('<img src="../../../../public/images/plan_expand.gif" width="12" height="11" alt="Expand" />');
+						});
+
+		    $('p.alert').fadeOut(3500).slideUp("fast");
+
+		    // landmark badge
+		    // http://toolsofchange.com/en/help/landmark-badge/
+		    //reset dropdown and default to first
+			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
+			var createCaseStudyCode = function () {
+			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+				$('textarea.badge_code').text(case_study_text);
+			};
+			createCaseStudyCode();
+		    // change landmark case study link from dropdown and create code
+			$('.landmark_case_study_choices').change(function() {
+				createCaseStudyCode();
+			});
+
+
+  		});
+
+		</script>
+<title>Tools of Change </title>
+<meta content="Tools of Change provides proven methods for promoting health, safety and environmental citizenship. " name="description"/>
+<meta content="community-based social marketing, fostering sustainable behavior, " name="keywords"/>
+<meta content="s00lyK//ZiuVC3dRiLKS4TDMpFlwn/oafWhDXsNI4Uo=" name="verify-v1"/>
+<meta content="text/html;charset=utf-8" http-equiv="Content-type"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/ico"/>
+<script charset="utf-8" src="../../../../public/javascripts/jquery-latest.pack.js" type="text/javascript"></script>
+<script charset="utf-8" src="../../../../public/javascripts/jquery.jeditable.js" type="text/javascript"></script>
+<link href="../../../../public/stylesheets/default.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/tables.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/thickbox.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../public/stylesheets/sortmenu.css" rel="stylesheet" type="text/css"/>
+<script src="/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css"/>
+<link href="/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkAll(theForm, cName, status) {
+for (i=0,n=theForm.elements.length;i<n;i++)
+if (theForm.elements[i].className.indexOf(cName) !=-1) {
+theForm.elements[i].checked = status;
+}
+}
+-->
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="headwrap">
+<div id="header">
+<h1 id="logo" style="	background:transparent url(../../../../public/images/logo_en.gif) no-repeat 0 0;">
+<a href="../../../../en/home/" title="Tools of Change - Home">Tools- of Change</a>s
+					
+					</h1>
+<div id="qnav">
+<ul id="quicknav">
+
+
+
+<li class="last_nav"><a class="" href="../../../../fr/accueil/" title="left=-rgt=">Français</a></li>
+</ul></div><!--/qnav-->
+</div><!--/header-->
+</div><!--/headwrap-->
+<div id="nav_container">
+<div id="nav">
+<ul> <li><a class="menu_class" href="../../../../en/planning-guide/" id="hb_2">Planning Guide</a> </li> <li><a class="menu_class" href="../../../../en/tools-of-change/" id="hb_3">Tools of Change</a> </li> <li><a class="menu_class_current" href="../../../../en/case-studies/" id="hb_4">Case Studies</a> </li> <li><a class="menu_class" href="../../../../en/topic-resources/" id="hb_5">Topic Resources</a> </li> <li><a class="menu_class" href="../../../../en/workshops/" id="hb_6">Webinars &amp; Workshops</a> </li> <li><a class="menu_class" href="../../../../en/about-us/" id="hb_7">About Us</a> </li> </ul>
+</div> <!-- end #nav -->
+</div> <!-- end #nav_container -->
+<div id="content_cap"></div>
+<div id="content_wrap">
+<div class="left_wrap" data-pagefind-body>
+
+<div class="case_study_sidebar_wrap">
+<div class="case_study_sidebar_cap"></div>
+<div class="case_study_sidebar_body">
+<p><a href="../../../../en/topic-resources/"><img alt="Topic Resources" class="topic_ad" height="107" src="../../../../public/images/topic_ad.gif" width="182"/> </a> </p>
+<h5>Tools Used</h5>
+<ul>
+<li><a href="../../../../en/tools-of-change/building-motivation-over-time/">Building Motivation Over Time</a></li>
+<li><a href="../../../../en/tools-of-change/feedback/">Feedback</a></li>
+<li><a href="../../../../en/tools-of-change/financial-incentives-and-disincentives/">Financial Incentives and Disincentives</a></li>
+<li><a href="../../../../en/tools-of-change/norm-appeals/">Norm Appeals</a></li>
+<li><a href="../../../../en/tools-of-change/obtaining-a-commitment/">Obtaining a Commitment</a></li>
+<li><a href="../../../../en/tools-of-change/overcoming-specific-barriers/">Overcoming Specific Barriers</a></li>
+<li><a href="../../../../en/tools-of-change/mass-media/">Mass Media</a></li>
+<li><a href="../../../../en/tools-of-change/word-of-mouth/">Word of mouth</a></li>
+</ul>
+<h5>Initiated By</h5>
+<ul>
+<li>World Wildlife Fund with its partners</li>
+</ul><!-- Initiated already contains li tags.-->
+<h5>Partners</h5>
+<ul>
+<li>Large global retailers like Adidas, Gap, H&amp;M, and IKEA</li>
+<li>NGOs like the Interchurch Organisation for Development Cooperation (ICCO), International Federation of Agricultural Producers (IFAP), Organic Exchange, Pesticides Action Network (PAN) UK and the World Wildlife Fund.</li>
+</ul><!-- Partners already contains li tags.-->
+<h5>Results</h5>
+<ul>
+<li>Water use dropped by 10-14% at participating farms in China, India, and Pakistan. Annual water use dropped by 1.1 billion cubic meters of water in India alone.</li>
+<li>Use of synthetic pesticides dropped by 12-23%</li>
+<li>Use of synthetic fertilizers dropped by 8-16%</li>
+<li>Yields increased by 9-12%</li>
+<li>Profitability increased by 17-35%</li>
+</ul><!-- Results_A already contains p tags.-->
+<h6>Landmark Case Study</h6>
+</div>
+<!--/case_study_sidebar_body-->
+<div class="tan_cap_bottom"></div>
+</div>
+<!--/case_study_sidebar_wrap-->
+<div class="case_studies_content">
+<h1 data-pagefind-meta="title">Better Cotton</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="150" src="https://www.youtube.com/embed/0I9Zr0AVSAc" title="Carbon Cure" width="97%"></iframe></p>
+<p>Better Cotton has changed farming techniques (behaviors) that in turn, among other social benefits, decreased the amount of water used per hectare when cultivating cotton (climate change adaptation). In addition, in 2021 it set a target of also reducing greenhouse gas emissions per ton of Better Cotton produced by 50% from a 2017 baseline (climate change mitigation). Its primary focus is on fostering voluntary action by the commercial sector, not regulations for the commercial sector, nor consumer communications. A similar approach could be used to increase the sustainability (or other desired traits) of many different commodities that are grown, caught or mined, and then used to manufacture items for sale. Designated in 2024.</p><!-- Header already contains P tags.-->
+<h2>Background</h2>
+<p><em>Note: To minimize site maintenance costs, all case studies on this site are written in the past tense, even if they are ongoing as is the case with this particular program.</em></p>
+<p>Better Cotton was both a program and a brand. It brought together large global retailers like Adidas, Gap, H&amp;M, and IKEA, as well as NGOs like the Interchurch Organisation for Development Cooperation (ICCO), International Federation of Agricultural Producers (IFAP), Organic Exchange, Pesticides Action Network (PAN) UK and the World Wildlife Fund. Member fees, matched by institutional donors and private foundations, funded capacity building activities to support member farmers collectively face issues like pest management, soil health /soil testing, and fiber protection, as well as social issues like child labor, decent work, sustainable livelihoods, and gender equality.</p>
+<p>In 2005, as the World Wildlife Fund led a multi-stakeholder round table process to look at sustainability in various sectors. The Better Cotton Initiative was one of the ideas that emerged, and it quickly drew the support of organizations such as Adidas, Gap, H&amp;M, Interchurch Organisation for Development Cooperation (ICCO), International Federation of Agricultural Producers (IFAP), International Finance Corporation, IKEA, Organic Exchange, Oxfam, Pesticides Action Network (PAN) UK and the WWF. Research and preparation were conducted from 2006 to 2009, including supply and demand market analyses, and an assessment of interest from existing major brands and other potential program delivery partners.</p>
+<p>In 2009 the initiative was officially launched, and its first standard was published.</p>
+<p>In 2010, Better Cotton entered its implementation stage, focusing first on Brazil, India, Pakistan, and West &amp; Central Africa. The diversity in climate, farm size, agricultural methods and environmental and social conditions supported broader concept testing and refinement for a roll-out in other countries. The same year, for the first time, funding was provided for capacity building.</p>
+<p>2011 saw the first harvests of Better Cotton in Brazil, India, Mali and Pakistan. 2012 saw the first harvest in China. By 2019, over 20% of global cotton production was Better Cotton.</p>
+<p>The program has been most thoroughly documented in India, which is  the second largest cotton-producing country in the world and has had the largest number of farmers participating in the programme (roughly one million farmers by 2022, growing 1.3 million hectares of cotton.)</p><!-- Background already contains P tags.-->
+<h2>Setting Objectives</h2>
+<p>Objectives included: reducing water and pesticide use, lowering greenhouse gas emissions, increasing yields and farmer profits, and reaching training milestones.</p>
+<p>In addition, in 2021 the program set a target of also reducing greenhouse gas emissions per ton of Better Cotton produced by 50% from a 2017 baseline.</p><!-- Objectives already contains P tags.-->
+<h2>Getting Informed</h2>
+<p>Research and preparation were conducted from 2006 to 2009, including supply and demand market analyses, and an assessment of interest from existing major brands and other potential program delivery partners. Further research was conducted in each participating country, involving further stakeholder consultations, field visits and interviews with individuals.</p>
+<p>Sustainable livelihood was a key motivator identified through this research. For example, India had about six million farmers who grew cotton for their livelihoods on small plots of land. These farmers were vulnerable to unexpected events affecting their income or assets. In response to such events, they might have had to sell necessities, cut back on food or even send their children to work. Maintaining their livelihood was challenging and was becoming even more so with climate change. Better Cotton could help these farmers tackle these challenges and position themselves in a segment of the market that would continue to thrive and grow.</p>
+<p>The research uncovered other key motivators as well, such as crop yields and profits. Better Cotton has proven its ability to increase these. Additional motivators included social benefits like decent work, reductions in child labor, sustainable livelihoods, and improved gender equality.</p>
+<p>Common barriers faced by the farmers and their staff included crop pests, poor soil, droughts, cotton fiber degradation, and gender inequality.</p>
+<p><strong>Decent Work and Gender Equality in India</strong></p>
+<p>India was prioritized for Better Cotton’s activities on decent work, given the extent of related challenges in India and the number of farms already engaged in that country. The program then conducted stakeholder consultations, field visits and interviews with nearly 700 individuals. One of the barriers identified was a lack of clarity among producers regarding age-appropriate work, which led to child labor. This insight was corroborated through licensing assessment findings. This issue was in turn related to the root causes of decent work challenges, such as poverty, limited awareness of rights and lack of voice, particularly among vulnerable populations.</p>
+<p><strong>Prioritizing Audiences</strong></p>
+<p>Better Cotton prioritized smallholder farmers and vulnerable groups, such as women and low-income households, recognizing their heightened exposure to climate impacts and economic instability. By targeting these groups, the initiative aimed to address the inequities that often leave marginalized communities most at risk in agricultural systems.</p>
+<p>Geographically, the program focused on regions facing acute challenges like water scarcity, high pesticide use, and urgent climate adaptation needs, such as parts of India and sub-Saharan Africa. This strategic prioritization ensured that resources and training were directed where they could generate the greatest impact, maximizing sustainability outcomes while promoting equitable access to tools and support. Additionally, these focus areas aligned with the goals of key donors and partners, fostering a collaborative approach to improving both environmental and social resilience in cotton production.</p><!-- Informed already contains P tags.-->
+<h2>Delivering the Program</h2>
+<p>Better Cotton was based on seven guiding principles and criteria:</p>
+<ol>
+<li>Minimize the harmful impact of crop protection practices</li>
+<li>Promote water stewardship</li>
+<li>Care for the health of the soil</li>
+<li>Enhance biodiversity and use land responsibly</li>
+<li>Care for and preservation of fiber quality</li>
+<li>Promote decent work</li>
+<li>Operate effective management systems</li>
+</ol>
+<p><strong>Farmer Recruitment Strategies</strong></p>
+<p>Better Cotton collaborated with local partners and stakeholders to recruit farmers into the program. Through these partnerships, they conducted outreach and training sessions to educate farmers on sustainable practices and the environmental and financial benefits of joining the Better Cotton network. This collaborative approach ensured that recruitment strategies were tailored to local contexts and effectively engaged farming communities.<em>(Financial Incentives; Mass Media; Vivid, Credible, Empowering Communication; Word of Mouth.) </em>Requiring farmers to join the program and commit to its guidelines further strengthened their commitment. (<em>Obtaining a Commitment</em>) </p>
+<p><strong>Reducing Barriers Through Capacity Building </strong></p>
+<p>Experienced, field-level partners taught these principles and criteria, and supported farmers in implementing the Standard effectively. <em>(Norm Appeals; Vivid, Personalized, Credible, Empowering Communication</em><em>.)</em> These capacity building efforts were funded through volume-based fees paid by member retailers and brands. Additionally, the program approached institutional donors and private foundations to match the fees contributed by the private sector. This strong financial framework ensured that training and support remained sustainable and impactful.</p>
+<p>Building on this foundation, in-country trainers, known as Field Facilitators, played a crucial role in disseminating sustainable farming practices among Better Cotton farmers. They conducted regular training sessions, field demonstrations, and farm visits to ensure farmers understood and implemented Better Cotton standards. (<em>Building Motivation and Engagement Over Time; Overcoming Specific Barriers; Vivid, Credible, Empowering Communication.)</em></p>
+<p>To maintain consistency and quality across diverse regions, Better Cotton employed a comprehensive Assurance Program that included self-assessments, second-party checks, and third-party verification to monitor compliance and provide feedback. This comprehensive approach ensured that farmers consistently met Better Cotton's high standards across diverse contexts. </p>
+<p>Complementing the efforts of trainers, local leaders and early adopters of Integrated Pest Management (IPM) served as champions within the community. They acted as peer educators, facilitating the adoption of IPM practices among fellow farmers. Their involvement enhanced the scalability and replicability of sustainable practices within the community, creating a ripple effect that drove widespread adoption of Better Cotton principles. (Norm Appeals; Word of Mouth) </p>
+<p><strong>Assurance</strong> </p>
+<p>Farms and farmer groups had to meet all the core requirements of the Better Cotton Principles and Criteria before being licensed to sell Better Cotton. This involved a combination of assessments by approved third-party verifiers, trained Better Cotton staff members, and the producers themselves (self-assessments), as well as support visits from program partners to engage farmers in continuous improvement. By combining multiple layers of oversight, the program ensured that farmers received the necessary guidance and support to meet these standards. (Feedback; Overcoming Specific Barriers)</p>
+<p>Building on this system, Better Cotton's Assurance Program involved independent third-party verification bodies that assessed compliance with the Better Cotton Standard System. These verifiers were accredited by recognized international accreditation bodies to ensure impartiality and competence.</p>
+<p>In addition, the program provided systems for segregating and tracking the flow of licensed cotton, to ensure that cotton sold as “Better Cotton” was produced by licensed growers.</p>
+<p><strong>Promotion</strong></p>
+<p>Many Better Cotton retailers and brand members were major household names with reach and influence across their global supply chains. They encouraged their suppliers to join and source Better Cotton, and communicated their own stories with consumers, creating further interest in and demand for brands such as theirs that supported Better Cotton. (Norm Appeals; Vivid, Personalized, Credible, Empowering Communication)</p>
+<p><strong>Better Cotton in India</strong></p>
+<ul>
+<ul>
+<li><em>Capacity Building:</em> In the 2022-2023 cotton season, Better Cotton worked with 13 program partners to provide around 2,000 trainings on topics like integrated pest management, soil health /soil testing, and fiber protection, and additional topics like child labor prevention, decent work, sustainable livelihoods, and gender equality. Since inception, the program had raised almost 32 million Euros to support its capacity building activities in India.</li>
+<li><em>Water Efficiency:</em> Program Partners in India developed Water Stewardship Plans at the producer level to help farmers map and understand their water resources and adopt more efficient irrigation practices like drip and sprinkler irrigation, and the construction of farm ponds and ‘check dams’ that resist erosion. They also provided training on water budgeting, well monitoring, and drainage analysis.</li>
+</ul>
+<li><em>Other activity areas with capacity building and performance targets included soil health, decent work, and gender equality.<br/>
+</em><br/>
+    o	<em>Decent Work:</em> Better Cotton revised its Principles and Criteria (V3.0 —for licensing in the 2024/25 cotton season) to include a principle on livelihoods, which required Better Cotton Producers to proactively improve the livelihoods of farming communities beyond the implicit benefits of participating in the program. In India, the program collaborated with expert organizations and knowledge partners at the national and sub-national levels to educate farmers and workers about their rights and helped 21,800 farmers and workers to access government social security schemes. In addition, it helped ensure that farmers and workers could raise concerns through appropriate channels – for example through a 24/7 hotline service in Better Cotton growing areas. It also recruited and upskilled its staff with a focus on enhancing expertise in this issue area.<br/>
+<br/>
+    o	<em>Gender Equality: </em>Activities and resources in India promoted equal farm decision-making, with the 2030 goal of reaching one million women working on cotton farms and raising the proportion of women on its own field staff to 25%. In 2020, Better Cotton piloted an approach that trained 2,000 women in two Producer Units in agricultural practices, while providing gender sensitization training to the men in those units.</li>
+</ul><!-- Delivering already contains P tags.-->
+<h2>Financing the Program</h2>
+<p>Volume-based member fees, matched by institutional donors and private foundations, funded capacity building activities.</p><!-- Financing already contains P tags.-->
+<h2>Measuring Achievements</h2>
+<p>Better Cotton collected data from all participating medium and large farms. For smaller farms, it generally used data from a representative sample of randomly selected farmers.</p>
+<p>The following detail for Better Cotton India highlights the systematic approach used by the program when measuring achievements. Before COVID, it collected data from all farmers in randomly selected groups of farmers (called “Learning Groups”) within each Production Unit. Since then, it collected data from 10 farmers per group (out of 30-40 per group) in each randomly selected group from each Production Unit. About 10% of the Learning Groups were included in each sample.</p>
+<p>At the producer unit level, program partners paid Field Facilitators to collect the data from the Farmer Field Books given to the farmers each growing season. The data were first reviewed by the Facilitators with each farmer, then checked by the Producer Unit Manager.</p>
+<p>At first, achievements were calculated by comparing Better Cotton farmers with non-participating farmers in the same country. For example, the program’s December 2021 Impact Report evaluated how licensed Better Cotton Farmers in China, India, Pakistan, Tajikistan and Turkey performed on environmental, social, and economic criteria, compared to farmers who weren’t participating in the program. Comparisons could not be conducted for farms in the other participating countries due to confidentiality, data protection, and data sharing restrictions; and in three countries there were too few NON-participating farms to make reliable comparisons.</p>
+<p>The program gradually shifted towards ‘longitudinal analysis’, which instead involved comparing the performance of participating farms against past performance. This approach is exemplified in the India Impact Report, 2014-2023.</p>
+<p>In 2021, the program published a report, based on assessments from 200,000 farms over three seasons, that identified changes in emissions intensity per metric tonne of lint produced</p><!-- Results_B already contains P tags.-->
+<h2>Feedback</h2>
+<p>Assessments by approved third-party verifiers, trained Better Cotton staff members, and the producers themselves (self-assessments), as well as support visits from program partners all contributed feedback towards continuous improvement.</p><!-- Results_B already contains P tags.-->
+<h2>Results</h2>
+<p><strong>Table One: How Participating Farms Compare with average NON-Participating Farms</strong> (within the same country; 2020 report)</p>
+<p>The following table summarizes comparison data for member farms vs non-member farms in five participating countries.</p>
+<div class="WordSection2">
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext">
+<tbody>
+<tr>
+<td style="border:solid windowtext 1.0pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>Indicator<o:p></o:p></span></p>
+</td>
+<td style="border:solid windowtext 1.0pt;border-left:none;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>China<o:p></o:p></span></p>
+</td>
+<td style="border:solid windowtext 1.0pt;border-left:none;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>India<o:p></o:p></span></p>
+</td>
+<td style="border:solid windowtext 1.0pt;border-left:none;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>Pakistan<o:p></o:p></span></p>
+</td>
+<td style="border:solid windowtext 1.0pt;border-left:none;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>Tajikistan<o:p></o:p></span></p>
+</td>
+<td style="border:solid windowtext 1.0pt;border-left:none;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>Turkey<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-bottom:8.0pt;line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;
+  line-height:107%;font-family:"Minion Pro",serif;mso-ansi-language:EN-CA'>Irrigation   water used (cubic meters per hectare)<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>-14%<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>-10%<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>-11%<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>-16%<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>-2%<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-bottom:8.0pt;line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;
+  line-height:107%;font-family:"Minion Pro",serif;mso-ansi-language:EN-CA'>Profit   (net income per hectare)<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>+17%<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>+18%<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>+35%+<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>NA<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>+19%<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-bottom:8.0pt;line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;
+  line-height:107%;font-family:"Minion Pro",serif;mso-ansi-language:EN-CA'>Yield   (cotton harvested per hectare)<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>+10%<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>+9%<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>+12%<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>+15%<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>+5%<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-bottom:8.0pt;line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;
+  line-height:107%;font-family:"Minion Pro",serif;mso-ansi-language:EN-CA'>Synthetic   Pesticides used (kg per hectare)<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>-20%<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>-23%<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>-12%<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>-62%<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>-3%<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt;border-top:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p class="MsoNormal" style="margin-bottom:8.0pt;line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;
+  line-height:107%;font-family:"Minion Pro",serif;mso-ansi-language:EN-CA'>Synthetic   fertilizer used (kg per hectare)<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>-8%<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>-13%<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>-16%<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>-6%<o:p></o:p></span></p>
+</td>
+<td style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt" valign="top">
+<p align="center" class="MsoNormal" style="margin-bottom:8.0pt;text-align:center;
+  line-height:107%"><span lang="EN-CA" style='font-size:12.0pt;line-height:107%;font-family:"Minion Pro",serif;
+  mso-ansi-language:EN-CA'>-2%<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong><br/>
+<br/>
+Impacts – Individual Participants</strong></p>
+<p>Table One summarizes comparison data for member farms vs non-member farms in five participating countries.</p>
+<p><em>India 2014-2023</em></p>
+<ul>
+<li>Water use for irrigation per cotton produced decreased at participating farms by 29%; and water use per hectare dropped by over one third.</li>
+<li>The yields for Better Cotton farmers generally increased over this time, while the yields from other cotton growers in India generally decreased, so that the increase in yields from Better Cotton relative to other cotton has been growing.</li>
+<li>Pesticide use decreased at participating farms by 53%; and the use of highly hazardous pesticide dropped by 84%.</li>
+<li>Participating farmers’ overall costs (excluding land rental) decreased by 15.6%. Their profits per hectare trended slightly higher until the 2021-22 cotton season when there was a huge jump (+56% increase from the previous season) because of higher international cotton prices.</li>
+</ul>
+<p> </p>
+<p><strong>Impacts – Overall</strong></p>
+<p><em>Water Use</em></p>
+<ul>
+<li>Climate change posed significant risks to cotton production, including increased droughts and extreme weather events. Better Cotton addressed these challenges through targeted interventions, such as promoting water-efficient practices (e.g., drip and sprinkler irrigation systems)</li>
+<li>By 2023, in India alone, Better Cotton was being grown on 1,352,286 hectares. Participating farms had decreased their use of irrigation water by over one third, from around 2,300 cubic meters of water per hectare in 2014 to around 1,500 cubic meters of water per hectare in 2021. That represents an overall annual reduction of around 1.1 billion cubic meters of water (1,352,286 x 800). Over the same period, participating farmers also reduced the amount of irrigation water used per metric ton of lint produced.</li>
+<li>As the table above shows, water use dropped by an even higher percentage in China, Pakistan and Tajikistan. </li>
+</ul>
+<p><em>Carbon Emissions</em></p>
+<ul>
+<li>By integrating climate adaptation and mitigation strategies, Better Cotton equipped farmers to build resilience while reducing their environmental footprint.</li>
+<li>Better Cotton farmers implemented practices that contributed to reducing carbon emissions, such as minimizing the use of synthetic fertilizers and pesticides, adopting conservation tillage, and enhancing soil health through organic amendments. These practices not only sequestered carbon in soil but also reduced greenhouse gas emissions associated with cotton farming.</li>
+<li>The 2021 program report showed that on average Better Cotton production had a 19% lower emissions intensity per metric tonne of lint, than comparison production across China, India, Pakistan, Tajikistan and Turkey. Over half of the reduction was attributed to reduced fertilizer use/production, and an additional 28% to less irrigation.</li>
+</ul>
+<p><em>Yield</em></p>
+<ul>
+<li>Better Cotton equipped farmers with climate adaptation strategies to enhance resilience against climate change impacts and increase yields. These strategies included promoting water stewardship practices, such as efficient irrigation techniques and rainwater harvesting, to prepare for drought conditions. Enhanced pest management techniques and improved soil testing methods also enabled farmers to increase productivity. Additionally, Better Cotton encouraged the adoption of climate-resilient crop varieties and diversified cropping systems to mitigate the effects of severe weather and increased temperatures.</li>
+<li>Better Cotton farmers in India increased yields by 5%, from an average of about 620 kg per hectare in the 2014/2015 growing season to about 650 kg per hectare in the 2021/2022 growing season. The difference of 30 kg per hectare over 1,352,286 hectares represents an increased yield of 40.6 million kg of cotton lint.   During this time comparison cotton farmers in India experienced a 10% decrease in yields from an average of about 500 kg per hectare in the 2014/2015 growing season to about 450 kg per hectare in the 2021/2022 growing season. That’s a difference of 80 kg per hectare. compared with the Better Cotton Farmers, which indicates that the real increase in yields due to the program over 1,352,286 hectares could be in the order of 108 million kg of cotton lint per year.</li>
+<li>As the table above shows, water use yield improved by an even higher percentage in China, Pakistan and Tajikistan.</li>
+</ul>
+<p><em>Profitability</em></p>
+<ul>
+<li>Better Cotton farmers in India decreased their costs by 15.6% from about 55,000 Indian Rupees ($US 658) per hectare in the 2014/2015 growing season to about 42,000 Indian Rupees ($US 503) per hectare in the 2021/2022 growing season. That represents an overall saving in the order of 210 million U.S. dollars per year.  Profits per hectare trended slightly higher until the 2021-22 cotton season when there was a huge jump (+56% increase from the previous season) because of higher international cotton prices.</li>
+<li>As the table above shows, profitability also improved by a similar amount in China, Pakistan and Turkey.  Pesticides  •	By the 2021/2022 growing season, Better Cotton farmers had reduced their pesticide use by 53% relative to a three-season average from 2014 to 2017. This is an average drop from 0.8 kg to 0.5 kg per hectare. Over 1,352,286 hectares this represents a reduction of 40, 569 kg of pesticides per year.</li>
+</ul>
+<p><em>Supply Chain Impact</em></p>
+<ul>
+<li>Better Cotton’s sustainability efforts extended beyond farm-level impacts, influencing the entire cotton supply chain. By involving globally recognized brands such as H&amp;M, Adidas, and IKEA, Better Cotton successfully integrated sustainability practices into broader commercial operations. These brands actively promoted sourcing Better Cotton as part of their sustainability goals, amplifying the program’s reach and impact. This alignment ensured that Better Cotton’s carbon reduction and crop protection efforts contributed meaningfully to overall climate mitigation across the supply chain.</li>
+</ul>
+<p><em>Global Reach and Coverage</em></p>
+<ul>
+<li>As of 2023, Better Cotton was being implemented in 23 countries, representing 20% of global cotton production. This substantial reach included programs in Africa, such as Mozambique, and pilot projects in the United States, showcasing the initiative’s adaptability to diverse agricultural contexts. These regions faced unique challenges, including water scarcity and high pesticide usage, making Better Cotton’s tailored interventions vital for achieving sustainability at a global scale.</li>
+</ul><!-- Results_B already contains P tags.-->
+<h2>Notes</h2>
+<ul>
+<li>Better Cotton can serve as a blueprint for other agricultural sustainability programs.</li>
+<li>Collaborative efforts with global brands, local NGOs, and governments help achieve scale and sustainability. Partnerships enhance resource mobilization, knowledge sharing, and program credibility.</li>
+<li>Flexibility in implementation guidelines allows programs to respond effectively to emerging challenges, such as climate variability or shifting market demands, ensuring long-term viability.</li>
+<li>Gender-focused initiatives, including training programs for women farmers and promoting leadership roles, can contribute to community development and amplify social impact.</li>
+<li>Strengthening local institutions and farmer organizations is a key driver for sustaining long-term improvements in agricultural practices and livelihoods.</li>
+</ul>
+<p><strong>Lessons Learned</strong></p>
+<ul>
+<li>A similar approach could be used to increase the sustainability (or other desired traits) of many different commodities that are grown, caught or mined, and then used to manufacture items for sale.</li>
+<li>Defining clear, measurable objectives—such as water use reduction, farmer profit increases, and training milestones—can provide a transparent framework for tracking progress and motivating stakeholders to meet targets.</li>
+<li>Prioritizing smallholder farmers and vulnerable populations, such as women and low-income households, not only advances equity but can also enhance program outcomes by addressing the root causes of inequality in agriculture. These groups were often more motivated to adopt sustainable practices due to the direct benefits they experienced, such as increased resilience and profitability.</li>
+<li>Concentrating efforts in regions with acute challenges, such as water scarcity and high pesticide use, can yield greater sustainability outcomes. Tailoring solutions to regional needs ensures that resources are deployed effectively, generating measurable environmental and social benefits</li>
+<li>Farmers are increasingly vulnerable to climate risks, including droughts and pest outbreaks. Incorporating climate adaptation goals ensures that sustainability initiatives are forward-looking and equip farmers with tools to build long-term resilience.</li>
+<li>Combining social, economic, and environmental objectives, such as gender equality, profit margins, and ecological conservation, creates a comprehensive framework that benefits all stakeholders. This integrated approach makes programs like Better Cotton more adaptable and replicable across commodities. </li>
+</ul>
+<p><strong>Reports </strong></p>
+<ul>
+<li>Better Cotton 2020 Impact Report <a href="https://bettercotton.org/wp-content/uploads/2021/12/Better-Cotton-2020-Impact-Report.pdf" target="_blank"> https://bettercotton.org/wp-content/uploads/2021/12/Better-Cotton-2020-Impact-Report.pdf</a></li>
+<li>India Impact Report, 2014-2023 – Executive Summary   <a href="https://bettercotton.org/wp-content/uploads/2023/11/Better-Cotton-India-Impact-Report-Exec-Summary.pdf" target="_blank">https://bettercotton.org/wp-content/uploads/2023/11/Better-Cotton-India-Impact-Report-Exec-Summary.pdf </a></li>
+<li>India Impact Report, 2014-2023 – Full Report <a href="https://bettercotton.org/wp-content/uploads/2023/11/Better-Cotton-India-Impact-Report_-5.pdf" target="_blank">https://bettercotton.org/wp-content/uploads/2023/11/Better-Cotton-India-Impact-Report_-5.pdf</a></li>
+</ul>
+<p><strong>Landmark Designation</strong></p>
+<p>This case study was written by Jay Kassirer and Yu-Jyuan Ye in 2024 and 2025. The program described in this case study was designated by our Climate Change panel in 2024.</p>
+<p>Designation as a <em>Landmark</em> (best practice) case study through our peer selection process recognizes programs and social marketing approaches considered to be among the most successful in the world. They are nominated both by our peer-selection panels and by Tools of Change staff, and are then scored by the selection panels based on impact, innovation, replicability and adaptability.</p>
+<p>The Climate Change panel that designated this program consisted of:</p>
+<ul>
+<li>Amjad Alghamdi, George Mason University Department of Communication</li>
+<li>Kathy Kuntz, Dane County Office of Energy &amp; Climate Change</li>
+<li>Madeleine Lemaire, City of Coquitlam</li>
+<li>Dan Reed, Center for Climate Change Communication</li>
+<li>Susan Schneider, Western Michigan University</li>
+<li>Michele Smith, City of Brisbane</li>
+<li>Brooke Tully, Brooke Tully LLC</li>
+</ul><!-- Footer already contains P tags.-->
+</div>
+<!--/case_studies_content-->
+
+</div><!--/left_main-->
+<div class="right_column">
+<div class="advanced_side_cap_top"></div>
+<div class="advanced_side_body">
+<p><strong>Search the Case Studies</strong></p>
+
+<input name="special" type="hidden" value="mood"/>
+<input name="do" type="hidden" value="case_studies"/>
+<table class="search_sidebar_styles">
+<tr>
+<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="16" type="text" value="Search"/></td>
+<td class="go_area"><input src="../../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+</tr>
+</table>
+
+<p>
+<a href="../../../../en/case-studies/case-studies-search/"> Click for Advanced Search »</a></p>
+</div>
+<!--/news_body-->
+<div class="advanced_side_cap_bottom"></div>
+
+
+ <!--
+           <div class="news_cap_top"></div>
+				 <div class="news_body">[Select: $STK_langlink][Case:'fr']	<p>Joignez-vous à notre liste de diffusion:</p>[Case:'en']<p>Join our mailing list:</p>[/Select]
+
+						<form id="form1" method="post" action="">
+						<input name="do" type="hidden" id="do_hidden" value="email_send" />
+							<table width="200" border="0">
+								<tr>
+									<td class="text_area"><input name="email_user" type="text" id="Search" value="" size="16" /></td>
+									<td class="go_area"><input src="../../../../public/images/go_button.gif" id="submit3" value="Search" type="image" /></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+      <div class="news_cap_bottom"></div> -->
+
+</div><!--/right_column-->
+</div><!--/wrap-->
+<div id="content_btm_cap"></div>
+<div id="footer">
+<div class="footer_left">
+<p>© 1996-2025 Copyright Jay Kassirer. All rights reserved. No part of this work may be reproduced or used in any means without prior permission of the author. Please <a href="mailto:tools@cullbridge.com" style="text_decoration:underline">contact me</a>. I will usually give permission for credited uses with links</p>
+</div>
+<!--/footer_left-->
+<div class="footer_right">
+<ul>
+
+<li><a href="../../../../en/help/">Help</a></li>
+<li><a href="../../../../en/terms/">Terms of Use</a></li>
+
+<li class="lastnav"><a href="../../../../en/contact-us/">Contact Us</a></li>
+</ul>
+</div>
+<!--/footer_right-->
+</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<div class="messages" style="font-size:1.5em;">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-300660-23");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<img data-pagefind-meta="image[src]" src="../../../../public/images/leaf_icon.gif" style="display: none;"/></body>
+</html>
