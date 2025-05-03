@@ -4,13 +4,31 @@ from bs4 import BeautifulSoup
 import urllib.request
 import re
 import json
+import unicodedata
+
 
 # TODO:
-# - replace every link to toolsofchange.com
-# - case studies have pdfs
-# - case studies search # bar is showing up
-# - tools links are broken in french
+# - add about-us/workbook-acknowledgements/ (and in french)
+# - figure out search again and document it and see if dad's okay with how it works
+# - add topic resources to metadata for search
+# - once search is finalized, integrate it into the UI
+
+"""
+notes for dad:
+* some case studies are missing from search results (more for french, most recent for english)
+* some images aren't there
+* fr/au-sujet-de-nous/ isn't translated
+* landmark doesn't seem to be a part of the french site
+* french tool name inconsistencies
+  * Réaction tool isn't called that, it's called rétroaction
+  * Motivation is called motivateurs
+  * Soutenir la motivation à long terme --> Soutenir la motivation au fil du temps
+"""
+
+# TODO for when this is converted to main site, things to change manually:
+#
 # - add a hardcoded latest news box and news page
+# - remove thing about creating an account on the help pages (en/fr)
 
 with open('case_study_data.json', 'r') as file:
     case_study_data = json.load(file)
@@ -20,12 +38,56 @@ with open('case_study_data_fr.json', 'r') as file:
 
 lang = "en"
 
+# Links to tools exist with and without accents, so we normalize to have links
+# never have accents (which is the standard for urls)
+# Doing it this way feels easier and more efficient to check than normalizing
+# every url (which might even break other things, e.g. "modalités-d'utilisation"
+# has an accent) but probably I should at some point normalize everything more
+# consistently including creating urls?? Because idk if other things are still
+# broken in this way.
+french_tools_with_accents = [
+  "communications-personnalisées-percutantes",
+  "mesures-financières-incitatives-et-dissuasives",
+  "rétroaction",
+  "surmonter-des-obstacles-spécifiques",
+  "de-bouche-à-oreille",
+  "médias",
+  "visites-à-domicile",
+]
+
+def remove_accents(s):
+  return unicodedata.normalize('NFKD', s).encode('ASCII', 'ignore').decode('utf-8', 'ignore')
+
+french_url_replacements = [
+  [f"outils-de-changement/{tool}", f"outils-de-changement/{remove_accents(tool)}"]
+  for tool in french_tools_with_accents
+]
+
 def generate_page(f, url, page_text, path_to_root, soup_adjuster=None):
   scrape_images(page_text)
+  scrape_userfiles(page_text)
 
-  page_text = page_text.replace('href="http://www.toolsofchange.com/', f'href="{path_to_root}/')
-  page_text = page_text.replace("/public/", f"{path_to_root}/public/")
-  page_text = page_text.replace("/userfiles/", f"{path_to_root}/userfiles/")
+  url_replacements = [
+    ['http://toolsofchange.com', f'{path_to_root}'],
+    ['http://www.toolsofchange.com', f'{path_to_root}'],
+    ['https://www.toolsofchange.com', f'{path_to_root}'],
+    ['https://toolsofchange.com', f'{path_to_root}'],
+    ['www.toolsofchange.com', f'{path_to_root}'],
+    ["'/public/", f"'{path_to_root}/public/"],
+    ['"/public/', f'"{path_to_root}/public/'],
+    ['(/public/', f'({path_to_root}/public/'],
+    ["'/userfiles/", f"'{path_to_root}/userfiles/"],
+    ['"/userfiles/', f'"{path_to_root}/userfiles/'],
+    ['(/userfiles/', f'({path_to_root}/userfiles/'],
+  ]
+
+  if lang == "fr":
+    url_replacements = url_replacements + french_url_replacements
+
+  # TODO -- this should probably be more careful to only replace text in href/src tags
+  for before, after in url_replacements:
+    page_text = page_text.replace(before, after)
+
   french_home_path = "/fr/accueil"
   english_home_path = "/en/home/"
   page_text = page_text.replace(french_home_path, f"{path_to_root}{french_home_path}")
@@ -94,7 +156,7 @@ def generate_page(f, url, page_text, path_to_root, soup_adjuster=None):
   corner_nav = soup.find('ul', id="quicknav")
   if corner_nav:
     for item in corner_nav.find_all('li'):
-      # TELL_DAD: what the language change links to is really random
+      # [done] TELL_DAD: what the language change links to is really random
       # e.g. https://toolsofchange.com/fr/etudes-de-cas/recherche-de-etudes-de-cas/
       if not item.find('a').contents[0] in ["Français", "English"]:
         item.decompose()
@@ -113,12 +175,14 @@ def generate_stylesheets():
   for sheet in ["default", "tables", "print", "thickbox", "sortmenu"]:
     page = requests.get(f"https://toolsofchange.com/public/stylesheets/{sheet}.css")
     scrape_images(page.text)
+    scrape_userfiles(page.text)
     text = page.text.replace("/public/", "../../public/")
     text = text.replace("ï»¿", "")
     with open(f"public/stylesheets/{sheet}.css", "x") as f:
       f.write(text)
 
 downloaded_images = set()
+downloaded_files = set()
 def scrape_images(page_text):
   images = (
     re.findall(r'url\(\/public\/images\/(.+)\)', page_text) +
@@ -128,20 +192,21 @@ def scrape_images(page_text):
   for img in images:
     if img not in downloaded_images:
       img_path = f"public/images/{img}"
-      download_image(img_path)
+      download_file(img_path)
       downloaded_images.add(img_path)
 
-  for img in re.findall(r'src=\"\/userfiles\/Image\/(.+?)"', page_text):
-    img_path = f"userfiles/Image/{img}"
-    download_image(img_path)
-    downloaded_images.add(img_path)
+def scrape_userfiles(page_text):
+  for file_name in re.findall(r'\/userfiles\/(.+?)"', page_text):
+    file_path = f"userfiles/{file_name}"
+    download_file(file_path)
+    downloaded_files.add(file_path)
 
-def download_image(image_path):
-  imgURL = f"https://toolsofchange.com/{urllib.parse.quote(image_path)}"
+def download_file(file_path):
+  file_url = f"https://toolsofchange.com/{urllib.parse.quote(file_path)}"
   try:
-    urllib.request.urlretrieve(imgURL, f"./{image_path}")
+    urllib.request.urlretrieve(file_url, f"./{file_path}")
   except Exception as e:
-    print(f"couldn't find {image_path}")
+    print(f"couldn't find {file_path}")
     print(e)
 
 
@@ -154,7 +219,10 @@ def generate_case_studies_homepage(page):
   with open(case_studies_home_url + "index.html", "x") as f:
     page_text = page.text
     page_text = page_text.replace(f"/{case_studies_home_url}", "./")
-    generate_page(f, case_studies_home_url, page_text, "../..")
+    def soup_adjuster(soup):
+      # This is the "sort by latest, last 5 10 15" etc bar
+      soup.find('div', class_="bar").decompose()
+    generate_page(f, case_studies_home_url, page_text, "../..", soup_adjuster)
 
 def generate_planning_guide():
   if lang == "en":
@@ -239,8 +307,6 @@ def cleanup_url(url):
   return url
 
 def generate_topic_resources():
-  # (only relevant for english)
-  download_image("/userfiles/Web-based social marketing resources-2023-V2.pdf")
 
   if lang == "en":
     topic_resource_url = "en/topic-resources/"
@@ -264,7 +330,7 @@ def generate_topic_resources():
     page = requests.get("https://toolsofchange.com/" + url)
     os.makedirs(url)
     with open(url + "index.html", "x") as f:
-      # maybe remove the two advanced search boxes?
+      # TODO: maybe remove the two advanced search boxes?
       generate_page(f, url, page.text, "../../..")
 
     # Now generate the pages for each resource
@@ -337,8 +403,7 @@ def generate_simple_pages():
       "fr/contactez-nous/",
       "fr/ateliers/",
       "fr/ateliers/présentations-personnalisé-par-webinaire/",
-      "fr/au-sujet-de-nous/", # TELL_DAD: this isn't translated
-      # Seems like landmark just isn't a thing in french..?
+      "fr/au-sujet-de-nous/",
       "fr/aide/",
       "fr/modalités-d'utilisation/",
     ]
@@ -347,7 +412,7 @@ def generate_simple_pages():
     page = requests.get("https://toolsofchange.com/" + url)
     os.makedirs(url)
     with open(url + "index.html", "x") as f:
-      # TODO: i can just calculate this in the generate_page function, which would be better
+      # TODO(cleanup): i can just calculate this in the generate_page function, which would be better
       path_to_root = "../.." if url.count("/") == 2 else "../../.."
       generate_page(f, url, page.text, path_to_root)
 
@@ -362,8 +427,7 @@ def generate_homepage():
   os.makedirs(url)
   with open(url + "index.html", "x") as f:
     def soup_adjuster(soup):
-      # TELL_DAD: Ask dad about if the news section is important,
-      # since it seems nontrivial to add.
+      # TODO: put a hardcoded news section here
       soup.find('div', class_="latest_news_area").decompose()
       # Remove left margin now that the news is gone
       soup.find(attrs={'class':'webinar_area_wrap'})['style'] = "margin: 0;"
@@ -382,32 +446,49 @@ def generate_homepage():
 
 
 def setup():
+  print("setup")
   os.makedirs("./public/images/")
   os.makedirs("./userfiles/Image")
   generate_stylesheets()
 
 def generate_english_site():
+  global lang
+  lang = "en"
+  print("english")
+  print("homepage")
   generate_homepage()
+  print("simple pages")
   generate_simple_pages()
+  print("topic resources")
   generate_topic_resources()
+  print("tools of change")
   generate_tools_of_change()
+  print("case studies")
   case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
   generate_case_studies_homepage(case_studies_homepage)
   generate_case_study_pages(case_studies_homepage)
+  print("planning guide")
   generate_planning_guide()
 
 def generate_french_site():
+  global lang
+  lang = "fr"
+  print("french")
+  print("homepage")
   generate_homepage()
+  print("simple pages")
   generate_simple_pages()
+  print("topic resource")
   generate_topic_resources()
+  print("tools of change")
   generate_tools_of_change()
+  print("case studies")
   case_studies_homepage = requests.get("https://toolsofchange.com/fr/etudes-de-cas/?max=1000")
   generate_case_studies_homepage(case_studies_homepage)
   generate_case_study_pages(case_studies_homepage)
+  print("planning guide")
   generate_planning_guide()
-  # TODO: why are there so many fewer french pages? and case studies with ids with no tags?
 
-# setup()
-# generate_english_site()
-lang = "fr" # global variables in python ....? would ideally put this in generate_
+setup()
+generate_english_site()
 generate_french_site()

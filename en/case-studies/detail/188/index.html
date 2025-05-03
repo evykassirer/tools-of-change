@@ -26,12 +26,12 @@
 		    $('p.alert').fadeOut(3500).slideUp("fast");
 
 		    // landmark badge
-		    // http://toolsofchange.com/en/help/landmark-badge/
+		    // ../../../../en/help/landmark-badge/
 		    //reset dropdown and default to first
 			$('.landmark_case_study_choices #default_case_study').attr('selected', 'selected');
 			var createCaseStudyCode = function () {
 			    var case_study_url = $('.landmark_case_study_choices option:selected').attr('value'),
-			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="http://www.toolsofchange.com../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
+			    	case_study_text = '<p><a href="' + case_study_url + '" title="Tools of Change Landmark Case Study Badge"><img src="../../../../public/images/toc_landmark_badge_170x250.jpg" alt="Tools of Change Landmark Case Study Badge" style="border:none;" height="250" width="170" /></a></p>';
 				$('textarea.badge_code').text(case_study_text);
 			};
 			createCaseStudyCode();
@@ -218,7 +218,7 @@ theForm.elements[i].checked = status;
 </ul><!-- Results_B already contains P tags.-->
 <h2>Contacts</h2>
 <p>This program is no longer active.</p>
-<p>For step-by-step instructions in using each of the tools noted above, to review our FULL collection of over 90 social marketing case studies, or to suggest a new case study, go to <a href="../../../../">www.toolsofchange.com</a></p><!-- Contacts already contains P tags.-->
+<p>For step-by-step instructions in using each of the tools noted above, to review our FULL collection of over 90 social marketing case studies, or to suggest a new case study, go to <a href="../../../../">../../../..</a></p><!-- Contacts already contains P tags.-->
 <h2>Notes</h2>
 <p><strong>Concluding Thoughts</strong></p>
 <ul>
