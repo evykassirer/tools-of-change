@@ -8,7 +8,6 @@ import unicodedata
 
 
 # TODO:
-# - add about-us/workbook-acknowledgements/ (and in french)
 # - figure out search again and document it and see if dad's okay with how it works
 # - add topic resources to metadata for search
 # - once search is finalized, integrate it into the UI
@@ -394,6 +393,7 @@ def generate_simple_pages():
       "en/workshops/",
       "en/workshops/face-to-face/",
       "en/about-us/",
+      "en/about-us/workbook-acknowledgements/"
       "en/landmark/",
       "en/help/", # TODO: remove thing about creating an account
       "en/terms/",
@@ -404,6 +404,7 @@ def generate_simple_pages():
       "fr/ateliers/",
       "fr/ateliers/présentations-personnalisé-par-webinaire/",
       "fr/au-sujet-de-nous/",
+      "fr/au-sujet-de-nous/cahier-de-travail-/"
       "fr/aide/",
       "fr/modalités-d'utilisation/",
     ]
