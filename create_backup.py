@@ -37,6 +37,32 @@ with open('case_study_data_fr.json', 'r') as file:
 
 lang = "en"
 
+# Files that aren't on the site we're scraping from, so don't worry about them
+# when fetches give errors.
+known_missing_files = [
+  'public/images/transparent.gif', # this one doesn't matter
+  'userfiles/Image/Street.jpg',
+  'userfiles/File/Handout_TOC_Highlights_2012_03_01_2pp.pdf',
+  'userfiles/CrugerK_TOC_TC_EN_2010_02_23_2pp.pdf',
+  'userfiles/CrugerK_TOC_TC_EN_2010_02_23_6pp.pdf',
+  'userfiles/Smart Commute Q4 Report print.pdf',
+  'userfiles/Handouts%20-%20May%209%20-2013.pdf',
+  'userfiles/Smarter Travel Case Handout2.pdf',
+]
+
+# Erroneously encoded files, that we want to change back so we can properly
+# get the files and store them
+encoded_files = [
+  ['userfiles/Image//Burlington%20map%203.PNG', 'userfiles/Image/Burlington map 3.PNG'],
+  ['userfiles/Image//Chatham%20Area%20Map.JPG', 'userfiles/Image/Chatham Area Map.JPG'],
+  ['userfiles/Image//Andrew%20Bio%20Picture.jpg', 'userfiles/Image/Andrew Bio Picture.jpg'],
+  ['userfiles/Virgin Atlantic&#8217;s Airline Captains Improve Fuel Efficiency -2021-12-16(1).pdf', 'userfiles/Virgin Atlantic’s Airline Captains Improve Fuel Efficiency -2021-12-16(1).pdf'],
+  ['userfiles/Image/Star%20Party.png', 'userfiles/Image/Star Party.png'],
+  ['userfiles/File//ClimateSmart%20Case%20Study%20FINAL2.pdf', 'userfiles/File/ClimateSmart Case Study FINAL2.pdf'],
+  ['userfiles/File//UGA%20Recycling%20Bin%20Feedback.pdf', 'userfiles/File/UGA Recycling Bin Feedback.pdf'],
+  ['userfiles/Q&amp;A.pdf', 'userfiles/Q&A.pdf'],
+]
+
 # Links to tools exist with and without accents, so we normalize to have links
 # never have accents (which is the standard for urls)
 # Doing it this way feels easier and more efficient to check than normalizing
@@ -63,6 +89,9 @@ french_url_replacements = [
 ]
 
 def generate_page(f, url, page_text, path_to_root, soup_adjuster=None):
+  for before, after in encoded_files:
+    page_text = page_text.replace(before, after)
+
   scrape_images(page_text)
   scrape_userfiles(page_text)
 
@@ -201,6 +230,8 @@ def scrape_userfiles(page_text):
     downloaded_files.add(file_path)
 
 def download_file(file_path):
+  if file_path in known_missing_files:
+    return
   file_url = f"https://toolsofchange.com/{urllib.parse.quote(file_path)}"
   try:
     urllib.request.urlretrieve(file_url, f"./{file_path}")
@@ -393,7 +424,7 @@ def generate_simple_pages():
       "en/workshops/",
       "en/workshops/face-to-face/",
       "en/about-us/",
-      "en/about-us/workbook-acknowledgements/"
+      "en/about-us/workbook-acknowledgements/",
       "en/landmark/",
       "en/help/", # TODO: remove thing about creating an account
       "en/terms/",
@@ -404,7 +435,7 @@ def generate_simple_pages():
       "fr/ateliers/",
       "fr/ateliers/présentations-personnalisé-par-webinaire/",
       "fr/au-sujet-de-nous/",
-      "fr/au-sujet-de-nous/cahier-de-travail-/"
+      "fr/au-sujet-de-nous/cahier-de-travail-/",
       "fr/aide/",
       "fr/modalités-d'utilisation/",
     ]
@@ -450,6 +481,7 @@ def setup():
   print("setup")
   os.makedirs("./public/images/")
   os.makedirs("./userfiles/Image")
+  os.makedirs("./userfiles/File")
   generate_stylesheets()
 
 def generate_english_site():
