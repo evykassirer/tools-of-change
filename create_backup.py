@@ -28,6 +28,10 @@ notes for dad:
 #
 # - add a hardcoded latest news box and news page
 # - remove thing about creating an account on the help pages (en/fr)
+  # - any user/create
+# - there's a Français (top corner) link to /fr/aide/landmark(f)  which has nothing and also doesn't make sense, change it
+#   - and another for fr/aide/landmark-badge
+
 
 with open('case_study_data.json', 'r') as file:
     case_study_data = json.load(file)
@@ -41,6 +45,7 @@ lang = "en"
 # when fetches give errors.
 known_missing_files = [
   'public/images/transparent.gif', # this one doesn't matter
+  'public/images/toc_landmark_badge_170x250.jpg', # doesn't matter (not displayed anywhere)
   'userfiles/Image/Street.jpg',
   'userfiles/File/Handout_TOC_Highlights_2012_03_01_2pp.pdf',
   'userfiles/CrugerK_TOC_TC_EN_2010_02_23_2pp.pdf',
@@ -48,11 +53,25 @@ known_missing_files = [
   'userfiles/Smart Commute Q4 Report print.pdf',
   'userfiles/Handouts%20-%20May%209%20-2013.pdf',
   'userfiles/Smarter Travel Case Handout2.pdf',
+  'images/documentimages/jeep/jeep-1.jpg',
+  'images/documentimages/jeep/Jeep-2.jpg',
+  'images/documentimages/bc21/bc21-1.jpg',
+  'images/documentimages/tools/peersg-1.jpg',
+  'images/documentimages/tools/feedback-1.jpg',
+  'images/documentimages/roadcrew/roadcrew_logo.jpg',
+  'images/documentimages/roadcrew/roadcrew_underwear.jpg',
+  'images/documentimages/watersmart/WaterSmart-2.jpg',
+  'images/documentimages/watersmart/WaterSmart-1.jpg',
+  'images/documentimages/recap/Recap-1.jpg',
+  'images/documentimages/whitney/Whitney-1.jpg',
+  'images/documentimages/Earthworks/EarthWorks-3.jpg',
+  'images/documentimages/Earthworks/EarthWorks-1.jpg',
+  'images/documentimages/Quinte/Quinte-1.jpg',
 ]
 
-# Erroneously encoded files, that we want to change back so we can properly
-# get the files and store them
-encoded_files = [
+# Erroneously encoded urls, that we want to change back so we can properly
+# fetch them
+encoded_urls = [
   ['userfiles/Image//Burlington%20map%203.PNG', 'userfiles/Image/Burlington map 3.PNG'],
   ['userfiles/Image//Chatham%20Area%20Map.JPG', 'userfiles/Image/Chatham Area Map.JPG'],
   ['userfiles/Image//Andrew%20Bio%20Picture.jpg', 'userfiles/Image/Andrew Bio Picture.jpg'],
@@ -61,6 +80,9 @@ encoded_files = [
   ['userfiles/File//ClimateSmart%20Case%20Study%20FINAL2.pdf', 'userfiles/File/ClimateSmart Case Study FINAL2.pdf'],
   ['userfiles/File//UGA%20Recycling%20Bin%20Feedback.pdf', 'userfiles/File/UGA Recycling Bin Feedback.pdf'],
   ['userfiles/Q&amp;A.pdf', 'userfiles/Q&A.pdf'],
+  ['"English/CaseStudies/default.asp?ID=138"', 'en/case-studies/detail/138'],
+  ['"/images/documentimages/AQPortland/prizedraw"', '"/images/documentimages/AQPortland/prizedraw.gif"'],
+  ['landmark-case-studies-%28transportation%29/', 'landmark-case-studies-(transportation)/'],
 ]
 
 # Links to tools exist with and without accents, so we normalize to have links
@@ -70,7 +92,7 @@ encoded_files = [
 # has an accent) but probably I should at some point normalize everything more
 # consistently including creating urls?? Because idk if other things are still
 # broken in this way.
-french_tools_with_accents = [
+french_urls_with_accents = [
   "communications-personnalisées-percutantes",
   "mesures-financières-incitatives-et-dissuasives",
   "rétroaction",
@@ -78,6 +100,7 @@ french_tools_with_accents = [
   "de-bouche-à-oreille",
   "médias",
   "visites-à-domicile",
+  "études-de-cas",
 ]
 
 def remove_accents(s):
@@ -85,17 +108,27 @@ def remove_accents(s):
 
 french_url_replacements = [
   [f"outils-de-changement/{tool}", f"outils-de-changement/{remove_accents(tool)}"]
-  for tool in french_tools_with_accents
+  for tool in french_urls_with_accents
 ]
 
 def generate_page(f, url, page_text, path_to_root, soup_adjuster=None):
-  for before, after in encoded_files:
+  for before, after in encoded_urls:
     page_text = page_text.replace(before, after)
 
   scrape_images(page_text)
   scrape_userfiles(page_text)
 
   url_replacements = [
+    ["English/CaseStudies/default.asp?ID=", "en/case-studies/detail/"],
+    ["fr/etudes-de-cas/detail/ID=", "fr/etudes-de-cas/detail/"],
+    ["fr/etudes-de-cas/detail/ID=127", "fr/etudes-de-cas/detail/445"],
+    ["francais/CaseStudies/default.asp?", "fr/etudes-de-cas/detail/"],
+    ["Francais/CaseStudies/default.asp?", "fr/etudes-de-cas/detail/"],
+    ["fr/outils-de-changement/animateurs-de-quartier / leaderspopulaires",
+     "fr/outils-de-changement/animateurs-de-quartier---meneurs-populaires"],
+    ["fr/outils-de-changement/animateurs-de-quartier/-meneurs-populaires",
+     "fr/outils-de-changement/animateurs-de-quartier---meneurs-populaires"],
+     ["fr/ressources-de-sujets/Santé cardiovasculaire", "fr/ressources-de-sujets/santé-cardiovasculaire"]
     ['http://toolsofchange.com', f'{path_to_root}'],
     ['http://www.toolsofchange.com', f'{path_to_root}'],
     ['https://www.toolsofchange.com', f'{path_to_root}'],
@@ -166,8 +199,8 @@ def generate_page(f, url, page_text, path_to_root, soup_adjuster=None):
     div = soup.find('div', class_=remove_class)
     if div:
       div.decompose()
-    else:
-      print(f"couldn't find .{remove_class} to remove for {url}")
+    # else:
+    #   print(f"couldn't find .{remove_class} to remove for {url}")
 
   footer_right = soup.find('div', class_="footer_right")
   if lang == "en":
@@ -222,22 +255,42 @@ def scrape_images(page_text):
       img_path = f"public/images/{img}"
       download_file(img_path)
       downloaded_images.add(img_path)
+  images = (
+    re.findall(r'url\(\/images\/(.+)\)', page_text) +
+    re.findall(r'src=\"\/images\/(.+?)\"', page_text)
+  )
+  for img in images:
+    if img not in downloaded_images:
+      img_path = f"images/{img}"
+      download_file(img_path)
+      downloaded_images.add(img_path)
 
 def scrape_userfiles(page_text):
   for file_name in re.findall(r'\/userfiles\/(.+?)"', page_text):
     file_path = f"userfiles/{file_name}"
     download_file(file_path)
-    downloaded_files.add(file_path)
 
 def download_file(file_path):
   if file_path in known_missing_files:
     return
+  if file_path in downloaded_files:
+    return
+  if file_path in downloaded_images:
+    return
+
+  last_slash = file_path.rfind("/")
+  folder_path = f"./{file_path[:last_slash]}"
+  if not os.path.exists(folder_path):
+    os.makedirs(folder_path)
+
   file_url = f"https://toolsofchange.com/{urllib.parse.quote(file_path)}"
   try:
     urllib.request.urlretrieve(file_url, f"./{file_path}")
   except Exception as e:
     print(f"couldn't find {file_path}")
     print(e)
+
+  downloaded_files.add(file_path)
 
 
 def generate_case_studies_homepage(page):
@@ -334,6 +387,9 @@ def cleanup_url(url):
     url = url[len("http://www.toolsofchange.com/"):]
   if url[-1] != "/":
     url += "/"
+  url.replace("s%C3%A9curit%C3%A9-routi%C3%A8re", "sécurité-routière")
+  url.replace("m%C3%A9decine-du-travail", "medecine-du-travail")
+  url.replace("efficacit%C3%A9-%C3%A9nerg%C3%A9tique", "efficacité-énergétique")
   return url
 
 def generate_topic_resources():
@@ -354,6 +410,11 @@ def generate_topic_resources():
   resource_page_links = homepage_soup.find('div', class_="topic_resources_detail").find_all('a')
   for section in homepage_soup.find_all('div', class_="topic_resources_detail_pad"):
     resource_page_links = resource_page_links + section.find_all('a')
+
+  if lang == "fr":
+    resource_page_links.append("/fr/ressources-de-sujets/la-medecine-du-travail/")
+    resource_page_links.append("/fr/ressources-de-sujets/detail/77")
+    resource_page_links.append("/fr/ressources-de-sujets/detail/62")
 
   for resource_page in resource_page_links:
     url = cleanup_url(resource_page['href'])
@@ -428,6 +489,10 @@ def generate_simple_pages():
       "en/landmark/",
       "en/help/", # TODO: remove thing about creating an account
       "en/terms/",
+      "en/program-impact-attribution/",
+      "en/programs/community-based-social-marketing/",
+      "en/programs/water-professionals/",
+      "en/workshops/customized-webinar-based-presentations/",
     ]
   else:
     urls = [
@@ -438,6 +503,7 @@ def generate_simple_pages():
       "fr/au-sujet-de-nous/cahier-de-travail-/",
       "fr/aide/",
       "fr/modalités-d'utilisation/",
+      "fr/programmes/le-marketing-social-communautaire/",
     ]
 
   for url in urls:
@@ -479,10 +545,28 @@ def generate_homepage():
 
 def setup():
   print("setup")
+  os.makedirs("./images/")
   os.makedirs("./public/images/")
   os.makedirs("./userfiles/Image")
   os.makedirs("./userfiles/File")
   generate_stylesheets()
+  download_a_href_images()
+
+# These are images that are linked to?? that are different images
+# than the ones displayed on pages. Weird, but whatever we can also
+# download them
+def download_a_href_images():
+  for img in [
+    'images/documentimages/AIDS/PEP.gif',
+    'images/documentimages/AQPortland/cartips.gif',
+    'images/documentimages/AQPortland/prizedraw.gif',
+    'images/documentimages/Ashland/bdtest.jpg',
+    'images/documentimages/Ashland/housesign1.jpg',
+    'images/documentimages/SparetheAir/SAsurvey.gif',
+    'images/documentimages/U-PASS/generalad.gif',
+    'images/documentimages/U-PASS/nightride.gif',
+  ]:
+    download_file(img)
 
 def generate_english_site():
   global lang
@@ -525,3 +609,15 @@ def generate_french_site():
 setup()
 generate_english_site()
 generate_french_site()
+
+"""need to scrape
+
+en/case-studies/detail/678
+
+en/topic-resources/detail/329
+
+en/topic-resources/energy-efficiency/landmark-case-studies-(energy)
+en/topic-resources/transportation/landmark-case-studies-(transportation)
+en/topic-resources/water-efficiency/water-links/
+
+"""
