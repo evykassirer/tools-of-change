@@ -74,6 +74,8 @@ missing pages -- several of the case studies might be under new IDs now?? TODO(e
   * linked to from several places "ÉnerGuide"
 * fr/etudes-de-cas/detail/87
   * linked to from several places "Les citoyens à l'oeuvre"
+* fr/programmes/water-transport-(english-only)/
+  * linked to from the top corner Français link of https://toolsofchange.com/en/topic-resources/waste-reduction/
 
 doesn't matter
 

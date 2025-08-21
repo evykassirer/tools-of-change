@@ -24,11 +24,11 @@ notes for dad:
   * Soutenir la motivation à long terme --> Soutenir la motivation au fil du temps
 """
 
-# TODO for when this is converted to main site, things to change manually:
+# TODO(post-backup) for when this is converted to main site, things to change manually:
 #
 # - add a hardcoded latest news box and news page
 # - remove thing about creating an account on the help pages (en/fr)
-  # - any user/create
+  # - any user/create link
 # - there's a Français (top corner) link to /fr/aide/landmark(f)  which has nothing and also doesn't make sense, change it
 #   - and another for fr/aide/landmark-badge
 
@@ -80,9 +80,11 @@ encoded_urls = [
   ['userfiles/File//ClimateSmart%20Case%20Study%20FINAL2.pdf', 'userfiles/File/ClimateSmart Case Study FINAL2.pdf'],
   ['userfiles/File//UGA%20Recycling%20Bin%20Feedback.pdf', 'userfiles/File/UGA Recycling Bin Feedback.pdf'],
   ['userfiles/Q&amp;A.pdf', 'userfiles/Q&A.pdf'],
-  ['"English/CaseStudies/default.asp?ID=138"', 'en/case-studies/detail/138'],
   ['"/images/documentimages/AQPortland/prizedraw"', '"/images/documentimages/AQPortland/prizedraw.gif"'],
   ['landmark-case-studies-%28transportation%29/', 'landmark-case-studies-(transportation)/'],
+  ["s%C3%A9curit%C3%A9-routi%C3%A8re", "securite-routiere"],
+  ["m%C3%A9decine-du-travail", "medecine-du-travail"],
+  ["efficacit%C3%A9-%C3%A9nerg%C3%A9tique", "efficacite-energetique"],
 ]
 
 # Links to tools exist with and without accents, so we normalize to have links
@@ -92,7 +94,7 @@ encoded_urls = [
 # has an accent) but probably I should at some point normalize everything more
 # consistently including creating urls?? Because idk if other things are still
 # broken in this way.
-french_urls_with_accents = [
+french_tools_with_accents = [
   "communications-personnalisées-percutantes",
   "mesures-financières-incitatives-et-dissuasives",
   "rétroaction",
@@ -100,7 +102,6 @@ french_urls_with_accents = [
   "de-bouche-à-oreille",
   "médias",
   "visites-à-domicile",
-  "études-de-cas",
 ]
 
 def remove_accents(s):
@@ -108,10 +109,23 @@ def remove_accents(s):
 
 french_url_replacements = [
   [f"outils-de-changement/{tool}", f"outils-de-changement/{remove_accents(tool)}"]
-  for tool in french_urls_with_accents
+  for tool in french_tools_with_accents
 ]
 
-def generate_page(f, url, page_text, path_to_root, soup_adjuster=None):
+french_url_replacements.append(["études-de-cas", "etudes-de-cas"])
+french_url_replacements.append([
+  "ressources-de-sujets/santé-cardiovasculaire",
+  "ressources-de-sujets/sante-cardiovasculaire"
+])
+french_url_replacements.append([
+  "guide-de-planification/obtenir-informé/",
+  "guide-de-planification/obtenir-informe/"
+])
+
+def generate_page(f, url, page_text, soup_adjuster=None):
+  url = cleanup_url(url)
+  path_to_root = "/".join([".." for n in range(url.count("/"))])
+
   for before, after in encoded_urls:
     page_text = page_text.replace(before, after)
 
@@ -119,16 +133,43 @@ def generate_page(f, url, page_text, path_to_root, soup_adjuster=None):
   scrape_userfiles(page_text)
 
   url_replacements = [
+    # Broken on TOC but I fixed them here
+    ["fr/etudes-de-cas/detail/127", "fr/etudes-de-cas/detail/445"],
+    ["utils-de-changement/programmes-en-milieu-de-travail-qui-affectent-le-foyer/Programs",
+     "utils-de-changement/programmes-en-milieu-de-travail-qui-affectent-le-foyer"],
+    ["case-studies/detail/635//", "case-studies/detail/635/"],
+    ["/&quot;English/CaseStudies/default.asp?ID=138&quot;", 'en/case-studies/detail/138/'],
+    ["tools-of-change.com", "toolsofchange.com"],
+
+    # old urls
+    ["francais/ToolsofChange/default.asp?Section=motivation", "fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/"],
+    ["francais/ToolsofChange/default.asp?Section=Motivation", "fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/"],
+    ["Francais/ToolsofChange/default.asp?Section=Motivation", "fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/"],
+    ["francais/ToolsofChange/default.asp?Section=commitment", "fr/outils-de-changement/obtenir-un-engagement/"],
+    ["francais/ToolsofChange/default.asp?Section=Commitment", "fr/outils-de-changement/obtenir-un-engagement/"],
+    ["francais/ToolsofChange/default.asp?Section=Norm", "fr/outils-de-changement/attrait-des-normes/"],
+    ["Francais/ToolsofChange/default.asp?Section=Norm", "fr/outils-de-changement/attrait-des-normes/"],
+    ["francais/ToolsofChange/default.asp?Section=Financial", "fr/outils-de-changement/Mesures-financieres-incitatives-et-dissuasives/"],
+    ["Francais/ToolsofChange/default.asp?Section=Financial", "fr/outils-de-changement/Mesures-financieres-incitatives-et-dissuasives/"],
+    ["francais/ToolsofChange/default.asp?Section=Communication", "fr/outils-de-changement/communications-personnalisees-percutantes/"],
+    ["francais/ToolsofChange/default.asp?Section=Barriers", "fr/outils-de-changement/surmonter-des-obstacles-specifiques/"],
+    ["Francais/ToolsofChange/default.asp?Section=Barriers", "fr/outils-de-changement/surmonter-des-obstacles-specifiques/"],
+    ["Francais/ToolsofChange/default.asp?Section=Media", "fr/outils-de-changement/medias/"],
+    ["Francais/ToolsofChange/default.asp?Section=Home", "fr/outils-de-changement/Visites-a-domicile/"],
+    ["Francais/ToolsofChange/default.asp?Section=Word", "fr/outils-de-changement/de-bouche-a-oreille/"],
+    ["English/ToolsofChange/default.asp?Section=WorkPrograms", "en/tools-of-change/work-programs/"],
+    ["English/ToolsofChange/default.asp?Section=Work", "en/tools-of-change/work-programs/"],
+    ["English/PlanningGuide/default.asp?Section=Partners", "en/planning-guide/developing-partners/"],
+    ["English/firstsplit.asp", "en/home"],
     ["English/CaseStudies/default.asp?ID=", "en/case-studies/detail/"],
-    ["fr/etudes-de-cas/detail/ID=", "fr/etudes-de-cas/detail/"],
-    ["fr/etudes-de-cas/detail/ID=127", "fr/etudes-de-cas/detail/445"],
-    ["francais/CaseStudies/default.asp?", "fr/etudes-de-cas/detail/"],
-    ["Francais/CaseStudies/default.asp?", "fr/etudes-de-cas/detail/"],
+    ["Francais/CaseStudies/default.asp?ID=", "fr/etudes-de-cas/detail/"],
+    ["francais/CaseStudies/default.asp?ID=", "fr/etudes-de-cas/detail/"],
+
     ["fr/outils-de-changement/animateurs-de-quartier / leaderspopulaires",
      "fr/outils-de-changement/animateurs-de-quartier---meneurs-populaires"],
     ["fr/outils-de-changement/animateurs-de-quartier/-meneurs-populaires",
      "fr/outils-de-changement/animateurs-de-quartier---meneurs-populaires"],
-     ["fr/ressources-de-sujets/Santé cardiovasculaire", "fr/ressources-de-sujets/santé-cardiovasculaire"]
+    ["fr/ressources-de-sujets/Santé cardiovasculaire", "fr/ressources-de-sujets/sante-cardiovasculaire"],
     ['http://toolsofchange.com', f'{path_to_root}'],
     ['http://www.toolsofchange.com', f'{path_to_root}'],
     ['https://www.toolsofchange.com', f'{path_to_root}'],
@@ -145,7 +186,7 @@ def generate_page(f, url, page_text, path_to_root, soup_adjuster=None):
   if lang == "fr":
     url_replacements = url_replacements + french_url_replacements
 
-  # TODO -- this should probably be more careful to only replace text in href/src tags
+  # TODO(maybe) -- this should probably be more careful to only replace text in href/src tags
   for before, after in url_replacements:
     page_text = page_text.replace(before, after)
 
@@ -301,11 +342,22 @@ def generate_case_studies_homepage(page):
   os.makedirs(case_studies_home_url)
   with open(case_studies_home_url + "index.html", "x") as f:
     page_text = page.text
-    page_text = page_text.replace(f"/{case_studies_home_url}", "./")
+    page_text = page_text.replace(f'"/{case_studies_home_url}', '"./')
     def soup_adjuster(soup):
       # This is the "sort by latest, last 5 10 15" etc bar
       soup.find('div', class_="bar").decompose()
-    generate_page(f, case_studies_home_url, page_text, "../..", soup_adjuster)
+    generate_page(f, case_studies_home_url, page_text, soup_adjuster)
+
+def soup_adjuster_to_remove_user_input(soup):
+  # Remove "login to save plans" thing (top and bottom of page)
+  for bar in soup.find_all('div', class_="bar"):
+    bar.decompose()
+  # This is where the user input would go if there were accounts
+  for your_program_box in soup.find_all(class_="thickbox"):
+    if your_program_box.find_previous("tr"):
+      your_program_box.find_previous("tr").decompose();
+    else:
+      your_program_box.decompose()
 
 def generate_planning_guide():
   if lang == "en":
@@ -324,7 +376,7 @@ def generate_planning_guide():
         soup.find('div', class_="bar").decompose()
       # now that that's gone, we should add a bit more padding here
       soup.find('div', id="steps_nav")['style'] = "margin-top: 20px;"
-    generate_page(f, url, page.text, "../..", soup_adjuster)
+    generate_page(f, url, page.text, soup_adjuster)
 
   guide_soup = BeautifulSoup(page.content, "html.parser")
   steps = guide_soup.find('div', id="steps_nav").find_all('a')
@@ -333,18 +385,7 @@ def generate_planning_guide():
     page = requests.get("https://toolsofchange.com/" + url)
     os.makedirs(url)
     with open(url + "index.html", "x") as f:
-      def soup_adjuster(soup):
-        # Remove "login to save plans" thing (top and bottom of page)
-        for bar in soup.find_all('div', class_="bar"):
-          bar.decompose()
-        # This is where the user input would go if there were accounts
-        for your_program_box in soup.find_all(class_="thickbox"):
-          if your_program_box.find_previous("tr"):
-            your_program_box.find_previous("tr").decompose();
-          else:
-            your_program_box.decompose()
-
-      generate_page(f, url, page.text, "../../..", soup_adjuster)
+      generate_page(f, url, page.text, soup_adjuster_to_remove_user_input)
 
 def generate_tools_of_change():
   if lang == "en":
@@ -355,29 +396,16 @@ def generate_tools_of_change():
   page = requests.get("https://toolsofchange.com/" + url)
   os.makedirs(url)
   with open(url + "index.html", "x") as f:
-    generate_page(f, url, page.text, "../..")
+    generate_page(f, url, page.text)
 
   tools_soup = BeautifulSoup(page.content, "html.parser")
   tool_links = tools_soup.find('div', class_="left_content").find_all('a')
   for tool in tool_links:
-    url = tool['href']
-    if url[0] == "/":
-      url = url[1:]
+    url = cleanup_url(tool['href'])
     page = requests.get("https://toolsofchange.com/" + url)
     os.makedirs(url)
     with open(url + "index.html", "x") as f:
-      def soup_adjuster(soup):
-        # Remove "login to save plans" thing (top and bottom of page)
-        for bar in soup.find_all('div', class_="bar"):
-          bar.decompose()
-        # This is where the user input would go if there were accounts
-        for your_program_box in soup.find_all(class_="thickbox"):
-          if your_program_box.find_previous("tr"):
-            your_program_box.find_previous("tr").decompose();
-          else:
-            your_program_box.decompose()
-
-      generate_page(f, url, page.text, "../../..", soup_adjuster)
+      generate_page(f, url, page.text, soup_adjuster_to_remove_user_input)
 
 
 def cleanup_url(url):
@@ -385,15 +413,19 @@ def cleanup_url(url):
     url = url[1:]
   if url.startswith("http://www.toolsofchange.com/"):
     url = url[len("http://www.toolsofchange.com/"):]
+  if url.startswith("http://toolsofchange.com/"):
+    url = url[len("http://toolsofchange.com/"):]
+  if url.startswith("https://toolsofchange.com/"):
+    url = url[len("https://toolsofchange.com/"):]
   if url[-1] != "/":
     url += "/"
-  url.replace("s%C3%A9curit%C3%A9-routi%C3%A8re", "sécurité-routière")
-  url.replace("m%C3%A9decine-du-travail", "medecine-du-travail")
-  url.replace("efficacit%C3%A9-%C3%A9nerg%C3%A9tique", "efficacité-énergétique")
+  url = url.replace("s%C3%A9curit%C3%A9-routi%C3%A8re", "securite-routiere")
+  url = url.replace("m%C3%A9decine-du-travail", "medecine-du-travail")
+  url = url.replace("efficacit%C3%A9-%C3%A9nerg%C3%A9tique", "efficacite-energetique")
+  url = url.replace("Santé cardiovasculaire", "sante-cardiovasculaire")
   return url
 
 def generate_topic_resources():
-
   if lang == "en":
     topic_resource_url = "en/topic-resources/"
   else:
@@ -403,7 +435,7 @@ def generate_topic_resources():
   page = requests.get("https://toolsofchange.com/" + topic_resource_url)
   os.makedirs(topic_resource_url)
   with open(topic_resource_url + "index.html", "x") as f:
-    generate_page(f, topic_resource_url, page.text, "../..")
+    generate_page(f, topic_resource_url, page.text)
 
   # Generate pages for each of the topics
   homepage_soup = BeautifulSoup(page.content, "html.parser")
@@ -411,18 +443,22 @@ def generate_topic_resources():
   for section in homepage_soup.find_all('div', class_="topic_resources_detail_pad"):
     resource_page_links = resource_page_links + section.find_all('a')
 
-  if lang == "fr":
-    resource_page_links.append("/fr/ressources-de-sujets/la-medecine-du-travail/")
-    resource_page_links.append("/fr/ressources-de-sujets/detail/77")
-    resource_page_links.append("/fr/ressources-de-sujets/detail/62")
+  resource_urls = [resource_page['href'] for resource_page in resource_page_links]
 
-  for resource_page in resource_page_links:
-    url = cleanup_url(resource_page['href'])
+  if lang == "fr":
+    resource_urls.append("/fr/ressources-de-sujets/la-medecine-du-travail/")
+    resource_urls.append("/fr/ressources-de-sujets/detail/77/")
+    resource_urls.append("/fr/ressources-de-sujets/detail/62/")
+  else:
+    resource_urls.append("/en/topic-resources/detail/329/")
+
+  for url in resource_urls:
+    url = cleanup_url(url)
     page = requests.get("https://toolsofchange.com/" + url)
     os.makedirs(url)
     with open(url + "index.html", "x") as f:
-      # TODO: maybe remove the two advanced search boxes?
-      generate_page(f, url, page.text, "../../..")
+      # TODO(search): maybe remove the two advanced search boxes?
+      generate_page(f, url, page.text)
 
     # Now generate the pages for each resource
     soup = BeautifulSoup(page.content, "html.parser")
@@ -435,7 +471,7 @@ def generate_topic_resources():
         os.makedirs(url)
         page = requests.get("https://toolsofchange.com/" + url)
         with open(url + "index.html", "x") as f:
-          generate_page(f, url, page.text, "../../../..")
+          generate_page(f, url, page.text)
 
 
 def generate_case_study_pages(page):
@@ -475,7 +511,7 @@ def generate_case_study_pages(page):
           soup.find("body").append(new_tag)
     page = requests.get("https://toolsofchange.com/" + url)
     with open(url + "index.html", "x") as f:
-      generate_page(f, url, page.text, "../../../..", soup_adjuster)
+      generate_page(f, url, page.text, soup_adjuster)
 
 
 def generate_simple_pages():
@@ -487,12 +523,15 @@ def generate_simple_pages():
       "en/about-us/",
       "en/about-us/workbook-acknowledgements/",
       "en/landmark/",
-      "en/help/", # TODO: remove thing about creating an account
+      "en/help/", # TODO(post-backup): remove thing about creating an account
       "en/terms/",
       "en/program-impact-attribution/",
       "en/programs/community-based-social-marketing/",
       "en/programs/water-professionals/",
       "en/workshops/customized-webinar-based-presentations/",
+      "en/topic-resources/energy-efficiency/landmark-case-studies-(energy)/",
+      "en/topic-resources/transportation/landmark-case-studies-(transportation)/",
+      "en/topic-resources/water-efficiency/water-links/",
     ]
   else:
     urls = [
@@ -510,9 +549,7 @@ def generate_simple_pages():
     page = requests.get("https://toolsofchange.com/" + url)
     os.makedirs(url)
     with open(url + "index.html", "x") as f:
-      # TODO(cleanup): i can just calculate this in the generate_page function, which would be better
-      path_to_root = "../.." if url.count("/") == 2 else "../../.."
-      generate_page(f, url, page.text, path_to_root)
+      generate_page(f, url, page.text)
 
 def generate_homepage():
   if lang == "en":
@@ -525,14 +562,14 @@ def generate_homepage():
   os.makedirs(url)
   with open(url + "index.html", "x") as f:
     def soup_adjuster(soup):
-      # TODO: put a hardcoded news section here
+      # TODO(post-backup): put a hardcoded news section here
       soup.find('div', class_="latest_news_area").decompose()
       # Remove left margin now that the news is gone
       soup.find(attrs={'class':'webinar_area_wrap'})['style'] = "margin: 0;"
       for link in soup.find_all('a'):
         if "https://clicky.com" in link['href']:
           link.decompose()
-    generate_page(f, url, page.text, "../..", soup_adjuster)
+    generate_page(f, url, page.text, soup_adjuster)
 
   homepage_soup = BeautifulSoup(page.content, "html.parser")
   for intro_link in homepage_soup.find('div', class_="intro_box").find_all('a'):
@@ -540,7 +577,7 @@ def generate_homepage():
     page = requests.get("https://toolsofchange.com/" + url)
     os.makedirs(url)
     with open(url + "index.html", "x") as f:
-      generate_page(f, url, page.text, "../../..")
+      generate_page(f, url, page.text)
 
 
 def setup():
@@ -574,8 +611,6 @@ def generate_english_site():
   print("english")
   print("homepage")
   generate_homepage()
-  print("simple pages")
-  generate_simple_pages()
   print("topic resources")
   generate_topic_resources()
   print("tools of change")
@@ -586,6 +621,8 @@ def generate_english_site():
   generate_case_study_pages(case_studies_homepage)
   print("planning guide")
   generate_planning_guide()
+  print("simple pages")
+  generate_simple_pages()
 
 def generate_french_site():
   global lang
@@ -593,8 +630,6 @@ def generate_french_site():
   print("french")
   print("homepage")
   generate_homepage()
-  print("simple pages")
-  generate_simple_pages()
   print("topic resource")
   generate_topic_resources()
   print("tools of change")
@@ -605,19 +640,9 @@ def generate_french_site():
   generate_case_study_pages(case_studies_homepage)
   print("planning guide")
   generate_planning_guide()
+  print("simple pages")
+  generate_simple_pages()
 
 setup()
 generate_english_site()
 generate_french_site()
-
-"""need to scrape
-
-en/case-studies/detail/678
-
-en/topic-resources/detail/329
-
-en/topic-resources/energy-efficiency/landmark-case-studies-(energy)
-en/topic-resources/transportation/landmark-case-studies-(transportation)
-en/topic-resources/water-efficiency/water-links/
-
-"""

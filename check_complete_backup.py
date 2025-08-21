@@ -12,9 +12,41 @@ from bs4 import BeautifulSoup
 
 74, 908 total
 
+--
+
+35 404s, 934 checked total (july 15)
+
+--
+
+9 404s, 936 checked total (july 16)
+
+--
+
+7 404s, 936 checked total (july 16)
+
+--
+
+july 17:
+938 pages checked
+not toc urls: 990
+pages that have 404'd: 2
+
+http:///en/case-studies/detail/161
+http://  /en/case-studies/detail/675
+http://en/case-studies/detail/162/
+/fr/etudes-de-cas/detail/82
+en/case-studies/detail/9
+en/case-studies/detail/138/
+toc/fr/etudes-de-cas/detail/10
+/fr/etudes-de-cas/detail/82
+fr/etudes-de-cas/detail/130
+
+
 """
 
 def new_url(base_url, new_url):
+  base_url = base_url.strip()
+  new_url = new_url.strip()
   if new_url[0] == "/":
     return f"http://127.0.0.1:8000{new_url}"
 
@@ -40,10 +72,10 @@ def new_url(base_url, new_url):
 
   # if "fr/en/" in ret:
   #   print(f"fr en {ret} made for {orig_base_url} to {orig_new_url}")
-  # if "en/en" in ret:
-  #   print(f"double en {ret} made for {orig_base_url} to {orig_new_url}")
-  # if "fr/fr" in ret:
-  #     print(f"double fr {ret} made for {orig_base_url} to {orig_new_url}")
+  if "en/en" in ret:
+    print(f"double en {ret} made for {orig_base_url} to {orig_new_url}")
+  if "fr/fr" in ret:
+      print(f"double fr {ret} made for {orig_base_url} to {orig_new_url}")
   # if "//" in ret[10:]:
   #   print(f"double slash {ret} made for {orig_base_url} to {orig_new_url}")
   return ret
@@ -63,13 +95,16 @@ def new_url(base_url, new_url):
 """
 
 # search keywords
-# TODO(evy): handle links that aren't just linking to general search
+# TODO(search): clean up pages with links to specific search pages
 search_keywords = [
   "case-studies-search",
   "recherche-de-etudes-de-cas",
   "topic-resources-search",
   "recherche-de-ressources-de-sujets",
   "planning-guide/advanced-search",
+  "guide-de-planification/recherche-avance",
+  # TODO(evy) not search, but simiarly I will manually remove the remaining 3 instances
+  "/user/create"
 ]
 
 nonexisting_pages = set()
@@ -122,6 +157,7 @@ known_missing_pages = [
   'fr/etudes-de-cas/detail/439',
   'fr/etudes-de-cas/detail/82',
   'fr/etudes-de-cas/detail/87',
+  'fr/programmes/water-transport-(english-only)/',
 ]
 
 
@@ -185,6 +221,7 @@ def check_complete_backup():
   i = 0
   while len(queue):
     url = queue.pop(0)
+    url = url.strip()
     check_page(url)
     i += 1
     if i % 100 == 0:
@@ -193,7 +230,7 @@ def check_complete_backup():
       print(f"pages that have 404'd: {len(nonexisting_pages)}")
       print("\n")
   print("🍄 all done")
-  print(i)
+  print(f"{i} pages checked")
   print(f"not toc urls: {len(not_toc)}")
   print(f"pages that have 404'd: {len(nonexisting_pages)}")
   print("\n")
@@ -219,10 +256,5 @@ check_complete_backup()
 
 print_404s()
 
-"""
-broken things that are my fault:
-
-<a href="../.../detail/628/"> and similar
-
-
-"""
+# TODO(evy) confirm these
+print_not_toc()
