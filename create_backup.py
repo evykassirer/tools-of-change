@@ -41,6 +41,9 @@ with open('case_study_data_fr.json', 'r') as file:
 
 lang = "en"
 
+french_home_path = "/fr/accueil"
+english_home_path = "/en/home/"
+
 # Files that aren't on the site we're scraping from, so don't worry about them
 # when fetches give errors.
 known_missing_files = [
@@ -132,6 +135,18 @@ def generate_page(f, url, page_text, soup_adjuster=None):
   scrape_images(page_text)
   scrape_userfiles(page_text)
 
+  for before, after in [
+    ['(/public/', f'({path_to_root}/public/'],
+    ['(/userfiles/', f'({path_to_root}/userfiles/'],
+    # these don't get caught in the replacements below because they're in comments of JS
+    ['<td class="go_area"><input src="/public', f'<td class="go_area"><input src="{path_to_root}/public'],
+    ['<img src="http://www.toolsofchange.com/public/images/toc_landmark_badge_170x250.jpg', f'<img src="{path_to_root}/public/images/toc_landmark_badge_170x250.jpg'],
+    ['$("a.expose3").html(\'<img src="/public/images', f'$("a.expose3").html(\'<img src="{path_to_root}/public/images'],
+
+  ]:
+    page_text = page_text.replace(before, after)
+
+
   url_replacements = [
     # Broken on TOC but I fixed them here
     ["fr/etudes-de-cas/detail/127", "fr/etudes-de-cas/detail/445"],
@@ -175,30 +190,43 @@ def generate_page(f, url, page_text, soup_adjuster=None):
     ['https://www.toolsofchange.com', f'{path_to_root}'],
     ['https://toolsofchange.com', f'{path_to_root}'],
     ['www.toolsofchange.com', f'{path_to_root}'],
-    ["'/public/", f"'{path_to_root}/public/"],
-    ['"/public/', f'"{path_to_root}/public/'],
-    ['(/public/', f'({path_to_root}/public/'],
-    ["'/userfiles/", f"'{path_to_root}/userfiles/"],
-    ['"/userfiles/', f'"{path_to_root}/userfiles/'],
-    ['(/userfiles/', f'({path_to_root}/userfiles/'],
   ]
 
-  if lang == "fr":
-    url_replacements = url_replacements + french_url_replacements
+  url_replacements = url_replacements + french_url_replacements
 
-  # TODO(maybe) -- this should probably be more careful to only replace text in href/src tags
-  for before, after in url_replacements:
-    page_text = page_text.replace(before, after)
+  def make_url_replacements(link, attr):
+    for before, after in url_replacements:
+      link[attr] = link[attr].replace(before, after)
+    for prefix in ['/en', '/fr', '/public', '/userfiles']:
+      if link[attr].startswith(prefix):
+        link[attr] = path_to_root + link[attr]
 
-  french_home_path = "/fr/accueil"
-  english_home_path = "/en/home/"
-  page_text = page_text.replace(french_home_path, f"{path_to_root}{french_home_path}")
-  page_text = page_text.replace(english_home_path, f"{path_to_root}{english_home_path}")
-
-  page_text = page_text.replace(f'href="/en/', f'href="{path_to_root}/en/')
-  page_text = page_text.replace(f'href="/fr/', f'href="{path_to_root}/fr/')
 
   soup = BeautifulSoup(page_text,"html.parser")
+  for link in soup.find_all('a'):
+    if not link.get('href'):
+      # i can't believe this is in there
+      if link.get('hre'):
+        link['href'] = link.get('hre')
+      continue
+    make_url_replacements(link, 'href')
+  for img in soup.find_all('img'):
+    if not img.get('src'):
+      continue
+    make_url_replacements(img, 'src')
+  for input_tag in soup.find_all('input'):
+    if not input_tag.get('src'):
+      continue
+    make_url_replacements(input_tag, 'src')
+  for script in soup.find_all('script'):
+    if not script.get('src'):
+      continue
+    make_url_replacements(script, 'src')
+  for link in soup.find_all('link'):
+    if not link.get('href'):
+      continue
+    make_url_replacements(link, 'href')
+
 
   # forms get in the way of search working, and aren't needed since we got rid of accounts
   while True:
