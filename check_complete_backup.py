@@ -31,17 +31,6 @@ july 17:
 not toc urls: 990
 pages that have 404'd: 2
 
-http:///en/case-studies/detail/161
-http://  /en/case-studies/detail/675
-http://en/case-studies/detail/162/
-/fr/etudes-de-cas/detail/82
-en/case-studies/detail/9
-en/case-studies/detail/138/
-toc/fr/etudes-de-cas/detail/10
-/fr/etudes-de-cas/detail/82
-fr/etudes-de-cas/detail/130
-
-
 """
 
 def new_url(base_url, new_url):
@@ -194,6 +183,8 @@ def check_page(url):
     if full_url in checked_urls:
       continue
     if check_page_exists(full_url) and full_url[-4:] not in [".pdf", ".doc", ".mp3", ".png", ".JPG", ".jpg", ".gif"]:
+      if full_url == "http://127.0.0.1:8000/":
+        continue
       queue.append(full_url)
     checked_urls.add(full_url)
 
@@ -255,6 +246,4 @@ def print_404s():
 check_complete_backup()
 
 print_404s()
-
-# TODO(evy) confirm these
 print_not_toc()

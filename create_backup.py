@@ -26,12 +26,15 @@ notes for dad:
 
 # TODO(post-backup) for when this is converted to main site, things to change manually:
 #
+# - add a redirect from toolsofchange.com to en/home/
+# - manually fix /"en/case-studies/detail/138" to remove the quotes
+# - manually remove the 3 remaining "Login to Save Plans for Tools of Change" that are there for some reason
 # - add a hardcoded latest news box and news page
 # - remove thing about creating an account on the help pages (en/fr)
-  # - any user/create link
+#    - any user/create link
+# - remove search stuff noted in check_complete_backup
 # - there's a Français (top corner) link to /fr/aide/landmark(f)  which has nothing and also doesn't make sense, change it
 #   - and another for fr/aide/landmark-badge
-
 
 with open('case_study_data.json', 'r') as file:
     case_study_data = json.load(file)
@@ -155,6 +158,10 @@ def generate_page(f, url, page_text, soup_adjuster=None):
     ["case-studies/detail/635//", "case-studies/detail/635/"],
     ["/&quot;English/CaseStudies/default.asp?ID=138&quot;", 'en/case-studies/detail/138/'],
     ["tools-of-change.com", "toolsofchange.com"],
+    ["toc/fr/etudes-de-cas/detail/10", "fr/etudes-de-cas/detail/10"],
+    ["http:///en/", "/en/"],
+    ["http://en/", "/en/"],
+    ["http://  /en/", "/en/"],
 
     # old urls
     ["francais/ToolsofChange/default.asp?Section=motivation", "fr/outils-de-changement/soutenir-la-motivation-au-fil-du-temps/"],
@@ -195,8 +202,12 @@ def generate_page(f, url, page_text, soup_adjuster=None):
   url_replacements = url_replacements + french_url_replacements
 
   def make_url_replacements(link, attr):
+    link[attr] = link[attr].strip()
     for before, after in url_replacements:
       link[attr] = link[attr].replace(before, after)
+    for prefix in ['en', 'fr']:
+      if link[attr].startswith(prefix):
+        link[attr] = "/" + link[attr]
     for prefix in ['/en', '/fr', '/public', '/userfiles']:
       if link[attr].startswith(prefix):
         link[attr] = path_to_root + link[attr]
