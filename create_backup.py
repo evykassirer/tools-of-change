@@ -28,6 +28,7 @@ notes for dad:
 #
 # - add a redirect from toolsofchange.com to en/home/
 # - manually fix /"en/case-studies/detail/138" to remove the quotes
+# - manually replace <a ""="" 127""""="" .... with '<a href="/fr/etudes-de-cas/detail/127/'
 # - manually remove the 3 remaining "Login to Save Plans for Tools of Change" that are there for some reason
 # - add a hardcoded latest news box and news page
 # - remove thing about creating an account on the help pages (en/fr)
@@ -304,6 +305,22 @@ def generate_page(f, url, page_text, soup_adjuster=None):
   else:
     print(f"no corner nav found!! for {url}")
 
+  search_script = soup.new_tag("script")
+  search_script['charset'] = "utf-8"
+  search_script['src'] = path_to_root + '/scripts/search.js'
+  search_script['type'] = "text/javascript"
+  soup.find('head').append(search_script)
+
+  searchbox = soup.find('input', {'name': "search_phrase"})
+  searchbox['onblur'] = ''
+  searchbox['onclick'] = ''
+  searchbox['id'] = 'search_box'
+  searchbox['onkeydown'] = "searchKeyDown(event)"
+
+  search_button = soup.find(class_='go_area').find('input')
+  search_button['id'] = "search_button"
+  search_button['onclick'] = "searchButtonClick()"
+
   if (soup_adjuster):
     soup_adjuster(soup)
 
@@ -378,7 +395,7 @@ def generate_case_studies_homepage(page):
     case_studies_home_url = "en/case-studies/"
   else:
     case_studies_home_url = "fr/etudes-de-cas/"
-  os.makedirs(case_studies_home_url)
+  # os.makedirs(case_studies_home_url)
   with open(case_studies_home_url + "index.html", "x") as f:
     page_text = page.text
     page_text = page_text.replace(f'"/{case_studies_home_url}', '"./')
@@ -682,6 +699,9 @@ def generate_french_site():
   print("simple pages")
   generate_simple_pages()
 
-setup()
-generate_english_site()
-generate_french_site()
+# setup()
+# generate_english_site()
+# generate_french_site()
+
+case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
+generate_case_studies_homepage(case_studies_homepage)

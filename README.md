@@ -56,3 +56,8 @@ missing ids for search results:
 * 139
 * 441
 * 443-447
+
+# search
+
+* `npx -y pagefind --site en --serve` indexes the english pages
+
