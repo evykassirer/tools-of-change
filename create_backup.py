@@ -395,7 +395,7 @@ def generate_case_studies_homepage(page):
     case_studies_home_url = "en/case-studies/"
   else:
     case_studies_home_url = "fr/etudes-de-cas/"
-  # os.makedirs(case_studies_home_url)
+  os.makedirs(case_studies_home_url)
   with open(case_studies_home_url + "index.html", "x") as f:
     page_text = page.text
     page_text = page_text.replace(f'"/{case_studies_home_url}', '"./')
@@ -699,9 +699,6 @@ def generate_french_site():
   print("simple pages")
   generate_simple_pages()
 
-# setup()
-# generate_english_site()
-# generate_french_site()
-
-case_studies_homepage = requests.get("https://toolsofchange.com/en/case-studies/?max=1000")
-generate_case_studies_homepage(case_studies_homepage)
+setup()
+generate_english_site()
+generate_french_site()

@@ -71,7 +71,7 @@ theForm.elements[i].checked = status;
 }
 -->
 </script>
-</head>
+<script charset="utf-8" src="../../../scripts/search.js" type="text/javascript"></script></head>
 <body>
 <div id="wrapper">
 <div id="headwrap">
@@ -239,8 +239,8 @@ Activity wristbands can be an effective tool for promoting changes in sedentary 
 <input name="do" type="hidden" value="topic_resources"/>
 <table class="search_sidebar_styles">
 <tr>
-<td class="text_area"><input name="search_phrase" onblur="this.value=!this.value?'Search':this.value;" onclick="this.value='';" onfocus="this.select()" size="18" type="text" value="Search"/></td>
-<td class="go_area"><input src="../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
+<td class="text_area"><input id="search_box" name="search_phrase" onblur="" onclick="" onfocus="this.select()" onkeydown="searchKeyDown(event)" size="18" type="text" value="Search"/></td>
+<td class="go_area"><input id="search_button" onclick="searchButtonClick()" src="../../../public/images/go_button_yellow.gif" type="image" value="Search"/></td>
 </tr>
 </table>
 
