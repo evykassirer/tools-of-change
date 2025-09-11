@@ -73,6 +73,7 @@ def scrape_toc(url, result_scraper):
 
 def scrape_en_case_studies():
   results_map.clear()
+  global lang
   lang = "en"
   url = 'https://toolsofchange.com/en/case-studies/case-studies-search/'
 
@@ -90,16 +91,17 @@ def scrape_en_case_studies():
 
 def scrape_fr_case_studies():
   results_map.clear()
+  global lang
   lang = "fr"
   url = "https://toolsofchange.com/fr/etudes-de-cas/recherche-de-etudes-de-cas/"
 
   scrape_topics(url, scrape_case_study_search_result)
   scrape_locations(url, scrape_case_study_search_result)
   scrape_toc(url, scrape_case_study_search_result)
-  scrape_case_study_search_result("Landmark_designation", "1", "Landmark designation?", "Yes")
-  scrape_case_study_search_result("Landmark_designation", "0", "Landmark designation?", "No")
-  scrape_case_study_search_result("widespread_use", "yes", "Afficher seulement les études de cas des programmes qui font l'objet d'une diffusion générale", "Yes")
-  scrape_case_study_search_result("widespread_use", "no", "Afficher seulement les études de cas des programmes qui font l'objet d'une diffusion générale", "No")
+  scrape_case_study_search_result("Landmark_designation", "1", "Landmark designation?", "Oui")
+  scrape_case_study_search_result("Landmark_designation", "0", "Landmark designation?", "Non")
+  scrape_case_study_search_result("widespread_use", "yes", "Afficher seulement les études de cas des programmes qui font l'objet d'une diffusion générale", "Oui")
+  scrape_case_study_search_result("widespread_use", "no", "Afficher seulement les études de cas des programmes qui font l'objet d'une diffusion générale", "Non")
 
   # print(json.dumps(results_map))
   with open("case_study_data_fr.json", "x") as f:
@@ -141,6 +143,7 @@ def scrape_topic_resource_search_result(key_for_request, value_for_request, key,
 
 def scrape_en_topic_resources():
   results_map.clear()
+  global lang
   lang = "en"
   url = "https://toolsofchange.com/en/topic-resources/topic-resources-search/"
 

@@ -321,11 +321,7 @@ def generate_page(f, url, page_text, soup_adjuster=None):
   search_button['id'] = "search_button"
   search_button['onclick'] = "searchButtonClick()"
 
-  if lang == "en":
-    search_link = path_to_root + "/en/search"
-  else:
-    search_link = path_to_root + "/fr/recherche"
-  soup.find(class_='right_column').find('a')['href'] = search_link
+  soup.find(class_='right_column').find('a').decompose()
 
   if (soup_adjuster):
     soup_adjuster(soup)
