@@ -45,12 +45,31 @@ def scrape_case_study_search_result(key_for_request, value_for_request, key, val
 def scrape_topics(url, result_scraper):
   page = requests.get(url)
   soup = BeautifulSoup(page.content, "html.parser")
+  prev_values = []
   for option in soup.find('select', id="child2").find_all("option"):
     if option["value"] == "": # the header
       continue
     user_facing_key = "Topic" if lang == "en" else "Sujet"
-    result_scraper("topic", option["value"], user_facing_key, option.text)
 
+    # deal with the options that start with ....
+    def maybe_append_colon(string):
+      if not string.endswith(":"):
+        return string + ":"
+      return string
+
+    value = option.text
+    if value.startswith("......"):
+      prefix = maybe_append_colon(prev_values[0]) + " " + maybe_append_colon(prev_values[1]) + " "
+      value = prefix + value[6:]
+    elif value.startswith("..."):
+      prefix = maybe_append_colon(prev_values[0]) + " "
+      prev_values = [prev_values[0], value[3:]]
+      value = prefix + value[3:]
+    else:
+      prev_values = [value]
+    prev_value = value
+
+    result_scraper("topic", option["value"], user_facing_key, value)
 
 def scrape_locations(url, result_scraper):
   page = requests.get(url)
@@ -150,13 +169,14 @@ def scrape_en_topic_resources():
   scrape_topics(url, scrape_topic_resource_search_result)
   scrape_locations(url, scrape_topic_resource_search_result)
 
-  # TODO Topic Resources by Category
+  # TODO Topic Resources by Category (jk not possible?)
 
   with open("topic_resource_data.json", "x") as f:
     f.write(json.dumps(results_map))
 
 scrape_en_case_studies()
 scrape_fr_case_studies()
+scrape_en_topic_resources()
 
 # TODO: topic resource scrape
 

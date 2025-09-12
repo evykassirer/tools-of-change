@@ -8,9 +8,7 @@ import unicodedata
 
 
 # TODO:
-# - figure out search again and document it and see if dad's okay with how it works
 # - add topic resources to metadata for search
-# - once search is finalized, integrate it into the UI
 
 """
 notes for dad:
