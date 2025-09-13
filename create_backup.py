@@ -41,6 +41,9 @@ with open('case_study_data.json', 'r') as file:
 with open('case_study_data_fr.json', 'r') as file:
     case_study_data_fr = json.load(file)
 
+with open('topic_resource_data.json', 'r') as file:
+    topic_resource_data = json.load(file)
+
 lang = "en"
 
 french_home_path = "/fr/accueil"
@@ -313,6 +316,8 @@ def generate_page(f, url, page_text, soup_adjuster=None):
   searchbox['onblur'] = ''
   searchbox['onclick'] = ''
   searchbox['id'] = 'search_box'
+  searchbox['placeholder'] = searchbox['value']
+  searchbox['value'] = ''
   searchbox['onkeydown'] = "searchKeyDown(event)"
 
   search_button = soup.find(class_='go_area').find('input')
@@ -513,8 +518,7 @@ def generate_topic_resources():
     page = requests.get("https://toolsofchange.com/" + url)
     os.makedirs(url)
     with open(url + "index.html", "x") as f:
-      # TODO(search): maybe remove the two advanced search boxes?
-      generate_page(f, url, page.text)
+      generate_topic_resource_page(f, url, page.text)
 
     # Now generate the pages for each resource
     soup = BeautifulSoup(page.content, "html.parser")
@@ -527,8 +531,18 @@ def generate_topic_resources():
         os.makedirs(url)
         page = requests.get("https://toolsofchange.com/" + url)
         with open(url + "index.html", "x") as f:
-          generate_page(f, url, page.text)
+          generate_topic_resource_page(f, url, page.text)
 
+def generate_topic_resource_page(f, url, page_text):
+  metadata = {}
+  if 'en/topic-resources/detail' in url:
+    resource_id = url[len('en/topic-resources/detail/'):-1]
+    if resource_id not in topic_resource_data:
+      print("can't find resource id in search results (en) " + resource_id)
+    else:
+      metadata = topic_resource_data[resource_id]
+
+  generate_page(f, url, page_text, soup_adjuster_for_metadata(metadata))
 
 def generate_case_study_pages(page):
   soup = BeautifulSoup(page.content, "html.parser")
@@ -545,7 +559,7 @@ def generate_case_study_pages(page):
     os.makedirs(url)
     if lang == "en":
       case_study_id = url[len('en/case-studies/detail/'):-1]
-      if case_study_id not in case_study_data_fr:
+      if case_study_id not in case_study_data:
         print("can't find id in search results (en) " + case_study_id)
         metadata = {}
       else:
@@ -558,17 +572,22 @@ def generate_case_study_pages(page):
       else:
         metadata = case_study_data_fr[case_study_id]
 
-    def soup_adjuster(soup):
-      for key, value_list in metadata.items():
-        for value in value_list:
-          new_tag = soup.new_tag("span")
-          new_tag['style'] = "display: none;"
-          new_tag['data-pagefind-filter'] = f"{key}: {value}"
-          soup.find("body").append(new_tag)
     page = requests.get("https://toolsofchange.com/" + url)
     with open(url + "index.html", "x") as f:
-      generate_page(f, url, page.text, soup_adjuster)
+      generate_page(f, url, page.text, soup_adjuster_for_metadata(metadata))
 
+def soup_adjuster_for_metadata(metadata):
+  def adjuster(soup):
+    for key, value_list in metadata.items():
+      for value in value_list:
+        new_tag = soup.new_tag("span")
+        new_tag['style'] = "display: none;"
+        new_tag['data-pagefind-filter'] = f"{key}: {value}"
+        soup.find("body").append(new_tag)
+    # only relevant for topic resources but i'm just putting it here
+    if soup.find(class_="highlight_box"):
+      soup.find(class_="highlight_box").decompose()
+  return adjuster
 
 def generate_simple_pages():
   if lang == "en":

@@ -9,9 +9,9 @@ function searchButtonClick() {
   const search_value = document.getElementById("search_box").value;
   let search_url;
   if (window.location.href.includes("/en/")) {
-    search_url = "../../en/search?query=";
+    search_url = window.location.origin + "/en/search?query=";
   } else {
-    search_url = "../../fr/recherche?query=";
+    search_url = window.location.origin + "/fr/recherche?query=";
   }
   if (search_value) {
     window.location.href = search_url + search_value;

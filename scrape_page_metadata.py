@@ -41,6 +41,7 @@ def scrape_case_study_search_result(key_for_request, value_for_request, key, val
         continue
       case_study_id = link['href'][len(case_study_url_part):]
       results_map[case_study_id][key].append(value)
+      results_map[case_study_id]["Resource type"] = ["Case Study"]
 
 def scrape_topics(url, result_scraper):
   page = requests.get(url)
@@ -158,6 +159,7 @@ def scrape_topic_resource_search_result(key_for_request, value_for_request, key,
         continue
       resource_id = link['href'][len(topic_resource_url_part):]
       results_map[resource_id][key].append(value)
+      results_map[resource_id]["Resource type"] = ["Topic Resource"]
 
 
 def scrape_en_topic_resources():
