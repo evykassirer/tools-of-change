@@ -323,8 +323,9 @@ def generate_page(f, url, page_text, soup_adjuster=None):
 
   soup.find(class_='right_column').find('a').decompose()
 
-  if (soup_adjuster):
+  if soup_adjuster:
     soup_adjuster(soup)
+  soup_adjuster_remove_search(soup)
 
   f.write(str(soup))
 
@@ -581,10 +582,14 @@ def soup_adjuster_for_metadata(metadata):
         new_tag['style'] = "display: none;"
         new_tag['data-pagefind-filter'] = f"{key}: {value}"
         soup.find("body").append(new_tag)
-    # only relevant for topic resources but i'm just putting it here
-    if soup.find(class_="highlight_box"):
-      soup.find(class_="highlight_box").decompose()
   return adjuster
+
+def soup_adjuster_remove_search(soup):
+  if not soup.find(class_="highlight_box"):
+    return
+  for box in soup.find_all(class_="highlight_box"):
+    if "Search" in box.string or "Recherche" in box.string:
+      box.decompose()
 
 def generate_simple_pages():
   if lang == "en":

@@ -1,12 +1,12 @@
 # to create a full backup:
 
-(1) remove old data: delete the folders `rm -r en/ fr/ public/ userfiles/ images/` and the json files `rm case_study_data.json case_study_data_fr.json topic_resource_data.json`
+(1) remove old data: delete the folders `rm -r en/ fr/ public/ userfiles/ images/` (make sure to keep the search pages around to re-add them later) and the json files `rm case_study_data.json case_study_data_fr.json topic_resource_data.json`
 
 (2) `python3 scrape_page_metadata.py` to regenerate the metadata for search
 
 (3) `python3 create_backup.py` to generate the HTML files
 
-(4) rebuild search: `npx -y pagefind --site en` `npx -y pagefind --site fr`
+(4) re-add search pages and rebuild search: `npx -y pagefind --site en` `npx -y pagefind --site fr`
 
 To just re-scrape, but not fetch new metadata, you can keep the json files and not do step (2)
 
