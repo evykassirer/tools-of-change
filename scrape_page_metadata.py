@@ -123,7 +123,6 @@ def scrape_fr_case_studies():
   scrape_case_study_search_result("widespread_use", "yes", "Afficher seulement les études de cas des programmes qui font l'objet d'une diffusion générale", "Oui")
   scrape_case_study_search_result("widespread_use", "no", "Afficher seulement les études de cas des programmes qui font l'objet d'une diffusion générale", "Non")
 
-  # print(json.dumps(results_map))
   with open("case_study_data_fr.json", "x") as f:
     f.write(json.dumps(results_map))
 
@@ -171,7 +170,8 @@ def scrape_en_topic_resources():
   scrape_topics(url, scrape_topic_resource_search_result)
   scrape_locations(url, scrape_topic_resource_search_result)
 
-  # TODO Topic Resources by Category (jk not possible?)
+  # Topic Resources by Category aren't possible because you need text to search
+  # Dad will add them manually
 
   with open("topic_resource_data.json", "x") as f:
     f.write(json.dumps(results_map))
@@ -179,7 +179,5 @@ def scrape_en_topic_resources():
 scrape_en_case_studies()
 scrape_fr_case_studies()
 scrape_en_topic_resources()
-
-# TODO: topic resource scrape
-
-# TODO: tell dad french results for topic resources are broken, links don't work (missing id)
+# French results for topic resources are broken, links don't work (missing id)
+# TODO: can scrape the names at least

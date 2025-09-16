@@ -38,7 +38,7 @@ actually missing, now skipped in create_backup.py
   * https://toolsofchange.com/fr/etudes-de-cas/detail/21 left sidebar
 
 
-missing pages -- several of the case studies might be under new IDs now?? TODO(evy) look into this and maybe fix them
+missing pages -- several of the case studies might be under new IDs now??
 
 * en/tools-of-change/neighbourhood/
 * en/tools-of-change/peer/

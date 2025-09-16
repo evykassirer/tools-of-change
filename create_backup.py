@@ -7,9 +7,6 @@ import json
 import unicodedata
 
 
-# TODO:
-# - add topic resources to metadata for search
-
 """
 notes for dad:
 * some case studies are missing from search results (more for french, most recent for english)
