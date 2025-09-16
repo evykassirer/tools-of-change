@@ -585,11 +585,14 @@ def soup_adjuster_for_metadata(metadata):
   return adjuster
 
 def soup_adjuster_remove_search(soup):
-  if not soup.find(class_="highlight_box"):
-    return
-  for box in soup.find_all(class_="highlight_box"):
-    if "Search" in box.string or "Recherche" in box.string:
-      box.decompose()
+  if soup.find(class_="highlight_box"):
+    for box in soup.find_all(class_="highlight_box"):
+      if "Search" in box.string or "Recherche" in box.string:
+        box.decompose()
+  if soup.find(class_="left_arrow_icon"):
+    for link in soup.find_all(class_="left_arrow_icon"):
+      if 'MORE' in link.findParent().text or 'PLUS' in link.findParent().text:
+        link.decompose()
 
 def generate_simple_pages():
   if lang == "en":
