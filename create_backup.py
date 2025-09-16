@@ -12,6 +12,7 @@ notes for dad:
 * some case studies are missing from search results (more for french, most recent for english)
 * some images aren't there
 * fr/au-sujet-de-nous/ isn't translated
+* fr/aide has lorem ipsum text
 * landmark doesn't seem to be a part of the french site
 * french tool name inconsistencies
   * Réaction tool isn't called that, it's called rétroaction
@@ -21,16 +22,7 @@ notes for dad:
 
 # TODO(post-backup) for when this is converted to main site, things to change manually:
 #
-# - add a redirect from toolsofchange.com to en/home/
-# - manually fix /"en/case-studies/detail/138" to remove the quotes
-# - manually replace <a ""="" 127""""="" .... with '<a href="/fr/etudes-de-cas/detail/127/'
-# - manually remove the 3 remaining "Login to Save Plans for Tools of Change" that are there for some reason
 # - add a hardcoded latest news box and news page
-# - remove thing about creating an account on the help pages (en/fr)
-#    - any user/create link
-# - remove search stuff noted in check_complete_backup
-# - there's a Français (top corner) link to /fr/aide/landmark(f)  which has nothing and also doesn't make sense, change it
-#   - and another for fr/aide/landmark-badge
 
 with open('case_study_data.json', 'r') as file:
     case_study_data = json.load(file)
@@ -297,7 +289,6 @@ def generate_page(f, url, page_text, soup_adjuster=None):
   if corner_nav:
     for item in corner_nav.find_all('li'):
       # [done] TELL_DAD: what the language change links to is really random
-      # e.g. https://toolsofchange.com/fr/etudes-de-cas/recherche-de-etudes-de-cas/
       if not item.find('a').contents[0] in ["Français", "English"]:
         item.decompose()
   else:
@@ -603,7 +594,7 @@ def generate_simple_pages():
       "en/about-us/",
       "en/about-us/workbook-acknowledgements/",
       "en/landmark/",
-      "en/help/", # TODO(post-backup): remove thing about creating an account
+      "en/help/",
       "en/terms/",
       "en/program-impact-attribution/",
       "en/programs/community-based-social-marketing/",

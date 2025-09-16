@@ -83,18 +83,6 @@ def new_url(base_url, new_url):
 'www.test.com/enemy'
 """
 
-# search keywords
-# TODO(search): clean up pages with links to specific search pages
-search_keywords = [
-  "case-studies-search",
-  "recherche-de-etudes-de-cas",
-  "topic-resources-search",
-  "recherche-de-ressources-de-sujets",
-  "planning-guide/advanced-search",
-  "guide-de-planification/recherche-avance",
-  # TODO(evy) not search, but simiarly I will manually remove the remaining 3 instances
-  "/user/create"
-]
 
 nonexisting_pages = set()
 
@@ -136,8 +124,6 @@ known_missing_pages = [
   'en/case-studies/detail/159',
   'en/case-studies/detail/176',
   'en/case-studies/detail/91',
-  'fr/aide/landmark(f)',
-  'fr/aide/landmark-badge',
   'fr/etudes-de-cas/detail/100',
   'fr/etudes-de-cas/detail/111',
   'fr/etudes-de-cas/detail/114',
@@ -155,9 +141,6 @@ def check_page_exists(url):
     return False
   for file in known_missing_files+known_missing_pages:
     if file in url:
-      return False
-  for keyword in search_keywords:
-    if keyword in url:
       return False
   page = requests.get(url)
   if page.status_code == 404:
