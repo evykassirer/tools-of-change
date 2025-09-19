@@ -58,6 +58,8 @@ missing pages -- several of the case studies might be under new IDs now??
   * linked to from https://toolsofchange.com/en/tools-of-change/school-programs/ "Working Towards Peace"
 * en/case-studies/detail/91
   * linked to from https://toolsofchange.com/en/tools-of-change/overcoming-specific-barriers/  "The EnerGuide for Houses Program"
+* en/case-studies/detail/736
+  * linked to from the news pages https://toolsofchange.com/en/news/search page 4 "Energy Cat Game"
 * fr/etudes-de-cas/detail/100
   * linked from https://toolsofchange.com/fr/guide-de-planification/associes-se-developpants/ "Élaboration d’une base de renseignements"
 * fr/etudes-de-cas/detail/111
