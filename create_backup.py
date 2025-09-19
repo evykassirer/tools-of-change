@@ -20,10 +20,6 @@ notes for dad:
   * Soutenir la motivation à long terme --> Soutenir la motivation au fil du temps
 """
 
-# TODO(post-backup) for when this is converted to main site, things to change manually:
-#
-# - add a hardcoded latest news box and news page
-
 with open('case_study_data.json', 'r') as file:
     case_study_data = json.load(file)
 
@@ -633,10 +629,6 @@ def generate_homepage():
   os.makedirs(url)
   with open(url + "index.html", "x") as f:
     def soup_adjuster(soup):
-      # TODO(post-backup): put a hardcoded news section here
-      soup.find('div', class_="latest_news_area").decompose()
-      # Remove left margin now that the news is gone
-      soup.find(attrs={'class':'webinar_area_wrap'})['style'] = "margin: 0;"
       for link in soup.find_all('a'):
         if "https://clicky.com" in link['href']:
           link.decompose()
@@ -717,3 +709,9 @@ def generate_french_site():
 setup()
 generate_english_site()
 generate_french_site()
+
+# lang = "fr"
+# page = requests.get("https://toolsofchange.com/fr/news/search/")
+# os.makedirs("fr/news/search/")
+# with open("fr/news/search/index.html", "x") as f:
+#   generate_page(f, "fr/news/search/", page.text)
