@@ -154,11 +154,14 @@ def scrape_topic_resource_search_result(key_for_request, value_for_request, key,
     for result in soup.find(class_="search_results_wrap").find_all('li'):
       link = result.find('a')
       if not link['href'].startswith(topic_resource_url_part):
-        print(link['href'] + "not a case study?")
+        print(link['href'] + "not a topic resource?")
         continue
       resource_id = link['href'][len(topic_resource_url_part):]
-      results_map[resource_id][key].append(value)
-      results_map[resource_id]["Resource type"] = ["Topic Resource"]
+      if not resource_id:
+        results_map[link.text][key].append(value)
+      else:
+        results_map[resource_id][key].append(value)
+        results_map[resource_id]["Resource type"] = ["Topic Resource"]
 
 
 def scrape_en_topic_resources():
@@ -179,5 +182,25 @@ def scrape_en_topic_resources():
 scrape_en_case_studies()
 scrape_fr_case_studies()
 scrape_en_topic_resources()
+
+
 # French results for topic resources are broken, links don't work (missing id)
-# TODO: can scrape the names at least
+# but topic_resource_data_fr.json contains results by case study name, and we
+# could manually add the ids later if we wanted.
+
+def scrape_fr_topic_resources():
+  results_map.clear()
+  global lang
+  lang = "fr"
+  url = "https://toolsofchange.com/fr/ressources-de-sujets/recherche-de-ressources-de-sujets/"
+
+  scrape_topics(url, scrape_topic_resource_search_result)
+  scrape_locations(url, scrape_topic_resource_search_result)
+
+  # Topic Resources by Category aren't possible because you need text to search
+  # Dad will add them manually
+
+  with open("topic_resource_data_fr.json", "x") as f:
+    f.write(json.dumps(results_map))
+
+scrape_fr_topic_resources()
