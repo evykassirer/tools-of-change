@@ -89,7 +89,6 @@ nonexisting_pages = set()
 # This should ideally import from create_back.py but whatever
 known_missing_files = [
   'public/images/transparent.gif', # this one doesn't matter
-  'public/images/toc_landmark_badge_170x250.jpg', # doesn't matter (not displayed anywhere)
   'userfiles/Image/Street.jpg',
   'userfiles/File/Handout_TOC_Highlights_2012_03_01_2pp.pdf',
   'userfiles/CrugerK_TOC_TC_EN_2010_02_23_2pp.pdf',
