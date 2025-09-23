@@ -59,5 +59,5 @@ missing ids for search results:
 
 # search
 
-* `npx -y pagefind --site en --serve` indexes the english pages
-
+* `npx -y pagefind --site en` indexes the english pages
+* `npx -y pagefind --site fr` indexes the french pages
