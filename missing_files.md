@@ -64,8 +64,6 @@ missing pages -- several of the case studies might be under new IDs now??
   * linked to from https://toolsofchange.com/fr/guide-de-planification/associes-se-developpants/ "Pratiques pour des collectivités durables"
 * fr/etudes-de-cas/detail/439
   * linked to from https://toolsofchange.com/fr/outils-de-changement/Visites-a-domicile/ "(BC21 PowerSmart)"
-* fr/etudes-de-cas/detail/82
-  * linked to from several places "ÉnerGuide"
 * fr/etudes-de-cas/detail/87
   * linked to from several places "Les citoyens à l'oeuvre"
 * fr/programmes/water-transport-(english-only)/

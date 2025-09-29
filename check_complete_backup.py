@@ -125,7 +125,6 @@ known_missing_pages = [
   'fr/etudes-de-cas/detail/114',
   'fr/etudes-de-cas/detail/129',
   'fr/etudes-de-cas/detail/439',
-  'fr/etudes-de-cas/detail/82',
   'fr/etudes-de-cas/detail/87',
   'fr/programmes/water-transport-(english-only)/',
 ]
