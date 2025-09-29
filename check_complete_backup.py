@@ -114,7 +114,6 @@ known_missing_files = [
 
 known_missing_pages = [
   'en/tools-of-change/peer/',
-  'en/tools-of-change/work-programs-that-influence-the-home/',
   'en/case-studies/detail/157',
   'en/case-studies/detail/158',
   'en/case-studies/detail/159',
