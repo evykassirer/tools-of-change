@@ -8,10 +8,17 @@ function searchKeyDown(event) {
 function searchButtonClick() {
   const search_value = document.getElementById("search_box").value;
   let search_url;
-  if (window.location.href.includes("/en/")) {
-    search_url = window.location.origin + "/en/search?query=";
+  let base_url;
+  if (window.location.href.includes("evykassirer.github.io")) {
+    base_url = "https://evykassirer.github.io/tools-of-change";
   } else {
-    search_url = window.location.origin + "/fr/recherche?query=";
+    base_url = window.location.origin;
+  }
+
+  if (window.location.href.includes("/en/")) {
+    search_url = base_url + "/en/search?query=";
+  } else {
+    search_url = base_url + "/fr/recherche?query=";
   }
   if (search_value) {
     window.location.href = search_url + search_value;
