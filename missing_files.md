@@ -45,8 +45,6 @@ missing pages -- several of the case studies might be under new IDs now??
 * en/tools-of-change/school-programs-that-involve-the-family/
 * en/tools-of-change/work-programs-that-influence-the-home/
   * both linked to from many case studies
-* en/case-studies/detail/115
-  * linked to from https://toolsofchange.com/en/case-studies/detail/154 "EnerGuide for Houses"
 * en/case-studies/detail/157
   * linked to from https://toolsofchange.com/en/planning-guide/developing-partners/ "Practices For Sustainable Communities"
 * en/case-studies/detail/158
