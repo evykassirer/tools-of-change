@@ -123,7 +123,6 @@ known_missing_pages = [
   'fr/etudes-de-cas/detail/100',
   'fr/etudes-de-cas/detail/111',
   'fr/etudes-de-cas/detail/114',
-  'fr/etudes-de-cas/detail/127',
   'fr/etudes-de-cas/detail/129',
   'fr/etudes-de-cas/detail/439',
   'fr/etudes-de-cas/detail/82',

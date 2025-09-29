@@ -60,8 +60,6 @@ missing pages -- several of the case studies might be under new IDs now??
   * linked from https://toolsofchange.com/fr/guide-de-planification/obtenir-inform%C3%A9/ "AutoShare"
 * fr/etudes-de-cas/detail/114
   * linked from https://toolsofchange.com/fr/outils-de-changement/Mesures-financieres-incitatives-et-dissuasives/ "Partenariat pour de meilleurs immeubles"
-* fr/etudes-de-cas/detail/127
-  * linked to from multiple pages "Water Efficient Durham"
 * fr/etudes-de-cas/detail/129
   * linked to from https://toolsofchange.com/fr/guide-de-planification/associes-se-developpants/ "Pratiques pour des collectivités durables"
 * fr/etudes-de-cas/detail/439
