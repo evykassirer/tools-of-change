@@ -113,7 +113,6 @@ known_missing_files = [
 ]
 
 known_missing_pages = [
-  'en/tools-of-change/neighbourhood/',
   'en/tools-of-change/peer/',
   'en/tools-of-change/school-programs-that-involve-the-family/',
   'en/tools-of-change/work-programs-that-influence-the-home/',

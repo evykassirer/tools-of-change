@@ -40,7 +40,6 @@ actually missing, now skipped in create_backup.py
 
 missing pages -- several of the case studies might be under new IDs now??
 
-* en/tools-of-change/neighbourhood/
 * en/tools-of-change/peer/
   * both linked to from https://toolsofchange.com/en/tools-of-change/building-motivation-over-time/ "neighbourhood coaches" "peer support groups"
 * en/tools-of-change/school-programs-that-involve-the-family/
