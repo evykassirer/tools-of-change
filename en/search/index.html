@@ -13,6 +13,30 @@
         window.history.replaceState({}, document.title, window.location.pathname); // remove param
         document.getElementsByClassName("pagefind-ui__search-input")[0].value = query;
         document.getElementsByClassName("pagefind-ui__search-input")[0].dispatchEvent(new Event('input'));
+
+        // Delay needed for the search results to show up. This would be better if there was
+        // something set up to await it showing up in the DOM.
+        if (params.get("type") === "case-study") {
+          setTimeout(() => {
+            for (const detail of document.getElementsByTagName("details")) {
+              if (detail.getElementsByTagName('summary')[0].textContent === "Resource type") {
+                detail.setAttribute("open", "")
+                document.getElementById("Resource type-Case Study").click();
+              }
+            }
+          }, 500);
+        }
+
+        if (params.get("type") === "topic-resource") {
+          setTimeout(() => {
+            for (const detail of document.getElementsByTagName("details")) {
+              if (detail.getElementsByTagName('summary')[0].textContent === "Resource type") {
+                detail.setAttribute("open", "")
+                document.getElementById("Resource type-Topic Resource").click();
+              }
+            }
+          }, 500);
+        }
     });
 
 </script>
