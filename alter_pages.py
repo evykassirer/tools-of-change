@@ -87,17 +87,33 @@ def alter_page(url):
 
     queue.append(full_url)
 
-  change_made = False
-  for img in soup.find_all('img'):
-    src = img['src']
-    if src.startswith("/images"):
-      img['src'] = url_relative_path_to_home(url) + src
-      print(url, img['src'])
-      change_made = True
+  # change_made = False
+  # for img in soup.find_all('img'):
+  #   src = img['src']
+  #   if src.startswith("/images"):
+  #     img['src'] = url_relative_path_to_home(url) + src
+  #     print(url, img['src'])
+  #     change_made = True
 
-  if change_made:
-    with open(relative_url(url) + "index.html", "w") as f:
-      f.write(str(soup))
+  if '<span data-pagefind-filter="Resource type' in str(soup):
+    return
+
+  if "topic-resources/detail" in url or "ressources-de-sujets/detail" in url:
+    resource_type = "Topic Resource"
+  elif "case-studies/detail" in url or "etudes-de-cas/detail" in url:
+    resource_type = "Case Study"
+  else:
+    return
+
+  new_tag = soup.new_tag("span")
+  new_tag['style'] = "display: none;"
+  new_tag['data-pagefind-filter'] = f"Resource type: {resource_type}"
+  soup.find("body").append(new_tag)
+
+
+  # if change_made:
+  with open(relative_url(url) + "index.html", "w") as f:
+    f.write(str(soup))
 
 
 
@@ -132,13 +148,8 @@ def alter_pages():
     alter_page(url)
     i += 1
     if i % 100 == 0:
-      print(i)
-      print(f"pages that have 404'd: {len(nonexisting_pages)}")
-      print("\n")
-  print("🍄 all done")
-  print(f"{i} pages checked")
-  print(f"pages that have 404'd: {len(nonexisting_pages)}")
-  print("\n")
+      print(f"{i} pages checked so far\n")
+  print("🍄 all done\n")
 
 
 alter_pages()
