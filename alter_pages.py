@@ -122,8 +122,25 @@ def alter_page(url):
             new_tag['style'] = "display: none;"
             new_tag['data-pagefind-filter'] = full_resource_type
             soup.find("body").append(new_tag)
-            # print("adding advanced resource type")
+            print("adding advanced resource type")
             change_made = True
+
+  if "topic-resources/detail" in url or "ressources-de-sujets/detail" in url:
+    if '<span data-pagefind-sort="date' not in str(soup):
+      print(url + " doesn't have a date")
+      for tr in soup.find_all('tr'):
+        if tr.find(class_='highlight_box') and tr.find(class_='highlight_box').text in ["Mis à jour:", "Date Last Updated:"]:
+            box = tr.find(class_='rt_text_box')
+            if not box:
+              box = tr.find(class_='rt_text_bottom')
+            date = box.text
+            new_tag = soup.new_tag("span")
+            new_tag['style'] = "display: none;"
+            new_tag['data-pagefind-sort'] = f"date: {date}"
+            soup.find("body").append(new_tag)
+            print("adding date")
+            change_made = True
+
 
 
   if change_made:
