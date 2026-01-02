@@ -110,20 +110,20 @@ def alter_page(url):
       change_made = True
 
 
-  if "topic-resources/detail" in url or "ressources-de-sujets/detail" in url:
-    for tr in soup.find_all('tr'):
-      if tr.find(class_='highlight_box') and tr.find(class_='highlight_box').text in ["Catégorie:", "Resource Type:"]:
-        for resource_type in tr.find(class_='rt_text_box').text.split(","):
-          if resource_type.strip().lower() == "":
-            continue
-          full_resource_type = f"Resource type: Topic Resource: {resource_type.strip().lower()}"
-          if f'<span data-pagefind-filter="{full_resource_type}' not in str(soup):
-            new_tag = soup.new_tag("span")
-            new_tag['style'] = "display: none;"
-            new_tag['data-pagefind-filter'] = full_resource_type
-            soup.find("body").append(new_tag)
-            print("adding advanced resource type")
-            change_made = True
+  # if "topic-resources/detail" in url or "ressources-de-sujets/detail" in url:
+  #   for tr in soup.find_all('tr'):
+  #     if tr.find(class_='highlight_box') and tr.find(class_='highlight_box').text in ["Catégorie:", "Resource Type:"]:
+  #       for resource_type in tr.find(class_='rt_text_box').text.split(","):
+  #         if resource_type.strip().lower() == "":
+  #           continue
+  #         full_resource_type = f"Resource type: Topic Resource: {resource_type.strip().lower()}"
+  #         if f'<span data-pagefind-filter="{full_resource_type}' not in str(soup):
+  #           new_tag = soup.new_tag("span")
+  #           new_tag['style'] = "display: none;"
+  #           new_tag['data-pagefind-filter'] = full_resource_type
+  #           soup.find("body").append(new_tag)
+  #           print("adding advanced resource type")
+  #           change_made = True
 
   if "topic-resources/detail" in url or "ressources-de-sujets/detail" in url:
     if '<span data-pagefind-sort="date' not in str(soup):
@@ -141,6 +141,43 @@ def alter_page(url):
             print("adding date")
             change_made = True
 
+
+  has_head_analytics_tag = False
+  has_body_analytics_tag = False
+  if soup.find("head") and soup.find("head").find("script"):
+    for script in soup.find("head").find_all("script"):
+      if script.string and "google" in script.string:
+        print("got it in the head " + url)
+        has_head_analytics_tag = True
+  if soup.find("body") and soup.find("body").find("noscript") and soup.find("body").find("noscript").contents[0]["src"]:
+    print("got it in the body " + url)
+    has_body_analytics_tag = True
+
+  if not has_head_analytics_tag:
+    head_script = BeautifulSoup(
+      """<!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-54MGLTL8');</script>
+      <!-- End Google Tag Manager -->""",
+      "html.parser"
+    )
+    soup.find("head").insert(0, head_script)
+    change_made = True
+
+  if not has_body_analytics_tag:
+    body_script = BeautifulSoup(
+      """
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54MGLTL8"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->""",
+        "html.parser"
+    )
+    soup.find("body").insert(0, body_script)
+    change_made = True
 
 
   if change_made:
